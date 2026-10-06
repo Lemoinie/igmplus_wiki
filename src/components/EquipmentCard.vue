@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { EquipmentDefinition } from '../types';
+import { base } from '../lib/base';
 
 defineProps<{
   item: EquipmentDefinition;
@@ -39,7 +40,7 @@ function formatStat(key: string, val: number): string {
     <div class="cardTop">
       <div class="spriteBox" :class="`border-rarity-${item.rarity}`">
         <img
-          :src="`${basePath || '/igmplus_wiki'}/images/${item.sprite}.png`"
+          :src="`${basePath ?? base}/images/${item.sprite}.png`"
           :alt="item.name"
           class="sprite"
           width="56"

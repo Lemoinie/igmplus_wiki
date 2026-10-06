@@ -2,6 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import ClassBrowser from '../../components/ClassBrowser.vue';
 import { getAllClasses } from '../../lib/classes';
+import { base } from '../../lib/base';
 
 const combinedClasses = getAllClasses();
 ---
@@ -15,7 +16,7 @@ const combinedClasses = getAllClasses();
     </p>
   </div>
 
-  <ClassBrowser client:load classes={combinedClasses as any} basePath="/igmplus_wiki" />
+  <ClassBrowser client:load classes={combinedClasses as any} basePath={base} />
 </WikiLayout>
 
 <style>

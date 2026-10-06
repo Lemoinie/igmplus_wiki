@@ -5,6 +5,8 @@ export interface DetailLink { name: string; href: string; sprite: string; tier?:
 export interface DetailLinkGroup { title: string; items: DetailLink[]; emptyText?: string; }
 export interface DetailDrop { name: string; qty: number; chance: number; }
 
+import { base } from '../lib/base';
+
 defineProps<{
   name: string;
   sprite: string;
@@ -29,7 +31,7 @@ defineProps<{
     <header class="hero">
       <div class="spriteFrame">
         <img
-          :src="`${basePath || '/igmplus_wiki'}/images/${sprite}.png`"
+          :src="`${basePath ?? base}/images/${sprite}.png`"
           :alt="name"
           class="sprite"
           width="112"
@@ -74,7 +76,7 @@ defineProps<{
         <a v-for="i in g.items" :key="i.href" :href="i.href" class="linkCard">
           <span class="linkSprite">
             <img
-              :src="`${basePath || '/igmplus_wiki'}/images/${i.sprite}.png`"
+              :src="`${basePath ?? base}/images/${i.sprite}.png`"
               :alt="i.name"
               class="sprite"
               width="48"

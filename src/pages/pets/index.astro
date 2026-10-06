@@ -2,6 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import PetCard from '../../components/PetCard.vue';
 import petsData from '../../data/pets.json';
+import { base } from '../../lib/base';
 ---
 
 <WikiLayout title="Pets & Summons" description="Tamer beasts and necromancy summons in Idle Guild Master Modded.">
@@ -15,7 +16,7 @@ import petsData from '../../data/pets.json';
 
   <div class="petsGrid">
     {petsData.map((p) => (
-      <PetCard client:load pet={p as any} basePath="/igmplus_wiki" />
+      <PetCard client:load pet={p as any} basePath={base} />
     ))}
   </div>
 </WikiLayout>

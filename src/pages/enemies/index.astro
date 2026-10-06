@@ -2,6 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import EnemyCard from '../../components/EnemyCard.vue';
 import enemiesData from '../../data/enemies.json';
+import { base } from '../../lib/base';
 ---
 
 <WikiLayout title="Enemies & Bestiary" description="Complete enemy stats, damages, and item drops in Idle Guild Master Modded.">
@@ -14,8 +15,8 @@ import enemiesData from '../../data/enemies.json';
 
   <div class="enemiesGrid">
     {enemiesData.map((e) => (
-      <a href={`/igmplus_wiki/enemies/${e.id}`} class="enemyLink">
-        <EnemyCard client:load enemy={e as any} basePath="/igmplus_wiki" />
+      <a href={`${base}/enemies/${e.id}`} class="enemyLink">
+        <EnemyCard client:load enemy={e as any} basePath={base} />
       </a>
     ))}
   </div>

@@ -2,6 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import EquipmentBrowser from '../../components/EquipmentBrowser.vue';
 import equipmentData from '../../data/equipment.json';
+import { base } from '../../lib/base';
 
 // Automatically merge any standalone item files from src/data/items/**/*.json or src/data/equipment/**/*.json
 const itemModules = import.meta.glob(['../../data/items/**/*.json', '../../data/equipment/**/*.json'], { eager: true });
@@ -25,7 +26,7 @@ const combinedEquipment = Array.from(itemMap.values());
     </p>
   </div>
 
-  <EquipmentBrowser client:load items={combinedEquipment as any} basePath="/igmplus_wiki" />
+  <EquipmentBrowser client:load items={combinedEquipment as any} basePath={base} />
 </WikiLayout>
 
 <style>

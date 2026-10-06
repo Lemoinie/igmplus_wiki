@@ -18,61 +18,63 @@ import petsList from '../data/pets.json';
 import enemiesList from '../data/enemies.json';
 import dungeonsList from '../data/dungeons.json';
 
+import { base } from '../lib/base';
+
 const searchEntries = [
   ...classesList.map((c: any) => ({
     id: `class-${c.id}`,
     title: c.name,
     category: 'Class' as const,
-    url: `/igmplus_wiki/classes/${c.id}`,
+    url: `${base}/classes/${c.id}`,
     description: `Tier ${c.tier} ${c.category} · ${c.weaponType} / ${c.armorType}`
   })),
   ...equipmentList.map((e: any) => ({
     id: `equip-${e.id}`,
     title: e.name,
     category: 'Equipment' as const,
-    url: `/igmplus_wiki/equipment#${e.id}`,
+    url: `${base}/equipment#${e.id}`,
     description: `★${e.rarity} ${e.category} · Price: ${e.price}`
   })),
   ...petsList.map((p: any) => ({
     id: `pet-${p.id}`,
     title: p.name,
     category: 'Pet' as const,
-    url: `/igmplus_wiki/pets#${p.id}`,
+    url: `${base}/pets#${p.id}`,
     description: `Tier ${p.tier} ${p.type} pet`
   })),
   ...traitsList.map((t: any) => ({
     id: `trait-${t.id}`,
     title: t.name,
     category: 'Trait' as const,
-    url: `/igmplus_wiki/traits#${t.id}`,
+    url: `${base}/traits#${t.id}`,
     description: t.description
   })),
   ...enemiesList.map((en: any) => ({
     id: `enemy-${en.id}`,
     title: en.name,
     category: 'Enemy' as const,
-    url: `/igmplus_wiki/enemies/${en.id}`,
+    url: `${base}/enemies/${en.id}`,
     description: `${en.isBoss ? 'Boss' : 'Enemy'} · HP: ${en.stats?.hp} · DMG: ${en.damage?.min}-${en.damage?.max}`
   })),
   ...dungeonsList.map((d: any) => ({
     id: `dungeon-${d.id}`,
     title: d.name,
     category: 'Dungeon' as const,
-    url: `/igmplus_wiki/dungeons#${d.id}`,
+    url: `${base}/dungeons#${d.id}`,
     description: `${d.type.toUpperCase()} · ${d.encounterChance}% encounter rate`
   })),
   {
     id: 'mech-defense-and-armor',
     title: 'Defense and Armor Mechanics',
     category: 'Mechanics' as const,
-    url: '/igmplus_wiki/mechanics/defense-and-armor',
+    url: `${base}/mechanics/defense-and-armor`,
     description: 'Damage mitigation formulas, Armor Penetration, and effective HP'
   },
   {
     id: 'mech-attack-speed',
     title: 'Attack Speed Mechanics',
     category: 'Mechanics' as const,
-    url: '/igmplus_wiki/mechanics/attack-speed',
+    url: `${base}/mechanics/attack-speed`,
     description: 'Dexterity scaling, turn orders, and action frequency'
   }
 ];
@@ -83,7 +85,7 @@ const searchEntries = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href="/igmplus_wiki/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
     <title>{title} | IGM+ Wiki</title>
     <meta name="description" content={description} />
   </head>

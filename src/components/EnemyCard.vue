@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { EnemyDefinition } from '../types';
+import { base } from '../lib/base';
 
 defineProps<{
   enemy: EnemyDefinition;
@@ -12,7 +13,7 @@ defineProps<{
     <div class="cardTop">
       <div class="spriteBox">
         <img
-          :src="`${basePath || '/igmplus_wiki'}/images/${enemy.sprite}.png`"
+          :src="`${basePath ?? base}/images/${enemy.sprite}.png`"
           :alt="enemy.name"
           class="sprite"
           width="52"

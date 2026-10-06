@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { ClassDefinition } from '../types';
+import { base } from '../lib/base';
 
 defineProps<{
   classData: ClassDefinition;
@@ -35,10 +36,10 @@ function fmtSkill(name?: string): string {
 
       <span class="tierBadge">T{{ classData.tier }}</span>
 
-      <a :href="`${basePath || '/igmplus_wiki'}/classes/${classData.id}`" class="identity">
+      <a :href="`${basePath ?? base}/classes/${classData.id}`" class="identity">
         <span class="spriteFrame">
           <img
-            :src="`${basePath || '/igmplus_wiki'}/images/${classData.sprite}.png`"
+            :src="`${basePath ?? base}/images/${classData.sprite}.png`"
             :alt="classData.name"
             class="sprite"
             width="56"

@@ -2,6 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import TraitCard from '../../components/TraitCard.vue';
 import traitsData from '../../data/traits.json';
+import { base } from '../../lib/base';
 ---
 
 <WikiLayout title="Adventurer Traits" description="Catalog of positive, negative, and unique traits in Idle Guild Master Modded.">
@@ -15,7 +16,7 @@ import traitsData from '../../data/traits.json';
 
   <div class="traitsGrid">
     {traitsData.map((t) => (
-      <TraitCard client:load trait={t as any} basePath="/igmplus_wiki" />
+      <TraitCard client:load trait={t as any} basePath={base} />
     ))}
   </div>
 </WikiLayout>

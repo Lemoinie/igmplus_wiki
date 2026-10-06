@@ -2,6 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import UnitDetail from '../../components/UnitDetail.vue';
 import { getAllClasses, getRelations, findSkill } from '../../lib/classes';
+import { base } from '../../lib/base';
 
 export function getStaticPaths() {
   const all = getAllClasses();
@@ -9,7 +10,6 @@ export function getStaticPaths() {
 }
 
 const { unit, all } = Astro.props as { unit: any; all: any[] };
-const base = '/igmplus_wiki';
 const { promotions, demotions } = getRelations(unit.id, all);
 
 const s = unit.stats ?? {};

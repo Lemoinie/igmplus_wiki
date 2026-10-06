@@ -1,6 +1,7 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import dungeonsData from '../../data/dungeons.json';
+import { base } from '../../lib/base';
 ---
 
 <WikiLayout title="Dungeons & Raids" description="Encounter pools, room probabilities, and loot tables in Idle Guild Master Modded.">
@@ -18,7 +19,7 @@ import dungeonsData from '../../data/dungeons.json';
           {d.sprite && (
             <div class="dungeonSpriteBox">
               <img
-                src={`/igmplus_wiki/images/${d.sprite}.png`}
+                src={`${base}/images/${d.sprite}.png`}
                 alt={d.name}
                 class="sprite"
                 width="84"

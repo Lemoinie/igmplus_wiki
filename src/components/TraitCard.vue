@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import type { TraitDefinition } from '../types';
+import { base } from '../lib/base';
 
 defineProps<{
   trait: TraitDefinition;
@@ -12,7 +13,7 @@ defineProps<{
     <div class="top">
       <div v-if="trait.sprite" class="iconBox">
         <img
-          :src="`${basePath || '/igmplus_wiki'}/images/${trait.sprite}.png`"
+          :src="`${basePath ?? base}/images/${trait.sprite}.png`"
           :alt="trait.name"
           class="sprite"
           width="28"

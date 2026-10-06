@@ -3,6 +3,7 @@ import { ref, computed } from 'vue';
 import type { ClassDefinition } from '../types';
 import ClassCard from './ClassCard.vue';
 import ClassTreeNode from './ClassTreeNode.vue';
+import { base } from '../lib/base';
 
 const props = defineProps<{
   classes: ClassDefinition[];
@@ -117,7 +118,7 @@ function getCatCount(cat: string): number {
       >
         <div class="catIconBox">
           <img
-            :src="`${basePath || '/igmplus_wiki'}/images/${categoryIcons[cat]}.png`"
+            :src="`${basePath ?? base}/images/${categoryIcons[cat]}.png`"
             :alt="cat"
             class="sprite"
             width="32"

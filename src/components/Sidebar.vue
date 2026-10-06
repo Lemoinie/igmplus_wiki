@@ -1,19 +1,20 @@
 <script setup lang="ts">
 import { ref, onMounted } from 'vue';
+import { base } from '../lib/base';
 
 const isCollapsed = ref(false);
 const isMobileOpen = ref(false);
 
 const navItems = [
-  { label: 'Home', href: '/igmplus_wiki/' },
-  { label: 'Classes', href: '/igmplus_wiki/classes' },
-  { label: 'Equipment', href: '/igmplus_wiki/equipment' },
-  { label: 'Pets & Summons', href: '/igmplus_wiki/pets' },
-  { label: 'Traits', href: '/igmplus_wiki/traits' },
-  { label: 'Enemies & Bestiary', href: '/igmplus_wiki/enemies' },
-  { label: 'Dungeons & Raids', href: '/igmplus_wiki/dungeons' },
-  { label: 'Game Mechanics', href: '/igmplus_wiki/mechanics/defense-and-armor' },
-  { label: 'Mod Changelog', href: '/igmplus_wiki/changelog' },
+  { label: 'Home', href: `${base}/` || '/' },
+  { label: 'Classes', href: `${base}/classes` },
+  { label: 'Equipment', href: `${base}/equipment` },
+  { label: 'Pets & Summons', href: `${base}/pets` },
+  { label: 'Traits', href: `${base}/traits` },
+  { label: 'Enemies & Bestiary', href: `${base}/enemies` },
+  { label: 'Dungeons & Raids', href: `${base}/dungeons` },
+  { label: 'Game Mechanics', href: `${base}/mechanics/defense-and-armor` },
+  { label: 'Mod Changelog', href: `${base}/changelog` },
 ];
 
 function toggleSidebar() {
@@ -51,7 +52,7 @@ onMounted(() => {
       <button type="button" class="mobileMenuBtn" @click="toggleMobile">
         ☰
       </button>
-      <a href="/igmplus_wiki/" class="mobileTitle">IGM+ Mod Wiki</a>
+      <a :href="`${base}/` || '/'" class="mobileTitle">IGM+ Mod Wiki</a>
     </div>
 
     <!-- Desktop Reopen Floating Button -->
@@ -75,7 +76,7 @@ onMounted(() => {
       }"
     >
       <div class="sidebarHeader">
-        <a href="/igmplus_wiki/" class="brandLink">
+        <a :href="`${base}/` || '/'" class="brandLink">
           <div class="brandText">
             <span class="brandTitle">IGM+ Wiki</span>
             <span class="brandSub">Idle Guild Master Mod</span>
