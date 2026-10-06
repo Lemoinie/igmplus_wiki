@@ -1,283 +1,278 @@
 [
   {
-    "id": "Beetle",
-    "name": "Beetle",
-    "family": "Insect",
-    "abilitySlots": 3,
-    "sprite": "pet_beetle",
-    "description": "A small, hard-shelled insect with sturdy legs and antennae. It scuttles with purpose, often gleaming in metallic colors.",
-    "guaranteedAbilities": [
-      "Fighter",
-      "Barrier"
-    ]
-  },
-  {
-    "id": "Crocodile",
-    "name": "Crocodile",
-    "family": "Reptile",
-    "abilitySlots": 4,
-    "sprite": "pet_crocodile",
-    "description": "A massive, armored reptile with powerful jaws and a stealthy, low-slung body. It lurks in water, ready to launch explosive ambushes with a swift lunge.",
-    "guaranteedAbilities": [
-      "Savage",
-      "Opportunist"
-    ]
-  },
-  {
-    "id": "Dove",
-    "name": "Dove",
-    "family": "Avian",
-    "abilitySlots": 2,
-    "sprite": "pet_dove",
-    "description": "A gentle bird with soft feathers and a cooing call. It soars gracefully through the air, often seen as a symbol of peace and harmony.",
-    "guaranteedAbilities": [
-      "Decoy"
-    ]
-  },
-  {
-    "id": "Eagle",
-    "name": "Eagle",
-    "family": "Avian",
-    "abilitySlots": 4,
-    "sprite": "pet_eagle",
-    "description": "A fierce bird of prey with sharp talons and keen vision. It flies high above, scanning for prey with intense focus, before diving with unmatched speed and precision.",
-    "guaranteedAbilities": [
-      "Decoy"
-    ]
-  },
-  {
-    "id": "FloatingEye",
-    "name": "Floating Eye",
-    "family": "Esoteric",
-    "abilitySlots": 2,
-    "sprite": "pet_floating_eye",
-    "description": "A hovering orb of flesh, bristling with tendrils and stalks. Its gaze is unsettling, filled with cold, alien intelligence.",
-    "guaranteedAbilities": [
-      "Experience",
-      "Drops"
-    ]
-  },
-  {
-    "id": "FloatingSeed",
-    "name": "Floating Seed",
-    "family": "Wooden",
-    "abilitySlots": 2,
-    "sprite": "pet_floating_seed",
-    "description": "A small, round seed with a helix-like appendage. It just shuffles about, searching for fertile ground.",
-    "guaranteedAbilities": [
-      "Soothing",
-      "Healer"
-    ]
-  },
-  {
-    "id": "Golem",
-    "name": "Golem",
-    "family": "Construct",
-    "abilitySlots": 3,
-    "sprite": "pet_golem",
-    "description": "A small, compact figure of dense stone and clay. Despite its size, it is incredibly tough and unyielding, moving with steady purpose, driven by an inner force.",
-    "guaranteedAbilities": [
-      "Magic",
-      "Bright"
-    ]
-  },
-  {
-    "id": "HolyTree",
-    "name": "Holy Tree",
-    "family": "Wooden",
-    "abilitySlots": 4,
-    "sprite": "pet_holy_tree",
-    "description": "A small bonsai tree not taller than the average human. Despite its unassuming appearance, these trees belong to an almost extinct ancient species of sentient trees.",
-    "guaranteedAbilities": [
-      "Soothing",
-      "Healer"
-    ]
-  },
-  {
-    "id": "Kitsune",
-    "name": "Senko",
-    "family": "Mythic",
-    "abilitySlots": 5,
-    "sprite": "pet_kitsune",
-    "description": "A divine celestial kitsune dedicated to nurturing and pampering the guild. Unlocks all traits immediately at Level 1.",
-    "guaranteedAbilities": [
-      "Experience",
-      "Drops",
-      "Opportunist",
-      "Savage"
-    ],
-    "exclusiveAbility": "Kitsune Spirit Blessing",
-    "exclusiveDescription": "Empowers guild healing by +(0.6% × Level) as a global multiplier. All traits are active from Level 1."
-  },
-  {
-    "id": "Lizard",
-    "name": "Lizard",
-    "family": "Reptile",
-    "abilitySlots": 2,
-    "sprite": "pet_lizard",
-    "description": "A small reptile with agile limbs and darting eyes. It scurries nimbly over rocks and through foliage, quick to flick its tongue and bask in the sun.",
-    "guaranteedAbilities": [
-      "Savage",
-      "Opportunist"
-    ]
-  },
-  {
-    "id": "Mosquito",
-    "name": "Mosquito",
-    "family": "Insect",
-    "abilitySlots": 2,
-    "sprite": "pet_mosquito",
-    "description": "A tiny, buzzing insect with needle-like mouthparts. It flits through the air with an annoying persistence, always seeking a warm-blooded host to siphon from.",
-    "guaranteedAbilities": [
-      "Fighter",
-      "Barrier"
-    ]
-  },
-  {
-    "id": "Owl",
-    "name": "Owl",
-    "family": "Avian",
-    "abilitySlots": 3,
-    "sprite": "pet_owl",
-    "description": "A nocturnal bird with large, forward-facing eyes and a round face. It glides silently on wide wings, its haunting hoot echoing through the darkness.",
-    "guaranteedAbilities": [
-      "Decoy"
-    ]
-  },
-  {
-    "id": "Phoenix",
-    "name": "Kiara",
-    "family": "Mythic",
-    "abilitySlots": 5,
-    "sprite": "pet_phoenix",
-    "description": "An immortal phoenix born from eternal flames. With radiant warmth and vibrant spirit, she rises anew each time she falls.",
-    "guaranteedAbilities": [
-      "Experience",
-      "Drops",
-      "Opportunist",
-      "Savage"
-    ],
-    "exclusiveAbility": "Solar Rebirth",
-    "exclusiveDescription": "Each combat turn: 0.15% × Level chance to revive/protect fallen allies (1 + floor(Level / 50) allies)."
-  },
-  {
     "id": "Rat",
     "name": "Rat",
     "family": "Wild",
+    "eggSprite": "egg_wild",
     "abilitySlots": 2,
     "sprite": "pet_rat",
-    "description": "A quick, wiry rodent with sharp teeth and twitching whiskers. It scurries in the shadows, scavenging for scraps and finding its way into the smallest crevices.",
-    "guaranteedAbilities": [
-      "Bloodthirsty",
-      "Bloodcrave"
-    ]
-  },
-  {
-    "id": "RedWolf",
-    "name": "Red Wolf",
-    "family": "Wild",
-    "abilitySlots": 4,
-    "sprite": "pet_red_wolf",
-    "description": "Rare wolf sometimes found roaming the forests looking for prey. It has a timid and elusive nature, but it is also extremely loyal.",
-    "guaranteedAbilities": [
-      "Bloodthirsty",
-      "Bloodcrave"
-    ]
-  },
-  {
-    "id": "Rockling",
-    "name": "Rockling",
-    "family": "Construct",
-    "abilitySlots": 2,
-    "sprite": "pet_rockling",
-    "description": "A squat, rocky creature covered in jagged stone plates. It shuffles slowly, grinding against the earth, its mineral-rich body blending seamlessly with crags and boulders.",
-    "guaranteedAbilities": [
-      "Magic",
-      "Bright"
-    ]
+    "description": "A swift, scruffy scavenger that slips through the shadows with twitching whiskers.",
+    "guaranteedAbilities": ["Bloodthirsty", "Bloodcrave"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
   },
   {
     "id": "Squirrel",
     "name": "Squirrel",
     "family": "Wild",
+    "eggSprite": "egg_wild",
     "abilitySlots": 3,
     "sprite": "pet_squirrel",
-    "description": "A sleek, agile rodent with sharp claws and a bushy tail. It moves with a silent grace, watching its surroundings with a mix of curiosity and calculated intent. Loves to eat nuts.",
-    "guaranteedAbilities": [
-      "Bloodthirsty",
-      "Bloodcrave"
-    ]
+    "description": "An agile woodland creature with a bushy tail, bounding between branches.",
+    "guaranteedAbilities": ["Bloodthirsty", "Bloodcrave"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
   },
   {
-    "id": "Tarantula",
-    "name": "Tarantula",
-    "family": "Insect",
+    "id": "RedWolf",
+    "name": "Red Wolf",
+    "family": "Wild",
+    "eggSprite": "egg_wild",
     "abilitySlots": 4,
-    "sprite": "pet_tarantula",
-    "description": "A large, hairy spider with eight watchful eyes and thick, bristling legs. It moves slowly and deliberately, ready to pounce or retreat into the shadows.",
-    "guaranteedAbilities": [
-      "Fighter",
-      "Barrier"
-    ]
+    "sprite": "pet_red_wolf",
+    "description": "A lean, russet-furred predator with sharp instincts and a commanding presence.",
+    "guaranteedAbilities": ["Bloodthirsty", "Bloodcrave"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
   },
   {
-    "id": "TentacleTangle",
-    "name": "Tentacle Tangle",
-    "family": "Esoteric",
-    "abilitySlots": 3,
-    "sprite": "pet_tentacle_tangle",
-    "description": "A writhing, pulsating clump of rubbery tendrils, constantly coiling and twisting. It slithers with unsettling grace, its searching limbs probing for anything to grasp.",
-    "guaranteedAbilities": [
-      "Experience",
-      "Drops"
-    ]
-  },
-  {
-    "id": "Tesseract",
-    "name": "Tesseract",
-    "family": "Construct",
-    "abilitySlots": 4,
-    "sprite": "pet_tesseract",
-    "description": "A shimmering, geometric construct that defies conventional shapes. It twists in and out of itself, folding space in mind-bending ways, giving glimpses into other dimensions.",
-    "guaranteedAbilities": [
-      "Magic",
-      "Bright"
-    ]
-  },
-  {
-    "id": "ThingFromTheAbyss",
-    "name": "Thing from the Abyss",
-    "family": "Esoteric",
-    "abilitySlots": 4,
-    "sprite": "pet_thing_from_the_abyss",
-    "description": "A shadowy, amorphous entity with flickering, spectral limbs and piercing, formless eyes. Very small for abyssal horror standards, but it still radiates cold dread.",
-    "guaranteedAbilities": [
-      "Experience",
-      "Drops"
-    ]
-  },
-  {
-    "id": "TreeFrog",
-    "name": "Tree Frog",
-    "family": "Reptile",
-    "abilitySlots": 3,
-    "sprite": "pet_tree_frog",
-    "description": "A small, bright green amphibian with powerful legs. Its sharp, resonant croak echoes through the forests, and it has a voracious appetite for anything it can swallow.",
-    "guaranteedAbilities": [
-      "Savage",
-      "Opportunist"
-    ]
+    "id": "FloatingSeed",
+    "name": "Floating Seed",
+    "family": "Wooden",
+    "eggSprite": "egg_wooden",
+    "abilitySlots": 2,
+    "sprite": "pet_floating_seed",
+    "description": "A small, round seed with a helix-like appendage. It just shuffles about, searching for fertile ground.",
+    "guaranteedAbilities": ["Healer", "Soothing"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
   },
   {
     "id": "WalkingBush",
     "name": "Walking Bush",
     "family": "Wooden",
+    "eggSprite": "egg_wooden",
     "abilitySlots": 3,
     "sprite": "pet_walking_bush",
-    "description": "A dense, thorny shrub with rustling leaves that move on their own. It scuttles across the ground, roots writhing like legs, driven mostly by curiosity.",
-    "guaranteedAbilities": [
-      "Soothing",
-      "Healer"
-    ]
+    "description": "A lively shrub with tangled roots that scuttle across the dirt.",
+    "guaranteedAbilities": ["Healer", "Soothing"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "HolyTree",
+    "name": "Holy Tree",
+    "family": "Wooden",
+    "eggSprite": "egg_wooden",
+    "abilitySlots": 4,
+    "sprite": "pet_holy_tree",
+    "description": "A small bonsai tree not taller than the average human. Despite its unassuming appearance, these trees belong to an almost extinct ancient species of sentient trees.",
+    "guaranteedAbilities": ["Healer", "Soothing"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Dove",
+    "name": "Dove",
+    "family": "Avian",
+    "eggSprite": "egg_avian",
+    "abilitySlots": 2,
+    "sprite": "pet_dove",
+    "description": "A gentle bird with soft feathers and a cooing call. It soars gracefully through the air, often seen as a symbol of peace and harmony.",
+    "guaranteedAbilities": ["Decoy"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Owl",
+    "name": "Owl",
+    "family": "Avian",
+    "eggSprite": "egg_avian",
+    "abilitySlots": 3,
+    "sprite": "pet_owl",
+    "description": "A silent hunter with wide, luminous eyes. It glides through the night without a sound.",
+    "guaranteedAbilities": ["Decoy"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Eagle",
+    "name": "Eagle",
+    "family": "Avian",
+    "eggSprite": "egg_avian",
+    "abilitySlots": 4,
+    "sprite": "pet_eagle",
+    "description": "A fierce bird of prey with sharp talons and keen vision. It flies high above, scanning for prey with intense focus, before diving with unmatched speed and precision.",
+    "guaranteedAbilities": ["Decoy"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Rockling",
+    "name": "Rockling",
+    "family": "Construct",
+    "eggSprite": "egg_construct",
+    "abilitySlots": 2,
+    "sprite": "pet_rockling",
+    "description": "A tiny, sentient clod of earth and pebbles rolling around enthusiastically.",
+    "guaranteedAbilities": ["Magic", "Bright"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Golem",
+    "name": "Golem",
+    "family": "Construct",
+    "eggSprite": "egg_construct",
+    "abilitySlots": 3,
+    "sprite": "pet_golem",
+    "description": "A small, compact figure of dense stone and clay. Despite its size, it is incredibly tough and unyielding, moving with steady purpose, driven by an inner force.",
+    "guaranteedAbilities": ["Magic", "Bright"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Tesseract",
+    "name": "Tesseract",
+    "family": "Construct",
+    "eggSprite": "egg_construct",
+    "abilitySlots": 4,
+    "sprite": "pet_tesseract",
+    "description": "A geometric cube of shifting planar faces and humming magical matrices.",
+    "guaranteedAbilities": ["Magic", "Bright"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "FloatingEye",
+    "name": "Floating Eye",
+    "family": "Esoteric",
+    "eggSprite": "egg_esoteric",
+    "abilitySlots": 2,
+    "sprite": "pet_floating_eye",
+    "description": "A hovering orb of flesh, bristling with tendrils and stalks. Its gaze is unsettling, filled with cold, alien intelligence.",
+    "guaranteedAbilities": ["Teacher", "Drops"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "TentacleTangle",
+    "name": "Tentacle Tangle",
+    "family": "Esoteric",
+    "eggSprite": "egg_esoteric",
+    "abilitySlots": 3,
+    "sprite": "pet_tentacle_tangle",
+    "description": "A writhing cluster of cosmic tentacles pulsating with otherworldly energy.",
+    "guaranteedAbilities": ["Teacher", "Drops"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "ThingFromTheAbyss",
+    "name": "Thing from the Abyss",
+    "family": "Esoteric",
+    "eggSprite": "egg_esoteric",
+    "abilitySlots": 4,
+    "sprite": "pet_thing_from_the_abyss",
+    "description": "An enigmatic eldritch entity coalesced from the deep void.",
+    "guaranteedAbilities": ["Teacher", "Drops"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Lizard",
+    "name": "Lizard",
+    "family": "Reptile",
+    "eggSprite": "egg_reptile",
+    "abilitySlots": 2,
+    "sprite": "pet_lizard",
+    "description": "A small reptile with agile limbs and darting eyes. It scurries nimbly over rocks and through foliage, quick to flick its tongue and bask in the sun.",
+    "guaranteedAbilities": ["Savage", "Opportunist"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "TreeFrog",
+    "name": "Tree Frog",
+    "family": "Reptile",
+    "eggSprite": "egg_reptile",
+    "abilitySlots": 3,
+    "sprite": "pet_tree_frog",
+    "description": "A vibrant, bulbous-eyed amphibian clinging firmly to branches and catching insects in a flash.",
+    "guaranteedAbilities": ["Savage", "Opportunist"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Crocodile",
+    "name": "Crocodile",
+    "family": "Reptile",
+    "eggSprite": "egg_reptile",
+    "abilitySlots": 4,
+    "sprite": "pet_crocodile",
+    "description": "A massive, armored reptile with powerful jaws and a stealthy, low-slung body. It lurks in water, ready to launch explosive ambushes with a swift lunge.",
+    "guaranteedAbilities": ["Savage", "Opportunist"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Mosquito",
+    "name": "Mosquito",
+    "family": "Insect",
+    "eggSprite": "egg_insect",
+    "abilitySlots": 2,
+    "sprite": "pet_mosquito",
+    "description": "A tiny, buzzing pest with translucent wings and a needle-sharp proboscis.",
+    "guaranteedAbilities": ["Fighter", "Barrier"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Beetle",
+    "name": "Beetle",
+    "family": "Insect",
+    "eggSprite": "egg_insect",
+    "abilitySlots": 3,
+    "sprite": "pet_beetle",
+    "description": "A small, hard-shelled insect with sturdy legs and antennae. It scuttles with purpose, often gleaming in metallic colors.",
+    "guaranteedAbilities": ["Fighter", "Barrier"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Tarantula",
+    "name": "Tarantula",
+    "family": "Insect",
+    "eggSprite": "egg_insect",
+    "abilitySlots": 4,
+    "sprite": "pet_tarantula",
+    "description": "A large, hairy arachnid with thick legs and potent venom. It waits with patient stillness before striking.",
+    "guaranteedAbilities": ["Fighter", "Barrier"],
+    "exclusiveAbility": null,
+    "exclusiveDescription": null
+  },
+  {
+    "id": "Phoenix",
+    "name": "Kiara",
+    "family": "Mythic",
+    "eggSprite": "egg_mythic",
+    "abilitySlots": 5,
+    "sprite": "pet_phoenix",
+    "description": "An immortal phoenix born from eternal flames. With radiant warmth and vibrant spirit, she rises anew each time she falls.",
+    "guaranteedAbilities": ["Teacher", "Drops", "Opportunist", "Savage"],
+    "exclusiveAbility": "Solar Rebirth",
+    "exclusiveDescription": "Each combat turn: 0.15% × Level chance to revive/protect fallen allies (1 + floor(Level / 50) allies)."
+  },
+  {
+    "id": "Kitsune",
+    "name": "Senko",
+    "family": "Mythic",
+    "eggSprite": "egg_mythic",
+    "abilitySlots": 5,
+    "sprite": "pet_kitsune",
+    "description": "A divine celestial kitsune dedicated to nurturing and pampering the guild. Unlocks all traits immediately at Level 1.",
+    "guaranteedAbilities": ["Teacher", "Drops", "Opportunist", "Savage"],
+    "exclusiveAbility": "Kitsune Spirit Blessing",
+    "exclusiveDescription": "Empowers guild healing by +(0.6% × Level) as a global multiplier. All traits are active from Level 1."
   }
 ]

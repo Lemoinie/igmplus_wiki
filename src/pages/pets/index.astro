@@ -1,26 +1,26 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import PetBrowser from '../../components/PetBrowser.vue';
+import PetTable from '../../components/PetTable.vue';
 import petsData from '../../data/pets.json';
 import { base } from '../../lib/base';
 ---
 
 <WikiLayout
-  title="Guild Pets"
-  description="All 23 guild pets in Idle Guild Master Modded. Check trait slot capacities, guaranteed ability pools, and unique passive effects."
+  title="Pets"
+  description="All 23 guild pets in Idle Guild Master Modded. Check trait slot capacities, egg types, guaranteed first traits, and unique traits."
 >
   <div class="pageHeader">
     <div class="headerTop">
-      <h1>Guild Pets</h1>
+      <h1>Pets</h1>
       <span class="petCountBadge">{petsData.length} Pets</span>
     </div>
     <p>
       Companions hatched and nurtured by your guild. Pets provide powerful passive buffs, healing, barriers,
-      and combat effects. Filter by family below or search for specific guaranteed trait pools and unique traits.
+      and combat effects. Below is the complete roster showing egg types, trait capacities, guaranteed first traits, and unique traits.
     </p>
   </div>
 
-  <PetBrowser client:load pets={petsData as any} basePath={base} />
+  <PetTable client:load pets={petsData as any} basePath={base} />
 </WikiLayout>
 
 <style>

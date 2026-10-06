@@ -8,11 +8,11 @@ const isMobileOpen = ref(false);
 const navItems = [
   { label: 'Home', href: `${base}/` || '/' },
   { label: 'Classes', href: `${base}/classes` },
-  { label: 'Equipment', href: `${base}/equipment` },
+  { label: 'Items', href: `${base}/equipment` },
   { label: 'Pets', href: `${base}/pets` },
   { label: 'Traits', href: `${base}/traits` },
-  { label: 'Enemies & Bestiary', href: `${base}/enemies` },
-  { label: 'Dungeons & Raids', href: `${base}/dungeons` },
+  { label: 'Bestiary', href: `${base}/enemies` },
+  { label: 'Places', href: `${base}/dungeons` },
   { label: 'Game Mechanics', href: `${base}/mechanics/defense-and-armor` },
   { label: 'Mod Changelog', href: `${base}/changelog` },
 ];

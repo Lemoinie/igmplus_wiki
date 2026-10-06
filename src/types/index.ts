@@ -49,6 +49,7 @@ export interface PetDefinition {
   id: string;
   name: string;
   family: PetFamily;
+  eggSprite?: string;
   abilitySlots: number;
   sprite: string;
   description: string;

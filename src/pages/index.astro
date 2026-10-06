@@ -9,10 +9,10 @@ import { base } from '../lib/base';
 
 const stats = [
   { label: 'Classes', count: classes.length, icon: '⚔️', href: `${base}/classes` },
-  { label: 'Equipment', count: equipment.length, icon: '🛡️', href: `${base}/equipment` },
+  { label: 'Items', count: equipment.length, icon: '🛡️', href: `${base}/equipment` },
   { label: 'Pets', count: pets.length, icon: '🐾', href: `${base}/pets` },
-  { label: 'Enemies', count: enemies.length, icon: '👾', href: `${base}/enemies` },
-  { label: 'Dungeons & Raids', count: dungeons.length, icon: '🗺️', href: `${base}/dungeons` },
+  { label: 'Bestiary', count: enemies.length, icon: '👾', href: `${base}/enemies` },
+  { label: 'Places', count: dungeons.length, icon: '🗺️', href: `${base}/dungeons` },
 ];
 ---
 
@@ -48,7 +48,7 @@ const stats = [
 
       <a href={`${base}/equipment`} class="featureCard">
         <div class="cardIcon">🛡️</div>
-        <h3>Weapons, Armors & Accessories</h3>
+        <h3>Items</h3>
         <p>Browse weapons, shields, robes, and jewelry with rarity scaling, stat bonuses, and craft costs.</p>
       </a>
 
@@ -58,10 +58,16 @@ const stats = [
         <p>Browse all 23 guild pets across 8 families with trait slots, guaranteed ability pools, and unique traits.</p>
       </a>
 
+      <a href={`${base}/enemies`} class="featureCard">
+        <div class="cardIcon">👾</div>
+        <h3>Bestiary</h3>
+        <p>Comprehensive bestiary of wild beasts, dungeon monsters, corrupted horrors, and raid bosses.</p>
+      </a>
+
       <a href={`${base}/dungeons`} class="featureCard">
         <div class="cardIcon">🗺️</div>
-        <h3>Dungeons & Raids</h3>
-        <p>Room encounter odds, drop rates, and boss mechanics for all expeditions.</p>
+        <h3>Places</h3>
+        <p>Room encounter odds, drop rates, and boss mechanics for all dungeons and raids.</p>
       </a>
 
       <a href={`${base}/mechanics/defense-and-armor`} class="featureCard">

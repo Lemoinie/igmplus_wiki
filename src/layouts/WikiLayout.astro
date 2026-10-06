@@ -31,7 +31,7 @@ const searchEntries = [
   ...equipmentList.map((e: any) => ({
     id: `equip-${e.id}`,
     title: e.name,
-    category: 'Equipment' as const,
+    category: 'Item' as const,
     url: `${base}/equipment#${e.id}`,
     description: `★${e.rarity} ${e.category} · Price: ${e.price}`
   })),
@@ -52,14 +52,14 @@ const searchEntries = [
   ...enemiesList.map((en: any) => ({
     id: `enemy-${en.id}`,
     title: en.name,
-    category: 'Enemy' as const,
+    category: 'Bestiary' as const,
     url: `${base}/enemies/${en.id}`,
     description: `${en.isBoss ? 'Boss' : 'Enemy'} · HP: ${en.stats?.hp} · DMG: ${en.damage?.min}-${en.damage?.max}`
   })),
   ...dungeonsList.map((d: any) => ({
     id: `dungeon-${d.id}`,
     title: d.name,
-    category: 'Dungeon' as const,
+    category: 'Places' as const,
     url: `${base}/dungeons#${d.id}`,
     description: `${d.type.toUpperCase()} · ${d.encounterChance}% encounter rate`
   })),
