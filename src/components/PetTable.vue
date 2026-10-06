@@ -51,7 +51,7 @@ const filteredPets = computed(() => {
       <span class="countBadge">{{ filteredPets.length }} of {{ pets.length }} Pets</span>
     </div>
 
-    <!-- Responsive Table -->
+    <!-- Desktop / Wide View: Table -->
     <div class="tableWrapper">
       <table class="petTable">
         <thead>
@@ -149,6 +149,86 @@ const filteredPets = computed(() => {
         </tbody>
       </table>
     </div>
+
+    <!-- Mobile / Narrow View: Responsive Cards -->
+    <div class="cardsWrapper">
+      <div
+        v-for="pet in filteredPets"
+        :key="`card-${pet.id}`"
+        class="petMobileCard"
+        :class="{ isMythicCard: pet.family === 'Mythic' }"
+      >
+        <!-- 1st row: Image and Name -->
+        <div class="cardRow1">
+          <div class="cardSpriteBox">
+            <img
+              :src="`${basePath ?? base}/images/${pet.sprite}.png`"
+              :alt="pet.name"
+              class="petSprite sprite"
+              width="48"
+              height="48"
+            />
+          </div>
+          <div class="cardNameGroup">
+            <div class="nameSlotsHeader">
+              <h3 class="cardPetName">{{ pet.name }}</h3>
+              <span class="cardSlotsBadge">{{ pet.abilitySlots }} Slots</span>
+            </div>
+            <p v-if="pet.description" class="cardDescription">{{ pet.description }}</p>
+          </div>
+        </div>
+
+        <!-- 2nd row: Type (Egg icon + family) -->
+        <div class="cardRow2">
+          <span class="rowTitle">Type:</span>
+          <div
+            class="typeBadge"
+            :style="{
+              background: FAMILY_COLORS[pet.family]?.bg,
+              borderColor: FAMILY_COLORS[pet.family]?.border,
+              color: FAMILY_COLORS[pet.family]?.text,
+            }"
+          >
+            <img
+              v-if="pet.eggSprite"
+              :src="`${basePath ?? base}/images/${pet.eggSprite}.png`"
+              :alt="pet.family"
+              class="eggSprite sprite"
+              width="20"
+              height="20"
+            />
+            <span>{{ pet.family }} Egg</span>
+          </div>
+        </div>
+
+        <!-- 3rd row: First Traits -->
+        <div class="cardRow3">
+          <span class="rowTitle">First Traits:</span>
+          <div class="traitList">
+            <span
+              v-for="trait in pet.guaranteedAbilities"
+              :key="trait"
+              class="traitChip"
+            >
+              {{ trait }}
+            </span>
+          </div>
+        </div>
+
+        <!-- 4th row: Unique Trait (if have) -->
+        <div v-if="pet.exclusiveAbility" class="cardRow4">
+          <div class="uniqueTraitBox">
+            <div class="uniqueHeader">
+              <span class="uniqueTag">Unique</span>
+              <strong class="uniqueName">{{ pet.exclusiveAbility }}</strong>
+            </div>
+            <p v-if="pet.exclusiveDescription" class="uniqueDesc">
+              {{ pet.exclusiveDescription }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -203,7 +283,9 @@ const filteredPets = computed(() => {
   font-weight: 600;
 }
 
+/* ================= Table (Desktop / Tablet) ================= */
 .tableWrapper {
+  display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
   background: var(--bg-card);
@@ -408,18 +490,122 @@ const filteredPets = computed(() => {
   font-size: 1.1rem;
 }
 
-@media (max-width: 640px) {
-  .petTable th,
-  .petTable td {
-    padding: 0.6rem 0.65rem;
+/* ================= Cards (Mobile) ================= */
+.cardsWrapper {
+  display: none;
+}
+
+.petMobileCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  transition: border-color 0.15s ease;
+}
+
+.petMobileCard.isMythicCard {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: linear-gradient(180deg, rgba(245, 158, 11, 0.06) 0%, var(--bg-card) 55%);
+}
+
+.cardRow1 {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+}
+
+.cardSpriteBox {
+  width: 54px;
+  height: 54px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.cardNameGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  flex: 1;
+  min-width: 0;
+}
+
+.nameSlotsHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.cardPetName {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.cardSlotsBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--text-gold);
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  padding: 2px 7px;
+  border-radius: 4px;
+  white-space: nowrap;
+}
+
+.cardDescription {
+  margin: 0;
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.cardRow2 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.cardRow3 {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.cardRow4 {
+  margin-top: 2px;
+}
+
+.rowTitle {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+}
+
+/* Responsive switch to cards when width <= 820px */
+@media (max-width: 820px) {
+  .tableWrapper {
+    display: none;
   }
-  .spriteBox {
-    width: 44px;
-    height: 44px;
-  }
-  .petSprite {
-    width: 36px;
-    height: 36px;
+  .cardsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 0.85rem;
   }
 }
 </style>

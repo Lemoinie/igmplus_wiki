@@ -106,8 +106,8 @@ function getCatCount(cat: string): number {
 
 <template>
   <div class="classBrowser">
-    <!-- Category Tabs -->
-    <div class="categoryTabs">
+    <!-- Category Tabs (Desktop / Wide screens) -->
+    <div class="categoryTabs desktopTabs">
       <button
         v-for="cat in categories"
         :key="cat"
@@ -128,6 +128,32 @@ function getCatCount(cat: string): number {
         <span class="catLabel">{{ cat }}</span>
         <span class="catCount">{{ getCatCount(cat) }}</span>
       </button>
+    </div>
+
+    <!-- Category Dropdown (Mobile / Narrow screens when width is constrained) -->
+    <div class="categoryDropdownWrap mobileDropdown">
+      <div class="dropdownIconBox">
+        <img
+          :src="`${basePath ?? base}/images/${categoryIcons[activeCategory]}.png`"
+          :alt="activeCategory"
+          class="sprite"
+          width="36"
+          height="36"
+        />
+      </div>
+      <div class="selectBox">
+        <label for="classCategorySelect" class="dropdownLabel">Class Category</label>
+        <select
+          id="classCategorySelect"
+          v-model="activeCategory"
+          class="categorySelect"
+          @change="searchQuery = ''"
+        >
+          <option v-for="cat in categories" :key="cat" :value="cat">
+            {{ cat }} Tree ({{ getCatCount(cat) }} classes)
+          </option>
+        </select>
+      </div>
     </div>
 
     <!-- Controls -->
@@ -299,25 +325,81 @@ function getCatCount(cat: string): number {
   color: var(--text-muted);
 }
 
-@media (max-width: 768px) {
-  .categoryTabs {
-    flex-wrap: nowrap;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    padding-bottom: 0.6rem;
-    scrollbar-width: none;
-    -ms-overflow-style: none;
-    gap: 8px;
-  }
-  .categoryTabs::-webkit-scrollbar {
+.desktopTabs {
+  display: flex;
+}
+
+.mobileDropdown {
+  display: none;
+}
+
+@media (max-width: 820px) {
+  .desktopTabs {
     display: none;
   }
-  .catBtn {
-    padding: 6px 12px 6px 8px;
+
+  .mobileDropdown {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 10px;
+    padding: 0.65rem 1rem;
+    margin-bottom: 1.25rem;
   }
+
+  .dropdownIconBox {
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-inset);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+  }
+
+  .selectBox {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    flex: 1;
+    min-width: 0;
+  }
+
+  .dropdownLabel {
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--text-muted);
+  }
+
+  .categorySelect {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--text-primary);
+    font-size: 1.05rem;
+    font-weight: 700;
+    cursor: pointer;
+    padding: 2px 0;
+  }
+
+  .categorySelect option {
+    background: var(--bg-sidebar);
+    color: var(--text-primary);
+    font-weight: 500;
+    font-size: 0.95rem;
+  }
+
   .controlsBar {
     gap: 8px;
   }
+
   .searchInput {
     flex: 1 1 100%;
   }
