@@ -5,6 +5,7 @@
  * its base stats, skills and promotions in the detail panel.
  */
 import { computed, ref } from 'vue'
+import { withBase } from 'vitepress'
 import data from '../../../data/units_adventurers.json'
 import manifest from '../../../data/sprites_manifest.json'
 
@@ -33,8 +34,34 @@ function pick(u) {
 
 function spriteFile(name) {
   const entry = manifest.exported[name]
-  return entry ? `/images/${entry.file}` : null
+  return entry ? withBase(`/images/${entry.file}`) : null
 }
+
+function cleanSkill(skill) {
+  if (!skill || skill === 'ACTIVE_NONE' || skill === 'PASSIVE_NONE') return '—'
+  return skill
+    .replace(/^ACTIVE_|^PASSIVE_/, '')
+    .split('_')
+    .map((w) => {
+      if (/^(I|II|III|IV|V|VI|VII|VIII|IX|X)$/i.test(w)) return w.toUpperCase()
+      return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase()
+    })
+    .join(' ')
+}
+
+function cleanType(type) {
+  if (!type) return '—'
+  return type
+    .replace(/^type_armor_|^type_/, '')
+    .split('_')
+    .map((w) => w.charAt(0).toUpperCase() + w.slice(1).toLowerCase())
+    .join(' ')
+}
+
+function classDisplayName(key) {
+  return byKey[key]?.name || key
+}
+
 const statOrder = [
   ['baseMaxHp', 'HP'],
   ['baseConstitution', 'CON'],
@@ -90,12 +117,16 @@ function statsOf(u) {
       </h4>
       <p v-if="selected.description">{{ selected.description }}</p>
       <p class="clStats">{{ statsOf(selected).join(' · ') || 'No base stats' }}</p>
-      <p v-if="selected.weapon_type"><strong>Weapon:</strong> {{ selected.weapon_type.replace('type_', '') }}</p>
-      <p v-if="selected.armor_type"><strong>Armor:</strong> {{ selected.armor_type.replace('type_', '') }}</p>
-      <p v-if="selected.active_skill"><strong>Active:</strong> {{ selected.active_skill }}</p>
-      <p v-if="selected.passive_skill"><strong>Passive:</strong> {{ selected.passive_skill }}</p>
+      <p v-if="selected.weapon_type"><strong>Weapon:</strong> {{ cleanType(selected.weapon_type) }}</p>
+      <p v-if="selected.armor_type"><strong>Armor:</strong> {{ cleanType(selected.armor_type) }}</p>
+      <p v-if="selected.active_skill && selected.active_skill !== 'ACTIVE_NONE'">
+        <strong>Active Skill:</strong> {{ cleanSkill(selected.active_skill) }}
+      </p>
+      <p v-if="selected.passive_skill && selected.passive_skill !== 'PASSIVE_NONE'">
+        <strong>Passive Skill:</strong> {{ cleanSkill(selected.passive_skill) }}
+      </p>
       <p v-if="selected.next_classes && selected.next_classes.length">
-        <strong>Promotes to:</strong> {{ selected.next_classes.join(', ') }}
+        <strong>Promotes to:</strong> {{ selected.next_classes.map(classDisplayName).join(', ') }}
       </p>
       <p v-if="selected.max_level"><strong>Level cap:</strong> {{ selected.max_level }}</p>
     </div>

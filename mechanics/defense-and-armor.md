@@ -54,10 +54,3 @@ $$
   under the new curve.
 - The in-game detail dialog shows the computed value next to the raw stat, e.g.
   `Defense: 90 (64%)`.
-
-## Source
-
-- Plan & implementation notes:
-  [`plans/working/combat/defense-rework.md`](https://github.com/Lemoinie/IGM-Modded/blob/main/plans/working/combat/defense-rework.md)
-- Vanilla behavior reference:
-  [`docs/vanilla-behavior.md`](https://github.com/Lemoinie/IGM-Modded/blob/main/docs/vanilla-behavior.md)

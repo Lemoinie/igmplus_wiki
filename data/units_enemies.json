@@ -725,7 +725,7 @@
     "rarity": 1,
     "is_boss": false,
     "min_damage": "100",
-    "max_damage": "Logger.BARD_SHIELD",
+    "max_damage": "Logger.120",
     "drops": [
       {
         "item": "CelestialScraps",
@@ -750,7 +750,7 @@
     "description": "The backbone of the Celestial Army. These fearless soldiers push through foreign worlds animated by unwavering loyalty, counting on a supernatural agility despite their large size.",
     "stats": {
       "baseMaxHp": 2280,
-      "baseConstitution": "Logger.BARD_SHIELD",
+      "baseConstitution": 120,
       "baseIntelligence": 95,
       "baseDexterity": 75,
       "baseDefense": 0,
@@ -1226,8 +1226,8 @@
     "description": "An incorporeal creature resembling a horse, with a single horn on its forehead.",
     "stats": {
       "baseMaxHp": 6000,
-      "baseConstitution": "Logger.BARD_SHIELD",
-      "baseIntelligence": "Logger.BARD_SHIELD",
+      "baseConstitution": 120,
+      "baseIntelligence": 120,
       "baseDexterity": 140,
       "baseDefense": 0,
       "baseMagicDefense": 0
@@ -1497,7 +1497,7 @@
     "exp_given": 9600,
     "rarity": 1,
     "is_boss": true,
-    "min_damage": "Logger.BOTCHED_OFFERING",
+    "min_damage": "Logger.115",
     "max_damage": "140",
     "drops": [
       {
@@ -1607,7 +1607,7 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.LOST_EXPEDITION_FALL_DAMAGE",
+    "min_damage": "Logger.112",
     "max_damage": "138",
     "drops": [],
     "independent_drops": []
@@ -2038,7 +2038,7 @@
     "stats": {
       "baseMaxHp": 22500,
       "baseConstitution": 200,
-      "baseIntelligence": "Logger.BARD_SHIELD",
+      "baseIntelligence": 120,
       "baseDexterity": 170,
       "baseDefense": 0,
       "baseMagicDefense": 0
@@ -2712,7 +2712,7 @@
     "description": "\"One of the Celestial Army's high generals, sworn directly to the Celestial Goddess. His body has undergone extensive modifications to create the perfect warrior, and surviving this process is an exceptional achievement on its own. He is tasked with the purification of our world, and will stop at nothing to complete it.\"",
     "stats": {
       "baseMaxHp": 6400,
-      "baseConstitution": "Logger.BARD_SHIELD",
+      "baseConstitution": 120,
       "baseIntelligence": 80,
       "baseDexterity": 96,
       "baseDefense": 20,
@@ -2834,7 +2834,7 @@
     "exp_given": "Logger.ARCANE_SUPPRESSION",
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.BARD_SHIELD",
+    "min_damage": "Logger.120",
     "max_damage": "135",
     "drops": [
       {
@@ -3109,7 +3109,7 @@
     "exp_given": 80,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.STATUS_FEEBLE_TETHER",
+    "min_damage": "Logger.110",
     "max_damage": "135",
     "drops": [
       {
@@ -3150,7 +3150,7 @@
     "exp_given": 2500,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.LOST_EXPEDITION_FALL_DAMAGE",
+    "min_damage": "Logger.112",
     "max_damage": "218",
     "drops": [
       {
@@ -3589,7 +3589,7 @@
     "name": "Sand Statue",
     "description": "\"A sand warrior summoned by the legendary Sha'huri defense system, the last resort against external invaders to protect the core of their empire and their god. While not particularly strong by itself, they present a mortal threat by swarming the invaders in large numbers.\"",
     "stats": {
-      "baseMaxHp": "Logger.BARD_SHIELD",
+      "baseMaxHp": 120,
       "baseConstitution": 12,
       "baseIntelligence": 2,
       "baseDexterity": 10,
@@ -4093,7 +4093,7 @@
     "stats": {
       "baseMaxHp": 1200,
       "baseConstitution": 40,
-      "baseIntelligence": "Logger.BOTCHED_OFFERING",
+      "baseIntelligence": 115,
       "baseDexterity": 2,
       "baseDefense": 0,
       "baseMagicDefense": 450
@@ -4669,7 +4669,7 @@
     "name": "Undead Archer",
     "description": "The corpse of a fallen archer, reanimated by the corruption. It feels no pain, so physical damage is less effective.",
     "stats": {
-      "baseMaxHp": "Logger.BARD_SHIELD",
+      "baseMaxHp": 120,
       "baseConstitution": 5,
       "baseIntelligence": 1,
       "baseDexterity": 8,

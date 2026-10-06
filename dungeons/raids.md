@@ -6,18 +6,14 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## Route notes
 
-- **The Lost Expedition** — long-form raid with trapdoor/boss-trigger logic;
-  see [`TheLostExpedition.kt`](https://github.com/Lemoinie/IGM-Modded/blob/main/app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/TheLostExpedition.kt)
-  and the [auto-raid plan](https://github.com/Lemoinie/IGM-Modded/blob/main/plans/working/combat/auto-raid-system.md)
-  for the dispatch system that farms raids automatically.
-- **Celestial Mothership** — epic raid with its own event chain and
-  high-tier rewards.
+- **The Lost Expedition** — long-form multi-stage raid with special event triggers and trapdoors leading to the final encounter.
+- **Celestial Mothership** — epic raid with unique event sequences and high-tier rewards.
 - Weekly guild activity raids (Siege, Hunt) reset on Sunday 00:00 game time.
 
 <!-- BEGIN GENERATED DATA -->
 ## Ancient Grave Digging
 
-<img src="/images/summary_ancient_grave_digging.png" class="sprite" alt="summary_ancient_grave_digging" width="96" height="96">
+<img :src="$withBase('/images/summary_ancient_grave_digging.png')" class="sprite" alt="summary_ancient_grave_digging" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -25,7 +21,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## Celestial Mothership
 
-<img src="/images/summary_celestial_mothership.png" class="sprite" alt="summary_celestial_mothership" width="96" height="96">
+<img :src="$withBase('/images/summary_celestial_mothership.png')" class="sprite" alt="summary_celestial_mothership" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -33,7 +29,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## Kaunis
 
-<img src="/images/summary_kaunis.png" class="sprite" alt="summary_kaunis" width="96" height="96">
+<img :src="$withBase('/images/summary_kaunis.png')" class="sprite" alt="summary_kaunis" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -41,7 +37,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## Sleeping Planet
 
-<img src="/images/summary_sleeping_planet.png" class="sprite" alt="summary_sleeping_planet" width="96" height="96">
+<img :src="$withBase('/images/summary_sleeping_planet.png')" class="sprite" alt="summary_sleeping_planet" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -49,19 +45,19 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Cultist Rebels
 
-<img src="/images/summary_the_cultist_rebels.png" class="sprite" alt="summary_the_cultist_rebels" width="96" height="96">
+<img :src="$withBase('/images/summary_the_cultist_rebels.png')" class="sprite" alt="summary_the_cultist_rebels" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.1% per room
 
 |  | Enemy | Share of encounters |  |
 | --- | --- | --- | --- |
-| <img src="/images/unit_lesser_titan.png" class="sprite" alt="unit_lesser_titan" width="24" height="24"> | Lesser Titan | 0.0% | — |
+| <img :src="$withBase('/images/unit_lesser_titan.png')" class="sprite" alt="unit_lesser_titan" width="24" height="24"> | Lesser Titan | 0.0% | — |
 
 *Special/event spawns:* Claris, Crusader, Lesser Titan, Primordial Titan, Thorvus
 
 ## The Hunt
 
-<img src="/images/summary_request.png" class="sprite" alt="summary_request" width="96" height="96">
+<img :src="$withBase('/images/summary_request.png')" class="sprite" alt="summary_request" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -69,7 +65,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Lost Expedition
 
-<img src="/images/summary_the_lost_expedition.png" class="sprite" alt="summary_the_lost_expedition" width="96" height="96">
+<img :src="$withBase('/images/summary_the_lost_expedition.png')" class="sprite" alt="summary_the_lost_expedition" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -77,7 +73,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Sanguine Crucible
 
-<img src="/images/summary_scarlet.png" class="sprite" alt="summary_scarlet" width="96" height="96">
+<img :src="$withBase('/images/summary_scarlet.png')" class="sprite" alt="summary_scarlet" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.1% per room
 
@@ -85,13 +81,13 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Siege
 
-<img src="/images/summary_the_siege.png" class="sprite" alt="summary_the_siege" width="96" height="96">
+<img :src="$withBase('/images/summary_the_siege.png')" class="sprite" alt="summary_the_siege" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
 ## The Slime Pond
 
-<img src="/images/summary_the_slime_pond.png" class="sprite" alt="summary_the_slime_pond" width="96" height="96">
+<img :src="$withBase('/images/summary_the_slime_pond.png')" class="sprite" alt="summary_the_slime_pond" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.1% per room
 
@@ -99,7 +95,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Tower
 
-<img src="/images/summary_the_tower.png" class="sprite" alt="summary_the_tower" width="96" height="96">
+<img :src="$withBase('/images/summary_the_tower.png')" class="sprite" alt="summary_the_tower" width="96" height="96">
 
 **Type:** Raid · **Encounter chance:** 0.0% per room
 
@@ -107,7 +103,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## Divine Archeology
 
-<img src="/images/summary_divine_archeology.png" class="sprite" alt="summary_divine_archeology" width="96" height="96">
+<img :src="$withBase('/images/summary_divine_archeology.png')" class="sprite" alt="summary_divine_archeology" width="96" height="96">
 
 **Type:** Epic Raid · **Encounter chance:** 0.0% per room
 
@@ -115,7 +111,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## Imperial Rescue
 
-<img src="/images/summary_imperial_rescue.png" class="sprite" alt="summary_imperial_rescue" width="96" height="96">
+<img :src="$withBase('/images/summary_imperial_rescue.png')" class="sprite" alt="summary_imperial_rescue" width="96" height="96">
 
 **Type:** Epic Raid · **Encounter chance:** 0.0% per room
 
@@ -123,7 +119,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Dire Descent
 
-<img src="/images/summary_the_dire_descent.png" class="sprite" alt="summary_the_dire_descent" width="96" height="96">
+<img :src="$withBase('/images/summary_the_dire_descent.png')" class="sprite" alt="summary_the_dire_descent" width="96" height="96">
 
 **Type:** Epic Raid · **Encounter chance:** 0.0% per room
 
@@ -131,7 +127,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 ## The Dreadful Ascent
 
-<img src="/images/summary_the_dreadful_ascent.png" class="sprite" alt="summary_the_dreadful_ascent" width="96" height="96">
+<img :src="$withBase('/images/summary_the_dreadful_ascent.png')" class="sprite" alt="summary_the_dreadful_ascent" width="96" height="96">
 
 **Type:** Epic Raid · **Encounter chance:** 0.0% per room
 

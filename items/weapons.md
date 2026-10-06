@@ -5,144 +5,144 @@ Swords, axes, bows, staves and daggers. Use the filters to narrow by type, rarit
 
 <ItemFilter category="weapon" />
 
-::: details Static table (auto-generated)
+::: details Complete equipment table
 
 |  | Name | Type | Price | Rarity | Stats | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| <img src="/images/cane.png" class="sprite" alt="cane" width="24" height="24"> | **Cane** | Staff | 0 | 0 | INT 1 | — |
-| <img src="/images/decomposed_limb.png" class="sprite" alt="decomposed_limb" width="24" height="24"> | **Decomposed Limb** | Sword | 0 | 0 | CON 1 | — |
-| <img src="/images/rat_claws.png" class="sprite" alt="rat_claws" width="24" height="24"> | **Rat Claws** | Sword | 0 | 0 | CON 1 · DEX 1 · criticalChance 0.05 | — |
-| <img src="/images/serpent_jaws.png" class="sprite" alt="serpent_jaws" width="24" height="24"> | **Serpent Jaws** | Sword | 0 | 0 | Counter 0.35 · DEX 5 | — |
-| <img src="/images/sickle.png" class="sprite" alt="sickle" width="24" height="24"> | **Sickle** | Dagger | 0 | 0 | DEX 1 · CON 1 | — |
-| <img src="/images/spade.png" class="sprite" alt="spade" width="24" height="24"> | **Spade** | Sword | 0 | 0 | CON 1 | — |
-| <img src="/images/stick.png" class="sprite" alt="stick" width="24" height="24"> | **Stick** | Axe | 0 | 0 | CON 1 · INT 1 | — |
-| <img src="/images/training_bow.png" class="sprite" alt="training_bow" width="24" height="24"> | **Training Bow** | Bow | 0 | 0 | DEX 1 | — |
-| <img src="/images/corrupted_dagger.png" class="sprite" alt="corrupted_dagger" width="24" height="24"> | **Corrupted Dagger** | Dagger | 1 | 0 | DEX 1 | *isRareDrop* |
-| <img src="/images/corrupted_staff.png" class="sprite" alt="corrupted_staff" width="24" height="24"> | **Corrupted Staff** | Staff | 1 | 0 | INT 1 | *isRareDrop* |
-| <img src="/images/wooden_bow.png" class="sprite" alt="wooden_bow" width="24" height="24"> | **Wooden Bow** | Bow | 11 | 0 | CON 1 · DEX 3 | — |
-| <img src="/images/fang_dagger.png" class="sprite" alt="fang_dagger" width="24" height="24"> | **Fang Dagger** | Dagger | 17 | 0 | CON 2 · DEX 2 | — |
-| <img src="/images/copper_axe.png" class="sprite" alt="copper_axe" width="24" height="24"> | **Copper Axe** | Axe | 20 | 0 | CON 2 · INT 2 | — |
-| <img src="/images/copper_sword.png" class="sprite" alt="copper_sword" width="24" height="24"> | **Iron Sword** | Sword | 20 | 0 | CON 3 · DEX 1 | — |
-| <img src="/images/scimitar.png" class="sprite" alt="scimitar" width="24" height="24"> | **Scimitar** | Sword | 41 | 0 | CON 6 · DEX 2 | — |
-| <img src="/images/enchanted_staff.png" class="sprite" alt="enchanted_staff" width="24" height="24"> | **Enchanted Staff** | Staff | 45 | 0 | INT 4 | — |
-| <img src="/images/fullmoon_dagger.png" class="sprite" alt="fullmoon_dagger" width="24" height="24"> | **Fullmoon Dagger** | Dagger | 45 | 0 | CON 5 · DEX 5 · Lifesteal 15 | — |
-| <img src="/images/iron_axe.png" class="sprite" alt="iron_axe" width="24" height="24"> | **Iron Axe** | Axe | 50 | 0 | CON 4 · INT 3 | — |
-| <img src="/images/undead_knife.png" class="sprite" alt="undead_knife" width="24" height="24"> | **Undead Knife** | Dagger | 54 | 0 | CON 7 · DEX 7 · criticalChance 0.06 | — |
-| <img src="/images/undead_sword.png" class="sprite" alt="undead_sword" width="24" height="24"> | **Undead Sword** | Sword | 54 | 0 | CON 9 · DEX 3 | — |
-| <img src="/images/glass_knife.png" class="sprite" alt="glass_knife" width="24" height="24"> | **Glass Knife** | Dagger | 56 | 0 | CON 5 · DEX 5 | — |
-| <img src="/images/undead_axe.png" class="sprite" alt="undead_axe" width="24" height="24"> | **Undead Axe** | Axe | 75 | 0 | CON 8 · INT 5 | — |
-| <img src="/images/shahuri_bow.png" class="sprite" alt="shahuri_bow" width="24" height="24"> | **"Sha'huri Bow"** | Bow | 86 | 0 | DEX 6 · INT 2 | — |
-| <img src="/images/undead_staff.png" class="sprite" alt="undead_staff" width="24" height="24"> | **Undead Staff** | Staff | 93 | 0 | INT 12 | — |
-| <img src="/images/redwood_bow.png" class="sprite" alt="redwood_bow" width="24" height="24"> | **Redwood Bow** | Bow | 123 | 0 | CON 4 · DEX 12 | — |
-| <img src="/images/living_scimitar.png" class="sprite" alt="living_scimitar" width="24" height="24"> | **Living Scimitar** | Sword | 227 | 0 | CON 10 · MDEF 5 · Counter 0.1 | — |
-| <img src="/images/verdant_blade.png" class="sprite" alt="verdant_blade" width="24" height="24"> | **Verdant Blade** | Dagger | 246 | 0 | DEX 23 · CON 23 | — |
-| <img src="/images/ghostwood_bow.png" class="sprite" alt="ghostwood_bow" width="24" height="24"> | **Ghostwood Bow** | Bow | 248 | 0 | INT 4 · DEX 16 | — |
-| <img src="/images/winterwood_staff.png" class="sprite" alt="winterwood_staff" width="24" height="24"> | **Winterwood Staff** | Staff | 249 | 0 | INT 24 | — |
-| <img src="/images/corrupted_axe.png" class="sprite" alt="corrupted_axe" width="24" height="24"> | **Corrupted Axe** | Axe | 250 | 0 | CON 1 | *isRareDrop* |
-| <img src="/images/winterwood_bow.png" class="sprite" alt="winterwood_bow" width="24" height="24"> | **Winterwood Bow** | Bow | 275 | 0 | INT 5 · DEX 19 | — |
-| <img src="/images/ascended_bow.png" class="sprite" alt="ascended_bow" width="24" height="24"> | **Ascended Bow** | Bow | 279 | 0 | DEX 8 · INT 6 | — |
-| <img src="/images/molten_staff.png" class="sprite" alt="molten_staff" width="24" height="24"> | **Molten Staff** | Staff | 285 | 0 | INT 14 | — |
-| <img src="/images/obsidian_dagger.png" class="sprite" alt="obsidian_dagger" width="24" height="24"> | **Obsidian Dagger** | Dagger | 306 | 0 | DEX 20 · CON 20 | — |
-| <img src="/images/obsidian_scepter.png" class="sprite" alt="obsidian_scepter" width="24" height="24"> | **Obsidian Scepter** | Staff | 324 | 0 | INT 28 | — |
-| <img src="/images/obsidian_sword.png" class="sprite" alt="obsidian_sword" width="24" height="24"> | **Obsidian Sword** | Sword | 324 | 0 | CON 21 · DEX 7 | — |
-| <img src="/images/obsidian_bow.png" class="sprite" alt="obsidian_bow" width="24" height="24"> | **Obsidian Bow** | Bow | 333 | 0 | INT 6 · DEX 22 | — |
-| <img src="/images/black_iron_scepter.png" class="sprite" alt="black_iron_scepter" width="24" height="24"> | **Black Iron Scepter** | Staff | 336 | 0 | INT 20 | — |
-| <img src="/images/black_iron_dagger.png" class="sprite" alt="black_iron_dagger" width="24" height="24"> | **Black Iron Dagger** | Dagger | 342 | 0 | DEX 14 · CON 14 | — |
-| <img src="/images/crystal_staff.png" class="sprite" alt="crystal_staff" width="24" height="24"> | **Crystal Staff** | Staff | 360 | 0 | INT 26 · immunityToStatus 0.25 | — |
-| <img src="/images/obsidian_axe.png" class="sprite" alt="obsidian_axe" width="24" height="24"> | **Obsidian Axe** | Axe | 360 | 0 | CON 20 · INT 10 | — |
-| <img src="/images/black_iron_cutlass.png" class="sprite" alt="black_iron_cutlass" width="24" height="24"> | **Black Iron Cutlass** | Sword | 362 | 0 | CON 15 · DEX 5 | — |
-| <img src="/images/crystal_dagger.png" class="sprite" alt="crystal_dagger" width="24" height="24"> | **Crystal Dagger** | Dagger | 378 | 0 | DEX 17 · CON 17 · criticalDamage 0.3 | — |
-| <img src="/images/black_iron_axe.png" class="sprite" alt="black_iron_axe" width="24" height="24"> | **Black Iron Axe** | Axe | 380 | 0 | CON 15 · INT 6 | — |
-| <img src="/images/ghastly_scimitar.png" class="sprite" alt="ghastly_scimitar" width="24" height="24"> | **Ghastly Scimitar** | Sword | 416 | 0 | CON 16 · MDEF 10 · Counter 0.2 | — |
-| <img src="/images/frostmetal_dagger.png" class="sprite" alt="frostmetal_dagger" width="24" height="24"> | **Frostmetal Dagger** | Dagger | 450 | 0 | DEX 17 · CON 17 | — |
-| <img src="/images/golden_sword.png" class="sprite" alt="golden_sword" width="24" height="24"> | **Golden Sword** | Sword | 483 | 0 | CON 12 · DEX 4 | — |
-| <img src="/images/gold_axe.png" class="sprite" alt="gold_axe" width="24" height="24"> | **Golden Axe** | Axe | 485 | 0 | CON 12 · INT 6 | — |
-| <img src="/images/dryads_curse.png" class="sprite" alt="dryads_curse" width="24" height="24"> | **"Dryad's Curse"** | Dagger | 504 | 0 | INT 30 · DEX 18 · CON 18 | `isMagic()` → `true` |
-| <img src="/images/frostmetal_sword.png" class="sprite" alt="frostmetal_sword" width="24" height="24"> | **Frostmetal Sword** | Sword | 513 | 0 | CON 18 · DEX 6 | — |
-| <img src="/images/frostmetal_axe.png" class="sprite" alt="frostmetal_axe" width="24" height="24"> | **Frostmetal Axe** | Axe | 520 | 0 | CON 17 · INT 8 | — |
-| <img src="/images/banshee_dagger.png" class="sprite" alt="banshee_dagger" width="24" height="24"> | **Banshee Dagger** | Dagger | 552 | 0 | CON 28 · DEX 28 | — |
-| <img src="/images/arcane_dagger.png" class="sprite" alt="arcane_dagger" width="24" height="24"> | **Arcane Dagger** | Dagger | 564 | 0 | INT 24 · DEX 12 · CON 12 | `isMagic()` → `true` |
-| <img src="/images/imperial_staff.png" class="sprite" alt="imperial_staff" width="24" height="24"> | **Imperial Staff** | Staff | 564 | 0 | INT 26 · CON 8 · DEX 8 | — |
-| <img src="/images/living_whip.png" class="sprite" alt="living_whip" width="24" height="24"> | **Living Whip** | Sword | 567 | 0 | HP 40 · DEX 12 | `isRanged()` → `true` |
-| <img src="/images/celestial_sword.png" class="sprite" alt="celestial_sword" width="24" height="24"> | **Celestial Sword** | Sword | 581 | 0 | CON 28 · DEX 8 | — |
-| <img src="/images/verdant_bow.png" class="sprite" alt="verdant_bow" width="24" height="24"> | **Verdant Bow** | Bow | 600 | 0 | INT 8 · DEX 24 | — |
-| <img src="/images/animated_dagger.png" class="sprite" alt="animated_dagger" width="24" height="24"> | **Animated Dagger** | Dagger | 608 | 0 | CON 30 · DEX 30 | — |
-| <img src="/images/celestial_axe.png" class="sprite" alt="celestial_axe" width="24" height="24"> | **Celestial Axe** | Axe | 610 | 0 | CON 26 · INT 14 | — |
-| <img src="/images/animated_staff.png" class="sprite" alt="animated_staff" width="24" height="24"> | **Animated Staff** | Staff | 635 | 0 | INT 40 | — |
-| <img src="/images/animated_sword.png" class="sprite" alt="animated_sword" width="24" height="24"> | **Animated Sword** | Sword | 635 | 0 | CON 30 · DEX 10 | — |
-| <img src="/images/animated_bow.png" class="sprite" alt="animated_bow" width="24" height="24"> | **Animated Bow** | Bow | 638 | 0 | DEX 30 · INT 10 | — |
-| <img src="/images/panopticon_staff.png" class="sprite" alt="panopticon_staff" width="24" height="24"> | **Panopticon Staff** | Staff | 642 | 0 | INT 32 · darknessReduction 16 | — |
-| <img src="/images/animated_axe.png" class="sprite" alt="animated_axe" width="24" height="24"> | **Animated Axe** | Axe | 670 | 0 | CON 28 · INT 16 | — |
-| <img src="/images/dryads_blessing.png" class="sprite" alt="dryads_blessing" width="24" height="24"> | **"Dryad's Blessing"** | Staff | 735 | 0 | healingModifier 0.23 · INT 22 | — |
-| <img src="/images/crimson_leech.png" class="sprite" alt="crimson_leech" width="24" height="24"> | **Crimson Leech** | Staff | 834 | 0 | INT 16 · CON 4 · Lifesteal 20 | — |
-| <img src="/images/focused_scepter.png" class="sprite" alt="focused_scepter" width="24" height="24"> | **Focused Scepter** | Staff | 854 | 0 | INT 24 | *alwaysHits* |
-| <img src="/images/ceremonial_dagger.png" class="sprite" alt="ceremonial_dagger" width="24" height="24"> | **Ceremonial Dagger** | Dagger | 864 | 0 | DEX 8 · INT 8 · healingModifier 0.4 | `isRanged()` → `true` |
-| <img src="/images/dreamwrought_staff.png" class="sprite" alt="dreamwrought_staff" width="24" height="24"> | **Dreamwrought Staff** | Staff | 893 | 0 | INT 52 | — |
-| <img src="/images/enforcers_axe.png" class="sprite" alt="enforcers_axe" width="24" height="24"> | **Enforcer's Axe** | Axe | 950 | 0 | CON 18 · DEX 10 · INT 18 | — |
-| <img src="/images/mithril_dagger.png" class="sprite" alt="mithril_dagger" width="24" height="24"> | **Mithril Dagger** | Dagger | 996 | 0 | CON 33 · DEX 33 | — |
-| <img src="/images/unstable_staff.png" class="sprite" alt="unstable_staff" width="24" height="24"> | **Unstable Staff** | Staff | 998 | 0 | INT 40 | `damageDelta()` → `0.8` |
-| <img src="/images/vampire_dagger.png" class="sprite" alt="vampire_dagger" width="24" height="24"> | **Vampire Dagger** | Dagger | 999 | 0 | DEX 20 · CON 20 · Lifesteal 20 | — |
-| <img src="/images/mithril_sword.png" class="sprite" alt="mithril_sword" width="24" height="24"> | **Mithril Sword** | Sword | 1020 | 0 | CON 33 · DEX 11 | — |
-| <img src="/images/mithril_bow.png" class="sprite" alt="mithril_bow" width="24" height="24"> | **Mithril Bow** | Bow | 1023 | 0 | DEX 33 · INT 11 | — |
-| <img src="/images/vampire_scepter.png" class="sprite" alt="vampire_scepter" width="24" height="24"> | **Vampire Scepter** | Staff | 1026 | 0 | INT 28 · Lifesteal 20 | — |
-| <img src="/images/vampire_sword.png" class="sprite" alt="vampire_sword" width="24" height="24"> | **Vampire Sword** | Sword | 1026 | 0 | CON 21 · DEX 7 · Lifesteal 20 | — |
-| <img src="/images/vampire_bow.png" class="sprite" alt="vampire_bow" width="24" height="24"> | **Vampire Bow** | Bow | 1040 | 0 | INT 6 · DEX 22 · Lifesteal 20 | — |
-| <img src="/images/vampire_axe.png" class="sprite" alt="vampire_axe" width="24" height="24"> | **Vampire Axe** | Axe | 1050 | 0 | CON 20 · INT 10 · Lifesteal 20 | — |
-| <img src="/images/dreamwrought_bow.png" class="sprite" alt="dreamwrought_bow" width="24" height="24"> | **Dreamwrought Bow** | Bow | 1055 | 0 | DEX 39 · INT 13 | — |
-| <img src="/images/celestials_mercy.png" class="sprite" alt="celestials_mercy" width="24" height="24"> | **Celestial Mercy** | Sword | 1100 | 0 | darknessReduction 12 · CON 28 · DEX 8 | *alwaysHits* |
-| <img src="/images/wicked_scepter.png" class="sprite" alt="wicked_scepter" width="24" height="24"> | **Wicked Scepter** | Staff | 1145 | 0 | INT 45 | — |
-| <img src="/images/abyssal_great_axe.png" class="sprite" alt="abyssal_great_axe" width="24" height="24"> | **Abyssal Greataxe** | Axe | 1250 | 0 | CON 15 · INT 20 | — |
-| <img src="/images/orichalcum_dagger.png" class="sprite" alt="orichalcum_dagger" width="24" height="24"> | **Orichalcum Dagger** | Dagger | 1260 | 0 | CON 39 · DEX 39 | — |
-| <img src="/images/shadow_dagger.png" class="sprite" alt="shadow_dagger" width="24" height="24"> | **Shadow Dagger** | Dagger | 1346 | 0 | DEX 20 · CON 20 · darknessDamageAmplification 0.005 | — |
-| <img src="/images/shadow_bow.png" class="sprite" alt="shadow_bow" width="24" height="24"> | **Shadow Bow** | Bow | 1386 | 0 | INT 6 · DEX 22 · darknessDamageAmplification 0.005 | — |
-| <img src="/images/orichalcum_sword.png" class="sprite" alt="orichalcum_sword" width="24" height="24"> | **Orichalcum Sword** | Sword | 1440 | 0 | CON 39 · DEX 13 | — |
-| <img src="/images/frozen_long_axe.png" class="sprite" alt="frozen_long_axe" width="24" height="24"> | **Frozen Long Axe** | Axe | 1450 | 0 | CON 5 · INT 15 | — |
-| <img src="/images/unholy_sword.png" class="sprite" alt="unholy_sword" width="24" height="24"> | **Unholy Sword** | Sword | 1485 | 0 | CON 27 · DEX 5 · retaliationMagicalDamage 15 | — |
-| <img src="/images/unholy_axe.png" class="sprite" alt="unholy_axe" width="24" height="24"> | **Unholy Axe** | Axe | 1520 | 0 | CON 24 · INT 12 · Counter 0.25 | — |
-| <img src="/images/sun_staff.png" class="sprite" alt="sun_staff" width="24" height="24"> | **Sun Staff** | Staff | 1560 | 0 | onFireBonusDamage 2 · INT 13 · CON 2 · DEX 2 | — |
-| <img src="/images/staff_of_the_archmage.png" class="sprite" alt="staff_of_the_archmage" width="24" height="24"> | **Staff of the Archmage** | Staff | 1707 | 0 | INT 40 | `damageDelta()` → `0.11935110081112399` |
-| <img src="/images/enchanted_cleaver.png" class="sprite" alt="enchanted_cleaver" width="24" height="24"> | **Enchanted Cleaver** | Axe | 1800 | 0 | CON 25 · INT 25 | `damageDelta()` → `0.30` |
-| <img src="/images/banshee_bow.png" class="sprite" alt="banshee_bow" width="24" height="24"> | **Banshee Bow** | Bow | 1967 | 0 | DEX 28 · INT 8 | — |
-| <img src="/images/zapper.png" class="sprite" alt="zapper" width="24" height="24"> | **Zapper** | Axe | 2100 | 0 | CON 19 · DEX 10 · INT 19 | — |
-| <img src="/images/primeval_axe.png" class="sprite" alt="primeval_axe" width="24" height="24"> | **Primeval Axe** | Axe | 2200 | 0 | CON 35 · DEF 15 · MDEF 10 · retaliationPhysicalDamage 15 | — |
-| <img src="/images/icicle.png" class="sprite" alt="icicle" width="24" height="24"> | **Icicle** | Staff | 2358 | 0 | INT 26 · CON 10 · DEX 10 | — |
-| <img src="/images/flying_reaper.png" class="sprite" alt="flying_reaper" width="24" height="24"> | **Flying Reaper** | Dagger | 2400 | 0 | DEX 20 · CON 15 | `isRanged()` → `true` |
-| <img src="/images/berserkers_axe.png" class="sprite" alt="berserkers_axe" width="24" height="24"> | **Berserker's Axe** | Axe | 2600 | 0 | CON 40 · endOfTurnActionProbability 0.1 | — |
-| <img src="/images/infernal_chakram.png" class="sprite" alt="infernal_chakram" width="24" height="24"> | **Infernal Chakram** | Dagger | 2625 | 0 | DEX 50 | `isRanged()` → `true` |
-| <img src="/images/cursed_long_axe.png" class="sprite" alt="cursed_long_axe" width="24" height="24"> | **Cursed Long Axe** | Axe | 2800 | 0 | CON 5 · INT 15 | — |
-| <img src="/images/banshee_scream.png" class="sprite" alt="banshee_scream" width="24" height="24"> | **Banshee Scream** | Bow | 3152 | 0 | criticalChance 0.1 · DEX 38 · INT 12 | — |
-| <img src="/images/mottiphobia.png" class="sprite" alt="mottiphobia" width="24" height="24"> | **Mottiphobia** | Dagger | 3758 | 0 | HP 25 · DEX 10 | — |
-| <img src="/images/wicked_cleaver.png" class="sprite" alt="wicked_cleaver" width="24" height="24"> | **Wicked Cleaver** | Axe | 3850 | 0 | CON 25 · INT 25 · flatDodgeChance 0.1 | `damageDelta()` → `0.50` |
-| <img src="/images/death_ray_scepter.png" class="sprite" alt="death_ray_scepter" width="24" height="24"> | **Death Ray Scepter** | Staff | 4281 | 0 | INT 40 | *alwaysHits* |
-| <img src="/images/crushing_depth.png" class="sprite" alt="crushing_depth" width="24" height="24"> | **Crushing Depth** | Bow | 4596 | 0 | DEX 18 · INT 13 | — |
-| <img src="/images/molten_slayer.png" class="sprite" alt="molten_slayer" width="24" height="24"> | **Molten Slayer** | Axe | 5200 | 0 | CON 50 · endOfTurnActionProbability 0.1 | — |
-| <img src="/images/infernal_long_axe.png" class="sprite" alt="infernal_long_axe" width="24" height="24"> | **Infernal Long Axe** | Axe | 5400 | 0 | CON 10 · INT 25 | — |
-| <img src="/images/abyssal_cutlass.png" class="sprite" alt="abyssal_cutlass" width="24" height="24"> | **Abyssal Cutlass** | Sword | 5501 | 0 | CON 24 | — |
-| <img src="/images/stellar_staff.png" class="sprite" alt="stellar_staff" width="24" height="24"> | **Stellar Staff** | Staff | 6090 | 0 | onFireBonusDamage 3 · INT 25 · CON 10 · DEX 10 | — |
-| <img src="/images/omni_sever.png" class="sprite" alt="omni_sever" width="24" height="24"> | **Omni-Sever** | Axe | 6800 | 0 | CON 30 · INT 30 | — |
-| <img src="/images/cursed_bow.png" class="sprite" alt="cursed_bow" width="24" height="24"> | **Cursed Bow** | Bow | 7683 | 0 | Atk Spd 100 · DEX 26 | — |
-| <img src="/images/captains_sword.png" class="sprite" alt="captains_sword" width="24" height="24"> | **Captain's Sword** | Sword | 8000 | 0 | CON 25 · DEX 8 | *isRareDrop* |
-| <img src="/images/cursed_scepter.png" class="sprite" alt="cursed_scepter" width="24" height="24"> | **Cursed Scepter** | Staff | 8468 | 0 | INT 55 | — |
-| <img src="/images/abhorrent_long_axe.png" class="sprite" alt="abhorrent_long_axe" width="24" height="24"> | **Abhorrent Long Axe** | Axe | 9500 | 0 | CON 15 · INT 35 | — |
-| <img src="/images/colossal_sword.png" class="sprite" alt="colossal_sword" width="24" height="24"> | **Colossal Sword** | Sword | 10000 | 0 | CON 50 | *isRareDrop* |
-| <img src="/images/serpent_bite.png" class="sprite" alt="serpent_bite" width="24" height="24"> | **Serpent Bite** | Sword | 10000 | 0 | threat -4 · CON 30 · DEX 10 | *notSellable*<br>*isRareDrop* |
-| <img src="/images/serpent_lunge.png" class="sprite" alt="serpent_lunge" width="24" height="24"> | **Serpent Lunge** | Dagger | 10000 | 0 | flatDodgeChance 0.1 · DEX 25 · CON 25 | *notSellable*<br>*isRareDrop* |
-| <img src="/images/serpent_staff.png" class="sprite" alt="serpent_staff" width="24" height="24"> | **Serpent Staff** | Staff | 10000 | 0 | INT 40 · healingModifier -0.5 | *notSellable*<br>*isRareDrop* |
-| <img src="/images/serpent_sting.png" class="sprite" alt="serpent_sting" width="24" height="24"> | **Serpent Sting** | Bow | 10000 | 0 | DEX 40 | *notSellable*<br>*isRareDrop* |
-| <img src="/images/mutual_despair.png" class="sprite" alt="mutual_despair" width="24" height="24"> | **Mutual Despair** | Dagger | 10500 | 0 | CON 30 · DEX 30 · decay 20 · criticalDamage 0.65 | — |
-| <img src="/images/sylvan_mandate.png" class="sprite" alt="sylvan_mandate" width="24" height="24"> | **Sylvan Mandate** | Dagger | 12006 | 0 | INT 50 · DEX 30 · CON 30 | `isMagic()` → `true` |
-| <img src="/images/infernal_bow.png" class="sprite" alt="infernal_bow" width="24" height="24"> | **Infernal Bow** | Bow | 13400 | 0 | Atk Spd 100 · DEX 38 | — |
-| <img src="/images/ritual_blade.png" class="sprite" alt="ritual_blade" width="24" height="24"> | **Ritual Blade** | Dagger | 15393 | 0 | DEX 12 · INT 16 · healingModifier 0.6 | `isRanged()` → `true` |
-| <img src="/images/sylvan_blessing.png" class="sprite" alt="sylvan_blessing" width="24" height="24"> | **Sylvan Blessing** | Staff | 19853 | 0 | healingModifier 0.4 · INT 45 | — |
-| <img src="/images/dreadful_morningstar.png" class="sprite" alt="dreadful_morningstar" width="24" height="24"> | **Dreadful Morningstar** | Sword | 20000 | 0 | CON 40 · DEX 10 | *isRareDrop* |
-| <img src="/images/infinite_despair.png" class="sprite" alt="infinite_despair" width="24" height="24"> | **Infinite Despair** | Dagger | 21000 | 0 | CON 60 · DEX 60 · decay 60 · criticalDamage 1 | — |
-| <img src="/images/void_crusher.png" class="sprite" alt="void_crusher" width="24" height="24"> | **Void Crusher** | Sword | 21750 | 0 | CON 100 | — |
-| <img src="/images/titanic_might.png" class="sprite" alt="titanic_might" width="24" height="24"> | **Titanic Might** | Bow | 22400 | 0 | DEX 32 · INT 20 | — |
-| <img src="/images/celestial_bow.png" class="sprite" alt="celestial_bow" width="24" height="24"> | **Celestial Bow** | Bow | 30000 | 0 | DEX 40 · INT 15 · criticalChance 0.1 · criticalDamage 0.1 · Atk Spd 200 | — |
-| <img src="/images/stellar_flare.png" class="sprite" alt="stellar_flare" width="24" height="24"> | **Stellar Flare** | Bow | 37350 | 0 | DEX 55 · INT 34 | — |
-| <img src="/images/colossal_sword_of_scarlet_king.png" class="sprite" alt="colossal_sword_of_scarlet_king" width="24" height="24"> | **Colossal Sword of Scarlet King** | Sword | 50000 | 0 | CON 124 · DEX 7 · bloodflameDamageBonus 50 | — |
-| <img src="/images/oblivion.png" class="sprite" alt="oblivion" width="24" height="24"> | **Oblivion** | Bow | 67200 | 0 | DEX 70 · INT 42 | — |
-| <img src="/images/aegis.png" class="sprite" alt="aegis" width="24" height="24"> | **Aegis** | Sword | 150000 | 0 | HP 60 · DEF 10 · MDEF 10 | — |
-| <img src="/images/aegis_mechanica.png" class="sprite" alt="aegis_mechanica" width="24" height="24"> | **Aegis Mechanica** | Sword | 234000 | 0 | HP 85 · DEF 10 · MDEF 10 | `isRanged()` → `true` |
+| <img :src="$withBase('/images/cane.png')" class="sprite" alt="cane" width="24" height="24"> | **Cane** | Staff | 0 | 0 | INT +1 | — |
+| <img :src="$withBase('/images/decomposed_limb.png')" class="sprite" alt="decomposed_limb" width="24" height="24"> | **Decomposed Limb** | Sword | 0 | 0 | CON +1 | — |
+| <img :src="$withBase('/images/rat_claws.png')" class="sprite" alt="rat_claws" width="24" height="24"> | **Rat Claws** | Sword | 0 | 0 | CON +1 · DEX +1 · Crit Chance +5% | — |
+| <img :src="$withBase('/images/serpent_jaws.png')" class="sprite" alt="serpent_jaws" width="24" height="24"> | **Serpent Jaws** | Sword | 0 | 0 | Counterattack +35% · DEX +5 | — |
+| <img :src="$withBase('/images/sickle.png')" class="sprite" alt="sickle" width="24" height="24"> | **Sickle** | Dagger | 0 | 0 | DEX +1 · CON +1 | — |
+| <img :src="$withBase('/images/spade.png')" class="sprite" alt="spade" width="24" height="24"> | **Spade** | Sword | 0 | 0 | CON +1 | — |
+| <img :src="$withBase('/images/stick.png')" class="sprite" alt="stick" width="24" height="24"> | **Stick** | Axe | 0 | 0 | CON +1 · INT +1 | — |
+| <img :src="$withBase('/images/training_bow.png')" class="sprite" alt="training_bow" width="24" height="24"> | **Training Bow** | Bow | 0 | 0 | DEX +1 | — |
+| <img :src="$withBase('/images/corrupted_dagger.png')" class="sprite" alt="corrupted_dagger" width="24" height="24"> | **Corrupted Dagger** | Dagger | 1 | 0 | DEX +1 | Rare Drop |
+| <img :src="$withBase('/images/corrupted_staff.png')" class="sprite" alt="corrupted_staff" width="24" height="24"> | **Corrupted Staff** | Staff | 1 | 0 | INT +1 | Rare Drop |
+| <img :src="$withBase('/images/wooden_bow.png')" class="sprite" alt="wooden_bow" width="24" height="24"> | **Wooden Bow** | Bow | 11 | 0 | CON +1 · DEX +3 | — |
+| <img :src="$withBase('/images/fang_dagger.png')" class="sprite" alt="fang_dagger" width="24" height="24"> | **Fang Dagger** | Dagger | 17 | 0 | CON +2 · DEX +2 | — |
+| <img :src="$withBase('/images/copper_axe.png')" class="sprite" alt="copper_axe" width="24" height="24"> | **Copper Axe** | Axe | 20 | 0 | CON +2 · INT +2 | — |
+| <img :src="$withBase('/images/copper_sword.png')" class="sprite" alt="copper_sword" width="24" height="24"> | **Iron Sword** | Sword | 20 | 0 | CON +3 · DEX +1 | — |
+| <img :src="$withBase('/images/scimitar.png')" class="sprite" alt="scimitar" width="24" height="24"> | **Scimitar** | Sword | 41 | 0 | CON +6 · DEX +2 | — |
+| <img :src="$withBase('/images/enchanted_staff.png')" class="sprite" alt="enchanted_staff" width="24" height="24"> | **Enchanted Staff** | Staff | 45 | 0 | INT +4 | — |
+| <img :src="$withBase('/images/fullmoon_dagger.png')" class="sprite" alt="fullmoon_dagger" width="24" height="24"> | **Fullmoon Dagger** | Dagger | 45 | 0 | CON +5 · DEX +5 · Lifesteal +15 | — |
+| <img :src="$withBase('/images/iron_axe.png')" class="sprite" alt="iron_axe" width="24" height="24"> | **Iron Axe** | Axe | 50 | 0 | CON +4 · INT +3 | — |
+| <img :src="$withBase('/images/undead_knife.png')" class="sprite" alt="undead_knife" width="24" height="24"> | **Undead Knife** | Dagger | 54 | 0 | CON +7 · DEX +7 · Crit Chance +6% | — |
+| <img :src="$withBase('/images/undead_sword.png')" class="sprite" alt="undead_sword" width="24" height="24"> | **Undead Sword** | Sword | 54 | 0 | CON +9 · DEX +3 | — |
+| <img :src="$withBase('/images/glass_knife.png')" class="sprite" alt="glass_knife" width="24" height="24"> | **Glass Knife** | Dagger | 56 | 0 | CON +5 · DEX +5 | — |
+| <img :src="$withBase('/images/undead_axe.png')" class="sprite" alt="undead_axe" width="24" height="24"> | **Undead Axe** | Axe | 75 | 0 | CON +8 · INT +5 | — |
+| <img :src="$withBase('/images/shahuri_bow.png')" class="sprite" alt="shahuri_bow" width="24" height="24"> | **"Sha'huri Bow"** | Bow | 86 | 0 | DEX +6 · INT +2 | — |
+| <img :src="$withBase('/images/undead_staff.png')" class="sprite" alt="undead_staff" width="24" height="24"> | **Undead Staff** | Staff | 93 | 0 | INT +12 | — |
+| <img :src="$withBase('/images/redwood_bow.png')" class="sprite" alt="redwood_bow" width="24" height="24"> | **Redwood Bow** | Bow | 123 | 0 | CON +4 · DEX +12 | — |
+| <img :src="$withBase('/images/living_scimitar.png')" class="sprite" alt="living_scimitar" width="24" height="24"> | **Living Scimitar** | Sword | 227 | 0 | CON +10 · MDEF +5 · Counterattack +10% | — |
+| <img :src="$withBase('/images/verdant_blade.png')" class="sprite" alt="verdant_blade" width="24" height="24"> | **Verdant Blade** | Dagger | 246 | 0 | DEX +23 · CON +23 | — |
+| <img :src="$withBase('/images/ghostwood_bow.png')" class="sprite" alt="ghostwood_bow" width="24" height="24"> | **Ghostwood Bow** | Bow | 248 | 0 | INT +4 · DEX +16 | — |
+| <img :src="$withBase('/images/winterwood_staff.png')" class="sprite" alt="winterwood_staff" width="24" height="24"> | **Winterwood Staff** | Staff | 249 | 0 | INT +24 | — |
+| <img :src="$withBase('/images/corrupted_axe.png')" class="sprite" alt="corrupted_axe" width="24" height="24"> | **Corrupted Axe** | Axe | 250 | 0 | CON +1 | Rare Drop |
+| <img :src="$withBase('/images/winterwood_bow.png')" class="sprite" alt="winterwood_bow" width="24" height="24"> | **Winterwood Bow** | Bow | 275 | 0 | INT +5 · DEX +19 | — |
+| <img :src="$withBase('/images/ascended_bow.png')" class="sprite" alt="ascended_bow" width="24" height="24"> | **Ascended Bow** | Bow | 279 | 0 | DEX +8 · INT +6 | — |
+| <img :src="$withBase('/images/molten_staff.png')" class="sprite" alt="molten_staff" width="24" height="24"> | **Molten Staff** | Staff | 285 | 0 | INT +14 | — |
+| <img :src="$withBase('/images/obsidian_dagger.png')" class="sprite" alt="obsidian_dagger" width="24" height="24"> | **Obsidian Dagger** | Dagger | 306 | 0 | DEX +20 · CON +20 | — |
+| <img :src="$withBase('/images/obsidian_scepter.png')" class="sprite" alt="obsidian_scepter" width="24" height="24"> | **Obsidian Scepter** | Staff | 324 | 0 | INT +28 | — |
+| <img :src="$withBase('/images/obsidian_sword.png')" class="sprite" alt="obsidian_sword" width="24" height="24"> | **Obsidian Sword** | Sword | 324 | 0 | CON +21 · DEX +7 | — |
+| <img :src="$withBase('/images/obsidian_bow.png')" class="sprite" alt="obsidian_bow" width="24" height="24"> | **Obsidian Bow** | Bow | 333 | 0 | INT +6 · DEX +22 | — |
+| <img :src="$withBase('/images/black_iron_scepter.png')" class="sprite" alt="black_iron_scepter" width="24" height="24"> | **Black Iron Scepter** | Staff | 336 | 0 | INT +20 | — |
+| <img :src="$withBase('/images/black_iron_dagger.png')" class="sprite" alt="black_iron_dagger" width="24" height="24"> | **Black Iron Dagger** | Dagger | 342 | 0 | DEX +14 · CON +14 | — |
+| <img :src="$withBase('/images/crystal_staff.png')" class="sprite" alt="crystal_staff" width="24" height="24"> | **Crystal Staff** | Staff | 360 | 0 | INT +26 · Status Immunity +25% | — |
+| <img :src="$withBase('/images/obsidian_axe.png')" class="sprite" alt="obsidian_axe" width="24" height="24"> | **Obsidian Axe** | Axe | 360 | 0 | CON +20 · INT +10 | — |
+| <img :src="$withBase('/images/black_iron_cutlass.png')" class="sprite" alt="black_iron_cutlass" width="24" height="24"> | **Black Iron Cutlass** | Sword | 362 | 0 | CON +15 · DEX +5 | — |
+| <img :src="$withBase('/images/crystal_dagger.png')" class="sprite" alt="crystal_dagger" width="24" height="24"> | **Crystal Dagger** | Dagger | 378 | 0 | DEX +17 · CON +17 · Crit Damage +30% | — |
+| <img :src="$withBase('/images/black_iron_axe.png')" class="sprite" alt="black_iron_axe" width="24" height="24"> | **Black Iron Axe** | Axe | 380 | 0 | CON +15 · INT +6 | — |
+| <img :src="$withBase('/images/ghastly_scimitar.png')" class="sprite" alt="ghastly_scimitar" width="24" height="24"> | **Ghastly Scimitar** | Sword | 416 | 0 | CON +16 · MDEF +10 · Counterattack +20% | — |
+| <img :src="$withBase('/images/frostmetal_dagger.png')" class="sprite" alt="frostmetal_dagger" width="24" height="24"> | **Frostmetal Dagger** | Dagger | 450 | 0 | DEX +17 · CON +17 | — |
+| <img :src="$withBase('/images/golden_sword.png')" class="sprite" alt="golden_sword" width="24" height="24"> | **Golden Sword** | Sword | 483 | 0 | CON +12 · DEX +4 | — |
+| <img :src="$withBase('/images/gold_axe.png')" class="sprite" alt="gold_axe" width="24" height="24"> | **Golden Axe** | Axe | 485 | 0 | CON +12 · INT +6 | — |
+| <img :src="$withBase('/images/dryads_curse.png')" class="sprite" alt="dryads_curse" width="24" height="24"> | **"Dryad's Curse"** | Dagger | 504 | 0 | INT +30 · DEX +18 · CON +18 | Magical Damage |
+| <img :src="$withBase('/images/frostmetal_sword.png')" class="sprite" alt="frostmetal_sword" width="24" height="24"> | **Frostmetal Sword** | Sword | 513 | 0 | CON +18 · DEX +6 | — |
+| <img :src="$withBase('/images/frostmetal_axe.png')" class="sprite" alt="frostmetal_axe" width="24" height="24"> | **Frostmetal Axe** | Axe | 520 | 0 | CON +17 · INT +8 | — |
+| <img :src="$withBase('/images/banshee_dagger.png')" class="sprite" alt="banshee_dagger" width="24" height="24"> | **Banshee Dagger** | Dagger | 552 | 0 | CON +28 · DEX +28 | — |
+| <img :src="$withBase('/images/arcane_dagger.png')" class="sprite" alt="arcane_dagger" width="24" height="24"> | **Arcane Dagger** | Dagger | 564 | 0 | INT +24 · DEX +12 · CON +12 | Magical Damage |
+| <img :src="$withBase('/images/imperial_staff.png')" class="sprite" alt="imperial_staff" width="24" height="24"> | **Imperial Staff** | Staff | 564 | 0 | INT +26 · CON +8 · DEX +8 | — |
+| <img :src="$withBase('/images/living_whip.png')" class="sprite" alt="living_whip" width="24" height="24"> | **Living Whip** | Sword | 567 | 0 | Max HP 40 · DEX +12 | Ranged Attack |
+| <img :src="$withBase('/images/celestial_sword.png')" class="sprite" alt="celestial_sword" width="24" height="24"> | **Celestial Sword** | Sword | 581 | 0 | CON +28 · DEX +8 | — |
+| <img :src="$withBase('/images/verdant_bow.png')" class="sprite" alt="verdant_bow" width="24" height="24"> | **Verdant Bow** | Bow | 600 | 0 | INT +8 · DEX +24 | — |
+| <img :src="$withBase('/images/animated_dagger.png')" class="sprite" alt="animated_dagger" width="24" height="24"> | **Animated Dagger** | Dagger | 608 | 0 | CON +30 · DEX +30 | — |
+| <img :src="$withBase('/images/celestial_axe.png')" class="sprite" alt="celestial_axe" width="24" height="24"> | **Celestial Axe** | Axe | 610 | 0 | CON +26 · INT +14 | — |
+| <img :src="$withBase('/images/animated_staff.png')" class="sprite" alt="animated_staff" width="24" height="24"> | **Animated Staff** | Staff | 635 | 0 | INT +40 | — |
+| <img :src="$withBase('/images/animated_sword.png')" class="sprite" alt="animated_sword" width="24" height="24"> | **Animated Sword** | Sword | 635 | 0 | CON +30 · DEX +10 | — |
+| <img :src="$withBase('/images/animated_bow.png')" class="sprite" alt="animated_bow" width="24" height="24"> | **Animated Bow** | Bow | 638 | 0 | DEX +30 · INT +10 | — |
+| <img :src="$withBase('/images/panopticon_staff.png')" class="sprite" alt="panopticon_staff" width="24" height="24"> | **Panopticon Staff** | Staff | 642 | 0 | INT +32 · darknessReduction +16 | — |
+| <img :src="$withBase('/images/animated_axe.png')" class="sprite" alt="animated_axe" width="24" height="24"> | **Animated Axe** | Axe | 670 | 0 | CON +28 · INT +16 | — |
+| <img :src="$withBase('/images/dryads_blessing.png')" class="sprite" alt="dryads_blessing" width="24" height="24"> | **"Dryad's Blessing"** | Staff | 735 | 0 | Healing Bonus +23% · INT +22 | — |
+| <img :src="$withBase('/images/crimson_leech.png')" class="sprite" alt="crimson_leech" width="24" height="24"> | **Crimson Leech** | Staff | 834 | 0 | INT +16 · CON +4 · Lifesteal +20 | — |
+| <img :src="$withBase('/images/focused_scepter.png')" class="sprite" alt="focused_scepter" width="24" height="24"> | **Focused Scepter** | Staff | 854 | 0 | INT +24 | — |
+| <img :src="$withBase('/images/ceremonial_dagger.png')" class="sprite" alt="ceremonial_dagger" width="24" height="24"> | **Ceremonial Dagger** | Dagger | 864 | 0 | DEX +8 · INT +8 · Healing Bonus +40% | Ranged Attack |
+| <img :src="$withBase('/images/dreamwrought_staff.png')" class="sprite" alt="dreamwrought_staff" width="24" height="24"> | **Dreamwrought Staff** | Staff | 893 | 0 | INT +52 | — |
+| <img :src="$withBase('/images/enforcers_axe.png')" class="sprite" alt="enforcers_axe" width="24" height="24"> | **Enforcer's Axe** | Axe | 950 | 0 | CON +18 · DEX +10 · INT +18 | — |
+| <img :src="$withBase('/images/mithril_dagger.png')" class="sprite" alt="mithril_dagger" width="24" height="24"> | **Mithril Dagger** | Dagger | 996 | 0 | CON +33 · DEX +33 | — |
+| <img :src="$withBase('/images/unstable_staff.png')" class="sprite" alt="unstable_staff" width="24" height="24"> | **Unstable Staff** | Staff | 998 | 0 | INT +40 | Variance ±80% |
+| <img :src="$withBase('/images/vampire_dagger.png')" class="sprite" alt="vampire_dagger" width="24" height="24"> | **Vampire Dagger** | Dagger | 999 | 0 | DEX +20 · CON +20 · Lifesteal +20 | — |
+| <img :src="$withBase('/images/mithril_sword.png')" class="sprite" alt="mithril_sword" width="24" height="24"> | **Mithril Sword** | Sword | 1020 | 0 | CON +33 · DEX +11 | — |
+| <img :src="$withBase('/images/mithril_bow.png')" class="sprite" alt="mithril_bow" width="24" height="24"> | **Mithril Bow** | Bow | 1023 | 0 | DEX +33 · INT +11 | — |
+| <img :src="$withBase('/images/vampire_scepter.png')" class="sprite" alt="vampire_scepter" width="24" height="24"> | **Vampire Scepter** | Staff | 1026 | 0 | INT +28 · Lifesteal +20 | — |
+| <img :src="$withBase('/images/vampire_sword.png')" class="sprite" alt="vampire_sword" width="24" height="24"> | **Vampire Sword** | Sword | 1026 | 0 | CON +21 · DEX +7 · Lifesteal +20 | — |
+| <img :src="$withBase('/images/vampire_bow.png')" class="sprite" alt="vampire_bow" width="24" height="24"> | **Vampire Bow** | Bow | 1040 | 0 | INT +6 · DEX +22 · Lifesteal +20 | — |
+| <img :src="$withBase('/images/vampire_axe.png')" class="sprite" alt="vampire_axe" width="24" height="24"> | **Vampire Axe** | Axe | 1050 | 0 | CON +20 · INT +10 · Lifesteal +20 | — |
+| <img :src="$withBase('/images/dreamwrought_bow.png')" class="sprite" alt="dreamwrought_bow" width="24" height="24"> | **Dreamwrought Bow** | Bow | 1055 | 0 | DEX +39 · INT +13 | — |
+| <img :src="$withBase('/images/celestials_mercy.png')" class="sprite" alt="celestials_mercy" width="24" height="24"> | **Celestial Mercy** | Sword | 1100 | 0 | darknessReduction +12 · CON +28 · DEX +8 | — |
+| <img :src="$withBase('/images/wicked_scepter.png')" class="sprite" alt="wicked_scepter" width="24" height="24"> | **Wicked Scepter** | Staff | 1145 | 0 | INT +45 | — |
+| <img :src="$withBase('/images/abyssal_great_axe.png')" class="sprite" alt="abyssal_great_axe" width="24" height="24"> | **Abyssal Greataxe** | Axe | 1250 | 0 | CON +15 · INT +20 | — |
+| <img :src="$withBase('/images/orichalcum_dagger.png')" class="sprite" alt="orichalcum_dagger" width="24" height="24"> | **Orichalcum Dagger** | Dagger | 1260 | 0 | CON +39 · DEX +39 | — |
+| <img :src="$withBase('/images/shadow_dagger.png')" class="sprite" alt="shadow_dagger" width="24" height="24"> | **Shadow Dagger** | Dagger | 1346 | 0 | DEX +20 · CON +20 · darknessDamageAmplification +0.005 | — |
+| <img :src="$withBase('/images/shadow_bow.png')" class="sprite" alt="shadow_bow" width="24" height="24"> | **Shadow Bow** | Bow | 1386 | 0 | INT +6 · DEX +22 · darknessDamageAmplification +0.005 | — |
+| <img :src="$withBase('/images/orichalcum_sword.png')" class="sprite" alt="orichalcum_sword" width="24" height="24"> | **Orichalcum Sword** | Sword | 1440 | 0 | CON +39 · DEX +13 | — |
+| <img :src="$withBase('/images/frozen_long_axe.png')" class="sprite" alt="frozen_long_axe" width="24" height="24"> | **Frozen Long Axe** | Axe | 1450 | 0 | CON +5 · INT +15 | — |
+| <img :src="$withBase('/images/unholy_sword.png')" class="sprite" alt="unholy_sword" width="24" height="24"> | **Unholy Sword** | Sword | 1485 | 0 | CON +27 · DEX +5 · Magic Retaliation +15 | — |
+| <img :src="$withBase('/images/unholy_axe.png')" class="sprite" alt="unholy_axe" width="24" height="24"> | **Unholy Axe** | Axe | 1520 | 0 | CON +24 · INT +12 · Counterattack +25% | — |
+| <img :src="$withBase('/images/sun_staff.png')" class="sprite" alt="sun_staff" width="24" height="24"> | **Sun Staff** | Staff | 1560 | 0 | onFireBonusDamage +2 · INT +13 · CON +2 · DEX +2 | — |
+| <img :src="$withBase('/images/staff_of_the_archmage.png')" class="sprite" alt="staff_of_the_archmage" width="24" height="24"> | **Staff of the Archmage** | Staff | 1707 | 0 | INT +40 | Variance ±11% |
+| <img :src="$withBase('/images/enchanted_cleaver.png')" class="sprite" alt="enchanted_cleaver" width="24" height="24"> | **Enchanted Cleaver** | Axe | 1800 | 0 | CON +25 · INT +25 | Variance ±30% |
+| <img :src="$withBase('/images/banshee_bow.png')" class="sprite" alt="banshee_bow" width="24" height="24"> | **Banshee Bow** | Bow | 1967 | 0 | DEX +28 · INT +8 | — |
+| <img :src="$withBase('/images/zapper.png')" class="sprite" alt="zapper" width="24" height="24"> | **Zapper** | Axe | 2100 | 0 | CON +19 · DEX +10 · INT +19 | — |
+| <img :src="$withBase('/images/primeval_axe.png')" class="sprite" alt="primeval_axe" width="24" height="24"> | **Primeval Axe** | Axe | 2200 | 0 | CON +35 · DEF +15 · MDEF +10 · Physical Retaliation +15 | — |
+| <img :src="$withBase('/images/icicle.png')" class="sprite" alt="icicle" width="24" height="24"> | **Icicle** | Staff | 2358 | 0 | INT +26 · CON +10 · DEX +10 | — |
+| <img :src="$withBase('/images/flying_reaper.png')" class="sprite" alt="flying_reaper" width="24" height="24"> | **Flying Reaper** | Dagger | 2400 | 0 | DEX +20 · CON +15 | Ranged Attack |
+| <img :src="$withBase('/images/berserkers_axe.png')" class="sprite" alt="berserkers_axe" width="24" height="24"> | **Berserker's Axe** | Axe | 2600 | 0 | CON +40 · endOfTurnActionProbability +0.1 | — |
+| <img :src="$withBase('/images/infernal_chakram.png')" class="sprite" alt="infernal_chakram" width="24" height="24"> | **Infernal Chakram** | Dagger | 2625 | 0 | DEX +50 | Ranged Attack |
+| <img :src="$withBase('/images/cursed_long_axe.png')" class="sprite" alt="cursed_long_axe" width="24" height="24"> | **Cursed Long Axe** | Axe | 2800 | 0 | CON +5 · INT +15 | — |
+| <img :src="$withBase('/images/banshee_scream.png')" class="sprite" alt="banshee_scream" width="24" height="24"> | **Banshee Scream** | Bow | 3152 | 0 | Crit Chance +10% · DEX +38 · INT +12 | — |
+| <img :src="$withBase('/images/mottiphobia.png')" class="sprite" alt="mottiphobia" width="24" height="24"> | **Mottiphobia** | Dagger | 3758 | 0 | Max HP 25 · DEX +10 | — |
+| <img :src="$withBase('/images/wicked_cleaver.png')" class="sprite" alt="wicked_cleaver" width="24" height="24"> | **Wicked Cleaver** | Axe | 3850 | 0 | CON +25 · INT +25 · Dodge +10% | Variance ±50% |
+| <img :src="$withBase('/images/death_ray_scepter.png')" class="sprite" alt="death_ray_scepter" width="24" height="24"> | **Death Ray Scepter** | Staff | 4281 | 0 | INT +40 | — |
+| <img :src="$withBase('/images/crushing_depth.png')" class="sprite" alt="crushing_depth" width="24" height="24"> | **Crushing Depth** | Bow | 4596 | 0 | DEX +18 · INT +13 | — |
+| <img :src="$withBase('/images/molten_slayer.png')" class="sprite" alt="molten_slayer" width="24" height="24"> | **Molten Slayer** | Axe | 5200 | 0 | CON +50 · endOfTurnActionProbability +0.1 | — |
+| <img :src="$withBase('/images/infernal_long_axe.png')" class="sprite" alt="infernal_long_axe" width="24" height="24"> | **Infernal Long Axe** | Axe | 5400 | 0 | CON +10 · INT +25 | — |
+| <img :src="$withBase('/images/abyssal_cutlass.png')" class="sprite" alt="abyssal_cutlass" width="24" height="24"> | **Abyssal Cutlass** | Sword | 5501 | 0 | CON +24 | — |
+| <img :src="$withBase('/images/stellar_staff.png')" class="sprite" alt="stellar_staff" width="24" height="24"> | **Stellar Staff** | Staff | 6090 | 0 | onFireBonusDamage +3 · INT +25 · CON +10 · DEX +10 | — |
+| <img :src="$withBase('/images/omni_sever.png')" class="sprite" alt="omni_sever" width="24" height="24"> | **Omni-Sever** | Axe | 6800 | 0 | CON +30 · INT +30 | — |
+| <img :src="$withBase('/images/cursed_bow.png')" class="sprite" alt="cursed_bow" width="24" height="24"> | **Cursed Bow** | Bow | 7683 | 0 | Attack Speed +100 · DEX +26 | — |
+| <img :src="$withBase('/images/captains_sword.png')" class="sprite" alt="captains_sword" width="24" height="24"> | **Captain's Sword** | Sword | 8000 | 0 | CON +25 · DEX +8 | Rare Drop |
+| <img :src="$withBase('/images/cursed_scepter.png')" class="sprite" alt="cursed_scepter" width="24" height="24"> | **Cursed Scepter** | Staff | 8468 | 0 | INT +55 | — |
+| <img :src="$withBase('/images/abhorrent_long_axe.png')" class="sprite" alt="abhorrent_long_axe" width="24" height="24"> | **Abhorrent Long Axe** | Axe | 9500 | 0 | CON +15 · INT +35 | — |
+| <img :src="$withBase('/images/colossal_sword.png')" class="sprite" alt="colossal_sword" width="24" height="24"> | **Colossal Sword** | Sword | 10000 | 0 | CON +50 | Rare Drop |
+| <img :src="$withBase('/images/serpent_bite.png')" class="sprite" alt="serpent_bite" width="24" height="24"> | **Serpent Bite** | Sword | 10000 | 0 | Threat -4 · CON +30 · DEX +10 | Rare Drop |
+| <img :src="$withBase('/images/serpent_lunge.png')" class="sprite" alt="serpent_lunge" width="24" height="24"> | **Serpent Lunge** | Dagger | 10000 | 0 | Dodge +10% · DEX +25 · CON +25 | Rare Drop |
+| <img :src="$withBase('/images/serpent_staff.png')" class="sprite" alt="serpent_staff" width="24" height="24"> | **Serpent Staff** | Staff | 10000 | 0 | INT +40 · Healing Bonus -50% | Rare Drop |
+| <img :src="$withBase('/images/serpent_sting.png')" class="sprite" alt="serpent_sting" width="24" height="24"> | **Serpent Sting** | Bow | 10000 | 0 | DEX +40 | Rare Drop |
+| <img :src="$withBase('/images/mutual_despair.png')" class="sprite" alt="mutual_despair" width="24" height="24"> | **Mutual Despair** | Dagger | 10500 | 0 | CON +30 · DEX +30 · decay +20 · Crit Damage +65% | — |
+| <img :src="$withBase('/images/sylvan_mandate.png')" class="sprite" alt="sylvan_mandate" width="24" height="24"> | **Sylvan Mandate** | Dagger | 12006 | 0 | INT +50 · DEX +30 · CON +30 | Magical Damage |
+| <img :src="$withBase('/images/infernal_bow.png')" class="sprite" alt="infernal_bow" width="24" height="24"> | **Infernal Bow** | Bow | 13400 | 0 | Attack Speed +100 · DEX +38 | — |
+| <img :src="$withBase('/images/ritual_blade.png')" class="sprite" alt="ritual_blade" width="24" height="24"> | **Ritual Blade** | Dagger | 15393 | 0 | DEX +12 · INT +16 · Healing Bonus +60% | Ranged Attack |
+| <img :src="$withBase('/images/sylvan_blessing.png')" class="sprite" alt="sylvan_blessing" width="24" height="24"> | **Sylvan Blessing** | Staff | 19853 | 0 | Healing Bonus +40% · INT +45 | — |
+| <img :src="$withBase('/images/dreadful_morningstar.png')" class="sprite" alt="dreadful_morningstar" width="24" height="24"> | **Dreadful Morningstar** | Sword | 20000 | 0 | CON +40 · DEX +10 | Rare Drop |
+| <img :src="$withBase('/images/infinite_despair.png')" class="sprite" alt="infinite_despair" width="24" height="24"> | **Infinite Despair** | Dagger | 21000 | 0 | CON +60 · DEX +60 · decay +60 · Crit Damage +100% | — |
+| <img :src="$withBase('/images/void_crusher.png')" class="sprite" alt="void_crusher" width="24" height="24"> | **Void Crusher** | Sword | 21750 | 0 | CON +100 | — |
+| <img :src="$withBase('/images/titanic_might.png')" class="sprite" alt="titanic_might" width="24" height="24"> | **Titanic Might** | Bow | 22400 | 0 | DEX +32 · INT +20 | — |
+| <img :src="$withBase('/images/celestial_bow.png')" class="sprite" alt="celestial_bow" width="24" height="24"> | **Celestial Bow** | Bow | 30000 | 0 | DEX +40 · INT +15 · Crit Chance +10% · Crit Damage +10% · Attack Speed +200 | — |
+| <img :src="$withBase('/images/stellar_flare.png')" class="sprite" alt="stellar_flare" width="24" height="24"> | **Stellar Flare** | Bow | 37350 | 0 | DEX +55 · INT +34 | — |
+| <img :src="$withBase('/images/colossal_sword_of_scarlet_king.png')" class="sprite" alt="colossal_sword_of_scarlet_king" width="24" height="24"> | **Colossal Sword of Scarlet King** | Sword | 50000 | 0 | CON +124 · DEX +7 · bloodflameDamageBonus +50 | — |
+| <img :src="$withBase('/images/oblivion.png')" class="sprite" alt="oblivion" width="24" height="24"> | **Oblivion** | Bow | 67200 | 0 | DEX +70 · INT +42 | — |
+| <img :src="$withBase('/images/aegis.png')" class="sprite" alt="aegis" width="24" height="24"> | **Aegis** | Sword | 150000 | 0 | Max HP 60 · DEF +10 · MDEF +10 | — |
+| <img :src="$withBase('/images/aegis_mechanica.png')" class="sprite" alt="aegis_mechanica" width="24" height="24"> | **Aegis Mechanica** | Sword | 234000 | 0 | Max HP 85 · DEF +10 · MDEF +10 | Ranged Attack |
 
 :::

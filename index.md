@@ -4,40 +4,36 @@ layout: home
 hero:
   name: IGM+ Wiki
   text: Idle Guild Master Modded
-  tagline: Auto-generated database and mechanics guides for the IGM-Modded balance overhaul
+  tagline: The complete database, build references, and mechanics guides for Idle Guild Master Modded.
   actions:
     - theme: brand
-      text: Class Tree
+      text: Class Promotion Tree
       link: /adventurers/class-tree
     - theme: alt
-      text: Mechanics
-      link: /mechanics/defense-and-armor
+      text: Equipment Catalog
+      link: /items/weapons
 
 features:
-  - title: Full class database
-    details: Every adventurer class from T1 to T9 with base stats, promotion paths, skills and traits — computed directly from the game's Kotlin sources.
-    link: /adventurers/stats-comparison
-    linkText: Browse classes
-  - title: Items, recipes & shops
-    details: Searchable catalogs of weapons, armors and accessories with stats, prices and crafting recipes.
+  - title: Adventurers & Classes
+    details: Complete stats for all adventurer classes from Tier 1 to Tier 9, including promotion branches, skill descriptions, doctrines, and traits.
+    link: /adventurers/class-tree
+    linkText: Explore Classes
+  - title: Weapons, Armor & Gear
+    details: Filterable catalogs for weapons, armors, and accessories with detailed stat bonuses, crafting recipes, and drop locations.
     link: /items/weapons
-    linkText: Browse items
-  - title: Dungeons, raids & bestiary
-    details: Encounter tables with per-enemy probabilities, boss drop tables and loot references for every area.
+    linkText: Browse Equipment
+  - title: Dungeons, Raids & Bestiary
+    details: Room encounter rates, enemy statistics, boss mechanics, and drop rates for all expeditions and raids.
     link: /enemies/bestiary
-    linkText: Open bestiary
-  - title: Mechanics deep dives
-    details: Hyperbolic defense mitigation, attack speed extra strikes, amplification stacking and status effects — with interactive calculators.
+    linkText: View Bestiary
+  - title: Combat Mechanics
+    details: Clear explanations and interactive calculators for defense mitigation, attack speed breakpoints, status effects, and damage multipliers.
     link: /mechanics/defense-and-armor
-    linkText: Read mechanics
+    linkText: Learn Mechanics
 ---
 
-## About this wiki
+## Welcome to the IGM+ Community Wiki
 
-Everything in the **data pages** (classes, items, dungeons, bestiary, changelog) is
-extracted automatically from the [IGM-Modded](https://github.com/Lemoinie/IGM-Modded)
-source tree by Python scripts — no manual entries, no stale tables after a balance
-patch. Guides in **Mechanics** are hand-written deep dives.
+Welcome to the comprehensive reference guide for **Idle Guild Master Modded (IGM+)**. Here you'll find everything you need to optimize your team compositions, craft optimal gear, tackle challenging raid bosses, and understand the game's combat formulas.
 
-See the [data pipeline](./data-pipeline) page for how updates flow from Kotlin
-sources to this site.
+Use the navigation bar above or the collapsible sidebar on any page to explore class promotion paths, inspect equipment catalogs, and reference complete enemy drop tables.

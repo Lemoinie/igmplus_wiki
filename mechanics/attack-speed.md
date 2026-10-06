@@ -33,7 +33,3 @@ $$
 - S.P.I.D.E.R's accessory proc stays an **independent melee rider** on top of
   the attack-speed system (it never merges into the percentage).
 - Attack Speed shows on page 3 of the entity detail dialog.
-
-## Source
-
-[`plans/working/combat/attack-speed-rework.md`](https://github.com/Lemoinie/IGM-Modded/blob/main/plans/working/combat/attack-speed-rework.md)

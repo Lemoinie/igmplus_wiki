@@ -5,6 +5,7 @@
  * which item classes are shown.
  */
 import { computed, ref } from 'vue'
+import { withBase } from 'vitepress'
 import itemsData from '../../../data/items.json'
 import manifest from '../../../data/sprites_manifest.json'
 
@@ -58,13 +59,64 @@ const filtered = computed(() => {
 
 function spriteFile(name) {
   const entry = manifest.exported[name]
-  return entry ? `/images/${entry.file}` : null
+  return entry ? withBase(`/images/${entry.file}`) : null
 }
+
+const STAT_NAMES = {
+  constitution: 'CON',
+  intelligence: 'INT',
+  dexterity: 'DEX',
+  defense: 'DEF',
+  magicDefense: 'MDEF',
+  maxHp: 'Max HP',
+  criticalChance: 'Crit Chance',
+  criticalDamage: 'Crit Damage',
+  counterattack: 'Counterattack',
+  flatDodgeChance: 'Dodge',
+  dodgeChance: 'Dodge',
+  immunityToStatus: 'Status Immunity',
+  lifesteal: 'Lifesteal',
+  threat: 'Threat',
+  attackSpeed: 'Attack Speed',
+  regeneration: 'Regen',
+  bonusExperience: 'Bonus EXP',
+  damageDealtModifier: 'Damage Dealt',
+  damageTakenModifier: 'Damage Taken',
+  normalAttackAmpModifier: 'Normal Atk Amp',
+  skillAmpModifier: 'Skill Amp',
+  healingModifier: 'Healing Bonus',
+}
+const PERCENT_FIELDS = new Set([
+  'criticalChance',
+  'criticalDamage',
+  'counterattack',
+  'flatDodgeChance',
+  'dodgeChance',
+  'immunityToStatus',
+  'damageDealtModifier',
+  'damageTakenModifier',
+  'normalAttackAmpModifier',
+  'skillAmpModifier',
+  'healingModifier',
+])
+
 function fmtStats(s) {
-  if (!s) return '—'
+  if (!s || Object.keys(s).length === 0) return '—'
   return Object.entries(s)
-    .map(([k, v]) => `${k}: ${v}`)
-    .join(', ')
+    .map(([k, v]) => {
+      const name = STAT_NAMES[k] || k
+      if (PERCENT_FIELDS.has(k) && typeof v === 'number') {
+        const pct = Math.abs(v) <= 1.0 ? v * 100 : v
+        const sign = pct > 0 ? '+' : ''
+        return `${name} ${sign}${Number(pct.toFixed(1))}%`
+      }
+      if (typeof v === 'number') {
+        const sign = v > 0 && k !== 'maxHp' ? '+' : ''
+        return `${name} ${sign}${v}`
+      }
+      return `${name} ${v}`
+    })
+    .join(' · ')
 }
 </script>
 

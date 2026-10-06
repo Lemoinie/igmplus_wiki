@@ -20,89 +20,72 @@ export default defineConfig({
   themeConfig: {
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Mechanics', link: '/mechanics/defense-and-armor' },
       { text: 'Adventurers', link: '/adventurers/class-tree' },
       { text: 'Items', link: '/items/weapons' },
-      { text: 'Dungeons', link: '/dungeons/dungeons' },
+      { text: 'Dungeons & Raids', link: '/dungeons/dungeons' },
       { text: 'Enemies', link: '/enemies/bestiary' },
+      { text: 'Mechanics', link: '/mechanics/defense-and-armor' },
       { text: 'Changelog', link: '/changelog' },
     ],
 
-    sidebar: {
-      '/mechanics/': [
-        {
-          text: 'Mechanics',
-          items: [
-            { text: 'Defense & Armor', link: '/mechanics/defense-and-armor' },
-            { text: 'Attack Speed', link: '/mechanics/attack-speed' },
-            { text: 'Damage Amplification', link: '/mechanics/damage-amplification' },
-            { text: 'Status Effects', link: '/mechanics/status-effects' },
-          ],
-        },
-      ],
-      '/adventurers/': [
-        {
-          text: 'Adventurers',
-          items: [
-            { text: 'Class Tree', link: '/adventurers/class-tree' },
-            { text: 'Stats Comparison', link: '/adventurers/stats-comparison' },
-            { text: 'Doctrines', link: '/adventurers/doctrines' },
-            { text: 'Traits', link: '/adventurers/traits' },
-          ],
-        },
-      ],
-      '/items/': [
-        {
-          text: 'Items',
-          items: [
-            { text: 'Weapons', link: '/items/weapons' },
-            { text: 'Armors', link: '/items/armors' },
-            { text: 'Accessories', link: '/items/accessories' },
-            { text: 'Recipes', link: '/items/recipes' },
-          ],
-        },
-      ],
-      '/dungeons/': [
-        {
-          text: 'Dungeons & Raids',
-          items: [
-            { text: 'Dungeons', link: '/dungeons/dungeons' },
-            { text: 'Raids', link: '/dungeons/raids' },
-          ],
-        },
-      ],
-      '/enemies/': [
-        {
-          text: 'Enemies',
-          items: [{ text: 'Bestiary', link: '/enemies/bestiary' }],
-        },
-      ],
-      '/': [
-        {
-          text: 'Reference',
-          items: [
-            { text: 'Changelog', link: '/changelog' },
-            { text: 'Data Pipeline', link: '/data-pipeline' },
-          ],
-        },
-      ],
-    },
+    sidebar: [
+      {
+        text: 'Adventurers',
+        collapsed: false,
+        items: [
+          { text: 'Class Tree', link: '/adventurers/class-tree' },
+          { text: 'Stats Comparison', link: '/adventurers/stats-comparison' },
+          { text: 'Doctrines', link: '/adventurers/doctrines' },
+          { text: 'Traits', link: '/adventurers/traits' },
+        ],
+      },
+      {
+        text: 'Items & Equipment',
+        collapsed: false,
+        items: [
+          { text: 'Weapons', link: '/items/weapons' },
+          { text: 'Armors', link: '/items/armors' },
+          { text: 'Accessories', link: '/items/accessories' },
+          { text: 'Crafting Recipes', link: '/items/recipes' },
+        ],
+      },
+      {
+        text: 'Dungeons & Raids',
+        collapsed: false,
+        items: [
+          { text: 'Dungeons', link: '/dungeons/dungeons' },
+          { text: 'Raids', link: '/dungeons/raids' },
+        ],
+      },
+      {
+        text: 'Enemies',
+        collapsed: false,
+        items: [{ text: 'Bestiary', link: '/enemies/bestiary' }],
+      },
+      {
+        text: 'Game Mechanics',
+        collapsed: false,
+        items: [
+          { text: 'Defense & Armor', link: '/mechanics/defense-and-armor' },
+          { text: 'Attack Speed', link: '/mechanics/attack-speed' },
+          { text: 'Damage Amplification', link: '/mechanics/damage-amplification' },
+          { text: 'Status Effects', link: '/mechanics/status-effects' },
+        ],
+      },
+      {
+        text: 'Updates',
+        collapsed: true,
+        items: [{ text: 'Mod Changelog', link: '/changelog' }],
+      },
+    ],
 
     search: { provider: 'local' },
-    socialLinks: [
-      { icon: 'github', href: 'https://github.com/Lemoinie/igmplus_wiki' },
-      { icon: 'github', href: 'https://github.com/Lemoinie/IGM-Modded' },
-    ],
     outline: { level: [2, 3], label: 'On this page' },
-    editLink: {
-      pattern: 'https://github.com/Lemoinie/igmplus_wiki/edit/main/:path',
-      text: 'Edit this page',
-    },
     lastUpdated: { text: 'Updated' },
     docFooter: { prev: 'Previous', next: 'Next' },
     footer: {
-      message: 'Data extracted automatically from the IGM-Modded repository.',
-      copyright: 'MIT License',
+      message: 'Idle Guild Master Modded (IGM+) Community Wiki',
+      copyright: 'Community-maintained game database',
     },
   },
 })

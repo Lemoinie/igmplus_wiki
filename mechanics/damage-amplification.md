@@ -38,8 +38,3 @@ final = rawDamage × ampMultiplier × damageDealt(attacker) × damageTaken(defen
   and elemental/darkness modifiers resolve outside the amp value.
 - Both stats display on page 3 of the entity detail dialog
   (`Basic Atk Amp: 137%`, `Skill Amp: 160%` …).
-
-## Sources
-
-- [`plans/working/combat/normal-and-skill-amplification.md`](https://github.com/Lemoinie/IGM-Modded/blob/main/plans/working/combat/normal-and-skill-amplification.md)
-- [`docs/vanilla-behavior.md`](https://github.com/Lemoinie/IGM-Modded/blob/main/docs/vanilla-behavior.md)
