@@ -3662,7 +3662,7 @@
       "description": "\"The Spire, an age-old clandestine organization, recruits only the realm's most skilled assassins. Its select few members wield profound influence over the political landscape of kingdoms, capable of eliminating virtually any target with a secretive technique known solely to them.\"",
       "stats": {
         "maxLevel": 25,
-        "baseMaxHp": "Logger.BARD_SHIELD",
+        "baseMaxHp": 120,
         "baseConstitution": 18,
         "baseIntelligence": 8,
         "baseDexterity": 18,
@@ -3844,7 +3844,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 1
+      "tier": 5
     },
     {
       "key": "SummonOwlbear",
@@ -3870,7 +3870,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 1
+      "tier": 9
     },
     {
       "key": "SummonTiger",
@@ -3896,7 +3896,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 1
+      "tier": 8
     },
     {
       "key": "SummonWeasel",
@@ -3922,7 +3922,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 1
+      "tier": 4
     },
     {
       "key": "SummonWolf",
@@ -3948,7 +3948,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 1
+      "tier": 6
     },
     {
       "key": "Sureshot",
