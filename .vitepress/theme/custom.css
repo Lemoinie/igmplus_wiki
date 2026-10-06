@@ -30,3 +30,118 @@
 .vp-doc th {
   white-space: nowrap;
 }
+
+/* ==========================================================================
+   Desktop Collapsible Sidebar
+   ========================================================================== */
+@media (min-width: 960px) {
+  html.sidebar-collapsed .VPSidebar {
+    transform: translateX(-100%) !important;
+    visibility: hidden !important;
+    transition: transform 0.25s cubic-bezier(0.4, 0, 0.2, 1), visibility 0.25s !important;
+  }
+  html.sidebar-collapsed .VPContent.has-sidebar {
+    padding-left: 0 !important;
+    transition: padding-left 0.25s cubic-bezier(0.4, 0, 0.2, 1) !important;
+  }
+  html.sidebar-collapsed .VPNavBar.has-sidebar .title {
+    padding-left: 0 !important;
+  }
+}
+
+/* ==========================================================================
+   Crafting Recipes Visual Enhancements
+   ========================================================================== */
+.recipe-output-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 180px;
+}
+
+.recipe-output-cell img {
+  width: 52px;
+  height: 52px;
+  background: rgba(0, 0, 0, 0.2);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 8px;
+  padding: 2px;
+  flex-shrink: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.recipe-output-info {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.recipe-type-badge {
+  display: inline-block;
+  font-size: 11px;
+  padding: 1px 6px;
+  border-radius: 4px;
+  background: var(--vp-c-bg-alt);
+  color: var(--vp-c-text-2);
+  width: fit-content;
+}
+
+.recipe-arrow {
+  color: var(--vp-c-brand-1);
+  font-size: 18px;
+  font-weight: bold;
+  opacity: 0.8;
+  text-align: center;
+  padding: 0 4px;
+}
+
+.recipe-ingredients-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  padding: 4px 0;
+}
+
+.recipe-ingredient-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--vp-c-bg-alt);
+  border: 1px solid var(--vp-c-divider);
+  border-radius: 6px;
+  padding: 3px 8px 3px 4px;
+  font-size: 13px;
+  line-height: 1.2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.recipe-ingredient-chip img {
+  width: 28px;
+  height: 28px;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  padding: 1px;
+  flex-shrink: 0;
+}
+
+.recipe-ingredient-chip .ing-name {
+  color: var(--vp-c-text-1);
+  font-weight: 500;
+}
+
+.recipe-ingredient-chip .ing-qty {
+  color: var(--vp-c-brand-1);
+  font-weight: 700;
+  font-size: 12px;
+  background: var(--vp-c-brand-soft);
+  padding: 2px 6px;
+  border-radius: 4px;
+  margin-left: 2px;
+}
+
+.recipe-price {
+  font-weight: 600;
+  color: #f59e0b;
+  white-space: nowrap;
+}

@@ -9,97 +9,97 @@ Light, medium and heavy armor sets with their defensive stats.
 
 |  | Name | Type | Price | Rarity | Stats | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| <img :src="$withBase('/images/spiked_skeleton.png')" class="sprite" alt="spiked_skeleton" width="24" height="24"> | **Spiked Skeleton** | HeavyArmor | 0 | 0 | Physical Retaliation +50 · CON +8 | — |
-| <img :src="$withBase('/images/copper_armor.png')" class="sprite" alt="copper_armor" width="24" height="24"> | **Copper Armor** | HeavyArmor | 20 | 0 | Max HP 30 · CON +1 | — |
-| <img :src="$withBase('/images/leather_jacket.png')" class="sprite" alt="leather_jacket" width="24" height="24"> | **Leather Jacket** | MediumArmor | 45 | 0 | Max HP 20 · CON +1 · DEX +1 | — |
-| <img :src="$withBase('/images/wurmscales_jacket.png')" class="sprite" alt="wurmscales_jacket" width="24" height="24"> | **Wurmscales Jacket** | MediumArmor | 45 | 0 | Max HP 40 · CON +2 · DEX +2 | — |
-| <img :src="$withBase('/images/iron_chainmail.png')" class="sprite" alt="iron_chainmail" width="24" height="24"> | **Iron Chainmail** | HeavyArmor | 51 | 0 | Max HP 60 · CON +2 | — |
-| <img :src="$withBase('/images/cloth_robe.png')" class="sprite" alt="cloth_robe" width="24" height="24"> | **Cloth Robe** | LightArmor | 54 | 0 | Max HP 10 · INT +3 | — |
-| <img :src="$withBase('/images/feather_robe.png')" class="sprite" alt="feather_robe" width="24" height="24"> | **Feather Robe** | LightArmor | 72 | 0 | Max HP 20 · INT +6 | — |
-| <img :src="$withBase('/images/undead_cuirass.png')" class="sprite" alt="undead_cuirass" width="24" height="24"> | **Undead Cuirass** | HeavyArmor | 72 | 0 | Max HP 90 · CON +3 | — |
-| <img :src="$withBase('/images/undead_jacket.png')" class="sprite" alt="undead_jacket" width="24" height="24"> | **Undead Jacket** | MediumArmor | 72 | 0 | Max HP 60 · CON +3 · DEX +3 | — |
-| <img :src="$withBase('/images/spectral_robe.png')" class="sprite" alt="spectral_robe" width="24" height="24"> | **Spectral Robe** | LightArmor | 135 | 0 | Max HP 30 · INT +9 | — |
-| <img :src="$withBase('/images/silk_robe.png')" class="sprite" alt="silk_robe" width="24" height="24"> | **Silk Robe** | LightArmor | 216 | 0 | Max HP 40 · INT +12 | — |
-| <img :src="$withBase('/images/spitfang_jacket.png')" class="sprite" alt="spitfang_jacket" width="24" height="24"> | **Spitfang Jacket** | MediumArmor | 288 | 0 | Max HP 160 · CON +8 · DEX +8 | — |
-| <img :src="$withBase('/images/trollskin_jacket.png')" class="sprite" alt="trollskin_jacket" width="24" height="24"> | **Trollskin Jacket** | MediumArmor | 306 | 0 | Max HP 120 · CON +5 · DEX +5 · Regen +6 | — |
-| <img :src="$withBase('/images/belt_jacket.png')" class="sprite" alt="belt_jacket" width="24" height="24"> | **Belt Jacket** | MediumArmor | 312 | 0 | Max HP 80 · CON +4 · DEX +4 | — |
-| <img :src="$withBase('/images/cottontail_jacket.png')" class="sprite" alt="cottontail_jacket" width="24" height="24"> | **Cottontail Jacket** | MediumArmor | 345 | 0 | Max HP 20 · CON +1 · DEX +1 · Bonus EXP +35 | — |
-| <img :src="$withBase('/images/ghost_rabbit_cloak.png')" class="sprite" alt="ghost_rabbit_cloak" width="24" height="24"> | **Ghost Rabbit Cloak** | LightArmor | 390 | 0 | Max HP 30 · INT +9 · Bonus EXP +35 | — |
-| <img :src="$withBase('/images/obsidian_cuirass.png')" class="sprite" alt="obsidian_cuirass" width="24" height="24"> | **Obsidian Cuirass** | HeavyArmor | 405 | 0 | Max HP 210 · CON +7 | — |
-| <img :src="$withBase('/images/black_iron_armor.png')" class="sprite" alt="black_iron_armor" width="24" height="24"> | **Black Iron Armor** | HeavyArmor | 419 | 0 | Max HP 150 · CON +5 | — |
-| <img :src="$withBase('/images/dreamwrought_jacket.png')" class="sprite" alt="dreamwrought_jacket" width="24" height="24"> | **Dreamwrought Jacket** | MediumArmor | 435 | 0 | Max HP 208 · CON +26 · DEX +26 | — |
-| <img :src="$withBase('/images/elastic_robe.png')" class="sprite" alt="elastic_robe" width="24" height="24"> | **Elastic Robe** | LightArmor | 444 | 0 | Max HP 90 · INT +27 | — |
-| <img :src="$withBase('/images/winter_cape.png')" class="sprite" alt="winter_cape" width="24" height="24"> | **Winter Cape** | LightArmor | 486 | 0 | Max HP 60 · INT +18 | — |
-| <img :src="$withBase('/images/tortoise_armor.png')" class="sprite" alt="tortoise_armor" width="24" height="24"> | **Tortoise Armor** | HeavyArmor | 492 | 0 | Max HP 240 · CON +8 | — |
-| <img :src="$withBase('/images/frostmetal_armor.png')" class="sprite" alt="frostmetal_armor" width="24" height="24"> | **Frostmetal Armor** | HeavyArmor | 504 | 0 | Max HP 180 · CON +5 · Regen +6 | — |
-| <img :src="$withBase('/images/laroxian_robe.png')" class="sprite" alt="laroxian_robe" width="24" height="24"> | **Laroxian Robe** | LightArmor | 504 | 0 | Max HP 100 · INT +30 | — |
-| <img :src="$withBase('/images/spider_robe.png')" class="sprite" alt="spider_robe" width="24" height="24"> | **Spider Robe** | LightArmor | 540 | 0 | Max HP 70 · INT +21 | — |
-| <img :src="$withBase('/images/golden_armor.png')" class="sprite" alt="golden_armor" width="24" height="24"> | **Golden Armor** | HeavyArmor | 552 | 0 | Max HP 120 · CON +4 | — |
-| <img :src="$withBase('/images/nightwing_jacket.png')" class="sprite" alt="nightwing_jacket" width="24" height="24"> | **Nightwing Jacket** | MediumArmor | 567 | 0 | Max HP 140 · CON +7 · DEX +7 | — |
-| <img :src="$withBase('/images/ancient_jacket.png')" class="sprite" alt="ancient_jacket" width="24" height="24"> | **Ancient Jacket** | MediumArmor | 600 | 0 | Max HP 220 · CON +11 · DEX +11 | — |
-| <img :src="$withBase('/images/ancient_robe.png')" class="sprite" alt="ancient_robe" width="24" height="24"> | **Ancient Robe** | LightArmor | 600 | 0 | Max HP 110 · INT +33 | — |
-| <img :src="$withBase('/images/slime_armor.png')" class="sprite" alt="slime_armor" width="24" height="24"> | **Slime Armor** | HeavyArmor | 630 | 0 | Max HP 150 · DEF +5 | — |
-| <img :src="$withBase('/images/slime_jacket.png')" class="sprite" alt="slime_jacket" width="24" height="24"> | **Slime Jacket** | MediumArmor | 630 | 0 | Max HP 130 · DEF +5 | — |
-| <img :src="$withBase('/images/slime_robe.png')" class="sprite" alt="slime_robe" width="24" height="24"> | **Slime Robe** | LightArmor | 630 | 0 | Max HP 80 · DEF +5 | — |
-| <img :src="$withBase('/images/wyvern_cape.png')" class="sprite" alt="wyvern_cape" width="24" height="24"> | **Wyvern Cape** | LightArmor | 630 | 0 | Max HP 80 · INT +15 · Healing Bonus +15% | — |
-| <img :src="$withBase('/images/patrician_armor.png')" class="sprite" alt="patrician_armor" width="24" height="24"> | **Patrician Armor** | HeavyArmor | 645 | 0 | Max HP 120 · CON +4 · Bonus EXP +35 | — |
-| <img :src="$withBase('/images/celestial_armor.png')" class="sprite" alt="celestial_armor" width="24" height="24"> | **Celestial Armor** | HeavyArmor | 653 | 0 | Max HP 270 · CON +9 | — |
-| <img :src="$withBase('/images/banshee_jacket.png')" class="sprite" alt="banshee_jacket" width="24" height="24"> | **Banshee Jacket** | MediumArmor | 666 | 0 | Max HP 180 · CON +9 · DEX +9 | — |
-| <img :src="$withBase('/images/ivory_jacket.png')" class="sprite" alt="ivory_jacket" width="24" height="24"> | **Ivory Jacket** | MediumArmor | 678 | 0 | Max HP 90 · CON +8 · DEX +4 · Crit Chance +12% | — |
-| <img :src="$withBase('/images/dreamwrought_robe.png')" class="sprite" alt="dreamwrought_robe" width="24" height="24"> | **Dreamwrought Robe** | LightArmor | 690 | 0 | Max HP 46 · INT +60 | — |
-| <img :src="$withBase('/images/spellwoven_jacket.png')" class="sprite" alt="spellwoven_jacket" width="24" height="24"> | **Spellwoven Jacket** | MediumArmor | 741 | 0 | Max HP 200 · CON +10 · DEX +10 | — |
-| <img :src="$withBase('/images/animated_cuirass.png')" class="sprite" alt="animated_cuirass" width="24" height="24"> | **Animated Cuirass** | HeavyArmor | 756 | 0 | Max HP 300 · CON +10 | — |
-| <img :src="$withBase('/images/moth_robe.png')" class="sprite" alt="moth_robe" width="24" height="24"> | **Moth Robe** | LightArmor | 783 | 0 | Max HP 80 · INT +24 | — |
-| <img :src="$withBase('/images/monkey_hide_jacket.png')" class="sprite" alt="monkey_hide_jacket" width="24" height="24"> | **Monkey Hide Jacket** | MediumArmor | 828 | 0 | Max HP 100 · CON +5 · DEX +5 | — |
-| <img :src="$withBase('/images/armor_of_the_dryad.png')" class="sprite" alt="armor_of_the_dryad" width="24" height="24"> | **Armor of the Dryad** | HeavyArmor | 873 | 0 | Max HP 240 | — |
-| <img :src="$withBase('/images/kaunian_robe.png')" class="sprite" alt="kaunian_robe" width="24" height="24"> | **Kaunian Robe** | LightArmor | 900 | 0 | Max HP 206 · INT +20 | — |
-| <img :src="$withBase('/images/fleetfoot_jacket.png')" class="sprite" alt="fleetfoot_jacket" width="24" height="24"> | **Fleetfoot Jacket** | MediumArmor | 945 | 0 | Dodge +20% · Max HP 160 · CON +4 · DEX +8 | — |
-| <img :src="$withBase('/images/robe_of_the_archmage.png')" class="sprite" alt="robe_of_the_archmage" width="24" height="24"> | **Robe of the Archmage** | LightArmor | 966 | 0 | Max HP 120 · INT +40 · MDEF +6 | — |
-| <img :src="$withBase('/images/ancient_armor.png')" class="sprite" alt="ancient_armor" width="24" height="24"> | **Ancient Armor** | HeavyArmor | 1092 | 0 | Max HP 330 · CON +11 | — |
-| <img :src="$withBase('/images/metamorphic_armor.png')" class="sprite" alt="metamorphic_armor" width="24" height="24"> | **Metamorphic Armor** | HeavyArmor | 1188 | 0 | Max HP 140 · CON +5 · Physical Retaliation +10 | — |
-| <img :src="$withBase('/images/shielding_jacket.png')" class="sprite" alt="shielding_jacket" width="24" height="24"> | **Shielding Jacket** | MediumArmor | 1202 | 0 | Status Immunity +30% · Max HP 200 · CON +15 · DEX +10 | — |
-| <img :src="$withBase('/images/shielding_cuirass.png')" class="sprite" alt="shielding_cuirass" width="24" height="24"> | **Shielding Cuirass** | HeavyArmor | 1224 | 0 | Status Immunity +30% · Max HP 300 · CON +15 | — |
-| <img :src="$withBase('/images/dreamwrought_armor.png')" class="sprite" alt="dreamwrought_armor" width="24" height="24"> | **Dreamwrought Armor** | HeavyArmor | 1245 | 0 | Max HP 338 · CON +26 | — |
-| <img :src="$withBase('/images/fleetfoot_armor.png')" class="sprite" alt="fleetfoot_armor" width="24" height="24"> | **Fleetfoot Armor** | HeavyArmor | 1251 | 0 | Dodge +12% · Max HP 240 · CON +5 · DEX +1 | — |
-| <img :src="$withBase('/images/primeval_armor.png')" class="sprite" alt="primeval_armor" width="24" height="24"> | **Primeval Armor** | HeavyArmor | 1296 | 0 | Max HP 270 · CON +9 · DEF +15 | — |
-| <img :src="$withBase('/images/exotic_robe.png')" class="sprite" alt="exotic_robe" width="24" height="24"> | **Exotic Robe** | LightArmor | 1350 | 0 | Max HP 50 · INT +15 | — |
-| <img :src="$withBase('/images/cursed_jacket.png')" class="sprite" alt="cursed_jacket" width="24" height="24"> | **Cursed Jacket** | MediumArmor | 1440 | 0 | Max HP 100 · CON +10 · Crit Damage +50% | — |
-| <img :src="$withBase('/images/unholy_cuirass.png')" class="sprite" alt="unholy_cuirass" width="24" height="24"> | **Unholy Cuirass** | HeavyArmor | 1607 | 0 | Max HP 230 · CON +8 · Magic Retaliation +15 | — |
-| <img :src="$withBase('/images/ghastly_cuirass.png')" class="sprite" alt="ghastly_cuirass" width="24" height="24"> | **Ghastly Cuirass** | HeavyArmor | 1686 | 0 | Max HP 90 · CON +6 · MDEF +10 · Threat +1 | — |
-| <img :src="$withBase('/images/fleetfoot_robe.png')" class="sprite" alt="fleetfoot_robe" width="24" height="24"> | **Fleetfoot Robe** | LightArmor | 1688 | 0 | Dodge +24% · Max HP 80 · INT +12 · DEX +4 | — |
-| <img :src="$withBase('/images/breathtaking_robe.png')" class="sprite" alt="breathtaking_robe" width="24" height="24"> | **Breathtaking Robe** | LightArmor | 1859 | 0 | Max HP 100 · INT +25 | — |
-| <img :src="$withBase('/images/reassembling_jacket.png')" class="sprite" alt="reassembling_jacket" width="24" height="24"> | **Reassembling Jacket** | MediumArmor | 2088 | 0 | Status Immunity +30% · Regen +40 · Max HP 200 · CON +25 · DEX +7 | — |
-| <img :src="$withBase('/images/beastmaster_jacket.png')" class="sprite" alt="beastmaster_jacket" width="24" height="24"> | **Beastmaster Jacket** | MediumArmor | 2250 | 0 | Max HP 220 · CON +10 · DEX +10 · livingCompanionBonusDamage +50 | — |
-| <img :src="$withBase('/images/mutant_jacket.png')" class="sprite" alt="mutant_jacket" width="24" height="24"> | **Mutant Jacket** | MediumArmor | 2280 | 0 | Max HP 316 · CON +6 · DEX +6 | — |
-| <img :src="$withBase('/images/tunica_ignis.png')" class="sprite" alt="tunica_ignis" width="24" height="24"> | **Tunica Ignis** | LightArmor | 2370 | 0 | onFireBonusDamage +2 · Max HP 100 · DEF +10 | — |
-| <img :src="$withBase('/images/frozen_embrace.png')" class="sprite" alt="frozen_embrace" width="24" height="24"> | **Frozen Embrace** | HeavyArmor | 2457 | 0 | Max HP 200 · DEF +12 | — |
-| <img :src="$withBase('/images/orichalcum_armor.png')" class="sprite" alt="orichalcum_armor" width="24" height="24"> | **Orichalcum Armor** | HeavyArmor | 2730 | 0 | Max HP 442 | — |
-| <img :src="$withBase('/images/unholy_spellcage.png')" class="sprite" alt="unholy_spellcage" width="24" height="24"> | **Unholy Spellcage** | HeavyArmor | 3086 | 0 | Max HP 320 · CON +9 · Magic Retaliation +60 | — |
-| <img :src="$withBase('/images/kabelian_armor.png')" class="sprite" alt="kabelian_armor" width="24" height="24"> | **Kabelian Armor** | HeavyArmor | 3276 | 0 | Max HP 105 · CON +20 · darknessReduction +20 | — |
-| <img :src="$withBase('/images/swarmkeeper_armor.png')" class="sprite" alt="swarmkeeper_armor" width="24" height="24"> | **Swarmkeeper Armor** | HeavyArmor | 3368 | 0 | Magic Retaliation +100 · Max HP 390 · CON +13 | — |
-| <img :src="$withBase('/images/sage_jacket.png')" class="sprite" alt="sage_jacket" width="24" height="24"> | **Sage Jacket** | MediumArmor | 3465 | 0 | Max HP 140 · CON +7 · DEX +7 · Bonus EXP +60 | — |
-| <img :src="$withBase('/images/sage_cloak.png')" class="sprite" alt="sage_cloak" width="24" height="24"> | **Sage Cloak** | LightArmor | 3533 | 0 | Max HP 70 · INT +21 · Bonus EXP +60 | — |
-| <img :src="$withBase('/images/duelist_armor.png')" class="sprite" alt="duelist_armor" width="24" height="24"> | **Duelist Armor** | HeavyArmor | 3885 | 0 | Max HP 75 · CON +20 · Counterattack +25% | — |
-| <img :src="$withBase('/images/sage_armor.png')" class="sprite" alt="sage_armor" width="24" height="24"> | **Sage Armor** | HeavyArmor | 3915 | 0 | Max HP 210 · CON +7 · Bonus EXP +60 | — |
-| <img :src="$withBase('/images/ice_cage.png')" class="sprite" alt="ice_cage" width="24" height="24"> | **Ice Cage** | HeavyArmor | 3926 | 0 | Max HP 215 · DEF +16 | — |
-| <img :src="$withBase('/images/cloak_of_redemption.png')" class="sprite" alt="cloak_of_redemption" width="24" height="24"> | **Cloak of Redemption** | LightArmor | 4203 | 0 | onFireBonusDamage +2 · Max HP 110 · DEF +20 · MDEF +10 | — |
-| <img :src="$withBase('/images/cunning_downfall.png')" class="sprite" alt="cunning_downfall" width="24" height="24"> | **Cunning Downfall** | MediumArmor | 4320 | 0 | Max HP 140 · CON +5 · DEX +5 | — |
-| <img :src="$withBase('/images/deep_sea_robe.png')" class="sprite" alt="deep_sea_robe" width="24" height="24"> | **Deep Sea Robe** | LightArmor | 5505 | 0 | Max HP 50 · INT +15 · Status Immunity +40% | — |
-| <img :src="$withBase('/images/deep_sea_jacket.png')" class="sprite" alt="deep_sea_jacket" width="24" height="24"> | **Deep Sea Jacket** | MediumArmor | 5883 | 0 | Max HP 100 · CON +5 · DEX +5 · Status Immunity +40% | — |
-| <img :src="$withBase('/images/tunica_infernalis.png')" class="sprite" alt="tunica_infernalis" width="24" height="24"> | **Tunica Infernalis** | LightArmor | 7205 | 0 | onFireBonusDamage +2 · Max HP 150 · DEF +20 · MDEF +12 | — |
-| <img :src="$withBase('/images/absolute_zero.png')" class="sprite" alt="absolute_zero" width="24" height="24"> | **Absolute Zero** | HeavyArmor | 8889 | 0 | Max HP 310 · DEF +16 | — |
-| <img :src="$withBase('/images/champion_armor.png')" class="sprite" alt="champion_armor" width="24" height="24"> | **Champion Armor** | HeavyArmor | 13300 | 0 | Max HP 120 · CON +28 · Counterattack +40% | — |
-| <img :src="$withBase('/images/cunning_demise.png')" class="sprite" alt="cunning_demise" width="24" height="24"> | **Cunning Demise** | MediumArmor | 16200 | 0 | Max HP 160 · CON +7 · DEX +7 | — |
-| <img :src="$withBase('/images/chief_scientist_coat.png')" class="sprite" alt="chief_scientist_coat" width="24" height="24"> | **Chief Scientist Coat** | LightArmor | 17500 | 0 | Healing Bonus +25% · INT +72 | Rare Drop |
-| <img :src="$withBase('/images/prismatic_armor.png')" class="sprite" alt="prismatic_armor" width="24" height="24"> | **Prismatic Armor** | HeavyArmor | 20850 | 0 | Max HP 230 · DEF +15 · MDEF +15 | — |
-| <img :src="$withBase('/images/void_armor.png')" class="sprite" alt="void_armor" width="24" height="24"> | **Void Armor** | HeavyArmor | 31500 | 0 | Max HP 280 · DEF +15 · MDEF +15 | — |
-| <img :src="$withBase('/images/robe_of_the_lich.png')" class="sprite" alt="robe_of_the_lich" width="24" height="24"> | **Robe of the Lich** | LightArmor | 42500 | 0 | Max HP 75 · INT +27 · lifestealWithMinion +35 | Rare Drop |
-| <img :src="$withBase('/images/armor_of_the_undying.png')" class="sprite" alt="armor_of_the_undying" width="24" height="24"> | **Armor of the Undying** | HeavyArmor | 49300 | 0 | Max HP 350 · regenerationBonus +5 | — |
-| <img :src="$withBase('/images/nil_armor.png')" class="sprite" alt="nil_armor" width="24" height="24"> | **Nil Armor** | HeavyArmor | 57000 | 0 | Max HP 350 · DEF +15 · MDEF +15 | — |
-| <img :src="$withBase('/images/scarlet_sigil.png')" class="sprite" alt="scarlet_sigil" width="24" height="24"> | **Scarlet Sigil** | LightArmor | 60893 | 0 | Max HP 200 · INT +62 · Skill Amp +20% · manaRegen +2 | — |
-| <img :src="$withBase('/images/scarlet_veil.png')" class="sprite" alt="scarlet_veil" width="24" height="24"> | **Scarlet Veil** | MediumArmor | 80000 | 0 | Max HP 270 · CON +30 · DEX +24 · Crit Chance +18% | — |
-| <img :src="$withBase('/images/scarlet_oni.png')" class="sprite" alt="scarlet_oni" width="24" height="24"> | **Scarlet Oni** | HeavyArmor | 100000 | 0 | Max HP 470 · CON +56 · Damage Dealt +27% | — |
-| <img :src="$withBase('/images/scarlet_oni_juggernaut.png')" class="sprite" alt="scarlet_oni_juggernaut" width="24" height="24"> | **Scarlet Oni Juggernaut** | HeavyArmor | 125893 | 0 | Max HP 720 · CON +126 · Damage Dealt +51% | — |
-| <img :src="$withBase('/images/scarlet_shroud.png')" class="sprite" alt="scarlet_shroud" width="24" height="24"> | **Scarlet Shroud** | MediumArmor | 135000 | 0 | Max HP 300 · CON +50 · DEX +40 · Crit Chance +21% · Crit Damage +21% | — |
+| <img :src="$withBase('/images/spiked_skeleton.png')" class="sprite" alt="spiked_skeleton" width="56" height="56"> | **Spiked Skeleton** | HeavyArmor | 0 | 0 | Physical Retaliation +50 · CON +8 | — |
+| <img :src="$withBase('/images/copper_armor.png')" class="sprite" alt="copper_armor" width="56" height="56"> | **Copper Armor** | HeavyArmor | 20 | 0 | Max HP 30 · CON +1 | — |
+| <img :src="$withBase('/images/leather_jacket.png')" class="sprite" alt="leather_jacket" width="56" height="56"> | **Leather Jacket** | MediumArmor | 45 | 0 | Max HP 20 · CON +1 · DEX +1 | — |
+| <img :src="$withBase('/images/wurmscales_jacket.png')" class="sprite" alt="wurmscales_jacket" width="56" height="56"> | **Wurmscales Jacket** | MediumArmor | 45 | 0 | Max HP 40 · CON +2 · DEX +2 | — |
+| <img :src="$withBase('/images/iron_chainmail.png')" class="sprite" alt="iron_chainmail" width="56" height="56"> | **Iron Chainmail** | HeavyArmor | 51 | 0 | Max HP 60 · CON +2 | — |
+| <img :src="$withBase('/images/cloth_robe.png')" class="sprite" alt="cloth_robe" width="56" height="56"> | **Cloth Robe** | LightArmor | 54 | 0 | Max HP 10 · INT +3 | — |
+| <img :src="$withBase('/images/feather_robe.png')" class="sprite" alt="feather_robe" width="56" height="56"> | **Feather Robe** | LightArmor | 72 | 0 | Max HP 20 · INT +6 | — |
+| <img :src="$withBase('/images/undead_cuirass.png')" class="sprite" alt="undead_cuirass" width="56" height="56"> | **Undead Cuirass** | HeavyArmor | 72 | 0 | Max HP 90 · CON +3 | — |
+| <img :src="$withBase('/images/undead_jacket.png')" class="sprite" alt="undead_jacket" width="56" height="56"> | **Undead Jacket** | MediumArmor | 72 | 0 | Max HP 60 · CON +3 · DEX +3 | — |
+| <img :src="$withBase('/images/spectral_robe.png')" class="sprite" alt="spectral_robe" width="56" height="56"> | **Spectral Robe** | LightArmor | 135 | 0 | Max HP 30 · INT +9 | — |
+| <img :src="$withBase('/images/silk_robe.png')" class="sprite" alt="silk_robe" width="56" height="56"> | **Silk Robe** | LightArmor | 216 | 0 | Max HP 40 · INT +12 | — |
+| <img :src="$withBase('/images/spitfang_jacket.png')" class="sprite" alt="spitfang_jacket" width="56" height="56"> | **Spitfang Jacket** | MediumArmor | 288 | 0 | Max HP 160 · CON +8 · DEX +8 | — |
+| <img :src="$withBase('/images/trollskin_jacket.png')" class="sprite" alt="trollskin_jacket" width="56" height="56"> | **Trollskin Jacket** | MediumArmor | 306 | 0 | Max HP 120 · CON +5 · DEX +5 · Regen +6 | — |
+| <img :src="$withBase('/images/belt_jacket.png')" class="sprite" alt="belt_jacket" width="56" height="56"> | **Belt Jacket** | MediumArmor | 312 | 0 | Max HP 80 · CON +4 · DEX +4 | — |
+| <img :src="$withBase('/images/cottontail_jacket.png')" class="sprite" alt="cottontail_jacket" width="56" height="56"> | **Cottontail Jacket** | MediumArmor | 345 | 0 | Max HP 20 · CON +1 · DEX +1 · Bonus EXP +35 | — |
+| <img :src="$withBase('/images/ghost_rabbit_cloak.png')" class="sprite" alt="ghost_rabbit_cloak" width="56" height="56"> | **Ghost Rabbit Cloak** | LightArmor | 390 | 0 | Max HP 30 · INT +9 · Bonus EXP +35 | — |
+| <img :src="$withBase('/images/obsidian_cuirass.png')" class="sprite" alt="obsidian_cuirass" width="56" height="56"> | **Obsidian Cuirass** | HeavyArmor | 405 | 0 | Max HP 210 · CON +7 | — |
+| <img :src="$withBase('/images/black_iron_armor.png')" class="sprite" alt="black_iron_armor" width="56" height="56"> | **Black Iron Armor** | HeavyArmor | 419 | 0 | Max HP 150 · CON +5 | — |
+| <img :src="$withBase('/images/dreamwrought_jacket.png')" class="sprite" alt="dreamwrought_jacket" width="56" height="56"> | **Dreamwrought Jacket** | MediumArmor | 435 | 0 | Max HP 208 · CON +26 · DEX +26 | — |
+| <img :src="$withBase('/images/elastic_robe.png')" class="sprite" alt="elastic_robe" width="56" height="56"> | **Elastic Robe** | LightArmor | 444 | 0 | Max HP 90 · INT +27 | — |
+| <img :src="$withBase('/images/winter_cape.png')" class="sprite" alt="winter_cape" width="56" height="56"> | **Winter Cape** | LightArmor | 486 | 0 | Max HP 60 · INT +18 | — |
+| <img :src="$withBase('/images/tortoise_armor.png')" class="sprite" alt="tortoise_armor" width="56" height="56"> | **Tortoise Armor** | HeavyArmor | 492 | 0 | Max HP 240 · CON +8 | — |
+| <img :src="$withBase('/images/frostmetal_armor.png')" class="sprite" alt="frostmetal_armor" width="56" height="56"> | **Frostmetal Armor** | HeavyArmor | 504 | 0 | Max HP 180 · CON +5 · Regen +6 | — |
+| <img :src="$withBase('/images/laroxian_robe.png')" class="sprite" alt="laroxian_robe" width="56" height="56"> | **Laroxian Robe** | LightArmor | 504 | 0 | Max HP 100 · INT +30 | — |
+| <img :src="$withBase('/images/spider_robe.png')" class="sprite" alt="spider_robe" width="56" height="56"> | **Spider Robe** | LightArmor | 540 | 0 | Max HP 70 · INT +21 | — |
+| <img :src="$withBase('/images/golden_armor.png')" class="sprite" alt="golden_armor" width="56" height="56"> | **Golden Armor** | HeavyArmor | 552 | 0 | Max HP 120 · CON +4 | — |
+| <img :src="$withBase('/images/nightwing_jacket.png')" class="sprite" alt="nightwing_jacket" width="56" height="56"> | **Nightwing Jacket** | MediumArmor | 567 | 0 | Max HP 140 · CON +7 · DEX +7 | — |
+| <img :src="$withBase('/images/ancient_jacket.png')" class="sprite" alt="ancient_jacket" width="56" height="56"> | **Ancient Jacket** | MediumArmor | 600 | 0 | Max HP 220 · CON +11 · DEX +11 | — |
+| <img :src="$withBase('/images/ancient_robe.png')" class="sprite" alt="ancient_robe" width="56" height="56"> | **Ancient Robe** | LightArmor | 600 | 0 | Max HP 110 · INT +33 | — |
+| <img :src="$withBase('/images/slime_armor.png')" class="sprite" alt="slime_armor" width="56" height="56"> | **Slime Armor** | HeavyArmor | 630 | 0 | Max HP 150 · DEF +5 | — |
+| <img :src="$withBase('/images/slime_jacket.png')" class="sprite" alt="slime_jacket" width="56" height="56"> | **Slime Jacket** | MediumArmor | 630 | 0 | Max HP 130 · DEF +5 | — |
+| <img :src="$withBase('/images/slime_robe.png')" class="sprite" alt="slime_robe" width="56" height="56"> | **Slime Robe** | LightArmor | 630 | 0 | Max HP 80 · DEF +5 | — |
+| <img :src="$withBase('/images/wyvern_cape.png')" class="sprite" alt="wyvern_cape" width="56" height="56"> | **Wyvern Cape** | LightArmor | 630 | 0 | Max HP 80 · INT +15 · Healing Bonus +15% | — |
+| <img :src="$withBase('/images/patrician_armor.png')" class="sprite" alt="patrician_armor" width="56" height="56"> | **Patrician Armor** | HeavyArmor | 645 | 0 | Max HP 120 · CON +4 · Bonus EXP +35 | — |
+| <img :src="$withBase('/images/celestial_armor.png')" class="sprite" alt="celestial_armor" width="56" height="56"> | **Celestial Armor** | HeavyArmor | 653 | 0 | Max HP 270 · CON +9 | — |
+| <img :src="$withBase('/images/banshee_jacket.png')" class="sprite" alt="banshee_jacket" width="56" height="56"> | **Banshee Jacket** | MediumArmor | 666 | 0 | Max HP 180 · CON +9 · DEX +9 | — |
+| <img :src="$withBase('/images/ivory_jacket.png')" class="sprite" alt="ivory_jacket" width="56" height="56"> | **Ivory Jacket** | MediumArmor | 678 | 0 | Max HP 90 · CON +8 · DEX +4 · Crit Chance +12% | — |
+| <img :src="$withBase('/images/dreamwrought_robe.png')" class="sprite" alt="dreamwrought_robe" width="56" height="56"> | **Dreamwrought Robe** | LightArmor | 690 | 0 | Max HP 46 · INT +60 | — |
+| <img :src="$withBase('/images/spellwoven_jacket.png')" class="sprite" alt="spellwoven_jacket" width="56" height="56"> | **Spellwoven Jacket** | MediumArmor | 741 | 0 | Max HP 200 · CON +10 · DEX +10 | — |
+| <img :src="$withBase('/images/animated_cuirass.png')" class="sprite" alt="animated_cuirass" width="56" height="56"> | **Animated Cuirass** | HeavyArmor | 756 | 0 | Max HP 300 · CON +10 | — |
+| <img :src="$withBase('/images/moth_robe.png')" class="sprite" alt="moth_robe" width="56" height="56"> | **Moth Robe** | LightArmor | 783 | 0 | Max HP 80 · INT +24 | — |
+| <img :src="$withBase('/images/monkey_hide_jacket.png')" class="sprite" alt="monkey_hide_jacket" width="56" height="56"> | **Monkey Hide Jacket** | MediumArmor | 828 | 0 | Max HP 100 · CON +5 · DEX +5 | — |
+| <img :src="$withBase('/images/armor_of_the_dryad.png')" class="sprite" alt="armor_of_the_dryad" width="56" height="56"> | **Armor of the Dryad** | HeavyArmor | 873 | 0 | Max HP 240 | — |
+| <img :src="$withBase('/images/kaunian_robe.png')" class="sprite" alt="kaunian_robe" width="56" height="56"> | **Kaunian Robe** | LightArmor | 900 | 0 | Max HP 206 · INT +20 | — |
+| <img :src="$withBase('/images/fleetfoot_jacket.png')" class="sprite" alt="fleetfoot_jacket" width="56" height="56"> | **Fleetfoot Jacket** | MediumArmor | 945 | 0 | Dodge +20% · Max HP 160 · CON +4 · DEX +8 | — |
+| <img :src="$withBase('/images/robe_of_the_archmage.png')" class="sprite" alt="robe_of_the_archmage" width="56" height="56"> | **Robe of the Archmage** | LightArmor | 966 | 0 | Max HP 120 · INT +40 · MDEF +6 | — |
+| <img :src="$withBase('/images/ancient_armor.png')" class="sprite" alt="ancient_armor" width="56" height="56"> | **Ancient Armor** | HeavyArmor | 1092 | 0 | Max HP 330 · CON +11 | — |
+| <img :src="$withBase('/images/metamorphic_armor.png')" class="sprite" alt="metamorphic_armor" width="56" height="56"> | **Metamorphic Armor** | HeavyArmor | 1188 | 0 | Max HP 140 · CON +5 · Physical Retaliation +10 | — |
+| <img :src="$withBase('/images/shielding_jacket.png')" class="sprite" alt="shielding_jacket" width="56" height="56"> | **Shielding Jacket** | MediumArmor | 1202 | 0 | Status Immunity +30% · Max HP 200 · CON +15 · DEX +10 | — |
+| <img :src="$withBase('/images/shielding_cuirass.png')" class="sprite" alt="shielding_cuirass" width="56" height="56"> | **Shielding Cuirass** | HeavyArmor | 1224 | 0 | Status Immunity +30% · Max HP 300 · CON +15 | — |
+| <img :src="$withBase('/images/dreamwrought_armor.png')" class="sprite" alt="dreamwrought_armor" width="56" height="56"> | **Dreamwrought Armor** | HeavyArmor | 1245 | 0 | Max HP 338 · CON +26 | — |
+| <img :src="$withBase('/images/fleetfoot_armor.png')" class="sprite" alt="fleetfoot_armor" width="56" height="56"> | **Fleetfoot Armor** | HeavyArmor | 1251 | 0 | Dodge +12% · Max HP 240 · CON +5 · DEX +1 | — |
+| <img :src="$withBase('/images/primeval_armor.png')" class="sprite" alt="primeval_armor" width="56" height="56"> | **Primeval Armor** | HeavyArmor | 1296 | 0 | Max HP 270 · CON +9 · DEF +15 | — |
+| <img :src="$withBase('/images/exotic_robe.png')" class="sprite" alt="exotic_robe" width="56" height="56"> | **Exotic Robe** | LightArmor | 1350 | 0 | Max HP 50 · INT +15 | — |
+| <img :src="$withBase('/images/cursed_jacket.png')" class="sprite" alt="cursed_jacket" width="56" height="56"> | **Cursed Jacket** | MediumArmor | 1440 | 0 | Max HP 100 · CON +10 · Crit Damage +50% | — |
+| <img :src="$withBase('/images/unholy_cuirass.png')" class="sprite" alt="unholy_cuirass" width="56" height="56"> | **Unholy Cuirass** | HeavyArmor | 1607 | 0 | Max HP 230 · CON +8 · Magic Retaliation +15 | — |
+| <img :src="$withBase('/images/ghastly_cuirass.png')" class="sprite" alt="ghastly_cuirass" width="56" height="56"> | **Ghastly Cuirass** | HeavyArmor | 1686 | 0 | Max HP 90 · CON +6 · MDEF +10 · Threat +1 | — |
+| <img :src="$withBase('/images/fleetfoot_robe.png')" class="sprite" alt="fleetfoot_robe" width="56" height="56"> | **Fleetfoot Robe** | LightArmor | 1688 | 0 | Dodge +24% · Max HP 80 · INT +12 · DEX +4 | — |
+| <img :src="$withBase('/images/breathtaking_robe.png')" class="sprite" alt="breathtaking_robe" width="56" height="56"> | **Breathtaking Robe** | LightArmor | 1859 | 0 | Max HP 100 · INT +25 | — |
+| <img :src="$withBase('/images/reassembling_jacket.png')" class="sprite" alt="reassembling_jacket" width="56" height="56"> | **Reassembling Jacket** | MediumArmor | 2088 | 0 | Status Immunity +30% · Regen +40 · Max HP 200 · CON +25 · DEX +7 | — |
+| <img :src="$withBase('/images/beastmaster_jacket.png')" class="sprite" alt="beastmaster_jacket" width="56" height="56"> | **Beastmaster Jacket** | MediumArmor | 2250 | 0 | Max HP 220 · CON +10 · DEX +10 · livingCompanionBonusDamage +50 | — |
+| <img :src="$withBase('/images/mutant_jacket.png')" class="sprite" alt="mutant_jacket" width="56" height="56"> | **Mutant Jacket** | MediumArmor | 2280 | 0 | Max HP 316 · CON +6 · DEX +6 | — |
+| <img :src="$withBase('/images/tunica_ignis.png')" class="sprite" alt="tunica_ignis" width="56" height="56"> | **Tunica Ignis** | LightArmor | 2370 | 0 | onFireBonusDamage +2 · Max HP 100 · DEF +10 | — |
+| <img :src="$withBase('/images/frozen_embrace.png')" class="sprite" alt="frozen_embrace" width="56" height="56"> | **Frozen Embrace** | HeavyArmor | 2457 | 0 | Max HP 200 · DEF +12 | — |
+| <img :src="$withBase('/images/orichalcum_armor.png')" class="sprite" alt="orichalcum_armor" width="56" height="56"> | **Orichalcum Armor** | HeavyArmor | 2730 | 0 | Max HP 442 | — |
+| <img :src="$withBase('/images/unholy_spellcage.png')" class="sprite" alt="unholy_spellcage" width="56" height="56"> | **Unholy Spellcage** | HeavyArmor | 3086 | 0 | Max HP 320 · CON +9 · Magic Retaliation +60 | — |
+| <img :src="$withBase('/images/kabelian_armor.png')" class="sprite" alt="kabelian_armor" width="56" height="56"> | **Kabelian Armor** | HeavyArmor | 3276 | 0 | Max HP 105 · CON +20 · darknessReduction +20 | — |
+| <img :src="$withBase('/images/swarmkeeper_armor.png')" class="sprite" alt="swarmkeeper_armor" width="56" height="56"> | **Swarmkeeper Armor** | HeavyArmor | 3368 | 0 | Magic Retaliation +100 · Max HP 390 · CON +13 | — |
+| <img :src="$withBase('/images/sage_jacket.png')" class="sprite" alt="sage_jacket" width="56" height="56"> | **Sage Jacket** | MediumArmor | 3465 | 0 | Max HP 140 · CON +7 · DEX +7 · Bonus EXP +60 | — |
+| <img :src="$withBase('/images/sage_cloak.png')" class="sprite" alt="sage_cloak" width="56" height="56"> | **Sage Cloak** | LightArmor | 3533 | 0 | Max HP 70 · INT +21 · Bonus EXP +60 | — |
+| <img :src="$withBase('/images/duelist_armor.png')" class="sprite" alt="duelist_armor" width="56" height="56"> | **Duelist Armor** | HeavyArmor | 3885 | 0 | Max HP 75 · CON +20 · Counterattack +25% | — |
+| <img :src="$withBase('/images/sage_armor.png')" class="sprite" alt="sage_armor" width="56" height="56"> | **Sage Armor** | HeavyArmor | 3915 | 0 | Max HP 210 · CON +7 · Bonus EXP +60 | — |
+| <img :src="$withBase('/images/ice_cage.png')" class="sprite" alt="ice_cage" width="56" height="56"> | **Ice Cage** | HeavyArmor | 3926 | 0 | Max HP 215 · DEF +16 | — |
+| <img :src="$withBase('/images/cloak_of_redemption.png')" class="sprite" alt="cloak_of_redemption" width="56" height="56"> | **Cloak of Redemption** | LightArmor | 4203 | 0 | onFireBonusDamage +2 · Max HP 110 · DEF +20 · MDEF +10 | — |
+| <img :src="$withBase('/images/cunning_downfall.png')" class="sprite" alt="cunning_downfall" width="56" height="56"> | **Cunning Downfall** | MediumArmor | 4320 | 0 | Max HP 140 · CON +5 · DEX +5 | — |
+| <img :src="$withBase('/images/deep_sea_robe.png')" class="sprite" alt="deep_sea_robe" width="56" height="56"> | **Deep Sea Robe** | LightArmor | 5505 | 0 | Max HP 50 · INT +15 · Status Immunity +40% | — |
+| <img :src="$withBase('/images/deep_sea_jacket.png')" class="sprite" alt="deep_sea_jacket" width="56" height="56"> | **Deep Sea Jacket** | MediumArmor | 5883 | 0 | Max HP 100 · CON +5 · DEX +5 · Status Immunity +40% | — |
+| <img :src="$withBase('/images/tunica_infernalis.png')" class="sprite" alt="tunica_infernalis" width="56" height="56"> | **Tunica Infernalis** | LightArmor | 7205 | 0 | onFireBonusDamage +2 · Max HP 150 · DEF +20 · MDEF +12 | — |
+| <img :src="$withBase('/images/absolute_zero.png')" class="sprite" alt="absolute_zero" width="56" height="56"> | **Absolute Zero** | HeavyArmor | 8889 | 0 | Max HP 310 · DEF +16 | — |
+| <img :src="$withBase('/images/champion_armor.png')" class="sprite" alt="champion_armor" width="56" height="56"> | **Champion Armor** | HeavyArmor | 13300 | 0 | Max HP 120 · CON +28 · Counterattack +40% | — |
+| <img :src="$withBase('/images/cunning_demise.png')" class="sprite" alt="cunning_demise" width="56" height="56"> | **Cunning Demise** | MediumArmor | 16200 | 0 | Max HP 160 · CON +7 · DEX +7 | — |
+| <img :src="$withBase('/images/chief_scientist_coat.png')" class="sprite" alt="chief_scientist_coat" width="56" height="56"> | **Chief Scientist Coat** | LightArmor | 17500 | 0 | Healing Bonus +25% · INT +72 | Rare Drop |
+| <img :src="$withBase('/images/prismatic_armor.png')" class="sprite" alt="prismatic_armor" width="56" height="56"> | **Prismatic Armor** | HeavyArmor | 20850 | 0 | Max HP 230 · DEF +15 · MDEF +15 | — |
+| <img :src="$withBase('/images/void_armor.png')" class="sprite" alt="void_armor" width="56" height="56"> | **Void Armor** | HeavyArmor | 31500 | 0 | Max HP 280 · DEF +15 · MDEF +15 | — |
+| <img :src="$withBase('/images/robe_of_the_lich.png')" class="sprite" alt="robe_of_the_lich" width="56" height="56"> | **Robe of the Lich** | LightArmor | 42500 | 0 | Max HP 75 · INT +27 · lifestealWithMinion +35 | Rare Drop |
+| <img :src="$withBase('/images/armor_of_the_undying.png')" class="sprite" alt="armor_of_the_undying" width="56" height="56"> | **Armor of the Undying** | HeavyArmor | 49300 | 0 | Max HP 350 · regenerationBonus +5 | — |
+| <img :src="$withBase('/images/nil_armor.png')" class="sprite" alt="nil_armor" width="56" height="56"> | **Nil Armor** | HeavyArmor | 57000 | 0 | Max HP 350 · DEF +15 · MDEF +15 | — |
+| <img :src="$withBase('/images/scarlet_sigil.png')" class="sprite" alt="scarlet_sigil" width="56" height="56"> | **Scarlet Sigil** | LightArmor | 60893 | 0 | Max HP 200 · INT +62 · Skill Amp +20% · manaRegen +2 | — |
+| <img :src="$withBase('/images/scarlet_veil.png')" class="sprite" alt="scarlet_veil" width="56" height="56"> | **Scarlet Veil** | MediumArmor | 80000 | 0 | Max HP 270 · CON +30 · DEX +24 · Crit Chance +18% | — |
+| <img :src="$withBase('/images/scarlet_oni.png')" class="sprite" alt="scarlet_oni" width="56" height="56"> | **Scarlet Oni** | HeavyArmor | 100000 | 0 | Max HP 470 · CON +56 · Damage Dealt +27% | — |
+| <img :src="$withBase('/images/scarlet_oni_juggernaut.png')" class="sprite" alt="scarlet_oni_juggernaut" width="56" height="56"> | **Scarlet Oni Juggernaut** | HeavyArmor | 125893 | 0 | Max HP 720 · CON +126 · Damage Dealt +51% | — |
+| <img :src="$withBase('/images/scarlet_shroud.png')" class="sprite" alt="scarlet_shroud" width="56" height="56"> | **Scarlet Shroud** | MediumArmor | 135000 | 0 | Max HP 300 · CON +50 · DEX +40 · Crit Chance +21% · Crit Damage +21% | — |
 
 :::

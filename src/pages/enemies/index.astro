@@ -1,0 +1,31 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import EnemyCard from '../../components/EnemyCard.vue';
+import enemiesData from '../../data/enemies.json';
+---
+
+<WikiLayout title="Enemies & Bestiary" description="Complete enemy stats, damages, and item drops in Idle Guild Master Modded.">
+  <div class="pageHeader">
+    <h1>Enemies & Bestiary</h1>
+    <p>
+      Comprehensive bestiary of wild beasts, dungeon monsters, corrupted horrors, and raid bosses.
+    </p>
+  </div>
+
+  <div class="enemiesGrid">
+    {enemiesData.map((e) => (
+      <EnemyCard client:load enemy={e as any} basePath="/igmplus_wiki" />
+    ))}
+  </div>
+</WikiLayout>
+
+<style>
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+.enemiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+</style>

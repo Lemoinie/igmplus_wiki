@@ -1,0 +1,202 @@
+---
+import Sidebar from '../components/Sidebar.vue';
+import SearchBar from '../components/SearchBar.vue';
+import '../styles/global.css';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const { title = 'IGM+ Wiki', description = 'Idle Guild Master Mod Community Wiki' } = Astro.props;
+
+// Global search index built statically from structured JSON data
+import classesList from '../data/classes.json';
+import equipmentList from '../data/equipment.json';
+import traitsList from '../data/traits.json';
+import petsList from '../data/pets.json';
+import skillsList from '../data/skills.json';
+import enemiesList from '../data/enemies.json';
+import dungeonsList from '../data/dungeons.json';
+
+const searchEntries = [
+  ...classesList.map((c: any) => ({
+    id: `class-${c.id}`,
+    title: c.name,
+    category: 'Class' as const,
+    url: `/igmplus_wiki/classes#class-${c.id}`,
+    description: `Tier ${c.tier} ${c.category} · ${c.weaponType} / ${c.armorType}`
+  })),
+  ...equipmentList.map((e: any) => ({
+    id: `equip-${e.id}`,
+    title: e.name,
+    category: 'Equipment' as const,
+    url: `/igmplus_wiki/equipment#${e.id}`,
+    description: `★${e.rarity} ${e.category} · Price: ${e.price}`
+  })),
+  ...petsList.map((p: any) => ({
+    id: `pet-${p.id}`,
+    title: p.name,
+    category: 'Pet' as const,
+    url: `/igmplus_wiki/pets#${p.id}`,
+    description: `Tier ${p.tier} ${p.type} pet`
+  })),
+  ...traitsList.map((t: any) => ({
+    id: `trait-${t.id}`,
+    title: t.name,
+    category: 'Trait' as const,
+    url: `/igmplus_wiki/traits#${t.id}`,
+    description: t.description
+  })),
+  ...skillsList.filter((s: any) => s.name && s.name !== '—').map((s: any) => ({
+    id: `skill-${s.key}`,
+    title: s.name,
+    category: 'Skill' as const,
+    url: `/igmplus_wiki/skills#${s.key}`,
+    description: `${s.kind.toUpperCase()}: ${s.description}`
+  })),
+  ...enemiesList.map((en: any) => ({
+    id: `enemy-${en.id}`,
+    title: en.name,
+    category: 'Enemy' as const,
+    url: `/igmplus_wiki/enemies#${en.id}`,
+    description: `${en.isBoss ? 'Boss' : 'Enemy'} · HP: ${en.stats?.hp} · DMG: ${en.damage?.min}-${en.damage?.max}`
+  })),
+  ...dungeonsList.map((d: any) => ({
+    id: `dungeon-${d.id}`,
+    title: d.name,
+    category: 'Dungeon' as const,
+    url: `/igmplus_wiki/dungeons#${d.id}`,
+    description: `${d.type.toUpperCase()} · ${d.encounterChance}% encounter rate`
+  })),
+  {
+    id: 'mech-defense-and-armor',
+    title: 'Defense and Armor Mechanics',
+    category: 'Mechanics' as const,
+    url: '/igmplus_wiki/mechanics/defense-and-armor',
+    description: 'Damage mitigation formulas, Armor Penetration, and effective HP'
+  },
+  {
+    id: 'mech-attack-speed',
+    title: 'Attack Speed Mechanics',
+    category: 'Mechanics' as const,
+    url: '/igmplus_wiki/mechanics/attack-speed',
+    description: 'Dexterity scaling, turn orders, and action frequency'
+  }
+];
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/svg+xml" href="/igmplus_wiki/favicon.svg" />
+    <title>{title} | IGM+ Wiki</title>
+    <meta name="description" content={description} />
+  </head>
+  <body>
+    <div class="layoutRoot">
+      <!-- Sidebar Navigation -->
+      <Sidebar client:load />
+
+      <!-- Main Layout Body -->
+      <div class="mainWrapper">
+        <!-- Top Header with Global Search -->
+        <header class="topHeader">
+          <div class="headerLeft"></div>
+          <div class="headerCenter">
+            <SearchBar client:load entries={searchEntries} />
+          </div>
+          <div class="headerRight">
+            <span class="modBadge">IGM+ Modded</span>
+          </div>
+        </header>
+
+        <!-- Page Content -->
+        <main class="pageContent">
+          <slot />
+        </main>
+
+        <footer class="siteFooter">
+          <p>Idle Guild Master Modded (IGM+) Community Wiki · Data-driven architecture</p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+<style>
+.layoutRoot {
+  display: flex;
+  min-height: 100vh;
+}
+
+.mainWrapper {
+  flex: 1;
+  margin-left: 250px;
+  display: flex;
+  flex-direction: column;
+  transition: margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  min-width: 0;
+}
+
+:global(html.sidebar-collapsed) .mainWrapper {
+  margin-left: 0;
+}
+
+.topHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.85rem 1.5rem;
+  background: var(--bg-sidebar);
+  border-bottom: 1px solid var(--border-subtle);
+  position: sticky;
+  top: 0;
+  z-index: 30;
+}
+
+.headerCenter {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.modBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-gold);
+}
+
+.pageContent {
+  flex: 1;
+  padding: 2rem 2.5rem;
+  max-width: 1400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.siteFooter {
+  padding: 1.5rem 2rem;
+  border-top: 1px solid var(--border-subtle);
+  text-align: center;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+@media (max-width: 959px) {
+  .mainWrapper {
+    margin-left: 0;
+  }
+  .pageContent {
+    padding: 1.25rem 1rem;
+  }
+}
+</style>

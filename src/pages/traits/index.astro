@@ -1,0 +1,32 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import TraitCard from '../../components/TraitCard.vue';
+import traitsData from '../../data/traits.json';
+---
+
+<WikiLayout title="Adventurer Traits" description="Catalog of positive, negative, and unique traits in Idle Guild Master Modded.">
+  <div class="pageHeader">
+    <h1>Adventurer Traits</h1>
+    <p>
+      Inherent physical and personality traits rolled upon recruitment.
+      Traits modify baseline stats, combat behavior, and situational effectiveness.
+    </p>
+  </div>
+
+  <div class="traitsGrid">
+    {traitsData.map((t) => (
+      <TraitCard client:load trait={t as any} basePath="/igmplus_wiki" />
+    ))}
+  </div>
+</WikiLayout>
+
+<style>
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+.traitsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1rem;
+}
+</style>

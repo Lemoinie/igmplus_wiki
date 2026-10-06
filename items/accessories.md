@@ -9,127 +9,127 @@ Rings, capes, amulets and trinkets.
 
 |  | Name | Type | Price | Rarity | Stats | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
-| <img :src="$withBase('/images/eye_of_ur.png')" class="sprite" alt="eye_of_ur" width="24" height="24"> | **Eye of Ur** | Accessory | 0 | 0 | Status Immunity +100% · CON +15 · DEX +15 | — |
-| <img :src="$withBase('/images/ancient_eye.png')" class="sprite" alt="ancient_eye" width="24" height="24"> | **Ancient Eye** | Accessory | 1 | 0 | Status Immunity +100% · CON +35 · DEX +35 | — |
-| <img :src="$withBase('/images/corrupted_shield.png')" class="sprite" alt="corrupted_shield" width="24" height="24"> | **Corrupted Shield** | Accessory | 1 | 0 | CON +1 | Rare Drop |
-| <img :src="$withBase('/images/dreamcatcher.png')" class="sprite" alt="dreamcatcher" width="24" height="24"> | **Dreamcatcher** | Accessory | 1 | 0 | CON +3 · DEX +3 · INT +3 · Bonus EXP +50 | — |
-| <img :src="$withBase('/images/wooden_buckler.png')" class="sprite" alt="wooden_buckler" width="24" height="24"> | **Wooden Buckler** | Accessory | 9 | 0 | CON +3 | — |
-| <img :src="$withBase('/images/tusk_necklace.png')" class="sprite" alt="tusk_necklace" width="24" height="24"> | **Tusk Necklace** | Accessory | 15 | 0 | CON +1 · DEX +1 · INT +1 | — |
-| <img :src="$withBase('/images/copper_helmet.png')" class="sprite" alt="copper_helmet" width="24" height="24"> | **Copper Helmet** | Accessory | 24 | 0 | Max HP 20 | — |
-| <img :src="$withBase('/images/spirit_tome.png')" class="sprite" alt="spirit_tome" width="24" height="24"> | **Spirit Tome** | Accessory | 26 | 0 | INT +9 | — |
-| <img :src="$withBase('/images/leather_boots.png')" class="sprite" alt="leather_boots" width="24" height="24"> | **Leather Boots** | Accessory | 27 | 0 | DEX +3 | — |
-| <img :src="$withBase('/images/silver_ring.png')" class="sprite" alt="silver_ring" width="24" height="24"> | **Silver Ring** | Accessory | 28 | 0 | DEF +1 | — |
-| <img :src="$withBase('/images/wurmscales_boots.png')" class="sprite" alt="wurmscales_boots" width="24" height="24"> | **Wurmscales Boots** | Accessory | 30 | 0 | DEX +6 | — |
-| <img :src="$withBase('/images/skeleton_key.png')" class="sprite" alt="skeleton_key" width="24" height="24"> | **Skeleton Key** | Accessory | 35 | 0 | INT +36 | Rare Drop |
-| <img :src="$withBase('/images/wurmscales_shield.png')" class="sprite" alt="wurmscales_shield" width="24" height="24"> | **Wurmscales Shield** | Accessory | 35 | 0 | CON +6 | — |
-| <img :src="$withBase('/images/wurmscales_gloves.png')" class="sprite" alt="wurmscales_gloves" width="24" height="24"> | **Wurmscales Gloves** | Accessory | 36 | 0 | CON +4 · DEX +4 | — |
-| <img :src="$withBase('/images/infused_necklace.png')" class="sprite" alt="infused_necklace" width="24" height="24"> | **Infused Necklace** | Accessory | 38 | 0 | CON +1 · DEX +1 · INT +2 · Bonus EXP +10 | — |
-| <img :src="$withBase('/images/iron_helm.png')" class="sprite" alt="iron_helm" width="24" height="24"> | **Iron Helm** | Accessory | 39 | 0 | Max HP 40 | — |
-| <img :src="$withBase('/images/spell_compendium.png')" class="sprite" alt="spell_compendium" width="24" height="24"> | **Spell Compendium** | Accessory | 40 | 0 | INT +30 | Rare Drop |
-| <img :src="$withBase('/images/leather_gloves.png')" class="sprite" alt="leather_gloves" width="24" height="24"> | **Leather Gloves** | Accessory | 41 | 0 | DEX +2 · CON +2 | — |
-| <img :src="$withBase('/images/undead_helm.png')" class="sprite" alt="undead_helm" width="24" height="24"> | **Undead Helm** | Accessory | 42 | 0 | Max HP 60 | — |
-| <img :src="$withBase('/images/undead_shield.png')" class="sprite" alt="undead_shield" width="24" height="24"> | **Undead Shield** | Accessory | 53 | 0 | CON +9 | — |
-| <img :src="$withBase('/images/skull_candle.png')" class="sprite" alt="skull_candle" width="24" height="24"> | **Skull Candle** | Accessory | 69 | 0 | INT +4 · darknessReduction +10 | — |
-| <img :src="$withBase('/images/undead_gloves.png')" class="sprite" alt="undead_gloves" width="24" height="24"> | **Undead Gloves** | Accessory | 75 | 0 | CON +7 · DEX +6 | — |
-| <img :src="$withBase('/images/undead_greaves.png')" class="sprite" alt="undead_greaves" width="24" height="24"> | **Undead Greaves** | Accessory | 75 | 0 | DEX +9 | — |
-| <img :src="$withBase('/images/shadow_ring.png')" class="sprite" alt="shadow_ring" width="24" height="24"> | **Shadow Ring** | Accessory | 93 | 0 | DEX +24 · Crit Chance +12% | — |
-| <img :src="$withBase('/images/flute.png')" class="sprite" alt="flute" width="24" height="24"> | **Flute** | Accessory | 100 | 0 | exaltInspireBonusTurns +1 · CON +5 · DEX +5 · INT +5 | — |
-| <img :src="$withBase('/images/metamorphic_shield.png')" class="sprite" alt="metamorphic_shield" width="24" height="24"> | **Metamorphic Shield** | Accessory | 143 | 0 | CON +8 · Physical Retaliation +6 | — |
-| <img :src="$withBase('/images/emerald_ring.png')" class="sprite" alt="emerald_ring" width="24" height="24"> | **Emerald Ring** | Accessory | 147 | 0 | MDEF +10 | — |
-| <img :src="$withBase('/images/ruby_ring.png')" class="sprite" alt="ruby_ring" width="24" height="24"> | **Ruby Ring** | Accessory | 147 | 0 | DEF +10 | — |
-| <img :src="$withBase('/images/ghastly_shield.png')" class="sprite" alt="ghastly_shield" width="24" height="24"> | **Ghastly Shield** | Accessory | 155 | 0 | Max HP 25 · CON +9 · MDEF +8 · Magic Retaliation +10 | — |
-| <img :src="$withBase('/images/ghostwood_shield.png')" class="sprite" alt="ghostwood_shield" width="24" height="24"> | **Ghostwood Shield** | Accessory | 203 | 0 | CON +15 | — |
-| <img :src="$withBase('/images/winter_boots.png')" class="sprite" alt="winter_boots" width="24" height="24"> | **Winter Boots** | Accessory | 204 | 0 | DEX +18 · Regen +4 | — |
-| <img :src="$withBase('/images/golden_gauntlets.png')" class="sprite" alt="golden_gauntlets" width="24" height="24"> | **Golden Gauntlets** | Accessory | 228 | 0 | CON +11 · DEX +9 | — |
-| <img :src="$withBase('/images/djinn_tonic.png')" class="sprite" alt="djinn_tonic" width="24" height="24"> | **Djinn Tonic** | Accessory | 233 | 0 | Max HP 15 · CON +4 · INT +4 · Status Immunity +20% | — |
-| <img :src="$withBase('/images/tortoise_shield.png')" class="sprite" alt="tortoise_shield" width="24" height="24"> | **Tortoise Shield** | Accessory | 240 | 0 | CON +24 | — |
-| <img :src="$withBase('/images/obsidian_shield.png')" class="sprite" alt="obsidian_shield" width="24" height="24"> | **Obsidian Shield** | Accessory | 252 | 0 | CON +21 | — |
-| <img :src="$withBase('/images/winter_shield.png')" class="sprite" alt="winter_shield" width="24" height="24"> | **Winter Shield** | Accessory | 261 | 0 | CON +18 | — |
-| <img :src="$withBase('/images/winter_gloves.png')" class="sprite" alt="winter_gloves" width="24" height="24"> | **Winter Gloves** | Accessory | 264 | 0 | CON +16 · DEX +13 · Regen +4 | — |
-| <img :src="$withBase('/images/obsidian_helm.png')" class="sprite" alt="obsidian_helm" width="24" height="24"> | **Obsidian Helm** | Accessory | 270 | 0 | Max HP 140 | — |
-| <img :src="$withBase('/images/black_iron_gauntlets.png')" class="sprite" alt="black_iron_gauntlets" width="24" height="24"> | **Black Iron Gauntlets** | Accessory | 278 | 0 | CON +13 · DEX +11 | — |
-| <img :src="$withBase('/images/black_iron_helm.png')" class="sprite" alt="black_iron_helm" width="24" height="24"> | **Black Iron Helm** | Accessory | 279 | 0 | Max HP 100 | — |
-| <img :src="$withBase('/images/elastic_boots.png')" class="sprite" alt="elastic_boots" width="24" height="24"> | **Elastic Boots** | Accessory | 312 | 0 | DEX +27 | — |
-| <img :src="$withBase('/images/golden_boots.png')" class="sprite" alt="golden_boots" width="24" height="24"> | **Golden Boots** | Accessory | 312 | 0 | DEX +12 | — |
-| <img :src="$withBase('/images/frozen_egg_pendant.png')" class="sprite" alt="frozen_egg_pendant" width="24" height="24"> | **Frozen Egg Pendant** | Accessory | 341 | 0 | freezeBonusDamage +40 · Max HP 90 · DEF +7 | — |
-| <img :src="$withBase('/images/golden_helm.png')" class="sprite" alt="golden_helm" width="24" height="24"> | **Golden Helm** | Accessory | 363 | 0 | Max HP 80 | — |
-| <img :src="$withBase('/images/verdant_helm.png')" class="sprite" alt="verdant_helm" width="24" height="24"> | **Verdant Helm** | Accessory | 372 | 0 | Max HP 160 | — |
-| <img :src="$withBase('/images/abyssal_compendium.png')" class="sprite" alt="abyssal_compendium" width="24" height="24"> | **Abyssal Compendium** | Accessory | 375 | 0 | INT +15 | — |
-| <img :src="$withBase('/images/spider_boots.png')" class="sprite" alt="spider_boots" width="24" height="24"> | **Spider Boots** | Accessory | 378 | 0 | DEX +21 | — |
-| <img :src="$withBase('/images/spider_gloves.png')" class="sprite" alt="spider_gloves" width="24" height="24"> | **Spider Gloves** | Accessory | 378 | 0 | CON +17 · DEX +14 | — |
-| <img :src="$withBase('/images/winter_helm.png')" class="sprite" alt="winter_helm" width="24" height="24"> | **Winter Helm** | Accessory | 378 | 0 | Max HP 120 | — |
-| <img :src="$withBase('/images/laroxian_gloves.png')" class="sprite" alt="laroxian_gloves" width="24" height="24"> | **Laroxian Gloves** | Accessory | 393 | 0 | CON +25 · DEX +20 | — |
-| <img :src="$withBase('/images/exotic_boots.png')" class="sprite" alt="exotic_boots" width="24" height="24"> | **Exotic Boots** | Accessory | 396 | 0 | DEX +15 | — |
-| <img :src="$withBase('/images/golden_shield.png')" class="sprite" alt="golden_shield" width="24" height="24"> | **Golden Shield** | Accessory | 414 | 0 | CON +12 | — |
-| <img :src="$withBase('/images/celestial_helmet.png')" class="sprite" alt="celestial_helmet" width="24" height="24"> | **Celestial Helmet** | Accessory | 438 | 0 | Max HP 180 | — |
-| <img :src="$withBase('/images/laroxian_boots.png')" class="sprite" alt="laroxian_boots" width="24" height="24"> | **Laroxian Boots** | Accessory | 447 | 0 | DEX +30 | — |
-| <img :src="$withBase('/images/mitre_hat.png')" class="sprite" alt="mitre_hat" width="24" height="24"> | **Mitre Hat** | Accessory | 450 | 0 | Max HP 60 · INT +9 · Healing Bonus +20% | Rare Drop |
-| <img :src="$withBase('/images/ancient_boots.png')" class="sprite" alt="ancient_boots" width="24" height="24"> | **Ancient Boots** | Accessory | 465 | 0 | DEX +33 | — |
-| <img :src="$withBase('/images/ancient_gloves.png')" class="sprite" alt="ancient_gloves" width="24" height="24"> | **Ancient Gloves** | Accessory | 468 | 0 | CON +27 · DEX +22 | — |
-| <img :src="$withBase('/images/banshee_gloves.png')" class="sprite" alt="banshee_gloves" width="24" height="24"> | **Banshee Gloves** | Accessory | 468 | 0 | CON +22 · DEX +18 | — |
-| <img :src="$withBase('/images/animated_helm.png')" class="sprite" alt="animated_helm" width="24" height="24"> | **Animated Helm** | Accessory | 471 | 0 | Max HP 200 | — |
-| <img :src="$withBase('/images/celestial_shield.png')" class="sprite" alt="celestial_shield" width="24" height="24"> | **Celestial Shield** | Accessory | 473 | 0 | CON +27 | — |
-| <img :src="$withBase('/images/verdant_boots.png')" class="sprite" alt="verdant_boots" width="24" height="24"> | **Verdant Boots** | Accessory | 477 | 0 | DEX +24 | — |
-| <img :src="$withBase('/images/verdant_gloves.png')" class="sprite" alt="verdant_gloves" width="24" height="24"> | **Verdant Gloves** | Accessory | 498 | 0 | CON +20 · DEX +16 | — |
-| <img :src="$withBase('/images/animated_buckler.png')" class="sprite" alt="animated_buckler" width="24" height="24"> | **Animated Buckler** | Accessory | 500 | 0 | CON +30 | — |
-| <img :src="$withBase('/images/sylvan_flute.png')" class="sprite" alt="sylvan_flute" width="24" height="24"> | **Sylvan Flute** | Accessory | 540 | 0 | exaltInspireBonusTurns +2 · CON +10 · DEX +10 · INT +10 | Rare Drop |
-| <img :src="$withBase('/images/burning_censer.png')" class="sprite" alt="burning_censer" width="24" height="24"> | **Burning Censer** | Accessory | 564 | 0 | INT +12 · darknessReduction +10 · Healing Bonus +20% | — |
-| <img :src="$withBase('/images/imperial_shield.png')" class="sprite" alt="imperial_shield" width="24" height="24"> | **Imperial Shield** | Accessory | 564 | 0 | CON +16 · DEX +5 · DEF +15 | — |
-| <img :src="$withBase('/images/toxin_pouch.png')" class="sprite" alt="toxin_pouch" width="24" height="24"> | **Toxin Pouch** | Accessory | 654 | 0 | poisonBonus +4 · Max HP 90 · INT +15 | — |
-| <img :src="$withBase('/images/ignition_orb.png')" class="sprite" alt="ignition_orb" width="24" height="24"> | **Ignition Orb** | Accessory | 657 | 0 | onFireBonusDamage +2 · Max HP 70 · INT +8 | — |
-| <img :src="$withBase('/images/primeval_shield.png')" class="sprite" alt="primeval_shield" width="24" height="24"> | **Primeval Shield** | Accessory | 675 | 0 | CON +27 · DEF +12 | — |
-| <img :src="$withBase('/images/short_circuit.png')" class="sprite" alt="short_circuit" width="24" height="24"> | **Short Circuit** | Accessory | 705 | 0 | DEX +25 | — |
-| <img :src="$withBase('/images/mithril_helm.png')" class="sprite" alt="mithril_helm" width="24" height="24"> | **Mithril Helm** | Accessory | 750 | 0 | Max HP 220 | — |
-| <img :src="$withBase('/images/dreamwrought_boots.png')" class="sprite" alt="dreamwrought_boots" width="24" height="24"> | **Dreamwrought Boots** | Accessory | 789 | 0 | DEX +42 | — |
-| <img :src="$withBase('/images/shielding_helm.png')" class="sprite" alt="shielding_helm" width="24" height="24"> | **Shielding Helm** | Accessory | 797 | 0 | Status Immunity +25% · Max HP 200 · CON +3 | — |
-| <img :src="$withBase('/images/archaic_amulet.png')" class="sprite" alt="archaic_amulet" width="24" height="24"> | **Archaic Amulet** | Accessory | 806 | 0 | livingCompanionBonusDamage +40 · Max HP 140 | — |
-| <img :src="$withBase('/images/mithril_shield.png')" class="sprite" alt="mithril_shield" width="24" height="24"> | **Mithril Shield** | Accessory | 810 | 0 | CON +33 | — |
-| <img :src="$withBase('/images/spiked_tortoise_shield.png')" class="sprite" alt="spiked_tortoise_shield" width="24" height="24"> | **Spiked Tortoise Shield** | Accessory | 846 | 0 | Physical Retaliation +25 · CON +24 | — |
-| <img :src="$withBase('/images/dreamwrought_gloves.png')" class="sprite" alt="dreamwrought_gloves" width="24" height="24"> | **Dreamwrought Gloves** | Accessory | 884 | 0 | CON +34 · DEX +28 | — |
-| <img :src="$withBase('/images/skin_blender.png')" class="sprite" alt="skin_blender" width="24" height="24"> | **Skin Blender** | Accessory | 987 | 0 | Crit Chance +15% · Crit Damage +15% · CON +24 · DEX +20 | — |
-| <img :src="$withBase('/images/fleetfoot_boots.png')" class="sprite" alt="fleetfoot_boots" width="24" height="24"> | **Fleetfoot Boots** | Accessory | 999 | 0 | Dodge +16% · DEX +16 | — |
-| <img :src="$withBase('/images/primeval_helm.png')" class="sprite" alt="primeval_helm" width="24" height="24"> | **Primeval Helm** | Accessory | 1020 | 0 | Max HP 180 · DEF +12 | — |
-| <img :src="$withBase('/images/fleetfoot_gloves.png')" class="sprite" alt="fleetfoot_gloves" width="24" height="24"> | **Fleetfoot Gloves** | Accessory | 1031 | 0 | Dodge +16% · CON +10 · DEX +12 | — |
-| <img :src="$withBase('/images/tactical_helmet.png')" class="sprite" alt="tactical_helmet" width="24" height="24"> | **Tactical Helmet** | Accessory | 1152 | 0 | darknessDamageAmplification +0.005 · Max HP 120 · DEX +12 | — |
-| <img :src="$withBase('/images/orichalcum_shield.png')" class="sprite" alt="orichalcum_shield" width="24" height="24"> | **Orichalcum Shield** | Accessory | 1440 | 0 | CON +42 | — |
-| <img :src="$withBase('/images/spiked_primeval_shield.png')" class="sprite" alt="spiked_primeval_shield" width="24" height="24"> | **Spiked Primeval Shield** | Accessory | 1499 | 0 | Physical Retaliation +25 · CON +27 · DEF +12 | — |
-| <img :src="$withBase('/images/bleak_gloves.png')" class="sprite" alt="bleak_gloves" width="24" height="24"> | **Bleak Gloves** | Accessory | 1584 | 0 | Dodge +20% · CON +18 · DEX +19 | — |
-| <img :src="$withBase('/images/orichalcum_helm.png')" class="sprite" alt="orichalcum_helm" width="24" height="24"> | **Orichalcum Helm** | Accessory | 1755 | 0 | Max HP 280 | — |
-| <img :src="$withBase('/images/cursed_claws.png')" class="sprite" alt="cursed_claws" width="24" height="24"> | **Cursed Claws** | Accessory | 1920 | 0 | DEX +12 · CON +12 | — |
-| <img :src="$withBase('/images/bleak_boots.png')" class="sprite" alt="bleak_boots" width="24" height="24"> | **Bleak Boots** | Accessory | 2016 | 0 | Dodge +20% · DEX +34 | — |
-| <img :src="$withBase('/images/eldritch_mitre.png')" class="sprite" alt="eldritch_mitre" width="24" height="24"> | **Eldritch Mitre** | Accessory | 2255 | 0 | Max HP 50 · INT +45 · Healing Bonus -99% | — |
-| <img :src="$withBase('/images/shield_of_the_titan.png')" class="sprite" alt="shield_of_the_titan" width="24" height="24"> | **Shield of the Titan** | Accessory | 2700 | 0 | CON +16 · DEF +5 · MDEF +5 · Threat +1 | — |
-| <img :src="$withBase('/images/jeweled_crown.png')" class="sprite" alt="jeweled_crown" width="24" height="24"> | **Jeweled Crown** | Accessory | 2790 | 0 | DEF +10 · MDEF +10 | — |
-| <img :src="$withBase('/images/cursed_helm.png')" class="sprite" alt="cursed_helm" width="24" height="24"> | **Cursed Helm** | Accessory | 2880 | 0 | Max HP 105 · Physical Retaliation +15 | — |
-| <img :src="$withBase('/images/archmage_hat.png')" class="sprite" alt="archmage_hat" width="24" height="24"> | **Archmage Hat** | Accessory | 3200 | 0 | INT +35 · Crit Damage +20% | — |
-| <img :src="$withBase('/images/voltaic_shock.png')" class="sprite" alt="voltaic_shock" width="24" height="24"> | **Voltaic Shock** | Accessory | 4058 | 0 | DEX +30 · INT +10 | — |
-| <img :src="$withBase('/images/slime_kings_crown.png')" class="sprite" alt="slime_kings_crown" width="24" height="24"> | **"Slime King's Crown"** | Accessory | 5000 | 0 | Bonus EXP +35 | Rare Drop |
-| <img :src="$withBase('/images/kabelian_claws.png')" class="sprite" alt="kabelian_claws" width="24" height="24"> | **Kabelian Claws** | Accessory | 6720 | 0 | DEX +16 · CON +15 | — |
-| <img :src="$withBase('/images/amulet_of_resurrection.png')" class="sprite" alt="amulet_of_resurrection" width="24" height="24"> | **Amulet of Resurrection** | Accessory | 7425 | 0 | — | — |
-| <img :src="$withBase('/images/diamond_amulet.png')" class="sprite" alt="diamond_amulet" width="24" height="24"> | **Diamond Amulet** | Accessory | 7503 | 0 | Bonus EXP +55 · Max HP 175 | — |
-| <img :src="$withBase('/images/amulet_of_the_swordsman.png')" class="sprite" alt="amulet_of_the_swordsman" width="24" height="24"> | **Amulet of the Swordsman** | Accessory | 7590 | 0 | CON +25 · Counterattack +25% | — |
-| <img :src="$withBase('/images/divine_zygote.png')" class="sprite" alt="divine_zygote" width="24" height="24"> | **Divine Zygote** | Accessory | 10000 | 0 | CON +7 · DEX +7 · INT +7 · Status Immunity +100% | Rare Drop |
-| <img :src="$withBase('/images/seeking_glass.png')" class="sprite" alt="seeking_glass" width="24" height="24"> | **Seeking Glass** | Accessory | 10000 | 0 | INT +25 | Rare Drop |
-| <img :src="$withBase('/images/phylactery.png')" class="sprite" alt="phylactery" width="24" height="24"> | **Phylactery** | Accessory | 10100 | 0 | Max HP 80 · regenerationBonus +5 | — |
-| <img :src="$withBase('/images/cosmic_violin.png')" class="sprite" alt="cosmic_violin" width="24" height="24"> | **Cosmic Violin** | Accessory | 11111 | 0 | exaltInspireBonusTurns +3 · CON +25 · DEX +25 · INT +25 | Rare Drop |
-| <img :src="$withBase('/images/pirate_king_tricorn.png')" class="sprite" alt="pirate_king_tricorn" width="24" height="24"> | **Pirate King Tricorn** | Accessory | 14600 | 0 | Max HP 100 · DEX +15 · INT +10 · Crit Damage +50% | — |
-| <img :src="$withBase('/images/eternal_hunger.png')" class="sprite" alt="eternal_hunger" width="24" height="24"> | **Eternal Hunger** | Accessory | 15000 | 0 | INT +5 · Lifesteal +50 | Rare Drop |
-| <img :src="$withBase('/images/infinity_hat.png')" class="sprite" alt="infinity_hat" width="24" height="24"> | **Infinity Hat** | Accessory | 15000 | 0 | Max HP 60 · INT +35 · Crit Damage +25% | Rare Drop |
-| <img :src="$withBase('/images/invisible_servant.png')" class="sprite" alt="invisible_servant" width="24" height="24"> | **Invisible Servant** | Accessory | 16200 | 0 | Max HP 135 · CON +35 | — |
-| <img :src="$withBase('/images/divine_embryo.png')" class="sprite" alt="divine_embryo" width="24" height="24"> | **Divine Embryo** | Accessory | 17400 | 0 | CON +20 · DEX +20 · INT +20 · Status Immunity +100% | — |
-| <img :src="$withBase('/images/bloodstone_claws.png')" class="sprite" alt="bloodstone_claws" width="24" height="24"> | **Bloodstone Claws** | Accessory | 17500 | 0 | CON +25 · DEX +26 · Attack Speed +20 | — |
-| <img :src="$withBase('/images/spider.png')" class="sprite" alt="spider" width="24" height="24"> | **S.P.I.D.E.R** | Accessory | 18500 | 0 | Max HP 20 · CON +5 · DEX +5 | Rare Drop |
-| <img :src="$withBase('/images/prismatic_pendant.png')" class="sprite" alt="prismatic_pendant" width="24" height="24"> | **Prismatic Pendant** | Accessory | 19500 | 0 | Bonus EXP +65 | — |
-| <img :src="$withBase('/images/divine_larvae.png')" class="sprite" alt="divine_larvae" width="24" height="24"> | **Divine Larvae** | Accessory | 26130 | 0 | CON +25 · DEX +25 · INT +25 · Status Immunity +100% | — |
-| <img :src="$withBase('/images/shield_of_the_martyr.png')" class="sprite" alt="shield_of_the_martyr" width="24" height="24"> | **Shield of the Martyr** | Accessory | 26500 | 0 | CON +22 · DEF +8 · MDEF +8 · Threat +2 | — |
-| <img :src="$withBase('/images/enlighted_servant.png')" class="sprite" alt="enlighted_servant" width="24" height="24"> | **Enlighted Servant** | Accessory | 28425 | 0 | Max HP 150 · CON +40 | — |
-| <img :src="$withBase('/images/void_pendant.png')" class="sprite" alt="void_pendant" width="24" height="24"> | **Void Pendant** | Accessory | 30000 | 0 | Bonus EXP +80 | — |
-| <img :src="$withBase('/images/starvation.png')" class="sprite" alt="starvation" width="24" height="24"> | **Starvation** | Accessory | 31500 | 0 | INT +5 · Lifesteal +75 | — |
-| <img :src="$withBase('/images/burning_effigy.png')" class="sprite" alt="burning_effigy" width="24" height="24"> | **Burning Effigy** | Accessory | 43598 | 0 | CON +34 · DEF +9 · MDEF +9 · Threat +3 | — |
-| <img :src="$withBase('/images/nil_pendant.png')" class="sprite" alt="nil_pendant" width="24" height="24"> | **Nil Pendant** | Accessory | 47925 | 0 | Bonus EXP +100 | — |
-| <img :src="$withBase('/images/sha.png')" class="sprite" alt="sha" width="24" height="24"> | **Sha** | Accessory | 69150 | 0 | CON +40 · DEX +40 · INT +40 · Status Immunity +100% | — |
-| <img :src="$withBase('/images/scarlet_cape.png')" class="sprite" alt="scarlet_cape" width="24" height="24"> | **Scarlet Cape** | Accessory | 200000 | 0 | CON +30 · DEX +30 · INT +30 · Crit Chance +15% | — |
-| <img :src="$withBase('/images/eldritch_scarlet_cape.png')" class="sprite" alt="eldritch_scarlet_cape" width="24" height="24"> | **Eldritch Scarlet Cape** | Accessory | 204465 | 0 | CON +40 · DEX +40 · INT +40 · Crit Chance +21% · Crit Damage +21% | — |
-| <img :src="$withBase('/images/abyssal_scarlet_mantle.png')" class="sprite" alt="abyssal_scarlet_mantle" width="24" height="24"> | **Abyssal Scarlet Mantle** | Accessory | 214465 | 0 | CON +50 · DEX +50 · INT +50 · Crit Chance +35% · Crit Damage +40% | — |
+| <img :src="$withBase('/images/eye_of_ur.png')" class="sprite" alt="eye_of_ur" width="56" height="56"> | **Eye of Ur** | Accessory | 0 | 0 | Status Immunity +100% · CON +15 · DEX +15 | — |
+| <img :src="$withBase('/images/ancient_eye.png')" class="sprite" alt="ancient_eye" width="56" height="56"> | **Ancient Eye** | Accessory | 1 | 0 | Status Immunity +100% · CON +35 · DEX +35 | — |
+| <img :src="$withBase('/images/corrupted_shield.png')" class="sprite" alt="corrupted_shield" width="56" height="56"> | **Corrupted Shield** | Accessory | 1 | 0 | CON +1 | Rare Drop |
+| <img :src="$withBase('/images/dreamcatcher.png')" class="sprite" alt="dreamcatcher" width="56" height="56"> | **Dreamcatcher** | Accessory | 1 | 0 | CON +3 · DEX +3 · INT +3 · Bonus EXP +50 | — |
+| <img :src="$withBase('/images/wooden_buckler.png')" class="sprite" alt="wooden_buckler" width="56" height="56"> | **Wooden Buckler** | Accessory | 9 | 0 | CON +3 | — |
+| <img :src="$withBase('/images/tusk_necklace.png')" class="sprite" alt="tusk_necklace" width="56" height="56"> | **Tusk Necklace** | Accessory | 15 | 0 | CON +1 · DEX +1 · INT +1 | — |
+| <img :src="$withBase('/images/copper_helmet.png')" class="sprite" alt="copper_helmet" width="56" height="56"> | **Copper Helmet** | Accessory | 24 | 0 | Max HP 20 | — |
+| <img :src="$withBase('/images/spirit_tome.png')" class="sprite" alt="spirit_tome" width="56" height="56"> | **Spirit Tome** | Accessory | 26 | 0 | INT +9 | — |
+| <img :src="$withBase('/images/leather_boots.png')" class="sprite" alt="leather_boots" width="56" height="56"> | **Leather Boots** | Accessory | 27 | 0 | DEX +3 | — |
+| <img :src="$withBase('/images/silver_ring.png')" class="sprite" alt="silver_ring" width="56" height="56"> | **Silver Ring** | Accessory | 28 | 0 | DEF +1 | — |
+| <img :src="$withBase('/images/wurmscales_boots.png')" class="sprite" alt="wurmscales_boots" width="56" height="56"> | **Wurmscales Boots** | Accessory | 30 | 0 | DEX +6 | — |
+| <img :src="$withBase('/images/skeleton_key.png')" class="sprite" alt="skeleton_key" width="56" height="56"> | **Skeleton Key** | Accessory | 35 | 0 | INT +36 | Rare Drop |
+| <img :src="$withBase('/images/wurmscales_shield.png')" class="sprite" alt="wurmscales_shield" width="56" height="56"> | **Wurmscales Shield** | Accessory | 35 | 0 | CON +6 | — |
+| <img :src="$withBase('/images/wurmscales_gloves.png')" class="sprite" alt="wurmscales_gloves" width="56" height="56"> | **Wurmscales Gloves** | Accessory | 36 | 0 | CON +4 · DEX +4 | — |
+| <img :src="$withBase('/images/infused_necklace.png')" class="sprite" alt="infused_necklace" width="56" height="56"> | **Infused Necklace** | Accessory | 38 | 0 | CON +1 · DEX +1 · INT +2 · Bonus EXP +10 | — |
+| <img :src="$withBase('/images/iron_helm.png')" class="sprite" alt="iron_helm" width="56" height="56"> | **Iron Helm** | Accessory | 39 | 0 | Max HP 40 | — |
+| <img :src="$withBase('/images/spell_compendium.png')" class="sprite" alt="spell_compendium" width="56" height="56"> | **Spell Compendium** | Accessory | 40 | 0 | INT +30 | Rare Drop |
+| <img :src="$withBase('/images/leather_gloves.png')" class="sprite" alt="leather_gloves" width="56" height="56"> | **Leather Gloves** | Accessory | 41 | 0 | DEX +2 · CON +2 | — |
+| <img :src="$withBase('/images/undead_helm.png')" class="sprite" alt="undead_helm" width="56" height="56"> | **Undead Helm** | Accessory | 42 | 0 | Max HP 60 | — |
+| <img :src="$withBase('/images/undead_shield.png')" class="sprite" alt="undead_shield" width="56" height="56"> | **Undead Shield** | Accessory | 53 | 0 | CON +9 | — |
+| <img :src="$withBase('/images/skull_candle.png')" class="sprite" alt="skull_candle" width="56" height="56"> | **Skull Candle** | Accessory | 69 | 0 | INT +4 · darknessReduction +10 | — |
+| <img :src="$withBase('/images/undead_gloves.png')" class="sprite" alt="undead_gloves" width="56" height="56"> | **Undead Gloves** | Accessory | 75 | 0 | CON +7 · DEX +6 | — |
+| <img :src="$withBase('/images/undead_greaves.png')" class="sprite" alt="undead_greaves" width="56" height="56"> | **Undead Greaves** | Accessory | 75 | 0 | DEX +9 | — |
+| <img :src="$withBase('/images/shadow_ring.png')" class="sprite" alt="shadow_ring" width="56" height="56"> | **Shadow Ring** | Accessory | 93 | 0 | DEX +24 · Crit Chance +12% | — |
+| <img :src="$withBase('/images/flute.png')" class="sprite" alt="flute" width="56" height="56"> | **Flute** | Accessory | 100 | 0 | exaltInspireBonusTurns +1 · CON +5 · DEX +5 · INT +5 | — |
+| <img :src="$withBase('/images/metamorphic_shield.png')" class="sprite" alt="metamorphic_shield" width="56" height="56"> | **Metamorphic Shield** | Accessory | 143 | 0 | CON +8 · Physical Retaliation +6 | — |
+| <img :src="$withBase('/images/emerald_ring.png')" class="sprite" alt="emerald_ring" width="56" height="56"> | **Emerald Ring** | Accessory | 147 | 0 | MDEF +10 | — |
+| <img :src="$withBase('/images/ruby_ring.png')" class="sprite" alt="ruby_ring" width="56" height="56"> | **Ruby Ring** | Accessory | 147 | 0 | DEF +10 | — |
+| <img :src="$withBase('/images/ghastly_shield.png')" class="sprite" alt="ghastly_shield" width="56" height="56"> | **Ghastly Shield** | Accessory | 155 | 0 | Max HP 25 · CON +9 · MDEF +8 · Magic Retaliation +10 | — |
+| <img :src="$withBase('/images/ghostwood_shield.png')" class="sprite" alt="ghostwood_shield" width="56" height="56"> | **Ghostwood Shield** | Accessory | 203 | 0 | CON +15 | — |
+| <img :src="$withBase('/images/winter_boots.png')" class="sprite" alt="winter_boots" width="56" height="56"> | **Winter Boots** | Accessory | 204 | 0 | DEX +18 · Regen +4 | — |
+| <img :src="$withBase('/images/golden_gauntlets.png')" class="sprite" alt="golden_gauntlets" width="56" height="56"> | **Golden Gauntlets** | Accessory | 228 | 0 | CON +11 · DEX +9 | — |
+| <img :src="$withBase('/images/djinn_tonic.png')" class="sprite" alt="djinn_tonic" width="56" height="56"> | **Djinn Tonic** | Accessory | 233 | 0 | Max HP 15 · CON +4 · INT +4 · Status Immunity +20% | — |
+| <img :src="$withBase('/images/tortoise_shield.png')" class="sprite" alt="tortoise_shield" width="56" height="56"> | **Tortoise Shield** | Accessory | 240 | 0 | CON +24 | — |
+| <img :src="$withBase('/images/obsidian_shield.png')" class="sprite" alt="obsidian_shield" width="56" height="56"> | **Obsidian Shield** | Accessory | 252 | 0 | CON +21 | — |
+| <img :src="$withBase('/images/winter_shield.png')" class="sprite" alt="winter_shield" width="56" height="56"> | **Winter Shield** | Accessory | 261 | 0 | CON +18 | — |
+| <img :src="$withBase('/images/winter_gloves.png')" class="sprite" alt="winter_gloves" width="56" height="56"> | **Winter Gloves** | Accessory | 264 | 0 | CON +16 · DEX +13 · Regen +4 | — |
+| <img :src="$withBase('/images/obsidian_helm.png')" class="sprite" alt="obsidian_helm" width="56" height="56"> | **Obsidian Helm** | Accessory | 270 | 0 | Max HP 140 | — |
+| <img :src="$withBase('/images/black_iron_gauntlets.png')" class="sprite" alt="black_iron_gauntlets" width="56" height="56"> | **Black Iron Gauntlets** | Accessory | 278 | 0 | CON +13 · DEX +11 | — |
+| <img :src="$withBase('/images/black_iron_helm.png')" class="sprite" alt="black_iron_helm" width="56" height="56"> | **Black Iron Helm** | Accessory | 279 | 0 | Max HP 100 | — |
+| <img :src="$withBase('/images/elastic_boots.png')" class="sprite" alt="elastic_boots" width="56" height="56"> | **Elastic Boots** | Accessory | 312 | 0 | DEX +27 | — |
+| <img :src="$withBase('/images/golden_boots.png')" class="sprite" alt="golden_boots" width="56" height="56"> | **Golden Boots** | Accessory | 312 | 0 | DEX +12 | — |
+| <img :src="$withBase('/images/frozen_egg_pendant.png')" class="sprite" alt="frozen_egg_pendant" width="56" height="56"> | **Frozen Egg Pendant** | Accessory | 341 | 0 | freezeBonusDamage +40 · Max HP 90 · DEF +7 | — |
+| <img :src="$withBase('/images/golden_helm.png')" class="sprite" alt="golden_helm" width="56" height="56"> | **Golden Helm** | Accessory | 363 | 0 | Max HP 80 | — |
+| <img :src="$withBase('/images/verdant_helm.png')" class="sprite" alt="verdant_helm" width="56" height="56"> | **Verdant Helm** | Accessory | 372 | 0 | Max HP 160 | — |
+| <img :src="$withBase('/images/abyssal_compendium.png')" class="sprite" alt="abyssal_compendium" width="56" height="56"> | **Abyssal Compendium** | Accessory | 375 | 0 | INT +15 | — |
+| <img :src="$withBase('/images/spider_boots.png')" class="sprite" alt="spider_boots" width="56" height="56"> | **Spider Boots** | Accessory | 378 | 0 | DEX +21 | — |
+| <img :src="$withBase('/images/spider_gloves.png')" class="sprite" alt="spider_gloves" width="56" height="56"> | **Spider Gloves** | Accessory | 378 | 0 | CON +17 · DEX +14 | — |
+| <img :src="$withBase('/images/winter_helm.png')" class="sprite" alt="winter_helm" width="56" height="56"> | **Winter Helm** | Accessory | 378 | 0 | Max HP 120 | — |
+| <img :src="$withBase('/images/laroxian_gloves.png')" class="sprite" alt="laroxian_gloves" width="56" height="56"> | **Laroxian Gloves** | Accessory | 393 | 0 | CON +25 · DEX +20 | — |
+| <img :src="$withBase('/images/exotic_boots.png')" class="sprite" alt="exotic_boots" width="56" height="56"> | **Exotic Boots** | Accessory | 396 | 0 | DEX +15 | — |
+| <img :src="$withBase('/images/golden_shield.png')" class="sprite" alt="golden_shield" width="56" height="56"> | **Golden Shield** | Accessory | 414 | 0 | CON +12 | — |
+| <img :src="$withBase('/images/celestial_helmet.png')" class="sprite" alt="celestial_helmet" width="56" height="56"> | **Celestial Helmet** | Accessory | 438 | 0 | Max HP 180 | — |
+| <img :src="$withBase('/images/laroxian_boots.png')" class="sprite" alt="laroxian_boots" width="56" height="56"> | **Laroxian Boots** | Accessory | 447 | 0 | DEX +30 | — |
+| <img :src="$withBase('/images/mitre_hat.png')" class="sprite" alt="mitre_hat" width="56" height="56"> | **Mitre Hat** | Accessory | 450 | 0 | Max HP 60 · INT +9 · Healing Bonus +20% | Rare Drop |
+| <img :src="$withBase('/images/ancient_boots.png')" class="sprite" alt="ancient_boots" width="56" height="56"> | **Ancient Boots** | Accessory | 465 | 0 | DEX +33 | — |
+| <img :src="$withBase('/images/ancient_gloves.png')" class="sprite" alt="ancient_gloves" width="56" height="56"> | **Ancient Gloves** | Accessory | 468 | 0 | CON +27 · DEX +22 | — |
+| <img :src="$withBase('/images/banshee_gloves.png')" class="sprite" alt="banshee_gloves" width="56" height="56"> | **Banshee Gloves** | Accessory | 468 | 0 | CON +22 · DEX +18 | — |
+| <img :src="$withBase('/images/animated_helm.png')" class="sprite" alt="animated_helm" width="56" height="56"> | **Animated Helm** | Accessory | 471 | 0 | Max HP 200 | — |
+| <img :src="$withBase('/images/celestial_shield.png')" class="sprite" alt="celestial_shield" width="56" height="56"> | **Celestial Shield** | Accessory | 473 | 0 | CON +27 | — |
+| <img :src="$withBase('/images/verdant_boots.png')" class="sprite" alt="verdant_boots" width="56" height="56"> | **Verdant Boots** | Accessory | 477 | 0 | DEX +24 | — |
+| <img :src="$withBase('/images/verdant_gloves.png')" class="sprite" alt="verdant_gloves" width="56" height="56"> | **Verdant Gloves** | Accessory | 498 | 0 | CON +20 · DEX +16 | — |
+| <img :src="$withBase('/images/animated_buckler.png')" class="sprite" alt="animated_buckler" width="56" height="56"> | **Animated Buckler** | Accessory | 500 | 0 | CON +30 | — |
+| <img :src="$withBase('/images/sylvan_flute.png')" class="sprite" alt="sylvan_flute" width="56" height="56"> | **Sylvan Flute** | Accessory | 540 | 0 | exaltInspireBonusTurns +2 · CON +10 · DEX +10 · INT +10 | Rare Drop |
+| <img :src="$withBase('/images/burning_censer.png')" class="sprite" alt="burning_censer" width="56" height="56"> | **Burning Censer** | Accessory | 564 | 0 | INT +12 · darknessReduction +10 · Healing Bonus +20% | — |
+| <img :src="$withBase('/images/imperial_shield.png')" class="sprite" alt="imperial_shield" width="56" height="56"> | **Imperial Shield** | Accessory | 564 | 0 | CON +16 · DEX +5 · DEF +15 | — |
+| <img :src="$withBase('/images/toxin_pouch.png')" class="sprite" alt="toxin_pouch" width="56" height="56"> | **Toxin Pouch** | Accessory | 654 | 0 | poisonBonus +4 · Max HP 90 · INT +15 | — |
+| <img :src="$withBase('/images/ignition_orb.png')" class="sprite" alt="ignition_orb" width="56" height="56"> | **Ignition Orb** | Accessory | 657 | 0 | onFireBonusDamage +2 · Max HP 70 · INT +8 | — |
+| <img :src="$withBase('/images/primeval_shield.png')" class="sprite" alt="primeval_shield" width="56" height="56"> | **Primeval Shield** | Accessory | 675 | 0 | CON +27 · DEF +12 | — |
+| <img :src="$withBase('/images/short_circuit.png')" class="sprite" alt="short_circuit" width="56" height="56"> | **Short Circuit** | Accessory | 705 | 0 | DEX +25 | — |
+| <img :src="$withBase('/images/mithril_helm.png')" class="sprite" alt="mithril_helm" width="56" height="56"> | **Mithril Helm** | Accessory | 750 | 0 | Max HP 220 | — |
+| <img :src="$withBase('/images/dreamwrought_boots.png')" class="sprite" alt="dreamwrought_boots" width="56" height="56"> | **Dreamwrought Boots** | Accessory | 789 | 0 | DEX +42 | — |
+| <img :src="$withBase('/images/shielding_helm.png')" class="sprite" alt="shielding_helm" width="56" height="56"> | **Shielding Helm** | Accessory | 797 | 0 | Status Immunity +25% · Max HP 200 · CON +3 | — |
+| <img :src="$withBase('/images/archaic_amulet.png')" class="sprite" alt="archaic_amulet" width="56" height="56"> | **Archaic Amulet** | Accessory | 806 | 0 | livingCompanionBonusDamage +40 · Max HP 140 | — |
+| <img :src="$withBase('/images/mithril_shield.png')" class="sprite" alt="mithril_shield" width="56" height="56"> | **Mithril Shield** | Accessory | 810 | 0 | CON +33 | — |
+| <img :src="$withBase('/images/spiked_tortoise_shield.png')" class="sprite" alt="spiked_tortoise_shield" width="56" height="56"> | **Spiked Tortoise Shield** | Accessory | 846 | 0 | Physical Retaliation +25 · CON +24 | — |
+| <img :src="$withBase('/images/dreamwrought_gloves.png')" class="sprite" alt="dreamwrought_gloves" width="56" height="56"> | **Dreamwrought Gloves** | Accessory | 884 | 0 | CON +34 · DEX +28 | — |
+| <img :src="$withBase('/images/skin_blender.png')" class="sprite" alt="skin_blender" width="56" height="56"> | **Skin Blender** | Accessory | 987 | 0 | Crit Chance +15% · Crit Damage +15% · CON +24 · DEX +20 | — |
+| <img :src="$withBase('/images/fleetfoot_boots.png')" class="sprite" alt="fleetfoot_boots" width="56" height="56"> | **Fleetfoot Boots** | Accessory | 999 | 0 | Dodge +16% · DEX +16 | — |
+| <img :src="$withBase('/images/primeval_helm.png')" class="sprite" alt="primeval_helm" width="56" height="56"> | **Primeval Helm** | Accessory | 1020 | 0 | Max HP 180 · DEF +12 | — |
+| <img :src="$withBase('/images/fleetfoot_gloves.png')" class="sprite" alt="fleetfoot_gloves" width="56" height="56"> | **Fleetfoot Gloves** | Accessory | 1031 | 0 | Dodge +16% · CON +10 · DEX +12 | — |
+| <img :src="$withBase('/images/tactical_helmet.png')" class="sprite" alt="tactical_helmet" width="56" height="56"> | **Tactical Helmet** | Accessory | 1152 | 0 | darknessDamageAmplification +0.005 · Max HP 120 · DEX +12 | — |
+| <img :src="$withBase('/images/orichalcum_shield.png')" class="sprite" alt="orichalcum_shield" width="56" height="56"> | **Orichalcum Shield** | Accessory | 1440 | 0 | CON +42 | — |
+| <img :src="$withBase('/images/spiked_primeval_shield.png')" class="sprite" alt="spiked_primeval_shield" width="56" height="56"> | **Spiked Primeval Shield** | Accessory | 1499 | 0 | Physical Retaliation +25 · CON +27 · DEF +12 | — |
+| <img :src="$withBase('/images/bleak_gloves.png')" class="sprite" alt="bleak_gloves" width="56" height="56"> | **Bleak Gloves** | Accessory | 1584 | 0 | Dodge +20% · CON +18 · DEX +19 | — |
+| <img :src="$withBase('/images/orichalcum_helm.png')" class="sprite" alt="orichalcum_helm" width="56" height="56"> | **Orichalcum Helm** | Accessory | 1755 | 0 | Max HP 280 | — |
+| <img :src="$withBase('/images/cursed_claws.png')" class="sprite" alt="cursed_claws" width="56" height="56"> | **Cursed Claws** | Accessory | 1920 | 0 | DEX +12 · CON +12 | — |
+| <img :src="$withBase('/images/bleak_boots.png')" class="sprite" alt="bleak_boots" width="56" height="56"> | **Bleak Boots** | Accessory | 2016 | 0 | Dodge +20% · DEX +34 | — |
+| <img :src="$withBase('/images/eldritch_mitre.png')" class="sprite" alt="eldritch_mitre" width="56" height="56"> | **Eldritch Mitre** | Accessory | 2255 | 0 | Max HP 50 · INT +45 · Healing Bonus -99% | — |
+| <img :src="$withBase('/images/shield_of_the_titan.png')" class="sprite" alt="shield_of_the_titan" width="56" height="56"> | **Shield of the Titan** | Accessory | 2700 | 0 | CON +16 · DEF +5 · MDEF +5 · Threat +1 | — |
+| <img :src="$withBase('/images/jeweled_crown.png')" class="sprite" alt="jeweled_crown" width="56" height="56"> | **Jeweled Crown** | Accessory | 2790 | 0 | DEF +10 · MDEF +10 | — |
+| <img :src="$withBase('/images/cursed_helm.png')" class="sprite" alt="cursed_helm" width="56" height="56"> | **Cursed Helm** | Accessory | 2880 | 0 | Max HP 105 · Physical Retaliation +15 | — |
+| <img :src="$withBase('/images/archmage_hat.png')" class="sprite" alt="archmage_hat" width="56" height="56"> | **Archmage Hat** | Accessory | 3200 | 0 | INT +35 · Crit Damage +20% | — |
+| <img :src="$withBase('/images/voltaic_shock.png')" class="sprite" alt="voltaic_shock" width="56" height="56"> | **Voltaic Shock** | Accessory | 4058 | 0 | DEX +30 · INT +10 | — |
+| <img :src="$withBase('/images/slime_kings_crown.png')" class="sprite" alt="slime_kings_crown" width="56" height="56"> | **"Slime King's Crown"** | Accessory | 5000 | 0 | Bonus EXP +35 | Rare Drop |
+| <img :src="$withBase('/images/kabelian_claws.png')" class="sprite" alt="kabelian_claws" width="56" height="56"> | **Kabelian Claws** | Accessory | 6720 | 0 | DEX +16 · CON +15 | — |
+| <img :src="$withBase('/images/amulet_of_resurrection.png')" class="sprite" alt="amulet_of_resurrection" width="56" height="56"> | **Amulet of Resurrection** | Accessory | 7425 | 0 | — | — |
+| <img :src="$withBase('/images/diamond_amulet.png')" class="sprite" alt="diamond_amulet" width="56" height="56"> | **Diamond Amulet** | Accessory | 7503 | 0 | Bonus EXP +55 · Max HP 175 | — |
+| <img :src="$withBase('/images/amulet_of_the_swordsman.png')" class="sprite" alt="amulet_of_the_swordsman" width="56" height="56"> | **Amulet of the Swordsman** | Accessory | 7590 | 0 | CON +25 · Counterattack +25% | — |
+| <img :src="$withBase('/images/divine_zygote.png')" class="sprite" alt="divine_zygote" width="56" height="56"> | **Divine Zygote** | Accessory | 10000 | 0 | CON +7 · DEX +7 · INT +7 · Status Immunity +100% | Rare Drop |
+| <img :src="$withBase('/images/seeking_glass.png')" class="sprite" alt="seeking_glass" width="56" height="56"> | **Seeking Glass** | Accessory | 10000 | 0 | INT +25 | Rare Drop |
+| <img :src="$withBase('/images/phylactery.png')" class="sprite" alt="phylactery" width="56" height="56"> | **Phylactery** | Accessory | 10100 | 0 | Max HP 80 · regenerationBonus +5 | — |
+| <img :src="$withBase('/images/cosmic_violin.png')" class="sprite" alt="cosmic_violin" width="56" height="56"> | **Cosmic Violin** | Accessory | 11111 | 0 | exaltInspireBonusTurns +3 · CON +25 · DEX +25 · INT +25 | Rare Drop |
+| <img :src="$withBase('/images/pirate_king_tricorn.png')" class="sprite" alt="pirate_king_tricorn" width="56" height="56"> | **Pirate King Tricorn** | Accessory | 14600 | 0 | Max HP 100 · DEX +15 · INT +10 · Crit Damage +50% | — |
+| <img :src="$withBase('/images/eternal_hunger.png')" class="sprite" alt="eternal_hunger" width="56" height="56"> | **Eternal Hunger** | Accessory | 15000 | 0 | INT +5 · Lifesteal +50 | Rare Drop |
+| <img :src="$withBase('/images/infinity_hat.png')" class="sprite" alt="infinity_hat" width="56" height="56"> | **Infinity Hat** | Accessory | 15000 | 0 | Max HP 60 · INT +35 · Crit Damage +25% | Rare Drop |
+| <img :src="$withBase('/images/invisible_servant.png')" class="sprite" alt="invisible_servant" width="56" height="56"> | **Invisible Servant** | Accessory | 16200 | 0 | Max HP 135 · CON +35 | — |
+| <img :src="$withBase('/images/divine_embryo.png')" class="sprite" alt="divine_embryo" width="56" height="56"> | **Divine Embryo** | Accessory | 17400 | 0 | CON +20 · DEX +20 · INT +20 · Status Immunity +100% | — |
+| <img :src="$withBase('/images/bloodstone_claws.png')" class="sprite" alt="bloodstone_claws" width="56" height="56"> | **Bloodstone Claws** | Accessory | 17500 | 0 | CON +25 · DEX +26 · Attack Speed +20 | — |
+| <img :src="$withBase('/images/spider.png')" class="sprite" alt="spider" width="56" height="56"> | **S.P.I.D.E.R** | Accessory | 18500 | 0 | Max HP 20 · CON +5 · DEX +5 | Rare Drop |
+| <img :src="$withBase('/images/prismatic_pendant.png')" class="sprite" alt="prismatic_pendant" width="56" height="56"> | **Prismatic Pendant** | Accessory | 19500 | 0 | Bonus EXP +65 | — |
+| <img :src="$withBase('/images/divine_larvae.png')" class="sprite" alt="divine_larvae" width="56" height="56"> | **Divine Larvae** | Accessory | 26130 | 0 | CON +25 · DEX +25 · INT +25 · Status Immunity +100% | — |
+| <img :src="$withBase('/images/shield_of_the_martyr.png')" class="sprite" alt="shield_of_the_martyr" width="56" height="56"> | **Shield of the Martyr** | Accessory | 26500 | 0 | CON +22 · DEF +8 · MDEF +8 · Threat +2 | — |
+| <img :src="$withBase('/images/enlighted_servant.png')" class="sprite" alt="enlighted_servant" width="56" height="56"> | **Enlighted Servant** | Accessory | 28425 | 0 | Max HP 150 · CON +40 | — |
+| <img :src="$withBase('/images/void_pendant.png')" class="sprite" alt="void_pendant" width="56" height="56"> | **Void Pendant** | Accessory | 30000 | 0 | Bonus EXP +80 | — |
+| <img :src="$withBase('/images/starvation.png')" class="sprite" alt="starvation" width="56" height="56"> | **Starvation** | Accessory | 31500 | 0 | INT +5 · Lifesteal +75 | — |
+| <img :src="$withBase('/images/burning_effigy.png')" class="sprite" alt="burning_effigy" width="56" height="56"> | **Burning Effigy** | Accessory | 43598 | 0 | CON +34 · DEF +9 · MDEF +9 · Threat +3 | — |
+| <img :src="$withBase('/images/nil_pendant.png')" class="sprite" alt="nil_pendant" width="56" height="56"> | **Nil Pendant** | Accessory | 47925 | 0 | Bonus EXP +100 | — |
+| <img :src="$withBase('/images/sha.png')" class="sprite" alt="sha" width="56" height="56"> | **Sha** | Accessory | 69150 | 0 | CON +40 · DEX +40 · INT +40 · Status Immunity +100% | — |
+| <img :src="$withBase('/images/scarlet_cape.png')" class="sprite" alt="scarlet_cape" width="56" height="56"> | **Scarlet Cape** | Accessory | 200000 | 0 | CON +30 · DEX +30 · INT +30 · Crit Chance +15% | — |
+| <img :src="$withBase('/images/eldritch_scarlet_cape.png')" class="sprite" alt="eldritch_scarlet_cape" width="56" height="56"> | **Eldritch Scarlet Cape** | Accessory | 204465 | 0 | CON +40 · DEX +40 · INT +40 · Crit Chance +21% · Crit Damage +21% | — |
+| <img :src="$withBase('/images/abyssal_scarlet_mantle.png')" class="sprite" alt="abyssal_scarlet_mantle" width="56" height="56"> | **Abyssal Scarlet Mantle** | Accessory | 214465 | 0 | CON +50 · DEX +50 · INT +50 · Crit Chance +35% · Crit Damage +40% | — |
 
 :::

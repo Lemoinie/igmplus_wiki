@@ -1,0 +1,401 @@
+[
+  {
+    "id": "AlbinoRat",
+    "name": "Albino Rat",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_albino_rat",
+    "description": "A rare white rodent bearing uncanny ferocity and hardened resilience.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 15,
+      "baseConstitution": 6,
+      "baseIntelligence": 6,
+      "baseDexterity": 6,
+      "baseDefense": 1,
+      "baseMagicDefense": 1
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "AlphaOwlbear",
+    "name": "Alpha Owlbear",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_owlbear",
+    "description": "The undisputed apex monstrosity of the primeval woods, leading great beasts into battle.",
+    "stats": {
+      "maxLevel": 45,
+      "baseMaxHp": 220,
+      "baseConstitution": 36,
+      "baseIntelligence": 15,
+      "baseDexterity": 24,
+      "baseDefense": 22,
+      "baseMagicDefense": 18
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "ArcticWeasel",
+    "name": "Arctic Weasel",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_weasel",
+    "description": "A ferocious northern weasel with blinding speed and hardened vitality.",
+    "stats": {
+      "maxLevel": 20,
+      "baseMaxHp": 35,
+      "baseConstitution": 10,
+      "baseIntelligence": 7,
+      "baseDexterity": 13,
+      "baseDefense": 3,
+      "baseMagicDefense": 3
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "BoneHorror",
+    "name": "Bone Horror",
+    "type": "undead",
+    "tier": 1,
+    "sprite": "unit_bone_horror",
+    "description": "A reanimated bone horror. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 315,
+      "baseConstitution": 72,
+      "baseIntelligence": 1,
+      "baseDexterity": 17,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "skills": [
+      "None",
+      "Threatening Ii"
+    ]
+  },
+  {
+    "id": "BoneHydra",
+    "name": "Bone Hydra",
+    "type": "undead",
+    "tier": 1,
+    "sprite": "unit_bone_hydra",
+    "description": "A reanimated bone hydra. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 390,
+      "baseConstitution": 125,
+      "baseIntelligence": 1,
+      "baseDexterity": 24,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "skills": [
+      "None",
+      "Threatening Ii"
+    ]
+  },
+  {
+    "id": "BoneNightmare",
+    "name": "Bone Nightmare",
+    "type": "undead",
+    "tier": 1,
+    "sprite": "unit_bone_nightmare",
+    "description": "A reanimated bone nightmare. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 345,
+      "baseConstitution": 105,
+      "baseIntelligence": 1,
+      "baseDexterity": 20,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "skills": [
+      "None",
+      "Threatening Ii"
+    ]
+  },
+  {
+    "id": "DireWolf",
+    "name": "Dire Wolf",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_wolf",
+    "description": "A massive apex pack hunter that tears through enemy ranks with savage ferocity.",
+    "stats": {
+      "maxLevel": 30,
+      "baseMaxHp": 75,
+      "baseConstitution": 17,
+      "baseIntelligence": 10,
+      "baseDexterity": 22,
+      "baseDefense": 8,
+      "baseMagicDefense": 8
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "PolarBear",
+    "name": "Polar Bear",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_bear",
+    "description": "A colossal arctic titan boasting relentless power and commanding the wild.",
+    "stats": {
+      "maxLevel": 35,
+      "baseMaxHp": 130,
+      "baseConstitution": 25,
+      "baseIntelligence": 11,
+      "baseDexterity": 15,
+      "baseDefense": 15,
+      "baseMagicDefense": 13
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "Rat",
+    "name": "Rat",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_rat",
+    "description": "A vicious little vermin that bites ankles and swarms unwary targets.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 10,
+      "baseConstitution": 5,
+      "baseIntelligence": 5,
+      "baseDexterity": 5,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "Skeleton",
+    "name": "Skeleton",
+    "type": "undead",
+    "tier": 1,
+    "sprite": "unit_skeleton",
+    "description": "A reanimated skeleton. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 170,
+      "baseConstitution": 50,
+      "baseIntelligence": 1,
+      "baseDexterity": 14,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "skills": [
+      "None",
+      "Threatening I"
+    ]
+  },
+  {
+    "id": "SnowCat",
+    "name": "Snow Cat",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_cat",
+    "description": "A rare mountain feline with a thick winter coat, striking with swift precision.",
+    "stats": {
+      "maxLevel": 25,
+      "baseMaxHp": 50,
+      "baseConstitution": 12,
+      "baseIntelligence": 8,
+      "baseDexterity": 18,
+      "baseDefense": 5,
+      "baseMagicDefense": 5
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "SummonBear",
+    "name": "Summoned Bear",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_bear",
+    "description": "A towering beast serving as an unyielding frontline protector.",
+    "stats": {
+      "maxLevel": 35,
+      "baseMaxHp": 100,
+      "baseConstitution": 20,
+      "baseIntelligence": 9,
+      "baseDexterity": 12,
+      "baseDefense": 12,
+      "baseMagicDefense": 10
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "SummonCat",
+    "name": "Summoned Cat",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_cat",
+    "description": "An agile companion that pounces from behind with razor-sharp claws.",
+    "stats": {
+      "maxLevel": 25,
+      "baseMaxHp": 40,
+      "baseConstitution": 10,
+      "baseIntelligence": 7,
+      "baseDexterity": 15,
+      "baseDefense": 4,
+      "baseMagicDefense": 4
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "SummonOwlbear",
+    "name": "Summoned Owlbear",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_owlbear",
+    "description": "A monstrous chimeric powerhouse combining avian keenness with ursine savagery.",
+    "stats": {
+      "maxLevel": 45,
+      "baseMaxHp": 180,
+      "baseConstitution": 30,
+      "baseIntelligence": 12,
+      "baseDexterity": 20,
+      "baseDefense": 18,
+      "baseMagicDefense": 15
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "SummonTiger",
+    "name": "Summoned Tiger",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_tiger",
+    "description": "A fierce jungle predator executing crushing ambushes against high-value targets.",
+    "stats": {
+      "maxLevel": 40,
+      "baseMaxHp": 130,
+      "baseConstitution": 24,
+      "baseIntelligence": 10,
+      "baseDexterity": 24,
+      "baseDefense": 14,
+      "baseMagicDefense": 12
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "SummonWeasel",
+    "name": "Summoned Weasel",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_weasel",
+    "description": "A lightning-fast animal companion darting between enemy strikes.",
+    "stats": {
+      "maxLevel": 20,
+      "baseMaxHp": 25,
+      "baseConstitution": 8,
+      "baseIntelligence": 6,
+      "baseDexterity": 10,
+      "baseDefense": 2,
+      "baseMagicDefense": 2
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "SummonWolf",
+    "name": "Summoned Wolf",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_wolf",
+    "description": "A steadfast pack hunter that hamstrings prey with bone-snapping bites.",
+    "stats": {
+      "maxLevel": 30,
+      "baseMaxHp": 60,
+      "baseConstitution": 14,
+      "baseIntelligence": 8,
+      "baseDexterity": 18,
+      "baseDefense": 6,
+      "baseMagicDefense": 6
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "WhiteTiger",
+    "name": "White Tiger",
+    "type": "beast",
+    "tier": 1,
+    "sprite": "unit_summon_tiger",
+    "description": "A majestic legendary predator possessing immense strength and an innate call of the pack.",
+    "stats": {
+      "maxLevel": 40,
+      "baseMaxHp": 160,
+      "baseConstitution": 28,
+      "baseIntelligence": 12,
+      "baseDexterity": 28,
+      "baseDefense": 16,
+      "baseMagicDefense": 14
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  },
+  {
+    "id": "Zombie",
+    "name": "Zombie",
+    "type": "undead",
+    "tier": 1,
+    "sprite": "unit_zombie",
+    "description": "A reanimated zombie. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "maxLevel": 15,
+      "baseMaxHp": 130,
+      "baseConstitution": 34,
+      "baseIntelligence": 1,
+      "baseDexterity": 11,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "skills": [
+      "None",
+      "None"
+    ]
+  }
+]

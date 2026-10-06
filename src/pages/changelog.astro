@@ -1,0 +1,88 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+---
+
+<WikiLayout title="Mod Changelog" description="Update history and patch notes for Idle Guild Master Modded.">
+  <div class="pageHeader">
+    <h1>Mod Changelog</h1>
+    <p>Version history, balance adjustments, new class masteries, and systems overhaul.</p>
+  </div>
+
+  <article class="changelogEntry">
+    <div class="entryHeader">
+      <h2>v1.2.0 — Doctrine & Class Rebalance</h2>
+      <span class="dateBadge">Latest Release</span>
+    </div>
+    <div class="entryBody">
+      <h3>Adventurers & Classes</h3>
+      <ul>
+        <li>Added complete Tier 9 masteries for Footman, Apprentice, Archer, Rogue, and Outlander lines.</li>
+        <li><strong>Aether Mage Line:</strong> Introduced Aether Mage, Aether Archmage, Disintegrator, Grand Magus, and Singularity Magus with resonance scaling.</li>
+        <li><strong>Angel of War:</strong> Updated aura scaling and multi-target retribution defensive mechanics.</li>
+      </ul>
+
+      <h3>Combat & Balance</h3>
+      <ul>
+        <li>Overhauled defense damage reduction curves with consistent diminishing returns.</li>
+        <li>Normalized attack speed formulas and status effect tick rates.</li>
+        <li>Added rare drop indicators and unique items for high-tier expeditions.</li>
+      </ul>
+    </div>
+  </article>
+</WikiLayout>
+
+<style>
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.changelogEntry {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.entryHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+  margin-bottom: 1.25rem;
+}
+
+.entryHeader h2 {
+  font-size: 1.35rem;
+  margin: 0;
+  border: none;
+  padding: 0;
+}
+
+.dateBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: rgba(74, 222, 128, 0.15);
+  color: #4ade80;
+}
+
+.entryBody h3 {
+  font-size: 1.05rem;
+  color: var(--text-gold);
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.entryBody ul {
+  padding-left: 1.25rem;
+  margin-bottom: 1rem;
+  color: var(--text-secondary);
+}
+
+.entryBody li {
+  margin-bottom: 0.4rem;
+}
+</style>

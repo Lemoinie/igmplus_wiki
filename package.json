@@ -1,18 +1,22 @@
 {
   "name": "igmplus-wiki",
-  "private": true,
   "type": "module",
-  "description": "Auto-generated mod wiki for Idle Guild Master Modded (VitePress).",
+  "version": "1.0.0",
+  "private": true,
   "scripts": {
-    "extract": "python ../scripts/igmplus_wiki/extract_game_data.py",
-    "sprites": "python ../scripts/igmplus_wiki/export_sprites.py",
-    "generate": "python ../scripts/igmplus_wiki/generate_pages.py",
-    "update-wiki": "npm run extract && npm run sprites && npm run generate",
-    "dev": "vitepress dev",
-    "build": "vitepress build",
-    "preview": "vitepress preview"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/vue": "^5.0.6",
+    "astro": "^5.4.2",
+    "vue": "^3.5.13"
   },
   "devDependencies": {
-    "vitepress": "^1.6.3"
+    "@types/node": "^22.13.0",
+    "typescript": "^5.7.3"
   }
 }

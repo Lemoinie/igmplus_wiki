@@ -1,0 +1,38 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import ClassBrowser from '../../components/ClassBrowser.vue';
+import classesData from '../../data/classes.json';
+
+// Automatically merge any standalone unit files from src/data/adventurers/units/*.json
+const unitModules = import.meta.glob('../../data/adventurers/units/*.json', { eager: true });
+const classMap = new Map();
+classesData.forEach((c: any) => classMap.set(c.id, c));
+Object.values(unitModules).forEach((mod: any) => {
+  const unit = mod.default || mod;
+  if (unit && unit.id) {
+    classMap.set(unit.id, { ...(classMap.get(unit.id) || {}), ...unit });
+  }
+});
+const combinedClasses = Array.from(classMap.values());
+---
+
+<WikiLayout title="Classes & Promotion Trees" description="Browse all 6 adventurer promotion trees in Idle Guild Master Modded.">
+  <div class="pageHeader">
+    <h1>Classes & Promotion Trees</h1>
+    <p>
+      Adventurers begin at a Tier 1 base class and advance through specialized branches up to Tier 9 pinnacle masteries.
+      Select a category below to explore its promotion paths.
+    </p>
+  </div>
+
+  <ClassBrowser client:load classes={combinedClasses as any} basePath="/igmplus_wiki" />
+</WikiLayout>
+
+<style>
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+.pageHeader p {
+  max-width: 800px;
+}
+</style>

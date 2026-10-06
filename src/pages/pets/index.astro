@@ -1,0 +1,32 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import PetCard from '../../components/PetCard.vue';
+import petsData from '../../data/pets.json';
+---
+
+<WikiLayout title="Pets & Summons" description="Tamer beasts and necromancy summons in Idle Guild Master Modded.">
+  <div class="pageHeader">
+    <h1>Pets & Summons</h1>
+    <p>
+      Beasts tamed by Outlander tamer specializations and undead risen by Necromancer masteries.
+      Each pet features scaling stats and battle capabilities.
+    </p>
+  </div>
+
+  <div class="petsGrid">
+    {petsData.map((p) => (
+      <PetCard client:load pet={p as any} basePath="/igmplus_wiki" />
+    ))}
+  </div>
+</WikiLayout>
+
+<style>
+.pageHeader {
+  margin-bottom: 1.5rem;
+}
+.petsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+</style>

@@ -1,0 +1,109 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import skillsData from '../../data/skills.json';
+
+const activeSkills = skillsData.filter((s: any) => s.kind === 'active' && s.key !== 'ACTIVE_NONE');
+const passiveSkills = skillsData.filter((s: any) => s.kind === 'passive' && s.key !== 'PASSIVE_NONE');
+---
+
+<WikiLayout title="Skills Catalogue" description="All active and passive skills in Idle Guild Master Modded.">
+  <div class="pageHeader">
+    <h1>Skills Catalogue</h1>
+    <p>
+      Complete encyclopedia of combat abilities, spells, passive masteries, and party buffs.
+    </p>
+  </div>
+
+  <section class="skillSection">
+    <h2>⚡ Active Skills ({activeSkills.length})</h2>
+    <div class="skillsGrid">
+      {activeSkills.map((s: any) => (
+        <div class="skillCard activeCard">
+          <div class="skillTitleRow">
+            <strong class="skillTitle">{s.name}</strong>
+            <span class="skillTag">Active</span>
+          </div>
+          <p class="skillDesc">{s.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+
+  <section class="skillSection">
+    <h2>🛡️ Passive Skills ({passiveSkills.length})</h2>
+    <div class="skillsGrid">
+      {passiveSkills.map((s: any) => (
+        <div class="skillCard passiveCard">
+          <div class="skillTitleRow">
+            <strong class="skillTitle">{s.name}</strong>
+            <span class="skillTag passiveTag">Passive</span>
+          </div>
+          <p class="skillDesc">{s.description}</p>
+        </div>
+      ))}
+    </div>
+  </section>
+</WikiLayout>
+
+<style>
+.pageHeader {
+  margin-bottom: 2rem;
+}
+
+.skillSection {
+  margin-bottom: 3rem;
+}
+
+.skillSection h2 {
+  margin-bottom: 1rem;
+}
+
+.skillsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1rem;
+}
+
+.skillCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.skillTitleRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.skillTitle {
+  font-size: 1rem;
+  color: var(--text-primary);
+}
+
+.skillTag {
+  font-size: 0.7rem;
+  font-weight: 700;
+  padding: 2px 6px;
+  border-radius: 4px;
+  background: rgba(234, 179, 8, 0.2);
+  color: #facc15;
+}
+
+.passiveTag {
+  background: rgba(99, 102, 241, 0.2);
+  color: #818cf8;
+}
+
+.skillDesc {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.4;
+  white-space: pre-line;
+}
+</style>

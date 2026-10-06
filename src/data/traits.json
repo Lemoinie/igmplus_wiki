@@ -1,0 +1,322 @@
+[
+  {
+    "id": "BOOKWORM",
+    "name": "Bookworm",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "BRUTE",
+    "name": "Brute",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "FERAL",
+    "name": "Feral",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "BOOKWORM_PLUS",
+    "name": "Bookworm+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "BRUTE_PLUS",
+    "name": "Brute+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "FERAL_PLUS",
+    "name": "Feral+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "VERSATILE",
+    "name": "Versatile",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "VERSATILE_PLUS",
+    "name": "Versatile+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "ZEALOUS",
+    "name": "Zealous",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "ZEALOUS_PLUS",
+    "name": "Zealous+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "CUNNING",
+    "name": "Cunning",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "CUNNING_PLUS",
+    "name": "Cunning+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "ATHLETIC",
+    "name": "Athletic",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "ATHLETIC_PLUS",
+    "name": "Athletic+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "EMPATHETIC",
+    "name": "Empathetic",
+    "type": "unique",
+    "sprite": null,
+    "description": "Heals are 20% more powerful (multiplicative).",
+    "effects": []
+  },
+  {
+    "id": "GIFTED",
+    "name": "Gifted",
+    "type": "unique",
+    "sprite": null,
+    "description": "Gains 2 more mana per turn.",
+    "effects": []
+  },
+  {
+    "id": "INTIMIDATING",
+    "name": "Intimidating",
+    "type": "unique",
+    "sprite": null,
+    "description": "+2 threat",
+    "effects": []
+  },
+  {
+    "id": "FOCUSED",
+    "name": "Focused",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "DRAGON_BLOOD",
+    "name": "Dragon Blood",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "CURSED",
+    "name": "Cursed",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "REACTIVE",
+    "name": "Reactive",
+    "type": "unique",
+    "sprite": null,
+    "description": "10% counterattack chance when hit by melee attacks.",
+    "effects": []
+  },
+  {
+    "id": "NOCTURNAL",
+    "name": "Nocturnal",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "MINDFUL",
+    "name": "Mindful",
+    "type": "unique",
+    "sprite": null,
+    "description": "10% status immunity.",
+    "effects": []
+  },
+  {
+    "id": "TROLL_BLOOD",
+    "name": "Troll Blood",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "NIMBLE",
+    "name": "Nimble",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "RUTHLESS",
+    "name": "Ruthless",
+    "type": "unique",
+    "sprite": null,
+    "description": "Critical damage +20% (multiplicative).",
+    "effects": []
+  },
+  {
+    "id": "BLESSED",
+    "name": "Blessed",
+    "type": "unique",
+    "sprite": null,
+    "description": "Reduces darkness by 15.",
+    "effects": []
+  },
+  {
+    "id": "ALERT",
+    "name": "Alert",
+    "type": "unique",
+    "sprite": null,
+    "description": "Starts the fight first.",
+    "effects": []
+  },
+  {
+    "id": "DEADEYE",
+    "name": "Deadeye",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "SUNDERING",
+    "name": "Sundering",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "FORTIFIED",
+    "name": "Fortified",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "RECKLESS",
+    "name": "Reckless",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "LONE_WOLF",
+    "name": "Lone Wolf",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "RUTHLESS_PLUS",
+    "name": "Ruthless+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "EMPATHETIC_PLUS",
+    "name": "Empathetic+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "NOCTURNAL_PLUS",
+    "name": "Nocturnal+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "GIFTED_PLUS",
+    "name": "Gifted+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "INTIMIDATING_PLUS",
+    "name": "Intimidating+",
+    "type": "unique",
+    "sprite": null,
+    "description": "+4 threat",
+    "effects": []
+  },
+  {
+    "id": "CURSED_PLUS",
+    "name": "Cursed+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  },
+  {
+    "id": "ALERT_PLUS",
+    "name": "Alert+",
+    "type": "unique",
+    "sprite": null,
+    "description": null,
+    "effects": []
+  }
+]

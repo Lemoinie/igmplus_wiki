@@ -1,0 +1,204 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+import classes from '../data/classes.json';
+import equipment from '../data/equipment.json';
+import pets from '../data/pets.json';
+import enemies from '../data/enemies.json';
+import dungeons from '../data/dungeons.json';
+
+const stats = [
+  { label: 'Classes', count: classes.length, icon: '⚔️', href: '/igmplus_wiki/classes' },
+  { label: 'Equipment', count: equipment.length, icon: '🛡️', href: '/igmplus_wiki/equipment' },
+  { label: 'Pets & Summons', count: pets.length, icon: '🐾', href: '/igmplus_wiki/pets' },
+  { label: 'Enemies', count: enemies.length, icon: '👾', href: '/igmplus_wiki/enemies' },
+  { label: 'Dungeons & Raids', count: dungeons.length, icon: '🗺️', href: '/igmplus_wiki/dungeons' },
+];
+---
+
+<WikiLayout title="Home" description="Idle Guild Master Modded Community Wiki">
+  <div class="hero">
+    <h1 class="heroTitle">Idle Guild Master Modded Wiki</h1>
+    <p class="heroSubtitle">
+      Comprehensive, data-driven database for classes, items, builds, pets, dungeons, and combat mechanics.
+    </p>
+
+    <!-- Stat Badges -->
+    <div class="statsRow">
+      {stats.map((s) => (
+        <a href={s.href} class="statCard">
+          <span class="statIcon">{s.icon}</span>
+          <div class="statInfo">
+            <span class="statCount">{s.count}</span>
+            <span class="statLabel">{s.label}</span>
+          </div>
+        </a>
+      ))}
+    </div>
+  </div>
+
+  <section class="section">
+    <h2>Explore the Wiki</h2>
+    <div class="featureGrid">
+      <a href="/igmplus_wiki/classes" class="featureCard">
+        <div class="cardIcon">⚔️</div>
+        <h3>Classes & Promotion Trees</h3>
+        <p>Explore all 6 adventurer trees (Footman, Apprentice, Archer, Rogue, Outlander, Summon) with stats, skills, and promotion paths.</p>
+      </a>
+
+      <a href="/igmplus_wiki/equipment" class="featureCard">
+        <div class="cardIcon">🛡️</div>
+        <h3>Weapons, Armors & Accessories</h3>
+        <p>Browse weapons, shields, robes, and jewelry with rarity scaling, stat bonuses, and craft costs.</p>
+      </a>
+
+      <a href="/igmplus_wiki/pets" class="featureCard">
+        <div class="cardIcon">🐾</div>
+        <h3>Pets & Summons</h3>
+        <p>Tamer beasts, familiars, and necromancy undead summons with scaling stats and skills.</p>
+      </a>
+
+      <a href="/igmplus_wiki/dungeons" class="featureCard">
+        <div class="cardIcon">🗺️</div>
+        <h3>Dungeons & Raids</h3>
+        <p>Room encounter odds, drop rates, and boss mechanics for all expeditions.</p>
+      </a>
+
+      <a href="/igmplus_wiki/mechanics/defense-and-armor" class="featureCard">
+        <div class="cardIcon">📜</div>
+        <h3>Game Mechanics Guides</h3>
+        <p>Detailed breakdowns of defense scaling, attack speed breakpoints, and status effects.</p>
+      </a>
+
+      <a href="/igmplus_wiki/changelog" class="featureCard">
+        <div class="cardIcon">📋</div>
+        <h3>Mod Changelog</h3>
+        <p>Keep track of the latest rebalances, new class branches, and item additions.</p>
+      </a>
+    </div>
+  </section>
+</WikiLayout>
+
+<style>
+.hero {
+  text-align: center;
+  padding: 2.5rem 1rem 3rem 1rem;
+  background: radial-gradient(circle at 50% 0%, rgba(110, 168, 254, 0.12), transparent 70%);
+  border-radius: 12px;
+  border: 1px solid var(--border-subtle);
+  margin-bottom: 2.5rem;
+}
+
+.heroTitle {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #fff;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.75rem;
+}
+
+.heroSubtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 0 auto 2rem auto;
+}
+
+.statsRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.statCard {
+  display: flex;
+  align-items: center;
+  gap: 0.85rem;
+  padding: 0.75rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.statCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand-primary);
+  text-decoration: none;
+}
+
+.statIcon {
+  font-size: 1.6rem;
+}
+
+.statInfo {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.statCount {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.1;
+}
+
+.statLabel {
+  font-size: 0.78rem;
+  color: var(--text-muted);
+}
+
+.section {
+  margin-bottom: 3rem;
+}
+
+.section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.featureGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 1.25rem;
+}
+
+.featureCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  text-decoration: none;
+  transition: all 0.15s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.featureCard:hover {
+  transform: translateY(-3px);
+  border-color: var(--brand-primary);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.35);
+  text-decoration: none;
+}
+
+.cardIcon {
+  font-size: 2rem;
+  margin-bottom: 0.25rem;
+}
+
+.featureCard h3 {
+  font-size: 1.15rem;
+  color: var(--text-primary);
+  margin: 0;
+}
+
+.featureCard p {
+  font-size: 0.88rem;
+  color: var(--text-muted);
+  margin: 0;
+  line-height: 1.45;
+}
+</style>

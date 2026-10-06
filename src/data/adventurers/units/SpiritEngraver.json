@@ -1,0 +1,25 @@
+{
+  "id": "SpiritEngraver",
+  "name": "Spirit Engraver",
+  "category": "Rogue",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_spirit_engraver",
+  "description": "An ethereal artisan carving the lifeforce of doomed spirits into lethal strikes.",
+  "stats": {
+    "baseMaxHp": 410,
+    "baseConstitution": 45,
+    "baseIntelligence": 55,
+    "baseDexterity": 140,
+    "baseDefense": 32,
+    "baseMagicDefense": 38
+  },
+  "activeSkill": "Ethereal Carve",
+  "passiveSkill": "Spirit Inscription",
+  "promotesFrom": [
+    "HellishSculptor"
+  ],
+  "promotesTo": []
+}

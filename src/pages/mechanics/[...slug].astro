@@ -1,0 +1,103 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+
+export async function getStaticPaths() {
+  const posts = import.meta.glob('../../content/mechanics/*.md', { eager: true });
+  return Object.entries(posts).map(([filePath, post]: [string, any]) => {
+    const slug = filePath.split('/').pop()?.replace('.md', '');
+    return {
+      params: { slug },
+      props: { post }
+    };
+  });
+}
+
+const { post } = Astro.props;
+const { Content } = post;
+---
+
+<WikiLayout title={post.frontmatter?.title || 'Game Mechanics'} description={post.frontmatter?.description}>
+  <article class="proseArticle">
+    <div class="articleHeader">
+      <span class="categoryPill">{post.frontmatter?.category || 'Mechanics'}</span>
+      <h1>{post.frontmatter?.title}</h1>
+      {post.frontmatter?.description && (
+        <p class="articleDesc">{post.frontmatter.description}</p>
+      )}
+    </div>
+
+    <div class="articleContent">
+      <Content />
+    </div>
+  </article>
+</WikiLayout>
+
+<style>
+.proseArticle {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  padding: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.articleHeader {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.categoryPill {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  background: rgba(110, 168, 254, 0.15);
+  padding: 2px 8px;
+  border-radius: 4px;
+  display: inline-block;
+  margin-bottom: 0.75rem;
+}
+
+.articleHeader h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.articleDesc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.articleContent {
+  color: var(--text-secondary);
+  line-height: 1.7;
+}
+
+.articleContent :global(h2) {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  color: var(--text-primary);
+}
+
+.articleContent :global(h3) {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  color: var(--text-gold);
+}
+
+.articleContent :global(p) {
+  margin-bottom: 1.2rem;
+}
+
+.articleContent :global(ul) {
+  padding-left: 1.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.articleContent :global(li) {
+  margin-bottom: 0.4rem;
+}
+</style>

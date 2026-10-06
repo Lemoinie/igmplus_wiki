@@ -29,26 +29,6 @@
       {
         "key": "CelestialDestroyer",
         "chance_permille": 2.33
-      },
-      {
-        "key": "Banshee",
-        "chance_permille": null
-      },
-      {
-        "key": "CelestialDestroyer",
-        "chance_permille": null
-      },
-      {
-        "key": "CelestialLancer",
-        "chance_permille": null
-      },
-      {
-        "key": "Iconoclast",
-        "chance_permille": null
-      },
-      {
-        "key": "Oculus",
-        "chance_permille": null
       }
     ],
     "encounter_chance_permille": 495,
@@ -103,30 +83,6 @@
       {
         "key": "Mimic",
         "chance_permille": 1.0
-      },
-      {
-        "key": "Deckhand",
-        "chance_permille": null
-      },
-      {
-        "key": "Mimic",
-        "chance_permille": null
-      },
-      {
-        "key": "MysteriousTentacle",
-        "chance_permille": null
-      },
-      {
-        "key": "Pirate",
-        "chance_permille": null
-      },
-      {
-        "key": "PirateCaptain",
-        "chance_permille": null
-      },
-      {
-        "key": "PirateLieutenant",
-        "chance_permille": null
       }
     ],
     "encounter_chance_permille": 565,
@@ -167,58 +123,34 @@
     "enemies": [
       {
         "key": "Wolf",
-        "chance_permille": 363.33
+        "chance_permille": 163.33
       },
       {
         "key": "Boar",
-        "chance_permille": 230.0
+        "chance_permille": 130.0
       },
       {
         "key": "Treant",
-        "chance_permille": 213.33
+        "chance_permille": 113.33
       },
       {
         "key": "Centaur",
-        "chance_permille": 163.33
+        "chance_permille": 63.33
       },
       {
         "key": "Ent",
         "chance_permille": 20.0
       },
       {
-        "key": "Boar",
-        "chance_permille": null
-      },
-      {
-        "key": "Centaur",
-        "chance_permille": null
-      },
-      {
-        "key": "Ent",
-        "chance_permille": null
+        "key": "GoldenRabbit",
+        "chance_permille": 10.0
       },
       {
         "key": "ForestSpirit",
         "chance_permille": null
-      },
-      {
-        "key": "GoldenRabbit",
-        "chance_permille": null
-      },
-      {
-        "key": "Treant",
-        "chance_permille": null
-      },
-      {
-        "key": "TutorialWolf",
-        "chance_permille": null
-      },
-      {
-        "key": "Wolf",
-        "chance_permille": null
       }
     ],
-    "encounter_chance_permille": 1170,
+    "encounter_chance_permille": 680,
     "items_mentioned": [
       "Acorn",
       "Boots",
@@ -276,34 +208,6 @@
       {
         "key": "WillOWisp",
         "chance_permille": 4.0
-      },
-      {
-        "key": "Abomination",
-        "chance_permille": null
-      },
-      {
-        "key": "DeathHound",
-        "chance_permille": null
-      },
-      {
-        "key": "Ghoul",
-        "chance_permille": null
-      },
-      {
-        "key": "Undead",
-        "chance_permille": null
-      },
-      {
-        "key": "UndeadArcher",
-        "chance_permille": null
-      },
-      {
-        "key": "UndeadWarlord",
-        "chance_permille": null
-      },
-      {
-        "key": "WillOWisp",
-        "chance_permille": null
       }
     ],
     "encounter_chance_permille": 580,
@@ -361,30 +265,6 @@
       {
         "key": "IceElemental",
         "chance_permille": 30.0
-      },
-      {
-        "key": "IceElemental",
-        "chance_permille": null
-      },
-      {
-        "key": "SnowWyvern",
-        "chance_permille": null
-      },
-      {
-        "key": "Troll",
-        "chance_permille": null
-      },
-      {
-        "key": "TrollShaman",
-        "chance_permille": null
-      },
-      {
-        "key": "TrollWarrior",
-        "chance_permille": null
-      },
-      {
-        "key": "TrollWhelp",
-        "chance_permille": null
       }
     ],
     "encounter_chance_permille": 540,
@@ -441,30 +321,6 @@
       {
         "key": "WickedTribute",
         "chance_permille": 5.5
-      },
-      {
-        "key": "ArchmageOfLarox",
-        "chance_permille": null
-      },
-      {
-        "key": "Imp",
-        "chance_permille": null
-      },
-      {
-        "key": "MagicArmor",
-        "chance_permille": null
-      },
-      {
-        "key": "NexusResearcher",
-        "chance_permille": null
-      },
-      {
-        "key": "WickedTribute",
-        "chance_permille": null
-      },
-      {
-        "key": "WizardOfLarox",
-        "chance_permille": null
       }
     ],
     "encounter_chance_permille": 514,
@@ -519,27 +375,7 @@
         "chance_permille": 30.33
       },
       {
-        "key": "AmanitaObscura",
-        "chance_permille": null
-      },
-      {
-        "key": "Berserker",
-        "chance_permille": null
-      },
-      {
-        "key": "Pterodactyl",
-        "chance_permille": null
-      },
-      {
         "key": "SmolderingTitan",
-        "chance_permille": null
-      },
-      {
-        "key": "StoneShaman",
-        "chance_permille": null
-      },
-      {
-        "key": "Terrorsaurus",
         "chance_permille": null
       }
     ],
@@ -595,27 +431,7 @@
         "chance_permille": 27.5
       },
       {
-        "key": "Beholder",
-        "chance_permille": null
-      },
-      {
-        "key": "GiantSpider",
-        "chance_permille": null
-      },
-      {
-        "key": "LostMiner",
-        "chance_permille": null
-      },
-      {
-        "key": "ObsidianGolem",
-        "chance_permille": null
-      },
-      {
         "key": "PaleHermit",
-        "chance_permille": null
-      },
-      {
-        "key": "VampireBat",
         "chance_permille": null
       }
     ],
@@ -676,31 +492,7 @@
         "chance_permille": 15.0
       },
       {
-        "key": "Djinn",
-        "chance_permille": null
-      },
-      {
         "key": "SandStatue",
-        "chance_permille": null
-      },
-      {
-        "key": "SandVulture",
-        "chance_permille": null
-      },
-      {
-        "key": "ShahuriArcher",
-        "chance_permille": null
-      },
-      {
-        "key": "ShahuriMage",
-        "chance_permille": null
-      },
-      {
-        "key": "ShahuriWarrior",
-        "chance_permille": null
-      },
-      {
-        "key": "Wurm",
         "chance_permille": null
       }
     ],
@@ -764,35 +556,7 @@
         "chance_permille": 6.67
       },
       {
-        "key": "ArcaneAssassin",
-        "chance_permille": null
-      },
-      {
-        "key": "CityWarden",
-        "chance_permille": null
-      },
-      {
         "key": "ImperialCaptain",
-        "chance_permille": null
-      },
-      {
-        "key": "ImperialGuard",
-        "chance_permille": null
-      },
-      {
-        "key": "ImperialMage",
-        "chance_permille": null
-      },
-      {
-        "key": "InsaneCitizen",
-        "chance_permille": null
-      },
-      {
-        "key": "InsaneMerchant",
-        "chance_permille": null
-      },
-      {
-        "key": "InsanePriest",
         "chance_permille": null
       }
     ],
@@ -845,26 +609,6 @@
       {
         "key": "AncientEnt",
         "chance_permille": 30.0
-      },
-      {
-        "key": "AncientEnt",
-        "chance_permille": null
-      },
-      {
-        "key": "Dryad",
-        "chance_permille": null
-      },
-      {
-        "key": "GiantMoth",
-        "chance_permille": null
-      },
-      {
-        "key": "GiantTortoise",
-        "chance_permille": null
-      },
-      {
-        "key": "GreenSpitfang",
-        "chance_permille": null
       },
       {
         "key": "PrimevalWurm",
@@ -1028,6 +772,10 @@
     "enemies": [
       {
         "key": "Shadow",
+        "chance_permille": null
+      },
+      {
+        "key": "VoidSlime",
         "chance_permille": null
       }
     ],
@@ -1213,10 +961,6 @@
       },
       {
         "key": "Crusader",
-        "chance_permille": null
-      },
-      {
-        "key": "LesserTitan",
         "chance_permille": null
       },
       {
