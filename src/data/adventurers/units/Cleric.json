@@ -1,0 +1,25 @@
+{
+  "id": "Cleric",
+  "name": "Cleric",
+  "category": "Apprentice",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_cleric",
+  "description": "After years of magic studies, the Cleric has a solid grasp of healing magic. He is a solid staple of any exploration team of adventurers.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 35,
+    "baseConstitution": 4,
+    "baseIntelligence": 20,
+    "baseDexterity": 6,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Heal",
+  "passiveSkill": "Healer I",
+  "promotesTo": [
+    "WhiteMage"
+  ]
+}

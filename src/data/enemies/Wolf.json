@@ -1,0 +1,41 @@
+{
+  "id": "Wolf",
+  "name": "Wolf",
+  "isBoss": false,
+  "sprite": "unit_wolf",
+  "stats": {
+    "hp": 60,
+    "constitution": 8,
+    "intelligence": 2,
+    "dexterity": 7,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "2",
+    "max": "6"
+  },
+  "expGiven": 12,
+  "drops": [
+    {
+      "item": "BeastPelt",
+      "qty": 1,
+      "chance": 70
+    },
+    {
+      "item": "AlphaWolfFang",
+      "qty": 1,
+      "chance": 8
+    },
+    {
+      "item": "WerewolfFang",
+      "qty": 1,
+      "chance": 0.2
+    },
+    {
+      "item": "WildEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

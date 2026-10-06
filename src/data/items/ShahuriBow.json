@@ -1,0 +1,15 @@
+{
+  "id": "ShahuriBow",
+  "name": "\"Sha'huri Bow\"",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 86,
+  "sprite": "shahuri_bow",
+  "description": "\"A bow made with a process known only to the people of the desert. Arrows shot with it can rarely stun their target.\nSTUN: the unit skips its turn\"",
+  "stats": {
+    "dexterity": 6,
+    "intelligence": 2
+  },
+  "notes": ""
+}

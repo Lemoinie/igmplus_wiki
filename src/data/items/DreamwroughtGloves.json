@@ -1,0 +1,15 @@
+{
+  "id": "DreamwroughtGloves",
+  "name": "Dreamwrought Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 884,
+  "sprite": "dreamwrought_gloves",
+  "description": "\"Made from a material dreamt and materialized by an otherworldly entity, these gloves display surprising properties that can't be replicated with ordinary matter.\"",
+  "stats": {
+    "constitution": 34,
+    "dexterity": 28
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "SweetAndSourMeat",
+  "name": "Sweet and Sour Meat",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 21,
+  "sprite": "sweet_and_sour_meat",
+  "description": "Tender meat chunks coated in a glossy, reddish sauce and pineapple pieces. The flavor is a perfect balance of tangy sweetness and a mild sour kick.",
+  "stats": {
+    "feedPower": 38
+  },
+  "notes": ""
+}

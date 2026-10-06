@@ -1,0 +1,14 @@
+{
+  "id": "MushroomStew",
+  "name": "Mushroom Stew",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 54,
+  "sprite": "mushroom_stew",
+  "description": "A warm, earthy dish filled with tender mushrooms. The broth is thick and flavorful, with a slightly spongy texture.",
+  "stats": {
+    "feedPower": 217
+  },
+  "notes": ""
+}

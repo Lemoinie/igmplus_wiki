@@ -1,0 +1,6 @@
+{
+  "id": "Fighter",
+  "name": "Fighter",
+  "ability": "FIGHTER",
+  "description": "On allies turns, attacks for %s-%s damage."
+}

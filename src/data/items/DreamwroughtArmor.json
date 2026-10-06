@@ -1,0 +1,15 @@
+{
+  "id": "DreamwroughtArmor",
+  "name": "Dreamwrought Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 1245,
+  "sprite": "dreamwrought_armor",
+  "description": "Heavy armor made from a metal dreamt by a powerful being. Its ethereal nature makes it less hard than its alternatives, but allows far more mobility.",
+  "stats": {
+    "maxHp": 338,
+    "constitution": 26
+  },
+  "notes": ""
+}

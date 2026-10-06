@@ -1,0 +1,26 @@
+{
+  "id": "Ghoul",
+  "name": "Ghoul",
+  "isBoss": false,
+  "sprite": "unit_ghoul",
+  "stats": {
+    "hp": 150,
+    "constitution": 20,
+    "intelligence": 1,
+    "dexterity": 42,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "18",
+    "max": "32"
+  },
+  "expGiven": 90,
+  "drops": [
+    {
+      "item": "InfectedBlood",
+      "qty": 1,
+      "chance": 5
+    }
+  ]
+}

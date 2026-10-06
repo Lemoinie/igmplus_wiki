@@ -1,0 +1,16 @@
+{
+  "id": "BansheeJacket",
+  "name": "Banshee Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 666,
+  "sprite": "banshee_jacket",
+  "description": "\"Made of resilient Banshee scales, one of the hardest known organic materials that can bend enough to not reduce the wearer's mobility too much.\"",
+  "stats": {
+    "maxHp": 180,
+    "constitution": 9,
+    "dexterity": 9
+  },
+  "notes": ""
+}

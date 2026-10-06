@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_DREAM_FORGE",
+  "name_key": "active_dream_forge_name",
+  "desc_key": "active_dream_forge_description",
+  "kind": "active",
+  "name": "Dream Forge",
+  "description": "Heals itself for 10000 HP. Then, forges 10 cosmic blades that descend on random enemies, dealing 200% damage."
+}

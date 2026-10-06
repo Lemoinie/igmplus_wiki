@@ -1,0 +1,25 @@
+{
+  "id": "Bandit",
+  "name": "Bandit",
+  "category": "Outlander",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_bandit",
+  "description": "A ruthless highwayman proficient in ambushing travelers and striking from concealed vantages.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 100,
+    "baseConstitution": 17,
+    "baseIntelligence": 15,
+    "baseDexterity": 4,
+    "baseDefense": 15,
+    "baseMagicDefense": 15
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Vagabond"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Cane",
+  "name": "Cane",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 0,
+  "sprite": "cane",
+  "description": "A wooden cane, without any magical properties.",
+  "stats": {
+    "intelligence": 1
+  },
+  "notes": ""
+}

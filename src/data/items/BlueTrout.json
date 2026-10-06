@@ -1,0 +1,14 @@
+{
+  "id": "BlueTrout",
+  "name": "Blue Trout",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 36,
+  "sprite": "blue_trout",
+  "description": "A blue trout pulled from the Slumbering Shallows.",
+  "stats": {
+    "feedPower": 18
+  },
+  "notes": ""
+}

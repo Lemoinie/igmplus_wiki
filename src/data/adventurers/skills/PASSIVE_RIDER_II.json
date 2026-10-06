@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RIDER_II",
+  "name_key": "passive_rider_ii_name",
+  "desc_key": "passive_rider_ii_description",
+  "kind": "passive",
+  "name": "Rider II",
+  "description": "Every time this unit acts, the wolf bites an enemy for 40 physical damage"
+}

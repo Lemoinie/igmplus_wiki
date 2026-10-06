@@ -1,0 +1,31 @@
+{
+  "id": "ChiefScientistAva",
+  "name": "Chief Scientist Ava",
+  "isBoss": true,
+  "sprite": "unit_chief_scientist_ava",
+  "stats": {
+    "hp": 15000,
+    "constitution": 18,
+    "intelligence": 375,
+    "dexterity": 12,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "750",
+    "max": "2500"
+  },
+  "expGiven": 4000,
+  "drops": [
+    {
+      "item": "KaunianFabric",
+      "qty": 1,
+      "chance": 83
+    },
+    {
+      "item": "ChiefScientistCoat",
+      "qty": 1,
+      "chance": 5
+    }
+  ]
+}

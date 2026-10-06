@@ -1,0 +1,15 @@
+{
+  "id": "LeatherGloves",
+  "name": "Leather Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 41,
+  "sprite": "leather_gloves",
+  "description": "Basic gloves made of leather.",
+  "stats": {
+    "dexterity": 2,
+    "constitution": 2
+  },
+  "notes": ""
+}

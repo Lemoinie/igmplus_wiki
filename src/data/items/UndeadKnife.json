@@ -1,0 +1,16 @@
+{
+  "id": "UndeadKnife",
+  "name": "Undead Knife",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 54,
+  "sprite": "undead_knife",
+  "description": "A dagger made with a long, sharpened undead rib.",
+  "stats": {
+    "constitution": 7,
+    "dexterity": 7,
+    "criticalChance": 0.06
+  },
+  "notes": ""
+}

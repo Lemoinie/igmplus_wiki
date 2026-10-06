@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_DESERT_JUDGEMENT",
+  "name_key": "active_desert_judgement_name",
+  "desc_key": "active_desert_judgement_description",
+  "kind": "active",
+  "name": "Desert Judgement",
+  "description": "Attacks 4 random enemies, with each attack doing 150% damage"
+}

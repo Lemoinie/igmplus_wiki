@@ -1,0 +1,15 @@
+{
+  "id": "FlyingReaper",
+  "name": "Flying Reaper",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 2400,
+  "sprite": "flying_reaper",
+  "description": "This flying knife can be thrown to enemies, and recalled with a single gesture.",
+  "stats": {
+    "dexterity": 20,
+    "constitution": 15
+  },
+  "notes": ""
+}

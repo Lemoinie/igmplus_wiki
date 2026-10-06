@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfAgility",
+  "name": "Potion of Agility",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_agility",
+  "description": "Permanently increases Dodge Chance by 1% (additive).",
+  "stats": {},
+  "notes": ""
+}

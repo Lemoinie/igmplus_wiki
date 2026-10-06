@@ -1,0 +1,17 @@
+{
+  "id": "Dreamcatcher",
+  "name": "Dreamcatcher",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1,
+  "sprite": "dreamcatcher",
+  "description": "\"An ancient accessory enhanced with a ritual by a long lost civilization. It's said to protect from evil spirits, and it provides a great experience gain boost to the wearer.\"",
+  "stats": {
+    "constitution": 3,
+    "dexterity": 3,
+    "intelligence": 3,
+    "bonusExperience": 50
+  },
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "ShadowCrawler",
+  "name": "Shadow Crawler",
+  "category": "Rogue",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_shadow_crawler",
+  "description": "Specialized in concealment within the shadows, the Shadow Crawler can be very hard to hit in dark areas",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 65,
+    "baseConstitution": 12,
+    "baseIntelligence": 6,
+    "baseDexterity": 12,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Backstab I",
+  "passiveSkill": "Night Vision I",
+  "promotesTo": [
+    "ShadowDancer"
+  ]
+}

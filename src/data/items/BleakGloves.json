@@ -1,0 +1,16 @@
+{
+  "id": "BleakGloves",
+  "name": "Bleak Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1584,
+  "sprite": "bleak_gloves",
+  "description": "Gloves made from unknown materials, glowing with an evil light and blessed by an ancient power.",
+  "stats": {
+    "flatDodgeChance": 0.2,
+    "constitution": 18,
+    "dexterity": 19
+  },
+  "notes": ""
+}

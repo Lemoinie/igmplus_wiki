@@ -1,0 +1,15 @@
+{
+  "id": "DreadfulMorningstar",
+  "name": "Dreadful Morningstar",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 20000,
+  "sprite": "dreadful_morningstar",
+  "description": "\"A terrible weapon taken from a nightmarish knight. When the holder hits an enemy it has a chance to inflict TERRIFY on them.\nTERRIFY: The unit skips its turn and takes 20% max hp as magic damage.\"",
+  "stats": {
+    "constitution": 40,
+    "dexterity": 10
+  },
+  "notes": "Rare Drop"
+}

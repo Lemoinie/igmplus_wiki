@@ -1,11 +1,12 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import UnitDetail from '../../components/UnitDetail.vue';
-import enemiesData from '../../data/enemies.json';
+import { getAllEnemies } from '../../lib/data';
 import { base } from '../../lib/base';
 
 export function getStaticPaths() {
-  return (enemiesData as any[]).map((e) => ({ params: { id: e.id }, props: { unit: e } }));
+  const enemiesData = getAllEnemies();
+  return enemiesData.map((e) => ({ params: { id: e.id }, props: { unit: e } }));
 }
 
 const { unit } = Astro.props as { unit: any };

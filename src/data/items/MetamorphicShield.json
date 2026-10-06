@@ -1,0 +1,15 @@
+{
+  "id": "MetamorphicShield",
+  "name": "Metamorphic Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 143,
+  "sprite": "metamorphic_shield",
+  "description": "Spikes will come out from this shield when needed, to hurt foes that get too close.",
+  "stats": {
+    "constitution": 8,
+    "retaliationPhysicalDamage": 6
+  },
+  "notes": ""
+}

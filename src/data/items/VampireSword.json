@@ -1,0 +1,16 @@
+{
+  "id": "VampireSword",
+  "name": "Vampire Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 1026,
+  "sprite": "vampire_sword",
+  "description": "An Obsidian Sword that gained the ability to draw energy from enemies, restoring the holder HP.",
+  "stats": {
+    "constitution": 21,
+    "dexterity": 7,
+    "lifesteal": 20
+  },
+  "notes": ""
+}

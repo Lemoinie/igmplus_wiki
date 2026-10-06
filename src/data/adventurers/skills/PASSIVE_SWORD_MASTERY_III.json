@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SWORD_MASTERY_III",
+  "name_key": "passive_sword_mastery_iii_name",
+  "desc_key": "passive_sword_mastery_iii_description",
+  "kind": "passive",
+  "name": "Sword Mastery III",
+  "description": "\"This unit has a 3× chance of being targeted by enemies.\nEvery time this unit is hit by a melee attack, it has a 60% chance of striking back with a basic attack\""
+}

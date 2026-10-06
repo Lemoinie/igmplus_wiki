@@ -1,0 +1,26 @@
+{
+  "id": "HeadlessKnight",
+  "name": "Headless Knight",
+  "isBoss": true,
+  "sprite": "unit_headless_knight",
+  "stats": {
+    "hp": 22500,
+    "constitution": 200,
+    "intelligence": 120,
+    "dexterity": 170,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1650",
+    "max": "1800"
+  },
+  "expGiven": 10000,
+  "drops": [
+    {
+      "item": "DreadfulMorningstar",
+      "qty": 1,
+      "chance": 7.5
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "PastelDeBelem",
+  "name": "Pastel de Belém",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 300,
+  "sprite": "pastel_de_belem",
+  "description": "A traditional Portuguese custard tart in a crisp, flaky puff pastry, lightly dusted with cinnamon and sugar. A beloved delicacy that pets find irresistible.",
+  "stats": {
+    "feedPower": 1000
+  },
+  "notes": ""
+}

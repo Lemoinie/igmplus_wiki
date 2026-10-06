@@ -1,0 +1,16 @@
+{
+  "id": "SpikedPrimevalShield",
+  "name": "Spiked Primeval Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1499,
+  "sprite": "spiked_primeval_shield",
+  "description": "An incredibly bulky shield made with the scales of a giant behemoth, can cause considerable damage to any attacker through the sharp tortoise spikes attached.",
+  "stats": {
+    "retaliationPhysicalDamage": 25,
+    "constitution": 27,
+    "defense": 12
+  },
+  "notes": ""
+}

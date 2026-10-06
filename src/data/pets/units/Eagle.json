@@ -1,0 +1,14 @@
+{
+  "id": "Eagle",
+  "name": "Eagle",
+  "family": "Avian",
+  "eggSprite": "egg_avian",
+  "abilitySlots": 4,
+  "sprite": "pet_eagle",
+  "description": "A fierce bird of prey with sharp talons and keen vision. It flies high above, scanning for prey with intense focus, before diving with unmatched speed and precision.",
+  "guaranteedAbilities": [
+    "Decoy"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

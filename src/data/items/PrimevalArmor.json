@@ -1,0 +1,16 @@
+{
+  "id": "PrimevalArmor",
+  "name": "Primeval Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 1296,
+  "sprite": "primeval_armor",
+  "description": "Armor plated with the scales of an enormous behemoth, extremely heavy but capable of withstanding devastating blows.",
+  "stats": {
+    "maxHp": 270,
+    "constitution": 9,
+    "defense": 15
+  },
+  "notes": ""
+}

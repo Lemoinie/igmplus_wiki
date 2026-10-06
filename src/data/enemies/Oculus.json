@@ -1,0 +1,36 @@
+{
+  "id": "Oculus",
+  "name": "Oculus",
+  "isBoss": false,
+  "sprite": "unit_oculus",
+  "stats": {
+    "hp": 1100,
+    "constitution": 55,
+    "intelligence": 65,
+    "dexterity": 36,
+    "defense": 10,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "Logger.110",
+    "max": "135"
+  },
+  "expGiven": 80,
+  "drops": [
+    {
+      "item": "ElasticMembrane",
+      "qty": 1,
+      "chance": 40
+    },
+    {
+      "item": "FluxLimiter",
+      "qty": 1,
+      "chance": 0.3
+    },
+    {
+      "item": "Scanner",
+      "qty": 1,
+      "chance": 0.4
+    }
+  ]
+}

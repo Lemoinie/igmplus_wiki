@@ -1,0 +1,17 @@
+{
+  "id": "SkinBlender",
+  "name": "Skin Blender",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 987,
+  "sprite": "skin_blender",
+  "description": "Glove that replicates the dreaded Banshee strike. Will cut through your foes like a knife through water, inflicting tremendous damage with each strike",
+  "stats": {
+    "criticalChance": 0.15,
+    "criticalDamage": 0.15,
+    "constitution": 24,
+    "dexterity": 20
+  },
+  "notes": ""
+}

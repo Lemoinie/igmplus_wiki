@@ -1,0 +1,14 @@
+{
+  "id": "WinterShield",
+  "name": "Winter Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 261,
+  "sprite": "winter_shield",
+  "description": "Very hard but light shield made with metal and wood only found at very high altitudes.",
+  "stats": {
+    "constitution": 18
+  },
+  "notes": ""
+}

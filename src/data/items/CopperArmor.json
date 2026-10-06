@@ -1,0 +1,15 @@
+{
+  "id": "CopperArmor",
+  "name": "Copper Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 20,
+  "sprite": "copper_armor",
+  "description": "A heavy armor made of copper held together with leather straps.",
+  "stats": {
+    "maxHp": 30,
+    "constitution": 1
+  },
+  "notes": ""
+}

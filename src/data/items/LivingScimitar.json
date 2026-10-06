@@ -1,0 +1,16 @@
+{
+  "id": "LivingScimitar",
+  "name": "Living Scimitar",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 227,
+  "sprite": "living_scimitar",
+  "description": "A living weapon imbued with the spirit of a Djinn. Will sometimes act on its own, showing incredible mastery.",
+  "stats": {
+    "constitution": 10,
+    "magicDefense": 5,
+    "counterattack": 0.1
+  },
+  "notes": ""
+}

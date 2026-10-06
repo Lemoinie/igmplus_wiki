@@ -1,0 +1,24 @@
+{
+  "id": "DivineChampion",
+  "name": "Divine Champion",
+  "category": "Footman",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_divine_champion",
+  "description": "Untouchable by most conventional and magical weapons, this divine warrior wields a sword with lightning speed, deflecting both arrows and spells alike. He is the champion of choice to face any adversary, even those of divine power.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 380,
+    "baseConstitution": 40,
+    "baseIntelligence": 14,
+    "baseDexterity": 18,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "counterattack": 0.6
+  },
+  "activeSkill": "En Garde",
+  "passiveSkill": "Sword Expertise Ii",
+  "promotesTo": []
+}

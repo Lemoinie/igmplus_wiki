@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INFILTRATOR",
+  "name_key": "passive_infiltrator_name",
+  "desc_key": "passive_infiltrator_description",
+  "kind": "passive",
+  "name": "Infiltrator",
+  "description": "\"Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 10% (additive)\""
+}

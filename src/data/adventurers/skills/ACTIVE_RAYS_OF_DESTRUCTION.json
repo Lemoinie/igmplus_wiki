@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_RAYS_OF_DESTRUCTION",
+  "name_key": "active_rays_of_destruction_name",
+  "desc_key": "active_rays_of_destruction_description",
+  "kind": "active",
+  "name": "Rays of Destruction",
+  "description": "Blasts 8 enemies for 40% damage."
+}

@@ -1,0 +1,15 @@
+{
+  "id": "VoltaicShock",
+  "name": "Voltaic Shock",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 4058,
+  "sprite": "voltaic_shock",
+  "description": "\"The power of this hook was increased by a core that can amplify and focus the electrical magic simulated within. Will be thrown at a random enemy at the end of the turn, dealing damage and having a small chance to STUN them.\nSTUN: the unit skips its turn.\"",
+  "stats": {
+    "dexterity": 30,
+    "intelligence": 10
+  },
+  "notes": ""
+}

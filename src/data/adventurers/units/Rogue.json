@@ -1,0 +1,25 @@
+{
+  "id": "Rogue",
+  "name": "Rogue",
+  "category": "Rogue",
+  "tier": 1,
+  "maxLevel": 5,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_rogue",
+  "description": "An outcast who resorts to petty crimes to survive. Lacking in strength and cunning, he compensates with his streetwise knowledge and resourcefulness.",
+  "stats": {
+    "maxLevel": 5,
+    "baseMaxHp": 30,
+    "baseConstitution": 6,
+    "baseIntelligence": 4,
+    "baseDexterity": 6,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Backstab I",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Thief"
+  ]
+}

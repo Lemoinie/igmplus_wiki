@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BERSERKER_RAGE",
+  "name_key": "passive_berserker_rage_name",
+  "desc_key": "passive_berserker_rage_description",
+  "kind": "passive",
+  "name": "Berserker Rage",
+  "description": "Attacks twice per turn when its health is below 50%."
+}

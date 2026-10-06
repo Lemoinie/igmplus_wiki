@@ -1,0 +1,14 @@
+{
+  "id": "SalmonRoll",
+  "name": "Salmon Roll",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 47,
+  "sprite": "salmon_roll",
+  "description": "\"A sushi roll with soft rice, avocado and fresh salmon. Hard to make since ingredients must be imported from very distant areas, it's considered a delicacy even in the richest cities.\"",
+  "stats": {
+    "feedPower": 65
+  },
+  "notes": ""
+}

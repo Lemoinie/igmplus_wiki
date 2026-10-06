@@ -1,0 +1,25 @@
+{
+  "id": "WhiteMage",
+  "name": "White mage",
+  "category": "Apprentice",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_white_mage",
+  "description": "Widely used in the ranks of any army, white mages divisions provide reliable healing from the backlines to the most exposed soldiers.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 50,
+    "baseConstitution": 5,
+    "baseIntelligence": 25,
+    "baseDexterity": 7,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Mass Heal I",
+  "passiveSkill": "Healer I",
+  "promotesTo": [
+    "WhiteArchmage"
+  ]
+}

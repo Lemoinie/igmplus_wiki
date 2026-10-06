@@ -1,0 +1,15 @@
+{
+  "id": "AnimatedDagger",
+  "name": "Animated Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 608,
+  "sprite": "animated_dagger",
+  "description": "Dagger made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "constitution": 30,
+    "dexterity": 30
+  },
+  "notes": ""
+}

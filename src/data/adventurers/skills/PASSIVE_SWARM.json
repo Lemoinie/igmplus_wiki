@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SWARM",
+  "name_key": "passive_swarm_name",
+  "desc_key": "passive_swarm_description",
+  "kind": "passive",
+  "name": "Swarm",
+  "description": "Immune to BLEED, STUN, PETRIFY. Reduces all damage to 1. Attacks once per HP point."
+}

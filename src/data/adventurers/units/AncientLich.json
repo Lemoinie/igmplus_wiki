@@ -1,0 +1,26 @@
+{
+  "id": "AncientLich",
+  "name": "Ancient Lich",
+  "category": "Apprentice",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_ancient_lich",
+  "description": "Long forgotten by death itself, this Lich survived for eons in a remote corner of the realms, his powers over death growing to unfathomable strength.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 125,
+    "baseConstitution": 8,
+    "baseIntelligence": 40,
+    "baseDexterity": 10,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Curse Iii",
+  "passiveSkill": "Withering Link",
+  "promotesTo": [
+    "LorfOfDecay"
+  ]
+}

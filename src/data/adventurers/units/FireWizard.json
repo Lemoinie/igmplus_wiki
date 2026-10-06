@@ -1,0 +1,25 @@
+{
+  "id": "FireWizard",
+  "name": "Fire Wizard",
+  "category": "Apprentice",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_fire_wizard",
+  "description": "Amids the journey of discovery, the Fire Wizard learned to channel magic to emulate natural forces. Being the most dangerous of them all, he choose fire as the object of his studies.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 35,
+    "baseConstitution": 4,
+    "baseIntelligence": 20,
+    "baseDexterity": 6,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Fire Burst",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "RedMage"
+  ]
+}

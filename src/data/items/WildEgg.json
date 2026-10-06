@@ -1,0 +1,12 @@
+{
+  "id": "WildEgg",
+  "name": "Wild Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_wild",
+  "description": "Egg that will hatch a Wild pet. Wild pets usually provide strategic support to the team, enhancing health management and offensive capabilities.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ObsidianBow",
+  "name": "Obsidian Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 333,
+  "sprite": "obsidian_bow",
+  "description": "\"Sculpted from a single obsidian block, this unusual bow's weight is even more balanced than the classical, wooden ones.\"",
+  "stats": {
+    "intelligence": 6,
+    "dexterity": 22
+  },
+  "notes": ""
+}

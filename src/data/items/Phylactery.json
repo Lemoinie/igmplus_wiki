@@ -1,0 +1,15 @@
+{
+  "id": "Phylactery",
+  "name": "Phylactery",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 10100,
+  "sprite": "phylactery",
+  "description": "An artifact of enormous power, capable of replacing a bound entity in its demise. When held by an unbound entity, however, it greatly boost their ability to regenerate the health of their allies.",
+  "stats": {
+    "maxHp": 80,
+    "regenerationBonus": 5
+  },
+  "notes": ""
+}

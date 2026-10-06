@@ -1,0 +1,14 @@
+{
+  "id": "GhostwoodShield",
+  "name": "Ghostwood Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 203,
+  "sprite": "ghostwood_shield",
+  "description": "Shield made of ancient, refined ghostwood planks.",
+  "stats": {
+    "constitution": 15
+  },
+  "notes": ""
+}

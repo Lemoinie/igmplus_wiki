@@ -1,0 +1,17 @@
+{
+  "id": "CosmicViolin",
+  "name": "Cosmic Violin",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 11111,
+  "sprite": "cosmic_violin",
+  "description": "A violin as old as time itself, played by ancient horrors during their abject rituals.",
+  "stats": {
+    "exaltInspireBonusTurns": 3,
+    "constitution": 25,
+    "dexterity": 25,
+    "intelligence": 25
+  },
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Vagabond",
+  "name": "Vagabond",
+  "category": "Outlander",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_vagabond",
+  "description": "A restless drifter moving like a shadow across borderlands, never staying in one place long enough to be struck.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 125,
+    "baseConstitution": 22,
+    "baseIntelligence": 17,
+    "baseDexterity": 5,
+    "baseDefense": 15,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Brigand"
+  ]
+}

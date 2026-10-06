@@ -1,0 +1,16 @@
+{
+  "id": "SerpentLunge",
+  "name": "Serpent Lunge",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "serpent_lunge",
+  "description": "An eldritch artifact from another world. The holder blinks randomly between dimensions, making them difficult for enemies to target.",
+  "stats": {
+    "flatDodgeChance": 0.1,
+    "dexterity": 25,
+    "constitution": 25
+  },
+  "notes": "Rare Drop"
+}

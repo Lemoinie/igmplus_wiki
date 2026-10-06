@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_THAUMATURGY_IV",
+  "name_key": "passive_thaumaturgy_iv_name",
+  "desc_key": "passive_thaumaturgy_iv_description",
+  "kind": "passive",
+  "name": "Thaumaturgy IV",
+  "description": null
+}

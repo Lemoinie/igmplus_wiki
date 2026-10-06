@@ -1,0 +1,23 @@
+{
+  "id": "Archangel",
+  "name": "Archangel",
+  "category": "Apprentice",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_archangel",
+  "description": "Archangel are divine beings of pure light, embodying hope in the darkest corners of the Realms. Ancient chronicles tell of these powerful beings descending from the sky, restoring entire armies and turning the tide of decisive battles.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 200,
+    "baseConstitution": 10,
+    "baseIntelligence": 50,
+    "baseDexterity": 12,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Restoration Ii",
+  "passiveSkill": "Healer Ii",
+  "promotesTo": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AncientGloves",
+  "name": "Ancient Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 468,
+  "sprite": "ancient_gloves",
+  "description": "Gloves sewn together using the resistant and flexible hide of prehistoric giants.",
+  "stats": {
+    "constitution": 27,
+    "dexterity": 22
+  },
+  "notes": ""
+}

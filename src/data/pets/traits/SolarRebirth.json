@@ -1,0 +1,7 @@
+{
+  "id": "SolarRebirth",
+  "name": "Solar Rebirth",
+  "ability": "SOLAR_REBIRTH",
+  "isUnique": true,
+  "description": "Each combat turn: 0.15% × Level chance to revive/protect fallen allies (1 + floor(Level / 50) allies)."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Taco",
+  "name": "Taco",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 78,
+  "sprite": "taco",
+  "description": "A crunchy bread slice filled with meat, cheese, and sauces. It’s savory and nutritious, with a mix of different textures.",
+  "stats": {
+    "feedPower": 184
+  },
+  "notes": ""
+}

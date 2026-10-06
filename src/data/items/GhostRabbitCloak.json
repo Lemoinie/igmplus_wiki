@@ -1,0 +1,16 @@
+{
+  "id": "GhostRabbitCloak",
+  "name": "Ghost Rabbit Cloak",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 390,
+  "sprite": "ghost_rabbit_cloak",
+  "description": "Light cloak made from ghastly fabric mixed with the elusive Golden Rabbit fur.",
+  "stats": {
+    "maxHp": 30,
+    "intelligence": 9,
+    "bonusExperience": 35
+  },
+  "notes": ""
+}

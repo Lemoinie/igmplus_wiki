@@ -1,0 +1,14 @@
+{
+  "id": "TortoiseShield",
+  "name": "Tortoise Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 240,
+  "sprite": "tortoise_shield",
+  "description": "Heavy, resistant shield made from giant tortoise shells.",
+  "stats": {
+    "constitution": 24
+  },
+  "notes": ""
+}

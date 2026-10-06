@@ -1,0 +1,15 @@
+{
+  "id": "AncientArmor",
+  "name": "Ancient Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 1092,
+  "sprite": "ancient_armor",
+  "description": "Extremely durable armor made with the hardest known metal, lined with remains of prehistoric giants.",
+  "stats": {
+    "maxHp": 330,
+    "constitution": 11
+  },
+  "notes": ""
+}

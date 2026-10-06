@@ -1,0 +1,25 @@
+{
+  "id": "CatTamer",
+  "name": "Cat Tamer",
+  "category": "Outlander",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_cat_tamer",
+  "description": "Fights alongside stealthy feline stalkers capable of sudden pounces and disemboweling claws.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 95,
+    "baseConstitution": 17,
+    "baseIntelligence": 15,
+    "baseDexterity": 4,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "WeaselTamer"
+  ]
+}

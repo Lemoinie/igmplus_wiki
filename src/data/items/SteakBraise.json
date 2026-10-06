@@ -1,0 +1,14 @@
+{
+  "id": "SteakBraise",
+  "name": "Steak Braisé",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 24,
+  "sprite": "steak_braise",
+  "description": "A slow-cooked, tender steak with a deep brown exterior. It’s rich and flavorful, with a slightly smoky taste.",
+  "stats": {
+    "feedPower": 65
+  },
+  "notes": ""
+}

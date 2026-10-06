@@ -1,0 +1,17 @@
+{
+  "id": "DivineZygote",
+  "name": "Divine Zygote",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "divine_zygote",
+  "description": "The remains of a being of endless power, who used their last drop of energy to restore its own mortal body into an earlier form. Unable to survive alone, it emanates an energy barrier of unfathomable strength, protecting itself and its keeper from the outside elements.",
+  "stats": {
+    "constitution": 7,
+    "dexterity": 7,
+    "intelligence": 7,
+    "immunityToStatus": 1
+  },
+  "notes": "Rare Drop"
+}

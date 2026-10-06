@@ -1,0 +1,8 @@
+{
+  "id": "REACTIVE",
+  "name": "Reactive",
+  "type": "unique",
+  "sprite": null,
+  "description": "10% counterattack chance when hit by melee attacks.",
+  "effects": []
+}

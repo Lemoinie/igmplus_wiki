@@ -1,0 +1,15 @@
+{
+  "id": "ObsidianAxe",
+  "name": "Obsidian Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 360,
+  "sprite": "obsidian_axe",
+  "description": "A razor-sharp axe knapped from a single block of volcanic glass.",
+  "stats": {
+    "constitution": 20,
+    "intelligence": 10
+  },
+  "notes": ""
+}

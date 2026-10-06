@@ -1,0 +1,12 @@
+{
+  "id": "Evo24Vial",
+  "name": "Evo-24 Vial",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10,
+  "sprite": "evo24_vial",
+  "description": null,
+  "stats": {},
+  "notes": "Rare Drop"
+}

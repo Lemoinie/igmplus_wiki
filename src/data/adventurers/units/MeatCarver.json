@@ -1,0 +1,26 @@
+{
+  "id": "MeatCarver",
+  "name": "Meat Carver",
+  "category": "Rogue",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_meat_carver",
+  "description": "Working like a seasoned sculptor he meticolously shapes his creation, one precise strike after another. The final outcome is a grim tribute to death itself.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 21,
+    "baseIntelligence": 9,
+    "baseDexterity": 21,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Thousand Cuts",
+  "passiveSkill": "Deadly Finesse I",
+  "promotesTo": [
+    "WoundsWeaver"
+  ]
+}

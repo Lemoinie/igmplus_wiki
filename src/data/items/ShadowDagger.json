@@ -1,0 +1,16 @@
+{
+  "id": "ShadowDagger",
+  "name": "Shadow Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 1346,
+  "sprite": "shadow_dagger",
+  "description": "A blade drawn by darkness, turns its owner into a dangerous night hunter.",
+  "stats": {
+    "dexterity": 20,
+    "constitution": 20,
+    "darknessDamageAmplification": 0.005
+  },
+  "notes": ""
+}

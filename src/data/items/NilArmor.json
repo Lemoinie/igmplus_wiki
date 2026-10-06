@@ -1,0 +1,16 @@
+{
+  "id": "NilArmor",
+  "name": "Nil Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 57000,
+  "sprite": "nil_armor",
+  "description": "An incredibly resistant armor, coated with the flesh of a Slime God. Will grant an unmatched protection to the wearer.",
+  "stats": {
+    "maxHp": 350,
+    "defense": 15,
+    "magicDefense": 15
+  },
+  "notes": ""
+}

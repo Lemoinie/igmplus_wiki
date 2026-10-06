@@ -1,0 +1,15 @@
+{
+  "id": "AscendedBow",
+  "name": "Ascended Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 279,
+  "sprite": "ascended_bow",
+  "description": "\"The power of thunder has been infused into this bow, to enhance its disruptive capabilities.\nSTUN: the unit skips its turn\"",
+  "stats": {
+    "dexterity": 8,
+    "intelligence": 6
+  },
+  "notes": ""
+}

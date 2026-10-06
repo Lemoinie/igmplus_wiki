@@ -1,0 +1,26 @@
+{
+  "id": "NightVeil",
+  "name": "Night Veil",
+  "category": "Rogue",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_night_veil",
+  "description": "Indistinguishable from the shadows that envelop its prey, every enemy—no matter how powerful—falls before they even sense its approach.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 27,
+    "baseIntelligence": 11,
+    "baseDexterity": 27,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "darknessDamageAmplification": 0.02
+  },
+  "activeSkill": "Umbral Strike Ii",
+  "passiveSkill": "Night Vision Iv",
+  "promotesTo": [
+    "NightLament"
+  ]
+}

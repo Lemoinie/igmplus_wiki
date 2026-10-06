@@ -1,0 +1,15 @@
+{
+  "id": "ArchaicAmulet",
+  "name": "Archaic Amulet",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 806,
+  "sprite": "archaic_amulet",
+  "description": "\"A fiery gem embedded in this pendant attracts wildlife, enhancing the holder's empathy and connection with animals they're close with. Grants Animal Affinity, which increases the damage of living creatures controlled by 1% for each point.\"",
+  "stats": {
+    "livingCompanionBonusDamage": 40,
+    "maxHp": 140
+  },
+  "notes": ""
+}

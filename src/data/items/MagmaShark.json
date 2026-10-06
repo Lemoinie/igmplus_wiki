@@ -1,0 +1,14 @@
+{
+  "id": "MagmaShark",
+  "name": "Magma Shark",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 300,
+  "sprite": "magma_shark",
+  "description": "A steaming magma shark — an incredibly rich feed.",
+  "stats": {
+    "feedPower": 150
+  },
+  "notes": ""
+}

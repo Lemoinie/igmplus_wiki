@@ -1,0 +1,16 @@
+{
+  "id": "CunningDemise",
+  "name": "Cunning Demise",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 16200,
+  "sprite": "cunning_demise",
+  "description": "\"This armor components, harmonized by a central magical seal to build the most disruptive interference, modifies the properties of the air around to make transmission of sound impossible, hindering spellcasters effectiveness.\nSILENCE: the unit can't gain any mana\"",
+  "stats": {
+    "maxHp": 160,
+    "constitution": 7,
+    "dexterity": 7
+  },
+  "notes": ""
+}

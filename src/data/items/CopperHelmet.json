@@ -1,0 +1,14 @@
+{
+  "id": "CopperHelmet",
+  "name": "Copper Helmet",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 24,
+  "sprite": "copper_helmet",
+  "description": "Regular helmet made with copper for some extra protection.",
+  "stats": {
+    "maxHp": 20
+  },
+  "notes": ""
+}

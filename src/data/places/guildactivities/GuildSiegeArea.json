@@ -1,0 +1,10 @@
+{
+  "id": "GuildSiegeArea",
+  "name": "The Siege",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_the_siege",
+  "enemies": [],
+  "loot": []
+}

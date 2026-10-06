@@ -1,0 +1,31 @@
+{
+  "id": "PrimevalWurm",
+  "name": "Primeval Wurm",
+  "isBoss": false,
+  "sprite": "unit_primeval_wurm",
+  "stats": {
+    "hp": 16000,
+    "constitution": 215,
+    "intelligence": 1,
+    "dexterity": 70,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "540",
+    "max": "595"
+  },
+  "expGiven": 4000,
+  "drops": [
+    {
+      "item": "PrimevalScale",
+      "qty": 1,
+      "chance": 99.9
+    },
+    {
+      "item": "InsectEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "StellarStaff",
+  "name": "Stellar Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 6090,
+  "sprite": "stellar_staff",
+  "description": "Infused with the essence of a distant star, this staff burns hotter than any flame known to this world.",
+  "stats": {
+    "onFireBonusDamage": 3,
+    "intelligence": 25,
+    "constitution": 10,
+    "dexterity": 10
+  },
+  "notes": ""
+}

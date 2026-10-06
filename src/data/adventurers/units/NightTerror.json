@@ -1,0 +1,26 @@
+{
+  "id": "NightTerror",
+  "name": "Night Terror",
+  "category": "Rogue",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_night_terror",
+  "description": "Ancient myths speak of Night Terrors, and how entire villages could vanish overnight because the wrong person was crossed.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 24,
+    "baseIntelligence": 10,
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "darknessDamageAmplification": 0.015
+  },
+  "activeSkill": "Umbral Strike Ii",
+  "passiveSkill": "Night Vision Iii",
+  "promotesTo": [
+    "NightVeil"
+  ]
+}

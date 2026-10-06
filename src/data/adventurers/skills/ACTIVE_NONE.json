@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_NONE",
+  "name_key": "active_none_name",
+  "desc_key": "active_none_description",
+  "kind": "active",
+  "name": "—",
+  "description": "No active ability"
+}

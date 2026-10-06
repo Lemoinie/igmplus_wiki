@@ -1,0 +1,15 @@
+{
+  "id": "InfernalBow",
+  "name": "Infernal Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 13400,
+  "sprite": "infernal_bow",
+  "description": "The heart of this unique bow has been replaced with Infernite, an exotic material that maintains its shooting speed while enhancing its tensile strength.",
+  "stats": {
+    "attackSpeed": 100,
+    "dexterity": 38
+  },
+  "notes": ""
+}

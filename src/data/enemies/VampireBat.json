@@ -1,0 +1,36 @@
+{
+  "id": "VampireBat",
+  "name": "Vampire Bat",
+  "isBoss": false,
+  "sprite": "unit_vampire_bat",
+  "stats": {
+    "hp": 350,
+    "constitution": 2,
+    "intelligence": 2,
+    "dexterity": 65,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "28",
+    "max": "52"
+  },
+  "expGiven": 58,
+  "drops": [
+    {
+      "item": "BatWing",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "BatTooth",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "AvianEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

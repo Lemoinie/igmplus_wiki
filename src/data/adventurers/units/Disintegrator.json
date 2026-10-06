@@ -1,0 +1,25 @@
+{
+  "id": "Disintegrator",
+  "name": "Disintegrator",
+  "category": "Apprentice",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_disintegrator",
+  "description": "Unleashes beams of disintegration that can instantly erase targets and echo into repeated casts.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 130,
+    "baseConstitution": 8,
+    "baseIntelligence": 54,
+    "baseDexterity": 14,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Disintegrate I",
+  "passiveSkill": "Aether Resonance V",
+  "promotesTo": [
+    "GrandMagus"
+  ]
+}

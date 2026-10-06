@@ -1,0 +1,15 @@
+{
+  "id": "ObsidianDagger",
+  "name": "Obsidian Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 306,
+  "sprite": "obsidian_dagger",
+  "description": "Extremely sharp weapon with a blade in Obsidian.",
+  "stats": {
+    "dexterity": 20,
+    "constitution": 20
+  },
+  "notes": ""
+}

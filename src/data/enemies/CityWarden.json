@@ -1,0 +1,36 @@
+{
+  "id": "CityWarden",
+  "name": "City Warden",
+  "isBoss": false,
+  "sprite": "unit_city_warden",
+  "stats": {
+    "hp": 300,
+    "constitution": 20,
+    "intelligence": 8,
+    "dexterity": 16,
+    "defense": 15,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "26",
+    "max": "31"
+  },
+  "expGiven": 35,
+  "drops": [
+    {
+      "item": "WardenBelt",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "SilkThread",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "BlackOoze",
+      "qty": 1,
+      "chance": 20
+    }
+  ]
+}

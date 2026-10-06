@@ -1,0 +1,15 @@
+{
+  "id": "UndeadAxe",
+  "name": "Undead Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 75,
+  "sprite": "undead_axe",
+  "description": "A jagged axe fashioned from shapeless bone and grisly remains.",
+  "stats": {
+    "constitution": 8,
+    "intelligence": 5
+  },
+  "notes": ""
+}

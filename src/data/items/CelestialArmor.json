@@ -1,0 +1,15 @@
+{
+  "id": "CelestialArmor",
+  "name": "Celestial Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 653,
+  "sprite": "celestial_armor",
+  "description": "Armor made with alien Celestial Metal. Its superior properties grant an increase in protection from almost any armor crafted with metals found in the Realms.",
+  "stats": {
+    "maxHp": 270,
+    "constitution": 9
+  },
+  "notes": ""
+}

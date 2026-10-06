@@ -1,0 +1,36 @@
+{
+  "id": "Mimic",
+  "name": "Mimic",
+  "isBoss": false,
+  "sprite": "unit_mimic",
+  "stats": {
+    "hp": 236,
+    "constitution": 25,
+    "intelligence": 1,
+    "dexterity": 18,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "42",
+    "max": "78"
+  },
+  "expGiven": 132,
+  "drops": [
+    {
+      "item": "GhostwoodStump",
+      "qty": 3,
+      "chance": 66.6
+    },
+    {
+      "item": "CoinPurse",
+      "qty": 1,
+      "chance": 33.3
+    },
+    {
+      "item": "ConstructEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "TunaRoll",
+  "name": "Tuna Roll",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 54,
+  "sprite": "tuna_roll",
+  "description": "\"A sushi roll made with red tuna, avocado and rice. Hard to make since ingredients must be imported from very distant areas, it's considered a delicacy even in the richest cities.\"",
+  "stats": {
+    "feedPower": 78
+  },
+  "notes": ""
+}

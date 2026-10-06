@@ -1,0 +1,26 @@
+{
+  "id": "SandStatue",
+  "name": "Sand Statue",
+  "isBoss": false,
+  "sprite": "unit_sand_statue",
+  "stats": {
+    "hp": 120,
+    "constitution": 12,
+    "intelligence": 2,
+    "dexterity": 10,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "5",
+    "max": "8"
+  },
+  "expGiven": 29,
+  "drops": [
+    {
+      "item": "MetamorphicSand",
+      "qty": 1,
+      "chance": 30
+    }
+  ]
+}

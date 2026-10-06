@@ -1,0 +1,15 @@
+{
+  "id": "PrimevalShield",
+  "name": "Primeval Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 675,
+  "sprite": "primeval_shield",
+  "description": "Shield made from the scale of an enormous creature, capable of withstanding the hardest blows without breaking.",
+  "stats": {
+    "constitution": 27,
+    "defense": 12
+  },
+  "notes": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "SavageBerserker",
+  "name": "Savage Berserker",
+  "category": "Outlander",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_savage_berserker",
+  "description": "A warrior whose frenzied onslaught feeds upon shed blood to regenerate vigor.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 170,
+    "baseConstitution": 25,
+    "baseIntelligence": 13,
+    "baseDexterity": 4,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "baseLifesteal": 25
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "ScarletBerserker"
+  ]
+}

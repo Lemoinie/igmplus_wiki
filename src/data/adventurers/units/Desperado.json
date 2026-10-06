@@ -1,0 +1,25 @@
+{
+  "id": "Desperado",
+  "name": "Desperado",
+  "category": "Outlander",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_desperado",
+  "description": "A daring outlaw with nothing left to lose, unleashing reckless yet lethal flurry attacks.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 230,
+    "baseConstitution": 31,
+    "baseIntelligence": 27,
+    "baseDexterity": 9,
+    "baseDefense": 15,
+    "baseMagicDefense": 40
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "ElSalvador"
+  ]
+}

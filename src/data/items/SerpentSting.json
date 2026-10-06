@@ -1,0 +1,14 @@
+{
+  "id": "SerpentSting",
+  "name": "Serpent Sting",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "serpent_sting",
+  "description": "\"An eldritch artifact from another world. This crossbow generates tensile strength beyond mortal limits. While it delivers massive damage, the recoil STUNS the wielder for one turn after each attack. This effect cannot be cleansed, and ignores immunities.\nSTUN: the unit skips its turn.\"",
+  "stats": {
+    "dexterity": 40
+  },
+  "notes": "Rare Drop"
+}

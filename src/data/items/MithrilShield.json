@@ -1,0 +1,14 @@
+{
+  "id": "MithrilShield",
+  "name": "Mithril Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 810,
+  "sprite": "mithril_shield",
+  "description": "An incredibly light and resistant shield crafted from the legendary Mithril.",
+  "stats": {
+    "constitution": 33
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_CLAIRVOYANCE",
+  "name_key": "passive_clairvoyance_name",
+  "desc_key": "passive_clairvoyance_description",
+  "kind": "passive",
+  "name": "Clairvoyance",
+  "description": "\"Peers into the future. Extremely hard to hit. Attacks from this unit can't miss. 50% status immunity.\""
+}

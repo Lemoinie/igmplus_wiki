@@ -1,0 +1,14 @@
+{
+  "id": "Tomato",
+  "name": "Tomato",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "tomato",
+  "description": "Round and smooth, with a bright yellow color. Its flesh is juicy and slightly sweet with a tart, refreshing flavor and soft seeds inside.",
+  "stats": {
+    "feedPower": 4
+  },
+  "notes": ""
+}

@@ -1,0 +1,18 @@
+{
+  "id": "ReassemblingJacket",
+  "name": "Reassembling Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 2088,
+  "sprite": "reassembling_jacket",
+  "description": "Jacket enhanced with a powerful rune through the manipulation of its ethereal aspect, often achieved using a powerful instrument.",
+  "stats": {
+    "immunityToStatus": 0.3,
+    "regeneration": 40,
+    "maxHp": 200,
+    "constitution": 25,
+    "dexterity": 7
+  },
+  "notes": ""
+}

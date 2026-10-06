@@ -1,0 +1,23 @@
+{
+  "id": "CelestialRain",
+  "name": "Celestial Rain",
+  "category": "Archer",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_celestial_rain",
+  "description": "A legendary archer that defies the most basic laws of nature. Every arrow crackles with raw energy as it hits the target with extreme force, and her sole presence on the battlefield denies to entire armies the possibility of an open field attack.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 12,
+    "baseIntelligence": 20,
+    "baseDexterity": 40,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Viii",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": []
+}

@@ -1,0 +1,6 @@
+{
+  "id": "Protective",
+  "name": "Protective",
+  "ability": "BARRIER",
+  "description": "Blocks %s damage from any source."
+}

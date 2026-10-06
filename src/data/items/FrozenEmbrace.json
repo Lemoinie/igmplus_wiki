@@ -1,0 +1,15 @@
+{
+  "id": "FrozenEmbrace",
+  "name": "Frozen Embrace",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 2457,
+  "sprite": "frozen_embrace",
+  "description": "\"Enhanced with powerful ice magic, every attacker who touch this armor will be feeling its freezing nature.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\"",
+  "stats": {
+    "maxHp": 200,
+    "defense": 12
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "IronHelm",
+  "name": "Iron Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 39,
+  "sprite": "iron_helm",
+  "description": "The most common helm worn by regular soldiers.",
+  "stats": {
+    "maxHp": 40
+  },
+  "notes": ""
+}

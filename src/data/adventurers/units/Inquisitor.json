@@ -1,0 +1,25 @@
+{
+  "id": "Inquisitor",
+  "name": "Inquisitor",
+  "category": "Footman",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_inquisitor",
+  "description": "\"As feared as he is respected, the Inquisitor's might is rarely matched. He stands as the supreme lawgiver, overseeing the realms conquered by the Holy Temple.\"",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 265,
+    "baseConstitution": 32,
+    "baseIntelligence": 16,
+    "baseDexterity": 10,
+    "baseDefense": 20,
+    "baseMagicDefense": 33
+  },
+  "activeSkill": "Radiant Judgment Ii",
+  "passiveSkill": "Aura Of Devotion Ii",
+  "promotesTo": [
+    "Justiciar"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FIRE_MAGIC_I",
+  "name_key": "passive_fire_magic_i_name",
+  "desc_key": "passive_fire_magic_i_description",
+  "kind": "passive",
+  "name": "Fire Magic",
+  "description": null
+}

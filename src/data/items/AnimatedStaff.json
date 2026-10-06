@@ -1,0 +1,14 @@
+{
+  "id": "AnimatedStaff",
+  "name": "Animated Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 635,
+  "sprite": "animated_staff",
+  "description": "Staff made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "intelligence": 40
+  },
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Wraith",
+  "name": "Wraith",
+  "category": "Archer",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_wraith",
+  "description": "Gradually altered by constant exposure to various toxins, she has developed complete immunity to poison. This venomous demon slips through enemy towns under cover of night, hidden in shadows, leaving soldiers helpless before the coming invasion.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 11,
+    "baseIntelligence": 18,
+    "baseDexterity": 36,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Focused Barrage",
+  "passiveSkill": "Poisonous Blood",
+  "promotesTo": [
+    "CorrosiveWraith"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "TrollskinJacket",
+  "name": "Trollskin Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 306,
+  "sprite": "trollskin_jacket",
+  "description": "Hard as stone while allowing for a wide range of movements, secretes an oil that hastens the healing of wounds.",
+  "stats": {
+    "maxHp": 120,
+    "constitution": 5,
+    "dexterity": 5,
+    "regeneration": 6
+  },
+  "notes": ""
+}

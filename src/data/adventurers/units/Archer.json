@@ -1,0 +1,25 @@
+{
+  "id": "Archer",
+  "name": "Archer",
+  "category": "Archer",
+  "tier": 1,
+  "maxLevel": 5,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_archer",
+  "description": "Armed with a bow and arrows, she provides reliable long-range support, delivering shots to hurt enemies from a distance.",
+  "stats": {
+    "maxLevel": 5,
+    "baseMaxHp": 30,
+    "baseConstitution": 4,
+    "baseIntelligence": 4,
+    "baseDexterity": 8,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage I",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Huntress"
+  ]
+}

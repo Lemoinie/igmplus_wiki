@@ -1,0 +1,26 @@
+{
+  "id": "Demilich",
+  "name": "Demilich",
+  "category": "Apprentice",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_demilich",
+  "description": "\"In the self-destructive path to become a master of the undead, the necromancer has to face power beyond the mortal's imagination, and resist their corruption. Flesh begins to decompose, as he realizes that the price to pay for the control over Death is eternal suffering.\"",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 70,
+    "baseConstitution": 6,
+    "baseIntelligence": 30,
+    "baseDexterity": 8,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Curse Ii",
+  "passiveSkill": "Withering Touch",
+  "promotesTo": [
+    "Lich"
+  ]
+}

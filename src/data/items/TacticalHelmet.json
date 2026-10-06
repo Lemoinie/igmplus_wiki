@@ -1,0 +1,16 @@
+{
+  "id": "TacticalHelmet",
+  "name": "Tactical Helmet",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1152,
+  "sprite": "tactical_helmet",
+  "description": "An alien helmet that integrates unknown technology to provide the wearer with far more information that the naked eye can perceive.",
+  "stats": {
+    "darknessDamageAmplification": 0.005,
+    "maxHp": 120,
+    "dexterity": 12
+  },
+  "notes": ""
+}

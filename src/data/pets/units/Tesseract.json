@@ -1,0 +1,15 @@
+{
+  "id": "Tesseract",
+  "name": "Tesseract",
+  "family": "Construct",
+  "eggSprite": "egg_construct",
+  "abilitySlots": 4,
+  "sprite": "pet_tesseract",
+  "description": "A geometric cube of shifting planar faces and humming magical matrices.",
+  "guaranteedAbilities": [
+    "Magic",
+    "Bright"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

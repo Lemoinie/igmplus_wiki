@@ -1,0 +1,26 @@
+{
+  "id": "Ultraslime",
+  "name": "Ultraslime",
+  "isBoss": true,
+  "sprite": "unit_ultraslime",
+  "stats": {
+    "hp": 99999,
+    "constitution": 1000,
+    "intelligence": 100,
+    "dexterity": 125,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "920",
+    "max": "1860"
+  },
+  "expGiven": 99999,
+  "drops": [
+    {
+      "item": "WhiteSlime",
+      "qty": 1,
+      "chance": 50
+    }
+  ]
+}

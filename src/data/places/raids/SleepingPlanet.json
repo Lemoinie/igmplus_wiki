@@ -1,0 +1,41 @@
+{
+  "id": "SleepingPlanet",
+  "name": "Sleeping Planet",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_sleeping_planet",
+  "enemies": [
+    {
+      "id": "DreamwroughtBeast",
+      "name": "DreamwroughtBeast",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "DreamwroughtDragon",
+      "name": "DreamwroughtDragon",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "DreamwroughtForge",
+      "name": "DreamwroughtForge",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "DreamwroughtSwarm",
+      "name": "DreamwroughtSwarm",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Singularity",
+      "name": "Singularity",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

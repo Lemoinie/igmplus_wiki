@@ -1,0 +1,14 @@
+{
+  "id": "ElasticBoots",
+  "name": "Elastic Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 312,
+  "sprite": "elastic_boots",
+  "description": "Sewn together using a mysterious membrane, almost unbreakable but able to be stretched beyond ordinary limits.",
+  "stats": {
+    "dexterity": 27
+  },
+  "notes": ""
+}

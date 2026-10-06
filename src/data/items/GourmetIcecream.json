@@ -1,0 +1,14 @@
+{
+  "id": "GourmetIcecream",
+  "name": "Gourmet Icecream",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 100,
+  "sprite": "gourmet_icecream",
+  "description": "\"An experimental way of serving a cold , sweet flavoured cream. It's a rare speciality only a few select food lovers ever had a chance to taste.\"",
+  "stats": {
+    "feedPower": 1350
+  },
+  "notes": ""
+}

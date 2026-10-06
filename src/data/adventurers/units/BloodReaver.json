@@ -1,0 +1,26 @@
+{
+  "id": "BloodReaver",
+  "name": "Blood Reaver",
+  "category": "Outlander",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_blood_reaver",
+  "description": "A terror of the battlefield who converts physical destruction into enduring life essence.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 230,
+    "baseConstitution": 35,
+    "baseIntelligence": 18,
+    "baseDexterity": 5,
+    "baseDefense": 17,
+    "baseMagicDefense": 17,
+    "baseLifesteal": 25
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "CrimsonWarlord"
+  ]
+}

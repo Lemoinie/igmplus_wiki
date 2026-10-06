@@ -1,0 +1,70 @@
+{
+  "id": "EnchantedForest",
+  "name": "Enchanted Forest",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 68,
+  "sprite": "summary_enchanted_forest",
+  "enemies": [
+    {
+      "id": "Wolf",
+      "name": "Wolf",
+      "rate": "16.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "Boar",
+      "name": "Boar",
+      "rate": "13.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "Treant",
+      "name": "Treant",
+      "rate": "11.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "Centaur",
+      "name": "Centaur",
+      "rate": "6.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "Ent",
+      "name": "Ent",
+      "rate": "2.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "GoldenRabbit",
+      "name": "GoldenRabbit",
+      "rate": "1.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "ForestSpirit",
+      "name": "ForestSpirit",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "Acorn",
+    "Boots",
+    "CentaurHoof",
+    "ClothHat",
+    "ClothRobe",
+    "CopperArmor",
+    "CopperDagger",
+    "CopperOre",
+    "CopperSword",
+    "LeatherArmor",
+    "LeatherGloves",
+    "WolfSkin",
+    "Wood",
+    "WoodenBow",
+    "WoodenBuckler",
+    "WoodenStaff"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "StrawberryPancake",
+  "name": "Strawberry Pancake",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 8,
+  "sprite": "strawberry_pancake",
+  "description": "A light, fluffy pancake topped or filled with sweet strawberries imported from the southern forests. It’s soft and slightly sweet, with a fresh, juicy pop from the strawberries.",
+  "stats": {
+    "feedPower": 22
+  },
+  "notes": ""
+}

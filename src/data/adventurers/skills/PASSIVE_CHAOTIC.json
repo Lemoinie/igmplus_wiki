@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_CHAOTIC",
+  "name_key": "passive_chaotic_name",
+  "desc_key": "passive_chaotic_description",
+  "kind": "passive",
+  "name": "Chaotic",
+  "description": "Attacks allies and enemies alike"
+}

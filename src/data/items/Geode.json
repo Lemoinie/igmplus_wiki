@@ -1,0 +1,12 @@
+{
+  "id": "Geode",
+  "name": "Geode",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10,
+  "sprite": "geode",
+  "description": "Hollow rock that contains a precious gem. Rarely, they can contain a massive amount of gems.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

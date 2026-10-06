@@ -1,0 +1,46 @@
+{
+  "id": "PirateCaptain",
+  "name": "Pirate Captain",
+  "isBoss": false,
+  "sprite": "unit_pirate_captain",
+  "stats": {
+    "hp": 800,
+    "constitution": 40,
+    "intelligence": 8,
+    "dexterity": 35,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "40",
+    "max": "54"
+  },
+  "expGiven": 264,
+  "drops": [
+    {
+      "item": "GhostwoodStump",
+      "qty": 1,
+      "chance": 37.5
+    },
+    {
+      "item": "BlackIronScraps",
+      "qty": 1,
+      "chance": 37.8
+    },
+    {
+      "item": "ExoticVelvet",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "FreshTuna",
+      "qty": 1,
+      "chance": 2.3
+    },
+    {
+      "item": "PotionOfDexterity",
+      "qty": 1,
+      "chance": 0.2
+    }
+  ]
+}

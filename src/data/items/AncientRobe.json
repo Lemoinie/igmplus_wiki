@@ -1,0 +1,15 @@
+{
+  "id": "AncientRobe",
+  "name": "Ancient Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 600,
+  "sprite": "ancient_robe",
+  "description": "Extremely light robe made with the remains of a prehistoric wing.",
+  "stats": {
+    "maxHp": 110,
+    "intelligence": 33
+  },
+  "notes": ""
+}

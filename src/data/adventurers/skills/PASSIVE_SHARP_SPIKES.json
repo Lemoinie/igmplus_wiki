@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SHARP_SPIKES",
+  "name_key": "passive_sharp_spikes_name",
+  "desc_key": "passive_sharp_spikes_description",
+  "kind": "passive",
+  "name": "Sharp Spikes",
+  "description": "Inflicts BLEED 25 to melee attackers. BLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+}

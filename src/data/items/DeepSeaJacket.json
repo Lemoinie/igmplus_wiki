@@ -1,0 +1,17 @@
+{
+  "id": "DeepSeaJacket",
+  "name": "Deep Sea Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 5883,
+  "sprite": "deep_sea_jacket",
+  "description": "Hides processed with reagents gathered in the depth of the ocean, to confer the wearer additional protection against external elements.",
+  "stats": {
+    "maxHp": 100,
+    "constitution": 5,
+    "dexterity": 5,
+    "immunityToStatus": 0.4
+  },
+  "notes": ""
+}

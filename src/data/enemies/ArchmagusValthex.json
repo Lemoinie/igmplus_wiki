@@ -1,0 +1,46 @@
+{
+  "id": "ArchmagusValthex",
+  "name": "Archmagus Valthex",
+  "isBoss": true,
+  "sprite": "scarlet_grand_mage",
+  "stats": {
+    "hp": 150000,
+    "constitution": 100,
+    "intelligence": 600,
+    "dexterity": 60,
+    "defense": 10,
+    "magicDefense": 450
+  },
+  "damage": {
+    "min": "200",
+    "max": "250"
+  },
+  "expGiven": 50000,
+  "drops": [
+    {
+      "item": "ScarletStrand",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "EldritchSeal",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "BlackHide",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "AbherrantFabric",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

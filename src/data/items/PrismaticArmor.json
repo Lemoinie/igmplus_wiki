@@ -1,0 +1,16 @@
+{
+  "id": "PrismaticArmor",
+  "name": "Prismatic Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 20850,
+  "sprite": "prismatic_armor",
+  "description": "Combines different types of elemental magic to provide an unbreakable defense, while neutering their individual elemental properties.",
+  "stats": {
+    "maxHp": 230,
+    "defense": 15,
+    "magicDefense": 15
+  },
+  "notes": ""
+}

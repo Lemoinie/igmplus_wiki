@@ -1,0 +1,25 @@
+{
+  "id": "InfernalLord",
+  "name": "Infernal Lord",
+  "category": "Apprentice",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_infernal_lord",
+  "description": "\"Ascending through infernal ranks through its ruthlessness and cruelty, an Infernal Lord walking the realms is a threat that brings enemy kingdoms together in a desperate effort to prevent the entire world's descent into chaos.\"",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 265,
+    "baseConstitution": 28,
+    "baseIntelligence": 28,
+    "baseDexterity": 28,
+    "baseDefense": 28,
+    "baseMagicDefense": 28
+  },
+  "activeSkill": "Obliterate",
+  "passiveSkill": "Chaotic",
+  "promotesTo": [
+    "InfernalPrince"
+  ]
+}

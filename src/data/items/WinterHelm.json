@@ -1,0 +1,14 @@
+{
+  "id": "WinterHelm",
+  "name": "Winter Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 378,
+  "sprite": "winter_helm",
+  "description": "Very hard helm made with uncommon materials, can withstand blows otherwise fatal.",
+  "stats": {
+    "maxHp": 120
+  },
+  "notes": ""
+}

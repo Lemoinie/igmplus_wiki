@@ -1,0 +1,15 @@
+{
+  "id": "AnimatedCuirass",
+  "name": "Animated Cuirass",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 756,
+  "sprite": "animated_cuirass",
+  "description": "Heavy armor made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "maxHp": 300,
+    "constitution": 10
+  },
+  "notes": ""
+}

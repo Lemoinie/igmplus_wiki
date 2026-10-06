@@ -1,0 +1,8 @@
+{
+  "id": "BLESSED",
+  "name": "Blessed",
+  "type": "unique",
+  "sprite": null,
+  "description": "Reduces darkness by 15.",
+  "effects": []
+}

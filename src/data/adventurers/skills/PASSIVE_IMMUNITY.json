@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_IMMUNITY",
+  "name_key": "passive_immunity_name",
+  "desc_key": "passive_immunity_description",
+  "kind": "passive",
+  "name": "Immunity",
+  "description": "50% immunity to status effects."
+}

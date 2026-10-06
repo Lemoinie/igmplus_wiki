@@ -1,0 +1,25 @@
+{
+  "id": "LightDisciple",
+  "name": "Light Disciple",
+  "category": "Apprentice",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_light_disciple",
+  "description": "An inexperienced mage who tries to expand his knowledge towards a branch of magic that does not hurt foes, but help allies.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 25,
+    "baseConstitution": 3,
+    "baseIntelligence": 15,
+    "baseDexterity": 5,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Energy Burst I",
+  "passiveSkill": "Healer I",
+  "promotesTo": [
+    "Cleric"
+  ]
+}

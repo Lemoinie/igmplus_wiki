@@ -1,0 +1,23 @@
+{
+  "id": "Eidolon",
+  "name": "Eidolon",
+  "category": "Rogue",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_eidolon",
+  "description": "An ethereal embodiment of divine melody, wielding godlike power to protect his allies, able to rally armies to reshape whole kingdoms.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 23,
+    "baseIntelligence": 26,
+    "baseDexterity": 23,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Petrifying Melody",
+  "passiveSkill": "Exalting Ii",
+  "promotesTo": []
+}

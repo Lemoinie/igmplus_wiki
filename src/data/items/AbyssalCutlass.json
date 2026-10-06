@@ -1,0 +1,14 @@
+{
+  "id": "AbyssalCutlass",
+  "name": "Abyssal Cutlass",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 5501,
+  "sprite": "abyssal_cutlass",
+  "description": "A variation of the typical Cutlass, forged using an enhanced metal to make it lighter.",
+  "stats": {
+    "constitution": 24
+  },
+  "notes": ""
+}

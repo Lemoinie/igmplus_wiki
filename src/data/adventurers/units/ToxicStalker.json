@@ -1,0 +1,26 @@
+{
+  "id": "ToxicStalker",
+  "name": "Toxic Stalker",
+  "category": "Archer",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_toxic_stalker",
+  "description": "The Toxic Stalker has perfected her art of creating deadly toxins, and can severely disrupt the activity of unaware hostile entities.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 8,
+    "baseIntelligence": 12,
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Poisonous Arrows Ii",
+  "promotesTo": [
+    "PlagueSpreader",
+    "Alchemist"
+  ]
+}

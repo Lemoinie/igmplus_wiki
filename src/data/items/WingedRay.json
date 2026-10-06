@@ -1,0 +1,14 @@
+{
+  "id": "WingedRay",
+  "name": "Winged Ray",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 70,
+  "sprite": "winged_ray",
+  "description": "A gliding ray catch with firm, meaty flesh.",
+  "stats": {
+    "feedPower": 35
+  },
+  "notes": ""
+}

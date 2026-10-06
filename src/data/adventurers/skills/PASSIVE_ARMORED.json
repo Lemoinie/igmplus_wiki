@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ARMORED",
+  "name_key": "passive_armored_name",
+  "desc_key": "passive_armored_description",
+  "kind": "passive",
+  "name": "Armored",
+  "description": null
+}

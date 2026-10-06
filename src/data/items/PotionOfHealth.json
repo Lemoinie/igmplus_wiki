@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfHealth",
+  "name": "Potion of Health",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_health",
+  "description": "Permanently increases HP by 5.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "RedwoodBow",
+  "name": "Redwood Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 123,
+  "sprite": "redwood_bow",
+  "description": "Resistant bow made of redwood, a light and flexible material imported from far away.",
+  "stats": {
+    "constitution": 4,
+    "dexterity": 12
+  },
+  "notes": ""
+}

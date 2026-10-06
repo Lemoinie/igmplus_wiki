@@ -1,0 +1,31 @@
+{
+  "id": "Undead",
+  "name": "Undead",
+  "isBoss": false,
+  "sprite": "unit_undead",
+  "stats": {
+    "hp": 160,
+    "constitution": 16,
+    "intelligence": 1,
+    "dexterity": 5,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "8",
+    "max": "11"
+  },
+  "expGiven": 20,
+  "drops": [
+    {
+      "item": "BoneFragment",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "SharpRib",
+      "qty": 1,
+      "chance": 1
+    }
+  ]
+}

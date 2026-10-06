@@ -1,0 +1,23 @@
+{
+  "id": "CorrosiveWraith",
+  "name": "Corrosive Wraith",
+  "category": "Archer",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_corrosive_wraith",
+  "description": "The poison coursing through her veins has somehow mutated into an even more potent form without harming its host. This unique toxin is stronger, unlike any other, and can only exist through this rare symbiosis. When these creatures defy the law of the land, they are hunted relentlessly—and often, unsuccessfully.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 12,
+    "baseIntelligence": 20,
+    "baseDexterity": 40,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Focused Barrage",
+  "passiveSkill": "Corrosive Blood",
+  "promotesTo": []
+}

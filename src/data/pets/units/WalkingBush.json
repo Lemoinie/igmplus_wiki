@@ -1,0 +1,15 @@
+{
+  "id": "WalkingBush",
+  "name": "Walking Bush",
+  "family": "Wooden",
+  "eggSprite": "egg_wooden",
+  "abilitySlots": 3,
+  "sprite": "pet_walking_bush",
+  "description": "A lively shrub with tangled roots that scuttle across the dirt.",
+  "guaranteedAbilities": [
+    "Healer",
+    "Soothing"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

@@ -1,0 +1,36 @@
+{
+  "id": "GiantSpider",
+  "name": "Giant Spider",
+  "isBoss": false,
+  "sprite": "unit_giant_spider",
+  "stats": {
+    "hp": 600,
+    "constitution": 10,
+    "intelligence": 2,
+    "dexterity": 35,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "30",
+    "max": "60"
+  },
+  "expGiven": 58,
+  "drops": [
+    {
+      "item": "CobwebBundle",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "SpiderLeg",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "InsectEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

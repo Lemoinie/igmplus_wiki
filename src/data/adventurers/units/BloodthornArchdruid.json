@@ -1,0 +1,25 @@
+{
+  "id": "BloodthornArchdruid",
+  "name": "Bloodthorn Archdruid",
+  "category": "Outlander",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_bloodthorn_druid",
+  "description": "Summons piercing brambles that drink the vital essence of all who struggle within them.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 220,
+    "baseConstitution": 26,
+    "baseIntelligence": 33,
+    "baseDexterity": 9,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "DaturaHierophant"
+  ]
+}

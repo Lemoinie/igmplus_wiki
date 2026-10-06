@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FOCUSED_BARRAGE",
+  "name_key": "active_focused_barrage_name",
+  "desc_key": "active_focused_barrage_description",
+  "kind": "active",
+  "name": "Focused Barrage",
+  "description": "Fires two arrows at each enemy, with 50% reduced damage."
+}

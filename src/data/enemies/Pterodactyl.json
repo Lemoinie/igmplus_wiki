@@ -1,0 +1,41 @@
+{
+  "id": "Pterodactyl",
+  "name": "Pterodactyl",
+  "isBoss": false,
+  "sprite": "unit_pterodactyl",
+  "stats": {
+    "hp": 775,
+    "constitution": 15,
+    "intelligence": 1,
+    "dexterity": 126,
+    "defense": 10,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "415",
+    "max": "495"
+  },
+  "expGiven": 175,
+  "drops": [
+    {
+      "item": "AncientMembrane",
+      "qty": 1,
+      "chance": 32.5
+    },
+    {
+      "item": "PterodactylClaw",
+      "qty": 1,
+      "chance": 0.1
+    },
+    {
+      "item": "DinoRibs",
+      "qty": 1,
+      "chance": 6.7
+    },
+    {
+      "item": "AvianEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

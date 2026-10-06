@@ -1,0 +1,31 @@
+{
+  "id": "AvatarOfTheAncient",
+  "name": "Avatar of the Ancient",
+  "isBoss": true,
+  "sprite": "unit_avatar_of_the_ancient",
+  "stats": {
+    "hp": 6000,
+    "constitution": 1,
+    "intelligence": 999,
+    "dexterity": 24,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "610",
+    "max": "650"
+  },
+  "expGiven": 10000,
+  "drops": [
+    {
+      "item": "StarFragment",
+      "qty": 1,
+      "chance": 32.5
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

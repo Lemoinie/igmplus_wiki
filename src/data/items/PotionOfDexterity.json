@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfDexterity",
+  "name": "Potion of Dexterity",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_dexterity",
+  "description": "Permanently increases Dexterity by 1.",
+  "stats": {},
+  "notes": ""
+}

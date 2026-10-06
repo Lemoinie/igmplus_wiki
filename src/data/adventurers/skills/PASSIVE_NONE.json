@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NONE",
+  "name_key": "passive_none_name",
+  "desc_key": "passive_none_description",
+  "kind": "passive",
+  "name": "—",
+  "description": "No passive ability"
+}

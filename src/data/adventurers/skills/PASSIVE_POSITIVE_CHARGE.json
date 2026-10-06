@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_POSITIVE_CHARGE",
+  "name_key": "passive_positive_charge_name",
+  "desc_key": "passive_positive_charge_description",
+  "kind": "passive",
+  "name": "Positive Charge",
+  "description": "\"Melee attacks to and from this target STUN for 2 turns.\n\nSTUN: the unit skips its turn\""
+}

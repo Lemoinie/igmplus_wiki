@@ -1,0 +1,46 @@
+{
+  "id": "InsaneMerchant",
+  "name": "Insane Merchant",
+  "isBoss": false,
+  "sprite": "unit_insane_merchant",
+  "stats": {
+    "hp": 180,
+    "constitution": 16,
+    "intelligence": 20,
+    "dexterity": 5,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "23",
+    "max": "27"
+  },
+  "expGiven": 19,
+  "drops": [
+    {
+      "item": "Emerald",
+      "qty": 1,
+      "chance": 4
+    },
+    {
+      "item": "Ruby",
+      "qty": 1,
+      "chance": 4
+    },
+    {
+      "item": "Redwood",
+      "qty": 10,
+      "chance": 18
+    },
+    {
+      "item": "Flute",
+      "qty": 1,
+      "chance": 0.8
+    },
+    {
+      "item": "BlackOoze",
+      "qty": 1,
+      "chance": 20
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Overlord",
+  "name": "Overlord",
+  "category": "Footman",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_overlord",
+  "description": "A ruthless ruler who respects no laws but his own. He will stop at nothing to eliminate his enemies and conquer rival kingdoms.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 320,
+    "baseConstitution": 36,
+    "baseIntelligence": 13,
+    "baseDexterity": 16,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Decimate Iii",
+  "passiveSkill": "Subjugate I",
+  "promotesTo": [
+    "BlackRegent"
+  ]
+}

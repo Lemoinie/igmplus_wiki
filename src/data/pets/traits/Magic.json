@@ -1,0 +1,6 @@
+{
+  "id": "Magic",
+  "name": "Magic",
+  "ability": "MAGIC",
+  "description": "On %s%% of allies turns, applies a random status for %s turns."
+}

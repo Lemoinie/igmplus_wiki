@@ -1,0 +1,16 @@
+{
+  "id": "SylvanMandate",
+  "name": "Sylvan Mandate",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 12006,
+  "sprite": "sylvan_mandate",
+  "description": "Infused by divine light, this dagger embodies the will of the forest and grants its holder with the power to enact it.",
+  "stats": {
+    "intelligence": 50,
+    "dexterity": 30,
+    "constitution": 30
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "RatClaws",
+  "name": "Rat Claws",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 0,
+  "sprite": "rat_claws",
+  "description": "Sharp, flea-ridden rodent claws capable of fast, pestilent scratches.",
+  "stats": {
+    "constitution": 1,
+    "dexterity": 1,
+    "criticalChance": 0.05
+  },
+  "notes": ""
+}

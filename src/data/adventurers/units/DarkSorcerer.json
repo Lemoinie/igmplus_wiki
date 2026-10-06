@@ -1,0 +1,26 @@
+{
+  "id": "DarkSorcerer",
+  "name": "Dark Sorcerer",
+  "category": "Apprentice",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_dark_sorcerer",
+  "description": "Having abandoned the path of knowledge for that of corruption, this mage seeks power not through endless studies and practice, but through communion with evil beings trying to influence the world for their nefarious purposes.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 35,
+    "baseConstitution": 4,
+    "baseIntelligence": 20,
+    "baseDexterity": 6,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Energy Burst Ii",
+  "passiveSkill": "Withering Touch",
+  "promotesTo": [
+    "Necromancer"
+  ]
+}

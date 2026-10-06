@@ -1,0 +1,14 @@
+{
+  "id": "UndeadShield",
+  "name": "Undead Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 53,
+  "sprite": "undead_shield",
+  "description": "Large shield made with undead remains.",
+  "stats": {
+    "constitution": 9
+  },
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "TitanicMight",
+  "name": "Titanic Might",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 22400,
+  "sprite": "titanic_might",
+  "description": "\"Infused with the powder resulted from a successful, albeit unethical, experiment from the Cultist rebels. Every property of this bow has been enhanced, thanks to the unwilling sacrifice of their victims.\nSTUN: the unit skips its turn\"",
+  "stats": {
+    "dexterity": 32,
+    "intelligence": 20
+  },
+  "notes": ""
+}

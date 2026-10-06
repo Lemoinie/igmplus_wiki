@@ -1,0 +1,15 @@
+{
+  "id": "BlackIronGauntlets",
+  "name": "Black Iron Gauntlets",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 278,
+  "sprite": "black_iron_gauntlets",
+  "description": "Gauntlets made of disjointed plates of Black Iron.",
+  "stats": {
+    "constitution": 13,
+    "dexterity": 11
+  },
+  "notes": ""
+}

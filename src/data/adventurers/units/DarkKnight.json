@@ -1,0 +1,25 @@
+{
+  "id": "DarkKnight",
+  "name": "Dark Knight",
+  "category": "Footman",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_dark_knight",
+  "description": "A knight who has forsaken the path of law, now only loyal to his own principles.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 130,
+    "baseConstitution": 20,
+    "baseIntelligence": 9,
+    "baseDexterity": 8,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Overwhelm",
+  "passiveSkill": "Threatening I",
+  "promotesTo": [
+    "DeathKnight"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "BansheeDagger",
+  "name": "Banshee Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 552,
+  "sprite": "banshee_dagger",
+  "description": "Short knife build from a Banshee claw, which takes advantage of the very sharp edge to inflict tremendous damage.",
+  "stats": {
+    "constitution": 28,
+    "dexterity": 28
+  },
+  "notes": ""
+}

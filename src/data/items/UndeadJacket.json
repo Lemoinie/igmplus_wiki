@@ -1,0 +1,16 @@
+{
+  "id": "UndeadJacket",
+  "name": "Undead Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 72,
+  "sprite": "undead_jacket",
+  "description": "Grim piece of equipment made with undead remains. Offers good protection against external attacks maintaining some mobility.",
+  "stats": {
+    "maxHp": 60,
+    "constitution": 3,
+    "dexterity": 3
+  },
+  "notes": ""
+}

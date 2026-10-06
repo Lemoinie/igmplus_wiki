@@ -1,0 +1,15 @@
+{
+  "id": "AbyssalGreataxe",
+  "name": "Abyssal Greataxe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 1250,
+  "sprite": "abyssal_great_axe",
+  "description": "A colossal greataxe forged in the abyss, its edge drinks the light.",
+  "stats": {
+    "constitution": 15,
+    "intelligence": 20
+  },
+  "notes": ""
+}

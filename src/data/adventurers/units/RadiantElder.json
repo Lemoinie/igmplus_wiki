@@ -1,0 +1,25 @@
+{
+  "id": "RadiantElder",
+  "name": "Radiant Elder",
+  "category": "Apprentice",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_radiant_elder",
+  "description": "Blessed with ancient knowledge and divine powers, few recorded instances of Radiant Elders are present in history books. They are exceptional healers, said to be able to bring anyone back from the brink of death.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 125,
+    "baseConstitution": 8,
+    "baseIntelligence": 40,
+    "baseDexterity": 10,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Mass Heal Iii",
+  "passiveSkill": "Healer Ii",
+  "promotesTo": [
+    "Angel"
+  ]
+}

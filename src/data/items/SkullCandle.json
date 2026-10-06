@@ -1,0 +1,15 @@
+{
+  "id": "SkullCandle",
+  "name": "Skull Candle",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 69,
+  "sprite": "skull_candle",
+  "description": "An unextinguishable, grim lantern fused to the skull of a great warrior, still alive but harmless in this condition.",
+  "stats": {
+    "intelligence": 4,
+    "darknessReduction": 10
+  },
+  "notes": ""
+}

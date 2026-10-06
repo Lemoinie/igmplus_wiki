@@ -1,0 +1,15 @@
+{
+  "id": "ChiefScientistCoat",
+  "name": "Chief Scientist Coat",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 17500,
+  "sprite": "chief_scientist_coat",
+  "description": "\"An apparently simple coat that belonged to the brightest mind of Kaunis. It increases the wearer attributes in an unknown way that doesn't rely on magic.\"",
+  "stats": {
+    "healingModifier": 0.25,
+    "intelligence": 72
+  },
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "StoneShaman",
+  "name": "Stone Shaman",
+  "isBoss": false,
+  "sprite": "unit_stone_shaman",
+  "stats": {
+    "hp": 1200,
+    "constitution": 40,
+    "intelligence": 115,
+    "dexterity": 2,
+    "defense": 0,
+    "magicDefense": 450
+  },
+  "damage": {
+    "min": "180",
+    "max": "350"
+  },
+  "expGiven": 270,
+  "drops": [
+    {
+      "item": "Kindlequartz",
+      "qty": 1,
+      "chance": 0.4
+    }
+  ]
+}

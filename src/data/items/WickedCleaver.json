@@ -1,0 +1,16 @@
+{
+  "id": "WickedCleaver",
+  "name": "Wicked Cleaver",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 3850,
+  "sprite": "wicked_cleaver",
+  "description": "A cleaver so wicked it slips between worlds, its strikes veering wildly.",
+  "stats": {
+    "constitution": 25,
+    "intelligence": 25,
+    "flatDodgeChance": 0.1
+  },
+  "notes": ""
+}

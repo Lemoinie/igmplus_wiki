@@ -1,0 +1,16 @@
+{
+  "id": "VoidArmor",
+  "name": "Void Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 31500,
+  "sprite": "void_armor",
+  "description": "Not fully understood in its properties, adding a void drop to an already stable mixture of elements seems to further enhance their properties, giving life to the hardest material known to exist.",
+  "stats": {
+    "maxHp": 280,
+    "defense": 15,
+    "magicDefense": 15
+  },
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "OrichalcumSword",
+  "name": "Orichalcum Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 1440,
+  "sprite": "orichalcum_sword",
+  "description": "A large sword made from Orichalcum, an unbreakable metal from another world.",
+  "stats": {
+    "constitution": 39,
+    "dexterity": 13
+  },
+  "notes": ""
+}

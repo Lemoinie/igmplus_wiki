@@ -1,0 +1,25 @@
+{
+  "id": "GloomDruid",
+  "name": "Gloom Druid",
+  "category": "Outlander",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_gloom_druid",
+  "description": "Communes with nocturnal fungi and shadowy thickets, weaving disorienting mists.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 120,
+    "baseConstitution": 19,
+    "baseIntelligence": 20,
+    "baseDexterity": 5,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Hemodruid"
+  ]
+}

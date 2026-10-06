@@ -1,0 +1,14 @@
+{
+  "id": "ObsidianShield",
+  "name": "Obsidian Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 252,
+  "sprite": "obsidian_shield",
+  "description": "Big, heavy shield made in obsidian. Offers a degree of protection vastly superior than the more common ones.",
+  "stats": {
+    "constitution": 21
+  },
+  "notes": ""
+}

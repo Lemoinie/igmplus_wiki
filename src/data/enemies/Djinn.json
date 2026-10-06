@@ -1,0 +1,36 @@
+{
+  "id": "Djinn",
+  "name": "Djinn",
+  "isBoss": false,
+  "sprite": "unit_djinn",
+  "stats": {
+    "hp": 500,
+    "constitution": 16,
+    "intelligence": 20,
+    "dexterity": 15,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "27",
+    "max": "33"
+  },
+  "expGiven": 142,
+  "drops": [
+    {
+      "item": "BottledSandSpirit",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "PotionOfPrecision",
+      "qty": 1,
+      "chance": 1.1
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

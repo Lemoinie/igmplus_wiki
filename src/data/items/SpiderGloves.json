@@ -1,0 +1,15 @@
+{
+  "id": "SpiderGloves",
+  "name": "Spider Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 378,
+  "sprite": "spider_gloves",
+  "description": "Made from the coveted Giant Spider silk, these gloves allow for superior mobility without sacrificing the safety of the wearer.",
+  "stats": {
+    "constitution": 17,
+    "dexterity": 14
+  },
+  "notes": ""
+}

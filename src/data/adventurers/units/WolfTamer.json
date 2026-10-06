@@ -1,0 +1,25 @@
+{
+  "id": "WolfTamer",
+  "name": "Wolf Tamer",
+  "category": "Outlander",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_wolf_tamer",
+  "description": "Leads ferocious wolves that coordinate pack tactics and tear into fleeing foes.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 145,
+    "baseConstitution": 20,
+    "baseIntelligence": 24,
+    "baseDexterity": 6,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "TigerTamer"
+  ]
+}

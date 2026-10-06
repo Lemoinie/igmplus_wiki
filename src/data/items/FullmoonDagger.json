@@ -1,0 +1,16 @@
+{
+  "id": "FullmoonDagger",
+  "name": "Fullmoon Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 45,
+  "sprite": "fullmoon_dagger",
+  "description": "Dagger that uses the tooth of a wolf as a blade. However, this particular tooth seems to exhibit some weird properties.",
+  "stats": {
+    "constitution": 5,
+    "dexterity": 5,
+    "lifesteal": 15
+  },
+  "notes": ""
+}

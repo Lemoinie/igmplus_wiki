@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_UNETHICAL_CONDUCT",
+  "name_key": "passive_unethical_conduct_name",
+  "desc_key": "passive_unethical_conduct_description",
+  "kind": "passive",
+  "name": "Unethical Conduct",
+  "description": null
+}

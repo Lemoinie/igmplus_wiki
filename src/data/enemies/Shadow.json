@@ -1,0 +1,36 @@
+{
+  "id": "Shadow",
+  "name": "Shadow",
+  "isBoss": false,
+  "sprite": "shadow",
+  "stats": {
+    "hp": 1000,
+    "constitution": 100,
+    "intelligence": 100,
+    "dexterity": 100,
+    "defense": 50,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "100",
+    "max": "1000"
+  },
+  "expGiven": 500,
+  "drops": [
+    {
+      "item": "Geode",
+      "qty": 50,
+      "chance": 90
+    },
+    {
+      "item": "Geode",
+      "qty": 100,
+      "chance": 9
+    },
+    {
+      "item": "Geode",
+      "qty": 200,
+      "chance": 1
+    }
+  ]
+}

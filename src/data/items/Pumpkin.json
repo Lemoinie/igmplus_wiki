@@ -1,0 +1,14 @@
+{
+  "id": "Pumpkin",
+  "name": "Pumpkin",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 15,
+  "sprite": "pumpkin",
+  "description": "Vibrantly orange with smooth, firm flesh. They grow only in the upper caverns below the Gates of Hell, thriving in the Nexus artificial light.",
+  "stats": {
+    "feedPower": 24
+  },
+  "notes": ""
+}

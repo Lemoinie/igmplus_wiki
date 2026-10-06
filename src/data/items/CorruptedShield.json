@@ -1,0 +1,14 @@
+{
+  "id": "CorruptedShield",
+  "name": "Corrupted Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1,
+  "sprite": "corrupted_shield",
+  "description": "The integrity of this shield has been severely impaired by the curse of the Serpent.",
+  "stats": {
+    "constitution": 1
+  },
+  "notes": "Rare Drop"
+}

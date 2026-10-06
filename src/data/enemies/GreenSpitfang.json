@@ -1,0 +1,36 @@
+{
+  "id": "GreenSpitfang",
+  "name": "Green Spitfang",
+  "isBoss": false,
+  "sprite": "unit_green_spitfang",
+  "stats": {
+    "hp": 520,
+    "constitution": 15,
+    "intelligence": 3,
+    "dexterity": 55,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "105",
+    "max": "150"
+  },
+  "expGiven": 92,
+  "drops": [
+    {
+      "item": "SpitfangScale",
+      "qty": 1,
+      "chance": 40
+    },
+    {
+      "item": "LongSerpentFang",
+      "qty": 1,
+      "chance": 2
+    },
+    {
+      "item": "ReptileEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_THREATENING_IV",
+  "name_key": "passive_threatening_iv_name",
+  "desc_key": "passive_threatening_iv_description",
+  "kind": "passive",
+  "name": "Threatening IV",
+  "description": "This unit has a 5× chance of being targeted by enemies"
+}

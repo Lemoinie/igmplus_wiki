@@ -1,0 +1,15 @@
+{
+  "id": "Sickle",
+  "name": "Sickle",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 0,
+  "sprite": "sickle",
+  "description": "A farming tool used to cut and trim",
+  "stats": {
+    "dexterity": 1,
+    "constitution": 1
+  },
+  "notes": ""
+}

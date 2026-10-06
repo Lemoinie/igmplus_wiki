@@ -1,0 +1,15 @@
+{
+  "id": "ArmorOfTheUndying",
+  "name": "Armor of the Undying",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 49300,
+  "sprite": "armor_of_the_undying",
+  "description": "A forbidden artifact used to defy death merged with ancient, cursed metal. Serves as a decoy for the life of the wearer, restoring it with an enhanced version of the regular status every time they are hurt.",
+  "stats": {
+    "maxHp": 350,
+    "regenerationBonus": 5
+  },
+  "notes": ""
+}

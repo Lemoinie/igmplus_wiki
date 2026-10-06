@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FIRE_BURST",
+  "name_key": "active_fire_burst_name",
+  "desc_key": "active_fire_burst_description",
+  "kind": "active",
+  "name": "Fire Burst",
+  "description": null
+}

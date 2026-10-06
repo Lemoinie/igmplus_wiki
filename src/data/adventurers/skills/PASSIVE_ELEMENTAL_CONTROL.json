@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ELEMENTAL_CONTROL",
+  "name_key": "passive_elemental_control_name",
+  "desc_key": "passive_elemental_control_description",
+  "kind": "passive",
+  "name": "Elemental Control",
+  "description": "\"On hit, applies a random effect between ABLAZE, FREEZE and STUN for 2 turns.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nSTUN: the unit skips its turn\""
+}

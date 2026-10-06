@@ -1,0 +1,16 @@
+{
+  "id": "VampireBow",
+  "name": "Vampire Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 1040,
+  "sprite": "vampire_bow",
+  "description": "Alchemic result of a long research, its arrows can draw energy from the wounds inflicted and heal the owner for a part of it.",
+  "stats": {
+    "intelligence": 6,
+    "dexterity": 22,
+    "lifesteal": 20
+  },
+  "notes": ""
+}

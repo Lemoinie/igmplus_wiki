@@ -1,0 +1,23 @@
+{
+  "id": "AlbinoRat",
+  "name": "Albino Rat",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 15,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_albino_rat",
+  "description": "A rare white rodent bearing uncanny ferocity and hardened resilience.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 15,
+    "baseConstitution": 6,
+    "baseIntelligence": 6,
+    "baseDexterity": 6,
+    "baseDefense": 1,
+    "baseMagicDefense": 1
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

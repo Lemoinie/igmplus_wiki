@@ -1,0 +1,25 @@
+{
+  "id": "Alchemist",
+  "name": "Alchemist",
+  "category": "Archer",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_alchemist",
+  "description": "A gifted archer fascinated by the nature of her concoctions, who decided to focus on the study of Thaumaturgy: replicating magic through scientific means.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 9,
+    "baseIntelligence": 16,
+    "baseDexterity": 26,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Thaumaturgy I",
+  "promotesTo": [
+    "ElementalAlchemist"
+  ]
+}

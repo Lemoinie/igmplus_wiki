@@ -1,0 +1,63 @@
+{
+  "id": "TheSouthernGrove",
+  "name": "The Southern Grove",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 40,
+  "sprite": "summary_the_southern_grove",
+  "enemies": [
+    {
+      "id": "GreenSpitfang",
+      "name": "GreenSpitfang",
+      "rate": "12.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "GiantMoth",
+      "name": "GiantMoth",
+      "rate": "10.5%",
+      "role": "Regular"
+    },
+    {
+      "id": "GiantTortoise",
+      "name": "GiantTortoise",
+      "rate": "9.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "Dryad",
+      "name": "Dryad",
+      "rate": "5.2%",
+      "role": "Regular"
+    },
+    {
+      "id": "AncientEnt",
+      "name": "AncientEnt",
+      "rate": "3.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "PrimevalWurm",
+      "name": "PrimevalWurm",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "ElysianWood",
+    "FleetfootFabric",
+    "GiantMothWing",
+    "GiantShellFragment",
+    "MothRobe",
+    "SpitfangJacket",
+    "SpitfangScale",
+    "TortoiseArmor",
+    "TortoiseShield",
+    "TortoiseThorn",
+    "VerdantBlade",
+    "VerdantBoots",
+    "VerdantBow",
+    "VerdantGloves",
+    "VerdantHelm"
+  ]
+}

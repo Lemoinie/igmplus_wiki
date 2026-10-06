@@ -1,0 +1,15 @@
+{
+  "id": "SilkRobe",
+  "name": "Silk Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 216,
+  "sprite": "silk_robe",
+  "description": "Garment made with precious fabric, provides little protection but grants a wide range of movements.",
+  "stats": {
+    "maxHp": 40,
+    "intelligence": 12
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "ObsidianHelm",
+  "name": "Obsidian Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 270,
+  "sprite": "obsidian_helm",
+  "description": "A thick helm made of obsidian, extremely hard to break with conventional weapons.",
+  "stats": {
+    "maxHp": 140
+  },
+  "notes": ""
+}

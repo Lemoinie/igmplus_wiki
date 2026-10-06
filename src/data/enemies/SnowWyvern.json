@@ -1,0 +1,46 @@
+{
+  "id": "SnowWyvern",
+  "name": "Snow Wyvern",
+  "isBoss": false,
+  "sprite": "unit_snow_wyvern",
+  "stats": {
+    "hp": 1250,
+    "constitution": 15,
+    "intelligence": 30,
+    "dexterity": 40,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "65",
+    "max": "90"
+  },
+  "expGiven": 520,
+  "drops": [
+    {
+      "item": "FrostmetalOre",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "FrozenScale",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "FrozenEgg",
+      "qty": 1,
+      "chance": 0.5
+    },
+    {
+      "item": "WyvernChop",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "AvianEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

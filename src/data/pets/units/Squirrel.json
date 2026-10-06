@@ -1,0 +1,15 @@
+{
+  "id": "Squirrel",
+  "name": "Squirrel",
+  "family": "Wild",
+  "eggSprite": "egg_wild",
+  "abilitySlots": 3,
+  "sprite": "pet_squirrel",
+  "description": "An agile woodland creature with a bushy tail, bounding between branches.",
+  "guaranteedAbilities": [
+    "Bloodthirsty",
+    "Bloodcrave"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

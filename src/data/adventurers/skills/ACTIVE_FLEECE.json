@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FLEECE",
+  "name_key": "active_fleece_name",
+  "desc_key": "active_fleece_description",
+  "kind": "active",
+  "name": "Fleece",
+  "description": "\"Deals 35% physical damage to all enemies. Applies BLEED 40 on hit.\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge\""
+}

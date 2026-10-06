@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FIRE_DANCE",
+  "name_key": "active_fire_dance_name",
+  "desc_key": "active_fire_dance_description",
+  "kind": "active",
+  "name": "Fire Dance",
+  "description": "\"Sets himself ABLAZE for 3 turns. Advances the Fire Ritual progress by 1.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn.\""
+}

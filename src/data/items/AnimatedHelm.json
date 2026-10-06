@@ -1,0 +1,14 @@
+{
+  "id": "AnimatedHelm",
+  "name": "Animated Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 471,
+  "sprite": "animated_helm",
+  "description": "Helm made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "maxHp": 200
+  },
+  "notes": ""
+}

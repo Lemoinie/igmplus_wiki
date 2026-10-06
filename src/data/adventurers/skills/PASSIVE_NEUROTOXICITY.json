@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NEUROTOXICITY",
+  "name_key": "passive_neurotoxicity_name",
+  "desc_key": "passive_neurotoxicity_description",
+  "kind": "passive",
+  "name": "Neurotoxicity",
+  "description": "\"Melee attacks to and from this target STUN for 1 turn and POISON for 3 turns.\n\nSTUN: the unit skips its turn\nPOISON: damage reduced by 20%\""
+}

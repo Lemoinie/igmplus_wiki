@@ -1,0 +1,15 @@
+{
+  "id": "Rat",
+  "name": "Rat",
+  "family": "Wild",
+  "eggSprite": "egg_wild",
+  "abilitySlots": 2,
+  "sprite": "pet_rat",
+  "description": "A swift, scruffy scavenger that slips through the shadows with twitching whiskers.",
+  "guaranteedAbilities": [
+    "Bloodthirsty",
+    "Bloodcrave"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

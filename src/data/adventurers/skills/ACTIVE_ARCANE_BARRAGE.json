@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ARCANE_BARRAGE",
+  "name_key": "active_arcane_barrage_name",
+  "desc_key": "active_arcane_barrage_description",
+  "kind": "active",
+  "name": "Arcane Barrage",
+  "description": "Shoots 12 magic missiles at random enemies, each dealing 100% damage"
+}

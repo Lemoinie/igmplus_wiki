@@ -1,0 +1,12 @@
+{
+  "id": "Evo23Vial",
+  "name": "Evo-23 Vial",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10,
+  "sprite": "evo23_vial",
+  "description": "\"A mysterious liquid employed by the Celestials to permanently enhance their soldiers' combat efficacy. It directly manipulates organic tissues, inducing extraordinary structural modifications.\nThis item can modify an adventurer rare trait.\"",
+  "stats": {},
+  "notes": "Rare Drop"
+}

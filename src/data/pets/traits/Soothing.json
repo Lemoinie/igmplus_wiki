@@ -1,0 +1,6 @@
+{
+  "id": "Soothing",
+  "name": "Soothing",
+  "ability": "REGENERATION",
+  "description": "Allies regenerate %s HP/turn."
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_UMBRAL_STRIKE_III",
+  "name_key": "active_umbral_strike_iii_name",
+  "desc_key": "active_umbral_strike_iii_description",
+  "kind": "active",
+  "name": "Umbral Strike III",
+  "description": "\"Stabs an enemy for [600% × (1 + Darkness/100)] damage.\nCritical hit bonus damage × 2\""
+}

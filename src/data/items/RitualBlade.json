@@ -1,0 +1,16 @@
+{
+  "id": "RitualBlade",
+  "name": "Ritual Blade",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 15393,
+  "sprite": "ritual_blade",
+  "description": "A dull blade, unfit for combat but designed for esoteric rituals to honor the mountain gods. Magically enhanced by the gems embedded in its handle, it grants its wielder healing powers.",
+  "stats": {
+    "dexterity": 12,
+    "intelligence": 16,
+    "healingModifier": 0.6
+  },
+  "notes": ""
+}

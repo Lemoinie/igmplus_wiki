@@ -1,0 +1,14 @@
+{
+  "id": "Cheesecake",
+  "name": "Cheesecake",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 450,
+  "sprite": "cheesecake",
+  "description": "A creamy, dense dessert with a smooth, rich texture. Tastes incredibly good, and pets love this.",
+  "stats": {
+    "feedPower": 6375
+  },
+  "notes": ""
+}

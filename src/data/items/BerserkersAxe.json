@@ -1,0 +1,15 @@
+{
+  "id": "BerserkersAxe",
+  "name": "Berserker's Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 2600,
+  "sprite": "berserkers_axe",
+  "description": "A brutal axe wielded by the fierce warriors of the Lost Lands, driving relentless onslaughts.",
+  "stats": {
+    "constitution": 40,
+    "endOfTurnActionProbability": 0.1
+  },
+  "notes": ""
+}

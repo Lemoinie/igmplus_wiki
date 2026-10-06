@@ -1,0 +1,20 @@
+{
+  "id": "EtherealSoul",
+  "name": "Ethereal Soul",
+  "isBoss": false,
+  "sprite": "unit_ethereal_soul",
+  "stats": {
+    "hp": 3180,
+    "constitution": 20,
+    "intelligence": 1,
+    "dexterity": 23,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "Logger.112",
+    "max": "138"
+  },
+  "expGiven": 300,
+  "drops": []
+}

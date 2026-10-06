@@ -1,0 +1,26 @@
+{
+  "id": "SpireInitiate",
+  "name": "Spire Initiate",
+  "category": "Rogue",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_spire_initiate",
+  "description": "\"The Spire, an age-old clandestine organization, recruits only the realm's most skilled assassins. Its select few members wield profound influence over the political landscape of kingdoms, capable of eliminating virtually any target with a secretive technique known solely to them.\"",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 18,
+    "baseIntelligence": 8,
+    "baseDexterity": 18,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Eclipse I",
+  "passiveSkill": "Infiltrator",
+  "promotesTo": [
+    "SpireAcolyte"
+  ]
+}

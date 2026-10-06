@@ -1,0 +1,14 @@
+{
+  "id": "WurmscalesShield",
+  "name": "Wurmscales Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 35,
+  "sprite": "wurmscales_shield",
+  "description": "Round, light shield made from wurm scales.",
+  "stats": {
+    "constitution": 6
+  },
+  "notes": ""
+}

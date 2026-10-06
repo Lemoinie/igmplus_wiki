@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_DEADLY_FINESSE_I",
+  "name_key": "passive_deadly_finesse_i_name",
+  "desc_key": "passive_deadly_finesse_i_description",
+  "kind": "passive",
+  "name": "Deadly Finesse",
+  "description": null
+}

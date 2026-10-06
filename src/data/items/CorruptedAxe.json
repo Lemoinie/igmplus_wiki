@@ -1,0 +1,14 @@
+{
+  "id": "CorruptedAxe",
+  "name": "Corrupted Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 250,
+  "sprite": "corrupted_axe",
+  "description": "An Enforcer's axe, warped by a dark corruption that devours the light.",
+  "stats": {
+    "constitution": 1
+  },
+  "notes": "Rare Drop"
+}

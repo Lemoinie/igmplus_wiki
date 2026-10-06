@@ -1,0 +1,36 @@
+{
+  "id": "UndeadGeneral",
+  "name": "Undead General",
+  "isBoss": false,
+  "sprite": "unit_undead_general",
+  "stats": {
+    "hp": 600,
+    "constitution": 35,
+    "intelligence": 16,
+    "dexterity": 24,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "60",
+    "max": "90"
+  },
+  "expGiven": 240,
+  "drops": [
+    {
+      "item": "BoneFragment",
+      "qty": 5,
+      "chance": 57
+    },
+    {
+      "item": "CursedSilver",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "PotionOfViciousness",
+      "qty": 1,
+      "chance": 10
+    }
+  ]
+}

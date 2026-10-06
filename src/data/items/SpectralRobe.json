@@ -1,0 +1,15 @@
+{
+  "id": "SpectralRobe",
+  "name": "Spectral Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 135,
+  "sprite": "spectral_robe",
+  "description": "Cloak made with mysterious, ethereal fabric of unknown origin.",
+  "stats": {
+    "maxHp": 30,
+    "intelligence": 9
+  },
+  "notes": ""
+}

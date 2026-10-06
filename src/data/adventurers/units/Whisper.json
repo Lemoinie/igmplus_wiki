@@ -1,0 +1,24 @@
+{
+  "id": "Whisper",
+  "name": "Whisper",
+  "category": "Rogue",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_whisper",
+  "description": "Mythological beings from whom the Spire assassins appear to draw their powers, they exist on the boundary between realms, slaying their prey through mysterious means.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 30,
+    "baseIntelligence": 12,
+    "baseDexterity": 30,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Eclipse Iv",
+  "passiveSkill": "Despise Weakness",
+  "promotesTo": []
+}

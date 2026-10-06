@@ -1,0 +1,14 @@
+{
+  "id": "Spade",
+  "name": "Spade",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 0,
+  "sprite": "spade",
+  "description": "A simple tool used for farming",
+  "stats": {
+    "constitution": 1
+  },
+  "notes": ""
+}

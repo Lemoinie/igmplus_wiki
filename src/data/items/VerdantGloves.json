@@ -1,0 +1,15 @@
+{
+  "id": "VerdantGloves",
+  "name": "Verdant Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 498,
+  "sprite": "verdant_gloves",
+  "description": "Gloves made of a rare, extremely resilient type of wood. Keeps sprouting new leaves that have to be periodically trimmed by the owner.",
+  "stats": {
+    "constitution": 20,
+    "dexterity": 16
+  },
+  "notes": ""
+}

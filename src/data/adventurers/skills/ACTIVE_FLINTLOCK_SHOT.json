@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FLINTLOCK_SHOT",
+  "name_key": "active_flintlock_shot_name",
+  "desc_key": "active_flintlock_shot_description",
+  "kind": "active",
+  "name": "Flintlock Shot",
+  "description": null
+}

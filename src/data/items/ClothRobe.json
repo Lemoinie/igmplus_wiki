@@ -1,0 +1,15 @@
+{
+  "id": "ClothRobe",
+  "name": "Cloth Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 54,
+  "sprite": "cloth_robe",
+  "description": "A light robe made of cloth derived from plants.",
+  "stats": {
+    "maxHp": 10,
+    "intelligence": 3
+  },
+  "notes": ""
+}

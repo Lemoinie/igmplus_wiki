@@ -1,0 +1,15 @@
+{
+  "id": "FeatherRobe",
+  "name": "Feather Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 72,
+  "sprite": "feather_robe",
+  "description": "A light robe made of feathers, displaying the color of the desert birds.",
+  "stats": {
+    "maxHp": 20,
+    "intelligence": 6
+  },
+  "notes": ""
+}

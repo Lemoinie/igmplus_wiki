@@ -1,0 +1,25 @@
+{
+  "id": "GrandMagus",
+  "name": "Grand Magus",
+  "category": "Apprentice",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_grand_magus",
+  "description": "A supreme arcane authority capable of collapsing enemy leadership under overwhelming burst damage.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 170,
+    "baseConstitution": 9,
+    "baseIntelligence": 64,
+    "baseDexterity": 16,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Disintegrate Ii",
+  "passiveSkill": "Aether Resonance Vi",
+  "promotesTo": [
+    "SingularityMagus"
+  ]
+}

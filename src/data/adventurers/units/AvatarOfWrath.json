@@ -1,0 +1,24 @@
+{
+  "id": "AvatarOfWrath",
+  "name": "Avatar of Wrath",
+  "category": "Outlander",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_avatar_of_wrath",
+  "description": "The physical incarnation of unmitigated fury, cutting down entire legions with sweeping destruction.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 320,
+    "baseConstitution": 44,
+    "baseIntelligence": 25,
+    "baseDexterity": 7,
+    "baseDefense": 25,
+    "baseMagicDefense": 25,
+    "baseLifesteal": 25
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

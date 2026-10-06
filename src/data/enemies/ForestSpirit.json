@@ -1,0 +1,26 @@
+{
+  "id": "ForestSpirit",
+  "name": "Forest Spirit",
+  "isBoss": false,
+  "sprite": "unit_forest_spirit",
+  "stats": {
+    "hp": 2000,
+    "constitution": 34,
+    "intelligence": 40,
+    "dexterity": 35,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "72",
+    "max": "92"
+  },
+  "expGiven": 600,
+  "drops": [
+    {
+      "item": "PrimordialEssence",
+      "qty": 1,
+      "chance": 25
+    }
+  ]
+}

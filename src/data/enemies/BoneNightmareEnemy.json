@@ -1,0 +1,20 @@
+{
+  "id": "BoneNightmareEnemy",
+  "name": "Cursed Bone Nightmare",
+  "isBoss": false,
+  "sprite": "unit_bone_nightmare",
+  "stats": {
+    "hp": 8000,
+    "constitution": 100,
+    "intelligence": 0,
+    "dexterity": 150,
+    "defense": 40,
+    "magicDefense": 20
+  },
+  "damage": {
+    "min": "300",
+    "max": "400"
+  },
+  "expGiven": 1000,
+  "drops": []
+}

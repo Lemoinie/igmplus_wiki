@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfViciousness",
+  "name": "Potion of Viciousness",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_viciousness",
+  "description": "Permanently increases Critical Damage by 2%.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "FrostmetalAxe",
+  "name": "Frostmetal Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 520,
+  "sprite": "frostmetal_axe",
+  "description": "An axe cast from frostmetal, cold to the touch and ringing like winter wind.",
+  "stats": {
+    "constitution": 17,
+    "intelligence": 8
+  },
+  "notes": ""
+}

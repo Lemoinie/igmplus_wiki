@@ -1,0 +1,14 @@
+{
+  "id": "CelestialHelmet",
+  "name": "Celestial Helmet",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 438,
+  "sprite": "celestial_helmet",
+  "description": "Helmet crafted from a metal not from this world. Offers higher standards of protection than any alloy made from ordinary metals.",
+  "stats": {
+    "maxHp": 180
+  },
+  "notes": ""
+}

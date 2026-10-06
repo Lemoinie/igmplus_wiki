@@ -1,0 +1,14 @@
+{
+  "id": "Bread",
+  "name": "Bread",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 12,
+  "sprite": "bread",
+  "description": "\"A soft, golden-brown crust gives way to a fluffy, airy interior. It's one of the most common foods in the Realms, enjoyed by paesants, soldiers and nobles alike.\"",
+  "stats": {
+    "feedPower": 18
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "DecomposedLimb",
+  "name": "Decomposed Limb",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 0,
+  "sprite": "decomposed_limb",
+  "description": "The rotting limb of an undead creature",
+  "stats": {
+    "constitution": 1
+  },
+  "notes": ""
+}

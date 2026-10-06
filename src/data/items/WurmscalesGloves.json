@@ -1,0 +1,15 @@
+{
+  "id": "WurmscalesGloves",
+  "name": "Wurmscales Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 36,
+  "sprite": "wurmscales_gloves",
+  "description": "Sturdy gloves made with wurm scales.",
+  "stats": {
+    "constitution": 4,
+    "dexterity": 4
+  },
+  "notes": ""
+}

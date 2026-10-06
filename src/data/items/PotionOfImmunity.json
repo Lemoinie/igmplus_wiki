@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfImmunity",
+  "name": "Potion of Immunity",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_immunity",
+  "description": "Permanently increases Status Immunity by 1%.",
+  "stats": {},
+  "notes": ""
+}

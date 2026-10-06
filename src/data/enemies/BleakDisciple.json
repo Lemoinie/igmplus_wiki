@@ -1,0 +1,31 @@
+{
+  "id": "BleakDisciple",
+  "name": "Bleak Disciple",
+  "isBoss": false,
+  "sprite": "unit_bleak_disciple",
+  "stats": {
+    "hp": 1490,
+    "constitution": 9,
+    "intelligence": 158,
+    "dexterity": 62,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "160",
+    "max": "380"
+  },
+  "expGiven": 360,
+  "drops": [
+    {
+      "item": "AbherrantFabric",
+      "qty": 1,
+      "chance": 44
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

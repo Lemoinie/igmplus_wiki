@@ -1,0 +1,25 @@
+{
+  "id": "Templar",
+  "name": "Templar",
+  "category": "Footman",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_templar",
+  "description": "Among the strongest crusaders of the Holy Temple, the Templar serves as a commander of the vanguard that enforces the law in undiscovered lands.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 215,
+    "baseConstitution": 28,
+    "baseIntelligence": 14,
+    "baseDexterity": 9,
+    "baseDefense": 20,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Radiant Judgment I",
+  "passiveSkill": "Aura Of Devotion I",
+  "promotesTo": [
+    "Inquisitor"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "LaroxianRobe",
+  "name": "Laroxian Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 504,
+  "sprite": "laroxian_robe",
+  "description": "Light and versatile robe woven from a magic infused cloth produced in Larox.",
+  "stats": {
+    "maxHp": 100,
+    "intelligence": 30
+  },
+  "notes": ""
+}

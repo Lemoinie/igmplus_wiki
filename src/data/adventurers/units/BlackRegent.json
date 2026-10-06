@@ -1,0 +1,23 @@
+{
+  "id": "BlackRegent",
+  "name": "Black Regent",
+  "category": "Footman",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_black_regent",
+  "description": "Fueled solely by his lust for power, this brilliant strategist has transformed his kingdom into a war machine, poised to subjugate neighboring states—whether opposing or neutral—to seize the resources needed for his expansion. With no regard for life and an insatiable hunger for dominance, he poses a grave threat to the peace and stability of the Realms if left unchecked.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 380,
+    "baseConstitution": 40,
+    "baseIntelligence": 14,
+    "baseDexterity": 18,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Decimate Iii",
+  "passiveSkill": "Subjugate Ii",
+  "promotesTo": []
+}

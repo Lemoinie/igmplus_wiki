@@ -1,0 +1,6 @@
+{
+  "id": "Savage",
+  "name": "Savage",
+  "ability": "SAVAGE",
+  "description": "Critical hits: %s%% to apply the multiplier twice."
+}

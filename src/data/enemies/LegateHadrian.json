@@ -1,0 +1,20 @@
+{
+  "id": "LegateHadrian",
+  "name": "Legate Hadrian",
+  "isBoss": true,
+  "sprite": "unit_legate_hadrian",
+  "stats": {
+    "hp": 6400,
+    "constitution": 120,
+    "intelligence": 80,
+    "dexterity": 96,
+    "defense": 20,
+    "magicDefense": 20
+  },
+  "damage": {
+    "min": "950",
+    "max": "950"
+  },
+  "expGiven": 300,
+  "drops": []
+}

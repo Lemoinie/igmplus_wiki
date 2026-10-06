@@ -1,0 +1,26 @@
+{
+  "id": "HeraldShoran",
+  "name": "Herald Shoran",
+  "isBoss": true,
+  "sprite": "unit_herald_shoran",
+  "stats": {
+    "hp": 4500,
+    "constitution": 500,
+    "intelligence": 500,
+    "dexterity": 500,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "280",
+    "max": "305"
+  },
+  "expGiven": 9600,
+  "drops": [
+    {
+      "item": "SerpentBite",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

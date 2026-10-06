@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INITIATIVE",
+  "name_key": "passive_initiative_i_name",
+  "desc_key": "passive_initiative_i_description",
+  "kind": "passive",
+  "name": "Initiative",
+  "description": "This unit starts the fight first"
+}

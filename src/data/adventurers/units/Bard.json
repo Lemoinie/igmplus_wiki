@@ -1,0 +1,25 @@
+{
+  "id": "Bard",
+  "name": "Bard",
+  "category": "Rogue",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_bard",
+  "description": "A master entertainer who can play music to heal, harm, or drive soldiers into a holy fury. Used to resort to any means to survive, this traveling storyteller offensive capabilities should not be underestimated, either.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 17,
+    "baseIntelligence": 17,
+    "baseDexterity": 17,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Feint",
+  "passiveSkill": "Inspiring Iii",
+  "promotesTo": [
+    "Lorekeeper"
+  ]
+}

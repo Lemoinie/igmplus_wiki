@@ -1,0 +1,25 @@
+{
+  "id": "RatTamer",
+  "name": "Rat Tamer",
+  "category": "Outlander",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_rat_tamer",
+  "description": "Commands packs of vicious sewer rodents to overwhelm enemies from the shadows.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 65,
+    "baseConstitution": 16,
+    "baseIntelligence": 12,
+    "baseDexterity": 4,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "CatTamer"
+  ]
+}

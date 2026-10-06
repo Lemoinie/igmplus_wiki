@@ -1,0 +1,23 @@
+{
+  "id": "AlphaOwlbear",
+  "name": "Alpha Owlbear",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 45,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_owlbear",
+  "description": "The undisputed apex monstrosity of the primeval woods, leading great beasts into battle.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 220,
+    "baseConstitution": 36,
+    "baseIntelligence": 15,
+    "baseDexterity": 24,
+    "baseDefense": 22,
+    "baseMagicDefense": 18
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

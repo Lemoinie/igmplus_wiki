@@ -1,0 +1,25 @@
+{
+  "id": "Renegade",
+  "name": "Renegade",
+  "category": "Outlander",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_renegade",
+  "description": "An elusive rebel who defies all authority and turns the enemy's momentum back upon them.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 185,
+    "baseConstitution": 28,
+    "baseIntelligence": 23,
+    "baseDexterity": 7,
+    "baseDefense": 15,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Desperado"
+  ]
+}

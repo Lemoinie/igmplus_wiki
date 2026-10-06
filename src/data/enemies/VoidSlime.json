@@ -1,0 +1,36 @@
+{
+  "id": "VoidSlime",
+  "name": "Void Slime",
+  "isBoss": false,
+  "sprite": "unit_void_slime",
+  "stats": {
+    "hp": 100,
+    "constitution": 40,
+    "intelligence": 2,
+    "dexterity": 6,
+    "defense": 40,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "33",
+    "max": "33"
+  },
+  "expGiven": 60,
+  "drops": [
+    {
+      "item": "GreenSlime",
+      "qty": 1,
+      "chance": 65
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 3,
+      "chance": 10
+    },
+    {
+      "item": "VoidCore",
+      "qty": 1,
+      "chance": 16
+    }
+  ]
+}

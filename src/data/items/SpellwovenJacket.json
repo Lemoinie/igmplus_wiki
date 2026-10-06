@@ -1,0 +1,16 @@
+{
+  "id": "SpellwovenJacket",
+  "name": "Spellwoven Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 741,
+  "sprite": "spellwoven_jacket",
+  "description": "Jacket made from a very resistant type of leather, produced by magical means.",
+  "stats": {
+    "maxHp": 200,
+    "constitution": 10,
+    "dexterity": 10
+  },
+  "notes": ""
+}

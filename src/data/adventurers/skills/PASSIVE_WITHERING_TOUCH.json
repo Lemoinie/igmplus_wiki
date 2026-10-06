@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WITHERING_TOUCH",
+  "name_key": "passive_withering_touch_name",
+  "desc_key": "passive_withering_touch_description",
+  "kind": "passive",
+  "name": "Withering Touch",
+  "description": "Dealing damage heals the unit for half the amount"
+}

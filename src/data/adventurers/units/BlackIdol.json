@@ -1,0 +1,24 @@
+{
+  "id": "BlackIdol",
+  "name": "Black Idol",
+  "category": "Apprentice",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_black_idol",
+  "description": "A Lich ascended to his ultimate form. Though his body remains a mere withered shell, the spirit of this dark mage has grown immensely powerful. He can wield magic to shape the world around him and summon horrors beyond imagination.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 200,
+    "baseConstitution": 10,
+    "baseIntelligence": 50,
+    "baseDexterity": 12,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Curse V",
+  "passiveSkill": "Withering Link",
+  "promotesTo": []
+}

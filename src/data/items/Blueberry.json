@@ -1,0 +1,14 @@
+{
+  "id": "Blueberry",
+  "name": "Blueberry",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "blueberry",
+  "description": "Small and round, deep blue or purple in color. Usually found in the colder mountain trails, it has a slightly tart flavors, and leaves a mildly floral aftertaste.",
+  "stats": {
+    "feedPower": 8
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_POISONOUS_ARROWS_I",
+  "name_key": "passive_poisonous_arrows_i_name",
+  "desc_key": "passive_poisonous_arrows_i_description",
+  "kind": "passive",
+  "name": "Poisonous Arrows",
+  "description": null
+}

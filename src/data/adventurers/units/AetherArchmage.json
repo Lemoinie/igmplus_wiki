@@ -1,0 +1,25 @@
+{
+  "id": "AetherArchmage",
+  "name": "Aether Archmage",
+  "category": "Apprentice",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_aether_archmage",
+  "description": "An esteemed wielder of high aether whose blasts shatter the toughest enemy armor.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 95,
+    "baseConstitution": 7,
+    "baseIntelligence": 45,
+    "baseDexterity": 12,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Arcane Blast Iii",
+  "passiveSkill": "Aether Resonance Iv",
+  "promotesTo": [
+    "Disintegrator"
+  ]
+}

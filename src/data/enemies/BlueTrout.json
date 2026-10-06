@@ -1,0 +1,26 @@
+{
+  "id": "BlueTrout",
+  "name": "Blue Trout",
+  "isBoss": false,
+  "sprite": "blue_trout",
+  "stats": {
+    "hp": 24,
+    "constitution": 8,
+    "intelligence": 3,
+    "dexterity": 90,
+    "defense": 3,
+    "magicDefense": 3
+  },
+  "damage": {
+    "min": "1",
+    "max": "2"
+  },
+  "expGiven": 10,
+  "drops": [
+    {
+      "item": "BlueTrout",
+      "qty": 1,
+      "chance": 55
+    }
+  ]
+}

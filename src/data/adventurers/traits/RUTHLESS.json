@@ -1,0 +1,8 @@
+{
+  "id": "RUTHLESS",
+  "name": "Ruthless",
+  "type": "unique",
+  "sprite": null,
+  "description": "Critical damage +20% (multiplicative).",
+  "effects": []
+}

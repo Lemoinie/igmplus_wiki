@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RIDER_IV",
+  "name_key": "passive_rider_iv_name",
+  "desc_key": "passive_rider_iv_description",
+  "kind": "passive",
+  "name": "Rider IV",
+  "description": "Every time this unit acts, the mount spits from a distance for 55 physical damage"
+}

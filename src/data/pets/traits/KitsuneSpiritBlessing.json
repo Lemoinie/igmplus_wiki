@@ -1,0 +1,7 @@
+{
+  "id": "KitsuneSpiritBlessing",
+  "name": "Kitsune Spirit Blessing",
+  "ability": "KITSUNE_SPIRIT_BLESSING",
+  "isUnique": true,
+  "description": "Empowers guild healing by +(0.6% × Level) as a global multiplier. All traits are active from Level 1."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "VerdantHelm",
+  "name": "Verdant Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 372,
+  "sprite": "verdant_helm",
+  "description": "Helm made of a rare, extremely resilient type of wood. Keeps sprouting new leaves that have to be periodically trimmed by the owner.",
+  "stats": {
+    "maxHp": 160
+  },
+  "notes": ""
+}

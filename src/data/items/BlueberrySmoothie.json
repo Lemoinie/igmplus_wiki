@@ -1,0 +1,14 @@
+{
+  "id": "BlueberrySmoothie",
+  "name": "Blueberry Smoothie",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 38,
+  "sprite": "blueberry_smoothie",
+  "description": "A thick, purple blend of blueberries and creamy ingredients. This recipe is not commonly found, as the few blueberries brought back from the troll ridden mountains were reserved for kings and princes.",
+  "stats": {
+    "feedPower": 85
+  },
+  "notes": ""
+}

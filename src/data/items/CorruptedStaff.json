@@ -1,0 +1,14 @@
+{
+  "id": "CorruptedStaff",
+  "name": "Corrupted Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 1,
+  "sprite": "corrupted_staff",
+  "description": "A staff built by expert hands, rendered useless by the curse of the Serpent.",
+  "stats": {
+    "intelligence": 1
+  },
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Lich",
+  "name": "Lich",
+  "category": "Apprentice",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_lich",
+  "description": "Through extraordinary willpower, the Lich endured his transformation for decades, without surrendering to the pain until only bare bones remained. Since muscles and tendons are long gone, this shell of a human is animated entirely by magic.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 95,
+    "baseConstitution": 7,
+    "baseIntelligence": 35,
+    "baseDexterity": 9,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Curse Ii",
+  "passiveSkill": "Withering Link",
+  "promotesTo": [
+    "AncientLich"
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "ScarletVeil",
+  "name": "Scarlet Veil",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 80000,
+  "sprite": "scarlet_veil",
+  "description": "Legends talk about unseen assassins wearing this Veil who were able to take over entire armies. Gifted from an ancient God to allow their worshippers to pursue its goals, only a few shreds of these artifacts exist by now, displaced all around the Realms.",
+  "stats": {
+    "maxHp": 270,
+    "constitution": 30,
+    "dexterity": 24,
+    "criticalChance": 0.18
+  },
+  "notes": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ChorusTheDrowned",
+  "name": "Chorus the Drowned",
+  "isBoss": false,
+  "sprite": "chorus_the_drowned",
+  "stats": {
+    "hp": 1850,
+    "constitution": 120,
+    "intelligence": 60,
+    "dexterity": 45,
+    "defense": 35,
+    "magicDefense": 35
+  },
+  "damage": {
+    "min": "70",
+    "max": "100"
+  },
+  "expGiven": 1500,
+  "drops": [
+    {
+      "item": "CoinPurse",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

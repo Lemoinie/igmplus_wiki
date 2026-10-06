@@ -1,0 +1,15 @@
+{
+  "id": "SylvanBlessing",
+  "name": "Sylvan Blessing",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 19853,
+  "sprite": "sylvan_blessing",
+  "description": "The gift of light was bestowed upon this staff, granting it an exponentially higher power and ability to protect allies.",
+  "stats": {
+    "healingModifier": 0.4,
+    "intelligence": 45
+  },
+  "notes": ""
+}

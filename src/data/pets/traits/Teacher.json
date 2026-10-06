@@ -1,0 +1,6 @@
+{
+  "id": "Teacher",
+  "name": "Teacher",
+  "ability": "EXPERIENCE",
+  "description": "Boosts experience gained by %s%%."
+}

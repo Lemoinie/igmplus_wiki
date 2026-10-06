@@ -1,0 +1,16 @@
+{
+  "id": "AncientEye",
+  "name": "Ancient Eye",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1,
+  "sprite": "ancient_eye",
+  "description": "A gift from a nameless horror.",
+  "stats": {
+    "immunityToStatus": 1,
+    "constitution": 35,
+    "dexterity": 35
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "MeatPie",
+  "name": "Meat Pie",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 35,
+  "sprite": "meat_pie",
+  "description": "A golden, flaky pastry crust surrounds a savory filling of tender meat. It’s warm, hearty, and packed with robust, meaty flavors.",
+  "stats": {
+    "feedPower": 115
+  },
+  "notes": ""
+}

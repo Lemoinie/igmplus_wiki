@@ -1,0 +1,14 @@
+{
+  "id": "ArmorOfTheDryad",
+  "name": "Armor of the Dryad",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 873,
+  "sprite": "armor_of_the_dryad",
+  "description": "Incorporates a single, long Dryad hair that works as a powerful, permanent healing spell.",
+  "stats": {
+    "maxHp": 240
+  },
+  "notes": ""
+}

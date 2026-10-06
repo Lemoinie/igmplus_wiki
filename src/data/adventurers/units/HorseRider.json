@@ -1,0 +1,25 @@
+{
+  "id": "HorseRider",
+  "name": "Horse Rider",
+  "category": "Archer",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_horse_rider",
+  "description": "An archer who shifted the focus of her training to horse riding. Blends the danger of long-range attacks with the ability to deal melee damage with her ride.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 65,
+    "baseConstitution": 6,
+    "baseIntelligence": 8,
+    "baseDexterity": 16,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Rider I",
+  "promotesTo": [
+    "WolfRider"
+  ]
+}

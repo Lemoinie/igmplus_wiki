@@ -1,0 +1,16 @@
+{
+  "id": "TuskNecklace",
+  "name": "Tusk Necklace",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 15,
+  "sprite": "tusk_necklace",
+  "description": "Simple ornament made with boar tusks.",
+  "stats": {
+    "constitution": 1,
+    "dexterity": 1,
+    "intelligence": 1
+  },
+  "notes": ""
+}

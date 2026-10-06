@@ -1,0 +1,15 @@
+{
+  "id": "BlackIronDagger",
+  "name": "Black Iron Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 342,
+  "sprite": "black_iron_dagger",
+  "description": "\"Knife made with the pirate's Black Iron.\"",
+  "stats": {
+    "dexterity": 14,
+    "constitution": 14
+  },
+  "notes": ""
+}

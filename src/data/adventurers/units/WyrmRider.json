@@ -1,0 +1,23 @@
+{
+  "id": "WyrmRider",
+  "name": "Wyrm Rider",
+  "category": "Archer",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_wyrm_rider",
+  "description": "Wyrms are colossal, legendary creatures famed for the chaos they unleash in myths and folklore. These magical beasts possess elemental breath powerful enough to level entire towns, which led to them being relentlessly hunted in centuries past. No human has ever been known to ride a wyrm—except, perhaps, in the tales told by bards.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 12,
+    "baseIntelligence": 20,
+    "baseDexterity": 40,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Sublimate",
+  "passiveSkill": "Rider Vii",
+  "promotesTo": []
+}

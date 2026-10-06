@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FLAY",
+  "name_key": "active_flay_name",
+  "desc_key": "active_flay_description",
+  "kind": "active",
+  "name": "Flay",
+  "description": null
+}

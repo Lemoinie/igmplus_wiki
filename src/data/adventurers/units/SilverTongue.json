@@ -1,0 +1,25 @@
+{
+  "id": "SilverTongue",
+  "name": "Silver Tongue",
+  "category": "Rogue",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_silver_tongue",
+  "description": "A persuasive manipulator who bends hearts and minds, able to inspire his allies and push them over their limits.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 90,
+    "baseConstitution": 13,
+    "baseIntelligence": 11,
+    "baseDexterity": 13,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Feint",
+  "passiveSkill": "Inspiring I",
+  "promotesTo": [
+    "Minstrel"
+  ]
+}

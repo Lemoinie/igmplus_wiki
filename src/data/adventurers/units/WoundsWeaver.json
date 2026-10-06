@@ -1,0 +1,26 @@
+{
+  "id": "WoundsWeaver",
+  "name": "Wounds Weaver",
+  "category": "Rogue",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_wound_weaver",
+  "description": "\"Unparalleled in the knowledge of anatomy, his enemies are a living canvas to him. While victim's realization rises with each stroke, his art comes to life while life comes to an end.\"",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 24,
+    "baseIntelligence": 10,
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Thousand Cuts",
+  "passiveSkill": "Deadly Finesse Ii",
+  "promotesTo": [
+    "HellishSculptor"
+  ]
+}

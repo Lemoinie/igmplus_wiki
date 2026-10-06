@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PRIMORDIAL_HUNGER",
+  "name_key": "passive_primordial_hunger_name",
+  "desc_key": "passive_primordial_hunger_description",
+  "kind": "passive",
+  "name": "Primordial Hunger",
+  "description": "Attacks allies and enemies alike. 100% lifesteal."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "InfernalChakram",
+  "name": "Infernal Chakram",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 2625,
+  "sprite": "infernal_chakram",
+  "description": "The razor-sharp edges of this circular weapon, expertly forged from Infernite, make it lethally effective against enemies at any range.",
+  "stats": {
+    "dexterity": 50
+  },
+  "notes": ""
+}

@@ -1,0 +1,47 @@
+{
+  "id": "TheLostExpedition",
+  "name": "The Lost Expedition",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_the_lost_expedition",
+  "enemies": [
+    {
+      "id": "AvatarOfTheAncient",
+      "name": "AvatarOfTheAncient",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "BleakDeacon",
+      "name": "BleakDeacon",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "BleakDisciple",
+      "name": "BleakDisciple",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "EldritchHound",
+      "name": "EldritchHound",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "LostMiner",
+      "name": "LostMiner",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "TekeliLiFirstApostle",
+      "name": "TekeliLiFirstApostle",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "CelestialLancer",
+  "name": "Celestial Lancer",
+  "isBoss": false,
+  "sprite": "unit_celestial_lancer",
+  "stats": {
+    "hp": 2280,
+    "constitution": 120,
+    "intelligence": 95,
+    "dexterity": 75,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "130",
+    "max": "170"
+  },
+  "expGiven": 200,
+  "drops": [
+    {
+      "item": "CelestialScraps",
+      "qty": 1,
+      "chance": 55
+    },
+    {
+      "item": "Synapse",
+      "qty": 1,
+      "chance": 1.5
+    }
+  ]
+}

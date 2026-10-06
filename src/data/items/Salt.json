@@ -1,0 +1,14 @@
+{
+  "id": "Salt",
+  "name": "Salt",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 5,
+  "sprite": "salt",
+  "description": "\"Small, white granules or crystals with a sharp, savory taste. While it's not advised to consume salt alone, it can enhance most recipes. It is also widely used to conserve foods.\"",
+  "stats": {
+    "feedPower": 1
+  },
+  "notes": ""
+}

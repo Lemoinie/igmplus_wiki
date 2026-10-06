@@ -1,0 +1,14 @@
+{
+  "id": "OrichalcumArmor",
+  "name": "Orichalcum Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 2730,
+  "sprite": "orichalcum_armor",
+  "description": "\"Incredibly resistant armor made from Orichalcum, an unbreakable metal. While this material offers the best available protection, It may limit the wearer's mobility.\"",
+  "stats": {
+    "maxHp": 442
+  },
+  "notes": ""
+}

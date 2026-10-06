@@ -1,0 +1,15 @@
+{
+  "id": "TortoiseArmor",
+  "name": "Tortoise Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 492,
+  "sprite": "tortoise_armor",
+  "description": "Heavy armor made with the thick, resilient shell of a large tortoise.",
+  "stats": {
+    "maxHp": 240,
+    "constitution": 8
+  },
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "RedMage",
+  "name": "Red Mage",
+  "category": "Apprentice",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_red_mage",
+  "description": "An experienced mage who can harness his powers to hurl fireballs into the enemy ranks. Can be often found in the ranks of defending armies, being a deterrent for any aggressor choosing to invade through an open field.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 50,
+    "baseConstitution": 5,
+    "baseIntelligence": 25,
+    "baseDexterity": 7,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Fireball",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "RedArchmage"
+  ]
+}

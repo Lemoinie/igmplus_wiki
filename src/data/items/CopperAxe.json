@@ -1,0 +1,15 @@
+{
+  "id": "CopperAxe",
+  "name": "Copper Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 20,
+  "sprite": "copper_axe",
+  "description": "A simple axe forged from copper, sturdy enough to fell timber and foes alike.",
+  "stats": {
+    "constitution": 2,
+    "intelligence": 2
+  },
+  "notes": ""
+}

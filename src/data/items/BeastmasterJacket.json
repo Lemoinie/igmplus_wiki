@@ -1,0 +1,17 @@
+{
+  "id": "BeastmasterJacket",
+  "name": "Beastmaster Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 2250,
+  "sprite": "beastmaster_jacket",
+  "description": "Elite armor embedding several fiery gems. It has a great versatility in combat, and grants increased control on domesticated creatures. Grants Animal Affinity, which increases the damage of living creatures controlled by 1% for each point.",
+  "stats": {
+    "maxHp": 220,
+    "constitution": 10,
+    "dexterity": 10,
+    "livingCompanionBonusDamage": 50
+  },
+  "notes": ""
+}

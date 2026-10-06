@@ -1,0 +1,17 @@
+{
+  "id": "ScarletSigil",
+  "name": "Scarlet Sigil",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 60893,
+  "sprite": "scarlet_sigil",
+  "description": "An arcane focus intertwining otherworldly eldritch power with the lethal weave of the Scarlet strands. It channels intense occult resonance to fuel endless spellcasting and lethal critical surges.",
+  "stats": {
+    "maxHp": 200,
+    "intelligence": 62,
+    "skillAmpModifier": 0.2,
+    "manaRegen": 2
+  },
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "GhostwoodBow",
+  "name": "Ghostwood Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 248,
+  "sprite": "ghostwood_bow",
+  "description": "Resilient bow made of ghostwood. The flexibility of this wood makes it possible to shoot arrows with a greater strength.",
+  "stats": {
+    "intelligence": 4,
+    "dexterity": 16
+  },
+  "notes": ""
+}

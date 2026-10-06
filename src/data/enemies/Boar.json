@@ -1,0 +1,41 @@
+{
+  "id": "Boar",
+  "name": "Boar",
+  "isBoss": false,
+  "sprite": "unit_boar",
+  "stats": {
+    "hp": 100,
+    "constitution": 10,
+    "intelligence": 2,
+    "dexterity": 2,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1",
+    "max": "3"
+  },
+  "expGiven": 12,
+  "drops": [
+    {
+      "item": "BoarTusk",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "BeastPelt",
+      "qty": 1,
+      "chance": 45
+    },
+    {
+      "item": "MeatChop",
+      "qty": 1,
+      "chance": 1.2
+    },
+    {
+      "item": "WildEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "id": "KabarTheRotten",
+  "name": "\"Ka'Bar, the Rotten\"",
+  "isBoss": true,
+  "sprite": "unit_kabar_the_rotten",
+  "stats": {
+    "hp": 900,
+    "constitution": 14,
+    "intelligence": 34,
+    "dexterity": 8,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "130",
+    "max": "150"
+  },
+  "expGiven": 360,
+  "drops": [
+    {
+      "item": "PhylacteryFragment",
+      "qty": 1,
+      "chance": 66.6
+    },
+    {
+      "item": "CursedSilver",
+      "qty": 3,
+      "chance": 30.9
+    },
+    {
+      "item": "RobeOfTheLich",
+      "qty": 1,
+      "chance": 2.5
+    }
+  ]
+}

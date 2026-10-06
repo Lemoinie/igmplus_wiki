@@ -1,0 +1,36 @@
+{
+  "id": "WizardOfLarox",
+  "name": "Wizard of Larox",
+  "isBoss": false,
+  "sprite": "unit_wizard_of_larox",
+  "stats": {
+    "hp": 750,
+    "constitution": 8,
+    "intelligence": 172,
+    "dexterity": 46,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "165",
+    "max": "180"
+  },
+  "expGiven": 200,
+  "drops": [
+    {
+      "item": "LaroxianFabric",
+      "qty": 1,
+      "chance": 22.5
+    },
+    {
+      "item": "Pumpkin",
+      "qty": 1,
+      "chance": 3.5
+    },
+    {
+      "item": "SpellCompendium",
+      "qty": 1,
+      "chance": 0.2
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "KaunianRobe",
+  "name": "Kaunian Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 900,
+  "sprite": "kaunian_robe",
+  "description": "Extremely resistant robe woven from cloth employed by Kaunis elite troops. Grants increased protection to the wearer, but the lack of magic used in its making will reduce the boost to intelligence.",
+  "stats": {
+    "maxHp": 206,
+    "intelligence": 20
+  },
+  "notes": ""
+}

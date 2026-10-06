@@ -1,0 +1,15 @@
+{
+  "id": "Oblivion",
+  "name": "Oblivion",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 67200,
+  "sprite": "oblivion",
+  "description": "\"This unforgiving weapons is imbued with the very essence of darkness. It shoots arrows with unmatched strength, often STUNNING the target it hits.\nSTUN: the unit skips its turn\"",
+  "stats": {
+    "dexterity": 70,
+    "intelligence": 42
+  },
+  "notes": ""
+}

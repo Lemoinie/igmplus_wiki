@@ -1,0 +1,26 @@
+{
+  "id": "ShadowDancer",
+  "name": "Shadow Dancer",
+  "category": "Rogue",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_shadow_dancer",
+  "description": "Uses darkness as his hideout, and strike enemies when they least expect it.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 90,
+    "baseConstitution": 15,
+    "baseIntelligence": 7,
+    "baseDexterity": 15,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "darknessDamageAmplification": 0.01
+  },
+  "activeSkill": "Backstab I",
+  "passiveSkill": "Night Vision Ii",
+  "promotesTo": [
+    "NightBlade"
+  ]
+}

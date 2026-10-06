@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PERFECT_IMMUNITY",
+  "name_key": "passive_perfect_immunity_name",
+  "desc_key": "passive_perfect_immunity_description",
+  "kind": "passive",
+  "name": "Perfect Immunity",
+  "description": "100% immunity to status effects."
+}

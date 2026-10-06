@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FLYING_LEECH",
+  "name_key": "passive_flying_leech_name",
+  "desc_key": "passive_flying_leech_description",
+  "kind": "passive",
+  "name": "Flying Leech",
+  "description": "\"Can't be hit by melee attacks or abilities. Heals for the damage dealt\""
+}

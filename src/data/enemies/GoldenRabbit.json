@@ -1,0 +1,36 @@
+{
+  "id": "GoldenRabbit",
+  "name": "Golden Rabbit",
+  "isBoss": false,
+  "sprite": "unit_golden_rabbit",
+  "stats": {
+    "hp": 40,
+    "constitution": 3,
+    "intelligence": 2,
+    "dexterity": 42,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1",
+    "max": "2"
+  },
+  "expGiven": "Logger.BARD_SHIELD",
+  "drops": [
+    {
+      "item": "CottontailFur",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "MeatChop",
+      "qty": 1,
+      "chance": 2
+    },
+    {
+      "item": "WildEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

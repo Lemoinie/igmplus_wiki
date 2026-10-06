@@ -1,0 +1,15 @@
+{
+  "id": "SpiderRobe",
+  "name": "Spider Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 540,
+  "sprite": "spider_robe",
+  "description": "Made entirely with Giant Spider silk, whose elasticity and resistance is unparalleled.",
+  "stats": {
+    "maxHp": 70,
+    "intelligence": 21
+  },
+  "notes": ""
+}

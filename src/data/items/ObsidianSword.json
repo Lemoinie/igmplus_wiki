@@ -1,0 +1,15 @@
+{
+  "id": "ObsidianSword",
+  "name": "Obsidian Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 324,
+  "sprite": "obsidian_sword",
+  "description": "A double edged sword made with the sharpest stone. Can inflict terrible wounds with one swing.",
+  "stats": {
+    "constitution": 21,
+    "dexterity": 7
+  },
+  "notes": ""
+}

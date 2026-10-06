@@ -1,0 +1,15 @@
+{
+  "id": "IronAxe",
+  "name": "Iron Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 50,
+  "sprite": "iron_axe",
+  "description": "A dependable iron axe, widely used by woodsmen and recruits across the Realms.",
+  "stats": {
+    "constitution": 4,
+    "intelligence": 3
+  },
+  "notes": ""
+}

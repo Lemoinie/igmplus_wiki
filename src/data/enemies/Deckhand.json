@@ -1,0 +1,41 @@
+{
+  "id": "Deckhand",
+  "name": "Deckhand",
+  "isBoss": false,
+  "sprite": "unit_deckhand",
+  "stats": {
+    "hp": 320,
+    "constitution": 16,
+    "intelligence": 4,
+    "dexterity": 74,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "24",
+    "max": "28"
+  },
+  "expGiven": 30,
+  "drops": [
+    {
+      "item": "MonkeyHide",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "AbyssalSeashell",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "Banana",
+      "qty": 1,
+      "chance": 2
+    },
+    {
+      "item": "WildEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

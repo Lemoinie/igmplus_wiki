@@ -1,0 +1,17 @@
+{
+  "id": "ScarletCape",
+  "name": "Scarlet Cape",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 200000,
+  "sprite": "scarlet_cape",
+  "description": "A regal cape woven from tenfold Scarlet strands. Flowing with occult grace, it bolsters the wearer's physical and arcane agility while sharpening lethal precision.",
+  "stats": {
+    "constitution": 30,
+    "dexterity": 30,
+    "intelligence": 30,
+    "criticalChance": 0.15
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "MitreHat",
+  "name": "Mitre Hat",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 450,
+  "sprite": "mitre_hat",
+  "description": "A head covering traditionally worn by the Golden City priests. This hat, blessed with an ancient ritual exclusive to their creed, amplifies all healing spells cast by the wearer.",
+  "stats": {
+    "maxHp": 60,
+    "intelligence": 9,
+    "healingModifier": 0.2
+  },
+  "notes": "Rare Drop"
+}

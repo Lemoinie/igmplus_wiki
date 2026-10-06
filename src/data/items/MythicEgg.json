@@ -1,0 +1,12 @@
+{
+  "id": "MythicEgg",
+  "name": "Mythic Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_mythic",
+  "description": "A legendary egg infused with ancient power. It shimmers with otherworldly energy, holding mythical beasts of legend within.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "GoldenGauntlets",
+  "name": "Golden Gauntlets",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 228,
+  "sprite": "golden_gauntlets",
+  "description": "Gauntlets made of gold, worn by the Imperial Army infantry and archers.",
+  "stats": {
+    "constitution": 11,
+    "dexterity": 9
+  },
+  "notes": ""
+}

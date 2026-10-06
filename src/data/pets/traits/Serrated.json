@@ -1,0 +1,6 @@
+{
+  "id": "Serrated",
+  "name": "Serrated",
+  "ability": "SERRATED",
+  "description": "Bleed infliction: %s%% chance to inflict bleed twice."
+}

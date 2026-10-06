@@ -1,0 +1,14 @@
+{
+  "id": "OrichalcumHelm",
+  "name": "Orichalcum Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1755,
+  "sprite": "orichalcum_helm",
+  "description": "Made from a metal seemingly impossible to destroy, This helm offers unmatched protection to the wearer.",
+  "stats": {
+    "maxHp": 280
+  },
+  "notes": ""
+}

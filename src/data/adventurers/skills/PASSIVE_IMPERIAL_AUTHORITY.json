@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_IMPERIAL_AUTHORITY",
+  "name_key": "passive_imperial_authority_name",
+  "desc_key": "passive_imperial_authority_description",
+  "kind": "passive",
+  "name": "Imperial Authority",
+  "description": null
+}

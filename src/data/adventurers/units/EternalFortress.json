@@ -1,0 +1,23 @@
+{
+  "id": "EternalFortress",
+  "name": "Eternal Fortress",
+  "category": "Footman",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_eternal_fortress",
+  "description": "A legendary warrior whose armor is unbreakable by conventional means. Able to duel with mortals and deities, able to withstand an unreal amount of damage before even flinching.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 380,
+    "baseConstitution": 40,
+    "baseIntelligence": 20,
+    "baseDexterity": 12,
+    "baseDefense": 30,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Taunt Iv",
+  "passiveSkill": "Threatening Iv",
+  "promotesTo": []
+}

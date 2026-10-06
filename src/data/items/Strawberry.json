@@ -1,0 +1,14 @@
+{
+  "id": "Strawberry",
+  "name": "Strawberry",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "strawberry",
+  "description": "Bright red, heart-shaped berries with tiny seeds on the outside, known to grow in the southern forests because of the warmer climate. It’s juicy and sweet, with a slightly tart edge.",
+  "stats": {
+    "feedPower": 3
+  },
+  "notes": ""
+}

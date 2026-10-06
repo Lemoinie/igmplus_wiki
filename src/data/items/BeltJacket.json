@@ -1,0 +1,16 @@
+{
+  "id": "BeltJacket",
+  "name": "Belt Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 312,
+  "sprite": "belt_jacket",
+  "description": "Crafted from the belts in use by the Golden City Wardens, this equipment is surprisingly resilient despite its improvised nature.",
+  "stats": {
+    "maxHp": 80,
+    "constitution": 4,
+    "dexterity": 4
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "UpgradeShelterEffectiveness",
+  "name": "Upgrade: Effectiveness",
+  "type": "accessory",
+  "category": "Upgrade",
+  "rarity": null,
+  "price": 1,
+  "sprite": "upgrade_shelter",
+  "description": "Permanently increases Shelter auto-feed effectiveness by 10%.",
+  "stats": {
+    "gemPrice": 1000
+  },
+  "notes": ""
+}

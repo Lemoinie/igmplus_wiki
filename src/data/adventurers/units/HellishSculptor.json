@@ -1,0 +1,26 @@
+{
+  "id": "HellishSculptor",
+  "name": "Hellish Sculptor",
+  "category": "Rogue",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_hellish_sculptor",
+  "description": "Half way between assassin and artist, he draws his target ever closer to death with each strike—leaving behind hauntingly beautiful tributes to Death itself in his wake.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 27,
+    "baseIntelligence": 11,
+    "baseDexterity": 27,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Thousand Cuts",
+  "passiveSkill": "Deadly Finesse Iii",
+  "promotesTo": [
+    "SpiritEngraver"
+  ]
+}

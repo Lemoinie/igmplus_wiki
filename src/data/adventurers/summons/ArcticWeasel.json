@@ -1,0 +1,23 @@
+{
+  "id": "ArcticWeasel",
+  "name": "Arctic Weasel",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 20,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_weasel",
+  "description": "A ferocious northern weasel with blinding speed and hardened vitality.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 35,
+    "baseConstitution": 10,
+    "baseIntelligence": 7,
+    "baseDexterity": 13,
+    "baseDefense": 3,
+    "baseMagicDefense": 3
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

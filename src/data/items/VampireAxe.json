@@ -1,0 +1,16 @@
+{
+  "id": "VampireAxe",
+  "name": "Vampire Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 1050,
+  "sprite": "vampire_axe",
+  "description": "An obsidian axe steeped in a crimson brew that saps the vitality of those it wounds.",
+  "stats": {
+    "constitution": 20,
+    "intelligence": 10,
+    "lifesteal": 20
+  },
+  "notes": ""
+}

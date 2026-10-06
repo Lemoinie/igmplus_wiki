@@ -1,0 +1,16 @@
+{
+  "id": "ChampionArmor",
+  "name": "Champion Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 13300,
+  "sprite": "champion_armor",
+  "description": "\"Further enhanced with part of the soul of the Primordial titan, this armor reached a perfect attunement with the wearer's mind.\"",
+  "stats": {
+    "maxHp": 120,
+    "constitution": 28,
+    "counterattack": 0.4
+  },
+  "notes": ""
+}

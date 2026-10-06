@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_COSMIC_PROJECTION",
+  "name_key": "passive_cosmic_projection_name",
+  "desc_key": "passive_cosmic_projection_description",
+  "kind": "passive",
+  "name": "Cosmic Projection",
+  "description": "60% bonus dodge chance. Immunity to every status effect."
+}

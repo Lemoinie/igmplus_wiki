@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_TAUNT_IV",
+  "name_key": "active_taunt_iv_name",
+  "desc_key": "active_taunt_iv_description",
+  "kind": "active",
+  "name": "Taunt IV",
+  "description": "\"TAUNTS an enemy for 8 turns, then strikes it for 600% damage.\n\nTAUNT: the taunting unit is always chosen as target\""
+}

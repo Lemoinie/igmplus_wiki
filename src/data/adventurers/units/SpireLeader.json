@@ -1,0 +1,26 @@
+{
+  "id": "SpireLeader",
+  "name": "Spire Leader",
+  "category": "Rogue",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_spire_leader",
+  "description": "\"Upon the passing of the former Spire leader, often under circumstances far from the natural, the most experienced Acolyte is entrusted with assuming their role, and the organization's deepest secrets are revealed to them. Deployed only for exceptionally difficult tasks, and throughout history, they have been credited with toppling rulers and deities alike.\"",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 24,
+    "baseIntelligence": 10,
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Eclipse Iii",
+  "passiveSkill": "Infiltrator",
+  "promotesTo": [
+    "SpireSage"
+  ]
+}

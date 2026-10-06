@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_TRUE_LIFESTEAL",
+  "name_key": "passive_true_lifesteal_name",
+  "desc_key": "passive_true_lifesteal_description",
+  "kind": "passive",
+  "name": "True Lifesteal",
+  "description": "Heals himself for 200% of damage dealt"
+}

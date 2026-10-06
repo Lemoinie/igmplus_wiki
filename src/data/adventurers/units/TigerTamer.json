@@ -1,0 +1,25 @@
+{
+  "id": "TigerTamer",
+  "name": "Tiger Tamer",
+  "category": "Outlander",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_tiger_tamer",
+  "description": "Commands an apex striped predator whose lethal leaps bring down the mightiest monsters.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 180,
+    "baseConstitution": 23,
+    "baseIntelligence": 28,
+    "baseDexterity": 7,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "BearTamer"
+  ]
+}

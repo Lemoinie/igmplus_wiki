@@ -1,0 +1,14 @@
+{
+  "id": "MushroomRisotto",
+  "name": "Mushroom Risotto",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 65,
+  "sprite": "mushroom_risotto",
+  "description": "Creamy rice with tender Meaty Mushrooms. A very esteemed dish, given the difficulty of importing this kind of mushrooms in the northern cities even prior to the corruption.",
+  "stats": {
+    "feedPower": 227
+  },
+  "notes": ""
+}

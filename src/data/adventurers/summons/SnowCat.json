@@ -1,0 +1,23 @@
+{
+  "id": "SnowCat",
+  "name": "Snow Cat",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 25,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_cat",
+  "description": "A rare mountain feline with a thick winter coat, striking with swift precision.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 50,
+    "baseConstitution": 12,
+    "baseIntelligence": 8,
+    "baseDexterity": 18,
+    "baseDefense": 5,
+    "baseMagicDefense": 5
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

@@ -1,8 +1,10 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import PetTable from '../../components/PetTable.vue';
-import petsData from '../../data/pets.json';
+import { getAllPets } from '../../lib/data';
 import { base } from '../../lib/base';
+
+const petsData = getAllPets();
 ---
 
 <WikiLayout

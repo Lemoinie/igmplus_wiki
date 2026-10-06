@@ -1,0 +1,25 @@
+{
+  "id": "Sureshot",
+  "name": "Sureshot",
+  "category": "Archer",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_sureshot",
+  "description": "A master of archery, a Sureshot with a good positioning can take out even small groups of enemies all by herself.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 90,
+    "baseConstitution": 7,
+    "baseIntelligence": 10,
+    "baseDexterity": 20,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Iii",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": [
+    "Fury"
+  ]
+}

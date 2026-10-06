@@ -1,0 +1,41 @@
+{
+  "id": "Troll",
+  "name": "Troll",
+  "isBoss": false,
+  "sprite": "unit_troll",
+  "stats": {
+    "hp": 600,
+    "constitution": 30,
+    "intelligence": 2,
+    "dexterity": 8,
+    "defense": 117,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "48",
+    "max": "62"
+  },
+  "expGiven": 68,
+  "drops": [
+    {
+      "item": "TrollHide",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "Winterwood",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "IceFiber",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "Blueberry",
+      "qty": 1,
+      "chance": 2.5
+    }
+  ]
+}

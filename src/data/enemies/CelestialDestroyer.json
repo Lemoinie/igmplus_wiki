@@ -1,0 +1,31 @@
+{
+  "id": "CelestialDestroyer",
+  "name": "Celestial Destroyer",
+  "isBoss": false,
+  "sprite": "unit_celestial_destroyer",
+  "stats": {
+    "hp": 4000,
+    "constitution": 200,
+    "intelligence": 1,
+    "dexterity": 62,
+    "defense": 20,
+    "magicDefense": 20
+  },
+  "damage": {
+    "min": "100",
+    "max": "Logger.120"
+  },
+  "expGiven": 2400,
+  "drops": [
+    {
+      "item": "CelestialScraps",
+      "qty": 3,
+      "chance": 60
+    },
+    {
+      "item": "AetherIgnis",
+      "qty": 1,
+      "chance": 40
+    }
+  ]
+}

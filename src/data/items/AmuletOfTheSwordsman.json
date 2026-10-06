@@ -1,0 +1,15 @@
+{
+  "id": "AmuletOfTheSwordsman",
+  "name": "Amulet of the Swordsman",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 7590,
+  "sprite": "amulet_of_the_swordsman",
+  "description": "An amulet that allows the wearer to see through it as if it was an additional eye. Gives a new perspective on the fight, allowing for superior decision making.",
+  "stats": {
+    "constitution": 25,
+    "counterattack": 0.25
+  },
+  "notes": ""
+}

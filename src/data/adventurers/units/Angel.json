@@ -1,0 +1,25 @@
+{
+  "id": "Angel",
+  "name": "Angel",
+  "category": "Apprentice",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_angel",
+  "description": "Heralds of the Gods of Light, only the most exceptional and selfless healers can ascend through the divine ranks. They are said to operate in mysterious ways, and even to be able to bring back fallen soldiers from certain death.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 160,
+    "baseConstitution": 9,
+    "baseIntelligence": 45,
+    "baseDexterity": 11,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Restoration I",
+  "passiveSkill": "Healer Ii",
+  "promotesTo": [
+    "Archangel"
+  ]
+}

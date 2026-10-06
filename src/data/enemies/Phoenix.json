@@ -1,0 +1,26 @@
+{
+  "id": "Phoenix",
+  "name": "Phoenix",
+  "isBoss": true,
+  "sprite": "unit_phoenix",
+  "stats": {
+    "hp": 12000,
+    "constitution": 50,
+    "intelligence": 125,
+    "dexterity": 210,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1250",
+    "max": "1350"
+  },
+  "expGiven": 7500,
+  "drops": [
+    {
+      "item": "PhoenixFeather",
+      "qty": 1,
+      "chance": 26
+    }
+  ]
+}

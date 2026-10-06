@@ -1,0 +1,12 @@
+{
+  "id": "XPBook1",
+  "name": "XP Book (Tier 1)",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 100,
+  "sprite": "xp_book_1",
+  "description": "Grants 10 experience to an adventurer.",
+  "stats": {},
+  "notes": ""
+}

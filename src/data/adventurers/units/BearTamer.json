@@ -1,0 +1,25 @@
+{
+  "id": "BearTamer",
+  "name": "Bear Tamer",
+  "category": "Outlander",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_bear_tamer",
+  "description": "Accompanied by a massive grizzly bear that shrugs off blows and crushes enemy ranks.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 220,
+    "baseConstitution": 26,
+    "baseIntelligence": 33,
+    "baseDexterity": 9,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "BeastTamer"
+  ]
+}

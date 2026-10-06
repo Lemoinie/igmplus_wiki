@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ARCANE_DIFFUSION",
+  "name_key": "active_arcane_diffusion_name",
+  "desc_key": "active_arcane_diffusion_description",
+  "kind": "active",
+  "name": "Arcane Diffusion",
+  "description": "Deals 40% magic damage to all enemies. Applies on hit status effects."
+}

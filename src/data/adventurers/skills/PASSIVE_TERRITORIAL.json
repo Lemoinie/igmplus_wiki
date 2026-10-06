@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_TERRITORIAL",
+  "name_key": "passive_territorial_name",
+  "desc_key": "passive_territorial_description",
+  "kind": "passive",
+  "name": "Territorial",
+  "description": "This unit has a 3× chance of being targeted by enemies. To them, every unit of a different type is considered an enemy."
+}

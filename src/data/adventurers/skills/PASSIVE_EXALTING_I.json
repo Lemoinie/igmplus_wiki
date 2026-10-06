@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_EXALTING_I",
+  "name_key": "passive_exalting_i_name",
+  "desc_key": "passive_exalting_i_description",
+  "kind": "passive",
+  "name": "Exalting",
+  "description": null
+}

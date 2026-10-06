@@ -1,0 +1,15 @@
+{
+  "id": "CrystalStaff",
+  "name": "Crystal Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 360,
+  "sprite": "crystal_staff",
+  "description": "Built from the remains of an Ice Elemental, this superior staff has the additional property of making the holder resistant to harmful statuses.",
+  "stats": {
+    "intelligence": 26,
+    "immunityToStatus": 0.25
+  },
+  "notes": ""
+}

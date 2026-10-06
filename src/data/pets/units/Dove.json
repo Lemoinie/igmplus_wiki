@@ -1,0 +1,14 @@
+{
+  "id": "Dove",
+  "name": "Dove",
+  "family": "Avian",
+  "eggSprite": "egg_avian",
+  "abilitySlots": 2,
+  "sprite": "pet_dove",
+  "description": "A gentle bird with soft feathers and a cooing call. It soars gracefully through the air, often seen as a symbol of peace and harmony.",
+  "guaranteedAbilities": [
+    "Decoy"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

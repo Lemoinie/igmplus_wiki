@@ -1,0 +1,26 @@
+{
+  "id": "RoyalGuard",
+  "name": "Royal Guard",
+  "category": "Footman",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_royal_guard",
+  "description": "Commonly found in noble houses and palaces, these guards offer a balanced blend of offensive and defensive capabilities.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 130,
+    "baseConstitution": 20,
+    "baseIntelligence": 9,
+    "baseDexterity": 8,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "counterattack": 0.3
+  },
+  "activeSkill": "Mighty Strike",
+  "passiveSkill": "Sword Mastery I",
+  "promotesTo": [
+    "RoyalSwordsman"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_LESSER_PSYONIC",
+  "name_key": "passive_lesser_psyonic_name",
+  "desc_key": "passive_lesser_psyonic_description",
+  "kind": "passive",
+  "name": "Lesser Psyonic",
+  "description": "Melee attacks deal 20 magic damage to the attacker."
+}

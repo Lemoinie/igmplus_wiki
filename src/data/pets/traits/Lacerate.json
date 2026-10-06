@@ -1,0 +1,6 @@
+{
+  "id": "Lacerate",
+  "name": "Lacerate",
+  "ability": "LACERATE",
+  "description": "Bleed: %s%% chance to deal damage twice in a turn."
+}

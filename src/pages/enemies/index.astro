@@ -1,8 +1,10 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import EnemyCard from '../../components/EnemyCard.vue';
-import enemiesData from '../../data/enemies.json';
+import { getAllEnemies } from '../../lib/data';
 import { base } from '../../lib/base';
+
+const enemiesData = getAllEnemies();
 ---
 
 <WikiLayout title="Bestiary" description="Complete enemy stats, damages, and item drops in Idle Guild Master Modded.">

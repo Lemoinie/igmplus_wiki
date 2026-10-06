@@ -1,0 +1,15 @@
+{
+  "id": "JeweledCrown",
+  "name": "Jeweled Crown",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 2790,
+  "sprite": "jeweled_crown",
+  "description": "Precious crown made with gold with inset emeralds and rubies. Amplifies the magical shielding properties of these stones to provide protection to vulnerable targets, while signalling the high status of the wearer.",
+  "stats": {
+    "defense": 10,
+    "magicDefense": 10
+  },
+  "notes": ""
+}

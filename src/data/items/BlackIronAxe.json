@@ -1,0 +1,15 @@
+{
+  "id": "BlackIronAxe",
+  "name": "Black Iron Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 380,
+  "sprite": "black_iron_axe",
+  "description": "A heavy axe hewn from black iron, reinforced with spectral wood.",
+  "stats": {
+    "constitution": 15,
+    "intelligence": 6
+  },
+  "notes": ""
+}

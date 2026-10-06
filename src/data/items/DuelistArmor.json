@@ -1,0 +1,16 @@
+{
+  "id": "DuelistArmor",
+  "name": "Duelist Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 3885,
+  "sprite": "duelist_armor",
+  "description": "\"Living armor in a synchronic communication with the wearer's mind, greatly enhancing their reaction times.\"",
+  "stats": {
+    "maxHp": 75,
+    "constitution": 20,
+    "counterattack": 0.25
+  },
+  "notes": ""
+}

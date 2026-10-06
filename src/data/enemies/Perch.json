@@ -1,0 +1,26 @@
+{
+  "id": "Perch",
+  "name": "Perch",
+  "isBoss": false,
+  "sprite": "perch",
+  "stats": {
+    "hp": 16,
+    "constitution": 5,
+    "intelligence": 2,
+    "dexterity": 60,
+    "defense": 2,
+    "magicDefense": 2
+  },
+  "damage": {
+    "min": "1",
+    "max": "2"
+  },
+  "expGiven": 5,
+  "drops": [
+    {
+      "item": "Perch",
+      "qty": 1,
+      "chance": 50
+    }
+  ]
+}

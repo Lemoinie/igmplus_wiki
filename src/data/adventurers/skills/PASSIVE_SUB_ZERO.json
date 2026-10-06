@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SUB_ZERO",
+  "name_key": "passive_sub_zero_name",
+  "desc_key": "passive_sub_zero_description",
+  "kind": "passive",
+  "name": "Sub Zero",
+  "description": "\"Melee attacks to and from this target FREEZE the attacker for 4 turns.\n\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\""
+}

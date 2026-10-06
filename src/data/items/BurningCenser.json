@@ -1,0 +1,16 @@
+{
+  "id": "BurningCenser",
+  "name": "Burning Censer",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 564,
+  "sprite": "burning_censer",
+  "description": "An otherworldly candle encased in a metal support, anointed with oils that display healing properties.",
+  "stats": {
+    "intelligence": 12,
+    "darknessReduction": 10,
+    "healingModifier": 0.2
+  },
+  "notes": ""
+}

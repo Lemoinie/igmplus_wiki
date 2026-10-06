@@ -1,0 +1,14 @@
+{
+  "id": "Banana",
+  "name": "Banana",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 2,
+  "sprite": "banana",
+  "description": "Yellow, sweet fruit found in tropical lands. Monkeys love them, even ones employed by the Skull Island fleet.",
+  "stats": {
+    "feedPower": 8
+  },
+  "notes": ""
+}

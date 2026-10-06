@@ -1,0 +1,25 @@
+{
+  "id": "Paladin",
+  "name": "Paladin",
+  "category": "Footman",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_paladin",
+  "description": "An elite warrior of the Holy Temple, a beacon of light to the oppressed, upholds and enforces the laws of the kingdom.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 170,
+    "baseConstitution": 24,
+    "baseIntelligence": 12,
+    "baseDexterity": 8,
+    "baseDefense": 20,
+    "baseMagicDefense": 26
+  },
+  "activeSkill": "Holy Smite Ii",
+  "passiveSkill": "Aura Of Light Ii",
+  "promotesTo": [
+    "Templar"
+  ]
+}

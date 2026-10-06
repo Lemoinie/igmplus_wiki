@@ -1,0 +1,23 @@
+{
+  "id": "SummonCat",
+  "name": "Summoned Cat",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 25,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_cat",
+  "description": "An agile companion that pounces from behind with razor-sharp claws.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 40,
+    "baseConstitution": 10,
+    "baseIntelligence": 7,
+    "baseDexterity": 15,
+    "baseDefense": 4,
+    "baseMagicDefense": 4
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

@@ -1,0 +1,31 @@
+{
+  "id": "Crusader",
+  "name": "Crusader",
+  "isBoss": false,
+  "sprite": "unit_crusader",
+  "stats": {
+    "hp": 940,
+    "constitution": 16,
+    "intelligence": 4,
+    "dexterity": 19,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "55",
+    "max": "80"
+  },
+  "expGiven": 72,
+  "drops": [
+    {
+      "item": "KabelianMetal",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "CrusaderInsigna",
+      "qty": 1,
+      "chance": 2
+    }
+  ]
+}

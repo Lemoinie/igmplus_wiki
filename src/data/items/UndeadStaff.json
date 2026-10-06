@@ -1,0 +1,14 @@
+{
+  "id": "UndeadStaff",
+  "name": "Undead Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 93,
+  "sprite": "undead_staff",
+  "description": "Made with undead remains, allows for some control over the flow of magic forces.",
+  "stats": {
+    "intelligence": 12
+  },
+  "notes": ""
+}

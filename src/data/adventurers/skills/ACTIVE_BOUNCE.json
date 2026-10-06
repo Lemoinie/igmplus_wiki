@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BOUNCE",
+  "name_key": "active_bounce_name",
+  "desc_key": "active_bounce_description",
+  "kind": "active",
+  "name": "Bounce",
+  "description": "\"Bounces 10 times, dealing 50% damage to a random enemy each time and STUNNING them for 4 turns.\n\nSTUN: the unit skips its turn\""
+}

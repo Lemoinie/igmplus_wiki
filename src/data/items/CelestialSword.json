@@ -1,0 +1,15 @@
+{
+  "id": "CelestialSword",
+  "name": "Celestial Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 581,
+  "sprite": "celestial_sword",
+  "description": "Sword made from an alien alloy, with a durability above every known material.",
+  "stats": {
+    "constitution": 28,
+    "dexterity": 8
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Pear",
+  "name": "Pear",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "pear",
+  "description": "With a smooth yellow skin, their flesh is soft, juicy, and sweet with a grainy texture that will melt in the mouth.",
+  "stats": {
+    "feedPower": 3
+  },
+  "notes": ""
+}

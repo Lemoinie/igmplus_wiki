@@ -1,0 +1,26 @@
+{
+  "id": "HeraldXavi",
+  "name": "Herald Xavi",
+  "isBoss": true,
+  "sprite": "unit_herald_xavi",
+  "stats": {
+    "hp": 4500,
+    "constitution": 500,
+    "intelligence": 500,
+    "dexterity": 500,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "280",
+    "max": "305"
+  },
+  "expGiven": 9600,
+  "drops": [
+    {
+      "item": "SerpentLunge",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

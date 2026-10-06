@@ -1,0 +1,46 @@
+{
+  "id": "Treant",
+  "name": "Treant",
+  "isBoss": false,
+  "sprite": "unit_treant",
+  "stats": {
+    "hp": 100,
+    "constitution": 10,
+    "intelligence": 5,
+    "dexterity": 6,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "6",
+    "max": "9"
+  },
+  "expGiven": 24,
+  "drops": [
+    {
+      "item": "Wood",
+      "qty": 1,
+      "chance": 59.9
+    },
+    {
+      "item": "PlantFiber",
+      "qty": 1,
+      "chance": 34.5
+    },
+    {
+      "item": "LivingSap",
+      "qty": 1,
+      "chance": 0.5
+    },
+    {
+      "item": "Tomato",
+      "qty": 1,
+      "chance": 1.2
+    },
+    {
+      "item": "WoodenEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "WurmscalesBoots",
+  "name": "Wurmscales Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 30,
+  "sprite": "wurmscales_boots",
+  "description": "Sturdy boots made with wurm scales.",
+  "stats": {
+    "dexterity": 6
+  },
+  "notes": ""
+}

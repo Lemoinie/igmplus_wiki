@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_LEECH",
+  "name_key": "passive_leech_name",
+  "desc_key": "passive_leech_description",
+  "kind": "passive",
+  "name": "Leech",
+  "description": "Heals for the damage dealt"
+}

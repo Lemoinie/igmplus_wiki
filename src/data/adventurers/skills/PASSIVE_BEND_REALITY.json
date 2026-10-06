@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BEND_REALITY",
+  "name_key": "passive_bend_reality_name",
+  "desc_key": "passive_bend_reality_description",
+  "kind": "passive",
+  "name": "Bend Reality",
+  "description": "Attacks always hit. Every status effect inflicted upon this unit is instead inflicted on the attacker."
+}

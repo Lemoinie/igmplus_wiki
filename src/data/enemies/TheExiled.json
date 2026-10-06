@@ -1,0 +1,26 @@
+{
+  "id": "TheExiled",
+  "name": "The Exiled",
+  "isBoss": true,
+  "sprite": "unit_the_exiled",
+  "stats": {
+    "hp": 30000,
+    "constitution": 215,
+    "intelligence": 215,
+    "dexterity": 215,
+    "defense": 25,
+    "magicDefense": 25
+  },
+  "damage": {
+    "min": "1075",
+    "max": "1425"
+  },
+  "expGiven": 15000,
+  "drops": [
+    {
+      "item": "GiftOfLight",
+      "qty": 1,
+      "chance": 66.6
+    }
+  ]
+}

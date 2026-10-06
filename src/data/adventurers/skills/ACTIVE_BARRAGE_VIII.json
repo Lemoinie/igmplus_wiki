@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BARRAGE_VIII",
+  "name_key": "active_barrage_viii_name",
+  "desc_key": "active_barrage_viii_description",
+  "kind": "active",
+  "name": "Barrage VIII",
+  "description": "Fires an arrow at 11 random enemies"
+}

@@ -1,0 +1,25 @@
+{
+  "id": "PlagueSpreader",
+  "name": "Plague Spreader",
+  "category": "Archer",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_plague_spreader",
+  "description": "Equipped with one of the strongest venom known to humanity, she can propagate deadly illnesses among the enemy ranks.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 9,
+    "baseIntelligence": 14,
+    "baseDexterity": 28,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Poisonous Arrows Iii",
+  "promotesTo": [
+    "Blight"
+  ]
+}

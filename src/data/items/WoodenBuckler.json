@@ -1,0 +1,14 @@
+{
+  "id": "WoodenBuckler",
+  "name": "Wooden Buckler",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 9,
+  "sprite": "wooden_buckler",
+  "description": "Round, lightweight shield made of wood",
+  "stats": {
+    "constitution": 3
+  },
+  "notes": ""
+}

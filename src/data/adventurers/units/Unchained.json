@@ -1,0 +1,25 @@
+{
+  "id": "Unchained",
+  "name": "Unchained",
+  "category": "Apprentice",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_unchained",
+  "description": "Most of those who aspire to become a Lich through the forgotten rituals realize too late they cannot pay the price required. The necromancer who begs for the release of death is confronted with a grim offer: his mortal body as an instrument for the entities he communed with.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 170,
+    "baseConstitution": 20,
+    "baseIntelligence": 20,
+    "baseDexterity": 20,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Flay",
+  "passiveSkill": "Chaotic",
+  "promotesTo": [
+    "Demon"
+  ]
+}

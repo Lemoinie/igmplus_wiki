@@ -1,0 +1,25 @@
+{
+  "id": "Brigand",
+  "name": "Brigand",
+  "category": "Outlander",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_brigand",
+  "description": "A seasoned raider skilled in brutal skirmishes and bleeding tactical withdrawals.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 24,
+    "baseIntelligence": 20,
+    "baseDexterity": 6,
+    "baseDefense": 15,
+    "baseMagicDefense": 25
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Renegade"
+  ]
+}

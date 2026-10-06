@@ -1,0 +1,6 @@
+{
+  "id": "Decoy",
+  "name": "Decoy",
+  "ability": "DECOY",
+  "description": "Threat: %s; Can't be hit."
+}

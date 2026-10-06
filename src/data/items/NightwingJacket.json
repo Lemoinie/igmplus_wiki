@@ -1,0 +1,16 @@
+{
+  "id": "NightwingJacket",
+  "name": "Nightwing Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 567,
+  "sprite": "nightwing_jacket",
+  "description": "Made with a type of leather that comes from giant bats rarely found in very deep caverns, allows for superior mobility and protection.",
+  "stats": {
+    "maxHp": 140,
+    "constitution": 7,
+    "dexterity": 7
+  },
+  "notes": ""
+}

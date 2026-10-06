@@ -1,0 +1,14 @@
+{
+  "id": "DeviledEggs",
+  "name": "Deviled Eggs",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 129,
+  "sprite": "deviled_eggs",
+  "description": "Halved boiled eggs with a yolk filling. The filling is extremely spicy, so this dish is not for every palate.",
+  "stats": {
+    "feedPower": 238
+  },
+  "notes": ""
+}

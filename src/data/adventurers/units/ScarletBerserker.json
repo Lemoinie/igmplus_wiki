@@ -1,0 +1,26 @@
+{
+  "id": "ScarletBerserker",
+  "name": "Scarlet Berserker",
+  "category": "Outlander",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_scarlet_berserker",
+  "description": "Drenched in the gore of countless foes, their relentless assaults leave deep rending wounds.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 200,
+    "baseConstitution": 31,
+    "baseIntelligence": 15,
+    "baseDexterity": 4,
+    "baseDefense": 15,
+    "baseMagicDefense": 15,
+    "baseLifesteal": 25
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "BloodReaver"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "RubyRing",
+  "name": "Ruby Ring",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 147,
+  "sprite": "ruby_ring",
+  "description": "A silver ring with an inset ruby, a precious stone carrying some magical properties of protective nature.",
+  "stats": {
+    "defense": 10
+  },
+  "notes": ""
+}

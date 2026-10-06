@@ -1,0 +1,26 @@
+{
+  "id": "DivineDuelist",
+  "name": "Divine Duelist",
+  "category": "Footman",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_divine_duelist",
+  "description": "A duelist of unmatched skill in single combat, this warrior—born perhaps once in a generation—wields a sword so swift that his strikes are over before they’re even seen, cutting down opponents with imperceptible speed.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 320,
+    "baseConstitution": 36,
+    "baseIntelligence": 13,
+    "baseDexterity": 16,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "counterattack": 0.6
+  },
+  "activeSkill": "En Garde",
+  "passiveSkill": "Sword Expertise I",
+  "promotesTo": [
+    "DivineChampion"
+  ]
+}

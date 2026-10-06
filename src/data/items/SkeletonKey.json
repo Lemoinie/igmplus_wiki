@@ -1,0 +1,14 @@
+{
+  "id": "SkeletonKey",
+  "name": "Skeleton Key",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 35,
+  "sprite": "skeleton_key",
+  "description": "\"A strange key adorned with a skull handle. It's very cold to the touch. Looks infused with a powerful curse that amplifies one's power over death.\"",
+  "stats": {
+    "intelligence": 36
+  },
+  "notes": "Rare Drop"
+}

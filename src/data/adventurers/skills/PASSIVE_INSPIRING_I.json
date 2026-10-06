@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INSPIRING_I",
+  "name_key": "passive_inspiring_i_name",
+  "desc_key": "passive_inspiring_i_description",
+  "kind": "passive",
+  "name": "Inspiring",
+  "description": null
+}

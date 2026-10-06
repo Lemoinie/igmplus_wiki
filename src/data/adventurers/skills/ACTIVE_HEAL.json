@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_HEAL",
+  "name_key": "active_heal_name",
+  "desc_key": "active_heal_description",
+  "kind": "active",
+  "name": "Heal",
+  "description": "Heals the ally with the lowest health for 100% damage"
+}

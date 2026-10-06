@@ -1,0 +1,14 @@
+{
+  "id": "EmeraldRing",
+  "name": "Emerald Ring",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 147,
+  "sprite": "emerald_ring",
+  "description": "A silver ring with an inset emerald, a precious stone carrying some magical properties of protective nature.",
+  "stats": {
+    "magicDefense": 10
+  },
+  "notes": ""
+}

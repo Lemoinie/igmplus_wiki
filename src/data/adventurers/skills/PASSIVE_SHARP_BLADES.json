@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SHARP_BLADES",
+  "name_key": "passive_sharp_blades_name",
+  "desc_key": "passive_sharp_blades_description",
+  "kind": "passive",
+  "name": "Sharp Blades",
+  "description": "\"BLEED 40 on hit\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge\""
+}

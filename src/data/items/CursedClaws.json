@@ -1,0 +1,15 @@
+{
+  "id": "CursedClaws",
+  "name": "Cursed Claws",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1920,
+  "sprite": "cursed_claws",
+  "description": "\"Forged from a metal worn by undead beings for unfathomable time, will open a grievous wound on an enemy with the slightest touch. The attack has to be melee for this to happen.\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge\"",
+  "stats": {
+    "dexterity": 12,
+    "constitution": 12
+  },
+  "notes": ""
+}

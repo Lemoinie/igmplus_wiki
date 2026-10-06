@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SEARING",
+  "name_key": "passive_searing_name",
+  "desc_key": "passive_searing_description",
+  "kind": "passive",
+  "name": "Searing",
+  "description": "\"This unit has a 2× chance of being targeted by enemies.\nReduce Darkness by 50.\n70% immunity to negative status effects.\""
+}

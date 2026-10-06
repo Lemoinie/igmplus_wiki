@@ -1,0 +1,14 @@
+{
+  "id": "Owl",
+  "name": "Owl",
+  "family": "Avian",
+  "eggSprite": "egg_avian",
+  "abilitySlots": 3,
+  "sprite": "pet_owl",
+  "description": "A silent hunter with wide, luminous eyes. It glides through the night without a sound.",
+  "guaranteedAbilities": [
+    "Decoy"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

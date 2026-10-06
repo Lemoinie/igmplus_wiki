@@ -1,0 +1,26 @@
+{
+  "id": "BlueShark",
+  "name": "Blue Shark",
+  "isBoss": false,
+  "sprite": "blue_shark",
+  "stats": {
+    "hp": 85,
+    "constitution": 20,
+    "intelligence": 6,
+    "dexterity": 220,
+    "defense": 8,
+    "magicDefense": 6
+  },
+  "damage": {
+    "min": "2",
+    "max": "4"
+  },
+  "expGiven": 35,
+  "drops": [
+    {
+      "item": "BlueShark",
+      "qty": 1,
+      "chance": 30
+    }
+  ]
+}

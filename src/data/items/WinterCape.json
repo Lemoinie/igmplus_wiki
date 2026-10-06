@@ -1,0 +1,15 @@
+{
+  "id": "WinterCape",
+  "name": "Winter Cape",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 486,
+  "sprite": "winter_cape",
+  "description": "\"The peculiar properties of the troll's Wintercloth allows to craft this very light albeit resilient light clothing\"",
+  "stats": {
+    "maxHp": 60,
+    "intelligence": 18
+  },
+  "notes": ""
+}

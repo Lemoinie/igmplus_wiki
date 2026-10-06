@@ -1,0 +1,26 @@
+{
+  "id": "RoyalSwordsman",
+  "name": "Royal Swordsman",
+  "category": "Footman",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_royal_swordman",
+  "description": "Highly trained in the art of swordsmanship, these guards are usually assigned to the protection of royal families and their palace.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 170,
+    "baseConstitution": 24,
+    "baseIntelligence": 10,
+    "baseDexterity": 10,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "counterattack": 0.3
+  },
+  "activeSkill": "En Garde",
+  "passiveSkill": "Sword Mastery I",
+  "promotesTo": [
+    "RoyalCaptain"
+  ]
+}

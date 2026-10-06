@@ -1,0 +1,15 @@
+{
+  "id": "DryadsBlessing",
+  "name": "\"Dryad's Blessing\"",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 735,
+  "sprite": "dryads_blessing",
+  "description": "An average staff when considering its offensive potential, this intricate weapon really shines in the hands of an experienced healer.",
+  "stats": {
+    "healingModifier": 0.23,
+    "intelligence": 22
+  },
+  "notes": ""
+}

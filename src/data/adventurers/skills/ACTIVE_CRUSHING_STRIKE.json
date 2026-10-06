@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_CRUSHING_STRIKE",
+  "name_key": "active_crushing_strike_name",
+  "desc_key": "active_crushing_strike_description",
+  "kind": "active",
+  "name": "Crushing Strike",
+  "description": "Strikes an enemy for 250% damage"
+}

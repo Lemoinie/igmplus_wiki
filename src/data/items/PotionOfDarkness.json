@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfDarkness",
+  "name": "Potion of Darkness",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_darkness",
+  "description": "Permanently increases damage by [0.1 × Darkness] %.",
+  "stats": {},
+  "notes": ""
+}

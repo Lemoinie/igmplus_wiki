@@ -1,0 +1,12 @@
+{
+  "id": "ConstructEgg",
+  "name": "Construct Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_construct",
+  "description": "Egg that will hatch a pet Construct. Constructs usually like to use magic to impair enemies and illuminate dark areas.",
+  "stats": {},
+  "notes": ""
+}

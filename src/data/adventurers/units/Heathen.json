@@ -1,0 +1,27 @@
+{
+  "id": "Heathen",
+  "name": "Heathen",
+  "category": "Outlander",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_heathen",
+  "description": "An outcast practitioner of forgotten rites, deeply attuned to the spirits of beast and forest.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 50,
+    "baseConstitution": 11,
+    "baseIntelligence": 9,
+    "baseDexterity": 3,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "RatTamer",
+    "Druid",
+    "Exile"
+  ]
+}

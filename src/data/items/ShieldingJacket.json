@@ -1,0 +1,17 @@
+{
+  "id": "ShieldingJacket",
+  "name": "Shielding Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 1202,
+  "sprite": "shielding_jacket",
+  "description": "Padded jacket enhanced with an endless source of magic power, to shield the user from external influences.",
+  "stats": {
+    "immunityToStatus": 0.3,
+    "maxHp": 200,
+    "constitution": 15,
+    "dexterity": 10
+  },
+  "notes": ""
+}

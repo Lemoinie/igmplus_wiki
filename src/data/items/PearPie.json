@@ -1,0 +1,14 @@
+{
+  "id": "PearPie",
+  "name": "Pear Pie",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 51,
+  "sprite": "pear_pie",
+  "description": "A buttery, golden crust holds a soft, sweet pear filling. The pears are tender and juicy, with a delicate sweetness and subtle spiced aroma.",
+  "stats": {
+    "feedPower": 139
+  },
+  "notes": ""
+}

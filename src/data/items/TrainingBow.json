@@ -1,0 +1,14 @@
+{
+  "id": "TrainingBow",
+  "name": "Training Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 0,
+  "sprite": "training_bow",
+  "description": "An inefficient bow used mainly for training",
+  "stats": {
+    "dexterity": 1
+  },
+  "notes": ""
+}

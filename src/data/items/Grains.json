@@ -1,0 +1,14 @@
+{
+  "id": "Grains",
+  "name": "Grains",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "grains",
+  "description": "A small bag of dry kernels with various shapes and colors. They have a slightly chewy texture when cooked and a neutral, earthy flavor.",
+  "stats": {
+    "feedPower": 4
+  },
+  "notes": ""
+}

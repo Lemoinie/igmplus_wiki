@@ -1,0 +1,15 @@
+{
+  "id": "VerdantBlade",
+  "name": "Verdant Blade",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 246,
+  "sprite": "verdant_blade",
+  "description": "An unusual dagger with a Spitfang tooth instead of a blade.",
+  "stats": {
+    "dexterity": 23,
+    "constitution": 23
+  },
+  "notes": ""
+}

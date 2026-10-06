@@ -1,0 +1,15 @@
+{
+  "id": "SlimeArmor",
+  "name": "Slime Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 630,
+  "sprite": "slime_armor",
+  "description": "Protective armor made with sticky, green slime that can dissipate the force of any impact, lowering their effectiveness.",
+  "stats": {
+    "maxHp": 150,
+    "defense": 5
+  },
+  "notes": ""
+}

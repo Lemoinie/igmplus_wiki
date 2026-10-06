@@ -1,0 +1,17 @@
+{
+  "id": "CottontailJacket",
+  "name": "Cottontail Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 345,
+  "sprite": "cottontail_jacket",
+  "description": "Simple jacket padded with the elusive Golden Rabbit fur.",
+  "stats": {
+    "maxHp": 20,
+    "constitution": 1,
+    "dexterity": 1,
+    "bonusExperience": 35
+  },
+  "notes": ""
+}

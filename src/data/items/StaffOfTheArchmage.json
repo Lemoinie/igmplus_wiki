@@ -1,0 +1,14 @@
+{
+  "id": "StaffOfTheArchmage",
+  "name": "Staff of the Archmage",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 1707,
+  "sprite": "staff_of_the_archmage",
+  "description": "Powerful staff used by Laroxian mages. Using their extensive magical knowledge, this staff energy source was bound with complex spells into a high-energy state. The crafting process is long and expensive, and they are held only by the most powerful wizards.",
+  "stats": {
+    "intelligence": 40
+  },
+  "notes": ""
+}

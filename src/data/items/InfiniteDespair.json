@@ -1,0 +1,17 @@
+{
+  "id": "InfiniteDespair",
+  "name": "Infinite Despair",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 21000,
+  "sprite": "infinite_despair",
+  "description": "Grants a premature end to both the wielder and their enemies.",
+  "stats": {
+    "constitution": 60,
+    "dexterity": 60,
+    "decay": 60,
+    "criticalDamage": 1
+  },
+  "notes": ""
+}

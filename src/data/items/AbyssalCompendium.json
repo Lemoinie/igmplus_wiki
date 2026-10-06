@@ -1,0 +1,14 @@
+{
+  "id": "AbyssalCompendium",
+  "name": "Abyssal Compendium",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 375,
+  "sprite": "abyssal_compendium",
+  "description": "A book listing forgotten techniques of spellweaving, learned from eldritch entities at a great price.",
+  "stats": {
+    "intelligence": 15
+  },
+  "notes": ""
+}

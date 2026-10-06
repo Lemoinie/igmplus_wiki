@@ -1,0 +1,56 @@
+{
+  "id": "TheSlumberingShallowsArea",
+  "name": "The Slumbering Shallows",
+  "type": "epic_raid",
+  "level": null,
+  "encounterChance": 17,
+  "sprite": "summary_fishing_pond",
+  "enemies": [
+    {
+      "id": "Angelfish",
+      "name": "Angelfish",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "BlueShark",
+      "name": "BlueShark",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "BlueTrout",
+      "name": "BlueTrout",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ChorusTheDrowned",
+      "name": "ChorusTheDrowned",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "MagmaShark",
+      "name": "MagmaShark",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Perch",
+      "name": "Perch",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "WingedRay",
+      "name": "WingedRay",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "CoinPurse",
+    "Perch"
+  ]
+}

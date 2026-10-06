@@ -1,0 +1,15 @@
+{
+  "id": "GoldenSword",
+  "name": "Golden Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 483,
+  "sprite": "golden_sword",
+  "description": "Superior swords issued to the Imperial Army infantry.",
+  "stats": {
+    "constitution": 12,
+    "dexterity": 4
+  },
+  "notes": ""
+}

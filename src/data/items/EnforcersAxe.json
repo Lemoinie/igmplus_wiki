@@ -1,0 +1,16 @@
+{
+  "id": "EnforcersAxe",
+  "name": "Enforcer's Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 950,
+  "sprite": "enforcers_axe",
+  "description": "A once-corrupted axe, purified and marked with the imperial seal.",
+  "stats": {
+    "constitution": 18,
+    "dexterity": 10,
+    "intelligence": 18
+  },
+  "notes": ""
+}

@@ -1,0 +1,36 @@
+{
+  "id": "LesserTitan",
+  "name": "Lesser Titan",
+  "isBoss": false,
+  "sprite": "unit_lesser_titan",
+  "stats": {
+    "hp": 4150,
+    "constitution": 40,
+    "intelligence": 1,
+    "dexterity": 16,
+    "defense": 10,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "220",
+    "max": "300"
+  },
+  "expGiven": 300,
+  "drops": [
+    {
+      "item": "AlchemicPowder",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "SentientSlab",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "ConstructEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

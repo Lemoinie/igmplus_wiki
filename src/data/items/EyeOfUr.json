@@ -1,0 +1,16 @@
+{
+  "id": "EyeOfUr",
+  "name": "Eye of Ur",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 0,
+  "sprite": "eye_of_ur",
+  "description": "A gift from a distant world.",
+  "stats": {
+    "immunityToStatus": 1,
+    "constitution": 15,
+    "dexterity": 15
+  },
+  "notes": ""
+}

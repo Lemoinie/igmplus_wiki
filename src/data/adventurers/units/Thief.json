@@ -1,0 +1,27 @@
+{
+  "id": "Thief",
+  "name": "Thief",
+  "category": "Rogue",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_thief",
+  "description": "A nimble outlaw whose skills are invaluable for detecting dangers well in advance.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 45,
+    "baseConstitution": 9,
+    "baseIntelligence": 5,
+    "baseDexterity": 9,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Backstab I",
+  "passiveSkill": "Saboteur",
+  "promotesTo": [
+    "ShadowCrawler",
+    "Cutthroat",
+    "Trickster"
+  ]
+}

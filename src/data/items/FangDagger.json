@@ -1,0 +1,15 @@
+{
+  "id": "FangDagger",
+  "name": "Fang Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 17,
+  "sprite": "fang_dagger",
+  "description": "A dagger made with a huge wolf fang in place of the blade.",
+  "stats": {
+    "constitution": 2,
+    "dexterity": 2
+  },
+  "notes": ""
+}

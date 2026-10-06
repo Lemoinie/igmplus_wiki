@@ -1,0 +1,16 @@
+{
+  "id": "CelestialMercy",
+  "name": "Celestial Mercy",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 1100,
+  "sprite": "celestials_mercy",
+  "description": "A Celestial Sword imbued with a fluid typically used as fuel for advanced Celestial ships. When ignited, the fluid emits a bright light but does not harm the blade, thanks to the unique metal of its construction. Deals damage in a broader area, landing hits even when they should miss.",
+  "stats": {
+    "darknessReduction": 12,
+    "constitution": 28,
+    "dexterity": 8
+  },
+  "notes": ""
+}

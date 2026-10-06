@@ -1,0 +1,15 @@
+{
+  "id": "InvisibleServant",
+  "name": "Invisible Servant",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 16200,
+  "sprite": "invisible_servant",
+  "description": "\"An invisible sphere summoned upon a small altar, once bound to cosmic powers but now loyal to its owner's will. It can carry out simple tasks, protect its master and unleash powerful attacks. Attacks from this source are always ranged, and magic.\"",
+  "stats": {
+    "maxHp": 135,
+    "constitution": 35
+  },
+  "notes": ""
+}

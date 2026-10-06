@@ -1,0 +1,16 @@
+{
+  "id": "KabelianArmor",
+  "name": "Kabelian Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 3276,
+  "sprite": "kabelian_armor",
+  "description": "Armor donned by the leaders of the Crusade from the Eastern Kingdom, radiating light into the darkest corners of the Realms.",
+  "stats": {
+    "maxHp": 105,
+    "constitution": 20,
+    "darknessReduction": 20
+  },
+  "notes": ""
+}

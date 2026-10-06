@@ -1,0 +1,25 @@
+{
+  "id": "SpitfangRider",
+  "name": "Spitfang Rider",
+  "category": "Archer",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_spitfang_rider",
+  "description": "Displaying an incredible riding ability, Spitfang Riders managed to tame the fearsome Spitfang Snakes, a fearsome beast that can attack from a distance.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 9,
+    "baseIntelligence": 14,
+    "baseDexterity": 28,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Rider Iv",
+  "promotesTo": [
+    "DrakeRider"
+  ]
+}

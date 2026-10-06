@@ -1,0 +1,14 @@
+{
+  "id": "VerdantBoots",
+  "name": "Verdant Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 477,
+  "sprite": "verdant_boots",
+  "description": "Boots made of a rare, extremely resilient type of wood. Keeps sprouting new leaves that have to be periodically trimmed by the owner.",
+  "stats": {
+    "dexterity": 24
+  },
+  "notes": ""
+}

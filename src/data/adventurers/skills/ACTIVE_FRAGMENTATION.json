@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FRAGMENTATION",
+  "name_key": "active_fragmentation_name",
+  "desc_key": "active_fragmentation_description",
+  "kind": "active",
+  "name": "Fragmentation",
+  "description": "\"Loses 5000 HP. Then, shoots 5 marble splinters at random enemies, each dealing 100% damage. Heal for 1000 HP for every fragment that hits the target. Caster's HP can't be reduced below 1 with this ability.\""
+}

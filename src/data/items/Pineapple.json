@@ -1,0 +1,14 @@
+{
+  "id": "Pineapple",
+  "name": "Pineapple",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 3,
+  "sprite": "pineapple",
+  "description": "A spiky, golden-brown exterior hides bright yellow flesh. It’s juicy, tangy, and sweet with an exotic, refreshing flavor.",
+  "stats": {
+    "feedPower": 8
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RETALIATE_II",
+  "name_key": "passive_retaliate_ii_name",
+  "desc_key": "passive_retaliate_ii_description",
+  "kind": "passive",
+  "name": "Retaliate II",
+  "description": "Every time this unit is hit by a melee attack, it strikes back with a basic attack"
+}

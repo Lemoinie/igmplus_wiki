@@ -1,0 +1,16 @@
+{
+  "id": "ShadowBow",
+  "name": "Shadow Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 1386,
+  "sprite": "shadow_bow",
+  "description": "Infused with a Shadow Potion, this bow grants its owner the feats of a nocturnal predator.",
+  "stats": {
+    "intelligence": 6,
+    "dexterity": 22,
+    "darknessDamageAmplification": 0.005
+  },
+  "notes": ""
+}

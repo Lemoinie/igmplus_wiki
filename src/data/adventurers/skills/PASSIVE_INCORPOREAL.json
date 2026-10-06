@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INCORPOREAL",
+  "name_key": "passive_incorporeal_name",
+  "desc_key": "passive_incorporeal_description",
+  "kind": "passive",
+  "name": "Incorporeal",
+  "description": "Every physical damage is reduced to 1."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "SPIDER",
+  "name": "S.P.I.D.E.R",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 18500,
+  "sprite": "spider",
+  "description": "A mechanical set of legs operating on alien technology. Can move the user extremely quick, provide an extra layer of protection for the lower part of the body and will even kick nearby enemies.",
+  "stats": {
+    "maxHp": 20,
+    "constitution": 5,
+    "dexterity": 5
+  },
+  "notes": "Rare Drop"
+}

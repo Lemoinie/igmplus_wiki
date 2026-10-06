@@ -1,0 +1,14 @@
+{
+  "id": "MeatChop",
+  "name": "Meat Chop",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 2,
+  "sprite": "meat_chop",
+  "description": "\"A thick, juicy cut of meat complete with a bone. It's the cheap, nutritious base for most meat based dishes.\"",
+  "stats": {
+    "feedPower": 10
+  },
+  "notes": ""
+}

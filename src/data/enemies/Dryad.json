@@ -1,0 +1,46 @@
+{
+  "id": "Dryad",
+  "name": "Dryad",
+  "isBoss": false,
+  "sprite": "unit_dryad",
+  "stats": {
+    "hp": 670,
+    "constitution": 4,
+    "intelligence": 150,
+    "dexterity": 60,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "150",
+    "max": "280"
+  },
+  "expGiven": 200,
+  "drops": [
+    {
+      "item": "FleetfootFabric",
+      "qty": 1,
+      "chance": 35
+    },
+    {
+      "item": "BagOfChokingPowder",
+      "qty": 1,
+      "chance": 10
+    },
+    {
+      "item": "WhiteHair",
+      "qty": 1,
+      "chance": 1.5
+    },
+    {
+      "item": "SylvanFlute",
+      "qty": 1,
+      "chance": 1
+    },
+    {
+      "item": "PotionOfAgility",
+      "qty": 1,
+      "chance": 0.2
+    }
+  ]
+}

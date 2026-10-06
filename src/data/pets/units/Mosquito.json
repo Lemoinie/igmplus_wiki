@@ -1,0 +1,15 @@
+{
+  "id": "Mosquito",
+  "name": "Mosquito",
+  "family": "Insect",
+  "eggSprite": "egg_insect",
+  "abilitySlots": 2,
+  "sprite": "pet_mosquito",
+  "description": "A tiny, buzzing pest with translucent wings and a needle-sharp proboscis.",
+  "guaranteedAbilities": [
+    "Fighter",
+    "Barrier"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

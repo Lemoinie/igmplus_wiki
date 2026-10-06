@@ -1,0 +1,16 @@
+{
+  "id": "ShieldingCuirass",
+  "name": "Shielding Cuirass",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 1224,
+  "sprite": "shielding_cuirass",
+  "description": "Heavy armor enhanced with an endless source of magic power, to shield the user from external influences.",
+  "stats": {
+    "immunityToStatus": 0.3,
+    "maxHp": 300,
+    "constitution": 15
+  },
+  "notes": ""
+}

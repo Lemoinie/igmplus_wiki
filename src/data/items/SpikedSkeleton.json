@@ -1,0 +1,15 @@
+{
+  "id": "SpikedSkeleton",
+  "name": "Spiked Skeleton",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 0,
+  "sprite": "spiked_skeleton",
+  "description": "The skeleton of an undead monster, studded with very sharp spikes.",
+  "stats": {
+    "retaliationPhysicalDamage": 50,
+    "constitution": 8
+  },
+  "notes": ""
+}

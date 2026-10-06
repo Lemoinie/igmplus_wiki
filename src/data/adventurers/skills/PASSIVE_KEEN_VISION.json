@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_KEEN_VISION",
+  "name_key": "passive_keen_vision_name",
+  "desc_key": "passive_keen_vision_description",
+  "kind": "passive",
+  "name": "Keen Vision",
+  "description": "Attacks always hit the target"
+}

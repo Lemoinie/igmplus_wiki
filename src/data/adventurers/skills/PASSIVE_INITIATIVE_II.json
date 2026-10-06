@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INITIATIVE_II",
+  "name_key": "passive_initiative_ii_name",
+  "desc_key": "passive_initiative_ii_description",
+  "kind": "passive",
+  "name": "Initiative II",
+  "description": "This unit starts the fight first, and with a full mana bar"
+}

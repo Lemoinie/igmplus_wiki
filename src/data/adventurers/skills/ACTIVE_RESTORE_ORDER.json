@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_RESTORE_ORDER",
+  "name_key": "active_restore_order_name",
+  "desc_key": "active_restore_order_description",
+  "kind": "active",
+  "name": "Restore Order",
+  "description": "Deals 90% damage to all enemies"
+}

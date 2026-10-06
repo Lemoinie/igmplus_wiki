@@ -1,0 +1,14 @@
+{
+  "id": "LaroxianBoots",
+  "name": "Laroxian Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 447,
+  "sprite": "laroxian_boots",
+  "description": "Light and resistant boots woven from a magic infused cloth produced in Larox, and padded with a magical cloth.",
+  "stats": {
+    "dexterity": 30
+  },
+  "notes": ""
+}

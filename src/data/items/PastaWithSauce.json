@@ -1,0 +1,14 @@
+{
+  "id": "PastaWithSauce",
+  "name": "Pasta with Sauce",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 66,
+  "sprite": "pasta_with_sauce",
+  "description": "Long spaghetti derived from grains, a common food found in many towns and villages, coated in a bright red sauce.",
+  "stats": {
+    "feedPower": 173
+  },
+  "notes": ""
+}

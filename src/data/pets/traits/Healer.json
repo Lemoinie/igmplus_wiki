@@ -1,0 +1,6 @@
+{
+  "id": "Healer",
+  "name": "Healer",
+  "ability": "HEALER",
+  "description": "On allies turns, heals %s-%s HP."
+}

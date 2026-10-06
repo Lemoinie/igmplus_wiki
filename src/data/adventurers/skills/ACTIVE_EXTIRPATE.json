@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_EXTIRPATE",
+  "name_key": "active_extirpate_name",
+  "desc_key": "active_extirpate_description",
+  "kind": "active",
+  "name": "Extirpate",
+  "description": null
+}

@@ -1,0 +1,14 @@
+{
+  "id": "BlueShark",
+  "name": "Blue Shark",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 120,
+  "sprite": "blue_shark",
+  "description": "A hefty blue shark — a true feast for any pet.",
+  "stats": {
+    "feedPower": 60
+  },
+  "notes": ""
+}

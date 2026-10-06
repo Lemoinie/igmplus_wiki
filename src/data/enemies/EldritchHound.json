@@ -1,0 +1,31 @@
+{
+  "id": "EldritchHound",
+  "name": "Eldritch Hound",
+  "isBoss": false,
+  "sprite": "unit_eldritch_hound",
+  "stats": {
+    "hp": 1046,
+    "constitution": 22,
+    "intelligence": 1,
+    "dexterity": 128,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "178",
+    "max": "252"
+  },
+  "expGiven": 326,
+  "drops": [
+    {
+      "item": "BlackHide",
+      "qty": 1,
+      "chance": 34
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

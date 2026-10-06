@@ -1,0 +1,36 @@
+{
+  "id": "TrollWarrior",
+  "name": "Troll Warrior",
+  "isBoss": false,
+  "sprite": "unit_troll_warrior",
+  "stats": {
+    "hp": 820,
+    "constitution": 30,
+    "intelligence": 2,
+    "dexterity": 10,
+    "defense": 117,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "67",
+    "max": "78"
+  },
+  "expGiven": "Logger.SUMMON_SMOLDERING_TITAN",
+  "drops": [
+    {
+      "item": "TrollHide",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "FrostmetalOre",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "Blueberry",
+      "qty": 1,
+      "chance": 3
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "WickedTribute",
+  "name": "Wicked Tribute",
+  "isBoss": false,
+  "sprite": "unit_wicked_tribute",
+  "stats": {
+    "hp": 100,
+    "constitution": 2,
+    "intelligence": 400,
+    "dexterity": 32,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1",
+    "max": "1"
+  },
+  "expGiven": 850,
+  "drops": [
+    {
+      "item": "WickedSeal",
+      "qty": 1,
+      "chance": 0.3
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

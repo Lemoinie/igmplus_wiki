@@ -1,0 +1,16 @@
+{
+  "id": "InfinityHat",
+  "name": "Infinity Hat",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 15000,
+  "sprite": "infinity_hat",
+  "description": "\"This mysterious headgear came out of a crack in the fabric of space and time. It's both stylish and powerful.\"",
+  "stats": {
+    "maxHp": 60,
+    "intelligence": 35,
+    "criticalDamage": 0.25
+  },
+  "notes": "Rare Drop"
+}

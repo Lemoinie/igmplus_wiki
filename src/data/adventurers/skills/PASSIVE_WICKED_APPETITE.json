@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WICKED_APPETITE",
+  "name_key": "passive_wicked_appetite_name",
+  "desc_key": "passive_wicked_appetite_description",
+  "kind": "passive",
+  "name": "Wicked Appetite",
+  "description": "Damage increased by [Darkness]%. Attacks target the lowest health enemy."
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Imp",
+  "name": "Imp",
+  "isBoss": false,
+  "sprite": "unit_imp",
+  "stats": {
+    "hp": 440,
+    "constitution": 50,
+    "intelligence": 1,
+    "dexterity": 94,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "130",
+    "max": "180"
+  },
+  "expGiven": "Logger.ARCANE_SUPPRESSION",
+  "drops": [
+    {
+      "item": "SpellwovenHide",
+      "qty": 1,
+      "chance": 40
+    }
+  ]
+}

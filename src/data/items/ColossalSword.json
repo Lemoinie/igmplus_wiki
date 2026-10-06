@@ -1,0 +1,14 @@
+{
+  "id": "ColossalSword",
+  "name": "Colossal Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "colossal_sword",
+  "description": "The sword of a colossal titan, too heavy to be held by a common human.",
+  "stats": {
+    "constitution": 50
+  },
+  "notes": "Rare Drop"
+}

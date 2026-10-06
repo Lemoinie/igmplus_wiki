@@ -1,0 +1,15 @@
+{
+  "id": "UndeadCuirass",
+  "name": "Undead Cuirass",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 72,
+  "sprite": "undead_cuirass",
+  "description": "Heavy chest armor made from undead remains.",
+  "stats": {
+    "maxHp": 90,
+    "constitution": 3
+  },
+  "notes": ""
+}

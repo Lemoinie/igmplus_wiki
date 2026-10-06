@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ELEMENTAL_DUALITY",
+  "name_key": "passive_elemental_duality_name",
+  "desc_key": "passive_elemental_duality_description",
+  "kind": "passive",
+  "name": "Elemental Duality",
+  "description": "\"Attacks from this enemy FREEZE and set ABLAZE for 2 turns.\n\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn.\""
+}

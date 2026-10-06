@@ -1,0 +1,46 @@
+{
+  "id": "InsanePriest",
+  "name": "Insane Priest",
+  "isBoss": false,
+  "sprite": "unit_insane_priest",
+  "stats": {
+    "hp": 200,
+    "constitution": 12,
+    "intelligence": 30,
+    "dexterity": 12,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "40",
+    "max": "42"
+  },
+  "expGiven": 35,
+  "drops": [
+    {
+      "item": "SilkThread",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "GoldScraps",
+      "qty": 1,
+      "chance": 10
+    },
+    {
+      "item": "HolyWater",
+      "qty": 1,
+      "chance": 0.2
+    },
+    {
+      "item": "MitreHat",
+      "qty": 1,
+      "chance": 0.1
+    },
+    {
+      "item": "BlackOoze",
+      "qty": 1,
+      "chance": 20
+    }
+  ]
+}

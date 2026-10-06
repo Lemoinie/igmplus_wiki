@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_AURA_OF_LIGHT_I",
+  "name_key": "passive_aura_of_light_i_name",
+  "desc_key": "passive_aura_of_light_i_description",
+  "kind": "passive",
+  "name": "Aura of Light I",
+  "description": null
+}

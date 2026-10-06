@@ -1,0 +1,15 @@
+{
+  "id": "BlackIronArmor",
+  "name": "Black Iron Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 419,
+  "sprite": "black_iron_armor",
+  "description": "\"Very hard plates made with the pirate's Black Iron make this armor difficult to break.\"",
+  "stats": {
+    "maxHp": 150,
+    "constitution": 5
+  },
+  "notes": ""
+}

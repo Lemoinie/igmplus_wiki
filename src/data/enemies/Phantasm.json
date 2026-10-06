@@ -1,0 +1,26 @@
+{
+  "id": "Phantasm",
+  "name": "Phantasm",
+  "isBoss": false,
+  "sprite": "unit_phantasm",
+  "stats": {
+    "hp": 450,
+    "constitution": 22,
+    "intelligence": 165,
+    "dexterity": 500,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "999",
+    "max": "1000"
+  },
+  "expGiven": 450,
+  "drops": [
+    {
+      "item": "KaunianFabric",
+      "qty": 1,
+      "chance": 50
+    }
+  ]
+}

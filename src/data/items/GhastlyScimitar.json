@@ -1,0 +1,16 @@
+{
+  "id": "GhastlyScimitar",
+  "name": "Ghastly Scimitar",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 416,
+  "sprite": "ghastly_scimitar",
+  "description": "With a consciousness enhanced by undead spirits, this living sword reacts with heightened speed.",
+  "stats": {
+    "constitution": 16,
+    "magicDefense": 10,
+    "counterattack": 0.2
+  },
+  "notes": ""
+}

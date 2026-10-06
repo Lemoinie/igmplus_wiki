@@ -1,0 +1,26 @@
+{
+  "id": "DreamwroughtDragon",
+  "name": "Dreamwrought Dragon",
+  "isBoss": false,
+  "sprite": "unit_dreamwrought_dragon",
+  "stats": {
+    "hp": 12500,
+    "constitution": 315,
+    "intelligence": 100,
+    "dexterity": 400,
+    "defense": 10,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "900",
+    "max": "1150"
+  },
+  "expGiven": 550,
+  "drops": [
+    {
+      "item": "DreamwroughtHide",
+      "qty": 1,
+      "chance": 90
+    }
+  ]
+}

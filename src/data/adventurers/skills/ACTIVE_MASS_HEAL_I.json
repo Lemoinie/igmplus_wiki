@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_MASS_HEAL_I",
+  "name_key": "active_mass_heal_i_name",
+  "desc_key": "active_mass_heal_i_description",
+  "kind": "active",
+  "name": "Mass Heal",
+  "description": "Heals every ally for 100% damage"
+}

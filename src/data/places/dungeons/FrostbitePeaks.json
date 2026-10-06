@@ -1,0 +1,64 @@
+{
+  "id": "FrostbitePeaks",
+  "name": "Frostbite Peaks",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 54,
+  "sprite": "summary_frostbite_peaks",
+  "enemies": [
+    {
+      "id": "TrollWhelp",
+      "name": "TrollWhelp",
+      "rate": "17.2%",
+      "role": "Regular"
+    },
+    {
+      "id": "Troll",
+      "name": "Troll",
+      "rate": "13.7%",
+      "role": "Regular"
+    },
+    {
+      "id": "TrollWarrior",
+      "name": "TrollWarrior",
+      "rate": "6.2%",
+      "role": "Regular"
+    },
+    {
+      "id": "TrollShaman",
+      "name": "TrollShaman",
+      "rate": "4.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "SnowWyvern",
+      "name": "SnowWyvern",
+      "rate": "3.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "IceElemental",
+      "name": "IceElemental",
+      "rate": "3.0%",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "FrostCrystal",
+    "FrostmetalArmor",
+    "FrostmetalDagger",
+    "FrostmetalOre",
+    "FrostmetalSword",
+    "IceFiber",
+    "TrollHide",
+    "TrollskinJacket",
+    "WinterBoots",
+    "WinterCape",
+    "WinterGloves",
+    "WinterHelm",
+    "WinterShield",
+    "Winterwood",
+    "WinterwoodBow",
+    "WinterwoodStaff"
+  ]
+}

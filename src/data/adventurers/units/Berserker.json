@@ -1,0 +1,25 @@
+{
+  "id": "Berserker",
+  "name": "Berserker",
+  "category": "Outlander",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_berserker_hero",
+  "description": "A ferocious warrior fueled by unchecked battle frenzy.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 125,
+    "baseConstitution": 17,
+    "baseIntelligence": 10,
+    "baseDexterity": 3,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "SavageBerserker"
+  ]
+}

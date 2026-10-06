@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_GRAVITY_SHIFT",
+  "name_key": "active_gravity_shift_name",
+  "desc_key": "active_gravity_shift_description",
+  "kind": "active",
+  "name": "Gravity Shift",
+  "description": "Quickly changes its mass distribution to generate a wave that deals 50% damage to all enemies."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "MeatyMushroom",
+  "name": "Meaty Mushroom",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 5,
+  "sprite": "meaty_mushroom",
+  "description": "Soft and spongy with an earthy, mild flavor. Rarely found in the southern forests, where the damp climate sometimes allows for their growth.",
+  "stats": {
+    "feedPower": 22
+  },
+  "notes": ""
+}

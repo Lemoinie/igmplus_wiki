@@ -1,0 +1,14 @@
+{
+  "id": "SpellCompendium",
+  "name": "Spell Compendium",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 40,
+  "sprite": "spell_compendium",
+  "description": "A rare book given only to the most powerful Laroxian mages, contains all kinds of spells discovered by their people.",
+  "stats": {
+    "intelligence": 30
+  },
+  "notes": "Rare Drop"
+}

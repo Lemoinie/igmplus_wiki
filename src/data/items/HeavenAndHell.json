@@ -1,0 +1,14 @@
+{
+  "id": "HeavenAndHell",
+  "name": "Heaven and Hell",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 167,
+  "sprite": "heaven_and_hell",
+  "description": "The epitome of experimental, nouvelle cuisine. A taco using the hard Wyvern meat as filling, completed with the hottest sauce in the realms. A unique experience for sure, but definitely not for everyone.",
+  "stats": {
+    "feedPower": 362
+  },
+  "notes": ""
+}

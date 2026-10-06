@@ -1,0 +1,15 @@
+{
+  "id": "WinterBoots",
+  "name": "Winter Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 204,
+  "sprite": "winter_boots",
+  "description": "Extremely durable boots made with materials found in high altitudes. Confer extra regeneration to the wearer due to the Troll skin present in their weave.",
+  "stats": {
+    "dexterity": 18,
+    "regeneration": 4
+  },
+  "notes": ""
+}

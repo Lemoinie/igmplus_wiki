@@ -1,0 +1,15 @@
+{
+  "id": "TreeFrog",
+  "name": "Tree Frog",
+  "family": "Reptile",
+  "eggSprite": "egg_reptile",
+  "abilitySlots": 3,
+  "sprite": "pet_tree_frog",
+  "description": "A vibrant, bulbous-eyed amphibian clinging firmly to branches and catching insects in a flash.",
+  "guaranteedAbilities": [
+    "Savage",
+    "Opportunist"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Spices",
+  "name": "Spices",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 3,
+  "sprite": "spices",
+  "description": "Colorful and aromatic, while not able to sate hunger by themselves, they can be added to a lot of recipes to emphasize their taste and appearance.",
+  "stats": {
+    "feedPower": 1
+  },
+  "notes": ""
+}

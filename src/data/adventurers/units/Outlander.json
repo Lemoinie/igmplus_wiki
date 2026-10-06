@@ -1,0 +1,26 @@
+{
+  "id": "Outlander",
+  "name": "Outlander",
+  "category": "Outlander",
+  "tier": 1,
+  "maxLevel": 5,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_outlander",
+  "description": "A resilient warrior from the untamed borderlands, adept at surviving the wilderness.",
+  "stats": {
+    "maxLevel": 5,
+    "baseMaxHp": 35,
+    "baseConstitution": 8,
+    "baseIntelligence": 6,
+    "baseDexterity": 2,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Marauder",
+    "Heathen"
+  ]
+}

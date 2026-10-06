@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FLYING",
+  "name_key": "passive_flying_name",
+  "desc_key": "passive_flying_description",
+  "kind": "passive",
+  "name": "Flying",
+  "description": "\"Can't be hit by melee attacks or abilities.\""
+}

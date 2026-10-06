@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NIGHT_HUNTER",
+  "name_key": "passive_night_hunter_name",
+  "desc_key": "passive_night_hunter_description",
+  "kind": "passive",
+  "name": "Night Hunter",
+  "description": "This unit starts the fight first. Damage increased by [Darkness]%."
+}

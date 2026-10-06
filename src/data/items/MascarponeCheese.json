@@ -1,0 +1,14 @@
+{
+  "id": "MascarponeCheese",
+  "name": "Mascarpone Cheese",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 59,
+  "sprite": "mascarpone_cheese",
+  "description": "Smooth, creamy, and white with a rich, buttery texture. It has a mild, slightly sweet taste and a velvety consistency that melts easily.",
+  "stats": {
+    "feedPower": 143
+  },
+  "notes": ""
+}

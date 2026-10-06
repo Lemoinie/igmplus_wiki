@@ -1,0 +1,71 @@
+{
+  "id": "EternalBattlefield",
+  "name": "Eternal Battlefield",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 58,
+  "sprite": "summary_eternal_battlefield",
+  "enemies": [
+    {
+      "id": "Undead",
+      "name": "Undead",
+      "rate": "28.7%",
+      "role": "Regular"
+    },
+    {
+      "id": "UndeadArcher",
+      "name": "UndeadArcher",
+      "rate": "18.2%",
+      "role": "Regular"
+    },
+    {
+      "id": "DeathHound",
+      "name": "DeathHound",
+      "rate": "6.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "Abomination",
+      "name": "Abomination",
+      "rate": "3.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "UndeadWarlord",
+      "name": "UndeadWarlord",
+      "rate": "0.9%",
+      "role": "Regular"
+    },
+    {
+      "id": "Ghoul",
+      "name": "Ghoul",
+      "rate": "0.5%",
+      "role": "Regular"
+    },
+    {
+      "id": "WillOWisp",
+      "name": "WillOWisp",
+      "rate": "0.4%",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "BoneFragment",
+    "ElongatedBone",
+    "InfectedBlood",
+    "OrbOfEctoplasm",
+    "SharpRib",
+    "SpectralCloth",
+    "SpectralRobe",
+    "TatteredHide",
+    "UndeadCuirass",
+    "UndeadGloves",
+    "UndeadGreaves",
+    "UndeadHelm",
+    "UndeadJacket",
+    "UndeadKnife",
+    "UndeadShield",
+    "UndeadStaff",
+    "UndeadSword"
+  ]
+}

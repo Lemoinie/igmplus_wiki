@@ -1,0 +1,14 @@
+{
+  "id": "UpgradeShelter",
+  "name": "Upgrade: Shelter",
+  "type": "accessory",
+  "category": "Upgrade",
+  "rarity": null,
+  "price": 1,
+  "sprite": "upgrade_shelter",
+  "description": "\"Permanently increases Shelter's capacity by 1.\nLimited to one purchase.\nThis item will be consumed automatically upon buying it.\"",
+  "stats": {
+    "gemPrice": 500
+  },
+  "notes": ""
+}

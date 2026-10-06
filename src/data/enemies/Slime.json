@@ -1,0 +1,36 @@
+{
+  "id": "Slime",
+  "name": "Slime",
+  "isBoss": false,
+  "sprite": "unit_slime",
+  "stats": {
+    "hp": 130,
+    "constitution": 40,
+    "intelligence": 2,
+    "dexterity": 6,
+    "defense": 40,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "26",
+    "max": "35"
+  },
+  "expGiven": 24,
+  "drops": [
+    {
+      "item": "GreenSlime",
+      "qty": 1,
+      "chance": 65
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 2,
+      "chance": 20
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 3,
+      "chance": 5
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "DrakeRider",
+  "name": "Drake Rider",
+  "category": "Archer",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_drake_rider",
+  "description": "Only legendary riders could hope to ever tame a drake and learn how to ride it. This deadly duo will ignite the battlefield while hunting down the few survivors with deadly arrows.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 10,
+    "baseIntelligence": 16,
+    "baseDexterity": 32,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Incinerate",
+  "passiveSkill": "Rider V",
+  "promotesTo": [
+    "GoldenRider"
+  ]
+}

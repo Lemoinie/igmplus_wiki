@@ -1,0 +1,14 @@
+{
+  "id": "ShortCircuit",
+  "name": "Short Circuit",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 705,
+  "sprite": "short_circuit",
+  "description": "\"Able to reproduce electric magic without tapping into any magic source. Will be thrown at a random enemy at the end of the turn, dealing damage and having a small chance to STUN them.\nSTUN: the unit skips its turn.\"",
+  "stats": {
+    "dexterity": 25
+  },
+  "notes": ""
+}

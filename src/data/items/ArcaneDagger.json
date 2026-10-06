@@ -1,0 +1,16 @@
+{
+  "id": "ArcaneDagger",
+  "name": "Arcane Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 564,
+  "sprite": "arcane_dagger",
+  "description": "Exclusive blade gifted from the Seer to its assassins, able to pierce even the thickest steel.",
+  "stats": {
+    "intelligence": 24,
+    "dexterity": 12,
+    "constitution": 12
+  },
+  "notes": ""
+}

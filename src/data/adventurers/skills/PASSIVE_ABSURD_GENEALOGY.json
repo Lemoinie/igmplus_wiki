@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ABSURD_GENEALOGY",
+  "name_key": "passive_absurd_genealogy_name",
+  "desc_key": "passive_absurd_genealogy_description",
+  "kind": "passive",
+  "name": "Absurd Genealogy",
+  "description": "Cannot be hit by melee attacks. On death, 65% chance of coming back to life with full HP and mana, indefinitely."
+}

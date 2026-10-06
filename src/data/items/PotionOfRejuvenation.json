@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfRejuvenation",
+  "name": "Potion of Rejuvenation",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 26,
+  "sprite": "potion_of_rejuvenation",
+  "description": "\"Resets an adventurer to its base rank, preserving ascension status.\nThis potion should be used to correct mistakes when choosing a class branch. This is not a prestige mechanic, but an Adventurer reset.\"",
+  "stats": {},
+  "notes": ""
+}

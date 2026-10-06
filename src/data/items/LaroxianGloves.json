@@ -1,0 +1,15 @@
+{
+  "id": "LaroxianGloves",
+  "name": "Laroxian Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 393,
+  "sprite": "laroxian_gloves",
+  "description": "Light and resistant gloves woven from a magic infused cloth produced in Larox, and padded with a magical cloth.",
+  "stats": {
+    "constitution": 25,
+    "dexterity": 20
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "VampireDagger",
+  "name": "Vampire Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 999,
+  "sprite": "vampire_dagger",
+  "description": "With an extremely sharp blade, has been enhanced to draw energy from wounded enemies.",
+  "stats": {
+    "dexterity": 20,
+    "constitution": 20,
+    "lifesteal": 20
+  },
+  "notes": ""
+}

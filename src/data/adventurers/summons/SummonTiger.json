@@ -1,0 +1,23 @@
+{
+  "id": "SummonTiger",
+  "name": "Summoned Tiger",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 40,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_tiger",
+  "description": "A fierce jungle predator executing crushing ambushes against high-value targets.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 130,
+    "baseConstitution": 24,
+    "baseIntelligence": 10,
+    "baseDexterity": 24,
+    "baseDefense": 14,
+    "baseMagicDefense": 12
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

@@ -1,0 +1,15 @@
+{
+  "id": "ExoticRobe",
+  "name": "Exotic Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 1350,
+  "sprite": "exotic_robe",
+  "description": "Woven with Velvet imported by pirates, these robes are sought after by all the mages and nobles in the highest spheres.",
+  "stats": {
+    "maxHp": 50,
+    "intelligence": 15
+  },
+  "notes": ""
+}

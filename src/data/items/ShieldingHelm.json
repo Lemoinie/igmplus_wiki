@@ -1,0 +1,16 @@
+{
+  "id": "ShieldingHelm",
+  "name": "Shielding Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 797,
+  "sprite": "shielding_helm",
+  "description": "Helm enhanced with an endless source of magic power, to shield the user from external influences.",
+  "stats": {
+    "immunityToStatus": 0.25,
+    "maxHp": 200,
+    "constitution": 3
+  },
+  "notes": ""
+}

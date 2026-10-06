@@ -1,8 +1,10 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import TraitCard from '../../components/TraitCard.vue';
-import traitsData from '../../data/traits.json';
+import { getAllTraits } from '../../lib/data';
 import { base } from '../../lib/base';
+
+const traitsData = getAllTraits();
 ---
 
 <WikiLayout title="Adventurer Traits" description="Catalog of positive, negative, and unique traits in Idle Guild Master Modded.">

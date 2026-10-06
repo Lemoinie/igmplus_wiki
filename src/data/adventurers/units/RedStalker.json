@@ -1,0 +1,26 @@
+{
+  "id": "RedStalker",
+  "name": "Red Stalker",
+  "category": "Rogue",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_red_stalker",
+  "description": "A master of lethality, he waits for the best moment to strike with incredible precision inflicting a grievous wound that hardly heals.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 18,
+    "baseIntelligence": 8,
+    "baseDexterity": 18,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Thousand Cuts",
+  "passiveSkill": "Infiltrator",
+  "promotesTo": [
+    "MeatCarver"
+  ]
+}

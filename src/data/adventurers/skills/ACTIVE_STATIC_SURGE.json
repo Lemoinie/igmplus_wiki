@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_STATIC_SURGE",
+  "name_key": "active_static_surge_name",
+  "desc_key": "active_static_surge_description",
+  "kind": "active",
+  "name": "Static Surge",
+  "description": null
+}

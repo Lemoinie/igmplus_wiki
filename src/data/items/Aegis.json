@@ -1,0 +1,16 @@
+{
+  "id": "Aegis",
+  "name": "Aegis",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 150000,
+  "sprite": "aegis",
+  "description": "\"An ancient artifact of unknown origin, held by the heroes who wish to protect the weak. Will taunt enemies for 2 turns on hit.\nTAUNT: the taunting unit is always chosen as target\"",
+  "stats": {
+    "maxHp": 60,
+    "defense": 10,
+    "magicDefense": 10
+  },
+  "notes": ""
+}

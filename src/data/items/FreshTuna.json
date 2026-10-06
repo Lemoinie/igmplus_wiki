@@ -1,0 +1,14 @@
+{
+  "id": "FreshTuna",
+  "name": "Fresh Tuna",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 15,
+  "sprite": "fresh_tuna",
+  "description": "Deep red, firm flesh that’s meaty and dense. Valuable fish rarely found in the high seas, it has a clean, mild flavor with a slight hint of salt.",
+  "stats": {
+    "feedPower": 25
+  },
+  "notes": ""
+}

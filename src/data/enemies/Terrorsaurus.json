@@ -1,0 +1,41 @@
+{
+  "id": "Terrorsaurus",
+  "name": "Terrorsaurus",
+  "isBoss": false,
+  "sprite": "unit_terrorsaurus",
+  "stats": {
+    "hp": 2600,
+    "constitution": 94,
+    "intelligence": 1,
+    "dexterity": 12,
+    "defense": 10,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "400",
+    "max": "480"
+  },
+  "expGiven": 194,
+  "drops": [
+    {
+      "item": "AncientHide",
+      "qty": 1,
+      "chance": 39
+    },
+    {
+      "item": "TerrorsaurusFang",
+      "qty": 1,
+      "chance": 0.1
+    },
+    {
+      "item": "DinoRibs",
+      "qty": 1,
+      "chance": 6.7
+    },
+    {
+      "item": "ReptileEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

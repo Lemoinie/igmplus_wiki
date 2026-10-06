@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ICE_TOMB",
+  "name_key": "active_ice_tomb_name",
+  "desc_key": "active_ice_tomb_description",
+  "kind": "active",
+  "name": "Ice Tomb",
+  "description": "\"Deals 1000% damage to a random enemy. Then, FREEZES it for 10 turns.\n\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\""
+}

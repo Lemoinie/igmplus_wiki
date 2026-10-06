@@ -1,0 +1,14 @@
+{
+  "id": "Potato",
+  "name": "Potato",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "potato",
+  "description": "A starchy, oblong vegetable with a brown skin, considered a staple in the common villager diet. Its inside is soft, fluffy, and mildly earthy when cooked.",
+  "stats": {
+    "feedPower": 6
+  },
+  "notes": ""
+}

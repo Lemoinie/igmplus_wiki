@@ -1,0 +1,23 @@
+{
+  "id": "GuildRequestArea",
+  "name": "The Hunt",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_request",
+  "enemies": [
+    {
+      "id": "Shadow",
+      "name": "Shadow",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "VoidSlime",
+      "name": "VoidSlime",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

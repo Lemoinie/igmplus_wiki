@@ -1,0 +1,65 @@
+{
+  "id": "ObsidianMines",
+  "name": "Obsidian Mines",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 60,
+  "sprite": "summary_obsidian_mines",
+  "enemies": [
+    {
+      "id": "GiantSpider",
+      "name": "GiantSpider",
+      "rate": "25.2%",
+      "role": "Regular"
+    },
+    {
+      "id": "VampireBat",
+      "name": "VampireBat",
+      "rate": "15.6%",
+      "role": "Regular"
+    },
+    {
+      "id": "ObsidianGolem",
+      "name": "ObsidianGolem",
+      "rate": "10.1%",
+      "role": "Regular"
+    },
+    {
+      "id": "Beholder",
+      "name": "Beholder",
+      "rate": "6.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "LostMiner",
+      "name": "LostMiner",
+      "rate": "2.8%",
+      "role": "Regular"
+    },
+    {
+      "id": "PaleHermit",
+      "name": "PaleHermit",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "BatTooth",
+    "BatWing",
+    "CobwebBundle",
+    "EldritchTendril",
+    "NightwingJacket",
+    "ObsidianBow",
+    "ObsidianChunk",
+    "ObsidianCuirass",
+    "ObsidianDagger",
+    "ObsidianHelm",
+    "ObsidianScepter",
+    "ObsidianShield",
+    "ObsidianSword",
+    "SpiderBoots",
+    "SpiderGloves",
+    "SpiderLeg",
+    "SpiderRobe"
+  ]
+}

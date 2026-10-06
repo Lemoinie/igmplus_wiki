@@ -1,0 +1,46 @@
+{
+  "id": "ArchmageOfLarox",
+  "name": "Archmage of Larox",
+  "isBoss": false,
+  "sprite": "unit_archmage_of_larox",
+  "stats": {
+    "hp": 770,
+    "constitution": 4,
+    "intelligence": 245,
+    "dexterity": 34,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "180",
+    "max": "195"
+  },
+  "expGiven": 330,
+  "drops": [
+    {
+      "item": "LaroxianFabric",
+      "qty": 1,
+      "chance": 27.5
+    },
+    {
+      "item": "Pumpkin",
+      "qty": 1,
+      "chance": 3.5
+    },
+    {
+      "item": "SpellCompendium",
+      "qty": 1,
+      "chance": 0.3
+    },
+    {
+      "item": "RuneOfPower",
+      "qty": 1,
+      "chance": 0.3
+    },
+    {
+      "item": "ArchmageHat",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

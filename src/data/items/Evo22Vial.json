@@ -1,0 +1,12 @@
+{
+  "id": "Evo22Vial",
+  "name": "Evo-22 Vial",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10,
+  "sprite": "evo22_vial",
+  "description": "A refined celestial compound that stimulates biological evolution. Permanently upgrades an adventurer's common trait into its enhanced PLUS form (Brute+, Feral+, Bookworm+).",
+  "stats": {},
+  "notes": "Rare Drop"
+}

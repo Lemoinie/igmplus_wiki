@@ -1,0 +1,17 @@
+{
+  "id": "DjinnTonic",
+  "name": "Djinn Tonic",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 233,
+  "sprite": "djinn_tonic",
+  "description": "A vial filled with the spirit of a slain Djinn. You do sometimes wonder whether it enjoys being a tasty drink, but the remarkable benefits of a sip now and then easily overshadow any ethical concerns.",
+  "stats": {
+    "maxHp": 15,
+    "constitution": 4,
+    "intelligence": 4,
+    "immunityToStatus": 0.2
+  },
+  "notes": ""
+}

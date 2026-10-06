@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RIDER_V",
+  "name_key": "passive_rider_v_name",
+  "desc_key": "passive_rider_v_description",
+  "kind": "passive",
+  "name": "Rider V",
+  "description": "Every time this unit acts, the mount performs a ranged attack for 70 physical damage"
+}

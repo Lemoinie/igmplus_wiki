@@ -1,0 +1,15 @@
+{
+  "id": "Rockling",
+  "name": "Rockling",
+  "family": "Construct",
+  "eggSprite": "egg_construct",
+  "abilitySlots": 2,
+  "sprite": "pet_rockling",
+  "description": "A tiny, sentient clod of earth and pebbles rolling around enthusiastically.",
+  "guaranteedAbilities": [
+    "Magic",
+    "Bright"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_MARTYRS_PACT",
+  "name_key": "passive_martyrs_pact_name",
+  "desc_key": "passive_martyrs_pact_description",
+  "kind": "passive",
+  "name": "Martyr's Pact",
+  "description": null
+}

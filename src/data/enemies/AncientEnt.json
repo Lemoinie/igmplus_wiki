@@ -1,0 +1,41 @@
+{
+  "id": "AncientEnt",
+  "name": "Ancient Ent",
+  "isBoss": false,
+  "sprite": "unit_ancient_ent",
+  "stats": {
+    "hp": 3200,
+    "constitution": 130,
+    "intelligence": 48,
+    "dexterity": 27,
+    "defense": 10,
+    "magicDefense": 10
+  },
+  "damage": {
+    "min": "140",
+    "max": "195"
+  },
+  "expGiven": 240,
+  "drops": [
+    {
+      "item": "ElysianWood",
+      "qty": 3,
+      "chance": 46
+    },
+    {
+      "item": "LivingVine",
+      "qty": 1,
+      "chance": 8
+    },
+    {
+      "item": "Avocado",
+      "qty": 1,
+      "chance": 10
+    },
+    {
+      "item": "WoodenEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

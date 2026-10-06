@@ -1,0 +1,14 @@
+{
+  "id": "MoltenStaff",
+  "name": "Molten Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 285,
+  "sprite": "molten_staff",
+  "description": "A poorly contained fire magic engine allows mages to channel their powers through this staff, albeit inaccurately.",
+  "stats": {
+    "intelligence": 14
+  },
+  "notes": ""
+}

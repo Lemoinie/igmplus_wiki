@@ -1,0 +1,51 @@
+{
+  "id": "TrollShaman",
+  "name": "Troll Shaman",
+  "isBoss": false,
+  "sprite": "unit_troll_shaman",
+  "stats": {
+    "hp": 540,
+    "constitution": 10,
+    "intelligence": 2,
+    "dexterity": 4,
+    "defense": 40,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "73",
+    "max": "77"
+  },
+  "expGiven": "Logger.SUMMON_SMOLDERING_TITAN",
+  "drops": [
+    {
+      "item": "TrollHide",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "Winterwood",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "FrostmetalOre",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "IceFiber",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "Blueberry",
+      "qty": 1,
+      "chance": 4
+    },
+    {
+      "item": "PotionOfHealth",
+      "qty": 1,
+      "chance": 0.4
+    }
+  ]
+}

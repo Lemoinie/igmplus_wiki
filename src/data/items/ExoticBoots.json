@@ -1,0 +1,14 @@
+{
+  "id": "ExoticBoots",
+  "name": "Exotic Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 396,
+  "sprite": "exotic_boots",
+  "description": "Durable but comfortable boots made with soft velvet.",
+  "stats": {
+    "dexterity": 15
+  },
+  "notes": ""
+}

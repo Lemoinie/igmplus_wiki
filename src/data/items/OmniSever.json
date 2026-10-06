@@ -1,0 +1,15 @@
+{
+  "id": "OmniSever",
+  "name": "Omni-Sever",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 6800,
+  "sprite": "omni_sever",
+  "description": "A golden axe imbued with prismatic essence, wielding frost, flame and lightning at once.",
+  "stats": {
+    "constitution": 30,
+    "intelligence": 30
+  },
+  "notes": ""
+}

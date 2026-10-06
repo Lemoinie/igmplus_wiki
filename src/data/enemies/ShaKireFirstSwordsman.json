@@ -1,0 +1,26 @@
+{
+  "id": "ShaKireFirstSwordsman",
+  "name": "\"Sha'kire, First Swordsman\"",
+  "isBoss": false,
+  "sprite": "unit_sha_kire_first_swordsman",
+  "stats": {
+    "hp": 3500,
+    "constitution": 24,
+    "intelligence": 36,
+    "dexterity": 42,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "75",
+    "max": "104"
+  },
+  "expGiven": 600,
+  "drops": [
+    {
+      "item": "EyesOfTheSwordsman",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

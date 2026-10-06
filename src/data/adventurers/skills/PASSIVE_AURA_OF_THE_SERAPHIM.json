@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_AURA_OF_THE_SERAPHIM",
+  "name_key": "passive_aura_of_the_seraphim_name",
+  "desc_key": "passive_aura_of_the_seraphim_description",
+  "kind": "passive",
+  "name": "Aura of the Seraphim",
+  "description": null
+}

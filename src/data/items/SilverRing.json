@@ -1,0 +1,14 @@
+{
+  "id": "SilverRing",
+  "name": "Silver Ring",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 28,
+  "sprite": "silver_ring",
+  "description": "A simple ring made of silver.",
+  "stats": {
+    "defense": 1
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_CORROSIVE_BLOOD",
+  "name_key": "passive_corrosive_blood_name",
+  "desc_key": "passive_corrosive_blood_description",
+  "kind": "passive",
+  "name": "Corrosive Blood",
+  "description": null
+}

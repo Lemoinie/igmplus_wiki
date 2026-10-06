@@ -1,0 +1,25 @@
+{
+  "id": "AetherMage",
+  "name": "Aether Mage",
+  "category": "Apprentice",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_aether_mage",
+  "description": "Commands the ambient aether, punching through enemy defenses with refined arcane force.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 70,
+    "baseConstitution": 6,
+    "baseIntelligence": 36,
+    "baseDexterity": 10,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Arcane Blast Ii",
+  "passiveSkill": "Aether Resonance Iii",
+  "promotesTo": [
+    "AetherArchmage"
+  ]
+}

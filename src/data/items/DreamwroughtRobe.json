@@ -1,0 +1,15 @@
+{
+  "id": "DreamwroughtRobe",
+  "name": "Dreamwrought Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 690,
+  "sprite": "dreamwrought_robe",
+  "description": "An ethereal robe woven from cloth dreamt by an otherworldly being. Sacrifices resistance to grant a better intelligence improvement.",
+  "stats": {
+    "maxHp": 46,
+    "intelligence": 60
+  },
+  "notes": ""
+}

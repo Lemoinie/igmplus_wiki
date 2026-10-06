@@ -1,0 +1,15 @@
+{
+  "id": "Starvation",
+  "name": "Starvation",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 31500,
+  "sprite": "starvation",
+  "description": "Enhanced with a drop of blood from a legendary individual that sealed the fate of thousand worlds. Inflicts an inconceivable hunger on the wearer, but will allows them to prey even more efficiently on their enemies suffering.",
+  "stats": {
+    "intelligence": 5,
+    "lifesteal": 75
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "SeekingGlass",
+  "name": "Seeking Glass",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "seeking_glass",
+  "description": "A jewel once worn by the Slime King, ensures perfect accuracy under all conditions.",
+  "stats": {
+    "intelligence": 25
+  },
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BARRAGE_IV",
+  "name_key": "active_barrage_iv_name",
+  "desc_key": "active_barrage_iv_description",
+  "kind": "active",
+  "name": "Barrage IV",
+  "description": "Fires an arrow at 5 random enemies"
+}

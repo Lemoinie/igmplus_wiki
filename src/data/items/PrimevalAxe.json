@@ -1,0 +1,17 @@
+{
+  "id": "PrimevalAxe",
+  "name": "Primeval Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 2200,
+  "sprite": "primeval_axe",
+  "description": "An axe of elysian wood and primeval scale, radiating the fury of a forgotten age.",
+  "stats": {
+    "constitution": 35,
+    "defense": 15,
+    "magicDefense": 10,
+    "retaliationPhysicalDamage": 15
+  },
+  "notes": ""
+}

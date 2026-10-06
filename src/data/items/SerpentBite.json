@@ -1,0 +1,16 @@
+{
+  "id": "SerpentBite",
+  "name": "Serpent Bite",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "serpent_bite",
+  "description": "An eldritch artifact from another world. A tangible paradox allowing the holder to blend in more effectively with its surroundings, and allowing them to deal more damage the less they blend in.",
+  "stats": {
+    "threat": -4,
+    "constitution": 30,
+    "dexterity": 10
+  },
+  "notes": "Rare Drop"
+}

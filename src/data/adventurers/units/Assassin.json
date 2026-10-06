@@ -1,0 +1,27 @@
+{
+  "id": "Assassin",
+  "name": "Assassin",
+  "category": "Rogue",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_assassin",
+  "description": "Masters of deception, these individuals are often employed by noble families to discreetly remove troublesome opponents.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 90,
+    "baseConstitution": 15,
+    "baseIntelligence": 7,
+    "baseDexterity": 15,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Backstab Iii",
+  "passiveSkill": "Infiltrator",
+  "promotesTo": [
+    "SpireInitiate",
+    "RedStalker"
+  ]
+}

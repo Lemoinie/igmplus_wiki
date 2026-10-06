@@ -1,0 +1,15 @@
+{
+  "id": "CaptainsSword",
+  "name": "Captain's Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 8000,
+  "sprite": "captains_sword",
+  "description": "A regal blade once carried by the Imperial Captain. Swings with heavy, precise authority.",
+  "stats": {
+    "constitution": 25,
+    "dexterity": 8
+  },
+  "notes": "Rare Drop"
+}

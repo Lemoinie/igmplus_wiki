@@ -1,0 +1,14 @@
+{
+  "id": "Apple",
+  "name": "Apple",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "apple",
+  "description": "Round and glossy, with skin colors ranging from red to yellow. It’s crisp, juicy, and sweet, with a slight tartness.",
+  "stats": {
+    "feedPower": 4
+  },
+  "notes": ""
+}

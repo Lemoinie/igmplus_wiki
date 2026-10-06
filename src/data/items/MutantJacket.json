@@ -1,0 +1,16 @@
+{
+  "id": "MutantJacket",
+  "name": "Mutant Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 2280,
+  "sprite": "mutant_jacket",
+  "description": "Jacket made from a monster mutated through the use of alien technology. Extremely resistant at the cost of a lower mobility.",
+  "stats": {
+    "maxHp": 316,
+    "constitution": 6,
+    "dexterity": 6
+  },
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "MithrilSword",
+  "name": "Mithril Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 1020,
+  "sprite": "mithril_sword",
+  "description": "An incredibly light and resistant sword crafted from the legendary Mithril.",
+  "stats": {
+    "constitution": 33,
+    "dexterity": 11
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NATURAL_EMPATHY",
+  "name_key": "passive_natural_empathy_name",
+  "desc_key": "passive_natural_empathy_description",
+  "kind": "passive",
+  "name": "Natural Empathy",
+  "description": "\"Attacks heal the ally with the lowest health for 50% damage, and remove a negative condition. Prehistoric units will never attack this unit's allies.\""
+}

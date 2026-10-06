@@ -1,0 +1,14 @@
+{
+  "id": "UpgradeWorkshopQueue",
+  "name": "Upgrade: Workshop Queue",
+  "type": "accessory",
+  "category": "Upgrade",
+  "rarity": null,
+  "price": 1,
+  "sprite": "upgrade_workshop_queue",
+  "description": "\"Permanently increases Workshop's queue size by 1.\nLimited to one purchase.\nThis item will be consumed automatically upon buying it.\"",
+  "stats": {
+    "gemPrice": 500
+  },
+  "notes": ""
+}

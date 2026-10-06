@@ -1,0 +1,26 @@
+{
+  "id": "DreamwroughtForge",
+  "name": "Dreamwrought Forge",
+  "isBoss": false,
+  "sprite": "unit_dreamwrought_forge",
+  "stats": {
+    "hp": 16000,
+    "constitution": 700,
+    "intelligence": 250,
+    "dexterity": 5,
+    "defense": 10,
+    "magicDefense": 10
+  },
+  "damage": {
+    "min": "1000",
+    "max": "1150"
+  },
+  "expGiven": 625,
+  "drops": [
+    {
+      "item": "DreamwroughtSteel",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

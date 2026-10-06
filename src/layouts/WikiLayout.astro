@@ -10,15 +10,24 @@ interface Props {
 
 const { title = 'IGM+ Wiki', description = 'Idle Guild Master Mod Community Wiki' } = Astro.props;
 
-// Global search index built statically from structured JSON data
-import classesList from '../data/classes.json';
-import equipmentList from '../data/equipment.json';
-import traitsList from '../data/traits.json';
-import petsList from '../data/pets.json';
-import enemiesList from '../data/enemies.json';
-import dungeonsList from '../data/dungeons.json';
+// Global search index built statically from modular JSON data
+import {
+  getAllClasses,
+  getAllItems,
+  getAllTraits,
+  getAllPets,
+  getAllEnemies,
+  getAllPlaces,
+} from '../lib/data';
 
 import { base } from '../lib/base';
+
+const classesList = getAllClasses();
+const equipmentList = getAllItems();
+const traitsList = getAllTraits();
+const petsList = getAllPets();
+const enemiesList = getAllEnemies();
+const dungeonsList = getAllPlaces();
 
 const searchEntries = [
   ...classesList.map((c: any) => ({

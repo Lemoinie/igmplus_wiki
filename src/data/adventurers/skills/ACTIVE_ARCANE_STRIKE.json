@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ARCANE_STRIKE",
+  "name_key": "active_arcane_strike_name",
+  "desc_key": "active_arcane_strike_description",
+  "kind": "active",
+  "name": "Arcane Strike",
+  "description": "Deals 400% damage to a random enemy."
+}

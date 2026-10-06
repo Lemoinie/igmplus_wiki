@@ -1,0 +1,14 @@
+{
+  "id": "DeathRayScepter",
+  "name": "Death Ray Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 4281,
+  "sprite": "death_ray_scepter",
+  "description": "\"A staff relying on celestial technology that can focus its ray into a thin, but perfectly aimed ray that hits its target with unmatched precision. An unknown device, inorganic but capable of behaving as a living creature, has been integrated in the scepter's mechanism to unlock its true damaging potential.\"",
+  "stats": {
+    "intelligence": 40
+  },
+  "notes": ""
+}

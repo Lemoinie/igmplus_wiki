@@ -1,0 +1,14 @@
+{
+  "id": "DreamwroughtBoots",
+  "name": "Dreamwrought Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 789,
+  "sprite": "dreamwrought_boots",
+  "description": "\"Made from a material dreamt and materialized by an otherworldly entity, these boots display surprising properties that can't be replicated with ordinary matter.\"",
+  "stats": {
+    "dexterity": 42
+  },
+  "notes": ""
+}

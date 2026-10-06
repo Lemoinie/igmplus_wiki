@@ -1,0 +1,26 @@
+{
+  "id": "Knight",
+  "name": "Knight",
+  "category": "Footman",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_knight",
+  "description": "Renowned for their steadfast loyalty and honor, they provide a first line for their allies while overpowering their foes.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 95,
+    "baseConstitution": 16,
+    "baseIntelligence": 8,
+    "baseDexterity": 6,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Crushing Strike",
+  "passiveSkill": "Threatening I",
+  "promotesTo": [
+    "DarkKnight",
+    "HolyKnight"
+  ]
+}

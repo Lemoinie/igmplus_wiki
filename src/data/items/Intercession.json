@@ -1,0 +1,12 @@
+{
+  "id": "Intercession",
+  "name": "Intercession",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10,
+  "sprite": "intercession",
+  "description": "\"Allows an Adventurer to ascend without resetting their level.\n\nAscended adventurers gain access to Doctrines, increased base stats and an increased potion limits, but require twice the experience to level up.\"",
+  "stats": {},
+  "notes": ""
+}

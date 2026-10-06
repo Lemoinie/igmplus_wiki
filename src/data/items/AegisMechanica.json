@@ -1,0 +1,16 @@
+{
+  "id": "AegisMechanica",
+  "name": "Aegis Mechanica",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 234000,
+  "sprite": "aegis_mechanica",
+  "description": "\"Enhanced with mechanical parts taken by a mysterious, ancient creature. This unique artifact will change its shape by pressing a small trigger on its hilt, and is able to reach far away targets. Will taunt enemies for 2 turns on hit.\nTAUNT: the taunting unit is always chosen as target\"",
+  "stats": {
+    "maxHp": 85,
+    "defense": 10,
+    "magicDefense": 10
+  },
+  "notes": ""
+}

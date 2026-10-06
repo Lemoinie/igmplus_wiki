@@ -1,0 +1,14 @@
+{
+  "id": "Cookie",
+  "name": "Cookie",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 21,
+  "sprite": "cookie",
+  "description": "Golden and slightly crispy chocolate sweet with a soft, chewy center. A refined food destined to the breakfast of nobles, ambassadors and rich merchants.",
+  "stats": {
+    "feedPower": 29
+  },
+  "notes": ""
+}

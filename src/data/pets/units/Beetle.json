@@ -1,0 +1,15 @@
+{
+  "id": "Beetle",
+  "name": "Beetle",
+  "family": "Insect",
+  "eggSprite": "egg_insect",
+  "abilitySlots": 3,
+  "sprite": "pet_beetle",
+  "description": "A small, hard-shelled insect with sturdy legs and antennae. It scuttles with purpose, often gleaming in metallic colors.",
+  "guaranteedAbilities": [
+    "Fighter",
+    "Barrier"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

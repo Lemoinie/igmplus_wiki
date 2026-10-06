@@ -1,0 +1,25 @@
+{
+  "id": "Blight",
+  "name": "Blight",
+  "category": "Archer",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_blight",
+  "description": "Feared even by the most prepared armies, she can render a whole fortress defenseless with a few, accurate shots at its defending troops.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 10,
+    "baseIntelligence": 16,
+    "baseDexterity": 32,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Iii",
+  "passiveSkill": "Poisonous Arrows Iii",
+  "promotesTo": [
+    "Wraith"
+  ]
+}

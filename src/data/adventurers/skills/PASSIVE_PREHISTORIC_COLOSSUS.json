@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PREHISTORIC_COLOSSUS",
+  "name_key": "passive_prehistoric_colossus_name",
+  "desc_key": "passive_prehistoric_colossus_description",
+  "kind": "passive",
+  "name": "Prehistoric Colossus",
+  "description": "This unit has a 3× chance of being targeted by enemies. Attacks allies and enemies alike"
+}

@@ -1,0 +1,27 @@
+{
+  "id": "Necromancer",
+  "name": "Necromancer",
+  "category": "Apprentice",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_necromancer",
+  "description": "Gifted with the magic of decay, antithesis of all that is holy. The Necromancer spells corrupt the flesh of his enemies and condemns them to an afterlife of servitude.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 50,
+    "baseConstitution": 5,
+    "baseIntelligence": 25,
+    "baseDexterity": 7,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Curse I",
+  "passiveSkill": "Withering Touch",
+  "promotesTo": [
+    "Demilich",
+    "Unchained"
+  ]
+}

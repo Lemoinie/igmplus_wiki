@@ -56,8 +56,10 @@ igmplus_wiki/
 
 ## 🛠️ How to Add or Edit Game Content
 
+The wiki stores all data as individual, modular JSON files for ease of editing without dealing with massive monolithic files:
+
 ### 1. How to Add a New Item / Equipment
-Open [`src/data/equipment.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/data/equipment.json) and add an entry:
+Create a new file in `src/data/items/<Id>.json` (e.g. `src/data/items/MoonlightGreatsword.json`):
 
 ```json
 {
@@ -83,8 +85,9 @@ Open [`src/data/equipment.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki
 
 ---
 
-### 2. How to Add a New Class
-Open [`src/data/classes.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/data/classes.json) and add an entry:
+### 2. How to Add a New Class or Summon
+- **Adventurer Classes**: Create a new file in `src/data/adventurers/units/<Id>.json` (e.g. `src/data/adventurers/units/SpiritEngraver.json`).
+- **Summons**: Create a new file in `src/data/adventurers/summons/<Id>.json`.
 
 ```json
 {
@@ -115,29 +118,31 @@ Open [`src/data/classes.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/s
 ```
 * **Category**: One of `Footman`, `Apprentice`, `Archer`, `Rogue`, `Outlander`, or `Summon`.
 * **Weapon & Armor**: `sword`, `axe`, `bow`, `staff`, `dagger` / `heavy`, `medium`, `light`.
-* The class automatically appears in `/classes` under its category tab. Promotion links come from `promotesTo` / `promotesFrom`: a class with no parent becomes a tree root (T1 card); click the arrow on a card to show/hide its promotions. Click a class name to see stats and description.
+* The class automatically appears in `/classes` under its category tab. Promotion links come from `promotesTo` / `promotesFrom`.
 
 ---
 
 ### 3. How to Add a New Pet
-Open [`src/data/pets.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/data/pets.json) and add an entry:
+Create a new file in `src/data/pets/units/<Id>.json` (e.g. `src/data/pets/units/FrostDrake.json`):
 
 ```json
 {
   "id": "FrostDrake",
   "name": "Frost Drake",
-  "type": "beast",
-  "tier": 5,
+  "family": "Wild",
+  "eggSprite": "egg_wild",
+  "abilitySlots": 3,
   "sprite": "unit_snow_wyvern",
   "description": "A young ice drake born from frozen mountain peaks.",
-  "stats": {
-    "baseMaxHp": 350,
-    "baseConstitution": 35,
-    "baseDexterity": 40
-  },
-  "skills": ["Blizzard Breath", "Frostbite Aura"]
+  "guaranteedAbilities": ["Bloodthirsty", "Savage"]
 }
 ```
+
+- **Pet Traits**: Stored in `src/data/pets/traits/<Id>.json`.
+- **Adventurer Skills**: Stored in `src/data/adventurers/skills/<Id>.json`.
+- **Adventurer Traits**: Stored in `src/data/adventurers/traits/<Id>.json`.
+- **Dungeons & Raids**: Stored in `src/data/places/dungeons/`, `src/data/places/raids/`, and `src/data/places/guildactivities/`.
+- **Enemies**: Stored in `src/data/enemies/<Id>.json`.
 
 ---
 

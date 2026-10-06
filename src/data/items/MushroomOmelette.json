@@ -1,0 +1,14 @@
+{
+  "id": "MushroomOmelette",
+  "name": "Mushroom Omelette",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 17,
+  "sprite": "mushroom_omelette",
+  "description": "A fluffy, golden omelette filled with tender mushrooms. It’s soft and savory, with a rich flavor and a slightly creamy texture.",
+  "stats": {
+    "feedPower": 41
+  },
+  "notes": ""
+}

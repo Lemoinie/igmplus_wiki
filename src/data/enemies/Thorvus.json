@@ -1,0 +1,36 @@
+{
+  "id": "Thorvus",
+  "name": "Thorvus",
+  "isBoss": true,
+  "sprite": "unit_thorvus",
+  "stats": {
+    "hp": 4450,
+    "constitution": 14,
+    "intelligence": 68,
+    "dexterity": 20,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "168",
+    "max": "176"
+  },
+  "expGiven": 500,
+  "drops": [
+    {
+      "item": "EternalHunger",
+      "qty": 1,
+      "chance": 10
+    },
+    {
+      "item": "ElixirOfLearning",
+      "qty": 1,
+      "chance": 2
+    },
+    {
+      "item": "PotionOfMagicDefense",
+      "qty": 1,
+      "chance": 10
+    }
+  ]
+}

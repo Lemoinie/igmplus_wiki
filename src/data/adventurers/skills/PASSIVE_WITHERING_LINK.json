@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WITHERING_LINK",
+  "name_key": "passive_withering_link_name",
+  "desc_key": "passive_withering_link_description",
+  "kind": "passive",
+  "name": "Withering Link",
+  "description": "Dealing damage heals the unit and his summoned minion for half the amount"
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_REGENERATION_I",
+  "name_key": "passive_regeneration_i_name",
+  "desc_key": "passive_regeneration_i_description",
+  "kind": "passive",
+  "name": "Regeneration I",
+  "description": "Regenerates 15 HP per turn"
+}

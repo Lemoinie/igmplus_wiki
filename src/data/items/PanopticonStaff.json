@@ -1,0 +1,15 @@
+{
+  "id": "PanopticonStaff",
+  "name": "Panopticon Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 642,
+  "sprite": "panopticon_staff",
+  "description": "\"Aligned Beholder irises allows for the dispersion of light from the caster's spells to be focused with a constructive interference, producing a large amount of light.\"",
+  "stats": {
+    "intelligence": 32,
+    "darknessReduction": 16
+  },
+  "notes": ""
+}

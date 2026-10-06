@@ -1,0 +1,27 @@
+{
+  "id": "Adept",
+  "name": "Adept",
+  "category": "Apprentice",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_adept",
+  "description": "A novice who just started to grasp the potential of his gift. His limited knowledge undermines the control over his magic.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 25,
+    "baseConstitution": 3,
+    "baseIntelligence": 15,
+    "baseDexterity": 5,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Energy Burst Ii",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "FireWizard",
+    "DarkSorcerer",
+    "Arcanist"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Fury",
+  "name": "Fury",
+  "category": "Archer",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_fury",
+  "description": "With a rare mastery of the bow, she makes death rain on the battlefield in the form of the deadliest of arrows.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 8,
+    "baseIntelligence": 12,
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Iv",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": [
+    "Hailstorm"
+  ]
+}

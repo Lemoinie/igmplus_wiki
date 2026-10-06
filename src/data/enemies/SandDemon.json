@@ -1,0 +1,26 @@
+{
+  "id": "SandDemon",
+  "name": "Sand Demon",
+  "isBoss": false,
+  "sprite": "unit_sand_demon",
+  "stats": {
+    "hp": 950,
+    "constitution": 46,
+    "intelligence": 2,
+    "dexterity": 16,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "30",
+    "max": "46"
+  },
+  "expGiven": 36,
+  "drops": [
+    {
+      "item": "MetamorphicSand",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

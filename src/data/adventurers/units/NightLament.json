@@ -1,0 +1,24 @@
+{
+  "id": "NightLament",
+  "name": "Night Lament",
+  "category": "Rogue",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_night_lament",
+  "description": "Halfway between mortal and divine, entire cults were born to worship this force of death. Its presence in the darkness is revealed only by the laments of its victims.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 30,
+    "baseIntelligence": 12,
+    "baseDexterity": 30,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "darknessDamageAmplification": 0.02
+  },
+  "activeSkill": "Umbral Strike Iii",
+  "passiveSkill": "Night Vision Iv",
+  "promotesTo": []
+}

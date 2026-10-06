@@ -1,0 +1,17 @@
+{
+  "id": "DivineLarvae",
+  "name": "Divine Larvae",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 26130,
+  "sprite": "divine_larvae",
+  "description": "Fed with the flesh of a nightmare beyond comprehension, the new shell of the Hidden God transformed once more, inching closer to its final form.",
+  "stats": {
+    "constitution": 25,
+    "dexterity": 25,
+    "intelligence": 25,
+    "immunityToStatus": 1
+  },
+  "notes": ""
+}

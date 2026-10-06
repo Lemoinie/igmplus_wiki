@@ -1,0 +1,14 @@
+{
+  "id": "CelestialShield",
+  "name": "Celestial Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 473,
+  "sprite": "celestial_shield",
+  "description": "Shield crafted from a metal not from this world. Offers higher standards of protection than any alloy made from ordinary metals.",
+  "stats": {
+    "constitution": 27
+  },
+  "notes": ""
+}

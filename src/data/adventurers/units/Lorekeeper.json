@@ -1,0 +1,25 @@
+{
+  "id": "Lorekeeper",
+  "name": "Lorekeeper",
+  "category": "Rogue",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_lorekeeper",
+  "description": "The stories known by this keeper of ancient wisdom are almost endless. Drawing upon myths and legends, he channels forgotten magic through his instrument notes.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 19,
+    "baseIntelligence": 20,
+    "baseDexterity": 19,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Petrifying Melody",
+  "passiveSkill": "Inspiring Iii",
+  "promotesTo": [
+    "HeavenlyCantor"
+  ]
+}

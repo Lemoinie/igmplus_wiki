@@ -1,0 +1,26 @@
+{
+  "id": "WingedRay",
+  "name": "Winged Ray",
+  "isBoss": false,
+  "sprite": "winged_ray",
+  "stats": {
+    "hp": 45,
+    "constitution": 12,
+    "intelligence": 5,
+    "dexterity": 160,
+    "defense": 5,
+    "magicDefense": 5
+  },
+  "damage": {
+    "min": "2",
+    "max": "3"
+  },
+  "expGiven": 20,
+  "drops": [
+    {
+      "item": "WingedRay",
+      "qty": 1,
+      "chance": 65
+    }
+  ]
+}

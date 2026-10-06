@@ -1,0 +1,26 @@
+{
+  "id": "NightBlade",
+  "name": "Night Blade",
+  "category": "Rogue",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_night_blade",
+  "description": "He adapted to darkness like a nocturnal animal. Campfire stories about them can make the night uneasy for any exploration team in foreign lands.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 18,
+    "baseIntelligence": 8,
+    "baseDexterity": 18,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "darknessDamageAmplification": 0.01
+  },
+  "activeSkill": "Umbral Strike I",
+  "passiveSkill": "Night Vision Ii",
+  "promotesTo": [
+    "NightSpecter"
+  ]
+}

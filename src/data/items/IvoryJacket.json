@@ -1,0 +1,17 @@
+{
+  "id": "IvoryJacket",
+  "name": "Ivory Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 678,
+  "sprite": "ivory_jacket",
+  "description": "Belt jacket enhanced with precious Ivory.",
+  "stats": {
+    "maxHp": 90,
+    "constitution": 8,
+    "dexterity": 4,
+    "criticalChance": 0.12
+  },
+  "notes": ""
+}

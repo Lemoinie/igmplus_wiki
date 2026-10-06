@@ -1,0 +1,15 @@
+{
+  "id": "ThingFromTheAbyss",
+  "name": "Thing from the Abyss",
+  "family": "Esoteric",
+  "eggSprite": "egg_esoteric",
+  "abilitySlots": 4,
+  "sprite": "pet_thing_from_the_abyss",
+  "description": "An enigmatic eldritch entity coalesced from the deep void.",
+  "guaranteedAbilities": [
+    "Teacher",
+    "Drops"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "UndeadGloves",
+  "name": "Undead Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 75,
+  "sprite": "undead_gloves",
+  "description": "Gloves made with undead remains. A little too sticky, but allows for a good range of movements.",
+  "stats": {
+    "constitution": 7,
+    "dexterity": 6
+  },
+  "notes": ""
+}

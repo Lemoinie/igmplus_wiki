@@ -1,0 +1,25 @@
+{
+  "id": "HeavenlyCantor",
+  "name": "Heavenly Cantor",
+  "category": "Rogue",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_heavenly_cantor",
+  "description": "A divine musician able to change the fate of a war through his instrument. Not only he will empower his allies, but through a uniquely crafted music, he will make them immune to pain.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 21,
+    "baseIntelligence": 23,
+    "baseDexterity": 21,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Petrifying Melody",
+  "passiveSkill": "Exalting I",
+  "promotesTo": [
+    "Eidolon"
+  ]
+}

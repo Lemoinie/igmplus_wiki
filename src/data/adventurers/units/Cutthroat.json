@@ -1,0 +1,25 @@
+{
+  "id": "Cutthroat",
+  "name": "Cutthroat",
+  "category": "Rogue",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_cuttroath",
+  "description": "Strong and nimble, he stealthily closes in on unsuspecting targets to strike them with considerable force.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 65,
+    "baseConstitution": 12,
+    "baseIntelligence": 6,
+    "baseDexterity": 12,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Backstab Ii",
+  "passiveSkill": "Saboteur",
+  "promotesTo": [
+    "Assassin"
+  ]
+}

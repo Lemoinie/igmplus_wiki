@@ -1,0 +1,36 @@
+{
+  "id": "ShahuriWarrior",
+  "name": "\"Sha'huri Warrior\"",
+  "isBoss": false,
+  "sprite": "unit_shahuri_warrior",
+  "stats": {
+    "hp": 145,
+    "constitution": 12,
+    "intelligence": 8,
+    "dexterity": 5,
+    "defense": 20,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "6",
+    "max": "8"
+  },
+  "expGiven": 30,
+  "drops": [
+    {
+      "item": "ScrapMetal",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "Pineapple",
+      "qty": 1,
+      "chance": 1
+    },
+    {
+      "item": "RecurveBlade",
+      "qty": 1,
+      "chance": 3
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "GoldenArmor",
+  "name": "Golden Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 552,
+  "sprite": "golden_armor",
+  "description": "Standard, high quality equipment issued to the Empire Army soldiers.",
+  "stats": {
+    "maxHp": 120,
+    "constitution": 4
+  },
+  "notes": ""
+}

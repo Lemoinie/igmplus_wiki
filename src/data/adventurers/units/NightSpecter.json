@@ -1,0 +1,26 @@
+{
+  "id": "NightSpecter",
+  "name": "Night Specter",
+  "category": "Rogue",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_night_specter",
+  "description": "\"Blending seamlessly with the night's terrain, in the cover of darkness, no human stands a chance against his ambush.\"",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 21,
+    "baseIntelligence": 9,
+    "baseDexterity": 21,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "darknessDamageAmplification": 0.015
+  },
+  "activeSkill": "Umbral Strike I",
+  "passiveSkill": "Night Vision Iii",
+  "promotesTo": [
+    "NightTerror"
+  ]
+}

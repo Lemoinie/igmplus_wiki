@@ -1,0 +1,16 @@
+{
+  "id": "FleetfootGloves",
+  "name": "Fleetfoot Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1031,
+  "sprite": "fleetfoot_gloves",
+  "description": "Gloves made with a textile material that can magically reduce the wearer weight, enhancing its agility.",
+  "stats": {
+    "flatDodgeChance": 0.16,
+    "constitution": 10,
+    "dexterity": 12
+  },
+  "notes": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "TheMachine",
+  "name": "The Machine",
+  "isBoss": true,
+  "sprite": "unit_the_machine",
+  "stats": {
+    "hp": 42500,
+    "constitution": 100,
+    "intelligence": 100,
+    "dexterity": 100,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1",
+    "max": "9999"
+  },
+  "expGiven": 20000,
+  "drops": [
+    {
+      "item": "MysteriousCog",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

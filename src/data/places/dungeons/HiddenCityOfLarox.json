@@ -1,0 +1,64 @@
+{
+  "id": "HiddenCityOfLarox",
+  "name": "Hidden City of Larox",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 51.4,
+  "sprite": "summary_hidden_city_of_larox",
+  "enemies": [
+    {
+      "id": "MagicArmor",
+      "name": "MagicArmor",
+      "rate": "18.5%",
+      "role": "Regular"
+    },
+    {
+      "id": "Imp",
+      "name": "Imp",
+      "rate": "12.8%",
+      "role": "Regular"
+    },
+    {
+      "id": "WizardOfLarox",
+      "name": "WizardOfLarox",
+      "rate": "7.1%",
+      "role": "Regular"
+    },
+    {
+      "id": "NexusResearcher",
+      "name": "NexusResearcher",
+      "rate": "6.9%",
+      "role": "Regular"
+    },
+    {
+      "id": "ArchmageOfLarox",
+      "name": "ArchmageOfLarox",
+      "rate": "0.6%",
+      "role": "Regular"
+    },
+    {
+      "id": "WickedTribute",
+      "name": "WickedTribute",
+      "rate": "0.6%",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "AnimatedBow",
+    "AnimatedBuckler",
+    "AnimatedCuirass",
+    "AnimatedDagger",
+    "AnimatedHelm",
+    "AnimatedScraps",
+    "AnimatedStaff",
+    "AnimatedSword",
+    "LaroxianBoots",
+    "LaroxianFabric",
+    "LaroxianGloves",
+    "LaroxianRobe",
+    "SpellwovenHide",
+    "SpellwovenJacket",
+    "UnstableGem",
+    "VeilBreaker"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_STOMP",
+  "name_key": "active_stomp_name",
+  "desc_key": "active_stomp_description",
+  "kind": "active",
+  "name": "Stomp",
+  "description": "\"Stomps the ground, dealing damage to all enemies and stunning them for 1 turn\n\nSTUN: the unit skips its turn.\""
+}

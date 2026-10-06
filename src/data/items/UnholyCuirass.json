@@ -1,0 +1,16 @@
+{
+  "id": "UnholyCuirass",
+  "name": "Unholy Cuirass",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 1607,
+  "sprite": "unholy_cuirass",
+  "description": "The malignant aura surrounding this armor will harm any enemies daring to enter its range.",
+  "stats": {
+    "maxHp": 230,
+    "constitution": 8,
+    "retaliationMagicalDamage": 15
+  },
+  "notes": ""
+}

@@ -1,0 +1,59 @@
+{
+  "id": "AncientGraveDigging",
+  "name": "Ancient Grave Digging",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_ancient_grave_digging",
+  "enemies": [
+    {
+      "id": "Abomination",
+      "name": "Abomination",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "DeathHound",
+      "name": "DeathHound",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "KabarTheRotten",
+      "name": "KabarTheRotten",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Necrolith",
+      "name": "Necrolith",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Undead",
+      "name": "Undead",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "UndeadArcher",
+      "name": "UndeadArcher",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "UndeadGeneral",
+      "name": "UndeadGeneral",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "UndeadWarlord",
+      "name": "UndeadWarlord",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

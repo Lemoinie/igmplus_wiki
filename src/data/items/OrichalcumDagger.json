@@ -1,0 +1,15 @@
+{
+  "id": "OrichalcumDagger",
+  "name": "Orichalcum Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 1260,
+  "sprite": "orichalcum_dagger",
+  "description": "An extremely sharp blade crafted from an unbreakable metal from another world.",
+  "stats": {
+    "constitution": 39,
+    "dexterity": 39
+  },
+  "notes": ""
+}

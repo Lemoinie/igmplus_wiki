@@ -1,0 +1,64 @@
+{
+  "id": "LostLands",
+  "name": "Lost Lands",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 31.2,
+  "sprite": "summary_lost_lands",
+  "enemies": [
+    {
+      "id": "Berserker",
+      "name": "Berserker",
+      "rate": "9.1%",
+      "role": "Regular"
+    },
+    {
+      "id": "Pterodactyl",
+      "name": "Pterodactyl",
+      "rate": "7.4%",
+      "role": "Regular"
+    },
+    {
+      "id": "Terrorsaurus",
+      "name": "Terrorsaurus",
+      "rate": "6.1%",
+      "role": "Regular"
+    },
+    {
+      "id": "StoneShaman",
+      "name": "StoneShaman",
+      "rate": "5.6%",
+      "role": "Regular"
+    },
+    {
+      "id": "AmanitaObscura",
+      "name": "AmanitaObscura",
+      "rate": "3.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "SmolderingTitan",
+      "name": "SmolderingTitan",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "AncientArmor",
+    "AncientBoots",
+    "AncientGloves",
+    "AncientHide",
+    "AncientJacket",
+    "AncientMembrane",
+    "AncientRobe",
+    "Diamond",
+    "Kindlequartz",
+    "Mithril",
+    "MithrilBow",
+    "MithrilDagger",
+    "MithrilHelm",
+    "MithrilShield",
+    "MithrilSword",
+    "PoisonousFlesh"
+  ]
+}

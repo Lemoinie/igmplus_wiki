@@ -1,0 +1,14 @@
+{
+  "id": "Algae",
+  "name": "Algae",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "algae",
+  "description": "\"Thin, greenish-brown plant that lives underwater. Its taste is salty and briny, and it's used mostly for exotic recipe typical of seaside settlements.\"",
+  "stats": {
+    "feedPower": 1
+  },
+  "notes": ""
+}

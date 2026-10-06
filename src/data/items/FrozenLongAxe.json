@@ -1,0 +1,15 @@
+{
+  "id": "FrozenLongAxe",
+  "name": "Frozen Long Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 1450,
+  "sprite": "frozen_long_axe",
+  "description": "A long axe sheathed in rime, freezing whatever it strikes.",
+  "stats": {
+    "constitution": 5,
+    "intelligence": 15
+  },
+  "notes": ""
+}

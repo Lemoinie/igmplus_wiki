@@ -1,0 +1,14 @@
+{
+  "id": "Coffee",
+  "name": "Coffee",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 15,
+  "sprite": "coffee",
+  "description": "Deep brown liquid with a strong, earthy aroma. Nutritional content is close to zero, but allows for cooking delicious recipes.",
+  "stats": {
+    "feedPower": 1
+  },
+  "notes": ""
+}

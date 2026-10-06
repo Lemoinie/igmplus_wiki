@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BARRAGE_I",
+  "name_key": "active_barrage_i_name",
+  "desc_key": "active_barrage_i_description",
+  "kind": "active",
+  "name": "Barrage",
+  "description": "Fires an arrow at 2 random enemies"
+}

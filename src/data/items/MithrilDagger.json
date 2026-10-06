@@ -1,0 +1,15 @@
+{
+  "id": "MithrilDagger",
+  "name": "Mithril Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 996,
+  "sprite": "mithril_dagger",
+  "description": "An incredibly light and resistant dagger crafted from the legendary Mithril.",
+  "stats": {
+    "constitution": 33,
+    "dexterity": 33
+  },
+  "notes": ""
+}

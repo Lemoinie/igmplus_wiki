@@ -1,0 +1,15 @@
+{
+  "id": "Stick",
+  "name": "Stick",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 0,
+  "sprite": "stick",
+  "description": "A crude wooden branch, barely shaped into a weapon. Every adventurer starts with one.",
+  "stats": {
+    "constitution": 1,
+    "intelligence": 1
+  },
+  "notes": ""
+}

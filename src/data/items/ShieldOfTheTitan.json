@@ -1,0 +1,17 @@
+{
+  "id": "ShieldOfTheTitan",
+  "name": "Shield of the Titan",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 2700,
+  "sprite": "shield_of_the_titan",
+  "description": "An unbreakable shield of unknown making. Forces the holder to feel the sorrow the failed titans in the halls felt, attracting the attention of the surrounding enemies.",
+  "stats": {
+    "constitution": 16,
+    "defense": 5,
+    "magicDefense": 5,
+    "threat": 1
+  },
+  "notes": ""
+}

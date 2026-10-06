@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BLIND_RAGE",
+  "name_key": "passive_blind_rage_name",
+  "desc_key": "passive_blind_rage_description",
+  "kind": "passive",
+  "name": "Blind Rage",
+  "description": "100% Critical Chance. Attacks three times per turn. Immunity to STUN, PETRIFY."
+}

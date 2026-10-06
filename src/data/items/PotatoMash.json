@@ -1,0 +1,14 @@
+{
+  "id": "PotatoMash",
+  "name": "Potato Mash",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 9,
+  "sprite": "potato_mash",
+  "description": "\"Smooth, creamy mashed potatoes with a buttery flavor. It's a simple dish enjoyed by every social class in the Realms.\"",
+  "stats": {
+    "feedPower": 27
+  },
+  "notes": ""
+}

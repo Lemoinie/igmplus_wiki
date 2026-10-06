@@ -1,0 +1,14 @@
+{
+  "id": "StrawberrySmoothie",
+  "name": "Strawberry Smoothie",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 38,
+  "sprite": "strawberry_smoothie",
+  "description": "A pink, creamy drink bursting with sweet, juicy strawberries. A common, albeit expensive recipe before the corruption struck, when the southern forests creatures were shy and peaceful.",
+  "stats": {
+    "feedPower": 102
+  },
+  "notes": ""
+}

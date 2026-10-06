@@ -1,0 +1,14 @@
+{
+  "id": "GlazedDonut",
+  "name": "Glazed Donut",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 45,
+  "sprite": "glazed_donut",
+  "description": "A soft, fluffy ring of dough coated in a glossy, sugary glaze. Popular among the north-eastern settlers, the exact recipe is not known.",
+  "stats": {
+    "feedPower": 600
+  },
+  "notes": ""
+}

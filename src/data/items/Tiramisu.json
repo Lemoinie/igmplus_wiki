@@ -1,0 +1,14 @@
+{
+  "id": "Tiramisu",
+  "name": "Tiramisù",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 426,
+  "sprite": "tiramisu",
+  "description": "\"A layered dessert with creamy mascarpone and espresso-soaked cookies. It has a smooth and sweet taste, and it's extremely nutritious.\"",
+  "stats": {
+    "feedPower": 1107
+  },
+  "notes": ""
+}

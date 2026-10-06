@@ -1,0 +1,15 @@
+{
+  "id": "WoodenBow",
+  "name": "Wooden Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 11,
+  "sprite": "wooden_bow",
+  "description": "A simple bow made of flexible wood",
+  "stats": {
+    "constitution": 1,
+    "dexterity": 3
+  },
+  "notes": ""
+}

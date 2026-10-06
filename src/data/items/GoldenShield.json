@@ -1,0 +1,14 @@
+{
+  "id": "GoldenShield",
+  "name": "Golden Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 414,
+  "sprite": "golden_shield",
+  "description": "Shield made of gold, worn by the Imperial Army infantrymen.",
+  "stats": {
+    "constitution": 12
+  },
+  "notes": ""
+}

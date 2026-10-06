@@ -1,0 +1,41 @@
+{
+  "id": "FrozenSlime",
+  "name": "Frozen Slime",
+  "isBoss": false,
+  "sprite": "unit_frozen_slime",
+  "stats": {
+    "hp": 100,
+    "constitution": 40,
+    "intelligence": 2,
+    "dexterity": 6,
+    "defense": 40,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "26",
+    "max": "35"
+  },
+  "expGiven": 30,
+  "drops": [
+    {
+      "item": "GreenSlime",
+      "qty": 1,
+      "chance": 53
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 2,
+      "chance": 20
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 3,
+      "chance": 5
+    },
+    {
+      "item": "PotionOfImmunity",
+      "qty": 1,
+      "chance": 10
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_DISSOLVE_BY_DECREE",
+  "name_key": "passive_dissolve_by_decree_name",
+  "desc_key": "passive_dissolve_by_decree_description",
+  "kind": "passive",
+  "name": "Dissolve by decree",
+  "description": null
+}

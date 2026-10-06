@@ -1,0 +1,41 @@
+{
+  "id": "ImperialMage",
+  "name": "Imperial Mage",
+  "isBoss": false,
+  "sprite": "unit_imperial_mage",
+  "stats": {
+    "hp": 300,
+    "constitution": 15,
+    "intelligence": 40,
+    "dexterity": 20,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "26",
+    "max": "29"
+  },
+  "expGiven": 92,
+  "drops": [
+    {
+      "item": "GoldScraps",
+      "qty": 1,
+      "chance": 40
+    },
+    {
+      "item": "CorruptedStaff",
+      "qty": 1,
+      "chance": 0.1
+    },
+    {
+      "item": "PotionOfIntelligence",
+      "qty": 1,
+      "chance": 0.4
+    },
+    {
+      "item": "BlackOoze",
+      "qty": 1,
+      "chance": 20
+    }
+  ]
+}

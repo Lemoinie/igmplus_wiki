@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfClumsiness",
+  "name": "Potion of Clumsiness",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10000,
+  "sprite": "potion_of_clumsiness",
+  "description": "A liquid brewed through unknown means. Will reset the amount of Potions of Agility drank by an adventurer to zero. This cannot be undone.",
+  "stats": {},
+  "notes": ""
+}

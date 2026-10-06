@@ -1,0 +1,25 @@
+{
+  "id": "WeaselTamer",
+  "name": "Weasel Tamer",
+  "category": "Outlander",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_weasel_tamer",
+  "description": "Partners with swift, agile mustelids that slip past defenses and harry vulnerable targets.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 120,
+    "baseConstitution": 19,
+    "baseIntelligence": 20,
+    "baseDexterity": 5,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "WolfTamer"
+  ]
+}

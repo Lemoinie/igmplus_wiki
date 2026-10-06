@@ -1,0 +1,25 @@
+{
+  "id": "RedElder",
+  "name": "Red Elder",
+  "category": "Apprentice",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_red_elder",
+  "description": "Elders are mages regarded as masters of their art, keepers of dangerous secrets and wise enough to keep them as such. The Red Elder conjure meteors above the enemy ranks, dealing tremendous damage in a large area.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 95,
+    "baseConstitution": 7,
+    "baseIntelligence": 35,
+    "baseDexterity": 9,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Meteor I",
+  "passiveSkill": "Fire Magic I",
+  "promotesTo": [
+    "ScorchingElder"
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "BansheeGloves",
+  "name": "Banshee Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 468,
+  "sprite": "banshee_gloves",
+  "description": "Made from Banshee scales grafted together. Allows for superior protection while granting a great range of movements.",
+  "stats": {
+    "constitution": 22,
+    "dexterity": 18
+  },
+  "notes": ""
+}

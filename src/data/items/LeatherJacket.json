@@ -1,0 +1,16 @@
+{
+  "id": "LeatherJacket",
+  "name": "Leather Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 45,
+  "sprite": "leather_jacket",
+  "description": "A simple jacket made of leather.",
+  "stats": {
+    "maxHp": 20,
+    "constitution": 1,
+    "dexterity": 1
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "DryadsCurse",
+  "name": "\"Dryad's Curse\"",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 504,
+  "sprite": "dryads_curse",
+  "description": "With a resilient Dryad hair running upon its edge, this weapon can cut through defensive spells like an axe through butter.",
+  "stats": {
+    "intelligence": 30,
+    "dexterity": 18,
+    "constitution": 18
+  },
+  "notes": ""
+}

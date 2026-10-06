@@ -1,0 +1,14 @@
+{
+  "id": "RedReaper",
+  "name": "Red Reaper",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 10,
+  "sprite": "red_reaper",
+  "description": "A small, wrinkled red pepper with a sinister appearance. Its taste is fiery and incredibly spicy, leaving a sharp, lingering heat on the tongue.",
+  "stats": {
+    "feedPower": 2
+  },
+  "notes": ""
+}

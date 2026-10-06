@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfConstitution",
+  "name": "Potion of Constitution",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 100,
+  "sprite": "potion_of_constitution",
+  "description": "Permanently increases Constitution by 1.",
+  "stats": {},
+  "notes": ""
+}

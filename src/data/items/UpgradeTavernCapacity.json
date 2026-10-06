@@ -1,0 +1,14 @@
+{
+  "id": "UpgradeTavernCapacity",
+  "name": "Upgrade: Tavern Capacity",
+  "type": "accessory",
+  "category": "Upgrade",
+  "rarity": null,
+  "price": 1,
+  "sprite": "upgrade_tavern_capacity",
+  "description": "\"Permanently increases Tavern's capacity by 1.\nLimited to one purchase.\nThis item will be consumed automatically upon buying it.\"",
+  "stats": {
+    "gemPrice": 500
+  },
+  "notes": ""
+}

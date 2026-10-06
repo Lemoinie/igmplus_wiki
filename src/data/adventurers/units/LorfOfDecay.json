@@ -1,0 +1,26 @@
+{
+  "id": "LorfOfDecay",
+  "name": "Lord of Decay",
+  "category": "Apprentice",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_lord_of_decay",
+  "description": "A demigod who mastered the control over death, capable of summoning terrifying monsters never seen before.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 160,
+    "baseConstitution": 9,
+    "baseIntelligence": 45,
+    "baseDexterity": 11,
+    "baseDefense": 0,
+    "baseMagicDefense": 30,
+    "baseLifesteal": 50
+  },
+  "activeSkill": "Curse Iv",
+  "passiveSkill": "Withering Link",
+  "promotesTo": [
+    "BlackIdol"
+  ]
+}

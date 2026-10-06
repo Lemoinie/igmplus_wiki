@@ -1,0 +1,20 @@
+{
+  "id": "KasimirTheSeer",
+  "name": "Kasimir, the Seer",
+  "isBoss": false,
+  "sprite": "unit_kasimir_the_seer",
+  "stats": {
+    "hp": 4500,
+    "constitution": 500,
+    "intelligence": 500,
+    "dexterity": 500,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "280",
+    "max": "305"
+  },
+  "expGiven": 5000,
+  "drops": []
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_HEALER_I",
+  "name_key": "passive_healer_i_name",
+  "desc_key": "passive_healer_i_description",
+  "kind": "passive",
+  "name": "Healer",
+  "description": "\"Attacks heal the ally with the lowest health for 50% damage.\nCan be used while exploring\""
+}

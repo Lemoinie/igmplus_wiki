@@ -1,0 +1,25 @@
+{
+  "id": "Footman",
+  "name": "Footman",
+  "category": "Footman",
+  "tier": 1,
+  "maxLevel": 5,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_footman",
+  "description": "A novice infantry unit. Lacks experience, but has received a brief training in the Royal Army.",
+  "stats": {
+    "maxLevel": 5,
+    "baseMaxHp": 40,
+    "baseConstitution": 8,
+    "baseIntelligence": 4,
+    "baseDexterity": 4,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Mighty Strike",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Warrior"
+  ]
+}

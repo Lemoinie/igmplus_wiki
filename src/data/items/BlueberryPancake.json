@@ -1,0 +1,14 @@
+{
+  "id": "BlueberryPancake",
+  "name": "Blueberry Pancake",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 8,
+  "sprite": "blueberry_pancake",
+  "description": "A fluffy, golden-brown pancake dotted with juicy blueberries. It’s soft and sweet, with bursts of tart blueberry flavor in each bite.",
+  "stats": {
+    "feedPower": 17
+  },
+  "notes": ""
+}

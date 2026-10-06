@@ -1,0 +1,25 @@
+{
+  "id": "PoisonBow",
+  "name": "Poison Bow",
+  "category": "Archer",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_poison_bow",
+  "description": "An expert archer who studied the art of poison mixing, she imbues her arrows with an unknown substance capable of weakening enemies.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 90,
+    "baseConstitution": 7,
+    "baseIntelligence": 10,
+    "baseDexterity": 20,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Poisonous Arrows I",
+  "promotesTo": [
+    "ToxicStalker"
+  ]
+}

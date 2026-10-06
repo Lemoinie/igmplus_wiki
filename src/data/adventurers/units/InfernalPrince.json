@@ -1,0 +1,25 @@
+{
+  "id": "InfernalPrince",
+  "name": "Infernal Prince",
+  "category": "Apprentice",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_infernal_prince",
+  "description": "Rising from the ashes of conquest and tempered by the fires of countless battles, the Infernal Prince commands legions with a fearsome authority unmatched in the infernal realms. Now no longer a commander but a true sovereign of terror, the Infernal Prince stands as an unstoppable force, against whom resistance is little more than a fleeting hope.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 320,
+    "baseConstitution": 32,
+    "baseIntelligence": 32,
+    "baseDexterity": 32,
+    "baseDefense": 32,
+    "baseMagicDefense": 32
+  },
+  "activeSkill": "Extirpate",
+  "passiveSkill": "Chaotic",
+  "promotesTo": [
+    "Balrog"
+  ]
+}

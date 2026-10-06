@@ -1,0 +1,25 @@
+{
+  "id": "Hemodruid",
+  "name": "Hemodruid",
+  "category": "Outlander",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_hemodruid",
+  "description": "Blends primordial growth with sanguine sacrifices to fuel volatile regenerative rituals.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 145,
+    "baseConstitution": 20,
+    "baseIntelligence": 24,
+    "baseDexterity": 6,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "SanguineDruid"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "EmperorClovisXXVIII",
+  "name": "Emperor Clovis XXVIII",
+  "isBoss": true,
+  "sprite": "unit_emperor_clovis_xxviii",
+  "stats": {
+    "hp": 6800,
+    "constitution": 18,
+    "intelligence": 1,
+    "dexterity": 48,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "Logger.115",
+    "max": "140"
+  },
+  "expGiven": 9600,
+  "drops": [
+    {
+      "item": "SkeletonKey",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

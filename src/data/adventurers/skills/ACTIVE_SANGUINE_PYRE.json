@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_SANGUINE_PYRE",
+  "name_key": "skill_sanguine_pyre_name",
+  "desc_key": "skill_sanguine_pyre_description",
+  "kind": "active",
+  "name": "Sanguine Pyre",
+  "description": "Consumes the acolyte's dark vitality to strike all adventurers for 50% magic damage and sear them with BLOODFLAME for 3 turns.\n\nBLOODFLAME: Burns for 5% Max HP each turn as magic damage and prevents all healing."
+}

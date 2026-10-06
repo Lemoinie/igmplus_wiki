@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_DAZE",
+  "name_key": "active_daze_name",
+  "desc_key": "active_daze_description",
+  "kind": "active",
+  "name": "Daze",
+  "description": "\"Deals 10% magic damage to all enemies and STUNS them for 2 turns.\nSTUN: the unit skips its turn\""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_LIVE_TEST",
+  "name_key": "active_live_test_name",
+  "desc_key": "active_live_test_description",
+  "kind": "active",
+  "name": "Live Test",
+  "description": null
+}

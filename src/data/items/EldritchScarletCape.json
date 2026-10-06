@@ -1,0 +1,18 @@
+{
+  "id": "EldritchScarletCape",
+  "name": "Eldritch Scarlet Cape",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 204465,
+  "sprite": "eldritch_scarlet_cape",
+  "description": "The Scarlet Cape steeped in esoteric rites and sealed by outer horrors. Deep crimson threads twist with cosmic energy, multiplying critical destruction.",
+  "stats": {
+    "constitution": 40,
+    "dexterity": 40,
+    "intelligence": 40,
+    "criticalChance": 0.21,
+    "criticalDamage": 0.21
+  },
+  "notes": ""
+}

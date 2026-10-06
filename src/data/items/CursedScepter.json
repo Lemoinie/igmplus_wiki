@@ -1,0 +1,14 @@
+{
+  "id": "CursedScepter",
+  "name": "Cursed Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 8468,
+  "sprite": "cursed_scepter",
+  "description": "A terrible instrument when wielded by the right hands, this unholy weapon will raise walking nightmares from defeated enemies.",
+  "stats": {
+    "intelligence": 55
+  },
+  "notes": ""
+}

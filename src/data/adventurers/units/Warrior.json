@@ -1,0 +1,26 @@
+{
+  "id": "Warrior",
+  "name": "Warrior",
+  "category": "Footman",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_warrior",
+  "description": "An infantry unit with some experience in the battlefield. Warriors constitutes the bulk of regular armies.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 65,
+    "baseConstitution": 12,
+    "baseIntelligence": 6,
+    "baseDexterity": 5,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Mighty Strike",
+  "passiveSkill": "Threatening I",
+  "promotesTo": [
+    "Guard",
+    "Knight"
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Tempest",
+  "name": "Tempest",
+  "category": "Archer",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_tempest",
+  "description": "Bane of invading armies, the Tempest will haul barrages of arrows shot with devastating strength and precision, singlehandedly defending strategic hideouts from entire regiments.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 10,
+    "baseIntelligence": 16,
+    "baseDexterity": 32,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Vi",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": [
+    "Hurricane"
+  ]
+}

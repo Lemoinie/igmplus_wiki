@@ -1,0 +1,23 @@
+{
+  "id": "SingularityMagus",
+  "name": "Singularity Magus",
+  "category": "Apprentice",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_singularity_magus",
+  "description": "The pinnacle of arcane mastery, condensing the cosmos into devastating boss-annihilating singularities.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 220,
+    "baseConstitution": 10,
+    "baseIntelligence": 75,
+    "baseDexterity": 18,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Disintegrate Iii",
+  "passiveSkill": "Aether Resonance Vii",
+  "promotesTo": []
+}

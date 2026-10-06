@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_CHOKING_POWDER",
+  "name_key": "active_choking_powder_name",
+  "desc_key": "active_choking_powder_description",
+  "kind": "active",
+  "name": "Choking Powder",
+  "description": "\"SILENCES every enemy for 3 turns, then deal 40% damage.\nSILENCE: the unit can't gain any mana\""
+}

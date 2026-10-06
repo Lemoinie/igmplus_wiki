@@ -1,0 +1,26 @@
+{
+  "id": "Huntress",
+  "name": "Huntress",
+  "category": "Archer",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_huntress",
+  "description": "Refining her skills with her hunting experience in the wilderness, she can hit enemies with reliable shots.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 45,
+    "baseConstitution": 5,
+    "baseIntelligence": 6,
+    "baseDexterity": 12,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "HorseRider",
+    "Marksman"
+  ]
+}

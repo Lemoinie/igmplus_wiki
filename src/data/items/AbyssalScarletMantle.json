@@ -1,0 +1,18 @@
+{
+  "id": "AbyssalScarletMantle",
+  "name": "Abyssal Scarlet Mantle",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 214465,
+  "sprite": "abyssal_scarlet_mantle",
+  "description": "An awe-inspiring mantle saturated with Ancestral Blood from the deepest abyss. Its suffocating crimson aura elevates all mortal faculties to mythical heights, delivering cataclysmic critical strikes.",
+  "stats": {
+    "constitution": 50,
+    "dexterity": 50,
+    "intelligence": 50,
+    "criticalChance": 0.35,
+    "criticalDamage": 0.4
+  },
+  "notes": ""
+}

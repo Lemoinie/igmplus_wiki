@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_THE_TEN_HELLS",
+  "name_key": "active_the_ten_hells_name",
+  "desc_key": "active_the_ten_hells_description",
+  "kind": "active",
+  "name": "The Ten Hells",
+  "description": "Casts all enemies into a forgotten realm, killing them instantly."
+}

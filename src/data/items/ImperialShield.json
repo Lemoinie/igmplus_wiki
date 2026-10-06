@@ -1,0 +1,16 @@
+{
+  "id": "ImperialShield",
+  "name": "Imperial Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 564,
+  "sprite": "imperial_shield",
+  "description": "Decorated kite shield employed by the higher generals of the Empire Army. Engineered by the best blacksmiths to provide the highest standards of protection.",
+  "stats": {
+    "constitution": 16,
+    "dexterity": 5,
+    "defense": 15
+  },
+  "notes": ""
+}

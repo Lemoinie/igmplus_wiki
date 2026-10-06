@@ -1,0 +1,23 @@
+{
+  "id": "SummonBear",
+  "name": "Summoned Bear",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 35,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_bear",
+  "description": "A towering beast serving as an unyielding frontline protector.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 100,
+    "baseConstitution": 20,
+    "baseIntelligence": 9,
+    "baseDexterity": 12,
+    "baseDefense": 12,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

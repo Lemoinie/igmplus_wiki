@@ -1,0 +1,14 @@
+{
+  "id": "SlimeKingsCrown",
+  "name": "\"Slime King's Crown\"",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 5000,
+  "sprite": "slime_kings_crown",
+  "description": "The crown of the legendary Slime King. Provides a large amount of extra experience to the wearer.",
+  "stats": {
+    "bonusExperience": 35
+  },
+  "notes": "Rare Drop"
+}

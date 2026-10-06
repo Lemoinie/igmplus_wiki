@@ -1,0 +1,15 @@
+{
+  "id": "EnlightedServant",
+  "name": "Enlighted Servant",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 28425,
+  "sprite": "enlighted_servant",
+  "description": "A spark of light and a drop of darkness were infused in this empty shell, gifting it its very own soul. Having now achieved independent thinking, it is not faster, smarter, and capable of improvising in difficult situations.",
+  "stats": {
+    "maxHp": 150,
+    "constitution": 40
+  },
+  "notes": ""
+}

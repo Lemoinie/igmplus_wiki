@@ -1,0 +1,15 @@
+{
+  "id": "FleetfootBoots",
+  "name": "Fleetfoot Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 999,
+  "sprite": "fleetfoot_boots",
+  "description": "Boots made with a textile material that can magically reduce the wearer weight, enhancing its agility.",
+  "stats": {
+    "flatDodgeChance": 0.16,
+    "dexterity": 16
+  },
+  "notes": ""
+}

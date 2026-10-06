@@ -1,0 +1,6 @@
+{
+  "id": "Bloodcrave",
+  "name": "Bloodcrave",
+  "ability": "BLOODCRAVE",
+  "description": "Increases bleed damage dealt by %s%%."
+}

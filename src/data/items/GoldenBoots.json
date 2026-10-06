@@ -1,0 +1,14 @@
+{
+  "id": "GoldenBoots",
+  "name": "Golden Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 312,
+  "sprite": "golden_boots",
+  "description": "Boots made of gold, worn by the Imperial Army infantry and archers.",
+  "stats": {
+    "dexterity": 12
+  },
+  "notes": ""
+}

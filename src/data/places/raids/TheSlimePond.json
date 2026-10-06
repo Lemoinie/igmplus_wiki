@@ -1,0 +1,53 @@
+{
+  "id": "TheSlimePond",
+  "name": "The Slime Pond",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0.1,
+  "sprite": "summary_the_slime_pond",
+  "enemies": [
+    {
+      "id": "ElectricSlime",
+      "name": "ElectricSlime",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "FireSlime",
+      "name": "FireSlime",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "FrozenSlime",
+      "name": "FrozenSlime",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "KnightSlime",
+      "name": "KnightSlime",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Slime",
+      "name": "Slime",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "SlimeKing",
+      "name": "SlimeKing",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "VoidSlime",
+      "name": "VoidSlime",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ENERGY_BURST_II",
+  "name_key": "active_energy_burst_ii_name",
+  "desc_key": "active_energy_burst_ii_description",
+  "kind": "active",
+  "name": "Energy Burst II",
+  "description": "Bursts an enemy for 200% damage"
+}

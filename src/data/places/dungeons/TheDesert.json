@@ -1,0 +1,70 @@
+{
+  "id": "TheDesert",
+  "name": "The Desert",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 54,
+  "sprite": "summary_the_desert",
+  "enemies": [
+    {
+      "id": "ShahuriWarrior",
+      "name": "ShahuriWarrior",
+      "rate": "12.5%",
+      "role": "Regular"
+    },
+    {
+      "id": "ShahuriArcher",
+      "name": "ShahuriArcher",
+      "rate": "11.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "Wurm",
+      "name": "Wurm",
+      "rate": "7.6%",
+      "role": "Regular"
+    },
+    {
+      "id": "SandVulture",
+      "name": "SandVulture",
+      "rate": "6.9%",
+      "role": "Regular"
+    },
+    {
+      "id": "ShahuriMage",
+      "name": "ShahuriMage",
+      "rate": "5.5%",
+      "role": "Regular"
+    },
+    {
+      "id": "Djinn",
+      "name": "Djinn",
+      "rate": "1.5%",
+      "role": "Regular"
+    },
+    {
+      "id": "SandStatue",
+      "name": "SandStatue",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "Feather",
+    "FeatherRobe",
+    "GlassKnife",
+    "IronChainmail",
+    "IronHelm",
+    "MetamorphicSand",
+    "Quartz",
+    "Sandstone",
+    "Scimitar",
+    "ScrapMetal",
+    "ShahuriBow",
+    "WurmScale",
+    "WurmscalesBoots",
+    "WurmscalesGloves",
+    "WurmscalesJacket",
+    "WurmscalesShield"
+  ]
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FIRE_MAGIC_II",
+  "name_key": "passive_fire_magic_ii_name",
+  "desc_key": "passive_fire_magic_ii_description",
+  "kind": "passive",
+  "name": "Fire Magic II",
+  "description": "\"Attacks set ABLAZE for 1 turn\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn\""
+}

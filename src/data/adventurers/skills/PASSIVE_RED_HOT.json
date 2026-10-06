@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RED_HOT",
+  "name_key": "passive_red_hot_name",
+  "desc_key": "passive_red_hot_description",
+  "kind": "passive",
+  "name": "Red Hot",
+  "description": "\"Melee attacks to and from this target set ABLAZE for 3 turns\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn\""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FEINT",
+  "name_key": "active_feint_name",
+  "desc_key": "active_feint_description",
+  "kind": "active",
+  "name": "Feint",
+  "description": "\"Feigns a movement and strikes unexpectedly, dealing 100% damage and STUNNING an enemy for 1 turn.\nCritical hit bonus damage × 1.5.\n\nSTUN: the unit skips its turn.\""
+}

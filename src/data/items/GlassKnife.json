@@ -1,0 +1,15 @@
+{
+  "id": "GlassKnife",
+  "name": "Glass Knife",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 56,
+  "sprite": "glass_knife",
+  "description": "A sharp dagger with an edge made of glass.",
+  "stats": {
+    "constitution": 5,
+    "dexterity": 5
+  },
+  "notes": ""
+}

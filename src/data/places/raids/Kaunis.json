@@ -1,0 +1,53 @@
+{
+  "id": "Kaunis",
+  "name": "Kaunis",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_kaunis",
+  "enemies": [
+    {
+      "id": "Cerebrum",
+      "name": "Cerebrum",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ChiefScientistAva",
+      "name": "ChiefScientistAva",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Enforcer",
+      "name": "Enforcer",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "FirstMinisterAtos",
+      "name": "FirstMinisterAtos",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "KingAino",
+      "name": "KingAino",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Necrobot",
+      "name": "Necrobot",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Phantasm",
+      "name": "Phantasm",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

@@ -1,0 +1,23 @@
+{
+  "id": "Inferno",
+  "name": "Inferno",
+  "category": "Apprentice",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_inferno",
+  "description": "An incredibly powerful, mystical able to invoke firestorms out of thin air, burning entire armies to ashes while meteor falls upon them. An army that can reliably protect him is an army that can win any battle.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 200,
+    "baseConstitution": 10,
+    "baseIntelligence": 50,
+    "baseDexterity": 12,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Meteor Ii",
+  "passiveSkill": "Pyromancy Ii",
+  "promotesTo": []
+}

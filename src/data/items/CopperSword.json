@@ -1,0 +1,15 @@
+{
+  "id": "CopperSword",
+  "name": "Iron Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 20,
+  "sprite": "copper_sword",
+  "description": "A standard iron sword commonly used throughout the Realms.",
+  "stats": {
+    "constitution": 3,
+    "dexterity": 1
+  },
+  "notes": ""
+}

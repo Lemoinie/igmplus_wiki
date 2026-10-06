@@ -1,0 +1,15 @@
+{
+  "id": "MithrilBow",
+  "name": "Mithril Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 1023,
+  "sprite": "mithril_bow",
+  "description": "An incredibly light and resistant bow crafted from the legendary Mithril.",
+  "stats": {
+    "dexterity": 33,
+    "intelligence": 11
+  },
+  "notes": ""
+}

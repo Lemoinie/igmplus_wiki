@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_OVERDRIVE",
+  "name_key": "active_overdrive_name",
+  "desc_key": "active_overdrive_description",
+  "kind": "active",
+  "name": "Overdrive",
+  "description": "\"If a Magic Armor is present, deals 300 damage to it and launches its components towards the enemies, stunning them for 1 turn and dealing 70% magic damage. The Magic Armor HP cannot be reduced below 1.\n\nSTUN: the unit skips its turn.\""
+}

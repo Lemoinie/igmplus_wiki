@@ -1,0 +1,41 @@
+{
+  "id": "CrimsonAcolyte",
+  "name": "Crimson Acolyte",
+  "isBoss": false,
+  "sprite": "scarlet_mage",
+  "stats": {
+    "hp": 3000,
+    "constitution": 80,
+    "intelligence": 200,
+    "dexterity": 50,
+    "defense": 0,
+    "magicDefense": 75
+  },
+  "damage": {
+    "min": "100",
+    "max": "200"
+  },
+  "expGiven": 2500,
+  "drops": [
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "EldritchSeal",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "BlackHide",
+      "qty": 1,
+      "chance": 100
+    },
+    {
+      "item": "AbherrantFabric",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

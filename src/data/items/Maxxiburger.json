@@ -1,0 +1,14 @@
+{
+  "id": "Maxxiburger",
+  "name": "Maxxiburger",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 220,
+  "sprite": "maxxiburger",
+  "description": "A massive, towering burger with layers of juicy meat, melted cheese, crisp lettuce, and savory sauces. Not very healthy, but extremely caloric.",
+  "stats": {
+    "feedPower": 3000
+  },
+  "notes": ""
+}

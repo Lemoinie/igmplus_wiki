@@ -1,0 +1,36 @@
+{
+  "id": "LostMiner",
+  "name": "Lost Miner",
+  "isBoss": false,
+  "sprite": "unit_lost_miner",
+  "stats": {
+    "hp": 790,
+    "constitution": 8,
+    "intelligence": 20,
+    "dexterity": 40,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "88",
+    "max": "162"
+  },
+  "expGiven": 300,
+  "drops": [
+    {
+      "item": "ObsidianChunk",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "ShadowGem",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "PotionOfDarkness",
+      "qty": 1,
+      "chance": 0.4
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "PrimevalHelm",
+  "name": "Primeval Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1020,
+  "sprite": "primeval_helm",
+  "description": "Helm made from the scale of an enormous creature, capable of withstanding the hardest blows without breaking.",
+  "stats": {
+    "maxHp": 180,
+    "defense": 12
+  },
+  "notes": ""
+}

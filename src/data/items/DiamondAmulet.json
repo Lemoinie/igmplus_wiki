@@ -1,0 +1,15 @@
+{
+  "id": "DiamondAmulet",
+  "name": "Diamond Amulet",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 7503,
+  "sprite": "diamond_amulet",
+  "description": "An elegant amulet adorned with a polished diamond, radiating timeless beauty.",
+  "stats": {
+    "bonusExperience": 55,
+    "maxHp": 175
+  },
+  "notes": ""
+}

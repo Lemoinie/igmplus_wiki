@@ -1,0 +1,16 @@
+{
+  "id": "FrostmetalArmor",
+  "name": "Frostmetal Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 504,
+  "sprite": "frostmetal_armor",
+  "description": "The hardest frostmetal coupled with trollskin paddings give this armor an extreme durability, while gifting the wearer with an increased regeneration.",
+  "stats": {
+    "maxHp": 180,
+    "constitution": 5,
+    "regeneration": 6
+  },
+  "notes": ""
+}

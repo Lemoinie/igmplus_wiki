@@ -1,0 +1,25 @@
+{
+  "id": "HolyKnight",
+  "name": "Holy Knight",
+  "category": "Footman",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_holy_knight",
+  "description": "A knight devoted to the service of the Holy Temple, he is a protector of the righteous and a vanguard of justice, sworn to eradicate evil from every corner of the land.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 130,
+    "baseConstitution": 20,
+    "baseIntelligence": 10,
+    "baseDexterity": 7,
+    "baseDefense": 20,
+    "baseMagicDefense": 23
+  },
+  "activeSkill": "Holy Smite I",
+  "passiveSkill": "Aura Of Light I",
+  "promotesTo": [
+    "Paladin"
+  ]
+}

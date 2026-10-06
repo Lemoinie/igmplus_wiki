@@ -1,0 +1,15 @@
+{
+  "id": "BansheeBow",
+  "name": "Banshee Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 1967,
+  "sprite": "banshee_bow",
+  "description": "Uses two giant claws as the frame, granting extreme flexibility and resistance to tension.",
+  "stats": {
+    "dexterity": 28,
+    "intelligence": 8
+  },
+  "notes": ""
+}

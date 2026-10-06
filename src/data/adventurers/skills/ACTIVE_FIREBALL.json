@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FIREBALL",
+  "name_key": "active_fireball_name",
+  "desc_key": "active_fireball_description",
+  "kind": "active",
+  "name": "Fireball",
+  "description": null
+}

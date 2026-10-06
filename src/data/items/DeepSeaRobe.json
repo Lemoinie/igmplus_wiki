@@ -1,0 +1,16 @@
+{
+  "id": "DeepSeaRobe",
+  "name": "Deep Sea Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 5505,
+  "sprite": "deep_sea_robe",
+  "description": "The velvet infused with deep sea reagents used in the weaving of this robe confers it enhanced protection against external elements.",
+  "stats": {
+    "maxHp": 50,
+    "intelligence": 15,
+    "immunityToStatus": 0.4
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Rice",
+  "name": "Rice",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "rice",
+  "description": "Tiny, white smooth grains that, when cooked, present a neutral taste and a soft texture. Often used as the main supply for soldiers embarked in long expeditions, as it is easy to conserve for long times.",
+  "stats": {
+    "feedPower": 3
+  },
+  "notes": ""
+}

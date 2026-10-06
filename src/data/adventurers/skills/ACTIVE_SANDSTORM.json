@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_SANDSTORM",
+  "name_key": "active_sandstorm_name",
+  "desc_key": "active_sandstorm_description",
+  "kind": "active",
+  "name": "Sandstorm",
+  "description": null
+}

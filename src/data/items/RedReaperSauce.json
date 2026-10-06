@@ -1,0 +1,14 @@
+{
+  "id": "RedReaperSauce",
+  "name": "Red Reaper Sauce",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 80,
+  "sprite": "red_reaper_sauce",
+  "description": "\"A fiery, bright red sauce with an intense, lingering heat. It’s incredibly spicy, not very nutritious by itself and it's highly recommended to not eat this alone.\"",
+  "stats": {
+    "feedPower": 128
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_HOLY_SMITE_I",
+  "name_key": "active_holy_smite_i_name",
+  "desc_key": "active_holy_smite_i_description",
+  "kind": "active",
+  "name": "Holy Smite I",
+  "description": null
+}

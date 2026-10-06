@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_AETHER_RESONANCE_V",
+  "name_key": "passive_aether_resonance_v_name",
+  "desc_key": "passive_aether_resonance_v_description",
+  "kind": "passive",
+  "name": "Aether Resonance V",
+  "description": null
+}

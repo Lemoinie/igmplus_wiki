@@ -1,0 +1,18 @@
+{
+  "id": "CelestialBow",
+  "name": "Celestial Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 30000,
+  "sprite": "celestial_bow",
+  "description": "A divine celestial bow humming with astral velocity. Allows its wielder to loose a devastating volley of arrows in rapid succession.",
+  "stats": {
+    "dexterity": 40,
+    "intelligence": 15,
+    "criticalChance": 0.1,
+    "criticalDamage": 0.1,
+    "attackSpeed": 200
+  },
+  "notes": ""
+}

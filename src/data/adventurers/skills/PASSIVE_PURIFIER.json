@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PURIFIER",
+  "name_key": "passive_purifier_name",
+  "desc_key": "passive_purifier_description",
+  "kind": "passive",
+  "name": "Purifier",
+  "description": "\"Attacks twice. Attacks set ABLAZE for 3 turns.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\""
+}

@@ -1,0 +1,8 @@
+{
+  "id": "EMPATHETIC",
+  "name": "Empathetic",
+  "type": "unique",
+  "sprite": null,
+  "description": "Heals are 20% more powerful (multiplicative).",
+  "effects": []
+}

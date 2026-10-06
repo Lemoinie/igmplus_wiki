@@ -1,0 +1,12 @@
+{
+  "id": "Evo23Vial2",
+  "name": "Evo-23 Vial",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 10,
+  "sprite": "evo23_vial",
+  "description": "This item can modify an adventurer rare trait.",
+  "stats": {},
+  "notes": ""
+}

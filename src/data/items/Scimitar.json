@@ -1,0 +1,15 @@
+{
+  "id": "Scimitar",
+  "name": "Scimitar",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 41,
+  "sprite": "scimitar",
+  "description": "\"Sword with a peculiar, recurve blade used by the Sha'huri people of the Desert.\"",
+  "stats": {
+    "constitution": 6,
+    "dexterity": 2
+  },
+  "notes": ""
+}

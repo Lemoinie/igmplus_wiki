@@ -1,0 +1,17 @@
+{
+  "id": "MutualDespair",
+  "name": "Mutual Despair",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 10500,
+  "sprite": "mutual_despair",
+  "description": "Grants a swift demise in skilled hands, demanding a painful toll from its wielder in return.",
+  "stats": {
+    "constitution": 30,
+    "dexterity": 30,
+    "decay": 20,
+    "criticalDamage": 0.65
+  },
+  "notes": ""
+}

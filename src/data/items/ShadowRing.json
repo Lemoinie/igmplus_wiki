@@ -1,0 +1,15 @@
+{
+  "id": "ShadowRing",
+  "name": "Shadow Ring",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 93,
+  "sprite": "shadow_ring",
+  "description": "A silver ring with an inset Shadow Gem. Grants superior reflexes.",
+  "stats": {
+    "dexterity": 24,
+    "criticalChance": 0.12
+  },
+  "notes": ""
+}

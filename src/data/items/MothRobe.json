@@ -1,0 +1,15 @@
+{
+  "id": "MothRobe",
+  "name": "Moth Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 783,
+  "sprite": "moth_robe",
+  "description": "Resistant but very light robe made from the wings of a Giant Moth.",
+  "stats": {
+    "maxHp": 80,
+    "intelligence": 24
+  },
+  "notes": ""
+}

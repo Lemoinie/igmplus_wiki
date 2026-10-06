@@ -1,0 +1,25 @@
+{
+  "id": "Arcanist",
+  "name": "Arcanist",
+  "category": "Apprentice",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_arcanist",
+  "description": "A specialized mage who channels raw arcane energy into devastating single-target spells.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 35,
+    "baseConstitution": 4,
+    "baseIntelligence": 21,
+    "baseDexterity": 6,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Energy Burst Iii",
+  "passiveSkill": "Aether Resonance I",
+  "promotesTo": [
+    "Spellweaver"
+  ]
+}

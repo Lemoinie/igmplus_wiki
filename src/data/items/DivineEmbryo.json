@@ -1,0 +1,17 @@
+{
+  "id": "DivineEmbryo",
+  "name": "Divine Embryo",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 17400,
+  "sprite": "divine_embryo",
+  "description": "Painstakingly fed with a concentrated flow of consciousness, slowly the Ancient God is starting to evolve into another form. It is able to manifest additional powers, granting its keeper a wide range of bonuses.",
+  "stats": {
+    "constitution": 20,
+    "dexterity": 20,
+    "intelligence": 20,
+    "immunityToStatus": 1
+  },
+  "notes": ""
+}

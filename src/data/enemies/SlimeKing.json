@@ -1,0 +1,46 @@
+{
+  "id": "SlimeKing",
+  "name": "Slime King",
+  "isBoss": true,
+  "sprite": "unit_slime_king",
+  "stats": {
+    "hp": 1000,
+    "constitution": 38,
+    "intelligence": 5,
+    "dexterity": 8,
+    "defense": 40,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "40",
+    "max": "50"
+  },
+  "expGiven": 240,
+  "drops": [
+    {
+      "item": "GreenSlime",
+      "qty": 1,
+      "chance": 21
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 2,
+      "chance": 50
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 3,
+      "chance": 25
+    },
+    {
+      "item": "SlimeKingsCrown",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "SeekingGlass",
+      "qty": 1,
+      "chance": 1
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "id": "UndeadWarlord",
+  "name": "Undead Warlord",
+  "isBoss": false,
+  "sprite": "unit_undead_warlord",
+  "stats": {
+    "hp": 220,
+    "constitution": 24,
+    "intelligence": 1,
+    "dexterity": 12,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "12",
+    "max": "16"
+  },
+  "expGiven": 84,
+  "drops": [
+    {
+      "item": "WarlordSkull",
+      "qty": 2,
+      "chance": 1
+    },
+    {
+      "item": "BoneFragment",
+      "qty": 1,
+      "chance": 96
+    }
+  ]
+}

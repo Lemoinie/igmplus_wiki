@@ -1,0 +1,15 @@
+{
+  "id": "VerdantBow",
+  "name": "Verdant Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 600,
+  "sprite": "verdant_bow",
+  "description": "Made of the finest wood in the Realms, this bow can withstand an extreme tension without ever breaking.",
+  "stats": {
+    "intelligence": 8,
+    "dexterity": 24
+  },
+  "notes": ""
+}

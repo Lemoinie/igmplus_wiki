@@ -1,0 +1,17 @@
+{
+  "id": "Flute",
+  "name": "Flute",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 100,
+  "sprite": "flute",
+  "description": "A finely crafted flute, the work of master artisans from the Golden City.",
+  "stats": {
+    "exaltInspireBonusTurns": 1,
+    "constitution": 5,
+    "dexterity": 5,
+    "intelligence": 5
+  },
+  "notes": ""
+}

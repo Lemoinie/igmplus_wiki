@@ -1,0 +1,15 @@
+{
+  "id": "UndeadSword",
+  "name": "Undead Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 54,
+  "sprite": "undead_sword",
+  "description": "A grim sword made with undead remains.",
+  "stats": {
+    "constitution": 9,
+    "dexterity": 3
+  },
+  "notes": ""
+}

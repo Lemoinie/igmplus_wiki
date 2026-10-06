@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_OBLITERATE",
+  "name_key": "active_obliterate_name",
+  "desc_key": "active_obliterate_description",
+  "kind": "active",
+  "name": "Obliterate",
+  "description": null
+}

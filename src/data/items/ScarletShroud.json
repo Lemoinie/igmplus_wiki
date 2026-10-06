@@ -1,0 +1,18 @@
+{
+  "id": "ScarletShroud",
+  "name": "Scarlet Shroud",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 135000,
+  "sprite": "scarlet_shroud",
+  "description": "The legendary Veil, mechanically enhanced using the parts of the mysterious Machine. It autonomously helps the wearer in its movements in a deadly synergy.",
+  "stats": {
+    "maxHp": 300,
+    "constitution": 50,
+    "dexterity": 40,
+    "criticalChance": 0.21,
+    "criticalDamage": 0.21
+  },
+  "notes": ""
+}

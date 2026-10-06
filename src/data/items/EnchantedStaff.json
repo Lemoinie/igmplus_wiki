@@ -1,0 +1,14 @@
+{
+  "id": "EnchantedStaff",
+  "name": "Enchanted Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 45,
+  "sprite": "enchanted_staff",
+  "description": "\"An ancient seed from an Ent makes this staff a bit attuned to the holder's magic.\"",
+  "stats": {
+    "intelligence": 4
+  },
+  "notes": ""
+}

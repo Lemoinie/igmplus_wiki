@@ -1,0 +1,36 @@
+{
+  "id": "Claris",
+  "name": "Claris",
+  "isBoss": true,
+  "sprite": "unit_claris",
+  "stats": {
+    "hp": 3200,
+    "constitution": 6,
+    "intelligence": 84,
+    "dexterity": 26,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "182",
+    "max": "188"
+  },
+  "expGiven": 540,
+  "drops": [
+    {
+      "item": "SealOfClaris",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "ElixirOfLearning",
+      "qty": 1,
+      "chance": 2
+    },
+    {
+      "item": "PotionOfMagicDefense",
+      "qty": 1,
+      "chance": 10
+    }
+  ]
+}

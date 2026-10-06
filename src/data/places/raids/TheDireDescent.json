@@ -1,0 +1,29 @@
+{
+  "id": "TheDireDescent",
+  "name": "The Dire Descent",
+  "type": "epic_raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_the_dire_descent",
+  "enemies": [
+    {
+      "id": "HeraldMaya",
+      "name": "HeraldMaya",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "HeraldShoran",
+      "name": "HeraldShoran",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "HeraldXavi",
+      "name": "HeraldXavi",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

@@ -1,0 +1,75 @@
+{
+  "id": "TheGoldenCity",
+  "name": "The Golden City",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 54,
+  "sprite": "summary_the_golden_city",
+  "enemies": [
+    {
+      "id": "CityWarden",
+      "name": "CityWarden",
+      "rate": "19.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "InsaneCitizen",
+      "name": "InsaneCitizen",
+      "rate": "18.1%",
+      "role": "Regular"
+    },
+    {
+      "id": "InsanePriest",
+      "name": "InsanePriest",
+      "rate": "3.7%",
+      "role": "Regular"
+    },
+    {
+      "id": "ImperialGuard",
+      "name": "ImperialGuard",
+      "rate": "2.1%",
+      "role": "Regular"
+    },
+    {
+      "id": "ArcaneAssassin",
+      "name": "ArcaneAssassin",
+      "rate": "1.8%",
+      "role": "Regular"
+    },
+    {
+      "id": "ImperialMage",
+      "name": "ImperialMage",
+      "rate": "1.8%",
+      "role": "Regular"
+    },
+    {
+      "id": "InsaneMerchant",
+      "name": "InsaneMerchant",
+      "rate": "0.7%",
+      "role": "Regular"
+    },
+    {
+      "id": "ImperialCaptain",
+      "name": "ImperialCaptain",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "BeltJacket",
+    "BlackOoze",
+    "Emerald",
+    "GoldScraps",
+    "GoldenArmor",
+    "GoldenBoots",
+    "GoldenGauntlets",
+    "GoldenHelm",
+    "GoldenShield",
+    "GoldenSword",
+    "Ivory",
+    "Redwood",
+    "Ruby",
+    "SilkRobe",
+    "SilkThread"
+  ]
+}

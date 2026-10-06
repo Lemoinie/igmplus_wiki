@@ -1,0 +1,25 @@
+{
+  "id": "Hurricane",
+  "name": "Hurricane",
+  "category": "Archer",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_hurricane",
+  "description": "This archer of unnatural precision is a coveted asset for any army. She can fend off a full-scale assault for hours, and can be reached only by sacrificing an enormous number of soldiers.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 11,
+    "baseIntelligence": 18,
+    "baseDexterity": 36,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Vii",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": [
+    "CelestialRain"
+  ]
+}

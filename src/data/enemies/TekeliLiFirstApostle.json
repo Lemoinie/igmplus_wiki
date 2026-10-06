@@ -1,0 +1,36 @@
+{
+  "id": "TekeliLiFirstApostle",
+  "name": "\"Tekeli'li, First Apostle\"",
+  "isBoss": false,
+  "sprite": "unit_tekeli_li_first_apostle",
+  "stats": {
+    "hp": 18000,
+    "constitution": 165,
+    "intelligence": 320,
+    "dexterity": 38,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "460",
+    "max": "515"
+  },
+  "expGiven": 16000,
+  "drops": [
+    {
+      "item": "AstralGoo",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "CosmicViolin",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "WinterwoodStaff",
+  "name": "Winterwood Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 249,
+  "sprite": "winterwood_staff",
+  "description": "The peculiar properties of the material allows for good magic attunement, making it a prized possession among spellcasters.",
+  "stats": {
+    "intelligence": 24
+  },
+  "notes": ""
+}

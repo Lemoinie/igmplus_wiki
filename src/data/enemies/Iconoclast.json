@@ -1,0 +1,31 @@
+{
+  "id": "Iconoclast",
+  "name": "Iconoclast",
+  "isBoss": false,
+  "sprite": "unit_iconoclast",
+  "stats": {
+    "hp": 820,
+    "constitution": 15,
+    "intelligence": 32,
+    "dexterity": 22,
+    "defense": 30,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "80",
+    "max": "82"
+  },
+  "expGiven": 80,
+  "drops": [
+    {
+      "item": "ChainLink",
+      "qty": 1,
+      "chance": 4
+    },
+    {
+      "item": "CharredHeart",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

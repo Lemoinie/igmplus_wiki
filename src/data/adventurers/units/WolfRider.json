@@ -1,0 +1,25 @@
+{
+  "id": "WolfRider",
+  "name": "Wolf Rider",
+  "category": "Archer",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_wolf_rider",
+  "description": "Not indicated for beginner riders, wolves provide a formidable companion that can viciously bite enemies already overwhelmed by arrows.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 90,
+    "baseConstitution": 7,
+    "baseIntelligence": 10,
+    "baseDexterity": 20,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Rider Ii",
+  "promotesTo": [
+    "WorgRider"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "FocusedScepter",
+  "name": "Focused Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 854,
+  "sprite": "focused_scepter",
+  "description": "\"A magic staff built with an alien alloy, integrated with an organic construct able to focalize the energy released into a ray as thin as a hair. While not as powerful as many alternatives, this staff completely nullifies any dispersion of the caster's energy.\"",
+  "stats": {
+    "intelligence": 24
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "EldritchMitre",
+  "name": "Eldritch Mitre",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 2255,
+  "sprite": "eldritch_mitre",
+  "description": "This unholy relic amplifies one’s understanding of the universe to extraordinary levels, channeling ancient and forbidden powers.",
+  "stats": {
+    "maxHp": 50,
+    "intelligence": 45,
+    "healingModifier": -0.99
+  },
+  "notes": ""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "Apprentice",
+  "name": "Apprentice",
+  "category": "Apprentice",
+  "tier": 1,
+  "maxLevel": 5,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_apprentice",
+  "description": "\"Untrained in the art of combat, he possesses the spark of something he can't explain yet. Ever since he saw it, he searched for ways to improve his understanding.\"",
+  "stats": {
+    "maxLevel": 5,
+    "baseMaxHp": 20,
+    "baseConstitution": 2,
+    "baseIntelligence": 10,
+    "baseDexterity": 4,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Energy Burst I",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "LightDisciple",
+    "Adept"
+  ]
+}

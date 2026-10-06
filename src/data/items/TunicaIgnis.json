@@ -1,0 +1,16 @@
+{
+  "id": "TunicaIgnis",
+  "name": "Tunica Ignis",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 2370,
+  "sprite": "tunica_ignis",
+  "description": "Slime robe infused with a fiery artifact. Maintains its original properties while granting better control over fire magic.",
+  "stats": {
+    "onFireBonusDamage": 2,
+    "maxHp": 100,
+    "defense": 10
+  },
+  "notes": ""
+}

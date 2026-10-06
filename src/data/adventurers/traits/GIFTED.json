@@ -1,0 +1,8 @@
+{
+  "id": "GIFTED",
+  "name": "Gifted",
+  "type": "unique",
+  "sprite": null,
+  "description": "Gains 2 more mana per turn.",
+  "effects": []
+}

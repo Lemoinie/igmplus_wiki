@@ -1,0 +1,14 @@
+{
+  "id": "UpgradeStorage",
+  "name": "Upgrade: Storage",
+  "type": "accessory",
+  "category": "Upgrade",
+  "rarity": null,
+  "price": 1,
+  "sprite": "upgrade_storage",
+  "description": "\"Permanently increases Storage spaces by 1.\nLimited to ten purchases.\nThis item will be consumed automatically upon buying it.\"",
+  "stats": {
+    "gemPrice": 80
+  },
+  "notes": ""
+}

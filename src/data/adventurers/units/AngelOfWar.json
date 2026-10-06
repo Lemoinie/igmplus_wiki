@@ -1,0 +1,24 @@
+{
+  "id": "AngelOfWar",
+  "name": "Angel of War",
+  "category": "Footman",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_angel_of_war",
+  "description": "The feared and revered leader of the Holy Temple, he shapes its doctrine and commands its followers. He must possess the strength to resist all forms of magical and political influence as he wages war against the very source of evil, defeating eldritch gods before they can tighten their hold on the human realms.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 380,
+    "baseConstitution": 40,
+    "baseIntelligence": 20,
+    "baseDexterity": 12,
+    "baseDefense": 20,
+    "baseMagicDefense": 40,
+    "immunityToStatus": 0.7
+  },
+  "activeSkill": "Wrath Of Heaven Ii",
+  "passiveSkill": "Aura Of The Seraphim",
+  "promotesTo": []
+}

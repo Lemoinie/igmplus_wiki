@@ -1,0 +1,25 @@
+{
+  "id": "Demon",
+  "name": "Demon",
+  "category": "Apprentice",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_demon",
+  "description": "Awakening from the initial torpor, the inhabitant of this body grasps the rules of this reality and breaks free from its cradle. It obeys no master, and its disgust for earthly creatures weakness only grows with time.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 215,
+    "baseConstitution": 24,
+    "baseIntelligence": 24,
+    "baseDexterity": 24,
+    "baseDefense": 24,
+    "baseMagicDefense": 24
+  },
+  "activeSkill": "Annihilate",
+  "passiveSkill": "Chaotic",
+  "promotesTo": [
+    "InfernalLord"
+  ]
+}

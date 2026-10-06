@@ -1,0 +1,12 @@
+{
+  "id": "ReptileEgg",
+  "name": "Reptile Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_reptile",
+  "description": "Egg that will hatch a pet Reptile. Reptiles usually enhance the team offensive capabilities.",
+  "stats": {},
+  "notes": ""
+}

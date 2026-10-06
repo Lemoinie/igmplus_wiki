@@ -1,0 +1,23 @@
+{
+  "id": "ElSalvador",
+  "name": "El Salvador",
+  "category": "Outlander",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_el_salvador_1",
+  "description": "A legendary frontier champion whose phantom agility and deadly retribution make them untouchable.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 280,
+    "baseConstitution": 38,
+    "baseIntelligence": 30,
+    "baseDexterity": 10,
+    "baseDefense": 15,
+    "baseMagicDefense": 50
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

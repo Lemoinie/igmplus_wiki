@@ -1,0 +1,23 @@
+{
+  "id": "PolarBear",
+  "name": "Polar Bear",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 35,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_bear",
+  "description": "A colossal arctic titan boasting relentless power and commanding the wild.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 130,
+    "baseConstitution": 25,
+    "baseIntelligence": 11,
+    "baseDexterity": 15,
+    "baseDefense": 15,
+    "baseMagicDefense": 13
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

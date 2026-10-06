@@ -1,0 +1,23 @@
+{
+  "id": "DaturaHierophant",
+  "name": "Datura Hierophant",
+  "category": "Outlander",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_datura_hierophant",
+  "description": "High priest of venomous nightshades and lethal flora, ruling over hallucinations and virulent rot.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 265,
+    "baseConstitution": 29,
+    "baseIntelligence": 39,
+    "baseDexterity": 10,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

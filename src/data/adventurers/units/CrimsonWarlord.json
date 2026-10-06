@@ -1,0 +1,26 @@
+{
+  "id": "CrimsonWarlord",
+  "name": "Crimson Warlord",
+  "category": "Outlander",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_crimson_warlord",
+  "description": "A battle leader whose very presence inspires bloodlust and overwhelming aggression.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 280,
+    "baseConstitution": 39,
+    "baseIntelligence": 22,
+    "baseDexterity": 7,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "baseLifesteal": 25
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "AvatarOfWrath"
+  ]
+}

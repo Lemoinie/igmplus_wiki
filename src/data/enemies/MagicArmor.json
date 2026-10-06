@@ -1,0 +1,36 @@
+{
+  "id": "MagicArmor",
+  "name": "Magic Armor",
+  "isBoss": false,
+  "sprite": "unit_magic_armor",
+  "stats": {
+    "hp": 400,
+    "constitution": 68,
+    "intelligence": 1,
+    "dexterity": 54,
+    "defense": 150,
+    "magicDefense": 150
+  },
+  "damage": {
+    "min": "Logger.120",
+    "max": "135"
+  },
+  "expGiven": "Logger.ARCANE_SUPPRESSION",
+  "drops": [
+    {
+      "item": "AnimatedScraps",
+      "qty": 1,
+      "chance": 37.5
+    },
+    {
+      "item": "RadiatingNucleus",
+      "qty": 1,
+      "chance": 0.2
+    },
+    {
+      "item": "ConstructEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

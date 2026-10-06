@@ -1,0 +1,25 @@
+{
+  "id": "Minstrel",
+  "name": "Minstrel",
+  "category": "Rogue",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_minstrel",
+  "description": "A gifted performer whose melodies inspire allies and mislead foes, turning the tides of a battle with a song or a whispered word.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 15,
+    "baseIntelligence": 14,
+    "baseDexterity": 15,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Feint",
+  "passiveSkill": "Inspiring Ii",
+  "promotesTo": [
+    "Bard"
+  ]
+}

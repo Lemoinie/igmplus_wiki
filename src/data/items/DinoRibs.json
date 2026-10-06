@@ -1,0 +1,14 @@
+{
+  "id": "DinoRibs",
+  "name": "Dino Ribs",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 20,
+  "sprite": "dino_ribs",
+  "description": "Massive, meaty ribs with a thick, tender texture. Packed with protein, they make a hearty meal, but the ancient beasts they come from are incredibly challenging to hunt.",
+  "stats": {
+    "feedPower": 30
+  },
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "GhastlyCuirass",
+  "name": "Ghastly Cuirass",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 1686,
+  "sprite": "ghastly_cuirass",
+  "description": "Heavy chest armor infused with an otherworldly substance, able to attract the enemies attention.",
+  "stats": {
+    "maxHp": 90,
+    "constitution": 6,
+    "magicDefense": 10,
+    "threat": 1
+  },
+  "notes": ""
+}

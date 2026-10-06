@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_THOUSAND_CUTS_II",
+  "name_key": "active_thousand_cuts_ii_name",
+  "desc_key": "active_thousand_cuts_ii_description",
+  "kind": "active",
+  "name": "Thousand Cuts II",
+  "description": "\"Stabs an enemy and applies a charge of BLEED for every 2 damage dealt, then triggers HEMORRHAGE on the target.\nCritical hit bonus damage × 3.\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge.\nHEMORRHAGE: Deals instant damage equal to target's total BLEED charges.\""
+}

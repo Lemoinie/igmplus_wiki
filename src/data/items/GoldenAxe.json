@@ -1,0 +1,15 @@
+{
+  "id": "GoldenAxe",
+  "name": "Golden Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 485,
+  "sprite": "gold_axe",
+  "description": "A gleaming axe of pure gold, a symbol of wealth and crushing authority.",
+  "stats": {
+    "constitution": 12,
+    "intelligence": 6
+  },
+  "notes": ""
+}

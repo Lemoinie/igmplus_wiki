@@ -1,0 +1,14 @@
+{
+  "id": "SalmonNigiri",
+  "name": "Salmon Nigiri",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 18,
+  "sprite": "salmon_nigiri",
+  "description": "A slice of fresh, bright orange salmon atop a small bed of rice wrapped in seaweed. A staple dish in the diet of sailors, pirates and sea merchants.",
+  "stats": {
+    "feedPower": 54
+  },
+  "notes": ""
+}

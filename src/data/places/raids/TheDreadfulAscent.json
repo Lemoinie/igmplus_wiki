@@ -1,0 +1,29 @@
+{
+  "id": "TheDreadfulAscent",
+  "name": "The Dreadful Ascent",
+  "type": "epic_raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_the_dreadful_ascent",
+  "enemies": [
+    {
+      "id": "EtherealSoul",
+      "name": "EtherealSoul",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "HeraldKali",
+      "name": "HeraldKali",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "KasimirTheSeer",
+      "name": "KasimirTheSeer",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

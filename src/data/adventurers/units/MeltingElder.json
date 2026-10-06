@@ -1,0 +1,25 @@
+{
+  "id": "MeltingElder",
+  "name": "Melting Elder",
+  "category": "Apprentice",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_melting_elder",
+  "description": "His blood and flesh turned into elemental fire. This incredibly powerful caster incinerates his enemies with a single gesture.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 160,
+    "baseConstitution": 9,
+    "baseIntelligence": 45,
+    "baseDexterity": 11,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Meteor Ii",
+  "passiveSkill": "Pyromancy I",
+  "promotesTo": [
+    "Inferno"
+  ]
+}

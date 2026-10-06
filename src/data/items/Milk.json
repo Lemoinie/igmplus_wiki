@@ -1,0 +1,14 @@
+{
+  "id": "Milk",
+  "name": "Milk",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "milk",
+  "description": "White and smooth with a creamy consistency. It’s mild, slightly sweet, and soothing. Can be turned into many derivatives, used in a large amount of recipes.",
+  "stats": {
+    "feedPower": 2
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "UnholySword",
+  "name": "Unholy Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 1485,
+  "sprite": "unholy_sword",
+  "description": "\"Antithesis to all that is holy, will inflict damage to any enemy entering it's malevolent aura.\"",
+  "stats": {
+    "constitution": 27,
+    "dexterity": 5,
+    "retaliationMagicalDamage": 15
+  },
+  "notes": ""
+}

@@ -1,0 +1,29 @@
+{
+  "id": "SanguineCrucible",
+  "name": "The Sanguine Crucible",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0.1,
+  "sprite": "summary_scarlet",
+  "enemies": [
+    {
+      "id": "ArchmagusValthex",
+      "name": "ArchmagusValthex",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "BloodstoneColossus",
+      "name": "BloodstoneColossus",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "CrimsonAcolyte",
+      "name": "CrimsonAcolyte",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

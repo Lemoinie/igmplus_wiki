@@ -1,0 +1,25 @@
+{
+  "id": "SanguineDruid",
+  "name": "Sanguine Druid",
+  "category": "Outlander",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_sanguine_druid",
+  "description": "Extracts lifeblood from fallen enemies to nourish crimson groves and bolster allies.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 180,
+    "baseConstitution": 23,
+    "baseIntelligence": 28,
+    "baseDexterity": 7,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "BloodthornArchdruid"
+  ]
+}

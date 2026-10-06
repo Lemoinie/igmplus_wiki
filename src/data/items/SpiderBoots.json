@@ -1,0 +1,14 @@
+{
+  "id": "SpiderBoots",
+  "name": "Spider Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 378,
+  "sprite": "spider_boots",
+  "description": "Thanks to the peculiar fabric from which they have been woven, those who wear them can move with extraordinary agility.",
+  "stats": {
+    "dexterity": 21
+  },
+  "notes": ""
+}

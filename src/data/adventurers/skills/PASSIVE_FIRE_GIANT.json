@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FIRE_GIANT",
+  "name_key": "passive_fire_giant_name",
+  "desc_key": "passive_fire_giant_description",
+  "kind": "passive",
+  "name": "Fire Giant",
+  "description": "\"Immune to ABLAZE. Melee attacks directed at this target set ABLAZE for 1 turn.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn.\""
+}

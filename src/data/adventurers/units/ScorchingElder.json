@@ -1,0 +1,25 @@
+{
+  "id": "ScorchingElder",
+  "name": "Scorching Elder",
+  "category": "Apprentice",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_scorching_elder",
+  "description": "A mythological entity who became one with the flame. The Scorched Elder conjures searing flames so powerful they can melt rocks, and crushes his enemies with the strength of a small star.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 125,
+    "baseConstitution": 8,
+    "baseIntelligence": 40,
+    "baseDexterity": 10,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Meteor Ii",
+  "passiveSkill": "Fire Magic Ii",
+  "promotesTo": [
+    "MeltingElder"
+  ]
+}

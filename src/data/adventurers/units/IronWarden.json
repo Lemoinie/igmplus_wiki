@@ -1,0 +1,25 @@
+{
+  "id": "IronWarden",
+  "name": "Iron Warden",
+  "category": "Footman",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_iron_warden",
+  "description": "A seasoned guard rich in experience, clad in a heavy armor.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 130,
+    "baseConstitution": 20,
+    "baseIntelligence": 10,
+    "baseDexterity": 7,
+    "baseDefense": 22,
+    "baseMagicDefense": 22
+  },
+  "activeSkill": "Taunt I",
+  "passiveSkill": "Threatening Ii",
+  "promotesTo": [
+    "IronDefender"
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "NilPendant",
+  "name": "Nil Pendant",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 47925,
+  "sprite": "nil_pendant",
+  "description": "Perfected with the goo taken from a god of the slimes, this amulet will grant an unmatched learning boost to the wearer.",
+  "stats": {
+    "bonusExperience": 100
+  },
+  "notes": ""
+}

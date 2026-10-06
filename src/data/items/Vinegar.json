@@ -1,0 +1,14 @@
+{
+  "id": "Vinegar",
+  "name": "Vinegar",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 7,
+  "sprite": "vinegar",
+  "description": "Slightly colored liquid with a sharp, pungent aroma. It delivers a sour, tangy taste that is perfectly suited for some of the more elaborate dishes.",
+  "stats": {
+    "feedPower": 1
+  },
+  "notes": ""
+}

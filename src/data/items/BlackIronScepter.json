@@ -1,0 +1,14 @@
+{
+  "id": "BlackIronScepter",
+  "name": "Black Iron Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 336,
+  "sprite": "black_iron_scepter",
+  "description": "Crafted with the most popular iron variation among the pirates, this staff is well balanced and allows magic to flow within with little resistance.",
+  "stats": {
+    "intelligence": 20
+  },
+  "notes": ""
+}

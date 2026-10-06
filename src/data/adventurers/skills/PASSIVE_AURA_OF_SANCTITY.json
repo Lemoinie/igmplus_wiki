@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_AURA_OF_SANCTITY",
+  "name_key": "passive_aura_of_sanctity_name",
+  "desc_key": "passive_aura_of_sanctity_description",
+  "kind": "passive",
+  "name": "Aura of Sanctity",
+  "description": null
+}

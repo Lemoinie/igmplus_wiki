@@ -1,0 +1,15 @@
+{
+  "id": "BreathtakingRobe",
+  "name": "Breathtaking Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 1859,
+  "sprite": "breathtaking_robe",
+  "description": "\"A robe made with the wings of a Giant Moth treated to increase the normal amount of choking powder present by several orders of magnitude. Causes swelling in the airways of enemies getting too close, SILENCING them for 2 turns.\nSILENCE: the unit can't gain any mana\"",
+  "stats": {
+    "maxHp": 100,
+    "intelligence": 25
+  },
+  "notes": ""
+}

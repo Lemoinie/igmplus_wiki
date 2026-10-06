@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NIGHT_VISION_IV",
+  "name_key": "passive_night_vision_iv_name",
+  "desc_key": "passive_night_vision_iv_description",
+  "kind": "passive",
+  "name": "Night Vision IV",
+  "description": "\"Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDarkness increases accuracy and dodge instead of reducing them.\nDamage increased by [2 × Darkness]%\""
+}

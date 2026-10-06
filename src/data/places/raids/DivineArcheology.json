@@ -1,0 +1,47 @@
+{
+  "id": "DivineArcheology",
+  "name": "Divine Archeology",
+  "type": "epic_raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_divine_archeology",
+  "enemies": [
+    {
+      "id": "SandDemon",
+      "name": "SandDemon",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ShaKireFirstSwordsman",
+      "name": "ShaKireFirstSwordsman",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ShaTheHiddenGod",
+      "name": "ShaTheHiddenGod",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ShahuriArcher",
+      "name": "ShahuriArcher",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ShahuriMage",
+      "name": "ShahuriMage",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ShahuriWarrior",
+      "name": "ShahuriWarrior",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

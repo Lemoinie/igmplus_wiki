@@ -1,0 +1,15 @@
+{
+  "id": "EnchantedCleaver",
+  "name": "Enchanted Cleaver",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 1800,
+  "sprite": "enchanted_cleaver",
+  "description": "A cleaver bound with a dense spell compendium, amplifying the force behind every blow.",
+  "stats": {
+    "constitution": 25,
+    "intelligence": 25
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "DreamwroughtStaff",
+  "name": "Dreamwrought Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 893,
+  "sprite": "dreamwrought_staff",
+  "description": "Ethereal staff made from an impossible metal, brought to reality by an otherworldly being.",
+  "stats": {
+    "intelligence": 52
+  },
+  "notes": ""
+}

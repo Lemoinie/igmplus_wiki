@@ -1,0 +1,26 @@
+{
+  "id": "SmolderingTitan",
+  "name": "Smoldering Titan",
+  "isBoss": false,
+  "sprite": "unit_smoldering_titan",
+  "stats": {
+    "hp": 6850,
+    "constitution": 340,
+    "intelligence": 28,
+    "dexterity": 10,
+    "defense": 35,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "500",
+    "max": "550"
+  },
+  "expGiven": 3750,
+  "drops": [
+    {
+      "item": "Infernite",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

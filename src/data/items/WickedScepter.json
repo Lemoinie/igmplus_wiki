@@ -1,0 +1,14 @@
+{
+  "id": "WickedScepter",
+  "name": "Wicked Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 1145,
+  "sprite": "wicked_scepter",
+  "description": "A horrible weapon instinctively repelling all living beings, though no one can explain the cause of this feeling. When the wielder summons a minion, this staff will summon a powerful accessory bound to it.",
+  "stats": {
+    "intelligence": 45
+  },
+  "notes": ""
+}

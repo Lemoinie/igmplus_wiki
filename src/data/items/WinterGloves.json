@@ -1,0 +1,16 @@
+{
+  "id": "WinterGloves",
+  "name": "Winter Gloves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 264,
+  "sprite": "winter_gloves",
+  "description": "Gloves that can boost the regeneration of wounds thanks to the oils impregnating their inner side.",
+  "stats": {
+    "constitution": 16,
+    "dexterity": 13,
+    "regeneration": 4
+  },
+  "notes": ""
+}

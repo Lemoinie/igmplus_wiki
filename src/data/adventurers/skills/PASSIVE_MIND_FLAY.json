@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_MIND_FLAY",
+  "name_key": "passive_mind_flay_name",
+  "desc_key": "passive_mind_flay_description",
+  "kind": "passive",
+  "name": "Mind Flay",
+  "description": "\"Attacks twice. PETRIFY 2 turns on hit.\n\nPETRIFY: This unit can't dodge, takes 15% increased damage and skips its turn.\""
+}

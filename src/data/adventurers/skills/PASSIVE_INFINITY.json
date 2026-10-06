@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INFINITY",
+  "name_key": "passive_infinity_name",
+  "desc_key": "passive_infinity_description",
+  "kind": "passive",
+  "name": "Infinity",
+  "description": "80% immunity to status effects. Does not consume mana."
+}

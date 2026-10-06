@@ -1,0 +1,16 @@
+{
+  "id": "PatricianArmor",
+  "name": "Patrician Armor",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 645,
+  "sprite": "patrician_armor",
+  "description": "A golden armor adorned with the elusive Golden Rabbit fur, worn in social occasions by high ranking generals and diplomats.",
+  "stats": {
+    "maxHp": 120,
+    "constitution": 4,
+    "bonusExperience": 35
+  },
+  "notes": ""
+}

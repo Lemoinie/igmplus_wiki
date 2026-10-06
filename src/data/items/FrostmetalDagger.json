@@ -1,0 +1,15 @@
+{
+  "id": "FrostmetalDagger",
+  "name": "Frostmetal Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 450,
+  "sprite": "frostmetal_dagger",
+  "description": "Dagger made with the coldest Frostmetal.",
+  "stats": {
+    "dexterity": 17,
+    "constitution": 17
+  },
+  "notes": ""
+}

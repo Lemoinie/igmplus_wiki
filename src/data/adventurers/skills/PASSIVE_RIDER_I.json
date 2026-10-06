@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RIDER_I",
+  "name_key": "passive_rider_i_name",
+  "desc_key": "passive_rider_i_description",
+  "kind": "passive",
+  "name": "Rider",
+  "description": "Every time this unit acts, the horse kicks an enemy for 25 physical damage"
+}

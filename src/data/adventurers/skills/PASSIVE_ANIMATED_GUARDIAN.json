@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ANIMATED_GUARDIAN",
+  "name_key": "passive_animated_guardian_name",
+  "desc_key": "passive_animated_guardian_description",
+  "kind": "passive",
+  "name": "Iron Guardian",
+  "description": "This unit has a 2× chance of being targeted by enemies. Deals 105 magic damage to any melee attacker."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "Icicle",
+  "name": "Icicle",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 2358,
+  "sprite": "icicle",
+  "description": "\"Staff built around an ice magic generator, enhancing the holder's magic with the power of frost.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\"",
+  "stats": {
+    "intelligence": 26,
+    "constitution": 10,
+    "dexterity": 10
+  },
+  "notes": ""
+}

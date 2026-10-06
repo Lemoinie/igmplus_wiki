@@ -1,0 +1,16 @@
+{
+  "id": "BansheeScream",
+  "name": "Banshee Scream",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 3152,
+  "sprite": "banshee_scream",
+  "description": "Extremely resistant bow that integrates a piece of alien technology, granting the archer an enhanced ability to hit vital points.",
+  "stats": {
+    "criticalChance": 0.1,
+    "dexterity": 38,
+    "intelligence": 12
+  },
+  "notes": ""
+}

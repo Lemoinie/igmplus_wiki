@@ -1,0 +1,25 @@
+{
+  "id": "Exile",
+  "name": "Exile",
+  "category": "Outlander",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_exile",
+  "description": "Cast out from civilization, this hardened wanderer survives through cunning and evasion.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 70,
+    "baseConstitution": 16,
+    "baseIntelligence": 12,
+    "baseDexterity": 4,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Bandit"
+  ]
+}

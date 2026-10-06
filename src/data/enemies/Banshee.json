@@ -1,0 +1,41 @@
+{
+  "id": "Banshee",
+  "name": "Banshee",
+  "isBoss": false,
+  "sprite": "unit_banshee",
+  "stats": {
+    "hp": 1400,
+    "constitution": 250,
+    "intelligence": 5,
+    "dexterity": 85,
+    "defense": 35,
+    "magicDefense": 35
+  },
+  "damage": {
+    "min": "153",
+    "max": "205"
+  },
+  "expGiven": 250,
+  "drops": [
+    {
+      "item": "BansheeScale",
+      "qty": 1,
+      "chance": 60
+    },
+    {
+      "item": "BansheeClaw",
+      "qty": 1,
+      "chance": 1.8
+    },
+    {
+      "item": "BansheeHorn",
+      "qty": 1,
+      "chance": 0.2
+    },
+    {
+      "item": "ReptileEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

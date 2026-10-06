@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_DECIMATE_II",
+  "name_key": "active_decimate_ii_name",
+  "desc_key": "active_decimate_ii_description",
+  "kind": "active",
+  "name": "Decimate II",
+  "description": "\"Strikes all enemies for 300% damage, then STUNS them and afflicts BLOODFLAME for 1 turn.\n\nBLOODFLAME: burns for 5% max HP each turn (magic damage) and prevents all healing.\nSTUN: the unit skips its turn.\""
+}

@@ -1,0 +1,26 @@
+{
+  "id": "MagmaShark",
+  "name": "Magma Shark",
+  "isBoss": false,
+  "sprite": "magma_shark",
+  "stats": {
+    "hp": 260,
+    "constitution": 40,
+    "intelligence": 8,
+    "dexterity": 300,
+    "defense": 12,
+    "magicDefense": 8
+  },
+  "damage": {
+    "min": "4",
+    "max": "7"
+  },
+  "expGiven": 60,
+  "drops": [
+    {
+      "item": "MagmaShark",
+      "qty": 1,
+      "chance": 20
+    }
+  ]
+}

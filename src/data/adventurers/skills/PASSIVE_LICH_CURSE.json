@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_LICH_CURSE",
+  "name_key": "passive_lich_curse_name",
+  "desc_key": "passive_lich_curse_description",
+  "kind": "passive",
+  "name": "Lich Curse",
+  "description": "25% lifesteal"
+}

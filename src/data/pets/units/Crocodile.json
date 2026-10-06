@@ -1,0 +1,15 @@
+{
+  "id": "Crocodile",
+  "name": "Crocodile",
+  "family": "Reptile",
+  "eggSprite": "egg_reptile",
+  "abilitySlots": 4,
+  "sprite": "pet_crocodile",
+  "description": "A massive, armored reptile with powerful jaws and a stealthy, low-slung body. It lurks in water, ready to launch explosive ambushes with a swift lunge.",
+  "guaranteedAbilities": [
+    "Savage",
+    "Opportunist"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

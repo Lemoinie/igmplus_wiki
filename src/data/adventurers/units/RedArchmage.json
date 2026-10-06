@@ -1,0 +1,25 @@
+{
+  "id": "RedArchmage",
+  "name": "Red Archmage",
+  "category": "Apprentice",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_red_archmage",
+  "description": "Only the most experienced mages are given the title of Archmage. Decades of training made this mage able to effortlessly wield fire magic to set his enemies ablaze.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 70,
+    "baseConstitution": 6,
+    "baseIntelligence": 30,
+    "baseDexterity": 8,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Fireball",
+  "passiveSkill": "Fire Magic I",
+  "promotesTo": [
+    "RedElder"
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "id": "ScarletOniJuggernaut",
+  "name": "Scarlet Oni Juggernaut",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 125893,
+  "sprite": "scarlet_oni_juggernaut",
+  "description": "The apex manifestation of demonic Scarlet armor. Imbued with titanic resilience and boundless fury, it pulverizes enemy lines with devastating critical brutality.",
+  "stats": {
+    "maxHp": 720,
+    "constitution": 126,
+    "damageDealtModifier": 0.51
+  },
+  "notes": ""
+}

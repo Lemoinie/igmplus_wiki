@@ -1,0 +1,17 @@
+{
+  "id": "InfusedNecklace",
+  "name": "Infused Necklace",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 38,
+  "sprite": "infused_necklace",
+  "description": "Necklace infused with a glowing liquid to confer it additional properties. Provides a small experience gain boost to the wearer.",
+  "stats": {
+    "constitution": 1,
+    "dexterity": 1,
+    "intelligence": 2,
+    "bonusExperience": 10
+  },
+  "notes": ""
+}

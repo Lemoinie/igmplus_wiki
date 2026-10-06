@@ -1,0 +1,25 @@
+{
+  "id": "Tyrant",
+  "name": "Tyrant",
+  "category": "Footman",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_tyrant",
+  "description": "A leader capable of unspeakable evil, he stands as the unrivaled champion in realms where only the mightiest prevail.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 265,
+    "baseConstitution": 32,
+    "baseIntelligence": 12,
+    "baseDexterity": 14,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Decimate Iii",
+  "passiveSkill": "Threatening I",
+  "promotesTo": [
+    "Overlord"
+  ]
+}

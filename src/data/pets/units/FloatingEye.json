@@ -1,0 +1,15 @@
+{
+  "id": "FloatingEye",
+  "name": "Floating Eye",
+  "family": "Esoteric",
+  "eggSprite": "egg_esoteric",
+  "abilitySlots": 2,
+  "sprite": "pet_floating_eye",
+  "description": "A hovering orb of flesh, bristling with tendrils and stalks. Its gaze is unsettling, filled with cold, alien intelligence.",
+  "guaranteedAbilities": [
+    "Teacher",
+    "Drops"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

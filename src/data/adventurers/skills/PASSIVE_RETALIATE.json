@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RETALIATE",
+  "name_key": "passive_retaliate_name",
+  "desc_key": "passive_retaliate_description",
+  "kind": "passive",
+  "name": "Retaliate",
+  "description": "Every time this unit is hit by a melee attack, it has a 50% chance of striking back with a basic attack"
+}

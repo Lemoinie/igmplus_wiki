@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_PANDEMONIUM",
+  "name_key": "active_pandemonium_name",
+  "desc_key": "active_pandemonium_description",
+  "kind": "active",
+  "name": "Pandemonium",
+  "description": "Deals 75% physical damage to all enemies."
+}

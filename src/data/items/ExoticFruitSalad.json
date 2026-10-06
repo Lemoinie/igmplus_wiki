@@ -1,0 +1,14 @@
+{
+  "id": "ExoticFruitSalad",
+  "name": "Exotic fruit Salad",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 23,
+  "sprite": "exotic_fruit_salad",
+  "description": "Complemented with pineapple pieces, this fruit salad is juicy, sweet, and tangy, offering a burst of tropical flavors.",
+  "stats": {
+    "feedPower": 46
+  },
+  "notes": ""
+}

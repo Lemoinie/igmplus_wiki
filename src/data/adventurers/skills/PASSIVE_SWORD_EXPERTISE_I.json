@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SWORD_EXPERTISE_I",
+  "name_key": "passive_sword_expertise_i_name",
+  "desc_key": "passive_sword_expertise_i_description",
+  "kind": "passive",
+  "name": "Sword Expertise",
+  "description": null
+}

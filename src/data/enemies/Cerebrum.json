@@ -1,0 +1,26 @@
+{
+  "id": "Cerebrum",
+  "name": "Cerebrum",
+  "isBoss": false,
+  "sprite": "unit_cerebrum",
+  "stats": {
+    "hp": 5000,
+    "constitution": 100,
+    "intelligence": 250,
+    "dexterity": 1,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "500",
+    "max": "800"
+  },
+  "expGiven": 860,
+  "drops": [
+    {
+      "item": "AbioticCore",
+      "qty": 1,
+      "chance": 10
+    }
+  ]
+}

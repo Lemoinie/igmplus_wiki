@@ -1,0 +1,14 @@
+{
+  "id": "SpiritTome",
+  "name": "Spirit Tome",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 26,
+  "sprite": "spirit_tome",
+  "description": "Otherworldly book found in possession of an ethereal being. Tells of tales from another plane, giving insight into different forms of magic.",
+  "stats": {
+    "intelligence": 9
+  },
+  "notes": ""
+}

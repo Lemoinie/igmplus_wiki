@@ -1,0 +1,16 @@
+{
+  "id": "MonkeyHideJacket",
+  "name": "Monkey Hide Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 828,
+  "sprite": "monkey_hide_jacket",
+  "description": "Very flexible and resilient armor made with monkey hides.",
+  "stats": {
+    "maxHp": 100,
+    "constitution": 5,
+    "dexterity": 5
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_PROTECT_THE_WEAK",
+  "name_key": "active_protect_the_weak_name",
+  "desc_key": "active_protect_the_weak_description",
+  "kind": "active",
+  "name": "Protect the Weak",
+  "description": "\"TAUNTS all enemies for 2 turns. Then, they are dealt 10% damage\n\nTAUNT: the taunting unit is always chosen as target\""
+}

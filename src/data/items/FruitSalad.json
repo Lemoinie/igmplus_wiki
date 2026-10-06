@@ -1,0 +1,14 @@
+{
+  "id": "FruitSalad",
+  "name": "Fruit Salad",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 9,
+  "sprite": "fruit_salad",
+  "description": "A colorful mix of fresh, juicy fruits, sweet and with a soft bite and a vibrant, refreshing flavor.",
+  "stats": {
+    "feedPower": 26
+  },
+  "notes": ""
+}

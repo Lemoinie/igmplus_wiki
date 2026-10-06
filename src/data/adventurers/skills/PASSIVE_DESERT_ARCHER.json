@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_DESERT_ARCHER",
+  "name_key": "passive_desert_archer_name",
+  "desc_key": "passive_desert_archer_description",
+  "kind": "passive",
+  "name": "Desert Archer",
+  "description": "\"10% STUN on hit.\n\nSTUN: the unit skips its turn\""
+}

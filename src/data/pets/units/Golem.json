@@ -1,0 +1,15 @@
+{
+  "id": "Golem",
+  "name": "Golem",
+  "family": "Construct",
+  "eggSprite": "egg_construct",
+  "abilitySlots": 3,
+  "sprite": "pet_golem",
+  "description": "A small, compact figure of dense stone and clay. Despite its size, it is incredibly tough and unyielding, moving with steady purpose, driven by an inner force.",
+  "guaranteedAbilities": [
+    "Magic",
+    "Bright"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

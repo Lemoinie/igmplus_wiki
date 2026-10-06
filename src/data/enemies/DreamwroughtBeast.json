@@ -1,0 +1,26 @@
+{
+  "id": "DreamwroughtBeast",
+  "name": "Dreamwrought Beast",
+  "isBoss": false,
+  "sprite": "unit_dreamwrought_beast",
+  "stats": {
+    "hp": 6000,
+    "constitution": 120,
+    "intelligence": 120,
+    "dexterity": 140,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "550",
+    "max": "800"
+  },
+  "expGiven": 400,
+  "drops": [
+    {
+      "item": "DreamwroughtMane",
+      "qty": 1,
+      "chance": 70
+    }
+  ]
+}

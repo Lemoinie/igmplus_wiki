@@ -1,0 +1,14 @@
+{
+  "id": "VoidPendant",
+  "name": "Void Pendant",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 30000,
+  "sprite": "void_pendant",
+  "description": "Enhanced with matter of complementary type, the neutral essence constrained in this amulet was enhanced beyond its natural limits. Provides an extremely large boost to experience gain.",
+  "stats": {
+    "bonusExperience": 80
+  },
+  "notes": ""
+}

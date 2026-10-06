@@ -1,0 +1,56 @@
+{
+  "id": "BarrenWastelands",
+  "name": "Barren Wastelands",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 49.5,
+  "sprite": "summary_barren_wastelands",
+  "enemies": [
+    {
+      "id": "Banshee",
+      "name": "Banshee",
+      "rate": "15.4%",
+      "role": "Regular"
+    },
+    {
+      "id": "Iconoclast",
+      "name": "Iconoclast",
+      "rate": "12.6%",
+      "role": "Regular"
+    },
+    {
+      "id": "Oculus",
+      "name": "Oculus",
+      "rate": "12.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "CelestialLancer",
+      "name": "CelestialLancer",
+      "rate": "9.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CelestialDestroyer",
+      "name": "CelestialDestroyer",
+      "rate": "0.2%",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "AetherIgnis",
+    "BansheeDagger",
+    "BansheeGloves",
+    "BansheeJacket",
+    "BansheeScale",
+    "CelestialArmor",
+    "CelestialHelmet",
+    "CelestialScraps",
+    "CelestialShield",
+    "CelestialSword",
+    "ChainLink",
+    "ElasticBoots",
+    "ElasticMembrane",
+    "ElasticRobe"
+  ]
+}

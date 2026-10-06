@@ -1,0 +1,41 @@
+{
+  "id": "PrimordialTitan",
+  "name": "Primordial Titan",
+  "isBoss": true,
+  "sprite": "unit_primordial_titan",
+  "stats": {
+    "hp": 15000,
+    "constitution": 200,
+    "intelligence": 1,
+    "dexterity": 80,
+    "defense": 10,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "280",
+    "max": "330"
+  },
+  "expGiven": 1200,
+  "drops": [
+    {
+      "item": "ExaltedPowder",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "ColossalSword",
+      "qty": 1,
+      "chance": 10
+    },
+    {
+      "item": "PotionOfDefense",
+      "qty": 1,
+      "chance": 16
+    },
+    {
+      "item": "ConstructEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

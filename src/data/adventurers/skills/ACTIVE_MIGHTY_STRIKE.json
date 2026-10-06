@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_MIGHTY_STRIKE",
+  "name_key": "active_mighty_strike_name",
+  "desc_key": "active_mighty_strike_description",
+  "kind": "active",
+  "name": "Mighty Strike",
+  "description": "Strikes an enemy for 200% damage"
+}

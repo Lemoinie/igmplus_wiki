@@ -1,0 +1,15 @@
+{
+  "id": "MoltenSlayer",
+  "name": "Molten Slayer",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 5200,
+  "sprite": "molten_slayer",
+  "description": "A berserker's axe drenched in infernite, searing every wound it opens.",
+  "stats": {
+    "constitution": 50,
+    "endOfTurnActionProbability": 0.1
+  },
+  "notes": ""
+}

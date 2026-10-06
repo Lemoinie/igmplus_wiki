@@ -1,0 +1,36 @@
+{
+  "id": "ShahuriMage",
+  "name": "\"Sha'huri Mage\"",
+  "isBoss": false,
+  "sprite": "unit_shahuri_mage",
+  "stats": {
+    "hp": 65,
+    "constitution": 4,
+    "intelligence": 15,
+    "dexterity": 5,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "8",
+    "max": "9"
+  },
+  "expGiven": 30,
+  "drops": [
+    {
+      "item": "ScrapMetal",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "Quartz",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "Pineapple",
+      "qty": 1,
+      "chance": 1
+    }
+  ]
+}

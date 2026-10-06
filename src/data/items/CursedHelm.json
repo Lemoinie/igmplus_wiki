@@ -1,0 +1,15 @@
+{
+  "id": "CursedHelm",
+  "name": "Cursed Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 2880,
+  "sprite": "cursed_helm",
+  "description": "Forged from a metal worn by undead beings for unfathomable time, its sharp edges deter any melee attacker, promising devastating wounds to those who dare approach.",
+  "stats": {
+    "maxHp": 105,
+    "retaliationPhysicalDamage": 15
+  },
+  "notes": ""
+}

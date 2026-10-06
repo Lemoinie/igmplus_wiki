@@ -1,0 +1,14 @@
+{
+  "id": "Salad",
+  "name": "Salad",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 20,
+  "sprite": "salad",
+  "description": "A simple mix of crisp leeks and colorful tomatoes. It’s light, crunchy, and refreshing, but not one of the most nutritious dishes.",
+  "stats": {
+    "feedPower": 33
+  },
+  "notes": ""
+}

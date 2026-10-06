@@ -1,0 +1,25 @@
+{
+  "id": "UndyingBastion",
+  "name": "Undying Bastion",
+  "category": "Footman",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_undying_bastion",
+  "description": "A walking, impenetrable fortress clad in unbreakable battle gear. Deployed in epic battles to stabilize the frontline on newly conquered lands, he is able to withstand a full charge from opposing armies alone.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 320,
+    "baseConstitution": 36,
+    "baseIntelligence": 18,
+    "baseDexterity": 11,
+    "baseDefense": 29,
+    "baseMagicDefense": 29
+  },
+  "activeSkill": "Taunt Iv",
+  "passiveSkill": "Threatening Iii",
+  "promotesTo": [
+    "EternalFortress"
+  ]
+}

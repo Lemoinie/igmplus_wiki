@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_TROLL_MAGIC",
+  "name_key": "passive_troll_magic_name",
+  "desc_key": "passive_troll_magic_description",
+  "kind": "passive",
+  "name": "Troll Magic",
+  "description": "Regenerates 20 HP per turn. Attacks remove a negative status and heal an ally, prioritizing those affected by a negative status."
+}

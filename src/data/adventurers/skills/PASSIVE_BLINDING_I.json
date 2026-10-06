@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BLINDING_I",
+  "name_key": "passive_blinding_i_name",
+  "desc_key": "passive_blinding_i_description",
+  "kind": "passive",
+  "name": "Blinding",
+  "description": "\"This unit has a 2× chance of being targeted by enemies.\nReduce Darkness by 10.\""
+}

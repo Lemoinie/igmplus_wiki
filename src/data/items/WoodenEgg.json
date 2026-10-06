@@ -1,0 +1,12 @@
+{
+  "id": "WoodenEgg",
+  "name": "Wooden Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_wooden",
+  "description": "Egg that will hatch a Wooden pet. Wooden pets like to help the team stay alive, and are rarely keen for harming enemies.",
+  "stats": {},
+  "notes": ""
+}

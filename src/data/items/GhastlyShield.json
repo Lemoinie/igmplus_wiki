@@ -1,0 +1,17 @@
+{
+  "id": "GhastlyShield",
+  "name": "Ghastly Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 155,
+  "sprite": "ghastly_shield",
+  "description": "\"Shield made on skulls and bones infused with a spectral essence of uncertain origin. Its own will is able to harm melee attackers in ways they can't conceive.\"",
+  "stats": {
+    "maxHp": 25,
+    "constitution": 9,
+    "magicDefense": 8,
+    "retaliationMagicalDamage": 10
+  },
+  "notes": ""
+}

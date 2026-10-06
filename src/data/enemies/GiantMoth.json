@@ -1,0 +1,31 @@
+{
+  "id": "GiantMoth",
+  "name": "Giant Moth",
+  "isBoss": false,
+  "sprite": "unit_giant_moth",
+  "stats": {
+    "hp": 480,
+    "constitution": 7,
+    "intelligence": 2,
+    "dexterity": 42,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "70",
+    "max": "95"
+  },
+  "expGiven": 70,
+  "drops": [
+    {
+      "item": "GiantMothWing",
+      "qty": 1,
+      "chance": 55
+    },
+    {
+      "item": "InsectEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

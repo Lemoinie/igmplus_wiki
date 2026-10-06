@@ -1,0 +1,15 @@
+{
+  "id": "CrushingDepth",
+  "name": "Crushing Depth",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 4596,
+  "sprite": "crushing_depth",
+  "description": "\"Further enhanced with more refined electrical artifacts and with a string able to withstand extreme weight. Enemies often lose their balance due to the sheer strength of its arrows.\nSTUN: the unit skips its turn\"",
+  "stats": {
+    "dexterity": 18,
+    "intelligence": 13
+  },
+  "notes": ""
+}

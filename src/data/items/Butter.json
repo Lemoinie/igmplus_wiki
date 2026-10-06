@@ -1,0 +1,14 @@
+{
+  "id": "Butter",
+  "name": "Butter",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 3,
+  "sprite": "butter",
+  "description": "A smooth, pale yellow spread that’s rich and creamy. It melts quickly, releasing a mild, slightly salty flavor with a hint of sweetness.",
+  "stats": {
+    "feedPower": 7
+  },
+  "notes": ""
+}

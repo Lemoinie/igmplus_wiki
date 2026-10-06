@@ -1,0 +1,14 @@
+{
+  "id": "Sauce",
+  "name": "Sauce",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 20,
+  "sprite": "sauce",
+  "description": "A smooth, liquid or semi-liquid mixture derived from tomatoes, leek and a bit of salt. It adds moisture, richness, and depth to dishes.",
+  "stats": {
+    "feedPower": 43
+  },
+  "notes": ""
+}

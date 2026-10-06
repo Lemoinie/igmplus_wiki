@@ -1,0 +1,15 @@
+{
+  "id": "FloatingSeed",
+  "name": "Floating Seed",
+  "family": "Wooden",
+  "eggSprite": "egg_wooden",
+  "abilitySlots": 2,
+  "sprite": "pet_floating_seed",
+  "description": "A small, round seed with a helix-like appendage. It just shuffles about, searching for fertile ground.",
+  "guaranteedAbilities": [
+    "Healer",
+    "Soothing"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

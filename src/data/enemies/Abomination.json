@@ -1,0 +1,36 @@
+{
+  "id": "Abomination",
+  "name": "Abomination",
+  "isBoss": false,
+  "sprite": "unit_abomination",
+  "stats": {
+    "hp": 1000,
+    "constitution": 20,
+    "intelligence": 1,
+    "dexterity": 2,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "30",
+    "max": "35"
+  },
+  "expGiven": 196,
+  "drops": [
+    {
+      "item": "SoulShard",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "BoneFragment",
+      "qty": 3,
+      "chance": 94.6
+    },
+    {
+      "item": "PotionOfConstitution",
+      "qty": 1,
+      "chance": 0.4
+    }
+  ]
+}

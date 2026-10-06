@@ -1,0 +1,26 @@
+{
+  "id": "SpireSage",
+  "name": "Spire Sage",
+  "category": "Rogue",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_spire_sage",
+  "description": "Spire Sages are those who advance the lethal techniques of the spire assassins. New Sages may not emerge for centuries, as the cynical resolve needed to pursue such knowledge is extremely uncommon.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 27,
+    "baseIntelligence": 11,
+    "baseDexterity": 27,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Eclipse Iii",
+  "passiveSkill": "Despise Weakness",
+  "promotesTo": [
+    "Whisper"
+  ]
+}

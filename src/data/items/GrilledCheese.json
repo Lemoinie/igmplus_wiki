@@ -1,0 +1,14 @@
+{
+  "id": "GrilledCheese",
+  "name": "Grilled Cheese",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 30,
+  "sprite": "grilled_cheese",
+  "description": "Golden, crispy bread surrounds melted, gooey cheese. The sandwich is warm and rich, with a satisfying crunch and a creamy, salty interior.",
+  "stats": {
+    "feedPower": 60
+  },
+  "notes": ""
+}

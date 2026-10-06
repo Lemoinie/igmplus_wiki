@@ -1,0 +1,14 @@
+{
+  "id": "Cheese",
+  "name": "Cheese",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 8,
+  "sprite": "cheese",
+  "description": "\"Solid milk derivative, ranging in color from yellow to orange. Its flavor is sharp and salty, and it's used in many delicious recipes.\"",
+  "stats": {
+    "feedPower": 9
+  },
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "Hailstorm",
+  "name": "Hailstorm",
+  "category": "Archer",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_hailstorm",
+  "description": "Having developed an almost superhuman ability with her weapon, she hails arrows on enemy armies with such a speed that surviving is almost impossible",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 9,
+    "baseIntelligence": 14,
+    "baseDexterity": 28,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage V",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": [
+    "Tempest"
+  ]
+}

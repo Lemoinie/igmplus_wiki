@@ -1,0 +1,15 @@
+{
+  "id": "BleakBoots",
+  "name": "Bleak Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 2016,
+  "sprite": "bleak_boots",
+  "description": "Boots made from unknown materials, glowing with an evil light and blessed by an ancient power.",
+  "stats": {
+    "flatDodgeChance": 0.2,
+    "dexterity": 34
+  },
+  "notes": ""
+}

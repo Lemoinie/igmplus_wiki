@@ -1,0 +1,17 @@
+{
+  "id": "Kitsune",
+  "name": "Senko",
+  "family": "Mythic",
+  "eggSprite": "egg_mythic",
+  "abilitySlots": 5,
+  "sprite": "pet_kitsune",
+  "description": "A divine celestial kitsune dedicated to nurturing and pampering the guild. Unlocks all traits immediately at Level 1.",
+  "guaranteedAbilities": [
+    "Teacher",
+    "Drops",
+    "Opportunist",
+    "Savage"
+  ],
+  "exclusiveAbility": "Kitsune Spirit Blessing",
+  "exclusiveDescription": "Empowers guild healing by +(0.6% × Level) as a global multiplier. All traits are active from Level 1."
+}

@@ -1,0 +1,16 @@
+{
+  "id": "DreamwroughtJacket",
+  "name": "Dreamwrought Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 435,
+  "sprite": "dreamwrought_jacket",
+  "description": "Jacket assembled from materials dreamt by an otherworldly being. Sacrifices defense to grant a superior mobility to the wearer.",
+  "stats": {
+    "maxHp": 208,
+    "constitution": 26,
+    "dexterity": 26
+  },
+  "notes": ""
+}

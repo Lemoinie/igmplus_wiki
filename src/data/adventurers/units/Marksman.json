@@ -1,0 +1,26 @@
+{
+  "id": "Marksman",
+  "name": "Marksman",
+  "category": "Archer",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_marksman",
+  "description": "Rigorous training coupled with a keen vision blessed the Marksman with a perfect aim, even in the most hostile conditions.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 65,
+    "baseConstitution": 6,
+    "baseIntelligence": 8,
+    "baseDexterity": 16,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Keen Vision",
+  "promotesTo": [
+    "Sureshot",
+    "PoisonBow"
+  ]
+}

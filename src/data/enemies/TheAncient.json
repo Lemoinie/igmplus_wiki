@@ -1,0 +1,26 @@
+{
+  "id": "TheAncient",
+  "name": "The Ancient",
+  "isBoss": true,
+  "sprite": "unit_the_ancient",
+  "stats": {
+    "hp": 35000,
+    "constitution": 85,
+    "intelligence": 925,
+    "dexterity": 45,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "3500",
+    "max": "4500"
+  },
+  "expGiven": 17500,
+  "drops": [
+    {
+      "item": "HeartOfDarkness",
+      "qty": 1,
+      "chance": 33.3
+    }
+  ]
+}

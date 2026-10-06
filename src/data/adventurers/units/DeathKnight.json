@@ -1,0 +1,25 @@
+{
+  "id": "DeathKnight",
+  "name": "Death Knight",
+  "category": "Footman",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_death_knight",
+  "description": "Inspiring fear as he roams the lands, the Death Knight relentlessly obliterates any obstacle that lies in the path of his objectives.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 170,
+    "baseConstitution": 24,
+    "baseIntelligence": 10,
+    "baseDexterity": 10,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Decimate I",
+  "passiveSkill": "Threatening I",
+  "promotesTo": [
+    "Scourge"
+  ]
+}

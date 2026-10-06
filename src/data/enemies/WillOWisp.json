@@ -1,0 +1,41 @@
+{
+  "id": "WillOWisp",
+  "name": "\"Will o' Wisp\"",
+  "isBoss": false,
+  "sprite": "unit_will_o_wisp",
+  "stats": {
+    "hp": 90,
+    "constitution": 8,
+    "intelligence": 15,
+    "dexterity": 20,
+    "defense": 100,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "10",
+    "max": "13"
+  },
+  "expGiven": 38,
+  "drops": [
+    {
+      "item": "SpiritTome",
+      "qty": 1,
+      "chance": 1
+    },
+    {
+      "item": "SpiritCandle",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "SpectralCloth",
+      "qty": 1,
+      "chance": 70
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

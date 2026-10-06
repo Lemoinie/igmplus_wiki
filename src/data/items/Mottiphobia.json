@@ -1,0 +1,15 @@
+{
+  "id": "Mottiphobia",
+  "name": "Mottiphobia",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 3758,
+  "sprite": "mottiphobia",
+  "description": "\"The blade of this dagger is colonized with small flying critters gathered from an ethereal dream. They will help the holder by swarming a random target, dealing a ranged attack with damage equal to the holder's HP.\"",
+  "stats": {
+    "maxHp": 25,
+    "dexterity": 10
+  },
+  "notes": ""
+}

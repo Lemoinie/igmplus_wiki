@@ -1,0 +1,15 @@
+{
+  "id": "AbhorrentLongAxe",
+  "name": "Abhorrent Long Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 9500,
+  "sprite": "abhorrent_long_axe",
+  "description": "A long axe anchored with an abiotic core, spreading ruin, fear and silence.",
+  "stats": {
+    "constitution": 15,
+    "intelligence": 35
+  },
+  "notes": ""
+}

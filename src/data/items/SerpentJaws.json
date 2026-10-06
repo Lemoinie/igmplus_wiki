@@ -1,0 +1,15 @@
+{
+  "id": "SerpentJaws",
+  "name": "Serpent Jaws",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 0,
+  "sprite": "serpent_jaws",
+  "description": "The jaws of a slithering undead monster.",
+  "stats": {
+    "counterattack": 0.35,
+    "dexterity": 5
+  },
+  "notes": ""
+}

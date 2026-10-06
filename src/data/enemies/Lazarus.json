@@ -1,0 +1,26 @@
+{
+  "id": "Lazarus",
+  "name": "Lazarus",
+  "isBoss": true,
+  "sprite": "unit_lazarus",
+  "stats": {
+    "hp": 28500,
+    "constitution": 80,
+    "intelligence": 200,
+    "dexterity": 250,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "2800",
+    "max": "4000"
+  },
+  "expGiven": 5000,
+  "drops": [
+    {
+      "item": "AncestralBlood",
+      "qty": 1,
+      "chance": 40
+    }
+  ]
+}

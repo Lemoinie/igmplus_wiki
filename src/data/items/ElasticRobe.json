@@ -1,0 +1,15 @@
+{
+  "id": "ElasticRobe",
+  "name": "Elastic Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 444,
+  "sprite": "elastic_robe",
+  "description": "An unknown light, elastic material sewn in the shape of a robe. Offers great protection, without hindering the wearer mobility, which is vital for spellcasting.",
+  "stats": {
+    "maxHp": 90,
+    "intelligence": 27
+  },
+  "notes": ""
+}

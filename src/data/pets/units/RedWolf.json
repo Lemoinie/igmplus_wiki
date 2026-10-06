@@ -1,0 +1,15 @@
+{
+  "id": "RedWolf",
+  "name": "Red Wolf",
+  "family": "Wild",
+  "eggSprite": "egg_wild",
+  "abilitySlots": 4,
+  "sprite": "pet_red_wolf",
+  "description": "A lean, russet-furred predator with sharp instincts and a commanding presence.",
+  "guaranteedAbilities": [
+    "Bloodthirsty",
+    "Bloodcrave"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

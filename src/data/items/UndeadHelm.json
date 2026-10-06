@@ -1,0 +1,14 @@
+{
+  "id": "UndeadHelm",
+  "name": "Undead Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 42,
+  "sprite": "undead_helm",
+  "description": "Helm made with undead remains. Offers more protection than more traditional ones.",
+  "stats": {
+    "maxHp": 60
+  },
+  "notes": ""
+}

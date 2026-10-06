@@ -1,0 +1,16 @@
+{
+  "id": "CunningDownfall",
+  "name": "Cunning Downfall",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 4320,
+  "sprite": "cunning_downfall",
+  "description": "\"This armor components can vibrate so fast they disrupt the propagation of sound in the air, making spellcasters unable to cast their spells.\nSILENCE: the unit can't gain any mana\"",
+  "stats": {
+    "maxHp": 140,
+    "constitution": 5,
+    "dexterity": 5
+  },
+  "notes": ""
+}

@@ -1,0 +1,15 @@
+{
+  "id": "AnimatedSword",
+  "name": "Animated Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 635,
+  "sprite": "animated_sword",
+  "description": "Sword made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "constitution": 30,
+    "dexterity": 10
+  },
+  "notes": ""
+}

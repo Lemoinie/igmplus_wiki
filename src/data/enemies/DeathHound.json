@@ -1,0 +1,31 @@
+{
+  "id": "DeathHound",
+  "name": "Death Hound",
+  "isBoss": false,
+  "sprite": "unit_death_hound",
+  "stats": {
+    "hp": 70,
+    "constitution": 8,
+    "intelligence": 1,
+    "dexterity": 20,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "17",
+    "max": "28"
+  },
+  "expGiven": 36,
+  "drops": [
+    {
+      "item": "TatteredHide",
+      "qty": 1,
+      "chance": 80
+    },
+    {
+      "item": "ElongatedBone",
+      "qty": 1,
+      "chance": 4
+    }
+  ]
+}

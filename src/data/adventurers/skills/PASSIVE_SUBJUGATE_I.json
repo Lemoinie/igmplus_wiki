@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SUBJUGATE_I",
+  "name_key": "passive_subjugate_i_name",
+  "desc_key": "passive_subjugate_i_description",
+  "kind": "passive",
+  "name": "Subjugate",
+  "description": "\"This unit has a 2× chance of being targeted by enemies. If the target HP is lower than this unit's HP, 50% STUN chance on hit. Basic attacks BLOODFLAME the target for 1 turn.\n\nSTUN: the unit skips its turn\nBLOODFLAME: burns for 5% max HP each turn (magic damage) and prevents all healing.\""
+}

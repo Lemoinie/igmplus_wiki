@@ -1,0 +1,31 @@
+{
+  "id": "TrollWhelp",
+  "name": "Troll Whelp",
+  "isBoss": false,
+  "sprite": "unit_troll_whelp",
+  "stats": {
+    "hp": 470,
+    "constitution": 20,
+    "intelligence": 2,
+    "dexterity": 6,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "42",
+    "max": "48"
+  },
+  "expGiven": 60,
+  "drops": [
+    {
+      "item": "TrollHide",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "Blueberry",
+      "qty": 1,
+      "chance": 1.5
+    }
+  ]
+}

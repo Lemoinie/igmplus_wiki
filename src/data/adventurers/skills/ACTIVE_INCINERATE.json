@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_INCINERATE",
+  "name_key": "active_incinerate_name",
+  "desc_key": "active_incinerate_description",
+  "kind": "active",
+  "name": "Incinerate",
+  "description": null
+}

@@ -1,0 +1,15 @@
+{
+  "id": "Lizard",
+  "name": "Lizard",
+  "family": "Reptile",
+  "eggSprite": "egg_reptile",
+  "abilitySlots": 2,
+  "sprite": "pet_lizard",
+  "description": "A small reptile with agile limbs and darting eyes. It scurries nimbly over rocks and through foliage, quick to flick its tongue and bask in the sun.",
+  "guaranteedAbilities": [
+    "Savage",
+    "Opportunist"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

@@ -1,0 +1,14 @@
+{
+  "id": "BlackIronHelm",
+  "name": "Black Iron Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 279,
+  "sprite": "black_iron_helm",
+  "description": "Resistant helm made with Black Iron.",
+  "stats": {
+    "maxHp": 100
+  },
+  "notes": ""
+}

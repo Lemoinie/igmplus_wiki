@@ -1,0 +1,14 @@
+{
+  "id": "UndeadGreaves",
+  "name": "Undead Greaves",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 75,
+  "sprite": "undead_greaves",
+  "description": "Sturdy footwear made from undead remains.",
+  "stats": {
+    "dexterity": 9
+  },
+  "notes": ""
+}

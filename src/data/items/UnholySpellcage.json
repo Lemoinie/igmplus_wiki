@@ -1,0 +1,16 @@
+{
+  "id": "UnholySpellcage",
+  "name": "Unholy Spellcage",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 3086,
+  "sprite": "unholy_spellcage",
+  "description": "Bound within this ungodly cuirass by a potent spell, the seal of the Ten Hells burns fiercely, swiftly dissolving any foe bold enough to draw near.",
+  "stats": {
+    "maxHp": 320,
+    "constitution": 9,
+    "retaliationMagicalDamage": 60
+  },
+  "notes": ""
+}

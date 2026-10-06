@@ -1,0 +1,26 @@
+{
+  "id": "TutorialWolf",
+  "name": "Wolf",
+  "isBoss": false,
+  "sprite": "unit_wolf",
+  "stats": {
+    "hp": 45,
+    "constitution": 8,
+    "intelligence": 2,
+    "dexterity": 5,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "2",
+    "max": "5"
+  },
+  "expGiven": 12,
+  "drops": [
+    {
+      "item": "BeastPelt",
+      "qty": 2,
+      "chance": 100
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "id": "TentacleTangle",
+  "name": "Tentacle Tangle",
+  "family": "Esoteric",
+  "eggSprite": "egg_esoteric",
+  "abilitySlots": 3,
+  "sprite": "pet_tentacle_tangle",
+  "description": "A writhing cluster of cosmic tentacles pulsating with otherworldly energy.",
+  "guaranteedAbilities": [
+    "Teacher",
+    "Drops"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

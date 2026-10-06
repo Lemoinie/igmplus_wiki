@@ -1,0 +1,25 @@
+{
+  "id": "ElementalAlchemist",
+  "name": "Elemental Alchemist",
+  "category": "Archer",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_elemental_alchemist",
+  "description": "A brilliant mind who devoted her life to the study of Thaumaturgy, she has successfully replicated elemental magic in her potions using only natural ingredients and chemical processes.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 195,
+    "baseConstitution": 10,
+    "baseIntelligence": 20,
+    "baseDexterity": 28,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Thaumaturgy Ii",
+  "promotesTo": [
+    "EsotericAlchemist"
+  ]
+}

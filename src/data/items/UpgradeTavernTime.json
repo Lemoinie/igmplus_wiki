@@ -1,0 +1,14 @@
+{
+  "id": "UpgradeTavernTime",
+  "name": "Upgrade: Tavern Time",
+  "type": "accessory",
+  "category": "Upgrade",
+  "rarity": null,
+  "price": 1,
+  "sprite": "upgrade_tavern_time",
+  "description": "\"Permanently reduces Tavern's wait time by 10%.\nLimited to two purchases.\nThis item will be consumed automatically upon buying it.\"",
+  "stats": {
+    "gemPrice": 300
+  },
+  "notes": ""
+}

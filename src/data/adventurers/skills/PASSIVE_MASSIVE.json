@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_MASSIVE",
+  "name_key": "passive_massive_name",
+  "desc_key": "passive_massive_description",
+  "kind": "passive",
+  "name": "Massive",
+  "description": "Stuns for 2 turns with every basic attack."
+}

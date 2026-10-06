@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_SMASH",
+  "name_key": "active_smash_name",
+  "desc_key": "active_smash_description",
+  "kind": "active",
+  "name": "Smash",
+  "description": "Smashes the ground, dealing 50% damage to all enemies."
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Avocado",
+  "name": "Avocado",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 20,
+  "sprite": "avocado",
+  "description": "It has a smooth, dark green skin with a creamy, buttery flesh inside. It’s mild and rich in fats, with a subtle, nutty flavor. Complements some of the most exotic, fish based recipes.",
+  "stats": {
+    "feedPower": 36
+  },
+  "notes": ""
+}

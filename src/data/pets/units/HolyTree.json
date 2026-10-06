@@ -1,0 +1,15 @@
+{
+  "id": "HolyTree",
+  "name": "Holy Tree",
+  "family": "Wooden",
+  "eggSprite": "egg_wooden",
+  "abilitySlots": 4,
+  "sprite": "pet_holy_tree",
+  "description": "A small bonsai tree not taller than the average human. Despite its unassuming appearance, these trees belong to an almost extinct ancient species of sentient trees.",
+  "guaranteedAbilities": [
+    "Healer",
+    "Soothing"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

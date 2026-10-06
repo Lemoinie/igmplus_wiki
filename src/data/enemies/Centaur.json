@@ -1,0 +1,36 @@
+{
+  "id": "Centaur",
+  "name": "Centaur",
+  "isBoss": false,
+  "sprite": "unit_centaur",
+  "stats": {
+    "hp": 80,
+    "constitution": 12,
+    "intelligence": 10,
+    "dexterity": 22,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "8",
+    "max": "15"
+  },
+  "expGiven": 24,
+  "drops": [
+    {
+      "item": "PlantFiber",
+      "qty": 1,
+      "chance": 45
+    },
+    {
+      "item": "CopperOre",
+      "qty": 1,
+      "chance": 45
+    },
+    {
+      "item": "Cheese",
+      "qty": 1,
+      "chance": 2.5
+    }
+  ]
+}

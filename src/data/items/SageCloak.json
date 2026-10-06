@@ -1,0 +1,16 @@
+{
+  "id": "SageCloak",
+  "name": "Sage Cloak",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 3533,
+  "sprite": "sage_cloak",
+  "description": "Cloak enhanced with a powerful infusion, able to boost the learning ability of the wearer.",
+  "stats": {
+    "maxHp": 70,
+    "intelligence": 21,
+    "bonusExperience": 60
+  },
+  "notes": ""
+}

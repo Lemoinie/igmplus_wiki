@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PYROMANCY_II",
+  "name_key": "passive_pyromancy_ii_name",
+  "desc_key": "passive_pyromancy_ii_description",
+  "kind": "passive",
+  "name": "Pyromancy II",
+  "description": "\"Attacks set ABLAZE for 1 turn. Pokes 2 random enemies for 1 damage after each basic attack, applying status effects.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn\""
+}

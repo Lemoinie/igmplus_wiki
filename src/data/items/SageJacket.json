@@ -1,0 +1,17 @@
+{
+  "id": "SageJacket",
+  "name": "Sage Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 3465,
+  "sprite": "sage_jacket",
+  "description": "Jacket enhanced with a powerful infusion, able to boost the learning ability of the wearer.",
+  "stats": {
+    "maxHp": 140,
+    "constitution": 7,
+    "dexterity": 7,
+    "bonusExperience": 60
+  },
+  "notes": ""
+}

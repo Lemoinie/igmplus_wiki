@@ -1,0 +1,16 @@
+{
+  "id": "ColossalSwordOfScarletKing",
+  "name": "Colossal Sword of Scarlet King",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 50000,
+  "sprite": "colossal_sword_of_scarlet_king",
+  "description": "A colossal blade steeped in the flesh of the Formless Mother. Bloodflame yet clings to its edge, burning within wounds that refuse to close.",
+  "stats": {
+    "constitution": 124,
+    "dexterity": 7,
+    "bloodflameDamageBonus": 50
+  },
+  "notes": ""
+}

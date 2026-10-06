@@ -1,0 +1,47 @@
+{
+  "id": "CelestialMothership",
+  "name": "Celestial Mothership",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_celestial_mothership",
+  "enemies": [
+    {
+      "id": "CelestialDestroyer",
+      "name": "CelestialDestroyer",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "CelestialLancer",
+      "name": "CelestialLancer",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Gcss",
+      "name": "Gcss",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "LegateHadrian",
+      "name": "LegateHadrian",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Oculus",
+      "name": "Oculus",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ReinforcedDoor",
+      "name": "ReinforcedDoor",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

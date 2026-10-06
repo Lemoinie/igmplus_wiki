@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ABLAZE",
+  "name_key": "passive_ablaze_name",
+  "desc_key": "passive_ablaze_description",
+  "kind": "passive",
+  "name": "Ablaze",
+  "description": "\"Can't be set ABLAZE. Melee attacks to and from this target set ABLAZE for 3 turns\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn\""
+}

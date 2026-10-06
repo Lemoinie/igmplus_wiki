@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SABOTEUR",
+  "name_key": "passive_saboteur_name",
+  "desc_key": "passive_saboteur_description",
+  "kind": "passive",
+  "name": "Saboteur",
+  "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed."
+}

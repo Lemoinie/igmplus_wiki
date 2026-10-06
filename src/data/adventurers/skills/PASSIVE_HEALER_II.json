@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_HEALER_II",
+  "name_key": "passive_healer_ii_name",
+  "desc_key": "passive_healer_ii_description",
+  "kind": "passive",
+  "name": "Healer II",
+  "description": "Attacks heal the ally with the lowest health for 50% damage. Healing an ally also removes a negative condition. Can be used while exploring"
+}

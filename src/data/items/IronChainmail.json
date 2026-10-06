@@ -1,0 +1,15 @@
+{
+  "id": "IronChainmail",
+  "name": "Iron Chainmail",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 51,
+  "sprite": "iron_chainmail",
+  "description": "Iron rings woven together to confer basic protection in battle.",
+  "stats": {
+    "maxHp": 60,
+    "constitution": 2
+  },
+  "notes": ""
+}

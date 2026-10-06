@@ -1,0 +1,25 @@
+{
+  "id": "Barbarian",
+  "name": "Barbarian",
+  "category": "Outlander",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_barbarian",
+  "description": "A brutal combatant thriving on the chaos of close-quarters skirmishing.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 85,
+    "baseConstitution": 15,
+    "baseIntelligence": 9,
+    "baseDexterity": 3,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Berserker"
+  ]
+}

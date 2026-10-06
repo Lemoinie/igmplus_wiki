@@ -1,0 +1,23 @@
+{
+  "id": "Balrog",
+  "name": "Balrog",
+  "category": "Apprentice",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_balrog",
+  "description": "The unrestrained embodiment of Chaos, feared even by powerful Gods. This natural force wreaks havoc in the mortal lands as in the depths of hell, often having entire armies failing to stop its march.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 380,
+    "baseConstitution": 36,
+    "baseIntelligence": 36,
+    "baseDexterity": 36,
+    "baseDefense": 36,
+    "baseMagicDefense": 36
+  },
+  "activeSkill": "Whip And Tear",
+  "passiveSkill": "Chaotic",
+  "promotesTo": []
+}

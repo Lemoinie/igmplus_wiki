@@ -1,0 +1,41 @@
+{
+  "id": "Ent",
+  "name": "Ent",
+  "isBoss": false,
+  "sprite": "unit_ent",
+  "stats": {
+    "hp": 300,
+    "constitution": 20,
+    "intelligence": 20,
+    "dexterity": 3,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "11",
+    "max": "14"
+  },
+  "expGiven": "Logger.BARD_SHIELD",
+  "drops": [
+    {
+      "item": "Wood",
+      "qty": 1,
+      "chance": 49.9
+    },
+    {
+      "item": "AncientSeed",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "Apple",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "WoodenEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

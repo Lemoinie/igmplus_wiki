@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfIntelligence",
+  "name": "Potion of Intelligence",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_intelligence",
+  "description": "Permanently increases Intelligence by 1.",
+  "stats": {},
+  "notes": ""
+}

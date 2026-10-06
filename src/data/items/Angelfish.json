@@ -1,0 +1,14 @@
+{
+  "id": "Angelfish",
+  "name": "Angelfish",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 50,
+  "sprite": "angelfish",
+  "description": "A delicate angelfish, perfect for pampered pets.",
+  "stats": {
+    "feedPower": 25
+  },
+  "notes": ""
+}

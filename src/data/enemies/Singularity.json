@@ -1,0 +1,31 @@
+{
+  "id": "Singularity",
+  "name": "Singularity",
+  "isBoss": true,
+  "sprite": "unit_singularity",
+  "stats": {
+    "hp": 30000,
+    "constitution": 100,
+    "intelligence": 100,
+    "dexterity": 100,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1225",
+    "max": "1275"
+  },
+  "expGiven": 12000,
+  "drops": [
+    {
+      "item": "FlakeOfInfinity",
+      "qty": 1,
+      "chance": 96
+    },
+    {
+      "item": "InfinityHat",
+      "qty": 1,
+      "chance": 4
+    }
+  ]
+}

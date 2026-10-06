@@ -1,0 +1,16 @@
+{
+  "id": "ScarletOni",
+  "name": "Scarlet Oni",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 100000,
+  "sprite": "scarlet_oni",
+  "description": "A demonic visage forged from condensed Scarlet strands. Discarding conventional heavy plating, it surges with raw bloodlust that drives its wearer to strike down foes with brutal, crushing criticals.",
+  "stats": {
+    "maxHp": 470,
+    "constitution": 56,
+    "damageDealtModifier": 0.27
+  },
+  "notes": ""
+}

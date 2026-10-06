@@ -1,0 +1,16 @@
+{
+  "id": "CursedJacket",
+  "name": "Cursed Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 1440,
+  "sprite": "cursed_jacket",
+  "description": "Made with an ancient metal with unique properties, makes deep wounds inflicted by the wearer hurt even more.",
+  "stats": {
+    "maxHp": 100,
+    "constitution": 10,
+    "criticalDamage": 0.5
+  },
+  "notes": ""
+}

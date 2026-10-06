@@ -1,0 +1,15 @@
+{
+  "id": "Tarantula",
+  "name": "Tarantula",
+  "family": "Insect",
+  "eggSprite": "egg_insect",
+  "abilitySlots": 4,
+  "sprite": "pet_tarantula",
+  "description": "A large, hairy arachnid with thick legs and potent venom. It waits with patient stillness before striking.",
+  "guaranteedAbilities": [
+    "Fighter",
+    "Barrier"
+  ],
+  "exclusiveAbility": null,
+  "exclusiveDescription": null
+}

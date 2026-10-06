@@ -1,0 +1,25 @@
+{
+  "id": "ForestDruid",
+  "name": "Forest Druid",
+  "category": "Outlander",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_forest_druid",
+  "description": "Draws upon the deep canopy to mend woodland spirits and smother aggressors.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 95,
+    "baseConstitution": 17,
+    "baseIntelligence": 15,
+    "baseDexterity": 4,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "GloomDruid"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "id": "ReinforcedDoor",
+  "name": "Reinforced Door",
+  "isBoss": false,
+  "sprite": "unit_reinforced_door",
+  "stats": {
+    "hp": 3000,
+    "constitution": 400,
+    "intelligence": 1,
+    "dexterity": 15,
+    "defense": 20,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "200",
+    "max": "300"
+  },
+  "expGiven": 300,
+  "drops": [
+    {
+      "item": "CelestialScraps",
+      "qty": 50,
+      "chance": 100
+    }
+  ]
+}

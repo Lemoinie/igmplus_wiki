@@ -1,0 +1,12 @@
+{
+  "id": "EsotericEgg",
+  "name": "Esoteric Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_esoteric",
+  "description": "Egg that will hatch an Esoteric pet. Esoteric pets like to provide indirect bonuses, like granting enhanced learning, or finding more items.",
+  "stats": {},
+  "notes": ""
+}

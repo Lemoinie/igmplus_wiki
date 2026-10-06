@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfPrecision",
+  "name": "Potion of Precision",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_precision",
+  "description": "Permanently increases Critical Hit Chance by 1%.",
+  "stats": {},
+  "notes": ""
+}

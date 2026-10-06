@@ -1,0 +1,36 @@
+{
+  "id": "Pirate",
+  "name": "Pirate",
+  "isBoss": false,
+  "sprite": "unit_pirate",
+  "stats": {
+    "hp": 380,
+    "constitution": 25,
+    "intelligence": 4,
+    "dexterity": 20,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "28",
+    "max": "35"
+  },
+  "expGiven": 30,
+  "drops": [
+    {
+      "item": "GhostwoodStump",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "BlackIronScraps",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "FreshSalmon",
+      "qty": 1,
+      "chance": 1.2
+    }
+  ]
+}

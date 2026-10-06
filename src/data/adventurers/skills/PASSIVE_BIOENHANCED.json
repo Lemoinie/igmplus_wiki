@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BIOENHANCED",
+  "name_key": "passive_bioenhanced_name",
+  "desc_key": "passive_bioenhanced_description",
+  "kind": "passive",
+  "name": "Bioenhanced",
+  "description": "Displays a stronger version of every trait."
+}

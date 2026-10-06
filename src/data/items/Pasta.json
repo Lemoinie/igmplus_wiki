@@ -1,0 +1,14 @@
+{
+  "id": "Pasta",
+  "name": "Pasta",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 24,
+  "sprite": "pasta",
+  "description": "Long spaghetti derived from grains, a common food found in many towns and villages. It provides a satisfying, slightly chewy texture and can be perfected with sauce.",
+  "stats": {
+    "feedPower": 59
+  },
+  "notes": ""
+}

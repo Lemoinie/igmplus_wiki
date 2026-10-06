@@ -1,0 +1,14 @@
+{
+  "id": "GoldenHelm",
+  "name": "Golden Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 363,
+  "sprite": "golden_helm",
+  "description": "Helm made of gold, worn by the Imperial Army infantrymen.",
+  "stats": {
+    "maxHp": 80
+  },
+  "notes": ""
+}

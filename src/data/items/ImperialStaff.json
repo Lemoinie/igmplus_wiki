@@ -1,0 +1,16 @@
+{
+  "id": "ImperialStaff",
+  "name": "Imperial Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 564,
+  "sprite": "imperial_staff",
+  "description": "\"A staff traditionally held by the powerful Imperial Mages, working with the Empire's army. Only the best pieces from the Golden City artisans make it to the battlefield.\"",
+  "stats": {
+    "intelligence": 26,
+    "constitution": 8,
+    "dexterity": 8
+  },
+  "notes": ""
+}

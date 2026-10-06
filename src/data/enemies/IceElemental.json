@@ -1,0 +1,41 @@
+{
+  "id": "IceElemental",
+  "name": "Ice Elemental",
+  "isBoss": false,
+  "sprite": "unit_ice_elemental",
+  "stats": {
+    "hp": 2000,
+    "constitution": 3,
+    "intelligence": 33,
+    "dexterity": 3,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "20",
+    "max": "55"
+  },
+  "expGiven": 280,
+  "drops": [
+    {
+      "item": "FrostmetalOre",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "FrostCrystal",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "FrostNucleus",
+      "qty": 1,
+      "chance": 0.5
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

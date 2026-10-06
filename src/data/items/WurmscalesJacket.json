@@ -1,0 +1,16 @@
+{
+  "id": "WurmscalesJacket",
+  "name": "Wurmscales Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 45,
+  "sprite": "wurmscales_jacket",
+  "description": "Made with wurm scales for increased integrity, padded with feathers.",
+  "stats": {
+    "maxHp": 40,
+    "constitution": 2,
+    "dexterity": 2
+  },
+  "notes": ""
+}

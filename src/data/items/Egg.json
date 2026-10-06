@@ -1,0 +1,14 @@
+{
+  "id": "Egg",
+  "name": "Egg",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 2,
+  "sprite": "egg",
+  "description": "A smooth, oval shell encasing a firm white and a bright yellow yolk. When cooked, it becomes either soft and creamy or firm, with a mild, rich taste.",
+  "stats": {
+    "feedPower": 10
+  },
+  "notes": ""
+}

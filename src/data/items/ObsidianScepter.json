@@ -1,0 +1,14 @@
+{
+  "id": "ObsidianScepter",
+  "name": "Obsidian Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 324,
+  "sprite": "obsidian_scepter",
+  "description": "\"Perfectly balanced scepter sculpted from obsidian, offers minimal resistance to the owner's flow of magic.\"",
+  "stats": {
+    "intelligence": 28
+  },
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "Phoenix",
+  "name": "Kiara",
+  "family": "Mythic",
+  "eggSprite": "egg_mythic",
+  "abilitySlots": 5,
+  "sprite": "pet_phoenix",
+  "description": "An immortal phoenix born from eternal flames. With radiant warmth and vibrant spirit, she rises anew each time she falls.",
+  "guaranteedAbilities": [
+    "Teacher",
+    "Drops",
+    "Opportunist",
+    "Savage"
+  ],
+  "exclusiveAbility": "Solar Rebirth",
+  "exclusiveDescription": "Each combat turn: 0.15% × Level chance to revive/protect fallen allies (1 + floor(Level / 50) allies)."
+}

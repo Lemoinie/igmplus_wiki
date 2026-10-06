@@ -1,0 +1,15 @@
+{
+  "id": "LivingWhip",
+  "name": "Living Whip",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 567,
+  "sprite": "living_whip",
+  "description": "\"An unconventional weapon made with improvised materials, after careful research about the nature of the mysterious Dryad's hairs. Taunts enemies on hit for one turn, and has much greater range than the regular melee weapons.\nTAUNT: the taunting unit is always chosen as target\"",
+  "stats": {
+    "maxHp": 40,
+    "dexterity": 12
+  },
+  "notes": ""
+}

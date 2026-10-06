@@ -1,0 +1,36 @@
+{
+  "id": "ImperialGuard",
+  "name": "Imperial Guard",
+  "isBoss": false,
+  "sprite": "unit_imperial_guard",
+  "stats": {
+    "hp": 600,
+    "constitution": 35,
+    "intelligence": 10,
+    "dexterity": 25,
+    "defense": 30,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "30",
+    "max": "34"
+  },
+  "expGiven": 92,
+  "drops": [
+    {
+      "item": "GoldScraps",
+      "qty": 1,
+      "chance": 40
+    },
+    {
+      "item": "CorruptedShield",
+      "qty": 1,
+      "chance": 0.1
+    },
+    {
+      "item": "BlackOoze",
+      "qty": 1,
+      "chance": 20
+    }
+  ]
+}

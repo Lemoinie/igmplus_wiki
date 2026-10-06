@@ -1,0 +1,16 @@
+{
+  "id": "BloodstoneClaws",
+  "name": "Bloodstone Claws",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 17500,
+  "sprite": "bloodstone_claws",
+  "description": "\"Gloves forged with ancient iron, infused with crystalline bloodstone and forged with scarlet debris. Vibrates in a frenzied cadence that allows the wearer to cut through flesh with lethal speed. The attack has to be melee for the effect to take place.\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge\"",
+  "stats": {
+    "constitution": 25,
+    "dexterity": 26,
+    "attackSpeed": 20
+  },
+  "notes": ""
+}

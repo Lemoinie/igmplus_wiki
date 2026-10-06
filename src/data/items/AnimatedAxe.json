@@ -1,0 +1,15 @@
+{
+  "id": "AnimatedAxe",
+  "name": "Animated Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 670,
+  "sprite": "animated_axe",
+  "description": "Axe made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "constitution": 28,
+    "intelligence": 16
+  },
+  "notes": ""
+}

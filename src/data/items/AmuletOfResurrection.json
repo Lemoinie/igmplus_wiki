@@ -1,0 +1,12 @@
+{
+  "id": "AmuletOfResurrection",
+  "name": "Amulet of Resurrection",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 7425,
+  "sprite": "amulet_of_resurrection",
+  "description": "Made from the feathers of a legendary bird, in case of death this amulet will resurrect its owner with full HP and no negative effect, possibly forever.",
+  "stats": {},
+  "notes": ""
+}

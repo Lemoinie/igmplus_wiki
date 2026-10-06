@@ -1,0 +1,25 @@
+{
+  "id": "IronDefender",
+  "name": "Iron Defender",
+  "category": "Footman",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_iron_defender",
+  "description": "An enormous warden capable of withstanding a substantial amount of damage before succumbing.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 170,
+    "baseConstitution": 24,
+    "baseIntelligence": 12,
+    "baseDexterity": 8,
+    "baseDefense": 24,
+    "baseMagicDefense": 24
+  },
+  "activeSkill": "Taunt Ii",
+  "passiveSkill": "Threatening Ii",
+  "promotesTo": [
+    "Juggernaut"
+  ]
+}

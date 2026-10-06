@@ -1,0 +1,15 @@
+{
+  "id": "AnimatedBow",
+  "name": "Animated Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 638,
+  "sprite": "animated_bow",
+  "description": "Bow made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "dexterity": 30,
+    "intelligence": 10
+  },
+  "notes": ""
+}

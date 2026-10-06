@@ -1,0 +1,25 @@
+{
+  "id": "WhiteArchmage",
+  "name": "White Archmage",
+  "category": "Apprentice",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_white_archmage",
+  "description": "Only the most experienced mages are given the title of Archmage. With their exceptional mastery of white magic, White Archmages are strategic units that can turn the tides of a battle.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": 70,
+    "baseConstitution": 6,
+    "baseIntelligence": 30,
+    "baseDexterity": 8,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Mass Heal I",
+  "passiveSkill": "Healer Ii",
+  "promotesTo": [
+    "WhiteElder"
+  ]
+}

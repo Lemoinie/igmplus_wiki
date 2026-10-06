@@ -1,0 +1,15 @@
+{
+  "id": "EternalHunger",
+  "name": "Eternal Hunger",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 15000,
+  "sprite": "eternal_hunger",
+  "description": "A powerful, ancient artifact. The wearer will never be sated in their hunger, but will gain the innate ability to consume the physical suffering of their enemies.",
+  "stats": {
+    "intelligence": 5,
+    "lifesteal": 50
+  },
+  "notes": "Rare Drop"
+}

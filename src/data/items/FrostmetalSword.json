@@ -1,0 +1,15 @@
+{
+  "id": "FrostmetalSword",
+  "name": "Frostmetal Sword",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 513,
+  "sprite": "frostmetal_sword",
+  "description": "Thick, heavy sword made from the coldest Frostmetal.",
+  "stats": {
+    "constitution": 18,
+    "dexterity": 6
+  },
+  "notes": ""
+}

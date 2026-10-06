@@ -1,0 +1,15 @@
+{
+  "id": "CursedLongAxe",
+  "name": "Cursed Long Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 2800,
+  "sprite": "cursed_long_axe",
+  "description": "A long axe steeped in cursed silver and redwood, festering wounds with venom.",
+  "stats": {
+    "constitution": 5,
+    "intelligence": 15
+  },
+  "notes": ""
+}

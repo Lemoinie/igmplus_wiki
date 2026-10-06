@@ -1,0 +1,26 @@
+{
+  "id": "KingsHand",
+  "name": "\"King's Hand\"",
+  "category": "Footman",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_kings_hand",
+  "description": "\"The king's personal guard. Wreaks havoc during unrests, and singlehandedly guarantees His Majesty safety against any threat.\"",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 265,
+    "baseConstitution": 32,
+    "baseIntelligence": 12,
+    "baseDexterity": 14,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "counterattack": 0.6
+  },
+  "activeSkill": "En Garde",
+  "passiveSkill": "Sword Mastery Iii",
+  "promotesTo": [
+    "DivineDuelist"
+  ]
+}

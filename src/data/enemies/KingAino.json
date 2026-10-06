@@ -1,0 +1,31 @@
+{
+  "id": "KingAino",
+  "name": "King Aino",
+  "isBoss": true,
+  "sprite": "unit_king_aino",
+  "stats": {
+    "hp": 25000,
+    "constitution": 200,
+    "intelligence": 2,
+    "dexterity": 200,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "2500",
+    "max": "3500"
+  },
+  "expGiven": 5500,
+  "drops": [
+    {
+      "item": "OrichalcumScraps",
+      "qty": 5,
+      "chance": 95
+    },
+    {
+      "item": "SPIDER",
+      "qty": 1,
+      "chance": 5
+    }
+  ]
+}

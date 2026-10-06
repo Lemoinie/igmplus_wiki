@@ -1,0 +1,26 @@
+{
+  "id": "ShaTheHiddenGod",
+  "name": "Sha, the Hidden God",
+  "isBoss": false,
+  "sprite": "unit_sha_the_hidden_god",
+  "stats": {
+    "hp": 7777,
+    "constitution": 7,
+    "intelligence": 7,
+    "dexterity": 7,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "7",
+    "max": "7"
+  },
+  "expGiven": 9600,
+  "drops": [
+    {
+      "item": "DivineZygote",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

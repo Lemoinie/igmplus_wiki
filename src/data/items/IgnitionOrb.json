@@ -1,0 +1,16 @@
+{
+  "id": "IgnitionOrb",
+  "name": "Ignition Orb",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 657,
+  "sprite": "ignition_orb",
+  "description": "A river of Aether dances and twists in beautiful patterns inside the orb, contained by a powerful magic. Any caster with a good experience in the field of fire magic can tap into the Aether contained within to increase the temperature of their flames.",
+  "stats": {
+    "onFireBonusDamage": 2,
+    "maxHp": 70,
+    "intelligence": 8
+  },
+  "notes": ""
+}

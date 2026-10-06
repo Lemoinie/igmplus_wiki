@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_DISEMBODY",
+  "name_key": "active_disembody_name",
+  "desc_key": "active_disembody_description",
+  "kind": "active",
+  "name": "Disembody",
+  "description": "Deals 7777 magic damage to all enemies. Cannot be dodged."
+}

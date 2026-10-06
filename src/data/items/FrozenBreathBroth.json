@@ -1,0 +1,14 @@
+{
+  "id": "FrozenBreathBroth",
+  "name": "Frozen Breath Broth",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 41,
+  "sprite": "frozen_breath_broth",
+  "description": "A cold, misty soup with an icy, translucent appearance. The broth helps to make the Wyvern meat more tender, but chewing it is still a daunting task for many.",
+  "stats": {
+    "feedPower": 219
+  },
+  "notes": ""
+}

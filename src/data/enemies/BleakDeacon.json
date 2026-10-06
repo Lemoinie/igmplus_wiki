@@ -1,0 +1,31 @@
+{
+  "id": "BleakDeacon",
+  "name": "Bleak Deacon",
+  "isBoss": false,
+  "sprite": "unit_bleak_deacon",
+  "stats": {
+    "hp": 1700,
+    "constitution": 24,
+    "intelligence": 215,
+    "dexterity": 76,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "200",
+    "max": "350"
+  },
+  "expGiven": 1000,
+  "drops": [
+    {
+      "item": "EldritchShred",
+      "qty": 1,
+      "chance": 35
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

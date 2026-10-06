@@ -1,0 +1,23 @@
+{
+  "id": "SummonWeasel",
+  "name": "Summoned Weasel",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 20,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_weasel",
+  "description": "A lightning-fast animal companion darting between enemy strikes.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 25,
+    "baseConstitution": 8,
+    "baseIntelligence": 6,
+    "baseDexterity": 10,
+    "baseDefense": 2,
+    "baseMagicDefense": 2
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

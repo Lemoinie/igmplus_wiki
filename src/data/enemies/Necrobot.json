@@ -1,0 +1,26 @@
+{
+  "id": "Necrobot",
+  "name": "Necrobot",
+  "isBoss": false,
+  "sprite": "unit_necrobot",
+  "stats": {
+    "hp": 10000,
+    "constitution": 140,
+    "intelligence": 1,
+    "dexterity": 140,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "600",
+    "max": "750"
+  },
+  "expGiven": 480,
+  "drops": [
+    {
+      "item": "OrichalcumScraps",
+      "qty": 1,
+      "chance": 75
+    }
+  ]
+}

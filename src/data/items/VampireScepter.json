@@ -1,0 +1,15 @@
+{
+  "id": "VampireScepter",
+  "name": "Vampire Scepter",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 1026,
+  "sprite": "vampire_scepter",
+  "description": "\"Enhanced with a peculiar brew, empowers the holder's magic with the ability to return from the target as a healing force.\"",
+  "stats": {
+    "intelligence": 28,
+    "lifesteal": 20
+  },
+  "notes": ""
+}

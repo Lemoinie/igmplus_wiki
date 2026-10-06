@@ -1,0 +1,16 @@
+{
+  "id": "RobeOfTheLich",
+  "name": "Robe of the Lich",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 42500,
+  "sprite": "robe_of_the_lich",
+  "description": "A preserved, ancient robe taken from the cold body of a slain Lich. The blueprints for its making are now lost in time. Grants enhanced powers to the undead caster if its servants are alive.",
+  "stats": {
+    "maxHp": 75,
+    "intelligence": 27,
+    "lifestealWithMinion": 35
+  },
+  "notes": "Rare Drop"
+}

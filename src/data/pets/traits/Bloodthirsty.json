@@ -1,0 +1,6 @@
+{
+  "id": "Bloodthirsty",
+  "name": "Bloodthirsty",
+  "ability": "LIFESTEAL",
+  "description": "Grants %s%% lifesteal."
+}

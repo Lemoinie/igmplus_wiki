@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BLOOD_CONVOCATION",
+  "name_key": "passive_blood_convocation_name",
+  "desc_key": "passive_blood_convocation_description",
+  "kind": "passive",
+  "name": "Blood Convocation",
+  "description": null
+}

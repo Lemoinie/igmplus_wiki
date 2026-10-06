@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INORGANIC",
+  "name_key": "passive_inorganic_name",
+  "desc_key": "passive_inorganic_description",
+  "kind": "passive",
+  "name": "Inorganic",
+  "description": "Immune to BLEED, POISON and ABLAZE."
+}

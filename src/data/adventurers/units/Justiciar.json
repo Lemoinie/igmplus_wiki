@@ -1,0 +1,25 @@
+{
+  "id": "Justiciar",
+  "name": "Justiciar",
+  "category": "Footman",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_justiciar",
+  "description": "\"The Justiciar serves as the Holy Temple’s arbiter, enforcing laws that everyone—from peasants to kings—must obey to avoid incurring the Temple's wrath. A formidable warrior, he leads crusades against evil tyrants and unholy creatures that threaten the Realms.\"",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 320,
+    "baseConstitution": 36,
+    "baseIntelligence": 18,
+    "baseDexterity": 11,
+    "baseDefense": 20,
+    "baseMagicDefense": 36
+  },
+  "activeSkill": "Wrath Of Heaven I",
+  "passiveSkill": "Aura Of Sanctity",
+  "promotesTo": [
+    "AngelOfWar"
+  ]
+}

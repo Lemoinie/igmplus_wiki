@@ -1,0 +1,15 @@
+{
+  "id": "StellarFlare",
+  "name": "Stellar Flare",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 37350,
+  "sprite": "stellar_flare",
+  "description": "\"Further enhanced by an ancient, long-forgotten ritual, this bow hits with the strength of a stellar crown's flare.\nSTUN: the unit skips its turn\"",
+  "stats": {
+    "dexterity": 55,
+    "intelligence": 34
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_REVERSE_ENTROPY",
+  "name_key": "passive_reverse_entropy_name",
+  "desc_key": "passive_reverse_entropy_description",
+  "kind": "passive",
+  "name": "Reverse Entropy",
+  "description": "Attacks heal the ally with the lowest health for 50% damage. Heals two times as much if the target is a Magic Armor."
+}

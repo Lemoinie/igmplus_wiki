@@ -1,0 +1,14 @@
+{
+  "id": "TunaNigiri",
+  "name": "Tuna Nigiri",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 26,
+  "sprite": "tuna_nigiri",
+  "description": "Deep red tuna on rice, firm yet tender, wrapped in seaweed. A delicacy sometimes found in the diet of pirates and wealthy sea merchants.",
+  "stats": {
+    "feedPower": 74
+  },
+  "notes": ""
+}

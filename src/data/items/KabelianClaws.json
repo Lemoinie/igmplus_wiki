@@ -1,0 +1,15 @@
+{
+  "id": "KabelianClaws",
+  "name": "Kabelian Claws",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 6720,
+  "sprite": "kabelian_claws",
+  "description": "\"Gloves forged with ancient iron, padded with a metal that shows psyonic capabilities. Vibrates in a way that allows to cut through flesh with extreme ease. The attack has to be melee for the effect to take place.\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge\"",
+  "stats": {
+    "dexterity": 16,
+    "constitution": 15
+  },
+  "notes": ""
+}

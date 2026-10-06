@@ -1,0 +1,31 @@
+{
+  "id": "UndeadArcher",
+  "name": "Undead Archer",
+  "isBoss": false,
+  "sprite": "unit_undead_archer",
+  "stats": {
+    "hp": 120,
+    "constitution": 5,
+    "intelligence": 1,
+    "dexterity": 8,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "11",
+    "max": "14"
+  },
+  "expGiven": 20,
+  "drops": [
+    {
+      "item": "BoneFragment",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "SharpRib",
+      "qty": 1,
+      "chance": 1
+    }
+  ]
+}

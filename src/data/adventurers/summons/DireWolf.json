@@ -1,0 +1,23 @@
+{
+  "id": "DireWolf",
+  "name": "Dire Wolf",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 30,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_wolf",
+  "description": "A massive apex pack hunter that tears through enemy ranks with savage ferocity.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 75,
+    "baseConstitution": 17,
+    "baseIntelligence": 10,
+    "baseDexterity": 22,
+    "baseDefense": 8,
+    "baseMagicDefense": 8
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

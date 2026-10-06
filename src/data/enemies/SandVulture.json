@@ -1,0 +1,36 @@
+{
+  "id": "SandVulture",
+  "name": "Sand Vulture",
+  "isBoss": false,
+  "sprite": "unit_sand_vulture",
+  "stats": {
+    "hp": 90,
+    "constitution": 10,
+    "intelligence": 2,
+    "dexterity": 27,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "6",
+    "max": "12"
+  },
+  "expGiven": 14,
+  "drops": [
+    {
+      "item": "Feather",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "Egg",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "AvianEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

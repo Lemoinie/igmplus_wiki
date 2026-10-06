@@ -1,0 +1,20 @@
+{
+  "id": "KnightSlime",
+  "name": "Knight Slime",
+  "isBoss": false,
+  "sprite": "unit_knight_slime",
+  "stats": {
+    "hp": 400,
+    "constitution": 40,
+    "intelligence": 2,
+    "dexterity": 6,
+    "defense": 75,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "50",
+    "max": "75"
+  },
+  "expGiven": 40,
+  "drops": []
+}

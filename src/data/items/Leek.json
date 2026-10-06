@@ -1,0 +1,14 @@
+{
+  "id": "Leek",
+  "name": "Leek",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "leek",
+  "description": "Long and cylindrical with pale green and white layers. Its flavor is mildly sweet, like a delicate cross between onions and garlic, with a crisp, firm texture.",
+  "stats": {
+    "feedPower": 2
+  },
+  "notes": ""
+}

@@ -1,0 +1,17 @@
+{
+  "id": "PirateKingTricorn",
+  "name": "Pirate King Tricorn",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 14600,
+  "sprite": "pirate_king_tricorn",
+  "description": "Hat historically worn by the highest rank pirate captains, whose thirst for blood is legendary. Made with both regular and enchanted velvet, to provide additional offensive bonuses.",
+  "stats": {
+    "maxHp": 100,
+    "dexterity": 15,
+    "intelligence": 10,
+    "criticalDamage": 0.5
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "RobeOfTheArchmage",
+  "name": "Robe of the Archmage",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 966,
+  "sprite": "robe_of_the_archmage",
+  "description": "A robe enchanted with powerful protection spells, usually worn by members of the High Council of Larox.",
+  "stats": {
+    "maxHp": 120,
+    "intelligence": 40,
+    "magicDefense": 6
+  },
+  "notes": ""
+}

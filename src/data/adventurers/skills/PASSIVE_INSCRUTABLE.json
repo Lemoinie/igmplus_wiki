@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_INSCRUTABLE",
+  "name_key": "passive_inscrutable_name",
+  "desc_key": "passive_inscrutable_description",
+  "kind": "passive",
+  "name": "Inscrutable",
+  "description": "\"Immune to TAUNT, SILENCE, STUN, CURSE.\nStarts the fight first.\""
+}

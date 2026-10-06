@@ -1,0 +1,16 @@
+{
+  "id": "WyvernCape",
+  "name": "Wyvern Cape",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 630,
+  "sprite": "wyvern_cape",
+  "description": "Enhanced with real Snow Wyvern scales, this robe allows for an enhanced channeling of white magic.",
+  "stats": {
+    "maxHp": 80,
+    "intelligence": 15,
+    "healingModifier": 0.15
+  },
+  "notes": ""
+}

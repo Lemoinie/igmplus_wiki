@@ -1,0 +1,17 @@
+{
+  "id": "BurningEffigy",
+  "name": "Burning Effigy",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 43598,
+  "sprite": "burning_effigy",
+  "description": "A powerful symbol of hope for those it protects, and a relentless torment for its bearer. It compels enemies to focus their attention on the holder, who endures the crushing burden of infinite, searing agony.",
+  "stats": {
+    "constitution": 34,
+    "defense": 9,
+    "magicDefense": 9,
+    "threat": 3
+  },
+  "notes": ""
+}

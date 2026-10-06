@@ -1,0 +1,12 @@
+{
+  "id": "InsectEgg",
+  "name": "Insect Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_insect",
+  "description": "Egg that will hatch a pet Insect. Insects usually like to attack enemies, and grant damage reduction.",
+  "stats": {},
+  "notes": ""
+}

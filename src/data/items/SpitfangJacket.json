@@ -1,0 +1,16 @@
+{
+  "id": "SpitfangJacket",
+  "name": "Spitfang Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 288,
+  "sprite": "spitfang_jacket",
+  "description": "\"Made entirely with Spitfang's scales and padded with fabric made by Moth wings. Will allow for great mobility while offering extremely good protection.\"",
+  "stats": {
+    "maxHp": 160,
+    "constitution": 8,
+    "dexterity": 8
+  },
+  "notes": ""
+}

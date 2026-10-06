@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfDefense",
+  "name": "Potion of Defense",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_defense",
+  "description": "Permanently increases Defense by 1.",
+  "stats": {},
+  "notes": ""
+}

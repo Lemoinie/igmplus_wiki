@@ -1,0 +1,23 @@
+{
+  "id": "BeastTamer",
+  "name": "Beast Tamer",
+  "category": "Outlander",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_beast_tamer",
+  "description": "The sovereign master of primeval beasts, directing legendary creatures with effortless command.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 265,
+    "baseConstitution": 29,
+    "baseIntelligence": 39,
+    "baseDexterity": 10,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

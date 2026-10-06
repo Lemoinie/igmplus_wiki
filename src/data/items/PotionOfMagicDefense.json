@@ -1,0 +1,12 @@
+{
+  "id": "PotionOfMagicDefense",
+  "name": "Potion of Magic Defense",
+  "type": "accessory",
+  "category": "Potion",
+  "rarity": null,
+  "price": 10,
+  "sprite": "potion_of_magic_defense",
+  "description": "Permanently increases Magic Defense by 1.",
+  "stats": {},
+  "notes": ""
+}

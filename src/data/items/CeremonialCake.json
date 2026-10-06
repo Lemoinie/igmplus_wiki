@@ -1,0 +1,14 @@
+{
+  "id": "CeremonialCake",
+  "name": "Ceremonial Cake",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 2200,
+  "sprite": "ceremonial_cake",
+  "description": "A grand, multi-layered cake with intricate decorations. Reserved for special occasions like the marriage of a royal, one of these cakes can feed a hundred guests.",
+  "stats": {
+    "feedPower": 30000
+  },
+  "notes": ""
+}

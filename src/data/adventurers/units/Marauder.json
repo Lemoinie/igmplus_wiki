@@ -1,0 +1,25 @@
+{
+  "id": "Marauder",
+  "name": "Marauder",
+  "category": "Outlander",
+  "tier": 2,
+  "maxLevel": 10,
+  "weaponType": "axe",
+  "armorType": "light",
+  "sprite": "unit_marauder",
+  "description": "A ferocious fighter whose strikes grow deadlier as fury takes hold.",
+  "stats": {
+    "maxLevel": 10,
+    "baseMaxHp": 60,
+    "baseConstitution": 14,
+    "baseIntelligence": 6,
+    "baseDexterity": 3,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": [
+    "Barbarian"
+  ]
+}

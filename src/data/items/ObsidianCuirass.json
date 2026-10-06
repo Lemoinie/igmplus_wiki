@@ -1,0 +1,15 @@
+{
+  "id": "ObsidianCuirass",
+  "name": "Obsidian Cuirass",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 405,
+  "sprite": "obsidian_cuirass",
+  "description": "Very heavy chest armor that grants the wearer with the highest levels of protection.",
+  "stats": {
+    "maxHp": 210,
+    "constitution": 7
+  },
+  "notes": ""
+}

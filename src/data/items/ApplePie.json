@@ -1,0 +1,14 @@
+{
+  "id": "ApplePie",
+  "name": "Apple Pie",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 51,
+  "sprite": "apple_pie",
+  "description": "A golden, flaky crust surrounds a soft, spiced apple filling. It’s sweet and slightly tart, with cinnamon adding warmth to the juicy, tender apples.",
+  "stats": {
+    "feedPower": 122
+  },
+  "notes": ""
+}

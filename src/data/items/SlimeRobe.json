@@ -1,0 +1,15 @@
+{
+  "id": "SlimeRobe",
+  "name": "Slime Robe",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 630,
+  "sprite": "slime_robe",
+  "description": "Peculiar light equipment that sacrifices mobility to grant increased protection.",
+  "stats": {
+    "maxHp": 80,
+    "defense": 5
+  },
+  "notes": ""
+}

@@ -1,0 +1,25 @@
+{
+  "id": "GoldenRider",
+  "name": "Golden Rider",
+  "category": "Archer",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_golden_rider",
+  "description": "This fearsome archer rides one of the last remaining Golden Drakes, a nearly extinct subspecies of the more common drake. Distinguished by its brilliant golden scales, the Golden Drake boasts greater strength and a fiercer, hotter flame than its kin.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 11,
+    "baseIntelligence": 18,
+    "baseDexterity": 36,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Incinerate Ii",
+  "passiveSkill": "Rider Vi",
+  "promotesTo": [
+    "WyrmRider"
+  ]
+}

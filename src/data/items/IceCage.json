@@ -1,0 +1,15 @@
+{
+  "id": "IceCage",
+  "name": "Ice Cage",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 3926,
+  "sprite": "ice_cage",
+  "description": "\"Incredibly hard and cold armor enhanced with rare reagents from the coldest mountains of the Realm. Will FREEZE attackers on contact.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\"",
+  "stats": {
+    "maxHp": 215,
+    "defense": 16
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "AncientBoots",
+  "name": "Ancient Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 465,
+  "sprite": "ancient_boots",
+  "description": "Boots sewn together using the resistant and flexible hide of prehistoric giants.",
+  "stats": {
+    "dexterity": 33
+  },
+  "notes": ""
+}

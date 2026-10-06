@@ -1,0 +1,36 @@
+{
+  "id": "NexusResearcher",
+  "name": "Nexus Researcher",
+  "isBoss": false,
+  "sprite": "unit_nexus_researcher",
+  "stats": {
+    "hp": 735,
+    "constitution": 22,
+    "intelligence": 154,
+    "dexterity": 15,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "225",
+    "max": "240"
+  },
+  "expGiven": 140,
+  "drops": [
+    {
+      "item": "Pumpkin",
+      "qty": 1,
+      "chance": 2.5
+    },
+    {
+      "item": "VeilBreaker",
+      "qty": 1,
+      "chance": 0.3
+    },
+    {
+      "item": "UnstableGem",
+      "qty": 1,
+      "chance": 0.3
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "FreshSalmon",
+  "name": "Fresh salmon",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 10,
+  "sprite": "fresh_salmon",
+  "description": "A vibrant pink-orange fish with a firm, yet tender meat. Fished in the waters just above Blackwater Port, its taste is rich, buttery, and slightly sweet, with a moist, flaky texture when cooked.",
+  "stats": {
+    "feedPower": 18
+  },
+  "notes": ""
+}

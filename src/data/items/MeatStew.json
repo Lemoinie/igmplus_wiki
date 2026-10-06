@@ -1,0 +1,14 @@
+{
+  "id": "MeatStew",
+  "name": "Meat Stew",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 42,
+  "sprite": "meat_stew",
+  "description": "A warm, hearty mixture of slow-cooked ingredients. Tender chunks of meat float along with vegetables in the broth.",
+  "stats": {
+    "feedPower": 168
+  },
+  "notes": ""
+}

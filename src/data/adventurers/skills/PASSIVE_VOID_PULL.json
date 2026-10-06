@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_VOID_PULL",
+  "name_key": "passive_void_pull_name",
+  "desc_key": "passive_void_pull_description",
+  "kind": "passive",
+  "name": "Void Pull",
+  "description": "Melee attacks deal 33 magic damage to the attacker."
+}

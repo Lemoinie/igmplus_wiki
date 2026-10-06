@@ -1,0 +1,26 @@
+{
+  "id": "Angelfish",
+  "name": "Angelfish",
+  "isBoss": false,
+  "sprite": "angelfish",
+  "stats": {
+    "hp": 20,
+    "constitution": 6,
+    "intelligence": 4,
+    "dexterity": 120,
+    "defense": 3,
+    "magicDefense": 4
+  },
+  "damage": {
+    "min": "1",
+    "max": "2"
+  },
+  "expGiven": 15,
+  "drops": [
+    {
+      "item": "Angelfish",
+      "qty": 1,
+      "chance": 50
+    }
+  ]
+}

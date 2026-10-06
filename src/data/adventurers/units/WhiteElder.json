@@ -1,0 +1,25 @@
+{
+  "id": "WhiteElder",
+  "name": "White Elder",
+  "category": "Apprentice",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_white_elder",
+  "description": "Elders are mages regarded as masters of their art, keepers of dangerous secrets and wise enough to keep them as such. White elders unleash an unending stream of healing, making any frontline extremely resilient.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 95,
+    "baseConstitution": 7,
+    "baseIntelligence": 35,
+    "baseDexterity": 9,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Mass Heal Ii",
+  "passiveSkill": "Healer Ii",
+  "promotesTo": [
+    "RadiantElder"
+  ]
+}

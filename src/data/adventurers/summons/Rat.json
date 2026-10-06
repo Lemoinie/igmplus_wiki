@@ -1,0 +1,23 @@
+{
+  "id": "Rat",
+  "name": "Rat",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 15,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_rat",
+  "description": "A vicious little vermin that bites ankles and swarms unwary targets.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 10,
+    "baseConstitution": 5,
+    "baseIntelligence": 5,
+    "baseDexterity": 5,
+    "baseDefense": 0,
+    "baseMagicDefense": 0
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

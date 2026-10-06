@@ -1,0 +1,14 @@
+{
+  "id": "Perch",
+  "name": "Perch",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 20,
+  "sprite": "perch",
+  "description": "A freshly caught perch. Pets love the taste.",
+  "stats": {
+    "feedPower": 10
+  },
+  "notes": ""
+}

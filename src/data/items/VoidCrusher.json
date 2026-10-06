@@ -1,0 +1,14 @@
+{
+  "id": "VoidCrusher",
+  "name": "Void Crusher",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 21750,
+  "sprite": "void_crusher",
+  "description": "\"An enormous sword, so heavy that it can't be lifted by any human. Imbued with the power of darkness, it deals enormous damage.\"",
+  "stats": {
+    "constitution": 100
+  },
+  "notes": ""
+}

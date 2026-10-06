@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_LIGHTS_OUT",
+  "name_key": "active_lights_out_name",
+  "desc_key": "active_lights_out_description",
+  "kind": "active",
+  "name": "Lights Out",
+  "description": "Deals 10x damage to the lowest health enemy."
+}

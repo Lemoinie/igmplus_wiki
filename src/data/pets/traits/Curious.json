@@ -1,0 +1,6 @@
+{
+  "id": "Curious",
+  "name": "Curious",
+  "ability": "DROPS",
+  "description": "%s%% chance to roll drops twice."
+}

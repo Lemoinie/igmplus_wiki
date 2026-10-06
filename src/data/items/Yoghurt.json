@@ -1,0 +1,14 @@
+{
+  "id": "Yoghurt",
+  "name": "Yoghurt",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 5,
+  "sprite": "yoghurt",
+  "description": "Creamy and smooth milk derivative. White in color, it’s tangy and slightly sour, with a rich, thick consistency that varies from silky to dense.",
+  "stats": {
+    "feedPower": 10
+  },
+  "notes": ""
+}

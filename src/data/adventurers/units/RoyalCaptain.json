@@ -1,0 +1,26 @@
+{
+  "id": "RoyalCaptain",
+  "name": "Royal Captain",
+  "category": "Footman",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_royal_captain",
+  "description": "The most skilled swordsman serving the royal family ascends to the role of Captain, overseeing palace security and determining the strategic tactics to be employed.",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 215,
+    "baseConstitution": 28,
+    "baseIntelligence": 11,
+    "baseDexterity": 12,
+    "baseDefense": 20,
+    "baseMagicDefense": 20,
+    "counterattack": 0.45
+  },
+  "activeSkill": "En Garde",
+  "passiveSkill": "Sword Mastery Ii",
+  "promotesTo": [
+    "KingsHand"
+  ]
+}

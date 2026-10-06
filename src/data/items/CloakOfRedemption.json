@@ -1,0 +1,17 @@
+{
+  "id": "CloakOfRedemption",
+  "name": "Cloak of Redemption",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 4203,
+  "sprite": "cloak_of_redemption",
+  "description": "An intricate pattern made with magic chains is applied on a fire magic enhancing tunic, embedding the wearer in a protective field that reflects a part of the incoming force.",
+  "stats": {
+    "onFireBonusDamage": 2,
+    "maxHp": 110,
+    "defense": 20,
+    "magicDefense": 10
+  },
+  "notes": ""
+}

@@ -1,0 +1,14 @@
+{
+  "id": "Chocolate",
+  "name": "Chocolate",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 10,
+  "sprite": "chocolate",
+  "description": "Exotic food that only the upper class citizen of the Capital can usually acquire. Melts on the tongue releasing sweet, slightly bitter, and complex cocoa flavors with a creamy finish.",
+  "stats": {
+    "feedPower": 20
+  },
+  "notes": ""
+}

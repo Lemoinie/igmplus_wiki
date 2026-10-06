@@ -1,0 +1,41 @@
+{
+  "id": "TheCultistRebels",
+  "name": "The Cultist Rebels",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0.1,
+  "sprite": "summary_the_cultist_rebels",
+  "enemies": [
+    {
+      "id": "LesserTitan",
+      "name": "LesserTitan",
+      "rate": "0.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "Claris",
+      "name": "Claris",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Crusader",
+      "name": "Crusader",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "PrimordialTitan",
+      "name": "PrimordialTitan",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Thorvus",
+      "name": "Thorvus",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

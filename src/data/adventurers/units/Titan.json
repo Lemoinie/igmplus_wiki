@@ -1,0 +1,25 @@
+{
+  "id": "Titan",
+  "name": "Titan",
+  "category": "Footman",
+  "tier": 7,
+  "maxLevel": 35,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_titan",
+  "description": "An unbreakable warrior, renowned for traversing the chaos of battle unscathed. Whole armies have attempted, yet failed, to inflict even the slightest injury upon him.",
+  "stats": {
+    "maxLevel": 35,
+    "baseMaxHp": 265,
+    "baseConstitution": 32,
+    "baseIntelligence": 16,
+    "baseDexterity": 10,
+    "baseDefense": 27,
+    "baseMagicDefense": 27
+  },
+  "activeSkill": "Taunt Iii",
+  "passiveSkill": "Threatening Iii",
+  "promotesTo": [
+    "UndyingBastion"
+  ]
+}

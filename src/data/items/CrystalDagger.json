@@ -1,0 +1,16 @@
+{
+  "id": "CrystalDagger",
+  "name": "Crystal Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 378,
+  "sprite": "crystal_dagger",
+  "description": "With a blade derived from an original Frost Crystal, inflicts tremendous damage when striking vulnerable points.",
+  "stats": {
+    "dexterity": 17,
+    "constitution": 17,
+    "criticalDamage": 0.3
+  },
+  "notes": ""
+}

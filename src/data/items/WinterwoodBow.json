@@ -1,0 +1,15 @@
+{
+  "id": "WinterwoodBow",
+  "name": "Winterwood Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 275,
+  "sprite": "winterwood_bow",
+  "description": "Superior bow made with the elusive winterwood, shoots arrows with very high strength and precision.",
+  "stats": {
+    "intelligence": 5,
+    "dexterity": 19
+  },
+  "notes": ""
+}

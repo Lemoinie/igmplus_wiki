@@ -1,0 +1,36 @@
+{
+  "id": "Beholder",
+  "name": "Beholder",
+  "isBoss": false,
+  "sprite": "unit_beholder",
+  "stats": {
+    "hp": 1100,
+    "constitution": 2,
+    "intelligence": 100,
+    "dexterity": 15,
+    "defense": 0,
+    "magicDefense": 30
+  },
+  "damage": {
+    "min": "38",
+    "max": "46"
+  },
+  "expGiven": 125,
+  "drops": [
+    {
+      "item": "EldritchTendril",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "LargeIris",
+      "qty": 1,
+      "chance": 6
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

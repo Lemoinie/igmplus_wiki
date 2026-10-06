@@ -1,0 +1,14 @@
+{
+  "id": "Ambrosia",
+  "name": "Ambrosia",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1000,
+  "sprite": "ambrosia",
+  "description": "\"A golden ethereal drink, extremely sweet and with a caloric intake which is off the charts. The way it's produced is unknown, but is sometimes carried from unknown lands by the traveling merchants.\"",
+  "stats": {
+    "feedPower": 13500
+  },
+  "notes": ""
+}

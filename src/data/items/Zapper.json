@@ -1,0 +1,16 @@
+{
+  "id": "Zapper",
+  "name": "Zapper",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 2100,
+  "sprite": "zapper",
+  "description": "An experimental axe crackling with trapped static, built to dizzy its victims.",
+  "stats": {
+    "constitution": 19,
+    "dexterity": 10,
+    "intelligence": 19
+  },
+  "notes": ""
+}

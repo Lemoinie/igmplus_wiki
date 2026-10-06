@@ -1,0 +1,14 @@
+{
+  "id": "LeatherBoots",
+  "name": "Leather Boots",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 27,
+  "sprite": "leather_boots",
+  "description": "Common footwear made of leather",
+  "stats": {
+    "dexterity": 3
+  },
+  "notes": ""
+}

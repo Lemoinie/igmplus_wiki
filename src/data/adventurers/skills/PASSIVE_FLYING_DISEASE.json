@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FLYING_DISEASE",
+  "name_key": "passive_flying_disease_name",
+  "desc_key": "passive_flying_disease_description",
+  "kind": "passive",
+  "name": "Flying Disease",
+  "description": "\"Can't be hit by melee attacks or abilities. Attacks inflict POISON and BLEED for 12 turns on the target.\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge\nPOISON: damage reduced by 20%\""
+}

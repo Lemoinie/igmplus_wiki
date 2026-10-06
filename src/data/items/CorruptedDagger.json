@@ -1,0 +1,14 @@
+{
+  "id": "CorruptedDagger",
+  "name": "Corrupted Dagger",
+  "type": "weapon",
+  "category": "Dagger",
+  "rarity": null,
+  "price": 1,
+  "sprite": "corrupted_dagger",
+  "description": "A dagger of fine making, rendered useless by the curse of the Serpent.",
+  "stats": {
+    "dexterity": 1
+  },
+  "notes": "Rare Drop"
+}

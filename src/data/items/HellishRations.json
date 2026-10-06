@@ -1,0 +1,14 @@
+{
+  "id": "HellishRations",
+  "name": "Hellish Rations",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 50,
+  "sprite": "hellish_ration",
+  "description": "A dark, revolting soup with an eye floating in it. You can’t tell if the eye fell in by accident or if it’s part of the recipe. It looks vile, and there’s only one way to find out if it will kill you.",
+  "stats": {
+    "feedPower": 106
+  },
+  "notes": ""
+}

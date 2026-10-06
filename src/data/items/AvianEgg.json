@@ -1,0 +1,12 @@
+{
+  "id": "AvianEgg",
+  "name": "Avian Egg",
+  "type": "accessory",
+  "category": "Egg",
+  "rarity": null,
+  "price": 100,
+  "sprite": "egg_avian",
+  "description": "Egg that will hatch an Avian pet. Avian pets usually like to attract enemy attention, distracting them from the party.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ANNIHILATE",
+  "name_key": "active_annihilate_name",
+  "desc_key": "active_annihilate_description",
+  "kind": "active",
+  "name": "Annihilate",
+  "description": null
+}

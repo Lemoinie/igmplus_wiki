@@ -1,0 +1,15 @@
+{
+  "id": "DreamwroughtBow",
+  "name": "Dreamwrought Bow",
+  "type": "weapon",
+  "category": "Bow",
+  "rarity": null,
+  "price": 1055,
+  "sprite": "dreamwrought_bow",
+  "description": "Flexible bow made from an impossible metal frame, brought to reality by an otherworldly being.",
+  "stats": {
+    "dexterity": 39,
+    "intelligence": 13
+  },
+  "notes": ""
+}

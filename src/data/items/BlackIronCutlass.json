@@ -1,0 +1,15 @@
+{
+  "id": "BlackIronCutlass",
+  "name": "Black Iron Cutlass",
+  "type": "weapon",
+  "category": "Sword",
+  "rarity": null,
+  "price": 362,
+  "sprite": "black_iron_cutlass",
+  "description": "A curved blade commonly wielded by Skull Island pirates.",
+  "stats": {
+    "constitution": 15,
+    "dexterity": 5
+  },
+  "notes": ""
+}

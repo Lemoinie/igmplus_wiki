@@ -1,0 +1,14 @@
+{
+  "id": "AnimatedBuckler",
+  "name": "Animated Buckler",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 500,
+  "sprite": "animated_buckler",
+  "description": "Round shield made from Animated Metal, pulsating in a pale blue light.",
+  "stats": {
+    "constitution": 30
+  },
+  "notes": ""
+}

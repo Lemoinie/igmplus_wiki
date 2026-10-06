@@ -1,0 +1,25 @@
+{
+  "id": "Spellweaver",
+  "name": "Spellweaver",
+  "category": "Apprentice",
+  "tier": 4,
+  "maxLevel": 20,
+  "weaponType": "staff",
+  "armorType": "light",
+  "sprite": "unit_spell_weaver",
+  "description": "A master of weaving mana threads into concentrated blasts of destructive power.",
+  "stats": {
+    "maxLevel": 20,
+    "baseMaxHp": 50,
+    "baseConstitution": 5,
+    "baseIntelligence": 28,
+    "baseDexterity": 8,
+    "baseDefense": 0,
+    "baseMagicDefense": 30
+  },
+  "activeSkill": "Arcane Blast I",
+  "passiveSkill": "Aether Resonance Ii",
+  "promotesTo": [
+    "AetherMage"
+  ]
+}

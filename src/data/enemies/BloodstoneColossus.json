@@ -1,0 +1,26 @@
+{
+  "id": "BloodstoneColossus",
+  "name": "Bloodstone Colossus",
+  "isBoss": false,
+  "sprite": "bloodstone_colossus",
+  "stats": {
+    "hp": 12000,
+    "constitution": 120,
+    "intelligence": 10,
+    "dexterity": 30,
+    "defense": 200,
+    "magicDefense": 5
+  },
+  "damage": {
+    "min": "120",
+    "max": "180"
+  },
+  "expGiven": 3500,
+  "drops": [
+    {
+      "item": "ScarletDebris",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "id": "Sha",
+  "name": "Sha",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 69150,
+  "sprite": "sha",
+  "description": "Finally awakened with enough time and a strict diet, the Hidden God will serve its owner with utmost loyalty.",
+  "stats": {
+    "constitution": 40,
+    "dexterity": 40,
+    "intelligence": 40,
+    "immunityToStatus": 1
+  },
+  "notes": ""
+}

@@ -1,0 +1,16 @@
+{
+  "id": "AncientJacket",
+  "name": "Ancient Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 600,
+  "sprite": "ancient_jacket",
+  "description": "Extremely versatile jacket made with the remains of prehistoric giants.",
+  "stats": {
+    "maxHp": 220,
+    "constitution": 11,
+    "dexterity": 11
+  },
+  "notes": ""
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ESCAPE",
+  "name_key": "active_escape_name",
+  "desc_key": "active_escape_description",
+  "kind": "active",
+  "name": "Escape",
+  "description": "Escapes from the fight"
+}

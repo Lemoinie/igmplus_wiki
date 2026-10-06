@@ -1,0 +1,47 @@
+{
+  "id": "ImperialRescue",
+  "name": "Imperial Rescue",
+  "type": "epic_raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_imperial_rescue",
+  "enemies": [
+    {
+      "id": "CityWarden",
+      "name": "CityWarden",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "EmperorClovisXXVIII",
+      "name": "EmperorClovisXXVIII",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ImperialGuard",
+      "name": "ImperialGuard",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ImperialMage",
+      "name": "ImperialMage",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "InsaneCitizen",
+      "name": "InsaneCitizen",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "InsaneMerchant",
+      "name": "InsaneMerchant",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": []
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BOTCHED_SACRIFICE",
+  "name_key": "active_sacrifice_name",
+  "desc_key": "active_sacrifice_description",
+  "kind": "active",
+  "name": "Sacrifice",
+  "description": "Makes an offering to the Great Serpent."
+}

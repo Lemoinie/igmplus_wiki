@@ -1,0 +1,26 @@
+{
+  "id": "SpireAcolyte",
+  "name": "Spire Acolyte",
+  "category": "Rogue",
+  "tier": 6,
+  "maxLevel": 30,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_spire_acolyte",
+  "description": "\"Acolytes, as full-fledged members of the Spire, have mastered the organization's secret technique. They are pivotal agents dispatched across the Realms, ensuring no target is beyond the reach of the Spire.\"",
+  "stats": {
+    "maxLevel": 30,
+    "baseMaxHp": 155,
+    "baseConstitution": 21,
+    "baseIntelligence": 9,
+    "baseDexterity": 21,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
+  },
+  "activeSkill": "Eclipse Ii",
+  "passiveSkill": "Infiltrator",
+  "promotesTo": [
+    "SpireLeader"
+  ]
+}

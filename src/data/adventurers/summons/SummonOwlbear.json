@@ -1,0 +1,23 @@
+{
+  "id": "SummonOwlbear",
+  "name": "Summoned Owlbear",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 45,
+  "weaponType": "sword",
+  "armorType": "light",
+  "sprite": "unit_summon_owlbear",
+  "description": "A monstrous chimeric powerhouse combining avian keenness with ursine savagery.",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 180,
+    "baseConstitution": 30,
+    "baseIntelligence": 12,
+    "baseDexterity": 20,
+    "baseDefense": 18,
+    "baseMagicDefense": 15
+  },
+  "activeSkill": "None",
+  "passiveSkill": "None",
+  "promotesTo": []
+}

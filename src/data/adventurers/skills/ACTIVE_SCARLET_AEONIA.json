@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_SCARLET_AEONIA",
+  "name_key": "skill_scarlet_aeonia_name",
+  "desc_key": "skill_scarlet_aeonia_description",
+  "kind": "active",
+  "name": "Scarlet Aeonia",
+  "description": "Unleashes forbidden crimson magic upon every adventurers, cursing them with SINISTER CURSE, dealing 120% magic damage and igniting BLOODFLAME for 5 turns.\n\nSINISTER CURSE: Damage taken +50%. When the unit dies, its soul corrupted and its flesh twisted into Bone Nightmare, attacking its once comrades.\nBLOODFLAME: Burns for 5% Max HP each turn as magic damage and prevents all healing."
+}

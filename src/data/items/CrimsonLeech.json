@@ -1,0 +1,16 @@
+{
+  "id": "CrimsonLeech",
+  "name": "Crimson Leech",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 834,
+  "sprite": "crimson_leech",
+  "description": "Corrupted with an otherworldly force bound by an alchemist through forbidden rituals, grants the holder a fragment of the power of the Unholy Serpent.",
+  "stats": {
+    "intelligence": 16,
+    "constitution": 4,
+    "lifesteal": 20
+  },
+  "notes": ""
+}

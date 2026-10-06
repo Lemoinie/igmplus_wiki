@@ -1,0 +1,31 @@
+{
+  "id": "FirstMinisterAtos",
+  "name": "First Minister Atos",
+  "isBoss": true,
+  "sprite": "unit_first_minister_atos",
+  "stats": {
+    "hp": 18500,
+    "constitution": 75,
+    "intelligence": 5,
+    "dexterity": 190,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "1200",
+    "max": "1900"
+  },
+  "expGiven": 4000,
+  "drops": [
+    {
+      "item": "KaunianFabric",
+      "qty": 1,
+      "chance": 65
+    },
+    {
+      "item": "FireproofOil",
+      "qty": 1,
+      "chance": 35
+    }
+  ]
+}

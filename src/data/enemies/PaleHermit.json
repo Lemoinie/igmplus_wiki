@@ -1,0 +1,26 @@
+{
+  "id": "PaleHermit",
+  "name": "Pale Hermit",
+  "isBoss": false,
+  "sprite": "unit_pale_hermit",
+  "stats": {
+    "hp": 3500,
+    "constitution": 8,
+    "intelligence": 40,
+    "dexterity": 60,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "Logger.112",
+    "max": "218"
+  },
+  "expGiven": 2500,
+  "drops": [
+    {
+      "item": "VoodooDoll",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

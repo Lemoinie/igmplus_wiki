@@ -1,0 +1,17 @@
+{
+  "id": "SunStaff",
+  "name": "Sun Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 1560,
+  "sprite": "sun_staff",
+  "description": "\"A fire artifact has been isolated into the staff's head, granting its wielder a better control on fire magic.\"",
+  "stats": {
+    "onFireBonusDamage": 2,
+    "intelligence": 13,
+    "constitution": 2,
+    "dexterity": 2
+  },
+  "notes": ""
+}

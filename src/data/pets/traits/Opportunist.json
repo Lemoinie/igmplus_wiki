@@ -1,0 +1,6 @@
+{
+  "id": "Opportunist",
+  "name": "Opportunist",
+  "ability": "OPPORTUNIST",
+  "description": "Executes enemies below %s%% HP."
+}

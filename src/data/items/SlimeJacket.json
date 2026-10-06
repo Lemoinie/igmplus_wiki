@@ -1,0 +1,15 @@
+{
+  "id": "SlimeJacket",
+  "name": "Slime Jacket",
+  "type": "armor",
+  "category": "MediumArmor",
+  "rarity": null,
+  "price": 630,
+  "sprite": "slime_jacket",
+  "description": "Dissipate the force of incoming blows very effectively, but sacrifices some mobility.",
+  "stats": {
+    "maxHp": 130,
+    "defense": 5
+  },
+  "notes": ""
+}

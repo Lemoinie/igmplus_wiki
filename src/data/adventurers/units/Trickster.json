@@ -1,0 +1,25 @@
+{
+  "id": "Trickster",
+  "name": "Trickster",
+  "category": "Rogue",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "dagger",
+  "armorType": "medium",
+  "sprite": "unit_trickster",
+  "description": "A cunning rogue who thrives on deception, adept at distracting foes and seizing unexpected opportunities in the chaos of battle.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 65,
+    "baseConstitution": 11,
+    "baseIntelligence": 8,
+    "baseDexterity": 11,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Feint",
+  "passiveSkill": "Saboteur",
+  "promotesTo": [
+    "SilverTongue"
+  ]
+}

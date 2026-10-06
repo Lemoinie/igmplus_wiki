@@ -1,0 +1,14 @@
+{
+  "id": "CheeseRisotto",
+  "name": "Cheese Risotto",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 44,
+  "sprite": "cheese_risotto",
+  "description": "Creamy, soft rice infused with melted cheese. It tastes mildly salty, with a smooth consistency.",
+  "stats": {
+    "feedPower": 130
+  },
+  "notes": ""
+}

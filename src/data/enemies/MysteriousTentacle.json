@@ -1,0 +1,31 @@
+{
+  "id": "MysteriousTentacle",
+  "name": "Mysterious Tentacle",
+  "isBoss": false,
+  "sprite": "unit_mysterious_tentacle",
+  "stats": {
+    "hp": 800,
+    "constitution": 52,
+    "intelligence": 1,
+    "dexterity": 3,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "21",
+    "max": "24"
+  },
+  "expGiven": 132,
+  "drops": [
+    {
+      "item": "MysteriousAppendage",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

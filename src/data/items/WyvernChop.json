@@ -1,0 +1,14 @@
+{
+  "id": "WyvernChop",
+  "name": "Wyvern Chop",
+  "type": "accessory",
+  "category": "Food",
+  "rarity": null,
+  "price": 1,
+  "sprite": "wyvern_chop",
+  "description": "Few people manage to take down a Wyvern, and even fewer manage to bite through its extremely hard meat. The taste is described as very intense, and the meat as extremely nutritious, with a single bite able to sustain a soldier for a day.",
+  "stats": {
+    "feedPower": 75
+  },
+  "notes": ""
+}

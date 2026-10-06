@@ -1,0 +1,15 @@
+{
+  "id": "AbsoluteZero",
+  "name": "Absolute Zero",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 8889,
+  "sprite": "absolute_zero",
+  "description": "\"The coldest material ever forged makes up an armor that not only is incredibly resilient, but will FREEZE enemies on contact.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\"",
+  "stats": {
+    "maxHp": 310,
+    "defense": 16
+  },
+  "notes": ""
+}

@@ -1,0 +1,46 @@
+{
+  "id": "PirateLieutenant",
+  "name": "Pirate Lieutenant",
+  "isBoss": false,
+  "sprite": "unit_pirate_lieutenant",
+  "stats": {
+    "hp": 600,
+    "constitution": 30,
+    "intelligence": 8,
+    "dexterity": 25,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "30",
+    "max": "43"
+  },
+  "expGiven": 132,
+  "drops": [
+    {
+      "item": "GhostwoodStump",
+      "qty": 1,
+      "chance": 37.5
+    },
+    {
+      "item": "BlackIronScraps",
+      "qty": 1,
+      "chance": 37.9
+    },
+    {
+      "item": "ExoticVelvet",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "FreshTuna",
+      "qty": 1,
+      "chance": 2
+    },
+    {
+      "item": "PotionOfDexterity",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

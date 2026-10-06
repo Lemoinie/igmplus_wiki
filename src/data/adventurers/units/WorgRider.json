@@ -1,0 +1,25 @@
+{
+  "id": "WorgRider",
+  "name": "Worg Rider",
+  "category": "Archer",
+  "tier": 5,
+  "maxLevel": 25,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_worg_rider",
+  "description": "An extremely vicious beast, the worg will tear apart the flesh of its enemies while his rider shoots with deadly aim.",
+  "stats": {
+    "maxLevel": 25,
+    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseConstitution": 8,
+    "baseIntelligence": 12,
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Rider Iii",
+  "promotesTo": [
+    "SpitfangRider"
+  ]
+}

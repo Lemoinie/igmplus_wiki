@@ -1,0 +1,14 @@
+{
+  "id": "UnstableStaff",
+  "name": "Unstable Staff",
+  "type": "weapon",
+  "category": "Staff",
+  "rarity": null,
+  "price": 998,
+  "sprite": "unstable_staff",
+  "description": "Magic staff that draws its power from an arcane gem of unpredictable behaviour. The energy released will vary greatly without a known pattern.",
+  "stats": {
+    "intelligence": 40
+  },
+  "notes": ""
+}

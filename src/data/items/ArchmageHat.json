@@ -1,0 +1,15 @@
+{
+  "id": "ArchmageHat",
+  "name": "Archmage Hat",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 3200,
+  "sprite": "archmage_hat",
+  "description": "\"Extremely powerful, magic-enhancing artifact worn only by Laroxian's Council members.\"",
+  "stats": {
+    "intelligence": 35,
+    "criticalDamage": 0.2
+  },
+  "notes": ""
+}

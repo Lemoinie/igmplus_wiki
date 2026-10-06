@@ -1,0 +1,26 @@
+{
+  "id": "Gcss",
+  "name": "G.C.S.S.",
+  "isBoss": false,
+  "sprite": "unit_gcss",
+  "stats": {
+    "hp": 5000,
+    "constitution": 400,
+    "intelligence": 1,
+    "dexterity": 45,
+    "defense": 35,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "600",
+    "max": "900"
+  },
+  "expGiven": 300,
+  "drops": [
+    {
+      "item": "Synapse",
+      "qty": 1,
+      "chance": 100
+    }
+  ]
+}

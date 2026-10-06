@@ -1,0 +1,31 @@
+{
+  "id": "ObsidianGolem",
+  "name": "Obsidian Golem",
+  "isBoss": false,
+  "sprite": "unit_obsidian_golem",
+  "stats": {
+    "hp": 1200,
+    "constitution": 30,
+    "intelligence": 1,
+    "dexterity": 1,
+    "defense": 0,
+    "magicDefense": 100
+  },
+  "damage": {
+    "min": "20",
+    "max": "25"
+  },
+  "expGiven": 84,
+  "drops": [
+    {
+      "item": "ObsidianChunk",
+      "qty": 1,
+      "chance": 60
+    },
+    {
+      "item": "ConstructEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

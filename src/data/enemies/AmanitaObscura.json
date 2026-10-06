@@ -1,0 +1,26 @@
+{
+  "id": "AmanitaObscura",
+  "name": "Amanita Obscura",
+  "isBoss": false,
+  "sprite": "unit_amanita_obscura",
+  "stats": {
+    "hp": 450,
+    "constitution": 14,
+    "intelligence": 1,
+    "dexterity": 4,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "150",
+    "max": "190"
+  },
+  "expGiven": 188,
+  "drops": [
+    {
+      "item": "PoisonousFlesh",
+      "qty": 1,
+      "chance": 1
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "id": "GiantTortoise",
+  "name": "Giant Tortoise",
+  "isBoss": false,
+  "sprite": "unit_giant_tortoise",
+  "stats": {
+    "hp": 1400,
+    "constitution": 60,
+    "intelligence": 2,
+    "dexterity": 1,
+    "defense": 50,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "40",
+    "max": "55"
+  },
+  "expGiven": 70,
+  "drops": [
+    {
+      "item": "GiantShellFragment",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "TortoiseThorn",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "Egg",
+      "qty": 1,
+      "chance": 2.5
+    },
+    {
+      "item": "ReptileEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ]
+}

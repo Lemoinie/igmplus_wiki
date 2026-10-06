@@ -1,0 +1,25 @@
+{
+  "id": "EsotericAlchemist",
+  "name": "Esoteric Alchemist",
+  "category": "Archer",
+  "tier": 8,
+  "maxLevel": 40,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_esoteric_alchemist",
+  "description": "This masterful alchemist not only succeeded in harnessing the power of the elements in her creations but also infused them with blessings typically linked to benevolent deities.",
+  "stats": {
+    "maxLevel": 40,
+    "baseMaxHp": 240,
+    "baseConstitution": 11,
+    "baseIntelligence": 24,
+    "baseDexterity": 30,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Thaumaturgy Iii",
+  "promotesTo": [
+    "EldritchAlchemist"
+  ]
+}

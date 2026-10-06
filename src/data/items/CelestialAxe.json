@@ -1,0 +1,15 @@
+{
+  "id": "CelestialAxe",
+  "name": "Celestial Axe",
+  "type": "weapon",
+  "category": "Axe",
+  "rarity": null,
+  "price": 610,
+  "sprite": "celestial_axe",
+  "description": "An axe of alien alloy, impossibly light and keen.",
+  "stats": {
+    "constitution": 26,
+    "intelligence": 14
+  },
+  "notes": ""
+}

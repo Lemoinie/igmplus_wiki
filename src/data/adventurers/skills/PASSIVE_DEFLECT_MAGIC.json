@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_DEFLECT_MAGIC",
+  "name_key": "passive_deflect_magic_name",
+  "desc_key": "passive_deflect_magic_description",
+  "kind": "passive",
+  "name": "Deflect Magic",
+  "description": "Every magical damage is reduced to 1."
+}

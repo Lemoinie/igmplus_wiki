@@ -1,0 +1,16 @@
+{
+  "id": "FrozenEggPendant",
+  "name": "Frozen Egg Pendant",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 341,
+  "sprite": "frozen_egg_pendant",
+  "description": "Encapsulates an authentic Frozen Wivern egg. Every ice damage inflicted by the owner will be amplified by the unborn creature still living inside.",
+  "stats": {
+    "freezeBonusDamage": 40,
+    "maxHp": 90,
+    "defense": 7
+  },
+  "notes": ""
+}

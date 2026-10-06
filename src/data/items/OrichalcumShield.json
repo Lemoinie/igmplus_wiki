@@ -1,0 +1,14 @@
+{
+  "id": "OrichalcumShield",
+  "name": "Orichalcum Shield",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 1440,
+  "sprite": "orichalcum_shield",
+  "description": "Made from a metal seemingly impossible to destroy, this shield offers unmatched protection to the wearer.",
+  "stats": {
+    "constitution": 42
+  },
+  "notes": ""
+}

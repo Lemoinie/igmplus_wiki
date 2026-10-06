@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ELUSIVE",
+  "name_key": "passive_elusive_name",
+  "desc_key": "passive_elusive_description",
+  "kind": "passive",
+  "name": "Elusive",
+  "description": "50% bonus dodge chance."
+}

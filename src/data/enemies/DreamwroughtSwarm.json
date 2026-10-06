@@ -1,0 +1,36 @@
+{
+  "id": "DreamwroughtSwarm",
+  "name": "Dreamwrought Swarm",
+  "isBoss": false,
+  "sprite": "unit_dreamwrought_swarm",
+  "stats": {
+    "hp": 30,
+    "constitution": 1,
+    "intelligence": 50,
+    "dexterity": 65,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "275",
+    "max": "285"
+  },
+  "expGiven": 500,
+  "drops": [
+    {
+      "item": "DreamwroughtLarva",
+      "qty": 1,
+      "chance": 33.4
+    },
+    {
+      "item": "DreamwroughtLarva",
+      "qty": 2,
+      "chance": 33.3
+    },
+    {
+      "item": "DreamwroughtLarva",
+      "qty": 3,
+      "chance": 33.3
+    }
+  ]
+}

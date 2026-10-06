@@ -1,0 +1,17 @@
+{
+  "id": "ShieldOfTheMartyr",
+  "name": "Shield of the Martyr",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 26500,
+  "sprite": "shield_of_the_martyr",
+  "description": "Awakened by the exalted powder gathered from the Primordial, all this shield knows and craves is pain. It will force enemies to attack its bearer at a much higher frequency.",
+  "stats": {
+    "constitution": 22,
+    "defense": 8,
+    "magicDefense": 8,
+    "threat": 2
+  },
+  "notes": ""
+}

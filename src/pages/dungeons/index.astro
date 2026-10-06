@@ -1,7 +1,9 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import dungeonsData from '../../data/dungeons.json';
+import { getAllPlaces } from '../../lib/data';
 import { base } from '../../lib/base';
+
+const dungeonsData = getAllPlaces();
 ---
 
 <WikiLayout title="Places" description="Encounter pools, room probabilities, and loot tables across all dungeons and raids in Idle Guild Master Modded.">

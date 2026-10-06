@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ECLIPSE_III",
+  "name_key": "active_eclipse_iii_name",
+  "desc_key": "active_eclipse_iii_description",
+  "kind": "active",
+  "name": "Eclipse III",
+  "description": "\"Stabs the lowest health enemy, executing them if health is reduced to 20% or less. Instantly recasts on enemy kill.\nCritical hit bonus damage × 3\""
+}

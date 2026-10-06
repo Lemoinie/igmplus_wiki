@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PREHISTORIC_AVIAN",
+  "name_key": "passive_prehistoric_avian_name",
+  "desc_key": "passive_prehistoric_avian_description",
+  "kind": "passive",
+  "name": "Prehistoric Avian",
+  "description": "\"Can't be hit by melee attacks. Attacks allies and enemies alike\""
+}

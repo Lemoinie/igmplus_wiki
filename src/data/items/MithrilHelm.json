@@ -1,0 +1,14 @@
+{
+  "id": "MithrilHelm",
+  "name": "Mithril Helm",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 750,
+  "sprite": "mithril_helm",
+  "description": "An incredibly light and resistant helm crafted from the legendary Mithril.",
+  "stats": {
+    "maxHp": 220
+  },
+  "notes": ""
+}

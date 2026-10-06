@@ -1,0 +1,23 @@
+{
+  "id": "EldritchAlchemist",
+  "name": "Eldritch Alchemist",
+  "category": "Archer",
+  "tier": 9,
+  "maxLevel": 45,
+  "weaponType": "bow",
+  "armorType": "medium",
+  "sprite": "unit_eldritch_alchemist",
+  "description": "\"Transcending the border between mortal and divine, her potions incorporate an eldritch god's blessing, obtained through arcane means and without its knowledge.\"",
+  "stats": {
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 12,
+    "baseIntelligence": 28,
+    "baseDexterity": 32,
+    "baseDefense": 10,
+    "baseMagicDefense": 10
+  },
+  "activeSkill": "Barrage Ii",
+  "passiveSkill": "Thaumaturgy Iv",
+  "promotesTo": []
+}

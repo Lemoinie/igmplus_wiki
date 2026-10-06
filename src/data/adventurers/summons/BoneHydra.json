@@ -1,0 +1,23 @@
+{
+  "id": "BoneHydra",
+  "name": "Bone Hydra",
+  "category": "Summon",
+  "tier": 1,
+  "maxLevel": 15,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_bone_hydra",
+  "description": "A reanimated bone hydra. It feels no pain, so physical damage is less effective.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 390,
+    "baseConstitution": 125,
+    "baseIntelligence": 1,
+    "baseDexterity": 24,
+    "baseDefense": 50,
+    "baseMagicDefense": 0
+  },
+  "activeSkill": "None",
+  "passiveSkill": "Threatening Ii",
+  "promotesTo": []
+}

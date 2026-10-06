@@ -1,0 +1,26 @@
+{
+  "id": "Guard",
+  "name": "Guard",
+  "category": "Footman",
+  "tier": 3,
+  "maxLevel": 15,
+  "weaponType": "sword",
+  "armorType": "heavy",
+  "sprite": "unit_guard",
+  "description": "Specialized in the surveillance of civilians or places of interest, guards are widely employed for the protection of sensitive objectives.",
+  "stats": {
+    "maxLevel": 15,
+    "baseMaxHp": 95,
+    "baseConstitution": 16,
+    "baseIntelligence": 8,
+    "baseDexterity": 6,
+    "baseDefense": 20,
+    "baseMagicDefense": 20
+  },
+  "activeSkill": "Mighty Strike",
+  "passiveSkill": "Threatening Ii",
+  "promotesTo": [
+    "IronWarden",
+    "RoyalGuard"
+  ]
+}
