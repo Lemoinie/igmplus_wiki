@@ -48,6 +48,16 @@ const emit = defineEmits<{ (e: 'toggle', id: string): void }>();
   display: flex;
   flex-direction: column;
   gap: 6px;
-  margin-left: 28px;
+  margin-left: 24px;
+  padding-left: 6px;
+  border-left: 2px solid var(--border-subtle);
+}
+
+@media (max-width: 640px) {
+  .children {
+    margin-left: 10px;
+    padding-left: 4px;
+    border-left: 1.5px solid var(--border-subtle);
+  }
 }
 </style>

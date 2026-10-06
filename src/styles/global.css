@@ -82,6 +82,12 @@ h1 { font-size: 2rem; margin-bottom: 0.75rem; }
 h2 { font-size: 1.5rem; margin-top: 1.5rem; margin-bottom: 0.5rem; border-bottom: 1px solid var(--border-subtle); padding-bottom: 0.25rem; }
 h3 { font-size: 1.25rem; margin-top: 1.25rem; margin-bottom: 0.5rem; }
 
+@media (max-width: 640px) {
+  h1 { font-size: 1.6rem; }
+  h2 { font-size: 1.25rem; }
+  h3 { font-size: 1.1rem; }
+}
+
 p { margin-bottom: 1rem; color: var(--text-secondary); }
 
 /* Markdown table styling */

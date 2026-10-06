@@ -157,4 +157,38 @@ function fmtSkill(name?: string): string {
   color: #6ee7a0;
 }
 
+@media (max-width: 640px) {
+  .classCard {
+    padding: 0.4rem 0.5rem;
+  }
+  .row {
+    gap: 0.45rem;
+  }
+  .spriteFrame {
+    width: 48px;
+    height: 48px;
+  }
+  .spriteFrame img {
+    width: 44px;
+    height: 44px;
+  }
+  .className {
+    font-size: 0.95rem;
+  }
+  .tierBadge {
+    min-width: 28px;
+    padding: 2px 4px;
+    font-size: 0.72rem;
+  }
+  .collapseBtn,
+  .collapseSpacer {
+    width: 26px;
+    height: 26px;
+    font-size: 0.85rem;
+  }
+  .chip {
+    font-size: 0.72rem;
+    padding: 2px 8px;
+  }
+}
 </style>

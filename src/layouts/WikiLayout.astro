@@ -39,8 +39,8 @@ const searchEntries = [
     id: `pet-${p.id}`,
     title: p.name,
     category: 'Pet' as const,
-    url: `${base}/pets#${p.id}`,
-    description: `Tier ${p.tier} ${p.type} pet`
+    url: `${base}/pets#pet-${p.id}`,
+    description: `${p.family} pet · ${p.abilitySlots} trait slots · ${(p.guaranteedAbilities || []).join(', ')}`
   })),
   ...traitsList.map((t: any) => ({
     id: `trait-${t.id}`,
@@ -85,7 +85,9 @@ const searchEntries = [
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/svg+xml" href={`${base}/favicon.svg`} />
+    <link rel="icon" type="image/png" href={`${base}/favicon.png`} />
+    <link rel="shortcut icon" type="image/png" href={`${base}/favicon.png`} />
+    <link rel="apple-touch-icon" href={`${base}/favicon.png`} />
     <title>{title} | IGM+ Wiki</title>
     <meta name="description" content={description} />
   </head>
@@ -96,12 +98,37 @@ const searchEntries = [
 
       <!-- Main Layout Body -->
       <div class="mainWrapper">
-        <!-- Top Header with Global Search -->
+        <!-- Top Header with Global Search and Mobile Hamburger Toggle -->
         <header class="topHeader">
-          <div class="headerLeft"></div>
+          <div class="headerLeft">
+            <!-- Mobile Menu Toggle Button -->
+            <button
+              type="button"
+              id="mobileMenuBtn"
+              class="mobileMenuBtn"
+              aria-label="Open navigation menu"
+              onclick="window.dispatchEvent(new CustomEvent('igm:toggle-sidebar'))"
+            >
+              <span class="hamburgerIcon">☰</span>
+            </button>
+
+            <!-- Mobile Brand Logo & Name -->
+            <a href={`${base}/`} class="mobileBrand">
+              <img
+                src={`${base}/images/sha.png`}
+                alt="Sha"
+                class="mobileShaLogo sprite"
+                width="28"
+                height="28"
+              />
+              <span class="mobileBrandName">IGM+</span>
+            </a>
+          </div>
+
           <div class="headerCenter">
             <SearchBar client:load entries={searchEntries} />
           </div>
+
           <div class="headerRight">
             <span class="modBadge">IGM+ Modded</span>
           </div>
@@ -143,12 +170,59 @@ const searchEntries = [
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.85rem 1.5rem;
+  gap: 12px;
+  padding: 0.75rem 1.5rem;
   background: var(--bg-sidebar);
   border-bottom: 1px solid var(--border-subtle);
   position: sticky;
   top: 0;
   z-index: 30;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.mobileMenuBtn {
+  display: none;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-primary);
+  border-radius: 6px;
+  width: 38px;
+  height: 38px;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1.25rem;
+  line-height: 1;
+  transition: all 0.15s ease;
+}
+
+.mobileMenuBtn:hover {
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.mobileBrand {
+  display: none;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+}
+
+.mobileShaLogo {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+}
+
+.mobileBrandName {
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: var(--text-primary);
+  letter-spacing: -0.02em;
 }
 
 .headerCenter {
@@ -159,6 +233,11 @@ const searchEntries = [
   margin: 0 auto;
 }
 
+.headerRight {
+  display: flex;
+  align-items: center;
+}
+
 .modBadge {
   font-size: 0.75rem;
   font-weight: 700;
@@ -167,6 +246,7 @@ const searchEntries = [
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   color: var(--text-gold);
+  white-space: nowrap;
 }
 
 .pageContent {
@@ -189,8 +269,30 @@ const searchEntries = [
   .mainWrapper {
     margin-left: 0;
   }
+  .mobileMenuBtn {
+    display: flex;
+  }
+  .mobileBrand {
+    display: flex;
+  }
+  .topHeader {
+    padding: 0.6rem 0.85rem;
+    gap: 8px;
+  }
   .pageContent {
-    padding: 1.25rem 1rem;
+    padding: 1.25rem 0.85rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modBadge {
+    display: none;
+  }
+}
+
+@media (max-width: 480px) {
+  .mobileBrandName {
+    display: none;
   }
 }
 </style>

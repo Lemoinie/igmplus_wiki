@@ -43,14 +43,21 @@ export interface EquipmentDefinition {
   notes?: string;
 }
 
+export type PetFamily = 'Avian' | 'Construct' | 'Esoteric' | 'Insect' | 'Mythic' | 'Reptile' | 'Wild' | 'Wooden';
+
 export interface PetDefinition {
   id: string;
   name: string;
-  type: 'beast' | 'undead' | 'familiar' | 'elemental';
-  tier: number;
+  family: PetFamily;
+  abilitySlots: number;
   sprite: string;
-  description?: string;
-  stats: Record<string, number>;
+  description: string;
+  guaranteedAbilities: string[];
+  exclusiveAbility?: string;
+  exclusiveDescription?: string;
+  type?: string;
+  tier?: number;
+  stats?: Record<string, number>;
   skills?: string[];
   traits?: string[];
 }

@@ -198,6 +198,7 @@ function getCatCount(cat: string): number {
   color: var(--text-primary);
   cursor: pointer;
   transition: all 0.15s ease;
+  flex-shrink: 0;
 }
 
 .catBtn:hover {
@@ -296,5 +297,29 @@ function getCatCount(cat: string): number {
   background: var(--bg-card);
   border-radius: 8px;
   color: var(--text-muted);
+}
+
+@media (max-width: 768px) {
+  .categoryTabs {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 0.6rem;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+    gap: 8px;
+  }
+  .categoryTabs::-webkit-scrollbar {
+    display: none;
+  }
+  .catBtn {
+    padding: 6px 12px 6px 8px;
+  }
+  .controlsBar {
+    gap: 8px;
+  }
+  .searchInput {
+    flex: 1 1 100%;
+  }
 }
 </style>

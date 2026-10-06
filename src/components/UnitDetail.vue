@@ -268,6 +268,38 @@ defineProps<{
 .dropTable td { padding: 6px 8px; border-top: 1px solid var(--border-subtle); }
 
 @media (max-width: 600px) {
-  .hero { flex-direction: column; text-align: center; }
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .tags {
+    justify-content: center;
+  }
+  .unitName {
+    font-size: 1.5rem;
+  }
+  .spriteFrame {
+    width: 96px;
+    height: 96px;
+  }
+  .spriteFrame img {
+    width: 88px;
+    height: 88px;
+  }
+  .statsGrid {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 6px;
+  }
+  .statCell {
+    padding: 6px 2px;
+  }
+  .statVal {
+    font-size: 0.95rem;
+  }
+  .linkCard {
+    flex: 1 1 calc(50% - 6px);
+  }
 }
 </style>

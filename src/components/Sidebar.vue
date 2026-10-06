@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted } from 'vue';
+import { ref, onMounted, onUnmounted } from 'vue';
 import { base } from '../lib/base';
 
 const isCollapsed = ref(false);
@@ -9,7 +9,7 @@ const navItems = [
   { label: 'Home', href: `${base}/` || '/' },
   { label: 'Classes', href: `${base}/classes` },
   { label: 'Equipment', href: `${base}/equipment` },
-  { label: 'Pets & Summons', href: `${base}/pets` },
+  { label: 'Pets', href: `${base}/pets` },
   { label: 'Traits', href: `${base}/traits` },
   { label: 'Enemies & Bestiary', href: `${base}/enemies` },
   { label: 'Dungeons & Raids', href: `${base}/dungeons` },
@@ -31,8 +31,26 @@ function toggleSidebar() {
   }
 }
 
+function openMobile() {
+  isMobileOpen.value = true;
+  if (typeof document !== 'undefined') {
+    document.body.style.overflow = 'hidden';
+  }
+}
+
+function closeMobile() {
+  isMobileOpen.value = false;
+  if (typeof document !== 'undefined') {
+    document.body.style.overflow = '';
+  }
+}
+
 function toggleMobile() {
-  isMobileOpen.value = !isMobileOpen.value;
+  if (isMobileOpen.value) {
+    closeMobile();
+  } else {
+    openMobile();
+  }
 }
 
 onMounted(() => {
@@ -42,19 +60,24 @@ onMounted(() => {
       document.documentElement.classList.add('sidebar-collapsed');
     }
   } catch {}
+
+  window.addEventListener('igm:toggle-sidebar', toggleMobile);
+  window.addEventListener('igm:open-sidebar', openMobile);
+  window.addEventListener('igm:close-sidebar', closeMobile);
+});
+
+onUnmounted(() => {
+  window.removeEventListener('igm:toggle-sidebar', toggleMobile);
+  window.removeEventListener('igm:open-sidebar', openMobile);
+  window.removeEventListener('igm:close-sidebar', closeMobile);
+  if (typeof document !== 'undefined') {
+    document.body.style.overflow = '';
+  }
 });
 </script>
 
 <template>
   <div>
-    <!-- Mobile Hamburger Bar -->
-    <div class="mobileHeader">
-      <button type="button" class="mobileMenuBtn" @click="toggleMobile">
-        ☰
-      </button>
-      <a :href="`${base}/` || '/'" class="mobileTitle">IGM+ Mod Wiki</a>
-    </div>
-
     <!-- Desktop Reopen Floating Button -->
     <button
       v-if="isCollapsed"
@@ -63,11 +86,18 @@ onMounted(() => {
       @click="toggleSidebar"
       title="Open Sidebar"
     >
-      <span>▶</span>
+      <img
+        :src="`${base}/images/sha.png`"
+        alt="Sha"
+        class="reopenAvatar sprite"
+        width="20"
+        height="20"
+      />
       <span>Menu</span>
+      <span class="reopenArrow">▶</span>
     </button>
 
-    <!-- Sidebar Container -->
+    <!-- Sidebar Container (Drawer on mobile, left rail on desktop) -->
     <aside
       class="sidebar"
       :class="{
@@ -76,19 +106,40 @@ onMounted(() => {
       }"
     >
       <div class="sidebarHeader">
-        <a :href="`${base}/` || '/'" class="brandLink">
+        <a :href="`${base}/` || '/'" class="brandLink" @click="closeMobile">
+          <div class="brandAvatarBox">
+            <img
+              :src="`${base}/images/sha.png`"
+              alt="Sha"
+              class="brandAvatar sprite"
+              width="36"
+              height="36"
+            />
+          </div>
           <div class="brandText">
             <span class="brandTitle">IGM+ Wiki</span>
             <span class="brandSub">Idle Guild Master Mod</span>
           </div>
         </a>
+
+        <!-- Desktop collapse button -->
         <button
           type="button"
-          class="collapseBtn"
+          class="collapseBtn desktopOnly"
           @click="toggleSidebar"
           title="Collapse Sidebar"
         >
           ◀
+        </button>
+
+        <!-- Mobile drawer close button -->
+        <button
+          type="button"
+          class="closeDrawerBtn mobileOnly"
+          @click="closeMobile"
+          title="Close Navigation"
+        >
+          ✕
         </button>
       </div>
 
@@ -96,7 +147,7 @@ onMounted(() => {
         <div class="navSectionTitle">GAME DATABASE</div>
         <ul class="navList">
           <li v-for="item in navItems" :key="item.href">
-            <a :href="item.href" class="navLink" @click="isMobileOpen = false">
+            <a :href="item.href" class="navLink" @click="closeMobile">
               <span class="navLabel">{{ item.label }}</span>
             </a>
           </li>
@@ -108,12 +159,14 @@ onMounted(() => {
       </div>
     </aside>
 
-    <!-- Mobile Backdrop -->
-    <div
-      v-if="isMobileOpen"
-      class="mobileBackdrop"
-      @click="isMobileOpen = false"
-    ></div>
+    <!-- Mobile Drawer Backdrop -->
+    <transition name="fade">
+      <div
+        v-if="isMobileOpen"
+        class="mobileBackdrop"
+        @click="closeMobile"
+      ></div>
+    </transition>
   </div>
 </template>
 
@@ -140,8 +193,9 @@ onMounted(() => {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 1rem 1rem 1rem 1.25rem;
+  padding: 1rem 1rem 1rem 1.15rem;
   border-bottom: 1px solid var(--border-subtle);
+  gap: 8px;
 }
 
 .brandLink {
@@ -149,15 +203,30 @@ onMounted(() => {
   align-items: center;
   gap: 0.75rem;
   text-decoration: none;
+  min-width: 0;
 }
 
-.brandIcon {
-  font-size: 1.5rem;
+.brandAvatarBox {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.brandAvatar {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 }
 
 .brandText {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .brandTitle {
@@ -168,8 +237,9 @@ onMounted(() => {
 }
 
 .brandSub {
-  font-size: 0.75rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
+  white-space: nowrap;
 }
 
 .collapseBtn {
@@ -179,6 +249,7 @@ onMounted(() => {
   border-radius: 6px;
   width: 28px;
   height: 28px;
+  flex-shrink: 0;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -192,6 +263,35 @@ onMounted(() => {
   border-color: var(--brand-primary);
 }
 
+.closeDrawerBtn {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  border-radius: 6px;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.closeDrawerBtn:hover {
+  color: var(--text-crimson);
+  border-color: var(--text-crimson);
+}
+
+.desktopOnly {
+  display: flex;
+}
+
+.mobileOnly {
+  display: none;
+}
+
 .reopenBtn {
   position: fixed;
   left: 14px;
@@ -199,14 +299,14 @@ onMounted(() => {
   z-index: 60;
   display: flex;
   align-items: center;
-  gap: 6px;
-  padding: 6px 12px;
+  gap: 8px;
+  padding: 6px 14px;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   color: var(--brand-primary);
   border-radius: 20px;
   cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.45);
   font-size: 0.85rem;
   font-weight: 600;
   transition: all 0.2s ease;
@@ -215,7 +315,16 @@ onMounted(() => {
 .reopenBtn:hover {
   background: var(--bg-card-hover);
   border-color: var(--brand-primary);
-  transform: translateX(2px);
+  transform: translateY(-1px);
+}
+
+.reopenAvatar {
+  image-rendering: pixelated;
+}
+
+.reopenArrow {
+  font-size: 0.7rem;
+  opacity: 0.7;
 }
 
 .sidebarNav {
@@ -258,10 +367,6 @@ onMounted(() => {
   text-decoration: none;
 }
 
-.navIcon {
-  font-size: 1.1rem;
-}
-
 .sidebarFooter {
   padding: 0.85rem 1rem;
   border-top: 1px solid var(--border-subtle);
@@ -270,49 +375,45 @@ onMounted(() => {
 }
 
 /* ================= Mobile Styles ================= */
-.mobileHeader {
-  display: none;
-}
-
 @media (max-width: 959px) {
-  .mobileHeader {
+  .desktopOnly {
+    display: none;
+  }
+  .mobileOnly {
     display: flex;
-    align-items: center;
-    gap: 1rem;
-    padding: 0.75rem 1rem;
-    background: var(--bg-sidebar);
-    border-bottom: 1px solid var(--border-subtle);
-    position: sticky;
-    top: 0;
-    z-index: 40;
   }
-  .mobileMenuBtn {
-    background: transparent;
-    border: none;
-    color: var(--text-primary);
-    font-size: 1.5rem;
-    cursor: pointer;
-  }
-  .mobileTitle {
-    font-size: 1.1rem;
-    font-weight: 700;
-    color: var(--text-primary);
-    text-decoration: none;
-  }
+
   .sidebar {
+    width: 270px;
+    z-index: 100;
     transform: translateX(-100%);
+    box-shadow: 4px 0 24px rgba(0, 0, 0, 0.55);
   }
+
   .sidebar.mobileActive {
     transform: translateX(0);
   }
+
   .reopenBtn {
     display: none;
   }
+
   .mobileBackdrop {
     position: fixed;
     inset: 0;
-    background: rgba(0, 0, 0, 0.6);
-    z-index: 45;
+    background: rgba(0, 0, 0, 0.65);
+    backdrop-filter: blur(2px);
+    z-index: 95;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition: opacity 0.2s ease;
+  }
+
+  .fade-enter-from,
+  .fade-leave-to {
+    opacity: 0;
   }
 }
 </style>

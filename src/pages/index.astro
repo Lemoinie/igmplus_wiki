@@ -10,7 +10,7 @@ import { base } from '../lib/base';
 const stats = [
   { label: 'Classes', count: classes.length, icon: '⚔️', href: `${base}/classes` },
   { label: 'Equipment', count: equipment.length, icon: '🛡️', href: `${base}/equipment` },
-  { label: 'Pets & Summons', count: pets.length, icon: '🐾', href: `${base}/pets` },
+  { label: 'Pets', count: pets.length, icon: '🐾', href: `${base}/pets` },
   { label: 'Enemies', count: enemies.length, icon: '👾', href: `${base}/enemies` },
   { label: 'Dungeons & Raids', count: dungeons.length, icon: '🗺️', href: `${base}/dungeons` },
 ];
@@ -54,8 +54,8 @@ const stats = [
 
       <a href={`${base}/pets`} class="featureCard">
         <div class="cardIcon">🐾</div>
-        <h3>Pets & Summons</h3>
-        <p>Tamer beasts, familiars, and necromancy undead summons with scaling stats and skills.</p>
+        <h3>Guild Pets</h3>
+        <p>Browse all 23 guild pets across 8 families with trait slots, guaranteed ability pools, and unique traits.</p>
       </a>
 
       <a href={`${base}/dungeons`} class="featureCard">
@@ -162,7 +162,7 @@ const stats = [
 
 .featureGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
   gap: 1.25rem;
 }
 
@@ -201,5 +201,28 @@ const stats = [
   color: var(--text-muted);
   margin: 0;
   line-height: 1.45;
+}
+
+@media (max-width: 640px) {
+  .hero {
+    padding: 1.75rem 1rem 2rem 1rem;
+    margin-bottom: 1.75rem;
+  }
+  .heroTitle {
+    font-size: 1.75rem;
+  }
+  .heroSubtitle {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+  .statCard {
+    padding: 0.6rem 0.9rem;
+  }
+  .statIcon {
+    font-size: 1.3rem;
+  }
+  .statCount {
+    font-size: 1.1rem;
+  }
 }
 </style>

@@ -154,7 +154,7 @@ select:focus {
 
 .itemsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
   gap: 1rem;
 }
 
@@ -164,5 +164,26 @@ select:focus {
   background: var(--bg-card);
   border-radius: 8px;
   color: var(--text-muted);
+}
+
+@media (max-width: 640px) {
+  .filterBar {
+    padding: 0.6rem 0.75rem;
+    gap: 8px;
+  }
+  .searchWrap {
+    flex: 1 1 100%;
+  }
+  .selectGroup {
+    width: 100%;
+  }
+  select {
+    flex: 1 1 calc(50% - 4px);
+  }
+  .count {
+    width: 100%;
+    margin-left: 0;
+    text-align: right;
+  }
 }
 </style>

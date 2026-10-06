@@ -1,33 +1,58 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import PetCard from '../../components/PetCard.vue';
+import PetBrowser from '../../components/PetBrowser.vue';
 import petsData from '../../data/pets.json';
 import { base } from '../../lib/base';
 ---
 
-<WikiLayout title="Pets & Summons" description="Tamer beasts and necromancy summons in Idle Guild Master Modded.">
+<WikiLayout
+  title="Guild Pets"
+  description="All 23 guild pets in Idle Guild Master Modded. Check trait slot capacities, guaranteed ability pools, and unique passive effects."
+>
   <div class="pageHeader">
-    <h1>Pets & Summons</h1>
+    <div class="headerTop">
+      <h1>Guild Pets</h1>
+      <span class="petCountBadge">{petsData.length} Pets</span>
+    </div>
     <p>
-      Beasts tamed by Outlander tamer specializations and undead risen by Necromancer masteries.
-      Each pet features scaling stats and battle capabilities.
+      Companions hatched and nurtured by your guild. Pets provide powerful passive buffs, healing, barriers,
+      and combat effects. Filter by family below or search for specific guaranteed trait pools and unique traits.
     </p>
   </div>
 
-  <div class="petsGrid">
-    {petsData.map((p) => (
-      <PetCard client:load pet={p as any} basePath={base} />
-    ))}
-  </div>
+  <PetBrowser client:load pets={petsData as any} basePath={base} />
 </WikiLayout>
 
 <style>
 .pageHeader {
   margin-bottom: 1.5rem;
 }
-.petsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
-  gap: 1.25rem;
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.5rem;
+}
+
+.headerTop h1 {
+  margin: 0;
+}
+
+.petCountBadge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  color: var(--text-gold);
+}
+
+.pageHeader p {
+  color: var(--text-secondary);
+  max-width: 850px;
+  line-height: 1.55;
+  margin: 0;
 }
 </style>

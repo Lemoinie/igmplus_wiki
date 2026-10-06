@@ -1,401 +1,283 @@
 [
   {
-    "id": "AlbinoRat",
-    "name": "Albino Rat",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_albino_rat",
-    "description": "A rare white rodent bearing uncanny ferocity and hardened resilience.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 15,
-      "baseConstitution": 6,
-      "baseIntelligence": 6,
-      "baseDexterity": 6,
-      "baseDefense": 1,
-      "baseMagicDefense": 1
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Beetle",
+    "name": "Beetle",
+    "family": "Insect",
+    "abilitySlots": 3,
+    "sprite": "pet_beetle",
+    "description": "A small, hard-shelled insect with sturdy legs and antennae. It scuttles with purpose, often gleaming in metallic colors.",
+    "guaranteedAbilities": [
+      "Fighter",
+      "Barrier"
     ]
   },
   {
-    "id": "AlphaOwlbear",
-    "name": "Alpha Owlbear",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_owlbear",
-    "description": "The undisputed apex monstrosity of the primeval woods, leading great beasts into battle.",
-    "stats": {
-      "maxLevel": 45,
-      "baseMaxHp": 220,
-      "baseConstitution": 36,
-      "baseIntelligence": 15,
-      "baseDexterity": 24,
-      "baseDefense": 22,
-      "baseMagicDefense": 18
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Crocodile",
+    "name": "Crocodile",
+    "family": "Reptile",
+    "abilitySlots": 4,
+    "sprite": "pet_crocodile",
+    "description": "A massive, armored reptile with powerful jaws and a stealthy, low-slung body. It lurks in water, ready to launch explosive ambushes with a swift lunge.",
+    "guaranteedAbilities": [
+      "Savage",
+      "Opportunist"
     ]
   },
   {
-    "id": "ArcticWeasel",
-    "name": "Arctic Weasel",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_weasel",
-    "description": "A ferocious northern weasel with blinding speed and hardened vitality.",
-    "stats": {
-      "maxLevel": 20,
-      "baseMaxHp": 35,
-      "baseConstitution": 10,
-      "baseIntelligence": 7,
-      "baseDexterity": 13,
-      "baseDefense": 3,
-      "baseMagicDefense": 3
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Dove",
+    "name": "Dove",
+    "family": "Avian",
+    "abilitySlots": 2,
+    "sprite": "pet_dove",
+    "description": "A gentle bird with soft feathers and a cooing call. It soars gracefully through the air, often seen as a symbol of peace and harmony.",
+    "guaranteedAbilities": [
+      "Decoy"
     ]
   },
   {
-    "id": "BoneHorror",
-    "name": "Bone Horror",
-    "type": "undead",
-    "tier": 1,
-    "sprite": "unit_bone_horror",
-    "description": "A reanimated bone horror. It feels no pain, so physical damage is less effective.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 315,
-      "baseConstitution": 72,
-      "baseIntelligence": 1,
-      "baseDexterity": 17,
-      "baseDefense": 50,
-      "baseMagicDefense": 0
-    },
-    "skills": [
-      "None",
-      "Threatening Ii"
+    "id": "Eagle",
+    "name": "Eagle",
+    "family": "Avian",
+    "abilitySlots": 4,
+    "sprite": "pet_eagle",
+    "description": "A fierce bird of prey with sharp talons and keen vision. It flies high above, scanning for prey with intense focus, before diving with unmatched speed and precision.",
+    "guaranteedAbilities": [
+      "Decoy"
     ]
   },
   {
-    "id": "BoneHydra",
-    "name": "Bone Hydra",
-    "type": "undead",
-    "tier": 1,
-    "sprite": "unit_bone_hydra",
-    "description": "A reanimated bone hydra. It feels no pain, so physical damage is less effective.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 390,
-      "baseConstitution": 125,
-      "baseIntelligence": 1,
-      "baseDexterity": 24,
-      "baseDefense": 50,
-      "baseMagicDefense": 0
-    },
-    "skills": [
-      "None",
-      "Threatening Ii"
+    "id": "FloatingEye",
+    "name": "Floating Eye",
+    "family": "Esoteric",
+    "abilitySlots": 2,
+    "sprite": "pet_floating_eye",
+    "description": "A hovering orb of flesh, bristling with tendrils and stalks. Its gaze is unsettling, filled with cold, alien intelligence.",
+    "guaranteedAbilities": [
+      "Experience",
+      "Drops"
     ]
   },
   {
-    "id": "BoneNightmare",
-    "name": "Bone Nightmare",
-    "type": "undead",
-    "tier": 1,
-    "sprite": "unit_bone_nightmare",
-    "description": "A reanimated bone nightmare. It feels no pain, so physical damage is less effective.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 345,
-      "baseConstitution": 105,
-      "baseIntelligence": 1,
-      "baseDexterity": 20,
-      "baseDefense": 50,
-      "baseMagicDefense": 0
-    },
-    "skills": [
-      "None",
-      "Threatening Ii"
+    "id": "FloatingSeed",
+    "name": "Floating Seed",
+    "family": "Wooden",
+    "abilitySlots": 2,
+    "sprite": "pet_floating_seed",
+    "description": "A small, round seed with a helix-like appendage. It just shuffles about, searching for fertile ground.",
+    "guaranteedAbilities": [
+      "Soothing",
+      "Healer"
     ]
   },
   {
-    "id": "DireWolf",
-    "name": "Dire Wolf",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_wolf",
-    "description": "A massive apex pack hunter that tears through enemy ranks with savage ferocity.",
-    "stats": {
-      "maxLevel": 30,
-      "baseMaxHp": 75,
-      "baseConstitution": 17,
-      "baseIntelligence": 10,
-      "baseDexterity": 22,
-      "baseDefense": 8,
-      "baseMagicDefense": 8
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Golem",
+    "name": "Golem",
+    "family": "Construct",
+    "abilitySlots": 3,
+    "sprite": "pet_golem",
+    "description": "A small, compact figure of dense stone and clay. Despite its size, it is incredibly tough and unyielding, moving with steady purpose, driven by an inner force.",
+    "guaranteedAbilities": [
+      "Magic",
+      "Bright"
     ]
   },
   {
-    "id": "PolarBear",
-    "name": "Polar Bear",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_bear",
-    "description": "A colossal arctic titan boasting relentless power and commanding the wild.",
-    "stats": {
-      "maxLevel": 35,
-      "baseMaxHp": 130,
-      "baseConstitution": 25,
-      "baseIntelligence": 11,
-      "baseDexterity": 15,
-      "baseDefense": 15,
-      "baseMagicDefense": 13
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "HolyTree",
+    "name": "Holy Tree",
+    "family": "Wooden",
+    "abilitySlots": 4,
+    "sprite": "pet_holy_tree",
+    "description": "A small bonsai tree not taller than the average human. Despite its unassuming appearance, these trees belong to an almost extinct ancient species of sentient trees.",
+    "guaranteedAbilities": [
+      "Soothing",
+      "Healer"
     ]
+  },
+  {
+    "id": "Kitsune",
+    "name": "Senko",
+    "family": "Mythic",
+    "abilitySlots": 5,
+    "sprite": "pet_kitsune",
+    "description": "A divine celestial kitsune dedicated to nurturing and pampering the guild. Unlocks all traits immediately at Level 1.",
+    "guaranteedAbilities": [
+      "Experience",
+      "Drops",
+      "Opportunist",
+      "Savage"
+    ],
+    "exclusiveAbility": "Kitsune Spirit Blessing",
+    "exclusiveDescription": "Empowers guild healing by +(0.6% × Level) as a global multiplier. All traits are active from Level 1."
+  },
+  {
+    "id": "Lizard",
+    "name": "Lizard",
+    "family": "Reptile",
+    "abilitySlots": 2,
+    "sprite": "pet_lizard",
+    "description": "A small reptile with agile limbs and darting eyes. It scurries nimbly over rocks and through foliage, quick to flick its tongue and bask in the sun.",
+    "guaranteedAbilities": [
+      "Savage",
+      "Opportunist"
+    ]
+  },
+  {
+    "id": "Mosquito",
+    "name": "Mosquito",
+    "family": "Insect",
+    "abilitySlots": 2,
+    "sprite": "pet_mosquito",
+    "description": "A tiny, buzzing insect with needle-like mouthparts. It flits through the air with an annoying persistence, always seeking a warm-blooded host to siphon from.",
+    "guaranteedAbilities": [
+      "Fighter",
+      "Barrier"
+    ]
+  },
+  {
+    "id": "Owl",
+    "name": "Owl",
+    "family": "Avian",
+    "abilitySlots": 3,
+    "sprite": "pet_owl",
+    "description": "A nocturnal bird with large, forward-facing eyes and a round face. It glides silently on wide wings, its haunting hoot echoing through the darkness.",
+    "guaranteedAbilities": [
+      "Decoy"
+    ]
+  },
+  {
+    "id": "Phoenix",
+    "name": "Kiara",
+    "family": "Mythic",
+    "abilitySlots": 5,
+    "sprite": "pet_phoenix",
+    "description": "An immortal phoenix born from eternal flames. With radiant warmth and vibrant spirit, she rises anew each time she falls.",
+    "guaranteedAbilities": [
+      "Experience",
+      "Drops",
+      "Opportunist",
+      "Savage"
+    ],
+    "exclusiveAbility": "Solar Rebirth",
+    "exclusiveDescription": "Each combat turn: 0.15% × Level chance to revive/protect fallen allies (1 + floor(Level / 50) allies)."
   },
   {
     "id": "Rat",
     "name": "Rat",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_rat",
-    "description": "A vicious little vermin that bites ankles and swarms unwary targets.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 10,
-      "baseConstitution": 5,
-      "baseIntelligence": 5,
-      "baseDexterity": 5,
-      "baseDefense": 0,
-      "baseMagicDefense": 0
-    },
-    "skills": [
-      "None",
-      "None"
+    "family": "Wild",
+    "abilitySlots": 2,
+    "sprite": "pet_rat",
+    "description": "A quick, wiry rodent with sharp teeth and twitching whiskers. It scurries in the shadows, scavenging for scraps and finding its way into the smallest crevices.",
+    "guaranteedAbilities": [
+      "Bloodthirsty",
+      "Bloodcrave"
     ]
   },
   {
-    "id": "Skeleton",
-    "name": "Skeleton",
-    "type": "undead",
-    "tier": 1,
-    "sprite": "unit_skeleton",
-    "description": "A reanimated skeleton. It feels no pain, so physical damage is less effective.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 170,
-      "baseConstitution": 50,
-      "baseIntelligence": 1,
-      "baseDexterity": 14,
-      "baseDefense": 50,
-      "baseMagicDefense": 0
-    },
-    "skills": [
-      "None",
-      "Threatening I"
+    "id": "RedWolf",
+    "name": "Red Wolf",
+    "family": "Wild",
+    "abilitySlots": 4,
+    "sprite": "pet_red_wolf",
+    "description": "Rare wolf sometimes found roaming the forests looking for prey. It has a timid and elusive nature, but it is also extremely loyal.",
+    "guaranteedAbilities": [
+      "Bloodthirsty",
+      "Bloodcrave"
     ]
   },
   {
-    "id": "SnowCat",
-    "name": "Snow Cat",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_cat",
-    "description": "A rare mountain feline with a thick winter coat, striking with swift precision.",
-    "stats": {
-      "maxLevel": 25,
-      "baseMaxHp": 50,
-      "baseConstitution": 12,
-      "baseIntelligence": 8,
-      "baseDexterity": 18,
-      "baseDefense": 5,
-      "baseMagicDefense": 5
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Rockling",
+    "name": "Rockling",
+    "family": "Construct",
+    "abilitySlots": 2,
+    "sprite": "pet_rockling",
+    "description": "A squat, rocky creature covered in jagged stone plates. It shuffles slowly, grinding against the earth, its mineral-rich body blending seamlessly with crags and boulders.",
+    "guaranteedAbilities": [
+      "Magic",
+      "Bright"
     ]
   },
   {
-    "id": "SummonBear",
-    "name": "Summoned Bear",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_bear",
-    "description": "A towering beast serving as an unyielding frontline protector.",
-    "stats": {
-      "maxLevel": 35,
-      "baseMaxHp": 100,
-      "baseConstitution": 20,
-      "baseIntelligence": 9,
-      "baseDexterity": 12,
-      "baseDefense": 12,
-      "baseMagicDefense": 10
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Squirrel",
+    "name": "Squirrel",
+    "family": "Wild",
+    "abilitySlots": 3,
+    "sprite": "pet_squirrel",
+    "description": "A sleek, agile rodent with sharp claws and a bushy tail. It moves with a silent grace, watching its surroundings with a mix of curiosity and calculated intent. Loves to eat nuts.",
+    "guaranteedAbilities": [
+      "Bloodthirsty",
+      "Bloodcrave"
     ]
   },
   {
-    "id": "SummonCat",
-    "name": "Summoned Cat",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_cat",
-    "description": "An agile companion that pounces from behind with razor-sharp claws.",
-    "stats": {
-      "maxLevel": 25,
-      "baseMaxHp": 40,
-      "baseConstitution": 10,
-      "baseIntelligence": 7,
-      "baseDexterity": 15,
-      "baseDefense": 4,
-      "baseMagicDefense": 4
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Tarantula",
+    "name": "Tarantula",
+    "family": "Insect",
+    "abilitySlots": 4,
+    "sprite": "pet_tarantula",
+    "description": "A large, hairy spider with eight watchful eyes and thick, bristling legs. It moves slowly and deliberately, ready to pounce or retreat into the shadows.",
+    "guaranteedAbilities": [
+      "Fighter",
+      "Barrier"
     ]
   },
   {
-    "id": "SummonOwlbear",
-    "name": "Summoned Owlbear",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_owlbear",
-    "description": "A monstrous chimeric powerhouse combining avian keenness with ursine savagery.",
-    "stats": {
-      "maxLevel": 45,
-      "baseMaxHp": 180,
-      "baseConstitution": 30,
-      "baseIntelligence": 12,
-      "baseDexterity": 20,
-      "baseDefense": 18,
-      "baseMagicDefense": 15
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "TentacleTangle",
+    "name": "Tentacle Tangle",
+    "family": "Esoteric",
+    "abilitySlots": 3,
+    "sprite": "pet_tentacle_tangle",
+    "description": "A writhing, pulsating clump of rubbery tendrils, constantly coiling and twisting. It slithers with unsettling grace, its searching limbs probing for anything to grasp.",
+    "guaranteedAbilities": [
+      "Experience",
+      "Drops"
     ]
   },
   {
-    "id": "SummonTiger",
-    "name": "Summoned Tiger",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_tiger",
-    "description": "A fierce jungle predator executing crushing ambushes against high-value targets.",
-    "stats": {
-      "maxLevel": 40,
-      "baseMaxHp": 130,
-      "baseConstitution": 24,
-      "baseIntelligence": 10,
-      "baseDexterity": 24,
-      "baseDefense": 14,
-      "baseMagicDefense": 12
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "Tesseract",
+    "name": "Tesseract",
+    "family": "Construct",
+    "abilitySlots": 4,
+    "sprite": "pet_tesseract",
+    "description": "A shimmering, geometric construct that defies conventional shapes. It twists in and out of itself, folding space in mind-bending ways, giving glimpses into other dimensions.",
+    "guaranteedAbilities": [
+      "Magic",
+      "Bright"
     ]
   },
   {
-    "id": "SummonWeasel",
-    "name": "Summoned Weasel",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_weasel",
-    "description": "A lightning-fast animal companion darting between enemy strikes.",
-    "stats": {
-      "maxLevel": 20,
-      "baseMaxHp": 25,
-      "baseConstitution": 8,
-      "baseIntelligence": 6,
-      "baseDexterity": 10,
-      "baseDefense": 2,
-      "baseMagicDefense": 2
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "ThingFromTheAbyss",
+    "name": "Thing from the Abyss",
+    "family": "Esoteric",
+    "abilitySlots": 4,
+    "sprite": "pet_thing_from_the_abyss",
+    "description": "A shadowy, amorphous entity with flickering, spectral limbs and piercing, formless eyes. Very small for abyssal horror standards, but it still radiates cold dread.",
+    "guaranteedAbilities": [
+      "Experience",
+      "Drops"
     ]
   },
   {
-    "id": "SummonWolf",
-    "name": "Summoned Wolf",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_wolf",
-    "description": "A steadfast pack hunter that hamstrings prey with bone-snapping bites.",
-    "stats": {
-      "maxLevel": 30,
-      "baseMaxHp": 60,
-      "baseConstitution": 14,
-      "baseIntelligence": 8,
-      "baseDexterity": 18,
-      "baseDefense": 6,
-      "baseMagicDefense": 6
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "TreeFrog",
+    "name": "Tree Frog",
+    "family": "Reptile",
+    "abilitySlots": 3,
+    "sprite": "pet_tree_frog",
+    "description": "A small, bright green amphibian with powerful legs. Its sharp, resonant croak echoes through the forests, and it has a voracious appetite for anything it can swallow.",
+    "guaranteedAbilities": [
+      "Savage",
+      "Opportunist"
     ]
   },
   {
-    "id": "WhiteTiger",
-    "name": "White Tiger",
-    "type": "beast",
-    "tier": 1,
-    "sprite": "unit_summon_tiger",
-    "description": "A majestic legendary predator possessing immense strength and an innate call of the pack.",
-    "stats": {
-      "maxLevel": 40,
-      "baseMaxHp": 160,
-      "baseConstitution": 28,
-      "baseIntelligence": 12,
-      "baseDexterity": 28,
-      "baseDefense": 16,
-      "baseMagicDefense": 14
-    },
-    "skills": [
-      "None",
-      "None"
-    ]
-  },
-  {
-    "id": "Zombie",
-    "name": "Zombie",
-    "type": "undead",
-    "tier": 1,
-    "sprite": "unit_zombie",
-    "description": "A reanimated zombie. It feels no pain, so physical damage is less effective.",
-    "stats": {
-      "maxLevel": 15,
-      "baseMaxHp": 130,
-      "baseConstitution": 34,
-      "baseIntelligence": 1,
-      "baseDexterity": 11,
-      "baseDefense": 50,
-      "baseMagicDefense": 0
-    },
-    "skills": [
-      "None",
-      "None"
+    "id": "WalkingBush",
+    "name": "Walking Bush",
+    "family": "Wooden",
+    "abilitySlots": 3,
+    "sprite": "pet_walking_bush",
+    "description": "A dense, thorny shrub with rustling leaves that move on their own. It scuttles across the ground, roots writhing like legs, driven mostly by curiosity.",
+    "guaranteedAbilities": [
+      "Soothing",
+      "Healer"
     ]
   }
 ]
