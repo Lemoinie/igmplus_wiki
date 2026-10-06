@@ -1,0 +1,5092 @@
+[
+  {
+    "key": "Abomination",
+    "parent": "Enemy",
+    "sprite": "unit_abomination",
+    "name_key": "enemy_abomination_name",
+    "description_key": "enemy_abomination_description",
+    "name": "Abomination",
+    "description": "Defying all the laws of basic biology, this monstrosity of connected tissues and nervous dead ends displays the strength of the many body it is made of. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 1000,
+      "baseConstitution": 20,
+      "baseIntelligence": 1,
+      "baseDexterity": 2,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 196,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "30",
+    "max_damage": "35",
+    "drops": [
+      {
+        "item": "SoulShard",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "BoneFragment",
+        "qty": 3,
+        "weight": 946
+      },
+      {
+        "item": "PotionOfConstitution",
+        "qty": 1,
+        "weight": 4
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "AmanitaObscura",
+    "parent": "Enemy",
+    "sprite": "unit_amanita_obscura",
+    "name_key": "enemy_amanita_obscura_name",
+    "description_key": "enemy_amanita_obscura_description",
+    "name": "Amanita Obscura",
+    "description": "Purple fungus with white grains. Its flesh contains a paralyzing agent capable of halting respiratory functions in nearly every living creature. It moves slowly but with a rhythmic pattern, hinting at a form of sentience.",
+    "stats": {
+      "baseMaxHp": 450,
+      "baseConstitution": 14,
+      "baseIntelligence": 1,
+      "baseDexterity": 4,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 188,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "150",
+    "max_damage": "190",
+    "drops": [
+      {
+        "item": "PoisonousFlesh",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "AncientEnt",
+    "parent": "Enemy",
+    "sprite": "unit_ancient_ent",
+    "name_key": "enemy_ancient_ent_name",
+    "description_key": "enemy_ancient_ent_description",
+    "name": "Ancient Ent",
+    "description": "Left undisturbed for millennia, this living tree grew to a massive size. Its body is covered in spikes, a mighty weapon along with its size to keep the forest safe against harmful intruders.",
+    "stats": {
+      "baseMaxHp": 3200,
+      "baseConstitution": 130,
+      "baseIntelligence": 48,
+      "baseDexterity": 27,
+      "baseDefense": 10,
+      "baseMagicDefense": 10
+    },
+    "exp_given": 240,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "140",
+    "max_damage": "195",
+    "drops": [
+      {
+        "item": "ElysianWood",
+        "qty": 3,
+        "weight": 460
+      },
+      {
+        "item": "LivingVine",
+        "qty": 1,
+        "weight": 80
+      },
+      {
+        "item": "Avocado",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "WoodenEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Angelfish",
+    "parent": "Enemy",
+    "sprite": "angelfish",
+    "name_key": "enemy_angelfish_name",
+    "description_key": "enemy_angelfish_description",
+    "name": "Angelfish",
+    "description": "A delicate ornamental fish that gracefully slips past weapons.",
+    "stats": {
+      "baseMaxHp": 20,
+      "baseConstitution": 6,
+      "baseIntelligence": 4,
+      "baseDexterity": 120,
+      "baseDefense": 3,
+      "baseMagicDefense": 4
+    },
+    "exp_given": 15,
+    "rarity": 0,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "2",
+    "drops": [
+      {
+        "item": "Angelfish",
+        "qty": 1,
+        "weight": 500
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ArcaneAssassin",
+    "parent": "Enemy",
+    "sprite": "unit_arcane_assassin",
+    "name_key": "enemy_arcane_assassin_name",
+    "description_key": "enemy_arcane_assassin_description",
+    "name": "Arcane Assassin",
+    "description": "The Arcane Assassins were a special operation group under direct command of the Seer, Kasimir, employed across the realms to take out targets that aimed to deteriorate the fragile peace among the various factions. They wield magical daggers gifted by the Seer, whose origin is a mystery.",
+    "stats": {
+      "baseMaxHp": 300,
+      "baseConstitution": 15,
+      "baseIntelligence": 20,
+      "baseDexterity": 84,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 92,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "30",
+    "max_damage": "60",
+    "drops": [
+      {
+        "item": "GoldScraps",
+        "qty": 1,
+        "weight": 400
+      },
+      {
+        "item": "CorruptedDagger",
+        "qty": 1,
+        "weight": 1
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ArchmageOfLarox",
+    "parent": "Enemy",
+    "sprite": "unit_archmage_of_larox",
+    "name_key": "enemy_archmage_of_larox_name",
+    "description_key": "enemy_archmage_of_larox_description",
+    "name": "Archmage of Larox",
+    "description": "\"Extremely powerful and dangerous, Archmage is the title conferred upon the brightest mages in the city. They participate in the city's Higher Council, overseeing every major development.\"",
+    "stats": {
+      "baseMaxHp": 770,
+      "baseConstitution": 4,
+      "baseIntelligence": 245,
+      "baseDexterity": 34,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 330,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "180",
+    "max_damage": "195",
+    "drops": [
+      {
+        "item": "LaroxianFabric",
+        "qty": 1,
+        "weight": 275
+      },
+      {
+        "item": "Pumpkin",
+        "qty": 1,
+        "weight": 35
+      },
+      {
+        "item": "SpellCompendium",
+        "qty": 1,
+        "weight": 3
+      },
+      {
+        "item": "RuneOfPower",
+        "qty": 1,
+        "weight": 3
+      },
+      {
+        "item": "ArchmageHat",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ArchmagusValthex",
+    "parent": "Enemy",
+    "sprite": "scarlet_grand_mage",
+    "name_key": "enemy_archmagus_valthex_name",
+    "description_key": "enemy_archmagus_valthex_description",
+    "name": "Archmagus Valthex",
+    "description": "Known as The Crimson Sovereign. Masters the forbidden arts of blood and strand within the Crucible.",
+    "stats": {
+      "baseMaxHp": 150000,
+      "baseConstitution": 100,
+      "baseDexterity": 60,
+      "baseIntelligence": 600,
+      "baseDefense": 10,
+      "baseMagicDefense": 450,
+      "baseLifesteal": 150,
+      "immunityToStatus": 0.0,
+      "criticalDamage": 1.5
+    },
+    "exp_given": 50000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "200",
+    "max_damage": "250",
+    "drops": [
+      {
+        "item": "ScarletStrand",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "BlackHide",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "AbherrantFabric",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": [
+      {
+        "item": "ScarletStrand",
+        "qty": 1,
+        "chance": 0.01
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "chance": 0.05
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1,
+        "chance": 0.35
+      },
+      {
+        "item": "BlackHide",
+        "qty": 1,
+        "chance": 0.35
+      },
+      {
+        "item": "AbherrantFabric",
+        "qty": 1,
+        "chance": 0.45
+      }
+    ]
+  },
+  {
+    "key": "AvatarOfTheAncient",
+    "parent": "Enemy",
+    "sprite": "unit_avatar_of_the_ancient",
+    "name_key": "enemy_avatar_of_the_ancient_name",
+    "description_key": "enemy_avatar_of_the_ancient_description",
+    "name": "Avatar of the Ancient",
+    "description": "A frail and feeble manifestation of an aspect of the Outer God. If the rituals were to be completed, it would bring dramatic and irreversible changes to life across the realms.",
+    "stats": {
+      "baseMaxHp": 6000,
+      "baseConstitution": 1,
+      "baseIntelligence": 999,
+      "baseDexterity": 24,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "flatDodgeChance": 0.6,
+      "immunityToStatus": 1.0
+    },
+    "exp_given": 10000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "610",
+    "max_damage": "650",
+    "drops": [
+      {
+        "item": "StarFragment",
+        "qty": 1,
+        "weight": 325
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Banshee",
+    "parent": "Enemy",
+    "sprite": "unit_banshee",
+    "name_key": "enemy_banshee_name",
+    "description_key": "enemy_banshee_description",
+    "name": "Banshee",
+    "description": "A terrifying breed of armored beasts that roam the Barren Wastelands. Due to their presence, this area was uninhabited since the beginning of recorder history, but fortunately they keep to their hunting grounds.",
+    "stats": {
+      "baseMaxHp": 1400,
+      "baseConstitution": 250,
+      "baseIntelligence": 5,
+      "baseDexterity": 85,
+      "baseDefense": 35,
+      "baseMagicDefense": 35
+    },
+    "exp_given": 250,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "153",
+    "max_damage": "205",
+    "drops": [
+      {
+        "item": "BansheeScale",
+        "qty": 1,
+        "weight": 600
+      },
+      {
+        "item": "BansheeClaw",
+        "qty": 1,
+        "weight": 18
+      },
+      {
+        "item": "BansheeHorn",
+        "qty": 1,
+        "weight": 2
+      },
+      {
+        "item": "ReptileEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Beholder",
+    "parent": "Enemy",
+    "sprite": "unit_beholder",
+    "name_key": "enemy_beholder_name",
+    "description_key": "enemy_beholder_description",
+    "name": "Beholder",
+    "description": "Extremely smart but evil creatures only found in the depth of the earth, beholder will smite their opponents with their eldritch powers.",
+    "stats": {
+      "baseMaxHp": 1100,
+      "baseConstitution": 2,
+      "baseIntelligence": 100,
+      "baseDexterity": 15,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 125,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "38",
+    "max_damage": "46",
+    "drops": [
+      {
+        "item": "EldritchTendril",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "LargeIris",
+        "qty": 1,
+        "weight": 60
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Berserker",
+    "parent": "Enemy",
+    "sprite": "unit_berserker",
+    "name_key": "enemy_berserker_name",
+    "description_key": "enemy_berserker_description",
+    "name": "Berserker",
+    "description": "An ancient warrior armed with twin mithril axes, his fury intensifies with every blow he endures, turning him into an unstoppable force as the battle rages on.",
+    "stats": {
+      "baseMaxHp": 1880,
+      "baseConstitution": 60,
+      "baseIntelligence": 8,
+      "baseDexterity": 40,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 175,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "390",
+    "max_damage": "450",
+    "drops": [
+      {
+        "item": "Mithril",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "BerserkersAxe",
+        "qty": 1,
+        "weight": 30
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BleakDeacon",
+    "parent": "Enemy",
+    "sprite": "unit_bleak_deacon",
+    "name_key": "enemy_bleak_deacon_name",
+    "description_key": "enemy_bleak_deacon_description",
+    "name": "Bleak Deacon",
+    "description": "A corrupted bishop of an eldritch deity, wielding a grotesque form of magic gifted by their malevolent god. This power can heal extraordinary wounds but exacts a terrible price.",
+    "stats": {
+      "baseMaxHp": 1700,
+      "baseConstitution": 24,
+      "baseIntelligence": 215,
+      "baseDexterity": 76,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 1000,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "200",
+    "max_damage": "350",
+    "drops": [
+      {
+        "item": "EldritchShred",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BleakDisciple",
+    "parent": "Enemy",
+    "sprite": "unit_bleak_disciple",
+    "name_key": "enemy_bleak_disciple_name",
+    "description_key": "enemy_bleak_disciple_description",
+    "name": "Bleak Disciple",
+    "description": "This humanoid of unknown origin, warped beyond recognition, has dwelled beneath these caverns for millennia. It toils ceaselessly to bring its long-forgotten god back into existence.",
+    "stats": {
+      "baseMaxHp": 1490,
+      "baseConstitution": 9,
+      "baseIntelligence": 158,
+      "baseDexterity": 62,
+      "baseDefense": 0,
+      "baseMagicDefense": 30,
+      "darknessDamageAmplification": 0.01
+    },
+    "exp_given": 360,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "160",
+    "max_damage": "380",
+    "drops": [
+      {
+        "item": "AbherrantFabric",
+        "qty": 1,
+        "weight": 440
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BloodstoneColossus",
+    "parent": "Enemy",
+    "sprite": "bloodstone_colossus",
+    "name_key": "enemy_bloodstone_colossus_name",
+    "description_key": "enemy_bloodstone_colossus_description",
+    "name": "Bloodstone Colossus",
+    "description": "A towering construct hewn from coagulated bloodstone, raised to shield the crimson masters of the Crucible.",
+    "stats": {
+      "baseMaxHp": 12000,
+      "baseConstitution": 120,
+      "baseDexterity": 30,
+      "baseIntelligence": 10,
+      "baseDefense": 200,
+      "baseMagicDefense": 5
+    },
+    "exp_given": 3500,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "120",
+    "max_damage": "180",
+    "drops": [
+      {
+        "item": "ScarletDebris",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": [
+      {
+        "item": "ScarletDebris",
+        "qty": 1,
+        "chance": 0.01
+      }
+    ]
+  },
+  {
+    "key": "BlueShark",
+    "parent": "Enemy",
+    "sprite": "blue_shark",
+    "name_key": "enemy_blue_shark_name",
+    "description_key": "enemy_blue_shark_description",
+    "name": "Blue Shark",
+    "description": "A swift predator of the shallows, extremely agile and slippery.",
+    "stats": {
+      "baseMaxHp": 85,
+      "baseConstitution": 20,
+      "baseIntelligence": 6,
+      "baseDexterity": 220,
+      "baseDefense": 8,
+      "baseMagicDefense": 6
+    },
+    "exp_given": 35,
+    "rarity": 0,
+    "is_boss": false,
+    "min_damage": "2",
+    "max_damage": "4",
+    "drops": [
+      {
+        "item": "BlueShark",
+        "qty": 1,
+        "weight": 300
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BlueTrout",
+    "parent": "Enemy",
+    "sprite": "blue_trout",
+    "name_key": "enemy_blue_trout_name",
+    "description_key": "enemy_blue_trout_description",
+    "name": "Blue Trout",
+    "description": "An agile river swimmer with rapid, evasive turns.",
+    "stats": {
+      "baseMaxHp": 24,
+      "baseConstitution": 8,
+      "baseIntelligence": 3,
+      "baseDexterity": 90,
+      "baseDefense": 3,
+      "baseMagicDefense": 3
+    },
+    "exp_given": 10,
+    "rarity": 0,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "2",
+    "drops": [
+      {
+        "item": "BlueTrout",
+        "qty": 1,
+        "weight": 550
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Boar",
+    "parent": "Enemy",
+    "sprite": "unit_boar",
+    "name_key": "enemy_boar_name",
+    "description_key": "enemy_boar_description",
+    "name": "Boar",
+    "description": "Wild boars are omnivorous animals commonly found in the forest. They can be hard to kill due to their thick skin.",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 10,
+      "baseIntelligence": 2,
+      "baseDexterity": 2,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 12,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "3",
+    "drops": [
+      {
+        "item": "BoarTusk",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "BeastPelt",
+        "qty": 1,
+        "weight": 450
+      },
+      {
+        "item": "MeatChop",
+        "qty": 1,
+        "weight": 12
+      },
+      {
+        "item": "WildEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BoneNightmareEnemy",
+    "parent": "Enemy",
+    "sprite": "unit_bone_nightmare",
+    "name_key": "enemy_cursed_bone_nightmare_name",
+    "description_key": "enemy_cursed_bone_nightmare_description",
+    "name": "Cursed Bone Nightmare",
+    "description": "A grotesque skeletal war-steed risen from the soul of a cursed adventurer.",
+    "stats": {
+      "baseMaxHp": 8000,
+      "baseConstitution": 100,
+      "baseDexterity": 150,
+      "baseDefense": 40,
+      "baseMagicDefense": 20
+    },
+    "exp_given": 1000,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "300",
+    "max_damage": "400",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "CelestialDestroyer",
+    "parent": "Enemy",
+    "sprite": "unit_celestial_destroyer",
+    "name_key": "enemy_celestial_destroyer_name",
+    "description_key": "enemy_celestial_destroyer_description",
+    "name": "Celestial Destroyer",
+    "description": "\"Only a handful of these flying fortresses are sent with the first wave to limit the risks associated with their loss, but as the campaign advances they slowly cover the target world's surface to assist the ground troops in the eradication of any form of life present.\"",
+    "stats": {
+      "baseMaxHp": 4000,
+      "baseConstitution": 200,
+      "baseIntelligence": 1,
+      "baseDexterity": 62,
+      "baseDefense": 20,
+      "baseMagicDefense": 20
+    },
+    "exp_given": 2400,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "100",
+    "max_damage": "Logger.BARD_SHIELD",
+    "drops": [
+      {
+        "item": "CelestialScraps",
+        "qty": 3,
+        "weight": 600
+      },
+      {
+        "item": "AetherIgnis",
+        "qty": 1,
+        "weight": 400
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CelestialLancer",
+    "parent": "Enemy",
+    "sprite": "unit_celestial_lancer",
+    "name_key": "enemy_celestial_lancer_name",
+    "description_key": "enemy_celestial_lancer_description",
+    "name": "Celestial Lancer",
+    "description": "The backbone of the Celestial Army. These fearless soldiers push through foreign worlds animated by unwavering loyalty, counting on a supernatural agility despite their large size.",
+    "stats": {
+      "baseMaxHp": 2280,
+      "baseConstitution": "Logger.BARD_SHIELD",
+      "baseIntelligence": 95,
+      "baseDexterity": 75,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 200,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "130",
+    "max_damage": "170",
+    "drops": [
+      {
+        "item": "CelestialScraps",
+        "qty": 1,
+        "weight": 550
+      },
+      {
+        "item": "Synapse",
+        "qty": 1,
+        "weight": 15
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Centaur",
+    "parent": "Enemy",
+    "sprite": "unit_centaur",
+    "name_key": "enemy_centaur_name",
+    "description_key": "enemy_centaur_description",
+    "name": "Centaur",
+    "description": "Half men and half horses, these magical creatures are skilled hunters that used to live in harmony within the forest.",
+    "stats": {
+      "baseMaxHp": 80,
+      "baseConstitution": 12,
+      "baseIntelligence": 10,
+      "baseDexterity": 22,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 24,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "8",
+    "max_damage": "15",
+    "drops": [
+      {
+        "item": "PlantFiber",
+        "qty": 1,
+        "weight": 450
+      },
+      {
+        "item": "CopperOre",
+        "qty": 1,
+        "weight": 450
+      },
+      {
+        "item": "Cheese",
+        "qty": 1,
+        "weight": 25
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Cerebrum",
+    "parent": "Enemy",
+    "sprite": "unit_cerebrum",
+    "name_key": "enemy_cerebrum_name",
+    "description_key": "enemy_cerebrum_description",
+    "name": "Cerebrum",
+    "description": "A sentient brain encased in nearly indestructible glass. It cannot move, but can manipulate the surrounding world in other ways.",
+    "stats": {
+      "baseMaxHp": 5000,
+      "baseConstitution": 100,
+      "baseIntelligence": 250,
+      "baseDexterity": 1,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 860,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "500",
+    "max_damage": "800",
+    "drops": [
+      {
+        "item": "AbioticCore",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ChiefScientistAva",
+    "parent": "Enemy",
+    "sprite": "unit_chief_scientist_ava",
+    "name_key": "enemy_chief_scientist_ava_name",
+    "description_key": "enemy_chief_scientist_ava_description",
+    "name": "Chief Scientist Ava",
+    "description": "A pale girl draped in a grimy white coat. Her modest appearance betrays the enormous knowledge she possesses.",
+    "stats": {
+      "baseMaxHp": 15000,
+      "baseConstitution": 18,
+      "baseIntelligence": 375,
+      "baseDexterity": 12,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.8
+    },
+    "exp_given": 4000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "750",
+    "max_damage": "2500",
+    "drops": [
+      {
+        "item": "KaunianFabric",
+        "qty": 1,
+        "weight": 830
+      },
+      {
+        "item": "ChiefScientistCoat",
+        "qty": 1,
+        "weight": 50
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ChorusTheDrowned",
+    "parent": "Enemy",
+    "sprite": "chorus_the_drowned",
+    "name_key": "enemy_chorus_the_drowned_name",
+    "description_key": "enemy_chorus_the_drowned_description",
+    "name": "Chorus the Drowned",
+    "description": "The ancient phantom of the depths. Hooked on a vanishingly rare cast, this reaper hits devastatingly hard.",
+    "stats": {
+      "baseMaxHp": 1850,
+      "baseConstitution": 120,
+      "baseIntelligence": 60,
+      "baseDexterity": 45,
+      "baseDefense": 35,
+      "baseMagicDefense": 35
+    },
+    "exp_given": 1500,
+    "rarity": 2,
+    "is_boss": false,
+    "min_damage": "70",
+    "max_damage": "100",
+    "drops": [
+      {
+        "item": "CoinPurse",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CityWarden",
+    "parent": "Enemy",
+    "sprite": "unit_city_warden",
+    "name_key": "enemy_city_warden_name",
+    "description_key": "enemy_city_warden_description",
+    "name": "City Warden",
+    "description": "A law enforcement unit operating in the Capital. They are not part of the Imperial Army, and their responsibility is to maintain order and catch criminals.",
+    "stats": {
+      "baseMaxHp": 300,
+      "baseConstitution": 20,
+      "baseIntelligence": 8,
+      "baseDexterity": 16,
+      "baseDefense": 15,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 35,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "26",
+    "max_damage": "31",
+    "drops": [
+      {
+        "item": "WardenBelt",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "SilkThread",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Claris",
+    "parent": "Enemy",
+    "sprite": "unit_claris",
+    "name_key": "enemy_claris_name",
+    "description_key": "enemy_claris_description",
+    "name": "Claris",
+    "description": "\"One of the three cultist rebels. An extremely powerful mage, still couldn't manage to make the Primordial corruption-proof.\"",
+    "stats": {
+      "baseMaxHp": 3200,
+      "baseConstitution": 6,
+      "baseIntelligence": 84,
+      "baseDexterity": 26,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 540,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "182",
+    "max_damage": "188",
+    "drops": [
+      {
+        "item": "SealOfClaris",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "ElixirOfLearning",
+        "qty": 1,
+        "weight": 20
+      },
+      {
+        "item": "PotionOfMagicDefense",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CrimsonAcolyte",
+    "parent": "Enemy",
+    "sprite": "scarlet_mage",
+    "name_key": "enemy_crimson_acolyte_name",
+    "description_key": "enemy_crimson_acolyte_description",
+    "name": "Crimson Acolyte",
+    "description": "A fanatical ritualist whose death fuels their allies with dark zealotry.",
+    "stats": {
+      "baseMaxHp": 3000,
+      "baseConstitution": 80,
+      "baseDexterity": 50,
+      "baseIntelligence": 200,
+      "baseDefense": 0,
+      "baseMagicDefense": 75,
+      "baseLifesteal": 100,
+      "immunityToStatus": 0.0,
+      "criticalDamage": 2.0
+    },
+    "exp_given": 2500,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "100",
+    "max_damage": "200",
+    "drops": [
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "BlackHide",
+        "qty": 1,
+        "weight": 1000
+      },
+      {
+        "item": "AbherrantFabric",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": [
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "chance": 0.05
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1,
+        "chance": 0.15
+      },
+      {
+        "item": "BlackHide",
+        "qty": 1,
+        "chance": 0.15
+      },
+      {
+        "item": "AbherrantFabric",
+        "qty": 1,
+        "chance": 0.15
+      }
+    ]
+  },
+  {
+    "key": "Crusader",
+    "parent": "Enemy",
+    "sprite": "unit_crusader",
+    "name_key": "enemy_crusader_name",
+    "description_key": "enemy_crusader_description",
+    "name": "Crusader",
+    "description": "\"A member of one of the many crusades from the eastern cities to eradicate the evil that has been abducting their citizen. They wander the halls aimlessly, having lost their ego over time to the magical influences.\nPeople from these lands seem to naturally display psyonic capabilities, and could present a formidable menace in large numbers.\"",
+    "stats": {
+      "baseMaxHp": 940,
+      "baseConstitution": 16,
+      "baseIntelligence": 4,
+      "baseDexterity": 19,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "retaliationMagicalDamage": 20
+    },
+    "exp_given": 72,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "55",
+    "max_damage": "80",
+    "drops": [
+      {
+        "item": "KabelianMetal",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "CrusaderInsigna",
+        "qty": 1,
+        "weight": 20
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "DeathHound",
+    "parent": "Enemy",
+    "sprite": "unit_death_hound",
+    "name_key": "enemy_death_hound_name",
+    "description_key": "enemy_death_hound_description",
+    "name": "Death Hound",
+    "description": "A war hound employed by the Imperial Army, reanimated by the corruption after falling in battle. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 70,
+      "baseConstitution": 8,
+      "baseIntelligence": 1,
+      "baseDexterity": 20,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 36,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "17",
+    "max_damage": "28",
+    "drops": [
+      {
+        "item": "TatteredHide",
+        "qty": 1,
+        "weight": 800
+      },
+      {
+        "item": "ElongatedBone",
+        "qty": 1,
+        "weight": 40
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Deckhand",
+    "parent": "Enemy",
+    "sprite": "unit_deckhand",
+    "name_key": "enemy_deckhand_name",
+    "description_key": "enemy_deckhand_description",
+    "name": "Deckhand",
+    "description": "A capuchin colored monkey commonly found in the exotic Skull Island, home of the pirates. It has been trained to perform the lowliest duties of a pirate crew, like cleaning the decks and bringing the rum. It has also been trained in using the knife, and is a surprisingly strong adversary.",
+    "stats": {
+      "baseMaxHp": 320,
+      "baseConstitution": 16,
+      "baseIntelligence": 4,
+      "baseDexterity": 74,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 30,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "24",
+    "max_damage": "28",
+    "drops": [
+      {
+        "item": "MonkeyHide",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "AbyssalSeashell",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "Banana",
+        "qty": 1,
+        "weight": 20
+      },
+      {
+        "item": "WildEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Djinn",
+    "parent": "Enemy",
+    "sprite": "unit_djinn",
+    "name_key": "enemy_djinn_name",
+    "description_key": "enemy_djinn_description",
+    "name": "Djinn",
+    "description": "Powerful, benevolent desert spirit said to grand a wish to lucky travelers. After he became corrupt, he unleashes his wrath on every poor soul he crosses.",
+    "stats": {
+      "baseMaxHp": 500,
+      "baseConstitution": 16,
+      "baseIntelligence": 20,
+      "baseDexterity": 15,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 142,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "27",
+    "max_damage": "33",
+    "drops": [
+      {
+        "item": "BottledSandSpirit",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "PotionOfPrecision",
+        "qty": 1,
+        "weight": 11
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "DreamwroughtBeast",
+    "parent": "Enemy",
+    "sprite": "unit_dreamwrought_beast",
+    "name_key": "enemy_dreamwrought_beast_name",
+    "description_key": "enemy_dreamwrought_beast_description",
+    "name": "Dreamwrought Beast",
+    "description": "An incorporeal creature resembling a horse, with a single horn on its forehead.",
+    "stats": {
+      "baseMaxHp": 6000,
+      "baseConstitution": "Logger.BARD_SHIELD",
+      "baseIntelligence": "Logger.BARD_SHIELD",
+      "baseDexterity": 140,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 400,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "550",
+    "max_damage": "800",
+    "drops": [
+      {
+        "item": "DreamwroughtMane",
+        "qty": 1,
+        "weight": 700
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "DreamwroughtDragon",
+    "parent": "Enemy",
+    "sprite": "unit_dreamwrought_dragon",
+    "name_key": "enemy_dreamwrought_dragon_name",
+    "description_key": "enemy_dreamwrought_dragon_description",
+    "name": "Dreamwrought Dragon",
+    "description": "This majestic, incorporeal dragon flies in hypnotic, looping patterns before striking with fierce power.",
+    "stats": {
+      "baseMaxHp": 12500,
+      "baseConstitution": 315,
+      "baseIntelligence": 100,
+      "baseDexterity": 400,
+      "baseDefense": 10,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 550,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "900",
+    "max_damage": "1150",
+    "drops": [
+      {
+        "item": "DreamwroughtHide",
+        "qty": 1,
+        "weight": 900
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "DreamwroughtForge",
+    "parent": "Enemy",
+    "sprite": "unit_dreamwrought_forge",
+    "name_key": "enemy_dreamwrought_forge_name",
+    "description_key": "enemy_dreamwrought_forge_description",
+    "name": "Dreamwrought Forge",
+    "description": "A mysterious, incorporeal figure seated behind an arcane instrument. Unfazed by the surrounding chaos, it is fully focused on its task.",
+    "stats": {
+      "baseMaxHp": 16000,
+      "baseConstitution": 700,
+      "baseIntelligence": 250,
+      "baseDexterity": 5,
+      "baseDefense": 10,
+      "baseMagicDefense": 10
+    },
+    "exp_given": 625,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "1000",
+    "max_damage": "1150",
+    "drops": [
+      {
+        "item": "DreamwroughtSteel",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "DreamwroughtSwarm",
+    "parent": "Enemy",
+    "sprite": "unit_dreamwrought_swarm",
+    "name_key": "enemy_dreamwrought_swarm_name",
+    "description_key": "enemy_dreamwrought_swarm_description",
+    "name": "Dreamwrought Swarm",
+    "description": "An endless multitude of spectral, ravenous insects that tear their prey apart in seconds.",
+    "stats": {
+      "baseMaxHp": 30,
+      "baseConstitution": 1,
+      "baseIntelligence": 50,
+      "baseDexterity": 65,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 500,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "275",
+    "max_damage": "285",
+    "drops": [
+      {
+        "item": "DreamwroughtLarva",
+        "qty": 1,
+        "weight": 334
+      },
+      {
+        "item": "DreamwroughtLarva",
+        "qty": 2,
+        "weight": 333
+      },
+      {
+        "item": "DreamwroughtLarva",
+        "qty": 3,
+        "weight": 333
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Dryad",
+    "parent": "Enemy",
+    "sprite": "unit_dryad",
+    "name_key": "enemy_dryad_name",
+    "description_key": "enemy_dryad_description",
+    "name": "Dryad",
+    "description": "Elusive magical creature found in the southern woods. Its origin is unknown, but the travelers that spotted it before the corruption struck reported a timid but kind temperament.",
+    "stats": {
+      "baseMaxHp": 670,
+      "baseConstitution": 4,
+      "baseIntelligence": 150,
+      "baseDexterity": 60,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 200,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "150",
+    "max_damage": "280",
+    "drops": [
+      {
+        "item": "FleetfootFabric",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "BagOfChokingPowder",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "WhiteHair",
+        "qty": 1,
+        "weight": 15
+      },
+      {
+        "item": "SylvanFlute",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "PotionOfAgility",
+        "qty": 1,
+        "weight": 2
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "EldritchHound",
+    "parent": "Enemy",
+    "sprite": "unit_eldritch_hound",
+    "name_key": "enemy_eldritch_hound_name",
+    "description_key": "enemy_eldritch_hound_description",
+    "name": "Eldritch Hound",
+    "description": "These twisted, wolf-like creatures relentlessly hunt any creature that dares to approach the underground temple.",
+    "stats": {
+      "baseMaxHp": 1046,
+      "baseConstitution": 22,
+      "baseIntelligence": 1,
+      "baseDexterity": 128,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "darknessDamageAmplification": 0.01
+    },
+    "exp_given": 326,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "178",
+    "max_damage": "252",
+    "drops": [
+      {
+        "item": "BlackHide",
+        "qty": 1,
+        "weight": 340
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ElectricSlime",
+    "parent": "Enemy",
+    "sprite": "unit_electric_slime",
+    "name_key": "enemy_electric_slime_name",
+    "description_key": "enemy_electric_slime_description",
+    "name": "Electric Slime",
+    "description": "Electric charge flows through this slime body, threatening to shock anyone getting close enough.",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 40,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 40,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 30,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "26",
+    "max_damage": "35",
+    "drops": [
+      {
+        "item": "GreenSlime",
+        "qty": 1,
+        "weight": 530
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 2,
+        "weight": 200
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 3,
+        "weight": 50
+      },
+      {
+        "item": "PotionOfImmunity",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "EmperorClovisXXVIII",
+    "parent": "Enemy",
+    "sprite": "unit_emperor_clovis_xxviii",
+    "name_key": "enemy_emperor_clovis_xxviii_name",
+    "description_key": "enemy_emperor_clovis_xxviii_description",
+    "name": "Emperor Clovis XXVIII",
+    "description": "\"Once the most powerful man of the entire world, now twisted by corrupted rituals into a hideous mockery of his former self. He display the strength of a thousand men, and his expression, oddly enough, doesn't convey hate but only fear and confusion.\"",
+    "stats": {
+      "baseMaxHp": 6800,
+      "baseConstitution": 18,
+      "baseIntelligence": 1,
+      "baseDexterity": 48,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.75
+    },
+    "exp_given": 9600,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "Logger.BOTCHED_OFFERING",
+    "max_damage": "140",
+    "drops": [
+      {
+        "item": "SkeletonKey",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Enforcer",
+    "parent": "Enemy",
+    "sprite": "unit_enforcer",
+    "name_key": "enemy_enforcer_name",
+    "description_key": "enemy_enforcer_description",
+    "name": "Enforcer",
+    "description": "A warrior grotesquely altered through agonizing experiments, gifted with immense strength and a towering size.",
+    "stats": {
+      "baseMaxHp": 18000,
+      "baseConstitution": 400,
+      "baseIntelligence": 1,
+      "baseDexterity": 35,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 575,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "825",
+    "max_damage": "1100",
+    "drops": [
+      {
+        "item": "MutantHide",
+        "qty": 1,
+        "weight": 800
+      },
+      {
+        "item": "CorruptedAxe",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Ent",
+    "parent": "Enemy",
+    "sprite": "unit_ent",
+    "name_key": "enemy_ent_name",
+    "description_key": "enemy_ent_description",
+    "name": "Ent",
+    "description": "Ancient guardians of the forest, these massive trees possess enormous strength.",
+    "stats": {
+      "baseMaxHp": 300,
+      "baseConstitution": 20,
+      "baseIntelligence": 20,
+      "baseDexterity": 3,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": "Logger.BARD_SHIELD",
+    "rarity": 3,
+    "is_boss": false,
+    "min_damage": "11",
+    "max_damage": "14",
+    "drops": [
+      {
+        "item": "Wood",
+        "qty": 1,
+        "weight": 499
+      },
+      {
+        "item": "AncientSeed",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "Apple",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "WoodenEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "EtherealSoul",
+    "parent": "Enemy",
+    "sprite": "unit_ethereal_soul",
+    "name_key": "enemy_ethereal_soul_name",
+    "description_key": "enemy_ethereal_soul_description",
+    "name": "Ethereal Soul",
+    "description": "\"A fallen soldier of the Imperial Army, died during the last ditch effort of the Empire to stop the treacherous Seer.\n\nIt feels no pain, so physical damage is less effective.\"",
+    "stats": {
+      "baseMaxHp": 3180,
+      "baseConstitution": 20,
+      "baseIntelligence": 1,
+      "baseDexterity": 23,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "Logger.LOST_EXPEDITION_FALL_DAMAGE",
+    "max_damage": "138",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "FireSlime",
+    "parent": "Enemy",
+    "sprite": "unit_fire_slime",
+    "name_key": "enemy_fire_slime_name",
+    "description_key": "enemy_fire_slime_description",
+    "name": "Fire Slime",
+    "description": "This slime is engulfed by flames, but it seems okay with this condition.",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 40,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 40,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 30,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "26",
+    "max_damage": "35",
+    "drops": [
+      {
+        "item": "GreenSlime",
+        "qty": 1,
+        "weight": 530
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 2,
+        "weight": 200
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 3,
+        "weight": 50
+      },
+      {
+        "item": "PotionOfImmunity",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "FirstMinisterAtos",
+    "parent": "Enemy",
+    "sprite": "unit_first_minister_atos",
+    "name_key": "enemy_first_minister_atos_name",
+    "description_key": "enemy_first_minister_atos_description",
+    "name": "First Minister Atos",
+    "description": "A powerful figure in the Kaunian hierarchy, who gained terrible powers through the manipulation of its own body.",
+    "stats": {
+      "baseMaxHp": 18500,
+      "baseConstitution": 75,
+      "baseIntelligence": 5,
+      "baseDexterity": 190,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 4000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "1200",
+    "max_damage": "1900",
+    "drops": [
+      {
+        "item": "KaunianFabric",
+        "qty": 1,
+        "weight": 650
+      },
+      {
+        "item": "FireproofOil",
+        "qty": 1,
+        "weight": 350
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ForestSpirit",
+    "parent": "Enemy",
+    "sprite": "unit_forest_spirit",
+    "name_key": "enemy_forest_spirit_name",
+    "description_key": "enemy_forest_spirit_description",
+    "name": "Forest Spirit",
+    "description": "A sacred protector of the forest, who guarded it against external forces for millennia.",
+    "stats": {
+      "baseMaxHp": 2000,
+      "baseConstitution": 34,
+      "baseIntelligence": 40,
+      "baseDexterity": 35,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 600,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "72",
+    "max_damage": "92",
+    "drops": [
+      {
+        "item": "PrimordialEssence",
+        "qty": 1,
+        "weight": 250
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "FrozenSlime",
+    "parent": "Enemy",
+    "sprite": "unit_frozen_slime",
+    "name_key": "enemy_frozen_slime_name",
+    "description_key": "enemy_frozen_slime_description",
+    "name": "Frozen Slime",
+    "description": "An extremely cold slime. Maintained the jelly-like texture despite the frozen coating, somehow.",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 40,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 40,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 30,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "26",
+    "max_damage": "35",
+    "drops": [
+      {
+        "item": "GreenSlime",
+        "qty": 1,
+        "weight": 530
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 2,
+        "weight": 200
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 3,
+        "weight": 50
+      },
+      {
+        "item": "PotionOfImmunity",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Gcss",
+    "parent": "Enemy",
+    "sprite": "unit_gcss",
+    "name_key": "enemy_gcss_name",
+    "description_key": "enemy_gcss_description",
+    "name": "G.C.S.S.",
+    "description": "\"Gaussian Coil Security Station. Accelerates a giant metal projectile through a mysterious field, reaching incredible speeds and causing devastating damage upon impact. It's heavily armored, to sustain a prolonged assault.\"",
+    "stats": {
+      "baseMaxHp": 5000,
+      "baseConstitution": 400,
+      "baseIntelligence": 1,
+      "baseDexterity": 45,
+      "baseDefense": 35,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "600",
+    "max_damage": "900",
+    "drops": [
+      {
+        "item": "Synapse",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Ghoul",
+    "parent": "Enemy",
+    "sprite": "unit_ghoul",
+    "name_key": "enemy_ghoul_name",
+    "description_key": "enemy_ghoul_description",
+    "name": "Ghoul",
+    "description": "For unknown reasons, sometimes undead are animated by a strong urge to feed on other dead bodies. These creatures often develop a more feral appearance, with longer teeth and sharper nails, and after some time they lose all of their similarity with human beings. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 150,
+      "baseConstitution": 20,
+      "baseIntelligence": 1,
+      "baseDexterity": 42,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 90,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "18",
+    "max_damage": "32",
+    "drops": [
+      {
+        "item": "InfectedBlood",
+        "qty": 1,
+        "weight": 50
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "GiantMoth",
+    "parent": "Enemy",
+    "sprite": "unit_giant_moth",
+    "name_key": "enemy_giant_moth_name",
+    "description_key": "enemy_giant_moth_description",
+    "name": "Giant Moth",
+    "description": "Flies thanks to a magic powder that covers its wings. This powder is known to irritate the airways of many other creatures, including humans.",
+    "stats": {
+      "baseMaxHp": 480,
+      "baseConstitution": 7,
+      "baseIntelligence": 2,
+      "baseDexterity": 42,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 70,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "70",
+    "max_damage": "95",
+    "drops": [
+      {
+        "item": "GiantMothWing",
+        "qty": 1,
+        "weight": 550
+      },
+      {
+        "item": "InsectEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "GiantSpider",
+    "parent": "Enemy",
+    "sprite": "unit_giant_spider",
+    "name_key": "enemy_giant_spider_name",
+    "description_key": "enemy_giant_spider_description",
+    "name": "Giant Spider",
+    "description": "This kind of spider is usually found in much smaller sizes around the northern kingdoms. Left undisturbed for decades in the darkness of the Obsidian Mines, it reached the size of a grown man.",
+    "stats": {
+      "baseMaxHp": 600,
+      "baseConstitution": 10,
+      "baseIntelligence": 2,
+      "baseDexterity": 35,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 58,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "30",
+    "max_damage": "60",
+    "drops": [
+      {
+        "item": "CobwebBundle",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "SpiderLeg",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "InsectEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "GiantTortoise",
+    "parent": "Enemy",
+    "sprite": "unit_giant_tortoise",
+    "name_key": "enemy_giant_tortoise_name",
+    "description_key": "enemy_giant_tortoise_description",
+    "name": "Giant Tortoise",
+    "description": "A huge tortoise weighting several tons, with a very hard shell covered in sharp spikes.",
+    "stats": {
+      "baseMaxHp": 1400,
+      "baseConstitution": 60,
+      "baseIntelligence": 2,
+      "baseDexterity": 1,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 70,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "40",
+    "max_damage": "55",
+    "drops": [
+      {
+        "item": "GiantShellFragment",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "TortoiseThorn",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "Egg",
+        "qty": 1,
+        "weight": 25
+      },
+      {
+        "item": "ReptileEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "GoldenRabbit",
+    "parent": "Enemy",
+    "sprite": "unit_golden_rabbit",
+    "name_key": "enemy_golden_rabbit_name",
+    "description_key": "enemy_golden_rabbit_description",
+    "name": "Golden Rabbit",
+    "description": "Old legends speak of the pet of a forest spirit in the form of a golden rabbit, but despite a few sighting its presence was never confirmed.",
+    "stats": {
+      "baseMaxHp": 40,
+      "baseConstitution": 3,
+      "baseIntelligence": 2,
+      "baseDexterity": 42,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": "Logger.BARD_SHIELD",
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "2",
+    "drops": [
+      {
+        "item": "CottontailFur",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "MeatChop",
+        "qty": 1,
+        "weight": 20
+      },
+      {
+        "item": "WildEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "GreenSpitfang",
+    "parent": "Enemy",
+    "sprite": "unit_green_spitfang",
+    "name_key": "enemy_green_spitfang_name",
+    "description_key": "enemy_green_spitfang_description",
+    "name": "Green Spitfang",
+    "description": "Large snake found in the southern regions that hunts by hurling saliva at its enemies at tremendous speed.",
+    "stats": {
+      "baseMaxHp": 520,
+      "baseConstitution": 15,
+      "baseIntelligence": 3,
+      "baseDexterity": 55,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 92,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "105",
+    "max_damage": "150",
+    "drops": [
+      {
+        "item": "SpitfangScale",
+        "qty": 1,
+        "weight": 400
+      },
+      {
+        "item": "LongSerpentFang",
+        "qty": 1,
+        "weight": 20
+      },
+      {
+        "item": "ReptileEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "HeadlessKnight",
+    "parent": "Enemy",
+    "sprite": "unit_headless_knight",
+    "name_key": "enemy_healdess_knight_name",
+    "description_key": "enemy_healdess_knight_description",
+    "name": "Headless Knight",
+    "description": "This nightmarish knight radiates an evil that defies imagination. Its own burning head, brandished as a morning star, grins malevolently as it is hurled at its foes.",
+    "stats": {
+      "baseMaxHp": 22500,
+      "baseConstitution": 200,
+      "baseIntelligence": "Logger.BARD_SHIELD",
+      "baseDexterity": 170,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 10000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "1650",
+    "max_damage": "1800",
+    "drops": [
+      {
+        "item": "DreadfulMorningstar",
+        "qty": 1,
+        "weight": 75
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "HeraldKali",
+    "parent": "Enemy",
+    "sprite": "unit_herald_kali",
+    "name_key": "enemy_herald_kali_name",
+    "description_key": "enemy_herald_kali_description",
+    "name": "Herald Kali",
+    "description": "The true form of the being once known as the Seer Kasimir. An eldritch being from another dimension, impervious to any form of mercy and loyal only to its God.",
+    "stats": {
+      "baseMaxHp": 4500,
+      "baseConstitution": 500,
+      "baseIntelligence": 500,
+      "baseDexterity": 500,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.5
+    },
+    "exp_given": 9600,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "280",
+    "max_damage": "305",
+    "drops": [
+      {
+        "item": "SerpentStaff",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "HeraldMaya",
+    "parent": "Enemy",
+    "sprite": "unit_herald_maya",
+    "name_key": "enemy_herald_maya_name",
+    "description_key": "enemy_herald_maya_description",
+    "name": "Herald Maya",
+    "description": "A powerful servant of the Black Serpent. Maintains the link through the Core, and will replace the Seer if its mission fail.",
+    "stats": {
+      "baseMaxHp": 4500,
+      "baseConstitution": 500,
+      "baseIntelligence": 500,
+      "baseDexterity": 500,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.5
+    },
+    "exp_given": 9600,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "280",
+    "max_damage": "305",
+    "drops": [
+      {
+        "item": "SerpentSting",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "HeraldShoran",
+    "parent": "Enemy",
+    "sprite": "unit_herald_shoran",
+    "name_key": "enemy_herald_shoran_name",
+    "description_key": "enemy_herald_shoran_description",
+    "name": "Herald Shoran",
+    "description": "A powerful servant of the Black Serpent. Maintains the link through the Core, and will replace the Seer if its mission fail.",
+    "stats": {
+      "baseMaxHp": 4500,
+      "baseConstitution": 500,
+      "baseIntelligence": 500,
+      "baseDexterity": 500,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.5
+    },
+    "exp_given": 9600,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "280",
+    "max_damage": "305",
+    "drops": [
+      {
+        "item": "SerpentBite",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "HeraldXavi",
+    "parent": "Enemy",
+    "sprite": "unit_herald_xavi",
+    "name_key": "enemy_herald_xavi_name",
+    "description_key": "enemy_herald_xavi_description",
+    "name": "Herald Xavi",
+    "description": "A powerful servant of the Black Serpent. Maintains the link through the Core, and will replace the Seer if its mission fail.",
+    "stats": {
+      "baseMaxHp": 4500,
+      "baseConstitution": 500,
+      "baseIntelligence": 500,
+      "baseDexterity": 500,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.5
+    },
+    "exp_given": 9600,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "280",
+    "max_damage": "305",
+    "drops": [
+      {
+        "item": "SerpentLunge",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "IceElemental",
+    "parent": "Enemy",
+    "sprite": "unit_ice_elemental",
+    "name_key": "enemy_ice_elemental_name",
+    "description_key": "enemy_ice_elemental_description",
+    "name": "Ice Elemental",
+    "description": "A mysterious creature that takes the form of extremely cold, inanimate rocks arranged in strange patterns. It appears to have complete mastery over the ice around, manipulating it offensively to dissuade attackers.",
+    "stats": {
+      "baseMaxHp": 2000,
+      "baseConstitution": 3,
+      "baseIntelligence": 33,
+      "baseDexterity": 3,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 280,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "20",
+    "max_damage": "55",
+    "drops": [
+      {
+        "item": "FrostmetalOre",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "FrostCrystal",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "FrostNucleus",
+        "qty": 1,
+        "weight": 5
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Iconoclast",
+    "parent": "Enemy",
+    "sprite": "unit_iconoclast",
+    "name_key": "enemy_iconoclast_name",
+    "description_key": "enemy_iconoclast_description",
+    "name": "Iconoclast",
+    "description": "Slaves to the Celestial Goddess, abducted from the worlds she destroyed. Their bodies are modified to allow them to live through raging flames, and their mission is to cleanse the lands designated for the Cleansing.",
+    "stats": {
+      "baseMaxHp": 820,
+      "baseConstitution": 15,
+      "baseIntelligence": 32,
+      "baseDexterity": 22,
+      "baseDefense": 30,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 80,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "80",
+    "max_damage": "82",
+    "drops": [
+      {
+        "item": "ChainLink",
+        "qty": 1,
+        "weight": 40
+      },
+      {
+        "item": "CharredHeart",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Imp",
+    "parent": "Enemy",
+    "sprite": "unit_imp",
+    "name_key": "enemy_imp_name",
+    "description_key": "enemy_imp_description",
+    "name": "Imp",
+    "description": "A small, winged servant of the Wizards of Larox, summoned through magic and lacking any will of its own. It is typically used for simple tasks but can also assist in defending the city when needed.",
+    "stats": {
+      "baseMaxHp": 440,
+      "baseConstitution": 50,
+      "baseIntelligence": 1,
+      "baseDexterity": 94,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": "Logger.ARCANE_SUPPRESSION",
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "130",
+    "max_damage": "180",
+    "drops": [
+      {
+        "item": "SpellwovenHide",
+        "qty": 1,
+        "weight": 400
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ImperialCaptain",
+    "parent": "Enemy",
+    "sprite": "imperial_captain",
+    "name_key": "enemy_imperial_captain_name",
+    "description_key": "enemy_imperial_captain_description",
+    "name": "Imperial Captain",
+    "description": "The iron-willed commander of the Imperial Guard. Decrees an Execution Order and commands absolute authority in battle.",
+    "stats": {
+      "baseMaxHp": 1500,
+      "baseDefense": 30,
+      "baseMagicDefense": 30,
+      "baseConstitution": 40,
+      "baseDexterity": 20,
+      "baseIntelligence": 40,
+      "baseLifesteal": 0
+    },
+    "exp_given": 500,
+    "rarity": 2,
+    "is_boss": false,
+    "min_damage": "100",
+    "max_damage": "150",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "ImperialGuard",
+    "parent": "Enemy",
+    "sprite": "unit_imperial_guard",
+    "name_key": "enemy_imperial_guard_name",
+    "description_key": "enemy_imperial_guard_description",
+    "name": "Imperial Guard",
+    "description": "A member of a special division of the Imperial Army appointed to the defense of the Imperial Palace and the many decentralized Imperial institutions. They are experts at protecting vulnerable targets, and can be formidable opponents even in their unhinged state.",
+    "stats": {
+      "baseMaxHp": 600,
+      "baseConstitution": 35,
+      "baseIntelligence": 10,
+      "baseDexterity": 25,
+      "baseDefense": 30,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 92,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "30",
+    "max_damage": "34",
+    "drops": [
+      {
+        "item": "GoldScraps",
+        "qty": 1,
+        "weight": 400
+      },
+      {
+        "item": "CorruptedShield",
+        "qty": 1,
+        "weight": 1
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ImperialMage",
+    "parent": "Enemy",
+    "sprite": "unit_imperial_mage",
+    "name_key": "enemy_imperial_mage_name",
+    "description_key": "enemy_imperial_mage_description",
+    "name": "Imperial Mage",
+    "description": "Strategically crucial in every Imperial Army division, these highly trained mages conjure thunders above the enemy ranks, dealing substantial damage and disrupting their strategy.",
+    "stats": {
+      "baseMaxHp": 300,
+      "baseConstitution": 15,
+      "baseIntelligence": 40,
+      "baseDexterity": 20,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 92,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "26",
+    "max_damage": "29",
+    "drops": [
+      {
+        "item": "GoldScraps",
+        "qty": 1,
+        "weight": 400
+      },
+      {
+        "item": "CorruptedStaff",
+        "qty": 1,
+        "weight": 1
+      },
+      {
+        "item": "PotionOfIntelligence",
+        "qty": 1,
+        "weight": 4
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "InsaneCitizen",
+    "parent": "Enemy",
+    "sprite": "unit_insane_citizen",
+    "name_key": "enemy_insane_citizen_name",
+    "description_key": "enemy_insane_citizen_description",
+    "name": "Insane Citizen",
+    "description": "\"A citizen of the Empire Capital, who lived among luxury and wealth, never knowing any real hardship. The eye's appearance stole their sanity, and now they wander the streets in a feral state.\"",
+    "stats": {
+      "baseMaxHp": 200,
+      "baseConstitution": 16,
+      "baseIntelligence": 8,
+      "baseDexterity": 5,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 19,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "23",
+    "max_damage": "27",
+    "drops": [
+      {
+        "item": "SilverRing",
+        "qty": 1,
+        "weight": 5
+      },
+      {
+        "item": "SilkThread",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "Potato",
+        "qty": 1,
+        "weight": 25
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "InsaneMerchant",
+    "parent": "Enemy",
+    "sprite": "unit_insane_merchant",
+    "name_key": "enemy_insane_merchant_name",
+    "description_key": "enemy_insane_merchant_description",
+    "name": "Insane Merchant",
+    "description": "Merchants from distant lands often stopped by in the Golden City to sell exotic goods. They pose no greater danger than a normal citizen, but may carry more valuable resources.",
+    "stats": {
+      "baseMaxHp": 180,
+      "baseConstitution": 16,
+      "baseIntelligence": 20,
+      "baseDexterity": 5,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 19,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "23",
+    "max_damage": "27",
+    "drops": [
+      {
+        "item": "Emerald",
+        "qty": 1,
+        "weight": 40
+      },
+      {
+        "item": "Ruby",
+        "qty": 1,
+        "weight": 40
+      },
+      {
+        "item": "Redwood",
+        "qty": 10,
+        "weight": 180
+      },
+      {
+        "item": "Flute",
+        "qty": 1,
+        "weight": 8
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "InsanePriest",
+    "parent": "Enemy",
+    "sprite": "unit_insane_priest",
+    "name_key": "enemy_insane_priest_name",
+    "description_key": "enemy_insane_priest_description",
+    "name": "Insane Priest",
+    "description": "A priest of one of the many places of worship in the city, used to offer guidance to the poor and the miserables. His strong faith granted him healing powers, that remained even after the loss of his sanity.",
+    "stats": {
+      "baseMaxHp": 200,
+      "baseConstitution": 12,
+      "baseIntelligence": 30,
+      "baseDexterity": 12,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 35,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "40",
+    "max_damage": "42",
+    "drops": [
+      {
+        "item": "SilkThread",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "GoldScraps",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "HolyWater",
+        "qty": 1,
+        "weight": 2
+      },
+      {
+        "item": "MitreHat",
+        "qty": 1,
+        "weight": 1
+      },
+      {
+        "item": "BlackOoze",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "KabarTheRotten",
+    "parent": "Enemy",
+    "sprite": "unit_kabar_the_rotten",
+    "name_key": "enemy_kabar_the_rotten_name",
+    "description_key": "enemy_kabar_the_rotten_description",
+    "name": "\"Ka'Bar, the Rotten\"",
+    "description": "A powerful mage devoted to the forbidden arts who successfully completed the transformation into a lich. It remained well hidden into the catacombs for centuries, taking advantages of the large number of fallen soldiers to build a huge army. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 900,
+      "baseConstitution": 14,
+      "baseIntelligence": 34,
+      "baseDexterity": 8,
+      "baseDefense": 50,
+      "baseMagicDefense": 0,
+      "baseLifesteal": 25
+    },
+    "exp_given": 360,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "130",
+    "max_damage": "150",
+    "drops": [
+      {
+        "item": "PhylacteryFragment",
+        "qty": 1,
+        "weight": 666
+      },
+      {
+        "item": "CursedSilver",
+        "qty": 3,
+        "weight": 309
+      },
+      {
+        "item": "RobeOfTheLich",
+        "qty": 1,
+        "weight": 25
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "KasimirTheSeer",
+    "parent": "Enemy",
+    "sprite": "unit_kasimir_the_seer",
+    "name_key": "enemy_kasimir_the_seer_name",
+    "description_key": "enemy_kasimir_the_seer_description",
+    "name": "Kasimir, the Seer",
+    "description": "The eternal Seer who served the Emperor family for generations. Was considered an skilled advisor able to bring an age of peace and prosperity upon the Realms, he revealed his true intentions when he manifested the Great Serpent above the world.",
+    "stats": {
+      "baseMaxHp": 4500,
+      "baseConstitution": 500,
+      "baseIntelligence": 500,
+      "baseDexterity": 500,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.5
+    },
+    "exp_given": 5000,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "280",
+    "max_damage": "305",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "KingAino",
+    "parent": "Enemy",
+    "sprite": "unit_king_aino",
+    "name_key": "enemy_king_aino_name",
+    "description_key": "enemy_king_aino_description",
+    "name": "King Aino",
+    "description": "The enormous shell of what was once a man. Wheter its current state is the result of external deception or its own hubris remains unknown.",
+    "stats": {
+      "baseMaxHp": 25000,
+      "baseConstitution": 200,
+      "baseIntelligence": 2,
+      "baseDexterity": 200,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 5500,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "2500",
+    "max_damage": "3500",
+    "drops": [
+      {
+        "item": "OrichalcumScraps",
+        "qty": 5,
+        "weight": 950
+      },
+      {
+        "item": "SPIDER",
+        "qty": 1,
+        "weight": 50
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "KnightSlime",
+    "parent": "Enemy",
+    "sprite": "unit_knight_slime",
+    "name_key": "unit_knight_slime_name",
+    "description_key": "unit_knight_slime_description",
+    "name": "Knight Slime",
+    "description": "A regular slime, equipped with a helmet from an unfortunate adventurer.",
+    "stats": {
+      "baseMaxHp": 400,
+      "baseDefense": 75,
+      "baseMagicDefense": 0,
+      "baseConstitution": 40,
+      "baseDexterity": 6,
+      "baseIntelligence": 2
+    },
+    "exp_given": 40,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "50",
+    "max_damage": "75",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "Lazarus",
+    "parent": "Enemy",
+    "sprite": "unit_lazarus",
+    "name_key": "enemy_lazarus_name",
+    "description_key": "enemy_lazarus_description",
+    "name": "Lazarus",
+    "description": "This elegant, charismatic man conceals a dreadful curse behind his blood red eyes.",
+    "stats": {
+      "baseMaxHp": 28500,
+      "baseConstitution": 80,
+      "baseIntelligence": 200,
+      "baseDexterity": 250,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "baseLifesteal": 200
+    },
+    "exp_given": 5000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "2800",
+    "max_damage": "4000",
+    "drops": [
+      {
+        "item": "AncestralBlood",
+        "qty": 1,
+        "weight": 400
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "LegateHadrian",
+    "parent": "Enemy",
+    "sprite": "unit_legate_hadrian",
+    "name_key": "enemy_legate_hadrian_name",
+    "description_key": "enemy_legate_hadrian_description",
+    "name": "Legate Hadrian",
+    "description": "\"One of the Celestial Army's high generals, sworn directly to the Celestial Goddess. His body has undergone extensive modifications to create the perfect warrior, and surviving this process is an exceptional achievement on its own. He is tasked with the purification of our world, and will stop at nothing to complete it.\"",
+    "stats": {
+      "baseMaxHp": 6400,
+      "baseConstitution": "Logger.BARD_SHIELD",
+      "baseIntelligence": 80,
+      "baseDexterity": 96,
+      "baseDefense": 20,
+      "baseMagicDefense": 20,
+      "baseLifesteal": 20,
+      "counterattack": 0.5,
+      "darknessDamageAmplification": 0.01,
+      "immunityToStatus": 0.8,
+      "regeneration": 75,
+      "flatDodgeChance": 0.2,
+      "criticalDamage": 2.0
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "950",
+    "max_damage": "950",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "LesserTitan",
+    "parent": "Enemy",
+    "sprite": "unit_lesser_titan",
+    "name_key": "enemy_lesser_titan_name",
+    "description_key": "enemy_lesser_titan_description",
+    "name": "Lesser Titan",
+    "description": "\"The result of a botched conjuring ritual. It possesses great strength, but it's existence is suffering.\"",
+    "stats": {
+      "baseMaxHp": 4150,
+      "baseConstitution": 40,
+      "baseIntelligence": 1,
+      "baseDexterity": 16,
+      "baseDefense": 10,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "220",
+    "max_damage": "300",
+    "drops": [
+      {
+        "item": "AlchemicPowder",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "SentientSlab",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "ConstructEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "LostMiner",
+    "parent": "Enemy",
+    "sprite": "unit_lost_miner",
+    "name_key": "enemy_lost_miner_name",
+    "description_key": "enemy_lost_miner_description",
+    "name": "Lost Miner",
+    "description": "Clad in a broken brass diving gear, barely producing any noise despite their limping gait, they can be rarely spotted in the obsidian mines. Their origins and purpose are unknown, but they appear to come from the lowest levels of the mine.",
+    "stats": {
+      "baseMaxHp": 790,
+      "baseConstitution": 8,
+      "baseIntelligence": 20,
+      "baseDexterity": 40,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "darknessDamageAmplification": 0.01
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "88",
+    "max_damage": "162",
+    "drops": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "ShadowGem",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "PotionOfDarkness",
+        "qty": 1,
+        "weight": 4
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "MagicArmor",
+    "parent": "Enemy",
+    "sprite": "unit_magic_armor",
+    "name_key": "enemy_magic_armor_name",
+    "description_key": "enemy_magic_armor_description",
+    "name": "Magic Armor",
+    "description": "Armor crafted from a unique metal and brought to life through a blend of technology and magic. The city is teeming with these constructs, ever vigilant and prepared to fend off any potential invasion.",
+    "stats": {
+      "baseMaxHp": 400,
+      "baseConstitution": 68,
+      "baseIntelligence": 1,
+      "baseDexterity": 54,
+      "baseDefense": 150,
+      "baseMagicDefense": 150,
+      "retaliationMagicalDamage": 105
+    },
+    "exp_given": "Logger.ARCANE_SUPPRESSION",
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "Logger.BARD_SHIELD",
+    "max_damage": "135",
+    "drops": [
+      {
+        "item": "AnimatedScraps",
+        "qty": 1,
+        "weight": 375
+      },
+      {
+        "item": "RadiatingNucleus",
+        "qty": 1,
+        "weight": 2
+      },
+      {
+        "item": "ConstructEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "MagmaShark",
+    "parent": "Enemy",
+    "sprite": "magma_shark",
+    "name_key": "enemy_magma_shark_name",
+    "description_key": "enemy_magma_shark_description",
+    "name": "Magma Shark",
+    "description": "A deep-dwelling thermal shark with an absurdly high dodge. A regular high-tier fish, not a miniboss.",
+    "stats": {
+      "baseMaxHp": 260,
+      "baseConstitution": 40,
+      "baseIntelligence": 8,
+      "baseDexterity": 300,
+      "baseDefense": 12,
+      "baseMagicDefense": 8
+    },
+    "exp_given": 60,
+    "rarity": 0,
+    "is_boss": false,
+    "min_damage": "4",
+    "max_damage": "7",
+    "drops": [
+      {
+        "item": "MagmaShark",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Mimic",
+    "parent": "Enemy",
+    "sprite": "unit_mimic",
+    "name_key": "enemy_mimic_name",
+    "description_key": "enemy_mimic_description",
+    "name": "Mimic",
+    "description": "Not unlike a usual old, worn out chest filled with treasures (or spiderwebs), the Mimic true nature emerges when a poor soul tries to reach for its contents, often leaving more than they can retrieve. They are rarely found in the places under the control of the Skull Island pirates, and no one knows exactly what animates them.",
+    "stats": {
+      "baseMaxHp": 236,
+      "baseConstitution": 25,
+      "baseIntelligence": 1,
+      "baseDexterity": 18,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 132,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "42",
+    "max_damage": "78",
+    "drops": [
+      {
+        "item": "GhostwoodStump",
+        "qty": 3,
+        "weight": 666
+      },
+      {
+        "item": "CoinPurse",
+        "qty": 1,
+        "weight": 333
+      },
+      {
+        "item": "ConstructEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "MysteriousTentacle",
+    "parent": "Enemy",
+    "sprite": "unit_mysterious_tentacle",
+    "name_key": "enemy_mysterious_tentacle_name",
+    "description_key": "enemy_mysterious_tentacle_description",
+    "name": "Mysterious Tentacle",
+    "description": "Viscid, lined with suction cups, and with a tendency to sink random ships passing by. The only scarier thing than this tentacle is the creature it is attached to.",
+    "stats": {
+      "baseMaxHp": 800,
+      "baseConstitution": 52,
+      "baseIntelligence": 1,
+      "baseDexterity": 3,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "regeneration": 50
+    },
+    "exp_given": 132,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "21",
+    "max_damage": "24",
+    "drops": [
+      {
+        "item": "MysteriousAppendage",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Necrobot",
+    "parent": "Enemy",
+    "sprite": "unit_necrobot",
+    "name_key": "enemy_necrobot_name",
+    "description_key": "enemy_necrobot_description",
+    "name": "Necrobot",
+    "description": "A soldier resurrected not by magic but through unknown technology, bound to carry out the commands of its masters.",
+    "stats": {
+      "baseMaxHp": 10000,
+      "baseConstitution": 140,
+      "baseIntelligence": 1,
+      "baseDexterity": 140,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 480,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "600",
+    "max_damage": "750",
+    "drops": [
+      {
+        "item": "OrichalcumScraps",
+        "qty": 1,
+        "weight": 750
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Necrolith",
+    "parent": "Enemy",
+    "sprite": "unit_necrolith",
+    "name_key": "enemy_necrolith_name",
+    "description_key": "enemy_necrolith_description",
+    "name": "Necrolith",
+    "description": "\"A colossal bone construct animated by forbidden magic. Bones are calcified together, therefore it can't move, but it's surface is harder than the hardest stone.\"",
+    "stats": {
+      "baseMaxHp": 1000000,
+      "baseConstitution": 500,
+      "baseIntelligence": 1,
+      "baseDexterity": 1,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 10,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "2",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "NexusResearcher",
+    "parent": "Enemy",
+    "sprite": "unit_nexus_researcher",
+    "name_key": "enemy_nexus_researcher_name",
+    "description_key": "enemy_nexus_researcher_description",
+    "name": "Nexus Researcher",
+    "description": "Lacking any magical power themselves, they work together to complete the Nexus of Larox and to discover new types of spells.",
+    "stats": {
+      "baseMaxHp": 735,
+      "baseConstitution": 22,
+      "baseIntelligence": 154,
+      "baseDexterity": 15,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 140,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "225",
+    "max_damage": "240",
+    "drops": [
+      {
+        "item": "Pumpkin",
+        "qty": 1,
+        "weight": 25
+      },
+      {
+        "item": "VeilBreaker",
+        "qty": 1,
+        "weight": 3
+      },
+      {
+        "item": "UnstableGem",
+        "qty": 1,
+        "weight": 3
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ObsidianGolem",
+    "parent": "Enemy",
+    "sprite": "unit_obsidian_golem",
+    "name_key": "enemy_obsidian_golem_name",
+    "description_key": "enemy_obsidian_golem_description",
+    "name": "Obsidian Golem",
+    "description": "\"Animated by unknown forces, this massive obsidian creature is impervious to any magic damage thanks to this element's properties. While hard to take down without a strategy, the massive size hinders it's offensive capabilities.\"",
+    "stats": {
+      "baseMaxHp": 1200,
+      "baseConstitution": 30,
+      "baseIntelligence": 1,
+      "baseDexterity": 1,
+      "baseDefense": 0,
+      "baseMagicDefense": 100
+    },
+    "exp_given": 84,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "20",
+    "max_damage": "25",
+    "drops": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 1,
+        "weight": 600
+      },
+      {
+        "item": "ConstructEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Oculus",
+    "parent": "Enemy",
+    "sprite": "unit_oculus",
+    "name_key": "enemy_oculus_name",
+    "description_key": "enemy_oculus_description",
+    "name": "Oculus",
+    "description": "Flying organic-machine hybrid used to map terrain, find enemy locations and generally gathering information on the battlefield. Equipped with a small but powerful magic cannon that allows, through unknown technology, to replicate a destructive spell usually casted by mages through their rituals.",
+    "stats": {
+      "baseMaxHp": 1100,
+      "baseConstitution": 55,
+      "baseIntelligence": 65,
+      "baseDexterity": 36,
+      "baseDefense": 10,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 80,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "Logger.STATUS_FEEBLE_TETHER",
+    "max_damage": "135",
+    "drops": [
+      {
+        "item": "ElasticMembrane",
+        "qty": 1,
+        "weight": 400
+      },
+      {
+        "item": "FluxLimiter",
+        "qty": 1,
+        "weight": 3
+      },
+      {
+        "item": "Scanner",
+        "qty": 1,
+        "weight": 4
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "PaleHermit",
+    "parent": "Enemy",
+    "sprite": "unit_pale_hermit",
+    "name_key": "enemy_pale_hermit_name",
+    "description_key": "enemy_pale_hermit_description",
+    "name": "Pale Hermit",
+    "description": "Lurking in the depths of the Obsidian Mines, this ancient horror made the original miners flee for their lives when it was mistakenly awaken. It strikes from the dark, leaving no chance to the unaware explorer.",
+    "stats": {
+      "baseMaxHp": 3500,
+      "baseConstitution": 8,
+      "baseIntelligence": 40,
+      "baseDexterity": 60,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "darknessDamageAmplification": 0.01
+    },
+    "exp_given": 2500,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "Logger.LOST_EXPEDITION_FALL_DAMAGE",
+    "max_damage": "218",
+    "drops": [
+      {
+        "item": "VoodooDoll",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Perch",
+    "parent": "Enemy",
+    "sprite": "perch",
+    "name_key": "enemy_perch_name",
+    "description_key": "enemy_perch_description",
+    "name": "Perch",
+    "description": "A plentiful shallow-water fish that thrashes and slips off the hook.",
+    "stats": {
+      "baseMaxHp": 16,
+      "baseConstitution": 5,
+      "baseIntelligence": 2,
+      "baseDexterity": 60,
+      "baseDefense": 2,
+      "baseMagicDefense": 2
+    },
+    "exp_given": 5,
+    "rarity": 0,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "2",
+    "drops": [
+      {
+        "item": "Perch",
+        "qty": 1,
+        "weight": 500
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Phantasm",
+    "parent": "Enemy",
+    "sprite": "unit_phantasm",
+    "name_key": "enemy_phantasm_name",
+    "description_key": "enemy_phantasm_description",
+    "name": "Phantasm",
+    "description": "Almost imperceptible to the naked eye, this extremely fast assassin will meet unprepared victims with a tremendous fate.",
+    "stats": {
+      "baseMaxHp": 450,
+      "baseConstitution": 22,
+      "baseIntelligence": 165,
+      "baseDexterity": 500,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "flatDodgeChance": 0.5
+    },
+    "exp_given": 450,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "999",
+    "max_damage": "1000",
+    "drops": [
+      {
+        "item": "KaunianFabric",
+        "qty": 1,
+        "weight": 500
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Phoenix",
+    "parent": "Enemy",
+    "sprite": "unit_phoenix",
+    "name_key": "enemy_phoenix_name",
+    "description_key": "enemy_phoenix_description",
+    "name": "Phoenix",
+    "description": "A massive bird resembling an eagle, with shimmering golden feathers and a gaze that burns like fire.",
+    "stats": {
+      "baseMaxHp": 12000,
+      "baseConstitution": 50,
+      "baseIntelligence": 125,
+      "baseDexterity": 210,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 7500,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "1250",
+    "max_damage": "1350",
+    "drops": [
+      {
+        "item": "PhoenixFeather",
+        "qty": 1,
+        "weight": 260
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Pirate",
+    "parent": "Enemy",
+    "sprite": "unit_pirate",
+    "name_key": "enemy_pirate_name",
+    "description_key": "enemy_pirate_description",
+    "name": "Pirate",
+    "description": "The most common member of a pirate ship crew, Skull Island pirates are feared all over the realms. Trained in the use of the Cutlass, a traditional piratesque sword, they also have access to an exclusive technology capable of shooting iron projectiles with incredible force.",
+    "stats": {
+      "baseMaxHp": 380,
+      "baseConstitution": 25,
+      "baseIntelligence": 4,
+      "baseDexterity": 20,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "counterattack": 0.5
+    },
+    "exp_given": 30,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "28",
+    "max_damage": "35",
+    "drops": [
+      {
+        "item": "GhostwoodStump",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "BlackIronScraps",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "FreshSalmon",
+        "qty": 1,
+        "weight": 12
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "PirateCaptain",
+    "parent": "Enemy",
+    "sprite": "unit_pirate_captain",
+    "name_key": "enemy_pirate_captain_name",
+    "description_key": "enemy_pirate_captain_description",
+    "name": "Pirate Captain",
+    "description": "Only the most fearsome and ruthless pirates are given the command of a galleon. The pirate captains are formidable warriors, well versed in the art of diplomacy and rum drinking. They are in charge of some of the most difficult missions around the Realms.",
+    "stats": {
+      "baseMaxHp": 800,
+      "baseConstitution": 40,
+      "baseIntelligence": 8,
+      "baseDexterity": 35,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "counterattack": 0.5
+    },
+    "exp_given": 264,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "40",
+    "max_damage": "54",
+    "drops": [
+      {
+        "item": "GhostwoodStump",
+        "qty": 1,
+        "weight": 375
+      },
+      {
+        "item": "BlackIronScraps",
+        "qty": 1,
+        "weight": 378
+      },
+      {
+        "item": "ExoticVelvet",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "FreshTuna",
+        "qty": 1,
+        "weight": 23
+      },
+      {
+        "item": "PotionOfDexterity",
+        "qty": 1,
+        "weight": 2
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "PirateLieutenant",
+    "parent": "Enemy",
+    "sprite": "unit_pirate_lieutenant",
+    "name_key": "enemy_pirate_lieutenant_name",
+    "description_key": "enemy_pirate_lieutenant_description",
+    "name": "Pirate Lieutenant",
+    "description": "\"Higher in the Skull Island pirate's hierarchy than the regular pirate, this seasoned lieutenant commands small crews in their plunders.\"",
+    "stats": {
+      "baseMaxHp": 600,
+      "baseConstitution": 30,
+      "baseIntelligence": 8,
+      "baseDexterity": 25,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "counterattack": 0.5
+    },
+    "exp_given": 132,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "30",
+    "max_damage": "43",
+    "drops": [
+      {
+        "item": "GhostwoodStump",
+        "qty": 1,
+        "weight": 375
+      },
+      {
+        "item": "BlackIronScraps",
+        "qty": 1,
+        "weight": 379
+      },
+      {
+        "item": "ExoticVelvet",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "FreshTuna",
+        "qty": 1,
+        "weight": 20
+      },
+      {
+        "item": "PotionOfDexterity",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "PrimevalWurm",
+    "parent": "Enemy",
+    "sprite": "unit_primeval_wurm",
+    "name_key": "enemy_primeval_wurm_name",
+    "description_key": "enemy_primeval_wurm_description",
+    "name": "Primeval Wurm",
+    "description": "An ancient being of terrifying size, capable of devouring entire villages in a single bite. One of them is said to roam the ground below the Southern Grove, roaming in circle and unable to leave due to the rocky terrain surrounding the area.",
+    "stats": {
+      "baseMaxHp": 16000,
+      "baseConstitution": 215,
+      "baseIntelligence": 1,
+      "baseDexterity": 70,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 4000,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "540",
+    "max_damage": "595",
+    "drops": [
+      {
+        "item": "PrimevalScale",
+        "qty": 1,
+        "weight": 999
+      },
+      {
+        "item": "InsectEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "PrimordialTitan",
+    "parent": "Enemy",
+    "sprite": "unit_primordial_titan",
+    "name_key": "enemy_primordial_titan_name",
+    "description_key": "enemy_primordial_titan_description",
+    "name": "Primordial Titan",
+    "description": "\"An ancient construct locked in the extensive halls below the Frostbite Peaks. Possesses a strength similar to that of a god, but since the ritual for it's creation involves mortal souls he is not impervious to the effects of the corruption.\"",
+    "stats": {
+      "baseMaxHp": 15000,
+      "baseConstitution": 200,
+      "baseIntelligence": 1,
+      "baseDexterity": 80,
+      "baseDefense": 10,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 1200,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "280",
+    "max_damage": "330",
+    "drops": [
+      {
+        "item": "ExaltedPowder",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "ColossalSword",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "PotionOfDefense",
+        "qty": 1,
+        "weight": 160
+      },
+      {
+        "item": "ConstructEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Pterodactyl",
+    "parent": "Enemy",
+    "sprite": "unit_pterodactyl",
+    "name_key": "enemy_pterodactyl_name",
+    "description_key": "enemy_pterodactyl_description",
+    "name": "Pterodactyl",
+    "description": "A massive, flying living fossil from the dawn of this world. Remarkably strong, yet astonishingly agile in the air.",
+    "stats": {
+      "baseMaxHp": 775,
+      "baseConstitution": 15,
+      "baseIntelligence": 1,
+      "baseDexterity": 126,
+      "baseDefense": 10,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 175,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "415",
+    "max_damage": "495",
+    "drops": [
+      {
+        "item": "AncientMembrane",
+        "qty": 1,
+        "weight": 325
+      },
+      {
+        "item": "PterodactylClaw",
+        "qty": 1,
+        "weight": 1
+      },
+      {
+        "item": "DinoRibs",
+        "qty": 1,
+        "weight": 67
+      },
+      {
+        "item": "AvianEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ReinforcedDoor",
+    "parent": "Enemy",
+    "sprite": "unit_reinforced_door",
+    "name_key": "enemy_reinforced_door_name",
+    "description_key": "enemy_reinforced_door_description",
+    "name": "Reinforced Door",
+    "description": "A large, imposing door. Attacks through a smaller Gaussian Coil fixed above, and the system that powers the room is reliant on its integrity.",
+    "stats": {
+      "baseMaxHp": 3000,
+      "baseConstitution": 400,
+      "baseIntelligence": 1,
+      "baseDexterity": 15,
+      "baseDefense": 20,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "200",
+    "max_damage": "300",
+    "drops": [
+      {
+        "item": "CelestialScraps",
+        "qty": 50,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "SandDemon",
+    "parent": "Enemy",
+    "sprite": "unit_sand_demon",
+    "name_key": "enemy_sand_demon_name",
+    "description_key": "enemy_sand_demon_description",
+    "name": "Sand Demon",
+    "description": "\"The last resort of the Sha'huri defense system. When invaders threaten the safety of their God, the defense system draws upon all its energy to conjure these fearsome warriors, capable of defeating large armies by themselves. Due to the immense energy cost these assaults should be short timed, albeit overwhelming.\"",
+    "stats": {
+      "baseMaxHp": 950,
+      "baseConstitution": 46,
+      "baseIntelligence": 2,
+      "baseDexterity": 16,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 36,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "30",
+    "max_damage": "46",
+    "drops": [
+      {
+        "item": "MetamorphicSand",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "SandStatue",
+    "parent": "Enemy",
+    "sprite": "unit_sand_statue",
+    "name_key": "enemy_sand_statue_name",
+    "description_key": "enemy_sand_statue_description",
+    "name": "Sand Statue",
+    "description": "\"A sand warrior summoned by the legendary Sha'huri defense system, the last resort against external invaders to protect the core of their empire and their god. While not particularly strong by itself, they present a mortal threat by swarming the invaders in large numbers.\"",
+    "stats": {
+      "baseMaxHp": "Logger.BARD_SHIELD",
+      "baseConstitution": 12,
+      "baseIntelligence": 2,
+      "baseDexterity": 10,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 29,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "5",
+    "max_damage": "8",
+    "drops": [
+      {
+        "item": "MetamorphicSand",
+        "qty": 1,
+        "weight": 300
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "SandVulture",
+    "parent": "Enemy",
+    "sprite": "unit_sand_vulture",
+    "name_key": "enemy_sand_vulture_name",
+    "description_key": "enemy_sand_vulture_description",
+    "name": "Sand Vulture",
+    "description": "Birds of prey that scavenge on carrion. Not very dangerous alone, but ranged units are required to take them down.",
+    "stats": {
+      "baseMaxHp": 90,
+      "baseConstitution": 10,
+      "baseIntelligence": 2,
+      "baseDexterity": 27,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 14,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "6",
+    "max_damage": "12",
+    "drops": [
+      {
+        "item": "Feather",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Egg",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "AvianEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Shadow",
+    "parent": "Enemy",
+    "sprite": "shadow",
+    "name_key": "enemy_shadow_name",
+    "description_key": "enemy_shadow_description",
+    "name": "Shadow",
+    "description": "A mysterious and deadly manifestation of darkness.",
+    "stats": {
+      "baseMaxHp": 1000,
+      "baseConstitution": 100,
+      "baseIntelligence": 100,
+      "baseDexterity": 100,
+      "baseDefense": 50,
+      "baseMagicDefense": 50,
+      "criticalDamage": 2.0,
+      "immunityToStatus": 1.0,
+      "flatDodgeChance": 0.2
+    },
+    "exp_given": 500,
+    "rarity": 2,
+    "is_boss": false,
+    "min_damage": "100",
+    "max_damage": "1000",
+    "drops": [
+      {
+        "item": "Geode",
+        "qty": 50,
+        "weight": 900
+      },
+      {
+        "item": "Geode",
+        "qty": 100,
+        "weight": 90
+      },
+      {
+        "item": "Geode",
+        "qty": 200,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ShahuriArcher",
+    "parent": "Enemy",
+    "sprite": "unit_shahuri_archer",
+    "name_key": "enemy_shahuri_archer_name",
+    "description_key": "enemy_shahuri_archer_description",
+    "name": "\"Sha'huri Archer\"",
+    "description": "\"Skilled archer of the Sha'huri tribe, he offers ranged support for ground troops. They wield special bows able to disrupt enemy actions.\"",
+    "stats": {
+      "baseMaxHp": 70,
+      "baseConstitution": 8,
+      "baseIntelligence": 10,
+      "baseDexterity": 25,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 30,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "9",
+    "max_damage": "13",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Pineapple",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "ShahuriBowFrame",
+        "qty": 1,
+        "weight": 30
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ShahuriMage",
+    "parent": "Enemy",
+    "sprite": "unit_shahuri_mage",
+    "name_key": "enemy_shahuri_mage_name",
+    "description_key": "enemy_shahuri_mage_description",
+    "name": "\"Sha'huri Mage\"",
+    "description": "\"Gifted with a fragment of their god's magic, they can manipulate the desert sand to encapsulate and crush their enemies.\"",
+    "stats": {
+      "baseMaxHp": 65,
+      "baseConstitution": 4,
+      "baseIntelligence": 15,
+      "baseDexterity": 5,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 30,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "8",
+    "max_damage": "9",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Quartz",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "Pineapple",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ShahuriWarrior",
+    "parent": "Enemy",
+    "sprite": "unit_shahuri_warrior",
+    "name_key": "enemy_shahuri_warrior_name",
+    "description_key": "enemy_shahuri_warrior_description",
+    "name": "\"Sha'huri Warrior\"",
+    "description": "\"Fearsome warrior of the Sha'huri tribe, he executes the orders of the desert god.\"",
+    "stats": {
+      "baseMaxHp": 145,
+      "baseConstitution": 12,
+      "baseIntelligence": 8,
+      "baseDexterity": 5,
+      "baseDefense": 20,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 30,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "6",
+    "max_damage": "8",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Pineapple",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "RecurveBlade",
+        "qty": 1,
+        "weight": 30
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ShaKireFirstSwordsman",
+    "parent": "Enemy",
+    "sprite": "unit_sha_kire_first_swordsman",
+    "name_key": "enemy_sha_kire_first_swordsman_name",
+    "description_key": "enemy_sha_kire_first_swordsman_description",
+    "name": "\"Sha'kire, First Swordsman\"",
+    "description": "\"The legendary Guardian of the Sha'huri God, last line of defense between the invaders and the secret of the pyramid. His strength is legendary, and is the reason why the Sha'huri God remained unseen by anyone from outside the desert for thousands of years.\"",
+    "stats": {
+      "baseMaxHp": 3500,
+      "baseConstitution": 24,
+      "baseIntelligence": 36,
+      "baseDexterity": 42,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "counterattack": 1.0
+    },
+    "exp_given": 600,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "75",
+    "max_damage": "104",
+    "drops": [
+      {
+        "item": "EyesOfTheSwordsman",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "ShaTheHiddenGod",
+    "parent": "Enemy",
+    "sprite": "unit_sha_the_hidden_god",
+    "name_key": "enemy_sha_the_hidden_god_name",
+    "description_key": "enemy_sha_the_hidden_god_description",
+    "name": "Sha, the Hidden God",
+    "description": "\"The immortal God of the Sha'huri, writer of the original Prophecy, enemy of the Empire and eternal Prey of the Serpent. Not even It is immune from the effects of the corruption, therefore sealed itself in the inner chamber of the great pyramid.\"",
+    "stats": {
+      "baseMaxHp": 7777,
+      "baseConstitution": 7,
+      "baseIntelligence": 7,
+      "baseDexterity": 7,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 1.0
+    },
+    "exp_given": 9600,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "7",
+    "max_damage": "7",
+    "drops": [
+      {
+        "item": "DivineZygote",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Singularity",
+    "parent": "Enemy",
+    "sprite": "unit_singularity",
+    "name_key": "enemy_singularity_name",
+    "description_key": "enemy_singularity_description",
+    "name": "Singularity",
+    "description": "The first physical, seemingly living being to appear in this world. Countless souls fused together as one, radiating an immense amount of energy.",
+    "stats": {
+      "baseMaxHp": 30000,
+      "baseConstitution": 100,
+      "baseIntelligence": 100,
+      "baseDexterity": 100,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.8
+    },
+    "exp_given": 12000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "1225",
+    "max_damage": "1275",
+    "drops": [
+      {
+        "item": "FlakeOfInfinity",
+        "qty": 1,
+        "weight": 960
+      },
+      {
+        "item": "InfinityHat",
+        "qty": 1,
+        "weight": 40
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Slime",
+    "parent": "Enemy",
+    "sprite": "unit_slime",
+    "name_key": "enemy_slime_name",
+    "description_key": "enemy_slime_description",
+    "name": "Slime",
+    "description": "A green, semi-transparent creature rarely spotted in the depth of the forest. From the few witnesses lucky enough to witness a Slime, they used to display an elusive behaviour before the corruption.",
+    "stats": {
+      "baseMaxHp": 130,
+      "baseConstitution": 40,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 40,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 24,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "26",
+    "max_damage": "35",
+    "drops": [
+      {
+        "item": "GreenSlime",
+        "qty": 1,
+        "weight": 650
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 2,
+        "weight": 200
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 3,
+        "weight": 50
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "SlimeKing",
+    "parent": "Enemy",
+    "sprite": "unit_slime_king",
+    "name_key": "enemy_slime_king_name",
+    "description_key": "enemy_slime_king_description",
+    "name": "Slime King",
+    "description": "\"Several times the size of a regular slime, their sovereign maintains the order in it's kingdom. It can wipe away an unruly underling with one gaze, and inflict a terrible fate on intruders.\"",
+    "stats": {
+      "baseMaxHp": 1000,
+      "baseConstitution": 38,
+      "baseIntelligence": 5,
+      "baseDexterity": 8,
+      "baseDefense": 40,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 0.5
+    },
+    "exp_given": 240,
+    "rarity": null,
+    "is_boss": true,
+    "min_damage": "40",
+    "max_damage": "50",
+    "drops": [
+      {
+        "item": "GreenSlime",
+        "qty": 1,
+        "weight": 210
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 2,
+        "weight": 500
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 3,
+        "weight": 250
+      },
+      {
+        "item": "SlimeKingsCrown",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "SeekingGlass",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "SmolderingTitan",
+    "parent": "Enemy",
+    "sprite": "unit_smoldering_titan",
+    "name_key": "enemy_smoldering_titan_name",
+    "description_key": "enemy_smoldering_titan_description",
+    "name": "Smoldering Titan",
+    "description": "A colossal demigod as tall as a mountain, birthed from the fiery depths of an active volcano. It moves slowly, crushing and incinerating everything in its path.",
+    "stats": {
+      "baseMaxHp": 6850,
+      "baseConstitution": 340,
+      "baseIntelligence": 28,
+      "baseDexterity": 10,
+      "baseDefense": 35,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 3750,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "500",
+    "max_damage": "550",
+    "drops": [
+      {
+        "item": "Infernite",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "SnowWyvern",
+    "parent": "Enemy",
+    "sprite": "unit_snow_wyvern",
+    "name_key": "enemy_snow_wyvern_name",
+    "description_key": "enemy_snow_wyvern_description",
+    "name": "Snow Wyvern",
+    "description": "A majestic flying creature rarely spotted around the frostbite peaks. Unlike other draconids, it spits an ice tempest capable of sweeping away an unprepared army.",
+    "stats": {
+      "baseMaxHp": 1250,
+      "baseConstitution": 15,
+      "baseIntelligence": 30,
+      "baseDexterity": 40,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 520,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "65",
+    "max_damage": "90",
+    "drops": [
+      {
+        "item": "FrostmetalOre",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "FrozenScale",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "FrozenEgg",
+        "qty": 1,
+        "weight": 5
+      },
+      {
+        "item": "WyvernChop",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "AvianEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "StoneShaman",
+    "parent": "Enemy",
+    "sprite": "unit_stone_shaman",
+    "name_key": "enemy_stone_shaman_name",
+    "description_key": "enemy_stone_shaman_description",
+    "name": "Stone Shaman",
+    "description": "A mystic wielding a unique form of magic derived from stones unlike anything found on the surface. These stones allow them to command wild beasts with ease and grant them some healing powers.",
+    "stats": {
+      "baseMaxHp": 1200,
+      "baseConstitution": 40,
+      "baseIntelligence": "Logger.BOTCHED_OFFERING",
+      "baseDexterity": 2,
+      "baseDefense": 0,
+      "baseMagicDefense": 450
+    },
+    "exp_given": 270,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "180",
+    "max_damage": "350",
+    "drops": [
+      {
+        "item": "Kindlequartz",
+        "qty": 1,
+        "weight": 4
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TekeliLiFirstApostle",
+    "parent": "Enemy",
+    "sprite": "unit_tekeli_li_first_apostle",
+    "name_key": "enemy_tekeli_li_first_apostle_name",
+    "description_key": "enemy_tekeli_li_first_apostle_description",
+    "name": "\"Tekeli'li, First Apostle\"",
+    "description": "\"This vast, amorphous mass of organs and appendages dwells hundreds of meters beneath the Submerged Temple, orchestrating the Ritual. It is the most powerful of the Ancient's original, devoted apostles, it will stop at nothing to restore its master from its cosmic exile.\"",
+    "stats": {
+      "baseMaxHp": 18000,
+      "baseConstitution": 165,
+      "baseIntelligence": 320,
+      "baseDexterity": 38,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "baseLifesteal": 100
+    },
+    "exp_given": 16000,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "460",
+    "max_damage": "515",
+    "drops": [
+      {
+        "item": "AstralGoo",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "CosmicViolin",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Terrorsaurus",
+    "parent": "Enemy",
+    "sprite": "unit_terrorsaurus",
+    "name_key": "enemy_terrorsaurus_name",
+    "description_key": "enemy_terrorsaurus_description",
+    "name": "Terrorsaurus",
+    "description": "An immense, heavily armored dinosaur—slow-moving but with razor-sharp teeth. It can endure staggering amounts of damage before finally succumbing.",
+    "stats": {
+      "baseMaxHp": 2600,
+      "baseConstitution": 94,
+      "baseIntelligence": 1,
+      "baseDexterity": 12,
+      "baseDefense": 10,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 194,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "400",
+    "max_damage": "480",
+    "drops": [
+      {
+        "item": "AncientHide",
+        "qty": 1,
+        "weight": 390
+      },
+      {
+        "item": "TerrorsaurusFang",
+        "qty": 1,
+        "weight": 1
+      },
+      {
+        "item": "DinoRibs",
+        "qty": 1,
+        "weight": 67
+      },
+      {
+        "item": "ReptileEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TheAncient",
+    "parent": "Enemy",
+    "sprite": "unit_the_ancient",
+    "name_key": "enemy_the_ancient_name",
+    "description_key": "enemy_the_ancient_description",
+    "name": "The Ancient",
+    "description": "\"To meet it's gaze is to peer into the unfathomable void of cosmic indifference. One glimpse at its figure unravels reason like a fragile thread. The terrified adventurers, however, feel like they already met this nightmare.\"",
+    "stats": {
+      "baseMaxHp": 35000,
+      "baseConstitution": 85,
+      "baseIntelligence": 925,
+      "baseDexterity": 45,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 17500,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "3500",
+    "max_damage": "4500",
+    "drops": [
+      {
+        "item": "HeartOfDarkness",
+        "qty": 1,
+        "weight": 333
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TheExiled",
+    "parent": "Enemy",
+    "sprite": "unit_the_exiled",
+    "name_key": "enemy_the_exiled_name",
+    "description_key": "enemy_the_exiled_description",
+    "name": "The Exiled",
+    "description": "An extremely strong man slightly taller than average, who looks extremely calm. He looks out of place among the other prisoners. What secret is he hiding?",
+    "stats": {
+      "baseMaxHp": 30000,
+      "baseConstitution": 215,
+      "baseIntelligence": 215,
+      "baseDexterity": 215,
+      "baseDefense": 25,
+      "baseMagicDefense": 25,
+      "baseLifesteal": 35,
+      "counterattack": 0.8,
+      "darknessDamageAmplification": 0.02,
+      "immunityToStatus": 0.9,
+      "regeneration": 500,
+      "flatDodgeChance": 0.3,
+      "criticalDamage": 2.5
+    },
+    "exp_given": 15000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "1075",
+    "max_damage": "1425",
+    "drops": [
+      {
+        "item": "GiftOfLight",
+        "qty": 1,
+        "weight": 666
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TheMachine",
+    "parent": "Enemy",
+    "sprite": "unit_the_machine",
+    "name_key": "enemy_the_machine_name",
+    "description_key": "enemy_the_machine_description",
+    "name": "The Machine",
+    "description": "An enormous mechanical construct, an ever-shifting maze of angles and cogs, defying geometry and logic with every change in its configuration.",
+    "stats": {
+      "baseMaxHp": 42500,
+      "baseConstitution": 100,
+      "baseIntelligence": 100,
+      "baseDexterity": 100,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 20000,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "1",
+    "max_damage": "9999",
+    "drops": [
+      {
+        "item": "MysteriousCog",
+        "qty": 1,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Thorvus",
+    "parent": "Enemy",
+    "sprite": "unit_thorvus",
+    "name_key": "enemy_thorvus_name",
+    "description_key": "enemy_thorvus_description",
+    "name": "Thorvus",
+    "description": "\"One of the three cultist rebels. An extremely powerful mage, still couldn't manage to make the Primordial corruption-proof.\"",
+    "stats": {
+      "baseMaxHp": 4450,
+      "baseConstitution": 14,
+      "baseIntelligence": 68,
+      "baseDexterity": 20,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 500,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "168",
+    "max_damage": "176",
+    "drops": [
+      {
+        "item": "EternalHunger",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "ElixirOfLearning",
+        "qty": 1,
+        "weight": 20
+      },
+      {
+        "item": "PotionOfMagicDefense",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Treant",
+    "parent": "Enemy",
+    "sprite": "unit_treant",
+    "name_key": "enemy_treant_name",
+    "description_key": "enemy_treant_description",
+    "name": "Treant",
+    "description": "These living trees of medium dimensions used to be kind and caring towards wild creatures and travelers alike.",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 10,
+      "baseIntelligence": 5,
+      "baseDexterity": 6,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 24,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "6",
+    "max_damage": "9",
+    "drops": [
+      {
+        "item": "Wood",
+        "qty": 1,
+        "weight": 599
+      },
+      {
+        "item": "PlantFiber",
+        "qty": 1,
+        "weight": 345
+      },
+      {
+        "item": "LivingSap",
+        "qty": 1,
+        "weight": 5
+      },
+      {
+        "item": "Tomato",
+        "qty": 1,
+        "weight": 12
+      },
+      {
+        "item": "WoodenEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Troll",
+    "parent": "Enemy",
+    "sprite": "unit_troll",
+    "name_key": "enemy_troll_name",
+    "description_key": "enemy_troll_description",
+    "name": "Troll",
+    "description": "The very existence of these creatures baffled lore experts from around the Realms for centuries. They live in small sized tribes and conduct a primitive lifestyle based mainly on hunting. Their natural strength is unparalleled, and killing even one of them is a difficult feat.",
+    "stats": {
+      "baseMaxHp": 600,
+      "baseConstitution": 30,
+      "baseIntelligence": 2,
+      "baseDexterity": 8,
+      "baseDefense": 117,
+      "baseMagicDefense": 0,
+      "regeneration": 30
+    },
+    "exp_given": 68,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "48",
+    "max_damage": "62",
+    "drops": [
+      {
+        "item": "TrollHide",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "Winterwood",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "IceFiber",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "Blueberry",
+        "qty": 1,
+        "weight": 25
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TrollShaman",
+    "parent": "Enemy",
+    "sprite": "unit_troll_shaman",
+    "name_key": "enemy_troll_shaman_name",
+    "description_key": "enemy_troll_shaman_description",
+    "name": "Troll Shaman",
+    "description": "\"These trolls manifest some kind of healing power, different from the traditional white magic used by clerics but very effective in keeping their peers alive. Along with the troll's natural regenerative capabilities, killing a troll while they are alive is a difficult task.\"",
+    "stats": {
+      "baseMaxHp": 540,
+      "baseConstitution": 10,
+      "baseIntelligence": 2,
+      "baseDexterity": 4,
+      "baseDefense": 40,
+      "baseMagicDefense": 30,
+      "regeneration": 20
+    },
+    "exp_given": "Logger.SUMMON_SMOLDERING_TITAN",
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "73",
+    "max_damage": "77",
+    "drops": [
+      {
+        "item": "TrollHide",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "Winterwood",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "FrostmetalOre",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "IceFiber",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "Blueberry",
+        "qty": 1,
+        "weight": 40
+      },
+      {
+        "item": "PotionOfHealth",
+        "qty": 1,
+        "weight": 4
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TrollWarrior",
+    "parent": "Enemy",
+    "sprite": "unit_troll_warrior",
+    "name_key": "enemy_troll_warrior_name",
+    "description_key": "enemy_troll_warrior_description",
+    "name": "Troll Warrior",
+    "description": "\"In the hierarchy of trolls, these individuals are assigned to the protection of the troll's hunting grounds from external forces. They are usually the strongest trolls of the pack, wielding a huge hammer as a weapon and striking fear into the hearts of explorers unlucky enough to have a close encounter with them\"",
+    "stats": {
+      "baseMaxHp": 820,
+      "baseConstitution": 30,
+      "baseIntelligence": 2,
+      "baseDexterity": 10,
+      "baseDefense": 117,
+      "baseMagicDefense": 0,
+      "regeneration": 30
+    },
+    "exp_given": "Logger.SUMMON_SMOLDERING_TITAN",
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "67",
+    "max_damage": "78",
+    "drops": [
+      {
+        "item": "TrollHide",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "FrostmetalOre",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "Blueberry",
+        "qty": 1,
+        "weight": 30
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TrollWhelp",
+    "parent": "Enemy",
+    "sprite": "unit_troll_whelp",
+    "name_key": "enemy_troll_whelp_name",
+    "description_key": "enemy_troll_whelp_description",
+    "name": "Troll Whelp",
+    "description": "\"A young troll, not as dangerous as it's older peers, but already presents the defining features of their species, such as enhanced regeneration and a very hard skin.\"",
+    "stats": {
+      "baseMaxHp": 470,
+      "baseConstitution": 20,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 50,
+      "baseMagicDefense": 0,
+      "regeneration": 15
+    },
+    "exp_given": 60,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "42",
+    "max_damage": "48",
+    "drops": [
+      {
+        "item": "TrollHide",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "Blueberry",
+        "qty": 1,
+        "weight": 15
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TutorialWolf",
+    "parent": "Enemy",
+    "sprite": "unit_wolf",
+    "name_key": "enemy_wolf_name",
+    "description_key": "enemy_wolf_description",
+    "name": "Wolf",
+    "description": "A wild wolf living in the forest. They can hunt alone or in packs.",
+    "stats": {
+      "baseMaxHp": 45,
+      "baseConstitution": 8,
+      "baseIntelligence": 2,
+      "baseDexterity": 5,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 12,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "2",
+    "max_damage": "5",
+    "drops": [
+      {
+        "item": "BeastPelt",
+        "qty": 2,
+        "weight": 1000
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Ultraslime",
+    "parent": "Enemy",
+    "sprite": "unit_ultraslime",
+    "name_key": "enemy_ultraslime_name",
+    "description_key": "enemy_ultraslime_description",
+    "name": "Ultraslime",
+    "description": "An endless figure that entirely occupies the immense chamber. Housing this monstrosity must alone be the reason of the sheer size of this tower.",
+    "stats": {
+      "baseMaxHp": 99999,
+      "baseConstitution": 1000,
+      "baseIntelligence": 100,
+      "baseDexterity": 125,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 1.0
+    },
+    "exp_given": 99999,
+    "rarity": 1,
+    "is_boss": true,
+    "min_damage": "920",
+    "max_damage": "1860",
+    "drops": [
+      {
+        "item": "WhiteSlime",
+        "qty": 1,
+        "weight": 500
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Undead",
+    "parent": "Enemy",
+    "sprite": "unit_undead",
+    "name_key": "enemy_undead_name",
+    "description_key": "enemy_undead_description",
+    "name": "Undead",
+    "description": "The corpse of a fallen infantry soldier, reanimated by the corruption. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 160,
+      "baseConstitution": 16,
+      "baseIntelligence": 1,
+      "baseDexterity": 5,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 20,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "8",
+    "max_damage": "11",
+    "drops": [
+      {
+        "item": "BoneFragment",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "SharpRib",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "UndeadArcher",
+    "parent": "Enemy",
+    "sprite": "unit_undead_archer",
+    "name_key": "enemy_undead_archer_name",
+    "description_key": "enemy_undead_archer_description",
+    "name": "Undead Archer",
+    "description": "The corpse of a fallen archer, reanimated by the corruption. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": "Logger.BARD_SHIELD",
+      "baseConstitution": 5,
+      "baseIntelligence": 1,
+      "baseDexterity": 8,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 20,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "11",
+    "max_damage": "14",
+    "drops": [
+      {
+        "item": "BoneFragment",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "SharpRib",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "UndeadGeneral",
+    "parent": "Enemy",
+    "sprite": "unit_undead_general",
+    "name_key": "enemy_undead_general_name",
+    "description_key": "enemy_undead_general_description",
+    "name": "Undead General",
+    "description": "A reanimated high-rank General of the Imperial Army. During their life they were an exceptionally gifted soldier, deciding the outcome of key battles and leading hundreds of soldiers. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 600,
+      "baseConstitution": 35,
+      "baseIntelligence": 16,
+      "baseDexterity": 24,
+      "baseDefense": 50,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 240,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "60",
+    "max_damage": "90",
+    "drops": [
+      {
+        "item": "BoneFragment",
+        "qty": 5,
+        "weight": 570
+      },
+      {
+        "item": "CursedSilver",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "PotionOfViciousness",
+        "qty": 1,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "UndeadWarlord",
+    "parent": "Enemy",
+    "sprite": "unit_undead_warlord",
+    "name_key": "enemy_undead_warlord_name",
+    "description_key": "enemy_undead_warlord_description",
+    "name": "Undead Warlord",
+    "description": "This undead was likely a skilled commander, visibly stronger than the normal undead and clad in a spiked armor that hurts attackers. It feels no pain, so physical damage is less effective.",
+    "stats": {
+      "baseMaxHp": 220,
+      "baseConstitution": 24,
+      "baseIntelligence": 1,
+      "baseDexterity": 12,
+      "baseDefense": 50,
+      "baseMagicDefense": 0,
+      "retaliationPhysicalDamage": 12
+    },
+    "exp_given": 84,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "12",
+    "max_damage": "16",
+    "drops": [
+      {
+        "item": "WarlordSkull",
+        "qty": 2,
+        "weight": 10
+      },
+      {
+        "item": "BoneFragment",
+        "qty": 1,
+        "weight": 960
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "VampireBat",
+    "parent": "Enemy",
+    "sprite": "unit_vampire_bat",
+    "name_key": "enemy_vampire_bat_name",
+    "description_key": "enemy_vampire_bat_description",
+    "name": "Vampire Bat",
+    "description": "An extremely agile creature, it flies above its preys striking at the first opportunity, drawing their blood to restore its energy.",
+    "stats": {
+      "baseMaxHp": 350,
+      "baseConstitution": 2,
+      "baseIntelligence": 2,
+      "baseDexterity": 65,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "baseLifesteal": 100
+    },
+    "exp_given": 58,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "28",
+    "max_damage": "52",
+    "drops": [
+      {
+        "item": "BatWing",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "BatTooth",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "AvianEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "VoidSlime",
+    "parent": "Enemy",
+    "sprite": "unit_void_slime",
+    "name_key": "enemy_void_slime_name",
+    "description_key": "enemy_void_slime_description",
+    "name": "Void Slime",
+    "description": "\"A very unusual slime, with the texture of a starry night. It corrodes every surface in its trail, suggesting a conflict between its matter composition and the surrounding world's one.\"",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 40,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 40,
+      "baseMagicDefense": 0,
+      "retaliationMagicalDamage": 33
+    },
+    "exp_given": 60,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "33",
+    "max_damage": "33",
+    "drops": [
+      {
+        "item": "GreenSlime",
+        "qty": 1,
+        "weight": 650
+      },
+      {
+        "item": "GreenSlime",
+        "qty": 3,
+        "weight": 100
+      },
+      {
+        "item": "VoidCore",
+        "qty": 1,
+        "weight": 160
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "WickedTribute",
+    "parent": "Enemy",
+    "sprite": "unit_wicked_tribute",
+    "name_key": "enemy_wicked_tribute_name",
+    "description_key": "enemy_wicked_tribute_description",
+    "name": "Wicked Tribute",
+    "description": "A mysterious being from another world, brought into the fold as a result of Laroxians seeking unconventional alliances to bolster their ranks. The cost of its allegiance demands a sacrifice of untold proportions.",
+    "stats": {
+      "baseMaxHp": 100,
+      "baseConstitution": 2,
+      "baseIntelligence": 400,
+      "baseDexterity": 32,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 850,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "1",
+    "max_damage": "1",
+    "drops": [
+      {
+        "item": "WickedSeal",
+        "qty": 1,
+        "weight": 3
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "WillOWisp",
+    "parent": "Enemy",
+    "sprite": "unit_will_o_wisp",
+    "name_key": "enemy_will_o_wisp_name",
+    "description_key": "enemy_will_o_wisp_description",
+    "name": "\"Will o' Wisp\"",
+    "description": "This incorporeal spirit is rarely spotted in large battlefields or cemeteries. There were never reports of them being aggressive towards the living. Completely ignores physical damage.",
+    "stats": {
+      "baseMaxHp": 90,
+      "baseConstitution": 8,
+      "baseIntelligence": 15,
+      "baseDexterity": 20,
+      "baseDefense": 100,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 38,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "10",
+    "max_damage": "13",
+    "drops": [
+      {
+        "item": "SpiritTome",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "SpiritCandle",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "SpectralCloth",
+        "qty": 1,
+        "weight": 700
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "WingedRay",
+    "parent": "Enemy",
+    "sprite": "winged_ray",
+    "name_key": "enemy_winged_ray_name",
+    "description_key": "enemy_winged_ray_description",
+    "name": "Winged Ray",
+    "description": "A gliding ray that skims above the water — only ranged or flying attacks can land.",
+    "stats": {
+      "baseMaxHp": 45,
+      "baseConstitution": 12,
+      "baseIntelligence": 5,
+      "baseDexterity": 160,
+      "baseDefense": 5,
+      "baseMagicDefense": 5
+    },
+    "exp_given": 20,
+    "rarity": 0,
+    "is_boss": false,
+    "min_damage": "2",
+    "max_damage": "3",
+    "drops": [
+      {
+        "item": "WingedRay",
+        "qty": 1,
+        "weight": 650
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "WizardOfLarox",
+    "parent": "Enemy",
+    "sprite": "unit_wizard_of_larox",
+    "name_key": "enemy_wizard_of_larox_name",
+    "description_key": "enemy_wizard_of_larox_description",
+    "name": "Wizard of Larox",
+    "description": "A gifted mage, made even more powerful through the endless knowledge of the Laroxians.",
+    "stats": {
+      "baseMaxHp": 750,
+      "baseConstitution": 8,
+      "baseIntelligence": 172,
+      "baseDexterity": 46,
+      "baseDefense": 0,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 200,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "165",
+    "max_damage": "180",
+    "drops": [
+      {
+        "item": "LaroxianFabric",
+        "qty": 1,
+        "weight": 225
+      },
+      {
+        "item": "Pumpkin",
+        "qty": 1,
+        "weight": 35
+      },
+      {
+        "item": "SpellCompendium",
+        "qty": 1,
+        "weight": 2
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Wolf",
+    "parent": "Enemy",
+    "sprite": "unit_wolf",
+    "name_key": "enemy_wolf_name",
+    "description_key": "enemy_wolf_description",
+    "name": "Wolf",
+    "description": "A wild wolf living in the forest. They can hunt alone or in packs.",
+    "stats": {
+      "baseMaxHp": 60,
+      "baseConstitution": 8,
+      "baseIntelligence": 2,
+      "baseDexterity": 7,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 12,
+    "rarity": 1,
+    "is_boss": false,
+    "min_damage": "2",
+    "max_damage": "6",
+    "drops": [
+      {
+        "item": "BeastPelt",
+        "qty": 1,
+        "weight": 700
+      },
+      {
+        "item": "AlphaWolfFang",
+        "qty": 1,
+        "weight": 80
+      },
+      {
+        "item": "WerewolfFang",
+        "qty": 1,
+        "weight": 2
+      },
+      {
+        "item": "WildEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "Wurm",
+    "parent": "Enemy",
+    "sprite": "unit_wurm",
+    "name_key": "enemy_wurm_name",
+    "description_key": "enemy_wurm_description",
+    "name": "Wurm",
+    "description": "Worm-like creatures with razor sharp teeth that dwell in the desert. They usually attack from below, and can draw energy from the flesh of their preys.",
+    "stats": {
+      "baseMaxHp": 160,
+      "baseConstitution": 16,
+      "baseIntelligence": 2,
+      "baseDexterity": 6,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "baseLifesteal": 100
+    },
+    "exp_given": 14,
+    "rarity": null,
+    "is_boss": false,
+    "min_damage": "8",
+    "max_damage": "16",
+    "drops": [
+      {
+        "item": "WurmScale",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "WurmBlood",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "InsectEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  }
+]

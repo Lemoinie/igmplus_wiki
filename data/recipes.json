@@ -1,0 +1,4800 @@
+[
+  {
+    "key": "Cloth",
+    "output_item": "Cloth",
+    "ingredients": [
+      {
+        "item": "PlantFiber",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "Leather",
+    "output_item": "Leather",
+    "ingredients": [
+      {
+        "item": "BeastPelt",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CopperIngot",
+    "output_item": "CopperIngot",
+    "ingredients": [
+      {
+        "item": "CopperOre",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "TuskNecklace",
+    "output_item": "TuskNecklace",
+    "ingredients": [
+      {
+        "item": "BoarTusk",
+        "qty": 4
+      },
+      {
+        "item": "PlantFiber",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "LeatherJacket",
+    "output_item": "LeatherJacket",
+    "ingredients": [
+      {
+        "item": "Leather",
+        "qty": 2
+      },
+      {
+        "item": "Cloth",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "FangDagger",
+    "output_item": "FangDagger",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 6
+      },
+      {
+        "item": "AlphaWolfFang",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "FullmoonDagger",
+    "output_item": "FullmoonDagger",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 6
+      },
+      {
+        "item": "WerewolfFang",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ClothRobe",
+    "output_item": "ClothRobe",
+    "ingredients": [
+      {
+        "item": "Cloth",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "EnchantedStaff",
+    "output_item": "EnchantedStaff",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 10
+      },
+      {
+        "item": "AncientSeed",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CopperSword",
+    "output_item": "CopperSword",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 3
+      },
+      {
+        "item": "CopperIngot",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CopperArmor",
+    "output_item": "CopperArmor",
+    "ingredients": [
+      {
+        "item": "Leather",
+        "qty": 1
+      },
+      {
+        "item": "CopperIngot",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "InfusedNecklace",
+    "output_item": "InfusedNecklace",
+    "ingredients": [
+      {
+        "item": "TuskNecklace",
+        "qty": 1
+      },
+      {
+        "item": "LivingSap",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WoodenBow",
+    "output_item": "WoodenBow",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 5
+      },
+      {
+        "item": "PlantFiber",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "LeatherBoots",
+    "output_item": "LeatherBoots",
+    "ingredients": [
+      {
+        "item": "Leather",
+        "qty": 2
+      },
+      {
+        "item": "Cloth",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "LeatherGloves",
+    "output_item": "LeatherGloves",
+    "ingredients": [
+      {
+        "item": "Leather",
+        "qty": 1
+      },
+      {
+        "item": "Cloth",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CopperHelmet",
+    "output_item": "CopperHelmet",
+    "ingredients": [
+      {
+        "item": "CopperIngot",
+        "qty": 2
+      },
+      {
+        "item": "Leather",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "WoodenBuckler",
+    "output_item": "WoodenBuckler",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "GhostRabbitCloak",
+    "output_item": "GhostRabbitCloak",
+    "ingredients": [
+      {
+        "item": "CottontailFur",
+        "qty": 4
+      },
+      {
+        "item": "SpectralCloth",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "CottontailJacket",
+    "output_item": "CottontailJacket",
+    "ingredients": [
+      {
+        "item": "CottontailFur",
+        "qty": 4
+      },
+      {
+        "item": "Leather",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "PatricianArmor",
+    "output_item": "PatricianArmor",
+    "ingredients": [
+      {
+        "item": "CottontailFur",
+        "qty": 4
+      },
+      {
+        "item": "GoldIngot",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "SageCloak",
+    "output_item": "SageCloak",
+    "ingredients": [
+      {
+        "item": "GhostRabbitCloak",
+        "qty": 1
+      },
+      {
+        "item": "InfusionOfWisdom",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SageJacket",
+    "output_item": "SageJacket",
+    "ingredients": [
+      {
+        "item": "CottontailJacket",
+        "qty": 1
+      },
+      {
+        "item": "InfusionOfWisdom",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SageArmor",
+    "output_item": "SageArmor",
+    "ingredients": [
+      {
+        "item": "PatricianArmor",
+        "qty": 1
+      },
+      {
+        "item": "InfusionOfWisdom",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "IronIngot",
+    "output_item": "IronIngot",
+    "ingredients": [
+      {
+        "item": "ScrapMetal",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "Glass",
+    "output_item": "Glass",
+    "ingredients": [
+      {
+        "item": "Sandstone",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "GlassKnife",
+    "output_item": "GlassKnife",
+    "ingredients": [
+      {
+        "item": "Glass",
+        "qty": 4
+      },
+      {
+        "item": "Quartz",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WurmscalesShield",
+    "output_item": "WurmscalesShield",
+    "ingredients": [
+      {
+        "item": "WurmScale",
+        "qty": 8
+      },
+      {
+        "item": "IronIngot",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "MetamorphicShield",
+    "output_item": "MetamorphicShield",
+    "ingredients": [
+      {
+        "item": "WurmscalesShield",
+        "qty": 1
+      },
+      {
+        "item": "MetamorphicSand",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "FeatherRobe",
+    "output_item": "FeatherRobe",
+    "ingredients": [
+      {
+        "item": "Feather",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "WurmscalesGloves",
+    "output_item": "WurmscalesGloves",
+    "ingredients": [
+      {
+        "item": "WurmScale",
+        "qty": 8
+      },
+      {
+        "item": "Feather",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "Scimitar",
+    "output_item": "Scimitar",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 12
+      },
+      {
+        "item": "IronIngot",
+        "qty": 2
+      },
+      {
+        "item": "RecurveBlade",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "LivingScimitar",
+    "output_item": "LivingScimitar",
+    "ingredients": [
+      {
+        "item": "Scimitar",
+        "qty": 1
+      },
+      {
+        "item": "BottledSandSpirit",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "DjinnTonic",
+    "output_item": "DjinnTonic",
+    "ingredients": [
+      {
+        "item": "Glass",
+        "qty": 5
+      },
+      {
+        "item": "IronIngot",
+        "qty": 1
+      },
+      {
+        "item": "BottledSandSpirit",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ShahuriBow",
+    "output_item": "ShahuriBow",
+    "ingredients": [
+      {
+        "item": "ShahuriBowFrame",
+        "qty": 1
+      },
+      {
+        "item": "PlantFiber",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "IronChainmail",
+    "output_item": "IronChainmail",
+    "ingredients": [
+      {
+        "item": "WurmScale",
+        "qty": 9
+      },
+      {
+        "item": "IronIngot",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "WurmscalesJacket",
+    "output_item": "WurmscalesJacket",
+    "ingredients": [
+      {
+        "item": "WurmScale",
+        "qty": 18
+      },
+      {
+        "item": "Feather",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "WurmscalesBoots",
+    "output_item": "WurmscalesBoots",
+    "ingredients": [
+      {
+        "item": "WurmScale",
+        "qty": 12
+      },
+      {
+        "item": "Feather",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "IronHelm",
+    "output_item": "IronHelm",
+    "ingredients": [
+      {
+        "item": "IronIngot",
+        "qty": 4
+      },
+      {
+        "item": "Leather",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "MoltenStaff",
+    "output_item": "MoltenStaff",
+    "ingredients": [
+      {
+        "item": "Glass",
+        "qty": 5
+      },
+      {
+        "item": "IronIngot",
+        "qty": 10
+      },
+      {
+        "item": "SunfireCore",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "ContainmentOrb",
+    "output_item": "ContainmentOrb",
+    "ingredients": [
+      {
+        "item": "Glass",
+        "qty": 5
+      },
+      {
+        "item": "SoulShard",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UndeadGreaves",
+    "output_item": "UndeadGreaves",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 20
+      },
+      {
+        "item": "SpectralCloth",
+        "qty": 3
+      },
+      {
+        "item": "ElongatedBone",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "UndeadHelm",
+    "output_item": "UndeadHelm",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 20
+      },
+      {
+        "item": "TatteredHide",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "UndeadGloves",
+    "output_item": "UndeadGloves",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 14
+      },
+      {
+        "item": "SpectralCloth",
+        "qty": 4
+      },
+      {
+        "item": "SharpRib",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "UndeadStaff",
+    "output_item": "UndeadStaff",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 30
+      },
+      {
+        "item": "ElongatedBone",
+        "qty": 1
+      },
+      {
+        "item": "WarlordSkull",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UndeadShield",
+    "output_item": "UndeadShield",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 10
+      },
+      {
+        "item": "IronIngot",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "UndeadSword",
+    "output_item": "UndeadSword",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 30
+      },
+      {
+        "item": "ElongatedBone",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UndeadJacket",
+    "output_item": "UndeadJacket",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 24
+      },
+      {
+        "item": "TatteredHide",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "UndeadCuirass",
+    "output_item": "UndeadCuirass",
+    "ingredients": [
+      {
+        "item": "TatteredHide",
+        "qty": 12
+      },
+      {
+        "item": "BoneFragment",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "GhastlyCuirass",
+    "output_item": "GhastlyCuirass",
+    "ingredients": [
+      {
+        "item": "TatteredHide",
+        "qty": 12
+      },
+      {
+        "item": "BoneFragment",
+        "qty": 1000
+      },
+      {
+        "item": "OrbOfEctoplasm",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "GhastlyScimitar",
+    "output_item": "GhastlyScimitar",
+    "ingredients": [
+      {
+        "item": "LivingScimitar",
+        "qty": 1
+      },
+      {
+        "item": "OrbOfEctoplasm",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "GhastlyShield",
+    "output_item": "GhastlyShield",
+    "ingredients": [
+      {
+        "item": "UndeadShield",
+        "qty": 1
+      },
+      {
+        "item": "OrbOfEctoplasm",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UndeadKnife",
+    "output_item": "UndeadKnife",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 30
+      },
+      {
+        "item": "SharpRib",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SkullCandle",
+    "output_item": "SkullCandle",
+    "ingredients": [
+      {
+        "item": "WarlordSkull",
+        "qty": 1
+      },
+      {
+        "item": "SpiritCandle",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ThaumaturgicBlood",
+    "output_item": "ThaumaturgicBlood",
+    "ingredients": [
+      {
+        "item": "InfectedBlood",
+        "qty": 3
+      },
+      {
+        "item": "AncientSeed",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "BurningCenser",
+    "output_item": "BurningCenser",
+    "ingredients": [
+      {
+        "item": "IronIngot",
+        "qty": 8
+      },
+      {
+        "item": "SkullCandle",
+        "qty": 1
+      },
+      {
+        "item": "ThaumaturgicBlood",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "SpectralRobe",
+    "output_item": "SpectralRobe",
+    "ingredients": [
+      {
+        "item": "SpectralCloth",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "AscendedBow",
+    "output_item": "AscendedBow",
+    "ingredients": [
+      {
+        "item": "ShahuriBow",
+        "qty": 1
+      },
+      {
+        "item": "StaticCore",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "SinisterStabilizer",
+    "output_item": "SinisterStabilizer",
+    "ingredients": [
+      {
+        "item": "HolyWater",
+        "qty": 5
+      },
+      {
+        "item": "OrbOfEctoplasm",
+        "qty": 3
+      },
+      {
+        "item": "PrimordialEssence",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "RedwoodBow",
+    "output_item": "RedwoodBow",
+    "ingredients": [
+      {
+        "item": "Redwood",
+        "qty": 40
+      },
+      {
+        "item": "SilkThread",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CrimsonLeech",
+    "output_item": "CrimsonLeech",
+    "ingredients": [
+      {
+        "item": "Redwood",
+        "qty": 48
+      },
+      {
+        "item": "Ruby",
+        "qty": 4
+      },
+      {
+        "item": "EssenceOfCorruption",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SilkFabric",
+    "output_item": "SilkFabric",
+    "ingredients": [
+      {
+        "item": "SilkThread",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "SilkRobe",
+    "output_item": "SilkRobe",
+    "ingredients": [
+      {
+        "item": "SilkFabric",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "RubyRing",
+    "output_item": "RubyRing",
+    "ingredients": [
+      {
+        "item": "SilverRing",
+        "qty": 1
+      },
+      {
+        "item": "Ruby",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "EmeraldRing",
+    "output_item": "EmeraldRing",
+    "ingredients": [
+      {
+        "item": "SilverRing",
+        "qty": 1
+      },
+      {
+        "item": "Emerald",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "BeltJacket",
+    "output_item": "BeltJacket",
+    "ingredients": [
+      {
+        "item": "WardenBelt",
+        "qty": 16
+      },
+      {
+        "item": "SilkFabric",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "IvoryJacket",
+    "output_item": "IvoryJacket",
+    "ingredients": [
+      {
+        "item": "BeltJacket",
+        "qty": 1
+      },
+      {
+        "item": "Ivory",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "GoldIngot",
+    "output_item": "GoldIngot",
+    "ingredients": [
+      {
+        "item": "GoldScraps",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "EssenceOfCorruption",
+    "output_item": "EssenceOfCorruption",
+    "ingredients": [
+      {
+        "item": "BlackOoze",
+        "qty": 30
+      },
+      {
+        "item": "PrimordialEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CleansingPotion",
+    "output_item": "CleansingPotion",
+    "ingredients": [
+      {
+        "item": "EssenceOfCorruption",
+        "qty": 1
+      },
+      {
+        "item": "HolyWater",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ImperialShield",
+    "output_item": "ImperialShield",
+    "ingredients": [
+      {
+        "item": "CorruptedShield",
+        "qty": 1
+      },
+      {
+        "item": "CleansingPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ImperialStaff",
+    "output_item": "ImperialStaff",
+    "ingredients": [
+      {
+        "item": "CorruptedStaff",
+        "qty": 1
+      },
+      {
+        "item": "CleansingPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ArcaneDagger",
+    "output_item": "ArcaneDagger",
+    "ingredients": [
+      {
+        "item": "CorruptedDagger",
+        "qty": 1
+      },
+      {
+        "item": "CleansingPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "GoldenArmor",
+    "output_item": "GoldenArmor",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "MetamorphicArmor",
+    "output_item": "MetamorphicArmor",
+    "ingredients": [
+      {
+        "item": "GoldenArmor",
+        "qty": 1
+      },
+      {
+        "item": "MetamorphicSand",
+        "qty": "Logger.BARD_SHIELD"
+      }
+    ]
+  },
+  {
+    "key": "GoldenSword",
+    "output_item": "GoldenSword",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "GoldenBoots",
+    "output_item": "GoldenBoots",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 8
+      },
+      {
+        "item": "SilkFabric",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "GoldenGauntlets",
+    "output_item": "GoldenGauntlets",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 4
+      },
+      {
+        "item": "SilkFabric",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "GoldenHelm",
+    "output_item": "GoldenHelm",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 10
+      },
+      {
+        "item": "SilkFabric",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "GoldenShield",
+    "output_item": "GoldenShield",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "JeweledCrown",
+    "output_item": "JeweledCrown",
+    "ingredients": [
+      {
+        "item": "GoldIngot",
+        "qty": 20
+      },
+      {
+        "item": "Ruby",
+        "qty": 10
+      },
+      {
+        "item": "Emerald",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "GhostwoodBoard",
+    "output_item": "GhostwoodBoard",
+    "ingredients": [
+      {
+        "item": "GhostwoodStump",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "BlackIronIngot",
+    "output_item": "BlackIronIngot",
+    "ingredients": [
+      {
+        "item": "BlackIronScraps",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "CorsairLeather",
+    "output_item": "CorsairLeather",
+    "ingredients": [
+      {
+        "item": "MonkeyHide",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "BlackIronArmor",
+    "output_item": "BlackIronArmor",
+    "ingredients": [
+      {
+        "item": "BlackIronIngot",
+        "qty": 18
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "ExoticRobe",
+    "output_item": "ExoticRobe",
+    "ingredients": [
+      {
+        "item": "ExoticVelvet",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "BlackIronHelm",
+    "output_item": "BlackIronHelm",
+    "ingredients": [
+      {
+        "item": "BlackIronIngot",
+        "qty": 12
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "ExoticBoots",
+    "output_item": "ExoticBoots",
+    "ingredients": [
+      {
+        "item": "ExoticVelvet",
+        "qty": 4
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "BlackIronGauntlets",
+    "output_item": "BlackIronGauntlets",
+    "ingredients": [
+      {
+        "item": "BlackIronIngot",
+        "qty": 10
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "GhostwoodShield",
+    "output_item": "GhostwoodShield",
+    "ingredients": [
+      {
+        "item": "GhostwoodBoard",
+        "qty": 10
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "BlackIronCutlass",
+    "output_item": "BlackIronCutlass",
+    "ingredients": [
+      {
+        "item": "GhostwoodBoard",
+        "qty": 5
+      },
+      {
+        "item": "BlackIronIngot",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "BlackIronScepter",
+    "output_item": "BlackIronScepter",
+    "ingredients": [
+      {
+        "item": "BlackIronIngot",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "BlackIronDagger",
+    "output_item": "BlackIronDagger",
+    "ingredients": [
+      {
+        "item": "GhostwoodBoard",
+        "qty": 2
+      },
+      {
+        "item": "BlackIronIngot",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "GhostwoodBow",
+    "output_item": "GhostwoodBow",
+    "ingredients": [
+      {
+        "item": "ExoticVelvet",
+        "qty": 1
+      },
+      {
+        "item": "GhostwoodBoard",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "AbyssalGoo",
+    "output_item": "AbyssalGoo",
+    "ingredients": [
+      {
+        "item": "AbyssalSeashell",
+        "qty": 30
+      },
+      {
+        "item": "MysteriousAppendage",
+        "qty": 24
+      },
+      {
+        "item": "EyeOfTheAbyss",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "AbyssalIngot",
+    "output_item": "AbyssalIngot",
+    "ingredients": [
+      {
+        "item": "AbyssalGoo",
+        "qty": 1
+      },
+      {
+        "item": "BlackIronIngot",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "DeepSeaVelvet",
+    "output_item": "DeepSeaVelvet",
+    "ingredients": [
+      {
+        "item": "AbyssalGoo",
+        "qty": 1
+      },
+      {
+        "item": "ExoticVelvet",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "DeepSeaRobe",
+    "output_item": "DeepSeaRobe",
+    "ingredients": [
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "DeepSeaJacket",
+    "output_item": "DeepSeaJacket",
+    "ingredients": [
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 2
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 8
+      },
+      {
+        "item": "AbyssalSeashell",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "MonkeyHideJacket",
+    "output_item": "MonkeyHideJacket",
+    "ingredients": [
+      {
+        "item": "ExoticVelvet",
+        "qty": 10
+      },
+      {
+        "item": "CorsairLeather",
+        "qty": 8
+      },
+      {
+        "item": "AbyssalSeashell",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "AbyssalCutlass",
+    "output_item": "AbyssalCutlass",
+    "ingredients": [
+      {
+        "item": "GhostwoodBoard",
+        "qty": 5
+      },
+      {
+        "item": "AbyssalIngot",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CrushingDepth",
+    "output_item": "CrushingDepth",
+    "ingredients": [
+      {
+        "item": "AscendedBow",
+        "qty": 1
+      },
+      {
+        "item": "StaticEssence",
+        "qty": 1
+      },
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "AbyssalCompendium",
+    "output_item": "AbyssalCompendium",
+    "ingredients": [
+      {
+        "item": "MissingPage",
+        "qty": 50
+      }
+    ]
+  },
+  {
+    "key": "PirateKingTricorn",
+    "output_item": "PirateKingTricorn",
+    "ingredients": [
+      {
+        "item": "ExoticVelvet",
+        "qty": 20
+      },
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "Wintercloth",
+    "output_item": "Wintercloth",
+    "ingredients": [
+      {
+        "item": "IceFiber",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "FrostmetalIngot",
+    "output_item": "FrostmetalIngot",
+    "ingredients": [
+      {
+        "item": "FrostmetalOre",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "FrostmetalSword",
+    "output_item": "FrostmetalSword",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 6
+      },
+      {
+        "item": "FrostmetalIngot",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "WinterwoodBow",
+    "output_item": "WinterwoodBow",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 60
+      },
+      {
+        "item": "IceFiber",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WinterwoodStaff",
+    "output_item": "WinterwoodStaff",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 50
+      },
+      {
+        "item": "FrostCrystal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "FrostmetalDagger",
+    "output_item": "FrostmetalDagger",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 4
+      },
+      {
+        "item": "FrostmetalIngot",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "WinterCape",
+    "output_item": "WinterCape",
+    "ingredients": [
+      {
+        "item": "Wintercloth",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "TrollskinJacket",
+    "output_item": "TrollskinJacket",
+    "ingredients": [
+      {
+        "item": "TrollHide",
+        "qty": 48
+      },
+      {
+        "item": "Wintercloth",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "FrostmetalArmor",
+    "output_item": "FrostmetalArmor",
+    "ingredients": [
+      {
+        "item": "TrollHide",
+        "qty": 24
+      },
+      {
+        "item": "FrostmetalIngot",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "WinterBoots",
+    "output_item": "WinterBoots",
+    "ingredients": [
+      {
+        "item": "TrollHide",
+        "qty": 32
+      },
+      {
+        "item": "Wintercloth",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "WinterGloves",
+    "output_item": "WinterGloves",
+    "ingredients": [
+      {
+        "item": "TrollHide",
+        "qty": 16
+      },
+      {
+        "item": "Wintercloth",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "WinterHelm",
+    "output_item": "WinterHelm",
+    "ingredients": [
+      {
+        "item": "FrostmetalIngot",
+        "qty": 10
+      },
+      {
+        "item": "Wintercloth",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "WinterShield",
+    "output_item": "WinterShield",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 40
+      },
+      {
+        "item": "FrostmetalIngot",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "CrystalStaff",
+    "output_item": "CrystalStaff",
+    "ingredients": [
+      {
+        "item": "FrostCrystal",
+        "qty": 10
+      },
+      {
+        "item": "FrostNucleus",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CrystalDagger",
+    "output_item": "CrystalDagger",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 4
+      },
+      {
+        "item": "FrostCrystal",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "CeremonialDagger",
+    "output_item": "CeremonialDagger",
+    "ingredients": [
+      {
+        "item": "FrostmetalIngot",
+        "qty": 16
+      },
+      {
+        "item": "FrozenScale",
+        "qty": 8
+      },
+      {
+        "item": "FrostNucleus",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "FrozenEggPendant",
+    "output_item": "FrozenEggPendant",
+    "ingredients": [
+      {
+        "item": "IceFiber",
+        "qty": 1
+      },
+      {
+        "item": "FrozenScale",
+        "qty": 4
+      },
+      {
+        "item": "FrozenEgg",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "IceCage",
+    "output_item": "IceCage",
+    "ingredients": [
+      {
+        "item": "FrozenEmbrace",
+        "qty": 1
+      },
+      {
+        "item": "FrozenEgg",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WyvernCape",
+    "output_item": "WyvernCape",
+    "ingredients": [
+      {
+        "item": "FrozenScale",
+        "qty": 6
+      },
+      {
+        "item": "Wintercloth",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "NightwingLeather",
+    "output_item": "NightwingLeather",
+    "ingredients": [
+      {
+        "item": "BatWing",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "SpiderSilk",
+    "output_item": "SpiderSilk",
+    "ingredients": [
+      {
+        "item": "CobwebBundle",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "CrimsonBrew",
+    "output_item": "CrimsonBrew",
+    "ingredients": [
+      {
+        "item": "BatTooth",
+        "qty": 28
+      },
+      {
+        "item": "SpiderLeg",
+        "qty": 28
+      },
+      {
+        "item": "EldritchTendril",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "ShadowPotion",
+    "output_item": "ShadowPotion",
+    "ingredients": [
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      },
+      {
+        "item": "ShadowGem",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UnholyPotion",
+    "output_item": "UnholyPotion",
+    "ingredients": [
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      },
+      {
+        "item": "VoodooDoll",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "InfusionOfWisdom",
+    "output_item": "InfusionOfWisdom",
+    "ingredients": [
+      {
+        "item": "ElixirOfLearning",
+        "qty": 1
+      },
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      },
+      {
+        "item": "SinisterStabilizer",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SpiderGloves",
+    "output_item": "SpiderGloves",
+    "ingredients": [
+      {
+        "item": "SpiderSilk",
+        "qty": 10
+      },
+      {
+        "item": "NightwingLeather",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "SpiderBoots",
+    "output_item": "SpiderBoots",
+    "ingredients": [
+      {
+        "item": "SpiderSilk",
+        "qty": 6
+      },
+      {
+        "item": "NightwingLeather",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "ObsidianHelm",
+    "output_item": "ObsidianHelm",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 48
+      },
+      {
+        "item": "SpiderSilk",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "ObsidianShield",
+    "output_item": "ObsidianShield",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 56
+      }
+    ]
+  },
+  {
+    "key": "SpiderRobe",
+    "output_item": "SpiderRobe",
+    "ingredients": [
+      {
+        "item": "SpiderSilk",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "NightwingJacket",
+    "output_item": "NightwingJacket",
+    "ingredients": [
+      {
+        "item": "SpiderSilk",
+        "qty": 6
+      },
+      {
+        "item": "NightwingLeather",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "ObsidianCuirass",
+    "output_item": "ObsidianCuirass",
+    "ingredients": [
+      {
+        "item": "NightwingLeather",
+        "qty": 5
+      },
+      {
+        "item": "ObsidianChunk",
+        "qty": 75
+      }
+    ]
+  },
+  {
+    "key": "ObsidianSword",
+    "output_item": "ObsidianSword",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 72
+      }
+    ]
+  },
+  {
+    "key": "ObsidianDagger",
+    "output_item": "ObsidianDagger",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 68
+      }
+    ]
+  },
+  {
+    "key": "ObsidianBow",
+    "output_item": "ObsidianBow",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 62
+      },
+      {
+        "item": "SpiderSilk",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "ObsidianScepter",
+    "output_item": "ObsidianScepter",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 72
+      }
+    ]
+  },
+  {
+    "key": "VampireSword",
+    "output_item": "VampireSword",
+    "ingredients": [
+      {
+        "item": "ObsidianSword",
+        "qty": 1
+      },
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VampireDagger",
+    "output_item": "VampireDagger",
+    "ingredients": [
+      {
+        "item": "ObsidianDagger",
+        "qty": 1
+      },
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VampireBow",
+    "output_item": "VampireBow",
+    "ingredients": [
+      {
+        "item": "ObsidianBow",
+        "qty": 1
+      },
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VampireScepter",
+    "output_item": "VampireScepter",
+    "ingredients": [
+      {
+        "item": "ObsidianScepter",
+        "qty": 1
+      },
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PanopticonStaff",
+    "output_item": "PanopticonStaff",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": "Logger.BARD_SHIELD"
+      },
+      {
+        "item": "LargeIris",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "ShadowBow",
+    "output_item": "ShadowBow",
+    "ingredients": [
+      {
+        "item": "ObsidianBow",
+        "qty": 1
+      },
+      {
+        "item": "ShadowPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ShadowDagger",
+    "output_item": "ShadowDagger",
+    "ingredients": [
+      {
+        "item": "ObsidianDagger",
+        "qty": 1
+      },
+      {
+        "item": "ShadowPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UnholyCuirass",
+    "output_item": "UnholyCuirass",
+    "ingredients": [
+      {
+        "item": "ObsidianCuirass",
+        "qty": 1
+      },
+      {
+        "item": "UnholyPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UnholySword",
+    "output_item": "UnholySword",
+    "ingredients": [
+      {
+        "item": "ObsidianSword",
+        "qty": 1
+      },
+      {
+        "item": "UnholyPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ShadowRing",
+    "output_item": "ShadowRing",
+    "ingredients": [
+      {
+        "item": "SilverRing",
+        "qty": 1
+      },
+      {
+        "item": "ShadowGem",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WingFabric",
+    "output_item": "WingFabric",
+    "ingredients": [
+      {
+        "item": "GiantMothWing",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "TortoiseArmor",
+    "output_item": "TortoiseArmor",
+    "ingredients": [
+      {
+        "item": "WingFabric",
+        "qty": 8
+      },
+      {
+        "item": "GiantShellFragment",
+        "qty": 92
+      }
+    ]
+  },
+  {
+    "key": "SpitfangJacket",
+    "output_item": "SpitfangJacket",
+    "ingredients": [
+      {
+        "item": "WingFabric",
+        "qty": 5
+      },
+      {
+        "item": "SpitfangScale",
+        "qty": 102
+      }
+    ]
+  },
+  {
+    "key": "MothRobe",
+    "output_item": "MothRobe",
+    "ingredients": [
+      {
+        "item": "WingFabric",
+        "qty": 29
+      }
+    ]
+  },
+  {
+    "key": "VerdantHelm",
+    "output_item": "VerdantHelm",
+    "ingredients": [
+      {
+        "item": "ElysianWood",
+        "qty": 84
+      },
+      {
+        "item": "GiantShellFragment",
+        "qty": 40
+      }
+    ]
+  },
+  {
+    "key": "TortoiseShield",
+    "output_item": "TortoiseShield",
+    "ingredients": [
+      {
+        "item": "GiantShellFragment",
+        "qty": 80
+      }
+    ]
+  },
+  {
+    "key": "VerdantBoots",
+    "output_item": "VerdantBoots",
+    "ingredients": [
+      {
+        "item": "WingFabric",
+        "qty": 5
+      },
+      {
+        "item": "ElysianWood",
+        "qty": "Logger.SUMMON_SMOLDERING_TITAN"
+      }
+    ]
+  },
+  {
+    "key": "VerdantGloves",
+    "output_item": "VerdantGloves",
+    "ingredients": [
+      {
+        "item": "WingFabric",
+        "qty": 8
+      },
+      {
+        "item": "ElysianWood",
+        "qty": 94
+      }
+    ]
+  },
+  {
+    "key": "FleetfootArmor",
+    "output_item": "FleetfootArmor",
+    "ingredients": [
+      {
+        "item": "TortoiseArmor",
+        "qty": 1
+      },
+      {
+        "item": "FleetfootFabric",
+        "qty": 38
+      }
+    ]
+  },
+  {
+    "key": "FleetfootJacket",
+    "output_item": "FleetfootJacket",
+    "ingredients": [
+      {
+        "item": "SpitfangJacket",
+        "qty": 1
+      },
+      {
+        "item": "FleetfootFabric",
+        "qty": 38
+      }
+    ]
+  },
+  {
+    "key": "FleetfootRobe",
+    "output_item": "FleetfootRobe",
+    "ingredients": [
+      {
+        "item": "MothRobe",
+        "qty": 1
+      },
+      {
+        "item": "FleetfootFabric",
+        "qty": 38
+      }
+    ]
+  },
+  {
+    "key": "FleetfootBoots",
+    "output_item": "FleetfootBoots",
+    "ingredients": [
+      {
+        "item": "VerdantBoots",
+        "qty": 1
+      },
+      {
+        "item": "FleetfootFabric",
+        "qty": 21
+      }
+    ]
+  },
+  {
+    "key": "FleetfootGloves",
+    "output_item": "FleetfootGloves",
+    "ingredients": [
+      {
+        "item": "VerdantGloves",
+        "qty": 1
+      },
+      {
+        "item": "FleetfootFabric",
+        "qty": 21
+      }
+    ]
+  },
+  {
+    "key": "PrimevalArmor",
+    "output_item": "PrimevalArmor",
+    "ingredients": [
+      {
+        "item": "PrimevalScale",
+        "qty": 8
+      },
+      {
+        "item": "WingFabric",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "BreathtakingRobe",
+    "output_item": "BreathtakingRobe",
+    "ingredients": [
+      {
+        "item": "MothRobe",
+        "qty": 1
+      },
+      {
+        "item": "BagOfChokingPowder",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "PrimevalShield",
+    "output_item": "PrimevalShield",
+    "ingredients": [
+      {
+        "item": "PrimevalScale",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "PrimevalHelm",
+    "output_item": "PrimevalHelm",
+    "ingredients": [
+      {
+        "item": "PrimevalScale",
+        "qty": 4
+      },
+      {
+        "item": "ElysianWood",
+        "qty": 160
+      }
+    ]
+  },
+  {
+    "key": "SpikedTortoiseShield",
+    "output_item": "SpikedTortoiseShield",
+    "ingredients": [
+      {
+        "item": "TortoiseShield",
+        "qty": 1
+      },
+      {
+        "item": "TortoiseThorn",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "SpikedPrimevalShield",
+    "output_item": "SpikedPrimevalShield",
+    "ingredients": [
+      {
+        "item": "PrimevalShield",
+        "qty": 1
+      },
+      {
+        "item": "TortoiseThorn",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "LivingWhip",
+    "output_item": "LivingWhip",
+    "ingredients": [
+      {
+        "item": "ElysianWood",
+        "qty": 36
+      },
+      {
+        "item": "LivingVine",
+        "qty": 12
+      },
+      {
+        "item": "WhiteHair",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "DryadsBlessing",
+    "output_item": "DryadsBlessing",
+    "ingredients": [
+      {
+        "item": "ElysianWood",
+        "qty": 200
+      },
+      {
+        "item": "WhiteHair",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VerdantBlade",
+    "output_item": "VerdantBlade",
+    "ingredients": [
+      {
+        "item": "ElysianWood",
+        "qty": 64
+      },
+      {
+        "item": "LongSerpentFang",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "DryadsCurse",
+    "output_item": "DryadsCurse",
+    "ingredients": [
+      {
+        "item": "VerdantBlade",
+        "qty": 1
+      },
+      {
+        "item": "WhiteHair",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VerdantBow",
+    "output_item": "VerdantBow",
+    "ingredients": [
+      {
+        "item": "ElysianWood",
+        "qty": 200
+      }
+    ]
+  },
+  {
+    "key": "ArmorOfTheDryad",
+    "output_item": "ArmorOfTheDryad",
+    "ingredients": [
+      {
+        "item": "TortoiseArmor",
+        "qty": 1
+      },
+      {
+        "item": "WhiteHair",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ElixirOfAffinity",
+    "output_item": "ElixirOfAffinity",
+    "ingredients": [
+      {
+        "item": "VoodooDoll",
+        "qty": 3
+      },
+      {
+        "item": "BansheeHorn",
+        "qty": 3
+      },
+      {
+        "item": "CharredHeart",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "ChainOfRedemption",
+    "output_item": "ChainOfRedemption",
+    "ingredients": [
+      {
+        "item": "ChainLink",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "CelestialMetal",
+    "output_item": "CelestialMetal",
+    "ingredients": [
+      {
+        "item": "CelestialScraps",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "CelestialArmor",
+    "output_item": "CelestialArmor",
+    "ingredients": [
+      {
+        "item": "CelestialMetal",
+        "qty": 45
+      },
+      {
+        "item": "ElasticMembrane",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "BansheeJacket",
+    "output_item": "BansheeJacket",
+    "ingredients": [
+      {
+        "item": "BansheeScale",
+        "qty": 148
+      }
+    ]
+  },
+  {
+    "key": "ElasticRobe",
+    "output_item": "ElasticRobe",
+    "ingredients": [
+      {
+        "item": "ElasticMembrane",
+        "qty": 148
+      }
+    ]
+  },
+  {
+    "key": "CelestialHelmet",
+    "output_item": "CelestialHelmet",
+    "ingredients": [
+      {
+        "item": "CelestialMetal",
+        "qty": 28
+      },
+      {
+        "item": "ElasticMembrane",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "CelestialShield",
+    "output_item": "CelestialShield",
+    "ingredients": [
+      {
+        "item": "CelestialMetal",
+        "qty": 35
+      }
+    ]
+  },
+  {
+    "key": "BansheeGloves",
+    "output_item": "BansheeGloves",
+    "ingredients": [
+      {
+        "item": "BansheeScale",
+        "qty": 104
+      }
+    ]
+  },
+  {
+    "key": "ElasticBoots",
+    "output_item": "ElasticBoots",
+    "ingredients": [
+      {
+        "item": "ElasticMembrane",
+        "qty": 104
+      }
+    ]
+  },
+  {
+    "key": "CloakOfRedemption",
+    "output_item": "CloakOfRedemption",
+    "ingredients": [
+      {
+        "item": "TunicaIgnis",
+        "qty": 1
+      },
+      {
+        "item": "ChainOfRedemption",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "TacticalHelmet",
+    "output_item": "TacticalHelmet",
+    "ingredients": [
+      {
+        "item": "CelestialHelmet",
+        "qty": 1
+      },
+      {
+        "item": "Scanner",
+        "qty": 1
+      },
+      {
+        "item": "Synapse",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "IgnitionOrb",
+    "output_item": "IgnitionOrb",
+    "ingredients": [
+      {
+        "item": "ContainmentOrb",
+        "qty": 1
+      },
+      {
+        "item": "AetherIgnis",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "FocusedScepter",
+    "output_item": "FocusedScepter",
+    "ingredients": [
+      {
+        "item": "CelestialMetal",
+        "qty": 43
+      },
+      {
+        "item": "FluxLimiter",
+        "qty": 1
+      },
+      {
+        "item": "Synapse",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "BansheeBow",
+    "output_item": "BansheeBow",
+    "ingredients": [
+      {
+        "item": "BansheeClaw",
+        "qty": 2
+      },
+      {
+        "item": "ElixirOfAffinity",
+        "qty": 1
+      },
+      {
+        "item": "ElasticMembrane",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "BansheeScream",
+    "output_item": "BansheeScream",
+    "ingredients": [
+      {
+        "item": "BansheeBow",
+        "qty": 1
+      },
+      {
+        "item": "FluxLimiter",
+        "qty": 1
+      },
+      {
+        "item": "Synapse",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CelestialSword",
+    "output_item": "CelestialSword",
+    "ingredients": [
+      {
+        "item": "CelestialMetal",
+        "qty": 43
+      }
+    ]
+  },
+  {
+    "key": "CelestialMercy",
+    "output_item": "CelestialMercy",
+    "ingredients": [
+      {
+        "item": "CelestialSword",
+        "qty": 1
+      },
+      {
+        "item": "AetherIgnis",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "BansheeDagger",
+    "output_item": "BansheeDagger",
+    "ingredients": [
+      {
+        "item": "BansheeScale",
+        "qty": "Logger.STATUS_FEEBLE_TETHER"
+      },
+      {
+        "item": "BansheeClaw",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SkinBlender",
+    "output_item": "SkinBlender",
+    "ingredients": [
+      {
+        "item": "BansheeGloves",
+        "qty": 1
+      },
+      {
+        "item": "BansheeClaw",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "ShortCircuit",
+    "output_item": "ShortCircuit",
+    "ingredients": [
+      {
+        "item": "ElasticMembrane",
+        "qty": 1
+      },
+      {
+        "item": "Synapse",
+        "qty": 6
+      },
+      {
+        "item": "Scanner",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "SpellwovenLeather",
+    "output_item": "SpellwovenLeather",
+    "ingredients": [
+      {
+        "item": "SpellwovenHide",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "AnimatedIngot",
+    "output_item": "AnimatedIngot",
+    "ingredients": [
+      {
+        "item": "AnimatedScraps",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "GemOfProtection",
+    "output_item": "GemOfProtection",
+    "ingredients": [
+      {
+        "item": "UnstableGem",
+        "qty": 1
+      },
+      {
+        "item": "VeilBreaker",
+        "qty": 1
+      },
+      {
+        "item": "RadiatingNucleus",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VeilShatterer",
+    "output_item": "VeilShatterer",
+    "ingredients": [
+      {
+        "item": "VeilBreaker",
+        "qty": 1
+      },
+      {
+        "item": "SpellCompendium",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SpellwovenJacket",
+    "output_item": "SpellwovenJacket",
+    "ingredients": [
+      {
+        "item": "SpellwovenLeather",
+        "qty": 79
+      },
+      {
+        "item": "LaroxianFabric",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "AnimatedCuirass",
+    "output_item": "AnimatedCuirass",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 56
+      }
+    ]
+  },
+  {
+    "key": "LaroxianRobe",
+    "output_item": "LaroxianRobe",
+    "ingredients": [
+      {
+        "item": "LaroxianFabric",
+        "qty": 168
+      }
+    ]
+  },
+  {
+    "key": "AnimatedSword",
+    "output_item": "AnimatedSword",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 47
+      }
+    ]
+  },
+  {
+    "key": "AnimatedStaff",
+    "output_item": "AnimatedStaff",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 47
+      }
+    ]
+  },
+  {
+    "key": "AnimatedDagger",
+    "output_item": "AnimatedDagger",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 45
+      }
+    ]
+  },
+  {
+    "key": "AnimatedBow",
+    "output_item": "AnimatedBow",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 47
+      },
+      {
+        "item": "LaroxianFabric",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "AnimatedHelm",
+    "output_item": "AnimatedHelm",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 30
+      },
+      {
+        "item": "LaroxianFabric",
+        "qty": 22
+      }
+    ]
+  },
+  {
+    "key": "AnimatedBuckler",
+    "output_item": "AnimatedBuckler",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 37
+      }
+    ]
+  },
+  {
+    "key": "LaroxianGloves",
+    "output_item": "LaroxianGloves",
+    "ingredients": [
+      {
+        "item": "LaroxianFabric",
+        "qty": 74
+      },
+      {
+        "item": "SpellwovenLeather",
+        "qty": 19
+      }
+    ]
+  },
+  {
+    "key": "LaroxianBoots",
+    "output_item": "LaroxianBoots",
+    "ingredients": [
+      {
+        "item": "LaroxianFabric",
+        "qty": 38
+      },
+      {
+        "item": "SpellwovenLeather",
+        "qty": 37
+      }
+    ]
+  },
+  {
+    "key": "UnstableStaff",
+    "output_item": "UnstableStaff",
+    "ingredients": [
+      {
+        "item": "AnimatedStaff",
+        "qty": 1
+      },
+      {
+        "item": "VeilBreaker",
+        "qty": 1
+      },
+      {
+        "item": "UnstableGem",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WickedScepter",
+    "output_item": "WickedScepter",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 47
+      },
+      {
+        "item": "VeilShatterer",
+        "qty": 1
+      },
+      {
+        "item": "WickedSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ShieldingCuirass",
+    "output_item": "ShieldingCuirass",
+    "ingredients": [
+      {
+        "item": "AnimatedCuirass",
+        "qty": 1
+      },
+      {
+        "item": "GemOfProtection",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ShieldingJacket",
+    "output_item": "ShieldingJacket",
+    "ingredients": [
+      {
+        "item": "SpellwovenJacket",
+        "qty": 1
+      },
+      {
+        "item": "GemOfProtection",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ShieldingHelm",
+    "output_item": "ShieldingHelm",
+    "ingredients": [
+      {
+        "item": "AnimatedHelm",
+        "qty": 1
+      },
+      {
+        "item": "GemOfProtection",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ReassemblingJacket",
+    "output_item": "ReassemblingJacket",
+    "ingredients": [
+      {
+        "item": "ShieldingJacket",
+        "qty": 1
+      },
+      {
+        "item": "VeilShatterer",
+        "qty": 1
+      },
+      {
+        "item": "RuneOfPower",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "RobeOfTheArchmage",
+    "output_item": "RobeOfTheArchmage",
+    "ingredients": [
+      {
+        "item": "LaroxianRobe",
+        "qty": 1
+      },
+      {
+        "item": "SpellCompendium",
+        "qty": 1
+      },
+      {
+        "item": "RuneOfPower",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "StaffOfTheArchmage",
+    "output_item": "StaffOfTheArchmage",
+    "ingredients": [
+      {
+        "item": "UnstableStaff",
+        "qty": 1
+      },
+      {
+        "item": "SpellCompendium",
+        "qty": 1
+      },
+      {
+        "item": "RuneOfPower",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UnholySpellcage",
+    "output_item": "UnholySpellcage",
+    "ingredients": [
+      {
+        "item": "UnholyCuirass",
+        "qty": 1
+      },
+      {
+        "item": "RuneOfPower",
+        "qty": 2
+      },
+      {
+        "item": "WickedSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PrehistoricMixture",
+    "output_item": "PrehistoricMixture",
+    "ingredients": [
+      {
+        "item": "PoisonousFlesh",
+        "qty": 3
+      },
+      {
+        "item": "PterodactylClaw",
+        "qty": 1
+      },
+      {
+        "item": "TerrorsaurusFang",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "AncientBoots",
+    "output_item": "AncientBoots",
+    "ingredients": [
+      {
+        "item": "AncientHide",
+        "qty": "Logger.STATUS_FEEBLE_TETHER"
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 45
+      }
+    ]
+  },
+  {
+    "key": "AncientGloves",
+    "output_item": "AncientGloves",
+    "ingredients": [
+      {
+        "item": "AncientHide",
+        "qty": 78
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 78
+      }
+    ]
+  },
+  {
+    "key": "MithrilHelm",
+    "output_item": "MithrilHelm",
+    "ingredients": [
+      {
+        "item": "Mithril",
+        "qty": "Logger.STATUS_FEEBLE_TETHER"
+      },
+      {
+        "item": "AncientHide",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "MithrilShield",
+    "output_item": "MithrilShield",
+    "ingredients": [
+      {
+        "item": "Mithril",
+        "qty": 135
+      }
+    ]
+  },
+  {
+    "key": "ToxinPouch",
+    "output_item": "ToxinPouch",
+    "ingredients": [
+      {
+        "item": "AncientHide",
+        "qty": 8
+      },
+      {
+        "item": "PoisonousFlesh",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "ArchaicAmulet",
+    "output_item": "ArchaicAmulet",
+    "ingredients": [
+      {
+        "item": "Kindlequartz",
+        "qty": 1
+      },
+      {
+        "item": "PrehistoricMixture",
+        "qty": 1
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "DiamondAmulet",
+    "output_item": "DiamondAmulet",
+    "ingredients": [
+      {
+        "item": "Diamond",
+        "qty": 1
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "BurningEffigy",
+    "output_item": "BurningEffigy",
+    "ingredients": [
+      {
+        "item": "ShieldOfTheMartyr",
+        "qty": 1
+      },
+      {
+        "item": "PrehistoricMixture",
+        "qty": 1
+      },
+      {
+        "item": "Infernite",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "AncientArmor",
+    "output_item": "AncientArmor",
+    "ingredients": [
+      {
+        "item": "Mithril",
+        "qty": 164
+      },
+      {
+        "item": "AncientHide",
+        "qty": 36
+      }
+    ]
+  },
+  {
+    "key": "AncientJacket",
+    "output_item": "AncientJacket",
+    "ingredients": [
+      {
+        "item": "AncientHide",
+        "qty": 186
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "BeastmasterJacket",
+    "output_item": "BeastmasterJacket",
+    "ingredients": [
+      {
+        "item": "AncientHide",
+        "qty": 186
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 14
+      },
+      {
+        "item": "Kindlequartz",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "AncientRobe",
+    "output_item": "AncientRobe",
+    "ingredients": [
+      {
+        "item": "AncientMembrane",
+        "qty": 200
+      }
+    ]
+  },
+  {
+    "key": "MithrilSword",
+    "output_item": "MithrilSword",
+    "ingredients": [
+      {
+        "item": "Mithril",
+        "qty": 170
+      }
+    ]
+  },
+  {
+    "key": "MithrilBow",
+    "output_item": "MithrilBow",
+    "ingredients": [
+      {
+        "item": "Mithril",
+        "qty": 170
+      },
+      {
+        "item": "AncientMembrane",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "InfernalBow",
+    "output_item": "InfernalBow",
+    "ingredients": [
+      {
+        "item": "CursedBow",
+        "qty": 1
+      },
+      {
+        "item": "Infernite",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "MithrilDagger",
+    "output_item": "MithrilDagger",
+    "ingredients": [
+      {
+        "item": "Mithril",
+        "qty": 166
+      }
+    ]
+  },
+  {
+    "key": "RitualBlade",
+    "output_item": "RitualBlade",
+    "ingredients": [
+      {
+        "item": "PterodactylClaw",
+        "qty": 1
+      },
+      {
+        "item": "Diamond",
+        "qty": 2
+      },
+      {
+        "item": "Kindlequartz",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "InfernalChakram",
+    "output_item": "InfernalChakram",
+    "ingredients": [
+      {
+        "item": "Infernite",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "FireCatalyst",
+    "output_item": "FireCatalyst",
+    "ingredients": [
+      {
+        "item": "Quartz",
+        "qty": 5
+      },
+      {
+        "item": "WurmBlood",
+        "qty": 30
+      },
+      {
+        "item": "ElongatedBone",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "SunfireEssence",
+    "output_item": "SunfireEssence",
+    "ingredients": [
+      {
+        "item": "SunfireCore",
+        "qty": 5
+      },
+      {
+        "item": "FireCatalyst",
+        "qty": 1
+      },
+      {
+        "item": "ContainmentOrb",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "IceCatalyst",
+    "output_item": "IceCatalyst",
+    "ingredients": [
+      {
+        "item": "Quartz",
+        "qty": 5
+      },
+      {
+        "item": "Ivory",
+        "qty": 2
+      },
+      {
+        "item": "BoarTusk",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "PermafrostEssence",
+    "output_item": "PermafrostEssence",
+    "ingredients": [
+      {
+        "item": "PermafrostCore",
+        "qty": 5
+      },
+      {
+        "item": "IceCatalyst",
+        "qty": 1
+      },
+      {
+        "item": "ContainmentOrb",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ElectricCatalyst",
+    "output_item": "ElectricCatalyst",
+    "ingredients": [
+      {
+        "item": "Quartz",
+        "qty": 5
+      },
+      {
+        "item": "Feather",
+        "qty": 30
+      },
+      {
+        "item": "SharpRib",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "StaticEssence",
+    "output_item": "StaticEssence",
+    "ingredients": [
+      {
+        "item": "StaticCore",
+        "qty": 5
+      },
+      {
+        "item": "ElectricCatalyst",
+        "qty": 1
+      },
+      {
+        "item": "ContainmentOrb",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PrismaticEssence",
+    "output_item": "PrismaticEssence",
+    "ingredients": [
+      {
+        "item": "SunfireEssence",
+        "qty": 3
+      },
+      {
+        "item": "PermafrostEssence",
+        "qty": 3
+      },
+      {
+        "item": "StaticEssence",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "SlimeArmor",
+    "output_item": "SlimeArmor",
+    "ingredients": [
+      {
+        "item": "GreenSlime",
+        "qty": 140
+      }
+    ]
+  },
+  {
+    "key": "SlimeJacket",
+    "output_item": "SlimeJacket",
+    "ingredients": [
+      {
+        "item": "GreenSlime",
+        "qty": 140
+      }
+    ]
+  },
+  {
+    "key": "SlimeRobe",
+    "output_item": "SlimeRobe",
+    "ingredients": [
+      {
+        "item": "GreenSlime",
+        "qty": 140
+      }
+    ]
+  },
+  {
+    "key": "FrozenEmbrace",
+    "output_item": "FrozenEmbrace",
+    "ingredients": [
+      {
+        "item": "SlimeArmor",
+        "qty": 1
+      },
+      {
+        "item": "PermafrostEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "TunicaIgnis",
+    "output_item": "TunicaIgnis",
+    "ingredients": [
+      {
+        "item": "SlimeRobe",
+        "qty": 1
+      },
+      {
+        "item": "SunfireEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SunStaff",
+    "output_item": "SunStaff",
+    "ingredients": [
+      {
+        "item": "Glass",
+        "qty": 5
+      },
+      {
+        "item": "IronIngot",
+        "qty": 10
+      },
+      {
+        "item": "SunfireEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "Icicle",
+    "output_item": "Icicle",
+    "ingredients": [
+      {
+        "item": "ImperialStaff",
+        "qty": 1
+      },
+      {
+        "item": "PermafrostEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PrismaticPendant",
+    "output_item": "PrismaticPendant",
+    "ingredients": [
+      {
+        "item": "PrismaticEssence",
+        "qty": 1
+      },
+      {
+        "item": "PlantFiber",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VoidPendant",
+    "output_item": "VoidPendant",
+    "ingredients": [
+      {
+        "item": "PrismaticPendant",
+        "qty": 1
+      },
+      {
+        "item": "VoidCore",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PrismaticArmor",
+    "output_item": "PrismaticArmor",
+    "ingredients": [
+      {
+        "item": "SlimeArmor",
+        "qty": 1
+      },
+      {
+        "item": "PrismaticEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VoidArmor",
+    "output_item": "VoidArmor",
+    "ingredients": [
+      {
+        "item": "PrismaticArmor",
+        "qty": 1
+      },
+      {
+        "item": "VoidCore",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PotionOfRejuvenation",
+    "output_item": "PotionOfRejuvenation",
+    "ingredients": [
+      {
+        "item": "GreenSlime",
+        "qty": 5
+      },
+      {
+        "item": "MetamorphicSand",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "AmuletOfTheSwordsman",
+    "output_item": "AmuletOfTheSwordsman",
+    "ingredients": [
+      {
+        "item": "EyesOfTheSwordsman",
+        "qty": 1
+      },
+      {
+        "item": "Cloth",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "DivineEmbryo",
+    "output_item": "DivineEmbryo",
+    "ingredients": [
+      {
+        "item": "DivineZygote",
+        "qty": 1
+      },
+      {
+        "item": "BottledSandSpirit",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "CursedJacket",
+    "output_item": "CursedJacket",
+    "ingredients": [
+      {
+        "item": "CursedSilver",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "CursedClaws",
+    "output_item": "CursedClaws",
+    "ingredients": [
+      {
+        "item": "CursedSilver",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "CursedHelm",
+    "output_item": "CursedHelm",
+    "ingredients": [
+      {
+        "item": "CursedSilver",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "CursedBow",
+    "output_item": "CursedBow",
+    "ingredients": [
+      {
+        "item": "CursedSilver",
+        "qty": 32
+      },
+      {
+        "item": "SilkThread",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "Phylactery",
+    "output_item": "Phylactery",
+    "ingredients": [
+      {
+        "item": "PhylacteryFragment",
+        "qty": 13
+      },
+      {
+        "item": "SinisterStabilizer",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ArmorOfTheUndying",
+    "output_item": "ArmorOfTheUndying",
+    "ingredients": [
+      {
+        "item": "CursedSilver",
+        "qty": 16
+      },
+      {
+        "item": "Phylactery",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "FlyingReaper",
+    "output_item": "FlyingReaper",
+    "ingredients": [
+      {
+        "item": "KabelianMetal",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "KabelianArmor",
+    "output_item": "KabelianArmor",
+    "ingredients": [
+      {
+        "item": "KabelianMetal",
+        "qty": 26
+      },
+      {
+        "item": "CrusaderInsigna",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "DuelistArmor",
+    "output_item": "DuelistArmor",
+    "ingredients": [
+      {
+        "item": "SentientSlab",
+        "qty": 5
+      },
+      {
+        "item": "AlchemicPowder",
+        "qty": 12
+      },
+      {
+        "item": "KabelianMetal",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "ChampionArmor",
+    "output_item": "ChampionArmor",
+    "ingredients": [
+      {
+        "item": "DuelistArmor",
+        "qty": 1
+      },
+      {
+        "item": "ExaltedPowder",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "MutualDespair",
+    "output_item": "MutualDespair",
+    "ingredients": [
+      {
+        "item": "KabelianMetal",
+        "qty": 50
+      },
+      {
+        "item": "AlchemicPowder",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "KabelianClaws",
+    "output_item": "KabelianClaws",
+    "ingredients": [
+      {
+        "item": "CursedClaws",
+        "qty": 1
+      },
+      {
+        "item": "KabelianMetal",
+        "qty": 32
+      }
+    ]
+  },
+  {
+    "key": "CunningDownfall",
+    "output_item": "CunningDownfall",
+    "ingredients": [
+      {
+        "item": "KabelianMetal",
+        "qty": 36
+      }
+    ]
+  },
+  {
+    "key": "CunningDemise",
+    "output_item": "CunningDemise",
+    "ingredients": [
+      {
+        "item": "CunningDownfall",
+        "qty": 1
+      },
+      {
+        "item": "SealOfClaris",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "TitanicMight",
+    "output_item": "TitanicMight",
+    "ingredients": [
+      {
+        "item": "CrushingDepth",
+        "qty": 1
+      },
+      {
+        "item": "ExaltedPowder",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "ShieldOfTheTitan",
+    "output_item": "ShieldOfTheTitan",
+    "ingredients": [
+      {
+        "item": "SentientSlab",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "ShieldOfTheMartyr",
+    "output_item": "ShieldOfTheMartyr",
+    "ingredients": [
+      {
+        "item": "ShieldOfTheTitan",
+        "qty": 1
+      },
+      {
+        "item": "ExaltedPowder",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "BleakBoots",
+    "output_item": "BleakBoots",
+    "ingredients": [
+      {
+        "item": "AbherrantFabric",
+        "qty": 48
+      },
+      {
+        "item": "BlackHide",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "BleakGloves",
+    "output_item": "BleakGloves",
+    "ingredients": [
+      {
+        "item": "AbherrantFabric",
+        "qty": 24
+      },
+      {
+        "item": "BlackHide",
+        "qty": 36
+      }
+    ]
+  },
+  {
+    "key": "EldritchSeal",
+    "output_item": "EldritchSeal",
+    "ingredients": [
+      {
+        "item": "EldritchShred",
+        "qty": 7
+      }
+    ]
+  },
+  {
+    "key": "EldritchMitre",
+    "output_item": "EldritchMitre",
+    "ingredients": [
+      {
+        "item": "MitreHat",
+        "qty": 1
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1
+      },
+      {
+        "item": "AbherrantFabric",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "StellarFlare",
+    "output_item": "StellarFlare",
+    "ingredients": [
+      {
+        "item": "TitanicMight",
+        "qty": 1
+      },
+      {
+        "item": "StarFragment",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "StellarStaff",
+    "output_item": "StellarStaff",
+    "ingredients": [
+      {
+        "item": "SunStaff",
+        "qty": 1
+      },
+      {
+        "item": "StarFragment",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "InvisibleServant",
+    "output_item": "InvisibleServant",
+    "ingredients": [
+      {
+        "item": "ShadowGem",
+        "qty": 200
+      },
+      {
+        "item": "StarFragment",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "DivineLarvae",
+    "output_item": "DivineLarvae",
+    "ingredients": [
+      {
+        "item": "DivineEmbryo",
+        "qty": 1
+      },
+      {
+        "item": "AstralGoo",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtSilk",
+    "output_item": "DreamwroughtSilk",
+    "ingredients": [
+      {
+        "item": "DreamwroughtMane",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "OrichalcumIngot",
+    "output_item": "OrichalcumIngot",
+    "ingredients": [
+      {
+        "item": "OrichalcumScraps",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "OrichalcumSword",
+    "output_item": "OrichalcumSword",
+    "ingredients": [
+      {
+        "item": "OrichalcumIngot",
+        "qty": 32
+      }
+    ]
+  },
+  {
+    "key": "VoidCrusher",
+    "output_item": "VoidCrusher",
+    "ingredients": [
+      {
+        "item": "ColossalSword",
+        "qty": 1
+      },
+      {
+        "item": "HeartOfDarkness",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "ColossalSwordOfScarletKing",
+    "output_item": "ColossalSwordOfScarletKing",
+    "ingredients": [
+      {
+        "item": "ColossalSword",
+        "qty": 1
+      },
+      {
+        "item": "HeartOfDarkness",
+        "qty": 5
+      },
+      {
+        "item": "AncestralBlood",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "AegisMechanica",
+    "output_item": "AegisMechanica",
+    "ingredients": [
+      {
+        "item": "Aegis",
+        "qty": 1
+      },
+      {
+        "item": "MysteriousCog",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtBow",
+    "output_item": "DreamwroughtBow",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSteel",
+        "qty": 8
+      },
+      {
+        "item": "DreamwroughtSilk",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "Oblivion",
+    "output_item": "Oblivion",
+    "ingredients": [
+      {
+        "item": "StellarFlare",
+        "qty": 1
+      },
+      {
+        "item": "HeartOfDarkness",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "Mottiphobia",
+    "output_item": "Mottiphobia",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSteel",
+        "qty": 3
+      },
+      {
+        "item": "DreamwroughtLarva",
+        "qty": 45
+      }
+    ]
+  },
+  {
+    "key": "InfiniteDespair",
+    "output_item": "InfiniteDespair",
+    "ingredients": [
+      {
+        "item": "MutualDespair",
+        "qty": 1
+      },
+      {
+        "item": "FlakeOfInfinity",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "OrichalcumDagger",
+    "output_item": "OrichalcumDagger",
+    "ingredients": [
+      {
+        "item": "OrichalcumIngot",
+        "qty": 28
+      }
+    ]
+  },
+  {
+    "key": "SylvanMandate",
+    "output_item": "SylvanMandate",
+    "ingredients": [
+      {
+        "item": "DryadsCurse",
+        "qty": 1
+      },
+      {
+        "item": "GiftOfLight",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtStaff",
+    "output_item": "DreamwroughtStaff",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSteel",
+        "qty": 7
+      }
+    ]
+  },
+  {
+    "key": "DeathRayScepter",
+    "output_item": "DeathRayScepter",
+    "ingredients": [
+      {
+        "item": "FocusedScepter",
+        "qty": 1
+      },
+      {
+        "item": "AbioticCore",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SylvanBlessing",
+    "output_item": "SylvanBlessing",
+    "ingredients": [
+      {
+        "item": "DryadsBlessing",
+        "qty": 1
+      },
+      {
+        "item": "GiftOfLight",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "CursedScepter",
+    "output_item": "CursedScepter",
+    "ingredients": [
+      {
+        "item": "WickedScepter",
+        "qty": 1
+      },
+      {
+        "item": "HeartOfDarkness",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtArmor",
+    "output_item": "DreamwroughtArmor",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSteel",
+        "qty": 8
+      },
+      {
+        "item": "DreamwroughtHide",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "OrichalcumArmor",
+    "output_item": "OrichalcumArmor",
+    "ingredients": [
+      {
+        "item": "OrichalcumIngot",
+        "qty": 35
+      },
+      {
+        "item": "MutantHide",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "SwarmkeeperArmor",
+    "output_item": "SwarmkeeperArmor",
+    "ingredients": [
+      {
+        "item": "DreamwroughtArmor",
+        "qty": 1
+      },
+      {
+        "item": "DreamwroughtLarva",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "AbsoluteZero",
+    "output_item": "AbsoluteZero",
+    "ingredients": [
+      {
+        "item": "IceCage",
+        "qty": 1
+      },
+      {
+        "item": "FlakeOfInfinity",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "NilArmor",
+    "output_item": "NilArmor",
+    "ingredients": [
+      {
+        "item": "VoidArmor",
+        "qty": 1
+      },
+      {
+        "item": "WhiteSlime",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtJacket",
+    "output_item": "DreamwroughtJacket",
+    "ingredients": [
+      {
+        "item": "DreamwroughtHide",
+        "qty": 7
+      },
+      {
+        "item": "DreamwroughtSilk",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "MutantJacket",
+    "output_item": "MutantJacket",
+    "ingredients": [
+      {
+        "item": "MutantHide",
+        "qty": 24
+      },
+      {
+        "item": "KaunianFabric",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "ScarletShroud",
+    "output_item": "ScarletShroud",
+    "ingredients": [
+      {
+        "item": "ScarletVeil",
+        "qty": 1
+      },
+      {
+        "item": "MysteriousCog",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtRobe",
+    "output_item": "DreamwroughtRobe",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSilk",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "KaunianRobe",
+    "output_item": "KaunianRobe",
+    "ingredients": [
+      {
+        "item": "KaunianFabric",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "TunicaInfernalis",
+    "output_item": "TunicaInfernalis",
+    "ingredients": [
+      {
+        "item": "CloakOfRedemption",
+        "qty": 1
+      },
+      {
+        "item": "FireproofOil",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtGloves",
+    "output_item": "DreamwroughtGloves",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSilk",
+        "qty": 18
+      },
+      {
+        "item": "DreamwroughtHide",
+        "qty": 7
+      }
+    ]
+  },
+  {
+    "key": "DreamwroughtBoots",
+    "output_item": "DreamwroughtBoots",
+    "ingredients": [
+      {
+        "item": "DreamwroughtSilk",
+        "qty": 12
+      },
+      {
+        "item": "DreamwroughtHide",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "OrichalcumHelm",
+    "output_item": "OrichalcumHelm",
+    "ingredients": [
+      {
+        "item": "OrichalcumIngot",
+        "qty": 28
+      },
+      {
+        "item": "MutantHide",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "OrichalcumShield",
+    "output_item": "OrichalcumShield",
+    "ingredients": [
+      {
+        "item": "OrichalcumIngot",
+        "qty": 32
+      }
+    ]
+  },
+  {
+    "key": "Starvation",
+    "output_item": "Starvation",
+    "ingredients": [
+      {
+        "item": "EternalHunger",
+        "qty": 1
+      },
+      {
+        "item": "AncestralBlood",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "AmuletOfResurrection",
+    "output_item": "AmuletOfResurrection",
+    "ingredients": [
+      {
+        "item": "PhoenixFeather",
+        "qty": 6
+      }
+    ]
+  },
+  {
+    "key": "NilPendant",
+    "output_item": "NilPendant",
+    "ingredients": [
+      {
+        "item": "VoidPendant",
+        "qty": 1
+      },
+      {
+        "item": "WhiteSlime",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "EnlightedServant",
+    "output_item": "EnlightedServant",
+    "ingredients": [
+      {
+        "item": "InvisibleServant",
+        "qty": 1
+      },
+      {
+        "item": "GiftOfLight",
+        "qty": 1
+      },
+      {
+        "item": "HeartOfDarkness",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "Sha",
+    "output_item": "Sha",
+    "ingredients": [
+      {
+        "item": "DivineLarvae",
+        "qty": 1
+      },
+      {
+        "item": "MysteriousCog",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "VoltaicShock",
+    "output_item": "VoltaicShock",
+    "ingredients": [
+      {
+        "item": "ShortCircuit",
+        "qty": 1
+      },
+      {
+        "item": "AbioticCore",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ScarletOni",
+    "output_item": "ScarletOni",
+    "ingredients": [
+      {
+        "item": "ScarletStrand",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "ScarletSigil",
+    "output_item": "ScarletSigil",
+    "ingredients": [
+      {
+        "item": "ScarletStrand",
+        "qty": 3
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ScarletOniJuggernaut",
+    "output_item": "ScarletOniJuggernaut",
+    "ingredients": [
+      {
+        "item": "ScarletOni",
+        "qty": 1
+      },
+      {
+        "item": "MysteriousCog",
+        "qty": 5
+      },
+      {
+        "item": "ScarletDebris",
+        "qty": 5
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ScarletCape",
+    "output_item": "ScarletCape",
+    "ingredients": [
+      {
+        "item": "ScarletStrand",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "EldritchScarletCape",
+    "output_item": "EldritchScarletCape",
+    "ingredients": [
+      {
+        "item": "ScarletCape",
+        "qty": 1
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "AbyssalScarletMantle",
+    "output_item": "AbyssalScarletMantle",
+    "ingredients": [
+      {
+        "item": "EldritchScarletCape",
+        "qty": 1
+      },
+      {
+        "item": "AncestralBlood",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "ScarletVeil",
+    "output_item": "ScarletVeil",
+    "ingredients": [
+      {
+        "item": "ScarletStrand",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "BloodstoneClaws",
+    "output_item": "BloodstoneClaws",
+    "ingredients": [
+      {
+        "item": "KabelianClaws",
+        "qty": 1
+      },
+      {
+        "item": "ScarletDebris",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CopperAxe",
+    "output_item": "CopperAxe",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 3
+      },
+      {
+        "item": "CopperIngot",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "IronAxe",
+    "output_item": "IronAxe",
+    "ingredients": [
+      {
+        "item": "Wood",
+        "qty": 15
+      },
+      {
+        "item": "IronIngot",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "UndeadAxe",
+    "output_item": "UndeadAxe",
+    "ingredients": [
+      {
+        "item": "BoneFragment",
+        "qty": 30
+      },
+      {
+        "item": "SharpRib",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "GoldenAxe",
+    "output_item": "GoldenAxe",
+    "ingredients": [
+      {
+        "item": "Redwood",
+        "qty": 5
+      },
+      {
+        "item": "GoldIngot",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "EnforcersAxe",
+    "output_item": "EnforcersAxe",
+    "ingredients": [
+      {
+        "item": "CorruptedAxe",
+        "qty": 1
+      },
+      {
+        "item": "CleansingPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "Zapper",
+    "output_item": "Zapper",
+    "ingredients": [
+      {
+        "item": "EnforcersAxe",
+        "qty": 1
+      },
+      {
+        "item": "StaticEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "BlackIronAxe",
+    "output_item": "BlackIronAxe",
+    "ingredients": [
+      {
+        "item": "GhostwoodBoard",
+        "qty": 3
+      },
+      {
+        "item": "BlackIronIngot",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "AbyssalGreataxe",
+    "output_item": "AbyssalGreataxe",
+    "ingredients": [
+      {
+        "item": "GhostwoodBoard",
+        "qty": 10
+      },
+      {
+        "item": "AbyssalIngot",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "FrostmetalAxe",
+    "output_item": "FrostmetalAxe",
+    "ingredients": [
+      {
+        "item": "Winterwood",
+        "qty": 3
+      },
+      {
+        "item": "FrostmetalIngot",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "FrozenLongAxe",
+    "output_item": "FrozenLongAxe",
+    "ingredients": [
+      {
+        "item": "FrostmetalAxe",
+        "qty": 1
+      },
+      {
+        "item": "FrostNucleus",
+        "qty": 1
+      },
+      {
+        "item": "FrostCrystal",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "ObsidianAxe",
+    "output_item": "ObsidianAxe",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 72
+      }
+    ]
+  },
+  {
+    "key": "VampireAxe",
+    "output_item": "VampireAxe",
+    "ingredients": [
+      {
+        "item": "ObsidianAxe",
+        "qty": 1
+      },
+      {
+        "item": "CrimsonBrew",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "UnholyAxe",
+    "output_item": "UnholyAxe",
+    "ingredients": [
+      {
+        "item": "ObsidianAxe",
+        "qty": 1
+      },
+      {
+        "item": "UnholyPotion",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "PrimevalAxe",
+    "output_item": "PrimevalAxe",
+    "ingredients": [
+      {
+        "item": "ElysianWood",
+        "qty": 100
+      },
+      {
+        "item": "PrimevalScale",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "CelestialAxe",
+    "output_item": "CelestialAxe",
+    "ingredients": [
+      {
+        "item": "CelestialMetal",
+        "qty": 44
+      }
+    ]
+  },
+  {
+    "key": "AnimatedAxe",
+    "output_item": "AnimatedAxe",
+    "ingredients": [
+      {
+        "item": "AnimatedIngot",
+        "qty": 47
+      }
+    ]
+  },
+  {
+    "key": "EnchantedCleaver",
+    "output_item": "EnchantedCleaver",
+    "ingredients": [
+      {
+        "item": "SpellCompendium",
+        "qty": 1
+      },
+      {
+        "item": "AnimatedAxe",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "WickedCleaver",
+    "output_item": "WickedCleaver",
+    "ingredients": [
+      {
+        "item": "EnchantedCleaver",
+        "qty": 1
+      },
+      {
+        "item": "VeilShatterer",
+        "qty": 1
+      },
+      {
+        "item": "WickedSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "MoltenSlayer",
+    "output_item": "MoltenSlayer",
+    "ingredients": [
+      {
+        "item": "BerserkersAxe",
+        "qty": 1
+      },
+      {
+        "item": "Infernite",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "OmniSever",
+    "output_item": "OmniSever",
+    "ingredients": [
+      {
+        "item": "GoldenAxe",
+        "qty": 1
+      },
+      {
+        "item": "PrismaticEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CursedLongAxe",
+    "output_item": "CursedLongAxe",
+    "ingredients": [
+      {
+        "item": "CursedSilver",
+        "qty": 20
+      },
+      {
+        "item": "Redwood",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "InfernalLongAxe",
+    "output_item": "InfernalLongAxe",
+    "ingredients": [
+      {
+        "item": "CursedLongAxe",
+        "qty": 1
+      },
+      {
+        "item": "Infernite",
+        "qty": 10
+      }
+    ]
+  }
+]

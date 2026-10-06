@@ -1,0 +1,32 @@
+/**
+ * IGM+ Wiki theme overrides.
+ * Dark-mode-first game-wiki styling on top of the VitePress default theme.
+ */
+
+:root {
+  --vp-c-brand-1: #6ea8fe;
+  --vp-c-brand-2: #4f8ff7;
+  --vp-c-brand-3: #3b6fd4;
+  --vp-c-brand-soft: rgba(110, 168, 254, 0.14);
+}
+
+.dark {
+  --vp-c-brand-1: #8dbcff;
+  --vp-c-brand-2: #6ea8fe;
+  --vp-c-brand-3: #4f8ff7;
+}
+
+/* Game sprites are small pixel-art assets: keep them crisp when scaled. */
+.sprite,
+.vp-doc img[src*='/images/'] {
+  image-rendering: pixelated;
+}
+
+/* Compact data tables produced by generate_pages.py */
+.vp-doc table {
+  font-size: 14px;
+}
+
+.vp-doc th {
+  white-space: nowrap;
+}

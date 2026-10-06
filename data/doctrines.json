@@ -1,0 +1,258 @@
+[
+  {
+    "key": "DoctrineOfAffliction",
+    "name_key": "doctrine_affliction_name",
+    "description_key": "doctrine_affliction_description",
+    "description_short_key": "doctrine_affliction_description_short",
+    "sprite": "doctrine_of_affliction",
+    "name": "Doctrine of Affliction",
+    "description": "Followers of this doctrine believe that suffering is synonymous with strength. They willingly inject themselves with an unknown pathogen that brings unrelenting agony and an insatiable thirst for blood. Over time, they have adapted to endure—and even revel in—the torment of their decaying flesh.",
+    "description_short": "Lifesteal, damage in Darkness, shielding.",
+    "abilities": [
+      "IMPROVED_HEALTH",
+      "IMPROVED_DEXTERITY",
+      "NECROSIS_PORPHYRICA",
+      "SERVUS_SANGUINIS",
+      "SERVUS_UMBRAE",
+      "GENUS_VAMPYRI",
+      "BLOODLETTING"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.afflictionLevel",
+      "bonusHp": "getValue(DoctrineAbilityType.IMPROVED_HEALTH)",
+      "bonusDexterity": "getValue(DoctrineAbilityType.IMPROVED_DEXTERITY)",
+      "reduceCriticalBonusDamage": "getValue(DoctrineAbilityType.NECROSIS_PORPHYRICA)",
+      "bonusLifesteal": "getValue(DoctrineAbilityType.SERVUS_SANGUINIS)",
+      "darknessDamageIncrease": "getValue(DoctrineAbilityType.SERVUS_UMBRAE)",
+      "maxLifestealOverheal": "getValue(DoctrineAbilityType.GENUS_VAMPYRI)",
+      "bloodlettingPercent": "getValue(DoctrineAbilityType.BLOODLETTING)"
+    }
+  },
+  {
+    "key": "DoctrineOfControl",
+    "name_key": "doctrine_control_name",
+    "description_key": "doctrine_control_description",
+    "description_short_key": "doctrine_control_description_short",
+    "sprite": "doctrine_of_control",
+    "name": "Doctrine of Control",
+    "description": "Adherents of the Doctrine of Control seek absolute dominance over themselves and others. They refine techniques to manipulate their enemies by commanding the elements and wield powerful abilities that grant them access to even the most guarded minds.",
+    "description_short": "Status Effects and Status Effects resistance.",
+    "abilities": [
+      "IMPROVED_INTELLIGENCE",
+      "IMPENETRABLE_WILLPOWER",
+      "MIND_BENDER",
+      "CHILLING_FLOW",
+      "STAR_GAZE",
+      "ARCANE_SUPPRESSION",
+      "VERDANT_BRIARS"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.controlLevel",
+      "bonusIntelligence": "getValue(DoctrineAbilityType.IMPROVED_INTELLIGENCE)",
+      "bonusStatusImmunity": "getValue(DoctrineAbilityType.IMPENETRABLE_WILLPOWER)",
+      "ignoreEnemyImmunities": "getValue(DoctrineAbilityType.MIND_BENDER)",
+      "freezeOnHit": "getValue(DoctrineAbilityType.CHILLING_FLOW)",
+      "petrifyOnHit": "getValue(DoctrineAbilityType.STAR_GAZE)",
+      "damagePerTurnPerStatus": "getValue(DoctrineAbilityType.ARCANE_SUPPRESSION)",
+      "verdantBriarsChance": "getValue(DoctrineAbilityType.VERDANT_BRIARS)"
+    }
+  },
+  {
+    "key": "DoctrineOfFortitude",
+    "name_key": "doctrine_fortitude_name",
+    "description_key": "doctrine_fortitude_description",
+    "description_short_key": "doctrine_fortitude_description_short",
+    "sprite": "doctrine_of_fortitude",
+    "name": "Doctrine of Fortitude",
+    "description": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
+    "description_short": "Damage resistance, protecting allies, retaliation.",
+    "abilities": [
+      "IMPROVED_HEALTH",
+      "IMPROVED_CONSTITUTION",
+      "MANIFEST_DANGER",
+      "TROLL_RESISTANCE",
+      "WARLOCK_RESILIENCE",
+      "MIRROR_OF_ANGUISH",
+      "ARMOR_MASTER"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.fortitudeLevel",
+      "bonusConstitution": "getValue(DoctrineAbilityType.IMPROVED_CONSTITUTION)",
+      "bonusHp": "getValue(DoctrineAbilityType.IMPROVED_HEALTH)",
+      "bonusThreat": "getValue(DoctrineAbilityType.MANIFEST_DANGER)",
+      "bonusDefense": "getValue(DoctrineAbilityType.TROLL_RESISTANCE)",
+      "bonusMagicDefense": "getValue(DoctrineAbilityType.WARLOCK_RESILIENCE)",
+      "addsDefensesToRetaliate": "getValue(DoctrineAbilityType.MIRROR_OF_ANGUISH) > 0",
+      "armorMasterPercent": "getValue(DoctrineAbilityType.ARMOR_MASTER)"
+    }
+  },
+  {
+    "key": "DoctrineOfGrace",
+    "name_key": "doctrine_grace_name",
+    "description_key": "doctrine_grace_description",
+    "description_short_key": "doctrine_grace_description_short",
+    "sprite": "doctrine_of_grace",
+    "name": "Doctrine of Grace",
+    "description": "Followers of the Doctrine of Grace are devoted to aiding the injured and the afflicted. They reject violence as a path to power, dedicating themselves instead to alleviating pain and suffering and bringing comfort to those around them.",
+    "description_short": "Healing, protection, shielding.",
+    "abilities": [
+      "IMPROVED_HEALTH",
+      "IMPROVED_INTELLIGENCE",
+      "SELFLESS_SPIRIT",
+      "DIVINE_INTERVENTION",
+      "OVERHEAL",
+      "HEALING_NOVA",
+      "SYMPATHETIC_WARD"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.graceLevel",
+      "bonusHp": "getValue(DoctrineAbilityType.IMPROVED_HEALTH)",
+      "bonusIntelligence": "getValue(DoctrineAbilityType.IMPROVED_INTELLIGENCE)",
+      "bonusResurrectionChance": "getValue(DoctrineAbilityType.DIVINE_INTERVENTION)",
+      "bonusHealingModifier": "getValue(DoctrineAbilityType.SELFLESS_SPIRIT)",
+      "maxOverheal": "getValue(DoctrineAbilityType.OVERHEAL)",
+      "healingNova": "getValue(DoctrineAbilityType.HEALING_NOVA)",
+      "sympatheticWardPercent": "getValue(DoctrineAbilityType.SYMPATHETIC_WARD)"
+    }
+  },
+  {
+    "key": "DoctrineOfIllusion",
+    "name_key": "doctrine_illusion_name",
+    "description_key": "doctrine_illusion_description",
+    "description_short_key": "doctrine_illusion_description_short",
+    "sprite": "doctrine_of_illusion",
+    "name": "Doctrine of Illusion",
+    "description": "\"Adherents of the Doctrine of Illusion devote themselves to mastering the art of deception. They see reality as malleable, shaped not by truth but by perception. To them, control over one's subjective judgment is the key to true power.\"",
+    "description_short": "Dodging, redirecting attacks, cheating.",
+    "abilities": [
+      "IMPROVED_DEXTERITY",
+      "IMPROVED_INTELLIGENCE",
+      "EPHEMERAL_PRESENCE",
+      "BEAT_THE_ODDS",
+      "FALSE_LIFE",
+      "TRUE_AGONY",
+      "EVASIVE_RIPOSTE"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.illusionLevel",
+      "bonusDexterity": "getValue(DoctrineAbilityType.IMPROVED_DEXTERITY)",
+      "bonusIntelligence": "getValue(DoctrineAbilityType.IMPROVED_INTELLIGENCE)",
+      "bonusDodgeChance": "getValue(DoctrineAbilityType.EPHEMERAL_PRESENCE)",
+      "rollDamageThreeTimes": "getValue(DoctrineAbilityType.BEAT_THE_ODDS) > 0",
+      "falseLifeChance": "getValue(DoctrineAbilityType.FALSE_LIFE)",
+      "damageOnFalseLifeRemoval": "getValue(DoctrineAbilityType.TRUE_AGONY)",
+      "evasiveRipostePercent": "getValue(DoctrineAbilityType.EVASIVE_RIPOSTE)"
+    }
+  },
+  {
+    "key": "DoctrineOfKnowledge",
+    "name_key": "doctrine_knowledge_name",
+    "description_key": "doctrine_knowledge_description",
+    "description_short_key": "doctrine_knowledge_description_short",
+    "sprite": "doctrine_of_knowlegde",
+    "name": "Doctrine of Knowledge",
+    "description": "Followers of this doctrine are jack-of-all-trades, seeking to gain expertise in as many fields as possible. They believe that true power lies in the pursuit of pure knowledge, with its practical application being a secondary—though undeniably valuable—tool.",
+    "description_short": "Dynamic stat increase.",
+    "abilities": [
+      "EXALTED_CONSTITUTION",
+      "EXALTED_DEXTERITY",
+      "EXALTED_INTELLIGENCE",
+      "EXALTED_HEALTH",
+      "EXALTED_MANA",
+      "LORE_MASTER",
+      "ACCELERATED_MASTERY"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.knowledgeLevel",
+      "bonusHp": "getValue(DoctrineAbilityType.EXALTED_HEALTH)",
+      "bonusConstitution": "getValue(DoctrineAbilityType.EXALTED_CONSTITUTION)",
+      "bonusDexterity": "getValue(DoctrineAbilityType.EXALTED_DEXTERITY)",
+      "bonusIntelligence": "getValue(DoctrineAbilityType.EXALTED_INTELLIGENCE)",
+      "bonusManaRegen": "getValue(DoctrineAbilityType.EXALTED_MANA)",
+      "doubleAccessoryStats": "getValue(DoctrineAbilityType.LORE_MASTER) > 0",
+      "acceleratedMasteryPercent": "getValue(DoctrineAbilityType.ACCELERATED_MASTERY)"
+    }
+  },
+  {
+    "key": "DoctrineOfRuin",
+    "name_key": "doctrine_ruin_name",
+    "description_key": "doctrine_ruin_description",
+    "description_short_key": "doctrine_ruin_description_short",
+    "sprite": "doctrine_of_ruin",
+    "name": "Doctrine of Ruin",
+    "description": "\"Attack is the best defense\" is the creed of those who follow the Doctrine of Ruin. They swiftly unleash the full potential of their destructive power, paying little to no regards to their own safety.",
+    "description_short": "Damage at the expense of safety.",
+    "abilities": [
+      "IMPROVED_DEXTERITY",
+      "EXPOSE_WEAKNESS",
+      "EXPLOIT_WEAKNESS",
+      "LIGHTNING_SPEED",
+      "EYE_FOR_AN_EYE",
+      "RAGEBOUND",
+      "ANNIHILATION"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.ruinLevel",
+      "bonusDexterity": "getValue(DoctrineAbilityType.IMPROVED_DEXTERITY)",
+      "bonusCritChance": "getValue(DoctrineAbilityType.EXPOSE_WEAKNESS)",
+      "bonusCritDamage": "getValue(DoctrineAbilityType.EXPLOIT_WEAKNESS)",
+      "extraAttackChance": "getValue(DoctrineAbilityType.LIGHTNING_SPEED)",
+      "moreDamageWhenHalfLife": "getValue(DoctrineAbilityType.EYE_FOR_AN_EYE) > 0",
+      "moreDamageDealtAndTaken": "getValue(DoctrineAbilityType.RAGEBOUND) > 0",
+      "annihilationCritDamageBonus": "getValue(DoctrineAbilityType.ANNIHILATION)",
+      "hasAnnihilation": "getValue(DoctrineAbilityType.ANNIHILATION) > 0"
+    }
+  },
+  {
+    "key": "DoctrineOfWar",
+    "name_key": "doctrine_war_name",
+    "description_key": "doctrine_war_description",
+    "description_short_key": "doctrine_war_description_short",
+    "sprite": "doctrine_of_war",
+    "name": "Doctrine of War",
+    "description": "\"Adherents of the Doctrine of War revere conflict as the ultimate crucible for growth and dominance. They dedicate their lives to mastering the art of combat, honing their bodies into lethal weapons. For them, battle is not just a means to an end but a sacred pursuit where strength, strategy, and unrelenting willpower define one's worth.\"",
+    "description_short": "Dueling, weapon expertise.",
+    "abilities": [
+      "IMPROVED_CONSTITUTION",
+      "IMPROVED_DEXTERITY",
+      "CONDITIONED_REFLEXES",
+      "TACTICAL_KNOWLEDGE",
+      "RELENTLESS_ASSAULT",
+      "WEAPON_MASTER",
+      "TITANS_MIGHT"
+    ],
+    "effects": {
+      "setupAbilities": "listOf(",
+      "bonusQuestPoints": "MainActivity.data.warLevel",
+      "bonusConstitution": "getValue(DoctrineAbilityType.IMPROVED_CONSTITUTION)",
+      "bonusDexterity": "getValue(DoctrineAbilityType.IMPROVED_DEXTERITY)",
+      "bonusCounterattack": "getValue(DoctrineAbilityType.CONDITIONED_REFLEXES)",
+      "ignoreArmorPercentage": "getValue(DoctrineAbilityType.TACTICAL_KNOWLEDGE)",
+      "forcesCounterattack": "getValue(DoctrineAbilityType.RELENTLESS_ASSAULT) > 0",
+      "canUseAllWeapons": "getValue(DoctrineAbilityType.WEAPON_MASTER) > 0",
+      "constitutionDamageConversion": "getValue(DoctrineAbilityType.TITANS_MIGHT)"
+    }
+  },
+  {
+    "key": "EmptyDoctrine",
+    "name_key": "doctrine_empty_name",
+    "description_key": "doctrine_empty_description",
+    "description_short_key": "doctrine_empty_description",
+    "sprite": "sign_plus_white",
+    "name": "EmptyDoctrine",
+    "description": null,
+    "description_short": null,
+    "abilities": [],
+    "effects": {
+      "bonusQuestPoints": "0",
+      "setupAbilities": "emptyList()"
+    }
+  }
+]

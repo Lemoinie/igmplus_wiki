@@ -1,0 +1,1459 @@
+[
+  {
+    "key": "BarrenWastelands",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/BarrenWastelands.kt",
+    "name_key": "dungeon_name_barren_wastelands",
+    "name": "Barren Wastelands",
+    "summary_sprite": "summary_barren_wastelands",
+    "detail_sprite": "area_barren_wastelands",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Banshee",
+        "chance_permille": 154.0
+      },
+      {
+        "key": "Iconoclast",
+        "chance_permille": 125.75
+      },
+      {
+        "key": "Oculus",
+        "chance_permille": 123.25
+      },
+      {
+        "key": "CelestialLancer",
+        "chance_permille": 89.67
+      },
+      {
+        "key": "CelestialDestroyer",
+        "chance_permille": 2.33
+      },
+      {
+        "key": "Banshee",
+        "chance_permille": null
+      },
+      {
+        "key": "CelestialDestroyer",
+        "chance_permille": null
+      },
+      {
+        "key": "CelestialLancer",
+        "chance_permille": null
+      },
+      {
+        "key": "Iconoclast",
+        "chance_permille": null
+      },
+      {
+        "key": "Oculus",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 495,
+    "items_mentioned": [
+      "AetherIgnis",
+      "BansheeDagger",
+      "BansheeGloves",
+      "BansheeJacket",
+      "BansheeScale",
+      "CelestialArmor",
+      "CelestialHelmet",
+      "CelestialScraps",
+      "CelestialShield",
+      "CelestialSword",
+      "ChainLink",
+      "ElasticBoots",
+      "ElasticMembrane",
+      "ElasticRobe"
+    ]
+  },
+  {
+    "key": "BlackwaterPort",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/BlackwaterPort.kt",
+    "name_key": "dungeon_name_blackwater_port",
+    "name": "Blackwater Port",
+    "summary_sprite": "summary_blackwater_port",
+    "detail_sprite": "area_blackwater_port",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Pirate",
+        "chance_permille": 194.0
+      },
+      {
+        "key": "Deckhand",
+        "chance_permille": 133.25
+      },
+      {
+        "key": "PirateLieutenant",
+        "chance_permille": 36.75
+      },
+      {
+        "key": "MysteriousTentacle",
+        "chance_permille": 10.0
+      },
+      {
+        "key": "PirateCaptain",
+        "chance_permille": 10.0
+      },
+      {
+        "key": "Mimic",
+        "chance_permille": 1.0
+      },
+      {
+        "key": "Deckhand",
+        "chance_permille": null
+      },
+      {
+        "key": "Mimic",
+        "chance_permille": null
+      },
+      {
+        "key": "MysteriousTentacle",
+        "chance_permille": null
+      },
+      {
+        "key": "Pirate",
+        "chance_permille": null
+      },
+      {
+        "key": "PirateCaptain",
+        "chance_permille": null
+      },
+      {
+        "key": "PirateLieutenant",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 565,
+    "items_mentioned": [
+      "AbyssalSeashell",
+      "BlackIronArmor",
+      "BlackIronCutlass",
+      "BlackIronDagger",
+      "BlackIronGauntlets",
+      "BlackIronHelm",
+      "BlackIronScepter",
+      "BlackIronScraps",
+      "ExoticBoots",
+      "ExoticRobe",
+      "ExoticVelvet",
+      "EyeOfTheAbyss",
+      "GhostwoodBoard",
+      "GhostwoodBow",
+      "GhostwoodShield",
+      "GhostwoodStump",
+      "MissingPage",
+      "MonkeyHide",
+      "MonkeyHideJacket",
+      "MysteriousAppendage",
+      "Pearl"
+    ]
+  },
+  {
+    "key": "EnchantedForest",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/EnchantedForest.kt",
+    "name_key": "dungeon_name_enchanted_forest",
+    "name": "Enchanted Forest",
+    "summary_sprite": "summary_enchanted_forest",
+    "detail_sprite": "area_enchanted_forest",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Wolf",
+        "chance_permille": 363.33
+      },
+      {
+        "key": "Boar",
+        "chance_permille": 230.0
+      },
+      {
+        "key": "Treant",
+        "chance_permille": 213.33
+      },
+      {
+        "key": "Centaur",
+        "chance_permille": 163.33
+      },
+      {
+        "key": "Ent",
+        "chance_permille": 20.0
+      },
+      {
+        "key": "Boar",
+        "chance_permille": null
+      },
+      {
+        "key": "Centaur",
+        "chance_permille": null
+      },
+      {
+        "key": "Ent",
+        "chance_permille": null
+      },
+      {
+        "key": "ForestSpirit",
+        "chance_permille": null
+      },
+      {
+        "key": "GoldenRabbit",
+        "chance_permille": null
+      },
+      {
+        "key": "Treant",
+        "chance_permille": null
+      },
+      {
+        "key": "TutorialWolf",
+        "chance_permille": null
+      },
+      {
+        "key": "Wolf",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 1170,
+    "items_mentioned": [
+      "Acorn",
+      "Boots",
+      "CentaurHoof",
+      "ClothHat",
+      "ClothRobe",
+      "CopperArmor",
+      "CopperDagger",
+      "CopperOre",
+      "CopperSword",
+      "LeatherArmor",
+      "LeatherGloves",
+      "WolfSkin",
+      "Wood",
+      "WoodenBow",
+      "WoodenBuckler",
+      "WoodenStaff"
+    ]
+  },
+  {
+    "key": "EternalBattlefield",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/EternalBattlefield.kt",
+    "name_key": "dungeon_name_eternal_battlefield",
+    "name": "Eternal Battlefield",
+    "summary_sprite": "summary_eternal_battlefield",
+    "detail_sprite": "area_eternal_battlefield",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Undead",
+        "chance_permille": 287.0
+      },
+      {
+        "key": "UndeadArcher",
+        "chance_permille": 182.0
+      },
+      {
+        "key": "DeathHound",
+        "chance_permille": 63.0
+      },
+      {
+        "key": "Abomination",
+        "chance_permille": 30.0
+      },
+      {
+        "key": "UndeadWarlord",
+        "chance_permille": 9.0
+      },
+      {
+        "key": "Ghoul",
+        "chance_permille": 5.0
+      },
+      {
+        "key": "WillOWisp",
+        "chance_permille": 4.0
+      },
+      {
+        "key": "Abomination",
+        "chance_permille": null
+      },
+      {
+        "key": "DeathHound",
+        "chance_permille": null
+      },
+      {
+        "key": "Ghoul",
+        "chance_permille": null
+      },
+      {
+        "key": "Undead",
+        "chance_permille": null
+      },
+      {
+        "key": "UndeadArcher",
+        "chance_permille": null
+      },
+      {
+        "key": "UndeadWarlord",
+        "chance_permille": null
+      },
+      {
+        "key": "WillOWisp",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 580,
+    "items_mentioned": [
+      "BoneFragment",
+      "ElongatedBone",
+      "InfectedBlood",
+      "OrbOfEctoplasm",
+      "SharpRib",
+      "SpectralCloth",
+      "SpectralRobe",
+      "TatteredHide",
+      "UndeadCuirass",
+      "UndeadGloves",
+      "UndeadGreaves",
+      "UndeadHelm",
+      "UndeadJacket",
+      "UndeadKnife",
+      "UndeadShield",
+      "UndeadStaff",
+      "UndeadSword"
+    ]
+  },
+  {
+    "key": "FrostbitePeaks",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/FrostbitePeaks.kt",
+    "name_key": "dungeon_name_frostbite_peaks",
+    "name": "Frostbite Peaks",
+    "summary_sprite": "summary_frostbite_peaks",
+    "detail_sprite": "area_frostbite_peaks",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "TrollWhelp",
+        "chance_permille": 171.67
+      },
+      {
+        "key": "Troll",
+        "chance_permille": 136.67
+      },
+      {
+        "key": "TrollWarrior",
+        "chance_permille": 61.67
+      },
+      {
+        "key": "TrollShaman",
+        "chance_permille": 40.0
+      },
+      {
+        "key": "SnowWyvern",
+        "chance_permille": 30.0
+      },
+      {
+        "key": "IceElemental",
+        "chance_permille": 30.0
+      },
+      {
+        "key": "IceElemental",
+        "chance_permille": null
+      },
+      {
+        "key": "SnowWyvern",
+        "chance_permille": null
+      },
+      {
+        "key": "Troll",
+        "chance_permille": null
+      },
+      {
+        "key": "TrollShaman",
+        "chance_permille": null
+      },
+      {
+        "key": "TrollWarrior",
+        "chance_permille": null
+      },
+      {
+        "key": "TrollWhelp",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 540,
+    "items_mentioned": [
+      "FrostCrystal",
+      "FrostmetalArmor",
+      "FrostmetalDagger",
+      "FrostmetalOre",
+      "FrostmetalSword",
+      "IceFiber",
+      "TrollHide",
+      "TrollskinJacket",
+      "WinterBoots",
+      "WinterCape",
+      "WinterGloves",
+      "WinterHelm",
+      "WinterShield",
+      "Winterwood",
+      "WinterwoodBow",
+      "WinterwoodStaff"
+    ]
+  },
+  {
+    "key": "HiddenCityOfLarox",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/HiddenCityOfLarox.kt",
+    "name_key": "dungeon_name_hidden_city_of_larox",
+    "name": "Hidden City of Larox",
+    "summary_sprite": "summary_hidden_city_of_larox",
+    "detail_sprite": "area_hidden_city_of_larox",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "MagicArmor",
+        "chance_permille": 184.67
+      },
+      {
+        "key": "Imp",
+        "chance_permille": 128.17
+      },
+      {
+        "key": "WizardOfLarox",
+        "chance_permille": 71.17
+      },
+      {
+        "key": "NexusResearcher",
+        "chance_permille": 69.0
+      },
+      {
+        "key": "ArchmageOfLarox",
+        "chance_permille": 5.5
+      },
+      {
+        "key": "WickedTribute",
+        "chance_permille": 5.5
+      },
+      {
+        "key": "ArchmageOfLarox",
+        "chance_permille": null
+      },
+      {
+        "key": "Imp",
+        "chance_permille": null
+      },
+      {
+        "key": "MagicArmor",
+        "chance_permille": null
+      },
+      {
+        "key": "NexusResearcher",
+        "chance_permille": null
+      },
+      {
+        "key": "WickedTribute",
+        "chance_permille": null
+      },
+      {
+        "key": "WizardOfLarox",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 514,
+    "items_mentioned": [
+      "AnimatedBow",
+      "AnimatedBuckler",
+      "AnimatedCuirass",
+      "AnimatedDagger",
+      "AnimatedHelm",
+      "AnimatedScraps",
+      "AnimatedStaff",
+      "AnimatedSword",
+      "LaroxianBoots",
+      "LaroxianFabric",
+      "LaroxianGloves",
+      "LaroxianRobe",
+      "SpellwovenHide",
+      "SpellwovenJacket",
+      "UnstableGem",
+      "VeilBreaker"
+    ]
+  },
+  {
+    "key": "LostLands",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/LostLands.kt",
+    "name_key": "dungeon_name_lost_lands",
+    "name": "Lost Lands",
+    "summary_sprite": "summary_lost_lands",
+    "detail_sprite": "area_lost_lands",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Berserker",
+        "chance_permille": 91.0
+      },
+      {
+        "key": "Pterodactyl",
+        "chance_permille": 73.67
+      },
+      {
+        "key": "Terrorsaurus",
+        "chance_permille": 60.67
+      },
+      {
+        "key": "StoneShaman",
+        "chance_permille": 56.33
+      },
+      {
+        "key": "AmanitaObscura",
+        "chance_permille": 30.33
+      },
+      {
+        "key": "AmanitaObscura",
+        "chance_permille": null
+      },
+      {
+        "key": "Berserker",
+        "chance_permille": null
+      },
+      {
+        "key": "Pterodactyl",
+        "chance_permille": null
+      },
+      {
+        "key": "SmolderingTitan",
+        "chance_permille": null
+      },
+      {
+        "key": "StoneShaman",
+        "chance_permille": null
+      },
+      {
+        "key": "Terrorsaurus",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 312,
+    "items_mentioned": [
+      "AncientArmor",
+      "AncientBoots",
+      "AncientGloves",
+      "AncientHide",
+      "AncientJacket",
+      "AncientMembrane",
+      "AncientRobe",
+      "Diamond",
+      "Kindlequartz",
+      "Mithril",
+      "MithrilBow",
+      "MithrilDagger",
+      "MithrilHelm",
+      "MithrilShield",
+      "MithrilSword",
+      "PoisonousFlesh"
+    ]
+  },
+  {
+    "key": "ObsidianMines",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/ObsidianMines.kt",
+    "name_key": "dungeon_name_obsidian_mines",
+    "name": "Obsidian Mines",
+    "summary_sprite": "summary_obsidian_mines",
+    "detail_sprite": "area_obsidian_mines",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "GiantSpider",
+        "chance_permille": 252.5
+      },
+      {
+        "key": "VampireBat",
+        "chance_permille": 155.83
+      },
+      {
+        "key": "ObsidianGolem",
+        "chance_permille": 100.83
+      },
+      {
+        "key": "Beholder",
+        "chance_permille": 63.33
+      },
+      {
+        "key": "LostMiner",
+        "chance_permille": 27.5
+      },
+      {
+        "key": "Beholder",
+        "chance_permille": null
+      },
+      {
+        "key": "GiantSpider",
+        "chance_permille": null
+      },
+      {
+        "key": "LostMiner",
+        "chance_permille": null
+      },
+      {
+        "key": "ObsidianGolem",
+        "chance_permille": null
+      },
+      {
+        "key": "PaleHermit",
+        "chance_permille": null
+      },
+      {
+        "key": "VampireBat",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 600,
+    "items_mentioned": [
+      "BatTooth",
+      "BatWing",
+      "CobwebBundle",
+      "EldritchTendril",
+      "NightwingJacket",
+      "ObsidianBow",
+      "ObsidianChunk",
+      "ObsidianCuirass",
+      "ObsidianDagger",
+      "ObsidianHelm",
+      "ObsidianScepter",
+      "ObsidianShield",
+      "ObsidianSword",
+      "SpiderBoots",
+      "SpiderGloves",
+      "SpiderLeg",
+      "SpiderRobe"
+    ]
+  },
+  {
+    "key": "TheDesert",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/TheDesert.kt",
+    "name_key": "dungeon_name_the_desert",
+    "name": "The Desert",
+    "summary_sprite": "summary_the_desert",
+    "detail_sprite": "area_the_desert",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "ShahuriWarrior",
+        "chance_permille": 125.0
+      },
+      {
+        "key": "ShahuriArcher",
+        "chance_permille": 109.58
+      },
+      {
+        "key": "Wurm",
+        "chance_permille": 75.83
+      },
+      {
+        "key": "SandVulture",
+        "chance_permille": 69.17
+      },
+      {
+        "key": "ShahuriMage",
+        "chance_permille": 55.42
+      },
+      {
+        "key": "Djinn",
+        "chance_permille": 15.0
+      },
+      {
+        "key": "Djinn",
+        "chance_permille": null
+      },
+      {
+        "key": "SandStatue",
+        "chance_permille": null
+      },
+      {
+        "key": "SandVulture",
+        "chance_permille": null
+      },
+      {
+        "key": "ShahuriArcher",
+        "chance_permille": null
+      },
+      {
+        "key": "ShahuriMage",
+        "chance_permille": null
+      },
+      {
+        "key": "ShahuriWarrior",
+        "chance_permille": null
+      },
+      {
+        "key": "Wurm",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 540,
+    "items_mentioned": [
+      "Feather",
+      "FeatherRobe",
+      "GlassKnife",
+      "IronChainmail",
+      "IronHelm",
+      "MetamorphicSand",
+      "Quartz",
+      "Sandstone",
+      "Scimitar",
+      "ScrapMetal",
+      "ShahuriBow",
+      "WurmScale",
+      "WurmscalesBoots",
+      "WurmscalesGloves",
+      "WurmscalesJacket",
+      "WurmscalesShield"
+    ]
+  },
+  {
+    "key": "TheGoldenCity",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/TheGoldenCity.kt",
+    "name_key": "dungeon_name_the_golden_city",
+    "name": "The Golden City",
+    "summary_sprite": "summary_the_golden_city",
+    "detail_sprite": "area_the_golden_city",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "CityWarden",
+        "chance_permille": 189.67
+      },
+      {
+        "key": "InsaneCitizen",
+        "chance_permille": 180.83
+      },
+      {
+        "key": "InsanePriest",
+        "chance_permille": 36.83
+      },
+      {
+        "key": "ImperialGuard",
+        "chance_permille": 20.67
+      },
+      {
+        "key": "ArcaneAssassin",
+        "chance_permille": 17.67
+      },
+      {
+        "key": "ImperialMage",
+        "chance_permille": 17.67
+      },
+      {
+        "key": "InsaneMerchant",
+        "chance_permille": 6.67
+      },
+      {
+        "key": "ArcaneAssassin",
+        "chance_permille": null
+      },
+      {
+        "key": "CityWarden",
+        "chance_permille": null
+      },
+      {
+        "key": "ImperialCaptain",
+        "chance_permille": null
+      },
+      {
+        "key": "ImperialGuard",
+        "chance_permille": null
+      },
+      {
+        "key": "ImperialMage",
+        "chance_permille": null
+      },
+      {
+        "key": "InsaneCitizen",
+        "chance_permille": null
+      },
+      {
+        "key": "InsaneMerchant",
+        "chance_permille": null
+      },
+      {
+        "key": "InsanePriest",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 540,
+    "items_mentioned": [
+      "BeltJacket",
+      "BlackOoze",
+      "Emerald",
+      "GoldScraps",
+      "GoldenArmor",
+      "GoldenBoots",
+      "GoldenGauntlets",
+      "GoldenHelm",
+      "GoldenShield",
+      "GoldenSword",
+      "Ivory",
+      "Redwood",
+      "Ruby",
+      "SilkRobe",
+      "SilkThread"
+    ]
+  },
+  {
+    "key": "TheSouthernGrove",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/TheSouthernGrove.kt",
+    "name_key": "dungeon_name_the_southern_grove",
+    "name": "The Southern Grove",
+    "summary_sprite": "summary_the_southern_grove",
+    "detail_sprite": "area_the_southern_grove",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "GreenSpitfang",
+        "chance_permille": 123.33
+      },
+      {
+        "key": "GiantMoth",
+        "chance_permille": 105.0
+      },
+      {
+        "key": "GiantTortoise",
+        "chance_permille": 90.0
+      },
+      {
+        "key": "Dryad",
+        "chance_permille": 51.67
+      },
+      {
+        "key": "AncientEnt",
+        "chance_permille": 30.0
+      },
+      {
+        "key": "AncientEnt",
+        "chance_permille": null
+      },
+      {
+        "key": "Dryad",
+        "chance_permille": null
+      },
+      {
+        "key": "GiantMoth",
+        "chance_permille": null
+      },
+      {
+        "key": "GiantTortoise",
+        "chance_permille": null
+      },
+      {
+        "key": "GreenSpitfang",
+        "chance_permille": null
+      },
+      {
+        "key": "PrimevalWurm",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 400,
+    "items_mentioned": [
+      "ElysianWood",
+      "FleetfootFabric",
+      "GiantMothWing",
+      "GiantShellFragment",
+      "MothRobe",
+      "SpitfangJacket",
+      "SpitfangScale",
+      "TortoiseArmor",
+      "TortoiseShield",
+      "TortoiseThorn",
+      "VerdantBlade",
+      "VerdantBoots",
+      "VerdantBow",
+      "VerdantGloves",
+      "VerdantHelm"
+    ]
+  },
+  {
+    "key": "AncientGraveDigging",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/AncientGraveDigging.kt",
+    "name_key": "raid_name_ancient_grave_digging",
+    "name": "Ancient Grave Digging",
+    "summary_sprite": "summary_ancient_grave_digging",
+    "detail_sprite": "area_ancient_grave_digging",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Abomination",
+        "chance_permille": null
+      },
+      {
+        "key": "DeathHound",
+        "chance_permille": null
+      },
+      {
+        "key": "KabarTheRotten",
+        "chance_permille": null
+      },
+      {
+        "key": "Necrolith",
+        "chance_permille": null
+      },
+      {
+        "key": "Undead",
+        "chance_permille": null
+      },
+      {
+        "key": "UndeadArcher",
+        "chance_permille": null
+      },
+      {
+        "key": "UndeadGeneral",
+        "chance_permille": null
+      },
+      {
+        "key": "UndeadWarlord",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "CelestialMothership",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/CelestialMothership.kt",
+    "name_key": "raid_name_celestial_mothership",
+    "name": "Celestial Mothership",
+    "summary_sprite": "summary_celestial_mothership",
+    "detail_sprite": "area_celestial_mothership",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "CelestialDestroyer",
+        "chance_permille": null
+      },
+      {
+        "key": "CelestialLancer",
+        "chance_permille": null
+      },
+      {
+        "key": "Gcss",
+        "chance_permille": null
+      },
+      {
+        "key": "LegateHadrian",
+        "chance_permille": null
+      },
+      {
+        "key": "Oculus",
+        "chance_permille": null
+      },
+      {
+        "key": "ReinforcedDoor",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "DivineArcheology",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/DivineArcheology.kt",
+    "name_key": "raid_name_divine_archeology",
+    "name": "Divine Archeology",
+    "summary_sprite": "summary_divine_archeology",
+    "detail_sprite": "area_divine_archeology",
+    "area_type": 2,
+    "level": null,
+    "enemies": [
+      {
+        "key": "SandDemon",
+        "chance_permille": null
+      },
+      {
+        "key": "ShaKireFirstSwordsman",
+        "chance_permille": null
+      },
+      {
+        "key": "ShaTheHiddenGod",
+        "chance_permille": null
+      },
+      {
+        "key": "ShahuriArcher",
+        "chance_permille": null
+      },
+      {
+        "key": "ShahuriMage",
+        "chance_permille": null
+      },
+      {
+        "key": "ShahuriWarrior",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "GuildRequestArea",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/GuildRequestArea.kt",
+    "name_key": "guild_request_name",
+    "name": "The Hunt",
+    "summary_sprite": "summary_request",
+    "detail_sprite": "area_request",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Shadow",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "GuildSiegeArea",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/GuildSiegeArea.kt",
+    "name_key": "guild_siege_name",
+    "name": "The Siege",
+    "summary_sprite": "summary_the_siege",
+    "detail_sprite": "area_the_siege",
+    "area_type": 1,
+    "level": null,
+    "enemies": [],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "ImperialRescue",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/ImperialRescue.kt",
+    "name_key": "raid_name_imperial_rescue",
+    "name": "Imperial Rescue",
+    "summary_sprite": "summary_imperial_rescue",
+    "detail_sprite": "area_imperial_rescue",
+    "area_type": 2,
+    "level": null,
+    "enemies": [
+      {
+        "key": "CityWarden",
+        "chance_permille": null
+      },
+      {
+        "key": "EmperorClovisXXVIII",
+        "chance_permille": null
+      },
+      {
+        "key": "ImperialGuard",
+        "chance_permille": null
+      },
+      {
+        "key": "ImperialMage",
+        "chance_permille": null
+      },
+      {
+        "key": "InsaneCitizen",
+        "chance_permille": null
+      },
+      {
+        "key": "InsaneMerchant",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "Kaunis",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/Kaunis.kt",
+    "name_key": "raid_name_kaunis",
+    "name": "Kaunis",
+    "summary_sprite": "summary_kaunis",
+    "detail_sprite": "area_kaunis",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Cerebrum",
+        "chance_permille": null
+      },
+      {
+        "key": "ChiefScientistAva",
+        "chance_permille": null
+      },
+      {
+        "key": "Enforcer",
+        "chance_permille": null
+      },
+      {
+        "key": "FirstMinisterAtos",
+        "chance_permille": null
+      },
+      {
+        "key": "KingAino",
+        "chance_permille": null
+      },
+      {
+        "key": "Necrobot",
+        "chance_permille": null
+      },
+      {
+        "key": "Phantasm",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "SanguineCrucible",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/SanguineCrucible.kt",
+    "name_key": "raid_name_sanguine_crucible",
+    "name": "The Sanguine Crucible",
+    "summary_sprite": "summary_scarlet",
+    "detail_sprite": "area_scarlet",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "ArchmagusValthex",
+        "chance_permille": null
+      },
+      {
+        "key": "BloodstoneColossus",
+        "chance_permille": null
+      },
+      {
+        "key": "CrimsonAcolyte",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 1,
+    "items_mentioned": []
+  },
+  {
+    "key": "SleepingPlanet",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/SleepingPlanet.kt",
+    "name_key": "raid_name_sleeping_planet",
+    "name": "Sleeping Planet",
+    "summary_sprite": "summary_sleeping_planet",
+    "detail_sprite": "area_sleeping_planet",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "DreamwroughtBeast",
+        "chance_permille": null
+      },
+      {
+        "key": "DreamwroughtDragon",
+        "chance_permille": null
+      },
+      {
+        "key": "DreamwroughtForge",
+        "chance_permille": null
+      },
+      {
+        "key": "DreamwroughtSwarm",
+        "chance_permille": null
+      },
+      {
+        "key": "Singularity",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheCultistRebels",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheCultistRebels.kt",
+    "name_key": "raid_name_the_cultist_rebels",
+    "name": "The Cultist Rebels",
+    "summary_sprite": "summary_the_cultist_rebels",
+    "detail_sprite": "area_the_cultist_rebels",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "LesserTitan",
+        "chance_permille": 0.35
+      },
+      {
+        "key": "Claris",
+        "chance_permille": null
+      },
+      {
+        "key": "Crusader",
+        "chance_permille": null
+      },
+      {
+        "key": "LesserTitan",
+        "chance_permille": null
+      },
+      {
+        "key": "PrimordialTitan",
+        "chance_permille": null
+      },
+      {
+        "key": "Thorvus",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 1,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheDireDescent",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheDireDescent.kt",
+    "name_key": "raid_name_the_dire_descent",
+    "name": "The Dire Descent",
+    "summary_sprite": "summary_the_dire_descent",
+    "detail_sprite": "area_the_dire_descent",
+    "area_type": 2,
+    "level": null,
+    "enemies": [
+      {
+        "key": "HeraldMaya",
+        "chance_permille": null
+      },
+      {
+        "key": "HeraldShoran",
+        "chance_permille": null
+      },
+      {
+        "key": "HeraldXavi",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheDreadfulAscent",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheDreadfulAscent.kt",
+    "name_key": "raid_name_the_dreadful_ascent",
+    "name": "The Dreadful Ascent",
+    "summary_sprite": "summary_the_dreadful_ascent",
+    "detail_sprite": "area_the_dreadful_ascent",
+    "area_type": 2,
+    "level": null,
+    "enemies": [
+      {
+        "key": "EtherealSoul",
+        "chance_permille": null
+      },
+      {
+        "key": "HeraldKali",
+        "chance_permille": null
+      },
+      {
+        "key": "KasimirTheSeer",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheLostExpedition",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheLostExpedition.kt",
+    "name_key": "raid_name_the_lost_expedition",
+    "name": "The Lost Expedition",
+    "summary_sprite": "summary_the_lost_expedition",
+    "detail_sprite": "area_the_lost_expedition",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "AvatarOfTheAncient",
+        "chance_permille": null
+      },
+      {
+        "key": "BleakDeacon",
+        "chance_permille": null
+      },
+      {
+        "key": "BleakDisciple",
+        "chance_permille": null
+      },
+      {
+        "key": "EldritchHound",
+        "chance_permille": null
+      },
+      {
+        "key": "LostMiner",
+        "chance_permille": null
+      },
+      {
+        "key": "TekeliLiFirstApostle",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheSlimePond",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheSlimePond.kt",
+    "name_key": "raid_name_the_slime_pond",
+    "name": "The Slime Pond",
+    "summary_sprite": "summary_the_slime_pond",
+    "detail_sprite": "area_the_slime_pond",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "ElectricSlime",
+        "chance_permille": null
+      },
+      {
+        "key": "FireSlime",
+        "chance_permille": null
+      },
+      {
+        "key": "FrozenSlime",
+        "chance_permille": null
+      },
+      {
+        "key": "KnightSlime",
+        "chance_permille": null
+      },
+      {
+        "key": "Slime",
+        "chance_permille": null
+      },
+      {
+        "key": "SlimeKing",
+        "chance_permille": null
+      },
+      {
+        "key": "VoidSlime",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 1,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheSlumberingShallowsArea",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheSlumberingShallowsArea.kt",
+    "name_key": "guild_slumbering_shallows_name",
+    "name": "The Slumbering Shallows",
+    "summary_sprite": "summary_fishing_pond",
+    "detail_sprite": "area_fishing_pond",
+    "area_type": null,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Angelfish",
+        "chance_permille": null
+      },
+      {
+        "key": "BlueShark",
+        "chance_permille": null
+      },
+      {
+        "key": "BlueTrout",
+        "chance_permille": null
+      },
+      {
+        "key": "ChorusTheDrowned",
+        "chance_permille": null
+      },
+      {
+        "key": "MagmaShark",
+        "chance_permille": null
+      },
+      {
+        "key": "Perch",
+        "chance_permille": null
+      },
+      {
+        "key": "WingedRay",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 170,
+    "items_mentioned": [
+      "CoinPurse",
+      "Perch"
+    ]
+  },
+  {
+    "key": "TheTower",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheTower.kt",
+    "name_key": "raid_name_the_tower",
+    "name": "The Tower",
+    "summary_sprite": "summary_the_tower",
+    "detail_sprite": "area_the_tower",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "HeadlessKnight",
+        "chance_permille": null
+      },
+      {
+        "key": "Lazarus",
+        "chance_permille": null
+      },
+      {
+        "key": "Phoenix",
+        "chance_permille": null
+      },
+      {
+        "key": "TheAncient",
+        "chance_permille": null
+      },
+      {
+        "key": "TheExiled",
+        "chance_permille": null
+      },
+      {
+        "key": "TheMachine",
+        "chance_permille": null
+      },
+      {
+        "key": "Ultraslime",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  }
+]

@@ -1,0 +1,80 @@
+# Builds the IGM+ wiki and deploys it to GitHub Pages.
+#
+# This repository only contains the wiki site (pages, theme, workflow).
+# The game data sources live in Lemoinie/IGM-Modded, which is checked out
+# alongside this repo so the Python pipeline can read the Kotlin sources.
+#
+# Requires: Settings → Pages → Source = "GitHub Actions".
+
+name: Deploy wiki to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+    tags: ['v*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout wiki
+        uses: actions/checkout@v4
+
+      - name: Checkout game sources (IGM-Modded)
+        uses: actions/checkout@v4
+        with:
+          repository: Lemoinie/IGM-Modded
+          path: IGM-Modded
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Extract game data
+        run: python IGM-Modded/scripts/igmplus_wiki/extract_game_data.py --repo IGM-Modded --out data
+
+      - name: Export sprites
+        run: python IGM-Modded/scripts/igmplus_wiki/export_sprites.py --repo IGM-Modded --data data --out public/images
+
+      - name: Generate pages
+        run: python IGM-Modded/scripts/igmplus_wiki/generate_pages.py --repo IGM-Modded --wiki .
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Build VitePress site
+        run: |
+          npm install --no-audit --no-fund
+          npm run build
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .vitepress/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

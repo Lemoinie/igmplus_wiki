@@ -1,0 +1,312 @@
+[
+  {
+    "key": "TAUNT",
+    "name_key": "status_effect_taunt",
+    "desc_key": "status_effect_taunt_description",
+    "sprite": "icon_effect_taunt",
+    "negative": true,
+    "serialized": false,
+    "name": "Taunt",
+    "description": "taunted"
+  },
+  {
+    "key": "DEFENSIVE_STANCE",
+    "name_key": "status_effect_defensive_stance",
+    "desc_key": "status_effect_defensive_stance_description",
+    "sprite": "icon_effect_defensive_stance",
+    "negative": false,
+    "serialized": true,
+    "name": "Defensive Stance",
+    "description": "in a defensive stance"
+  },
+  {
+    "key": "STUN",
+    "name_key": "status_effect_stun",
+    "desc_key": "status_effect_stun_description",
+    "sprite": "icon_effect_stun",
+    "negative": true,
+    "serialized": true,
+    "name": "Stun",
+    "description": "stunned"
+  },
+  {
+    "key": "STUN_NOT_CLEANSABLE",
+    "name_key": "status_effect_stun",
+    "desc_key": "status_effect_stun_description",
+    "sprite": "icon_effect_stun",
+    "negative": false,
+    "serialized": true,
+    "name": "Stun",
+    "description": "stunned"
+  },
+  {
+    "key": "SILENCE",
+    "name_key": "status_effect_silence",
+    "desc_key": "status_effect_silence_description",
+    "sprite": "icon_effect_silence",
+    "negative": true,
+    "serialized": true,
+    "name": "Silence",
+    "description": "silenced"
+  },
+  {
+    "key": "ABLAZE",
+    "name_key": "status_effect_ablaze",
+    "desc_key": "status_effect_ablaze_description",
+    "sprite": "icon_effect_ablaze",
+    "negative": true,
+    "serialized": true,
+    "name": "Ablaze",
+    "description": "ablaze"
+  },
+  {
+    "key": "BLOODFLAME",
+    "name_key": "status_effect_bloodflame",
+    "desc_key": "status_effect_bloodflame_log_description",
+    "sprite": "icon_effect_bloodflame",
+    "negative": true,
+    "serialized": true,
+    "name": "Bloodflame",
+    "description": "cursed and rotten by bloodflame"
+  },
+  {
+    "key": "POISON",
+    "name_key": "status_effect_poison",
+    "desc_key": "status_effect_poison_description",
+    "sprite": "icon_effect_poison",
+    "negative": true,
+    "serialized": true,
+    "name": "Poison",
+    "description": "poisoned"
+  },
+  {
+    "key": "REGENERATION",
+    "name_key": "status_effect_regeneration",
+    "desc_key": "status_effect_regeneration_description",
+    "sprite": "icon_effect_regeneration",
+    "negative": false,
+    "serialized": true,
+    "name": "Regeneration",
+    "description": "regenerating"
+  },
+  {
+    "key": "LESSER_CURSE",
+    "name_key": "status_effect_lesser_curse",
+    "desc_key": "status_effect_lesser_curse_description",
+    "sprite": "icon_effect_curse",
+    "negative": true,
+    "serialized": false,
+    "name": "Lesser Curse",
+    "description": "cursed"
+  },
+  {
+    "key": "CURSE",
+    "name_key": "status_effect_curse",
+    "desc_key": "status_effect_curse_description",
+    "sprite": "icon_effect_curse",
+    "negative": true,
+    "serialized": false,
+    "name": "Curse",
+    "description": "cursed"
+  },
+  {
+    "key": "GREATER_CURSE",
+    "name_key": "status_effect_greater_curse",
+    "desc_key": "status_effect_greater_curse_description",
+    "sprite": "icon_effect_curse",
+    "negative": true,
+    "serialized": false,
+    "name": "Greater Curse",
+    "description": "cursed"
+  },
+  {
+    "key": "OMINOUS_CURSE",
+    "name_key": "status_effect_ominous_curse",
+    "desc_key": "status_effect_ominous_curse_description",
+    "sprite": "icon_effect_curse",
+    "negative": true,
+    "serialized": false,
+    "name": "Ominous Curse",
+    "description": "cursed"
+  },
+  {
+    "key": "ABHORRENT_CURSE",
+    "name_key": "status_effect_abhorrent_curse",
+    "desc_key": "status_effect_abhorrent_curse_description",
+    "sprite": "icon_effect_curse",
+    "negative": true,
+    "serialized": false,
+    "name": "Abhorrent Curse",
+    "description": "cursed"
+  },
+  {
+    "key": "BLEED",
+    "name_key": "status_effect_bleed",
+    "desc_key": "status_effect_bleed_description",
+    "sprite": "icon_effect_bleed",
+    "negative": true,
+    "serialized": true,
+    "name": "Bleed",
+    "description": "bleeding"
+  },
+  {
+    "key": "DELIRIUM",
+    "name_key": "status_effect_delirium",
+    "desc_key": "status_effect_delirium_description",
+    "sprite": "icon_effect_delirium",
+    "negative": false,
+    "serialized": true,
+    "name": "Delirium",
+    "description": "delirious"
+  },
+  {
+    "key": "FRENZY",
+    "name_key": "status_effect_frenzy",
+    "desc_key": "status_effect_frenzy_description",
+    "sprite": "icon_effect_frenzy",
+    "negative": false,
+    "serialized": true,
+    "name": "Frenzy",
+    "description": "frenzied"
+  },
+  {
+    "key": "ANOINTED",
+    "name_key": "status_effect_anointed",
+    "desc_key": "status_effect_anointed_description",
+    "sprite": "icon_effect_anointed",
+    "negative": false,
+    "serialized": true,
+    "name": "Anointed",
+    "description": "anointed"
+  },
+  {
+    "key": "SKELETON_KEY",
+    "name_key": "status_effect_skeleton_key",
+    "desc_key": "status_effect_skeleton_key_description",
+    "sprite": "skeleton_key",
+    "negative": false,
+    "serialized": false,
+    "name": "Skeleton Key",
+    "description": "enhanced by Skeleton Key"
+  },
+  {
+    "key": "FEEBLE_TETHER",
+    "name_key": "status_effect_feeble_tether",
+    "desc_key": "status_effect_feeble_tether_description",
+    "sprite": "feeble_tether",
+    "negative": false,
+    "serialized": true,
+    "name": "Feeble Tether",
+    "description": "tethered to an ancient power"
+  },
+  {
+    "key": "INSPIRE",
+    "name_key": "status_effect_inspire",
+    "desc_key": "status_effect_inspire_description",
+    "sprite": "icon_effect_inspire",
+    "negative": false,
+    "serialized": true,
+    "name": "Inspire",
+    "description": "inspired"
+  },
+  {
+    "key": "EXALT",
+    "name_key": "status_effect_exalt",
+    "desc_key": "status_effect_exalt_description",
+    "sprite": "icon_effect_exalt",
+    "negative": false,
+    "serialized": true,
+    "name": "Exalt",
+    "description": "exalted"
+  },
+  {
+    "key": "PETRIFY",
+    "name_key": "status_effect_petrify",
+    "desc_key": "status_effect_petrify_description",
+    "sprite": "icon_effect_petrify",
+    "negative": true,
+    "serialized": true,
+    "name": "Petrify",
+    "description": "petrified"
+  },
+  {
+    "key": "FALSE_LIFE",
+    "name_key": "status_effect_false_life",
+    "desc_key": "status_effect_false_life_description",
+    "sprite": "icon_effect_false_life",
+    "negative": false,
+    "serialized": true,
+    "name": "False Life",
+    "description": "shielded by False Life"
+  },
+  {
+    "key": "TERRIFY",
+    "name_key": "status_effect_terrify",
+    "desc_key": "status_effect_terrify_description",
+    "sprite": "icon_effect_terrify",
+    "negative": true,
+    "serialized": true,
+    "name": "Terrify",
+    "description": "terrified"
+  },
+  {
+    "key": "FROZEN",
+    "name_key": "status_effect_freeze",
+    "desc_key": "status_effect_freeze_description",
+    "sprite": "icon_effect_freeze",
+    "negative": true,
+    "serialized": true,
+    "name": "Freeze",
+    "description": "frozen"
+  },
+  {
+    "key": "RADIANT_BLESSING",
+    "name_key": "status_effect_radiant_blessing",
+    "desc_key": "status_effect_radiant_blessing_description",
+    "sprite": "icon_effect_radiant_blessing",
+    "negative": false,
+    "serialized": false,
+    "name": "Radiant Blessing",
+    "description": "Blessed by the aura of light: bonus status immunity, bonus damage against Undead, flat damage reduction, and HP regeneration."
+  },
+  {
+    "key": "SOLAR_REBIRTH",
+    "name_key": "status_effect_solar_rebirth",
+    "desc_key": "status_effect_solar_rebirth_description",
+    "sprite": "icon_effect_solar_rebirth",
+    "negative": false,
+    "serialized": false,
+    "name": "Solar Rebirth",
+    "description": "Wrapped in Phoenix solar flames: survives one lethal hit at 1 HP."
+  },
+  {
+    "key": "SANGUINE_FERVOR",
+    "name_key": "status_effect_sanguine_fervor_name",
+    "desc_key": "status_effect_sanguine_fervor_log_description",
+    "sprite": "icon_effect_sanguine_fervor",
+    "negative": false,
+    "serialized": false,
+    "name": "Sanguine Fervor",
+    "description": "empowered by Sanguine Fervor"
+  },
+  {
+    "key": "SINISTER_CURSE",
+    "name_key": "status_effect_sinister_curse_name",
+    "desc_key": "status_effect_sinister_curse_description",
+    "sprite": "icon_effect_sinister_curse",
+    "negative": true,
+    "serialized": false,
+    "name": "Sinister Curse",
+    "description": "A malign crimson curse. Increases damage taken by 50%. If the afflicted dies while cursed, their soul is reaped into an enemy Bone Nightmare."
+  },
+  {
+    "key": "ENTANGLE",
+    "name_key": "status_effect_entangle",
+    "desc_key": "status_effect_entangle_description",
+    "sprite": "icon_effect_entangle",
+    "negative": true,
+    "serialized": true,
+    "name": "Entangle",
+    "description": null
+  }
+]

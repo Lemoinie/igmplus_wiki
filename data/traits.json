@@ -1,0 +1,322 @@
+[
+  {
+    "key": "BOOKWORM",
+    "name_key": "trait_bookworm_name",
+    "desc_key": "trait_bookworm_description",
+    "plus": false,
+    "name": "Bookworm",
+    "description": null
+  },
+  {
+    "key": "BRUTE",
+    "name_key": "trait_brute_name",
+    "desc_key": "trait_brute_description",
+    "plus": false,
+    "name": "Brute",
+    "description": null
+  },
+  {
+    "key": "FERAL",
+    "name_key": "trait_feral_name",
+    "desc_key": "trait_feral_description",
+    "plus": false,
+    "name": "Feral",
+    "description": null
+  },
+  {
+    "key": "BOOKWORM_PLUS",
+    "name_key": "trait_bookworm_plus_name",
+    "desc_key": "trait_bookworm_plus_description",
+    "plus": true,
+    "name": "Bookworm+",
+    "description": null
+  },
+  {
+    "key": "BRUTE_PLUS",
+    "name_key": "trait_brute_plus_name",
+    "desc_key": "trait_brute_plus_description",
+    "plus": true,
+    "name": "Brute+",
+    "description": null
+  },
+  {
+    "key": "FERAL_PLUS",
+    "name_key": "trait_feral_plus_name",
+    "desc_key": "trait_feral_plus_description",
+    "plus": true,
+    "name": "Feral+",
+    "description": null
+  },
+  {
+    "key": "VERSATILE",
+    "name_key": "trait_versatile_name",
+    "desc_key": "trait_versatile_description",
+    "plus": false,
+    "name": "Versatile",
+    "description": null
+  },
+  {
+    "key": "VERSATILE_PLUS",
+    "name_key": "trait_versatile_plus_name",
+    "desc_key": "trait_versatile_plus_description",
+    "plus": true,
+    "name": "Versatile+",
+    "description": null
+  },
+  {
+    "key": "ZEALOUS",
+    "name_key": "trait_zealous_name",
+    "desc_key": "trait_zealous_description",
+    "plus": false,
+    "name": "Zealous",
+    "description": null
+  },
+  {
+    "key": "ZEALOUS_PLUS",
+    "name_key": "trait_zealous_plus_name",
+    "desc_key": "trait_zealous_plus_description",
+    "plus": true,
+    "name": "Zealous+",
+    "description": null
+  },
+  {
+    "key": "CUNNING",
+    "name_key": "trait_cunning_name",
+    "desc_key": "trait_cunning_description",
+    "plus": false,
+    "name": "Cunning",
+    "description": null
+  },
+  {
+    "key": "CUNNING_PLUS",
+    "name_key": "trait_cunning_plus_name",
+    "desc_key": "trait_cunning_plus_description",
+    "plus": true,
+    "name": "Cunning+",
+    "description": null
+  },
+  {
+    "key": "ATHLETIC",
+    "name_key": "trait_athletic_name",
+    "desc_key": "trait_athletic_description",
+    "plus": false,
+    "name": "Athletic",
+    "description": null
+  },
+  {
+    "key": "ATHLETIC_PLUS",
+    "name_key": "trait_athletic_plus_name",
+    "desc_key": "trait_athletic_plus_description",
+    "plus": true,
+    "name": "Athletic+",
+    "description": null
+  },
+  {
+    "key": "EMPATHETIC",
+    "name_key": "trait_empathetic_name",
+    "desc_key": "trait_empathetic_description",
+    "plus": false,
+    "name": "Empathetic",
+    "description": "Heals are 20% more powerful (multiplicative)."
+  },
+  {
+    "key": "GIFTED",
+    "name_key": "trait_gifted_name",
+    "desc_key": "trait_gifted_description",
+    "plus": false,
+    "name": "Gifted",
+    "description": "Gains 2 more mana per turn."
+  },
+  {
+    "key": "INTIMIDATING",
+    "name_key": "trait_intimidating_name",
+    "desc_key": "trait_intimidating_description",
+    "plus": false,
+    "name": "Intimidating",
+    "description": "+2 threat"
+  },
+  {
+    "key": "FOCUSED",
+    "name_key": "trait_focused_name",
+    "desc_key": "trait_focused_description",
+    "plus": false,
+    "name": "Focused",
+    "description": null
+  },
+  {
+    "key": "DRAGON_BLOOD",
+    "name_key": "trait_dragon_blood_name",
+    "desc_key": "trait_dragon_blood_description",
+    "plus": false,
+    "name": "Dragon Blood",
+    "description": null
+  },
+  {
+    "key": "CURSED",
+    "name_key": "trait_cursed_name",
+    "desc_key": "trait_cursed_description",
+    "plus": false,
+    "name": "Cursed",
+    "description": null
+  },
+  {
+    "key": "REACTIVE",
+    "name_key": "trait_reactive_name",
+    "desc_key": "trait_reactive_description",
+    "plus": false,
+    "name": "Reactive",
+    "description": "10% counterattack chance when hit by melee attacks."
+  },
+  {
+    "key": "NOCTURNAL",
+    "name_key": "trait_nocturnal_name",
+    "desc_key": "trait_nocturnal_description",
+    "plus": false,
+    "name": "Nocturnal",
+    "description": null
+  },
+  {
+    "key": "MINDFUL",
+    "name_key": "trait_mindful_name",
+    "desc_key": "trait_mindful_description",
+    "plus": false,
+    "name": "Mindful",
+    "description": "10% status immunity."
+  },
+  {
+    "key": "TROLL_BLOOD",
+    "name_key": "trait_troll_blood_name",
+    "desc_key": "trait_troll_blood_description",
+    "plus": false,
+    "name": "Troll Blood",
+    "description": null
+  },
+  {
+    "key": "NIMBLE",
+    "name_key": "trait_nimble_name",
+    "desc_key": "trait_nimble_description",
+    "plus": false,
+    "name": "Nimble",
+    "description": null
+  },
+  {
+    "key": "RUTHLESS",
+    "name_key": "trait_ruthless_name",
+    "desc_key": "trait_ruthless_description",
+    "plus": false,
+    "name": "Ruthless",
+    "description": "Critical damage +20% (multiplicative)."
+  },
+  {
+    "key": "BLESSED",
+    "name_key": "trait_blessed_name",
+    "desc_key": "trait_blessed_description",
+    "plus": false,
+    "name": "Blessed",
+    "description": "Reduces darkness by 15."
+  },
+  {
+    "key": "ALERT",
+    "name_key": "trait_alert_name",
+    "desc_key": "trait_alert_description",
+    "plus": false,
+    "name": "Alert",
+    "description": "Starts the fight first."
+  },
+  {
+    "key": "DEADEYE",
+    "name_key": "trait_deadeye_name",
+    "desc_key": "trait_deadeye_description",
+    "plus": false,
+    "name": "Deadeye",
+    "description": null
+  },
+  {
+    "key": "SUNDERING",
+    "name_key": "trait_sundering_name",
+    "desc_key": "trait_sundering_description",
+    "plus": false,
+    "name": "Sundering",
+    "description": null
+  },
+  {
+    "key": "FORTIFIED",
+    "name_key": "trait_fortified_name",
+    "desc_key": "trait_fortified_description",
+    "plus": false,
+    "name": "Fortified",
+    "description": null
+  },
+  {
+    "key": "RECKLESS",
+    "name_key": "trait_reckless_name",
+    "desc_key": "trait_reckless_description",
+    "plus": false,
+    "name": "Reckless",
+    "description": null
+  },
+  {
+    "key": "LONE_WOLF",
+    "name_key": "trait_lone_wolf_name",
+    "desc_key": "trait_lone_wolf_description",
+    "plus": false,
+    "name": "Lone Wolf",
+    "description": null
+  },
+  {
+    "key": "RUTHLESS_PLUS",
+    "name_key": "trait_ruthless_plus_name",
+    "desc_key": "trait_ruthless_plus_description",
+    "plus": true,
+    "name": "Ruthless+",
+    "description": null
+  },
+  {
+    "key": "EMPATHETIC_PLUS",
+    "name_key": "trait_empathetic_plus_name",
+    "desc_key": "trait_empathetic_plus_description",
+    "plus": true,
+    "name": "Empathetic+",
+    "description": null
+  },
+  {
+    "key": "NOCTURNAL_PLUS",
+    "name_key": "trait_nocturnal_plus_name",
+    "desc_key": "trait_nocturnal_plus_description",
+    "plus": true,
+    "name": "Nocturnal+",
+    "description": null
+  },
+  {
+    "key": "GIFTED_PLUS",
+    "name_key": "trait_gifted_plus_name",
+    "desc_key": "trait_gifted_plus_description",
+    "plus": true,
+    "name": "Gifted+",
+    "description": null
+  },
+  {
+    "key": "INTIMIDATING_PLUS",
+    "name_key": "trait_intimidating_plus_name",
+    "desc_key": "trait_intimidating_plus_description",
+    "plus": true,
+    "name": "Intimidating+",
+    "description": "+4 threat"
+  },
+  {
+    "key": "CURSED_PLUS",
+    "name_key": "trait_cursed_plus_name",
+    "desc_key": "trait_cursed_plus_description",
+    "plus": true,
+    "name": "Cursed+",
+    "description": null
+  },
+  {
+    "key": "ALERT_PLUS",
+    "name_key": "trait_alert_plus_name",
+    "desc_key": "trait_alert_plus_description",
+    "plus": true,
+    "name": "Alert+",
+    "description": null
+  }
+]

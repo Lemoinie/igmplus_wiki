@@ -1,0 +1,3282 @@
+{
+  "abherrant_fabric": [
+    "item:AbherrantFabric"
+  ],
+  "abhorrent_long_axe": [
+    "item:AbhorrentLongAxe"
+  ],
+  "abiotic_core": [
+    "item:AbioticCore"
+  ],
+  "absolute_zero": [
+    "item:AbsoluteZero"
+  ],
+  "abyssal_compendium": [
+    "item:AbyssalCompendium"
+  ],
+  "abyssal_cutlass": [
+    "item:AbyssalCutlass"
+  ],
+  "abyssal_goo": [
+    "item:AbyssalGoo"
+  ],
+  "abyssal_great_axe": [
+    "item:AbyssalGreataxe"
+  ],
+  "abyssal_ingot": [
+    "item:AbyssalIngot"
+  ],
+  "abyssal_scarlet_mantle": [
+    "item:AbyssalScarletMantle"
+  ],
+  "abyssal_seashell": [
+    "item:AbyssalSeashell"
+  ],
+  "aegis": [
+    "item:Aegis"
+  ],
+  "aegis_mechanica": [
+    "item:AegisMechanica"
+  ],
+  "aether_ignis": [
+    "item:AetherIgnis"
+  ],
+  "alchemic_powder": [
+    "item:AlchemicPowder"
+  ],
+  "algae": [
+    "item:Algae"
+  ],
+  "alpha_wolf_fang": [
+    "item:AlphaWolfFang"
+  ],
+  "ambrosia": [
+    "item:Ambrosia"
+  ],
+  "amulet_of_resurrection": [
+    "item:AmuletOfResurrection"
+  ],
+  "amulet_of_the_swordsman": [
+    "item:AmuletOfTheSwordsman"
+  ],
+  "ancestral_blood": [
+    "item:AncestralBlood"
+  ],
+  "ancient_armor": [
+    "item:AncientArmor"
+  ],
+  "ancient_boots": [
+    "item:AncientBoots"
+  ],
+  "ancient_eye": [
+    "item:AncientEye"
+  ],
+  "ancient_gloves": [
+    "item:AncientGloves"
+  ],
+  "ancient_hide": [
+    "item:AncientHide"
+  ],
+  "ancient_jacket": [
+    "item:AncientJacket"
+  ],
+  "ancient_membrane": [
+    "item:AncientMembrane"
+  ],
+  "ancient_robe": [
+    "item:AncientRobe"
+  ],
+  "ancient_seed": [
+    "item:AncientSeed"
+  ],
+  "angelfish": [
+    "enemy:Angelfish",
+    "item:Angelfish"
+  ],
+  "animated_axe": [
+    "item:AnimatedAxe"
+  ],
+  "animated_bow": [
+    "item:AnimatedBow"
+  ],
+  "animated_buckler": [
+    "item:AnimatedBuckler"
+  ],
+  "animated_cuirass": [
+    "item:AnimatedCuirass"
+  ],
+  "animated_dagger": [
+    "item:AnimatedDagger"
+  ],
+  "animated_helm": [
+    "item:AnimatedHelm"
+  ],
+  "animated_ingot": [
+    "item:AnimatedIngot"
+  ],
+  "animated_scraps": [
+    "item:AnimatedScraps"
+  ],
+  "animated_staff": [
+    "item:AnimatedStaff"
+  ],
+  "animated_sword": [
+    "item:AnimatedSword"
+  ],
+  "apple": [
+    "item:Apple"
+  ],
+  "apple_pie": [
+    "item:ApplePie"
+  ],
+  "arcane_dagger": [
+    "item:ArcaneDagger"
+  ],
+  "archaic_amulet": [
+    "item:ArchaicAmulet"
+  ],
+  "archmage_hat": [
+    "item:ArchmageHat"
+  ],
+  "area_ancient_grave_digging": [
+    "place:AncientGraveDigging:detail"
+  ],
+  "area_barren_wastelands": [
+    "place:BarrenWastelands:detail"
+  ],
+  "area_blackwater_port": [
+    "place:BlackwaterPort:detail"
+  ],
+  "area_celestial_mothership": [
+    "place:CelestialMothership:detail"
+  ],
+  "area_divine_archeology": [
+    "place:DivineArcheology:detail"
+  ],
+  "area_enchanted_forest": [
+    "place:EnchantedForest:detail"
+  ],
+  "area_eternal_battlefield": [
+    "place:EternalBattlefield:detail"
+  ],
+  "area_fishing_pond": [
+    "place:TheSlumberingShallowsArea:detail"
+  ],
+  "area_frostbite_peaks": [
+    "place:FrostbitePeaks:detail"
+  ],
+  "area_hidden_city_of_larox": [
+    "place:HiddenCityOfLarox:detail"
+  ],
+  "area_imperial_rescue": [
+    "place:ImperialRescue:detail"
+  ],
+  "area_kaunis": [
+    "place:Kaunis:detail"
+  ],
+  "area_lost_lands": [
+    "place:LostLands:detail"
+  ],
+  "area_obsidian_mines": [
+    "place:ObsidianMines:detail"
+  ],
+  "area_request": [
+    "place:GuildRequestArea:detail"
+  ],
+  "area_scarlet": [
+    "place:SanguineCrucible:detail"
+  ],
+  "area_sleeping_planet": [
+    "place:SleepingPlanet:detail"
+  ],
+  "area_the_cultist_rebels": [
+    "place:TheCultistRebels:detail"
+  ],
+  "area_the_desert": [
+    "place:TheDesert:detail"
+  ],
+  "area_the_dire_descent": [
+    "place:TheDireDescent:detail"
+  ],
+  "area_the_dreadful_ascent": [
+    "place:TheDreadfulAscent:detail"
+  ],
+  "area_the_golden_city": [
+    "place:TheGoldenCity:detail"
+  ],
+  "area_the_lost_expedition": [
+    "place:TheLostExpedition:detail"
+  ],
+  "area_the_siege": [
+    "place:GuildSiegeArea:detail"
+  ],
+  "area_the_slime_pond": [
+    "place:TheSlimePond:detail"
+  ],
+  "area_the_southern_grove": [
+    "place:TheSouthernGrove:detail"
+  ],
+  "area_the_tower": [
+    "place:TheTower:detail"
+  ],
+  "armor_of_the_dryad": [
+    "item:ArmorOfTheDryad"
+  ],
+  "armor_of_the_undying": [
+    "item:ArmorOfTheUndying"
+  ],
+  "ascended_bow": [
+    "item:AscendedBow"
+  ],
+  "astral_goo": [
+    "item:AstralGoo"
+  ],
+  "avocado": [
+    "item:Avocado"
+  ],
+  "bag_of_choking_powder": [
+    "item:BagOfChokingPowder"
+  ],
+  "banana": [
+    "item:Banana"
+  ],
+  "banshee_bow": [
+    "item:BansheeBow"
+  ],
+  "banshee_claw": [
+    "item:BansheeClaw"
+  ],
+  "banshee_dagger": [
+    "item:BansheeDagger"
+  ],
+  "banshee_gloves": [
+    "item:BansheeGloves"
+  ],
+  "banshee_horn": [
+    "item:BansheeHorn"
+  ],
+  "banshee_jacket": [
+    "item:BansheeJacket"
+  ],
+  "banshee_scale": [
+    "item:BansheeScale"
+  ],
+  "banshee_scream": [
+    "item:BansheeScream"
+  ],
+  "bat_tooth": [
+    "item:BatTooth"
+  ],
+  "bat_wing": [
+    "item:BatWing"
+  ],
+  "beast_pelt": [
+    "item:BeastPelt"
+  ],
+  "beastmaster_jacket": [
+    "item:BeastmasterJacket"
+  ],
+  "belt_jacket": [
+    "item:BeltJacket"
+  ],
+  "berserkers_axe": [
+    "item:BerserkersAxe"
+  ],
+  "black_hide": [
+    "item:BlackHide"
+  ],
+  "black_iron_armor": [
+    "item:BlackIronArmor"
+  ],
+  "black_iron_axe": [
+    "item:BlackIronAxe"
+  ],
+  "black_iron_cutlass": [
+    "item:BlackIronCutlass"
+  ],
+  "black_iron_dagger": [
+    "item:BlackIronDagger"
+  ],
+  "black_iron_gauntlets": [
+    "item:BlackIronGauntlets"
+  ],
+  "black_iron_helm": [
+    "item:BlackIronHelm"
+  ],
+  "black_iron_ingot": [
+    "item:BlackIronIngot"
+  ],
+  "black_iron_scepter": [
+    "item:BlackIronScepter"
+  ],
+  "black_iron_scraps": [
+    "item:BlackIronScraps"
+  ],
+  "black_ooze": [
+    "item:BlackOoze"
+  ],
+  "bleak_boots": [
+    "item:BleakBoots"
+  ],
+  "bleak_gloves": [
+    "item:BleakGloves"
+  ],
+  "bloodstone_claws": [
+    "item:BloodstoneClaws"
+  ],
+  "bloodstone_colossus": [
+    "enemy:BloodstoneColossus"
+  ],
+  "blue_shark": [
+    "enemy:BlueShark",
+    "item:BlueShark"
+  ],
+  "blue_trout": [
+    "enemy:BlueTrout",
+    "item:BlueTrout"
+  ],
+  "blueberry": [
+    "item:Blueberry"
+  ],
+  "blueberry_pancake": [
+    "item:BlueberryPancake"
+  ],
+  "blueberry_smoothie": [
+    "item:BlueberrySmoothie"
+  ],
+  "boar_tusk": [
+    "item:BoarTusk"
+  ],
+  "bone_fragment": [
+    "item:BoneFragment"
+  ],
+  "bottled_sand_spirit": [
+    "item:BottledSandSpirit"
+  ],
+  "bread": [
+    "item:Bread"
+  ],
+  "breathtaking_robe": [
+    "item:BreathtakingRobe"
+  ],
+  "burning_censer": [
+    "item:BurningCenser"
+  ],
+  "burning_effigy": [
+    "item:BurningEffigy"
+  ],
+  "butter": [
+    "item:Butter"
+  ],
+  "cane": [
+    "item:Cane"
+  ],
+  "captains_sword": [
+    "item:CaptainsSword"
+  ],
+  "celestial_armor": [
+    "item:CelestialArmor"
+  ],
+  "celestial_axe": [
+    "item:CelestialAxe"
+  ],
+  "celestial_bow": [
+    "item:CelestialBow"
+  ],
+  "celestial_helmet": [
+    "item:CelestialHelmet"
+  ],
+  "celestial_metal": [
+    "item:CelestialMetal"
+  ],
+  "celestial_scraps": [
+    "item:CelestialScraps"
+  ],
+  "celestial_shield": [
+    "item:CelestialShield"
+  ],
+  "celestial_sword": [
+    "item:CelestialSword"
+  ],
+  "celestials_mercy": [
+    "item:CelestialMercy"
+  ],
+  "ceremonial_cake": [
+    "item:CeremonialCake"
+  ],
+  "ceremonial_dagger": [
+    "item:CeremonialDagger"
+  ],
+  "chain_link": [
+    "item:ChainLink"
+  ],
+  "chain_of_redemption": [
+    "item:ChainOfRedemption"
+  ],
+  "champion_armor": [
+    "item:ChampionArmor"
+  ],
+  "charred_heart": [
+    "item:CharredHeart"
+  ],
+  "cheese": [
+    "item:Cheese"
+  ],
+  "cheese_risotto": [
+    "item:CheeseRisotto"
+  ],
+  "cheesecake": [
+    "item:Cheesecake"
+  ],
+  "chief_scientist_coat": [
+    "item:ChiefScientistCoat"
+  ],
+  "chocolate": [
+    "item:Chocolate"
+  ],
+  "chorus_the_drowned": [
+    "enemy:ChorusTheDrowned"
+  ],
+  "cleansing_potion": [
+    "item:CleansingPotion"
+  ],
+  "cloak_of_redemption": [
+    "item:CloakOfRedemption"
+  ],
+  "cloth": [
+    "item:Cloth"
+  ],
+  "cloth_robe": [
+    "item:ClothRobe"
+  ],
+  "cobweb_bundle": [
+    "item:CobwebBundle"
+  ],
+  "coffee": [
+    "item:Coffee"
+  ],
+  "coin_purse": [
+    "item:CoinPurse"
+  ],
+  "colossal_sword": [
+    "item:ColossalSword"
+  ],
+  "colossal_sword_of_scarlet_king": [
+    "item:ColossalSwordOfScarletKing"
+  ],
+  "containment_orb": [
+    "item:ContainmentOrb"
+  ],
+  "cookie": [
+    "item:Cookie"
+  ],
+  "copper_armor": [
+    "item:CopperArmor"
+  ],
+  "copper_axe": [
+    "item:CopperAxe"
+  ],
+  "copper_helmet": [
+    "item:CopperHelmet"
+  ],
+  "copper_ingot": [
+    "item:CopperIngot"
+  ],
+  "copper_ore": [
+    "item:CopperOre"
+  ],
+  "copper_sword": [
+    "item:CopperSword"
+  ],
+  "corrupted_axe": [
+    "item:CorruptedAxe"
+  ],
+  "corrupted_dagger": [
+    "item:CorruptedDagger"
+  ],
+  "corrupted_shield": [
+    "item:CorruptedShield"
+  ],
+  "corrupted_staff": [
+    "item:CorruptedStaff"
+  ],
+  "corsair_leather": [
+    "item:CorsairLeather"
+  ],
+  "cosmic_violin": [
+    "item:CosmicViolin"
+  ],
+  "cottontail_fur": [
+    "item:CottontailFur"
+  ],
+  "cottontail_jacket": [
+    "item:CottontailJacket"
+  ],
+  "crimson_brew": [
+    "item:CrimsonBrew"
+  ],
+  "crimson_leech": [
+    "item:CrimsonLeech"
+  ],
+  "crusader_insigna": [
+    "item:CrusaderInsigna"
+  ],
+  "crushing_depth": [
+    "item:CrushingDepth"
+  ],
+  "crystal_dagger": [
+    "item:CrystalDagger"
+  ],
+  "crystal_staff": [
+    "item:CrystalStaff"
+  ],
+  "cunning_demise": [
+    "item:CunningDemise"
+  ],
+  "cunning_downfall": [
+    "item:CunningDownfall"
+  ],
+  "cursed_bow": [
+    "item:CursedBow"
+  ],
+  "cursed_claws": [
+    "item:CursedClaws"
+  ],
+  "cursed_helm": [
+    "item:CursedHelm"
+  ],
+  "cursed_jacket": [
+    "item:CursedJacket"
+  ],
+  "cursed_long_axe": [
+    "item:CursedLongAxe"
+  ],
+  "cursed_scepter": [
+    "item:CursedScepter"
+  ],
+  "cursed_silver": [
+    "item:CursedSilver"
+  ],
+  "death_ray_scepter": [
+    "item:DeathRayScepter"
+  ],
+  "decomposed_limb": [
+    "item:DecomposedLimb"
+  ],
+  "deep_sea_jacket": [
+    "item:DeepSeaJacket"
+  ],
+  "deep_sea_robe": [
+    "item:DeepSeaRobe"
+  ],
+  "deep_sea_velvet": [
+    "item:DeepSeaVelvet"
+  ],
+  "deviled_eggs": [
+    "item:DeviledEggs"
+  ],
+  "diamond": [
+    "item:Diamond"
+  ],
+  "diamond_amulet": [
+    "item:DiamondAmulet"
+  ],
+  "dino_ribs": [
+    "item:DinoRibs"
+  ],
+  "divine_embryo": [
+    "item:DivineEmbryo"
+  ],
+  "divine_larvae": [
+    "item:DivineLarvae"
+  ],
+  "divine_zygote": [
+    "item:DivineZygote"
+  ],
+  "djinn_tonic": [
+    "item:DjinnTonic"
+  ],
+  "doctrine_ability_accelerated_mastery": [
+    "doctrine_ability:ACCELERATED_MASTERY"
+  ],
+  "doctrine_ability_annihilation": [
+    "doctrine_ability:ANNIHILATION"
+  ],
+  "doctrine_ability_arcane_suppression": [
+    "doctrine_ability:ARCANE_SUPPRESSION"
+  ],
+  "doctrine_ability_armor_master": [
+    "doctrine_ability:ARMOR_MASTER"
+  ],
+  "doctrine_ability_beat_the_odds": [
+    "doctrine_ability:BEAT_THE_ODDS"
+  ],
+  "doctrine_ability_bloodletting": [
+    "doctrine_ability:BLOODLETTING"
+  ],
+  "doctrine_ability_chilling_flow": [
+    "doctrine_ability:CHILLING_FLOW"
+  ],
+  "doctrine_ability_conditioned_reflexes": [
+    "doctrine_ability:CONDITIONED_REFLEXES"
+  ],
+  "doctrine_ability_divine_intervention": [
+    "doctrine_ability:DIVINE_INTERVENTION"
+  ],
+  "doctrine_ability_ephemeral_presence": [
+    "doctrine_ability:EPHEMERAL_PRESENCE"
+  ],
+  "doctrine_ability_evasive_riposte": [
+    "doctrine_ability:EVASIVE_RIPOSTE"
+  ],
+  "doctrine_ability_exalted_constitution": [
+    "doctrine_ability:EXALTED_CONSTITUTION"
+  ],
+  "doctrine_ability_exalted_dexterity": [
+    "doctrine_ability:EXALTED_DEXTERITY"
+  ],
+  "doctrine_ability_exalted_health": [
+    "doctrine_ability:EXALTED_HEALTH"
+  ],
+  "doctrine_ability_exalted_intelligence": [
+    "doctrine_ability:EXALTED_INTELLIGENCE"
+  ],
+  "doctrine_ability_exalted_mana": [
+    "doctrine_ability:EXALTED_MANA"
+  ],
+  "doctrine_ability_exploit_weakness": [
+    "doctrine_ability:EXPLOIT_WEAKNESS"
+  ],
+  "doctrine_ability_expose_weakness": [
+    "doctrine_ability:EXPOSE_WEAKNESS"
+  ],
+  "doctrine_ability_eye_for_an_eye": [
+    "doctrine_ability:EYE_FOR_AN_EYE"
+  ],
+  "doctrine_ability_false_life": [
+    "doctrine_ability:FALSE_LIFE"
+  ],
+  "doctrine_ability_genus_vampyri": [
+    "doctrine_ability:GENUS_VAMPYRI"
+  ],
+  "doctrine_ability_healing_nova": [
+    "doctrine_ability:HEALING_NOVA"
+  ],
+  "doctrine_ability_impenetrable_willpower": [
+    "doctrine_ability:IMPENETRABLE_WILLPOWER"
+  ],
+  "doctrine_ability_improved_constitution": [
+    "doctrine_ability:IMPROVED_CONSTITUTION"
+  ],
+  "doctrine_ability_improved_dexterity": [
+    "doctrine_ability:IMPROVED_DEXTERITY"
+  ],
+  "doctrine_ability_improved_health": [
+    "doctrine_ability:IMPROVED_HEALTH"
+  ],
+  "doctrine_ability_improved_intelligence": [
+    "doctrine_ability:IMPROVED_INTELLIGENCE"
+  ],
+  "doctrine_ability_lightning_speed": [
+    "doctrine_ability:LIGHTNING_SPEED"
+  ],
+  "doctrine_ability_lore_master": [
+    "doctrine_ability:LORE_MASTER"
+  ],
+  "doctrine_ability_manifest_danger": [
+    "doctrine_ability:MANIFEST_DANGER"
+  ],
+  "doctrine_ability_mind_bender": [
+    "doctrine_ability:MIND_BENDER"
+  ],
+  "doctrine_ability_mirror_of_anguish": [
+    "doctrine_ability:MIRROR_OF_ANGUISH"
+  ],
+  "doctrine_ability_necrosis_porphyrica": [
+    "doctrine_ability:NECROSIS_PORPHYRICA"
+  ],
+  "doctrine_ability_overheal": [
+    "doctrine_ability:OVERHEAL"
+  ],
+  "doctrine_ability_ragebound": [
+    "doctrine_ability:RAGEBOUND"
+  ],
+  "doctrine_ability_relentless_assault": [
+    "doctrine_ability:RELENTLESS_ASSAULT"
+  ],
+  "doctrine_ability_selfless_spirit": [
+    "doctrine_ability:SELFLESS_SPIRIT"
+  ],
+  "doctrine_ability_servus_sanguinis": [
+    "doctrine_ability:SERVUS_SANGUINIS"
+  ],
+  "doctrine_ability_servus_umbrae": [
+    "doctrine_ability:SERVUS_UMBRAE"
+  ],
+  "doctrine_ability_star_gaze": [
+    "doctrine_ability:STAR_GAZE"
+  ],
+  "doctrine_ability_sympathetic_ward": [
+    "doctrine_ability:SYMPATHETIC_WARD"
+  ],
+  "doctrine_ability_tactical_knowledge": [
+    "doctrine_ability:TACTICAL_KNOWLEDGE"
+  ],
+  "doctrine_ability_titans_might": [
+    "doctrine_ability:TITANS_MIGHT"
+  ],
+  "doctrine_ability_troll_resistance": [
+    "doctrine_ability:TROLL_RESISTANCE"
+  ],
+  "doctrine_ability_true_agony": [
+    "doctrine_ability:TRUE_AGONY"
+  ],
+  "doctrine_ability_verdant_briars": [
+    "doctrine_ability:VERDANT_BRIARS"
+  ],
+  "doctrine_ability_warlock_resilience": [
+    "doctrine_ability:WARLOCK_RESILIENCE"
+  ],
+  "doctrine_ability_weapon_master": [
+    "doctrine_ability:WEAPON_MASTER"
+  ],
+  "doctrine_of_affliction": [
+    "doctrine:DoctrineOfAffliction"
+  ],
+  "doctrine_of_control": [
+    "doctrine:DoctrineOfControl"
+  ],
+  "doctrine_of_fortitude": [
+    "doctrine:DoctrineOfFortitude"
+  ],
+  "doctrine_of_grace": [
+    "doctrine:DoctrineOfGrace"
+  ],
+  "doctrine_of_illusion": [
+    "doctrine:DoctrineOfIllusion"
+  ],
+  "doctrine_of_knowlegde": [
+    "doctrine:DoctrineOfKnowledge"
+  ],
+  "doctrine_of_ruin": [
+    "doctrine:DoctrineOfRuin"
+  ],
+  "doctrine_of_war": [
+    "doctrine:DoctrineOfWar"
+  ],
+  "dreadful_morningstar": [
+    "item:DreadfulMorningstar"
+  ],
+  "dreamcatcher": [
+    "item:Dreamcatcher"
+  ],
+  "dreamwrought_armor": [
+    "item:DreamwroughtArmor"
+  ],
+  "dreamwrought_boots": [
+    "item:DreamwroughtBoots"
+  ],
+  "dreamwrought_bow": [
+    "item:DreamwroughtBow"
+  ],
+  "dreamwrought_gloves": [
+    "item:DreamwroughtGloves"
+  ],
+  "dreamwrought_hide": [
+    "item:DreamwroughtHide"
+  ],
+  "dreamwrought_jacket": [
+    "item:DreamwroughtJacket"
+  ],
+  "dreamwrought_larva": [
+    "item:DreamwroughtLarva"
+  ],
+  "dreamwrought_mane": [
+    "item:DreamwroughtMane"
+  ],
+  "dreamwrought_robe": [
+    "item:DreamwroughtRobe"
+  ],
+  "dreamwrought_silk": [
+    "item:DreamwroughtSilk"
+  ],
+  "dreamwrought_staff": [
+    "item:DreamwroughtStaff"
+  ],
+  "dreamwrought_steel": [
+    "item:DreamwroughtSteel"
+  ],
+  "dryads_blessing": [
+    "item:DryadsBlessing"
+  ],
+  "dryads_curse": [
+    "item:DryadsCurse"
+  ],
+  "duelist_armor": [
+    "item:DuelistArmor"
+  ],
+  "egg": [
+    "item:Egg"
+  ],
+  "egg_avian": [
+    "item:AvianEgg"
+  ],
+  "egg_construct": [
+    "item:ConstructEgg"
+  ],
+  "egg_esoteric": [
+    "item:EsotericEgg"
+  ],
+  "egg_insect": [
+    "item:InsectEgg"
+  ],
+  "egg_mythic": [
+    "item:MythicEgg"
+  ],
+  "egg_reptile": [
+    "item:ReptileEgg"
+  ],
+  "egg_wild": [
+    "item:WildEgg"
+  ],
+  "egg_wooden": [
+    "item:WoodenEgg"
+  ],
+  "elastic_boots": [
+    "item:ElasticBoots"
+  ],
+  "elastic_membrane": [
+    "item:ElasticMembrane"
+  ],
+  "elastic_robe": [
+    "item:ElasticRobe"
+  ],
+  "eldritch_mitre": [
+    "item:EldritchMitre"
+  ],
+  "eldritch_scarlet_cape": [
+    "item:EldritchScarletCape"
+  ],
+  "eldritch_seal": [
+    "item:EldritchSeal"
+  ],
+  "eldritch_shred": [
+    "item:EldritchShred"
+  ],
+  "eldritch_tendril": [
+    "item:EldritchTendril"
+  ],
+  "electric_catalyst": [
+    "item:ElectricCatalyst"
+  ],
+  "elixir_of_affinity": [
+    "item:ElixirOfAffinity"
+  ],
+  "elixir_of_learning": [
+    "item:ElixirOfLearning"
+  ],
+  "elongated_bone": [
+    "item:ElongatedBone"
+  ],
+  "elysian_wood": [
+    "item:ElysianWood"
+  ],
+  "emerald": [
+    "item:Emerald"
+  ],
+  "emerald_ring": [
+    "item:EmeraldRing"
+  ],
+  "enchanted_cleaver": [
+    "item:EnchantedCleaver"
+  ],
+  "enchanted_staff": [
+    "item:EnchantedStaff"
+  ],
+  "enforcers_axe": [
+    "item:EnforcersAxe"
+  ],
+  "enlighted_servant": [
+    "item:EnlightedServant"
+  ],
+  "essence_of_corruption": [
+    "item:EssenceOfCorruption"
+  ],
+  "eternal_hunger": [
+    "item:EternalHunger"
+  ],
+  "evo20_vial": [
+    "item:Evo20Vial"
+  ],
+  "evo21_vial": [
+    "item:Evo21Vial"
+  ],
+  "evo22_vial": [
+    "item:Evo22Vial"
+  ],
+  "evo23_vial": [
+    "item:Evo23Vial",
+    "item:Evo23Vial2"
+  ],
+  "evo24_vial": [
+    "item:Evo24Vial"
+  ],
+  "exalted_powder": [
+    "item:ExaltedPowder"
+  ],
+  "exotic_boots": [
+    "item:ExoticBoots"
+  ],
+  "exotic_fruit_salad": [
+    "item:ExoticFruitSalad"
+  ],
+  "exotic_robe": [
+    "item:ExoticRobe"
+  ],
+  "exotic_velvet": [
+    "item:ExoticVelvet"
+  ],
+  "eye_of_the_abyss": [
+    "item:EyeOfTheAbyss"
+  ],
+  "eye_of_ur": [
+    "item:EyeOfUr"
+  ],
+  "eyes_of_the_swordsman": [
+    "item:EyesOfTheSwordsman"
+  ],
+  "fang_dagger": [
+    "item:FangDagger"
+  ],
+  "feather": [
+    "item:Feather"
+  ],
+  "feather_robe": [
+    "item:FeatherRobe"
+  ],
+  "feeble_tether": [
+    "status_effect:FEEBLE_TETHER"
+  ],
+  "fire_catalyst": [
+    "item:FireCatalyst"
+  ],
+  "fireproof_oil": [
+    "item:FireproofOil"
+  ],
+  "flake_of_infinity": [
+    "item:FlakeOfInfinity"
+  ],
+  "fleetfoot_armor": [
+    "item:FleetfootArmor"
+  ],
+  "fleetfoot_boots": [
+    "item:FleetfootBoots"
+  ],
+  "fleetfoot_fabric": [
+    "item:FleetfootFabric"
+  ],
+  "fleetfoot_gloves": [
+    "item:FleetfootGloves"
+  ],
+  "fleetfoot_jacket": [
+    "item:FleetfootJacket"
+  ],
+  "fleetfoot_robe": [
+    "item:FleetfootRobe"
+  ],
+  "flute": [
+    "item:Flute"
+  ],
+  "flux_limiter": [
+    "item:FluxLimiter"
+  ],
+  "flying_reaper": [
+    "item:FlyingReaper"
+  ],
+  "focused_scepter": [
+    "item:FocusedScepter"
+  ],
+  "fresh_salmon": [
+    "item:FreshSalmon"
+  ],
+  "fresh_tuna": [
+    "item:FreshTuna"
+  ],
+  "frost_crystal": [
+    "item:FrostCrystal"
+  ],
+  "frost_nucleus": [
+    "item:FrostNucleus"
+  ],
+  "frostmetal_armor": [
+    "item:FrostmetalArmor"
+  ],
+  "frostmetal_axe": [
+    "item:FrostmetalAxe"
+  ],
+  "frostmetal_dagger": [
+    "item:FrostmetalDagger"
+  ],
+  "frostmetal_ingot": [
+    "item:FrostmetalIngot"
+  ],
+  "frostmetal_ore": [
+    "item:FrostmetalOre"
+  ],
+  "frostmetal_sword": [
+    "item:FrostmetalSword"
+  ],
+  "frozen_breath_broth": [
+    "item:FrozenBreathBroth"
+  ],
+  "frozen_egg": [
+    "item:FrozenEgg"
+  ],
+  "frozen_egg_pendant": [
+    "item:FrozenEggPendant"
+  ],
+  "frozen_embrace": [
+    "item:FrozenEmbrace"
+  ],
+  "frozen_long_axe": [
+    "item:FrozenLongAxe"
+  ],
+  "frozen_scale": [
+    "item:FrozenScale"
+  ],
+  "fruit_salad": [
+    "item:FruitSalad"
+  ],
+  "fullmoon_dagger": [
+    "item:FullmoonDagger"
+  ],
+  "gem_of_protection": [
+    "item:GemOfProtection"
+  ],
+  "geode": [
+    "item:Geode"
+  ],
+  "ghastly_cuirass": [
+    "item:GhastlyCuirass"
+  ],
+  "ghastly_scimitar": [
+    "item:GhastlyScimitar"
+  ],
+  "ghastly_shield": [
+    "item:GhastlyShield"
+  ],
+  "ghost_rabbit_cloak": [
+    "item:GhostRabbitCloak"
+  ],
+  "ghostwood_board": [
+    "item:GhostwoodBoard"
+  ],
+  "ghostwood_bow": [
+    "item:GhostwoodBow"
+  ],
+  "ghostwood_shield": [
+    "item:GhostwoodShield"
+  ],
+  "ghostwood_stump": [
+    "item:GhostwoodStump"
+  ],
+  "giant_moth_wing": [
+    "item:GiantMothWing"
+  ],
+  "giant_shell_fragment": [
+    "item:GiantShellFragment"
+  ],
+  "gift_of_light": [
+    "item:GiftOfLight"
+  ],
+  "glass": [
+    "item:Glass"
+  ],
+  "glass_knife": [
+    "item:GlassKnife"
+  ],
+  "glazed_donut": [
+    "item:GlazedDonut"
+  ],
+  "gold_axe": [
+    "item:GoldenAxe"
+  ],
+  "gold_ingot": [
+    "item:GoldIngot"
+  ],
+  "gold_scraps": [
+    "item:GoldScraps"
+  ],
+  "golden_armor": [
+    "item:GoldenArmor"
+  ],
+  "golden_boots": [
+    "item:GoldenBoots"
+  ],
+  "golden_gauntlets": [
+    "item:GoldenGauntlets"
+  ],
+  "golden_helm": [
+    "item:GoldenHelm"
+  ],
+  "golden_shield": [
+    "item:GoldenShield"
+  ],
+  "golden_sword": [
+    "item:GoldenSword"
+  ],
+  "gourmet_icecream": [
+    "item:GourmetIcecream"
+  ],
+  "grains": [
+    "item:Grains"
+  ],
+  "green_slime": [
+    "item:GreenSlime"
+  ],
+  "grilled_cheese": [
+    "item:GrilledCheese"
+  ],
+  "heart_of_darkness": [
+    "item:HeartOfDarkness"
+  ],
+  "heaven_and_hell": [
+    "item:HeavenAndHell"
+  ],
+  "hellish_ration": [
+    "item:HellishRations"
+  ],
+  "holy_water": [
+    "item:HolyWater"
+  ],
+  "ice_cage": [
+    "item:IceCage"
+  ],
+  "ice_catalyst": [
+    "item:IceCatalyst"
+  ],
+  "ice_fiber": [
+    "item:IceFiber"
+  ],
+  "icicle": [
+    "item:Icicle"
+  ],
+  "icon_effect_ablaze": [
+    "status_effect:ABLAZE"
+  ],
+  "icon_effect_anointed": [
+    "status_effect:ANOINTED"
+  ],
+  "icon_effect_bleed": [
+    "status_effect:BLEED"
+  ],
+  "icon_effect_bloodflame": [
+    "status_effect:BLOODFLAME"
+  ],
+  "icon_effect_curse": [
+    "status_effect:LESSER_CURSE",
+    "status_effect:CURSE",
+    "status_effect:GREATER_CURSE",
+    "status_effect:OMINOUS_CURSE",
+    "status_effect:ABHORRENT_CURSE"
+  ],
+  "icon_effect_defensive_stance": [
+    "status_effect:DEFENSIVE_STANCE"
+  ],
+  "icon_effect_delirium": [
+    "status_effect:DELIRIUM"
+  ],
+  "icon_effect_entangle": [
+    "status_effect:ENTANGLE"
+  ],
+  "icon_effect_exalt": [
+    "status_effect:EXALT"
+  ],
+  "icon_effect_false_life": [
+    "status_effect:FALSE_LIFE"
+  ],
+  "icon_effect_freeze": [
+    "status_effect:FROZEN"
+  ],
+  "icon_effect_frenzy": [
+    "status_effect:FRENZY"
+  ],
+  "icon_effect_inspire": [
+    "status_effect:INSPIRE"
+  ],
+  "icon_effect_petrify": [
+    "status_effect:PETRIFY"
+  ],
+  "icon_effect_poison": [
+    "status_effect:POISON"
+  ],
+  "icon_effect_radiant_blessing": [
+    "status_effect:RADIANT_BLESSING"
+  ],
+  "icon_effect_regeneration": [
+    "status_effect:REGENERATION"
+  ],
+  "icon_effect_sanguine_fervor": [
+    "status_effect:SANGUINE_FERVOR"
+  ],
+  "icon_effect_silence": [
+    "status_effect:SILENCE"
+  ],
+  "icon_effect_sinister_curse": [
+    "status_effect:SINISTER_CURSE"
+  ],
+  "icon_effect_solar_rebirth": [
+    "status_effect:SOLAR_REBIRTH"
+  ],
+  "icon_effect_stun": [
+    "status_effect:STUN",
+    "status_effect:STUN_NOT_CLEANSABLE"
+  ],
+  "icon_effect_taunt": [
+    "status_effect:TAUNT"
+  ],
+  "icon_effect_terrify": [
+    "status_effect:TERRIFY"
+  ],
+  "ignition_orb": [
+    "item:IgnitionOrb"
+  ],
+  "imperial_captain": [
+    "enemy:ImperialCaptain"
+  ],
+  "imperial_shield": [
+    "item:ImperialShield"
+  ],
+  "imperial_staff": [
+    "item:ImperialStaff"
+  ],
+  "infected_blood": [
+    "item:InfectedBlood"
+  ],
+  "infernal_bow": [
+    "item:InfernalBow"
+  ],
+  "infernal_chakram": [
+    "item:InfernalChakram"
+  ],
+  "infernal_long_axe": [
+    "item:InfernalLongAxe"
+  ],
+  "infernite": [
+    "item:Infernite"
+  ],
+  "infinite_despair": [
+    "item:InfiniteDespair"
+  ],
+  "infinity_hat": [
+    "item:InfinityHat"
+  ],
+  "infused_necklace": [
+    "item:InfusedNecklace"
+  ],
+  "infusion_of_wisdom": [
+    "item:InfusionOfWisdom"
+  ],
+  "intercession": [
+    "item:Intercession"
+  ],
+  "invisible_servant": [
+    "item:InvisibleServant"
+  ],
+  "iron_axe": [
+    "item:IronAxe"
+  ],
+  "iron_chainmail": [
+    "item:IronChainmail"
+  ],
+  "iron_helm": [
+    "item:IronHelm"
+  ],
+  "iron_ingot": [
+    "item:IronIngot"
+  ],
+  "ivory": [
+    "item:Ivory"
+  ],
+  "ivory_jacket": [
+    "item:IvoryJacket"
+  ],
+  "jeweled_crown": [
+    "item:JeweledCrown"
+  ],
+  "kabelian_armor": [
+    "item:KabelianArmor"
+  ],
+  "kabelian_claws": [
+    "item:KabelianClaws"
+  ],
+  "kabelian_metal": [
+    "item:KabelianMetal"
+  ],
+  "kaunian_fabric": [
+    "item:KaunianFabric"
+  ],
+  "kaunian_robe": [
+    "item:KaunianRobe"
+  ],
+  "kindlequartz": [
+    "item:Kindlequartz"
+  ],
+  "large_iris": [
+    "item:LargeIris"
+  ],
+  "laroxian_boots": [
+    "item:LaroxianBoots"
+  ],
+  "laroxian_fabric": [
+    "item:LaroxianFabric"
+  ],
+  "laroxian_gloves": [
+    "item:LaroxianGloves"
+  ],
+  "laroxian_robe": [
+    "item:LaroxianRobe"
+  ],
+  "leather": [
+    "item:Leather"
+  ],
+  "leather_boots": [
+    "item:LeatherBoots"
+  ],
+  "leather_gloves": [
+    "item:LeatherGloves"
+  ],
+  "leather_jacket": [
+    "item:LeatherJacket"
+  ],
+  "leek": [
+    "item:Leek"
+  ],
+  "living_sap": [
+    "item:LivingSap"
+  ],
+  "living_scimitar": [
+    "item:LivingScimitar"
+  ],
+  "living_vine": [
+    "item:LivingVine"
+  ],
+  "living_whip": [
+    "item:LivingWhip"
+  ],
+  "long_serpent_fang": [
+    "item:LongSerpentFang"
+  ],
+  "magma_shark": [
+    "enemy:MagmaShark",
+    "item:MagmaShark"
+  ],
+  "mascarpone_cheese": [
+    "item:MascarponeCheese"
+  ],
+  "maxxiburger": [
+    "item:Maxxiburger"
+  ],
+  "meat_chop": [
+    "item:MeatChop"
+  ],
+  "meat_pie": [
+    "item:MeatPie"
+  ],
+  "meat_stew": [
+    "item:MeatStew"
+  ],
+  "meaty_mushroom": [
+    "item:MeatyMushroom"
+  ],
+  "metamorphic_armor": [
+    "item:MetamorphicArmor"
+  ],
+  "metamorphic_sand": [
+    "item:MetamorphicSand"
+  ],
+  "metamorphic_shield": [
+    "item:MetamorphicShield"
+  ],
+  "milk": [
+    "item:Milk"
+  ],
+  "missing_page": [
+    "item:MissingPage"
+  ],
+  "mithril": [
+    "item:Mithril"
+  ],
+  "mithril_bow": [
+    "item:MithrilBow"
+  ],
+  "mithril_dagger": [
+    "item:MithrilDagger"
+  ],
+  "mithril_helm": [
+    "item:MithrilHelm"
+  ],
+  "mithril_shield": [
+    "item:MithrilShield"
+  ],
+  "mithril_sword": [
+    "item:MithrilSword"
+  ],
+  "mitre_hat": [
+    "item:MitreHat"
+  ],
+  "molten_slayer": [
+    "item:MoltenSlayer"
+  ],
+  "molten_staff": [
+    "item:MoltenStaff"
+  ],
+  "monkey_hide": [
+    "item:MonkeyHide"
+  ],
+  "monkey_hide_jacket": [
+    "item:MonkeyHideJacket"
+  ],
+  "moth_robe": [
+    "item:MothRobe"
+  ],
+  "mottiphobia": [
+    "item:Mottiphobia"
+  ],
+  "mushroom_omelette": [
+    "item:MushroomOmelette"
+  ],
+  "mushroom_risotto": [
+    "item:MushroomRisotto"
+  ],
+  "mushroom_stew": [
+    "item:MushroomStew"
+  ],
+  "mutant_hide": [
+    "item:MutantHide"
+  ],
+  "mutant_jacket": [
+    "item:MutantJacket"
+  ],
+  "mutual_despair": [
+    "item:MutualDespair"
+  ],
+  "mysterious_appendage": [
+    "item:MysteriousAppendage"
+  ],
+  "mysterious_cog": [
+    "item:MysteriousCog"
+  ],
+  "nightwing_jacket": [
+    "item:NightwingJacket"
+  ],
+  "nightwing_leather": [
+    "item:NightwingLeather"
+  ],
+  "nil_armor": [
+    "item:NilArmor"
+  ],
+  "nil_pendant": [
+    "item:NilPendant"
+  ],
+  "oblivion": [
+    "item:Oblivion"
+  ],
+  "obsidian_axe": [
+    "item:ObsidianAxe"
+  ],
+  "obsidian_bow": [
+    "item:ObsidianBow"
+  ],
+  "obsidian_chunk": [
+    "item:ObsidianChunk"
+  ],
+  "obsidian_cuirass": [
+    "item:ObsidianCuirass"
+  ],
+  "obsidian_dagger": [
+    "item:ObsidianDagger"
+  ],
+  "obsidian_helm": [
+    "item:ObsidianHelm"
+  ],
+  "obsidian_scepter": [
+    "item:ObsidianScepter"
+  ],
+  "obsidian_shield": [
+    "item:ObsidianShield"
+  ],
+  "obsidian_sword": [
+    "item:ObsidianSword"
+  ],
+  "omni_sever": [
+    "item:OmniSever"
+  ],
+  "orb_of_ectoplasm": [
+    "item:OrbOfEctoplasm"
+  ],
+  "orichalcum_armor": [
+    "item:OrichalcumArmor"
+  ],
+  "orichalcum_dagger": [
+    "item:OrichalcumDagger"
+  ],
+  "orichalcum_helm": [
+    "item:OrichalcumHelm"
+  ],
+  "orichalcum_ingot": [
+    "item:OrichalcumIngot"
+  ],
+  "orichalcum_scraps": [
+    "item:OrichalcumScraps"
+  ],
+  "orichalcum_shield": [
+    "item:OrichalcumShield"
+  ],
+  "orichalcum_sword": [
+    "item:OrichalcumSword"
+  ],
+  "panopticon_staff": [
+    "item:PanopticonStaff"
+  ],
+  "pasta": [
+    "item:Pasta"
+  ],
+  "pasta_with_sauce": [
+    "item:PastaWithSauce"
+  ],
+  "pastel_de_belem": [
+    "item:PastelDeBelem"
+  ],
+  "patrician_armor": [
+    "item:PatricianArmor"
+  ],
+  "pear": [
+    "item:Pear"
+  ],
+  "pear_pie": [
+    "item:PearPie"
+  ],
+  "pearl": [
+    "item:Pearl"
+  ],
+  "perch": [
+    "enemy:Perch",
+    "item:Perch"
+  ],
+  "permafrost_core": [
+    "item:PermafrostCore"
+  ],
+  "permafrost_essence": [
+    "item:PermafrostEssence"
+  ],
+  "phoenix_feather": [
+    "item:PhoenixFeather"
+  ],
+  "phylactery": [
+    "item:Phylactery"
+  ],
+  "phylactery_fragment": [
+    "item:PhylacteryFragment"
+  ],
+  "pineapple": [
+    "item:Pineapple"
+  ],
+  "pirate_king_tricorn": [
+    "item:PirateKingTricorn"
+  ],
+  "plant_fiber": [
+    "item:PlantFiber"
+  ],
+  "poisonous_flesh": [
+    "item:PoisonousFlesh"
+  ],
+  "potato": [
+    "item:Potato"
+  ],
+  "potato_mash": [
+    "item:PotatoMash"
+  ],
+  "potion_of_agility": [
+    "item:PotionOfAgility"
+  ],
+  "potion_of_clumsiness": [
+    "item:PotionOfClumsiness"
+  ],
+  "potion_of_constitution": [
+    "item:PotionOfConstitution"
+  ],
+  "potion_of_darkness": [
+    "item:PotionOfDarkness"
+  ],
+  "potion_of_defense": [
+    "item:PotionOfDefense"
+  ],
+  "potion_of_dexterity": [
+    "item:PotionOfDexterity"
+  ],
+  "potion_of_health": [
+    "item:PotionOfHealth"
+  ],
+  "potion_of_immunity": [
+    "item:PotionOfImmunity"
+  ],
+  "potion_of_intelligence": [
+    "item:PotionOfIntelligence"
+  ],
+  "potion_of_magic_defense": [
+    "item:PotionOfMagicDefense"
+  ],
+  "potion_of_precision": [
+    "item:PotionOfPrecision"
+  ],
+  "potion_of_rejuvenation": [
+    "item:PotionOfRejuvenation"
+  ],
+  "potion_of_viciousness": [
+    "item:PotionOfViciousness"
+  ],
+  "prehistoric_mixture": [
+    "item:PrehistoricMixture"
+  ],
+  "primeval_armor": [
+    "item:PrimevalArmor"
+  ],
+  "primeval_axe": [
+    "item:PrimevalAxe"
+  ],
+  "primeval_helm": [
+    "item:PrimevalHelm"
+  ],
+  "primeval_scale": [
+    "item:PrimevalScale"
+  ],
+  "primeval_shield": [
+    "item:PrimevalShield"
+  ],
+  "primordial_essence": [
+    "item:PrimordialEssence"
+  ],
+  "prismatic_armor": [
+    "item:PrismaticArmor"
+  ],
+  "prismatic_essence": [
+    "item:PrismaticEssence"
+  ],
+  "prismatic_pendant": [
+    "item:PrismaticPendant"
+  ],
+  "pterodactyl_claw": [
+    "item:PterodactylClaw"
+  ],
+  "pumpkin": [
+    "item:Pumpkin"
+  ],
+  "quartz": [
+    "item:Quartz"
+  ],
+  "radiating_nucleus": [
+    "item:RadiatingNucleus"
+  ],
+  "rat_claws": [
+    "item:RatClaws"
+  ],
+  "reassembling_jacket": [
+    "item:ReassemblingJacket"
+  ],
+  "recurve_blade": [
+    "item:RecurveBlade"
+  ],
+  "red_reaper": [
+    "item:RedReaper"
+  ],
+  "red_reaper_sauce": [
+    "item:RedReaperSauce"
+  ],
+  "redwood": [
+    "item:Redwood"
+  ],
+  "redwood_bow": [
+    "item:RedwoodBow"
+  ],
+  "rice": [
+    "item:Rice"
+  ],
+  "ritual_blade": [
+    "item:RitualBlade"
+  ],
+  "robe_of_the_archmage": [
+    "item:RobeOfTheArchmage"
+  ],
+  "robe_of_the_lich": [
+    "item:RobeOfTheLich"
+  ],
+  "ruby": [
+    "item:Ruby"
+  ],
+  "ruby_ring": [
+    "item:RubyRing"
+  ],
+  "rune_of_power": [
+    "item:RuneOfPower"
+  ],
+  "sage_armor": [
+    "item:SageArmor"
+  ],
+  "sage_cloak": [
+    "item:SageCloak"
+  ],
+  "sage_jacket": [
+    "item:SageJacket"
+  ],
+  "salad": [
+    "item:Salad"
+  ],
+  "salmon_nigiri": [
+    "item:SalmonNigiri"
+  ],
+  "salmon_roll": [
+    "item:SalmonRoll"
+  ],
+  "salt": [
+    "item:Salt"
+  ],
+  "sandstone": [
+    "item:Sandstone"
+  ],
+  "sauce": [
+    "item:Sauce"
+  ],
+  "scanner": [
+    "item:Scanner"
+  ],
+  "scarlet_cape": [
+    "item:ScarletCape"
+  ],
+  "scarlet_debris": [
+    "item:ScarletDebris"
+  ],
+  "scarlet_grand_mage": [
+    "enemy:ArchmagusValthex"
+  ],
+  "scarlet_mage": [
+    "enemy:CrimsonAcolyte"
+  ],
+  "scarlet_oni": [
+    "item:ScarletOni"
+  ],
+  "scarlet_oni_juggernaut": [
+    "item:ScarletOniJuggernaut"
+  ],
+  "scarlet_shroud": [
+    "item:ScarletShroud"
+  ],
+  "scarlet_sigil": [
+    "item:ScarletSigil"
+  ],
+  "scarlet_strand": [
+    "item:ScarletStrand"
+  ],
+  "scarlet_veil": [
+    "item:ScarletVeil"
+  ],
+  "scimitar": [
+    "item:Scimitar"
+  ],
+  "scrap_metal": [
+    "item:ScrapMetal"
+  ],
+  "seal_of_claris": [
+    "item:SealOfClaris"
+  ],
+  "seeking_glass": [
+    "item:SeekingGlass"
+  ],
+  "sentient_slab": [
+    "item:SentientSlab"
+  ],
+  "serpent_bite": [
+    "item:SerpentBite"
+  ],
+  "serpent_jaws": [
+    "item:SerpentJaws"
+  ],
+  "serpent_lunge": [
+    "item:SerpentLunge"
+  ],
+  "serpent_staff": [
+    "item:SerpentStaff"
+  ],
+  "serpent_sting": [
+    "item:SerpentSting"
+  ],
+  "sha": [
+    "item:Sha"
+  ],
+  "shadow": [
+    "enemy:Shadow"
+  ],
+  "shadow_bow": [
+    "item:ShadowBow"
+  ],
+  "shadow_dagger": [
+    "item:ShadowDagger"
+  ],
+  "shadow_gem": [
+    "item:ShadowGem"
+  ],
+  "shadow_potion": [
+    "item:ShadowPotion"
+  ],
+  "shadow_ring": [
+    "item:ShadowRing"
+  ],
+  "shahuri_bow": [
+    "item:ShahuriBow"
+  ],
+  "shahuri_bow_frame": [
+    "item:ShahuriBowFrame"
+  ],
+  "sharp_rib": [
+    "item:SharpRib"
+  ],
+  "shield_of_the_martyr": [
+    "item:ShieldOfTheMartyr"
+  ],
+  "shield_of_the_titan": [
+    "item:ShieldOfTheTitan"
+  ],
+  "shielding_cuirass": [
+    "item:ShieldingCuirass"
+  ],
+  "shielding_helm": [
+    "item:ShieldingHelm"
+  ],
+  "shielding_jacket": [
+    "item:ShieldingJacket"
+  ],
+  "short_circuit": [
+    "item:ShortCircuit"
+  ],
+  "sickle": [
+    "item:Sickle"
+  ],
+  "sign_plus_white": [
+    "doctrine:EmptyDoctrine"
+  ],
+  "silk_fabric": [
+    "item:SilkFabric"
+  ],
+  "silk_robe": [
+    "item:SilkRobe"
+  ],
+  "silk_thread": [
+    "item:SilkThread"
+  ],
+  "silver_ring": [
+    "item:SilverRing"
+  ],
+  "sinister_stabilizer": [
+    "item:SinisterStabilizer"
+  ],
+  "skeleton_key": [
+    "status_effect:SKELETON_KEY",
+    "item:SkeletonKey"
+  ],
+  "skin_blender": [
+    "item:SkinBlender"
+  ],
+  "skull_candle": [
+    "item:SkullCandle"
+  ],
+  "slime_armor": [
+    "item:SlimeArmor"
+  ],
+  "slime_jacket": [
+    "item:SlimeJacket"
+  ],
+  "slime_kings_crown": [
+    "item:SlimeKingsCrown"
+  ],
+  "slime_robe": [
+    "item:SlimeRobe"
+  ],
+  "soul_shard": [
+    "item:SoulShard"
+  ],
+  "spade": [
+    "item:Spade"
+  ],
+  "spectral_cloth": [
+    "item:SpectralCloth"
+  ],
+  "spectral_robe": [
+    "item:SpectralRobe"
+  ],
+  "spell_compendium": [
+    "item:SpellCompendium"
+  ],
+  "spellwoven_hide": [
+    "item:SpellwovenHide"
+  ],
+  "spellwoven_jacket": [
+    "item:SpellwovenJacket"
+  ],
+  "spellwoven_leather": [
+    "item:SpellwovenLeather"
+  ],
+  "spices": [
+    "item:Spices"
+  ],
+  "spider": [
+    "item:SPIDER"
+  ],
+  "spider_boots": [
+    "item:SpiderBoots"
+  ],
+  "spider_gloves": [
+    "item:SpiderGloves"
+  ],
+  "spider_leg": [
+    "item:SpiderLeg"
+  ],
+  "spider_robe": [
+    "item:SpiderRobe"
+  ],
+  "spider_silk": [
+    "item:SpiderSilk"
+  ],
+  "spiked_primeval_shield": [
+    "item:SpikedPrimevalShield"
+  ],
+  "spiked_skeleton": [
+    "item:SpikedSkeleton"
+  ],
+  "spiked_tortoise_shield": [
+    "item:SpikedTortoiseShield"
+  ],
+  "spirit_candle": [
+    "item:SpiritCandle"
+  ],
+  "spirit_tome": [
+    "item:SpiritTome"
+  ],
+  "spitfang_jacket": [
+    "item:SpitfangJacket"
+  ],
+  "spitfang_scale": [
+    "item:SpitfangScale"
+  ],
+  "staff_of_the_archmage": [
+    "item:StaffOfTheArchmage"
+  ],
+  "star_fragment": [
+    "item:StarFragment"
+  ],
+  "starvation": [
+    "item:Starvation"
+  ],
+  "static_core": [
+    "item:StaticCore"
+  ],
+  "static_essence": [
+    "item:StaticEssence"
+  ],
+  "steak_braise": [
+    "item:SteakBraise"
+  ],
+  "stellar_flare": [
+    "item:StellarFlare"
+  ],
+  "stellar_staff": [
+    "item:StellarStaff"
+  ],
+  "stew": [
+    "item:Stew"
+  ],
+  "stick": [
+    "item:Stick"
+  ],
+  "strawberry": [
+    "item:Strawberry"
+  ],
+  "strawberry_pancake": [
+    "item:StrawberryPancake"
+  ],
+  "strawberry_smoothie": [
+    "item:StrawberrySmoothie"
+  ],
+  "summary_ancient_grave_digging": [
+    "place:AncientGraveDigging:summary"
+  ],
+  "summary_barren_wastelands": [
+    "place:BarrenWastelands:summary"
+  ],
+  "summary_blackwater_port": [
+    "place:BlackwaterPort:summary"
+  ],
+  "summary_celestial_mothership": [
+    "place:CelestialMothership:summary"
+  ],
+  "summary_divine_archeology": [
+    "place:DivineArcheology:summary"
+  ],
+  "summary_enchanted_forest": [
+    "place:EnchantedForest:summary"
+  ],
+  "summary_eternal_battlefield": [
+    "place:EternalBattlefield:summary"
+  ],
+  "summary_fishing_pond": [
+    "place:TheSlumberingShallowsArea:summary"
+  ],
+  "summary_frostbite_peaks": [
+    "place:FrostbitePeaks:summary"
+  ],
+  "summary_hidden_city_of_larox": [
+    "place:HiddenCityOfLarox:summary"
+  ],
+  "summary_imperial_rescue": [
+    "place:ImperialRescue:summary"
+  ],
+  "summary_kaunis": [
+    "place:Kaunis:summary"
+  ],
+  "summary_lost_lands": [
+    "place:LostLands:summary"
+  ],
+  "summary_obsidian_mines": [
+    "place:ObsidianMines:summary"
+  ],
+  "summary_request": [
+    "place:GuildRequestArea:summary"
+  ],
+  "summary_scarlet": [
+    "place:SanguineCrucible:summary"
+  ],
+  "summary_sleeping_planet": [
+    "place:SleepingPlanet:summary"
+  ],
+  "summary_the_cultist_rebels": [
+    "place:TheCultistRebels:summary"
+  ],
+  "summary_the_desert": [
+    "place:TheDesert:summary"
+  ],
+  "summary_the_dire_descent": [
+    "place:TheDireDescent:summary"
+  ],
+  "summary_the_dreadful_ascent": [
+    "place:TheDreadfulAscent:summary"
+  ],
+  "summary_the_golden_city": [
+    "place:TheGoldenCity:summary"
+  ],
+  "summary_the_lost_expedition": [
+    "place:TheLostExpedition:summary"
+  ],
+  "summary_the_siege": [
+    "place:GuildSiegeArea:summary"
+  ],
+  "summary_the_slime_pond": [
+    "place:TheSlimePond:summary"
+  ],
+  "summary_the_southern_grove": [
+    "place:TheSouthernGrove:summary"
+  ],
+  "summary_the_tower": [
+    "place:TheTower:summary"
+  ],
+  "sun_staff": [
+    "item:SunStaff"
+  ],
+  "sunfire_core": [
+    "item:SunfireCore"
+  ],
+  "sunfire_essence": [
+    "item:SunfireEssence"
+  ],
+  "swarmkeeper_armor": [
+    "item:SwarmkeeperArmor"
+  ],
+  "sweet_and_sour_meat": [
+    "item:SweetAndSourMeat"
+  ],
+  "sylvan_blessing": [
+    "item:SylvanBlessing"
+  ],
+  "sylvan_flute": [
+    "item:SylvanFlute"
+  ],
+  "sylvan_mandate": [
+    "item:SylvanMandate"
+  ],
+  "synapse": [
+    "item:Synapse"
+  ],
+  "taco": [
+    "item:Taco"
+  ],
+  "tactical_helmet": [
+    "item:TacticalHelmet"
+  ],
+  "tattered_hide": [
+    "item:TatteredHide"
+  ],
+  "terrorsaurus_fang": [
+    "item:TerrorsaurusFang"
+  ],
+  "thaumaturgic_blood": [
+    "item:ThaumaturgicBlood"
+  ],
+  "tiramisu": [
+    "item:Tiramisu"
+  ],
+  "titanic_might": [
+    "item:TitanicMight"
+  ],
+  "tomato": [
+    "item:Tomato"
+  ],
+  "tortoise_armor": [
+    "item:TortoiseArmor"
+  ],
+  "tortoise_shield": [
+    "item:TortoiseShield"
+  ],
+  "tortoise_thorn": [
+    "item:TortoiseThorn"
+  ],
+  "toxin_pouch": [
+    "item:ToxinPouch"
+  ],
+  "training_bow": [
+    "item:TrainingBow"
+  ],
+  "troll_hide": [
+    "item:TrollHide"
+  ],
+  "trollskin_jacket": [
+    "item:TrollskinJacket"
+  ],
+  "tuna_nigiri": [
+    "item:TunaNigiri"
+  ],
+  "tuna_roll": [
+    "item:TunaRoll"
+  ],
+  "tunica_ignis": [
+    "item:TunicaIgnis"
+  ],
+  "tunica_infernalis": [
+    "item:TunicaInfernalis"
+  ],
+  "tusk_necklace": [
+    "item:TuskNecklace"
+  ],
+  "undead_axe": [
+    "item:UndeadAxe"
+  ],
+  "undead_cuirass": [
+    "item:UndeadCuirass"
+  ],
+  "undead_gloves": [
+    "item:UndeadGloves"
+  ],
+  "undead_greaves": [
+    "item:UndeadGreaves"
+  ],
+  "undead_helm": [
+    "item:UndeadHelm"
+  ],
+  "undead_jacket": [
+    "item:UndeadJacket"
+  ],
+  "undead_knife": [
+    "item:UndeadKnife"
+  ],
+  "undead_shield": [
+    "item:UndeadShield"
+  ],
+  "undead_staff": [
+    "item:UndeadStaff"
+  ],
+  "undead_sword": [
+    "item:UndeadSword"
+  ],
+  "unholy_axe": [
+    "item:UnholyAxe"
+  ],
+  "unholy_cuirass": [
+    "item:UnholyCuirass"
+  ],
+  "unholy_potion": [
+    "item:UnholyPotion"
+  ],
+  "unholy_spellcage": [
+    "item:UnholySpellcage"
+  ],
+  "unholy_sword": [
+    "item:UnholySword"
+  ],
+  "unit_abomination": [
+    "enemy:Abomination"
+  ],
+  "unit_adept": [
+    "unit:Adept"
+  ],
+  "unit_aether_archmage": [
+    "unit:AetherArchmage"
+  ],
+  "unit_aether_mage": [
+    "unit:AetherMage"
+  ],
+  "unit_albino_rat": [
+    "unit:AlbinoRat"
+  ],
+  "unit_alchemist": [
+    "unit:Alchemist"
+  ],
+  "unit_amanita_obscura": [
+    "enemy:AmanitaObscura"
+  ],
+  "unit_ancient_ent": [
+    "enemy:AncientEnt"
+  ],
+  "unit_ancient_lich": [
+    "unit:AncientLich"
+  ],
+  "unit_angel": [
+    "unit:Angel"
+  ],
+  "unit_angel_of_war": [
+    "unit:AngelOfWar"
+  ],
+  "unit_apprentice": [
+    "unit:Apprentice"
+  ],
+  "unit_arcane_assassin": [
+    "enemy:ArcaneAssassin"
+  ],
+  "unit_arcanist": [
+    "unit:Arcanist"
+  ],
+  "unit_archangel": [
+    "unit:Archangel"
+  ],
+  "unit_archer": [
+    "unit:Archer"
+  ],
+  "unit_archmage_of_larox": [
+    "enemy:ArchmageOfLarox"
+  ],
+  "unit_assassin": [
+    "unit:Assassin"
+  ],
+  "unit_avatar_of_the_ancient": [
+    "enemy:AvatarOfTheAncient"
+  ],
+  "unit_avatar_of_wrath": [
+    "unit:AvatarOfWrath"
+  ],
+  "unit_balrog": [
+    "unit:Balrog"
+  ],
+  "unit_bandit": [
+    "unit:Bandit"
+  ],
+  "unit_banshee": [
+    "enemy:Banshee"
+  ],
+  "unit_barbarian": [
+    "unit:Barbarian"
+  ],
+  "unit_bard": [
+    "unit:Bard"
+  ],
+  "unit_bear_tamer": [
+    "unit:BearTamer"
+  ],
+  "unit_beast_tamer": [
+    "unit:BeastTamer"
+  ],
+  "unit_beholder": [
+    "enemy:Beholder"
+  ],
+  "unit_berserker": [
+    "enemy:Berserker"
+  ],
+  "unit_berserker_hero": [
+    "unit:Berserker"
+  ],
+  "unit_black_idol": [
+    "unit:BlackIdol"
+  ],
+  "unit_black_regent": [
+    "unit:BlackRegent"
+  ],
+  "unit_bleak_deacon": [
+    "enemy:BleakDeacon"
+  ],
+  "unit_bleak_disciple": [
+    "enemy:BleakDisciple"
+  ],
+  "unit_blight": [
+    "unit:Blight"
+  ],
+  "unit_blood_reaver": [
+    "unit:BloodReaver"
+  ],
+  "unit_bloodthorn_druid": [
+    "unit:BloodthornArchdruid"
+  ],
+  "unit_boar": [
+    "enemy:Boar"
+  ],
+  "unit_bone_horror": [
+    "unit:BoneHorror"
+  ],
+  "unit_bone_hydra": [
+    "unit:BoneHydra"
+  ],
+  "unit_bone_nightmare": [
+    "unit:BoneNightmare",
+    "enemy:BoneNightmareEnemy"
+  ],
+  "unit_brigand": [
+    "unit:Brigand"
+  ],
+  "unit_cat_tamer": [
+    "unit:CatTamer"
+  ],
+  "unit_celestial_destroyer": [
+    "enemy:CelestialDestroyer"
+  ],
+  "unit_celestial_lancer": [
+    "enemy:CelestialLancer"
+  ],
+  "unit_celestial_rain": [
+    "unit:CelestialRain"
+  ],
+  "unit_centaur": [
+    "enemy:Centaur"
+  ],
+  "unit_cerebrum": [
+    "enemy:Cerebrum"
+  ],
+  "unit_chief_scientist_ava": [
+    "enemy:ChiefScientistAva"
+  ],
+  "unit_city_warden": [
+    "enemy:CityWarden"
+  ],
+  "unit_claris": [
+    "enemy:Claris"
+  ],
+  "unit_cleric": [
+    "unit:Cleric"
+  ],
+  "unit_corrosive_wraith": [
+    "unit:CorrosiveWraith"
+  ],
+  "unit_crimson_warlord": [
+    "unit:CrimsonWarlord"
+  ],
+  "unit_crusader": [
+    "enemy:Crusader"
+  ],
+  "unit_cuttroath": [
+    "unit:Cutthroat"
+  ],
+  "unit_dark_knight": [
+    "unit:DarkKnight"
+  ],
+  "unit_dark_sorcerer": [
+    "unit:DarkSorcerer"
+  ],
+  "unit_datura_hierophant": [
+    "unit:DaturaHierophant"
+  ],
+  "unit_death_hound": [
+    "enemy:DeathHound"
+  ],
+  "unit_death_knight": [
+    "unit:DeathKnight"
+  ],
+  "unit_deckhand": [
+    "enemy:Deckhand"
+  ],
+  "unit_demilich": [
+    "unit:Demilich"
+  ],
+  "unit_demon": [
+    "unit:Demon"
+  ],
+  "unit_desperado": [
+    "unit:Desperado"
+  ],
+  "unit_disintegrator": [
+    "unit:Disintegrator"
+  ],
+  "unit_divine_champion": [
+    "unit:DivineChampion"
+  ],
+  "unit_divine_duelist": [
+    "unit:DivineDuelist"
+  ],
+  "unit_djinn": [
+    "enemy:Djinn"
+  ],
+  "unit_drake_rider": [
+    "unit:DrakeRider"
+  ],
+  "unit_dreamwrought_beast": [
+    "enemy:DreamwroughtBeast"
+  ],
+  "unit_dreamwrought_dragon": [
+    "enemy:DreamwroughtDragon"
+  ],
+  "unit_dreamwrought_forge": [
+    "enemy:DreamwroughtForge"
+  ],
+  "unit_dreamwrought_swarm": [
+    "enemy:DreamwroughtSwarm"
+  ],
+  "unit_druid": [
+    "unit:Druid"
+  ],
+  "unit_dryad": [
+    "enemy:Dryad"
+  ],
+  "unit_eidolon": [
+    "unit:Eidolon"
+  ],
+  "unit_el_salvador_1": [
+    "unit:ElSalvador"
+  ],
+  "unit_eldritch_alchemist": [
+    "unit:EldritchAlchemist"
+  ],
+  "unit_eldritch_hound": [
+    "enemy:EldritchHound"
+  ],
+  "unit_electric_slime": [
+    "enemy:ElectricSlime"
+  ],
+  "unit_elemental_alchemist": [
+    "unit:ElementalAlchemist"
+  ],
+  "unit_emperor_clovis_xxviii": [
+    "enemy:EmperorClovisXXVIII"
+  ],
+  "unit_enforcer": [
+    "enemy:Enforcer"
+  ],
+  "unit_ent": [
+    "enemy:Ent"
+  ],
+  "unit_esoteric_alchemist": [
+    "unit:EsotericAlchemist"
+  ],
+  "unit_eternal_fortress": [
+    "unit:EternalFortress"
+  ],
+  "unit_ethereal_soul": [
+    "enemy:EtherealSoul"
+  ],
+  "unit_exile": [
+    "unit:Exile"
+  ],
+  "unit_fire_slime": [
+    "enemy:FireSlime"
+  ],
+  "unit_fire_wizard": [
+    "unit:FireWizard"
+  ],
+  "unit_first_minister_atos": [
+    "enemy:FirstMinisterAtos"
+  ],
+  "unit_footman": [
+    "unit:Footman"
+  ],
+  "unit_forest_druid": [
+    "unit:ForestDruid"
+  ],
+  "unit_forest_spirit": [
+    "enemy:ForestSpirit"
+  ],
+  "unit_frozen_slime": [
+    "enemy:FrozenSlime"
+  ],
+  "unit_fury": [
+    "unit:Fury"
+  ],
+  "unit_gcss": [
+    "enemy:Gcss"
+  ],
+  "unit_ghoul": [
+    "enemy:Ghoul"
+  ],
+  "unit_giant_moth": [
+    "enemy:GiantMoth"
+  ],
+  "unit_giant_spider": [
+    "enemy:GiantSpider"
+  ],
+  "unit_giant_tortoise": [
+    "enemy:GiantTortoise"
+  ],
+  "unit_gloom_druid": [
+    "unit:GloomDruid"
+  ],
+  "unit_golden_rabbit": [
+    "enemy:GoldenRabbit"
+  ],
+  "unit_golden_rider": [
+    "unit:GoldenRider"
+  ],
+  "unit_grand_magus": [
+    "unit:GrandMagus"
+  ],
+  "unit_green_spitfang": [
+    "enemy:GreenSpitfang"
+  ],
+  "unit_guard": [
+    "unit:Guard"
+  ],
+  "unit_hailstorm": [
+    "unit:Hailstorm"
+  ],
+  "unit_headless_knight": [
+    "enemy:HeadlessKnight"
+  ],
+  "unit_heathen": [
+    "unit:Heathen"
+  ],
+  "unit_heavenly_cantor": [
+    "unit:HeavenlyCantor"
+  ],
+  "unit_hellish_sculptor": [
+    "unit:HellishSculptor"
+  ],
+  "unit_hemodruid": [
+    "unit:Hemodruid"
+  ],
+  "unit_herald_kali": [
+    "enemy:HeraldKali"
+  ],
+  "unit_herald_maya": [
+    "enemy:HeraldMaya"
+  ],
+  "unit_herald_shoran": [
+    "enemy:HeraldShoran"
+  ],
+  "unit_herald_xavi": [
+    "enemy:HeraldXavi"
+  ],
+  "unit_holy_knight": [
+    "unit:HolyKnight"
+  ],
+  "unit_horse_rider": [
+    "unit:HorseRider"
+  ],
+  "unit_huntress": [
+    "unit:Huntress"
+  ],
+  "unit_hurricane": [
+    "unit:Hurricane"
+  ],
+  "unit_ice_elemental": [
+    "enemy:IceElemental"
+  ],
+  "unit_iconoclast": [
+    "enemy:Iconoclast"
+  ],
+  "unit_imp": [
+    "enemy:Imp"
+  ],
+  "unit_imperial_guard": [
+    "enemy:ImperialGuard"
+  ],
+  "unit_imperial_mage": [
+    "enemy:ImperialMage"
+  ],
+  "unit_infernal_lord": [
+    "unit:InfernalLord"
+  ],
+  "unit_infernal_prince": [
+    "unit:InfernalPrince"
+  ],
+  "unit_inferno": [
+    "unit:Inferno"
+  ],
+  "unit_inquisitor": [
+    "unit:Inquisitor"
+  ],
+  "unit_insane_citizen": [
+    "enemy:InsaneCitizen"
+  ],
+  "unit_insane_merchant": [
+    "enemy:InsaneMerchant"
+  ],
+  "unit_insane_priest": [
+    "enemy:InsanePriest"
+  ],
+  "unit_iron_defender": [
+    "unit:IronDefender"
+  ],
+  "unit_iron_warden": [
+    "unit:IronWarden"
+  ],
+  "unit_juggernaut": [
+    "unit:Juggernaut"
+  ],
+  "unit_justiciar": [
+    "unit:Justiciar"
+  ],
+  "unit_kabar_the_rotten": [
+    "enemy:KabarTheRotten"
+  ],
+  "unit_kasimir_the_seer": [
+    "enemy:KasimirTheSeer"
+  ],
+  "unit_king_aino": [
+    "enemy:KingAino"
+  ],
+  "unit_kings_hand": [
+    "unit:KingsHand"
+  ],
+  "unit_knight": [
+    "unit:Knight"
+  ],
+  "unit_knight_slime": [
+    "enemy:KnightSlime"
+  ],
+  "unit_lazarus": [
+    "enemy:Lazarus"
+  ],
+  "unit_legate_hadrian": [
+    "enemy:LegateHadrian"
+  ],
+  "unit_lesser_titan": [
+    "enemy:LesserTitan"
+  ],
+  "unit_lich": [
+    "unit:Lich"
+  ],
+  "unit_light_disciple": [
+    "unit:LightDisciple"
+  ],
+  "unit_lord_of_decay": [
+    "unit:LorfOfDecay"
+  ],
+  "unit_lorekeeper": [
+    "unit:Lorekeeper"
+  ],
+  "unit_lost_miner": [
+    "enemy:LostMiner"
+  ],
+  "unit_magic_armor": [
+    "enemy:MagicArmor"
+  ],
+  "unit_marauder": [
+    "unit:Marauder"
+  ],
+  "unit_marksman": [
+    "unit:Marksman"
+  ],
+  "unit_meat_carver": [
+    "unit:MeatCarver"
+  ],
+  "unit_melting_elder": [
+    "unit:MeltingElder"
+  ],
+  "unit_mimic": [
+    "enemy:Mimic"
+  ],
+  "unit_minstrel": [
+    "unit:Minstrel"
+  ],
+  "unit_mysterious_tentacle": [
+    "enemy:MysteriousTentacle"
+  ],
+  "unit_necrobot": [
+    "enemy:Necrobot"
+  ],
+  "unit_necrolith": [
+    "enemy:Necrolith"
+  ],
+  "unit_necromancer": [
+    "unit:Necromancer"
+  ],
+  "unit_nexus_researcher": [
+    "enemy:NexusResearcher"
+  ],
+  "unit_night_blade": [
+    "unit:NightBlade"
+  ],
+  "unit_night_lament": [
+    "unit:NightLament"
+  ],
+  "unit_night_specter": [
+    "unit:NightSpecter"
+  ],
+  "unit_night_terror": [
+    "unit:NightTerror"
+  ],
+  "unit_night_veil": [
+    "unit:NightVeil"
+  ],
+  "unit_obsidian_golem": [
+    "enemy:ObsidianGolem"
+  ],
+  "unit_oculus": [
+    "enemy:Oculus"
+  ],
+  "unit_outlander": [
+    "unit:Outlander"
+  ],
+  "unit_overlord": [
+    "unit:Overlord"
+  ],
+  "unit_paladin": [
+    "unit:Paladin"
+  ],
+  "unit_pale_hermit": [
+    "enemy:PaleHermit"
+  ],
+  "unit_phantasm": [
+    "enemy:Phantasm"
+  ],
+  "unit_phoenix": [
+    "enemy:Phoenix"
+  ],
+  "unit_pirate": [
+    "enemy:Pirate"
+  ],
+  "unit_pirate_captain": [
+    "enemy:PirateCaptain"
+  ],
+  "unit_pirate_lieutenant": [
+    "enemy:PirateLieutenant"
+  ],
+  "unit_plague_spreader": [
+    "unit:PlagueSpreader"
+  ],
+  "unit_poison_bow": [
+    "unit:PoisonBow"
+  ],
+  "unit_primeval_wurm": [
+    "enemy:PrimevalWurm"
+  ],
+  "unit_primordial_titan": [
+    "enemy:PrimordialTitan"
+  ],
+  "unit_pterodactyl": [
+    "enemy:Pterodactyl"
+  ],
+  "unit_radiant_elder": [
+    "unit:RadiantElder"
+  ],
+  "unit_rat": [
+    "unit:Rat"
+  ],
+  "unit_rat_tamer": [
+    "unit:RatTamer"
+  ],
+  "unit_red_archmage": [
+    "unit:RedArchmage"
+  ],
+  "unit_red_elder": [
+    "unit:RedElder"
+  ],
+  "unit_red_mage": [
+    "unit:RedMage"
+  ],
+  "unit_red_stalker": [
+    "unit:RedStalker"
+  ],
+  "unit_reinforced_door": [
+    "enemy:ReinforcedDoor"
+  ],
+  "unit_renegade": [
+    "unit:Renegade"
+  ],
+  "unit_rogue": [
+    "unit:Rogue"
+  ],
+  "unit_royal_captain": [
+    "unit:RoyalCaptain"
+  ],
+  "unit_royal_guard": [
+    "unit:RoyalGuard"
+  ],
+  "unit_royal_swordman": [
+    "unit:RoyalSwordsman"
+  ],
+  "unit_sand_demon": [
+    "enemy:SandDemon"
+  ],
+  "unit_sand_statue": [
+    "enemy:SandStatue"
+  ],
+  "unit_sand_vulture": [
+    "enemy:SandVulture"
+  ],
+  "unit_sanguine_druid": [
+    "unit:SanguineDruid"
+  ],
+  "unit_savage_berserker": [
+    "unit:SavageBerserker"
+  ],
+  "unit_scarlet_berserker": [
+    "unit:ScarletBerserker"
+  ],
+  "unit_scorching_elder": [
+    "unit:ScorchingElder"
+  ],
+  "unit_scourge": [
+    "unit:Scourge"
+  ],
+  "unit_sha_kire_first_swordsman": [
+    "enemy:ShaKireFirstSwordsman"
+  ],
+  "unit_sha_the_hidden_god": [
+    "enemy:ShaTheHiddenGod"
+  ],
+  "unit_shadow_crawler": [
+    "unit:ShadowCrawler"
+  ],
+  "unit_shadow_dancer": [
+    "unit:ShadowDancer"
+  ],
+  "unit_shahuri_archer": [
+    "enemy:ShahuriArcher"
+  ],
+  "unit_shahuri_mage": [
+    "enemy:ShahuriMage"
+  ],
+  "unit_shahuri_warrior": [
+    "enemy:ShahuriWarrior"
+  ],
+  "unit_silver_tongue": [
+    "unit:SilverTongue"
+  ],
+  "unit_singularity": [
+    "enemy:Singularity"
+  ],
+  "unit_singularity_magus": [
+    "unit:SingularityMagus"
+  ],
+  "unit_skeleton": [
+    "unit:Skeleton"
+  ],
+  "unit_slime": [
+    "enemy:Slime"
+  ],
+  "unit_slime_king": [
+    "enemy:SlimeKing"
+  ],
+  "unit_smoldering_titan": [
+    "enemy:SmolderingTitan"
+  ],
+  "unit_snow_wyvern": [
+    "enemy:SnowWyvern"
+  ],
+  "unit_spell_weaver": [
+    "unit:Spellweaver"
+  ],
+  "unit_spire_acolyte": [
+    "unit:SpireAcolyte"
+  ],
+  "unit_spire_initiate": [
+    "unit:SpireInitiate"
+  ],
+  "unit_spire_leader": [
+    "unit:SpireLeader"
+  ],
+  "unit_spire_sage": [
+    "unit:SpireSage"
+  ],
+  "unit_spirit_engraver": [
+    "unit:SpiritEngraver"
+  ],
+  "unit_spitfang_rider": [
+    "unit:SpitfangRider"
+  ],
+  "unit_stone_shaman": [
+    "enemy:StoneShaman"
+  ],
+  "unit_summon_bear": [
+    "unit:PolarBear",
+    "unit:SummonBear"
+  ],
+  "unit_summon_cat": [
+    "unit:SnowCat",
+    "unit:SummonCat"
+  ],
+  "unit_summon_owlbear": [
+    "unit:AlphaOwlbear",
+    "unit:SummonOwlbear"
+  ],
+  "unit_summon_tiger": [
+    "unit:SummonTiger",
+    "unit:WhiteTiger"
+  ],
+  "unit_summon_weasel": [
+    "unit:ArcticWeasel",
+    "unit:SummonWeasel"
+  ],
+  "unit_summon_wolf": [
+    "unit:DireWolf",
+    "unit:SummonWolf"
+  ],
+  "unit_sureshot": [
+    "unit:Sureshot"
+  ],
+  "unit_tekeli_li_first_apostle": [
+    "enemy:TekeliLiFirstApostle"
+  ],
+  "unit_tempest": [
+    "unit:Tempest"
+  ],
+  "unit_templar": [
+    "unit:Templar"
+  ],
+  "unit_terrorsaurus": [
+    "enemy:Terrorsaurus"
+  ],
+  "unit_the_ancient": [
+    "enemy:TheAncient"
+  ],
+  "unit_the_exiled": [
+    "enemy:TheExiled"
+  ],
+  "unit_the_machine": [
+    "enemy:TheMachine"
+  ],
+  "unit_thief": [
+    "unit:Thief"
+  ],
+  "unit_thorvus": [
+    "enemy:Thorvus"
+  ],
+  "unit_tiger_tamer": [
+    "unit:TigerTamer"
+  ],
+  "unit_titan": [
+    "unit:Titan"
+  ],
+  "unit_toxic_stalker": [
+    "unit:ToxicStalker"
+  ],
+  "unit_treant": [
+    "enemy:Treant"
+  ],
+  "unit_trickster": [
+    "unit:Trickster"
+  ],
+  "unit_troll": [
+    "enemy:Troll"
+  ],
+  "unit_troll_shaman": [
+    "enemy:TrollShaman"
+  ],
+  "unit_troll_warrior": [
+    "enemy:TrollWarrior"
+  ],
+  "unit_troll_whelp": [
+    "enemy:TrollWhelp"
+  ],
+  "unit_tyrant": [
+    "unit:Tyrant"
+  ],
+  "unit_ultraslime": [
+    "enemy:Ultraslime"
+  ],
+  "unit_unchained": [
+    "unit:Unchained"
+  ],
+  "unit_undead": [
+    "enemy:Undead"
+  ],
+  "unit_undead_archer": [
+    "enemy:UndeadArcher"
+  ],
+  "unit_undead_general": [
+    "enemy:UndeadGeneral"
+  ],
+  "unit_undead_warlord": [
+    "enemy:UndeadWarlord"
+  ],
+  "unit_undying_bastion": [
+    "unit:UndyingBastion"
+  ],
+  "unit_vagabond": [
+    "unit:Vagabond"
+  ],
+  "unit_vampire_bat": [
+    "enemy:VampireBat"
+  ],
+  "unit_void_slime": [
+    "enemy:VoidSlime"
+  ],
+  "unit_warrior": [
+    "unit:Warrior"
+  ],
+  "unit_weasel_tamer": [
+    "unit:WeaselTamer"
+  ],
+  "unit_whisper": [
+    "unit:Whisper"
+  ],
+  "unit_white_archmage": [
+    "unit:WhiteArchmage"
+  ],
+  "unit_white_elder": [
+    "unit:WhiteElder"
+  ],
+  "unit_white_mage": [
+    "unit:WhiteMage"
+  ],
+  "unit_wicked_tribute": [
+    "enemy:WickedTribute"
+  ],
+  "unit_will_o_wisp": [
+    "enemy:WillOWisp"
+  ],
+  "unit_wizard_of_larox": [
+    "enemy:WizardOfLarox"
+  ],
+  "unit_wolf": [
+    "enemy:TutorialWolf",
+    "enemy:Wolf"
+  ],
+  "unit_wolf_rider": [
+    "unit:WolfRider"
+  ],
+  "unit_wolf_tamer": [
+    "unit:WolfTamer"
+  ],
+  "unit_worg_rider": [
+    "unit:WorgRider"
+  ],
+  "unit_wound_weaver": [
+    "unit:WoundsWeaver"
+  ],
+  "unit_wraith": [
+    "unit:Wraith"
+  ],
+  "unit_wurm": [
+    "enemy:Wurm"
+  ],
+  "unit_wyrm_rider": [
+    "unit:WyrmRider"
+  ],
+  "unit_zombie": [
+    "unit:Zombie"
+  ],
+  "unstable_gem": [
+    "item:UnstableGem"
+  ],
+  "unstable_staff": [
+    "item:UnstableStaff"
+  ],
+  "upgrade_market_queue": [
+    "item:UpgradeMarketQueue"
+  ],
+  "upgrade_market_time": [
+    "item:UpgradeMarketTime"
+  ],
+  "upgrade_quarters": [
+    "item:UpgradeQuarters"
+  ],
+  "upgrade_shelter": [
+    "item:UpgradeShelter",
+    "item:UpgradeShelterEffectiveness"
+  ],
+  "upgrade_storage": [
+    "item:UpgradeStorage"
+  ],
+  "upgrade_tavern_capacity": [
+    "item:UpgradeTavernCapacity"
+  ],
+  "upgrade_tavern_time": [
+    "item:UpgradeTavernTime"
+  ],
+  "upgrade_workshop_queue": [
+    "item:UpgradeWorkshopQueue"
+  ],
+  "upgrade_workshop_time": [
+    "item:UpgradeWorkshopTime"
+  ],
+  "vampire_axe": [
+    "item:VampireAxe"
+  ],
+  "vampire_bow": [
+    "item:VampireBow"
+  ],
+  "vampire_dagger": [
+    "item:VampireDagger"
+  ],
+  "vampire_scepter": [
+    "item:VampireScepter"
+  ],
+  "vampire_sword": [
+    "item:VampireSword"
+  ],
+  "veil_breaker": [
+    "item:VeilBreaker"
+  ],
+  "veil_shatterer": [
+    "item:VeilShatterer"
+  ],
+  "verdant_blade": [
+    "item:VerdantBlade"
+  ],
+  "verdant_boots": [
+    "item:VerdantBoots"
+  ],
+  "verdant_bow": [
+    "item:VerdantBow"
+  ],
+  "verdant_gloves": [
+    "item:VerdantGloves"
+  ],
+  "verdant_helm": [
+    "item:VerdantHelm"
+  ],
+  "vinegar": [
+    "item:Vinegar"
+  ],
+  "void_armor": [
+    "item:VoidArmor"
+  ],
+  "void_core": [
+    "item:VoidCore"
+  ],
+  "void_crusher": [
+    "item:VoidCrusher"
+  ],
+  "void_pendant": [
+    "item:VoidPendant"
+  ],
+  "voltaic_shock": [
+    "item:VoltaicShock"
+  ],
+  "voodoo_doll": [
+    "item:VoodooDoll"
+  ],
+  "warden_belt": [
+    "item:WardenBelt"
+  ],
+  "warlord_skull": [
+    "item:WarlordSkull"
+  ],
+  "werewolf_fang": [
+    "item:WerewolfFang"
+  ],
+  "white_hair": [
+    "item:WhiteHair"
+  ],
+  "white_slime": [
+    "item:WhiteSlime"
+  ],
+  "wicked_cleaver": [
+    "item:WickedCleaver"
+  ],
+  "wicked_scepter": [
+    "item:WickedScepter"
+  ],
+  "wicked_seal": [
+    "item:WickedSeal"
+  ],
+  "wing_fabric": [
+    "item:WingFabric"
+  ],
+  "winged_ray": [
+    "enemy:WingedRay",
+    "item:WingedRay"
+  ],
+  "winter_boots": [
+    "item:WinterBoots"
+  ],
+  "winter_cape": [
+    "item:WinterCape"
+  ],
+  "winter_gloves": [
+    "item:WinterGloves"
+  ],
+  "winter_helm": [
+    "item:WinterHelm"
+  ],
+  "winter_shield": [
+    "item:WinterShield"
+  ],
+  "wintercloth": [
+    "item:Wintercloth"
+  ],
+  "winterwood": [
+    "item:Winterwood"
+  ],
+  "winterwood_bow": [
+    "item:WinterwoodBow"
+  ],
+  "winterwood_staff": [
+    "item:WinterwoodStaff"
+  ],
+  "wood": [
+    "item:Wood"
+  ],
+  "wooden_bow": [
+    "item:WoodenBow"
+  ],
+  "wooden_buckler": [
+    "item:WoodenBuckler"
+  ],
+  "wurm_blood": [
+    "item:WurmBlood"
+  ],
+  "wurm_scale": [
+    "item:WurmScale"
+  ],
+  "wurmscales_boots": [
+    "item:WurmscalesBoots"
+  ],
+  "wurmscales_gloves": [
+    "item:WurmscalesGloves"
+  ],
+  "wurmscales_jacket": [
+    "item:WurmscalesJacket"
+  ],
+  "wurmscales_shield": [
+    "item:WurmscalesShield"
+  ],
+  "wyvern_cape": [
+    "item:WyvernCape"
+  ],
+  "wyvern_chop": [
+    "item:WyvernChop"
+  ],
+  "xp_book_1": [
+    "item:XPBook1"
+  ],
+  "xp_book_10": [
+    "item:XPBook10"
+  ],
+  "xp_book_2": [
+    "item:XPBook2"
+  ],
+  "xp_book_3": [
+    "item:XPBook3"
+  ],
+  "xp_book_c": [
+    "item:XPBookC"
+  ],
+  "yoghurt": [
+    "item:Yoghurt"
+  ],
+  "zapper": [
+    "item:Zapper"
+  ]
+}

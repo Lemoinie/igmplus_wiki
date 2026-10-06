@@ -1,0 +1,20 @@
+{
+  "counts": {
+    "strings": 4359,
+    "skills": 260,
+    "traits": 40,
+    "status_effects": 31,
+    "doctrine_abilities": 48,
+    "doctrines": 9,
+    "adventurers": 168,
+    "adventurer_tiers": 9,
+    "enemies": 135,
+    "items": 663,
+    "item_base_classes": 17,
+    "recipes": 351,
+    "places": 27,
+    "changelog_versions": 129,
+    "sprites": 1086
+  },
+  "untiered_units": []
+}
