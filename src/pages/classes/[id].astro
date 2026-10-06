@@ -1,0 +1,59 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import UnitDetail from '../../components/UnitDetail.vue';
+import { getAllClasses, getRelations, findSkill } from '../../lib/classes';
+
+export function getStaticPaths() {
+  const all = getAllClasses();
+  return all.map((c) => ({ params: { id: c.id }, props: { unit: c, all } }));
+}
+
+const { unit, all } = Astro.props as { unit: any; all: any[] };
+const base = '/igmplus_wiki';
+const { promotions, demotions } = getRelations(unit.id, all);
+
+const s = unit.stats ?? {};
+const stats = [
+  { label: 'HP', value: s.baseMaxHp ?? s.maxHp ?? '—' },
+  { label: 'CON', value: s.baseConstitution ?? '—' },
+  { label: 'INT', value: s.baseIntelligence ?? '—' },
+  { label: 'DEX', value: s.baseDexterity ?? '—' },
+  { label: 'DEF', value: s.baseDefense ?? '—' },
+  { label: 'MDEF', value: s.baseMagicDefense ?? '—' },
+];
+
+const skills = [
+  { kind: 'Active', skill: findSkill(unit.activeSkill) },
+  { kind: 'Passive', skill: findSkill(unit.passiveSkill) },
+]
+  .filter((x) => x.skill)
+  .map((x) => ({ kind: x.kind, name: x.skill!.name, description: x.skill!.description }));
+
+const toLink = (c: any) => ({ name: c.name, href: `${base}/classes/${c.id}`, sprite: c.sprite, tier: c.tier });
+const tags = [
+  `Tier ${unit.tier}`,
+  unit.maxLevel ? `Max Lv. ${unit.maxLevel}` : '',
+  unit.category,
+  unit.weaponType,
+  unit.armorType,
+].filter(Boolean);
+---
+
+<WikiLayout title={unit.name} description={unit.description ?? `${unit.name} class details`}>
+  <UnitDetail
+    client:load
+    name={unit.name}
+    sprite={unit.sprite}
+    description={unit.description}
+    tags={tags}
+    stats={stats}
+    skills={skills}
+    links={[
+      { title: 'Demotion (promotes from)', items: demotions.map(toLink), emptyText: 'Base class: no demotion.' },
+      { title: 'Promotions', items: promotions.map(toLink), emptyText: 'Final class: no further promotions.' },
+    ]}
+    backHref={`${base}/classes`}
+    backLabel="Back to Classes"
+    basePath={base}
+  />
+</WikiLayout>

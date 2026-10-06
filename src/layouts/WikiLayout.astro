@@ -15,7 +15,6 @@ import classesList from '../data/classes.json';
 import equipmentList from '../data/equipment.json';
 import traitsList from '../data/traits.json';
 import petsList from '../data/pets.json';
-import skillsList from '../data/skills.json';
 import enemiesList from '../data/enemies.json';
 import dungeonsList from '../data/dungeons.json';
 
@@ -24,7 +23,7 @@ const searchEntries = [
     id: `class-${c.id}`,
     title: c.name,
     category: 'Class' as const,
-    url: `/igmplus_wiki/classes#class-${c.id}`,
+    url: `/igmplus_wiki/classes/${c.id}`,
     description: `Tier ${c.tier} ${c.category} · ${c.weaponType} / ${c.armorType}`
   })),
   ...equipmentList.map((e: any) => ({
@@ -48,18 +47,11 @@ const searchEntries = [
     url: `/igmplus_wiki/traits#${t.id}`,
     description: t.description
   })),
-  ...skillsList.filter((s: any) => s.name && s.name !== '—').map((s: any) => ({
-    id: `skill-${s.key}`,
-    title: s.name,
-    category: 'Skill' as const,
-    url: `/igmplus_wiki/skills#${s.key}`,
-    description: `${s.kind.toUpperCase()}: ${s.description}`
-  })),
   ...enemiesList.map((en: any) => ({
     id: `enemy-${en.id}`,
     title: en.name,
     category: 'Enemy' as const,
-    url: `/igmplus_wiki/enemies#${en.id}`,
+    url: `/igmplus_wiki/enemies/${en.id}`,
     description: `${en.isBoss ? 'Boss' : 'Enemy'} · HP: ${en.stats?.hp} · DMG: ${en.damage?.min}-${en.damage?.max}`
   })),
   ...dungeonsList.map((d: any) => ({

@@ -19,7 +19,7 @@ igmplus_wiki/
 │   │   ├── equipment.json   # All weapons, armors, and accessories
 │   │   ├── pets.json        # Tamer pets and undead summons
 │   │   ├── traits.json      # Adventurer recruitment traits
-│   │   ├── skills.json      # Active and passive abilities
+│   │   ├── skills.json      # Skill reference data (no page; kept for future use)
 │   │   ├── enemies.json     # Monster bestiary stats and drops
 │   │   └── dungeons.json    # Dungeon encounter pools and loot
 │   │
@@ -47,7 +47,6 @@ igmplus_wiki/
 │       ├── equipment/       # Equipment catalog with live filtering
 │       ├── pets/            # Pets & summons
 │       ├── traits/          # Adventurer traits
-│       ├── skills/          # Skills catalogue
 │       ├── enemies/         # Enemies & Bestiary
 │       ├── dungeons/        # Dungeons & Raids
 │       └── mechanics/       # Dynamic Markdown mechanics renderer
@@ -116,7 +115,7 @@ Open [`src/data/classes.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/s
 ```
 * **Category**: One of `Footman`, `Apprentice`, `Archer`, `Rogue`, `Outlander`, or `Summon`.
 * **Weapon & Armor**: `sword`, `axe`, `bow`, `staff`, `dagger` / `heavy`, `medium`, `light`.
-* The class automatically appears under its category tab and tier in `/classes`.
+* The class automatically appears in `/classes` under its category tab. Promotion links come from `promotesTo` / `promotesFrom`: a class with no parent becomes a tree root (T1 card); click the arrow on a card to show/hide its promotions. Click a class name to see stats and description.
 
 ---
 

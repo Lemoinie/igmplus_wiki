@@ -1,0 +1,39 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import UnitDetail from '../../components/UnitDetail.vue';
+import enemiesData from '../../data/enemies.json';
+
+export function getStaticPaths() {
+  return (enemiesData as any[]).map((e) => ({ params: { id: e.id }, props: { unit: e } }));
+}
+
+const { unit } = Astro.props as { unit: any };
+const base = '/igmplus_wiki';
+const s = unit.stats ?? {};
+
+const stats = [
+  { label: 'HP', value: s.hp ?? '—' },
+  { label: 'CON', value: s.constitution ?? '—' },
+  { label: 'INT', value: s.intelligence ?? '—' },
+  { label: 'DEX', value: s.dexterity ?? '—' },
+  { label: 'DEF', value: s.defense ?? '—' },
+  { label: 'MDEF', value: s.magicDefense ?? '—' },
+  { label: 'DMG', value: `${unit.damage?.min ?? '?'} – ${unit.damage?.max ?? '?'}` },
+];
+const tags = [unit.isBoss ? 'Boss' : 'Enemy', unit.expGiven ? `EXP ${unit.expGiven}` : ''].filter(Boolean);
+const drops = (unit.drops ?? []).map((d: any) => ({ name: d.item, qty: d.qty, chance: d.chance }));
+---
+
+<WikiLayout title={unit.name} description={`${unit.name} enemy stats and drops`}>
+  <UnitDetail
+    client:load
+    name={unit.name}
+    sprite={unit.sprite}
+    tags={tags}
+    stats={stats}
+    drops={drops}
+    backHref={`${base}/enemies`}
+    backLabel="Back to Enemies"
+    basePath={base}
+  />
+</WikiLayout>

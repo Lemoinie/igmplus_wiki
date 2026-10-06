@@ -5,16 +5,15 @@ const isCollapsed = ref(false);
 const isMobileOpen = ref(false);
 
 const navItems = [
-  { label: 'Home', href: '/igmplus_wiki/', icon: '🏰' },
-  { label: 'Classes', href: '/igmplus_wiki/classes', icon: '⚔️' },
-  { label: 'Equipment', href: '/igmplus_wiki/equipment', icon: '🛡️' },
-  { label: 'Pets & Summons', href: '/igmplus_wiki/pets', icon: '🐾' },
-  { label: 'Traits', href: '/igmplus_wiki/traits', icon: '✨' },
-  { label: 'Skills', href: '/igmplus_wiki/skills', icon: '⚡' },
-  { label: 'Enemies & Bestiary', href: '/igmplus_wiki/enemies', icon: '👾' },
-  { label: 'Dungeons & Raids', href: '/igmplus_wiki/dungeons', icon: '🗺️' },
-  { label: 'Game Mechanics', href: '/igmplus_wiki/mechanics/defense-and-armor', icon: '📜' },
-  { label: 'Mod Changelog', href: '/igmplus_wiki/changelog', icon: '📋' },
+  { label: 'Home', href: '/igmplus_wiki/' },
+  { label: 'Classes', href: '/igmplus_wiki/classes' },
+  { label: 'Equipment', href: '/igmplus_wiki/equipment' },
+  { label: 'Pets & Summons', href: '/igmplus_wiki/pets' },
+  { label: 'Traits', href: '/igmplus_wiki/traits' },
+  { label: 'Enemies & Bestiary', href: '/igmplus_wiki/enemies' },
+  { label: 'Dungeons & Raids', href: '/igmplus_wiki/dungeons' },
+  { label: 'Game Mechanics', href: '/igmplus_wiki/mechanics/defense-and-armor' },
+  { label: 'Mod Changelog', href: '/igmplus_wiki/changelog' },
 ];
 
 function toggleSidebar() {
@@ -77,7 +76,6 @@ onMounted(() => {
     >
       <div class="sidebarHeader">
         <a href="/igmplus_wiki/" class="brandLink">
-          <span class="brandIcon">⚔️</span>
           <div class="brandText">
             <span class="brandTitle">IGM+ Wiki</span>
             <span class="brandSub">Idle Guild Master Mod</span>
@@ -98,7 +96,6 @@ onMounted(() => {
         <ul class="navList">
           <li v-for="item in navItems" :key="item.href">
             <a :href="item.href" class="navLink" @click="isMobileOpen = false">
-              <span class="navIcon">{{ item.icon }}</span>
               <span class="navLabel">{{ item.label }}</span>
             </a>
           </li>

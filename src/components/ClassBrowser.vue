@@ -2,6 +2,7 @@
 import { ref, computed } from 'vue';
 import type { ClassDefinition } from '../types';
 import ClassCard from './ClassCard.vue';
+import ClassTreeNode from './ClassTreeNode.vue';
 
 const props = defineProps<{
   classes: ClassDefinition[];
@@ -21,57 +22,80 @@ const categoryIcons: Record<string, string> = {
   Summon: 'unit_skeleton',
 };
 
-const collapsedTiers = ref(new Set<number>());
 
-function toggleTier(tierNum: number) {
-  if (collapsedTiers.value.has(tierNum)) {
-    collapsedTiers.value.delete(tierNum);
-  } else {
-    collapsedTiers.value.add(tierNum);
+const byId = computed(() => new Map(props.classes.map((c) => [c.id, c])));
+
+/** Promotions of a class: its own promotesTo plus any class that lists it in promotesFrom. */
+const childrenMap = computed(() => {
+  const map = new Map<string, ClassDefinition[]>();
+  const add = (parent: string, child: ClassDefinition) => {
+    const list = map.get(parent) ?? [];
+    if (!list.some((x) => x.id === child.id)) list.push(child);
+    map.set(parent, list);
+  };
+  for (const c of props.classes) {
+    for (const id of c.promotesTo ?? []) {
+      const child = byId.value.get(id);
+      if (child) add(c.id, child);
+    }
+    for (const id of c.promotesFrom ?? []) {
+      if (byId.value.has(id)) add(id, c);
+    }
   }
+  for (const list of map.values()) {
+    list.sort((a, b) => a.tier - b.tier || a.name.localeCompare(b.name));
+  }
+  return map;
+});
+
+function childrenOf(id: string): ClassDefinition[] {
+  return childrenMap.value.get(id) ?? [];
+}
+
+const hasParent = computed(() => {
+  const s = new Set<string>();
+  for (const list of childrenMap.value.values()) for (const c of list) s.add(c.id);
+  return s;
+});
+
+const roots = computed(() =>
+  props.classes
+    .filter((c) => c.category === activeCategory.value && !hasParent.value.has(c.id))
+    .sort((a, b) => a.tier - b.tier || a.name.localeCompare(b.name)),
+);
+
+// Ids whose promotion cards are shown. Roots start expanded (shows T2).
+const expanded = ref(new Set<string>(
+  props.classes.filter((c) => !hasParent.value.has(c.id)).map((c) => c.id),
+));
+
+function toggle(id: string) {
+  const next = new Set(expanded.value);
+  if (next.has(id)) next.delete(id);
+  else next.add(id);
+  expanded.value = next;
 }
 
 function expandAll() {
-  collapsedTiers.value.clear();
+  expanded.value = new Set(props.classes.map((c) => c.id));
 }
 
 function collapseAll() {
-  if (activeGroupedTiers.value) {
-    for (const g of activeGroupedTiers.value) {
-      collapsedTiers.value.add(g.tier);
-    }
-  }
+  expanded.value = new Set();
 }
 
-const activeGroupedTiers = computed(() => {
-  const cat = activeCategory.value;
+const searchResults = computed(() => {
   const q = searchQuery.value.trim().toLowerCase();
-
-  const tierMap = new Map<number, ClassDefinition[]>();
-
-  for (const c of props.classes) {
-    if (c.category !== cat) continue;
-
-    if (q) {
-      const match =
+  if (!q) return [];
+  return props.classes
+    .filter((c) => c.category === activeCategory.value)
+    .filter(
+      (c) =>
         c.name.toLowerCase().includes(q) ||
-        c.weaponType.toLowerCase().includes(q) ||
-        c.armorType.toLowerCase().includes(q) ||
         (c.activeSkill && c.activeSkill.toLowerCase().includes(q)) ||
-        (c.passiveSkill && c.passiveSkill.toLowerCase().includes(q));
-      if (!match) continue;
-    }
-
-    const t = c.tier || 1;
-    if (!tierMap.has(t)) tierMap.set(t, []);
-    tierMap.get(t)!.push(c);
-  }
-
-  const sortedTiers = [...tierMap.keys()].sort((a, b) => a - b);
-  return sortedTiers.map((tier) => ({
-    tier,
-    units: tierMap.get(tier)!.sort((a, b) => a.name.localeCompare(b.name)),
-  }));
+        (c.passiveSkill && c.passiveSkill.toLowerCase().includes(q)),
+    )
+    .sort((a, b) => a.tier - b.tier || a.name.localeCompare(b.name));
 });
 
 function getCatCount(cat: string): number {
@@ -115,44 +139,35 @@ function getCatCount(cat: string): number {
       />
 
       <div class="actions">
-        <button type="button" class="actionBtn" @click="expandAll">
-          ▼ Expand All
-        </button>
-        <button type="button" class="actionBtn" @click="collapseAll">
-          ▶ Collapse All
-        </button>
+        <button type="button" class="actionBtn" @click="expandAll">Expand All</button>
+        <button type="button" class="actionBtn" @click="collapseAll">Collapse All</button>
       </div>
     </div>
 
-    <!-- Tiers List -->
-    <div v-if="activeGroupedTiers.length" class="tiersContainer">
-      <div v-for="g in activeGroupedTiers" :key="g.tier" class="tierBlock">
-        <!-- Tier Header -->
-        <button
-          type="button"
-          class="tierHeader"
-          @click="toggleTier(g.tier)"
-        >
-          <span class="chevron">{{ collapsedTiers.has(g.tier) ? '▶' : '▼' }}</span>
-          <span class="tierTitle">Tier {{ g.tier }}</span>
-          <span class="countBadge">{{ g.units.length }} {{ g.units.length === 1 ? 'Class' : 'Classes' }}</span>
-          <span class="hint">{{ collapsedTiers.has(g.tier) ? 'Click to show' : '' }}</span>
-        </button>
-
-        <!-- Tier Grid -->
-        <div v-show="!collapsedTiers.has(g.tier)" class="cardsGrid">
-          <ClassCard
-            v-for="u in g.units"
-            :key="u.id"
-            :class-data="u"
-            :base-path="basePath"
-          />
-        </div>
+    <!-- Search results (flat) -->
+    <div v-if="searchQuery.trim()" class="tree">
+      <ClassCard
+        v-for="c in searchResults"
+        :key="c.id"
+        :class-data="c"
+        :base-path="basePath"
+      />
+      <div v-if="!searchResults.length" class="emptyNotice">
+        No classes found matching "{{ searchQuery }}" in {{ activeCategory }}.
       </div>
     </div>
 
-    <div v-else class="emptyNotice">
-      No classes found matching "{{ searchQuery }}" in {{ activeCategory }}.
+    <!-- Promotion tree -->
+    <div v-else class="tree">
+      <ClassTreeNode
+        v-for="r in roots"
+        :key="r.id"
+        :node="r"
+        :children-of="childrenOf"
+        :expanded="expanded"
+        :base-path="basePath"
+        @toggle="toggle"
+      />
     </div>
   </div>
 </template>
@@ -268,66 +283,10 @@ function getCatCount(cat: string): number {
   color: var(--brand-primary);
 }
 
-.tiersContainer {
+.tree {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-}
-
-.tierBlock {
-  display: flex;
-  flex-direction: column;
-  gap: 0.85rem;
-}
-
-.tierHeader {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 10px 14px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 8px;
-  color: var(--text-primary);
-  cursor: pointer;
-  text-align: left;
-  transition: all 0.15s ease;
-}
-
-.tierHeader:hover {
-  border-color: var(--brand-primary);
-}
-
-.chevron {
-  color: var(--brand-primary);
-  font-size: 0.85rem;
-}
-
-.tierTitle {
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.countBadge {
-  font-size: 0.75rem;
-  padding: 2px 7px;
-  border-radius: 10px;
-  background: rgba(110, 168, 254, 0.15);
-  color: var(--brand-primary);
-}
-
-.hint {
-  margin-left: auto;
-  font-size: 0.8rem;
-  color: var(--text-muted);
-  font-style: italic;
-}
-
-.cardsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
-  gap: 1rem;
+  gap: 6px;
 }
 
 .emptyNotice {
