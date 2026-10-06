@@ -10,7 +10,7 @@
   "description": "\"The Spire, an age-old clandestine organization, recruits only the realm's most skilled assassins. Its select few members wield profound influence over the political landscape of kingdoms, capable of eliminating virtually any target with a secretive technique known solely to them.\"",
   "stats": {
     "maxLevel": 25,
-    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseMaxHp": 120,
     "baseConstitution": 18,
     "baseIntelligence": 8,
     "baseDexterity": 18,
