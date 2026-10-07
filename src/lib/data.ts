@@ -70,10 +70,233 @@ export function getAllPetTraits(): any[] {
   return Object.values(traitModules).map((mod: any) => mod.default || mod);
 }
 
+function toSnakeCase(str: string): string {
+  return str
+    .replace(/([a-z0-9])([A-Z])/g, '$1_$2')
+    .replace(/([A-Z])([A-Z][a-z])/g, '$1_$2')
+    .toLowerCase();
+}
+
+function resolveDropInfo(itemId: string, itemMap: Map<string, any>): { name: string; sprite: string } {
+  const item = itemMap.get(itemId);
+  const name = item?.name || itemId.replace(/([a-z0-9])([A-Z])/g, '$1 $2').replace(/([A-Z])([A-Z][a-z])/g, '$1 $2');
+  let sprite = item?.sprite;
+  if (!sprite && itemId.endsWith('Egg')) {
+    sprite = 'egg_' + itemId.replace('Egg', '').toLowerCase();
+  }
+  if (!sprite) {
+    sprite = toSnakeCase(itemId);
+  }
+  return { name, sprite };
+}
+
+// Canonical Enemy Type mapping based on EnemyTypeRegistry.kt
+const ENEMY_TYPE_MAP: Record<string, string> = {
+  // Slime
+  ElectricSlime: 'Slime',
+  FireSlime: 'Slime',
+  FrozenSlime: 'Slime',
+  KnightSlime: 'Slime',
+  Slime: 'Slime',
+  SlimeKing: 'Slime',
+  Ultraslime: 'Slime',
+  VoidSlime: 'Slime',
+
+  // Dragon
+  DreamwroughtDragon: 'Dragon',
+  SnowWyvern: 'Dragon',
+
+  // Plant
+  AmanitaObscura: 'Plant',
+  AncientEnt: 'Plant',
+  Dryad: 'Plant',
+  Ent: 'Plant',
+  Treant: 'Plant',
+
+  // Undead
+  Banshee: 'Undead',
+  BoneNightmareEnemy: 'Undead',
+  ChorusTheDrowned: 'Undead',
+  EtherealSoul: 'Undead',
+  Ghoul: 'Undead',
+  HeadlessKnight: 'Undead',
+  KabarTheRotten: 'Undead',
+  Lazarus: 'Undead',
+  LostMiner: 'Undead',
+  Phantasm: 'Undead',
+  Undead: 'Undead',
+  UndeadArcher: 'Undead',
+  UndeadGeneral: 'Undead',
+  UndeadWarlord: 'Undead',
+
+  // Demon
+  EmperorClovisXXVIII: 'Demon',
+  Imp: 'Demon',
+  SandDemon: 'Demon',
+
+  // Construct
+  BloodstoneColossus: 'Construct',
+  DreamwroughtForge: 'Construct',
+  Gcss: 'Construct',
+  MagicArmor: 'Construct',
+  Mimic: 'Construct',
+  Necrobot: 'Construct',
+  ObsidianGolem: 'Construct',
+  ReinforcedDoor: 'Construct',
+  SandStatue: 'Construct',
+  TheMachine: 'Construct',
+
+  // Elemental
+  Djinn: 'Elemental',
+  ForestSpirit: 'Elemental',
+  IceElemental: 'Elemental',
+  Phoenix: 'Elemental',
+  WillOWisp: 'Elemental',
+
+  // Beast
+  Angelfish: 'Beast',
+  BlueShark: 'Beast',
+  BlueTrout: 'Beast',
+  Boar: 'Beast',
+  DeathHound: 'Beast',
+  DreamwroughtBeast: 'Beast',
+  DreamwroughtSwarm: 'Beast',
+  EldritchHound: 'Beast',
+  GiantMoth: 'Beast',
+  GiantSpider: 'Beast',
+  GiantTortoise: 'Beast',
+  GoldenRabbit: 'Beast',
+  GreenSpitfang: 'Beast',
+  MagmaShark: 'Beast',
+  Perch: 'Beast',
+  PrimevalWurm: 'Beast',
+  Pterodactyl: 'Beast',
+  SandVulture: 'Beast',
+  Terrorsaurus: 'Beast',
+  TutorialWolf: 'Beast',
+  VampireBat: 'Beast',
+  WingedRay: 'Beast',
+  Wolf: 'Beast',
+  Wurm: 'Beast',
+
+  // Aberration
+  Abomination: 'Aberration',
+  AvatarOfTheAncient: 'Aberration',
+  Beholder: 'Aberration',
+  CelestialDestroyer: 'Aberration',
+  CelestialLancer: 'Aberration',
+  Cerebrum: 'Aberration',
+  Iconoclast: 'Aberration',
+  LesserTitan: 'Aberration',
+  MysteriousTentacle: 'Aberration',
+  Necrolith: 'Aberration',
+  Oculus: 'Aberration',
+  PrimordialTitan: 'Aberration',
+  ShaTheHiddenGod: 'Aberration',
+  Shadow: 'Aberration',
+  Singularity: 'Aberration',
+  SmolderingTitan: 'Aberration',
+  TekeliLiFirstApostle: 'Aberration',
+  TheAncient: 'Aberration',
+  WickedTribute: 'Aberration',
+
+  // Humanoid
+  ArcaneAssassin: 'Humanoid',
+  ArchmageOfLarox: 'Humanoid',
+  ArchmagusValthex: 'Humanoid',
+  Berserker: 'Humanoid',
+  BleakDeacon: 'Humanoid',
+  BleakDisciple: 'Humanoid',
+  Centaur: 'Humanoid',
+  ChiefScientistAva: 'Humanoid',
+  CityWarden: 'Humanoid',
+  Claris: 'Humanoid',
+  CrimsonAcolyte: 'Humanoid',
+  Crusader: 'Humanoid',
+  Deckhand: 'Humanoid',
+  Enforcer: 'Humanoid',
+  FirstMinisterAtos: 'Humanoid',
+  HeraldKali: 'Humanoid',
+  HeraldMaya: 'Humanoid',
+  HeraldShoran: 'Humanoid',
+  HeraldXavi: 'Humanoid',
+  ImperialCaptain: 'Humanoid',
+  ImperialGuard: 'Humanoid',
+  ImperialMage: 'Humanoid',
+  InsaneCitizen: 'Humanoid',
+  InsaneMerchant: 'Humanoid',
+  InsanePriest: 'Humanoid',
+  KasimirTheSeer: 'Humanoid',
+  KingAino: 'Humanoid',
+  LegateHadrian: 'Humanoid',
+  NexusResearcher: 'Humanoid',
+  PaleHermit: 'Humanoid',
+  Pirate: 'Humanoid',
+  PirateCaptain: 'Humanoid',
+  PirateLieutenant: 'Humanoid',
+  ShaKireFirstSwordsman: 'Humanoid',
+  ShahuriArcher: 'Humanoid',
+  ShahuriMage: 'Humanoid',
+  ShahuriWarrior: 'Humanoid',
+  StoneShaman: 'Humanoid',
+  TheExiled: 'Humanoid',
+  Thorvus: 'Humanoid',
+  Troll: 'Humanoid',
+  TrollShaman: 'Humanoid',
+  TrollWarrior: 'Humanoid',
+  TrollWhelp: 'Humanoid',
+  WizardOfLarox: 'Humanoid',
+};
+
 // Enemies
 export function getAllEnemies(): any[] {
   const enemyModules = import.meta.glob('../data/enemies/*.json', { eager: true });
-  return Object.values(enemyModules).map((mod: any) => mod.default || mod);
+  const rawEnemies = Object.values(enemyModules).map((mod: any) => mod.default || mod);
+
+  // Map places to enemies
+  const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
+  const enemyPlacesMap = new Map<string, Array<{ id: string; name: string; type: string }>>();
+  Object.values(placeModules).forEach((mod: any) => {
+    const p = (mod as any).default || mod;
+    if (!p) return;
+    const pName = p.name || p.id;
+    const pType = p.type || 'dungeon';
+    (p.enemies || []).forEach((e: any) => {
+      const eid = typeof e === 'string' ? e : e.id || e.name;
+      if (!eid) return;
+      if (!enemyPlacesMap.has(eid)) enemyPlacesMap.set(eid, []);
+      const list = enemyPlacesMap.get(eid)!;
+      if (!list.some((existing) => existing.name === pName)) {
+        list.push({ id: p.id, name: pName, type: pType });
+      }
+    });
+  });
+
+  // Map item metadata for drop resolution
+  const itemModules = import.meta.glob('../data/items/**/*.json', { eager: true });
+  const itemMap = new Map<string, any>();
+  Object.values(itemModules).forEach((mod: any) => {
+    const item = (mod as any).default || mod;
+    if (item?.id) itemMap.set(item.id, item);
+  });
+
+  return rawEnemies.map((enemy: any) => {
+    const places = enemyPlacesMap.get(enemy.id) || enemyPlacesMap.get(enemy.name) || [];
+    const drops = (enemy.drops || []).map((d: any) => {
+      const info = resolveDropInfo(d.item, itemMap);
+      return {
+        ...d,
+        name: d.name || info.name,
+        sprite: d.sprite || info.sprite,
+      };
+    });
+    return {
+      ...enemy,
+      type: enemy.type || ENEMY_TYPE_MAP[enemy.id] || 'Humanoid',
+      places,
+      drops,
+    };
+  });
 }
 
 // Places (dungeons, raids, guildactivities)

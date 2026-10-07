@@ -1,44 +1,29 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import EnemyCard from '../../components/EnemyCard.vue';
+import EnemyBrowser from '../../components/EnemyBrowser.vue';
 import { getAllEnemies } from '../../lib/data';
 import { base } from '../../lib/base';
 
 const enemiesData = getAllEnemies();
 ---
 
-<WikiLayout title="Bestiary" description="Complete enemy stats, damages, and item drops in Idle Guild Master Modded.">
+<WikiLayout title="Bestiary" description="Complete enemy drops and encounter locations in Idle Guild Master Modded.">
   <div class="pageHeader">
     <h1>Bestiary</h1>
     <p>
       Comprehensive bestiary of wild beasts, dungeon monsters, corrupted horrors, and raid bosses.
+      Filter by name, item drops, or encounter locations.
     </p>
   </div>
 
-  <div class="enemiesGrid">
-    {enemiesData.map((e) => (
-      <a href={`${base}/enemies/${e.id}`} class="enemyLink">
-        <EnemyCard client:load enemy={e as any} basePath={base} />
-      </a>
-    ))}
-  </div>
+  <EnemyBrowser client:load enemies={enemiesData as any} basePath={base} />
 </WikiLayout>
 
 <style>
 .pageHeader {
   margin-bottom: 1.5rem;
 }
-.enemiesGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(280px, 100%), 1fr));
-  gap: 1.25rem;
-}
-.enemyLink {
-  display: block;
-  color: inherit;
-  text-decoration: none;
-}
-.enemyLink:hover :global(.enemyCard) {
-  border-color: var(--brand-primary);
+.pageHeader p {
+  max-width: 800px;
 }
 </style>

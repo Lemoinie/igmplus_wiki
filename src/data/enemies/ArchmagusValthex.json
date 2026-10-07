@@ -20,27 +20,27 @@
     {
       "item": "ScarletStrand",
       "qty": 1,
-      "chance": 100
+      "chance": 1
     },
     {
       "item": "EsotericEgg",
       "qty": 1,
-      "chance": 100
+      "chance": 5
     },
     {
       "item": "EldritchSeal",
       "qty": 1,
-      "chance": 100
+      "chance": 35
     },
     {
       "item": "BlackHide",
       "qty": 1,
-      "chance": 100
+      "chance": 35
     },
     {
       "item": "AbherrantFabric",
       "qty": 1,
-      "chance": 100
+      "chance": 45
     }
   ]
 }

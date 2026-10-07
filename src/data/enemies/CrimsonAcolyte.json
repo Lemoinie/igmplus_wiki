@@ -20,22 +20,22 @@
     {
       "item": "EsotericEgg",
       "qty": 1,
-      "chance": 100
+      "chance": 5
     },
     {
       "item": "EldritchSeal",
       "qty": 1,
-      "chance": 100
+      "chance": 15
     },
     {
       "item": "BlackHide",
       "qty": 1,
-      "chance": 100
+      "chance": 15
     },
     {
       "item": "AbherrantFabric",
       "qty": 1,
-      "chance": 100
+      "chance": 15
     }
   ]
 }

@@ -21,8 +21,13 @@ const stats = [
   { label: 'MDEF', value: s.magicDefense ?? '—' },
   { label: 'DMG', value: `${unit.damage?.min ?? '?'} – ${unit.damage?.max ?? '?'}` },
 ];
-const tags = [unit.isBoss ? 'Boss' : 'Enemy', unit.expGiven ? `EXP ${unit.expGiven}` : ''].filter(Boolean);
-const drops = (unit.drops ?? []).map((d: any) => ({ name: d.item, qty: d.qty, chance: d.chance }));
+const tags = [unit.type, unit.isBoss ? 'Boss' : '', unit.expGiven ? `EXP ${unit.expGiven}` : ''].filter(Boolean);
+const drops = (unit.drops ?? []).map((d: any) => ({
+  name: d.name || d.item,
+  qty: d.qty,
+  chance: d.chance,
+  sprite: d.sprite,
+}));
 ---
 
 <WikiLayout title={unit.name} description={`${unit.name} enemy stats and drops`}>

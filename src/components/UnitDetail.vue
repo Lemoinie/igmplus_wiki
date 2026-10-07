@@ -96,7 +96,18 @@ defineProps<{
         <thead><tr><th>Item</th><th>Qty</th><th>Chance</th></tr></thead>
         <tbody>
           <tr v-for="d in drops" :key="d.name">
-            <td>{{ d.name }}</td>
+            <td class="dropItemCell">
+              <img
+                v-if="d.sprite"
+                :src="`${basePath ?? base}/images/${d.sprite}.png`"
+                :alt="d.name"
+                class="dropIcon sprite"
+                width="22"
+                height="22"
+                loading="lazy"
+              />
+              <span>{{ d.name }}</span>
+            </td>
             <td>{{ d.qty }}</td>
             <td>{{ d.chance }}%</td>
           </tr>
@@ -266,6 +277,20 @@ defineProps<{
 .dropTable { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
 .dropTable th { text-align: left; font-size: 0.72rem; color: var(--text-muted); padding: 4px 8px; }
 .dropTable td { padding: 6px 8px; border-top: 1px solid var(--border-subtle); }
+
+.dropItemCell {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropIcon {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
 
 @media (max-width: 600px) {
   .hero {

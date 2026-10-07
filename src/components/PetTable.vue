@@ -69,7 +69,12 @@ const filteredPets = computed(() => {
     <!-- Quick Search bar -->
     <div class="searchBarWrapper">
       <div class="searchBox">
-        <span class="searchIcon">🔍</span>
+        <span class="searchIcon">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </span>
         <input
           v-model="searchQuery"
           type="search"
@@ -288,8 +293,10 @@ const filteredPets = computed(() => {
 }
 
 .searchIcon {
-  font-size: 0.9rem;
-  opacity: 0.6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-muted);
   margin-right: 8px;
 }
 
