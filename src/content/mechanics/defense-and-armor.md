@@ -11,16 +11,24 @@ In **Idle Guild Master Modded (IGM+)**, damage calculation differentiates betwee
 
 ## Damage Reduction Formula
 
-Damage taken after defense is calculated using an asymptotic curve:
+Damage mitigation after defense is calculated using the following formula (floored):
 
-$$\text{Damage Multiplier} = \frac{100}{100 + \text{Effective Defense}}$$
+> **Damage Reduction (%)** = floor((100 × Effective Defense) / (50 + Effective Defense))  
+> **Damage Taken Multiplier** = (100 - Damage Reduction %) / 100
+
+For example, **10 DEF** yields `floor(1000 / 60) = 16%` damage reduction.
 
 ### Key Thresholds:
-* **0 DEF:** 100% damage taken (0% reduction)
-* **25 DEF:** 80% damage taken (20% reduction)
-* **50 DEF:** 66.7% damage taken (33.3% reduction)
-* **100 DEF:** 50% damage taken (50% reduction)
-* **200 DEF:** 33.3% damage taken (66.7% reduction)
+* **0 DEF:** 0% reduction (100% damage taken, 1.0× EHP)
+* **10 DEF:** 16% reduction (84% damage taken, 1.19× EHP)
+* **25 DEF:** 33% reduction (67% damage taken, 1.49× EHP)
+* **50 DEF:** 50% reduction (50% damage taken, 2.0× EHP)
+* **75 DEF:** 60% reduction (40% damage taken, 2.5× EHP)
+* **100 DEF:** 66% reduction (34% damage taken, 2.94× EHP)
+* **117 DEF:** 70% reduction (30% damage taken, 3.33× EHP)
+* **150 DEF:** 75% reduction (25% damage taken, 4.0× EHP)
+* **200 DEF:** 80% reduction (20% damage taken, 5.0× EHP)
+* **450 DEF:** 90% reduction (10% damage taken, 10.0× EHP)
 
 ## Defense vs. Magic Defense
 

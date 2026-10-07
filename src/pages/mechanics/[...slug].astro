@@ -1,5 +1,6 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
+import DefenseCalculator from '../../components/DefenseCalculator.vue';
 
 export async function getStaticPaths() {
   const posts = import.meta.glob('../../content/mechanics/*.md', { eager: true });
@@ -7,12 +8,12 @@ export async function getStaticPaths() {
     const slug = filePath.split('/').pop()?.replace('.md', '');
     return {
       params: { slug },
-      props: { post }
+      props: { post, slug }
     };
   });
 }
 
-const { post } = Astro.props;
+const { post, slug } = Astro.props as { post: any; slug: string };
 const { Content } = post;
 ---
 
@@ -28,6 +29,9 @@ const { Content } = post;
 
     <div class="articleContent">
       <Content />
+      {slug === 'defense-and-armor' && (
+        <DefenseCalculator client:load />
+      )}
     </div>
   </article>
 </WikiLayout>

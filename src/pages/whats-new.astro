@@ -1,0 +1,19 @@
+---
+import { base } from '../lib/base';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${base}/changelog`} />
+    <link rel="canonical" href={`${base}/changelog`} />
+    <title>Redirecting to Whats New? | IGM+ Wiki</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={`${base}/changelog`}>Whats New?</a>...</p>
+    <script define:vars={{ dest: `${base}/changelog` }}>
+      window.location.replace(dest);
+    </script>
+  </body>
+</html>

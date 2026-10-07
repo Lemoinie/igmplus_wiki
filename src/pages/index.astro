@@ -41,7 +41,7 @@ import { base } from '../lib/base';
         <h3>Classes</h3>
       </a>
 
-      <a href={`${base}/equipment`} class="featureCard">
+      <a href={`${base}/items`} class="featureCard">
         <div class="cardArtBox">
           <img src={`${base}/images/colossal_sword_of_scarlet_king.png`} alt="Items" class="cardArt spriteArt" />
         </div>
@@ -64,9 +64,9 @@ import { base } from '../lib/base';
 
       <a href={`${base}/dungeons`} class="featureCard">
         <div class="cardArtBox">
-          <img src={`${base}/images/area_scarlet.png`} alt="Places" class="cardArt bannerArt" />
+          <img src={`${base}/images/area_scarlet.png`} alt="Locations" class="cardArt bannerArt" />
         </div>
-        <h3>Places</h3>
+        <h3>Locations</h3>
       </a>
     </div>
   </section>
@@ -76,7 +76,13 @@ import { base } from '../lib/base';
     <div class="noteGrid">
       <div class="infoCard">
         <div class="infoCardHeader">
-          <span class="infoCardIcon">ℹ️</span>
+          <span class="infoCardIcon">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"></circle>
+              <line x1="12" y1="16" x2="12" y2="12"></line>
+              <line x1="12" y1="8" x2="12.01" y2="8"></line>
+            </svg>
+          </span>
           <h3>Info</h3>
         </div>
         <div class="infoCardContent">

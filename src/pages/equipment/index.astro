@@ -1,29 +1,19 @@
 ---
-import WikiLayout from '../../layouts/WikiLayout.astro';
-import EquipmentBrowser from '../../components/EquipmentBrowser.vue';
-import { getAllItems } from '../../lib/data';
 import { base } from '../../lib/base';
-
-const combinedEquipment = getAllItems();
 ---
 
-<WikiLayout title="Items" description="Browse all weapons, armors, accessories, and crafting items in Idle Guild Master Modded.">
-  <div class="pageHeader">
-    <h1>Items</h1>
-    <p>
-      Complete catalog of craftable and dropped swords, axes, bows, staves, daggers, robes, heavy armors, and accessories.
-      Filter by item type, rarity tier, or search specific bonuses.
-    </p>
-  </div>
-
-  <EquipmentBrowser client:load items={combinedEquipment as any} basePath={base} />
-</WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-.pageHeader p {
-  max-width: 800px;
-}
-</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${base}/items`} />
+    <link rel="canonical" href={`${base}/items`} />
+    <title>Redirecting to Items | IGM+ Wiki</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={`${base}/items`}>Items</a>...</p>
+    <script define:vars={{ dest: `${base}/items` }}>
+      window.location.replace(dest);
+    </script>
+  </body>
+</html>

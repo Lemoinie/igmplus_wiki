@@ -2,33 +2,288 @@
 import WikiLayout from '../layouts/WikiLayout.astro';
 ---
 
-<WikiLayout title="Mod Changelog" description="Update history and patch notes for Idle Guild Master Modded.">
+<WikiLayout title="Whats New?" description="All features, systems, balance changes, and updates added in Idle Guild Master Modded.">
   <div class="pageHeader">
-    <h1>Mod Changelog</h1>
-    <p>Version history, balance adjustments, new class masteries, and systems overhaul.</p>
+    <div class="headerTop">
+      <h1>Whats New?</h1>
+      <span class="versionBadge">v1.3.18.7 Active</span>
+    </div>
+    <p>
+      Idle Guild Master Modded (IGM+) significantly expands vanilla Idle Guild Master with new guild activities,
+      expanded class trees, new weapon families, deep combat formulas, and new high-tier expeditions.
+    </p>
   </div>
 
-  <article class="changelogEntry">
-    <div class="entryHeader">
-      <h2>v1.2.0 — Doctrine & Class Rebalance</h2>
-      <span class="dateBadge">Latest Release</span>
-    </div>
-    <div class="entryBody">
-      <h3>Adventurers & Classes</h3>
-      <ul>
-        <li>Added complete Tier 9 masteries for Footman, Apprentice, Archer, Rogue, and Outlander lines.</li>
-        <li><strong>Aether Mage Line:</strong> Introduced Aether Mage, Aether Archmage, Disintegrator, Grand Magus, and Singularity Magus with resonance scaling.</li>
-        <li><strong>Angel of War:</strong> Updated aura scaling and multi-target retribution defensive mechanics.</li>
-      </ul>
+  <!-- Featured Highlights Grid -->
+  <section class="highlightsSection">
+    <h2>Major Mod Additions</h2>
+    <div class="highlightsGrid">
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Guild Progression</span>
+          <h3>Guild Activities & Reputation</h3>
+        </div>
+        <p>
+          Introduced a dedicated 5th navigation tab for daily and weekly guild content:
+        </p>
+        <ul>
+          <li><strong>Daily Request:</strong> Elite enemy hunt with 2× stats for up to 12 guild heroes, rewarding Gems scaled by Reputation.</li>
+          <li><strong>Weekly Siege:</strong> 10-wave horde defense for up to 12 defenders testing guild roster depth.</li>
+          <li><strong>Reputation System:</strong> Dynamic 0–100 standing granting bonus daily gems on victory and deducting points on loss.</li>
+        </ul>
+      </div>
 
-      <h3>Combat & Balance</h3>
-      <ul>
-        <li>Overhauled defense damage reduction curves with consistent diminishing returns.</li>
-        <li>Normalized attack speed formulas and status effect tick rates.</li>
-        <li>Added rare drop indicators and unique items for high-tier expeditions.</li>
-      </ul>
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Adventurers</span>
+          <h3>Single-Target Burst Mage Line (T3–T9)</h3>
+        </div>
+        <p>
+          Adept branches into a dedicated 3rd specialization alongside Fire Wizard and Dark Sorcerer:
+        </p>
+        <ul>
+          <li><strong>7 Tiers:</strong> Arcanist (T3), Spellweaver (T4), Aether Mage (T5), Aether Archmage (T6), Disintegrator (T7), Grand Magus (T8), and Singularity Magus (T9).</li>
+          <li><strong>Disintegrate Burst:</strong> Pinnacle spells scaling up to 3000% damage with 20%–30% instant recast chance.</li>
+          <li><strong>Aether Resonance:</strong> +10% to +70% Skill Amp and DEF/MDEF penetration that bypasses enemy taunts to focus Bosses.</li>
+        </ul>
+      </div>
+
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Equipment</span>
+          <h3>26-Axe Weapon Family</h3>
+        </div>
+        <p>
+          Complete new melee weapon category scaling 100% Constitution + 100% Intelligence:
+        </p>
+        <ul>
+          <li>Full progression from starter Stick up to Abhorrent Long Axe, Omni-Sever, and Wicked Cleaver.</li>
+          <li>Inherent ±20% to ±50% damage variance and native status procs (Bleed, Freeze, Ablaze, Stun).</li>
+          <li>Supported by dedicated crafting recipes and enemy drop tables.</li>
+        </ul>
+      </div>
+
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Combat Engine</span>
+          <h3>Defense & Attack Speed Overhaul</h3>
+        </div>
+        <p>
+          Replaced flat hardcoded formulas with universal combat math:
+        </p>
+        <ul>
+          <li><strong>Universal Defense Formula:</strong> <code>floor((100 * DEF) / (50 + DEF))%</code> gives smooth diminishing returns with 50 DEF mitigating exactly 50% damage (doubling EHP).</li>
+          <li><strong>Percentage Attack Speed:</strong> Unified <code>+100% Attack Speed = +1 extra strike/round</code> scaling for weapons, passives, and monsters.</li>
+          <li><strong>Boss Targeting:</strong> Unified <code>isBoss</code> engine flag prioritizing high-threat encounter targets.</li>
+        </ul>
+      </div>
+
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Expeditions & Raids</span>
+          <h3>New Raids, Bosses & Fishing</h3>
+        </div>
+        <p>
+          Expanded endgame exploration with challenging encounters and unique loot:
+        </p>
+        <ul>
+          <li><strong>The Sanguine Crucible:</strong> Archmagus Valthex raid encounter featuring Bloodstone Colossus and Crimson Acolyte with Scarlet item drops.</li>
+          <li><strong>The Slumbering Shallows:</strong> 6 catchable fish encounters (Perch, Blue Trout, Angelfish, Winged Ray, Blue Shark, Magma Shark) and the ultra-rare 0.1% specter Chorus the Drowned.</li>
+          <li><strong>Minibosses:</strong> Imperial Captain in The Golden City and Knight Slime in Slime Pond.</li>
+        </ul>
+      </div>
+
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Progression & QoL</span>
+          <h3>Doctrine Capstones & Team Loadouts</h3>
+        </div>
+        <p>
+          Deeper build customization and streamlined expedition management:
+        </p>
+        <ul>
+          <li><strong>7th Doctrine Nodes:</strong> Capstone abilities across all 8 doctrines (Bloodletting, Titans Might, Evasive Riposte, Verdant Briars, Armor Master, etc.).</li>
+          <li><strong>Dungeon Gear Loadouts:</strong> Automatically records and re-equips saved weapons, armors, and accessories per dungeon team.</li>
+          <li><strong>Evolved Traits:</strong> Alert+ (Evo-24 Vial for Turn-0 initiative + 20% First Strike amp), Ruthless+, and Ascension rank scaling.</li>
+        </ul>
+      </div>
     </div>
-  </article>
+  </section>
+
+  <!-- Detailed Patch Notes -->
+  <section class="changelogSection">
+    <h2>Patch Notes History</h2>
+
+    <!-- v1.3.18.7 -->
+    <article class="changelogEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.3.18.7</h3>
+          <span class="entrySub">Single-Target Burst Mage Line & Boss Classification</span>
+        </div>
+        <span class="dateBadge">5/10/2026</span>
+      </div>
+      <div class="entryBody">
+        <h4>Adventurers — Single-Target Burst Mage Line (Apprentice Branch)</h4>
+        <ul>
+          <li><strong>New Evolution Branch:</strong> Adept now branches into the Arcanist tree as a dedicated 3rd promotion choice alongside Fire Wizard and Dark Sorcerer.</li>
+          <li><strong>7 Evolution Tiers:</strong> Added Arcanist (T3), Spellweaver (T4), Aether Mage (T5), Aether Archmage (T6), Disintegrator (T7), Grand Magus (T8), and Singularity Magus (T9).</li>
+          <li><strong>Active Burst Spells:</strong> Focused single-target arcane damage scaling progressively — Energy Burst III (500%), Arcane Blast I–III (600%–800%), and Disintegrate I–III (1000%–3000%).</li>
+          <li><strong>Recast Chance:</strong> Disintegrate (T7–T9) features 20% / 25% / 30% chance to immediately cast a second blast upon execution.</li>
+          <li><strong>Aether Resonance Passive:</strong> Grants +10% up to +70% Skill Amp and +10% up to +70% enemy Armor & Magic Defense penetration (+10% per tier).</li>
+          <li><strong>Boss Priority & Threat Bypass:</strong> Units with Aether Resonance bypass enemy taunts and the threat weighting system, locking onto Boss-type enemies when present.</li>
+        </ul>
+        <h4>Combat Engine — Boss Classification System</h4>
+        <ul>
+          <li>Introduced <code>isBoss()</code> classification on Entity and Enemy architectures for specialized targeting and encounter dynamics.</li>
+          <li>Slime King and Archmagus Valthex are officially flagged as Boss-type enemies for priority targeting.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- v1.3.18.6 -->
+    <article class="changelogEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.3.18.6</h3>
+          <span class="entrySub">Alert+ Trait, Scarlet Armor Rebalance & Enemy Defense Tuning</span>
+        </div>
+        <span class="dateBadge">5/10/2026</span>
+      </div>
+      <div class="entryBody">
+        <h4>Adventurers — Alert+ Trait Upgrade</h4>
+        <ul>
+          <li><strong>Added Alert+ Trait:</strong> Alert can now be evolved using Evolution Vial 24 (Evo-24) into its permanent PLUS form, Alert+.</li>
+          <li><strong>Initiative Retained:</strong> Characters with Alert+ maintain guaranteed turn-0 initiative at the start of combat, identical to Alert.</li>
+          <li><strong>First Strike Amplification:</strong> Grants +20% Basic Atk Amp on the very first hit landed in each combat encounter.</li>
+        </ul>
+        <h4>Equipment — Scarlet Armor Rebalance</h4>
+        <ul>
+          <li><strong>Scarlet Sigil:</strong> Changed from +20% crit chance to +20% Skill Amp.</li>
+          <li><strong>Scarlet Oni:</strong> Changed from +18% crit chance, +5% crit dmg into +27% damage dealt.</li>
+          <li><strong>Scarlet Oni Juggernaut:</strong> Changed from +30% crit chance, +35% crit dmg into +51% damage dealt.</li>
+        </ul>
+        <h4>Combat Engine — Enemy Defense Rebalance & Immunities</h4>
+        <ul>
+          <li><strong>Stone Shaman & Archmagus Valthex:</strong> Increased base MDEF to 450 to maintain intended 90% magic damage reduction under diminishing returns.</li>
+          <li><strong>Magic Armor:</strong> Scaled base DEF and MDEF to 150 (75% damage reduction).</li>
+          <li><strong>Obsidian Golem:</strong> Properly wired up native Deflect Magic passive in combat so all magical damage is reduced to 1.</li>
+          <li><strong>Necrolith:</strong> Set damage taken modifier to 0% (indestructible until Kabar the Rotten is defeated).</li>
+          <li><strong>High-Defense Scaling:</strong> Updated Bloodstone Colossus (200 DEF / 80%), Trolls (117 DEF / 70%), Knight Slime (75 DEF / 60%), and Crimson Acolyte (75 MDEF / 60%).</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- v1.3.18.5 -->
+    <article class="changelogEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.3.18.5</h3>
+          <span class="entrySub">Traveling Merchant Unique Item Recovery & Deduplication</span>
+        </div>
+        <span class="dateBadge">5/10/2026</span>
+      </div>
+      <div class="entryBody">
+        <ul>
+          <li><strong>Fixed Phantom Evolved Item Re-offers:</strong> Corrected <code>listUniqueDropsMissing()</code> to recursively purge ancestor items (e.g. owning Sha reliably purges Divine Larvae, Divine Embryo, and Divine Zygote).</li>
+          <li><strong>Hierarchical Ownership Check:</strong> Possessing an evolved boss accessory (like Sha or Amulet of the Swordsman) automatically satisfies possession of all predecessor stages, preventing intermediate items from falsely appearing in the Traveling Merchant for 1 gem.</li>
+          <li><strong>Expanded Storage Scans:</strong> Added active market listings, unclaimed sold items, and dismissed adventurers to the possession scanner to eliminate duplicate generation.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- v1.3.18.4 -->
+    <article class="changelogEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.3.18.4</h3>
+          <span class="entrySub">Guild Activities Weekly Siege & Reset Alignment</span>
+        </div>
+        <span class="dateBadge">4/10/2026</span>
+      </div>
+      <div class="entryBody">
+        <ul>
+          <li><strong>Fixed Locale-Dependent Siege Rollover:</strong> Locked week boundary calculation to the engine's Sunday 00:00:00 boundary regardless of device locale; players in Monday-first locales now correctly reset on Sunday midnight.</li>
+          <li><strong>Decoupled Tries Counter:</strong> Decoupled attempt updates from Android view binding availability in both The Siege and The Hunt so weekly/daily attempts reliably reset in background ticks.</li>
+          <li><strong>Instant Startup Catch-Up:</strong> Added immediate <code>ensureActivities()</code> check on boot so overdue resets apply the millisecond save loads.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- v1.3.18.3 & 1.3.18.2 -->
+    <article class="changelogEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.3.18.2 – v1.3.18.3</h3>
+          <span class="entrySub">Rogue Deadly Finesse Flurry & Hemorrhage Critical Bursts</span>
+        </div>
+        <span class="dateBadge">4/10/2026</span>
+      </div>
+      <div class="entryBody">
+        <ul>
+          <li><strong>Deadly Finesse Passive Rework:</strong> Reworked Meat Carver, Wounds Weaver, Hellish Sculptor, and Spirit Engraver into a rapid-strike bleed stacking archetype with +50% up to +100% Attack Speed (guaranteed 2 strikes every turn).</li>
+          <li><strong>Thousand Cuts & Bleed Synergy:</strong> Spirit Engraver reliably applies 120 Bleed per turn with basic attacks, shredding enemy armor while active skills retain full power.</li>
+          <li><strong>Hemorrhage Burst Proc:</strong> Fixed critical roll calculation for Hemorrhage, enabled floating combat damage text, and added instant death handling when lethal.</li>
+          <li><strong>Status Effects Inspector:</strong> Added tabs ([Enemies], [Allies], [All]) and resolved 999+ charge display truncation.</li>
+          <li><strong>New Accessory:</strong> Added Bloodstone Claws (+25 CON, +26 DEX, +20% Atk Speed, Bleed 60 on hit).</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- v1.3.18.0 -->
+    <article class="changelogEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.3.18.0</h3>
+          <span class="entrySub">Universal Defense & Attack Speed Engine Rework</span>
+        </div>
+        <span class="dateBadge">3/10/2026</span>
+      </div>
+      <div class="entryBody">
+        <ul>
+          <li><strong>Universal Defense Curve:</strong> Replaced linear reduction with diminishing returns formula <code>(DEF * 100) / (DEF + 50)%</code> (floored), granting 50% reduction at 50 DEF and 90% at 450 DEF.</li>
+          <li><strong>Attack Speed System:</strong> Standardized multi-attack mechanics to percentage Attack Speed (+100% = +1 guaranteed extra attack per round).</li>
+          <li><strong>Damage Dealt & Taken Stats:</strong> Unified outgoing and incoming multipliers into dedicated, inspectable stats with clear tooltips.</li>
+        </ul>
+      </div>
+    </article>
+
+    <!-- Historical Archive Highlights -->
+    <article class="changelogEntry archiveEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.2.0.0 — Guild Activities Milestone</h3>
+          <span class="entrySub">Daily Request, Weekly Siege & Reputation System</span>
+        </div>
+        <span class="dateBadge">12/9/2026</span>
+      </div>
+      <div class="entryBody">
+        <ul>
+          <li>Added Guild Activities: Daily Request (elite boss hunt) and Weekly Siege (10-wave defense).</li>
+          <li>Added mod-owned Reputation stat (0–100, shown next to Gems).</li>
+          <li>Added 5th navigation tab "Guild Activities" to the game interface.</li>
+        </ul>
+      </div>
+    </article>
+
+    <article class="changelogEntry archiveEntry">
+      <div class="entryHeader">
+        <div class="entryTitleWrap">
+          <h3>v1.0.0.0 – v1.1.1.3 — Mod Foundation & Early Content</h3>
+          <span class="entrySub">Engine Architecture, Imperial Captain & Knight Slime</span>
+        </div>
+        <span class="dateBadge">Archive Era</span>
+      </div>
+      <div class="entryBody">
+        <ul>
+          <li>Added Imperial Captain miniboss to The Golden City dungeon with Captain's Sword, Imperial Authority, and Execution Order.</li>
+          <li>Added Knight Slime to Slime Pond raid and Bestiary.</li>
+          <li>Rebalanced Troll Blood, Dragon Blood, and Evo Vials.</li>
+          <li>Built reverse-engineered Kotlin mod architecture, build pipeline, and save tooling.</li>
+        </ul>
+      </div>
+    </article>
+  </section>
 </WikiLayout>
 
 <style>
@@ -36,53 +291,203 @@ import WikiLayout from '../layouts/WikiLayout.astro';
   margin-bottom: 2rem;
 }
 
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 0.5rem;
+}
+
+.headerTop h1 {
+  margin: 0;
+  font-size: 2.2rem;
+}
+
+.versionBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  background: rgba(110, 168, 254, 0.15);
+  color: var(--brand-primary);
+  border: 1px solid rgba(110, 168, 254, 0.35);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.pageHeader p {
+  color: var(--text-secondary);
+  max-width: 800px;
+  font-size: 1.05rem;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Highlights Grid */
+.highlightsSection {
+  margin-bottom: 3rem;
+}
+
+.highlightsSection h2,
+.changelogSection h2 {
+  font-size: 1.4rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.highlightsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  gap: 1.25rem;
+}
+
+.highlightCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+
+.highlightCard:hover {
+  transform: translateY(-2px);
+  border-color: var(--brand-primary);
+}
+
+.cardHeader {
+  margin-bottom: 0.6rem;
+}
+
+.cardCategory {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--brand-primary);
+  letter-spacing: 0.05em;
+  display: inline-block;
+  margin-bottom: 2px;
+}
+
+.highlightCard h3 {
+  margin: 0;
+  font-size: 1.15rem;
+  color: var(--text-primary);
+}
+
+.highlightCard p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
+}
+
+.highlightCard ul {
+  padding-left: 1.2rem;
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+}
+
+.highlightCard li {
+  margin-bottom: 0.4rem;
+}
+
+.highlightCard code {
+  background: var(--bg-inset);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #93c5fd;
+}
+
+/* Changelog Entries */
+.changelogSection {
+  margin-bottom: 2.5rem;
+}
+
 .changelogEntry {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 10px;
-  padding: 1.5rem 2rem;
-  margin-bottom: 2rem;
+  padding: 1.5rem 1.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.changelogEntry.archiveEntry {
+  border-color: rgba(255, 255, 255, 0.08);
+  background: var(--bg-inset);
 }
 
 .entryHeader {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.75rem;
-  margin-bottom: 1.25rem;
+  padding-bottom: 0.85rem;
+  margin-bottom: 1.1rem;
+  gap: 12px;
 }
 
-.entryHeader h2 {
-  font-size: 1.35rem;
+.entryTitleWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.entryTitleWrap h3 {
+  font-size: 1.3rem;
   margin: 0;
-  border: none;
-  padding: 0;
+  color: var(--text-primary);
+}
+
+.entrySub {
+  font-size: 0.85rem;
+  color: var(--text-gold);
+  font-weight: 500;
 }
 
 .dateBadge {
   font-size: 0.75rem;
-  font-weight: 700;
+  font-weight: 600;
   padding: 3px 8px;
   border-radius: 4px;
-  background: rgba(74, 222, 128, 0.15);
-  color: #4ade80;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  color: var(--text-muted);
+  white-space: nowrap;
 }
 
-.entryBody h3 {
-  font-size: 1.05rem;
-  color: var(--text-gold);
+.entryBody h4 {
+  font-size: 0.95rem;
+  color: #93c5fd;
   margin-top: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.4rem;
 }
 
 .entryBody ul {
   padding-left: 1.25rem;
-  margin-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0.75rem;
   color: var(--text-secondary);
+  font-size: 0.88rem;
+  line-height: 1.6;
 }
 
 .entryBody li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.35rem;
+}
+
+.entryBody code {
+  background: var(--bg-inset);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  color: #93c5fd;
 }
 </style>

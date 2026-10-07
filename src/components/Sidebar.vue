@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, onMounted, onUnmounted } from 'vue';
+import { ref, watch, onMounted, onUnmounted } from 'vue';
 import { base } from '../lib/base';
 
 const props = withDefaults(
@@ -14,6 +14,13 @@ const props = withDefaults(
 const isCollapsed = ref(false);
 const isMobileOpen = ref(false);
 const activePath = ref(props.currentPath || '');
+
+watch(
+  () => props.currentPath,
+  (val) => {
+    if (val) activePath.value = val;
+  }
+);
 
 function normalizePath(raw: string): string {
   if (!raw) return '/';
@@ -33,7 +40,23 @@ function isItemActive(href: string): boolean {
     return current === '/';
   }
 
+  // Handle mechanics sub-pages
   if (target.startsWith('/mechanics') && current.startsWith('/mechanics')) {
+    return true;
+  }
+
+  // Handle items alias
+  if ((target === '/items' || target === '/equipment') && (current === '/items' || current === '/equipment' || current.startsWith('/items/') || current.startsWith('/equipment/'))) {
+    return true;
+  }
+
+  // Handle locations / dungeons alias
+  if ((target === '/dungeons' || target === '/locations') && (current === '/dungeons' || current === '/locations' || current.startsWith('/dungeons/') || current.startsWith('/locations/'))) {
+    return true;
+  }
+
+  // Handle changelog / whats-new alias
+  if ((target === '/changelog' || target === '/whats-new') && (current === '/changelog' || current === '/whats-new' || current.startsWith('/changelog/') || current.startsWith('/whats-new/'))) {
     return true;
   }
 
@@ -43,13 +66,13 @@ function isItemActive(href: string): boolean {
 const navItems = [
   { label: 'Home', href: `${base}/` || '/' },
   { label: 'Classes', href: `${base}/classes` },
-  { label: 'Items', href: `${base}/equipment` },
+  { label: 'Items', href: `${base}/items` },
   { label: 'Pets', href: `${base}/pets` },
   { label: 'Traits', href: `${base}/traits` },
   { label: 'Bestiary', href: `${base}/enemies` },
-  { label: 'Places', href: `${base}/dungeons` },
+  { label: 'Locations', href: `${base}/dungeons` },
   { label: 'Game Mechanics', href: `${base}/mechanics/defense-and-armor` },
-  { label: 'Mod Changelog', href: `${base}/changelog` },
+  { label: 'Whats New?', href: `${base}/changelog` },
 ];
 
 function toggleSidebar() {
@@ -89,8 +112,11 @@ function toggleMobile() {
 }
 
 onMounted(() => {
-  if (typeof window !== 'undefined' && !activePath.value) {
+  if (typeof window !== 'undefined') {
     activePath.value = window.location.pathname;
+    window.addEventListener('popstate', () => {
+      activePath.value = window.location.pathname;
+    });
   }
 
   try {
@@ -194,6 +220,7 @@ onUnmounted(() => {
               @click="closeMobile"
             >
               <span class="navLabel">{{ item.label }}</span>
+              <span v-if="isItemActive(item.href)" class="activeDot"></span>
             </a>
           </li>
         </ul>
@@ -410,16 +437,32 @@ onUnmounted(() => {
 }
 
 .navLink.active {
-  background: rgba(110, 168, 254, 0.14);
-  color: var(--brand-primary);
-  font-weight: 600;
-  border-left: 3px solid var(--brand-primary);
-  padding-left: calc(0.75rem - 3px);
+  background: linear-gradient(90deg, rgba(110, 168, 254, 0.22) 0%, rgba(110, 168, 254, 0.08) 100%);
+  color: #93c5fd;
+  font-weight: 700;
+  border-left: 4px solid var(--brand-primary);
+  padding-left: calc(0.75rem - 4px);
+  box-shadow: inset 1px 0 8px rgba(110, 168, 254, 0.15);
+}
+
+.navLink.active .navLabel {
+  color: #93c5fd;
+  font-weight: 700;
 }
 
 .navLink.active:hover {
-  background: rgba(110, 168, 254, 0.2);
-  color: var(--brand-primary);
+  background: linear-gradient(90deg, rgba(110, 168, 254, 0.28) 0%, rgba(110, 168, 254, 0.12) 100%);
+  color: #bfdbfe;
+}
+
+.activeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: var(--brand-primary);
+  margin-left: auto;
+  flex-shrink: 0;
+  box-shadow: 0 0 8px rgba(110, 168, 254, 0.85);
 }
 
 /* ================= Mobile Styles ================= */

@@ -41,7 +41,7 @@ const searchEntries = [
     id: `equip-${e.id}`,
     title: e.name,
     category: 'Item' as const,
-    url: `${base}/equipment#${e.id}`,
+    url: `${base}/items#${e.id}`,
     description: `★${e.rarity} ${e.category} · Price: ${e.price}`
   })),
   ...petsList.map((p: any) => ({
@@ -68,7 +68,7 @@ const searchEntries = [
   ...dungeonsList.map((d: any) => ({
     id: `dungeon-${d.id}`,
     title: d.name,
-    category: 'Places' as const,
+    category: 'Locations' as const,
     url: `${base}/dungeons#${d.id}`,
     description: `${d.type.toUpperCase()} · ${d.encounterChance}% encounter rate`
   })),
