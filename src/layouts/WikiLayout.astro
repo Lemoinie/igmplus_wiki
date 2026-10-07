@@ -103,7 +103,7 @@ const searchEntries = [
   <body>
     <div class="layoutRoot">
       <!-- Sidebar Navigation -->
-      <Sidebar client:load />
+      <Sidebar client:load currentPath={Astro.url.pathname} />
 
       <!-- Main Layout Body -->
       <div class="mainWrapper">
@@ -138,9 +138,7 @@ const searchEntries = [
             <SearchBar client:load entries={searchEntries} />
           </div>
 
-          <div class="headerRight">
-            <span class="modBadge">IGM+ Modded</span>
-          </div>
+          <div class="headerRight"></div>
         </header>
 
         <!-- Page Content -->
@@ -149,7 +147,7 @@ const searchEntries = [
         </main>
 
         <footer class="siteFooter">
-          <p>Idle Guild Master Modded (IGM+) Community Wiki · Data-driven architecture</p>
+          <p>Idle Guild Master Modded (IGM+) Community Wiki</p>
         </footer>
       </div>
     </div>

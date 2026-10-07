@@ -38,9 +38,30 @@ export function getAllItems(): any[] {
 }
 
 // Pets
+const PET_FAMILY_ORDER: Record<string, number> = {
+  wooden: 1,
+  wild: 2,
+  avian: 3,
+  esoteric: 4,
+  construct: 5,
+  contruct: 5,
+  reptile: 6,
+  insect: 7,
+  mythic: 8,
+};
+
 export function getAllPets(): any[] {
   const petModules = import.meta.glob('../data/pets/units/*.json', { eager: true });
-  return Object.values(petModules).map((mod: any) => mod.default || mod);
+  const list = Object.values(petModules).map((mod: any) => mod.default || mod);
+  return list.sort((a: any, b: any) => {
+    const orderA = PET_FAMILY_ORDER[(a.family || '').toLowerCase()] ?? 999;
+    const orderB = PET_FAMILY_ORDER[(b.family || '').toLowerCase()] ?? 999;
+    if (orderA !== orderB) return orderA - orderB;
+    const slotsA = a.abilitySlots ?? 0;
+    const slotsB = b.abilitySlots ?? 0;
+    if (slotsA !== slotsB) return slotsA - slotsB;
+    return (a.name || '').localeCompare(b.name || '');
+  });
 }
 
 // Pet Traits

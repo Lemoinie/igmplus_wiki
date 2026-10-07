@@ -2,8 +2,43 @@
 import { ref, onMounted, onUnmounted } from 'vue';
 import { base } from '../lib/base';
 
+const props = withDefaults(
+  defineProps<{
+    currentPath?: string;
+  }>(),
+  {
+    currentPath: '',
+  }
+);
+
 const isCollapsed = ref(false);
 const isMobileOpen = ref(false);
+const activePath = ref(props.currentPath || '');
+
+function normalizePath(raw: string): string {
+  if (!raw) return '/';
+  let p = raw.split('?')[0].split('#')[0];
+  if (base && p.startsWith(base)) {
+    p = p.slice(base.length);
+  }
+  p = p.replace(/\/+$/, '');
+  return p === '' ? '/' : p;
+}
+
+function isItemActive(href: string): boolean {
+  const current = normalizePath(activePath.value || (typeof window !== 'undefined' ? window.location.pathname : ''));
+  const target = normalizePath(href);
+
+  if (target === '/') {
+    return current === '/';
+  }
+
+  if (target.startsWith('/mechanics') && current.startsWith('/mechanics')) {
+    return true;
+  }
+
+  return current === target || current.startsWith(target + '/');
+}
 
 const navItems = [
   { label: 'Home', href: `${base}/` || '/' },
@@ -54,6 +89,10 @@ function toggleMobile() {
 }
 
 onMounted(() => {
+  if (typeof window !== 'undefined' && !activePath.value) {
+    activePath.value = window.location.pathname;
+  }
+
   try {
     if (localStorage.getItem('igm_wiki_sidebar') === '1') {
       isCollapsed.value = true;
@@ -147,16 +186,18 @@ onUnmounted(() => {
         <div class="navSectionTitle">GAME DATABASE</div>
         <ul class="navList">
           <li v-for="item in navItems" :key="item.href">
-            <a :href="item.href" class="navLink" @click="closeMobile">
+            <a
+              :href="item.href"
+              class="navLink"
+              :class="{ active: isItemActive(item.href) }"
+              :aria-current="isItemActive(item.href) ? 'page' : undefined"
+              @click="closeMobile"
+            >
               <span class="navLabel">{{ item.label }}</span>
             </a>
           </li>
         </ul>
       </nav>
-
-      <div class="sidebarFooter">
-        <div class="wikiVersion">Data-driven Architecture</div>
-      </div>
     </aside>
 
     <!-- Mobile Drawer Backdrop -->
@@ -359,6 +400,7 @@ onUnmounted(() => {
   font-size: 0.9rem;
   font-weight: 500;
   transition: all 0.15s ease;
+  position: relative;
 }
 
 .navLink:hover {
@@ -367,11 +409,17 @@ onUnmounted(() => {
   text-decoration: none;
 }
 
-.sidebarFooter {
-  padding: 0.85rem 1rem;
-  border-top: 1px solid var(--border-subtle);
-  font-size: 0.75rem;
-  color: var(--text-muted);
+.navLink.active {
+  background: rgba(110, 168, 254, 0.14);
+  color: var(--brand-primary);
+  font-weight: 600;
+  border-left: 3px solid var(--brand-primary);
+  padding-left: calc(0.75rem - 3px);
+}
+
+.navLink.active:hover {
+  background: rgba(110, 168, 254, 0.2);
+  color: var(--brand-primary);
 }
 
 /* ================= Mobile Styles ================= */

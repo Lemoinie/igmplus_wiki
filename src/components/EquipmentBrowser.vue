@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, watch } from 'vue';
 import type { EquipmentDefinition } from '../types';
 import EquipmentCard from './EquipmentCard.vue';
 
@@ -12,6 +12,8 @@ const query = ref('');
 const selectedCategory = ref('all');
 const selectedRarity = ref('all');
 const sortBy = ref('price');
+const currentPage = ref(1);
+const pageSize = ref(12);
 
 const categories = computed(() => {
   return [...new Set(props.items.map((i) => i.category))].filter(Boolean).sort();
@@ -46,6 +48,69 @@ const filtered = computed(() => {
     return dir * (av - bv);
   });
 });
+
+watch([query, selectedCategory, selectedRarity, sortBy, pageSize], () => {
+  currentPage.value = 1;
+});
+
+const totalPages = computed(() => {
+  if (pageSize.value <= 0) return 1;
+  return Math.max(1, Math.ceil(filtered.value.length / pageSize.value));
+});
+
+watch(filtered, () => {
+  if (currentPage.value > totalPages.value) {
+    currentPage.value = totalPages.value;
+  }
+});
+
+const paginatedItems = computed(() => {
+  if (pageSize.value <= 0) return filtered.value;
+  const start = (currentPage.value - 1) * pageSize.value;
+  return filtered.value.slice(start, start + pageSize.value);
+});
+
+const itemRangeText = computed(() => {
+  const total = filtered.value.length;
+  if (total === 0) return '0 items';
+  const start = (currentPage.value - 1) * pageSize.value + 1;
+  const end = Math.min(start + pageSize.value - 1, total);
+  return `Showing ${start}–${end} of ${total} items`;
+});
+
+const visiblePages = computed(() => {
+  const total = totalPages.value;
+  const current = currentPage.value;
+  if (total <= 7) {
+    return Array.from({ length: total }, (_, i) => i + 1);
+  }
+  const pages: (number | string)[] = [];
+  pages.push(1);
+  if (current > 3) {
+    pages.push('...');
+  }
+  const start = Math.max(2, current - 1);
+  const end = Math.min(total - 1, current + 1);
+  for (let i = start; i <= end; i++) {
+    pages.push(i);
+  }
+  if (current < total - 2) {
+    pages.push('...');
+  }
+  pages.push(total);
+  return pages;
+});
+
+function goToPage(page: number) {
+  if (page < 1 || page > totalPages.value) return;
+  currentPage.value = page;
+  if (typeof window !== 'undefined') {
+    const el = document.querySelector('.equipBrowser');
+    if (el) {
+      el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+  }
+}
 </script>
 
 <template>
@@ -75,13 +140,13 @@ const filtered = computed(() => {
         </select>
       </div>
 
-      <span class="count">{{ filtered.length }} items</span>
+      <span class="count">{{ itemRangeText }}</span>
     </div>
 
     <!-- Cards Grid -->
-    <div v-if="filtered.length" class="itemsGrid">
+    <div v-if="paginatedItems.length" class="itemsGrid">
       <EquipmentCard
-        v-for="item in filtered"
+        v-for="item in paginatedItems"
         :key="item.id"
         :item="item"
         :base-path="basePath"
@@ -90,6 +155,57 @@ const filtered = computed(() => {
 
     <div v-else class="emptyNotice">
       No equipment found matching criteria.
+    </div>
+
+    <!-- Pagination Controls -->
+    <div v-if="filtered.length > 0" class="paginationBar">
+      <div class="pageSummary">
+        <span>{{ itemRangeText }}</span>
+        <div class="pageSizeSelectWrap">
+          <label for="pageSizeSelect">Per page:</label>
+          <select id="pageSizeSelect" v-model.number="pageSize" class="pageSizeSelect">
+            <option :value="12">12</option>
+            <option :value="24">24</option>
+            <option :value="48">48</option>
+            <option :value="filtered.length">All</option>
+          </select>
+        </div>
+      </div>
+
+      <div v-if="totalPages > 1" class="pageNav">
+        <button
+          type="button"
+          class="pageBtn navArrow"
+          :disabled="currentPage === 1"
+          @click="goToPage(currentPage - 1)"
+          aria-label="Previous page"
+        >
+          ‹ Prev
+        </button>
+
+        <template v-for="(p, idx) in visiblePages" :key="idx">
+          <span v-if="p === '...'" class="pageEllipsis">…</span>
+          <button
+            v-else
+            type="button"
+            class="pageBtn"
+            :class="{ active: p === currentPage }"
+            @click="goToPage(Number(p))"
+          >
+            {{ p }}
+          </button>
+        </template>
+
+        <button
+          type="button"
+          class="pageBtn navArrow"
+          :disabled="currentPage === totalPages"
+          @click="goToPage(currentPage + 1)"
+          aria-label="Next page"
+        >
+          Next ›
+        </button>
+      </div>
     </div>
   </div>
 </template>
@@ -166,6 +282,91 @@ select:focus {
   color: var(--text-muted);
 }
 
+/* Pagination Styles */
+.paginationBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-top: 2rem;
+  padding: 1rem 1.25rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+}
+
+.pageSummary {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  font-size: 0.85rem;
+  color: var(--text-muted);
+}
+
+.pageSizeSelectWrap {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pageSizeSelect {
+  padding: 4px 8px;
+  font-size: 0.82rem;
+}
+
+.pageNav {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.pageBtn {
+  min-width: 34px;
+  height: 34px;
+  padding: 0 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pageBtn:hover:not(:disabled) {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border-color: var(--brand-primary);
+}
+
+.pageBtn.active {
+  background: var(--brand-primary);
+  color: #fff;
+  border-color: var(--brand-primary);
+  font-weight: 700;
+}
+
+.pageBtn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.navArrow {
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+.pageEllipsis {
+  padding: 0 4px;
+  color: var(--text-muted);
+  font-size: 0.85rem;
+}
+
 @media (max-width: 640px) {
   .filterBar {
     padding: 0.6rem 0.75rem;
@@ -184,6 +385,22 @@ select:focus {
     width: 100%;
     margin-left: 0;
     text-align: right;
+  }
+
+  .paginationBar {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+    padding: 0.85rem;
+  }
+  .pageSummary {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .pageNav {
+    justify-content: center;
+    flex-wrap: wrap;
   }
 }
 </style>

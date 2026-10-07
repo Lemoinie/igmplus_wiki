@@ -21,11 +21,40 @@ const FAMILY_COLORS: Record<string, { bg: string; text: string; border: string }
   Esoteric: { bg: 'rgba(192, 132, 252, 0.15)', text: '#c084fc', border: 'rgba(192, 132, 252, 0.35)' },
 };
 
+const TYPE_ORDER: Record<string, number> = {
+  wooden: 1,
+  wild: 2,
+  avian: 3,
+  esoteric: 4,
+  construct: 5,
+  contruct: 5,
+  reptile: 6,
+  insect: 7,
+  mythic: 8,
+};
+
+function getFamilyOrder(family: string): number {
+  return TYPE_ORDER[(family || '').toLowerCase()] ?? 999;
+}
+
+const sortedPets = computed(() => {
+  const list = [...props.pets];
+  return list.sort((a, b) => {
+    const orderA = getFamilyOrder(a.family);
+    const orderB = getFamilyOrder(b.family);
+    if (orderA !== orderB) return orderA - orderB;
+    const slotsA = a.abilitySlots ?? 0;
+    const slotsB = b.abilitySlots ?? 0;
+    if (slotsA !== slotsB) return slotsA - slotsB;
+    return a.name.localeCompare(b.name);
+  });
+});
+
 const filteredPets = computed(() => {
   const q = searchQuery.value.trim().toLowerCase();
-  if (!q) return props.pets;
+  if (!q) return sortedPets.value;
 
-  return props.pets.filter((p) => {
+  return sortedPets.value.filter((p) => {
     const matchName = p.name.toLowerCase().includes(q);
     const matchFamily = p.family.toLowerCase().includes(q);
     const matchAbilities = p.guaranteedAbilities?.some((a) => a.toLowerCase().includes(q)) ?? false;
