@@ -1,5 +1,23 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
+
+const isExpanded = ref(false);
+
+onMounted(() => {
+  try {
+    const saved = localStorage.getItem('igm_defense_calc_open');
+    if (saved !== null) {
+      isExpanded.value = saved === '1';
+    }
+  } catch {}
+});
+
+function toggleCalculator() {
+  isExpanded.value = !isExpanded.value;
+  try {
+    localStorage.setItem('igm_defense_calc_open', isExpanded.value ? '1' : '0');
+  } catch {}
+}
 
 const defense = ref(50);
 const penetration = ref(0);
@@ -54,176 +72,180 @@ const ehpMultiplier = computed(() => {
 
 <template>
   <div class="defenseCalcContainer">
-    <!-- Styled Mathematical Formula Section -->
-    <div class="formulaBox">
-      <div class="formulaTitle">Damage Calculation Formula</div>
-      <div class="formulaGrid">
-        <div class="formulaCard">
-          <span class="formulaName">Damage Reduction (%)</span>
-          <div class="mathFraction">
-            <span class="numerator">100 × Effective Defense</span>
-            <span class="dividerLine"></span>
-            <span class="denominator">50 + Effective Defense</span>
-          </div>
-          <span class="mathSuffix">(floored)</span>
+    <!-- Collapsible Toggle Header Bar -->
+    <div
+      class="calcToggleBar"
+      @click="toggleCalculator"
+      role="button"
+      :aria-expanded="isExpanded"
+      tabindex="0"
+      @keydown.enter.prevent="toggleCalculator"
+      @keydown.space.prevent="toggleCalculator"
+    >
+      <div class="toggleBarLeft">
+        <div class="calcIconBox">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="4" y="2" width="16" height="20" rx="2" />
+            <line x1="8" y1="6" x2="16" y2="6" />
+            <line x1="16" y1="14" x2="16" y2="18" />
+            <path d="M16 10h.01M12 10h.01M8 10h.01M12 14h.01M8 14h.01M12 18h.01M8 18h.01" />
+          </svg>
         </div>
-
-        <div class="formulaCard">
-          <span class="formulaName">Damage Taken Multiplier</span>
-          <div class="mathFraction">
-            <span class="numerator">100 − Damage Reduction (%)</span>
-            <span class="dividerLine"></span>
-            <span class="denominator">100</span>
-          </div>
+        <div class="toggleText">
+          <span class="toggleTitle">Damage Reduction Calculator</span>
+          <span class="toggleSub">Interactive Tool</span>
         </div>
       </div>
+
+      <button type="button" class="toggleActionBtn" @click.stop="toggleCalculator">
+        <span>{{ isExpanded ? 'Hide Calculator' : 'Show Calculator' }}</span>
+        <span class="toggleChevron" :class="{ open: isExpanded }">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="6 9 12 15 18 9" />
+          </svg>
+        </span>
+      </button>
     </div>
 
-    <!-- Interactive Calculator -->
-    <div class="calcCard">
-      <div class="calcHeader">
-        <h3>Damage Reduction Calculator</h3>
-        <span class="calcBadge">Interactive</span>
-      </div>
-
-      <!-- Quick Presets -->
-      <div class="presetRow">
-        <span class="presetLabel">Quick Presets:</span>
-        <div class="presetButtons">
-          <button
-            v-for="p in presets"
-            :key="p.def"
-            type="button"
-            class="presetBtn"
-            :class="{ active: defense === p.def }"
-            @click="setPreset(p.def)"
-          >
-            {{ p.label }}
-          </button>
+    <!-- Collapsible Content -->
+    <div v-show="isExpanded" class="calcContentWrap">
+      <!-- Interactive Calculator -->
+      <div class="calcCard">
+        <div class="calcHeader">
+          <h3>Damage Reduction Calculator</h3>
+          <span class="calcBadge">Interactive</span>
         </div>
-      </div>
 
-      <!-- Inputs Grid -->
-      <div class="inputsGrid">
-        <!-- Defense Input -->
-        <div class="inputGroup">
-          <div class="labelRow">
-            <label for="defInput">Defense / Magic Defense (DEF / MDEF)</label>
-            <span class="currentVal">{{ defense }} DEF</span>
+        <!-- Quick Presets -->
+        <div class="presetRow">
+          <span class="presetLabel">Quick Presets:</span>
+          <div class="presetButtons">
+            <button
+              v-for="p in presets"
+              :key="p.def"
+              type="button"
+              class="presetBtn"
+              :class="{ active: defense === p.def }"
+              @click="setPreset(p.def)"
+            >
+              {{ p.label }}
+            </button>
           </div>
-          <div class="sliderAndNum">
+        </div>
+
+        <!-- Inputs Grid -->
+        <div class="inputsGrid">
+          <!-- Defense Input -->
+          <div class="inputGroup">
+            <label for="defInput">DEF / MDEF</label>
+            <div class="sliderAndNum">
+              <input
+                id="defInput"
+                v-model.number="defense"
+                type="range"
+                min="0"
+                max="600"
+                step="1"
+                class="rangeSlider"
+              />
+              <input
+                v-model.number="defense"
+                type="number"
+                min="0"
+                max="9999"
+                class="numInput"
+              />
+            </div>
+          </div>
+
+          <!-- Armor Penetration -->
+          <div class="inputGroup">
+            <label for="penInput">Enemy Armor Penetration</label>
+            <div class="sliderAndNum">
+              <input
+                id="penInput"
+                v-model.number="penetration"
+                type="range"
+                min="0"
+                max="100"
+                step="5"
+                class="rangeSlider"
+              />
+              <input
+                v-model.number="penetration"
+                type="number"
+                min="0"
+                max="100"
+                class="numInput"
+              />
+            </div>
+          </div>
+
+          <!-- Raw Incoming Damage -->
+          <div class="inputGroup">
+            <label for="dmgInput">Incoming Hit Damage</label>
             <input
-              id="defInput"
-              v-model.number="defense"
-              type="range"
-              min="0"
-              max="600"
-              step="1"
-              class="rangeSlider"
-            />
-            <input
-              v-model.number="defense"
+              id="dmgInput"
+              v-model.number="incomingDamage"
               type="number"
-              min="0"
-              max="9999"
-              class="numInput"
+              min="1"
+              max="100000"
+              class="numInput fullWidth"
             />
           </div>
         </div>
 
-        <!-- Armor Penetration -->
-        <div class="inputGroup">
-          <div class="labelRow">
-            <label for="penInput">Enemy Armor / Magic Penetration</label>
-            <span class="currentVal">{{ penetration }}%</span>
+        <!-- Calculation Results -->
+        <div class="resultsSection">
+          <div class="mainResultCard">
+            <span class="mainResultTitle">Damage Reduction</span>
+            <div class="mainResultVal">
+              {{ damageReductionPercent }}%
+            </div>
+            <div class="progressBarWrap">
+              <div
+                class="progressBarFill"
+                :style="{ width: `${Math.min(100, damageReductionPercent)}%` }"
+              ></div>
+            </div>
+            <span class="mainResultSub">
+              Mitigates {{ damageReductionPercent }}% of incoming damage
+            </span>
           </div>
-          <div class="sliderAndNum">
-            <input
-              id="penInput"
-              v-model.number="penetration"
-              type="range"
-              min="0"
-              max="100"
-              step="5"
-              class="rangeSlider"
-            />
-            <input
-              v-model.number="penetration"
-              type="number"
-              min="0"
-              max="100"
-              class="numInput"
-            />
+
+          <div class="metricCardsGrid">
+            <div class="metricCard">
+              <span class="metricLabel">Effective Defense</span>
+              <strong class="metricVal">{{ effectiveDef % 1 === 0 ? effectiveDef.toFixed(0) : effectiveDef.toFixed(1) }}</strong>
+              <span class="metricDesc">After penetration</span>
+            </div>
+
+            <div class="metricCard">
+              <span class="metricLabel">Damage Multiplier</span>
+              <strong class="metricVal">{{ damageMultiplier.toFixed(3) }}×</strong>
+              <span class="metricDesc">{{ 100 - damageReductionPercent }}% damage taken</span>
+            </div>
+
+            <div class="metricCard">
+              <span class="metricLabel">Actual Damage Taken</span>
+              <strong class="metricVal textGold">{{ damageTaken }}</strong>
+              <span class="metricDesc">From {{ incomingDamage }} raw hit</span>
+            </div>
+
+            <div class="metricCard">
+              <span class="metricLabel">Effective Health (EHP)</span>
+              <strong class="metricVal textTeal">{{ ehpMultiplier.toFixed(2) }}×</strong>
+              <span class="metricDesc">+{{ ((ehpMultiplier - 1) * 100).toFixed(0) }}% survival capacity</span>
+            </div>
           </div>
         </div>
 
-        <!-- Raw Incoming Damage -->
-        <div class="inputGroup">
-          <div class="labelRow">
-            <label for="dmgInput">Base Incoming Hit Damage</label>
-            <span class="currentVal">{{ incomingDamage }} DMG</span>
-          </div>
-          <input
-            id="dmgInput"
-            v-model.number="incomingDamage"
-            type="number"
-            min="1"
-            max="100000"
-            class="numInput fullWidth"
-          />
+        <!-- Linear EHP Insight -->
+        <div class="insightBox">
+          <strong>Mechanical Insight:</strong> Damage reduction is computed as <code>floor((100 × DEF) / (50 + DEF))</code>.
+          At <strong>50 DEF</strong>, incoming damage is reduced by exactly <strong>50%</strong>, doubling Effective Health (2.0× EHP).
+          Every 50 points of Defense linearly grants another +100% of base health in effective durability (+2% EHP per DEF point).
         </div>
-      </div>
-
-      <!-- Calculation Results -->
-      <div class="resultsSection">
-        <div class="mainResultCard">
-          <span class="mainResultTitle">Damage Reduction</span>
-          <div class="mainResultVal">
-            {{ damageReductionPercent }}%
-          </div>
-          <div class="progressBarWrap">
-            <div
-              class="progressBarFill"
-              :style="{ width: `${Math.min(100, damageReductionPercent)}%` }"
-            ></div>
-          </div>
-          <span class="mainResultSub">
-            Mitigates {{ damageReductionPercent }}% of incoming damage
-          </span>
-        </div>
-
-        <div class="metricCardsGrid">
-          <div class="metricCard">
-            <span class="metricLabel">Effective Defense</span>
-            <strong class="metricVal">{{ effectiveDef % 1 === 0 ? effectiveDef.toFixed(0) : effectiveDef.toFixed(1) }}</strong>
-            <span class="metricDesc">After penetration</span>
-          </div>
-
-          <div class="metricCard">
-            <span class="metricLabel">Damage Multiplier</span>
-            <strong class="metricVal">{{ damageMultiplier.toFixed(3) }}×</strong>
-            <span class="metricDesc">{{ 100 - damageReductionPercent }}% damage taken</span>
-          </div>
-
-          <div class="metricCard">
-            <span class="metricLabel">Actual Damage Taken</span>
-            <strong class="metricVal textGold">{{ damageTaken }}</strong>
-            <span class="metricDesc">From {{ incomingDamage }} raw hit</span>
-          </div>
-
-          <div class="metricCard">
-            <span class="metricLabel">Effective Health (EHP)</span>
-            <strong class="metricVal textTeal">{{ ehpMultiplier.toFixed(2) }}×</strong>
-            <span class="metricDesc">+{{ ((ehpMultiplier - 1) * 100).toFixed(0) }}% survival capacity</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- Linear EHP Insight -->
-      <div class="insightBox">
-        <strong>Mechanical Insight:</strong> Damage reduction is computed as <code>floor((100 × DEF) / (50 + DEF))</code>.
-        At <strong>50 DEF</strong>, incoming damage is reduced by exactly <strong>50%</strong>, doubling Effective Health (2.0× EHP).
-        Every 50 points of Defense linearly grants another +100% of base health in effective durability (+2% EHP per DEF point).
       </div>
     </div>
   </div>
@@ -234,81 +256,100 @@ const ehpMultiplier = computed(() => {
   margin: 1.75rem 0;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.25rem;
 }
 
-/* Formula Box */
-.formulaBox {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-radius: 10px;
-  padding: 1.25rem 1.5rem;
-}
-
-.formulaTitle {
-  font-size: 0.8rem;
-  font-weight: 700;
-  color: var(--text-muted);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  margin-bottom: 0.85rem;
-}
-
-.formulaGrid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1.5rem;
-}
-
-.formulaCard {
+/* Toggle Header Bar */
+.calcToggleBar {
   display: flex;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 1rem;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
-  border-radius: 8px;
-  padding: 0.75rem 1.25rem;
-  flex: 1 1 280px;
+  border-radius: 10px;
+  padding: 0.85rem 1.25rem;
+  cursor: pointer;
+  user-select: none;
+  transition: all 0.2s ease;
 }
 
-.formulaName {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: var(--text-secondary);
+.calcToggleBar:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--brand-primary);
 }
 
-.mathFraction {
-  display: inline-flex;
-  flex-direction: column;
+.toggleBarLeft {
+  display: flex;
   align-items: center;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.95rem;
+  gap: 0.85rem;
+}
+
+.calcIconBox {
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgba(110, 168, 254, 0.12);
+  color: var(--brand-primary);
+  border: 1px solid rgba(110, 168, 254, 0.25);
+  flex-shrink: 0;
+}
+
+.toggleText {
+  display: flex;
+  flex-direction: column;
+}
+
+.toggleTitle {
+  font-size: 0.98rem;
   font-weight: 700;
-  line-height: 1.1;
-  color: #93c5fd;
+  color: var(--text-primary);
 }
 
-.numerator {
-  padding-bottom: 2px;
+.toggleSub {
+  font-size: 0.74rem;
+  color: var(--text-muted);
 }
 
-.dividerLine {
-  width: 100%;
-  height: 2px;
-  background: var(--brand-primary);
-  border-radius: 1px;
+.toggleActionBtn {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  color: var(--brand-primary);
+  font-size: 0.84rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
 }
 
-.denominator {
-  padding-top: 2px;
+.calcToggleBar:hover .toggleActionBtn {
+  border-color: var(--brand-primary);
+  background: rgba(110, 168, 254, 0.15);
 }
 
-.mathSuffix {
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
-  font-size: 0.95rem;
-  font-weight: 700;
-  color: #93c5fd;
+.toggleChevron {
+  display: inline-flex;
+  transition: transform 0.2s ease;
 }
+
+.toggleChevron.open {
+  transform: rotate(180deg);
+}
+
+.calcContentWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
 
 /* Calculator Card */
 .calcCard {
@@ -404,18 +445,10 @@ const ehpMultiplier = computed(() => {
   gap: 6px;
 }
 
-.labelRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+.inputGroup label {
   font-size: 0.8rem;
   font-weight: 600;
   color: var(--text-secondary);
-}
-
-.currentVal {
-  color: #93c5fd;
-  font-weight: 700;
 }
 
 .sliderAndNum {

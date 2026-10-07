@@ -73,18 +73,46 @@ const searchEntries = [
     description: `${d.type.toUpperCase()} · ${d.encounterChance}% encounter rate`
   })),
   {
-    id: 'mech-defense-and-armor',
-    title: 'Defense and Armor Mechanics',
+    id: 'mech-defense',
+    title: 'Defense Mechanic',
     category: 'Mechanics' as const,
     url: `${base}/mechanics/defense-and-armor`,
-    description: 'Damage mitigation formulas, Armor Penetration, and effective HP'
+    description: 'Damage mitigation formula, effective DEF, and interactive calculator'
   },
   {
     id: 'mech-attack-speed',
-    title: 'Attack Speed Mechanics',
+    title: 'Attack Speed',
     category: 'Mechanics' as const,
     url: `${base}/mechanics/attack-speed`,
-    description: 'Dexterity scaling, turn orders, and action frequency'
+    description: 'Multi-strike scaling, strike chance, and action frequency'
+  },
+  {
+    id: 'mech-damage-dealt',
+    title: 'Damage Dealt',
+    category: 'Mechanics' as const,
+    url: `${base}/mechanics/damage-dealt`,
+    description: 'Universal outgoing damage scaling, combat buffs, and debuffs'
+  },
+  {
+    id: 'mech-damage-taken',
+    title: 'Damage Taken',
+    category: 'Mechanics' as const,
+    url: `${base}/mechanics/damage-taken`,
+    description: 'Universal incoming damage modifier, curses, and mitigation flow'
+  },
+  {
+    id: 'mech-basic-atk-amp',
+    title: 'Basic Atk Amp',
+    category: 'Mechanics' as const,
+    url: `${base}/mechanics/basic-atk-amp`,
+    description: 'Standard weapon strike scaling, Alert+, and Deadly Finesse trade-offs'
+  },
+  {
+    id: 'mech-skill-amp',
+    title: 'Skill Amp',
+    category: 'Mechanics' as const,
+    url: `${base}/mechanics/skill-amp`,
+    description: 'Active skill and spell scaling, Aether Resonance, and Scarlet Sigil'
   }
 ];
 ---

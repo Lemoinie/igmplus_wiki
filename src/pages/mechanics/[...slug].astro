@@ -1,49 +1,145 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import DefenseCalculator from '../../components/DefenseCalculator.vue';
+import { base } from '../../lib/base';
 
 export async function getStaticPaths() {
   const posts = import.meta.glob('../../content/mechanics/*.md', { eager: true });
-  return Object.entries(posts).map(([filePath, post]: [string, any]) => {
+  const paths = Object.entries(posts).map(([filePath, post]: [string, any]) => {
     const slug = filePath.split('/').pop()?.replace('.md', '');
     return {
       params: { slug },
       props: { post, slug }
     };
   });
+
+  // Also add alias for 'defense' -> 'defense-and-armor'
+  const defEntry = Object.entries(posts).find(([fp]) => fp.includes('defense-and-armor'));
+  if (defEntry) {
+    paths.push({
+      params: { slug: 'defense' },
+      props: { post: defEntry[1], slug: 'defense-and-armor' }
+    });
+  }
+
+  return paths;
 }
 
 const { post, slug } = Astro.props as { post: any; slug: string };
 const { Content } = post;
+
+const mechanicsCategories = [
+  { label: 'Defense Mechanic', slug: 'defense-and-armor' },
+  { label: 'Attack Speed', slug: 'attack-speed' },
+  { label: 'Damage Dealt', slug: 'damage-dealt' },
+  { label: 'Damage Taken', slug: 'damage-taken' },
+  { label: 'Basic Atk Amp', slug: 'basic-atk-amp' },
+  { label: 'Skill Amp', slug: 'skill-amp' }
+];
+
+const currentSlug = slug === 'defense' ? 'defense-and-armor' : slug;
 ---
 
 <WikiLayout title={post.frontmatter?.title || 'Game Mechanics'} description={post.frontmatter?.description}>
-  <article class="proseArticle">
-    <div class="articleHeader">
-      <span class="categoryPill">{post.frontmatter?.category || 'Mechanics'}</span>
-      <h1>{post.frontmatter?.title}</h1>
-      {post.frontmatter?.description && (
-        <p class="articleDesc">{post.frontmatter.description}</p>
-      )}
+  <div class="mechanicsContainer">
+    <!-- Category Tabs -->
+    <div class="categoryTabs" role="tablist" aria-label="Game Mechanics Categories">
+      {mechanicsCategories.map((cat) => {
+        const isActive = currentSlug === cat.slug;
+        return (
+          <a
+            href={`${base}/mechanics/${cat.slug}`}
+            class:list={['catBtn', { active: isActive }]}
+            role="tab"
+            aria-selected={isActive}
+          >
+            <span class="catLabel">{cat.label}</span>
+          </a>
+        );
+      })}
     </div>
 
-    <div class="articleContent">
-      <Content />
-      {slug === 'defense-and-armor' && (
-        <DefenseCalculator client:load />
-      )}
-    </div>
-  </article>
+    <!-- Main Article Body -->
+    <article class="proseArticle">
+      <div class="articleHeader">
+        <span class="categoryPill">{post.frontmatter?.category || 'Mechanics'}</span>
+        <h1>{post.frontmatter?.title}</h1>
+        {post.frontmatter?.description && (
+          <p class="articleDesc">{post.frontmatter.description}</p>
+        )}
+      </div>
+
+      <div class="articleContent">
+        <Content />
+        {currentSlug === 'defense-and-armor' && (
+          <DefenseCalculator client:load />
+        )}
+      </div>
+    </article>
+  </div>
 </WikiLayout>
 
 <style>
+.mechanicsContainer {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Category Tabs matching Classes tab */
+.categoryTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1rem;
+}
+
+.catBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.15s ease;
+  flex-shrink: 0;
+  text-decoration: none;
+}
+
+.catBtn:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--brand-primary);
+  transform: translateY(-2px);
+  text-decoration: none;
+  color: var(--text-primary);
+}
+
+.catBtn.active {
+  background: rgba(110, 168, 254, 0.15);
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+}
+
+.catBtn.active .catLabel {
+  color: var(--brand-primary);
+}
+
+.catLabel {
+  font-size: 0.95rem;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+/* Article Styling */
 .proseArticle {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 12px;
   padding: 2.5rem;
-  max-width: 900px;
-  margin: 0 auto;
 }
 
 .articleHeader {
@@ -103,5 +199,22 @@ const { Content } = post;
 
 .articleContent :global(li) {
   margin-bottom: 0.4rem;
+}
+
+.articleContent :global(blockquote) {
+  border-left: 3px solid var(--brand-primary);
+  background: var(--bg-inset);
+  padding: 0.75rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.2rem 0;
+  color: var(--text-primary);
+}
+
+.articleContent :global(code) {
+  background: var(--bg-inset);
+  color: var(--brand-primary);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
 }
 </style>

@@ -1,0 +1,19 @@
+---
+import { base } from '../../lib/base';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${base}/mechanics/defense-and-armor`} />
+    <link rel="canonical" href={`${base}/mechanics/defense-and-armor`} />
+    <title>Redirecting to Defense Mechanic | IGM+ Wiki</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={`${base}/mechanics/defense-and-armor`}>Defense Mechanic</a>...</p>
+    <script define:vars={{ dest: `${base}/mechanics/defense-and-armor` }}>
+      window.location.replace(dest);
+    </script>
+  </body>
+</html>
