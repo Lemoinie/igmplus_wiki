@@ -1228,6 +1228,9 @@
   "icon_effect_solar_rebirth": [
     "status_effect:SOLAR_REBIRTH"
   ],
+  "icon_effect_soul_harvest": [
+    "status_effect:SOUL_HARVEST"
+  ],
   "icon_effect_stun": [
     "status_effect:STUN",
     "status_effect:STUN_NOT_CLEANSABLE"
@@ -2220,6 +2223,7 @@
     "item:UnholySword"
   ],
   "unit_abomination": [
+    "unit:BoneAbomination",
     "enemy:Abomination"
   ],
   "unit_adept": [

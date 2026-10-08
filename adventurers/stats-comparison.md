@@ -13,6 +13,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Apprentice** | <img :src="$withBase('/images/unit_apprentice.png')" class="sprite" alt="unit_apprentice" width="28" height="28"> | 20 | 2 | 10 | 4 | 0 | 30 | 5 | Staff | Energy Burst | — | Light Disciple, Adept |
 | **Archer** | <img :src="$withBase('/images/unit_archer.png')" class="sprite" alt="unit_archer" width="28" height="28"> | 30 | 4 | 4 | 8 | 10 | 10 | 5 | Bow | Barrage | — | Huntress |
 | **Arctic Weasel** | <img :src="$withBase('/images/unit_summon_weasel.png')" class="sprite" alt="unit_summon_weasel" width="28" height="28"> | 35 | 10 | 7 | 13 | 3 | 3 | 20 | Sword | — | — | — |
+| **Bone Abomination** | <img :src="$withBase('/images/unit_abomination.png')" class="sprite" alt="unit_abomination" width="28" height="28"> | 370 | 115 | 1 | 22 | 50 | 0 | 15 | Sword | — | Threatening II | — |
 | **Bone Horror** | <img :src="$withBase('/images/unit_bone_horror.png')" class="sprite" alt="unit_bone_horror" width="28" height="28"> | 315 | 72 | 1 | 17 | 50 | 0 | 15 | Sword | — | Threatening II | — |
 | **Bone Hydra** | <img :src="$withBase('/images/unit_bone_hydra.png')" class="sprite" alt="unit_bone_hydra" width="28" height="28"> | 390 | 125 | 1 | 24 | 50 | 0 | 15 | Sword | — | Threatening II | — |
 | **Bone Nightmare** | <img :src="$withBase('/images/unit_bone_nightmare.png')" class="sprite" alt="unit_bone_nightmare" width="28" height="28"> | 345 | 105 | 1 | 20 | 50 | 0 | 15 | Sword | — | Threatening II | — |
@@ -53,7 +54,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Barbarian** | <img :src="$withBase('/images/unit_barbarian.png')" class="sprite" alt="unit_barbarian" width="28" height="28"> | 85 | 15 | 9 | 3 | 10 | 10 | 15 | Axe | — | — | Berserker |
 | **Cleric** | <img :src="$withBase('/images/unit_cleric.png')" class="sprite" alt="unit_cleric" width="28" height="28"> | 35 | 4 | 20 | 6 | 0 | 30 | 15 | Staff | Heal | Healer | White mage |
 | **Cutthroat** | <img :src="$withBase('/images/unit_cuttroath.png')" class="sprite" alt="unit_cuttroath" width="28" height="28"> | 65 | 12 | 6 | 12 | 10 | 10 | 15 | Dagger | Backstab II | Saboteur | Assassin |
-| **Dark Sorcerer** | <img :src="$withBase('/images/unit_dark_sorcerer.png')" class="sprite" alt="unit_dark_sorcerer" width="28" height="28"> | 35 | 4 | 20 | 6 | 0 | 30 | 15 | Staff | Energy Burst II | Withering Touch | Necromancer |
+| **Dark Sorcerer** | <img :src="$withBase('/images/unit_dark_sorcerer.png')" class="sprite" alt="unit_dark_sorcerer" width="28" height="28"> | 35 | 4 | 20 | 6 | 0 | 30 | 15 | Staff | Energy Burst II | Withering Touch I | Necromancer |
 | **Druid** | <img :src="$withBase('/images/unit_druid.png')" class="sprite" alt="unit_druid" width="28" height="28"> | 65 | 16 | 12 | 4 | 10 | 10 | 15 | Staff | — | — | Forest Druid |
 | **Exile** | <img :src="$withBase('/images/unit_exile.png')" class="sprite" alt="unit_exile" width="28" height="28"> | 70 | 16 | 12 | 4 | 10 | 10 | 15 | Axe | — | — | Bandit |
 | **Fire Wizard** | <img :src="$withBase('/images/unit_fire_wizard.png')" class="sprite" alt="unit_fire_wizard" width="28" height="28"> | 35 | 4 | 20 | 6 | 0 | 30 | 15 | Staff | Fire Burst | — | Red Mage |
@@ -77,7 +78,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Forest Druid** | <img :src="$withBase('/images/unit_forest_druid.png')" class="sprite" alt="unit_forest_druid" width="28" height="28"> | 95 | 17 | 15 | 4 | 10 | 10 | 20 | Staff | — | — | Gloom Druid |
 | **Holy Knight** | <img :src="$withBase('/images/unit_holy_knight.png')" class="sprite" alt="unit_holy_knight" width="28" height="28"> | 130 | 20 | 10 | 7 | 20 | 23 | 20 | Sword | Holy Smite I | Aura of Light I | Paladin |
 | **Iron Warden** | <img :src="$withBase('/images/unit_iron_warden.png')" class="sprite" alt="unit_iron_warden" width="28" height="28"> | 130 | 20 | 10 | 7 | 22 | 22 | 20 | Sword | Taunt | Threatening II | Iron Defender |
-| **Necromancer** | <img :src="$withBase('/images/unit_necromancer.png')" class="sprite" alt="unit_necromancer" width="28" height="28"> | 50 | 5 | 25 | 7 | 0 | 30 | 20 | Staff | Curse | Withering Touch | Demilich, Unchained |
+| **Necromancer** | <img :src="$withBase('/images/unit_necromancer.png')" class="sprite" alt="unit_necromancer" width="28" height="28"> | 50 | 5 | 25 | 7 | 0 | 30 | 20 | Staff | Curse | Withering Touch II | Demilich, Unchained |
 | **Poison Bow** | <img :src="$withBase('/images/unit_poison_bow.png')" class="sprite" alt="unit_poison_bow" width="28" height="28"> | 90 | 7 | 10 | 20 | 10 | 10 | 20 | Bow | Barrage II | Poisonous Arrows | Toxic Stalker |
 | **Red Mage** | <img :src="$withBase('/images/unit_red_mage.png')" class="sprite" alt="unit_red_mage" width="28" height="28"> | 50 | 5 | 25 | 7 | 0 | 30 | 20 | Staff | Fireball | — | Red Archmage |
 | **Royal Guard** | <img :src="$withBase('/images/unit_royal_guard.png')" class="sprite" alt="unit_royal_guard" width="28" height="28"> | 130 | 20 | 9 | 8 | 20 | 20 | 20 | Sword | Mighty Strike | Sword Mastery | Royal Swordsman |
@@ -86,7 +87,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Spellweaver** | <img :src="$withBase('/images/unit_spell_weaver.png')" class="sprite" alt="unit_spell_weaver" width="28" height="28"> | 50 | 5 | 28 | 8 | 0 | 30 | 20 | Staff | Arcane Blast I | Aether Resonance II | Aether Mage |
 | **Sureshot** | <img :src="$withBase('/images/unit_sureshot.png')" class="sprite" alt="unit_sureshot" width="28" height="28"> | 90 | 7 | 10 | 20 | 10 | 10 | 20 | Bow | Barrage III | Keen Vision | Fury |
 | **White mage** | <img :src="$withBase('/images/unit_white_mage.png')" class="sprite" alt="unit_white_mage" width="28" height="28"> | 50 | 5 | 25 | 7 | 0 | 30 | 20 | Staff | Mass Heal | Healer | White Archmage |
-| **Wolf Rider** | <img :src="$withBase('/images/unit_wolf_rider.png')" class="sprite" alt="unit_wolf_rider" width="28" height="28"> | 90 | 7 | 10 | 20 | 10 | 10 | 20 | Bow | Barrage II | Rider II | Worg Rider |
+| **Wolf Rider** | <img :src="$withBase('/images/unit_wolf_rider.png')" class="sprite" alt="unit_wolf_rider" width="28" height="28"> | 90 | 7 | 10 | 20 | 10 | 10 | 20 | Bow | Savage Pounce | Rider II | Worg Rider |
 
 ## Tier 5
 
@@ -94,7 +95,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 | **Aether Mage** | <img :src="$withBase('/images/unit_aether_mage.png')" class="sprite" alt="unit_aether_mage" width="28" height="28"> | 70 | 6 | 36 | 10 | 0 | 30 | 25 | Staff | Arcane Blast II | Aether Resonance III | Aether Archmage |
 | **Death Knight** | <img :src="$withBase('/images/unit_death_knight.png')" class="sprite" alt="unit_death_knight" width="28" height="28"> | 170 | 24 | 10 | 10 | 20 | 20 | 25 | Sword | Decimate | Threatening | Scourge |
-| **Demilich** | <img :src="$withBase('/images/unit_demilich.png')" class="sprite" alt="unit_demilich" width="28" height="28"> | 70 | 6 | 30 | 8 | 0 | 30 | 25 | Staff | Curse II | Withering Touch | Lich |
+| **Demilich** | <img :src="$withBase('/images/unit_demilich.png')" class="sprite" alt="unit_demilich" width="28" height="28"> | 70 | 6 | 30 | 8 | 0 | 30 | 25 | Staff | Curse II | Withering Touch III | Lich |
 | **Fury** | <img :src="$withBase('/images/unit_fury.png')" class="sprite" alt="unit_fury" width="28" height="28"> | Logger.BARD_SHIELD | 8 | 12 | 24 | 10 | 10 | 25 | Bow | Barrage IV | Keen Vision | Hailstorm |
 | **Gloom Druid** | <img :src="$withBase('/images/unit_gloom_druid.png')" class="sprite" alt="unit_gloom_druid" width="28" height="28"> | 120 | 19 | 20 | 5 | 10 | 10 | 25 | Staff | — | — | Hemodruid |
 | **Iron Defender** | <img :src="$withBase('/images/unit_iron_defender.png')" class="sprite" alt="unit_iron_defender" width="28" height="28"> | 170 | 24 | 12 | 8 | 24 | 24 | 25 | Sword | Taunt II | Threatening II | Juggernaut |
@@ -111,7 +112,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Vagabond** | <img :src="$withBase('/images/unit_vagabond.png')" class="sprite" alt="unit_vagabond" width="28" height="28"> | 125 | 22 | 17 | 5 | 15 | 20 | 25 | Axe | — | — | Brigand |
 | **Weasel Tamer** | <img :src="$withBase('/images/unit_weasel_tamer.png')" class="sprite" alt="unit_weasel_tamer" width="28" height="28"> | 120 | 19 | 20 | 5 | 10 | 10 | 25 | Axe | — | — | Wolf Tamer |
 | **White Archmage** | <img :src="$withBase('/images/unit_white_archmage.png')" class="sprite" alt="unit_white_archmage" width="28" height="28"> | 70 | 6 | 30 | 8 | 0 | 30 | 25 | Staff | Mass Heal | Healer II | White Elder |
-| **Worg Rider** | <img :src="$withBase('/images/unit_worg_rider.png')" class="sprite" alt="unit_worg_rider" width="28" height="28"> | Logger.BARD_SHIELD | 8 | 12 | 24 | 10 | 10 | 25 | Bow | Barrage II | Rider III | Spitfang Rider |
+| **Worg Rider** | <img :src="$withBase('/images/unit_worg_rider.png')" class="sprite" alt="unit_worg_rider" width="28" height="28"> | Logger.BARD_SHIELD | 8 | 12 | 24 | 10 | 10 | 25 | Bow | Frenzied Rend | Rider III | Spitfang Rider |
 
 ## Tier 6
 
@@ -125,7 +126,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Hailstorm** | <img :src="$withBase('/images/unit_hailstorm.png')" class="sprite" alt="unit_hailstorm" width="28" height="28"> | 155 | 9 | 14 | 28 | 10 | 10 | 30 | Bow | Barrage V | Keen Vision | Tempest |
 | **Hemodruid** | <img :src="$withBase('/images/unit_hemodruid.png')" class="sprite" alt="unit_hemodruid" width="28" height="28"> | 145 | 20 | 24 | 6 | 10 | 10 | 30 | Staff | — | — | Sanguine Druid |
 | **Juggernaut** | <img :src="$withBase('/images/unit_juggernaut.png')" class="sprite" alt="unit_juggernaut" width="28" height="28"> | 215 | 28 | 14 | 9 | 25 | 25 | 30 | Sword | Taunt II | Threatening III | Titan |
-| **Lich** | <img :src="$withBase('/images/unit_lich.png')" class="sprite" alt="unit_lich" width="28" height="28"> | 95 | 7 | 35 | 9 | 0 | 30 | 30 | Staff | Curse II | Withering Link | Ancient Lich |
+| **Lich** | <img :src="$withBase('/images/unit_lich.png')" class="sprite" alt="unit_lich" width="28" height="28"> | 95 | 7 | 35 | 9 | 0 | 30 | 30 | Staff | Curse II | Withering Link I | Ancient Lich |
 | **Meat Carver** | <img :src="$withBase('/images/unit_meat_carver.png')" class="sprite" alt="unit_meat_carver" width="28" height="28"> | 155 | 21 | 9 | 21 | 10 | 10 | 30 | Dagger | Thousand Cuts | Deadly Finesse | Wounds Weaver |
 | **Night Specter** | <img :src="$withBase('/images/unit_night_specter.png')" class="sprite" alt="unit_night_specter" width="28" height="28"> | 155 | 21 | 9 | 21 | 10 | 10 | 30 | Dagger | Umbral Strike | Night Vision III | Night Terror |
 | **Plague Spreader** | <img :src="$withBase('/images/unit_plague_spreader.png')" class="sprite" alt="unit_plague_spreader" width="28" height="28"> | 155 | 9 | 14 | 28 | 10 | 10 | 30 | Bow | Barrage II | Poisonous Arrows III | Blight |
@@ -134,7 +135,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Scarlet Berserker** | <img :src="$withBase('/images/unit_scarlet_berserker.png')" class="sprite" alt="unit_scarlet_berserker" width="28" height="28"> | 200 | 31 | 15 | 4 | 15 | 15 | 30 | Axe | — | — | Blood Reaver |
 | **Scourge** | <img :src="$withBase('/images/unit_scourge.png')" class="sprite" alt="unit_scourge" width="28" height="28"> | 215 | 28 | 11 | 12 | 20 | 20 | 30 | Sword | Decimate II | Threatening | Tyrant |
 | **Spire Acolyte** | <img :src="$withBase('/images/unit_spire_acolyte.png')" class="sprite" alt="unit_spire_acolyte" width="28" height="28"> | 155 | 21 | 9 | 21 | 10 | 10 | 30 | Dagger | Eclipse II | Infiltrator | Spire Leader |
-| **Spitfang Rider** | <img :src="$withBase('/images/unit_spitfang_rider.png')" class="sprite" alt="unit_spitfang_rider" width="28" height="28"> | 155 | 9 | 14 | 28 | 10 | 10 | 30 | Bow | Barrage II | Rider IV | Drake Rider |
+| **Spitfang Rider** | <img :src="$withBase('/images/unit_spitfang_rider.png')" class="sprite" alt="unit_spitfang_rider" width="28" height="28"> | 155 | 9 | 14 | 28 | 10 | 10 | 30 | Bow | Caustic Deluge | Rider IV | Drake Rider |
 | **Templar** | <img :src="$withBase('/images/unit_templar.png')" class="sprite" alt="unit_templar" width="28" height="28"> | 215 | 28 | 14 | 9 | 20 | 30 | 30 | Sword | Radiant Judgment I | Aura of Devotion I | Inquisitor |
 | **White Elder** | <img :src="$withBase('/images/unit_white_elder.png')" class="sprite" alt="unit_white_elder" width="28" height="28"> | 95 | 7 | 35 | 9 | 0 | 30 | 30 | Staff | Mass Heal II | Healer II | Radiant Elder |
 | **Wolf Tamer** | <img :src="$withBase('/images/unit_wolf_tamer.png')" class="sprite" alt="unit_wolf_tamer" width="28" height="28"> | 145 | 20 | 24 | 6 | 10 | 10 | 30 | Axe | — | — | Tiger Tamer |
@@ -143,7 +144,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 
 | Class | Sprite | HP | CON | INT | DEX | DEF | MDEF | Cap | Weapon | Active Skill | Passive Skill | Promotes To |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| **Ancient Lich** | <img :src="$withBase('/images/unit_ancient_lich.png')" class="sprite" alt="unit_ancient_lich" width="28" height="28"> | 125 | 8 | 40 | 10 | 0 | 30 | 35 | Staff | Curse III | Withering Link | Lord of Decay |
+| **Ancient Lich** | <img :src="$withBase('/images/unit_ancient_lich.png')" class="sprite" alt="unit_ancient_lich" width="28" height="28"> | 125 | 8 | 40 | 10 | 0 | 30 | 35 | Staff | Curse III | Withering Link II | Lord of Decay |
 | **Blight** | <img :src="$withBase('/images/unit_blight.png')" class="sprite" alt="unit_blight" width="28" height="28"> | 195 | 10 | 16 | 32 | 10 | 10 | 35 | Bow | Barrage III | Poisonous Arrows III | Wraith |
 | **Blood Reaver** | <img :src="$withBase('/images/unit_blood_reaver.png')" class="sprite" alt="unit_blood_reaver" width="28" height="28"> | 230 | 35 | 18 | 5 | 17 | 17 | 35 | Axe | — | — | Crimson Warlord |
 | **Disintegrator** | <img :src="$withBase('/images/unit_disintegrator.png')" class="sprite" alt="unit_disintegrator" width="28" height="28"> | 130 | 8 | 54 | 14 | 0 | 30 | 35 | Staff | Disintegrate I | Aether Resonance V | Grand Magus |
@@ -183,7 +184,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Hurricane** | <img :src="$withBase('/images/unit_hurricane.png')" class="sprite" alt="unit_hurricane" width="28" height="28"> | 240 | 11 | 18 | 36 | 10 | 10 | 40 | Bow | Barrage VII | Keen Vision | Celestial Rain |
 | **Infernal Prince** | <img :src="$withBase('/images/unit_infernal_prince.png')" class="sprite" alt="unit_infernal_prince" width="28" height="28"> | 320 | 32 | 32 | 32 | 32 | 32 | 40 | Staff | Extirpate | Chaotic | Balrog |
 | **Justiciar** | <img :src="$withBase('/images/unit_justiciar.png')" class="sprite" alt="unit_justiciar" width="28" height="28"> | 320 | 36 | 18 | 11 | 20 | 36 | 40 | Sword | Wrath of Heaven I | Aura of Sanctity | Angel of War |
-| **Lord of Decay** | <img :src="$withBase('/images/unit_lord_of_decay.png')" class="sprite" alt="unit_lord_of_decay" width="28" height="28"> | 160 | 9 | 45 | 11 | 0 | 30 | 40 | Staff | Curse IV | Withering Link | Black Idol |
+| **Lord of Decay** | <img :src="$withBase('/images/unit_lord_of_decay.png')" class="sprite" alt="unit_lord_of_decay" width="28" height="28"> | 160 | 9 | 45 | 11 | 0 | 30 | 40 | Staff | Curse IV | Withering Link III | Black Idol |
 | **Melting Elder** | <img :src="$withBase('/images/unit_melting_elder.png')" class="sprite" alt="unit_melting_elder" width="28" height="28"> | 160 | 9 | 45 | 11 | 0 | 30 | 40 | Staff | Meteor II | Pyromancy | Inferno |
 | **Night Veil** | <img :src="$withBase('/images/unit_night_veil.png')" class="sprite" alt="unit_night_veil" width="28" height="28"> | 240 | 27 | 11 | 27 | 10 | 10 | 40 | Dagger | Umbral Strike II | Night Vision IV | Night Lament |
 | **Overlord** | <img :src="$withBase('/images/unit_overlord.png')" class="sprite" alt="unit_overlord" width="28" height="28"> | 320 | 36 | 13 | 16 | 20 | 20 | 40 | Sword | Decimate III | Subjugate | Black Regent |
@@ -200,7 +201,7 @@ Compare base health, primary attributes, defenses, weapon affinities, and skill 
 | **Avatar of Wrath** | <img :src="$withBase('/images/unit_avatar_of_wrath.png')" class="sprite" alt="unit_avatar_of_wrath" width="28" height="28"> | 320 | 44 | 25 | 7 | 25 | 25 | 45 | Axe | — | — | — |
 | **Balrog** | <img :src="$withBase('/images/unit_balrog.png')" class="sprite" alt="unit_balrog" width="28" height="28"> | 380 | 36 | 36 | 36 | 36 | 36 | 45 | Staff | Whip and Tear | Chaotic | — |
 | **Beast Tamer** | <img :src="$withBase('/images/unit_beast_tamer.png')" class="sprite" alt="unit_beast_tamer" width="28" height="28"> | 265 | 29 | 39 | 10 | 10 | 10 | 45 | Axe | — | — | — |
-| **Black Idol** | <img :src="$withBase('/images/unit_black_idol.png')" class="sprite" alt="unit_black_idol" width="28" height="28"> | 200 | 10 | 50 | 12 | 0 | 30 | 45 | Staff | Curse V | Withering Link | — |
+| **Black Idol** | <img :src="$withBase('/images/unit_black_idol.png')" class="sprite" alt="unit_black_idol" width="28" height="28"> | 200 | 10 | 50 | 12 | 0 | 30 | 45 | Staff | Curse V | Withering Link IV | — |
 | **Black Regent** | <img :src="$withBase('/images/unit_black_regent.png')" class="sprite" alt="unit_black_regent" width="28" height="28"> | 380 | 40 | 14 | 18 | 20 | 20 | 45 | Sword | Decimate III | Subjugate II | — |
 | **Celestial Rain** | <img :src="$withBase('/images/unit_celestial_rain.png')" class="sprite" alt="unit_celestial_rain" width="28" height="28"> | 290 | 12 | 20 | 40 | 10 | 10 | 45 | Bow | Barrage VIII | Keen Vision | — |
 | **Corrosive Wraith** | <img :src="$withBase('/images/unit_corrosive_wraith.png')" class="sprite" alt="unit_corrosive_wraith" width="28" height="28"> | 290 | 12 | 20 | 40 | 10 | 10 | 45 | Bow | Focused Barrage | Corrosive Blood | — |

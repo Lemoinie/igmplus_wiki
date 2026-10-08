@@ -189,7 +189,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_CURSE_III",
-      "passive_skill": "PASSIVE_WITHERING_LINK",
+      "passive_skill": "PASSIVE_WITHERING_LINK_II",
       "next_classes": [
         "LorfOfDecay"
       ],
@@ -659,7 +659,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_CURSE_V",
-      "passive_skill": "PASSIVE_WITHERING_LINK",
+      "passive_skill": "PASSIVE_WITHERING_LINK_IV",
       "next_classes": [],
       "tier": 9
     },
@@ -773,6 +773,32 @@
         "DaturaHierophant"
       ],
       "tier": 8
+    },
+    {
+      "key": "BoneAbomination",
+      "parent": "Adventurer",
+      "sprite": "unit_abomination",
+      "name_key": "summoned_bone_abomination_name",
+      "description_key": "summoned_bone_abomination_description",
+      "name": "Bone Abomination",
+      "description": "A hulking horror stitched from countless skeletons.",
+      "stats": {
+        "maxLevel": 15,
+        "baseMaxHp": 370,
+        "baseConstitution": 115,
+        "baseIntelligence": 1,
+        "baseDexterity": 22,
+        "baseDefense": 50,
+        "baseMagicDefense": 0
+      },
+      "max_level": 15,
+      "weapon_type": "type_sword",
+      "armor_type": "type_armor_heavy",
+      "potion_drinker_type": "PotionDrinkerType",
+      "active_skill": "ACTIVE_NONE",
+      "passive_skill": "PASSIVE_THREATENING_II",
+      "next_classes": [],
+      "tier": 1
     },
     {
       "key": "BoneHorror",
@@ -1096,7 +1122,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_ENERGY_BURST_II",
-      "passive_skill": "PASSIVE_WITHERING_TOUCH",
+      "passive_skill": "PASSIVE_WITHERING_TOUCH_I",
       "next_classes": [
         "Necromancer"
       ],
@@ -1179,7 +1205,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_CURSE_II",
-      "passive_skill": "PASSIVE_WITHERING_TOUCH",
+      "passive_skill": "PASSIVE_WITHERING_TOUCH_III",
       "next_classes": [
         "Lich"
       ],
@@ -2379,7 +2405,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_CURSE_II",
-      "passive_skill": "PASSIVE_WITHERING_LINK",
+      "passive_skill": "PASSIVE_WITHERING_LINK_I",
       "next_classes": [
         "AncientLich"
       ],
@@ -2464,7 +2490,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_CURSE_IV",
-      "passive_skill": "PASSIVE_WITHERING_LINK",
+      "passive_skill": "PASSIVE_WITHERING_LINK_III",
       "next_classes": [
         "BlackIdol"
       ],
@@ -2635,7 +2661,7 @@
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_CURSE_I",
-      "passive_skill": "PASSIVE_WITHERING_TOUCH",
+      "passive_skill": "PASSIVE_WITHERING_TOUCH_II",
       "next_classes": [
         "Demilich",
         "Unchained"
@@ -3662,7 +3688,7 @@
       "description": "\"The Spire, an age-old clandestine organization, recruits only the realm's most skilled assassins. Its select few members wield profound influence over the political landscape of kingdoms, capable of eliminating virtually any target with a secretive technique known solely to them.\"",
       "stats": {
         "maxLevel": 25,
-        "baseMaxHp": 120,
+        "baseMaxHp": "Logger.BARD_SHIELD",
         "baseConstitution": 18,
         "baseIntelligence": 8,
         "baseDexterity": 18,
@@ -3787,7 +3813,7 @@
       "weapon_type": "type_bow",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_BARRAGE_II",
+      "active_skill": "ACTIVE_CAUSTIC_DELUGE",
       "passive_skill": "PASSIVE_RIDER_IV",
       "next_classes": [
         "DrakeRider"
@@ -3844,7 +3870,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 5
+      "tier": 1
     },
     {
       "key": "SummonOwlbear",
@@ -3870,7 +3896,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 9
+      "tier": 1
     },
     {
       "key": "SummonTiger",
@@ -3896,7 +3922,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 8
+      "tier": 1
     },
     {
       "key": "SummonWeasel",
@@ -3922,7 +3948,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 4
+      "tier": 1
     },
     {
       "key": "SummonWolf",
@@ -3948,7 +3974,7 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
-      "tier": 6
+      "tier": 1
     },
     {
       "key": "Sureshot",
@@ -4504,7 +4530,7 @@
       "weapon_type": "type_bow",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_BARRAGE_II",
+      "active_skill": "ACTIVE_SAVAGE_POUNCE",
       "passive_skill": "PASSIVE_RIDER_II",
       "next_classes": [
         "WorgRider"
@@ -4560,7 +4586,7 @@
       "weapon_type": "type_bow",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_BARRAGE_II",
+      "active_skill": "ACTIVE_FRENZIED_REND",
       "passive_skill": "PASSIVE_RIDER_III",
       "next_classes": [
         "SpitfangRider"
@@ -4738,6 +4764,7 @@
       "Apprentice",
       "Archer",
       "ArcticWeasel",
+      "BoneAbomination",
       "BoneHorror",
       "BoneHydra",
       "BoneNightmare",

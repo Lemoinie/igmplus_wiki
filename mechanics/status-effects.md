@@ -55,4 +55,5 @@ All status effects registered in `StatusEffectType.kt`. *Negative* marks debuffs
 | <img :src="$withBase('/images/icon_effect_sanguine_fervor.png')" class="sprite" alt="icon_effect_sanguine_fervor" width="20" height="20"> | **Sanguine Fervor** | No | empowered by Sanguine Fervor |
 | <img :src="$withBase('/images/icon_effect_sinister_curse.png')" class="sprite" alt="icon_effect_sinister_curse" width="20" height="20"> | **Sinister Curse** | Yes | A malign crimson curse. Increases damage taken by 50%. If the afflicted dies while cursed, their soul is reaped into an enemy Bone Nightmare. |
 | <img :src="$withBase('/images/icon_effect_entangle.png')" class="sprite" alt="icon_effect_entangle" width="20" height="20"> | **Entangle** | Yes | — |
+| — | **Soul Harvest** | No | Empowered by harvested souls: +15% Max HP, +10% Damage Dealt, -5% Damage Taken per stack. |
 <!-- END GENERATED DATA -->

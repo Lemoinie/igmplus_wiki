@@ -308,5 +308,15 @@
     "serialized": true,
     "name": "Entangle",
     "description": null
+  },
+  {
+    "key": "SOUL_HARVEST",
+    "name_key": "status_effect_soul_harvest_name",
+    "desc_key": "status_effect_soul_harvest_description",
+    "sprite": "icon_effect_soul_harvest",
+    "negative": false,
+    "serialized": false,
+    "name": "Soul Harvest",
+    "description": "Empowered by harvested souls: +15% Max HP, +10% Damage Dealt, -5% Damage Taken per stack."
   }
 ]

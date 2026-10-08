@@ -192,6 +192,30 @@
     "description": "Fires an arrow at 11 random enemies"
   },
   {
+    "key": "ACTIVE_SAVAGE_POUNCE",
+    "name_key": "active_savage_pounce_name",
+    "desc_key": "active_savage_pounce_description",
+    "kind": "active",
+    "name": "Savage Pounce",
+    "description": null
+  },
+  {
+    "key": "ACTIVE_FRENZIED_REND",
+    "name_key": "active_frenzied_rend_name",
+    "desc_key": "active_frenzied_rend_description",
+    "kind": "active",
+    "name": "Frenzied Rend",
+    "description": null
+  },
+  {
+    "key": "ACTIVE_CAUSTIC_DELUGE",
+    "name_key": "active_caustic_deluge_name",
+    "desc_key": "active_caustic_deluge_description",
+    "kind": "active",
+    "name": "Caustic Deluge",
+    "description": null
+  },
+  {
     "key": "ACTIVE_INCINERATE",
     "name_key": "active_incinerate_name",
     "desc_key": "active_incinerate_description",
@@ -957,7 +981,7 @@
     "desc_key": "passive_rider_i_description",
     "kind": "passive",
     "name": "Rider",
-    "description": "Every time this unit acts, the horse kicks an enemy for 25 physical damage"
+    "description": "Every time this unit acts, the horse kicks the attacked enemy for 25 physical damage"
   },
   {
     "key": "PASSIVE_RIDER_II",
@@ -965,7 +989,7 @@
     "desc_key": "passive_rider_ii_description",
     "kind": "passive",
     "name": "Rider II",
-    "description": "Every time this unit acts, the wolf bites an enemy for 40 physical damage"
+    "description": "Every time this unit acts, the wolf bites the attacked enemy for 60% Dexterity physical damage and inflicts BLEED 10"
   },
   {
     "key": "PASSIVE_RIDER_III",
@@ -973,7 +997,7 @@
     "desc_key": "passive_rider_iii_description",
     "kind": "passive",
     "name": "Rider III",
-    "description": "Every time this unit acts, the worg mauls an enemy for 55 physical damage"
+    "description": "Every time this unit acts, the worg mauls the attacked enemy for 80% Dexterity physical damage and inflicts BLEED 15"
   },
   {
     "key": "PASSIVE_RIDER_IV",
@@ -981,7 +1005,7 @@
     "desc_key": "passive_rider_iv_description",
     "kind": "passive",
     "name": "Rider IV",
-    "description": "Every time this unit acts, the mount spits from a distance for 55 physical damage"
+    "description": "Every time this unit acts, the mount spits at the attacked enemy from a distance for 60% Dexterity + 60% Intelligence physical damage and inflicts POISON for 3 turns"
   },
   {
     "key": "PASSIVE_RIDER_V",
@@ -989,7 +1013,7 @@
     "desc_key": "passive_rider_v_description",
     "kind": "passive",
     "name": "Rider V",
-    "description": "Every time this unit acts, the mount performs a ranged attack for 70 physical damage"
+    "description": "Every time this unit acts, the mount rakes the attacked enemy from a distance for 75% Dexterity + 75% Intelligence physical damage and inflicts BLEED 20"
   },
   {
     "key": "PASSIVE_RIDER_VI",
@@ -997,7 +1021,7 @@
     "desc_key": "passive_rider_vi_description",
     "kind": "passive",
     "name": "Rider VI",
-    "description": "Every time this unit acts, the mount performs a ranged attack for 85 physical damage"
+    "description": "Every time this unit acts, the mount rakes the attacked enemy from a distance for 90% Dexterity + 90% Intelligence physical damage and inflicts BLEED 25"
   },
   {
     "key": "PASSIVE_RIDER_VII",
@@ -1005,7 +1029,7 @@
     "desc_key": "passive_rider_vii_description",
     "kind": "passive",
     "name": "Rider VII",
-    "description": "Every time this unit acts, the mount performs a ranged attack for 100 physical damage"
+    "description": "Every time this unit acts, the mount tears the attacked enemy from a distance for 120% Dexterity + 120% Intelligence physical damage and inflicts BLEED 30"
   },
   {
     "key": "PASSIVE_KEEN_VISION",
@@ -1264,12 +1288,68 @@
     "description": "Dealing damage heals the unit for half the amount"
   },
   {
+    "key": "PASSIVE_WITHERING_TOUCH_I",
+    "name_key": "passive_withering_touch_i_name",
+    "desc_key": "passive_withering_touch_i_description",
+    "kind": "passive",
+    "name": "Withering Touch I",
+    "description": "Dealing damage heals the unit for half the amount."
+  },
+  {
+    "key": "PASSIVE_WITHERING_TOUCH_II",
+    "name_key": "passive_withering_touch_ii_name",
+    "desc_key": "passive_withering_touch_ii_description",
+    "kind": "passive",
+    "name": "Withering Touch II",
+    "description": null
+  },
+  {
+    "key": "PASSIVE_WITHERING_TOUCH_III",
+    "name_key": "passive_withering_touch_iii_name",
+    "desc_key": "passive_withering_touch_iii_description",
+    "kind": "passive",
+    "name": "Withering Touch III",
+    "description": null
+  },
+  {
     "key": "PASSIVE_WITHERING_LINK",
     "name_key": "passive_withering_link_name",
     "desc_key": "passive_withering_link_description",
     "kind": "passive",
     "name": "Withering Link",
-    "description": "Dealing damage heals the unit and his summoned minion for half the amount"
+    "description": null
+  },
+  {
+    "key": "PASSIVE_WITHERING_LINK_I",
+    "name_key": "passive_withering_link_i_name",
+    "desc_key": "passive_withering_link_i_description",
+    "kind": "passive",
+    "name": "Withering Link I",
+    "description": null
+  },
+  {
+    "key": "PASSIVE_WITHERING_LINK_II",
+    "name_key": "passive_withering_link_ii_name",
+    "desc_key": "passive_withering_link_ii_description",
+    "kind": "passive",
+    "name": "Withering Link II",
+    "description": null
+  },
+  {
+    "key": "PASSIVE_WITHERING_LINK_III",
+    "name_key": "passive_withering_link_iii_name",
+    "desc_key": "passive_withering_link_iii_description",
+    "kind": "passive",
+    "name": "Withering Link III",
+    "description": null
+  },
+  {
+    "key": "PASSIVE_WITHERING_LINK_IV",
+    "name_key": "passive_withering_link_iv_name",
+    "desc_key": "passive_withering_link_iv_description",
+    "kind": "passive",
+    "name": "Withering Link IV",
+    "description": null
   },
   {
     "key": "PASSIVE_CHAOTIC",
