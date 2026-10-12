@@ -4,5 +4,10 @@
   "desc_key": "trait_versatile_plus_description",
   "plus": true,
   "name": "Versatile+",
-  "description": "All stats increased by 7%."
+  "description": "All stats increased by 7%.",
+  "category": "basic",
+  "upgrades_to": null,
+  "upgraded_from": "VERSATILE",
+  "upgrade_name": null,
+  "base_name": "Versatile"
 }

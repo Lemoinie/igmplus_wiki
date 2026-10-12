@@ -4,5 +4,10 @@
   "desc_key": "trait_gifted_description",
   "plus": false,
   "name": "Gifted",
-  "description": "Gains 2 more mana per turn."
+  "description": "Gains 2 more mana per turn.",
+  "category": "rare",
+  "upgrades_to": "GIFTED_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Gifted+",
+  "base_name": null
 }

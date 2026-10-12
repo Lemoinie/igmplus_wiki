@@ -4,5 +4,10 @@
   "desc_key": "trait_brute_description",
   "plus": false,
   "name": "Brute",
-  "description": "Constitution increased by 10%, dexterity decreased by 5%, intelligence decreased by 5%."
+  "description": "Constitution increased by 10%, dexterity decreased by 5%, intelligence decreased by 5%.",
+  "category": "basic",
+  "upgrades_to": "BRUTE_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Brute+",
+  "base_name": null
 }

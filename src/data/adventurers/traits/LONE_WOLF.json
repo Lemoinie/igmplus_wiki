@@ -4,5 +4,10 @@
   "desc_key": "trait_lone_wolf_description",
   "plus": false,
   "name": "Lone Wolf",
-  "description": "Gains 5% damage for each unoccupied or fallen ally slot in the area."
+  "description": "Gains 5% damage for each unoccupied or fallen ally slot in the area.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
 }

@@ -4,5 +4,10 @@
   "desc_key": "trait_zealous_plus_description",
   "plus": true,
   "name": "Zealous+",
-  "description": "Constitution increased by 10%, intelligence increased by 10%."
+  "description": "Constitution increased by 10%, intelligence increased by 10%.",
+  "category": "basic",
+  "upgrades_to": null,
+  "upgraded_from": "ZEALOUS",
+  "upgrade_name": null,
+  "base_name": "Zealous"
 }

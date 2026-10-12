@@ -1,35 +1,30 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
-import TraitCard from '../../components/TraitCard.vue';
+import TraitBrowser from '../../components/TraitBrowser.vue';
 import { getAllTraits } from '../../lib/data';
 import { base } from '../../lib/base';
 
 const traitsData = getAllTraits();
 ---
 
-<WikiLayout title="Adventurer Traits" description="Catalog of positive, negative, and unique traits in Idle Guild Master Modded.">
+<WikiLayout title="Adventurer Traits & Upgrades" description="Catalog of basic traits, rare traits, and their upgraded Plus (+) variants in Idle Guild Master Modded.">
   <div class="pageHeader">
-    <h1>Adventurer Traits</h1>
+    <h1>Adventurer Traits & Upgrades</h1>
     <p>
-      Inherent physical and personality traits rolled upon recruitment.
-      Traits modify baseline stats, combat behavior, and situational effectiveness.
+      Inherent traits rolled upon recruitment or modified through evolution mechanics.
+      Explore basic traits and their upgraded Plus variants, as well as rare traits and their Evo-24 Phylactery enhancements.
     </p>
   </div>
 
-  <div class="traitsGrid">
-    {traitsData.map((t) => (
-      <TraitCard client:load trait={t as any} basePath={base} />
-    ))}
-  </div>
+  <TraitBrowser client:load traits={traitsData as any} basePath={base} />
 </WikiLayout>
 
 <style>
 .pageHeader {
   margin-bottom: 1.5rem;
 }
-.traitsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(260px, 100%), 1fr));
-  gap: 1rem;
+.pageHeader p {
+  max-width: 800px;
+  color: var(--text-secondary);
 }
 </style>

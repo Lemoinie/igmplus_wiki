@@ -10,14 +10,14 @@
   "description": "A steadfast pack hunter that hamstrings prey with bone-snapping bites.",
   "stats": {
     "maxLevel": 30,
-    "baseMaxHp": 60,
-    "baseConstitution": 14,
+    "baseMaxHp": 85,
+    "baseConstitution": 18,
     "baseIntelligence": 8,
-    "baseDexterity": 18,
-    "baseDefense": 6,
-    "baseMagicDefense": 6
+    "baseDexterity": 24,
+    "baseDefense": 10,
+    "baseMagicDefense": 8
   },
-  "activeSkill": "None",
+  "activeSkill": "Pack Howl",
   "passiveSkill": "Pack Hunting",
   "promotesTo": []
 }

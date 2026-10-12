@@ -4,5 +4,10 @@
   "desc_key": "trait_nocturnal_description",
   "plus": false,
   "name": "Nocturnal",
-  "description": "Damage increased by [1 x Darkness]%"
+  "description": "Damage increased by [1 x Darkness]%",
+  "category": "rare",
+  "upgrades_to": "NOCTURNAL_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Nocturnal+",
+  "base_name": null
 }

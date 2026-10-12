@@ -4,5 +4,10 @@
   "desc_key": "trait_empathetic_description",
   "plus": false,
   "name": "Empathetic",
-  "description": "Heals are 20% more powerful (multiplicative)."
+  "description": "Heals are 20% more powerful (multiplicative).",
+  "category": "rare",
+  "upgrades_to": "EMPATHETIC_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Empathetic+",
+  "base_name": null
 }

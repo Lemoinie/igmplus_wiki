@@ -4,5 +4,10 @@
   "desc_key": "trait_alert_description",
   "plus": false,
   "name": "Alert",
-  "description": "Starts the fight first."
+  "description": "Starts the fight first.",
+  "category": "rare",
+  "upgrades_to": "ALERT_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Alert+",
+  "base_name": null
 }

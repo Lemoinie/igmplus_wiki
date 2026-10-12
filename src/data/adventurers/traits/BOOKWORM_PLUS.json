@@ -4,5 +4,10 @@
   "desc_key": "trait_bookworm_plus_description",
   "plus": true,
   "name": "Bookworm+",
-  "description": "Intelligence increased by 20%."
+  "description": "Intelligence increased by 20%.",
+  "category": "basic",
+  "upgrades_to": null,
+  "upgraded_from": "BOOKWORM",
+  "upgrade_name": null,
+  "base_name": "Bookworm"
 }

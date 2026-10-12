@@ -4,5 +4,10 @@
   "desc_key": "trait_feral_description",
   "plus": false,
   "name": "Feral",
-  "description": "Dexterity increased by 10%, intelligence decreased by 5%, constitution decreased by 5%."
+  "description": "Dexterity increased by 10%, intelligence decreased by 5%, constitution decreased by 5%.",
+  "category": "basic",
+  "upgrades_to": "FERAL_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Feral+",
+  "base_name": null
 }

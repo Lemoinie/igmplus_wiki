@@ -6,18 +6,18 @@
   "maxLevel": 15,
   "weaponType": "sword",
   "armorType": "light",
-  "sprite": "unit_rat",
+  "sprite": "unit_summon_rat",
   "description": "A vicious little vermin that bites ankles and swarms unwary targets.",
   "stats": {
     "maxLevel": 15,
-    "baseMaxHp": 10,
-    "baseConstitution": 5,
+    "baseMaxHp": 15,
+    "baseConstitution": 6,
     "baseIntelligence": 5,
-    "baseDexterity": 5,
+    "baseDexterity": 8,
     "baseDefense": 0,
     "baseMagicDefense": 0
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Rabid Bite",
+  "passiveSkill": "Swarm Ferocity",
   "promotesTo": []
 }

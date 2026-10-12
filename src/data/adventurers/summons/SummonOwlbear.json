@@ -5,19 +5,19 @@
   "tier": 1,
   "maxLevel": 45,
   "weaponType": "sword",
-  "armorType": "light",
+  "armorType": "heavy",
   "sprite": "unit_summon_owlbear",
   "description": "A monstrous chimeric powerhouse combining avian keenness with ursine savagery.",
   "stats": {
     "maxLevel": 45,
-    "baseMaxHp": 180,
-    "baseConstitution": 30,
+    "baseMaxHp": 360,
+    "baseConstitution": 75,
     "baseIntelligence": 12,
-    "baseDexterity": 20,
-    "baseDefense": 18,
-    "baseMagicDefense": 15
+    "baseDexterity": 30,
+    "baseDefense": 45,
+    "baseMagicDefense": 28
   },
-  "activeSkill": "None",
+  "activeSkill": "Apex Rampage",
   "passiveSkill": "Apex Resilience",
   "promotesTo": []
 }

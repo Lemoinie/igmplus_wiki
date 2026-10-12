@@ -5,19 +5,19 @@
   "tier": 1,
   "maxLevel": 45,
   "weaponType": "sword",
-  "armorType": "light",
-  "sprite": "unit_summon_owlbear",
+  "armorType": "heavy",
+  "sprite": "unit_summon_alpha_owlbear",
   "description": "The undisputed apex monstrosity of the primeval woods, leading great beasts into battle.",
   "stats": {
     "maxLevel": 45,
-    "baseMaxHp": 220,
-    "baseConstitution": 36,
+    "baseMaxHp": 450,
+    "baseConstitution": 90,
     "baseIntelligence": 15,
-    "baseDexterity": 24,
-    "baseDefense": 22,
-    "baseMagicDefense": 18
+    "baseDexterity": 35,
+    "baseDefense": 55,
+    "baseMagicDefense": 35
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Apex Rampage",
+  "passiveSkill": "Apex Resilience",
   "promotesTo": []
 }

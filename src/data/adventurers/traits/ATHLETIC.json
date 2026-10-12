@@ -4,5 +4,10 @@
   "desc_key": "trait_athletic_description",
   "plus": false,
   "name": "Athletic",
-  "description": "Constitution increased by 5%, dexterity increased by 5%, intelligence decreased by 10%."
+  "description": "Constitution increased by 5%, dexterity increased by 5%, intelligence decreased by 10%.",
+  "category": "basic",
+  "upgrades_to": "ATHLETIC_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Athletic+",
+  "base_name": null
 }

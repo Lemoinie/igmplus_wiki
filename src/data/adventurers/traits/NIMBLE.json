@@ -4,5 +4,10 @@
   "desc_key": "trait_nimble_description",
   "plus": false,
   "name": "Nimble",
-  "description": "15% increased dodge chance (additive)"
+  "description": "15% increased dodge chance (additive)",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
 }

@@ -4,5 +4,10 @@
   "desc_key": "trait_athletic_plus_description",
   "plus": true,
   "name": "Athletic+",
-  "description": "Constitution increased by 10%, dexterity increased by 10%."
+  "description": "Constitution increased by 10%, dexterity increased by 10%.",
+  "category": "basic",
+  "upgrades_to": null,
+  "upgraded_from": "ATHLETIC",
+  "upgrade_name": null,
+  "base_name": "Athletic"
 }

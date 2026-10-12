@@ -3,21 +3,21 @@
   "name": "Polar Bear",
   "category": "Summon",
   "tier": 1,
-  "maxLevel": 35,
+  "maxLevel": 40,
   "weaponType": "sword",
-  "armorType": "light",
-  "sprite": "unit_summon_bear",
+  "armorType": "heavy",
+  "sprite": "unit_summon_polar_bear",
   "description": "A colossal arctic titan boasting relentless power and commanding the wild.",
   "stats": {
-    "maxLevel": 35,
-    "baseMaxHp": 130,
-    "baseConstitution": 25,
-    "baseIntelligence": 11,
-    "baseDexterity": 15,
-    "baseDefense": 15,
-    "baseMagicDefense": 13
+    "maxLevel": 40,
+    "baseMaxHp": 320,
+    "baseConstitution": 65,
+    "baseIntelligence": 12,
+    "baseDexterity": 24,
+    "baseDefense": 38,
+    "baseMagicDefense": 24
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Ursine Roar",
+  "passiveSkill": "Ursine Endurance",
   "promotesTo": []
 }

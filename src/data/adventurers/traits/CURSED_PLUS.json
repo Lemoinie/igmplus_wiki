@@ -4,5 +4,10 @@
   "desc_key": "trait_cursed_plus_description",
   "plus": true,
   "name": "Cursed+",
-  "description": "-1% HP each turn. Lifesteal +30%."
+  "description": "-1% HP each turn. Lifesteal +30%.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": "CURSED",
+  "upgrade_name": null,
+  "base_name": "Cursed"
 }

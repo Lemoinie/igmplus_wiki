@@ -3,21 +3,21 @@
   "name": "White Tiger",
   "category": "Summon",
   "tier": 1,
-  "maxLevel": 40,
+  "maxLevel": 35,
   "weaponType": "sword",
   "armorType": "light",
-  "sprite": "unit_summon_tiger",
+  "sprite": "unit_summon_white_tiger",
   "description": "A majestic legendary predator possessing immense strength and an innate call of the pack.",
   "stats": {
-    "maxLevel": 40,
-    "baseMaxHp": 160,
-    "baseConstitution": 28,
+    "maxLevel": 35,
+    "baseMaxHp": 200,
+    "baseConstitution": 38,
     "baseIntelligence": 12,
-    "baseDexterity": 28,
-    "baseDefense": 16,
-    "baseMagicDefense": 14
+    "baseDexterity": 36,
+    "baseDefense": 22,
+    "baseMagicDefense": 16
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Predatory Ambush",
+  "passiveSkill": "Ambush Predator",
   "promotesTo": []
 }

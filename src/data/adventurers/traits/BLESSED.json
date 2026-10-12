@@ -4,5 +4,10 @@
   "desc_key": "trait_blessed_description",
   "plus": false,
   "name": "Blessed",
-  "description": "Reduces darkness by 15."
+  "description": "Reduces darkness by 15.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
 }

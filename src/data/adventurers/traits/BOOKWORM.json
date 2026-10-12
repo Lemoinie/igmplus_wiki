@@ -4,5 +4,10 @@
   "desc_key": "trait_bookworm_description",
   "plus": false,
   "name": "Bookworm",
-  "description": "Intelligence increased by 10%, constitution decreased by 5%, dexterity decreased by 5%."
+  "description": "Intelligence increased by 10%, constitution decreased by 5%, dexterity decreased by 5%.",
+  "category": "basic",
+  "upgrades_to": "BOOKWORM_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Bookworm+",
+  "base_name": null
 }

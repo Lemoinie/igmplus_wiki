@@ -4,5 +4,10 @@
   "desc_key": "trait_cursed_description",
   "plus": false,
   "name": "Cursed",
-  "description": "Every turn, lose 2% max HP. Heal by 20% of damage dealt on hit."
+  "description": "Every turn, lose 2% max HP. Heal by 20% of damage dealt on hit.",
+  "category": "rare",
+  "upgrades_to": "CURSED_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Cursed+",
+  "base_name": null
 }

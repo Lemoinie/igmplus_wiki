@@ -6,18 +6,18 @@
   "maxLevel": 30,
   "weaponType": "sword",
   "armorType": "light",
-  "sprite": "unit_summon_wolf",
+  "sprite": "unit_summon_dire_wolf",
   "description": "A massive apex pack hunter that tears through enemy ranks with savage ferocity.",
   "stats": {
     "maxLevel": 30,
-    "baseMaxHp": 75,
-    "baseConstitution": 17,
+    "baseMaxHp": 110,
+    "baseConstitution": 22,
     "baseIntelligence": 10,
-    "baseDexterity": 22,
-    "baseDefense": 8,
-    "baseMagicDefense": 8
+    "baseDexterity": 28,
+    "baseDefense": 12,
+    "baseMagicDefense": 10
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Pack Howl",
+  "passiveSkill": "Pack Hunting",
   "promotesTo": []
 }

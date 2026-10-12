@@ -4,5 +4,10 @@
   "desc_key": "trait_intimidating_description",
   "plus": false,
   "name": "Intimidating",
-  "description": "+2 threat"
+  "description": "+2 threat",
+  "category": "rare",
+  "upgrades_to": "INTIMIDATING_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Intimidating+",
+  "base_name": null
 }

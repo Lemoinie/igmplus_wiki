@@ -6,18 +6,18 @@
   "maxLevel": 15,
   "weaponType": "sword",
   "armorType": "light",
-  "sprite": "unit_albino_rat",
+  "sprite": "unit_summon_albino_rat",
   "description": "A rare white rodent bearing uncanny ferocity and hardened resilience.",
   "stats": {
     "maxLevel": 15,
-    "baseMaxHp": 15,
-    "baseConstitution": 6,
+    "baseMaxHp": 25,
+    "baseConstitution": 8,
     "baseIntelligence": 6,
-    "baseDexterity": 6,
+    "baseDexterity": 10,
     "baseDefense": 1,
     "baseMagicDefense": 1
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Rabid Bite",
+  "passiveSkill": "Swarm Ferocity",
   "promotesTo": []
 }

@@ -329,6 +329,14 @@
         "item:AnimatedSword"
       ]
     },
+    "apex_claws": {
+      "file": "apex_claws.png",
+      "bytes": 1734,
+      "source": "app/src/main/res/drawable/apex_claws.png",
+      "usages": [
+        "item:ApexClaws"
+      ]
+    },
     "apple": {
       "file": "apple.png",
       "bytes": 745,
@@ -719,6 +727,14 @@
       "source": "app/src/main/res/drawable/bat_wing.png",
       "usages": [
         "item:BatWing"
+      ]
+    },
+    "bear_hide": {
+      "file": "bear_hide.png",
+      "bytes": 4275,
+      "source": "app/src/main/res/drawable/bear_hide.png",
+      "usages": [
+        "item:BearHide"
       ]
     },
     "beast_pelt": {
@@ -3124,6 +3140,22 @@
         "status_effect:BLOODFLAME"
       ]
     },
+    "icon_effect_brittle_toxin": {
+      "file": "icon_effect_brittle_toxin.png",
+      "bytes": 1749,
+      "source": "app/src/main/res/drawable/icon_effect_brittle_toxin.png",
+      "usages": [
+        "status_effect:BRITTLE_TOXIN"
+      ]
+    },
+    "icon_effect_corrosion": {
+      "file": "icon_effect_corrosion.png",
+      "bytes": 1533,
+      "source": "app/src/main/res/drawable/icon_effect_corrosion.png",
+      "usages": [
+        "status_effect:CORROSION"
+      ]
+    },
     "icon_effect_curse": {
       "file": "icon_effect_curse.png",
       "bytes": 377,
@@ -3141,7 +3173,8 @@
       "bytes": 272,
       "source": "app/src/main/res/drawable/icon_effect_defensive_stance.png",
       "usages": [
-        "status_effect:DEFENSIVE_STANCE"
+        "status_effect:DEFENSIVE_STANCE",
+        "status_effect:GUARD_FORTIFIED"
       ]
     },
     "icon_effect_delirium": {
@@ -3152,12 +3185,28 @@
         "status_effect:DELIRIUM"
       ]
     },
+    "icon_effect_enfeeble": {
+      "file": "icon_effect_enfeeble.png",
+      "bytes": 1467,
+      "source": "app/src/main/res/drawable/icon_effect_enfeeble.png",
+      "usages": [
+        "status_effect:ENFEEBLE"
+      ]
+    },
     "icon_effect_entangle": {
       "file": "icon_effect_entangle.png",
       "bytes": 453,
       "source": "app/src/main/res/drawable/icon_effect_entangle.png",
       "usages": [
         "status_effect:ENTANGLE"
+      ]
+    },
+    "icon_effect_evasion": {
+      "file": "icon_effect_evasion.png",
+      "bytes": 662,
+      "source": "app/src/main/res/drawable/icon_effect_evasion.png",
+      "usages": [
+        "status_effect:EVASION"
       ]
     },
     "icon_effect_exalt": {
@@ -3224,6 +3273,14 @@
         "status_effect:RADIANT_BLESSING"
       ]
     },
+    "icon_effect_rage": {
+      "file": "icon_effect_rage.png",
+      "bytes": 435,
+      "source": "app/src/main/res/drawable/icon_effect_rage.png",
+      "usages": [
+        "status_effect:RAGE"
+      ]
+    },
     "icon_effect_regeneration": {
       "file": "icon_effect_regeneration.png",
       "bytes": 256,
@@ -3258,10 +3315,18 @@
     },
     "icon_effect_solar_rebirth": {
       "file": "icon_effect_solar_rebirth.png",
-      "bytes": 672,
+      "bytes": 2391,
       "source": "app/src/main/res/drawable/icon_effect_solar_rebirth.png",
       "usages": [
         "status_effect:SOLAR_REBIRTH"
+      ]
+    },
+    "icon_effect_soul_harvest": {
+      "file": "icon_effect_soul_harvest.png",
+      "bytes": 2196,
+      "source": "app/src/main/res/drawable/icon_effect_soul_harvest.png",
+      "usages": [
+        "status_effect:SOUL_HARVEST"
       ]
     },
     "icon_effect_stun": {
@@ -3286,7 +3351,16 @@
       "bytes": 616,
       "source": "app/src/main/res/drawable/icon_effect_terrify.png",
       "usages": [
-        "status_effect:TERRIFY"
+        "status_effect:TERRIFY",
+        "status_effect:MENACE_SHRED"
+      ]
+    },
+    "icon_effect_thorns": {
+      "file": "icon_effect_thorns.png",
+      "bytes": 1089,
+      "source": "app/src/main/res/drawable/icon_effect_thorns.png",
+      "usages": [
+        "status_effect:THORNS"
       ]
     },
     "ignition_orb": {
@@ -4347,6 +4421,14 @@
         "item:PotionOfViciousness"
       ]
     },
+    "predator_fangs": {
+      "file": "predator_fangs.png",
+      "bytes": 1818,
+      "source": "app/src/main/res/drawable/predator_fangs.png",
+      "usages": [
+        "item:PredatorFangs"
+      ]
+    },
     "prehistoric_mixture": {
       "file": "prehistoric_mixture.png",
       "bytes": 1057,
@@ -4377,6 +4459,14 @@
       "source": "app/src/main/res/drawable/primeval_helm.png",
       "usages": [
         "item:PrimevalHelm"
+      ]
+    },
+    "primeval_hide": {
+      "file": "primeval_hide.png",
+      "bytes": 4482,
+      "source": "app/src/main/res/drawable/primeval_hide.png",
+      "usages": [
+        "item:PrimevalHide"
       ]
     },
     "primeval_scale": {
@@ -5652,6 +5742,22 @@
         "item:ThaumaturgicBlood"
       ]
     },
+    "thick_fur": {
+      "file": "thick_fur.png",
+      "bytes": 4389,
+      "source": "app/src/main/res/drawable/thick_fur.png",
+      "usages": [
+        "item:ThickFur"
+      ]
+    },
+    "tiger_jaws": {
+      "file": "tiger_jaws.png",
+      "bytes": 3885,
+      "source": "app/src/main/res/drawable/tiger_jaws.png",
+      "usages": [
+        "item:TigerJaws"
+      ]
+    },
     "tiramisu": {
       "file": "tiramisu.png",
       "bytes": 790,
@@ -5897,6 +6003,7 @@
       "bytes": 729,
       "source": "app/src/main/res/drawable/unit_abomination.png",
       "usages": [
+        "unit:BoneAbomination",
         "enemy:Abomination"
       ]
     },
@@ -5922,14 +6029,6 @@
       "source": "app/src/main/res/drawable/unit_aether_mage.png",
       "usages": [
         "unit:AetherMage"
-      ]
-    },
-    "unit_albino_rat": {
-      "file": "unit_albino_rat.png",
-      "bytes": 898,
-      "source": "app/src/main/res/drawable/unit_albino_rat.png",
-      "usages": [
-        "unit:AlbinoRat"
       ]
     },
     "unit_alchemist": {
@@ -7381,14 +7480,6 @@
         "unit:RadiantElder"
       ]
     },
-    "unit_rat": {
-      "file": "unit_rat.png",
-      "bytes": 877,
-      "source": "app/src/main/res/drawable/unit_rat.png",
-      "usages": [
-        "unit:Rat"
-      ]
-    },
     "unit_rat_tamer": {
       "file": "unit_rat_tamer.png",
       "bytes": 2505,
@@ -7725,12 +7816,35 @@
         "enemy:StoneShaman"
       ]
     },
+    "unit_summon_albino_rat": {
+      "file": "unit_summon_albino_rat.png",
+      "bytes": 898,
+      "source": "app/src/main/res/drawable/unit_summon_albino_rat.png",
+      "usages": [
+        "unit:AlbinoRat"
+      ]
+    },
+    "unit_summon_alpha_owlbear": {
+      "file": "unit_summon_alpha_owlbear.png",
+      "bytes": 3447,
+      "source": "app/src/main/res/drawable/unit_summon_alpha_owlbear.png",
+      "usages": [
+        "unit:AlphaOwlbear"
+      ]
+    },
+    "unit_summon_arctic_weasel": {
+      "file": "unit_summon_arctic_weasel.png",
+      "bytes": 1083,
+      "source": "app/src/main/res/drawable/unit_summon_arctic_weasel.png",
+      "usages": [
+        "unit:ArcticWeasel"
+      ]
+    },
     "unit_summon_bear": {
       "file": "unit_summon_bear.png",
       "bytes": 2171,
       "source": "app/src/main/res/drawable/unit_summon_bear.png",
       "usages": [
-        "unit:PolarBear",
         "unit:SummonBear"
       ]
     },
@@ -7739,8 +7853,15 @@
       "bytes": 499,
       "source": "app/src/main/res/drawable/unit_summon_cat.png",
       "usages": [
-        "unit:SnowCat",
         "unit:SummonCat"
+      ]
+    },
+    "unit_summon_dire_wolf": {
+      "file": "unit_summon_dire_wolf.png",
+      "bytes": 2871,
+      "source": "app/src/main/res/drawable/unit_summon_dire_wolf.png",
+      "usages": [
+        "unit:DireWolf"
       ]
     },
     "unit_summon_owlbear": {
@@ -7748,8 +7869,31 @@
       "bytes": 2472,
       "source": "app/src/main/res/drawable/unit_summon_owlbear.png",
       "usages": [
-        "unit:AlphaOwlbear",
         "unit:SummonOwlbear"
+      ]
+    },
+    "unit_summon_polar_bear": {
+      "file": "unit_summon_polar_bear.png",
+      "bytes": 2664,
+      "source": "app/src/main/res/drawable/unit_summon_polar_bear.png",
+      "usages": [
+        "unit:PolarBear"
+      ]
+    },
+    "unit_summon_rat": {
+      "file": "unit_summon_rat.png",
+      "bytes": 877,
+      "source": "app/src/main/res/drawable/unit_summon_rat.png",
+      "usages": [
+        "unit:Rat"
+      ]
+    },
+    "unit_summon_snow_cat": {
+      "file": "unit_summon_snow_cat.png",
+      "bytes": 864,
+      "source": "app/src/main/res/drawable/unit_summon_snow_cat.png",
+      "usages": [
+        "unit:SnowCat"
       ]
     },
     "unit_summon_tiger": {
@@ -7757,8 +7901,7 @@
       "bytes": 2306,
       "source": "app/src/main/res/drawable/unit_summon_tiger.png",
       "usages": [
-        "unit:SummonTiger",
-        "unit:WhiteTiger"
+        "unit:SummonTiger"
       ]
     },
     "unit_summon_weasel": {
@@ -7766,8 +7909,15 @@
       "bytes": 674,
       "source": "app/src/main/res/drawable/unit_summon_weasel.png",
       "usages": [
-        "unit:ArcticWeasel",
         "unit:SummonWeasel"
+      ]
+    },
+    "unit_summon_white_tiger": {
+      "file": "unit_summon_white_tiger.png",
+      "bytes": 2784,
+      "source": "app/src/main/res/drawable/unit_summon_white_tiger.png",
+      "usages": [
+        "unit:WhiteTiger"
       ]
     },
     "unit_summon_wolf": {
@@ -7775,7 +7925,6 @@
       "bytes": 1557,
       "source": "app/src/main/res/drawable/unit_summon_wolf.png",
       "usages": [
-        "unit:DireWolf",
         "unit:SummonWolf"
       ]
     },
@@ -8253,6 +8402,14 @@
         "item:UpgradeWorkshopTime"
       ]
     },
+    "ursine_paw": {
+      "file": "ursine_paw.png",
+      "bytes": 4140,
+      "source": "app/src/main/res/drawable/ursine_paw.png",
+      "usages": [
+        "item:UrsinePaw"
+      ]
+    },
     "vampire_axe": {
       "file": "vampire_axe.png",
       "bytes": 883,
@@ -8556,6 +8713,22 @@
       "source": "app/src/main/res/drawable/winterwood_staff.png",
       "usages": [
         "item:WinterwoodStaff"
+      ]
+    },
+    "wolf_jaws": {
+      "file": "wolf_jaws.png",
+      "bytes": 1758,
+      "source": "app/src/main/res/drawable/wolf_jaws.png",
+      "usages": [
+        "item:WolfJaws"
+      ]
+    },
+    "wolf_pelt": {
+      "file": "wolf_pelt.png",
+      "bytes": 1503,
+      "source": "app/src/main/res/drawable/wolf_pelt.png",
+      "usages": [
+        "item:WolfPelt"
       ]
     },
     "wood": {

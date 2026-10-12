@@ -64,12 +64,19 @@ export interface PetDefinition {
 }
 
 export interface TraitDefinition {
-  id: string;
+  id?: string;
+  key: string;
   name: string;
-  type: 'positive' | 'negative' | 'unique';
+  category: 'basic' | 'rare';
+  plus: boolean;
+  type?: 'positive' | 'negative' | 'unique';
   sprite?: string;
   description: string;
   effects?: string[];
+  upgrades_to?: string | null;
+  upgraded_from?: string | null;
+  upgrade_name?: string | null;
+  base_name?: string | null;
 }
 
 export interface SkillDefinition {

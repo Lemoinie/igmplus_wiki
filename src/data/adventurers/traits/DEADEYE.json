@@ -4,5 +4,10 @@
   "desc_key": "trait_deadeye_description",
   "plus": false,
   "name": "Deadeye",
-  "description": "Critical strike chance increased by 12%."
+  "description": "Critical strike chance increased by 12%.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
 }

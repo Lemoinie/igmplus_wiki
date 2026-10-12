@@ -4,5 +4,10 @@
   "desc_key": "trait_ruthless_description",
   "plus": false,
   "name": "Ruthless",
-  "description": "Critical damage +20% (multiplicative)."
+  "description": "Critical damage +20% (multiplicative).",
+  "category": "rare",
+  "upgrades_to": "RUTHLESS_PLUS",
+  "upgraded_from": null,
+  "upgrade_name": "Ruthless+",
+  "base_name": null
 }

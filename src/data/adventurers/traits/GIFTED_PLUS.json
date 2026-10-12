@@ -4,5 +4,10 @@
   "desc_key": "trait_gifted_plus_description",
   "plus": true,
   "name": "Gifted+",
-  "description": "MP regenerate +4."
+  "description": "MP regenerate +4.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": "GIFTED",
+  "upgrade_name": null,
+  "base_name": "Gifted"
 }

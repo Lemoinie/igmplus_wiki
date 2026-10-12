@@ -4,5 +4,10 @@
   "desc_key": "trait_reckless_description",
   "plus": false,
   "name": "Reckless",
-  "description": "Deals 15% more attack damage, but takes 15% more damage."
+  "description": "Deals 15% more attack damage, but takes 15% more damage.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
 }

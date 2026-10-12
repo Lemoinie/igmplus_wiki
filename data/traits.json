@@ -5,7 +5,12 @@
     "desc_key": "trait_bookworm_description",
     "plus": false,
     "name": "Bookworm",
-    "description": "Intelligence increased by 10%, constitution decreased by 5%, dexterity decreased by 5%."
+    "description": "Intelligence increased by 10%, constitution decreased by 5%, dexterity decreased by 5%.",
+    "category": "basic",
+    "upgrades_to": "BOOKWORM_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Bookworm+",
+    "base_name": null
   },
   {
     "key": "BRUTE",
@@ -13,7 +18,12 @@
     "desc_key": "trait_brute_description",
     "plus": false,
     "name": "Brute",
-    "description": "Constitution increased by 10%, dexterity decreased by 5%, intelligence decreased by 5%."
+    "description": "Constitution increased by 10%, dexterity decreased by 5%, intelligence decreased by 5%.",
+    "category": "basic",
+    "upgrades_to": "BRUTE_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Brute+",
+    "base_name": null
   },
   {
     "key": "FERAL",
@@ -21,7 +31,12 @@
     "desc_key": "trait_feral_description",
     "plus": false,
     "name": "Feral",
-    "description": "Dexterity increased by 10%, intelligence decreased by 5%, constitution decreased by 5%."
+    "description": "Dexterity increased by 10%, intelligence decreased by 5%, constitution decreased by 5%.",
+    "category": "basic",
+    "upgrades_to": "FERAL_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Feral+",
+    "base_name": null
   },
   {
     "key": "BOOKWORM_PLUS",
@@ -29,7 +44,12 @@
     "desc_key": "trait_bookworm_plus_description",
     "plus": true,
     "name": "Bookworm+",
-    "description": "Intelligence increased by 20%."
+    "description": "Intelligence increased by 20%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "BOOKWORM",
+    "upgrade_name": null,
+    "base_name": "Bookworm"
   },
   {
     "key": "BRUTE_PLUS",
@@ -37,7 +57,12 @@
     "desc_key": "trait_brute_plus_description",
     "plus": true,
     "name": "Brute+",
-    "description": "Constitution increased by 20%."
+    "description": "Constitution increased by 20%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "BRUTE",
+    "upgrade_name": null,
+    "base_name": "Brute"
   },
   {
     "key": "FERAL_PLUS",
@@ -45,7 +70,12 @@
     "desc_key": "trait_feral_plus_description",
     "plus": true,
     "name": "Feral+",
-    "description": "Dexterity increased by 20%."
+    "description": "Dexterity increased by 20%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "FERAL",
+    "upgrade_name": null,
+    "base_name": "Feral"
   },
   {
     "key": "VERSATILE",
@@ -53,7 +83,12 @@
     "desc_key": "trait_versatile_description",
     "plus": false,
     "name": "Versatile",
-    "description": "All stats increased by 4%."
+    "description": "All stats increased by 4%.",
+    "category": "basic",
+    "upgrades_to": "VERSATILE_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Versatile+",
+    "base_name": null
   },
   {
     "key": "VERSATILE_PLUS",
@@ -61,7 +96,12 @@
     "desc_key": "trait_versatile_plus_description",
     "plus": true,
     "name": "Versatile+",
-    "description": "All stats increased by 7%."
+    "description": "All stats increased by 7%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "VERSATILE",
+    "upgrade_name": null,
+    "base_name": "Versatile"
   },
   {
     "key": "ZEALOUS",
@@ -69,7 +109,12 @@
     "desc_key": "trait_zealous_description",
     "plus": false,
     "name": "Zealous",
-    "description": "Constitution increased by 5%, intelligence increased by 5%, dexterity decreased by 10%."
+    "description": "Constitution increased by 5%, intelligence increased by 5%, dexterity decreased by 10%.",
+    "category": "basic",
+    "upgrades_to": "ZEALOUS_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Zealous+",
+    "base_name": null
   },
   {
     "key": "ZEALOUS_PLUS",
@@ -77,7 +122,12 @@
     "desc_key": "trait_zealous_plus_description",
     "plus": true,
     "name": "Zealous+",
-    "description": "Constitution increased by 10%, intelligence increased by 10%."
+    "description": "Constitution increased by 10%, intelligence increased by 10%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "ZEALOUS",
+    "upgrade_name": null,
+    "base_name": "Zealous"
   },
   {
     "key": "CUNNING",
@@ -85,7 +135,12 @@
     "desc_key": "trait_cunning_description",
     "plus": false,
     "name": "Cunning",
-    "description": "Dexterity increased by 5%, intelligence increased by 5%, constitution decreased by 10%."
+    "description": "Dexterity increased by 5%, intelligence increased by 5%, constitution decreased by 10%.",
+    "category": "basic",
+    "upgrades_to": "CUNNING_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Cunning+",
+    "base_name": null
   },
   {
     "key": "CUNNING_PLUS",
@@ -93,7 +148,12 @@
     "desc_key": "trait_cunning_plus_description",
     "plus": true,
     "name": "Cunning+",
-    "description": "Dexterity increased by 10%, intelligence increased by 10%."
+    "description": "Dexterity increased by 10%, intelligence increased by 10%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "CUNNING",
+    "upgrade_name": null,
+    "base_name": "Cunning"
   },
   {
     "key": "ATHLETIC",
@@ -101,7 +161,12 @@
     "desc_key": "trait_athletic_description",
     "plus": false,
     "name": "Athletic",
-    "description": "Constitution increased by 5%, dexterity increased by 5%, intelligence decreased by 10%."
+    "description": "Constitution increased by 5%, dexterity increased by 5%, intelligence decreased by 10%.",
+    "category": "basic",
+    "upgrades_to": "ATHLETIC_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Athletic+",
+    "base_name": null
   },
   {
     "key": "ATHLETIC_PLUS",
@@ -109,7 +174,12 @@
     "desc_key": "trait_athletic_plus_description",
     "plus": true,
     "name": "Athletic+",
-    "description": "Constitution increased by 10%, dexterity increased by 10%."
+    "description": "Constitution increased by 10%, dexterity increased by 10%.",
+    "category": "basic",
+    "upgrades_to": null,
+    "upgraded_from": "ATHLETIC",
+    "upgrade_name": null,
+    "base_name": "Athletic"
   },
   {
     "key": "EMPATHETIC",
@@ -117,7 +187,12 @@
     "desc_key": "trait_empathetic_description",
     "plus": false,
     "name": "Empathetic",
-    "description": "Heals are 20% more powerful (multiplicative)."
+    "description": "Heals are 20% more powerful (multiplicative).",
+    "category": "rare",
+    "upgrades_to": "EMPATHETIC_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Empathetic+",
+    "base_name": null
   },
   {
     "key": "GIFTED",
@@ -125,7 +200,12 @@
     "desc_key": "trait_gifted_description",
     "plus": false,
     "name": "Gifted",
-    "description": "Gains 2 more mana per turn."
+    "description": "Gains 2 more mana per turn.",
+    "category": "rare",
+    "upgrades_to": "GIFTED_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Gifted+",
+    "base_name": null
   },
   {
     "key": "INTIMIDATING",
@@ -133,7 +213,12 @@
     "desc_key": "trait_intimidating_description",
     "plus": false,
     "name": "Intimidating",
-    "description": "+2 threat"
+    "description": "+2 threat",
+    "category": "rare",
+    "upgrades_to": "INTIMIDATING_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Intimidating+",
+    "base_name": null
   },
   {
     "key": "FOCUSED",
@@ -141,7 +226,12 @@
     "desc_key": "trait_focused_description",
     "plus": false,
     "name": "Focused",
-    "description": "Chances to miss reduced by 25% (additive)."
+    "description": "Chances to miss reduced by 25% (additive).",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "DRAGON_BLOOD",
@@ -149,7 +239,12 @@
     "desc_key": "trait_dragon_blood_description",
     "plus": false,
     "name": "Dragon Blood",
-    "description": "Damage reduction increased by 1% per unit rank (+9% if ascended)."
+    "description": "Damage reduction increased by 1% per unit rank (+9% if ascended).",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "CURSED",
@@ -157,7 +252,12 @@
     "desc_key": "trait_cursed_description",
     "plus": false,
     "name": "Cursed",
-    "description": "Every turn, lose 2% max HP. Heal by 20% of damage dealt on hit."
+    "description": "Every turn, lose 2% max HP. Heal by 20% of damage dealt on hit.",
+    "category": "rare",
+    "upgrades_to": "CURSED_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Cursed+",
+    "base_name": null
   },
   {
     "key": "REACTIVE",
@@ -165,7 +265,12 @@
     "desc_key": "trait_reactive_description",
     "plus": false,
     "name": "Reactive",
-    "description": "10% counterattack chance when hit by melee attacks."
+    "description": "10% counterattack chance when hit by melee attacks.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "NOCTURNAL",
@@ -173,7 +278,12 @@
     "desc_key": "trait_nocturnal_description",
     "plus": false,
     "name": "Nocturnal",
-    "description": "Damage increased by [1 x Darkness]%"
+    "description": "Damage increased by [1 x Darkness]%",
+    "category": "rare",
+    "upgrades_to": "NOCTURNAL_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Nocturnal+",
+    "base_name": null
   },
   {
     "key": "MINDFUL",
@@ -181,7 +291,12 @@
     "desc_key": "trait_mindful_description",
     "plus": false,
     "name": "Mindful",
-    "description": "10% status immunity."
+    "description": "10% status immunity.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "TROLL_BLOOD",
@@ -189,7 +304,12 @@
     "desc_key": "trait_troll_blood_description",
     "plus": false,
     "name": "Troll Blood",
-    "description": "Each turn, regenerates half of unit rank as % of max HP (+4.5% if ascended)."
+    "description": "Each turn, regenerates half of unit rank as % of max HP (+4.5% if ascended).",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "NIMBLE",
@@ -197,7 +317,12 @@
     "desc_key": "trait_nimble_description",
     "plus": false,
     "name": "Nimble",
-    "description": "15% increased dodge chance (additive)"
+    "description": "15% increased dodge chance (additive)",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "RUTHLESS",
@@ -205,7 +330,12 @@
     "desc_key": "trait_ruthless_description",
     "plus": false,
     "name": "Ruthless",
-    "description": "Critical damage +20% (multiplicative)."
+    "description": "Critical damage +20% (multiplicative).",
+    "category": "rare",
+    "upgrades_to": "RUTHLESS_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Ruthless+",
+    "base_name": null
   },
   {
     "key": "BLESSED",
@@ -213,7 +343,12 @@
     "desc_key": "trait_blessed_description",
     "plus": false,
     "name": "Blessed",
-    "description": "Reduces darkness by 15."
+    "description": "Reduces darkness by 15.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "ALERT",
@@ -221,7 +356,12 @@
     "desc_key": "trait_alert_description",
     "plus": false,
     "name": "Alert",
-    "description": "Starts the fight first."
+    "description": "Starts the fight first.",
+    "category": "rare",
+    "upgrades_to": "ALERT_PLUS",
+    "upgraded_from": null,
+    "upgrade_name": "Alert+",
+    "base_name": null
   },
   {
     "key": "DEADEYE",
@@ -229,7 +369,12 @@
     "desc_key": "trait_deadeye_description",
     "plus": false,
     "name": "Deadeye",
-    "description": "Critical strike chance increased by 12%."
+    "description": "Critical strike chance increased by 12%.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "SUNDERING",
@@ -237,7 +382,12 @@
     "desc_key": "trait_sundering_description",
     "plus": false,
     "name": "Sundering",
-    "description": "Ignores 20% of target Defense and Magic Defense."
+    "description": "Ignores 20% of target Defense and Magic Defense.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "FORTIFIED",
@@ -245,7 +395,12 @@
     "desc_key": "trait_fortified_description",
     "plus": false,
     "name": "Fortified",
-    "description": "Starts every battle with a shield equal to 25% of max HP."
+    "description": "Starts every battle with a shield equal to 25% of max HP.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "RECKLESS",
@@ -253,7 +408,12 @@
     "desc_key": "trait_reckless_description",
     "plus": false,
     "name": "Reckless",
-    "description": "Deals 15% more attack damage, but takes 15% more damage."
+    "description": "Deals 15% more attack damage, but takes 15% more damage.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "LONE_WOLF",
@@ -261,7 +421,12 @@
     "desc_key": "trait_lone_wolf_description",
     "plus": false,
     "name": "Lone Wolf",
-    "description": "Gains 5% damage for each unoccupied or fallen ally slot in the area."
+    "description": "Gains 5% damage for each unoccupied or fallen ally slot in the area.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": null,
+    "upgrade_name": null,
+    "base_name": null
   },
   {
     "key": "RUTHLESS_PLUS",
@@ -269,7 +434,12 @@
     "desc_key": "trait_ruthless_plus_description",
     "plus": true,
     "name": "Ruthless+",
-    "description": "Critical damage +30% (multiplicative)."
+    "description": "Critical damage +30% (multiplicative).",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "RUTHLESS",
+    "upgrade_name": null,
+    "base_name": "Ruthless"
   },
   {
     "key": "EMPATHETIC_PLUS",
@@ -277,7 +447,12 @@
     "desc_key": "trait_empathetic_plus_description",
     "plus": true,
     "name": "Empathetic+",
-    "description": "Outgoing healing +40%."
+    "description": "Outgoing healing +40%.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "EMPATHETIC",
+    "upgrade_name": null,
+    "base_name": "Empathetic"
   },
   {
     "key": "NOCTURNAL_PLUS",
@@ -285,7 +460,12 @@
     "desc_key": "trait_nocturnal_plus_description",
     "plus": true,
     "name": "Nocturnal+",
-    "description": "Damage increased by [2 x Darkness]%."
+    "description": "Damage increased by [2 x Darkness]%.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "NOCTURNAL",
+    "upgrade_name": null,
+    "base_name": "Nocturnal"
   },
   {
     "key": "GIFTED_PLUS",
@@ -293,7 +473,12 @@
     "desc_key": "trait_gifted_plus_description",
     "plus": true,
     "name": "Gifted+",
-    "description": "MP regenerate +4."
+    "description": "MP regenerate +4.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "GIFTED",
+    "upgrade_name": null,
+    "base_name": "Gifted"
   },
   {
     "key": "INTIMIDATING_PLUS",
@@ -301,7 +486,12 @@
     "desc_key": "trait_intimidating_plus_description",
     "plus": true,
     "name": "Intimidating+",
-    "description": "+4 threat"
+    "description": "+4 threat",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "INTIMIDATING",
+    "upgrade_name": null,
+    "base_name": "Intimidating"
   },
   {
     "key": "CURSED_PLUS",
@@ -309,7 +499,12 @@
     "desc_key": "trait_cursed_plus_description",
     "plus": true,
     "name": "Cursed+",
-    "description": "-1% HP each turn. Lifesteal +30%."
+    "description": "-1% HP each turn. Lifesteal +30%.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "CURSED",
+    "upgrade_name": null,
+    "base_name": "Cursed"
   },
   {
     "key": "ALERT_PLUS",
@@ -317,6 +512,11 @@
     "desc_key": "trait_alert_plus_description",
     "plus": true,
     "name": "Alert+",
-    "description": "Starts the fight first. +20% Basic Atk Amp on first hit."
+    "description": "Starts the fight first. +20% Basic Atk Amp on first hit.",
+    "category": "rare",
+    "upgrades_to": null,
+    "upgraded_from": "ALERT",
+    "upgrade_name": null,
+    "base_name": "Alert"
   }
 ]

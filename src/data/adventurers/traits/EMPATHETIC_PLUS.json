@@ -4,5 +4,10 @@
   "desc_key": "trait_empathetic_plus_description",
   "plus": true,
   "name": "Empathetic+",
-  "description": "Outgoing healing +40%."
+  "description": "Outgoing healing +40%.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": "EMPATHETIC",
+  "upgrade_name": null,
+  "base_name": "Empathetic"
 }

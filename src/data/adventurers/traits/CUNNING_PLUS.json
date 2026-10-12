@@ -4,5 +4,10 @@
   "desc_key": "trait_cunning_plus_description",
   "plus": true,
   "name": "Cunning+",
-  "description": "Dexterity increased by 10%, intelligence increased by 10%."
+  "description": "Dexterity increased by 10%, intelligence increased by 10%.",
+  "category": "basic",
+  "upgrades_to": null,
+  "upgraded_from": "CUNNING",
+  "upgrade_name": null,
+  "base_name": "Cunning"
 }

@@ -4,5 +4,10 @@
   "desc_key": "trait_sundering_description",
   "plus": false,
   "name": "Sundering",
-  "description": "Ignores 20% of target Defense and Magic Defense."
+  "description": "Ignores 20% of target Defense and Magic Defense.",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
 }
