@@ -1,8 +1,8 @@
 {
-  "id": "DRAGON_BLOOD",
+  "key": "DRAGON_BLOOD",
+  "name_key": "trait_dragon_blood_name",
+  "desc_key": "trait_dragon_blood_description",
+  "plus": false,
   "name": "Dragon Blood",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Damage reduction increased by 1% per unit rank (+9% if ascended)."
 }

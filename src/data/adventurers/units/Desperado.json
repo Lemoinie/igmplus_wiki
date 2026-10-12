@@ -17,8 +17,8 @@
     "baseDefense": 15,
     "baseMagicDefense": 40
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Rapid Exploitation",
+  "passiveSkill": "Omniscient Eye",
   "promotesTo": [
     "ElSalvador"
   ]

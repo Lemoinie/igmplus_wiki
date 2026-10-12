@@ -4,5 +4,5 @@
   "desc_key": "active_radiant_judgment_ii_description",
   "kind": "active",
   "name": "Radiant Judgment II",
-  "description": null
+  "description": "Strike all enemies for 240% magic damage (+50% extra damage against Undead) and Silence them for 1 turn, cleanse 1 negative effect from every ally, and grant each ally a holy shield worth 15% of their Max HP.\n\nSILENCE: The unit can't gain any mana."
 }

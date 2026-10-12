@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BRIARS_BRAMBLE",
+  "name_key": "active_briars_bramble_name",
+  "desc_key": "active_briars_bramble_description",
+  "kind": "active",
+  "name": "Briar's Bramble",
+  "description": "Strikes 2 enemies for 250% damage. If target has a debuff, inflicts POISON for 1 turn and 5 THORNS.\n\nPOISON: Damage reduced by 20%.\nTHORNS: Takes damage equal to Thorn stacks as a percentage of damage dealt. Loses 1 stack each turn."
+}

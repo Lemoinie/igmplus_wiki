@@ -1,8 +1,8 @@
 {
-  "id": "CURSED",
+  "key": "CURSED",
+  "name_key": "trait_cursed_name",
+  "desc_key": "trait_cursed_description",
+  "plus": false,
   "name": "Cursed",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Every turn, lose 2% max HP. Heal by 20% of damage dealt on hit."
 }

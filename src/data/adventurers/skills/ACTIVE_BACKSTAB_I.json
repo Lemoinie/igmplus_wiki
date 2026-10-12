@@ -4,5 +4,5 @@
   "desc_key": "active_backstab_i_description",
   "kind": "active",
   "name": "Backstab",
-  "description": "\"Stabs an enemy.\nCritical hit bonus damage × 1.5\""
+  "description": "Stabs an enemy.\nCritical hit bonus damage × 1.5"
 }

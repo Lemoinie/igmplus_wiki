@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Barrage Ii",
-  "passiveSkill": "Poisonous Arrows Iii",
+  "activeSkill": "Barrage II",
+  "passiveSkill": "Poisonous Arrows III",
   "promotesTo": [
     "Blight"
   ]

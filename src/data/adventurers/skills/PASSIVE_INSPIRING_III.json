@@ -4,5 +4,5 @@
   "desc_key": "passive_inspiring_iii_description",
   "kind": "passive",
   "name": "Inspiring III",
-  "description": null
+  "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nAt the end of its turn, shields the ally with the lowest shield for 75 HP and INSPIRES them for 3 turns.\nThe amount shielded is affected by healing modifiers, and cannot exceed 20% max HP.\n\nINSPIRED: this unit deals 25% more damage."
 }

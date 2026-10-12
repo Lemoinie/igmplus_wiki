@@ -1,8 +1,8 @@
 {
-  "id": "ALERT",
+  "key": "ALERT",
+  "name_key": "trait_alert_name",
+  "desc_key": "trait_alert_description",
+  "plus": false,
   "name": "Alert",
-  "type": "unique",
-  "sprite": null,
-  "description": "Starts the fight first.",
-  "effects": []
+  "description": "Starts the fight first."
 }

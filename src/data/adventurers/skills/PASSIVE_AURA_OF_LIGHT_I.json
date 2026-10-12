@@ -4,5 +4,5 @@
   "desc_key": "passive_aura_of_light_i_description",
   "kind": "passive",
   "name": "Aura of Light I",
-  "description": null
+  "description": "Reduces darkness by 15. At the start of battle, grants all allies Radiant Blessing (+10% status immunity, +5% damage against Undead). Intercepts 10% of enemy AoE damage for same-row allies."
 }

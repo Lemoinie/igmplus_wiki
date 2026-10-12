@@ -4,5 +4,5 @@
   "desc_key": "active_obliterate_description",
   "kind": "active",
   "name": "Obliterate",
-  "description": null
+  "description": "Strikes all units for 2000% melee damage."
 }

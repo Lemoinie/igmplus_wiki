@@ -18,8 +18,8 @@
     "baseMagicDefense": 17,
     "baseLifesteal": 25
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Bloody Slaughter",
+  "passiveSkill": "Savage Rage",
   "promotesTo": [
     "CrimsonWarlord"
   ]

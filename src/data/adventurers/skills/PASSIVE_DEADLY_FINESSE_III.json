@@ -4,5 +4,5 @@
   "desc_key": "passive_deadly_finesse_iii_description",
   "kind": "passive",
   "name": "Deadly Finesse III",
-  "description": null
+  "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nOn hit, apply 60 charges of BLEED.\n+10% dodge (additive)\n+100% Attack Speed\n-50% Basic Attack Damage\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
 }

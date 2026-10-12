@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_SAVAGE_POUNCE",
+  "name_key": "active_savage_pounce_name",
+  "desc_key": "active_savage_pounce_description",
+  "kind": "active",
+  "name": "Savage Pounce",
+  "description": "Deals 250% physical damage to an enemy and STUNS it for 1 turn.\n\nSTUN: the unit skips its turn."
+}

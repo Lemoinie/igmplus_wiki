@@ -4,5 +4,5 @@
   "desc_key": "active_wrath_of_heaven_i_description",
   "kind": "active",
   "name": "Wrath of Heaven I",
-  "description": null
+  "description": "Strike all enemies for 250% magic damage (+50% extra damage against Undead) and Silence them for 1 turn, fully cleanse all allies, and grant each ally a holy shield worth 20% of their Max HP.\n\nSILENCE: The unit can't gain any mana."
 }

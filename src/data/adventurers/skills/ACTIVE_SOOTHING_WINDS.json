@@ -4,5 +4,5 @@
   "desc_key": "active_soothing_winds_description",
   "kind": "active",
   "name": "Soothing Winds",
-  "description": null
+  "description": "Enemies have a 60% probability of being stunned for 3 turns. Then, they are dealt 100% damage\n\nSTUN: the unit skips its turn."
 }

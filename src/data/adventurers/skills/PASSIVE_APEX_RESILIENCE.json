@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_APEX_RESILIENCE",
+  "name_key": "passive_apex_resilience_name",
+  "desc_key": "passive_apex_resilience_description",
+  "kind": "passive",
+  "name": "Apex Resilience",
+  "description": "Regenerates 10% Max HP each turn. Attacks have a 30% chance to Stun for 1 turn.\n\nSTUN: The unit skips its turn."
+}

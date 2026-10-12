@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WEASEL_REFLEXES",
+  "name_key": "passive_weasel_reflexes_name",
+  "desc_key": "passive_weasel_reflexes_description",
+  "kind": "passive",
+  "name": "Weasel Reflexes",
+  "description": "+40% Dodge, +40% Attack Speed."
+}

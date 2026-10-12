@@ -1,8 +1,8 @@
 {
-  "id": "RUTHLESS_PLUS",
+  "key": "RUTHLESS_PLUS",
+  "name_key": "trait_ruthless_plus_name",
+  "desc_key": "trait_ruthless_plus_description",
+  "plus": true,
   "name": "Ruthless+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Critical damage +30% (multiplicative)."
 }

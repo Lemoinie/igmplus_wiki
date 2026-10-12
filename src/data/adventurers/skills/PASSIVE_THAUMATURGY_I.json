@@ -4,5 +4,5 @@
   "desc_key": "passive_thaumaturgy_i_description",
   "kind": "passive",
   "name": "Thaumaturgy I",
-  "description": null
+  "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking an ABLAZE target triggers VAPORIZE (deals 60% INT magic burst to all enemies).\n\nOn death, POISONS every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nSTUN: the unit skips its turn"
 }

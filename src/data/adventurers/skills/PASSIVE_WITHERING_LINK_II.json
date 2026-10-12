@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WITHERING_LINK_II",
+  "name_key": "passive_withering_link_ii_name",
+  "desc_key": "passive_withering_link_ii_description",
+  "kind": "passive",
+  "name": "Withering Link II",
+  "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 35% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 6 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+}

@@ -17,8 +17,8 @@
     "baseDefense": 15,
     "baseMagicDefense": 30
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Wild Strikes IV",
+  "passiveSkill": "Perceptive Eye",
   "promotesTo": [
     "Desperado"
   ]

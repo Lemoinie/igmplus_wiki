@@ -18,8 +18,8 @@
     "baseMagicDefense": 30,
     "baseLifesteal": 50
   },
-  "activeSkill": "Curse Ii",
-  "passiveSkill": "Withering Touch",
+  "activeSkill": "Curse II",
+  "passiveSkill": "Withering Touch III",
   "promotesTo": [
     "Lich"
   ]

@@ -4,5 +4,5 @@
   "desc_key": "passive_venomous_bite_description",
   "kind": "passive",
   "name": "Venomous Bite",
-  "description": "\"Attacks from this unit inflict POISON for 10 turns.\n\nPOISON: damage reduced by 20%\""
+  "description": "Attacks from this unit inflict POISON for 10 turns.\n\nPOISON: damage reduced by 20%"
 }

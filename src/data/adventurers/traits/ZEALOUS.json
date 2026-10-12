@@ -1,8 +1,8 @@
 {
-  "id": "ZEALOUS",
+  "key": "ZEALOUS",
+  "name_key": "trait_zealous_name",
+  "desc_key": "trait_zealous_description",
+  "plus": false,
   "name": "Zealous",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Constitution increased by 5%, intelligence increased by 5%, dexterity decreased by 10%."
 }

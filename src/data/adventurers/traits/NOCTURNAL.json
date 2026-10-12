@@ -1,8 +1,8 @@
 {
-  "id": "NOCTURNAL",
+  "key": "NOCTURNAL",
+  "name_key": "trait_nocturnal_name",
+  "desc_key": "trait_nocturnal_description",
+  "plus": false,
   "name": "Nocturnal",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Damage increased by [1 x Darkness]%"
 }

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_PACK_HOWL",
+  "name_key": "active_pack_howl_name",
+  "desc_key": "active_pack_howl_description",
+  "kind": "active",
+  "name": "Pack Howl",
+  "description": "Grants all allies +20% Physical Damage and +15% Critical Chance for 2 turns, then strikes an enemy for 180% damage."
+}

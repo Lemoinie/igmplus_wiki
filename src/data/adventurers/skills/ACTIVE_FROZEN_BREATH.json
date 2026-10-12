@@ -4,5 +4,5 @@
   "desc_key": "active_frozen_breath_description",
   "kind": "active",
   "name": "Frozen Breath",
-  "description": "\"Deals 100% damage to all enemies. Then, FREEZES them for 2 turns.\n\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\""
+  "description": "Deals 100% damage to all enemies. Then, FREEZES them for 2 turns.\n\nFREEZE: This unit can't dodge and takes 10 physical damage each turn."
 }

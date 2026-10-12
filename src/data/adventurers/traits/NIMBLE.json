@@ -1,8 +1,8 @@
 {
-  "id": "NIMBLE",
+  "key": "NIMBLE",
+  "name_key": "trait_nimble_name",
+  "desc_key": "trait_nimble_description",
+  "plus": false,
   "name": "Nimble",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "15% increased dodge chance (additive)"
 }

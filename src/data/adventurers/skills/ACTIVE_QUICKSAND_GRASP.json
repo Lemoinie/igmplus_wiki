@@ -4,5 +4,5 @@
   "desc_key": "active_quicksand_grasp_description",
   "kind": "active",
   "name": "Quicksand Grasp",
-  "description": "\"Deal double damage. The target is then silenced for 4 turns\n\nSILENCE: the unit can't gain any mana.\""
+  "description": "Deal double damage. The target is then silenced for 4 turns\n\nSILENCE: the unit can't gain any mana."
 }

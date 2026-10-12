@@ -4,5 +4,5 @@
   "desc_key": "active_petrifying_melody_description",
   "kind": "active",
   "name": "Petrifying Melody",
-  "description": null
+  "description": "Plays a string of notes with his lute, dealing 100% damage and PETRIFYING an enemy for 1 turn.\nCritical hit bonus damage × 1.5.\nThis ability is always ranged.\n\nPETRIFY: This unit can't dodge, takes 15% increased damage and skips its turn."
 }

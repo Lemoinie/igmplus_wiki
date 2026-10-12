@@ -191,7 +191,7 @@
     "name_key": "enemy_archmage_of_larox_name",
     "description_key": "enemy_archmage_of_larox_description",
     "name": "Archmage of Larox",
-    "description": "\"Extremely powerful and dangerous, Archmage is the title conferred upon the brightest mages in the city. They participate in the city's Higher Council, overseeing every major development.\"",
+    "description": "Extremely powerful and dangerous, Archmage is the title conferred upon the brightest mages in the city. They participate in the city's Higher Council, overseeing every major development.",
     "stats": {
       "baseMaxHp": 770,
       "baseConstitution": 4,
@@ -712,7 +712,7 @@
     "name_key": "enemy_celestial_destroyer_name",
     "description_key": "enemy_celestial_destroyer_description",
     "name": "Celestial Destroyer",
-    "description": "\"Only a handful of these flying fortresses are sent with the first wave to limit the risks associated with their loss, but as the campaign advances they slowly cover the target world's surface to assist the ground troops in the eradication of any form of life present.\"",
+    "description": "Only a handful of these flying fortresses are sent with the first wave to limit the risks associated with their loss, but as the campaign advances they slowly cover the target world's surface to assist the ground troops in the eradication of any form of life present.",
     "stats": {
       "baseMaxHp": 4000,
       "baseConstitution": 200,
@@ -958,7 +958,7 @@
     "name_key": "enemy_claris_name",
     "description_key": "enemy_claris_description",
     "name": "Claris",
-    "description": "\"One of the three cultist rebels. An extremely powerful mage, still couldn't manage to make the Primordial corruption-proof.\"",
+    "description": "One of the three cultist rebels. An extremely powerful mage, still couldn't manage to make the Primordial corruption-proof.",
     "stats": {
       "baseMaxHp": 3200,
       "baseConstitution": 6,
@@ -1067,7 +1067,7 @@
     "name_key": "enemy_crusader_name",
     "description_key": "enemy_crusader_description",
     "name": "Crusader",
-    "description": "\"A member of one of the many crusades from the eastern cities to eradicate the evil that has been abducting their citizen. They wander the halls aimlessly, having lost their ego over time to the magical influences.\nPeople from these lands seem to naturally display psyonic capabilities, and could present a formidable menace in large numbers.\"",
+    "description": "A member of one of the many crusades from the eastern cities to eradicate the evil that has been abducting their citizen. They wander the halls aimlessly, having lost their ego over time to the magical influences.\nPeople from these lands seem to naturally display psyonic capabilities, and could present a formidable menace in large numbers.",
     "stats": {
       "baseMaxHp": 940,
       "baseConstitution": 16,
@@ -1484,7 +1484,7 @@
     "name_key": "enemy_emperor_clovis_xxviii_name",
     "description_key": "enemy_emperor_clovis_xxviii_description",
     "name": "Emperor Clovis XXVIII",
-    "description": "\"Once the most powerful man of the entire world, now twisted by corrupted rituals into a hideous mockery of his former self. He display the strength of a thousand men, and his expression, oddly enough, doesn't convey hate but only fear and confusion.\"",
+    "description": "Once the most powerful man of the entire world, now twisted by corrupted rituals into a hideous mockery of his former self. He display the strength of a thousand men, and his expression, oddly enough, doesn't convey hate but only fear and confusion.",
     "stats": {
       "baseMaxHp": 6800,
       "baseConstitution": 18,
@@ -1595,7 +1595,7 @@
     "name_key": "enemy_ethereal_soul_name",
     "description_key": "enemy_ethereal_soul_description",
     "name": "Ethereal Soul",
-    "description": "\"A fallen soldier of the Imperial Army, died during the last ditch effort of the Empire to stop the treacherous Seer.\n\nIt feels no pain, so physical damage is less effective.\"",
+    "description": "A fallen soldier of the Imperial Army, died during the last ditch effort of the Empire to stop the treacherous Seer.\n\nIt feels no pain, so physical damage is less effective.",
     "stats": {
       "baseMaxHp": 3180,
       "baseConstitution": 20,
@@ -1774,7 +1774,7 @@
     "name_key": "enemy_gcss_name",
     "description_key": "enemy_gcss_description",
     "name": "G.C.S.S.",
-    "description": "\"Gaussian Coil Security Station. Accelerates a giant metal projectile through a mysterious field, reaching incredible speeds and causing devastating damage upon impact. It's heavily armored, to sustain a prolonged assault.\"",
+    "description": "Gaussian Coil Security Station. Accelerates a giant metal projectile through a mysterious field, reaching incredible speeds and causing devastating damage upon impact. It's heavily armored, to sustain a prolonged assault.",
     "stats": {
       "baseMaxHp": 5000,
       "baseConstitution": 400,
@@ -2408,7 +2408,7 @@
     "name_key": "enemy_insane_citizen_name",
     "description_key": "enemy_insane_citizen_description",
     "name": "Insane Citizen",
-    "description": "\"A citizen of the Empire Capital, who lived among luxury and wealth, never knowing any real hardship. The eye's appearance stole their sanity, and now they wander the streets in a feral state.\"",
+    "description": "A citizen of the Empire Capital, who lived among luxury and wealth, never knowing any real hardship. The eye's appearance stole their sanity, and now they wander the streets in a feral state.",
     "stats": {
       "baseMaxHp": 200,
       "baseConstitution": 16,
@@ -2552,7 +2552,7 @@
     "sprite": "unit_kabar_the_rotten",
     "name_key": "enemy_kabar_the_rotten_name",
     "description_key": "enemy_kabar_the_rotten_description",
-    "name": "\"Ka'Bar, the Rotten\"",
+    "name": "Ka'Bar, the Rotten",
     "description": "A powerful mage devoted to the forbidden arts who successfully completed the transformation into a lich. It remained well hidden into the catacombs for centuries, taking advantages of the large number of fallen soldiers to build a huge army. It feels no pain, so physical damage is less effective.",
     "stats": {
       "baseMaxHp": 900,
@@ -2709,7 +2709,7 @@
     "name_key": "enemy_legate_hadrian_name",
     "description_key": "enemy_legate_hadrian_description",
     "name": "Legate Hadrian",
-    "description": "\"One of the Celestial Army's high generals, sworn directly to the Celestial Goddess. His body has undergone extensive modifications to create the perfect warrior, and surviving this process is an exceptional achievement on its own. He is tasked with the purification of our world, and will stop at nothing to complete it.\"",
+    "description": "One of the Celestial Army's high generals, sworn directly to the Celestial Goddess. His body has undergone extensive modifications to create the perfect warrior, and surviving this process is an exceptional achievement on its own. He is tasked with the purification of our world, and will stop at nothing to complete it.",
     "stats": {
       "baseMaxHp": 6400,
       "baseConstitution": 120,
@@ -2740,7 +2740,7 @@
     "name_key": "enemy_lesser_titan_name",
     "description_key": "enemy_lesser_titan_description",
     "name": "Lesser Titan",
-    "description": "\"The result of a botched conjuring ritual. It possesses great strength, but it's existence is suffering.\"",
+    "description": "The result of a botched conjuring ritual. It possesses great strength, but it's existence is suffering.",
     "stats": {
       "baseMaxHp": 4150,
       "baseConstitution": 40,
@@ -2998,7 +2998,7 @@
     "name_key": "enemy_necrolith_name",
     "description_key": "enemy_necrolith_description",
     "name": "Necrolith",
-    "description": "\"A colossal bone construct animated by forbidden magic. Bones are calcified together, therefore it can't move, but it's surface is harder than the hardest stone.\"",
+    "description": "A colossal bone construct animated by forbidden magic. Bones are calcified together, therefore it can't move, but it's surface is harder than the hardest stone.",
     "stats": {
       "baseMaxHp": 1000000,
       "baseConstitution": 500,
@@ -3062,7 +3062,7 @@
     "name_key": "enemy_obsidian_golem_name",
     "description_key": "enemy_obsidian_golem_description",
     "name": "Obsidian Golem",
-    "description": "\"Animated by unknown forces, this massive obsidian creature is impervious to any magic damage thanks to this element's properties. While hard to take down without a strategy, the massive size hinders it's offensive capabilities.\"",
+    "description": "Animated by unknown forces, this massive obsidian creature is impervious to any magic damage thanks to this element's properties. While hard to take down without a strategy, the massive size hinders it's offensive capabilities.",
     "stats": {
       "baseMaxHp": 1200,
       "baseConstitution": 30,
@@ -3351,7 +3351,7 @@
     "name_key": "enemy_pirate_lieutenant_name",
     "description_key": "enemy_pirate_lieutenant_description",
     "name": "Pirate Lieutenant",
-    "description": "\"Higher in the Skull Island pirate's hierarchy than the regular pirate, this seasoned lieutenant commands small crews in their plunders.\"",
+    "description": "Higher in the Skull Island pirate's hierarchy than the regular pirate, this seasoned lieutenant commands small crews in their plunders.",
     "stats": {
       "baseMaxHp": 600,
       "baseConstitution": 30,
@@ -3437,7 +3437,7 @@
     "name_key": "enemy_primordial_titan_name",
     "description_key": "enemy_primordial_titan_description",
     "name": "Primordial Titan",
-    "description": "\"An ancient construct locked in the extensive halls below the Frostbite Peaks. Possesses a strength similar to that of a god, but since the ritual for it's creation involves mortal souls he is not impervious to the effects of the corruption.\"",
+    "description": "An ancient construct locked in the extensive halls below the Frostbite Peaks. Possesses a strength similar to that of a god, but since the ritual for it's creation involves mortal souls he is not impervious to the effects of the corruption.",
     "stats": {
       "baseMaxHp": 15000,
       "baseConstitution": 200,
@@ -3557,7 +3557,7 @@
     "name_key": "enemy_sand_demon_name",
     "description_key": "enemy_sand_demon_description",
     "name": "Sand Demon",
-    "description": "\"The last resort of the Sha'huri defense system. When invaders threaten the safety of their God, the defense system draws upon all its energy to conjure these fearsome warriors, capable of defeating large armies by themselves. Due to the immense energy cost these assaults should be short timed, albeit overwhelming.\"",
+    "description": "The last resort of the Sha'huri defense system. When invaders threaten the safety of their God, the defense system draws upon all its energy to conjure these fearsome warriors, capable of defeating large armies by themselves. Due to the immense energy cost these assaults should be short timed, albeit overwhelming.",
     "stats": {
       "baseMaxHp": 950,
       "baseConstitution": 46,
@@ -3587,7 +3587,7 @@
     "name_key": "enemy_sand_statue_name",
     "description_key": "enemy_sand_statue_description",
     "name": "Sand Statue",
-    "description": "\"A sand warrior summoned by the legendary Sha'huri defense system, the last resort against external invaders to protect the core of their empire and their god. While not particularly strong by itself, they present a mortal threat by swarming the invaders in large numbers.\"",
+    "description": "A sand warrior summoned by the legendary Sha'huri defense system, the last resort against external invaders to protect the core of their empire and their god. While not particularly strong by itself, they present a mortal threat by swarming the invaders in large numbers.",
     "stats": {
       "baseMaxHp": 120,
       "baseConstitution": 12,
@@ -3699,8 +3699,8 @@
     "sprite": "unit_shahuri_archer",
     "name_key": "enemy_shahuri_archer_name",
     "description_key": "enemy_shahuri_archer_description",
-    "name": "\"Sha'huri Archer\"",
-    "description": "\"Skilled archer of the Sha'huri tribe, he offers ranged support for ground troops. They wield special bows able to disrupt enemy actions.\"",
+    "name": "Sha'huri Archer",
+    "description": "Skilled archer of the Sha'huri tribe, he offers ranged support for ground troops. They wield special bows able to disrupt enemy actions.",
     "stats": {
       "baseMaxHp": 70,
       "baseConstitution": 8,
@@ -3739,8 +3739,8 @@
     "sprite": "unit_shahuri_mage",
     "name_key": "enemy_shahuri_mage_name",
     "description_key": "enemy_shahuri_mage_description",
-    "name": "\"Sha'huri Mage\"",
-    "description": "\"Gifted with a fragment of their god's magic, they can manipulate the desert sand to encapsulate and crush their enemies.\"",
+    "name": "Sha'huri Mage",
+    "description": "Gifted with a fragment of their god's magic, they can manipulate the desert sand to encapsulate and crush their enemies.",
     "stats": {
       "baseMaxHp": 65,
       "baseConstitution": 4,
@@ -3779,8 +3779,8 @@
     "sprite": "unit_shahuri_warrior",
     "name_key": "enemy_shahuri_warrior_name",
     "description_key": "enemy_shahuri_warrior_description",
-    "name": "\"Sha'huri Warrior\"",
-    "description": "\"Fearsome warrior of the Sha'huri tribe, he executes the orders of the desert god.\"",
+    "name": "Sha'huri Warrior",
+    "description": "Fearsome warrior of the Sha'huri tribe, he executes the orders of the desert god.",
     "stats": {
       "baseMaxHp": 145,
       "baseConstitution": 12,
@@ -3819,8 +3819,8 @@
     "sprite": "unit_sha_kire_first_swordsman",
     "name_key": "enemy_sha_kire_first_swordsman_name",
     "description_key": "enemy_sha_kire_first_swordsman_description",
-    "name": "\"Sha'kire, First Swordsman\"",
-    "description": "\"The legendary Guardian of the Sha'huri God, last line of defense between the invaders and the secret of the pyramid. His strength is legendary, and is the reason why the Sha'huri God remained unseen by anyone from outside the desert for thousands of years.\"",
+    "name": "Sha'kire, First Swordsman",
+    "description": "The legendary Guardian of the Sha'huri God, last line of defense between the invaders and the secret of the pyramid. His strength is legendary, and is the reason why the Sha'huri God remained unseen by anyone from outside the desert for thousands of years.",
     "stats": {
       "baseMaxHp": 3500,
       "baseConstitution": 24,
@@ -3851,7 +3851,7 @@
     "name_key": "enemy_sha_the_hidden_god_name",
     "description_key": "enemy_sha_the_hidden_god_description",
     "name": "Sha, the Hidden God",
-    "description": "\"The immortal God of the Sha'huri, writer of the original Prophecy, enemy of the Empire and eternal Prey of the Serpent. Not even It is immune from the effects of the corruption, therefore sealed itself in the inner chamber of the great pyramid.\"",
+    "description": "The immortal God of the Sha'huri, writer of the original Prophecy, enemy of the Empire and eternal Prey of the Serpent. Not even It is immune from the effects of the corruption, therefore sealed itself in the inner chamber of the great pyramid.",
     "stats": {
       "baseMaxHp": 7777,
       "baseConstitution": 7,
@@ -3958,7 +3958,7 @@
     "name_key": "enemy_slime_king_name",
     "description_key": "enemy_slime_king_description",
     "name": "Slime King",
-    "description": "\"Several times the size of a regular slime, their sovereign maintains the order in it's kingdom. It can wipe away an unruly underling with one gaze, and inflict a terrible fate on intruders.\"",
+    "description": "Several times the size of a regular slime, their sovereign maintains the order in it's kingdom. It can wipe away an unruly underling with one gaze, and inflict a terrible fate on intruders.",
     "stats": {
       "baseMaxHp": 1000,
       "baseConstitution": 38,
@@ -4118,8 +4118,8 @@
     "sprite": "unit_tekeli_li_first_apostle",
     "name_key": "enemy_tekeli_li_first_apostle_name",
     "description_key": "enemy_tekeli_li_first_apostle_description",
-    "name": "\"Tekeli'li, First Apostle\"",
-    "description": "\"This vast, amorphous mass of organs and appendages dwells hundreds of meters beneath the Submerged Temple, orchestrating the Ritual. It is the most powerful of the Ancient's original, devoted apostles, it will stop at nothing to restore its master from its cosmic exile.\"",
+    "name": "Tekeli'li, First Apostle",
+    "description": "This vast, amorphous mass of organs and appendages dwells hundreds of meters beneath the Submerged Temple, orchestrating the Ritual. It is the most powerful of the Ancient's original, devoted apostles, it will stop at nothing to restore its master from its cosmic exile.",
     "stats": {
       "baseMaxHp": 18000,
       "baseConstitution": 165,
@@ -4205,7 +4205,7 @@
     "name_key": "enemy_the_ancient_name",
     "description_key": "enemy_the_ancient_description",
     "name": "The Ancient",
-    "description": "\"To meet it's gaze is to peer into the unfathomable void of cosmic indifference. One glimpse at its figure unravels reason like a fragile thread. The terrified adventurers, however, feel like they already met this nightmare.\"",
+    "description": "To meet it's gaze is to peer into the unfathomable void of cosmic indifference. One glimpse at its figure unravels reason like a fragile thread. The terrified adventurers, however, feel like they already met this nightmare.",
     "stats": {
       "baseMaxHp": 35000,
       "baseConstitution": 85,
@@ -4302,7 +4302,7 @@
     "name_key": "enemy_thorvus_name",
     "description_key": "enemy_thorvus_description",
     "name": "Thorvus",
-    "description": "\"One of the three cultist rebels. An extremely powerful mage, still couldn't manage to make the Primordial corruption-proof.\"",
+    "description": "One of the three cultist rebels. An extremely powerful mage, still couldn't manage to make the Primordial corruption-proof.",
     "stats": {
       "baseMaxHp": 4450,
       "baseConstitution": 14,
@@ -4438,7 +4438,7 @@
     "name_key": "enemy_troll_shaman_name",
     "description_key": "enemy_troll_shaman_description",
     "name": "Troll Shaman",
-    "description": "\"These trolls manifest some kind of healing power, different from the traditional white magic used by clerics but very effective in keeping their peers alive. Along with the troll's natural regenerative capabilities, killing a troll while they are alive is a difficult task.\"",
+    "description": "These trolls manifest some kind of healing power, different from the traditional white magic used by clerics but very effective in keeping their peers alive. Along with the troll's natural regenerative capabilities, killing a troll while they are alive is a difficult task.",
     "stats": {
       "baseMaxHp": 540,
       "baseConstitution": 10,
@@ -4494,7 +4494,7 @@
     "name_key": "enemy_troll_warrior_name",
     "description_key": "enemy_troll_warrior_description",
     "name": "Troll Warrior",
-    "description": "\"In the hierarchy of trolls, these individuals are assigned to the protection of the troll's hunting grounds from external forces. They are usually the strongest trolls of the pack, wielding a huge hammer as a weapon and striking fear into the hearts of explorers unlucky enough to have a close encounter with them\"",
+    "description": "In the hierarchy of trolls, these individuals are assigned to the protection of the troll's hunting grounds from external forces. They are usually the strongest trolls of the pack, wielding a huge hammer as a weapon and striking fear into the hearts of explorers unlucky enough to have a close encounter with them",
     "stats": {
       "baseMaxHp": 820,
       "baseConstitution": 30,
@@ -4535,7 +4535,7 @@
     "name_key": "enemy_troll_whelp_name",
     "description_key": "enemy_troll_whelp_description",
     "name": "Troll Whelp",
-    "description": "\"A young troll, not as dangerous as it's older peers, but already presents the defining features of their species, such as enhanced regeneration and a very hard skin.\"",
+    "description": "A young troll, not as dangerous as it's older peers, but already presents the defining features of their species, such as enhanced regeneration and a very hard skin.",
     "stats": {
       "baseMaxHp": 470,
       "baseConstitution": 20,
@@ -4819,7 +4819,7 @@
     "name_key": "enemy_void_slime_name",
     "description_key": "enemy_void_slime_description",
     "name": "Void Slime",
-    "description": "\"A very unusual slime, with the texture of a starry night. It corrodes every surface in its trail, suggesting a conflict between its matter composition and the surrounding world's one.\"",
+    "description": "A very unusual slime, with the texture of a starry night. It corrodes every surface in its trail, suggesting a conflict between its matter composition and the surrounding world's one.",
     "stats": {
       "baseMaxHp": 100,
       "baseConstitution": 40,
@@ -4894,7 +4894,7 @@
     "sprite": "unit_will_o_wisp",
     "name_key": "enemy_will_o_wisp_name",
     "description_key": "enemy_will_o_wisp_description",
-    "name": "\"Will o' Wisp\"",
+    "name": "Will o' Wisp",
     "description": "This incorporeal spirit is rarely spotted in large battlefields or cemeteries. There were never reports of them being aggressive towards the living. Completely ignores physical damage.",
     "stats": {
       "baseMaxHp": 90,

@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Brutal Strikes",
+  "passiveSkill": "Savage Rage",
   "promotesTo": [
     "SavageBerserker"
   ]

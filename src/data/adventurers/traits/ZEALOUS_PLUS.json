@@ -1,8 +1,8 @@
 {
-  "id": "ZEALOUS_PLUS",
+  "key": "ZEALOUS_PLUS",
+  "name_key": "trait_zealous_plus_name",
+  "desc_key": "trait_zealous_plus_description",
+  "plus": true,
   "name": "Zealous+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Constitution increased by 10%, intelligence increased by 10%."
 }

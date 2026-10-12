@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FRENZIED_REND",
+  "name_key": "active_frenzied_rend_name",
+  "desc_key": "active_frenzied_rend_description",
+  "kind": "active",
+  "name": "Frenzied Rend",
+  "description": "Deals 200% physical damage to 3 enemies and inflicts BLEED 20 on them.\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+}

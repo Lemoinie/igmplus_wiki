@@ -4,5 +4,5 @@
   "desc_key": "active_sandstorm_description",
   "kind": "active",
   "name": "Sandstorm",
-  "description": null
+  "description": "Enemies have 80% chance of being SILENCED for 5 turns. Then, they are dealt 50% damage\n\nSILENCE: the unit can't gain any mana"
 }

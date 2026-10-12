@@ -17,7 +17,7 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Barrage Ii",
+  "activeSkill": "Barrage II",
   "passiveSkill": "Keen Vision",
   "promotesTo": [
     "Sureshot",

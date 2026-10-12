@@ -1,8 +1,8 @@
 {
-  "id": "ATHLETIC_PLUS",
+  "key": "ATHLETIC_PLUS",
+  "name_key": "trait_athletic_plus_name",
+  "desc_key": "trait_athletic_plus_description",
+  "plus": true,
   "name": "Athletic+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Constitution increased by 10%, dexterity increased by 10%."
 }

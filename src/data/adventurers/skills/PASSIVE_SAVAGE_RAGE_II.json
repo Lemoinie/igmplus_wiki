@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SAVAGE_RAGE_II",
+  "name_key": "passive_savage_rage_ii_name",
+  "desc_key": "passive_savage_rage_ii_description",
+  "kind": "passive",
+  "name": "Savage Rage II",
+  "description": "If HP is below 75%, gains RAGE, +100% Attack Speed, +25% Lifesteal.\n\nRAGE: +30% Damage Dealt, +30% Damage Taken."
+}

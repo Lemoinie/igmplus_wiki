@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WITHERING_TOUCH_II",
+  "name_key": "passive_withering_touch_ii_name",
+  "desc_key": "passive_withering_touch_ii_description",
+  "kind": "passive",
+  "name": "Withering Touch II",
+  "description": "Dealing damage heals the unit for half the amount. Redirects 20% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 1 stack.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+}

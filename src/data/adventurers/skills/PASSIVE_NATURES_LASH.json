@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NATURES_LASH",
+  "name_key": "passive_natures_lash_name",
+  "desc_key": "passive_natures_lash_description",
+  "kind": "passive",
+  "name": "Nature's Lash",
+  "description": "Attacks have a 45% chance to ENTANGLE for 2 turns and a 45% chance to inflict 25 BLEED.\n\nENTANGLE: Cannot dodge, -20% Damage Dealt, takes 2% Max HP damage each turn.\nBLEED: The target receives 1 damage at the start of its turn for every charge, then removes one charge."
+}

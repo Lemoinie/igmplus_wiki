@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SWARM_FEROCITY",
+  "name_key": "passive_swarm_ferocity_name",
+  "desc_key": "passive_swarm_ferocity_description",
+  "kind": "passive",
+  "name": "Swarm Ferocity",
+  "description": "+10% Lifesteal."
+}

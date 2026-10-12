@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_CAT_CALLER",
+  "name_key": "passive_cat_caller_name",
+  "desc_key": "passive_cat_caller_description",
+  "kind": "passive",
+  "name": "Cat Caller",
+  "description": "At turn end, summons a Cat companion (max 4)."
+}

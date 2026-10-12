@@ -4,5 +4,5 @@
   "desc_key": "passive_static_affinity_description",
   "kind": "passive",
   "name": "Static Affinity",
-  "description": "\"Attacks from this enemy STUN for 3 turns.\n\nSTUN: the unit skips its turn.\""
+  "description": "Attacks from this enemy STUN for 3 turns.\n\nSTUN: the unit skips its turn."
 }

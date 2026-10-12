@@ -4,5 +4,5 @@
   "desc_key": "active_curse_i_description",
   "kind": "active",
   "name": "Curse",
-  "description": null
+  "description": "Bursts an enemy for 300% damage and inflicts LESSER CURSE on them. If there's no summon on the field, summon one.\n\nLESSER CURSE: When the unit dies, a Zombie spawns and fights for the summoner's team. It suffers a 20% max HP decay per turn."
 }

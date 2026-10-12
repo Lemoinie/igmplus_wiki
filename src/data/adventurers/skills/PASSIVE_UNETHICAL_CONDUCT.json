@@ -4,5 +4,5 @@
   "desc_key": "passive_unethical_conduct_description",
   "kind": "passive",
   "name": "Unethical Conduct",
-  "description": null
+  "description": "80% immunity to status effects.\nPOISON damage reduction +30% (additive).\nAttacks heal the ally with the lowest health for 50% damage, and cleanse every negative status effect."
 }

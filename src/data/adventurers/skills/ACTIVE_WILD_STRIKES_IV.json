@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_WILD_STRIKES_IV",
+  "name_key": "active_wild_strikes_iv_name",
+  "desc_key": "active_wild_strikes_iv_description",
+  "kind": "active",
+  "name": "Wild Strikes IV",
+  "description": "Strikes an enemy for 250% damage, with a 50% chance to strike again."
+}

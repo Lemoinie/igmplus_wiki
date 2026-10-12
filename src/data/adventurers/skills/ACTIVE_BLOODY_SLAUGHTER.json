@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BLOODY_SLAUGHTER",
+  "name_key": "active_bloody_slaughter_name",
+  "desc_key": "active_bloody_slaughter_description",
+  "kind": "active",
+  "name": "Bloody Slaughter",
+  "description": "Strikes an enemy for 225% damage (85% / 60% / 35% follow-up chances). 2x Crit Damage bonus. Recasts on kill."
+}

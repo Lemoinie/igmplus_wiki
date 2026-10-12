@@ -1,8 +1,8 @@
 {
-  "id": "RECKLESS",
+  "key": "RECKLESS",
+  "name_key": "trait_reckless_name",
+  "desc_key": "trait_reckless_description",
+  "plus": false,
   "name": "Reckless",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Deals 15% more attack damage, but takes 15% more damage."
 }

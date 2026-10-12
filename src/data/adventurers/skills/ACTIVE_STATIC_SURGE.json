@@ -4,5 +4,5 @@
   "desc_key": "active_static_surge_description",
   "kind": "active",
   "name": "Static Surge",
-  "description": null
+  "description": "Deals 250% damage to all enemies. Then, they have 50% chance of being stunned for one turn\n\nSTUN: the unit skips its turn."
 }

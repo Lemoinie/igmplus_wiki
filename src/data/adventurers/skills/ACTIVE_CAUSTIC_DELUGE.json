@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_CAUSTIC_DELUGE",
+  "name_key": "active_caustic_deluge_name",
+  "desc_key": "active_caustic_deluge_description",
+  "kind": "active",
+  "name": "Caustic Deluge",
+  "description": "Deals 220% magic damage to 3 enemies and POISONS them for 3 turns.\n\nPOISON: damage reduced by 20%"
+}

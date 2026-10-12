@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FOCUSED_EYE",
+  "name_key": "passive_focused_eye_name",
+  "desc_key": "passive_focused_eye_description",
+  "kind": "passive",
+  "name": "Focused Eye",
+  "description": "Attacking has a 15% chance to gain EVASION for 1 turn. 20% chance to counterattack melee hits.\n\nEVASION: +25% Dodge chance."
+}

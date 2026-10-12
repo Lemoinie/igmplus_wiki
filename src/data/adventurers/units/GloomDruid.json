@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Nature's Grasp II",
+  "passiveSkill": "Nature's Lash",
   "promotesTo": [
     "Hemodruid"
   ]

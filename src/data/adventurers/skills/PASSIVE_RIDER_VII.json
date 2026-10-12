@@ -4,5 +4,5 @@
   "desc_key": "passive_rider_vii_description",
   "kind": "passive",
   "name": "Rider VII",
-  "description": "Every time this unit acts, the mount performs a ranged attack for 100 physical damage"
+  "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount tears the attacked enemy from a distance for 120% Dexterity + 120% Intelligence physical damage and inflicts BLEED 30\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
 }

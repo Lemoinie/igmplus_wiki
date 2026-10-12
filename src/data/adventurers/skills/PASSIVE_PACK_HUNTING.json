@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PACK_HUNTING",
+  "name_key": "passive_pack_hunting_name",
+  "desc_key": "passive_pack_hunting_description",
+  "kind": "passive",
+  "name": "Pack Hunting",
+  "description": "+10% Damage per living Wolf on field. Attacks inflict 10 BLEED on hit.\n\nBLEED: The target receives 1 damage at the start of its turn for every charge, then removes one charge."
+}

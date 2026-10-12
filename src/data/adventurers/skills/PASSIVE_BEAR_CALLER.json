@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BEAR_CALLER",
+  "name_key": "passive_bear_caller_name",
+  "desc_key": "passive_bear_caller_description",
+  "kind": "passive",
+  "name": "Bear Caller",
+  "description": "At turn end, summons a Bear (max 1) that taunts and shields.\nWild Strikes II heals the pet for 100% of damage dealt."
+}

@@ -4,5 +4,5 @@
   "desc_key": "passive_flying_description",
   "kind": "passive",
   "name": "Flying",
-  "description": "\"Can't be hit by melee attacks or abilities.\""
+  "description": "Can't be hit by melee attacks or abilities."
 }

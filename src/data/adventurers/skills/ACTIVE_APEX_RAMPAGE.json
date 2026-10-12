@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_APEX_RAMPAGE",
+  "name_key": "active_apex_rampage_name",
+  "desc_key": "active_apex_rampage_description",
+  "kind": "active",
+  "name": "Apex Rampage",
+  "description": "Taunts all enemies for 2 turns, gains a 50% Max HP Shield, and deals 250% damage to front enemies with 25 BLEED and 25% chance to Stun for 1 turn.\n\nBLEED: The target receives 1 damage at the start of its turn for every charge, then removes one charge.\nSTUN: The unit skips its turn."
+}

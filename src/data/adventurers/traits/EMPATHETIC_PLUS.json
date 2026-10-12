@@ -1,8 +1,8 @@
 {
-  "id": "EMPATHETIC_PLUS",
+  "key": "EMPATHETIC_PLUS",
+  "name_key": "trait_empathetic_plus_name",
+  "desc_key": "trait_empathetic_plus_description",
+  "plus": true,
   "name": "Empathetic+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Outgoing healing +40%."
 }

@@ -1,8 +1,8 @@
 {
-  "id": "CUNNING_PLUS",
+  "key": "CUNNING_PLUS",
+  "name_key": "trait_cunning_plus_name",
+  "desc_key": "trait_cunning_plus_description",
+  "plus": true,
   "name": "Cunning+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Dexterity increased by 10%, intelligence increased by 10%."
 }

@@ -4,5 +4,5 @@
   "desc_key": "passive_aether_resonance_i_description",
   "kind": "passive",
   "name": "Aether Resonance I",
-  "description": null
+  "description": "Increases Skill Amplification by 10% and ignores 10% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
 }

@@ -18,8 +18,8 @@
     "baseMagicDefense": 15,
     "baseLifesteal": 25
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Brutal Strikes II",
+  "passiveSkill": "Savage Rage",
   "promotesTo": [
     "BloodReaver"
   ]

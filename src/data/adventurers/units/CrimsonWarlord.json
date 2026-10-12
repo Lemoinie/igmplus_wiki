@@ -18,8 +18,8 @@
     "baseMagicDefense": 20,
     "baseLifesteal": 25
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Bloody Slaughter",
+  "passiveSkill": "Savage Rage II",
   "promotesTo": [
     "AvatarOfWrath"
   ]

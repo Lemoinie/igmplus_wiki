@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_PREDATORY_AMBUSH",
+  "name_key": "active_predatory_ambush_name",
+  "desc_key": "active_predatory_ambush_description",
+  "kind": "active",
+  "name": "Predatory Ambush",
+  "description": "Strikes an enemy for 300% damage with 3x Crit Damage bonus."
+}

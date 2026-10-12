@@ -4,5 +4,5 @@
   "desc_key": "passive_behemoth_description",
   "kind": "passive",
   "name": "Behemoth",
-  "description": "\"Immunity to STUN and PETRIFY. When it spawns the ground above collapses, swallowing anyone that doesn't get out of the way enough quickly.\""
+  "description": "Immunity to STUN and PETRIFY. When it spawns the ground above collapses, swallowing anyone that doesn't get out of the way enough quickly."
 }

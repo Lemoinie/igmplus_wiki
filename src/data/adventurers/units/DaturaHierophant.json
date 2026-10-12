@@ -17,7 +17,7 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Briar's Bramble",
+  "passiveSkill": "Nature's Wrath",
   "promotesTo": []
 }

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BRUTAL_STRIKES_II",
+  "name_key": "active_brutal_strikes_ii_name",
+  "desc_key": "active_brutal_strikes_ii_description",
+  "kind": "active",
+  "name": "Brutal Strikes II",
+  "description": "Strikes an enemy for 225% damage (75% / 50% / 25% follow-up chances)."
+}

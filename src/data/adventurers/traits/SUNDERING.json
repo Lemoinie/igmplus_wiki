@@ -1,8 +1,8 @@
 {
-  "id": "SUNDERING",
+  "key": "SUNDERING",
+  "name_key": "trait_sundering_name",
+  "desc_key": "trait_sundering_description",
+  "plus": false,
   "name": "Sundering",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Ignores 20% of target Defense and Magic Defense."
 }

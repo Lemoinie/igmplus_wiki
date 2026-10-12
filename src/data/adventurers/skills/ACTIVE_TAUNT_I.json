@@ -4,5 +4,5 @@
   "desc_key": "active_taunt_i_description",
   "kind": "active",
   "name": "Taunt",
-  "description": "\"TAUNTS an enemy for 2 turns, then strikes it for 200% damage.\n\nTAUNT: the taunting unit is always chosen as target\""
+  "description": "TAUNTS an enemy for 2 turns, then strikes it for 200% damage.\n\nTAUNT: the taunting unit is always chosen as target"
 }

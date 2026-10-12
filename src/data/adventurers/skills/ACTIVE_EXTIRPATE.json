@@ -4,5 +4,5 @@
   "desc_key": "active_extirpate_description",
   "kind": "active",
   "name": "Extirpate",
-  "description": null
+  "description": "Strikes all units for 3000% melee damage."
 }

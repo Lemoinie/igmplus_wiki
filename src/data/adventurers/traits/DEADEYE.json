@@ -1,8 +1,8 @@
 {
-  "id": "DEADEYE",
+  "key": "DEADEYE",
+  "name_key": "trait_deadeye_name",
+  "desc_key": "trait_deadeye_description",
+  "plus": false,
   "name": "Deadeye",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Critical strike chance increased by 12%."
 }

@@ -4,5 +4,5 @@
   "desc_key": "active_fire_burst_description",
   "kind": "active",
   "name": "Fire Burst",
-  "description": null
+  "description": "Bursts an enemy for 200% damage and sets it ABLAZE for one turn.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn"
 }

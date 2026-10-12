@@ -4,5 +4,5 @@
   "desc_key": "active_disintegrate_ii_description",
   "kind": "active",
   "name": "Disintegrate II",
-  "description": null
+  "description": "Strike one enemy for 2000% magic damage. Has a 25% chance to immediately recast."
 }

@@ -4,5 +4,5 @@
   "desc_key": "active_instill_terror_description",
   "kind": "active",
   "name": "Instill Terror",
-  "description": "\"Bends the minds of all enemies, having a chance to STUN them equal to the amount of darkness. Then, deals 15% magic damage to them.\nSTUN: the unit skips its turn\""
+  "description": "Bends the minds of all enemies, having a chance to STUN them equal to the amount of darkness. Then, deals 15% magic damage to them.\nSTUN: the unit skips its turn"
 }

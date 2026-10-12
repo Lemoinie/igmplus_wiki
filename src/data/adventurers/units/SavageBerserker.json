@@ -18,8 +18,8 @@
     "baseMagicDefense": 10,
     "baseLifesteal": 25
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Brutal Strikes",
+  "passiveSkill": "Savage Rage",
   "promotesTo": [
     "ScarletBerserker"
   ]

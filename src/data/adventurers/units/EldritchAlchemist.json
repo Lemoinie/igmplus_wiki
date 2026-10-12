@@ -17,7 +17,7 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Barrage Ii",
-  "passiveSkill": "Thaumaturgy Iv",
+  "activeSkill": "Catalytic Barrage",
+  "passiveSkill": "Thaumaturgy IV",
   "promotesTo": []
 }

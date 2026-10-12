@@ -4,5 +4,5 @@
   "desc_key": "active_curse_iv_description",
   "kind": "active",
   "name": "Curse IV",
-  "description": null
+  "description": "Bursts an enemy for 375% damage and inflicts OMINOUS CURSE on them. If there's no summon on the field, summon one.\n\nOMINOUS CURSE: When the unit dies, a Bone Nightmare spawns and fights for the summoner's team. It suffers a 14% max HP decay per turn, is three times as likely to be chosen as target and has a 35% counterattack chance."
 }

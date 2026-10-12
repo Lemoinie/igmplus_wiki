@@ -67,7 +67,7 @@
     "negative": true,
     "serialized": true,
     "name": "Bloodflame",
-    "description": "cursed and rotten by bloodflame"
+    "description": "burning with bloodflame"
   },
   {
     "key": "POISON",
@@ -262,22 +262,22 @@
   {
     "key": "RADIANT_BLESSING",
     "name_key": "status_effect_radiant_blessing",
-    "desc_key": "status_effect_radiant_blessing_description",
+    "desc_key": "status_effect_radiant_blessing_log_description",
     "sprite": "icon_effect_radiant_blessing",
     "negative": false,
     "serialized": false,
     "name": "Radiant Blessing",
-    "description": "Blessed by the aura of light: bonus status immunity, bonus damage against Undead, flat damage reduction, and HP regeneration."
+    "description": "radiantly blessed"
   },
   {
     "key": "SOLAR_REBIRTH",
     "name_key": "status_effect_solar_rebirth",
-    "desc_key": "status_effect_solar_rebirth_description",
+    "desc_key": "status_effect_solar_rebirth_log_description",
     "sprite": "icon_effect_solar_rebirth",
     "negative": false,
     "serialized": false,
     "name": "Solar Rebirth",
-    "description": "Wrapped in Phoenix solar flames: survives one lethal hit at 1 HP."
+    "description": "protected by Solar Rebirth"
   },
   {
     "key": "SANGUINE_FERVOR",
@@ -292,31 +292,111 @@
   {
     "key": "SINISTER_CURSE",
     "name_key": "status_effect_sinister_curse_name",
-    "desc_key": "status_effect_sinister_curse_description",
+    "desc_key": "status_effect_sinister_curse_log_description",
     "sprite": "icon_effect_sinister_curse",
     "negative": true,
     "serialized": false,
     "name": "Sinister Curse",
-    "description": "A malign crimson curse. Increases damage taken by 50%. If the afflicted dies while cursed, their soul is reaped into an enemy Bone Nightmare."
+    "description": "afflicted by Sinister Curse"
   },
   {
     "key": "ENTANGLE",
     "name_key": "status_effect_entangle",
-    "desc_key": "status_effect_entangle_description",
+    "desc_key": "status_effect_entangle_log_description",
     "sprite": "icon_effect_entangle",
     "negative": true,
     "serialized": true,
     "name": "Entangle",
-    "description": null
+    "description": "entangled"
   },
   {
     "key": "SOUL_HARVEST",
     "name_key": "status_effect_soul_harvest_name",
-    "desc_key": "status_effect_soul_harvest_description",
+    "desc_key": "status_effect_soul_harvest_log_description",
     "sprite": "icon_effect_soul_harvest",
     "negative": false,
     "serialized": false,
     "name": "Soul Harvest",
-    "description": "Empowered by harvested souls: +15% Max HP, +10% Damage Dealt, -5% Damage Taken per stack."
+    "description": "empowered by Soul Harvest"
+  },
+  {
+    "key": "BRITTLE_TOXIN",
+    "name_key": "status_effect_brittle_toxin_name",
+    "desc_key": "status_effect_brittle_toxin_log_description",
+    "sprite": "icon_effect_brittle_toxin",
+    "negative": true,
+    "serialized": true,
+    "name": "Brittle Toxin",
+    "description": "afflicted with Brittle Toxin"
+  },
+  {
+    "key": "CORROSION",
+    "name_key": "status_effect_corrosion_name",
+    "desc_key": "status_effect_corrosion_log_description",
+    "sprite": "icon_effect_corrosion",
+    "negative": true,
+    "serialized": true,
+    "name": "Corrosion",
+    "description": "corroded"
+  },
+  {
+    "key": "ENFEEBLE",
+    "name_key": "status_effect_enfeeble_name",
+    "desc_key": "status_effect_enfeeble_log_description",
+    "sprite": "icon_effect_enfeeble",
+    "negative": true,
+    "serialized": true,
+    "name": "Enfeeble",
+    "description": "enfeebled"
+  },
+  {
+    "key": "MENACE_SHRED",
+    "name_key": "status_effect_menace",
+    "desc_key": "status_effect_menace_log_description",
+    "sprite": "icon_effect_terrify",
+    "negative": true,
+    "serialized": false,
+    "name": "Menace",
+    "description": "menaced"
+  },
+  {
+    "key": "GUARD_FORTIFIED",
+    "name_key": "status_effect_guard",
+    "desc_key": "status_effect_guard_log_description",
+    "sprite": "icon_effect_defensive_stance",
+    "negative": false,
+    "serialized": false,
+    "name": "Guard",
+    "description": "fortified by Guard"
+  },
+  {
+    "key": "RAGE",
+    "name_key": "status_effect_rage",
+    "desc_key": "status_effect_rage_description",
+    "sprite": "icon_effect_rage",
+    "negative": false,
+    "serialized": false,
+    "name": "Rage",
+    "description": "Damage dealt increased by 30%, but takes 30% extra damage."
+  },
+  {
+    "key": "THORNS",
+    "name_key": "status_effect_thorns",
+    "desc_key": "status_effect_thorns_log_description",
+    "sprite": "icon_effect_thorns",
+    "negative": true,
+    "serialized": true,
+    "name": "Thorns",
+    "description": "thorns"
+  },
+  {
+    "key": "EVASION",
+    "name_key": "status_effect_evasion",
+    "desc_key": "status_effect_evasion_log_description",
+    "sprite": "icon_effect_evasion",
+    "negative": false,
+    "serialized": true,
+    "name": "Evasion",
+    "description": "evasive"
   }
 ]

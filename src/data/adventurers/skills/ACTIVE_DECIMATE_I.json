@@ -4,5 +4,5 @@
   "desc_key": "active_decimate_i_description",
   "kind": "active",
   "name": "Decimate",
-  "description": null
+  "description": "Strikes all enemies for 300% damage. Then, each has 70% chance of being STUNNED and BLOODFLAMED for 1 turn.\n\nBLOODFLAME: burns for 5% max HP each turn (magic damage) and prevents all healing.\nSTUN: the unit skips its turn."
 }

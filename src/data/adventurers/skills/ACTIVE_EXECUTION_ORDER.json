@@ -4,5 +4,5 @@
   "desc_key": "active_execution_order_description",
   "kind": "active",
   "name": "Execution Order",
-  "description": null
+  "description": "Strikes the weakest adventurer for 100% damage. Targets below 50% HP are executed on the spot."
 }

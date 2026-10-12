@@ -4,5 +4,5 @@
   "desc_key": "active_mass_heal_iii_description",
   "kind": "active",
   "name": "Mass Heal III",
-  "description": null
+  "description": "Heals every ally for 115% damage, then grants them REGENERATION for 3 turns\n\nREGENERATION: when its turn starts, the unit heals for 6% of its max HP"
 }

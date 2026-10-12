@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_NATURES_HAND",
+  "name_key": "passive_natures_hand_name",
+  "desc_key": "passive_natures_hand_description",
+  "kind": "passive",
+  "name": "Nature's Hand",
+  "description": "Attacks have a 75% chance to ENTANGLE for 2 turns.\n\nENTANGLE: Cannot dodge, -20% Damage Dealt, takes 2% Max HP damage each turn."
+}

@@ -4,5 +4,5 @@
   "desc_key": "active_incinerate_ii_description",
   "kind": "active",
   "name": "Incinerate II",
-  "description": null
+  "description": "Sets all enemies ABLAZE for 2 turns and deals 300% magic damage to them.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn"
 }

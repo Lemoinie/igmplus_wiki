@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Barrage Ii",
-  "passiveSkill": "Thaumaturgy Ii",
+  "activeSkill": "Barrage II",
+  "passiveSkill": "Thaumaturgy II",
   "promotesTo": [
     "EsotericAlchemist"
   ]

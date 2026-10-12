@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_NATURES_GRASP_III",
+  "name_key": "active_natures_grasp_iii_name",
+  "desc_key": "active_natures_grasp_iii_description",
+  "kind": "active",
+  "name": "Nature's Grasp III",
+  "description": "Strikes 2 enemies for 250% damage. Inflicts POISON for 1 turn if target has a debuff.\n\nPOISON: Damage reduced by 20%."
+}

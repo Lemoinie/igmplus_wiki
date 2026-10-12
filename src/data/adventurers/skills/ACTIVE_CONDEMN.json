@@ -4,5 +4,5 @@
   "desc_key": "active_condemn_description",
   "kind": "active",
   "name": "Condemn",
-  "description": "\"SILENCE an enemy for 1 turn, then strikes it for 250% damage.\n\nSILENCE: the unit can't gain any mana\""
+  "description": "SILENCE an enemy for 1 turn, then strikes it for 250% damage.\n\nSILENCE: the unit can't gain any mana"
 }

@@ -123,6 +123,9 @@
   "animated_sword": [
     "item:AnimatedSword"
   ],
+  "apex_claws": [
+    "item:ApexClaws"
+  ],
   "apple": [
     "item:Apple"
   ],
@@ -269,6 +272,9 @@
   ],
   "bat_wing": [
     "item:BatWing"
+  ],
+  "bear_hide": [
+    "item:BearHide"
   ],
   "beast_pelt": [
     "item:BeastPelt"
@@ -1173,6 +1179,12 @@
   "icon_effect_bloodflame": [
     "status_effect:BLOODFLAME"
   ],
+  "icon_effect_brittle_toxin": [
+    "status_effect:BRITTLE_TOXIN"
+  ],
+  "icon_effect_corrosion": [
+    "status_effect:CORROSION"
+  ],
   "icon_effect_curse": [
     "status_effect:LESSER_CURSE",
     "status_effect:CURSE",
@@ -1181,13 +1193,20 @@
     "status_effect:ABHORRENT_CURSE"
   ],
   "icon_effect_defensive_stance": [
-    "status_effect:DEFENSIVE_STANCE"
+    "status_effect:DEFENSIVE_STANCE",
+    "status_effect:GUARD_FORTIFIED"
   ],
   "icon_effect_delirium": [
     "status_effect:DELIRIUM"
   ],
+  "icon_effect_enfeeble": [
+    "status_effect:ENFEEBLE"
+  ],
   "icon_effect_entangle": [
     "status_effect:ENTANGLE"
+  ],
+  "icon_effect_evasion": [
+    "status_effect:EVASION"
   ],
   "icon_effect_exalt": [
     "status_effect:EXALT"
@@ -1212,6 +1231,9 @@
   ],
   "icon_effect_radiant_blessing": [
     "status_effect:RADIANT_BLESSING"
+  ],
+  "icon_effect_rage": [
+    "status_effect:RAGE"
   ],
   "icon_effect_regeneration": [
     "status_effect:REGENERATION"
@@ -1239,7 +1261,11 @@
     "status_effect:TAUNT"
   ],
   "icon_effect_terrify": [
-    "status_effect:TERRIFY"
+    "status_effect:TERRIFY",
+    "status_effect:MENACE_SHRED"
+  ],
+  "icon_effect_thorns": [
+    "status_effect:THORNS"
   ],
   "ignition_orb": [
     "item:IgnitionOrb"
@@ -1639,6 +1665,9 @@
   "potion_of_viciousness": [
     "item:PotionOfViciousness"
   ],
+  "predator_fangs": [
+    "item:PredatorFangs"
+  ],
   "prehistoric_mixture": [
     "item:PrehistoricMixture"
   ],
@@ -1650,6 +1679,9 @@
   ],
   "primeval_helm": [
     "item:PrimevalHelm"
+  ],
+  "primeval_hide": [
+    "item:PrimevalHide"
   ],
   "primeval_scale": [
     "item:PrimevalScale"
@@ -2132,6 +2164,12 @@
   "thaumaturgic_blood": [
     "item:ThaumaturgicBlood"
   ],
+  "thick_fur": [
+    "item:ThickFur"
+  ],
+  "tiger_jaws": [
+    "item:TigerJaws"
+  ],
   "tiramisu": [
     "item:Tiramisu"
   ],
@@ -2234,9 +2272,6 @@
   ],
   "unit_aether_mage": [
     "unit:AetherMage"
-  ],
-  "unit_albino_rat": [
-    "unit:AlbinoRat"
   ],
   "unit_alchemist": [
     "unit:Alchemist"
@@ -2782,9 +2817,6 @@
   "unit_radiant_elder": [
     "unit:RadiantElder"
   ],
-  "unit_rat": [
-    "unit:Rat"
-  ],
   "unit_rat_tamer": [
     "unit:RatTamer"
   ],
@@ -2911,28 +2943,46 @@
   "unit_stone_shaman": [
     "enemy:StoneShaman"
   ],
+  "unit_summon_albino_rat": [
+    "unit:AlbinoRat"
+  ],
+  "unit_summon_alpha_owlbear": [
+    "unit:AlphaOwlbear"
+  ],
+  "unit_summon_arctic_weasel": [
+    "unit:ArcticWeasel"
+  ],
   "unit_summon_bear": [
-    "unit:PolarBear",
     "unit:SummonBear"
   ],
   "unit_summon_cat": [
-    "unit:SnowCat",
     "unit:SummonCat"
   ],
+  "unit_summon_dire_wolf": [
+    "unit:DireWolf"
+  ],
   "unit_summon_owlbear": [
-    "unit:AlphaOwlbear",
     "unit:SummonOwlbear"
   ],
+  "unit_summon_polar_bear": [
+    "unit:PolarBear"
+  ],
+  "unit_summon_rat": [
+    "unit:Rat"
+  ],
+  "unit_summon_snow_cat": [
+    "unit:SnowCat"
+  ],
   "unit_summon_tiger": [
-    "unit:SummonTiger",
-    "unit:WhiteTiger"
+    "unit:SummonTiger"
   ],
   "unit_summon_weasel": [
-    "unit:ArcticWeasel",
     "unit:SummonWeasel"
   ],
+  "unit_summon_white_tiger": [
+    "unit:WhiteTiger"
+  ],
   "unit_summon_wolf": [
-    "unit:DireWolf",
     "unit:SummonWolf"
   ],
   "unit_sureshot": [
@@ -3114,6 +3164,9 @@
   "upgrade_workshop_time": [
     "item:UpgradeWorkshopTime"
   ],
+  "ursine_paw": [
+    "item:UrsinePaw"
+  ],
   "vampire_axe": [
     "item:VampireAxe"
   ],
@@ -3228,6 +3281,12 @@
   ],
   "winterwood_staff": [
     "item:WinterwoodStaff"
+  ],
+  "wolf_jaws": [
+    "item:WolfJaws"
+  ],
+  "wolf_pelt": [
+    "item:WolfPelt"
   ],
   "wood": [
     "item:Wood"

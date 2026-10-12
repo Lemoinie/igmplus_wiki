@@ -1,8 +1,8 @@
 {
-  "id": "GIFTED_PLUS",
+  "key": "GIFTED_PLUS",
+  "name_key": "trait_gifted_plus_name",
+  "desc_key": "trait_gifted_plus_description",
+  "plus": true,
   "name": "Gifted+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "MP regenerate +4."
 }

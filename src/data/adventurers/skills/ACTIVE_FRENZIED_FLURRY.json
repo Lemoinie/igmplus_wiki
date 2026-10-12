@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FRENZIED_FLURRY",
+  "name_key": "active_frenzied_flurry_name",
+  "desc_key": "active_frenzied_flurry_description",
+  "kind": "active",
+  "name": "Frenzied Flurry",
+  "description": "Unleashes 3 strikes for 70% damage each with independent proc chances."
+}

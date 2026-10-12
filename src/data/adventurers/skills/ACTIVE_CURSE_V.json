@@ -4,5 +4,5 @@
   "desc_key": "active_curse_v_description",
   "kind": "active",
   "name": "Curse V",
-  "description": null
+  "description": "Bursts an enemy for 400% damage and inflicts ABHORRENT CURSE on them. If there's no summon on the field, summon one.\n\nABHORRENT CURSE: When the unit dies, a Bone Hydra spawns and fights for the summoner's team. It suffers a 10% max HP decay per turn, is three times as likely to be chosen as target, has a 35% counterattack chance and deals 50 physical retaliation damages to melee attackers."
 }

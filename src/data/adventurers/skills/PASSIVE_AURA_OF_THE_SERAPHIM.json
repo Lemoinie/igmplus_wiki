@@ -4,5 +4,5 @@
   "desc_key": "passive_aura_of_the_seraphim_description",
   "kind": "passive",
   "name": "Aura of the Seraphim",
-  "description": null
+  "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+50% status immunity, +30% damage against Undead, +15 flat damage reduction, +5% HP regeneration per turn). Each turn, cleanses 1 negative effect from every ally. Basic attacks heal the ally with the lowest HP for 50% of the damage dealt (overhealing becomes a holy shield). Intercepts 35% of enemy AoE damage for same-row allies."
 }

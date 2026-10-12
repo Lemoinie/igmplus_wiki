@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_WEASEL_CALLER",
+  "name_key": "passive_weasel_caller_name",
+  "desc_key": "passive_weasel_caller_description",
+  "kind": "passive",
+  "name": "Weasel Caller",
+  "description": "At turn end, summons a Weasel companion (max 4)."
+}

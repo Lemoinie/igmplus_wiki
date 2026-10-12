@@ -1,8 +1,8 @@
 {
-  "id": "EMPATHETIC",
+  "key": "EMPATHETIC",
+  "name_key": "trait_empathetic_name",
+  "desc_key": "trait_empathetic_description",
+  "plus": false,
   "name": "Empathetic",
-  "type": "unique",
-  "sprite": null,
-  "description": "Heals are 20% more powerful (multiplicative).",
-  "effects": []
+  "description": "Heals are 20% more powerful (multiplicative)."
 }

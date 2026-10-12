@@ -4,5 +4,5 @@
   "desc_key": "passive_despise_weakness_description",
   "kind": "passive",
   "name": "Despise Weakness",
-  "description": "\"Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 10% (additive)\nAttacks target the lowest health enemy.\""
+  "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 10% (additive)\nAttacks target the lowest health enemy."
 }

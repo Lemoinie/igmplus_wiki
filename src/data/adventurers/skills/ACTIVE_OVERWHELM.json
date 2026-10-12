@@ -4,5 +4,5 @@
   "desc_key": "active_overwhelm_description",
   "kind": "active",
   "name": "Overwhelm",
-  "description": null
+  "description": "Strikes an enemy for 300% damage. Then, it has 70% chance of being STUNNED.\n\nSTUN: the unit skips its turn."
 }

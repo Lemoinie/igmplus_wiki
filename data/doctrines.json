@@ -66,7 +66,7 @@
     "description_short_key": "doctrine_fortitude_description_short",
     "sprite": "doctrine_of_fortitude",
     "name": "Doctrine of Fortitude",
-    "description": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
+    "description": null,
     "description_short": "Damage resistance, protecting allies, retaliation.",
     "abilities": [
       "IMPROVED_HEALTH",
@@ -126,7 +126,7 @@
     "description_short_key": "doctrine_illusion_description_short",
     "sprite": "doctrine_of_illusion",
     "name": "Doctrine of Illusion",
-    "description": "\"Adherents of the Doctrine of Illusion devote themselves to mastering the art of deception. They see reality as malleable, shaped not by truth but by perception. To them, control over one's subjective judgment is the key to true power.\"",
+    "description": "Adherents of the Doctrine of Illusion devote themselves to mastering the art of deception. They see reality as malleable, shaped not by truth but by perception. To them, control over one's subjective judgment is the key to true power.",
     "description_short": "Dodging, redirecting attacks, cheating.",
     "abilities": [
       "IMPROVED_DEXTERITY",
@@ -217,7 +217,7 @@
     "description_short_key": "doctrine_war_description_short",
     "sprite": "doctrine_of_war",
     "name": "Doctrine of War",
-    "description": "\"Adherents of the Doctrine of War revere conflict as the ultimate crucible for growth and dominance. They dedicate their lives to mastering the art of combat, honing their bodies into lethal weapons. For them, battle is not just a means to an end but a sacred pursuit where strength, strategy, and unrelenting willpower define one's worth.\"",
+    "description": "Adherents of the Doctrine of War revere conflict as the ultimate crucible for growth and dominance. They dedicate their lives to mastering the art of combat, honing their bodies into lethal weapons. For them, battle is not just a means to an end but a sacred pursuit where strength, strategy, and unrelenting willpower define one's worth.",
     "description_short": "Dueling, weapon expertise.",
     "abilities": [
       "IMPROVED_CONSTITUTION",
@@ -247,8 +247,8 @@
     "description_short_key": "doctrine_empty_description",
     "sprite": "sign_plus_white",
     "name": "EmptyDoctrine",
-    "description": null,
-    "description_short": null,
+    "description": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
+    "description_short": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
     "abilities": [],
     "effects": {
       "bonusQuestPoints": "0",

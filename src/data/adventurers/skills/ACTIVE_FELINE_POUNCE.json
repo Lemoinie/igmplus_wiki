@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_FELINE_POUNCE",
+  "name_key": "active_feline_pounce_name",
+  "desc_key": "active_feline_pounce_description",
+  "kind": "active",
+  "name": "Feline Pounce",
+  "description": "Strikes an enemy for 175% damage (guaranteed Crit). Gains +25% Dodge for 1 turn."
+}

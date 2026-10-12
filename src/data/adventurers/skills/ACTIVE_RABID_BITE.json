@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_RABID_BITE",
+  "name_key": "active_rabid_bite_name",
+  "desc_key": "active_rabid_bite_description",
+  "kind": "active",
+  "name": "Rabid Bite",
+  "description": "Strikes an enemy for 140% damage and 10 BLEED. If target is bleeding, heals for 50% of damage dealt.\n\nBLEED: The target receives 1 damage at the start of its turn for every charge, then removes one charge."
+}

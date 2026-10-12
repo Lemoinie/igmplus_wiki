@@ -4,5 +4,5 @@
   "desc_key": "active_devour_spirit_description",
   "kind": "active",
   "name": "Devour Spirit",
-  "description": null
+  "description": "Deals 20% damage to all enemies, then TERRIFIES them for 1 turn.\n\nTERRIFY: The unit skips its turn and takes 20% max hp as magic damage."
 }

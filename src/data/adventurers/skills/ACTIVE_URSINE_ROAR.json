@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_URSINE_ROAR",
+  "name_key": "active_ursine_roar_name",
+  "desc_key": "active_ursine_roar_description",
+  "kind": "active",
+  "name": "Ursine Roar",
+  "description": "Taunts all enemies for 2 turns, gains a 40% Max HP Shield, and strikes the front enemy for 180% damage (30% chance to Stun for 1 turn).\n\nSTUN: The unit skips its turn."
+}

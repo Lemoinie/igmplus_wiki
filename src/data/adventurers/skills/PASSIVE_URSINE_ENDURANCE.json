@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_URSINE_ENDURANCE",
+  "name_key": "passive_ursine_endurance_name",
+  "desc_key": "passive_ursine_endurance_description",
+  "kind": "passive",
+  "name": "Ursine Endurance",
+  "description": "Regenerates 5% Max HP each turn. Attacks have a 20% chance to Stun for 1 turn.\n\nSTUN: The unit skips its turn."
+}

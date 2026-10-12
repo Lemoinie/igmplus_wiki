@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_OMNISCIENT_EYE",
+  "name_key": "passive_omniscient_eye_name",
+  "desc_key": "passive_omniscient_eye_description",
+  "kind": "passive",
+  "name": "Omniscient Eye",
+  "description": "Attacks never miss. 40% chance to gain EVASION (2 turns) on attack, 50% chance to counterattack melee hits. On enemy kill, strikes a random enemy and gains EVASION.\n\nEVASION: +25% Dodge chance."
+}

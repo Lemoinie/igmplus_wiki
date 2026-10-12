@@ -4,5 +4,5 @@
   "desc_key": "passive_aura_of_devotion_i_description",
   "kind": "passive",
   "name": "Aura of Devotion I",
-  "description": null
+  "description": "Reduces darkness by 35. At the start of battle, grants all allies Radiant Blessing (+20% status immunity, +15% damage against Undead, +5 flat damage reduction). Basic attacks heal the ally with the lowest HP for 30% of the damage dealt. Intercepts 20% of enemy AoE damage for same-row allies."
 }

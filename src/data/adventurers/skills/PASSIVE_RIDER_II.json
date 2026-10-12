@@ -4,5 +4,5 @@
   "desc_key": "passive_rider_ii_description",
   "kind": "passive",
   "name": "Rider II",
-  "description": "Every time this unit acts, the wolf bites an enemy for 40 physical damage"
+  "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the wolf bites the attacked enemy for 60% Dexterity physical damage and inflicts BLEED 10\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
 }

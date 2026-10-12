@@ -4,5 +4,5 @@
   "desc_key": "passive_aether_resonance_iv_description",
   "kind": "passive",
   "name": "Aether Resonance IV",
-  "description": null
+  "description": "Increases Skill Amplification by 40% and ignores 40% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
 }

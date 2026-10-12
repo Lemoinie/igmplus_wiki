@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Incinerate Ii",
-  "passiveSkill": "Rider Vi",
+  "activeSkill": "Incinerate II",
+  "passiveSkill": "Rider VI",
   "promotesTo": [
     "WyrmRider"
   ]

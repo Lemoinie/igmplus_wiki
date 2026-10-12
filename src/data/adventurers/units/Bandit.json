@@ -17,8 +17,8 @@
     "baseDefense": 15,
     "baseMagicDefense": 15
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Wild Strikes III",
+  "passiveSkill": "Perceptive Eye",
   "promotesTo": [
     "Vagabond"
   ]

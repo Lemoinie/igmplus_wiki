@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Barrage Iii",
-  "passiveSkill": "Poisonous Arrows Iii",
+  "activeSkill": "Barrage III",
+  "passiveSkill": "Poisonous Arrows III",
   "promotesTo": [
     "Wraith"
   ]

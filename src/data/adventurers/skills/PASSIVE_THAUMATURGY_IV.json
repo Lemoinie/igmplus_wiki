@@ -4,5 +4,5 @@
   "desc_key": "passive_thaumaturgy_iv_description",
   "kind": "passive",
   "name": "Thaumaturgy IV",
-  "description": null
+  "description": "Chances to miss reduced by 25%.\nAttacks POISON the target for 2 turns. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 120% INT magic burst to all enemies.\n• POISON -> BRITTLE TOXIN: +20% damage taken for 2 turns.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +150% physical + 150% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns. Then, she is allowed by an ancient power to cast Catalytic Barrage one last time for 10× damage.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
 }

@@ -4,5 +4,5 @@
   "desc_key": "active_condemn_all_i_description",
   "kind": "active",
   "name": "Condemn All",
-  "description": "\"SILENCE all enemies for 1 turn, then strikes them for 250% damage.\n\nSILENCE: the unit can't gain any mana\""
+  "description": "SILENCE all enemies for 1 turn, then strikes them for 250% damage.\n\nSILENCE: the unit can't gain any mana"
 }

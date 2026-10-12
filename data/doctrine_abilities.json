@@ -205,7 +205,7 @@
     "max_level": 2,
     "row": 2,
     "name": "Chilling Flow",
-    "description": "\"%s FREEZE for 1 turn on hit.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\""
+    "description": "%s FREEZE for 1 turn on hit.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn."
   },
   {
     "key": "MIND_BENDER",
@@ -231,7 +231,7 @@
     "max_level": 2,
     "row": 3,
     "name": "Star Gaze",
-    "description": "\"%s PETRIFY for 1 turn on hit.\nPETRIFY: This unit can't dodge, takes 15%% increased damage and skips its turn.\""
+    "description": "%s PETRIFY for 1 turn on hit.\nPETRIFY: This unit can't dodge, takes 15%% increased damage and skips its turn."
   },
   {
     "key": "ARCANE_SUPPRESSION",
@@ -270,7 +270,7 @@
     "max_level": 2,
     "row": 2,
     "name": "Tactical Knowledge",
-    "description": "\"Ignores %s of target's Defense and Magic Defense.\""
+    "description": "Ignores %s of target's Defense and Magic Defense."
   },
   {
     "key": "RELENTLESS_ASSAULT",
@@ -360,7 +360,7 @@
     "format_mode": 1,
     "max_level": 5,
     "row": 2,
-    "name": "\"Troll's Resistance\"",
+    "name": "Troll's Resistance",
     "description": "Increase Defense by %s."
   },
   {
@@ -373,7 +373,7 @@
     "format_mode": 1,
     "max_level": 5,
     "row": 2,
-    "name": "\"Warlock's Resilience\"",
+    "name": "Warlock's Resilience",
     "description": "Increase Magic Defense by %s."
   },
   {
@@ -530,7 +530,7 @@
     "max_level": 3,
     "row": 3,
     "name": "Bloodletting",
-    "description": "Basic attacks consume %s of Max HP (non-lethal), inflicting Bleed equal to the HP consumed."
+    "description": "Basic attacks consume %s of Max HP (non-lethal), inflicting Bleed equal to the HP consumed.\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
   },
   {
     "key": "TITANS_MIGHT",
@@ -543,7 +543,7 @@
     "max_level": 1,
     "row": 3,
     "name": "Titans Might",
-    "description": null
+    "description": "Converts 50% of Constitution into bonus Physical Damage."
   },
   {
     "key": "EVASIVE_RIPOSTE",

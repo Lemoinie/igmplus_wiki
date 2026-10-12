@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_FELINE_AGILITY",
+  "name_key": "passive_feline_agility_name",
+  "desc_key": "passive_feline_agility_description",
+  "kind": "passive",
+  "name": "Feline Agility",
+  "description": "+25% Dodge, +25% Attack Speed."
+}

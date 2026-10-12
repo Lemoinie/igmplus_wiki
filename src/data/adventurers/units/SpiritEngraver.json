@@ -16,8 +16,8 @@
     "baseDefense": 32,
     "baseMagicDefense": 38
   },
-  "activeSkill": "Ethereal Carve",
-  "passiveSkill": "Spirit Inscription",
+  "activeSkill": "Thousand Cuts II",
+  "passiveSkill": "Deadly Finesse III",
   "promotesFrom": [
     "HellishSculptor"
   ],

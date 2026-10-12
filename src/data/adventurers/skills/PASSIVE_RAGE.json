@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RAGE",
+  "name_key": "passive_rage_name",
+  "desc_key": "passive_rage_description",
+  "kind": "passive",
+  "name": "Rage",
+  "description": "If HP is below 50%, gains +50% Attack Speed."
+}

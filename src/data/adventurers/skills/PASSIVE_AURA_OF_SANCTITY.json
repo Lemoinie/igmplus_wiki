@@ -4,5 +4,5 @@
   "desc_key": "passive_aura_of_sanctity_description",
   "kind": "passive",
   "name": "Aura of Sanctity",
-  "description": null
+  "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+40% status immunity, +25% damage against Undead, +10 flat damage reduction, +3% HP regeneration per turn). Each turn, cleanses 1 negative effect from the most debuffed ally. Basic attacks heal the ally with the lowest HP for 40% of the damage dealt. Intercepts 30% of enemy AoE damage for same-row allies."
 }

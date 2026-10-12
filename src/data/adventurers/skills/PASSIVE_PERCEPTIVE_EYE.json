@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_PERCEPTIVE_EYE",
+  "name_key": "passive_perceptive_eye_name",
+  "desc_key": "passive_perceptive_eye_description",
+  "kind": "passive",
+  "name": "Perceptive Eye",
+  "description": "Attacks never miss. 25% chance to gain EVASION on attack, 35% chance to counterattack melee hits, and strikes a random enemy on enemy kill.\n\nEVASION: +25% Dodge chance."
+}

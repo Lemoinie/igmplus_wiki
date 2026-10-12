@@ -4,5 +4,5 @@
   "desc_key": "active_live_test_description",
   "kind": "active",
   "name": "Live Test",
-  "description": null
+  "description": "POISONS every enemy for 3 turns, then deals 5% damage to them.\n\nPOISON: damage reduced by 20%"
 }

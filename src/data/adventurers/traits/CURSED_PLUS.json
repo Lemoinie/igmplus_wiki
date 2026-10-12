@@ -1,8 +1,8 @@
 {
-  "id": "CURSED_PLUS",
+  "key": "CURSED_PLUS",
+  "name_key": "trait_cursed_plus_name",
+  "desc_key": "trait_cursed_plus_description",
+  "plus": true,
   "name": "Cursed+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "-1% HP each turn. Lifesteal +30%."
 }

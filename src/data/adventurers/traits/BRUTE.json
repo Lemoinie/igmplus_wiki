@@ -1,8 +1,8 @@
 {
-  "id": "BRUTE",
+  "key": "BRUTE",
+  "name_key": "trait_brute_name",
+  "desc_key": "trait_brute_description",
+  "plus": false,
   "name": "Brute",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Constitution increased by 10%, dexterity decreased by 5%, intelligence decreased by 5%."
 }

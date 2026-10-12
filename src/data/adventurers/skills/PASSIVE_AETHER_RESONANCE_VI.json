@@ -4,5 +4,5 @@
   "desc_key": "passive_aether_resonance_vi_description",
   "kind": "passive",
   "name": "Aether Resonance VI",
-  "description": null
+  "description": "Increases Skill Amplification by 60% and ignores 60% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
 }

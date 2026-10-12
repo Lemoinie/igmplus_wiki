@@ -4,5 +4,5 @@
   "desc_key": "active_disassemble_description",
   "kind": "active",
   "name": "Disassemble",
-  "description": "\"TAUNTS all enemies for 5 turns. Then, they are dealt 10% damage\n\nTAUNT: the taunting unit is always chosen as target\""
+  "description": "TAUNTS all enemies for 5 turns. Then, they are dealt 10% damage\n\nTAUNT: the taunting unit is always chosen as target"
 }

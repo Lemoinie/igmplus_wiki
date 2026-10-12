@@ -4,5 +4,5 @@
   "desc_key": "active_annihilate_description",
   "kind": "active",
   "name": "Annihilate",
-  "description": null
+  "description": "Strikes all units for 1000% melee damage."
 }

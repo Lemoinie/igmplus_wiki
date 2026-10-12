@@ -1,8 +1,8 @@
 {
-  "id": "TROLL_BLOOD",
+  "key": "TROLL_BLOOD",
+  "name_key": "trait_troll_blood_name",
+  "desc_key": "trait_troll_blood_description",
+  "plus": false,
   "name": "Troll Blood",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Each turn, regenerates half of unit rank as % of max HP (+4.5% if ascended)."
 }

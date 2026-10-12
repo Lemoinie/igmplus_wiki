@@ -4,5 +4,5 @@
   "desc_key": "passive_teratogen_description",
   "kind": "passive",
   "name": "Teratogen",
-  "description": "\"Attacks heal the lowest health ally, and grants ANOINTED for 5 turns.\nANOINTED: This unit deals 25% increased damage.\""
+  "description": "Attacks heal the lowest health ally, and grants ANOINTED for 5 turns.\nANOINTED: This unit deals 25% increased damage."
 }

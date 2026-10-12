@@ -1,8 +1,8 @@
 {
-  "id": "INTIMIDATING",
+  "key": "INTIMIDATING",
+  "name_key": "trait_intimidating_name",
+  "desc_key": "trait_intimidating_description",
+  "plus": false,
   "name": "Intimidating",
-  "type": "unique",
-  "sprite": null,
-  "description": "+2 threat",
-  "effects": []
+  "description": "+2 threat"
 }

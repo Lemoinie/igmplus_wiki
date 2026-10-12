@@ -1,8 +1,8 @@
 {
-  "id": "ATHLETIC",
+  "key": "ATHLETIC",
+  "name_key": "trait_athletic_name",
+  "desc_key": "trait_athletic_description",
+  "plus": false,
   "name": "Athletic",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Constitution increased by 5%, dexterity increased by 5%, intelligence decreased by 10%."
 }

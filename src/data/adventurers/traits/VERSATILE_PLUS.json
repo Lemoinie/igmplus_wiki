@@ -1,8 +1,8 @@
 {
-  "id": "VERSATILE_PLUS",
+  "key": "VERSATILE_PLUS",
+  "name_key": "trait_versatile_plus_name",
+  "desc_key": "trait_versatile_plus_description",
+  "plus": true,
   "name": "Versatile+",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "All stats increased by 7%."
 }

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_AMBUSH_PREDATOR",
+  "name_key": "passive_ambush_predator_name",
+  "desc_key": "passive_ambush_predator_description",
+  "kind": "passive",
+  "name": "Ambush Predator",
+  "description": "Acts first in combat and starts with 100 Mana. 3x Crit Damage bonus."
+}

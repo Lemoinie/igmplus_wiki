@@ -4,5 +4,5 @@
   "desc_key": "active_en_garde_description",
   "kind": "active",
   "name": "En Garde",
-  "description": "\"Gains DEFENSIVE STANCE, then strikes an enemy for 200% damage.\n\nDEFENSIVE STANCE: the next time the unit would receive damage, it takes none and this effect is removed\""
+  "description": "Gains DEFENSIVE STANCE, then strikes an enemy for 200% damage.\n\nDEFENSIVE STANCE: the next time the unit would receive damage, it takes none and this effect is removed"
 }

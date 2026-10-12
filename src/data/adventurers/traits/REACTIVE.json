@@ -1,8 +1,8 @@
 {
-  "id": "REACTIVE",
+  "key": "REACTIVE",
+  "name_key": "trait_reactive_name",
+  "desc_key": "trait_reactive_description",
+  "plus": false,
   "name": "Reactive",
-  "type": "unique",
-  "sprite": null,
-  "description": "10% counterattack chance when hit by melee attacks.",
-  "effects": []
+  "description": "10% counterattack chance when hit by melee attacks."
 }

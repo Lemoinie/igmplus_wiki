@@ -1,8 +1,8 @@
 {
-  "id": "FOCUSED",
+  "key": "FOCUSED",
+  "name_key": "trait_focused_name",
+  "desc_key": "trait_focused_description",
+  "plus": false,
   "name": "Focused",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Chances to miss reduced by 25% (additive)."
 }

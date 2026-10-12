@@ -17,7 +17,7 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "None",
+  "activeSkill": "Wild Strikes",
   "passiveSkill": "None",
   "promotesTo": [
     "Marauder",

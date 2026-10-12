@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_RAT_CALLER",
+  "name_key": "passive_rat_caller_name",
+  "desc_key": "passive_rat_caller_description",
+  "kind": "passive",
+  "name": "Rat Caller",
+  "description": "At turn end, summons a Rat companion (max 4)."
+}

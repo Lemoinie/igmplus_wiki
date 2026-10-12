@@ -1,8 +1,8 @@
 {
-  "id": "FORTIFIED",
+  "key": "FORTIFIED",
+  "name_key": "trait_fortified_name",
+  "desc_key": "trait_fortified_description",
+  "plus": false,
   "name": "Fortified",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Starts every battle with a shield equal to 25% of max HP."
 }

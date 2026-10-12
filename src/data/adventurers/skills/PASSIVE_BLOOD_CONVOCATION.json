@@ -4,5 +4,5 @@
   "desc_key": "passive_blood_convocation_description",
   "kind": "passive",
   "name": "Blood Convocation",
-  "description": null
+  "description": "Whenever the Archmagus takes damage, there is a 36% chance to summon a minion (60% Bloodstone Colossus, 40% Crimson Acolyte) while the formation has room."
 }

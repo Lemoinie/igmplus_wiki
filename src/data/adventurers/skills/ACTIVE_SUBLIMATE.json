@@ -4,5 +4,5 @@
   "desc_key": "active_sublimate_description",
   "kind": "active",
   "name": "Sublimate",
-  "description": null
+  "description": "Sets all enemies ABLAZE for 2 turns and deals 200% magic damage to them. Then, deals 200% magic damage to all enemies and FREEZES them for 2 turns.\n\nABLAZE: takes 5% max hp as magic damage at the start of its turn.\nFREEZE: This unit can't dodge and takes 10 physical damage each turn."
 }

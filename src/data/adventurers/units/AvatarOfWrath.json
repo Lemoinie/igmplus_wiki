@@ -18,7 +18,7 @@
     "baseMagicDefense": 25,
     "baseLifesteal": 25
   },
-  "activeSkill": "None",
-  "passiveSkill": "None",
+  "activeSkill": "Blessing of Slaughter",
+  "passiveSkill": "Savage Rage II",
   "promotesTo": []
 }

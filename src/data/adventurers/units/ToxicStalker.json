@@ -17,8 +17,8 @@
     "baseDefense": 10,
     "baseMagicDefense": 10
   },
-  "activeSkill": "Barrage Ii",
-  "passiveSkill": "Poisonous Arrows Ii",
+  "activeSkill": "Barrage II",
+  "passiveSkill": "Poisonous Arrows II",
   "promotesTo": [
     "PlagueSpreader",
     "Alchemist"

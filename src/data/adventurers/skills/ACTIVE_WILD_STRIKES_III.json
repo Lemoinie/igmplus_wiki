@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_WILD_STRIKES_III",
+  "name_key": "active_wild_strikes_iii_name",
+  "desc_key": "active_wild_strikes_iii_description",
+  "kind": "active",
+  "name": "Wild Strikes III",
+  "description": "Strikes an enemy for 200% damage, with a 50% chance to strike again."
+}

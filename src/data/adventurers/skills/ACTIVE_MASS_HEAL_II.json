@@ -4,5 +4,5 @@
   "desc_key": "active_mass_heal_ii_description",
   "kind": "active",
   "name": "Mass Heal II",
-  "description": null
+  "description": "Heals every ally for 100% damage, then grants them REGENERATION for 2 turns\n\nREGENERATION: when its turn starts, the unit heals for 6% of its max HP"
 }

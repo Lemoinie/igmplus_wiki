@@ -4,5 +4,5 @@
   "desc_key": "active_holy_smite_i_description",
   "kind": "active",
   "name": "Holy Smite I",
-  "description": null
+  "description": "Strike one enemy for 200% physical damage, then heal the ally with the lowest HP for 50% of the damage dealt."
 }

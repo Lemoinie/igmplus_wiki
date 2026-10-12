@@ -1,8 +1,8 @@
 {
-  "id": "BOOKWORM",
+  "key": "BOOKWORM",
+  "name_key": "trait_bookworm_name",
+  "desc_key": "trait_bookworm_description",
+  "plus": false,
   "name": "Bookworm",
-  "type": "unique",
-  "sprite": null,
-  "description": null,
-  "effects": []
+  "description": "Intelligence increased by 10%, constitution decreased by 5%, dexterity decreased by 5%."
 }

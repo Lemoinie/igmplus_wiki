@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_CATALYTIC_BARRAGE",
+  "name_key": "active_catalytic_barrage_name",
+  "desc_key": "active_catalytic_barrage_description",
+  "kind": "active",
+  "name": "Catalytic Barrage",
+  "description": "Fires 3 alchemical arrows at random enemies, triggering passive Chemical Reactions on afflicted targets. Immediately follows with a Grand Detonation that unconditionally strikes all enemies with Vaporize, Brittle Toxin, and Thermal Shock."
+}

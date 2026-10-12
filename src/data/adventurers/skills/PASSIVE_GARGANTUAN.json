@@ -4,5 +4,5 @@
   "desc_key": "passive_gargantuan_description",
   "kind": "passive",
   "name": "Gargantuan",
-  "description": "\"STUNS 4 turns on hit.\nSTUN: the unit skips its turn\""
+  "description": "STUNS 4 turns on hit.\nSTUN: the unit skips its turn"
 }

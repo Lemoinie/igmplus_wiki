@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BLESSING_OF_SLAUGHTER",
+  "name_key": "active_blessing_of_slaughter_name",
+  "desc_key": "active_blessing_of_slaughter_description",
+  "kind": "active",
+  "name": "Blessing of Slaughter",
+  "description": "Grants all allies RAGE for 3 turns, then strikes an enemy for 250% damage (85% / 60% / 35% follow-up chances). 2x Crit Damage bonus. Recasts on kill.\n\nRAGE: +30% Damage Dealt, +30% Damage Taken."
+}

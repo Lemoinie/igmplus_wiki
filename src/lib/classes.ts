@@ -29,20 +29,51 @@ export function getRelations(id: string, all: ClassDefinition[]) {
   };
 }
 
-const norm = (s: string) => s.toLowerCase().replace(/ i$/, '').trim();
+const norm = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').replace(/ i$/, '').replace(/s$/, '').trim();
 
 /**
- * Looks up a skill from adventurers/skills/*.json by the display name used in class definitions.
- * Tolerates casing ("Threatening Ii") and the unnumbered tier I ("Threatening I" -> "Threatening").
+ * Looks up a skill from adventurers/skills/*.json by display name or enum key.
+ * Tolerates casing ("Threatening Ii"), unnumbered tier I ("Threatening I" -> "Threatening"),
+ * and raw enum identifiers ("ACTIVE_RAPID_EXPLOITATION").
  */
 export function findSkill(name?: string) {
   if (!name || name === 'None') return null;
-  const key = norm(name);
+  const trimmed = name.trim();
+  const lower = trimmed.toLowerCase();
+  const key = norm(trimmed);
   const skillsData = getAllSkills();
-  const hit = skillsData.find((s: any) => norm(s.name) === key);
-  if (!hit) return { name, description: '' };
+
+  // 1. Exact match on name or key
+  let hit = skillsData.find(
+    (s: any) =>
+      s.name?.toLowerCase() === lower ||
+      s.key?.toLowerCase() === lower
+  );
+
+  // 2. Normalized match (handles unnumbered Tier 1, e.g. "Threatening I" -> "Threatening", or "Threatening" -> "Threatening I")
+  if (!hit) {
+    hit = skillsData.find(
+      (s: any) =>
+        norm(s.name ?? '') === key ||
+        norm(s.key ?? '') === key
+    );
+  }
+
+  // 3. Fallback matching with ACTIVE_ / PASSIVE_ key prefixes
+  if (!hit) {
+    const underscored = lower.replace(/[\s-]+/g, '_');
+    const activeKey = 'active_' + underscored;
+    const passiveKey = 'passive_' + underscored;
+    hit = skillsData.find(
+      (s: any) =>
+        s.key?.toLowerCase() === activeKey ||
+        s.key?.toLowerCase() === passiveKey
+    );
+  }
+
+  if (!hit) return { name: trimmed, description: '' };
   return {
-    name: hit.name as string,
-    description: String(hit.description ?? '').replace(/^"|"$/g, ''),
+    name: (hit.name as string) || trimmed,
+    description: String(hit.description ?? '').replace(/^"|"$/g, '').trim(),
   };
 }

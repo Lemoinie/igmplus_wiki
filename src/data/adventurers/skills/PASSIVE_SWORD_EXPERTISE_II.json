@@ -4,5 +4,5 @@
   "desc_key": "passive_sword_expertise_ii_description",
   "kind": "passive",
   "name": "Sword Expertise II",
-  "description": null
+  "description": "This unit has a 3× chance of being targeted by enemies.\nEvery time this unit is hit by an attack, it has a 30% chance of gaining Defensive Stance. If the attack was melee, it has a 60% chance of striking back with a basic attack.\n\nDEFENSIVE STANCE: the next time the unit would receive damage, it takes none and this effect is removed."
 }

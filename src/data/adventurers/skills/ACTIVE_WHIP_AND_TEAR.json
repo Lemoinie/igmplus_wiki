@@ -4,5 +4,5 @@
   "desc_key": "active_whip_and_tear_description",
   "kind": "active",
   "name": "Whip and Tear",
-  "description": null
+  "description": "Strikes all units for 3000% melee damage. Then, whips a surviving enemy for 3000% ranged damage."
 }

@@ -18,8 +18,8 @@
     "baseMagicDefense": 30,
     "baseLifesteal": 50
   },
-  "activeSkill": "Curse I",
-  "passiveSkill": "Withering Touch",
+  "activeSkill": "Curse",
+  "passiveSkill": "Withering Touch II",
   "promotesTo": [
     "Demilich",
     "Unchained"

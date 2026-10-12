@@ -89,26 +89,27 @@
     {
       "key": "AlbinoRat",
       "parent": "Adventurer",
-      "sprite": "unit_albino_rat",
+      "sprite": "unit_summon_albino_rat",
       "name_key": "adventurer_albino_rat_name",
       "description_key": "adventurer_albino_rat_description",
       "name": "Albino Rat",
       "description": "A rare white rodent bearing uncanny ferocity and hardened resilience.",
       "stats": {
         "maxLevel": 15,
-        "baseMaxHp": 15,
-        "baseConstitution": 6,
+        "baseMaxHp": 25,
+        "baseConstitution": 8,
         "baseIntelligence": 6,
-        "baseDexterity": 6,
+        "baseDexterity": 10,
         "baseDefense": 1,
-        "baseMagicDefense": 1
+        "baseMagicDefense": 1,
+        "baseLifesteal": 15
       },
       "max_level": 15,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_RABID_BITE",
+      "passive_skill": "PASSIVE_SWARM_FEROCITY",
       "next_classes": [],
       "tier": 1
     },
@@ -143,26 +144,26 @@
     {
       "key": "AlphaOwlbear",
       "parent": "Adventurer",
-      "sprite": "unit_summon_owlbear",
+      "sprite": "unit_summon_alpha_owlbear",
       "name_key": "adventurer_alpha_owlbear_name",
       "description_key": "adventurer_alpha_owlbear_description",
       "name": "Alpha Owlbear",
       "description": "The undisputed apex monstrosity of the primeval woods, leading great beasts into battle.",
       "stats": {
         "maxLevel": 45,
-        "baseMaxHp": 220,
-        "baseConstitution": 36,
+        "baseMaxHp": 450,
+        "baseConstitution": 90,
         "baseIntelligence": 15,
-        "baseDexterity": 24,
-        "baseDefense": 22,
-        "baseMagicDefense": 18
+        "baseDexterity": 35,
+        "baseDefense": 55,
+        "baseMagicDefense": 35
       },
       "max_level": 45,
       "weapon_type": "type_sword",
-      "armor_type": "type_armor_light",
+      "armor_type": "type_armor_heavy",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_APEX_RAMPAGE",
+      "passive_skill": "PASSIVE_APEX_RESILIENCE",
       "next_classes": [],
       "tier": 1
     },
@@ -257,7 +258,7 @@
       "name_key": "adventurer_apprentice_name",
       "description_key": "adventurer_apprentice_description",
       "name": "Apprentice",
-      "description": "\"Untrained in the art of combat, he possesses the spark of something he can't explain yet. Ever since he saw it, he searched for ways to improve his understanding.\"",
+      "description": "Untrained in the art of combat, he possesses the spark of something he can't explain yet. Ever since he saw it, he searched for ways to improve his understanding.",
       "stats": {
         "maxLevel": 5,
         "baseMaxHp": 20,
@@ -364,26 +365,26 @@
     {
       "key": "ArcticWeasel",
       "parent": "Adventurer",
-      "sprite": "unit_summon_weasel",
+      "sprite": "unit_summon_arctic_weasel",
       "name_key": "adventurer_arctic_weasel_name",
       "description_key": "adventurer_arctic_weasel_description",
       "name": "Arctic Weasel",
       "description": "A ferocious northern weasel with blinding speed and hardened vitality.",
       "stats": {
-        "maxLevel": 20,
-        "baseMaxHp": 35,
-        "baseConstitution": 10,
-        "baseIntelligence": 7,
-        "baseDexterity": 13,
-        "baseDefense": 3,
-        "baseMagicDefense": 3
+        "maxLevel": 25,
+        "baseMaxHp": 65,
+        "baseConstitution": 14,
+        "baseIntelligence": 8,
+        "baseDexterity": 26,
+        "baseDefense": 7,
+        "baseMagicDefense": 7
       },
-      "max_level": 20,
+      "max_level": 25,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_FRENZIED_FLURRY",
+      "passive_skill": "PASSIVE_WEASEL_REFLEXES",
       "next_classes": [],
       "tier": 1
     },
@@ -432,15 +433,14 @@
         "baseIntelligence": 25,
         "baseDexterity": 7,
         "baseDefense": 25,
-        "baseMagicDefense": 25,
-        "baseLifesteal": 25
+        "baseMagicDefense": 25
       },
       "max_level": 45,
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BLESSING_OF_SLAUGHTER",
+      "passive_skill": "PASSIVE_SAVAGE_RAGE_II",
       "next_classes": [],
       "tier": 9
     },
@@ -491,8 +491,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_III",
+      "passive_skill": "PASSIVE_PERCEPTIVE_EYE",
       "next_classes": [
         "Vagabond"
       ],
@@ -519,8 +519,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BRUTAL_STRIKES",
+      "passive_skill": "PASSIVE_RAGE",
       "next_classes": [
         "Berserker"
       ],
@@ -575,8 +575,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_BEAR_CALLER",
       "next_classes": [
         "BeastTamer"
       ],
@@ -603,8 +603,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_BEAST_CALLER",
       "next_classes": [],
       "tier": 9
     },
@@ -629,8 +629,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BRUTAL_STRIKES",
+      "passive_skill": "PASSIVE_SAVAGE_RAGE",
       "next_classes": [
         "SavageBerserker"
       ],
@@ -732,15 +732,14 @@
         "baseIntelligence": 18,
         "baseDexterity": 5,
         "baseDefense": 17,
-        "baseMagicDefense": 17,
-        "baseLifesteal": 25
+        "baseMagicDefense": 17
       },
       "max_level": 35,
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BLOODY_SLAUGHTER",
+      "passive_skill": "PASSIVE_SAVAGE_RAGE",
       "next_classes": [
         "CrimsonWarlord"
       ],
@@ -756,19 +755,19 @@
       "description": "Summons piercing brambles that drink the vital essence of all who struggle within them.",
       "stats": {
         "maxLevel": 40,
-        "baseMaxHp": 220,
-        "baseConstitution": 26,
-        "baseIntelligence": 33,
-        "baseDexterity": 9,
-        "baseDefense": 10,
-        "baseMagicDefense": 10
+        "baseMaxHp": 265,
+        "baseConstitution": 32,
+        "baseIntelligence": 40,
+        "baseDexterity": 14,
+        "baseDefense": 18,
+        "baseMagicDefense": 26
       },
       "max_level": 40,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_NATURES_GRASP_III",
+      "passive_skill": "PASSIVE_NATURES_WRATH",
       "next_classes": [
         "DaturaHierophant"
       ],
@@ -899,8 +898,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_IV",
+      "passive_skill": "PASSIVE_PERCEPTIVE_EYE",
       "next_classes": [
         "Renegade"
       ],
@@ -927,8 +926,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_CAT_CALLER",
       "next_classes": [
         "WeaselTamer"
       ],
@@ -1029,15 +1028,14 @@
         "baseIntelligence": 22,
         "baseDexterity": 7,
         "baseDefense": 20,
-        "baseMagicDefense": 20,
-        "baseLifesteal": 25
+        "baseMagicDefense": 20
       },
       "max_level": 40,
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BLOODY_SLAUGHTER",
+      "passive_skill": "PASSIVE_SAVAGE_RAGE_II",
       "next_classes": [
         "AvatarOfWrath"
       ],
@@ -1138,19 +1136,19 @@
       "description": "High priest of venomous nightshades and lethal flora, ruling over hallucinations and virulent rot.",
       "stats": {
         "maxLevel": 45,
-        "baseMaxHp": 265,
-        "baseConstitution": 29,
-        "baseIntelligence": 39,
-        "baseDexterity": 10,
-        "baseDefense": 10,
-        "baseMagicDefense": 10
+        "baseMaxHp": 320,
+        "baseConstitution": 36,
+        "baseIntelligence": 48,
+        "baseDexterity": 16,
+        "baseDefense": 20,
+        "baseMagicDefense": 30
       },
       "max_level": 45,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BRIARS_BRAMBLE",
+      "passive_skill": "PASSIVE_NATURES_WRATH",
       "next_classes": [],
       "tier": 9
     },
@@ -1189,7 +1187,7 @@
       "name_key": "adventurer_demilich_name",
       "description_key": "adventurer_demilich_description",
       "name": "Demilich",
-      "description": "\"In the self-destructive path to become a master of the undead, the necromancer has to face power beyond the mortal's imagination, and resist their corruption. Flesh begins to decompose, as he realizes that the price to pay for the control over Death is eternal suffering.\"",
+      "description": "In the self-destructive path to become a master of the undead, the necromancer has to face power beyond the mortal's imagination, and resist their corruption. Flesh begins to decompose, as he realizes that the price to pay for the control over Death is eternal suffering.",
       "stats": {
         "maxLevel": 25,
         "baseMaxHp": 70,
@@ -1260,8 +1258,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_RAPID_EXPLOITATION",
+      "passive_skill": "PASSIVE_OMNISCIENT_EYE",
       "next_classes": [
         "ElSalvador"
       ],
@@ -1270,26 +1268,26 @@
     {
       "key": "DireWolf",
       "parent": "Adventurer",
-      "sprite": "unit_summon_wolf",
+      "sprite": "unit_summon_dire_wolf",
       "name_key": "adventurer_dire_wolf_name",
       "description_key": "adventurer_dire_wolf_description",
       "name": "Dire Wolf",
       "description": "A massive apex pack hunter that tears through enemy ranks with savage ferocity.",
       "stats": {
         "maxLevel": 30,
-        "baseMaxHp": 75,
-        "baseConstitution": 17,
+        "baseMaxHp": 110,
+        "baseConstitution": 22,
         "baseIntelligence": 10,
-        "baseDexterity": 22,
-        "baseDefense": 8,
-        "baseMagicDefense": 8
+        "baseDexterity": 28,
+        "baseDefense": 12,
+        "baseMagicDefense": 10
       },
       "max_level": 30,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_PACK_HOWL",
+      "passive_skill": "PASSIVE_PACK_HUNTING",
       "next_classes": [],
       "tier": 1
     },
@@ -1416,18 +1414,18 @@
       "stats": {
         "maxLevel": 15,
         "baseMaxHp": 65,
-        "baseConstitution": 16,
-        "baseIntelligence": 12,
+        "baseConstitution": 14,
+        "baseIntelligence": 14,
         "baseDexterity": 4,
         "baseDefense": 10,
         "baseMagicDefense": 10
       },
       "max_level": 15,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_NATURES_GRASP",
+      "passive_skill": "PASSIVE_NATURES_HAND",
       "next_classes": [
         "ForestDruid"
       ],
@@ -1466,7 +1464,7 @@
       "name_key": "adventurer_eldritch_alchemist_name",
       "description_key": "adventurer_eldritch_alchemist_description",
       "name": "Eldritch Alchemist",
-      "description": "\"Transcending the border between mortal and divine, her potions incorporate an eldritch god's blessing, obtained through arcane means and without its knowledge.\"",
+      "description": "Transcending the border between mortal and divine, her potions incorporate an eldritch god's blessing, obtained through arcane means and without its knowledge.",
       "stats": {
         "maxLevel": 45,
         "baseMaxHp": 290,
@@ -1480,7 +1478,7 @@
       "weapon_type": "type_bow",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_BARRAGE_II",
+      "active_skill": "ACTIVE_CATALYTIC_BARRAGE",
       "passive_skill": "PASSIVE_THAUMATURGY_IV",
       "next_classes": [],
       "tier": 9
@@ -1534,8 +1532,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_RAPID_EXPLOITATION",
+      "passive_skill": "PASSIVE_OMNISCIENT_EYE",
       "next_classes": [],
       "tier": 9
     },
@@ -1614,8 +1612,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_III",
+      "passive_skill": "PASSIVE_FOCUSED_EYE",
       "next_classes": [
         "Bandit"
       ],
@@ -1689,17 +1687,17 @@
         "maxLevel": 20,
         "baseMaxHp": 95,
         "baseConstitution": 17,
-        "baseIntelligence": 15,
-        "baseDexterity": 4,
+        "baseIntelligence": 18,
+        "baseDexterity": 6,
         "baseDefense": 10,
-        "baseMagicDefense": 10
+        "baseMagicDefense": 12
       },
       "max_level": 20,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_NATURES_GRASP",
+      "passive_skill": "PASSIVE_NATURES_HAND",
       "next_classes": [
         "GloomDruid"
       ],
@@ -1743,19 +1741,19 @@
       "description": "Communes with nocturnal fungi and shadowy thickets, weaving disorienting mists.",
       "stats": {
         "maxLevel": 25,
-        "baseMaxHp": 120,
-        "baseConstitution": 19,
-        "baseIntelligence": 20,
-        "baseDexterity": 5,
-        "baseDefense": 10,
-        "baseMagicDefense": 10
+        "baseMaxHp": 130,
+        "baseConstitution": 20,
+        "baseIntelligence": 23,
+        "baseDexterity": 8,
+        "baseDefense": 12,
+        "baseMagicDefense": 15
       },
       "max_level": 25,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_NATURES_GRASP_II",
+      "passive_skill": "PASSIVE_NATURES_LASH",
       "next_classes": [
         "Hemodruid"
       ],
@@ -1895,7 +1893,7 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [
         "RatTamer",
@@ -1971,19 +1969,19 @@
       "description": "Blends primordial growth with sanguine sacrifices to fuel volatile regenerative rituals.",
       "stats": {
         "maxLevel": 30,
-        "baseMaxHp": 145,
-        "baseConstitution": 20,
-        "baseIntelligence": 24,
-        "baseDexterity": 6,
-        "baseDefense": 10,
-        "baseMagicDefense": 10
+        "baseMaxHp": 170,
+        "baseConstitution": 24,
+        "baseIntelligence": 28,
+        "baseDexterity": 10,
+        "baseDefense": 14,
+        "baseMagicDefense": 18
       },
       "max_level": 30,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_NATURES_GRASP_II",
+      "passive_skill": "PASSIVE_NATURES_LASH",
       "next_classes": [
         "SanguineDruid"
       ],
@@ -2109,7 +2107,7 @@
       "name_key": "adventurer_infernal_lord_name",
       "description_key": "adventurer_infernal_lord_description",
       "name": "Infernal Lord",
-      "description": "\"Ascending through infernal ranks through its ruthlessness and cruelty, an Infernal Lord walking the realms is a threat that brings enemy kingdoms together in a desperate effort to prevent the entire world's descent into chaos.\"",
+      "description": "Ascending through infernal ranks through its ruthlessness and cruelty, an Infernal Lord walking the realms is a threat that brings enemy kingdoms together in a desperate effort to prevent the entire world's descent into chaos.",
       "stats": {
         "maxLevel": 35,
         "baseMaxHp": 265,
@@ -2191,7 +2189,7 @@
       "name_key": "adventurer_inquisitor_name",
       "description_key": "adventurer_inquisitor_description",
       "name": "Inquisitor",
-      "description": "\"As feared as he is respected, the Inquisitor's might is rarely matched. He stands as the supreme lawgiver, overseeing the realms conquered by the Holy Temple.\"",
+      "description": "As feared as he is respected, the Inquisitor's might is rarely matched. He stands as the supreme lawgiver, overseeing the realms conquered by the Holy Temple.",
       "stats": {
         "maxLevel": 35,
         "baseMaxHp": 265,
@@ -2303,7 +2301,7 @@
       "name_key": "adventurer_justiciar_name",
       "description_key": "adventurer_justiciar_description",
       "name": "Justiciar",
-      "description": "\"The Justiciar serves as the Holy Temple’s arbiter, enforcing laws that everyone—from peasants to kings—must obey to avoid incurring the Temple's wrath. A formidable warrior, he leads crusades against evil tyrants and unholy creatures that threaten the Realms.\"",
+      "description": "The Justiciar serves as the Holy Temple’s arbiter, enforcing laws that everyone—from peasants to kings—must obey to avoid incurring the Temple's wrath. A formidable warrior, he leads crusades against evil tyrants and unholy creatures that threaten the Realms.",
       "stats": {
         "maxLevel": 40,
         "baseMaxHp": 320,
@@ -2330,8 +2328,8 @@
       "sprite": "unit_kings_hand",
       "name_key": "adventurer_kings_hand_name",
       "description_key": "adventurer_kings_hand_description",
-      "name": "\"King's Hand\"",
-      "description": "\"The king's personal guard. Wreaks havoc during unrests, and singlehandedly guarantees His Majesty safety against any threat.\"",
+      "name": "King's Hand",
+      "description": "The king's personal guard. Wreaks havoc during unrests, and singlehandedly guarantees His Majesty safety against any threat.",
       "stats": {
         "maxLevel": 35,
         "baseMaxHp": 265,
@@ -2517,8 +2515,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES",
+      "passive_skill": "PASSIVE_RAGE",
       "next_classes": [
         "Barbarian"
       ],
@@ -2731,7 +2729,7 @@
       "name_key": "adventurer_night_specter_name",
       "description_key": "adventurer_night_specter_description",
       "name": "Night Specter",
-      "description": "\"Blending seamlessly with the night's terrain, in the cover of darkness, no human stands a chance against his ambush.\"",
+      "description": "Blending seamlessly with the night's terrain, in the cover of darkness, no human stands a chance against his ambush.",
       "stats": {
         "maxLevel": 30,
         "baseMaxHp": 155,
@@ -2832,7 +2830,7 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [
         "Marauder",
@@ -2955,26 +2953,26 @@
     {
       "key": "PolarBear",
       "parent": "Adventurer",
-      "sprite": "unit_summon_bear",
+      "sprite": "unit_summon_polar_bear",
       "name_key": "adventurer_polar_bear_name",
       "description_key": "adventurer_polar_bear_description",
       "name": "Polar Bear",
       "description": "A colossal arctic titan boasting relentless power and commanding the wild.",
       "stats": {
-        "maxLevel": 35,
-        "baseMaxHp": 130,
-        "baseConstitution": 25,
-        "baseIntelligence": 11,
-        "baseDexterity": 15,
-        "baseDefense": 15,
-        "baseMagicDefense": 13
+        "maxLevel": 40,
+        "baseMaxHp": 320,
+        "baseConstitution": 65,
+        "baseIntelligence": 12,
+        "baseDexterity": 24,
+        "baseDefense": 38,
+        "baseMagicDefense": 24
       },
-      "max_level": 35,
+      "max_level": 40,
       "weapon_type": "type_sword",
-      "armor_type": "type_armor_light",
+      "armor_type": "type_armor_heavy",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_URSINE_ROAR",
+      "passive_skill": "PASSIVE_URSINE_ENDURANCE",
       "next_classes": [],
       "tier": 1
     },
@@ -3009,26 +3007,27 @@
     {
       "key": "Rat",
       "parent": "Adventurer",
-      "sprite": "unit_rat",
+      "sprite": "unit_summon_rat",
       "name_key": "adventurer_rat_name",
       "description_key": "adventurer_rat_description",
       "name": "Rat",
       "description": "A vicious little vermin that bites ankles and swarms unwary targets.",
       "stats": {
         "maxLevel": 15,
-        "baseMaxHp": 10,
-        "baseConstitution": 5,
+        "baseMaxHp": 15,
+        "baseConstitution": 6,
         "baseIntelligence": 5,
-        "baseDexterity": 5,
+        "baseDexterity": 8,
         "baseDefense": 0,
-        "baseMagicDefense": 0
+        "baseMagicDefense": 0,
+        "baseLifesteal": 10
       },
       "max_level": 15,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_RABID_BITE",
+      "passive_skill": "PASSIVE_SWARM_FEROCITY",
       "next_classes": [],
       "tier": 1
     },
@@ -3053,8 +3052,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_RAT_CALLER",
       "next_classes": [
         "CatTamer"
       ],
@@ -3194,8 +3193,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_IV",
+      "passive_skill": "PASSIVE_PERCEPTIVE_EYE",
       "next_classes": [
         "Desperado"
       ],
@@ -3326,19 +3325,19 @@
       "description": "Extracts lifeblood from fallen enemies to nourish crimson groves and bolster allies.",
       "stats": {
         "maxLevel": 35,
-        "baseMaxHp": 180,
-        "baseConstitution": 23,
-        "baseIntelligence": 28,
-        "baseDexterity": 7,
-        "baseDefense": 10,
-        "baseMagicDefense": 10
+        "baseMaxHp": 215,
+        "baseConstitution": 28,
+        "baseIntelligence": 34,
+        "baseDexterity": 12,
+        "baseDefense": 16,
+        "baseMagicDefense": 22
       },
       "max_level": 35,
-      "weapon_type": "type_staff",
+      "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_NATURES_GRASP_III",
+      "passive_skill": "PASSIVE_NATURES_WRATH",
       "next_classes": [
         "BloodthornArchdruid"
       ],
@@ -3359,15 +3358,14 @@
         "baseIntelligence": 13,
         "baseDexterity": 4,
         "baseDefense": 10,
-        "baseMagicDefense": 10,
-        "baseLifesteal": 25
+        "baseMagicDefense": 10
       },
       "max_level": 25,
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BRUTAL_STRIKES",
+      "passive_skill": "PASSIVE_SAVAGE_RAGE",
       "next_classes": [
         "ScarletBerserker"
       ],
@@ -3388,15 +3386,14 @@
         "baseIntelligence": 15,
         "baseDexterity": 4,
         "baseDefense": 15,
-        "baseMagicDefense": 15,
-        "baseLifesteal": 25
+        "baseMagicDefense": 15
       },
       "max_level": 30,
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_BRUTAL_STRIKES_II",
+      "passive_skill": "PASSIVE_SAVAGE_RAGE",
       "next_classes": [
         "BloodReaver"
       ],
@@ -3437,7 +3434,7 @@
       "name_key": "adventurer_scourge_name",
       "description_key": "adventurer_scourge_description",
       "name": "Scourge",
-      "description": "\"A force of nature capable of reshaping the borders of kingdoms. It's said his devastating strikes can annihilate entire legions.\"",
+      "description": "A force of nature capable of reshaping the borders of kingdoms. It's said his devastating strikes can annihilate entire legions.",
       "stats": {
         "maxLevel": 30,
         "baseMaxHp": 215,
@@ -3598,26 +3595,26 @@
     {
       "key": "SnowCat",
       "parent": "Adventurer",
-      "sprite": "unit_summon_cat",
+      "sprite": "unit_summon_snow_cat",
       "name_key": "adventurer_snow_cat_name",
       "description_key": "adventurer_snow_cat_description",
       "name": "Snow Cat",
       "description": "A rare mountain feline with a thick winter coat, striking with swift precision.",
       "stats": {
-        "maxLevel": 25,
-        "baseMaxHp": 50,
+        "maxLevel": 20,
+        "baseMaxHp": 45,
         "baseConstitution": 12,
         "baseIntelligence": 8,
-        "baseDexterity": 18,
+        "baseDexterity": 20,
         "baseDefense": 5,
         "baseMagicDefense": 5
       },
-      "max_level": 25,
+      "max_level": 20,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_FELINE_POUNCE",
+      "passive_skill": "PASSIVE_FELINE_AGILITY",
       "next_classes": [],
       "tier": 1
     },
@@ -3656,7 +3653,7 @@
       "name_key": "adventurer_spire_acolyte_name",
       "description_key": "adventurer_spire_acolyte_description",
       "name": "Spire Acolyte",
-      "description": "\"Acolytes, as full-fledged members of the Spire, have mastered the organization's secret technique. They are pivotal agents dispatched across the Realms, ensuring no target is beyond the reach of the Spire.\"",
+      "description": "Acolytes, as full-fledged members of the Spire, have mastered the organization's secret technique. They are pivotal agents dispatched across the Realms, ensuring no target is beyond the reach of the Spire.",
       "stats": {
         "maxLevel": 30,
         "baseMaxHp": 155,
@@ -3665,14 +3662,14 @@
         "baseDexterity": 21,
         "baseDefense": 10,
         "baseMagicDefense": 10,
-        "flatDodgeChance": 0.1
+        "flatDodgeChance": 0.15
       },
       "max_level": 30,
       "weapon_type": "type_dagger",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_ECLIPSE_II",
-      "passive_skill": "PASSIVE_INFILTRATOR",
+      "passive_skill": "PASSIVE_PHANTOM_INSTINCT_II",
       "next_classes": [
         "SpireLeader"
       ],
@@ -3685,7 +3682,7 @@
       "name_key": "adventurer_spire_initiate_name",
       "description_key": "adventurer_spire_initiate_description",
       "name": "Spire Initiate",
-      "description": "\"The Spire, an age-old clandestine organization, recruits only the realm's most skilled assassins. Its select few members wield profound influence over the political landscape of kingdoms, capable of eliminating virtually any target with a secretive technique known solely to them.\"",
+      "description": "The Spire, an age-old clandestine organization, recruits only the realm's most skilled assassins. Its select few members wield profound influence over the political landscape of kingdoms, capable of eliminating virtually any target with a secretive technique known solely to them.",
       "stats": {
         "maxLevel": 25,
         "baseMaxHp": "Logger.BARD_SHIELD",
@@ -3694,14 +3691,14 @@
         "baseDexterity": 18,
         "baseDefense": 10,
         "baseMagicDefense": 10,
-        "flatDodgeChance": 0.1
+        "flatDodgeChance": 0.15
       },
       "max_level": 25,
       "weapon_type": "type_dagger",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_ECLIPSE_I",
-      "passive_skill": "PASSIVE_INFILTRATOR",
+      "passive_skill": "PASSIVE_PHANTOM_INSTINCT_I",
       "next_classes": [
         "SpireAcolyte"
       ],
@@ -3714,7 +3711,7 @@
       "name_key": "adventurer_spire_leader_name",
       "description_key": "adventurer_spire_leader_description",
       "name": "Spire Leader",
-      "description": "\"Upon the passing of the former Spire leader, often under circumstances far from the natural, the most experienced Acolyte is entrusted with assuming their role, and the organization's deepest secrets are revealed to them. Deployed only for exceptionally difficult tasks, and throughout history, they have been credited with toppling rulers and deities alike.\"",
+      "description": "Upon the passing of the former Spire leader, often under circumstances far from the natural, the most experienced Acolyte is entrusted with assuming their role, and the organization's deepest secrets are revealed to them. Deployed only for exceptionally difficult tasks, and throughout history, they have been credited with toppling rulers and deities alike.",
       "stats": {
         "maxLevel": 35,
         "baseMaxHp": 195,
@@ -3723,14 +3720,14 @@
         "baseDexterity": 24,
         "baseDefense": 10,
         "baseMagicDefense": 10,
-        "flatDodgeChance": 0.1
+        "flatDodgeChance": 0.15
       },
       "max_level": 35,
       "weapon_type": "type_dagger",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_ECLIPSE_III",
-      "passive_skill": "PASSIVE_INFILTRATOR",
+      "passive_skill": "PASSIVE_PHANTOM_INSTINCT_III",
       "next_classes": [
         "SpireSage"
       ],
@@ -3752,14 +3749,14 @@
         "baseDexterity": 27,
         "baseDefense": 10,
         "baseMagicDefense": 10,
-        "flatDodgeChance": 0.1
+        "flatDodgeChance": 0.15
       },
       "max_level": 40,
       "weapon_type": "type_dagger",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_ECLIPSE_III",
-      "passive_skill": "PASSIVE_DESPISE_WEAKNESS",
+      "passive_skill": "PASSIVE_PHANTOM_LETHALITY_I",
       "next_classes": [
         "Whisper"
       ],
@@ -3772,7 +3769,7 @@
       "name_key": "adventurer_spirit_engraver_name",
       "description_key": "adventurer_spirit_engraver_description",
       "name": "Spirit Engraver",
-      "description": "\"This one-of-a-kind assassin, gifted with unparalleled skill, can strike at the very essence of a being's consciousness, reaching beyond mere flesh. No living creature, mortal or divine, is safe from his dark art.\"",
+      "description": "This one-of-a-kind assassin, gifted with unparalleled skill, can strike at the very essence of a being's consciousness, reaching beyond mere flesh. No living creature, mortal or divine, is safe from his dark art.",
       "stats": {
         "maxLevel": 45,
         "baseMaxHp": 290,
@@ -3829,20 +3826,20 @@
       "name": "Summoned Bear",
       "description": "A towering beast serving as an unyielding frontline protector.",
       "stats": {
-        "maxLevel": 35,
-        "baseMaxHp": 100,
-        "baseConstitution": 20,
-        "baseIntelligence": 9,
-        "baseDexterity": 12,
-        "baseDefense": 12,
-        "baseMagicDefense": 10
+        "maxLevel": 40,
+        "baseMaxHp": 260,
+        "baseConstitution": 55,
+        "baseIntelligence": 10,
+        "baseDexterity": 20,
+        "baseDefense": 32,
+        "baseMagicDefense": 20
       },
-      "max_level": 35,
+      "max_level": 40,
       "weapon_type": "type_sword",
-      "armor_type": "type_armor_light",
+      "armor_type": "type_armor_heavy",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_URSINE_ROAR",
+      "passive_skill": "PASSIVE_URSINE_ENDURANCE",
       "next_classes": [],
       "tier": 1
     },
@@ -3855,20 +3852,20 @@
       "name": "Summoned Cat",
       "description": "An agile companion that pounces from behind with razor-sharp claws.",
       "stats": {
-        "maxLevel": 25,
-        "baseMaxHp": 40,
+        "maxLevel": 20,
+        "baseMaxHp": 35,
         "baseConstitution": 10,
-        "baseIntelligence": 7,
-        "baseDexterity": 15,
+        "baseIntelligence": 6,
+        "baseDexterity": 16,
         "baseDefense": 4,
         "baseMagicDefense": 4
       },
-      "max_level": 25,
+      "max_level": 20,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_FELINE_POUNCE",
+      "passive_skill": "PASSIVE_FELINE_AGILITY",
       "next_classes": [],
       "tier": 1
     },
@@ -3882,19 +3879,19 @@
       "description": "A monstrous chimeric powerhouse combining avian keenness with ursine savagery.",
       "stats": {
         "maxLevel": 45,
-        "baseMaxHp": 180,
-        "baseConstitution": 30,
+        "baseMaxHp": 360,
+        "baseConstitution": 75,
         "baseIntelligence": 12,
-        "baseDexterity": 20,
-        "baseDefense": 18,
-        "baseMagicDefense": 15
+        "baseDexterity": 30,
+        "baseDefense": 45,
+        "baseMagicDefense": 28
       },
       "max_level": 45,
       "weapon_type": "type_sword",
-      "armor_type": "type_armor_light",
+      "armor_type": "type_armor_heavy",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_APEX_RAMPAGE",
+      "passive_skill": "PASSIVE_APEX_RESILIENCE",
       "next_classes": [],
       "tier": 1
     },
@@ -3907,20 +3904,20 @@
       "name": "Summoned Tiger",
       "description": "A fierce jungle predator executing crushing ambushes against high-value targets.",
       "stats": {
-        "maxLevel": 40,
-        "baseMaxHp": 130,
-        "baseConstitution": 24,
+        "maxLevel": 35,
+        "baseMaxHp": 160,
+        "baseConstitution": 32,
         "baseIntelligence": 10,
-        "baseDexterity": 24,
-        "baseDefense": 14,
-        "baseMagicDefense": 12
+        "baseDexterity": 32,
+        "baseDefense": 18,
+        "baseMagicDefense": 14
       },
-      "max_level": 40,
+      "max_level": 35,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_PREDATORY_AMBUSH",
+      "passive_skill": "PASSIVE_AMBUSH_PREDATOR",
       "next_classes": [],
       "tier": 1
     },
@@ -3933,20 +3930,20 @@
       "name": "Summoned Weasel",
       "description": "A lightning-fast animal companion darting between enemy strikes.",
       "stats": {
-        "maxLevel": 20,
-        "baseMaxHp": 25,
-        "baseConstitution": 8,
-        "baseIntelligence": 6,
-        "baseDexterity": 10,
-        "baseDefense": 2,
-        "baseMagicDefense": 2
+        "maxLevel": 25,
+        "baseMaxHp": 50,
+        "baseConstitution": 12,
+        "baseIntelligence": 7,
+        "baseDexterity": 22,
+        "baseDefense": 6,
+        "baseMagicDefense": 6
       },
-      "max_level": 20,
+      "max_level": 25,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_FRENZIED_FLURRY",
+      "passive_skill": "PASSIVE_WEASEL_REFLEXES",
       "next_classes": [],
       "tier": 1
     },
@@ -3960,19 +3957,19 @@
       "description": "A steadfast pack hunter that hamstrings prey with bone-snapping bites.",
       "stats": {
         "maxLevel": 30,
-        "baseMaxHp": 60,
-        "baseConstitution": 14,
+        "baseMaxHp": 85,
+        "baseConstitution": 18,
         "baseIntelligence": 8,
-        "baseDexterity": 18,
-        "baseDefense": 6,
-        "baseMagicDefense": 6
+        "baseDexterity": 24,
+        "baseDefense": 10,
+        "baseMagicDefense": 8
       },
       "max_level": 30,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_PACK_HOWL",
+      "passive_skill": "PASSIVE_PACK_HUNTING",
       "next_classes": [],
       "tier": 1
     },
@@ -4111,8 +4108,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_TIGER_CALLER",
       "next_classes": [
         "BearTamer"
       ],
@@ -4308,8 +4305,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_III",
+      "passive_skill": "PASSIVE_PERCEPTIVE_EYE",
       "next_classes": [
         "Brigand"
       ],
@@ -4365,8 +4362,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_WEASEL_CALLER",
       "next_classes": [
         "WolfTamer"
       ],
@@ -4388,14 +4385,14 @@
         "baseDexterity": 30,
         "baseDefense": 10,
         "baseMagicDefense": 10,
-        "flatDodgeChance": 0.1
+        "flatDodgeChance": 0.15
       },
       "max_level": 45,
       "weapon_type": "type_dagger",
       "armor_type": "type_armor_medium",
       "potion_drinker_type": "PotionDrinkerType",
       "active_skill": "ACTIVE_ECLIPSE_IV",
-      "passive_skill": "PASSIVE_DESPISE_WEAKNESS",
+      "passive_skill": "PASSIVE_PHANTOM_LETHALITY_II",
       "next_classes": [],
       "tier": 9
     },
@@ -4486,26 +4483,26 @@
     {
       "key": "WhiteTiger",
       "parent": "Adventurer",
-      "sprite": "unit_summon_tiger",
+      "sprite": "unit_summon_white_tiger",
       "name_key": "adventurer_white_tiger_name",
       "description_key": "adventurer_white_tiger_description",
       "name": "White Tiger",
       "description": "A majestic legendary predator possessing immense strength and an innate call of the pack.",
       "stats": {
-        "maxLevel": 40,
-        "baseMaxHp": 160,
-        "baseConstitution": 28,
+        "maxLevel": 35,
+        "baseMaxHp": 200,
+        "baseConstitution": 38,
         "baseIntelligence": 12,
-        "baseDexterity": 28,
-        "baseDefense": 16,
-        "baseMagicDefense": 14
+        "baseDexterity": 36,
+        "baseDefense": 22,
+        "baseMagicDefense": 16
       },
-      "max_level": 40,
+      "max_level": 35,
       "weapon_type": "type_sword",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_PREDATORY_AMBUSH",
+      "passive_skill": "PASSIVE_AMBUSH_PREDATOR",
       "next_classes": [],
       "tier": 1
     },
@@ -4558,8 +4555,8 @@
       "weapon_type": "type_axe",
       "armor_type": "type_armor_light",
       "potion_drinker_type": "PotionDrinkerType",
-      "active_skill": "ACTIVE_NONE",
-      "passive_skill": "PASSIVE_NONE",
+      "active_skill": "ACTIVE_WILD_STRIKES_II",
+      "passive_skill": "PASSIVE_WOLF_CALLER",
       "next_classes": [
         "TigerTamer"
       ],
@@ -4600,7 +4597,7 @@
       "name_key": "adventurer_wounds_weaver_name",
       "description_key": "adventurer_wounds_weaver_description",
       "name": "Wounds Weaver",
-      "description": "\"Unparalleled in the knowledge of anatomy, his enemies are a living canvas to him. While victim's realization rises with each stroke, his art comes to life while life comes to an end.\"",
+      "description": "Unparalleled in the knowledge of anatomy, his enemies are a living canvas to him. While victim's realization rises with each stroke, his art comes to life while life comes to an end.",
       "stats": {
         "maxLevel": 35,
         "baseMaxHp": 195,

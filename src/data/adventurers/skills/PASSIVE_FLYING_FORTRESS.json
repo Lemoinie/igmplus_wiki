@@ -4,5 +4,5 @@
   "desc_key": "passive_flying_fortress_description",
   "kind": "passive",
   "name": "Flying Fortress",
-  "description": "\"Can't be hit by melee attacks or abilities. After its basic attack, it fires a barrage of 5 cannonballs at random enemies, each dealing 90 physical damage.\""
+  "description": "Can't be hit by melee attacks or abilities. After its basic attack, it fires a barrage of 5 cannonballs at random enemies, each dealing 90 physical damage."
 }

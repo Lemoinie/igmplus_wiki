@@ -4,5 +4,5 @@
   "desc_key": "passive_dissolve_by_decree_description",
   "kind": "passive",
   "name": "Dissolve by decree",
-  "description": null
+  "description": "50% immunity to status effects.\nAttacks from this unit can't be dodged, and have 70% chance of inflicting each of the following statuses for 3 turns: POISON, SILENCE, FREEZE, ABLAZE, STUN.\n\nPOISON: damage reduced by 20%\nSILENCE: the unit can't gain any mana\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn"
 }
