@@ -2,287 +2,158 @@
 import WikiLayout from '../layouts/WikiLayout.astro';
 ---
 
-<WikiLayout title="Whats New?" description="All features, systems, balance changes, and updates added in Idle Guild Master Modded.">
+<WikiLayout title="Whats New?" description="All features, systems, and additions in Idle Guild Master Modded v1.3.20.10.">
   <div class="pageHeader">
     <div class="headerTop">
       <h1>Whats New?</h1>
-      <span class="versionBadge">v1.3.18.7 Active</span>
+      <span class="versionBadge">v1.3.20.10 Active</span>
     </div>
     <p>
-      Idle Guild Master Modded (IGM+) significantly expands vanilla Idle Guild Master with new guild activities,
-      expanded class trees, new weapon families, deep combat formulas, and new high-tier expeditions.
+      Idle Guild Master Modded (IGM+) is a massive expansion featuring a 4-branch Outlander class tree, 20 companion summons,
+      a 26-axe weapon family, guild activities, new raids & fishing, universal combat formulas, and extensive quality-of-life additions.
     </p>
   </div>
 
   <!-- Featured Highlights Grid -->
   <section class="highlightsSection">
-    <h2>Major Mod Additions</h2>
+    <h2>Major Mod Additions (v1.3.20.10)</h2>
     <div class="highlightsGrid">
+      <!-- 1. Outlander Tree -->
       <div class="highlightCard">
         <div class="cardHeader">
-          <span class="cardCategory">Guild Progression</span>
-          <h3>Guild Activities & Reputation</h3>
+          <span class="cardCategory">New Class Tree</span>
+          <h3>Outlander (T1–T9) & 4 Branches</h3>
         </div>
-        <p>
-          Introduced a dedicated 5th navigation tab for daily and weekly guild content:
-        </p>
+        <p class="cardSummary">Complete 4-branch warrior tree from starter recruit to Tier 9 pinnacle masteries:</p>
         <ul>
-          <li><strong>Daily Request:</strong> Elite enemy hunt with 2× stats for up to 12 guild heroes, rewarding Gems scaled by Reputation.</li>
-          <li><strong>Weekly Siege:</strong> 10-wave horde defense for up to 12 defenders testing guild roster depth.</li>
-          <li><strong>Reputation System:</strong> Dynamic 0–100 standing granting bonus daily gems on victory and deducting points on loss.</li>
+          <li><strong>Outlander (T1):</strong> Uses Axes and Light Armor with multi-strike <strong>Wild Strikes</strong>.</li>
+          <li><strong>Avatar of Wrath (T2–T9):</strong> Marauder &rarr; Barbarian &rarr; Berserker line with multi-strike flurries, on-kill recasts, and Savage Rage frenzy.</li>
+          <li><strong>Beast Tamer (T2–T9):</strong> Heathen &rarr; Tamer line; casting Wild Strikes II heals active companions for 50%–150% of damage dealt.</li>
+          <li><strong>Datura Hierophant (T3–T9):</strong> Druid &rarr; Archdruid line with nature magic inflicting Entangle and Thorns.</li>
+          <li><strong>El Salvador (T3–T9):</strong> Exile &rarr; Desperado &rarr; El Salvador line with Evasion (+25% dodge), counterattacks, and Rapid Exploitation execute.</li>
         </ul>
       </div>
 
+      <!-- 2. Companion Summons -->
       <div class="highlightCard">
         <div class="cardHeader">
-          <span class="cardCategory">Adventurers</span>
+          <span class="cardCategory">Summons & Minions</span>
+          <h3>20 Unique Minion Companions</h3>
+        </div>
+        <p class="cardSummary">Fully playable minion companions with tactical skills and natural gear:</p>
+        <ul>
+          <li><strong>Tamed Beasts:</strong> Rats, Cats, Weasels, Wolves, Bears, Tigers, and Owlbears.</li>
+          <li><strong>Undead Minions:</strong> Skeletons, Zombies, Bone Abominations, Bone Horrors, Bone Hydras, and Bone Nightmares.</li>
+          <li><strong>Natural Equipment:</strong> Innate beast weapons (Fangs, Jaws, Paws, Claws) and armors (Pelts, Fur, Hides) with zero minion decay.</li>
+          <li><strong>Tactical Skills:</strong> Rabid Bite, Feline Pounce, Frenzied Flurry, Pack Howl, Predatory Ambush, Ursine Roar, and Apex Rampage.</li>
+        </ul>
+      </div>
+
+      <!-- 3. Arcanist Burst Mage -->
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">New Evolution Path</span>
           <h3>Single-Target Burst Mage Line (T3–T9)</h3>
         </div>
-        <p>
-          Adept branches into a dedicated 3rd specialization alongside Fire Wizard and Dark Sorcerer:
-        </p>
+        <p class="cardSummary">Adept's 3rd promotion choice alongside Fire Wizard and Dark Sorcerer:</p>
         <ul>
-          <li><strong>7 Tiers:</strong> Arcanist (T3), Spellweaver (T4), Aether Mage (T5), Aether Archmage (T6), Disintegrator (T7), Grand Magus (T8), and Singularity Magus (T9).</li>
-          <li><strong>Disintegrate Burst:</strong> Pinnacle spells scaling up to 3000% damage with 20%–30% instant recast chance.</li>
-          <li><strong>Aether Resonance:</strong> +10% to +70% Skill Amp and DEF/MDEF penetration that bypasses enemy taunts to focus Bosses.</li>
+          <li><strong>7 Tiers:</strong> Arcanist (T3) &rarr; Spellweaver (T4) &rarr; Aether Mage (T5) &rarr; Aether Archmage (T6) &rarr; Disintegrator (T7) &rarr; Grand Magus (T8) &rarr; Singularity Magus (T9).</li>
+          <li><strong>Disintegrate Burst:</strong> Spells scaling up to 3000% damage with 20%–30% instant recast chance.</li>
+          <li><strong>Aether Resonance:</strong> Bypasses enemy taunts to lock directly onto Bosses, with up to +70% defense penetration and Skill Amp.</li>
         </ul>
       </div>
 
+      <!-- 4. 26-Axe Weapon Family -->
       <div class="highlightCard">
         <div class="cardHeader">
           <span class="cardCategory">Equipment</span>
-          <h3>26-Axe Weapon Family</h3>
+          <h3>26-Axe Weapon Family & Gear</h3>
         </div>
-        <p>
-          Complete new melee weapon category scaling 100% Constitution + 100% Intelligence:
-        </p>
+        <p class="cardSummary">New melee weapon category scaling 100% Constitution + 100% Intelligence:</p>
         <ul>
-          <li>Full progression from starter Stick up to Abhorrent Long Axe, Omni-Sever, and Wicked Cleaver.</li>
-          <li>Inherent ±20% to ±50% damage variance and native status procs (Bleed, Freeze, Ablaze, Stun).</li>
-          <li>Supported by dedicated crafting recipes and enemy drop tables.</li>
+          <li><strong>26 Craftable Axes:</strong> Full progression from starter Stick up to Abhorrent Long Axe, Omni-Sever, and Wicked Cleaver.</li>
+          <li><strong>Status Procs & Variance:</strong> Inherent &plusmn;20% to &plusmn;50% damage spread with Bleed, Freeze, Ablaze, and Stun.</li>
+          <li><strong>Scarlet Armor Sets:</strong> Endgame armor rebalances focused on Skill Amp and Damage Dealt.</li>
+          <li><strong>Unique Recovery:</strong> Buy back lost or evolved unique items from the Traveling Merchant.</li>
         </ul>
       </div>
 
+      <!-- 5. Guild Activities -->
       <div class="highlightCard">
         <div class="cardHeader">
-          <span class="cardCategory">Combat Engine</span>
-          <h3>Defense & Attack Speed Overhaul</h3>
+          <span class="cardCategory">New Game Modes</span>
+          <h3>Guild Activities & Reputation (5th Tab)</h3>
         </div>
-        <p>
-          Replaced flat hardcoded formulas with universal combat math:
-        </p>
+        <p class="cardSummary">Dedicated navigation tab for daily and weekly guild challenges:</p>
         <ul>
-          <li><strong>Universal Defense Formula:</strong> <code>floor((100 * DEF) / (50 + DEF))%</code> gives smooth diminishing returns with 50 DEF mitigating exactly 50% damage (doubling EHP).</li>
-          <li><strong>Percentage Attack Speed:</strong> Unified <code>+100% Attack Speed = +1 extra strike/round</code> scaling for weapons, passives, and monsters.</li>
-          <li><strong>Boss Targeting:</strong> Unified <code>isBoss</code> engine flag prioritizing high-threat encounter targets.</li>
+          <li><strong>Daily Request (The Hunt):</strong> Daily elite boss battle for up to 12 guild champions, with Gem rewards scaled to Reputation.</li>
+          <li><strong>Weekly Siege:</strong> 10-wave horde survival challenge for your entire roster.</li>
+          <li><strong>Reputation System:</strong> Dynamic 0–100 standing granting bonus daily gems on victory.</li>
         </ul>
       </div>
 
+      <!-- 6. Raids & Expeditions -->
       <div class="highlightCard">
         <div class="cardHeader">
           <span class="cardCategory">Expeditions & Raids</span>
-          <h3>New Raids, Bosses & Fishing</h3>
+          <h3>Raids, Minibosses & Fishing</h3>
         </div>
-        <p>
-          Expanded endgame exploration with challenging encounters and unique loot:
-        </p>
+        <p class="cardSummary">Challenging endgame expeditions and encounter mechanics:</p>
         <ul>
-          <li><strong>The Sanguine Crucible:</strong> Archmagus Valthex raid encounter featuring Bloodstone Colossus and Crimson Acolyte with Scarlet item drops.</li>
-          <li><strong>The Slumbering Shallows:</strong> 6 catchable fish encounters (Perch, Blue Trout, Angelfish, Winged Ray, Blue Shark, Magma Shark) and the ultra-rare 0.1% specter Chorus the Drowned.</li>
-          <li><strong>Minibosses:</strong> Imperial Captain in The Golden City and Knight Slime in Slime Pond.</li>
+          <li><strong>The Sanguine Crucible:</strong> Archmagus Valthex raid with Bloodstone Colossus and Scarlet item drops.</li>
+          <li><strong>The Slumbering Shallows:</strong> Fishing expedition with 6 catchable fish and the rare Chorus the Drowned specter (0.1%).</li>
+          <li><strong>New Minibosses:</strong> Imperial Captain in The Golden City and Knight Slime in Slime Pond.</li>
+          <li><strong>Clean Auto-Raid:</strong> Wiping resets the party and boss state cleanly with zero stuck encounters.</li>
         </ul>
       </div>
 
+      <!-- 7. Combat Engine -->
       <div class="highlightCard">
         <div class="cardHeader">
-          <span class="cardCategory">Progression & QoL</span>
-          <h3>Doctrine Capstones & Team Loadouts</h3>
+          <span class="cardCategory">Combat Engine</span>
+          <h3>New Combat Stats & Formulas</h3>
         </div>
-        <p>
-          Deeper build customization and streamlined expedition management:
-        </p>
+        <p class="cardSummary">Universal combat math and impactful battle stats:</p>
         <ul>
-          <li><strong>7th Doctrine Nodes:</strong> Capstone abilities across all 8 doctrines (Bloodletting, Titans Might, Evasive Riposte, Verdant Briars, Armor Master, etc.).</li>
-          <li><strong>Dungeon Gear Loadouts:</strong> Automatically records and re-equips saved weapons, armors, and accessories per dungeon team.</li>
-          <li><strong>Evolved Traits:</strong> Alert+ (Evo-24 Vial for Turn-0 initiative + 20% First Strike amp), Ruthless+, and Ascension rank scaling.</li>
+          <li><strong>Menace:</strong> Damaging hits shred enemy physical and magic defense.</li>
+          <li><strong>Guard:</strong> Ally heals, shields, and buffs grant bonus physical and magic defense.</li>
+          <li><strong>Special Damage:</strong> Scales cleave true damage dealt to adjacent secondary targets.</li>
+          <li><strong>New Status Effects:</strong> Rage (+30% dmg dealt/taken), Evasion (+25% dodge), Entangle (0% dodge, -20% dmg), and Thorns (damage recoil).</li>
+          <li><strong>Universal Defense Curve:</strong> <code>floor((100 * DEF) / (50 + DEF))%</code> diminishing returns (50 DEF = 50% mitigation).</li>
+          <li><strong>Percentage Attack Speed:</strong> Unified <code>+100% Attack Speed = +1 extra strike/round</code>.</li>
+        </ul>
+      </div>
+
+      <!-- 8. Pets & Evolution Vials -->
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Pets & Traits</span>
+          <h3>Mythic Pets & Evolution Vials</h3>
+        </div>
+        <p class="cardSummary">Expanded companion systems and permanent trait customization:</p>
+        <ul>
+          <li><strong>Mythic Pets:</strong> Phoenix (passive Solar Rebirth revive) and Kitsune (Spirit Blessing aura) with 4-slot dynamic trait rolling.</li>
+          <li><strong>Evo-21 & Evo-22:</strong> Swap common traits (Evo-21) and upgrade 7 common traits into Plus (+) variants (Evo-22).</li>
+          <li><strong>Evo-23 & Evo-24:</strong> Swap rare traits (Evo-23) and upgrade 7 rare traits into Phylactery Plus (+) variants (Evo-24).</li>
+          <li><strong>Doctrine Capstones:</strong> 7th ability nodes across all 8 doctrines.</li>
+        </ul>
+      </div>
+
+      <!-- 9. Quality of Life -->
+      <div class="highlightCard">
+        <div class="cardHeader">
+          <span class="cardCategory">Quality of Life</span>
+          <h3>XP Books & Convenience</h3>
+        </div>
+        <p class="cardSummary">Streamlined player experience and roster management:</p>
+        <ul>
+          <li><strong>XP Books (1, 2, 3, 10, Ancient):</strong> Batch consume books with stepper (-, +, MAX) and slider, instant level preview, and auto-cap protection.</li>
+          <li><strong>Dungeon Gear Loadouts:</strong> Saves and auto-reequips gear per dungeon team.</li>
+          <li><strong>Battle Status Inspector:</strong> Live dialog to inspect active buffs, debuffs, and stack counts during combat.</li>
+          <li><strong>In-Game Changelog:</strong> View all mod update notes directly from the Settings menu.</li>
         </ul>
       </div>
     </div>
-  </section>
-
-  <!-- Detailed Patch Notes -->
-  <section class="changelogSection">
-    <h2>Patch Notes History</h2>
-
-    <!-- v1.3.18.7 -->
-    <article class="changelogEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.3.18.7</h3>
-          <span class="entrySub">Single-Target Burst Mage Line & Boss Classification</span>
-        </div>
-        <span class="dateBadge">5/10/2026</span>
-      </div>
-      <div class="entryBody">
-        <h4>Adventurers — Single-Target Burst Mage Line (Apprentice Branch)</h4>
-        <ul>
-          <li><strong>New Evolution Branch:</strong> Adept now branches into the Arcanist tree as a dedicated 3rd promotion choice alongside Fire Wizard and Dark Sorcerer.</li>
-          <li><strong>7 Evolution Tiers:</strong> Added Arcanist (T3), Spellweaver (T4), Aether Mage (T5), Aether Archmage (T6), Disintegrator (T7), Grand Magus (T8), and Singularity Magus (T9).</li>
-          <li><strong>Active Burst Spells:</strong> Focused single-target arcane damage scaling progressively — Energy Burst III (500%), Arcane Blast I–III (600%–800%), and Disintegrate I–III (1000%–3000%).</li>
-          <li><strong>Recast Chance:</strong> Disintegrate (T7–T9) features 20% / 25% / 30% chance to immediately cast a second blast upon execution.</li>
-          <li><strong>Aether Resonance Passive:</strong> Grants +10% up to +70% Skill Amp and +10% up to +70% enemy Armor & Magic Defense penetration (+10% per tier).</li>
-          <li><strong>Boss Priority & Threat Bypass:</strong> Units with Aether Resonance bypass enemy taunts and the threat weighting system, locking onto Boss-type enemies when present.</li>
-        </ul>
-        <h4>Combat Engine — Boss Classification System</h4>
-        <ul>
-          <li>Introduced <code>isBoss()</code> classification on Entity and Enemy architectures for specialized targeting and encounter dynamics.</li>
-          <li>Slime King and Archmagus Valthex are officially flagged as Boss-type enemies for priority targeting.</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- v1.3.18.6 -->
-    <article class="changelogEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.3.18.6</h3>
-          <span class="entrySub">Alert+ Trait, Scarlet Armor Rebalance & Enemy Defense Tuning</span>
-        </div>
-        <span class="dateBadge">5/10/2026</span>
-      </div>
-      <div class="entryBody">
-        <h4>Adventurers — Alert+ Trait Upgrade</h4>
-        <ul>
-          <li><strong>Added Alert+ Trait:</strong> Alert can now be evolved using Evolution Vial 24 (Evo-24) into its permanent PLUS form, Alert+.</li>
-          <li><strong>Initiative Retained:</strong> Characters with Alert+ maintain guaranteed turn-0 initiative at the start of combat, identical to Alert.</li>
-          <li><strong>First Strike Amplification:</strong> Grants +20% Basic Atk Amp on the very first hit landed in each combat encounter.</li>
-        </ul>
-        <h4>Equipment — Scarlet Armor Rebalance</h4>
-        <ul>
-          <li><strong>Scarlet Sigil:</strong> Changed from +20% crit chance to +20% Skill Amp.</li>
-          <li><strong>Scarlet Oni:</strong> Changed from +18% crit chance, +5% crit dmg into +27% damage dealt.</li>
-          <li><strong>Scarlet Oni Juggernaut:</strong> Changed from +30% crit chance, +35% crit dmg into +51% damage dealt.</li>
-        </ul>
-        <h4>Combat Engine — Enemy Defense Rebalance & Immunities</h4>
-        <ul>
-          <li><strong>Stone Shaman & Archmagus Valthex:</strong> Increased base MDEF to 450 to maintain intended 90% magic damage reduction under diminishing returns.</li>
-          <li><strong>Magic Armor:</strong> Scaled base DEF and MDEF to 150 (75% damage reduction).</li>
-          <li><strong>Obsidian Golem:</strong> Properly wired up native Deflect Magic passive in combat so all magical damage is reduced to 1.</li>
-          <li><strong>Necrolith:</strong> Set damage taken modifier to 0% (indestructible until Kabar the Rotten is defeated).</li>
-          <li><strong>High-Defense Scaling:</strong> Updated Bloodstone Colossus (200 DEF / 80%), Trolls (117 DEF / 70%), Knight Slime (75 DEF / 60%), and Crimson Acolyte (75 MDEF / 60%).</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- v1.3.18.5 -->
-    <article class="changelogEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.3.18.5</h3>
-          <span class="entrySub">Traveling Merchant Unique Item Recovery & Deduplication</span>
-        </div>
-        <span class="dateBadge">5/10/2026</span>
-      </div>
-      <div class="entryBody">
-        <ul>
-          <li><strong>Fixed Phantom Evolved Item Re-offers:</strong> Corrected <code>listUniqueDropsMissing()</code> to recursively purge ancestor items (e.g. owning Sha reliably purges Divine Larvae, Divine Embryo, and Divine Zygote).</li>
-          <li><strong>Hierarchical Ownership Check:</strong> Possessing an evolved boss accessory (like Sha or Amulet of the Swordsman) automatically satisfies possession of all predecessor stages, preventing intermediate items from falsely appearing in the Traveling Merchant for 1 gem.</li>
-          <li><strong>Expanded Storage Scans:</strong> Added active market listings, unclaimed sold items, and dismissed adventurers to the possession scanner to eliminate duplicate generation.</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- v1.3.18.4 -->
-    <article class="changelogEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.3.18.4</h3>
-          <span class="entrySub">Guild Activities Weekly Siege & Reset Alignment</span>
-        </div>
-        <span class="dateBadge">4/10/2026</span>
-      </div>
-      <div class="entryBody">
-        <ul>
-          <li><strong>Fixed Locale-Dependent Siege Rollover:</strong> Locked week boundary calculation to the engine's Sunday 00:00:00 boundary regardless of device locale; players in Monday-first locales now correctly reset on Sunday midnight.</li>
-          <li><strong>Decoupled Tries Counter:</strong> Decoupled attempt updates from Android view binding availability in both The Siege and The Hunt so weekly/daily attempts reliably reset in background ticks.</li>
-          <li><strong>Instant Startup Catch-Up:</strong> Added immediate <code>ensureActivities()</code> check on boot so overdue resets apply the millisecond save loads.</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- v1.3.18.3 & 1.3.18.2 -->
-    <article class="changelogEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.3.18.2 – v1.3.18.3</h3>
-          <span class="entrySub">Rogue Deadly Finesse Flurry & Hemorrhage Critical Bursts</span>
-        </div>
-        <span class="dateBadge">4/10/2026</span>
-      </div>
-      <div class="entryBody">
-        <ul>
-          <li><strong>Deadly Finesse Passive Rework:</strong> Reworked Meat Carver, Wounds Weaver, Hellish Sculptor, and Spirit Engraver into a rapid-strike bleed stacking archetype with +50% up to +100% Attack Speed (guaranteed 2 strikes every turn).</li>
-          <li><strong>Thousand Cuts & Bleed Synergy:</strong> Spirit Engraver reliably applies 120 Bleed per turn with basic attacks, shredding enemy armor while active skills retain full power.</li>
-          <li><strong>Hemorrhage Burst Proc:</strong> Fixed critical roll calculation for Hemorrhage, enabled floating combat damage text, and added instant death handling when lethal.</li>
-          <li><strong>Status Effects Inspector:</strong> Added tabs ([Enemies], [Allies], [All]) and resolved 999+ charge display truncation.</li>
-          <li><strong>New Accessory:</strong> Added Bloodstone Claws (+25 CON, +26 DEX, +20% Atk Speed, Bleed 60 on hit).</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- v1.3.18.0 -->
-    <article class="changelogEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.3.18.0</h3>
-          <span class="entrySub">Universal Defense & Attack Speed Engine Rework</span>
-        </div>
-        <span class="dateBadge">3/10/2026</span>
-      </div>
-      <div class="entryBody">
-        <ul>
-          <li><strong>Universal Defense Curve:</strong> Replaced linear reduction with diminishing returns formula <code>(DEF * 100) / (DEF + 50)%</code> (floored), granting 50% reduction at 50 DEF and 90% at 450 DEF.</li>
-          <li><strong>Attack Speed System:</strong> Standardized multi-attack mechanics to percentage Attack Speed (+100% = +1 guaranteed extra attack per round).</li>
-          <li><strong>Damage Dealt & Taken Stats:</strong> Unified outgoing and incoming multipliers into dedicated, inspectable stats with clear tooltips.</li>
-        </ul>
-      </div>
-    </article>
-
-    <!-- Historical Archive Highlights -->
-    <article class="changelogEntry archiveEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.2.0.0 — Guild Activities Milestone</h3>
-          <span class="entrySub">Daily Request, Weekly Siege & Reputation System</span>
-        </div>
-        <span class="dateBadge">12/9/2026</span>
-      </div>
-      <div class="entryBody">
-        <ul>
-          <li>Added Guild Activities: Daily Request (elite boss hunt) and Weekly Siege (10-wave defense).</li>
-          <li>Added mod-owned Reputation stat (0–100, shown next to Gems).</li>
-          <li>Added 5th navigation tab "Guild Activities" to the game interface.</li>
-        </ul>
-      </div>
-    </article>
-
-    <article class="changelogEntry archiveEntry">
-      <div class="entryHeader">
-        <div class="entryTitleWrap">
-          <h3>v1.0.0.0 – v1.1.1.3 — Mod Foundation & Early Content</h3>
-          <span class="entrySub">Engine Architecture, Imperial Captain & Knight Slime</span>
-        </div>
-        <span class="dateBadge">Archive Era</span>
-      </div>
-      <div class="entryBody">
-        <ul>
-          <li>Added Imperial Captain miniboss to The Golden City dungeon with Captain's Sword, Imperial Authority, and Execution Order.</li>
-          <li>Added Knight Slime to Slime Pond raid and Bestiary.</li>
-          <li>Rebalanced Troll Blood, Dragon Blood, and Evo Vials.</li>
-          <li>Built reverse-engineered Kotlin mod architecture, build pipeline, and save tooling.</li>
-        </ul>
-      </div>
-    </article>
   </section>
 </WikiLayout>
 
@@ -318,7 +189,7 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 
 .pageHeader p {
   color: var(--text-secondary);
-  max-width: 800px;
+  max-width: 820px;
   font-size: 1.05rem;
   line-height: 1.5;
   margin: 0;
@@ -329,17 +200,17 @@ import WikiLayout from '../layouts/WikiLayout.astro';
   margin-bottom: 3rem;
 }
 
-.highlightsSection h2,
-.changelogSection h2 {
+.highlightsSection h2 {
   font-size: 1.4rem;
   border-bottom: 1px solid var(--border-subtle);
   padding-bottom: 0.6rem;
   margin-bottom: 1.5rem;
+  color: var(--text-primary);
 }
 
 .highlightsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 1.25rem;
 }
 
@@ -347,7 +218,7 @@ import WikiLayout from '../layouts/WikiLayout.astro';
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 10px;
-  padding: 1.25rem 1.5rem;
+  padding: 1.25rem 1.4rem;
   display: flex;
   flex-direction: column;
   transition: transform 0.15s ease, border-color 0.15s ease;
@@ -359,11 +230,11 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 }
 
 .cardHeader {
-  margin-bottom: 0.6rem;
+  margin-bottom: 0.4rem;
 }
 
 .cardCategory {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
   color: var(--brand-primary);
@@ -374,20 +245,19 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 
 .highlightCard h3 {
   margin: 0;
-  font-size: 1.15rem;
+  font-size: 1.12rem;
   color: var(--text-primary);
 }
 
-.highlightCard p {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  line-height: 1.5;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
+.cardSummary {
+  font-size: 0.84rem;
+  color: var(--text-muted);
+  line-height: 1.4;
+  margin: 0 0 0.65rem 0;
 }
 
 .highlightCard ul {
-  padding-left: 1.2rem;
+  padding-left: 1.15rem;
   margin: 0;
   font-size: 0.84rem;
   color: var(--text-secondary);
@@ -395,95 +265,14 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 }
 
 .highlightCard li {
-  margin-bottom: 0.4rem;
+  margin-bottom: 0.45rem;
+}
+
+.highlightCard li:last-child {
+  margin-bottom: 0;
 }
 
 .highlightCard code {
-  background: var(--bg-inset);
-  padding: 1px 5px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  color: #93c5fd;
-}
-
-/* Changelog Entries */
-.changelogSection {
-  margin-bottom: 2.5rem;
-}
-
-.changelogEntry {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 10px;
-  padding: 1.5rem 1.75rem;
-  margin-bottom: 1.5rem;
-}
-
-.changelogEntry.archiveEntry {
-  border-color: rgba(255, 255, 255, 0.08);
-  background: var(--bg-inset);
-}
-
-.entryHeader {
-  display: flex;
-  align-items: flex-start;
-  justify-content: space-between;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.85rem;
-  margin-bottom: 1.1rem;
-  gap: 12px;
-}
-
-.entryTitleWrap {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.entryTitleWrap h3 {
-  font-size: 1.3rem;
-  margin: 0;
-  color: var(--text-primary);
-}
-
-.entrySub {
-  font-size: 0.85rem;
-  color: var(--text-gold);
-  font-weight: 500;
-}
-
-.dateBadge {
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 3px 8px;
-  border-radius: 4px;
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  color: var(--text-muted);
-  white-space: nowrap;
-}
-
-.entryBody h4 {
-  font-size: 0.95rem;
-  color: #93c5fd;
-  margin-top: 1rem;
-  margin-bottom: 0.4rem;
-}
-
-.entryBody ul {
-  padding-left: 1.25rem;
-  margin-top: 0;
-  margin-bottom: 0.75rem;
-  color: var(--text-secondary);
-  font-size: 0.88rem;
-  line-height: 1.6;
-}
-
-.entryBody li {
-  margin-bottom: 0.35rem;
-}
-
-.entryBody code {
   background: var(--bg-inset);
   padding: 1px 5px;
   border-radius: 4px;
