@@ -1,165 +1,740 @@
 ---
 import WikiLayout from '../layouts/WikiLayout.astro';
+import { base } from '../lib/base';
 ---
 
-<WikiLayout title="Whats New?" description="All features, systems, and additions in Idle Guild Master Modded v1.3.20.10.">
-  <div class="pageHeader">
-    <div class="headerTop">
-      <h1>Whats New?</h1>
-      <span class="versionBadge">v1.3.20.10 Active</span>
-    </div>
-    <p>
-      Idle Guild Master Modded (IGM+) is a massive expansion featuring a 4-branch Outlander class tree, 20 companion summons,
-      a 26-axe weapon family, guild activities, new raids & fishing, universal combat formulas, and extensive quality-of-life additions.
-    </p>
+<WikiLayout title="Whats New?" description="Complete reference for all modded classes, rebalances, status effects, and systems in Idle Guild Master Modded v1.3.20.10.">
+  <div class="docsContainer">
+    <!-- Main Documentation Content -->
+    <article class="docsMain">
+      <!-- Page Header -->
+      <header class="pageHeader">
+        <div class="headerTop">
+          <h1>What's New in IGM+</h1>
+          <span class="versionBadge">v1.3.20.10 Active</span>
+        </div>
+        <p class="headerSubtitle">
+          Comprehensive reference guide to all modded class trees, major class path rebalances, combat mechanics, status effects, equipment, and quality-of-life additions in Idle Guild Master Modded.
+        </p>
+      </header>
+
+      <!-- Quick Navigation Bar for Small Screens -->
+      <nav class="mobileQuickNav" aria-label="Quick Section Navigation">
+        <span class="quickNavLabel">Jump to:</span>
+        <div class="quickNavPills">
+          <a href="#new-class-trees">New Classes</a>
+          <a href="#class-rebalances">Class Rebalances</a>
+          <a href="#summons-minions">Minions & Summons</a>
+          <a href="#status-effects-combat">Status & Combat</a>
+          <a href="#equipment-crafting">Equipment</a>
+          <a href="#game-modes">Game Modes</a>
+          <a href="#qol">Quality of Life</a>
+        </div>
+      </nav>
+
+      <!-- SECTION 1: NEW CLASS TREES -->
+      <section id="new-class-trees" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">Classes</span>
+          <h2>New Class Trees & Evolution Paths</h2>
+          <p class="sectionDesc">IGM+ introduces an entirely new 5th base archetype—the Outlander—and a dedicated single-target burst mage branch for the Adept.</p>
+        </div>
+
+        <!-- 1.1 Outlander Tree -->
+        <div id="outlander-tree" class="subSection">
+          <div class="subHeader">
+            <img src={`${base}/images/unit_outlander.png`} alt="Outlander" class="subIcon sprite" width="36" height="36" />
+            <div>
+              <h3>Outlander Class Tree (Tier 1–Tier 9)</h3>
+              <p class="subTagline">Warrior Archetype · Axes & Light Armor · Multi-Strike Cleaves</p>
+            </div>
+          </div>
+          <p>
+            The <strong>Outlander</strong> is the 5th base class choice alongside Footman, Archer, Apprentice, and Rogue. Starting with innate multi-strike axe mastery via <strong>Wild Strikes I</strong>, the Outlander expands into 4 distinct promotion paths spanning from starter recruit all the way to Tier 9 pinnacle masteries:
+          </p>
+
+          <div class="classBranchGrid">
+            <!-- Branch 1: Avatar of Wrath -->
+            <div class="branchCard">
+              <div class="branchCardHeader">
+                <img src={`${base}/images/unit_avatar_of_wrath.png`} alt="Avatar of Wrath" class="sprite" width="28" height="28" />
+                <div>
+                  <h4>Avatar of Wrath Branch (T2–T9)</h4>
+                  <span class="branchLine">Marauder &rarr; Barbarian &rarr; Berserker &rarr; Savage Berserker &rarr; Crimson Warlord &rarr; Blood Reaver &rarr; Scarlet Berserker &rarr; Avatar of Wrath</span>
+                </div>
+              </div>
+              <p>
+                Hyper-aggressive physical melee brawlers. Specializes in multi-strike flurry strikes, on-kill recasts (<em>Savage Cleave</em> recasts immediately on kill), and <strong>Savage Rage</strong> frenzy (+30% damage dealt, +30% damage taken) to tear down enemy frontlines in rapid succession.
+              </p>
+            </div>
+
+            <!-- Branch 2: Beast Tamer -->
+            <div class="branchCard">
+              <div class="branchCardHeader">
+                <img src={`${base}/images/unit_beast_tamer.png`} alt="Beast Tamer" class="sprite" width="28" height="28" />
+                <div>
+                  <h4>Beast Tamer Branch (T2–T9)</h4>
+                  <span class="branchLine">Heathen &rarr; Brigand &rarr; Renegade &rarr; Rat Tamer &rarr; Cat Tamer &rarr; Bear Tamer &rarr; Beast Tamer</span>
+                </div>
+              </div>
+              <p>
+                Commands a loyal pack of <strong>7 Tamed Beast companions</strong>. When casting <em>Wild Strikes II</em>, the Tamer heals all active companion beasts for <strong>50%–150% of damage dealt</strong>, turning beast squads into resilient frontline sustain tanks that never suffer minion decay.
+              </p>
+            </div>
+
+            <!-- Branch 3: Datura Hierophant -->
+            <div class="branchCard">
+              <div class="branchCardHeader">
+                <img src={`${base}/images/unit_datura_hierophant.png`} alt="Datura Hierophant" class="sprite" width="28" height="28" />
+                <div>
+                  <h4>Datura Hierophant Branch (T3–T9)</h4>
+                  <span class="branchLine">Druid &rarr; Forest Druid &rarr; Gloom Druid &rarr; Hemodruid &rarr; Bloodthorn Druid &rarr; Sanguine Druid &rarr; Datura Hierophant</span>
+                </div>
+              </div>
+              <p>
+                Nature magic controller and frontline ward. Restricts enemy mobility with <strong>Entangle</strong> (forces enemy dodge to 0% and reduces damage dealt by -20%) while wreathing party members in <strong>Thorns</strong> to reflect melee strike damage back at attackers.
+              </p>
+            </div>
+
+            <!-- Branch 4: El Salvador -->
+            <div class="branchCard">
+              <div class="branchCardHeader">
+                <img src={`${base}/images/unit_el_salvador_1.png`} alt="El Salvador" class="sprite" width="28" height="28" />
+                <div>
+                  <h4>El Salvador Branch (T3–T9)</h4>
+                  <span class="branchLine">Exile &rarr; Desperado &rarr; El Salvador I &rarr; El Salvador II &rarr; El Salvador III &rarr; El Salvador</span>
+                </div>
+              </div>
+              <p>
+                High-agility duelist and counter-striker. Uses <strong>Evasion</strong> (+25% flat dodge chance), triggers immediate counterattacks upon evading enemy swings, and executes severely wounded enemies with <em>Rapid Exploitation</em>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- 1.2 Arcanist Tree -->
+        <div id="arcanist-tree" class="subSection">
+          <div class="subHeader">
+            <img src={`${base}/images/unit_singularity_magus.png`} alt="Singularity Magus" class="subIcon sprite" width="36" height="36" />
+            <div>
+              <h3>Singularity Magus Single-Target Burst Mage (Tier 3–Tier 9)</h3>
+              <p class="subTagline">Adept 3rd Promotion Branch · Boss Executioner · Pure Aether Scaling</p>
+            </div>
+          </div>
+          <p>
+            A brand-new promotion option for the <strong>Adept</strong> alongside the Fire Wizard and Dark Sorcerer. Designed from the ground up as the premier single-target boss sniper in the Mage tree:
+          </p>
+          <div class="tierProgressionBox">
+            <span class="progressionLabel">Promotion Path:</span>
+            <div class="progressionSteps">
+              <span class="stepBadge">T3 Arcanist</span> &rarr;
+              <span class="stepBadge">T4 Spellweaver</span> &rarr;
+              <span class="stepBadge">T5 Aether Mage</span> &rarr;
+              <span class="stepBadge">T6 Aether Archmage</span> &rarr;
+              <span class="stepBadge">T7 Disintegrator</span> &rarr;
+              <span class="stepBadge">T8 Grand Magus</span> &rarr;
+              <span class="stepBadge">T9 Singularity Magus</span>
+            </div>
+          </div>
+          <div class="featureDetailsGrid">
+            <div class="featureDetail">
+              <h4>Disintegrate Spells</h4>
+              <p>Active spells channel focused beams of concentrated aether, scaling up to <strong>3000% magic damage</strong> with a built-in <strong>20%–30% instant recast chance</strong> on cast.</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Aether Resonance</h4>
+              <p>Passives bypass enemy taunt mechanics to lock directly onto Dungeon and Raid Bosses, piercing up to <strong>70% enemy magic defense</strong> and gaining massive Skill Amp.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: CLASS PATH REBALANCES -->
+      <section id="class-rebalances" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">Rebalances</span>
+          <h2>Class Path Rebalances (8 Branches)</h2>
+          <p class="sectionDesc">
+            Vanilla IGM suffered from several classes having flat static numbers that fell off into irrelevance in endgame, suicidal gimmicks, or dead passives. These 8 evolution branches have been extensively overhauled with modern scaling and impactful tactical kits.
+          </p>
+        </div>
+
+        <!-- Rebalance 1: Black Idol -->
+        <div id="rebalance-black-idol" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_black_idol.png`} alt="Black Idol" class="sprite" width="36" height="36" />
+            <div>
+              <h3>1. Black Idol Branch (Necromancer & Lich Line)</h3>
+              <span class="rebalanceArchetype">Skill-Based Summoning · Soul Tether · Soul Harvest Cursed Death Scaling</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Minions only spawned when an enemy died (making them useless against lone bosses), hard-capped at 1 minion total, 0 physical defense left Liches exposed to one-shots, and minions decayed at a punishing 25% HP per turn.</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Skill-Based Summoning:</strong> Active Curse skills now directly summon undead servants mid-combat—no enemy death required.</li>
+              <li><strong>Summon Capacity by Tier:</strong> Max summons scale up across tiers: <strong>1 minion at T4–T5</strong>, <strong>2 minions at T6–T7</strong>, and <strong>3 minions at T8–T9</strong>.</li>
+              <li><strong>Capacity Mending:</strong> If active minions are already at max capacity, subsequent skill casts heal all active minions for <strong>35% of their Max HP</strong>.</li>
+              <li><strong>Soul Tether (Damage Redirection):</strong> To safeguard the Lich's 0 DEF glass-cannon design, passives redirect <strong>20% (T4) up to 45% (T9)</strong> of all damage taken by the Lich distributed across their active living minions.</li>
+              <li><strong>Soul Harvest Status Effect:</strong> Whenever a cursed enemy dies, all active minions absorb their soul, gaining permanent battle-long stacks: <strong>+15% Max HP</strong>, <strong>+10% Damage Dealt</strong>, and <strong>-5% Damage Taken</strong> per stack (up to 10 stacks at T9 = +150% HP, +100% DMG, -50% DMG taken!).</li>
+              <li><strong>Reduced Minion Decay:</strong> Undead minion decay rates reduced from vanilla 25% down to tier-scaled rates: Zombie (20%), Skeleton (18%), Bone Horror (16%), Bone Nightmare (14%), Bone Abomination (12%), Bone Hydra (10%).</li>
+              <li><strong>Summon Pool per Tier:</strong> T4 Necromancer &rarr; Zombie, T5 Demilich &rarr; Skeleton, T6 Lich &rarr; Bone Horror, T7 Ancient Lich &rarr; Bone Nightmare, T8 Lord of Decay &rarr; <strong>Bone Abomination (New Mod Minion)</strong>, T9 Black Idol &rarr; Bone Hydra.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 2: Corrosive Wraith -->
+        <div id="rebalance-corrosive-wraith" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_corrosive_wraith.png`} alt="Corrosive Wraith" class="sprite" width="36" height="36" />
+            <div>
+              <h3>2. Corrosive Wraith Branch (Venomous Archer Line)</h3>
+              <span class="rebalanceArchetype">Hybrid Weapon Scaling · Universal Damage Vulnerability · Stat Drain</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Static flat poison damage fell off severely against high-health bosses, and 0-defense bosses made physical armor shred completely useless ($0 \times 4\% = 0$).</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Progressive Hybrid Weapon Scaling (T6–T9):</strong> Bow attacks scale with both Dexterity and Intelligence starting at Tier 6: <strong>100% DEX + 30% INT (T6)</strong> &rarr; <strong>40% INT (T7)</strong> &rarr; <strong>50% INT (T8)</strong> &rarr; <strong>60% INT (T9)</strong>.</li>
+              <li><strong>Corrosion (<span class="codeBadge">CORROSION</span>):</strong> Stackable universal damage vulnerability debuff lasting 3 turns. Target takes <strong>+4% damage taken from all sources per stack</strong> (capped at +12% at 3 stacks for T8 Wraith, and +20% at 5 stacks for T9 Corrosive Wraith). Multiplies both physical and magical damage for the entire party!</li>
+              <li><strong>Enfeeble (<span class="codeBadge">ENFEEBLE</span>):</strong> Stackable stat reduction lasting 2 turns. Lowers the target's <strong>CON, DEX, and INT by -5% per stack</strong> (capped at -5% at 1 stack for T8 Wraith, and -15% at 3 stacks for T9 Corrosive Wraith), crippling boss offensive scaling.</li>
+              <li><strong>Focused Barrage Active Skill:</strong> Fires 2 arrows per enemy (50% damage each), giving dual independent proc rolls per target for Corrosion and Enfeeble.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 3: Eldritch Alchemist -->
+        <div id="rebalance-eldritch-alchemist" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_eldritch_alchemist.png`} alt="Eldritch Alchemist" class="sprite" width="36" height="36" />
+            <div>
+              <h3>3. Eldritch Alchemist Branch (Chemical Reaction Catalyst)</h3>
+              <span class="rebalanceArchetype">Tiered Chemical Reactions · Vaporize & Thermal Shock · Catalytic Barrage</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Alchemists were treated as "suicide bombers" that were useless dead weight while alive (weak unscaled physical attacks); players only wanted them to die immediately to trigger Thaumaturgy.</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Tiered Chemical Reactions (Thaumaturgy I–IV):</strong> Basic attacks and skill arrows dynamically react with existing elemental debuffs on hit:
+                <ul>
+                  <li><strong>Vaporize (hitting Ablaze):</strong> Triggers AoE magic explosion dealing 0.6x INT (T6) up to 1.2x INT (T9) magic damage to all enemies.</li>
+                  <li><strong>Thermal Shock (hitting Frozen, T7–T9):</strong> Shatters the freeze for massive bonus hybrid damage: <strong>+100% Phys / +100% Mag (T7)</strong> up to <strong>+150% Phys / +150% Mag (T9)</strong>.</li>
+                  <li><strong>Brittle Toxin (T9 Capstone):</strong> Inflicts a flat <strong>+20% Damage Taken</strong> vulnerability for 2 turns (strictly non-stacking).</li>
+                </ul>
+              </li>
+              <li><strong>Progressive Hybrid Weapon Scaling:</strong> 100% DEX + 30% INT (T6) &rarr; 40% (T7) &rarr; 50% (T8) &rarr; 60% (T9). Retains 100% hit chance (<span class="codeBadge">alwaysHits = true</span>).</li>
+              <li><strong>Catalytic Barrage (T9 Active):</strong> Fires 3 random arrows triggering passive reactions, then detonates a full-field <em>Grand Chemical Detonation</em> applying Vaporize, Brittle Toxin, and Thermal Shock to ALL living enemies.</li>
+              <li><strong>Supercharged Death Progression:</strong> Iconic on-death explosions preserved; reanimation via <em>Feeble Tether</em> grants <strong>10.0x Damage Amplification</strong> across Catalytic Barrage!</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 4: Wyrm Rider -->
+        <div id="rebalance-wyrm-rider" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_wyrm_rider.png`} alt="Wyrm Rider" class="sprite" width="36" height="36" />
+            <div>
+              <h3>4. Wyrm Rider Branch (Mounted Beastmaster & Dragon Rider)</h3>
+              <span class="rebalanceArchetype">Rider-Scaled Mount Attacks · Pure Mount Active Skills · Dual Elemental Breath</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Mounts dealt a static 100 flat damage in endgame where bosses had 10,000+ HP; active skills were generic archer arrow volleys with zero draconic flavor.</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Rider Stat-Scaled End-of-Turn Mount Attacks:</strong> Mount follow-up strikes scale directly from the Rider's <strong>DEX + INT</strong> (from 60% DEX at T4 up to <strong>120% DEX + 120% INT at T9</strong>), attack the enemy the Rider targeted, can roll Crits, and inflict <strong>Bleed</strong> (Poison for Spitfang).</li>
+              <li><strong>Attack Range Split:</strong> Melee for T4–T5 mounts (Wolf Bite, Worg Maul), Ranged for T6–T9 mounts (Spitfang Spit, Drake Rake, Golden Rake, Wyrm Tear).</li>
+              <li><strong>Pure Mount Active Skills:</strong> Archer arrow volleys replaced entirely with ferocious Mount abilities:
+                <ul>
+                  <li><strong>T4 Wolf Rider:</strong> <em>Savage Pounce</em> (250% Phys + 1-turn Stun).</li>
+                  <li><strong>T5 Worg Rider:</strong> <em>Frenzied Rend</em> (3x 200% Phys + Bleed 20 stacks).</li>
+                  <li><strong>T6 Spitfang Rider:</strong> <em>Caustic Deluge</em> (3x 220% Magic + Poison 3 turns).</li>
+                  <li><strong>T7 Drake Rider:</strong> <em>Incinerate</em> (220% Magic AoE + Ablaze).</li>
+                  <li><strong>T8 Golden Rider:</strong> <em>Incinerate II</em> (300% Magic AoE + Ablaze).</li>
+                  <li><strong>T9 Wyrm Rider:</strong> <em>Sublimate</em> (cataclysmic twin breath: 200% Magic AoE + Ablaze, followed immediately by 200% Magic AoE + Frozen).</li>
+                </ul>
+              </li>
+              <li><strong>Living Companion Synergy:</strong> Mount abilities scale with <span class="codeBadge">fromLivingCompanion</span> pet accessories and whips.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 5: Angel of War -->
+        <div id="rebalance-angel-of-war" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_angel_of_war.png`} alt="Angel of War" class="sprite" width="36" height="36" />
+            <div>
+              <h3>5. Angel of War Branch (Paladin & Frontline Auramancer)</h3>
+              <span class="rebalanceArchetype">Radiant Blessing 4-in-1 Aura · Holy Cleansing & Shields · Anti-Undead Smite</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Redundant darkness/silence meatshield with generic damage buffs that failed to provide the iconic holy protector fantasy.</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Paladin / Auramancer Scaling:</strong> Threat 2 frontline protector scaling with <strong>100% CON + 70% INT</strong> across the branch. Basic attacks deal Physical damage; active skills deal Magic damage with <strong>+50% bonus damage vs Undead</strong> (T6–T9).</li>
+              <li><strong>Radiant Blessing (4-in-1 Dynamic Battle Aura):</strong> Automatically wreathes all party members at battle start:
+                <ul>
+                  <li><strong>Status Immunity:</strong> +10% (T4) up to <strong>+50% (T9)</strong>.</li>
+                  <li><strong>Damage vs Undead:</strong> +5% (T4) up to <strong>+30% (T9)</strong>.</li>
+                  <li><strong>Flat Damage Reduction:</strong> +5 DR (T6) up to <strong>+15 DR (T9)</strong>.</li>
+                  <li><strong>HP Regeneration:</strong> +3% Max HP/turn (T8) up to <strong>+5% Max HP/turn (T9)</strong>.</li>
+                </ul>
+              </li>
+              <li><strong>Holy Sustain & Shields:</strong> Generic damage buffs removed. Skills cleanse party debuffs and grant holy shields scaling up to <strong>25% of each ally's Max HP</strong> on <em>Wrath of Heaven II</em>. Turn-start automatic cleanse on T8 and T9.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 6: Black Regent -->
+        <div id="rebalance-black-regent" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_black_regent.png`} alt="Black Regent" class="sprite" width="36" height="36" />
+            <div>
+              <h3>6. Black Regent Branch (Dark Knight & Executioner)</h3>
+              <span class="rebalanceArchetype">150% CON Weapon Scaling · Bloodflame Burn & Healing Block · Decimate Execute</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Branch-Wide 150% CON Weapon Scaling:</strong> Extended 1.5x CON scaling across the entire Knight/Dark Knight branch: Knight, Dark Knight, Death Knight, Scourge, Tyrant, Overlord, and Black Regent. High-CON health pools now directly fuel devastating sword strikes.</li>
+              <li><strong>Bloodflame (<span class="codeBadge">BLOODFLAME</span>):</strong> Curses targets to burn for <strong>5% of max Health each turn as magic damage</strong> and <strong>completely halts all healing</strong> (direct heals, lifesteal, regen).</li>
+              <li><strong>Subjugate & Subjugate II:</strong> Basic attacks inflict Bloodflame on hit (1 turn on Subjugate, 2 turns on Subjugate II).</li>
+              <li><strong>Decimate I–III Execution:</strong> Strikes all enemies, inflicting both Stun and Bloodflame. Features <strong>100% stun chance on lower-HP enemies</strong> (<span class="codeBadge">stunChanceOnLowerHp = 1.0</span>).</li>
+              <li><strong>Colossal Sword of Scarlet King:</strong> Endgame greatsword with +124 CON, +7 DEX, and +50% Bloodflame damage bonus.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 7: Whisper -->
+        <div id="rebalance-whisper" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_whisper.png`} alt="Whisper" class="sprite" width="36" height="36" />
+            <div>
+              <h3>7. Whisper Branch (Phantom Duelist & Precision Executioner)</h3>
+              <span class="rebalanceArchetype">Innate +15% Dodge · DEF Ignore · Missing-HP Damage Amp · 3.0x Crit Eclipse</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Squishy melee assassin with zero combat passives, relying on an impractical &lt;25% execution window that failed in long boss battles.</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Branch Scope:</strong> Starts at Tier 5 (Spire Initiate) through Tier 9 (Whisper), leaving Tier 4 Assassin untouched.</li>
+              <li><strong>Innate Evasion:</strong> Gains innate <strong>+15% dodge chance</strong> (<span class="codeBadge">flatDodgeChance = 0.15</span>) while preserving trap disarm (<span class="codeBadge">saboteur = true</span>). Daggers maintain 100% CON + 100% DEX scaling.</li>
+              <li><strong>Phantom Instinct & Phantom Lethality Passives:</strong>
+                <ul>
+                  <li>Systematically targets the enemy with the lowest <strong>Relative % HP</strong> (<span class="codeBadge">TARGET_LOWEST_RELATIVE_ENEMY</span>).</li>
+                  <li>Ignores <strong>20% to 40% of enemy DEF</strong> (20% T5 &rarr; 25% T6 &rarr; 30% T7 &rarr; 35% T8 &rarr; 40% T9).</li>
+                  <li>Attacks deal up to <strong>+45% to +70% bonus damage</strong> based on the target's missing HP percentage.</li>
+                </ul>
+              </li>
+              <li><strong>Eclipse Active Skill:</strong> Scales strictly <strong>+10% per tier</strong> (1.10x &rarr; 1.40x) with a massive <strong>3.0x Critical Strike Amplification</strong> and execution threshold with recast on kill (10% HP at T5 up to 25% HP at T9).</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 8: Spirit Engraver -->
+        <div id="rebalance-spirit-engraver" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_spirit_engraver.png`} alt="Spirit Engraver" class="sprite" width="36" height="36" />
+            <div>
+              <h3>8. Spirit Engraver Branch (Deadly Finesse Flurry & Bleed Specialist)</h3>
+              <span class="rebalanceArchetype">+100% Attack Speed (Guaranteed 2 Strikes) · 120 Bleed/Turn · Thousand Cuts II</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Deadly Finesse Multi-Strike Rework:</strong> Overhauled the passive line (Meat Carver, Wounds Weaver, Hellish Sculptor, Spirit Engraver) into a dedicated flurry-of-cuts archetype:
+                <ul>
+                  <li><strong>Deadly Finesse I (Meat Carver):</strong> +50% Attack Speed (50% chance for a 2nd strike), -25% Basic Attack Amp.</li>
+                  <li><strong>Deadly Finesse II (Wounds Weaver):</strong> +75% Attack Speed (75% chance for a 2nd strike), -35% Basic Attack Amp.</li>
+                  <li><strong>Deadly Finesse III (Hellish Sculptor & Spirit Engraver):</strong> <strong>+100% Attack Speed (guaranteed 2 strikes every turn)</strong>, -50% Basic Attack Amp.</li>
+                </ul>
+              </li>
+              <li><strong>Rapid Bleed Shredding:</strong> Spirit Engraver reliably applies <strong>120 Bleed per turn</strong> with basic attacks, rapidly melting enemy armor.</li>
+              <li><strong>Unpenalized Active Skill:</strong> <em>Thousand Cuts II</em> active skill damage remains at 100% full power via Skill Amp. Retains full trap-disarming utility.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: SUMMONS & MINIONS -->
+      <section id="summons-minions" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">Minions</span>
+          <h2>Summons & Minion Companions (Clarification)</h2>
+          <p class="sectionDesc">Understanding which minions are new additions versus rebalanced vanilla units, and how companion gear functions.</p>
+        </div>
+
+        <div class="callout callout-info">
+          <div class="calloutTitle">Important Distinction: Vanilla Minions vs. Mod Additions</div>
+          <p>
+            In the original game, <strong>Skeletons, Zombies, Bone Horrors, Bone Hydras, and Bone Nightmares</strong> already existed as Lich/Necromancer summons. 
+            In IGM Modded:
+          </p>
+          <ul class="docsList">
+            <li><strong>The Only New Undead Minion is the Bone Abomination:</strong> Added at Tier 8 Lord of Decay as a massive, venomous frontline tank.</li>
+            <li><strong>Vanilla Undead Minions Received Systemic Rebalances:</strong> Their decay rates were reduced from vanilla 25% down to 10%–20%, and they can now be summoned directly mid-fight via active skills.</li>
+            <li><strong>7 Tamed Beast Companions are Mod Additions:</strong> Created specifically for the Beast Tamer branch (Rats, Cats, Weasels, Wolves, Bears, Tigers, and Owlbears).</li>
+          </ul>
+        </div>
+
+        <div class="tableWrapper">
+          <table class="docsTable">
+            <thead>
+              <tr>
+                <th>Minion</th>
+                <th>Type</th>
+                <th>Source Class</th>
+                <th>Decay Rate</th>
+                <th>Role & Signature Abilities</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Bone Abomination</strong> <span class="tag tag-mod">MOD ADDITION</span></td>
+                <td>Undead Minion</td>
+                <td>T8 Lord of Decay</td>
+                <td>12% / turn</td>
+                <td>Massive HP meatshield; poisons enemies on hit.</td>
+              </tr>
+              <tr>
+                <td><strong>Tamed Beasts (7 Types)</strong> <span class="tag tag-mod">MOD ADDITION</span></td>
+                <td>Beast Companion</td>
+                <td>Beast Tamer Line</td>
+                <td><strong>0% (No Decay)</strong></td>
+                <td>Rats, Cats, Weasels, Wolves, Bears, Tigers, Owlbears. Equipped with natural fangs/paws/pelts. Healed by Wild Strikes II.</td>
+              </tr>
+              <tr>
+                <td><strong>Zombie</strong> <span class="tag">VANILLA REBALANCE</span></td>
+                <td>Undead Minion</td>
+                <td>T4 Necromancer</td>
+                <td>20% / turn</td>
+                <td>Early frontline meatshield; high Constitution.</td>
+              </tr>
+              <tr>
+                <td><strong>Skeleton</strong> <span class="tag">VANILLA REBALANCE</span></td>
+                <td>Undead Minion</td>
+                <td>T5 Demilich</td>
+                <td>18% / turn</td>
+                <td>Retaliates with bone strikes upon taking hits.</td>
+              </tr>
+              <tr>
+                <td><strong>Bone Horror</strong> <span class="tag">VANILLA REBALANCE</span></td>
+                <td>Undead Minion</td>
+                <td>T6 Lich</td>
+                <td>16% / turn</td>
+                <td>Frontline taunt tank with high physical armor.</td>
+              </tr>
+              <tr>
+                <td><strong>Bone Nightmare</strong> <span class="tag">VANILLA REBALANCE</span></td>
+                <td>Undead Minion</td>
+                <td>T7 Ancient Lich</td>
+                <td>14% / turn</td>
+                <td>Dual physical and magical defense vanguard.</td>
+              </tr>
+              <tr>
+                <td><strong>Bone Hydra</strong> <span class="tag">VANILLA REBALANCE</span></td>
+                <td>Undead Minion</td>
+                <td>T9 Black Idol</td>
+                <td>10% / turn</td>
+                <td>Multi-target bite strikes and self-revive mechanics.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 4: NEW STATUS EFFECTS & COMBAT ENGINE -->
+      <section id="status-effects-combat" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">Combat Engine</span>
+          <h2>New Status Effects & Universal Formulas</h2>
+          <p class="sectionDesc">IGM+ standardizes combat calculations and adds 10 new strategic status effects to elevate tactical team building.</p>
+        </div>
+
+        <div class="subSection">
+          <h3>New Combat Status Effects</h3>
+          <div class="statusGrid">
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_rage.png`} alt="Rage" class="sprite" width="24" height="24" />
+                <strong>Rage</strong>
+              </div>
+              <p>Grants <strong>+30% Damage Dealt</strong> but increases <strong>Damage Taken by +30%</strong>. Utilized by Avatar of Wrath.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_evasion.png`} alt="Evasion" class="sprite" width="24" height="24" />
+                <strong>Evasion</strong>
+              </div>
+              <p>Grants <strong>+25% Flat Dodge Chance</strong>. Triggers counterattacks when dodging incoming attacks on El Salvador.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_entangle.png`} alt="Entangle" class="sprite" width="24" height="24" />
+                <strong>Entangle</strong>
+              </div>
+              <p>Locks target dodge chance to <strong>0%</strong> and reduces outgoing damage dealt by <strong>-20%</strong>. Inflicted by Datura Hierophant.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_thorns.png`} alt="Thorns" class="sprite" width="24" height="24" />
+                <strong>Thorns</strong>
+              </div>
+              <p>Reflects flat and percentage damage back onto melee attackers. Wreathed on allies by Datura Hierophant.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_corrosion.png`} alt="Corrosion" class="sprite" width="24" height="24" />
+                <strong>Corrosion</strong>
+              </div>
+              <p>Stackable damage vulnerability. Target takes <strong>+4% damage taken from all sources per stack</strong> (up to +20% at 5 stacks). Lasts 3 turns.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_enfeeble.png`} alt="Enfeeble" class="sprite" width="24" height="24" />
+                <strong>Enfeeble</strong>
+              </div>
+              <p>Stackable stat drain. Lowers target's <strong>CON, DEX, and INT by -5% per stack</strong> (up to -15% at 3 stacks). Lasts 2 turns.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_soul_harvest.png`} alt="Soul Harvest" class="sprite" width="24" height="24" />
+                <strong>Soul Harvest</strong>
+              </div>
+              <p>Absorbed by minions on cursed enemy death. Grants <strong>+15% Max HP, +10% DMG, and -5% DMG taken</strong> per stack (up to 10 stacks).</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_bloodflame.png`} alt="Bloodflame" class="sprite" width="24" height="24" />
+                <strong>Bloodflame</strong>
+              </div>
+              <p>Burns for <strong>5% max HP/turn magic damage</strong> and <strong>completely prevents all healing</strong> (direct, lifesteal, regen).</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_brittle_toxin.png`} alt="Brittle Toxin" class="sprite" width="24" height="24" />
+                <strong>Brittle Toxin</strong>
+              </div>
+              <p>Flat <strong>+20% Damage Taken</strong> vulnerability for 2 turns. Strictly non-stacking; reapplying only refreshes duration.</p>
+            </div>
+
+            <div class="statusCard">
+              <div class="statusTitle">
+                <img src={`${base}/images/icon_effect_radiant_blessing.png`} alt="Radiant Blessing" class="sprite" width="24" height="24" />
+                <strong>Radiant Blessing</strong>
+              </div>
+              <p>4-in-1 aura granting Status Immunity (+10%–+50%), +5%–+30% damage vs Undead, +5–+15 Flat DR, and +3%–+5% HP regen/turn.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="subSection">
+          <h3>Universal Combat Engine Formulas</h3>
+          <div class="featureDetailsGrid">
+            <div class="featureDetail">
+              <h4>Universal Defense Formula</h4>
+              <p>Mitigation scales smoothly with diminishing returns: <br/><code>floor((100 * DEF) / (50 + DEF))%</code><br/>50 DEF grants 50% mitigation; 100 DEF grants 66.6% mitigation.</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Percentage Attack Speed</h4>
+              <p>Standardized multi-strike math: <br/><code>+100% Attack Speed = +1 extra strike per round</code>.<br/>Intermediary values represent strike chance (e.g. +75% = 75% chance for a 2nd strike).</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Menace & Guard</h4>
+              <p><strong>Menace:</strong> Damaging hits shred enemy physical and magic defense.<br/><strong>Guard:</strong> Ally buffs, heals, and shields grant bonus physical and magic defense.</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Special Damage (Cleave)</h4>
+              <p>True damage scaling applied to secondary/adjacent targets during cleaving attacks, bypassing target defense.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: EQUIPMENT & CRAFTING -->
+      <section id="equipment-crafting" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">Gear</span>
+          <h2>Equipment & Crafting Additions</h2>
+          <p class="sectionDesc">New weapon classes, endgame Scarlet sets, and unique item safety nets.</p>
+        </div>
+
+        <div class="subSection">
+          <h3>26-Axe Weapon Family</h3>
+          <p>
+            Craftable melee weapon progression tailored for the Outlander tree, scaling off <strong>100% Constitution + 100% Intelligence</strong>:
+          </p>
+          <ul class="docsList">
+            <li><strong>26 Craftable Axes:</strong> From the humble starter <em>Stick</em> to mid-tier <em>Berserker's Axe</em> and <em>Infernal Long Axe</em>, up to the endgame <em>Abhorrent Long Axe</em> and <em>Omni-Sever</em>.</li>
+            <li><strong>Wide Damage Spreads:</strong> Inherent &plusmn;20% to &plusmn;50% damage variance, capturing the wild and unpredictable nature of heavy axe swings.</li>
+            <li><strong>Elemental Procs:</strong> Mid- and endgame axes carry inherent Bleed, Freeze, Ablaze, and Stun procs on hit.</li>
+          </ul>
+        </div>
+
+        <div class="subSection">
+          <h3>Endgame Gear & Unique Item Recovery</h3>
+          <div class="featureDetailsGrid">
+            <div class="featureDetail">
+              <h4>Scarlet Equipment Sets</h4>
+              <p>Loot dropped from The Sanguine Crucible raid rebalanced around Skill Amp and outgoing Damage Dealt.</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Colossal Sword of Scarlet King</h4>
+              <p>Greatsword crafted from Colossal Sword + 5 Heart of Darkness + 5 Ancestral Blood (+124 CON, +7 DEX, Bloodflame damage +50%).</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Bloodstone Claws Accessory</h4>
+              <p>Crafted from Kabelian Claws + 2 Scarlet Debris (+25 CON, +26 DEX, +20% Attack Speed, and Bonus Action: Bleed 60 on melee hits).</p>
+            </div>
+            <div class="featureDetail">
+              <h4>Unique Item Recovery</h4>
+              <p>Lost or consumed unique quest items can be safely repurchased from the Traveling Merchant, preventing permanent quest lockouts.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 6: GAME MODES & EXPEDITIONS -->
+      <section id="game-modes" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">Game Modes</span>
+          <h2>Guild Activities & Endgame Expeditions</h2>
+          <p class="sectionDesc">New daily/weekly challenges, endgame raids, and relaxing fishing excursions.</p>
+        </div>
+
+        <div class="featureDetailsGrid">
+          <div class="featureDetail">
+            <h4>Guild Activities Tab (5th Main Tab)</h4>
+            <p>
+              Dedicated navigation tab for guild challenges:
+              <br/>• <strong>Daily Request (The Hunt):</strong> Daily elite boss battle for up to 12 guild champions; Gem rewards scale with Reputation.
+              <br/>• <strong>Weekly Siege:</strong> 10-wave horde survival challenge for your entire guild roster.
+              <br/>• <strong>Reputation System:</strong> Dynamic 0–100 standing granting bonus daily gems on victory.
+            </p>
+          </div>
+          <div class="featureDetail">
+            <h4>The Sanguine Crucible Raid</h4>
+            <p>
+              Endgame raid encounter featuring <strong>Archmagus Valthex</strong>, the <strong>Bloodstone Colossus</strong>, and Scarlet item crafting drops.
+            </p>
+          </div>
+          <div class="featureDetail">
+            <h4>The Slumbering Shallows Fishing</h4>
+            <p>
+              Fishing expedition with 6 catchable fish (Angelfish, Blue Trout, Blue Shark, Magma Shark, Fresh Salmon, Fresh Tuna) and the rare <strong>Chorus the Drowned</strong> phantom encounter (0.1%).
+            </p>
+          </div>
+          <div class="featureDetail">
+            <h4>New Minibosses</h4>
+            <p>
+              Encounter the <strong>Imperial Captain</strong> in The Golden City and the <strong>Knight Slime</strong> in the Slime Pond.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 7: QUALITY OF LIFE -->
+      <section id="qol" class="docsSection">
+        <div class="sectionHeader">
+          <span class="sectionBadge">QoL</span>
+          <h2>Quality of Life Improvements</h2>
+          <p class="sectionDesc">Streamlining roster management and providing deep in-combat tactical feedback.</p>
+        </div>
+
+        <div class="featureDetailsGrid">
+          <div class="featureDetail">
+            <h4>XP Books (1, 2, 3, 10, Ancient)</h4>
+            <p>
+              Batch consume XP books using quick-stepper buttons (-, +, MAX) or a smooth slider. Features real-time level preview and automatic level-cap protection so books are never wasted on over-leveling.
+            </p>
+          </div>
+          <div class="featureDetail">
+            <h4>Dungeon Gear Loadouts</h4>
+            <p>
+              Automatically saves and re-equips character equipment presets per dungeon slot, eliminating manual re-gearing between farming runs.
+            </p>
+          </div>
+          <div class="featureDetail">
+            <h4>In-Combat Status Inspector</h4>
+            <p>
+              Live battle dialog to inspect active buffs, debuffs, stack counts, and durations. Includes top tabs ([Enemies], [Allies], [All]) and a "Hide units without effects" filter for clean viewing in 14-man raids.
+            </p>
+          </div>
+          <div class="featureDetail">
+            <h4>In-Game Changelog</h4>
+            <p>
+              Browse complete patch notes and update history directly inside the game from the Settings menu.
+            </p>
+          </div>
+        </div>
+      </section>
+    </article>
+
+    <!-- Sticky Table of Contents Navigator on Desktop -->
+    <aside class="docsToc" aria-label="Table of Contents">
+      <div class="tocWrapper">
+        <h3 class="tocTitle">On This Page</h3>
+        <nav class="tocNav">
+          <a href="#new-class-trees" class="tocLink">New Class Trees</a>
+          <a href="#outlander-tree" class="tocSublink">&bull; Outlander Tree (T1–T9)</a>
+          <a href="#arcanist-tree" class="tocSublink">&bull; Arcanist Burst Mage</a>
+          
+          <a href="#class-rebalances" class="tocLink">Class Path Rebalances</a>
+          <a href="#rebalance-black-idol" class="tocSublink">&bull; Black Idol</a>
+          <a href="#rebalance-corrosive-wraith" class="tocSublink">&bull; Corrosive Wraith</a>
+          <a href="#rebalance-eldritch-alchemist" class="tocSublink">&bull; Eldritch Alchemist</a>
+          <a href="#rebalance-wyrm-rider" class="tocSublink">&bull; Wyrm Rider</a>
+          <a href="#rebalance-angel-of-war" class="tocSublink">&bull; Angel of War</a>
+          <a href="#rebalance-black-regent" class="tocSublink">&bull; Black Regent</a>
+          <a href="#rebalance-whisper" class="tocSublink">&bull; Whisper</a>
+          <a href="#rebalance-spirit-engraver" class="tocSublink">&bull; Spirit Engraver</a>
+          
+          <a href="#summons-minions" class="tocLink">Minions & Summons</a>
+          <a href="#status-effects-combat" class="tocLink">Status & Combat Engine</a>
+          <a href="#equipment-crafting" class="tocLink">Equipment & Crafting</a>
+          <a href="#game-modes" class="tocLink">Game Modes</a>
+          <a href="#qol" class="tocLink">Quality of Life</a>
+        </nav>
+      </div>
+    </aside>
   </div>
-
-  <!-- Featured Highlights Grid -->
-  <section class="highlightsSection">
-    <h2>Major Mod Additions (v1.3.20.10)</h2>
-    <div class="highlightsGrid">
-      <!-- 1. Outlander Tree -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">New Class Tree</span>
-          <h3>Outlander (T1–T9) & 4 Branches</h3>
-        </div>
-        <p class="cardSummary">Complete 4-branch warrior tree from starter recruit to Tier 9 pinnacle masteries:</p>
-        <ul>
-          <li><strong>Outlander (T1):</strong> Uses Axes and Light Armor with multi-strike <strong>Wild Strikes</strong>.</li>
-          <li><strong>Avatar of Wrath (T2–T9):</strong> Marauder &rarr; Barbarian &rarr; Berserker line with multi-strike flurries, on-kill recasts, and Savage Rage frenzy.</li>
-          <li><strong>Beast Tamer (T2–T9):</strong> Heathen &rarr; Tamer line; casting Wild Strikes II heals active companions for 50%–150% of damage dealt.</li>
-          <li><strong>Datura Hierophant (T3–T9):</strong> Druid &rarr; Archdruid line with nature magic inflicting Entangle and Thorns.</li>
-          <li><strong>El Salvador (T3–T9):</strong> Exile &rarr; Desperado &rarr; El Salvador line with Evasion (+25% dodge), counterattacks, and Rapid Exploitation execute.</li>
-        </ul>
-      </div>
-
-      <!-- 2. Companion Summons -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">Summons & Minions</span>
-          <h3>20 Unique Minion Companions</h3>
-        </div>
-        <p class="cardSummary">Fully playable minion companions with tactical skills and natural gear:</p>
-        <ul>
-          <li><strong>Tamed Beasts:</strong> Rats, Cats, Weasels, Wolves, Bears, Tigers, and Owlbears.</li>
-          <li><strong>Undead Minions:</strong> Skeletons, Zombies, Bone Abominations, Bone Horrors, Bone Hydras, and Bone Nightmares.</li>
-          <li><strong>Natural Equipment:</strong> Innate beast weapons (Fangs, Jaws, Paws, Claws) and armors (Pelts, Fur, Hides) with zero minion decay.</li>
-          <li><strong>Tactical Skills:</strong> Rabid Bite, Feline Pounce, Frenzied Flurry, Pack Howl, Predatory Ambush, Ursine Roar, and Apex Rampage.</li>
-        </ul>
-      </div>
-
-      <!-- 3. Arcanist Burst Mage -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">New Evolution Path</span>
-          <h3>Single-Target Burst Mage Line (T3–T9)</h3>
-        </div>
-        <p class="cardSummary">Adept's 3rd promotion choice alongside Fire Wizard and Dark Sorcerer:</p>
-        <ul>
-          <li><strong>7 Tiers:</strong> Arcanist (T3) &rarr; Spellweaver (T4) &rarr; Aether Mage (T5) &rarr; Aether Archmage (T6) &rarr; Disintegrator (T7) &rarr; Grand Magus (T8) &rarr; Singularity Magus (T9).</li>
-          <li><strong>Disintegrate Burst:</strong> Spells scaling up to 3000% damage with 20%–30% instant recast chance.</li>
-          <li><strong>Aether Resonance:</strong> Bypasses enemy taunts to lock directly onto Bosses, with up to +70% defense penetration and Skill Amp.</li>
-        </ul>
-      </div>
-
-      <!-- 4. 26-Axe Weapon Family -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">Equipment</span>
-          <h3>26-Axe Weapon Family & Gear</h3>
-        </div>
-        <p class="cardSummary">New melee weapon category scaling 100% Constitution + 100% Intelligence:</p>
-        <ul>
-          <li><strong>26 Craftable Axes:</strong> Full progression from starter Stick up to Abhorrent Long Axe, Omni-Sever, and Wicked Cleaver.</li>
-          <li><strong>Status Procs & Variance:</strong> Inherent &plusmn;20% to &plusmn;50% damage spread with Bleed, Freeze, Ablaze, and Stun.</li>
-          <li><strong>Scarlet Armor Sets:</strong> Endgame armor rebalances focused on Skill Amp and Damage Dealt.</li>
-          <li><strong>Unique Recovery:</strong> Buy back lost or evolved unique items from the Traveling Merchant.</li>
-        </ul>
-      </div>
-
-      <!-- 5. Guild Activities -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">New Game Modes</span>
-          <h3>Guild Activities & Reputation (5th Tab)</h3>
-        </div>
-        <p class="cardSummary">Dedicated navigation tab for daily and weekly guild challenges:</p>
-        <ul>
-          <li><strong>Daily Request (The Hunt):</strong> Daily elite boss battle for up to 12 guild champions, with Gem rewards scaled to Reputation.</li>
-          <li><strong>Weekly Siege:</strong> 10-wave horde survival challenge for your entire roster.</li>
-          <li><strong>Reputation System:</strong> Dynamic 0–100 standing granting bonus daily gems on victory.</li>
-        </ul>
-      </div>
-
-      <!-- 6. Raids & Expeditions -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">Expeditions & Raids</span>
-          <h3>Raids, Minibosses & Fishing</h3>
-        </div>
-        <p class="cardSummary">Challenging endgame expeditions and encounter mechanics:</p>
-        <ul>
-          <li><strong>The Sanguine Crucible:</strong> Archmagus Valthex raid with Bloodstone Colossus and Scarlet item drops.</li>
-          <li><strong>The Slumbering Shallows:</strong> Fishing expedition with 6 catchable fish and the rare Chorus the Drowned specter (0.1%).</li>
-          <li><strong>New Minibosses:</strong> Imperial Captain in The Golden City and Knight Slime in Slime Pond.</li>
-          <li><strong>Clean Auto-Raid:</strong> Wiping resets the party and boss state cleanly with zero stuck encounters.</li>
-        </ul>
-      </div>
-
-      <!-- 7. Combat Engine -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">Combat Engine</span>
-          <h3>New Combat Stats & Formulas</h3>
-        </div>
-        <p class="cardSummary">Universal combat math and impactful battle stats:</p>
-        <ul>
-          <li><strong>Menace:</strong> Damaging hits shred enemy physical and magic defense.</li>
-          <li><strong>Guard:</strong> Ally heals, shields, and buffs grant bonus physical and magic defense.</li>
-          <li><strong>Special Damage:</strong> Scales cleave true damage dealt to adjacent secondary targets.</li>
-          <li><strong>New Status Effects:</strong> Rage (+30% dmg dealt/taken), Evasion (+25% dodge), Entangle (0% dodge, -20% dmg), and Thorns (damage recoil).</li>
-          <li><strong>Universal Defense Curve:</strong> <code>floor((100 * DEF) / (50 + DEF))%</code> diminishing returns (50 DEF = 50% mitigation).</li>
-          <li><strong>Percentage Attack Speed:</strong> Unified <code>+100% Attack Speed = +1 extra strike/round</code>.</li>
-        </ul>
-      </div>
-
-      <!-- 8. Pets & Evolution Vials -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">Pets & Traits</span>
-          <h3>Mythic Pets & Evolution Vials</h3>
-        </div>
-        <p class="cardSummary">Expanded companion systems and permanent trait customization:</p>
-        <ul>
-          <li><strong>Mythic Pets:</strong> Phoenix (passive Solar Rebirth revive) and Kitsune (Spirit Blessing aura) with 4-slot dynamic trait rolling.</li>
-          <li><strong>Evo-21 & Evo-22:</strong> Swap common traits (Evo-21) and upgrade 7 common traits into Plus (+) variants (Evo-22).</li>
-          <li><strong>Evo-23 & Evo-24:</strong> Swap rare traits (Evo-23) and upgrade 7 rare traits into Phylactery Plus (+) variants (Evo-24).</li>
-          <li><strong>Doctrine Capstones:</strong> 7th ability nodes across all 8 doctrines.</li>
-        </ul>
-      </div>
-
-      <!-- 9. Quality of Life -->
-      <div class="highlightCard">
-        <div class="cardHeader">
-          <span class="cardCategory">Quality of Life</span>
-          <h3>XP Books & Convenience</h3>
-        </div>
-        <p class="cardSummary">Streamlined player experience and roster management:</p>
-        <ul>
-          <li><strong>XP Books (1, 2, 3, 10, Ancient):</strong> Batch consume books with stepper (-, +, MAX) and slider, instant level preview, and auto-cap protection.</li>
-          <li><strong>Dungeon Gear Loadouts:</strong> Saves and auto-reequips gear per dungeon team.</li>
-          <li><strong>Battle Status Inspector:</strong> Live dialog to inspect active buffs, debuffs, and stack counts during combat.</li>
-          <li><strong>In-Game Changelog:</strong> View all mod update notes directly from the Settings menu.</li>
-        </ul>
-      </div>
-    </div>
-  </section>
 </WikiLayout>
 
 <style>
+/* Layout Container */
+.docsContainer {
+  display: flex;
+  gap: 2.5rem;
+  align-items: flex-start;
+  position: relative;
+  max-width: 1240px;
+  margin: 0 auto;
+}
+
+.docsMain {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Page Header */
 .pageHeader {
   margin-bottom: 2rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.5rem;
 }
 
 .headerTop {
@@ -173,110 +748,528 @@ import WikiLayout from '../layouts/WikiLayout.astro';
 .headerTop h1 {
   margin: 0;
   font-size: 2.2rem;
+  color: #f1f5f9;
 }
 
 .versionBadge {
   font-size: 0.75rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.05em;
   background: rgba(110, 168, 254, 0.15);
   color: var(--brand-primary);
   border: 1px solid rgba(110, 168, 254, 0.35);
-  padding: 3px 9px;
+  padding: 4px 10px;
   border-radius: 4px;
 }
 
-.pageHeader p {
+.headerSubtitle {
   color: var(--text-secondary);
-  max-width: 820px;
   font-size: 1.05rem;
   line-height: 1.5;
   margin: 0;
 }
 
-/* Highlights Grid */
-.highlightsSection {
-  margin-bottom: 3rem;
-}
-
-.highlightsSection h2 {
-  font-size: 1.4rem;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.6rem;
-  margin-bottom: 1.5rem;
-  color: var(--text-primary);
-}
-
-.highlightsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-  gap: 1.25rem;
-}
-
-.highlightCard {
+/* Mobile Quick Navigation */
+.mobileQuickNav {
+  display: none;
+  margin-bottom: 1.75rem;
   background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 10px;
-  padding: 1.25rem 1.4rem;
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.15s ease, border-color 0.15s ease;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
 }
 
-.highlightCard:hover {
-  transform: translateY(-2px);
-  border-color: var(--brand-primary);
-}
-
-.cardHeader {
+.quickNavLabel {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
   margin-bottom: 0.4rem;
 }
 
-.cardCategory {
-  font-size: 0.68rem;
+.quickNavPills {
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4px;
+}
+
+.quickNavPills a {
+  background: var(--bg-inset);
+  color: var(--text-secondary);
+  font-size: 0.8rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+}
+
+.quickNavPills a:hover {
+  background: var(--bg-card-hover);
+  color: var(--brand-primary);
+  border-color: var(--brand-primary);
+}
+
+@media (max-width: 1023px) {
+  .mobileQuickNav {
+    display: block;
+  }
+}
+
+/* Docs Sections */
+.docsSection {
+  margin-bottom: 3.5rem;
+  scroll-margin-top: 80px;
+}
+
+.sectionHeader {
+  margin-bottom: 1.5rem;
+}
+
+.sectionBadge {
+  font-size: 0.7rem;
   font-weight: 700;
   text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--brand-primary);
-  letter-spacing: 0.05em;
   display: inline-block;
-  margin-bottom: 2px;
+  margin-bottom: 4px;
 }
 
-.highlightCard h3 {
-  margin: 0;
-  font-size: 1.12rem;
-  color: var(--text-primary);
+.sectionHeader h2 {
+  font-size: 1.65rem;
+  margin: 0 0 0.5rem 0;
+  border: none;
+  padding: 0;
+  color: #f1f5f9;
 }
 
-.cardSummary {
-  font-size: 0.84rem;
-  color: var(--text-muted);
-  line-height: 1.4;
-  margin: 0 0 0.65rem 0;
-}
-
-.highlightCard ul {
-  padding-left: 1.15rem;
-  margin: 0;
-  font-size: 0.84rem;
+.sectionDesc {
   color: var(--text-secondary);
+  font-size: 0.98rem;
+  margin: 0;
   line-height: 1.5;
 }
 
-.highlightCard li {
-  margin-bottom: 0.45rem;
+/* Subsections */
+.subSection {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 80px;
 }
 
-.highlightCard li:last-child {
-  margin-bottom: 0;
+.subHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
 }
 
-.highlightCard code {
+.subIcon {
+  width: 36px;
+  height: 36px;
+  flex-shrink: 0;
+}
+
+.subHeader h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color: #f1f5f9;
+}
+
+.subTagline {
+  margin: 2px 0 0 0;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+/* Class Branch Grid */
+.classBranchGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1.25rem;
+}
+
+.branchCard {
   background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+}
+
+.branchCardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 0.6rem;
+}
+
+.branchCardHeader h4 {
+  margin: 0;
+  font-size: 0.95rem;
+  color: #93c5fd;
+}
+
+.branchLine {
+  display: block;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  line-height: 1.3;
+  margin-top: 2px;
+}
+
+.branchCard p {
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  margin: 0;
+  line-height: 1.45;
+}
+
+/* Tier Progression Box */
+.tierProgressionBox {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  margin: 1rem 0;
+}
+
+.progressionLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  display: block;
+  margin-bottom: 0.4rem;
+}
+
+.progressionSteps {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+}
+
+.stepBadge {
+  background: rgba(110, 168, 254, 0.1);
+  color: #93c5fd;
+  border: 1px solid rgba(110, 168, 254, 0.25);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-weight: 600;
+  font-size: 0.78rem;
+}
+
+/* Feature Details Grid */
+.featureDetailsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.featureDetail {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1rem 1.15rem;
+}
+
+.featureDetail h4 {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.95rem;
+  color: #93c5fd;
+}
+
+.featureDetail p {
+  margin: 0;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.featureDetail code {
+  background: rgba(0, 0, 0, 0.3);
   padding: 1px 5px;
   border-radius: 4px;
   font-size: 0.8rem;
+  color: #f59e0b;
+}
+
+/* Rebalance Cards */
+.rebalanceCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.5rem;
+  margin-bottom: 1.5rem;
+  scroll-margin-top: 80px;
+  transition: border-color 0.15s ease;
+}
+
+.rebalanceCard:hover {
+  border-color: rgba(110, 168, 254, 0.5);
+}
+
+.rebalanceHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.75rem;
+}
+
+.rebalanceHeader h3 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #f1f5f9;
+}
+
+.rebalanceArchetype {
+  font-size: 0.78rem;
+  color: var(--brand-primary);
+  font-weight: 600;
+  display: block;
+  margin-top: 2px;
+}
+
+.rebalanceBody p {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  line-height: 1.5;
+  margin-bottom: 0.65rem;
+}
+
+.rebalanceBody strong {
+  color: #f1f5f9;
+}
+
+/* Docs Lists */
+.docsList {
+  padding-left: 1.25rem;
+  margin: 0.5rem 0 0 0;
+  font-size: 0.86rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+}
+
+.docsList li {
+  margin-bottom: 0.5rem;
+}
+
+.docsList li:last-child {
+  margin-bottom: 0;
+}
+
+.docsList ul {
+  padding-left: 1.2rem;
+  margin-top: 0.35rem;
+}
+
+.codeBadge {
+  background: var(--bg-inset);
   color: #93c5fd;
+  border: 1px solid rgba(147, 197, 253, 0.2);
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 0.78rem;
+  font-family: var(--font-mono);
+}
+
+/* Callout Blocks */
+.callout {
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.25rem 0;
+}
+
+.callout-info {
+  background: rgba(110, 168, 254, 0.08);
+  border: 1px solid rgba(110, 168, 254, 0.3);
+}
+
+.calloutTitle {
+  font-weight: 700;
+  font-size: 0.9rem;
+  color: #93c5fd;
+  margin-bottom: 0.4rem;
+}
+
+.callout p {
+  font-size: 0.85rem;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+  line-height: 1.45;
+}
+
+/* Tables */
+.tableWrapper {
+  overflow-x: auto;
+  margin: 1.25rem 0;
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+}
+
+.docsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.docsTable th {
+  background: var(--bg-sidebar);
+  color: #f1f5f9;
+  font-weight: 700;
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--border-card);
+  white-space: nowrap;
+}
+
+.docsTable td {
+  padding: 0.75rem 0.9rem;
+  border-bottom: 1px solid var(--border-subtle);
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.docsTable tr:last-child td {
+  border-bottom: none;
+}
+
+.docsTable tr:hover td {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+/* Tags */
+.tag {
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 2px 6px;
+  border-radius: 4px;
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text-muted);
+}
+
+.tag-mod {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Status Effect Grid */
+.statusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 0.9rem;
+  margin-top: 1rem;
+}
+
+.statusCard {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 0.9rem 1rem;
+}
+
+.statusTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 0.4rem;
+}
+
+.statusTitle strong {
+  font-size: 0.9rem;
+  color: #f1f5f9;
+}
+
+.statusCard p {
+  margin: 0;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+  line-height: 1.4;
+}
+
+/* Sticky TOC Sidebar */
+.docsToc {
+  width: 240px;
+  flex-shrink: 0;
+  position: sticky;
+  top: 80px;
+  align-self: flex-start;
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+}
+
+.tocWrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 1.25rem 1rem;
+}
+
+.tocTitle {
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--text-muted);
+  margin: 0 0 0.75rem 0;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.tocNav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+.tocLink {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  text-decoration: none;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.tocLink:hover {
+  color: var(--brand-primary);
+  background: rgba(110, 168, 254, 0.08);
+  text-decoration: none;
+}
+
+.tocSublink {
+  font-size: 0.76rem;
+  color: var(--text-muted);
+  text-decoration: none;
+  padding-left: 0.75rem;
+  transition: color 0.15s ease;
+}
+
+.tocSublink:hover {
+  color: #93c5fd;
+  text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+  .docsToc {
+    display: none;
+  }
 }
 </style>
