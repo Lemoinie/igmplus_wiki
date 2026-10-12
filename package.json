@@ -12,11 +12,13 @@
   },
   "dependencies": {
     "@astrojs/vue": "^5.0.6",
+    "@vercel/analytics": "^2.0.1",
     "astro": "^5.4.2",
     "vue": "^3.5.13"
   },
   "devDependencies": {
     "@types/node": "^22.13.0",
-    "typescript": "^5.7.3"
+    "typescript": "^5.7.3",
+    "vite": "^5.4.0"
   }
 }
