@@ -1,0 +1,149 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import EffectBrowser from '../../components/EffectBrowser.vue';
+import { getAllStatusEffects } from '../../lib/data';
+import { base } from '../../lib/base';
+
+const effectsData = getAllStatusEffects();
+---
+
+<WikiLayout
+  title="Status Effects & Curses"
+  description="Complete encyclopedia of all 40 combat status effects, buffs, debuffs, and curses in Idle Guild Master Modded."
+>
+  <div class="effectsPage">
+    <header class="pageHeader">
+      <div class="headerTop">
+        <h1>Status Effects & Curses</h1>
+        <span class="countBadge">40 Combat Effects</span>
+      </div>
+      <p class="pageIntro">
+        Every buff, debuff, curse, and battle condition active within Idle Guild Master Modded.
+        Explore durations, damage formulas, cleansing rules, and which classes or equipment inflict them.
+      </p>
+    </header>
+
+    <!-- Quick Overview Stats Banner -->
+    <div class="overviewBanner">
+      <div class="statBox">
+        <span class="statNumber">40</span>
+        <span class="statLabel">Total Effects</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-buff">12</span>
+        <span class="statLabel">Buffs & Auras</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-debuff">22</span>
+        <span class="statLabel">Debuffs & Recoils</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-curse">6</span>
+        <span class="statLabel">Ancient Curses</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-mod">16</span>
+        <span class="statLabel">Mod Additions</span>
+      </div>
+    </div>
+
+    <!-- Interactive Browser Component -->
+    <EffectBrowser client:load effects={effectsData as any} basePath={base} />
+  </div>
+</WikiLayout>
+
+<style>
+.effectsPage {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.25rem;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.headerTop h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #f1f5f9;
+}
+
+.countBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(110, 168, 254, 0.15);
+  color: var(--brand-primary);
+  border: 1px solid rgba(110, 168, 254, 0.35);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.pageIntro {
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 860px;
+}
+
+/* Overview Banner */
+.overviewBanner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.statBox {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.statNumber {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.text-buff {
+  color: #60a5fa;
+}
+
+.text-debuff {
+  color: #f87171;
+}
+
+.text-curse {
+  color: #c084fc;
+}
+
+.text-mod {
+  color: #34d399;
+}
+</style>

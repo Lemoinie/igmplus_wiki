@@ -55,6 +55,11 @@ function isItemActive(href: string): boolean {
     return true;
   }
 
+  // Handle effects alias
+  if (target.startsWith('/effects') && current.startsWith('/effects')) {
+    return true;
+  }
+
   // Handle changelog / whats-new alias
   if ((target === '/changelog' || target === '/whats-new') && (current === '/changelog' || current === '/whats-new' || current.startsWith('/changelog/') || current.startsWith('/whats-new/'))) {
     return true;
@@ -69,6 +74,7 @@ const navItems = [
   { label: 'Items', href: `${base}/items` },
   { label: 'Pets', href: `${base}/pets` },
   { label: 'Traits', href: `${base}/traits` },
+  { label: 'Effects', href: `${base}/effects` },
   { label: 'Bestiary', href: `${base}/enemies` },
   { label: 'Locations', href: `${base}/dungeons` },
   { label: 'Game Mechanics', href: `${base}/mechanics/defense-and-armor` },

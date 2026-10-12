@@ -336,3 +336,10 @@ export function getAllTraits(): any[] {
   const traitModules = import.meta.glob('../data/adventurers/traits/*.json', { eager: true });
   return Object.values(traitModules).map((mod: any) => mod.default || mod);
 }
+
+// Status Effects
+import statusEffectsList from '../data/status_effects.json';
+export function getAllStatusEffects(): any[] {
+  return statusEffectsList;
+}
+

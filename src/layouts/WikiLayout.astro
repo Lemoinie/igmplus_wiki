@@ -1,4 +1,5 @@
 ---
+import Analytics from '@vercel/analytics/astro';
 import Sidebar from '../components/Sidebar.vue';
 import SearchBar from '../components/SearchBar.vue';
 import '../styles/global.css';
@@ -18,6 +19,7 @@ import {
   getAllPets,
   getAllEnemies,
   getAllPlaces,
+  getAllStatusEffects,
 } from '../lib/data';
 
 import { base } from '../lib/base';
@@ -28,6 +30,7 @@ const traitsList = getAllTraits();
 const petsList = getAllPets();
 const enemiesList = getAllEnemies();
 const dungeonsList = getAllPlaces();
+const effectsList = getAllStatusEffects();
 
 const searchEntries = [
   ...classesList.map((c: any) => ({
@@ -71,6 +74,13 @@ const searchEntries = [
     category: 'Locations' as const,
     url: `${base}/dungeons#${d.id}`,
     description: `${d.type.toUpperCase()} · ${d.encounterChance}% encounter rate`
+  })),
+  ...effectsList.map((ef: any) => ({
+    id: `effect-${ef.id}`,
+    title: ef.name,
+    category: 'Mechanics' as const,
+    url: `${base}/effects#${ef.id}`,
+    description: `${ef.category.toUpperCase()} · ${ef.description.slice(0, 60)}...`
   })),
   {
     id: 'mech-defense',
@@ -179,6 +189,8 @@ const searchEntries = [
         </footer>
       </div>
     </div>
+
+    <Analytics />
   </body>
 </html>
 
