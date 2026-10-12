@@ -4,5 +4,5 @@
   "desc_key": "passive_corrosive_blood_description",
   "kind": "passive",
   "name": "Corrosive Blood",
-  "description": "Chances to miss reduced by 25%.\nImmunity to POISON and CORROSION.\nAttacks have a 20% chance to inflict CORROSION for 3 turns (up to 5 stacks).\nAttacks have a 40% chance to inflict ENFEEBLE for 2 turns (up to 3 stacks).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
+  "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 20% chance to inflict CORROSION for 3 turns (up to 5 stacks).\nAttacks have a 40% chance to inflict ENFEEBLE for 2 turns (up to 3 stacks).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
 }

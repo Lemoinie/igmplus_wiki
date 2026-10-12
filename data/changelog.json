@@ -4,6 +4,19 @@
     "date": "12/10/2026",
     "groups": [
       [
+        "Combat Balance — Celestial Rain Branch Accuracy Rebalance:",
+        "Removed Guaranteed Hit ('Always Hits'): Removed innate 100% guaranteed hit from the Marksman, Sureshot, Fury, Hailstorm, Tempest, Hurricane, and Celestial Rain sniper line, restoring evasion counterplay against archers;",
+        "+30% Hit Chance Bonus: Granted a flat +30% Hit Chance bonus (hitChanceBonus = 0.30) across all 7 units in the branch;",
+        "Keen Vision Tooltip: Updated Keen Vision passive description across all languages to 'Hit chance is increased by 30%';",
+        "Focused Trait Synergy: Stacks additively with the Focused trait for up to +55% total hit chance bonus."
+      ],
+      [
+        "Combat Balance — Archer Branch Accuracy Tuning (+15% Hit Chance):",
+        "Reduced Branch Hit Chance Bonus: Reduced the innate passive hit chance bonus of the Rider (T3–T9), Poison Bow / Corrosive Wraith (T4–T9), and Alchemist (T6–T9) branches from +25% down to +15% (hitChanceBonus = 0.15);",
+        "Preserved Celestial Rain Identity: The Celestial Rain sniper branch retains its superior +30% hit chance bonus, establishing it as the supreme high-accuracy archer specialization while balancing overall archer reliability against evasive targets;",
+        "Passive Tooltips Synchronized: Updated descriptions across all 16 affected passives (Rider I–VII, Poisonous Arrows I–III, Poisonous Blood, Corrosive Blood, and Thaumaturgy I–IV) to reflect the 15% miss chance reduction."
+      ],
+      [
         "Quality of Life & Performance — XP Book Consumption Rework:",
         "Eliminated UI Lag & Deferred Save: Resolved extreme UI freezing when consuming XP Books; save file serialization to disk and background fragment refreshes now execute only once when closing the dialog rather than stalling on every single tap;",
         "Dynamic In-Place Level Updates: Adventurer level numbers and XP progression bars now update instantly in-place with zero latency, eliminating the need to re-inflate view lists or restart the game to see level updates;",

@@ -989,7 +989,7 @@
     "desc_key": "passive_rider_i_description",
     "kind": "passive",
     "name": "Rider",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the horse kicks the attacked enemy for 25 physical damage"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the horse kicks the attacked enemy for 25 physical damage"
   },
   {
     "key": "PASSIVE_RIDER_II",
@@ -997,7 +997,7 @@
     "desc_key": "passive_rider_ii_description",
     "kind": "passive",
     "name": "Rider II",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the wolf bites the attacked enemy for 60% Dexterity physical damage and inflicts BLEED 10\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the wolf bites the attacked enemy for 60% Dexterity physical damage and inflicts BLEED 10\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
   },
   {
     "key": "PASSIVE_RIDER_III",
@@ -1005,7 +1005,7 @@
     "desc_key": "passive_rider_iii_description",
     "kind": "passive",
     "name": "Rider III",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the worg mauls the attacked enemy for 80% Dexterity physical damage and inflicts BLEED 15\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the worg mauls the attacked enemy for 80% Dexterity physical damage and inflicts BLEED 15\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
   },
   {
     "key": "PASSIVE_RIDER_IV",
@@ -1013,7 +1013,7 @@
     "desc_key": "passive_rider_iv_description",
     "kind": "passive",
     "name": "Rider IV",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount spits at the attacked enemy from a distance for 60% Dexterity + 60% Intelligence physical damage and inflicts POISON for 3 turns\n\nPOISON: damage reduced by 20%"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the mount spits at the attacked enemy from a distance for 60% Dexterity + 60% Intelligence physical damage and inflicts POISON for 3 turns\n\nPOISON: damage reduced by 20%"
   },
   {
     "key": "PASSIVE_RIDER_V",
@@ -1021,7 +1021,7 @@
     "desc_key": "passive_rider_v_description",
     "kind": "passive",
     "name": "Rider V",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount rakes the attacked enemy from a distance for 75% Dexterity + 75% Intelligence physical damage and inflicts BLEED 20\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the mount rakes the attacked enemy from a distance for 75% Dexterity + 75% Intelligence physical damage and inflicts BLEED 20\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
   },
   {
     "key": "PASSIVE_RIDER_VI",
@@ -1029,7 +1029,7 @@
     "desc_key": "passive_rider_vi_description",
     "kind": "passive",
     "name": "Rider VI",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount rakes the attacked enemy from a distance for 90% Dexterity + 90% Intelligence physical damage and inflicts BLEED 25\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the mount rakes the attacked enemy from a distance for 90% Dexterity + 90% Intelligence physical damage and inflicts BLEED 25\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
   },
   {
     "key": "PASSIVE_RIDER_VII",
@@ -1037,7 +1037,7 @@
     "desc_key": "passive_rider_vii_description",
     "kind": "passive",
     "name": "Rider VII",
-    "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount tears the attacked enemy from a distance for 120% Dexterity + 120% Intelligence physical damage and inflicts BLEED 30\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+    "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the mount tears the attacked enemy from a distance for 120% Dexterity + 120% Intelligence physical damage and inflicts BLEED 30\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
   },
   {
     "key": "PASSIVE_KEEN_VISION",
@@ -1053,7 +1053,7 @@
     "desc_key": "passive_poisonous_arrows_i_description",
     "kind": "passive",
     "name": "Poisonous Arrows",
-    "description": "Chances to miss reduced by 25%.\nAttacks have a 25% chance to POISON the target for 1 turn.\n\nPOISON: damage reduced by 20%"
+    "description": "Chances to miss reduced by 15%.\nAttacks have a 25% chance to POISON the target for 1 turn.\n\nPOISON: damage reduced by 20%"
   },
   {
     "key": "PASSIVE_POISONOUS_ARROWS_II",
@@ -1061,7 +1061,7 @@
     "desc_key": "passive_poisonous_arrows_ii_description",
     "kind": "passive",
     "name": "Poisonous Arrows II",
-    "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 1 turn.\n\nPOISON: damage reduced by 20%"
+    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn.\n\nPOISON: damage reduced by 20%"
   },
   {
     "key": "PASSIVE_POISONOUS_ARROWS_III",
@@ -1069,7 +1069,7 @@
     "desc_key": "passive_poisonous_arrows_iii_description",
     "kind": "passive",
     "name": "Poisonous Arrows III",
-    "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 2 turns.\n\nPOISON: damage reduced by 20%"
+    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 2 turns.\n\nPOISON: damage reduced by 20%"
   },
   {
     "key": "PASSIVE_THAUMATURGY_I",
@@ -1077,7 +1077,7 @@
     "desc_key": "passive_thaumaturgy_i_description",
     "kind": "passive",
     "name": "Thaumaturgy I",
-    "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking an ABLAZE target triggers VAPORIZE (deals 60% INT magic burst to all enemies).\n\nOn death, POISONS every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nSTUN: the unit skips its turn"
+    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking an ABLAZE target triggers VAPORIZE (deals 60% INT magic burst to all enemies).\n\nOn death, POISONS every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nSTUN: the unit skips its turn"
   },
   {
     "key": "PASSIVE_THAUMATURGY_II",
@@ -1085,7 +1085,7 @@
     "desc_key": "passive_thaumaturgy_ii_description",
     "kind": "passive",
     "name": "Thaumaturgy II",
-    "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 80% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +100% physical + 100% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn"
+    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 80% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +100% physical + 100% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn"
   },
   {
     "key": "PASSIVE_THAUMATURGY_III",
@@ -1093,7 +1093,7 @@
     "desc_key": "passive_thaumaturgy_iii_description",
     "kind": "passive",
     "name": "Thaumaturgy III",
-    "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 100% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +125% physical + 125% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
+    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 100% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +125% physical + 125% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
   },
   {
     "key": "PASSIVE_THAUMATURGY_IV",
@@ -1101,7 +1101,7 @@
     "desc_key": "passive_thaumaturgy_iv_description",
     "kind": "passive",
     "name": "Thaumaturgy IV",
-    "description": "Chances to miss reduced by 25%.\nAttacks POISON the target for 2 turns. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 120% INT magic burst to all enemies.\n• POISON -> BRITTLE TOXIN: +20% damage taken for 2 turns.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +150% physical + 150% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns. Then, she is allowed by an ancient power to cast Catalytic Barrage one last time for 10× damage.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
+    "description": "Chances to miss reduced by 15%.\nAttacks POISON the target for 2 turns. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 120% INT magic burst to all enemies.\n• POISON -> BRITTLE TOXIN: +20% damage taken for 2 turns.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +150% physical + 150% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns. Then, she is allowed by an ancient power to cast Catalytic Barrage one last time for 10× damage.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
   },
   {
     "key": "PASSIVE_POISONOUS_BLOOD",
@@ -1109,7 +1109,7 @@
     "desc_key": "passive_poisonous_blood_description",
     "kind": "passive",
     "name": "Poisonous Blood",
-    "description": "Chances to miss reduced by 25%.\nImmunity to POISON and CORROSION.\nAttacks have a 10% chance to inflict CORROSION for 3 turns (up to 3 stacks).\nAttacks have a 20% chance to inflict ENFEEBLE for 2 turns (up to 1 stack).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
+    "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 10% chance to inflict CORROSION for 3 turns (up to 3 stacks).\nAttacks have a 20% chance to inflict ENFEEBLE for 2 turns (up to 1 stack).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
   },
   {
     "key": "PASSIVE_CORROSIVE_BLOOD",
@@ -1117,7 +1117,7 @@
     "desc_key": "passive_corrosive_blood_description",
     "kind": "passive",
     "name": "Corrosive Blood",
-    "description": "Chances to miss reduced by 25%.\nImmunity to POISON and CORROSION.\nAttacks have a 20% chance to inflict CORROSION for 3 turns (up to 5 stacks).\nAttacks have a 40% chance to inflict ENFEEBLE for 2 turns (up to 3 stacks).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
+    "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 20% chance to inflict CORROSION for 3 turns (up to 5 stacks).\nAttacks have a 40% chance to inflict ENFEEBLE for 2 turns (up to 3 stacks).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
   },
   {
     "key": "PASSIVE_SABOTEUR",

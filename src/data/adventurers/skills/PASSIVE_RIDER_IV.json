@@ -4,5 +4,5 @@
   "desc_key": "passive_rider_iv_description",
   "kind": "passive",
   "name": "Rider IV",
-  "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount spits at the attacked enemy from a distance for 60% Dexterity + 60% Intelligence physical damage and inflicts POISON for 3 turns\n\nPOISON: damage reduced by 20%"
+  "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the mount spits at the attacked enemy from a distance for 60% Dexterity + 60% Intelligence physical damage and inflicts POISON for 3 turns\n\nPOISON: damage reduced by 20%"
 }

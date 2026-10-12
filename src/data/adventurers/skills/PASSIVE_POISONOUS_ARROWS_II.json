@@ -4,5 +4,5 @@
   "desc_key": "passive_poisonous_arrows_ii_description",
   "kind": "passive",
   "name": "Poisonous Arrows II",
-  "description": "Chances to miss reduced by 25%.\nAttacks have a 40% chance to POISON the target for 1 turn.\n\nPOISON: damage reduced by 20%"
+  "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn.\n\nPOISON: damage reduced by 20%"
 }

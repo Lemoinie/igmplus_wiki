@@ -4,5 +4,5 @@
   "desc_key": "passive_rider_v_description",
   "kind": "passive",
   "name": "Rider V",
-  "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the mount rakes the attacked enemy from a distance for 75% Dexterity + 75% Intelligence physical damage and inflicts BLEED 20\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+  "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the mount rakes the attacked enemy from a distance for 75% Dexterity + 75% Intelligence physical damage and inflicts BLEED 20\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
 }

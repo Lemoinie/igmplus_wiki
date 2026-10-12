@@ -4,5 +4,5 @@
   "desc_key": "passive_rider_iii_description",
   "kind": "passive",
   "name": "Rider III",
-  "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the worg mauls the attacked enemy for 80% Dexterity physical damage and inflicts BLEED 15\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+  "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the worg mauls the attacked enemy for 80% Dexterity physical damage and inflicts BLEED 15\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
 }

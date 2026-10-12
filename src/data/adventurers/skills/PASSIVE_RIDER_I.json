@@ -4,5 +4,5 @@
   "desc_key": "passive_rider_i_description",
   "kind": "passive",
   "name": "Rider",
-  "description": "Chances to miss reduced by 25%.\nEvery time this unit acts, the horse kicks the attacked enemy for 25 physical damage"
+  "description": "Chances to miss reduced by 15%.\nEvery time this unit acts, the horse kicks the attacked enemy for 25 physical damage"
 }

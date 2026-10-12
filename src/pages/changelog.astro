@@ -153,9 +153,9 @@ import { base } from '../lib/base';
       <section id="class-rebalances" class="docsSection">
         <div class="sectionHeader">
           <span class="sectionBadge">Rebalances</span>
-          <h2>Class Path Rebalances (8 Branches)</h2>
+          <h2>Class Path Rebalances (9 Branches)</h2>
           <p class="sectionDesc">
-            Vanilla IGM suffered from several classes having flat static numbers that fell off into irrelevance in endgame, suicidal gimmicks, or dead passives. These 8 evolution branches have been extensively overhauled with modern scaling and impactful tactical kits.
+            Vanilla IGM suffered from several classes having flat static numbers that fell off into irrelevance in endgame, suicidal gimmicks, or dead passives. These 9 evolution branches have been extensively overhauled with modern scaling and impactful tactical kits.
           </p>
         </div>
 
@@ -200,6 +200,7 @@ import { base } from '../lib/base';
               <li><strong>Corrosion (<span class="codeBadge">CORROSION</span>):</strong> Stackable universal damage vulnerability debuff lasting 3 turns. Target takes <strong>+4% damage taken from all sources per stack</strong> (capped at +12% at 3 stacks for T8 Wraith, and +20% at 5 stacks for T9 Corrosive Wraith). Multiplies both physical and magical damage for the entire party!</li>
               <li><strong>Enfeeble (<span class="codeBadge">ENFEEBLE</span>):</strong> Stackable stat reduction lasting 2 turns. Lowers the target's <strong>CON, DEX, and INT by -5% per stack</strong> (capped at -5% at 1 stack for T8 Wraith, and -15% at 3 stacks for T9 Corrosive Wraith), crippling boss offensive scaling.</li>
               <li><strong>Focused Barrage Active Skill:</strong> Fires 2 arrows per enemy (50% damage each), giving dual independent proc rolls per target for Corrosion and Enfeeble.</li>
+              <li><strong>+15% Hit Chance Bonus:</strong> Granted a flat <span class="codeBadge">hitChanceBonus = 0.15</span> (+15% Hit Chance) across the branch (T4 Poison Bow &rarr; T9 Corrosive Wraith), maintaining steady status infliction while allowing evasion counterplay.</li>
             </ul>
           </div>
         </div>
@@ -224,7 +225,7 @@ import { base } from '../lib/base';
                   <li><strong>Brittle Toxin (T9 Capstone):</strong> Inflicts a flat <strong>+20% Damage Taken</strong> vulnerability for 2 turns (strictly non-stacking).</li>
                 </ul>
               </li>
-              <li><strong>Progressive Hybrid Weapon Scaling:</strong> 100% DEX + 30% INT (T6) &rarr; 40% (T7) &rarr; 50% (T8) &rarr; 60% (T9). Retains 100% hit chance (<span class="codeBadge">alwaysHits = true</span>).</li>
+              <li><strong>Progressive Hybrid Weapon Scaling:</strong> 100% DEX + 30% INT (T6) &rarr; 40% (T7) &rarr; 50% (T8) &rarr; 60% (T9) with +15% Hit Chance bonus (<span class="codeBadge">hitChanceBonus = 0.15</span>).</li>
               <li><strong>Catalytic Barrage (T9 Active):</strong> Fires 3 random arrows triggering passive reactions, then detonates a full-field <em>Grand Chemical Detonation</em> applying Vaporize, Brittle Toxin, and Thermal Shock to ALL living enemies.</li>
               <li><strong>Supercharged Death Progression:</strong> Iconic on-death explosions preserved; reanimation via <em>Feeble Tether</em> grants <strong>10.0x Damage Amplification</strong> across Catalytic Barrage!</li>
             </ul>
@@ -257,6 +258,7 @@ import { base } from '../lib/base';
                 </ul>
               </li>
               <li><strong>Living Companion Synergy:</strong> Mount abilities scale with <span class="codeBadge">fromLivingCompanion</span> pet accessories and whips.</li>
+              <li><strong>+15% Hit Chance Bonus:</strong> All mounts and riders in the branch (T3–T9) receive a flat <span class="codeBadge">hitChanceBonus = 0.15</span> (+15% Hit Chance) across their passives (Rider I–VII).</li>
             </ul>
           </div>
         </div>
@@ -357,6 +359,29 @@ import { base } from '../lib/base';
               </li>
               <li><strong>Rapid Bleed Shredding:</strong> Spirit Engraver reliably applies <strong>120 Bleed per turn</strong> with basic attacks, rapidly melting enemy armor.</li>
               <li><strong>Unpenalized Active Skill:</strong> <em>Thousand Cuts II</em> active skill damage remains at 100% full power via Skill Amp. Retains full trap-disarming utility.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Rebalance 9: Celestial Rain -->
+        <div id="rebalance-celestial-rain" class="rebalanceCard">
+          <div class="rebalanceHeader">
+            <img src={`${base}/images/unit_celestial_rain.png`} alt="Celestial Rain" class="sprite" width="36" height="36" />
+            <div>
+              <h3>9. Celestial Rain Branch (Sniper Archer Accuracy Rebalance)</h3>
+              <span class="rebalanceArchetype">+30% Hit Chance Bonus · Removed Guaranteed Hits · Fair Evasion Dynamics</span>
+            </div>
+          </div>
+          <div class="rebalanceBody">
+            <p><strong>The Vanilla Problem:</strong> Marksman through Celestial Rain had unconditional 100% guaranteed hits (<span class="codeBadge">alwaysHits = true</span>) via Keen Vision, completely invalidating enemy evasion, dodge traits, and darkness mechanics across the entire game.</p>
+            <p><strong>The Overhaul:</strong></p>
+            <ul class="docsList">
+              <li><strong>Branch Scope (T3–T9):</strong> Marksman (T3), Sureshot (T4), Fury (T5), Hailstorm (T6), Tempest (T7), Hurricane (T8), and Celestial Rain (T9).</li>
+              <li><strong>Removed Guaranteed Hit:</strong> Removed innate <span class="codeBadge">alwaysHits = true</span> across all 7 units, allowing agile and evasive enemies to dodge arrows fairly.</li>
+              <li><strong>+30% Flat Hit Chance:</strong> Granted a flat <span class="codeBadge">hitChanceBonus = 0.30</span> (+30% Hit Chance) across the branch, preserving supreme sniper accuracy without breaking combat rules.</li>
+              <li><strong>Archer Accuracy Hierarchy:</strong> Celestial Rain retains +30% hit chance as the premier sniper line, while other archer branches (Riders, Poison Bow / Corrosive Wraith, and Alchemists) are tuned to +15% hit chance.</li>
+              <li><strong>Focused Trait Synergy:</strong> Stacks additively with the <em>Focused</em> trait (+25%) for up to <strong>+55% Hit Chance</strong>. Guaranteed hit can still be unlocked through specific late-game gear (e.g. <em>Seeking Glass</em>, <em>Amulet of the Swordsman</em>).</li>
+              <li><strong>Updated Keen Vision Tooltip:</strong> Skill description updated across all languages to <em>"Hit chance is increased by 30%"</em>.</li>
             </ul>
           </div>
         </div>
@@ -702,6 +727,7 @@ import { base } from '../lib/base';
           <a href="#rebalance-black-regent" class="tocSublink">&bull; Black Regent</a>
           <a href="#rebalance-whisper" class="tocSublink">&bull; Whisper</a>
           <a href="#rebalance-spirit-engraver" class="tocSublink">&bull; Spirit Engraver</a>
+          <a href="#rebalance-celestial-rain" class="tocSublink">&bull; Celestial Rain</a>
           
           <a href="#summons-minions" class="tocLink">Minions & Summons</a>
           <a href="#status-effects-combat" class="tocLink">Status & Combat Engine</a>
