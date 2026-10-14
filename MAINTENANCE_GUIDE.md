@@ -185,3 +185,33 @@ Open [http://localhost:4321/igmplus_wiki/](http://localhost:4321/igmplus_wiki/) 
 npm run build
 ```
 The output will be generated into the `dist/` directory ready for GitHub Pages or static web hosting.
+
+---
+
+## 🚦 Maintenance Mode (Soft & Full Toggle)
+
+You can toggle maintenance mode anytime via [`src/data/maintenance.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/data/maintenance.json) or with an environment variable (`PUBLIC_MAINTENANCE_MODE` or `MAINTENANCE_MODE`).
+
+```json
+{
+  "mode": "off",
+  "softMessage": "The wiki is currently undergoing updates and bug fixes. Some stats or formulas may be temporarily inaccurate.",
+  "fullTitle": "Under Maintenance",
+  "fullMessage": "The IGM+ Wiki is temporarily offline while we fix bugs and update game data.",
+  "fullSubtext": "We are working to get everything back up as quickly as possible. Check back soon!",
+  "estimatedTime": "",
+  "discordUrl": "https://discord.gg/idleguildmaster",
+  "githubUrl": "https://github.com/Lemoinie/IGM-Modded"
+}
+```
+
+### Modes Available:
+| Mode | Behavior |
+| :--- | :--- |
+| `"off"` | Normal live site. No maintenance banners or screens. |
+| `"soft"` | **Soft Maintenance:** Displays a dismissible top warning banner across all pages, but users can still browse normally. |
+| `"full"` | **Full Lockout:** Completely replaces all wiki content with an animated "Under Maintenance" screen. Sidebars, search bar, and internal pages are hidden and blocked. |
+
+### How to Toggle:
+1. **Via Git:** Change `"mode": "soft"` or `"mode": "full"` in `src/data/maintenance.json` and push to `main`.
+2. **Via Vercel (Instant without committing):** Set `PUBLIC_MAINTENANCE_MODE=full` (or `soft`/`off`) in Vercel Project Settings → Environment Variables and trigger a redeploy.

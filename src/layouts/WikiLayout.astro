@@ -23,6 +23,11 @@ import {
 } from '../lib/data';
 
 import { base } from '../lib/base';
+import { getMaintenanceConfig } from '../lib/maintenance';
+
+const maintenance = getMaintenanceConfig();
+const isFull = maintenance.mode === 'full';
+const isSoft = maintenance.mode === 'soft';
 
 const classesList = getAllClasses();
 const equipmentList = getAllItems();
@@ -135,60 +140,153 @@ const searchEntries = [
     <link rel="icon" type="image/png" href={`${base}/favicon.png`} />
     <link rel="shortcut icon" type="image/png" href={`${base}/favicon.png`} />
     <link rel="apple-touch-icon" href={`${base}/favicon.png`} />
-    <title>{title} | IGM+ Wiki</title>
-    <meta name="description" content={description} />
+    <title>{isFull ? `${maintenance.fullTitle} | IGM+ Wiki` : `${title} | IGM+ Wiki`}</title>
+    <meta name="description" content={isFull ? maintenance.fullMessage : description} />
+    {isFull && <meta name="robots" content="noindex, nofollow" />}
   </head>
   <body>
-    <div class="layoutRoot">
-      <!-- Sidebar Navigation -->
-      <Sidebar client:load currentPath={Astro.url.pathname} />
-
-      <!-- Main Layout Body -->
-      <div class="mainWrapper">
-        <!-- Top Header with Global Search and Mobile Hamburger Toggle -->
-        <header class="topHeader">
-          <div class="headerLeft">
-            <!-- Mobile Menu Toggle Button -->
-            <button
-              type="button"
-              id="mobileMenuBtn"
-              class="mobileMenuBtn"
-              aria-label="Open navigation menu"
-              onclick="window.dispatchEvent(new CustomEvent('igm:toggle-sidebar'))"
-            >
-              <span class="hamburgerIcon">☰</span>
-            </button>
-
-            <!-- Mobile Brand Logo & Name -->
-            <a href={`${base}/`} class="mobileBrand">
-              <img
-                src={`${base}/images/sha.png`}
-                alt="Sha"
-                class="mobileShaLogo sprite"
-                width="28"
-                height="28"
-              />
-              <span class="mobileBrandName">IGM+</span>
-            </a>
+    {isFull ? (
+      <div class="fullMaintenanceRoot">
+        <div class="maintenanceCard">
+          <div class="cardHeader">
+            <img
+              src={`${base}/images/sha.png`}
+              alt="Sha"
+              class="shaLogo sprite"
+              width="56"
+              height="56"
+            />
+            <div class="statusBadge">
+              <span class="pulsingDot" />
+              <span>Maintenance in Progress</span>
+            </div>
           </div>
 
-          <div class="headerCenter">
-            <SearchBar client:load entries={searchEntries} />
+          <h1 class="maintenanceTitle">{maintenance.fullTitle}</h1>
+          <p class="maintenanceDesc">{maintenance.fullMessage}</p>
+
+          {maintenance.fullSubtext && (
+            <p class="maintenanceSubtext">{maintenance.fullSubtext}</p>
+          )}
+
+          {maintenance.estimatedTime && (
+            <div class="etaBox">
+              <span class="etaLabel">Estimated Duration:</span>
+              <span class="etaValue">{maintenance.estimatedTime}</span>
+            </div>
+          )}
+
+          <div class="cardActions">
+            {maintenance.discordUrl && (
+              <a
+                href={maintenance.discordUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="actionBtn discordBtn"
+              >
+                Discord Community
+              </a>
+            )}
+            {maintenance.githubUrl && (
+              <a
+                href={maintenance.githubUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                class="actionBtn githubBtn"
+              >
+                GitHub Mod
+              </a>
+            )}
           </div>
-
-          <div class="headerRight"></div>
-        </header>
-
-        <!-- Page Content -->
-        <main class="pageContent">
-          <slot />
-        </main>
-
-        <footer class="siteFooter">
-          <p>Idle Guild Master Modded (IGM+) Community Wiki</p>
-        </footer>
+        </div>
       </div>
-    </div>
+    ) : (
+      <div class="layoutRoot">
+        <!-- Sidebar Navigation -->
+        <Sidebar client:load currentPath={Astro.url.pathname} />
+
+        <!-- Main Layout Body -->
+        <div class="mainWrapper">
+          <!-- Top Header with Global Search and Mobile Hamburger Toggle -->
+          <header class="topHeader">
+            <div class="headerLeft">
+              <!-- Mobile Menu Toggle Button -->
+              <button
+                type="button"
+                id="mobileMenuBtn"
+                class="mobileMenuBtn"
+                aria-label="Open navigation menu"
+                onclick="window.dispatchEvent(new CustomEvent('igm:toggle-sidebar'))"
+              >
+                <span class="hamburgerIcon">☰</span>
+              </button>
+
+              <!-- Mobile Brand Logo & Name -->
+              <a href={`${base}/`} class="mobileBrand">
+                <img
+                  src={`${base}/images/sha.png`}
+                  alt="Sha"
+                  class="mobileShaLogo sprite"
+                  width="28"
+                  height="28"
+                />
+                <span class="mobileBrandName">IGM+</span>
+              </a>
+            </div>
+
+            <div class="headerCenter">
+              <SearchBar client:load entries={searchEntries} />
+            </div>
+
+            <div class="headerRight" />
+          </header>
+
+          {isSoft && (
+            <div id="maintenanceBanner" class="maintenanceBanner">
+              <div class="bannerContent">
+                <span class="bannerIcon">⚠️</span>
+                <span class="bannerText">
+                  <strong>Maintenance Notice:</strong> {maintenance.softMessage}
+                </span>
+              </div>
+              <button
+                type="button"
+                id="dismissBannerBtn"
+                class="dismissBtn"
+                aria-label="Dismiss banner"
+              >
+                ✕
+              </button>
+            </div>
+          )}
+
+          <!-- Page Content -->
+          <main class="pageContent">
+            <slot />
+          </main>
+
+          <footer class="siteFooter">
+            <p>Idle Guild Master Modded (IGM+) Community Wiki</p>
+          </footer>
+        </div>
+      </div>
+    )}
+
+    {isSoft && (
+      <script>
+        const banner = document.getElementById('maintenanceBanner');
+        const dismissBtn = document.getElementById('dismissBannerBtn');
+        if (banner && dismissBtn) {
+          if (sessionStorage.getItem('igm_dismiss_maintenance') === 'true') {
+            banner.style.display = 'none';
+          }
+          dismissBtn.addEventListener('click', () => {
+            banner.style.display = 'none';
+            sessionStorage.setItem('igm_dismiss_maintenance', 'true');
+          });
+        }
+      </script>
+    )}
 
     <Analytics />
   </body>
@@ -341,5 +439,219 @@ const searchEntries = [
   .mobileBrandName {
     display: none;
   }
+}
+
+/* ================= Maintenance Styles ================= */
+.maintenanceBanner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.16) 0%, rgba(217, 119, 6, 0.08) 100%);
+  border-bottom: 1px solid rgba(245, 158, 11, 0.35);
+  color: #fef3c7;
+  font-size: 0.9rem;
+  position: relative;
+  z-index: 25;
+}
+
+.bannerContent {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+}
+
+.bannerIcon {
+  font-size: 1.2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.bannerText {
+  line-height: 1.45;
+  color: #fef3c7;
+}
+
+.bannerText strong {
+  color: #fbbf24;
+  margin-right: 4px;
+}
+
+.dismissBtn {
+  background: transparent;
+  border: 1px solid rgba(245, 158, 11, 0.25);
+  color: rgba(254, 243, 199, 0.75);
+  cursor: pointer;
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  line-height: 1;
+  flex-shrink: 0;
+  transition: all 0.15s ease;
+}
+
+.dismissBtn:hover {
+  background: rgba(245, 158, 11, 0.25);
+  color: #ffffff;
+  border-color: rgba(245, 158, 11, 0.6);
+}
+
+/* Full Maintenance Page Screen */
+.fullMaintenanceRoot {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+  background: radial-gradient(circle at 50% 30%, #161e2a 0%, var(--bg-main) 70%);
+}
+
+.maintenanceCard {
+  background: var(--bg-card);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.7), 0 0 30px rgba(245, 158, 11, 0.08);
+  border-radius: 14px;
+  padding: 2.75rem 2.25rem;
+  max-width: 520px;
+  width: 100%;
+  text-align: center;
+  animation: fadeIn 0.4s ease;
+}
+
+.cardHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 1.5rem;
+}
+
+.shaLogo {
+  width: 56px;
+  height: 56px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+.statusBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 14px;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.35);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: #f59e0b;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.pulsingDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #f59e0b;
+  box-shadow: 0 0 8px #f59e0b;
+  animation: pulseDot 1.8s infinite;
+}
+
+@keyframes pulseDot {
+  0% { transform: scale(0.9); opacity: 0.7; }
+  50% { transform: scale(1.3); opacity: 1; box-shadow: 0 0 12px #f59e0b; }
+  100% { transform: scale(0.9); opacity: 0.7; }
+}
+
+.maintenanceTitle {
+  font-size: 1.85rem;
+  margin-bottom: 0.85rem;
+  color: #f8fafc;
+}
+
+.maintenanceDesc {
+  color: var(--text-secondary);
+  font-size: 0.975rem;
+  line-height: 1.6;
+  margin-bottom: 0.75rem;
+}
+
+.maintenanceSubtext {
+  color: var(--text-muted);
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;
+}
+
+.etaBox {
+  margin: 1.25rem auto 1.5rem auto;
+  padding: 0.65rem 1.15rem;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+}
+
+.etaLabel {
+  color: var(--text-muted);
+}
+
+.etaValue {
+  color: #f59e0b;
+  font-weight: 600;
+}
+
+.cardActions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.actionBtn {
+  padding: 0.65rem 1.25rem;
+  border-radius: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.15s ease;
+}
+
+.discordBtn {
+  background: #5865F2;
+  color: #ffffff;
+}
+
+.discordBtn:hover {
+  background: #4752C4;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(88, 101, 242, 0.4);
+}
+
+.githubBtn {
+  background: var(--bg-card-hover);
+  color: var(--text-primary);
+  border: 1px solid var(--border-card);
+}
+
+.githubBtn:hover {
+  border-color: var(--border-focus);
+  color: #ffffff;
+  text-decoration: none;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 </style>
