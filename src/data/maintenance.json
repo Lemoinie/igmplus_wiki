@@ -1,5 +1,5 @@
 {
-  "mode": "full",
+  "mode": "soft",
   "softMessage": "The wiki is currently undergoing updates and bug fixes. Some stats or formulas may be temporarily inaccurate.",
   "fullTitle": "Under Maintenance",
   "fullMessage": "The IGM+ Wiki is temporarily offline while we fix bugs and update game data.",
