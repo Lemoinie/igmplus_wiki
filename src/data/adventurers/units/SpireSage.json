@@ -16,10 +16,10 @@
     "baseDexterity": 27,
     "baseDefense": 10,
     "baseMagicDefense": 10,
-    "flatDodgeChance": 0.1
+    "flatDodgeChance": 0.15
   },
-  "activeSkill": "Eclipse Iii",
-  "passiveSkill": "Despise Weakness",
+  "activeSkill": "Eclipse III",
+  "passiveSkill": "Phantom Lethality I",
   "promotesTo": [
     "Whisper"
   ]

@@ -16,9 +16,9 @@
     "baseDexterity": 30,
     "baseDefense": 10,
     "baseMagicDefense": 10,
-    "flatDodgeChance": 0.1
+    "flatDodgeChance": 0.15
   },
-  "activeSkill": "Eclipse Iv",
-  "passiveSkill": "Despise Weakness",
+  "activeSkill": "Eclipse IV",
+  "passiveSkill": "Phantom Lethality II",
   "promotesTo": []
 }

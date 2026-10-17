@@ -15,7 +15,8 @@
     "baseIntelligence": 5,
     "baseDexterity": 8,
     "baseDefense": 0,
-    "baseMagicDefense": 0
+    "baseMagicDefense": 0,
+    "baseLifesteal": 10
   },
   "activeSkill": "Rabid Bite",
   "passiveSkill": "Swarm Ferocity",

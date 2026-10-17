@@ -10,12 +10,12 @@
   "description": "Blends primordial growth with sanguine sacrifices to fuel volatile regenerative rituals.",
   "stats": {
     "maxLevel": 30,
-    "baseMaxHp": 145,
-    "baseConstitution": 20,
-    "baseIntelligence": 24,
-    "baseDexterity": 6,
-    "baseDefense": 10,
-    "baseMagicDefense": 10
+    "baseMaxHp": 170,
+    "baseConstitution": 24,
+    "baseIntelligence": 28,
+    "baseDexterity": 10,
+    "baseDefense": 14,
+    "baseMagicDefense": 18
   },
   "activeSkill": "Nature's Grasp II",
   "passiveSkill": "Nature's Lash",

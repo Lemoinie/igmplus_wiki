@@ -16,10 +16,10 @@
     "baseDexterity": 18,
     "baseDefense": 10,
     "baseMagicDefense": 10,
-    "flatDodgeChance": 0.1
+    "flatDodgeChance": 0.15
   },
   "activeSkill": "Eclipse I",
-  "passiveSkill": "Infiltrator",
+  "passiveSkill": "Phantom Instinct I",
   "promotesTo": [
     "SpireAcolyte"
   ]

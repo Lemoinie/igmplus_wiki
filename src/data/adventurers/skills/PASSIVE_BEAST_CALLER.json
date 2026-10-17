@@ -4,5 +4,5 @@
   "desc_key": "passive_beast_caller_description",
   "kind": "passive",
   "name": "Beast Caller",
-  "description": "At turn end, summons an Owlbear (max 1) that taunts, shields, and cleaves.\nWild Strikes II heals the pet for 150% of damage dealt."
+  "description": "At turn end, summons an Owlbear (max 2) that taunts, shields, and cleaves.\nWild Strikes II heals the pet for 150% of damage dealt."
 }

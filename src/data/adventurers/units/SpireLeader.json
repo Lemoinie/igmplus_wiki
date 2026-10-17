@@ -16,10 +16,10 @@
     "baseDexterity": 24,
     "baseDefense": 10,
     "baseMagicDefense": 10,
-    "flatDodgeChance": 0.1
+    "flatDodgeChance": 0.15
   },
-  "activeSkill": "Eclipse Iii",
-  "passiveSkill": "Infiltrator",
+  "activeSkill": "Eclipse III",
+  "passiveSkill": "Phantom Instinct III",
   "promotesTo": [
     "SpireSage"
   ]

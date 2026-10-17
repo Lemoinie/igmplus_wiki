@@ -1,0 +1,15 @@
+{
+  "id": "RelicDagger",
+  "name": "Relic Dagger",
+  "type": "accessory",
+  "category": "Relic",
+  "rarity": 3,
+  "price": 1000,
+  "sprite": "relic_dagger",
+  "description": "A ritualistic ceremonial dagger with 6 rune sockets. Thirsts for blood and steel.",
+  "stats": {
+    "dexterity": 8,
+    "criticalChance": 0.05
+  },
+  "notes": "Relic Equipment"
+}

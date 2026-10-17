@@ -398,5 +398,15 @@
     "serialized": true,
     "name": "Evasion",
     "description": "evasive"
+  },
+  {
+    "key": "AETHER_OVERLOAD",
+    "name_key": "status_effect_aether_overload",
+    "desc_key": "status_effect_aether_overload_log_description",
+    "sprite": "icon_effect_delirium",
+    "negative": true,
+    "serialized": false,
+    "name": "Aether Overload",
+    "description": "afflicted with Aether Overload"
   }
 ]

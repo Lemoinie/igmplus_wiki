@@ -3182,7 +3182,8 @@
       "bytes": 536,
       "source": "app/src/main/res/drawable/icon_effect_delirium.png",
       "usages": [
-        "status_effect:DELIRIUM"
+        "status_effect:DELIRIUM",
+        "status_effect:AETHER_OVERLOAD"
       ]
     },
     "icon_effect_enfeeble": {
@@ -4605,6 +4606,54 @@
         "item:RedwoodBow"
       ]
     },
+    "relic_dagger": {
+      "file": "relic_dagger.png",
+      "bytes": 1338,
+      "source": "app/src/main/res/drawable/relic_dagger.png",
+      "usages": [
+        "item:RelicDagger"
+      ]
+    },
+    "relic_dual_sword": {
+      "file": "relic_dual_sword.png",
+      "bytes": 2175,
+      "source": "app/src/main/res/drawable/relic_dual_sword.png",
+      "usages": [
+        "item:RelicDualSword"
+      ]
+    },
+    "relic_lance": {
+      "file": "relic_lance.png",
+      "bytes": 1830,
+      "source": "app/src/main/res/drawable/relic_lance.png",
+      "usages": [
+        "item:RelicLance"
+      ]
+    },
+    "relic_mask": {
+      "file": "relic_mask.png",
+      "bytes": 2073,
+      "source": "app/src/main/res/drawable/relic_mask.png",
+      "usages": [
+        "item:RelicMask"
+      ]
+    },
+    "relic_orb": {
+      "file": "relic_orb.png",
+      "bytes": 2502,
+      "source": "app/src/main/res/drawable/relic_orb.png",
+      "usages": [
+        "item:RelicOrb"
+      ]
+    },
+    "relic_shield": {
+      "file": "relic_shield.png",
+      "bytes": 2289,
+      "source": "app/src/main/res/drawable/relic_shield.png",
+      "usages": [
+        "item:RelicShield"
+      ]
+    },
     "rice": {
       "file": "rice.png",
       "bytes": 407,
@@ -4651,6 +4700,30 @@
       "source": "app/src/main/res/drawable/ruby_ring.png",
       "usages": [
         "item:RubyRing"
+      ]
+    },
+    "rune_blood_fest_1": {
+      "file": "rune_blood_fest_1.png",
+      "bytes": 593,
+      "source": "app/src/main/res/drawable/rune_blood_fest_1.png",
+      "usages": [
+        "item:RuneBloodFest1"
+      ]
+    },
+    "rune_blood_fest_2": {
+      "file": "rune_blood_fest_2.png",
+      "bytes": 594,
+      "source": "app/src/main/res/drawable/rune_blood_fest_2.png",
+      "usages": [
+        "item:RuneBloodFest2"
+      ]
+    },
+    "rune_blood_fest_3": {
+      "file": "rune_blood_fest_3.png",
+      "bytes": 603,
+      "source": "app/src/main/res/drawable/rune_blood_fest_3.png",
+      "usages": [
+        "item:RuneBloodFest3"
       ]
     },
     "rune_of_power": {

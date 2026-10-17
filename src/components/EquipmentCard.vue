@@ -22,13 +22,23 @@ const STAT_LABELS: Record<string, string> = {
   lifesteal: 'Lifesteal',
   counterattack: 'Counter',
   threat: 'Threat',
+  skillAmpModifier: 'Skill Amp',
+  damageDealtModifier: 'Damage Dealt',
 };
 
 function formatStat(key: string, val: number): string {
   const label = STAT_LABELS[key] || key;
-  const isPercent = ['criticalChance', 'criticalDamage', 'dodgeChance', 'flatDodgeChance', 'counterattack'].includes(key);
+  const isPercent = [
+    'criticalChance',
+    'criticalDamage',
+    'dodgeChance',
+    'flatDodgeChance',
+    'counterattack',
+    'skillAmpModifier',
+    'damageDealtModifier',
+  ].includes(key);
   if (isPercent) {
-    const pct = Math.abs(val) <= 1.0 ? val * 100 : val;
+    const pct = Math.abs(val) <= 1.0 ? Math.round(val * 100) : val;
     return `${label} ${pct > 0 ? '+' : ''}${pct}%`;
   }
   return `${label} ${val > 0 && key !== 'maxHp' ? '+' : ''}${val}`;

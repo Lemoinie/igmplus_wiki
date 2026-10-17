@@ -1,0 +1,15 @@
+{
+  "id": "RelicOrb",
+  "name": "Relic Orb",
+  "type": "accessory",
+  "category": "Relic",
+  "rarity": 3,
+  "price": 1000,
+  "sprite": "relic_orb",
+  "description": "A floating celestial sphere with 6 rune sockets. Channels boundless astral energy.",
+  "stats": {
+    "intelligence": 8,
+    "magicDefense": 4
+  },
+  "notes": "Relic Equipment"
+}

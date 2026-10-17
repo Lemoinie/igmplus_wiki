@@ -16,10 +16,10 @@
     "baseDexterity": 21,
     "baseDefense": 10,
     "baseMagicDefense": 10,
-    "flatDodgeChance": 0.1
+    "flatDodgeChance": 0.15
   },
-  "activeSkill": "Eclipse Ii",
-  "passiveSkill": "Infiltrator",
+  "activeSkill": "Eclipse II",
+  "passiveSkill": "Phantom Instinct II",
   "promotesTo": [
     "SpireLeader"
   ]

@@ -1197,7 +1197,8 @@
     "status_effect:GUARD_FORTIFIED"
   ],
   "icon_effect_delirium": [
-    "status_effect:DELIRIUM"
+    "status_effect:DELIRIUM",
+    "status_effect:AETHER_OVERLOAD"
   ],
   "icon_effect_enfeeble": [
     "status_effect:ENFEEBLE"
@@ -1734,6 +1735,24 @@
   "redwood_bow": [
     "item:RedwoodBow"
   ],
+  "relic_dagger": [
+    "item:RelicDagger"
+  ],
+  "relic_dual_sword": [
+    "item:RelicDualSword"
+  ],
+  "relic_lance": [
+    "item:RelicLance"
+  ],
+  "relic_mask": [
+    "item:RelicMask"
+  ],
+  "relic_orb": [
+    "item:RelicOrb"
+  ],
+  "relic_shield": [
+    "item:RelicShield"
+  ],
   "rice": [
     "item:Rice"
   ],
@@ -1751,6 +1770,15 @@
   ],
   "ruby_ring": [
     "item:RubyRing"
+  ],
+  "rune_blood_fest_1": [
+    "item:RuneBloodFest1"
+  ],
+  "rune_blood_fest_2": [
+    "item:RuneBloodFest2"
+  ],
+  "rune_blood_fest_3": [
+    "item:RuneBloodFest3"
   ],
   "rune_of_power": [
     "item:RuneOfPower"

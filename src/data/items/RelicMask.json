@@ -1,0 +1,15 @@
+{
+  "id": "RelicMask",
+  "name": "Relic Mask",
+  "type": "accessory",
+  "category": "Relic",
+  "rarity": 3,
+  "price": 1000,
+  "sprite": "relic_mask",
+  "description": "An enigmatic ceremonial mask with 6 rune sockets. Pulses with cosmic resonances.",
+  "stats": {
+    "defense": 6,
+    "magicDefense": 6
+  },
+  "notes": "Relic Equipment"
+}

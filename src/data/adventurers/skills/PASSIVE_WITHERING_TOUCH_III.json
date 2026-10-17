@@ -4,5 +4,5 @@
   "desc_key": "passive_withering_touch_iii_description",
   "kind": "passive",
   "name": "Withering Touch III",
-  "description": "Dealing damage heals the unit for half the amount. Redirects 25% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 2 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+  "description": "Dealing damage heals the unit for half the amount. Redirects 25% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 1 stack.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
 }

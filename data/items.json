@@ -94,6 +94,14 @@
         "getRegeneration": "regeneration",
         "getCriticalDamage": "criticalDamage",
         "getCriticalChance": "criticalChance",
+        "getPhysicalCriticalDamage": "getCriticalDamage() + physicalCriticalDamageBonus",
+        "getPhysicalCriticalChance": "getCriticalChance() + physicalCriticalChanceBonus",
+        "getSpellCriticalDamage": "getCriticalDamage() + spellCriticalDamageBonus",
+        "getSpellCriticalChance": "getCriticalChance() + spellCriticalChanceBonus",
+        "getPhysicalCriticalDamageBonus": "physicalCriticalDamageBonus",
+        "getPhysicalCriticalChanceBonus": "physicalCriticalChanceBonus",
+        "getSpellCriticalDamageBonus": "spellCriticalDamageBonus",
+        "getSpellCriticalChanceBonus": "spellCriticalChanceBonus",
         "isInitiative": "initiative",
         "isAlwaysHits": "alwaysHits",
         "getOnFireBonusDamage": "onFireBonusDamage",
@@ -150,6 +158,42 @@
       "defaults": {
         "printType": "R.string.type_potion",
         "printConsumeImage": "R.drawable.consume_potion"
+      }
+    },
+    {
+      "key": "Relic",
+      "parent": "Equipment",
+      "defaults": {
+        "printType": "R.string.type_relic",
+        "getConstitution": "super.getConstitution() + sockets.filterNotNull().sumOf { it.constitution } + (primaryAltar?.bonusConstitution() ?: 0) + (secondaryAltar?.bonusConstitution() ?: 0) + (defaultAltar?.bonusConstitution() ?: 0)",
+        "getIntelligence": "super.getIntelligence() + sockets.filterNotNull().sumOf { it.intelligence } + (primaryAltar?.bonusIntelligence() ?: 0) + (secondaryAltar?.bonusIntelligence() ?: 0) + (defaultAltar?.bonusIntelligence() ?: 0)",
+        "getDexterity": "super.getDexterity() + sockets.filterNotNull().sumOf { it.dexterity } + (primaryAltar?.bonusDexterity() ?: 0) + (secondaryAltar?.bonusDexterity() ?: 0) + (defaultAltar?.bonusDexterity() ?: 0)",
+        "getMaxHp": "super.getMaxHp() + sockets.filterNotNull().sumOf { it.maxHp } + (primaryAltar?.bonusHp() ?: 0) + (secondaryAltar?.bonusHp() ?: 0) + (defaultAltar?.bonusHp() ?: 0)",
+        "getDefense": "super.getDefense() + sockets.filterNotNull().sumOf { it.defense } + (primaryAltar?.bonusDefense() ?: 0) + (secondaryAltar?.bonusDefense() ?: 0) + (defaultAltar?.bonusDefense() ?: 0)",
+        "getMagicDefense": "super.getMagicDefense() + sockets.filterNotNull().sumOf { it.magicDefense } + (primaryAltar?.bonusMagicDefense() ?: 0) + (secondaryAltar?.bonusMagicDefense() ?: 0) + (defaultAltar?.bonusMagicDefense() ?: 0)",
+        "getLifesteal": "super.getLifesteal() + sockets.filterNotNull().sumOf { it.lifesteal } + (primaryAltar?.bonusLifesteal() ?: 0) + (secondaryAltar?.bonusLifesteal() ?: 0) + (defaultAltar?.bonusLifesteal() ?: 0)",
+        "getAttackSpeed": "super.getAttackSpeed() + sockets.filterNotNull().sumOf { it.attackSpeed } + (primaryAltar?.bonusAttackSpeed() ?: 0) + (secondaryAltar?.bonusAttackSpeed() ?: 0) + (defaultAltar?.bonusAttackSpeed() ?: 0)",
+        "getCriticalDamage": "super.getCriticalDamage() + sockets.filterNotNull().sumOf { it.criticalDamage }",
+        "getCriticalChance": "super.getCriticalChance() + sockets.filterNotNull().sumOf { it.criticalChance }",
+        "getPhysicalCriticalDamage": "super.getPhysicalCriticalDamage() + ((primaryAltar?.bonusPhysicalCritDamage() ?: 0.0) / 100.0) + ((secondaryAltar?.bonusPhysicalCritDamage() ?: 0.0) / 100.0) + ((defaultAltar?.bonusPhysicalCritDamage() ?: 0.0) / 100.0)",
+        "getPhysicalCriticalChance": "super.getPhysicalCriticalChance() + ((primaryAltar?.bonusPhysicalCritChance() ?: 0).toDouble() / 100.0) + ((secondaryAltar?.bonusPhysicalCritChance() ?: 0).toDouble() / 100.0) + ((defaultAltar?.bonusPhysicalCritChance() ?: 0).toDouble() / 100.0)",
+        "getSpellCriticalChance": "super.getSpellCriticalChance() + ((primaryAltar?.bonusSpellCritChance() ?: 0).toDouble() / 100.0) + ((secondaryAltar?.bonusSpellCritChance() ?: 0).toDouble() / 100.0) + ((defaultAltar?.bonusSpellCritChance() ?: 0).toDouble() / 100.0)",
+        "getSpellCriticalDamage": "super.getSpellCriticalDamage() + ((primaryAltar?.bonusSpellCritDamage() ?: 0.0) / 100.0) + ((secondaryAltar?.bonusSpellCritDamage() ?: 0.0) / 100.0) + ((defaultAltar?.bonusSpellCritDamage() ?: 0.0) / 100.0)",
+        "getManaRegen": "super.getManaRegen() + (primaryAltar?.bonusManaRegen() ?: 0) + (secondaryAltar?.bonusManaRegen() ?: 0) + (defaultAltar?.bonusManaRegen() ?: 0)",
+        "getMenace": "super.getMenace() + (primaryAltar?.bonusMenace() ?: 0) + (secondaryAltar?.bonusMenace() ?: 0) + (defaultAltar?.bonusMenace() ?: 0)",
+        "getGuard": "super.getGuard() + (primaryAltar?.bonusGuard() ?: 0) + (secondaryAltar?.bonusGuard() ?: 0) + (defaultAltar?.bonusGuard() ?: 0)",
+        "getSpecialDamageModifier": "super.getSpecialDamageModifier() + ((primaryAltar?.bonusSpecialDamage() ?: 0.0) / 100.0) + ((secondaryAltar?.bonusSpecialDamage() ?: 0.0) / 100.0) + ((defaultAltar?.bonusSpecialDamage() ?: 0.0) / 100.0)",
+        "equals": "this === other",
+        "hashCode": "System.identityHashCode(this)",
+        "getBasicAbilityName": "\"Default Altar Effect\"",
+        "getBasicAbilityDescription": "\"Innate archetype focus scales with relic enhancement.\""
+      }
+    },
+    {
+      "key": "Rune",
+      "parent": "Item",
+      "defaults": {
+        "printType": "R.string.type_rune"
       }
     },
     {
@@ -440,11 +484,9 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 50,
-        "dexterity": 50,
+        "dexterity": 15,
         "intelligence": 50,
-        "criticalChance": 0.35,
-        "criticalDamage": 0.4
+        "skillAmpModifier": 0.35
       },
       "flags": {},
       "overrides": {},
@@ -5348,11 +5390,9 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 40,
-        "dexterity": 40,
+        "dexterity": 10,
         "intelligence": 40,
-        "criticalChance": 0.21,
-        "criticalDamage": 0.21
+        "skillAmpModifier": 0.21
       },
       "flags": {},
       "overrides": {},
@@ -12024,6 +12064,187 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RedwoodBow.kt"
     },
     {
+      "key": "RelicDagger",
+      "parent": "Relic",
+      "class_chain": [
+        "RelicDagger",
+        "Relic",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Relic",
+      "sprite": "relic_dagger",
+      "name_key": "relic_dagger_name",
+      "description_key": "relic_dagger_description",
+      "name": "Relic Dagger",
+      "description": "A ritualistic ceremonial dagger with 6 rune sockets. Thirsts for blood and steel.",
+      "price": 1000,
+      "rarity": 3,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 8,
+        "criticalChance": 0.05
+      },
+      "flags": {},
+      "overrides": {
+        "getArchetypeName": "\"Dagger\"",
+        "getAuraBaseName": "\"relic_dagger\""
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicDagger.kt"
+    },
+    {
+      "key": "RelicDualSword",
+      "parent": "Relic",
+      "class_chain": [
+        "RelicDualSword",
+        "Relic",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Relic",
+      "sprite": "relic_dual_sword",
+      "name_key": "relic_dual_sword_name",
+      "description_key": "relic_dual_sword_description",
+      "name": "Relic Dual Swords",
+      "description": "Twin imperial blades with 6 rune sockets. Forged for rapid execution.",
+      "price": 1000,
+      "rarity": 3,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 6,
+        "attackSpeed": 10
+      },
+      "flags": {},
+      "overrides": {
+        "getArchetypeName": "\"Dual Sword\"",
+        "getAuraBaseName": "\"relic_dual_sword\""
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicDualSword.kt"
+    },
+    {
+      "key": "RelicLance",
+      "parent": "Relic",
+      "class_chain": [
+        "RelicLance",
+        "Relic",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Relic",
+      "sprite": "relic_lance",
+      "name_key": "relic_lance_name",
+      "description_key": "relic_lance_description",
+      "name": "Relic Lance",
+      "description": "An ancient vanguard lance with 6 rune sockets. Harnesses primordial sun plasma auras.",
+      "price": 1000,
+      "rarity": 3,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 6,
+        "dexterity": 4
+      },
+      "flags": {},
+      "overrides": {
+        "getArchetypeName": "\"Lance\"",
+        "getAuraBaseName": "\"relic_lance\""
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicLance.kt"
+    },
+    {
+      "key": "RelicMask",
+      "parent": "Relic",
+      "class_chain": [
+        "RelicMask",
+        "Relic",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Relic",
+      "sprite": "relic_mask",
+      "name_key": "relic_mask_name",
+      "description_key": "relic_mask_description",
+      "name": "Relic Mask",
+      "description": "An enigmatic ceremonial mask with 6 rune sockets. Pulses with cosmic resonances.",
+      "price": 1000,
+      "rarity": 3,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "defense": 6,
+        "magicDefense": 6
+      },
+      "flags": {},
+      "overrides": {
+        "getArchetypeName": "\"Mask\"",
+        "getAuraBaseName": "\"relic_mask\""
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicMask.kt"
+    },
+    {
+      "key": "RelicOrb",
+      "parent": "Relic",
+      "class_chain": [
+        "RelicOrb",
+        "Relic",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Relic",
+      "sprite": "relic_orb",
+      "name_key": "relic_orb_name",
+      "description_key": "relic_orb_description",
+      "name": "Relic Orb",
+      "description": "A floating celestial sphere with 6 rune sockets. Channels boundless astral energy.",
+      "price": 1000,
+      "rarity": 3,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 8,
+        "magicDefense": 4
+      },
+      "flags": {},
+      "overrides": {
+        "getArchetypeName": "\"Orb\"",
+        "getAuraBaseName": "\"relic_orb\""
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicOrb.kt"
+    },
+    {
+      "key": "RelicShield",
+      "parent": "Relic",
+      "class_chain": [
+        "RelicShield",
+        "Relic",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Relic",
+      "sprite": "relic_shield",
+      "name_key": "relic_shield_name",
+      "description_key": "relic_shield_description",
+      "name": "Relic Shield",
+      "description": "A titan bulwark with 6 rune sockets. Withstands the fury of primordial gods.",
+      "price": 1000,
+      "rarity": 3,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "defense": 12,
+        "maxHp": 30,
+        "threat": 10
+      },
+      "flags": {},
+      "overrides": {
+        "getArchetypeName": "\"Shield\"",
+        "getAuraBaseName": "\"relic_shield\""
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicShield.kt"
+    },
+    {
       "key": "ReptileEgg",
       "parent": "Egg",
       "class_chain": [
@@ -12214,6 +12435,84 @@
       },
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RubyRing.kt"
+    },
+    {
+      "key": "RuneBloodFest1",
+      "parent": "Rune",
+      "class_chain": [
+        "RuneBloodFest1",
+        "Rune",
+        "Item"
+      ],
+      "category": "Rune",
+      "sprite": "rune_blood_fest_1",
+      "name_key": "rune_blood_fest_1_name",
+      "description_key": "rune_blood_fest_1_description",
+      "name": "Lesser Rune of Blood Fest",
+      "description": "A triangular blood rune offering 1% Lifesteal.\nSocket 3 matching runes to awaken the Blood Altar Ability.",
+      "price": 25,
+      "rarity": 0,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "tier": 1,
+        "lifesteal": 1
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RuneBloodFest1.kt"
+    },
+    {
+      "key": "RuneBloodFest2",
+      "parent": "Rune",
+      "class_chain": [
+        "RuneBloodFest2",
+        "Rune",
+        "Item"
+      ],
+      "category": "Rune",
+      "sprite": "rune_blood_fest_2",
+      "name_key": "rune_blood_fest_2_name",
+      "description_key": "rune_blood_fest_2_description",
+      "name": "Refined Rune of Blood Fest",
+      "description": "A refined blood rune offering 2% Lifesteal.\nSocket 3 matching runes to awaken the Blood Altar Ability.",
+      "price": 75,
+      "rarity": 1,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "tier": 2,
+        "lifesteal": 2
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RuneBloodFest2.kt"
+    },
+    {
+      "key": "RuneBloodFest3",
+      "parent": "Rune",
+      "class_chain": [
+        "RuneBloodFest3",
+        "Rune",
+        "Item"
+      ],
+      "category": "Rune",
+      "sprite": "rune_blood_fest_3",
+      "name_key": "rune_blood_fest_3_name",
+      "description_key": "rune_blood_fest_3_description",
+      "name": "Flawless Rune of Blood Fest",
+      "description": "A flawless blood rune offering 3% Lifesteal.\nSocket 3 matching runes to awaken the Blood Altar Ability.",
+      "price": 225,
+      "rarity": 2,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "tier": 3,
+        "lifesteal": 3
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RuneBloodFest3.kt"
     },
     {
       "key": "RuneOfPower",
@@ -12523,10 +12822,9 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 30,
-        "dexterity": 30,
+        "dexterity": 5,
         "intelligence": 30,
-        "criticalChance": 0.15
+        "skillAmpModifier": 0.15
       },
       "flags": {},
       "overrides": {},

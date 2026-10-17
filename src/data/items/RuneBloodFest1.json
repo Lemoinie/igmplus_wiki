@@ -1,0 +1,14 @@
+{
+  "id": "RuneBloodFest1",
+  "name": "Lesser Rune of Blood Fest",
+  "type": "accessory",
+  "category": "Rune",
+  "rarity": 0,
+  "price": 25,
+  "sprite": "rune_blood_fest_1",
+  "description": "A triangular blood rune offering 1% Lifesteal. Socket 3 matching runes to awaken the Blood Altar Ability.",
+  "stats": {
+    "lifesteal": 1
+  },
+  "notes": "Tier 1 Altar Rune"
+}

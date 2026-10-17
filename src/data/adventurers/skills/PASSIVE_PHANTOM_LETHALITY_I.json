@@ -4,5 +4,5 @@
   "desc_key": "passive_phantom_lethality_i_description",
   "kind": "passive",
   "name": "Phantom Lethality I",
-  "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy and ignore 35% of enemy Defense.\nAttacks deal up to +60% bonus damage based on the target's missing health."
+  "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy.\nAttacks deal up to +30% bonus damage based on the target's missing health."
 }

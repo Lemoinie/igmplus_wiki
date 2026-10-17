@@ -1,0 +1,15 @@
+{
+  "id": "RelicLance",
+  "name": "Relic Lance",
+  "type": "accessory",
+  "category": "Relic",
+  "rarity": 3,
+  "price": 1000,
+  "sprite": "relic_lance",
+  "description": "An ancient vanguard lance with 6 rune sockets. Harnesses primordial sun plasma auras.",
+  "stats": {
+    "constitution": 6,
+    "dexterity": 4
+  },
+  "notes": "Relic Equipment"
+}

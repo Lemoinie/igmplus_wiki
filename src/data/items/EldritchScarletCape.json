@@ -6,13 +6,11 @@
   "rarity": null,
   "price": 204465,
   "sprite": "eldritch_scarlet_cape",
-  "description": "The Scarlet Cape steeped in esoteric rites and sealed by outer horrors. Deep crimson threads twist with cosmic energy, multiplying critical destruction.",
+  "description": "The Scarlet Cape steeped in esoteric rites and sealed by outer horrors. Deep crimson threads twist with cosmic energy, channeling forbidden power to amplify damaging abilities.",
   "stats": {
-    "constitution": 40,
-    "dexterity": 40,
+    "dexterity": 10,
     "intelligence": 40,
-    "criticalChance": 0.21,
-    "criticalDamage": 0.21
+    "skillAmpModifier": 0.21
   },
   "notes": ""
 }

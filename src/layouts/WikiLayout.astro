@@ -207,58 +207,61 @@ const searchEntries = [
 
         <!-- Main Layout Body -->
         <div class="mainWrapper">
-          <!-- Top Header with Global Search and Mobile Hamburger Toggle -->
-          <header class="topHeader">
-            <div class="headerLeft">
-              <!-- Mobile Menu Toggle Button -->
-              <button
-                type="button"
-                id="mobileMenuBtn"
-                class="mobileMenuBtn"
-                aria-label="Open navigation menu"
-                onclick="window.dispatchEvent(new CustomEvent('igm:toggle-sidebar'))"
-              >
-                <span class="hamburgerIcon">☰</span>
-              </button>
-
-              <!-- Mobile Brand Logo & Name -->
-              <a href={`${base}/`} class="mobileBrand">
-                <img
-                  src={`${base}/images/sha.png`}
-                  alt="Sha"
-                  class="mobileShaLogo sprite"
-                  width="28"
-                  height="28"
-                />
-                <span class="mobileBrandName">IGM+</span>
-              </a>
-            </div>
-
-            <div class="headerCenter">
-              <SearchBar client:load entries={searchEntries} />
-            </div>
-
-            <div class="headerRight" />
-          </header>
-
-          {isSoft && (
-            <div id="maintenanceBanner" class="maintenanceBanner">
-              <div class="bannerContent">
-                <span class="bannerIcon">⚠️</span>
-                <span class="bannerText">
-                  <strong>Maintenance Notice:</strong> {maintenance.softMessage}
-                </span>
+          <!-- Sticky Top Group: Maintenance Notice & Header -->
+          <div class="stickyTopGroup">
+            {isSoft && (
+              <div id="maintenanceBanner" class="maintenanceBanner">
+                <div class="bannerContent">
+                  <span class="bannerIcon">⚠️</span>
+                  <span class="bannerText">
+                    <strong>Maintenance Notice:</strong> {maintenance.softMessage}
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  id="dismissBannerBtn"
+                  class="dismissBtn"
+                  aria-label="Dismiss banner"
+                >
+                  ✕
+                </button>
               </div>
-              <button
-                type="button"
-                id="dismissBannerBtn"
-                class="dismissBtn"
-                aria-label="Dismiss banner"
-              >
-                ✕
-              </button>
-            </div>
-          )}
+            )}
+
+            <!-- Top Header with Global Search and Mobile Hamburger Toggle -->
+            <header class="topHeader">
+              <div class="headerLeft">
+                <!-- Mobile Menu Toggle Button -->
+                <button
+                  type="button"
+                  id="mobileMenuBtn"
+                  class="mobileMenuBtn"
+                  aria-label="Open navigation menu"
+                  onclick="window.dispatchEvent(new CustomEvent('igm:toggle-sidebar'))"
+                >
+                  <span class="hamburgerIcon">☰</span>
+                </button>
+
+                <!-- Mobile Brand Logo & Name -->
+                <a href={`${base}/`} class="mobileBrand">
+                  <img
+                    src={`${base}/images/sha.png`}
+                    alt="Sha"
+                    class="mobileShaLogo sprite"
+                    width="28"
+                    height="28"
+                  />
+                  <span class="mobileBrandName">IGM+</span>
+                </a>
+              </div>
+
+              <div class="headerCenter">
+                <SearchBar client:load entries={searchEntries} />
+              </div>
+
+              <div class="headerRight" />
+            </header>
+          </div>
 
           <!-- Page Content -->
           <main class="pageContent">
@@ -311,6 +314,12 @@ const searchEntries = [
   margin-left: 0;
 }
 
+.stickyTopGroup {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+}
+
 .topHeader {
   display: flex;
   align-items: center;
@@ -319,8 +328,7 @@ const searchEntries = [
   padding: 0.75rem 1.5rem;
   background: var(--bg-sidebar);
   border-bottom: 1px solid var(--border-subtle);
-  position: sticky;
-  top: 0;
+  position: relative;
   z-index: 30;
 }
 
@@ -424,6 +432,10 @@ const searchEntries = [
     padding: 0.6rem 0.85rem;
     gap: 8px;
   }
+  .maintenanceBanner {
+    padding: 0.6rem 0.85rem;
+    font-size: 0.85rem;
+  }
   .pageContent {
     padding: 1.25rem 0.85rem;
   }
@@ -448,12 +460,14 @@ const searchEntries = [
   justify-content: space-between;
   gap: 16px;
   padding: 0.75rem 1.5rem;
-  background: linear-gradient(90deg, rgba(245, 158, 11, 0.16) 0%, rgba(217, 119, 6, 0.08) 100%);
+  background: linear-gradient(90deg, rgba(245, 158, 11, 0.16) 0%, rgba(217, 119, 6, 0.08) 100%), var(--bg-sidebar);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid rgba(245, 158, 11, 0.35);
   color: #fef3c7;
   font-size: 0.9rem;
   position: relative;
-  z-index: 25;
+  z-index: 36;
 }
 
 .bannerContent {

@@ -1,0 +1,14 @@
+{
+  "id": "RuneBloodFest2",
+  "name": "Refined Rune of Blood Fest",
+  "type": "accessory",
+  "category": "Rune",
+  "rarity": 1,
+  "price": 75,
+  "sprite": "rune_blood_fest_2",
+  "description": "A refined blood rune offering 2% Lifesteal. Socket 3 matching runes to awaken the Blood Altar Ability.",
+  "stats": {
+    "lifesteal": 2
+  },
+  "notes": "Tier 2 Altar Rune"
+}

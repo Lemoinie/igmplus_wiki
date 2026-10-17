@@ -4,5 +4,5 @@
   "desc_key": "passive_tiger_caller_description",
   "kind": "passive",
   "name": "Tiger Caller",
-  "description": "At turn end, summons a Tiger (max 1) that acts first.\nWild Strikes II heals the pet for 50% of damage dealt."
+  "description": "At turn end, summons a Tiger (max 2) that acts first.\nWild Strikes II heals the pet for 50% of damage dealt."
 }

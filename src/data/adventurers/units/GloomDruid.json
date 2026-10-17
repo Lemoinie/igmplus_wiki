@@ -10,12 +10,12 @@
   "description": "Communes with nocturnal fungi and shadowy thickets, weaving disorienting mists.",
   "stats": {
     "maxLevel": 25,
-    "baseMaxHp": 120,
-    "baseConstitution": 19,
-    "baseIntelligence": 20,
-    "baseDexterity": 5,
-    "baseDefense": 10,
-    "baseMagicDefense": 10
+    "baseMaxHp": 130,
+    "baseConstitution": 20,
+    "baseIntelligence": 23,
+    "baseDexterity": 8,
+    "baseDefense": 12,
+    "baseMagicDefense": 15
   },
   "activeSkill": "Nature's Grasp II",
   "passiveSkill": "Nature's Lash",

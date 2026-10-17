@@ -1,0 +1,15 @@
+{
+  "id": "RelicDualSword",
+  "name": "Relic Dual Swords",
+  "type": "accessory",
+  "category": "Relic",
+  "rarity": 3,
+  "price": 1000,
+  "sprite": "relic_dual_sword",
+  "description": "Twin imperial blades with 6 rune sockets. Forged for rapid execution.",
+  "stats": {
+    "dexterity": 6,
+    "attackSpeed": 10
+  },
+  "notes": "Relic Equipment"
+}

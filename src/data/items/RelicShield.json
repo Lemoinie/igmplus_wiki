@@ -1,0 +1,16 @@
+{
+  "id": "RelicShield",
+  "name": "Relic Shield",
+  "type": "accessory",
+  "category": "Relic",
+  "rarity": 3,
+  "price": 1000,
+  "sprite": "relic_shield",
+  "description": "A titan bulwark with 6 rune sockets. Withstands the fury of primordial gods.",
+  "stats": {
+    "defense": 12,
+    "maxHp": 30,
+    "threat": 10
+  },
+  "notes": "Relic Equipment"
+}

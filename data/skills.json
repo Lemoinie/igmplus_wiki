@@ -1045,7 +1045,7 @@
     "desc_key": "passive_keen_vision_description",
     "kind": "passive",
     "name": "Keen Vision",
-    "description": "Attacks always hit the target"
+    "description": "Hit chance is increased by 30%"
   },
   {
     "key": "PASSIVE_POISONOUS_ARROWS_I",
@@ -1317,7 +1317,7 @@
     "desc_key": "passive_withering_touch_iii_description",
     "kind": "passive",
     "name": "Withering Touch III",
-    "description": "Dealing damage heals the unit for half the amount. Redirects 25% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 2 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+    "description": "Dealing damage heals the unit for half the amount. Redirects 25% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 1 stack.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
   },
   {
     "key": "PASSIVE_WITHERING_LINK",
@@ -1333,7 +1333,7 @@
     "desc_key": "passive_withering_link_i_description",
     "kind": "passive",
     "name": "Withering Link I",
-    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 30% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 4 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 30% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 2 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
   },
   {
     "key": "PASSIVE_WITHERING_LINK_II",
@@ -1341,7 +1341,7 @@
     "desc_key": "passive_withering_link_ii_description",
     "kind": "passive",
     "name": "Withering Link II",
-    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 35% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 6 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 35% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 2 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
   },
   {
     "key": "PASSIVE_WITHERING_LINK_III",
@@ -1349,7 +1349,7 @@
     "desc_key": "passive_withering_link_iii_description",
     "kind": "passive",
     "name": "Withering Link III",
-    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 40% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 8 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 40% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 3 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
   },
   {
     "key": "PASSIVE_WITHERING_LINK_IV",
@@ -1357,7 +1357,7 @@
     "desc_key": "passive_withering_link_iv_description",
     "kind": "passive",
     "name": "Withering Link IV",
-    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 45% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 10 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
+    "description": "Dealing damage heals the unit and summoned minions for half the amount. Redirects 45% of all damage taken directly to living minions. When killing a cursed enemy, summon get 1 stack of SOUL HARVEST, max 3 stacks.\n\nSOUL HARVEST: +15% Max HP, +10% Damage Dealt, and -5% Damage Taken per stack."
   },
   {
     "key": "PASSIVE_CHAOTIC",
@@ -2093,7 +2093,7 @@
     "desc_key": "active_disintegrate_i_description",
     "kind": "active",
     "name": "Disintegrate I",
-    "description": "Strike one enemy for 1000% magic damage. Has a 20% chance to immediately recast."
+    "description": "Strike one enemy for 1000% magic damage. Has a 20% chance to immediately recast. Causes Aether Overload on cast (+5% damage taken for 1 turn, stacks up to 3 times)."
   },
   {
     "key": "ACTIVE_DISINTEGRATE_II",
@@ -2101,7 +2101,7 @@
     "desc_key": "active_disintegrate_ii_description",
     "kind": "active",
     "name": "Disintegrate II",
-    "description": "Strike one enemy for 2000% magic damage. Has a 25% chance to immediately recast."
+    "description": "Strike one enemy for 2000% magic damage. Has a 25% chance to immediately recast. Causes Aether Overload on cast (+10% damage taken for 1 turn, stacks up to 3 times)."
   },
   {
     "key": "ACTIVE_DISINTEGRATE_III",
@@ -2109,7 +2109,7 @@
     "desc_key": "active_disintegrate_iii_description",
     "kind": "active",
     "name": "Disintegrate III",
-    "description": "Strike one enemy for 3000% magic damage. Has a 30% chance to immediately recast."
+    "description": "Strike one enemy for 3000% magic damage. Has a 30% chance to immediately recast. Causes Aether Overload on cast (+15% damage taken for 1 turn, stacks up to 3 times)."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_I",
@@ -2173,7 +2173,7 @@
     "desc_key": "passive_phantom_instinct_i_description",
     "kind": "passive",
     "name": "Phantom Instinct I",
-    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy and ignore 20% of enemy Defense.\nAttacks deal up to +45% bonus damage based on the target's missing health."
+    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy.\nAttacks deal up to +15% bonus damage based on the target's missing health."
   },
   {
     "key": "PASSIVE_PHANTOM_INSTINCT_II",
@@ -2181,7 +2181,7 @@
     "desc_key": "passive_phantom_instinct_ii_description",
     "kind": "passive",
     "name": "Phantom Instinct II",
-    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy and ignore 25% of enemy Defense.\nAttacks deal up to +50% bonus damage based on the target's missing health."
+    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy.\nAttacks deal up to +20% bonus damage based on the target's missing health."
   },
   {
     "key": "PASSIVE_PHANTOM_INSTINCT_III",
@@ -2189,7 +2189,7 @@
     "desc_key": "passive_phantom_instinct_iii_description",
     "kind": "passive",
     "name": "Phantom Instinct III",
-    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy and ignore 30% of enemy Defense.\nAttacks deal up to +55% bonus damage based on the target's missing health."
+    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy.\nAttacks deal up to +25% bonus damage based on the target's missing health."
   },
   {
     "key": "PASSIVE_PHANTOM_LETHALITY_I",
@@ -2197,7 +2197,7 @@
     "desc_key": "passive_phantom_lethality_i_description",
     "kind": "passive",
     "name": "Phantom Lethality I",
-    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy and ignore 35% of enemy Defense.\nAttacks deal up to +60% bonus damage based on the target's missing health."
+    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy.\nAttacks deal up to +30% bonus damage based on the target's missing health."
   },
   {
     "key": "PASSIVE_PHANTOM_LETHALITY_II",
@@ -2205,7 +2205,7 @@
     "desc_key": "passive_phantom_lethality_ii_description",
     "kind": "passive",
     "name": "Phantom Lethality II",
-    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy and ignore 40% of enemy Defense.\nAttacks deal up to +70% bonus damage based on the target's missing health."
+    "description": "Tries to avoid traps first and always rolls with dexterity. If successful, the trap is disarmed.\nDodge chance increased by 15% (flat).\nAttacks target the lowest health enemy.\nAttacks deal up to +35% bonus damage based on the target's missing health."
   },
   {
     "key": "ACTIVE_WILD_STRIKES",
@@ -2373,7 +2373,7 @@
     "desc_key": "passive_tiger_caller_description",
     "kind": "passive",
     "name": "Tiger Caller",
-    "description": "At turn end, summons a Tiger (max 1) that acts first.\nWild Strikes II heals the pet for 50% of damage dealt."
+    "description": "At turn end, summons a Tiger (max 2) that acts first.\nWild Strikes II heals the pet for 50% of damage dealt."
   },
   {
     "key": "PASSIVE_BEAR_CALLER",
@@ -2381,7 +2381,7 @@
     "desc_key": "passive_bear_caller_description",
     "kind": "passive",
     "name": "Bear Caller",
-    "description": "At turn end, summons a Bear (max 1) that taunts and shields.\nWild Strikes II heals the pet for 100% of damage dealt."
+    "description": "At turn end, summons a Bear (max 2) that taunts and shields.\nWild Strikes II heals the pet for 100% of damage dealt."
   },
   {
     "key": "PASSIVE_BEAST_CALLER",
@@ -2389,7 +2389,7 @@
     "desc_key": "passive_beast_caller_description",
     "kind": "passive",
     "name": "Beast Caller",
-    "description": "At turn end, summons an Owlbear (max 1) that taunts, shields, and cleaves.\nWild Strikes II heals the pet for 150% of damage dealt."
+    "description": "At turn end, summons an Owlbear (max 2) that taunts, shields, and cleaves.\nWild Strikes II heals the pet for 150% of damage dealt."
   },
   {
     "key": "PASSIVE_SWARM_FEROCITY",

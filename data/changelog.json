@@ -1,5 +1,136 @@
 [
   {
+    "version": "1.3.20.18",
+    "date": "16/10/2026",
+    "groups": [
+      [
+        "Combat Engine — Physical & Spell Critical Strike Split:",
+        "Dedicated Critical Domains: Split critical strikes into Physical Crit (governing physical attacks, skills, and hemorrhages) and Spell Crit (governing magical spells, abilities, and healing);",
+        "Universal Crit Baseline: All existing equipment, traits (Deadeye, Ruthless), potions (Precision, Viciousness), and doctrines continue granting universal crit feeding equally into both Physical and Spell critical strike stats;",
+        "Specialized Scaling Support: Added physical and spell critical bonus hooks to equipment for fine-grained archetype itemization without altering legacy item parity."
+      ],
+      [
+        "Detailed Statistics Inspection Overhaul:",
+        "Split Critical Strike Display: Replaced generic crit stats with Phys Crit Chance & Phys Crit Dmg, and Spell Crit Chance & Spell Crit Dmg in dedicated, horizontally aligned rows;",
+        "Paired Amplification Metrics: Aligned Basic Atk Amp and Skill Amp side-by-side in Offense Stat for cleaner comparison;",
+        "Utility Stat Migration: Relocated Lifesteal and Counterattack from Offense Stat to Utility Stat for improved thematic categorization and visual balance."
+      ],
+      [
+        "Item Rebalance — Scarlet Cape Accessory Line:",
+        "Scarlet Cape: Replaced +15% crit chance with +15% skill amp; removed Constitution (+30 -> 0) and adjusted Dexterity from +30 to +5 (retains +30 INT);",
+        "Eldritch Scarlet Cape: Replaced +21% crit chance and +21% crit damage with +21% skill amp; removed Constitution (+40 -> 0) and adjusted Dexterity from +40 to +10 (retains +40 INT);",
+        "Abyssal Scarlet Mantle: Replaced +35% crit chance and +40% crit damage with +35% skill amp; removed Constitution (+50 -> 0) and adjusted Dexterity from +50 to +15 (retains +50 INT)."
+      ],
+      [
+        "Combat Balance — Disintegrate Line Trade-Off (Aether Overload):",
+        "Aether Overload Self-Debuff: Casting Disintegrate spells now triggers Aether Overload for 1 turn, progressively increasing damage taken as a tactical trade-off for devastating single-target burst power;",
+        "Tiered Scaling: Disintegrate I (T7 Disintegrator) adds +5% damage taken per stack; Disintegrate II (T8 Grand Magus) adds +10% damage taken per stack; Disintegrate III (T9 Singularity Magus) adds +15% damage taken per stack;",
+        "Recast Synergy & Stacking: Immediate recasts re-apply and stack Aether Overload up to 3 times (up to +15% / +30% / +45% max damage taken), refreshing the 1-turn duration and demanding calculated party protection."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.17",
+    "date": "15/10/2026",
+    "groups": [
+      [
+        "Adventurers Tab — Roster Navigation, Search & Filtering:",
+        "Modal Search & Filter Dialogs: Replaced persistent drawer inputs with dedicated SEARCH, FILTER, and SORT action modals, featuring live text search with match counts and tier filters (T1–T9);",
+        "5-Archetype Classification: Introduced archetype filtering categorized by primary weapon — Footman (Sword), Outlander (Axe), Rogue (Dagger), Archer (Bow), and Apprentice (Staff);",
+        "Smart Sorting Presets: Added roster sorting by Level, Deployment Status, Archetype, Unspent Doctrine Points, and Name (Asc/Desc), with optional permanent save to roster order;",
+        "Interactive Reordering & Drag-and-Drop: Re-order mode now supports drag-to-swap, tap-to-swap, and long-press extreme jump (top/bottom) on position adjustment arrows."
+      ],
+      [
+        "Adventurers Tab — Compact Grid & Status Badges:",
+        "Compact 2-Column Display: Added a toggleable compact 2-column roster view showing hero portrait, level, class name, traits, and status badge for high-density roster overview;",
+        "Deployment Status Badges: Color-coded deployment indicator showing Idle heroes in green and Dungeon exploring heroes in cyan (#4dd0e1), with visibility toggle in Settings."
+      ],
+      [
+        "Settings Menu — Visual Overhaul:",
+        "Categorized Layout: Reorganized Settings into clean, structured sections (Display & Roster, Gameplay & Automation, Confirmations, and General) with left-aligned descriptions and uniform controls;",
+        "Header Cleanup: Removed redundant version title from settings dialog."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.16",
+    "date": "14/10/2026",
+    "groups": [
+      [
+        "Combat Balance — Outlander Beast Tamer & El Salvador Scaling:",
+        "Beast Tamer Apex Summon Capacity: Increased the maximum companion summon cap from 1 to 2 for Tier 7–9 Beast Tamers (Tiger Tamer, Bear Tamer, and Beast Tamer), allowing up to 2 Tigers, Bears, or Owlbears on the battlefield simultaneously;",
+        "El Salvador INT Weapon Scaling: Introduced progressive Intelligence weapon attack scaling across the Exile / El Salvador skirmisher line, starting at 1.1 (110%) on T3 Exile and increasing by +0.1 per tier up to 1.7 (170%) on T9 El Salvador (T3 Exile: 1.1, T4 Bandit: 1.2, T5 Vagabond: 1.3, T6 Brigand: 1.4, T7 Renegade: 1.5, T8 Desperado: 1.6, T9 El Salvador: 1.7);",
+        "Tooltips & Descriptions Synchronized: Updated Tiger Caller, Bear Caller, and Beast Caller passive descriptions in strings.xml to reflect the new (max 2) pet capacity."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.15",
+    "date": "14/10/2026",
+    "groups": [
+      [
+        "Fix — Outlander Savage Rage Trigger & Buff Icon:",
+        "Visual Buff Icon Integration: Hooked up StatusEffectType.RAGE (2 turns) in combat turn processing and damage resolution, ensuring the visual Rage icon appears above the unit and in the Battle Status Effects Inspector whenever attacking under the passive HP threshold;",
+        "Threshold Verification: Preserved the canonical 50% HP threshold for T4–T7 (Berserker, Savage Berserker, Scarlet Berserker, Blood Reaver) and 75% HP threshold for T8–T9 (Crimson Warlord, Avatar of Wrath);",
+        "Damage & Stats Deduplication: Guarded damage dealt (+30%) and damage taken (+30%) calculations against double-counting when the RAGE status effect is present, while ensuring raging units retain +100% Attack Speed and +25% Life Steal for the full 2 turns even if healed above the HP threshold."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.14",
+    "date": "14/10/2026",
+    "groups": [
+      [
+        "Combat Balance — Soul Harvest Max Stacks Rebalance:",
+        "Capped to Minion Capacity: Reduced the maximum Soul Harvest stacks for the Necromancer / Lich / Black Idol evolution tree to equal each class's active minion cap (maxMinions);",
+        "New Stack Limits: Lowered Demilich from 2 down to 1 stack (+15% HP / +10% DMG / -5% DMG taken), Lich & Ancient Lich from 4/6 down to 2 stacks (+30% HP / +20% DMG / -10% DMG taken), and Lord of Decay & Black Idol from 8/10 down to 3 stacks (+45% HP / +30% DMG / -15% DMG taken);",
+        "Tooltips Synchronized: Updated Withering Touch III and Withering Link I–IV passive descriptions to match the new stack caps."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.13",
+    "date": "14/10/2026",
+    "groups": [
+      [
+        "Fix — Beast Tamer & Pet Summon Conflict:",
+        "Guarded Undead Reanimation: Restricted reanimate Soul Harvest stacks and undead minion spawning to necromancer classes (minionSummonClass != null), preventing non-necromancers (such as Beast Tamers) from having their summon slot hijacked by decaying undead when cursed enemies die;",
+        "Pet Targeting Minion Exclusion: Excluded summoned minions from being selected as the target for the Pet Magic trait's TAUNT and CURSE status effect casts, preventing companion focus-fire loops and inadvertent summon replacement."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.12",
+    "date": "14/10/2026",
+    "groups": [
+      [
+        "Fix — Loot Claim & Raid Persistence:",
+        "Prevented loot dialog from opening empty when tapped rapidly or after loot was already claimed;",
+        "Replaced asynchronous background save on app exit with synchronous save, preventing force-close from discarding unsaved raid attempts;",
+        "Relic Slot UI: Hid the relic slot in the adventurer detail dialog for unascended adventurers, preventing it from overlapping with the level text."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.11",
+    "date": "13/10/2026",
+    "groups": [
+      [
+        "Combat Balance — Stat Critical Strike Chance Removed:",
+        "Removed Stat Scaling: Removed passive critical strike chance from Dexterity and Intelligence entirely (0% base stat crit), shifting Critical Strike into a dedicated build specialization (via traits, potions, gear, and doctrines) rather than an automatic baseline stat;",
+        "Applied Symmetrically: Applied identically to both adventurers and standard enemies to preserve combat parity;"
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.20.10",
     "date": "12/10/2026",
     "groups": [
@@ -17,12 +148,11 @@
         "Passive Tooltips Synchronized: Updated descriptions across all 16 affected passives (Rider I–VII, Poisonous Arrows I–III, Poisonous Blood, Corrosive Blood, and Thaumaturgy I–IV) to reflect the 15% miss chance reduction."
       ],
       [
-        "Quality of Life & Performance — XP Book Consumption Rework:",
-        "Eliminated UI Lag & Deferred Save: Resolved extreme UI freezing when consuming XP Books; save file serialization to disk and background fragment refreshes now execute only once when closing the dialog rather than stalling on every single tap;",
-        "Dynamic In-Place Level Updates: Adventurer level numbers and XP progression bars now update instantly in-place with zero latency, eliminating the need to re-inflate view lists or restart the game to see level updates;",
-        "Quantity Stepper & Slider: Added a dedicated control bar featuring a quantity stepper (-, +, MAX), live XP gain preview, and a smooth SeekBar slider to batch-consume up to the full book stack at once;",
-        "Smart Over-Leveling Protection: Max-level adventurers can no longer accidentally consume books, and adventurers near max level automatically consume only the exact number of books required to reach cap without wasting excess books;",
-        "Toast Feedback Polish: Replaced toast queue backlog with immediate feedback that cancels previous toasts on tap, and added full support for Ancient XP Books (XPBookC)."
+        "Quality of Life — XP Book Consumption Rework:",
+        "Batch Consumption Controls: Added quick stepper buttons (-, +, MAX) and a smooth slider to batch-consume books in bulk;",
+        "Full Stack Support: Added instant consumption support for XP Books 1, 2, 3, 10, and C (Ancient XP Book) with live XP preview;",
+        "Instant Level Updates: Levels and progression bars update immediately in-place with zero lag or freezing;",
+        "Level-Cap Protection: Heroes at max level cannot consume books, and near-cap heroes consume only the exact amount needed."
       ]
     ],
     "source": "ModChangelogActive.kt"

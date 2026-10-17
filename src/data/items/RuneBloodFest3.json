@@ -1,0 +1,14 @@
+{
+  "id": "RuneBloodFest3",
+  "name": "Flawless Rune of Blood Fest",
+  "type": "accessory",
+  "category": "Rune",
+  "rarity": 2,
+  "price": 225,
+  "sprite": "rune_blood_fest_3",
+  "description": "A flawless blood rune offering 3% Lifesteal. Socket 3 matching runes to awaken the Blood Altar Ability.",
+  "stats": {
+    "lifesteal": 3
+  },
+  "notes": "Tier 3 Altar Rune"
+}

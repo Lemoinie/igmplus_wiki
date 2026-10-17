@@ -6,12 +6,11 @@
   "rarity": null,
   "price": 200000,
   "sprite": "scarlet_cape",
-  "description": "A regal cape woven from tenfold Scarlet strands. Flowing with occult grace, it bolsters the wearer's physical and arcane agility while sharpening lethal precision.",
+  "description": "A regal cape woven from tenfold Scarlet strands. Flowing with occult grace, it bolsters the wearer's arcane intellect while dramatically magnifying the devastation of their active skills.",
   "stats": {
-    "constitution": 30,
-    "dexterity": 30,
+    "dexterity": 5,
     "intelligence": 30,
-    "criticalChance": 0.15
+    "skillAmpModifier": 0.15
   },
   "notes": ""
 }

@@ -7,14 +7,16 @@
   "weaponType": "dagger",
   "armorType": "medium",
   "sprite": "unit_spirit_engraver",
-  "description": "An ethereal artisan carving the lifeforce of doomed spirits into lethal strikes.",
+  "description": "\"This one-of-a-kind assassin, gifted with unparalleled skill, can strike at the very essence of a being's consciousness, reaching beyond mere flesh. No living creature, mortal or divine, is safe from his dark art.\"",
   "stats": {
-    "baseMaxHp": 410,
-    "baseConstitution": 45,
-    "baseIntelligence": 55,
-    "baseDexterity": 140,
-    "baseDefense": 32,
-    "baseMagicDefense": 38
+    "maxLevel": 45,
+    "baseMaxHp": 290,
+    "baseConstitution": 30,
+    "baseIntelligence": 12,
+    "baseDexterity": 30,
+    "baseDefense": 10,
+    "baseMagicDefense": 10,
+    "flatDodgeChance": 0.1
   },
   "activeSkill": "Thousand Cuts II",
   "passiveSkill": "Deadly Finesse III",
