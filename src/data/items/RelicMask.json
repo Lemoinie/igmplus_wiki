@@ -7,9 +7,6 @@
   "price": 1000,
   "sprite": "relic_mask",
   "description": "An enigmatic ceremonial mask with 6 rune sockets. Pulses with cosmic resonances.",
-  "stats": {
-    "defense": 6,
-    "magicDefense": 6
-  },
-  "notes": "Relic Equipment"
+  "stats": {},
+  "notes": "Relic (+2%/lvl, up to +80% at +40): Max HP & Intelligence. Has 6 rune sockets for Altar synergies."
 }
