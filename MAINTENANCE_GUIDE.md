@@ -170,6 +170,34 @@ In **Idle Guild Master Modded**, status effects deal damage over time or manipul
 
 ---
 
+### 5. How to Publish a Notice / Patch Notes (Discord Bypass)
+Create a new Markdown file inside [`src/content/notices/`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/content/notices/) (e.g. `v1-3-21-0-patch-notes.md`):
+
+```markdown
+---
+title: "Update v1.3.21.0: Major Combat Balance & New Items"
+date: "2026-10-25"
+category: "Updates" # "Updates" | "Developer Notes" | "Notice" | "Maintenance"
+version: "v1.3.21.0"
+author: "IGM+ Dev Team"
+pinned: false
+coverImage: "/images/area_the_siege.png"
+description: "Comprehensive patch notes including new brawler light armors, bleed formula updates, and bug fixes."
+tags: ["Classes", "Combat", "Items"]
+---
+
+Write your full announcement here with **zero character limits**:
+- Add hundreds of lines of text and design rationale.
+- Add formatted Markdown comparison tables.
+- Add pixel-art sprites using `<img src="/images/unit_outlander.png" class="sprite" width="32" height="32" />` or markdown images `![Preview](/images/area_kaunis.png)`.
+- Add links to items `[Scarlet Sigil](/items#scarlet-sigil)` or classes `[Outlander](/classes/outlander)`.
+```
+
+* **Instant Hub Listing**: The notice automatically appears on `/notices` with category filtering, search indexing, and chronological ordering.
+* **Discord Integration**: Every notice includes full OpenGraph metadata (`og:title`, `og:description`, `og:image`). When you paste the link into Discord, Discord displays a rich embed card with the banner image, title, and summary. You can also click the **Copy Discord Link** button on the notice page to copy the URL to your clipboard.
+
+---
+
 ## 🚀 Running & Building the Wiki Locally
 
 ### Run Locally (Development Dev Server with Hot-Reload)

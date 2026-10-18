@@ -3,13 +3,23 @@ import Analytics from '@vercel/analytics/astro';
 import Sidebar from '../components/Sidebar.vue';
 import SearchBar from '../components/SearchBar.vue';
 import '../styles/global.css';
+import 'katex/dist/katex.min.css';
 
 interface Props {
   title?: string;
   description?: string;
+  image?: string;
+  type?: string;
+  publishDate?: string;
 }
 
-const { title = 'IGM+ Wiki', description = 'Idle Guild Master Mod Community Wiki' } = Astro.props;
+const {
+  title = 'IGM+ Wiki',
+  description = 'Idle Guild Master Mod Community Wiki',
+  image,
+  type = 'website',
+  publishDate,
+} = Astro.props;
 
 // Global search index built statically from modular JSON data
 import {
@@ -128,8 +138,24 @@ const searchEntries = [
     category: 'Mechanics' as const,
     url: `${base}/mechanics/skill-amp`,
     description: 'Active skill and spell scaling, Aether Resonance, and Scarlet Sigil'
+  },
+  /*
+  {
+    id: 'nav-notices',
+    title: 'Notices & Patch Notes',
+    category: 'Notice' as const,
+    url: `${base}/notices`,
+    description: 'Official patch notes, developer notes, and community updates'
   }
+  */
 ];
+
+const siteTitle = isFull ? `${maintenance.fullTitle} | IGM+ Wiki` : `${title} | IGM+ Wiki`;
+const metaDesc = isFull ? maintenance.fullMessage : description;
+const defaultImage = `${base}/images/sha.png`;
+const ogImage = image
+  ? (image.startsWith('http') ? image : `${base}${image.startsWith('/') ? '' : '/'}${image}`)
+  : defaultImage;
 ---
 
 <!doctype html>
@@ -140,9 +166,23 @@ const searchEntries = [
     <link rel="icon" type="image/png" href={`${base}/favicon.png`} />
     <link rel="shortcut icon" type="image/png" href={`${base}/favicon.png`} />
     <link rel="apple-touch-icon" href={`${base}/favicon.png`} />
-    <title>{isFull ? `${maintenance.fullTitle} | IGM+ Wiki` : `${title} | IGM+ Wiki`}</title>
-    <meta name="description" content={isFull ? maintenance.fullMessage : description} />
+    <title>{siteTitle}</title>
+    <meta name="description" content={metaDesc} />
     {isFull && <meta name="robots" content="noindex, nofollow" />}
+
+    <!-- Open Graph / Discord Link Previews -->
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={metaDesc} />
+    <meta property="og:type" content={type} />
+    <meta property="og:image" content={ogImage} />
+    <meta property="og:site_name" content="IGM+ Wiki" />
+    {publishDate && <meta property="article:published_time" content={publishDate} />}
+
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={metaDesc} />
+    <meta name="twitter:image" content={ogImage} />
   </head>
   <body>
     {isFull ? (

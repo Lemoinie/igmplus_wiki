@@ -1,5 +1,7 @@
 import { defineConfig } from 'astro/config';
 import vue from '@astrojs/vue';
+import remarkMath from 'remark-math';
+import rehypeKatex from 'rehype-katex';
 
 // Base path configuration:
 // - On Vercel: VERCEL environment variable is automatically set to "1", so base defaults to "/"
@@ -10,6 +12,10 @@ const base = process.env.BASE_PATH ?? (process.env.VERCEL ? '/' : (process.env.G
 // https://astro.build/config
 export default defineConfig({
   integrations: [vue()],
+  markdown: {
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
+  },
   base,
   build: {
     format: 'directory'

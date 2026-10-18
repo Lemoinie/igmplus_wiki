@@ -65,6 +65,11 @@ function isItemActive(href: string): boolean {
     return true;
   }
 
+  // Handle notices / news alias
+  if ((target === '/notices' || target === '/news') && (current === '/notices' || current === '/news' || current.startsWith('/notices/') || current.startsWith('/news/'))) {
+    return true;
+  }
+
   return current === target || current.startsWith(target + '/');
 }
 
@@ -79,6 +84,7 @@ const navItems = [
   { label: 'Locations', href: `${base}/dungeons` },
   { label: 'Game Mechanics', href: `${base}/mechanics/defense-and-armor` },
   { label: 'Whats New?', href: `${base}/changelog` },
+  // { label: 'Notices', href: `${base}/notices` },
 ];
 
 function toggleSidebar() {

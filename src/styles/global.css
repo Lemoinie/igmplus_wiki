@@ -128,3 +128,23 @@ tr:hover td {
 .border-rarity-3 { border-color: #9333ea !important; }
 .border-rarity-4 { border-color: #d97706 !important; }
 .border-rarity-5 { border-color: #dc2626 !important; }
+
+/* LaTeX / KaTeX Math Equation Row Styling */
+.katex-display {
+  display: block !important;
+  width: 100% !important;
+  margin: 1.5rem 0 !important;
+  padding: 1.1rem 1.25rem !important;
+  text-align: center !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.katex {
+  font-size: 1.12em;
+  color: #f1f5f9;
+}
+

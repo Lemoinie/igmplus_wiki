@@ -1,0 +1,19 @@
+---
+import { base } from '../../lib/base';
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${base}/notices`} />
+    <link rel="canonical" href={`${base}/notices`} />
+    <title>Redirecting to Notices | IGM+ Wiki</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={`${base}/notices`}>News & Notices</a>...</p>
+    <script define:vars={{ dest: `${base}/notices` }}>
+      window.location.replace(dest);
+    </script>
+  </body>
+</html>

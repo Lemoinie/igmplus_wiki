@@ -1,0 +1,33 @@
+---
+import { base } from '../../lib/base';
+
+export async function getStaticPaths() {
+  const posts = import.meta.glob('../../content/notices/*.md', { eager: true });
+  return Object.keys(posts).map((filePath) => {
+    const slug = filePath.split('/').pop()?.replace('.md', '') || '';
+    return {
+      params: { slug },
+      props: { slug },
+    };
+  });
+}
+
+const { slug } = Astro.props as { slug: string };
+const targetUrl = `${base}/notices/${slug}`;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="refresh" content={`0;url=${targetUrl}`} />
+    <link rel="canonical" href={targetUrl} />
+    <title>Redirecting | IGM+ Wiki</title>
+  </head>
+  <body>
+    <p>Redirecting to <a href={targetUrl}>{targetUrl}</a>...</p>
+    <script define:vars={{ dest: targetUrl }}>
+      window.location.replace(dest);
+    </script>
+  </body>
+</html>

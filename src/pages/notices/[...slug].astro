@@ -1,0 +1,854 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { base } from '../../lib/base';
+
+export async function getStaticPaths() {
+  const posts = import.meta.glob('../../content/notices/*.md', { eager: true });
+  const entries = Object.entries(posts).map(([filePath, post]: [string, any]) => {
+    const slug = filePath.split('/').pop()?.replace('.md', '') || '';
+    return {
+      slug,
+      post,
+      frontmatter: post.frontmatter || {},
+      date: post.frontmatter?.date || '2026-10-18',
+    };
+  });
+
+  // Sort chronologically (oldest to newest for prev/next chaining)
+  entries.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+
+  return entries.map((entry, index) => {
+    const prevEntry = index > 0 ? entries[index - 1] : null;
+    const nextEntry = index < entries.length - 1 ? entries[index + 1] : null;
+
+    return {
+      params: { slug: entry.slug },
+      props: {
+        post: entry.post,
+        slug: entry.slug,
+        prevNotice: prevEntry ? { slug: prevEntry.slug, title: prevEntry.frontmatter.title, category: prevEntry.frontmatter.category } : null,
+        nextNotice: nextEntry ? { slug: nextEntry.slug, title: nextEntry.frontmatter.title, category: nextEntry.frontmatter.category } : null,
+      },
+    };
+  });
+}
+
+const { post, slug, prevNotice, nextNotice } = Astro.props as {
+  post: any;
+  slug: string;
+  prevNotice: { slug: string; title: string; category: string } | null;
+  nextNotice: { slug: string; title: string; category: string } | null;
+};
+
+const { Content, frontmatter = {} } = post;
+const title = frontmatter.title || 'Notice';
+const description = frontmatter.description || '';
+const category = frontmatter.category || 'Notice';
+const version = frontmatter.version;
+const date = frontmatter.date || '2026-10-18';
+const author = frontmatter.author || 'IGM+ Team';
+const coverImage = frontmatter.coverImage;
+const tags: string[] = frontmatter.tags || [];
+
+// Calculate rough reading time based on raw content
+const words = (post.rawContent ? post.rawContent() : '').split(/\s+/).length || 500;
+const readTime = Math.max(1, Math.ceil(words / 220));
+---
+
+<WikiLayout
+  title={`${title} | Notices`}
+  description={description}
+  image={coverImage}
+  type="article"
+  publishDate={date}
+>
+  <div class="noticeDetailContainer">
+    <!-- Top Navigation Bar -->
+    <nav class="detailTopNav" aria-label="Notice breadcrumbs">
+      <a href={`${base}/notices`} class="backBtn">
+        <span class="backArrow">←</span>
+        <span>Back to Notices</span>
+      </a>
+
+      <!-- Quick Actions: Copy Discord Link & Share -->
+      <div class="shareActionGroup">
+        <button
+          type="button"
+          id="copyDiscordLinkBtn"
+          class="copyDiscordBtn"
+          title="Copy formatted link to paste in Discord"
+        >
+          <svg class="shareIcon" viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/>
+          </svg>
+          <span class="btnText">Copy Discord Link</span>
+        </button>
+
+        <span id="copyToast" class="copyToast" role="status" aria-live="polite">
+          ✓ Copied to clipboard!
+        </span>
+      </div>
+    </nav>
+
+    <!-- Main Notice Article -->
+    <article class="noticeArticle">
+      <!-- Article Header -->
+      <header class="articleHeader">
+        <div class="headerMetaRow">
+          <span class:list={['categoryBadge', `badge-${category.toLowerCase().replace(/\s+/g, '-')}`]}>
+            {category}
+          </span>
+          {version && (
+            <span class="versionBadge">{version}</span>
+          )}
+          <time class="metaDate" datetime={date}>Published: {date.replace(/-/g, '/')}</time>
+          <span class="readTimeBadge">{readTime} min read</span>
+        </div>
+
+        <h1 class="articleTitle">{title}</h1>
+
+        {description && (
+          <p class="articleExcerpt">{description}</p>
+        )}
+
+        <div class="authorRow">
+          <span class="authorName">Author: <strong>{author}</strong></span>
+          {tags.length > 0 && (
+            <div class="headerTags">
+              {tags.map((t) => (
+                <span class="headerTag">#{t}</span>
+              ))}
+            </div>
+          )}
+        </div>
+
+        {coverImage && (
+          <div class="heroCover">
+            <img
+              src={`${base}${coverImage.startsWith('/') ? '' : '/'}${coverImage}`}
+              alt={title}
+              class="heroCoverImg"
+            />
+          </div>
+        )}
+      </header>
+
+      <!-- Markdown Prose Content -->
+      <div class="articleBody proseContent">
+        <Content />
+      </div>
+
+      <!-- Article Footer -->
+      <footer class="articleFooter">
+        <div class="footerShareBox">
+          <div class="footerShareLeft">
+            <h4>Share this Announcement</h4>
+            <p>Paste this link directly into Discord channels, guilds, or forums.</p>
+          </div>
+          <button type="button" class="footerCopyBtn" onclick="document.getElementById('copyDiscordLinkBtn')?.click()">
+            Copy Notice URL
+          </button>
+        </div>
+
+        <!-- Previous / Next Notice Navigation -->
+        <div class="prevNextGrid">
+          {prevNotice ? (
+            <a href={`${base}/notices/${prevNotice.slug}`} class="prevNextCard prevCard">
+              <span class="cardDirection">← Previous Notice</span>
+              <span class="cardNoticeTitle">{prevNotice.title}</span>
+            </a>
+          ) : (
+            <div class="prevNextCard emptyCard">
+              <span class="cardDirection">Beginning of updates</span>
+            </div>
+          )}
+
+          {nextNotice ? (
+            <a href={`${base}/notices/${nextNotice.slug}`} class="prevNextCard nextCard">
+              <span class="cardDirection">Next Notice →</span>
+              <span class="cardNoticeTitle">{nextNotice.title}</span>
+            </a>
+          ) : (
+            <div class="prevNextCard emptyCard">
+              <span class="cardDirection">Latest Announcement</span>
+            </div>
+          )}
+        </div>
+      </footer>
+    </article>
+  </div>
+</WikiLayout>
+
+<script>
+  function setupCopyLink() {
+    const copyBtn = document.getElementById('copyDiscordLinkBtn');
+    const toast = document.getElementById('copyToast');
+
+    if (copyBtn && toast) {
+      copyBtn.addEventListener('click', async () => {
+        try {
+          const currentUrl = window.location.href;
+          await navigator.clipboard.writeText(currentUrl);
+          
+          toast.classList.add('visible');
+          setTimeout(() => {
+            toast.classList.remove('visible');
+          }, 2400);
+        } catch (err) {
+          // Fallback if clipboard API is restricted
+          prompt('Copy this notice link for Discord:', window.location.href);
+        }
+      });
+    }
+  }
+
+  if (typeof document !== 'undefined') {
+    setupCopyLink();
+    document.addEventListener('astro:page-load', setupCopyLink);
+  }
+</script>
+
+<style>
+.noticeDetailContainer {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 0.5rem 0 3.5rem 0;
+}
+
+/* ================= Top Nav Bar ================= */
+.detailTopNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 0.15s ease, transform 0.15s ease;
+}
+
+.backBtn:hover {
+  color: var(--brand-primary);
+  transform: translateX(-3px);
+  text-decoration: none;
+}
+
+.backArrow {
+  font-size: 1.1rem;
+}
+
+.shareActionGroup {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyDiscordBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 14px;
+  background: rgba(88, 101, 242, 0.14);
+  border: 1px solid rgba(88, 101, 242, 0.4);
+  color: #8591f8;
+  border-radius: 8px;
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.copyDiscordBtn:hover {
+  background: rgba(88, 101, 242, 0.28);
+  border-color: #5865f2;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(88, 101, 242, 0.3);
+}
+
+.shareIcon {
+  flex-shrink: 0;
+}
+
+.copyToast {
+  position: absolute;
+  right: 0;
+  top: 115%;
+  background: #10b981;
+  color: #0f1319;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 4px 10px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  transform: translateY(6px);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  pointer-events: none;
+  z-index: 10;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.copyToast.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* ================= Article Layout ================= */
+.noticeArticle {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 14px;
+  padding: 2.5rem 3rem;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+}
+
+.articleHeader {
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.headerMetaRow {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 1rem;
+}
+
+/* Category Badges */
+.categoryBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.badge-updates {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.14);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+}
+
+.badge-developer-notes {
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.14);
+  border: 1px solid rgba(244, 63, 94, 0.3);
+}
+
+.badge-notice {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.14);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+}
+
+.badge-maintenance {
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.14);
+  border: 1px solid rgba(168, 85, 247, 0.3);
+}
+
+.versionBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #10b981;
+  background: rgba(16, 185, 129, 0.12);
+  border: 1px solid rgba(16, 185, 129, 0.25);
+  padding: 3px 8px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+}
+
+.metaDate {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+}
+
+.readTimeBadge {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  margin-left: auto;
+}
+
+.articleTitle {
+  font-size: 2.3rem;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.25;
+  letter-spacing: -0.015em;
+  margin-bottom: 0.85rem;
+}
+
+.articleExcerpt {
+  font-size: 1.15rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 1.25rem;
+}
+
+.authorRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  font-size: 0.88rem;
+  color: var(--text-muted);
+}
+
+.authorName strong {
+  color: var(--text-primary);
+}
+
+.headerTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.headerTag {
+  font-size: 0.78rem;
+  color: var(--brand-primary);
+  background: rgba(110, 168, 254, 0.08);
+  padding: 2px 7px;
+  border-radius: 4px;
+}
+
+.heroCover {
+  margin-top: 1.75rem;
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border-card);
+  max-height: 380px;
+  background: #000;
+}
+
+.heroCoverImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* ================= Markdown Prose Styling ================= */
+.proseContent {
+  color: #cbd5e1;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.proseContent :global(h2) {
+  font-size: 1.65rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 2.75rem;
+  margin-bottom: 1rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.proseContent :global(h3) {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--text-gold);
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+}
+
+.proseContent :global(h4) {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.proseContent :global(p) {
+  margin-bottom: 1.25rem;
+  color: #cbd5e1;
+}
+
+.proseContent :global(strong) {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.proseContent :global(em) {
+  color: #94a3b8;
+}
+
+.proseContent :global(ul),
+.proseContent :global(ol) {
+  margin-bottom: 1.5rem;
+  padding-left: 1.75rem;
+}
+
+.proseContent :global(li) {
+  margin-bottom: 0.5rem;
+  color: #cbd5e1;
+}
+
+.proseContent :global(li strong) {
+  color: #f1f5f9;
+}
+
+/* ================= Tables with Responsive Scrolling ================= */
+.proseContent :global(table) {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  margin: 1.75rem 0;
+  font-size: 0.92rem;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  overflow: hidden;
+  display: block;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.proseContent :global(thead) {
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.proseContent :global(th) {
+  padding: 10px 14px;
+  text-align: left;
+  font-weight: 700;
+  color: #f1f5f9;
+  border-bottom: 1px solid var(--border-subtle);
+  white-space: nowrap;
+}
+
+.proseContent :global(td) {
+  padding: 10px 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  color: #cbd5e1;
+  vertical-align: middle;
+}
+
+.proseContent :global(tr:last-child td) {
+  border-bottom: none;
+}
+
+.proseContent :global(tbody tr:hover) {
+  background: rgba(110, 168, 254, 0.04);
+}
+
+/* ================= Images in Content ================= */
+.proseContent :global(img) {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--border-card);
+  margin: 1.5rem 0;
+  display: block;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
+}
+
+.proseContent :global(img.sprite),
+.proseContent :global(.sprite) {
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  box-shadow: none;
+  border: none;
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 4px;
+}
+
+/* ================= Quotes & Alerts ================= */
+.proseContent :global(blockquote) {
+  border-left: 4px solid var(--brand-primary);
+  background: linear-gradient(90deg, rgba(110, 168, 254, 0.08), transparent);
+  padding: 1rem 1.25rem;
+  border-radius: 0 8px 8px 0;
+  margin: 1.5rem 0;
+  color: #e2e8f0;
+}
+
+.proseContent :global(blockquote p) {
+  margin-bottom: 0.5rem;
+}
+
+.proseContent :global(blockquote p:last-child) {
+  margin-bottom: 0;
+}
+
+.proseContent :global(code) {
+  background: rgba(0, 0, 0, 0.3);
+  color: var(--brand-primary);
+  padding: 2px 7px;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  border: 1px solid rgba(110, 168, 254, 0.15);
+}
+
+.proseContent :global(pre) {
+  background: #0a0d12;
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  margin: 1.5rem 0;
+  overflow-x: auto;
+}
+
+.proseContent :global(pre code) {
+  background: none;
+  border: none;
+  padding: 0;
+  color: #e2e8f0;
+}
+
+/* ================= LaTeX Math Equations ================= */
+.proseContent :global(.katex-display) {
+  display: block !important;
+  width: 100% !important;
+  margin: 1.75rem 0 !important;
+  padding: 1.25rem 1.5rem !important;
+  text-align: center !important;
+  overflow-x: auto !important;
+  overflow-y: hidden !important;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.25);
+}
+
+.proseContent :global(.katex) {
+  font-size: 1.15em;
+  color: #f1f5f9;
+}
+
+/* ================= Centered Status Effect Showcase ================= */
+.proseContent :global(.effectShowcaseGrid) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1.25rem;
+  margin: 1.75rem 0 2.5rem 0;
+}
+
+.proseContent :global(.effectShowcaseCard) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 12px;
+  padding: 1.5rem 1.25rem;
+  transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.proseContent :global(.effectShowcaseCard:hover) {
+  transform: translateY(-2px);
+  border-color: var(--brand-primary);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+}
+
+.proseContent :global(.effectIconBox) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 68px;
+  height: 68px;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  margin: 0 auto 0.85rem auto;
+}
+
+.proseContent :global(.effectIconBox img) {
+  width: 44px !important;
+  height: 44px !important;
+  margin: 0 !important;
+  box-shadow: none !important;
+  border: none !important;
+  image-rendering: pixelated;
+}
+
+.proseContent :global(.effectTitle) {
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 0.35rem 0 !important;
+  text-align: center;
+}
+
+.proseContent :global(.effectBadge) {
+  display: inline-block;
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-bottom: 0.75rem;
+  text-align: center;
+}
+
+.proseContent :global(.effectBadge.debuff) {
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.12);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+}
+
+.proseContent :global(.effectBadge.buff) {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.proseContent :global(.effectBadge.special) {
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+}
+
+.proseContent :global(.effectDesc) {
+  font-size: 0.88rem;
+  color: #cbd5e1;
+  line-height: 1.55;
+  margin: 0 !important;
+  text-align: center;
+}
+
+/* ================= Article Footer ================= */
+.articleFooter {
+  margin-top: 3.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.footerShareBox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(135deg, rgba(88, 101, 242, 0.1), rgba(15, 19, 25, 0.6));
+  border: 1px solid rgba(88, 101, 242, 0.3);
+  border-radius: 10px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.footerShareLeft h4 {
+  color: #ffffff;
+  font-size: 1.05rem;
+  margin-bottom: 0.25rem;
+}
+
+.footerShareLeft p {
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  margin: 0;
+}
+
+.footerCopyBtn {
+  padding: 8px 16px;
+  background: #5865f2;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  white-space: nowrap;
+}
+
+.footerCopyBtn:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* Prev / Next Navigation Grid */
+.prevNextGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+}
+
+.prevNextCard {
+  display: flex;
+  flex-direction: column;
+  padding: 1.2rem;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 10px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.prevNextCard:hover {
+  border-color: var(--brand-primary);
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+.prevNextCard.emptyCard {
+  opacity: 0.4;
+  pointer-events: none;
+  justify-content: center;
+}
+
+.cardDirection {
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--brand-primary);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.35rem;
+}
+
+.cardNoticeTitle {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.nextCard {
+  text-align: right;
+}
+
+/* ================= Responsive ================= */
+@media (max-width: 768px) {
+  .noticeArticle {
+    padding: 1.5rem 1.25rem;
+  }
+
+  .articleTitle {
+    font-size: 1.75rem;
+  }
+
+  .footerShareBox {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .prevNextGrid {
+    grid-template-columns: 1fr;
+  }
+}
+</style>

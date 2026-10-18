@@ -1,0 +1,616 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import { base } from '../../lib/base';
+
+// Load all notice markdown files eagerly
+const noticeFiles = import.meta.glob('../../content/notices/*.md', { eager: true });
+
+interface NoticeItem {
+  slug: string;
+  title: string;
+  date: string;
+  category: 'Updates' | 'Developer Notes' | 'Notice' | 'Maintenance' | string;
+  pinned?: boolean;
+}
+
+const notices: NoticeItem[] = Object.entries(noticeFiles).map(([filePath, post]: [string, any]) => {
+  const slug = filePath.split('/').pop()?.replace('.md', '') || '';
+  const fm = post.frontmatter || {};
+  return {
+    slug,
+    title: fm.title || 'Untitled Notice',
+    date: fm.date || '2026-10-18',
+    category: fm.category || 'Notice',
+    pinned: Boolean(fm.pinned),
+  };
+});
+
+// Sort by date descending (newest first), pinned prioritized
+notices.sort((a, b) => {
+  if (a.pinned !== b.pinned) return a.pinned ? -1 : 1;
+  return new Date(b.date).getTime() - new Date(a.date).getTime();
+});
+
+const categories = ['All', 'Updates', 'Developer Notes', 'Notice', 'Maintenance'];
+
+const categoryCounts = categories.reduce((acc, cat) => {
+  if (cat === 'All') {
+    acc[cat] = notices.length;
+  } else {
+    acc[cat] = notices.filter((n) => n.category.toLowerCase() === cat.toLowerCase()).length;
+  }
+  return acc;
+}, {} as Record<string, number>);
+---
+
+<WikiLayout
+  title="News & Notices"
+  description="Official patch notes, developer notes, and announcements for Idle Guild Master Modded."
+>
+  <div class="noticePortalContainer">
+    <!-- Header Section -->
+    <header class="portalHeader">
+      <div class="headerTop">
+        <span class="portalBadge">Official Announcements</span>
+        <h1>News & Notices</h1>
+        <p class="portalSubtitle">
+          Official patch notes, developer notes, and game announcements.
+        </p>
+      </div>
+    </header>
+
+    <!-- Interactive Filter Toolbar (Category Tabs + Instant Search) -->
+    <div class="toolbarSection">
+      <!-- Category Tabs -->
+      <div class="filterTabs" role="tablist" aria-label="Notice Categories">
+        {categories.map((cat) => {
+          const count = categoryCounts[cat] || 0;
+          return (
+            <button
+              type="button"
+              class:list={['filterTabBtn', { active: cat === 'All' }]}
+              data-category={cat.toLowerCase()}
+              role="tab"
+              aria-selected={cat === 'All'}
+            >
+              <span class="tabLabel">{cat}</span>
+              <span class="tabCount">{count}</span>
+            </button>
+          );
+        })}
+      </div>
+
+      <!-- Search Input -->
+      <div class="searchBoxWrapper">
+        <svg class="searchIconSvg" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+          <circle cx="11" cy="11" r="8"></circle>
+          <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+        </svg>
+        <input
+          type="text"
+          id="noticeSearchInput"
+          class="noticeSearchInput"
+          placeholder="Search announcements..."
+          aria-label="Search notices"
+        />
+        <button
+          type="button"
+          id="clearSearchBtn"
+          class="clearSearchBtn"
+          aria-label="Clear search"
+          style="display: none;"
+        >
+          ✕
+        </button>
+      </div>
+    </div>
+
+    <!-- Notices Main List -->
+    <section class="noticesListSection">
+      <div class="sectionSubTitle">
+        <span>All Announcements</span>
+        <span id="visibleCountLabel" class="visibleCount">Showing {notices.length} notices</span>
+      </div>
+
+      <div class="noticesList" id="noticesList">
+        {notices.map((notice) => (
+          <a
+            href={`${base}/notices/${notice.slug}`}
+            class:list={['noticeRow', { isPinned: notice.pinned }]}
+            data-category={notice.category.toLowerCase()}
+            data-search-content={`${notice.title} ${notice.category}`.toLowerCase()}
+          >
+            <div class="rowStart">
+              {notice.pinned && <span class="pinnedBadge">Pinned</span>}
+              <span class:list={['typeBadge', `badge-${notice.category.toLowerCase().replace(/\s+/g, '-')}`]}>
+                {notice.category}
+              </span>
+              <span class="noticeTitle">{notice.title}</span>
+            </div>
+            <time class="noticeDate" datetime={notice.date}>
+              {notice.date.replace(/-/g, '/')}
+            </time>
+          </a>
+        ))}
+      </div>
+
+      <!-- No Results State -->
+      <div id="noResultsState" class="noResultsState" style="display: none;">
+        <h3>No announcements found</h3>
+        <p>No announcements match your search or selected filter.</p>
+        <button type="button" id="resetFiltersBtn" class="resetFiltersBtn">Reset Filters</button>
+      </div>
+    </section>
+  </div>
+</WikiLayout>
+
+<script>
+  // Client-side filtering and search logic
+  function setupNoticeFiltering() {
+    const tabs = document.querySelectorAll<HTMLButtonElement>('.filterTabBtn');
+    const searchInput = document.getElementById('noticeSearchInput') as HTMLInputElement | null;
+    const clearBtn = document.getElementById('clearSearchBtn') as HTMLButtonElement | null;
+    const resetBtn = document.getElementById('resetFiltersBtn') as HTMLButtonElement | null;
+    const noticeRows = document.querySelectorAll<HTMLElement>('.noticeRow');
+    const noResults = document.getElementById('noResultsState');
+    const countLabel = document.getElementById('visibleCountLabel');
+
+    let activeCategory = 'all';
+    let searchQuery = '';
+
+    function filterNotices() {
+      let visibleCount = 0;
+
+      noticeRows.forEach((row) => {
+        const cat = row.getAttribute('data-category') || '';
+        const searchContent = row.getAttribute('data-search-content') || '';
+
+        const matchesCategory = activeCategory === 'all' || cat === activeCategory;
+        const matchesSearch = !searchQuery || searchContent.includes(searchQuery);
+
+        if (matchesCategory && matchesSearch) {
+          row.style.display = '';
+          visibleCount++;
+        } else {
+          row.style.display = 'none';
+        }
+      });
+
+      if (countLabel) {
+        countLabel.textContent = `Showing ${visibleCount} notice${visibleCount === 1 ? '' : 's'}`;
+      }
+
+      if (noResults) {
+        noResults.style.display = visibleCount === 0 ? 'flex' : 'none';
+      }
+    }
+
+    tabs.forEach((tab) => {
+      tab.addEventListener('click', () => {
+        tabs.forEach((t) => {
+          t.classList.remove('active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        tab.classList.add('active');
+        tab.setAttribute('aria-selected', 'true');
+        activeCategory = tab.getAttribute('data-category') || 'all';
+        filterNotices();
+      });
+    });
+
+    if (searchInput) {
+      searchInput.addEventListener('input', (e) => {
+        searchQuery = (e.target as HTMLInputElement).value.trim().toLowerCase();
+        if (clearBtn) {
+          clearBtn.style.display = searchQuery ? 'inline-block' : 'none';
+        }
+        filterNotices();
+      });
+    }
+
+    if (clearBtn && searchInput) {
+      clearBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        clearBtn.style.display = 'none';
+        filterNotices();
+      });
+    }
+
+    if (resetBtn && searchInput) {
+      resetBtn.addEventListener('click', () => {
+        searchInput.value = '';
+        searchQuery = '';
+        if (clearBtn) clearBtn.style.display = 'none';
+        tabs.forEach((t) => {
+          if (t.getAttribute('data-category') === 'all') {
+            t.classList.add('active');
+            t.setAttribute('aria-selected', 'true');
+          } else {
+            t.classList.remove('active');
+            t.setAttribute('aria-selected', 'false');
+          }
+        });
+        activeCategory = 'all';
+        filterNotices();
+      });
+    }
+  }
+
+  // Run on initial load and Astro client transitions
+  if (typeof document !== 'undefined') {
+    setupNoticeFiltering();
+    document.addEventListener('astro:page-load', setupNoticeFiltering);
+  }
+</script>
+
+<style>
+.noticePortalContainer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 0.5rem 0 3rem 0;
+}
+
+/* ================= Header Section ================= */
+.portalHeader {
+  margin-bottom: 1.75rem;
+}
+
+.portalBadge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--brand-primary);
+  background: rgba(110, 168, 254, 0.12);
+  border: 1px solid rgba(110, 168, 254, 0.3);
+  padding: 3px 10px;
+  border-radius: 999px;
+  margin-bottom: 0.5rem;
+}
+
+.portalHeader h1 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #f1f5f9;
+  letter-spacing: -0.02em;
+  margin-bottom: 0.4rem;
+}
+
+.portalSubtitle {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  max-width: 720px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* ================= Toolbar: Tabs & Search ================= */
+.toolbarSection {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.75rem;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  padding: 0.75rem 1rem;
+  border-radius: 12px;
+}
+
+.filterTabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.filterTabBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-secondary);
+  font-size: 0.88rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filterTabBtn:hover {
+  background: var(--bg-card-hover);
+  color: #ffffff;
+  border-color: var(--border-card);
+}
+
+.filterTabBtn.active {
+  background: rgba(110, 168, 254, 0.16);
+  border-color: var(--brand-primary);
+  color: var(--brand-primary);
+  box-shadow: 0 0 12px rgba(110, 168, 254, 0.15);
+}
+
+.tabCount {
+  display: inline-block;
+  font-size: 0.75rem;
+  padding: 1px 6px;
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 999px;
+  color: var(--text-muted);
+}
+
+.filterTabBtn.active .tabCount {
+  background: rgba(110, 168, 254, 0.25);
+  color: var(--brand-primary);
+}
+
+.searchBoxWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  min-width: 240px;
+  flex: 1;
+  max-width: 320px;
+}
+
+.searchIconSvg {
+  position: absolute;
+  left: 10px;
+  color: var(--text-muted);
+  pointer-events: none;
+}
+
+.noticeSearchInput {
+  width: 100%;
+  padding: 7px 30px 7px 32px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+  color: var(--text-primary);
+  font-size: 0.88rem;
+  outline: none;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.noticeSearchInput:focus {
+  border-color: var(--brand-primary);
+  box-shadow: 0 0 0 2px rgba(110, 168, 254, 0.2);
+}
+
+.clearSearchBtn {
+  position: absolute;
+  right: 8px;
+  background: none;
+  border: none;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 2px 6px;
+  font-size: 0.85rem;
+}
+
+.clearSearchBtn:hover {
+  color: var(--text-primary);
+}
+
+/* ================= Section Header ================= */
+.sectionSubTitle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #f1f5f9;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.visibleCount {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: var(--text-muted);
+}
+
+/* ================= Notices List Layout ================= */
+.noticesList {
+  display: flex;
+  flex-direction: column;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.noticeRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.25rem;
+  padding: 1rem 1.25rem;
+  text-decoration: none;
+  border-bottom: 1px solid var(--border-subtle);
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.noticeRow:last-child {
+  border-bottom: none;
+}
+
+.noticeRow:hover {
+  background: var(--bg-card-hover);
+  text-decoration: none;
+}
+
+.noticeRow:hover .noticeTitle {
+  color: var(--brand-primary);
+}
+
+.noticeRow.isPinned {
+  background: rgba(251, 191, 36, 0.03);
+}
+
+.noticeRow.isPinned:hover {
+  background: rgba(251, 191, 36, 0.08);
+}
+
+.rowStart {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 0;
+  flex: 1;
+}
+
+.noticeTitle {
+  font-size: 0.98rem;
+  font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transition: color 0.15s ease;
+}
+
+.noticeDate {
+  font-size: 0.85rem;
+  color: var(--text-muted);
+  font-family: var(--font-mono);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+/* ================= Category Badges ================= */
+.typeBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.pinnedBadge {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 2px 7px;
+  border-radius: 4px;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.25);
+  flex-shrink: 0;
+}
+
+.badge-updates {
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
+}
+
+.badge-developer-notes {
+  color: #f43f5e;
+  background: rgba(244, 63, 94, 0.12);
+  border: 1px solid rgba(244, 63, 94, 0.25);
+}
+
+.badge-notice {
+  color: #f59e0b;
+  background: rgba(245, 158, 11, 0.12);
+  border: 1px solid rgba(245, 158, 11, 0.25);
+}
+
+.badge-maintenance {
+  color: #a855f7;
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.25);
+}
+
+/* ================= Empty State ================= */
+.noResultsState {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem 1.5rem;
+  background: var(--bg-card);
+  border: 1px dashed var(--border-subtle);
+  border-radius: 12px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.noResultsState h3 {
+  font-size: 1.25rem;
+  color: #f1f5f9;
+  margin-bottom: 0.35rem;
+}
+
+.noResultsState p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  margin-bottom: 1.25rem;
+}
+
+.resetFiltersBtn {
+  padding: 8px 18px;
+  background: var(--brand-primary);
+  color: #0f1319;
+  border: none;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: opacity 0.15s ease;
+}
+
+.resetFiltersBtn:hover {
+  opacity: 0.9;
+}
+
+/* ================= Responsive Adjustments ================= */
+@media (max-width: 640px) {
+  .portalHeader h1 {
+    font-size: 1.85rem;
+  }
+  
+  .toolbarSection {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .searchBoxWrapper {
+    max-width: 100%;
+  }
+
+  .noticeRow {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.45rem;
+    padding: 0.85rem 1rem;
+  }
+
+  .rowStart {
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 8px;
+  }
+
+  .noticeTitle {
+    white-space: normal;
+    width: 100%;
+    font-size: 0.95rem;
+    margin-top: 0.2rem;
+  }
+
+  .noticeDate {
+    font-size: 0.78rem;
+  }
+}
+</style>
