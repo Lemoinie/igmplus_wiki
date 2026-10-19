@@ -185,6 +185,11 @@
         "getSpecialDamageModifier": "super.getSpecialDamageModifier() + ((primaryAltar?.bonusSpecialDamage() ?: 0.0) / 100.0) + ((secondaryAltar?.bonusSpecialDamage() ?: 0.0) / 100.0) + ((defaultAltar?.bonusSpecialDamage() ?: 0.0) / 100.0)",
         "equals": "this === other",
         "hashCode": "System.identityHashCode(this)",
+        "getConstitutionPercent": "0",
+        "getIntelligencePercent": "0",
+        "getDexterityPercent": "0",
+        "getMaxHpPercent": "0",
+        "getArchetypeStatSummary": "\"\"",
         "getBasicAbilityName": "\"Default Altar Effect\"",
         "getBasicAbilityDescription": "\"Innate archetype focus scales with relic enhancement.\""
       }
@@ -12082,14 +12087,14 @@
       "rarity": 3,
       "stack": null,
       "gem_value": null,
-      "stats": {
-        "dexterity": 8,
-        "criticalChance": 0.05
-      },
+      "stats": {},
       "flags": {},
       "overrides": {
         "getArchetypeName": "\"Dagger\"",
-        "getAuraBaseName": "\"relic_dagger\""
+        "getAuraBaseName": "\"relic_dagger\"",
+        "getConstitutionPercent": "level * 2",
+        "getIntelligencePercent": "level * 2",
+        "getArchetypeStatSummary": "\"Constitution & Intelligence\""
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicDagger.kt"
     },
@@ -12112,14 +12117,14 @@
       "rarity": 3,
       "stack": null,
       "gem_value": null,
-      "stats": {
-        "dexterity": 6,
-        "attackSpeed": 10
-      },
+      "stats": {},
       "flags": {},
       "overrides": {
         "getArchetypeName": "\"Dual Sword\"",
-        "getAuraBaseName": "\"relic_dual_sword\""
+        "getAuraBaseName": "\"relic_dual_sword\"",
+        "getConstitutionPercent": "level * 2",
+        "getDexterityPercent": "level * 2",
+        "getArchetypeStatSummary": "\"Constitution & Dexterity\""
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicDualSword.kt"
     },
@@ -12142,14 +12147,14 @@
       "rarity": 3,
       "stack": null,
       "gem_value": null,
-      "stats": {
-        "constitution": 6,
-        "dexterity": 4
-      },
+      "stats": {},
       "flags": {},
       "overrides": {
         "getArchetypeName": "\"Lance\"",
-        "getAuraBaseName": "\"relic_lance\""
+        "getAuraBaseName": "\"relic_lance\"",
+        "getMaxHpPercent": "level * 2",
+        "getDexterityPercent": "level * 2",
+        "getArchetypeStatSummary": "\"Max HP & Dexterity\""
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicLance.kt"
     },
@@ -12172,14 +12177,14 @@
       "rarity": 3,
       "stack": null,
       "gem_value": null,
-      "stats": {
-        "defense": 6,
-        "magicDefense": 6
-      },
+      "stats": {},
       "flags": {},
       "overrides": {
         "getArchetypeName": "\"Mask\"",
-        "getAuraBaseName": "\"relic_mask\""
+        "getAuraBaseName": "\"relic_mask\"",
+        "getMaxHpPercent": "level * 2",
+        "getIntelligencePercent": "level * 2",
+        "getArchetypeStatSummary": "\"Max HP & Intelligence\""
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicMask.kt"
     },
@@ -12202,14 +12207,14 @@
       "rarity": 3,
       "stack": null,
       "gem_value": null,
-      "stats": {
-        "intelligence": 8,
-        "magicDefense": 4
-      },
+      "stats": {},
       "flags": {},
       "overrides": {
         "getArchetypeName": "\"Orb\"",
-        "getAuraBaseName": "\"relic_orb\""
+        "getAuraBaseName": "\"relic_orb\"",
+        "getDexterityPercent": "level * 2",
+        "getIntelligencePercent": "level * 2",
+        "getArchetypeStatSummary": "\"Dexterity & Intelligence\""
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicOrb.kt"
     },
@@ -12232,15 +12237,14 @@
       "rarity": 3,
       "stack": null,
       "gem_value": null,
-      "stats": {
-        "defense": 12,
-        "maxHp": 30,
-        "threat": 10
-      },
+      "stats": {},
       "flags": {},
       "overrides": {
         "getArchetypeName": "\"Shield\"",
-        "getAuraBaseName": "\"relic_shield\""
+        "getAuraBaseName": "\"relic_shield\"",
+        "getMaxHpPercent": "level * 2",
+        "getConstitutionPercent": "level * 2",
+        "getArchetypeStatSummary": "\"Max HP & Constitution\""
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RelicShield.kt"
     },

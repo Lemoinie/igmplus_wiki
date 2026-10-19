@@ -103,7 +103,7 @@ Rings, capes, amulets and trinkets.
 | <img :src="$withBase('/images/cursed_helm.png')" class="sprite" alt="cursed_helm" width="56" height="56"> | **Cursed Helm** | Accessory | 2880 | 0 | Max HP 105 · Physical Retaliation +15 | — |
 | <img :src="$withBase('/images/archmage_hat.png')" class="sprite" alt="archmage_hat" width="56" height="56"> | **Archmage Hat** | Accessory | 3200 | 0 | INT +35 · Crit Damage +20% | — |
 | <img :src="$withBase('/images/voltaic_shock.png')" class="sprite" alt="voltaic_shock" width="56" height="56"> | **Voltaic Shock** | Accessory | 4058 | 0 | DEX +30 · INT +10 | — |
-| <img :src="$withBase('/images/slime_kings_crown.png')" class="sprite" alt="slime_kings_crown" width="56" height="56"> | **"Slime King's Crown"** | Accessory | 5000 | 0 | Bonus EXP +35 | Rare Drop |
+| <img :src="$withBase('/images/slime_kings_crown.png')" class="sprite" alt="slime_kings_crown" width="56" height="56"> | **Slime King's Crown** | Accessory | 5000 | 0 | Bonus EXP +35 | Rare Drop |
 | <img :src="$withBase('/images/kabelian_claws.png')" class="sprite" alt="kabelian_claws" width="56" height="56"> | **Kabelian Claws** | Accessory | 6720 | 0 | DEX +16 · CON +15 | — |
 | <img :src="$withBase('/images/amulet_of_resurrection.png')" class="sprite" alt="amulet_of_resurrection" width="56" height="56"> | **Amulet of Resurrection** | Accessory | 7425 | 0 | — | — |
 | <img :src="$withBase('/images/diamond_amulet.png')" class="sprite" alt="diamond_amulet" width="56" height="56"> | **Diamond Amulet** | Accessory | 7503 | 0 | Bonus EXP +55 · Max HP 175 | — |
@@ -128,8 +128,8 @@ Rings, capes, amulets and trinkets.
 | <img :src="$withBase('/images/burning_effigy.png')" class="sprite" alt="burning_effigy" width="56" height="56"> | **Burning Effigy** | Accessory | 43598 | 0 | CON +34 · DEF +9 · MDEF +9 · Threat +3 | — |
 | <img :src="$withBase('/images/nil_pendant.png')" class="sprite" alt="nil_pendant" width="56" height="56"> | **Nil Pendant** | Accessory | 47925 | 0 | Bonus EXP +100 | — |
 | <img :src="$withBase('/images/sha.png')" class="sprite" alt="sha" width="56" height="56"> | **Sha** | Accessory | 69150 | 0 | CON +40 · DEX +40 · INT +40 · Status Immunity +100% | — |
-| <img :src="$withBase('/images/scarlet_cape.png')" class="sprite" alt="scarlet_cape" width="56" height="56"> | **Scarlet Cape** | Accessory | 200000 | 0 | CON +30 · DEX +30 · INT +30 · Crit Chance +15% | — |
-| <img :src="$withBase('/images/eldritch_scarlet_cape.png')" class="sprite" alt="eldritch_scarlet_cape" width="56" height="56"> | **Eldritch Scarlet Cape** | Accessory | 204465 | 0 | CON +40 · DEX +40 · INT +40 · Crit Chance +21% · Crit Damage +21% | — |
-| <img :src="$withBase('/images/abyssal_scarlet_mantle.png')" class="sprite" alt="abyssal_scarlet_mantle" width="56" height="56"> | **Abyssal Scarlet Mantle** | Accessory | 214465 | 0 | CON +50 · DEX +50 · INT +50 · Crit Chance +35% · Crit Damage +40% | — |
+| <img :src="$withBase('/images/scarlet_cape.png')" class="sprite" alt="scarlet_cape" width="56" height="56"> | **Scarlet Cape** | Accessory | 200000 | 0 | DEX +5 · INT +30 · Skill Amp +15% | — |
+| <img :src="$withBase('/images/eldritch_scarlet_cape.png')" class="sprite" alt="eldritch_scarlet_cape" width="56" height="56"> | **Eldritch Scarlet Cape** | Accessory | 204465 | 0 | DEX +10 · INT +40 · Skill Amp +21% | — |
+| <img :src="$withBase('/images/abyssal_scarlet_mantle.png')" class="sprite" alt="abyssal_scarlet_mantle" width="56" height="56"> | **Abyssal Scarlet Mantle** | Accessory | 214465 | 0 | DEX +15 · INT +50 · Skill Amp +35% | — |
 
 :::

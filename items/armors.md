@@ -9,7 +9,11 @@ Light, medium and heavy armor sets with their defensive stats.
 
 |  | Name | Type | Price | Rarity | Stats | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
+| <img :src="$withBase('/images/bear_hide.png')" class="sprite" alt="bear_hide" width="56" height="56"> | **Bear Hide** | HeavyArmor | 0 | 0 | CON +10 · DEF +8 · Damage Taken -10% | — |
+| <img :src="$withBase('/images/primeval_hide.png')" class="sprite" alt="primeval_hide" width="56" height="56"> | **Primeval Hide** | HeavyArmor | 0 | 0 | CON +16 · DEF +12 · Damage Taken -20% | — |
 | <img :src="$withBase('/images/spiked_skeleton.png')" class="sprite" alt="spiked_skeleton" width="56" height="56"> | **Spiked Skeleton** | HeavyArmor | 0 | 0 | Physical Retaliation +50 · CON +8 | — |
+| <img :src="$withBase('/images/thick_fur.png')" class="sprite" alt="thick_fur" width="56" height="56"> | **Thick Fur** | MediumArmor | 0 | 0 | DEF +6 · CON +4 | — |
+| <img :src="$withBase('/images/wolf_pelt.png')" class="sprite" alt="wolf_pelt" width="56" height="56"> | **Wolf Pelt** | LightArmor | 0 | 0 | DEF +4 · DEX +2 | — |
 | <img :src="$withBase('/images/copper_armor.png')" class="sprite" alt="copper_armor" width="56" height="56"> | **Copper Armor** | HeavyArmor | 20 | 0 | Max HP 30 · CON +1 | — |
 | <img :src="$withBase('/images/leather_jacket.png')" class="sprite" alt="leather_jacket" width="56" height="56"> | **Leather Jacket** | MediumArmor | 45 | 0 | Max HP 20 · CON +1 · DEX +1 | — |
 | <img :src="$withBase('/images/wurmscales_jacket.png')" class="sprite" alt="wurmscales_jacket" width="56" height="56"> | **Wurmscales Jacket** | MediumArmor | 45 | 0 | Max HP 40 · CON +2 · DEX +2 | — |

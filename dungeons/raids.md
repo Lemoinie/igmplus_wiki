@@ -19,7 +19,7 @@ the tables below list each raid's enemy pool with encounter shares.
 
 |  | Enemy | Share of Encounters | Role / Type |
 | --- | --- | --- | --- |
-| <img :src="$withBase('/images/unit_kabar_the_rotten.png')" class="sprite" alt="unit_kabar_the_rotten" width="36" height="36"> | **"Ka'Bar, the Rotten"** | Event / Scripted | **Boss** |
+| <img :src="$withBase('/images/unit_kabar_the_rotten.png')" class="sprite" alt="unit_kabar_the_rotten" width="36" height="36"> | **Ka'Bar, the Rotten** | Event / Scripted | **Boss** |
 | <img :src="$withBase('/images/unit_abomination.png')" class="sprite" alt="unit_abomination" width="36" height="36"> | **Abomination** | Event / Scripted | Special Spawn |
 | <img :src="$withBase('/images/unit_death_hound.png')" class="sprite" alt="unit_death_hound" width="36" height="36"> | **Death Hound** | Event / Scripted | Special Spawn |
 | <img :src="$withBase('/images/unit_necrolith.png')" class="sprite" alt="unit_necrolith" width="36" height="36"> | **Necrolith** | Event / Scripted | Special Spawn |
@@ -111,7 +111,7 @@ the tables below list each raid's enemy pool with encounter shares.
 | <img :src="$withBase('/images/unit_bleak_disciple.png')" class="sprite" alt="unit_bleak_disciple" width="36" height="36"> | **Bleak Disciple** | Event / Scripted | Special Spawn |
 | <img :src="$withBase('/images/unit_eldritch_hound.png')" class="sprite" alt="unit_eldritch_hound" width="36" height="36"> | **Eldritch Hound** | Event / Scripted | Special Spawn |
 | <img :src="$withBase('/images/unit_lost_miner.png')" class="sprite" alt="unit_lost_miner" width="36" height="36"> | **Lost Miner** | Event / Scripted | Special Spawn |
-| <img :src="$withBase('/images/unit_tekeli_li_first_apostle.png')" class="sprite" alt="unit_tekeli_li_first_apostle" width="36" height="36"> | **"Tekeli'li, First Apostle"** | Event / Scripted | Special Spawn |
+| <img :src="$withBase('/images/unit_tekeli_li_first_apostle.png')" class="sprite" alt="unit_tekeli_li_first_apostle" width="36" height="36"> | **Tekeli'li, First Apostle** | Event / Scripted | Special Spawn |
 
 ## The Sanguine Crucible
 
@@ -172,11 +172,11 @@ the tables below list each raid's enemy pool with encounter shares.
 |  | Enemy | Share of Encounters | Role / Type |
 | --- | --- | --- | --- |
 | <img :src="$withBase('/images/unit_sand_demon.png')" class="sprite" alt="unit_sand_demon" width="36" height="36"> | **Sand Demon** | Event / Scripted | Special Spawn |
-| <img :src="$withBase('/images/unit_sha_kire_first_swordsman.png')" class="sprite" alt="unit_sha_kire_first_swordsman" width="36" height="36"> | **"Sha'kire, First Swordsman"** | Event / Scripted | Special Spawn |
+| <img :src="$withBase('/images/unit_sha_kire_first_swordsman.png')" class="sprite" alt="unit_sha_kire_first_swordsman" width="36" height="36"> | **Sha'kire, First Swordsman** | Event / Scripted | Special Spawn |
 | <img :src="$withBase('/images/unit_sha_the_hidden_god.png')" class="sprite" alt="unit_sha_the_hidden_god" width="36" height="36"> | **Sha, the Hidden God** | Event / Scripted | Special Spawn |
-| <img :src="$withBase('/images/unit_shahuri_archer.png')" class="sprite" alt="unit_shahuri_archer" width="36" height="36"> | **"Sha'huri Archer"** | Event / Scripted | Special Spawn |
-| <img :src="$withBase('/images/unit_shahuri_mage.png')" class="sprite" alt="unit_shahuri_mage" width="36" height="36"> | **"Sha'huri Mage"** | Event / Scripted | Special Spawn |
-| <img :src="$withBase('/images/unit_shahuri_warrior.png')" class="sprite" alt="unit_shahuri_warrior" width="36" height="36"> | **"Sha'huri Warrior"** | Event / Scripted | Special Spawn |
+| <img :src="$withBase('/images/unit_shahuri_archer.png')" class="sprite" alt="unit_shahuri_archer" width="36" height="36"> | **Sha'huri Archer** | Event / Scripted | Special Spawn |
+| <img :src="$withBase('/images/unit_shahuri_mage.png')" class="sprite" alt="unit_shahuri_mage" width="36" height="36"> | **Sha'huri Mage** | Event / Scripted | Special Spawn |
+| <img :src="$withBase('/images/unit_shahuri_warrior.png')" class="sprite" alt="unit_shahuri_warrior" width="36" height="36"> | **Sha'huri Warrior** | Event / Scripted | Special Spawn |
 
 ## Imperial Rescue
 

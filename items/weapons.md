@@ -9,14 +9,19 @@ Swords, axes, bows, staves and daggers. Use the filters to narrow by type, rarit
 
 |  | Name | Type | Price | Rarity | Stats | Notes |
 | --- | --- | --- | --- | --- | --- | --- |
+| <img :src="$withBase('/images/apex_claws.png')" class="sprite" alt="apex_claws" width="56" height="56"> | **Apex Claws** | Sword | 0 | 0 | CON +12 · DEX +8 | — |
 | <img :src="$withBase('/images/cane.png')" class="sprite" alt="cane" width="56" height="56"> | **Cane** | Staff | 0 | 0 | INT +1 | — |
 | <img :src="$withBase('/images/decomposed_limb.png')" class="sprite" alt="decomposed_limb" width="56" height="56"> | **Decomposed Limb** | Sword | 0 | 0 | CON +1 | — |
+| <img :src="$withBase('/images/predator_fangs.png')" class="sprite" alt="predator_fangs" width="56" height="56"> | **Predator Fangs** | Sword | 0 | 0 | DEX +2 · CON +1 · Crit Chance +10% | — |
 | <img :src="$withBase('/images/rat_claws.png')" class="sprite" alt="rat_claws" width="56" height="56"> | **Rat Claws** | Sword | 0 | 0 | CON +1 · DEX +1 · Crit Chance +5% | — |
 | <img :src="$withBase('/images/serpent_jaws.png')" class="sprite" alt="serpent_jaws" width="56" height="56"> | **Serpent Jaws** | Sword | 0 | 0 | Counterattack +35% · DEX +5 | — |
 | <img :src="$withBase('/images/sickle.png')" class="sprite" alt="sickle" width="56" height="56"> | **Sickle** | Dagger | 0 | 0 | DEX +1 · CON +1 | — |
 | <img :src="$withBase('/images/spade.png')" class="sprite" alt="spade" width="56" height="56"> | **Spade** | Sword | 0 | 0 | CON +1 | — |
 | <img :src="$withBase('/images/stick.png')" class="sprite" alt="stick" width="56" height="56"> | **Stick** | Axe | 0 | 0 | CON +1 · INT +1 | — |
+| <img :src="$withBase('/images/tiger_jaws.png')" class="sprite" alt="tiger_jaws" width="56" height="56"> | **Tiger Jaws** | Sword | 0 | 0 | DEX +6 · CON +4 · Crit Damage +30% | — |
 | <img :src="$withBase('/images/training_bow.png')" class="sprite" alt="training_bow" width="56" height="56"> | **Training Bow** | Bow | 0 | 0 | DEX +1 | — |
+| <img :src="$withBase('/images/ursine_paw.png')" class="sprite" alt="ursine_paw" width="56" height="56"> | **Ursine Paw** | Sword | 0 | 0 | CON +8 · DEX +4 | — |
+| <img :src="$withBase('/images/wolf_jaws.png')" class="sprite" alt="wolf_jaws" width="56" height="56"> | **Wolf Jaws** | Sword | 0 | 0 | DEX +4 · CON +3 | — |
 | <img :src="$withBase('/images/corrupted_dagger.png')" class="sprite" alt="corrupted_dagger" width="56" height="56"> | **Corrupted Dagger** | Dagger | 1 | 0 | DEX +1 | Rare Drop |
 | <img :src="$withBase('/images/corrupted_staff.png')" class="sprite" alt="corrupted_staff" width="56" height="56"> | **Corrupted Staff** | Staff | 1 | 0 | INT +1 | Rare Drop |
 | <img :src="$withBase('/images/wooden_bow.png')" class="sprite" alt="wooden_bow" width="56" height="56"> | **Wooden Bow** | Bow | 11 | 0 | CON +1 · DEX +3 | — |
@@ -31,7 +36,7 @@ Swords, axes, bows, staves and daggers. Use the filters to narrow by type, rarit
 | <img :src="$withBase('/images/undead_sword.png')" class="sprite" alt="undead_sword" width="56" height="56"> | **Undead Sword** | Sword | 54 | 0 | CON +9 · DEX +3 | — |
 | <img :src="$withBase('/images/glass_knife.png')" class="sprite" alt="glass_knife" width="56" height="56"> | **Glass Knife** | Dagger | 56 | 0 | CON +5 · DEX +5 | — |
 | <img :src="$withBase('/images/undead_axe.png')" class="sprite" alt="undead_axe" width="56" height="56"> | **Undead Axe** | Axe | 75 | 0 | CON +8 · INT +5 | — |
-| <img :src="$withBase('/images/shahuri_bow.png')" class="sprite" alt="shahuri_bow" width="56" height="56"> | **"Sha'huri Bow"** | Bow | 86 | 0 | DEX +6 · INT +2 | — |
+| <img :src="$withBase('/images/shahuri_bow.png')" class="sprite" alt="shahuri_bow" width="56" height="56"> | **Sha'huri Bow** | Bow | 86 | 0 | DEX +6 · INT +2 | — |
 | <img :src="$withBase('/images/undead_staff.png')" class="sprite" alt="undead_staff" width="56" height="56"> | **Undead Staff** | Staff | 93 | 0 | INT +12 | — |
 | <img :src="$withBase('/images/redwood_bow.png')" class="sprite" alt="redwood_bow" width="56" height="56"> | **Redwood Bow** | Bow | 123 | 0 | CON +4 · DEX +12 | — |
 | <img :src="$withBase('/images/living_scimitar.png')" class="sprite" alt="living_scimitar" width="56" height="56"> | **Living Scimitar** | Sword | 227 | 0 | CON +10 · MDEF +5 · Counterattack +10% | — |
@@ -57,7 +62,7 @@ Swords, axes, bows, staves and daggers. Use the filters to narrow by type, rarit
 | <img :src="$withBase('/images/frostmetal_dagger.png')" class="sprite" alt="frostmetal_dagger" width="56" height="56"> | **Frostmetal Dagger** | Dagger | 450 | 0 | DEX +17 · CON +17 | — |
 | <img :src="$withBase('/images/golden_sword.png')" class="sprite" alt="golden_sword" width="56" height="56"> | **Golden Sword** | Sword | 483 | 0 | CON +12 · DEX +4 | — |
 | <img :src="$withBase('/images/gold_axe.png')" class="sprite" alt="gold_axe" width="56" height="56"> | **Golden Axe** | Axe | 485 | 0 | CON +12 · INT +6 | — |
-| <img :src="$withBase('/images/dryads_curse.png')" class="sprite" alt="dryads_curse" width="56" height="56"> | **"Dryad's Curse"** | Dagger | 504 | 0 | INT +30 · DEX +18 · CON +18 | Magical Damage |
+| <img :src="$withBase('/images/dryads_curse.png')" class="sprite" alt="dryads_curse" width="56" height="56"> | **Dryad's Curse** | Dagger | 504 | 0 | INT +30 · DEX +18 · CON +18 | Magical Damage |
 | <img :src="$withBase('/images/frostmetal_sword.png')" class="sprite" alt="frostmetal_sword" width="56" height="56"> | **Frostmetal Sword** | Sword | 513 | 0 | CON +18 · DEX +6 | — |
 | <img :src="$withBase('/images/frostmetal_axe.png')" class="sprite" alt="frostmetal_axe" width="56" height="56"> | **Frostmetal Axe** | Axe | 520 | 0 | CON +17 · INT +8 | — |
 | <img :src="$withBase('/images/banshee_dagger.png')" class="sprite" alt="banshee_dagger" width="56" height="56"> | **Banshee Dagger** | Dagger | 552 | 0 | CON +28 · DEX +28 | — |
@@ -73,7 +78,7 @@ Swords, axes, bows, staves and daggers. Use the filters to narrow by type, rarit
 | <img :src="$withBase('/images/animated_bow.png')" class="sprite" alt="animated_bow" width="56" height="56"> | **Animated Bow** | Bow | 638 | 0 | DEX +30 · INT +10 | — |
 | <img :src="$withBase('/images/panopticon_staff.png')" class="sprite" alt="panopticon_staff" width="56" height="56"> | **Panopticon Staff** | Staff | 642 | 0 | INT +32 · darknessReduction +16 | — |
 | <img :src="$withBase('/images/animated_axe.png')" class="sprite" alt="animated_axe" width="56" height="56"> | **Animated Axe** | Axe | 670 | 0 | CON +28 · INT +16 | — |
-| <img :src="$withBase('/images/dryads_blessing.png')" class="sprite" alt="dryads_blessing" width="56" height="56"> | **"Dryad's Blessing"** | Staff | 735 | 0 | Healing Bonus +23% · INT +22 | — |
+| <img :src="$withBase('/images/dryads_blessing.png')" class="sprite" alt="dryads_blessing" width="56" height="56"> | **Dryad's Blessing** | Staff | 735 | 0 | Healing Bonus +23% · INT +22 | — |
 | <img :src="$withBase('/images/crimson_leech.png')" class="sprite" alt="crimson_leech" width="56" height="56"> | **Crimson Leech** | Staff | 834 | 0 | INT +16 · CON +4 · Lifesteal +20 | — |
 | <img :src="$withBase('/images/focused_scepter.png')" class="sprite" alt="focused_scepter" width="56" height="56"> | **Focused Scepter** | Staff | 854 | 0 | INT +24 | — |
 | <img :src="$withBase('/images/ceremonial_dagger.png')" class="sprite" alt="ceremonial_dagger" width="56" height="56"> | **Ceremonial Dagger** | Dagger | 864 | 0 | DEX +8 · INT +8 · Healing Bonus +40% | Ranged Attack |

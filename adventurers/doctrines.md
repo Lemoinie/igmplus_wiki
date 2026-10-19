@@ -19,7 +19,7 @@ Followers of this doctrine believe that suffering is synonymous with strength. T
 | <img :src="$withBase('/images/doctrine_ability_servus_sanguinis.png')" class="sprite" alt="doctrine_ability_servus_sanguinis" width="20" height="20"> Servus Sanguinis | 2 | 8 | 3 | Increase lifesteal by %s. |
 | <img :src="$withBase('/images/doctrine_ability_servus_umbrae.png')" class="sprite" alt="doctrine_ability_servus_umbrae" width="20" height="20"> Servus Umbrae | 2 | 2 | 3 | Increase damage by %s per point of Darkness. |
 | <img :src="$withBase('/images/doctrine_ability_genus_vampyri.png')" class="sprite" alt="doctrine_ability_genus_vampyri" width="20" height="20"> Genus Vampyri | 5 | 20 | 1 | Lifesteal can overheal, granting a shield of up to %s the max HP value. |
-| <img :src="$withBase('/images/doctrine_ability_bloodletting.png')" class="sprite" alt="doctrine_ability_bloodletting" width="20" height="20"> Bloodletting | 3 | 5 | 3 | Basic attacks consume %s of Max HP (non-lethal), inflicting Bleed equal to the HP consumed. |
+| <img :src="$withBase('/images/doctrine_ability_bloodletting.png')" class="sprite" alt="doctrine_ability_bloodletting" width="20" height="20"> Bloodletting | 3 | 5 | 3 | Basic attacks consume %s of Max HP (non-lethal), inflicting Bleed equal to the HP consumed.  BLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge |
 
 ## Doctrine of Control
 
@@ -32,8 +32,8 @@ Adherents of the Doctrine of Control seek absolute dominance over themselves and
 | <img :src="$withBase('/images/doctrine_ability_improved_intelligence.png')" class="sprite" alt="doctrine_ability_improved_intelligence" width="20" height="20"> Improved Intelligence | 1 | 2 | 5 | Increase Intelligence by %s. |
 | <img :src="$withBase('/images/doctrine_ability_impenetrable_willpower.png')" class="sprite" alt="doctrine_ability_impenetrable_willpower" width="20" height="20"> Impenetrable Willpower | 2 | 20 | 3 | Status immunity %s. |
 | <img :src="$withBase('/images/doctrine_ability_mind_bender.png')" class="sprite" alt="doctrine_ability_mind_bender" width="20" height="20"> Mind Bender | 2 | 5 | 3 | %s to ignore status immunities when applying Status Effects. |
-| <img :src="$withBase('/images/doctrine_ability_chilling_flow.png')" class="sprite" alt="doctrine_ability_chilling_flow" width="20" height="20"> Chilling Flow | 3 | 30 | 2 | "%s FREEZE for 1 turn on hit. FREEZE: This unit can't dodge and takes 10 physical damage each turn." |
-| <img :src="$withBase('/images/doctrine_ability_star_gaze.png')" class="sprite" alt="doctrine_ability_star_gaze" width="20" height="20"> Star Gaze | 4 | 5 | 2 | "%s PETRIFY for 1 turn on hit. PETRIFY: This unit can't dodge, takes 15%% increased damage and skips its turn." |
+| <img :src="$withBase('/images/doctrine_ability_chilling_flow.png')" class="sprite" alt="doctrine_ability_chilling_flow" width="20" height="20"> Chilling Flow | 3 | 30 | 2 | %s FREEZE for 1 turn on hit. FREEZE: This unit can't dodge and takes 10 physical damage each turn. |
+| <img :src="$withBase('/images/doctrine_ability_star_gaze.png')" class="sprite" alt="doctrine_ability_star_gaze" width="20" height="20"> Star Gaze | 4 | 5 | 2 | %s PETRIFY for 1 turn on hit. PETRIFY: This unit can't dodge, takes 15%% increased damage and skips its turn. |
 | <img :src="$withBase('/images/doctrine_ability_arcane_suppression.png')" class="sprite" alt="doctrine_ability_arcane_suppression" width="20" height="20"> Arcane Suppression | 6 | 150 | 1 | Deal %s magical damage per turn for each negative Status Effect inflicted by this unit. |
 | <img :src="$withBase('/images/doctrine_ability_verdant_briars.png')" class="sprite" alt="doctrine_ability_verdant_briars" width="20" height="20"> Verdant Briars | 1 | 5 | 3 | Attacks have a %s chance to ENTANGLE the target for 2 turns. ENTANGLE: This unit cannot dodge, deals 20%% reduced damage, and takes 2%% HP damage each turn. |
 
@@ -41,15 +41,13 @@ Adherents of the Doctrine of Control seek absolute dominance over themselves and
 
 <img :src="$withBase('/images/doctrine_of_fortitude.png')" class="sprite" alt="doctrine_of_fortitude" width="48" height="48">
 
-Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.
-
 | Ability | Cost/lvl | +Per Point | Max Lvl | Effect |
 | --- | --- | --- | --- | --- |
 | <img :src="$withBase('/images/doctrine_ability_improved_health.png')" class="sprite" alt="doctrine_ability_improved_health" width="20" height="20"> Improved Health | 1 | 25 | 5 | Increase HP by %s. |
 | <img :src="$withBase('/images/doctrine_ability_improved_constitution.png')" class="sprite" alt="doctrine_ability_improved_constitution" width="20" height="20"> Improved Constitution | 1 | 2 | 5 | Increase Constitution by %s. |
 | <img :src="$withBase('/images/doctrine_ability_manifest_danger.png')" class="sprite" alt="doctrine_ability_manifest_danger" width="20" height="20"> Manifest Danger | 4 | 1 | 1 | Increases Threat by %s. |
-| <img :src="$withBase('/images/doctrine_ability_troll_resistance.png')" class="sprite" alt="doctrine_ability_troll_resistance" width="20" height="20"> "Troll's Resistance" | 1 | 2 | 5 | Increase Defense by %s. |
-| <img :src="$withBase('/images/doctrine_ability_warlock_resilience.png')" class="sprite" alt="doctrine_ability_warlock_resilience" width="20" height="20"> "Warlock's Resilience" | 1 | 2 | 5 | Increase Magic Defense by %s. |
+| <img :src="$withBase('/images/doctrine_ability_troll_resistance.png')" class="sprite" alt="doctrine_ability_troll_resistance" width="20" height="20"> Troll's Resistance | 1 | 2 | 5 | Increase Defense by %s. |
+| <img :src="$withBase('/images/doctrine_ability_warlock_resilience.png')" class="sprite" alt="doctrine_ability_warlock_resilience" width="20" height="20"> Warlock's Resilience | 1 | 2 | 5 | Increase Magic Defense by %s. |
 | <img :src="$withBase('/images/doctrine_ability_mirror_of_anguish.png')" class="sprite" alt="doctrine_ability_mirror_of_anguish" width="20" height="20"> Mirror of Anguish | 8 | 1 | 1 | Gains Retaliate (Physical) equal to Defense, and Retaliate (Magical) equal to Magic Defense. |
 | <img :src="$withBase('/images/doctrine_ability_armor_master.png')" class="sprite" alt="doctrine_ability_armor_master" width="20" height="20"> Armor Master | 3 | 20 | 3 | Increases the Defense and Magic Defense granted by equipped Armor by %s. |
 
@@ -73,7 +71,7 @@ Followers of the Doctrine of Grace are devoted to aiding the injured and the aff
 
 <img :src="$withBase('/images/doctrine_of_illusion.png')" class="sprite" alt="doctrine_of_illusion" width="48" height="48">
 
-"Adherents of the Doctrine of Illusion devote themselves to mastering the art of deception. They see reality as malleable, shaped not by truth but by perception. To them, control over one's subjective judgment is the key to true power."
+Adherents of the Doctrine of Illusion devote themselves to mastering the art of deception. They see reality as malleable, shaped not by truth but by perception. To them, control over one's subjective judgment is the key to true power.
 
 | Ability | Cost/lvl | +Per Point | Max Lvl | Effect |
 | --- | --- | --- | --- | --- |
@@ -121,14 +119,14 @@ Followers of this doctrine are jack-of-all-trades, seeking to gain expertise in 
 
 <img :src="$withBase('/images/doctrine_of_war.png')" class="sprite" alt="doctrine_of_war" width="48" height="48">
 
-"Adherents of the Doctrine of War revere conflict as the ultimate crucible for growth and dominance. They dedicate their lives to mastering the art of combat, honing their bodies into lethal weapons. For them, battle is not just a means to an end but a sacred pursuit where strength, strategy, and unrelenting willpower define one's worth."
+Adherents of the Doctrine of War revere conflict as the ultimate crucible for growth and dominance. They dedicate their lives to mastering the art of combat, honing their bodies into lethal weapons. For them, battle is not just a means to an end but a sacred pursuit where strength, strategy, and unrelenting willpower define one's worth.
 
 | Ability | Cost/lvl | +Per Point | Max Lvl | Effect |
 | --- | --- | --- | --- | --- |
 | <img :src="$withBase('/images/doctrine_ability_improved_constitution.png')" class="sprite" alt="doctrine_ability_improved_constitution" width="20" height="20"> Improved Constitution | 1 | 2 | 5 | Increase Constitution by %s. |
 | <img :src="$withBase('/images/doctrine_ability_improved_dexterity.png')" class="sprite" alt="doctrine_ability_improved_dexterity" width="20" height="20"> Improved Dexterity | 1 | 2 | 5 | Increase Dexterity by %s. |
 | <img :src="$withBase('/images/doctrine_ability_conditioned_reflexes.png')" class="sprite" alt="doctrine_ability_conditioned_reflexes" width="20" height="20"> Conditioned Reflexes | 2 | 15 | 3 | Increase counterattack chance by %s. |
-| <img :src="$withBase('/images/doctrine_ability_tactical_knowledge.png')" class="sprite" alt="doctrine_ability_tactical_knowledge" width="20" height="20"> Tactical Knowledge | 3 | 20 | 2 | "Ignores %s of target's Defense and Magic Defense." |
+| <img :src="$withBase('/images/doctrine_ability_tactical_knowledge.png')" class="sprite" alt="doctrine_ability_tactical_knowledge" width="20" height="20"> Tactical Knowledge | 3 | 20 | 2 | Ignores %s of target's Defense and Magic Defense. |
 | <img :src="$withBase('/images/doctrine_ability_relentless_assault.png')" class="sprite" alt="doctrine_ability_relentless_assault" width="20" height="20"> Relentless Assault | 7 | 1 | 1 | Force its target to counterattack. |
 | <img :src="$withBase('/images/doctrine_ability_weapon_master.png')" class="sprite" alt="doctrine_ability_weapon_master" width="20" height="20"> Weapon Master | 10 | 1 | 1 | Can equip any weapon. |
-| <img :src="$withBase('/images/doctrine_ability_titans_might.png')" class="sprite" alt="doctrine_ability_titans_might" width="20" height="20"> Titans Might | 6 | 50 | 1 | — |
+| <img :src="$withBase('/images/doctrine_ability_titans_might.png')" class="sprite" alt="doctrine_ability_titans_might" width="20" height="20"> Titans Might | 6 | 50 | 1 | Converts 50% of Constitution into bonus Physical Damage. |

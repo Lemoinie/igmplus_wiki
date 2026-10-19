@@ -30,7 +30,7 @@ All status effects registered in `StatusEffectType.kt`. *Negative* marks debuffs
 | <img :src="$withBase('/images/icon_effect_stun.png')" class="sprite" alt="icon_effect_stun" width="20" height="20"> | **Stun** | No | stunned |
 | <img :src="$withBase('/images/icon_effect_silence.png')" class="sprite" alt="icon_effect_silence" width="20" height="20"> | **Silence** | Yes | silenced |
 | <img :src="$withBase('/images/icon_effect_ablaze.png')" class="sprite" alt="icon_effect_ablaze" width="20" height="20"> | **Ablaze** | Yes | ablaze |
-| <img :src="$withBase('/images/icon_effect_bloodflame.png')" class="sprite" alt="icon_effect_bloodflame" width="20" height="20"> | **Bloodflame** | Yes | cursed and rotten by bloodflame |
+| <img :src="$withBase('/images/icon_effect_bloodflame.png')" class="sprite" alt="icon_effect_bloodflame" width="20" height="20"> | **Bloodflame** | Yes | burning with bloodflame |
 | <img :src="$withBase('/images/icon_effect_poison.png')" class="sprite" alt="icon_effect_poison" width="20" height="20"> | **Poison** | Yes | poisoned |
 | <img :src="$withBase('/images/icon_effect_regeneration.png')" class="sprite" alt="icon_effect_regeneration" width="20" height="20"> | **Regeneration** | No | regenerating |
 | <img :src="$withBase('/images/icon_effect_curse.png')" class="sprite" alt="icon_effect_curse" width="20" height="20"> | **Lesser Curse** | Yes | cursed |
@@ -50,10 +50,19 @@ All status effects registered in `StatusEffectType.kt`. *Negative* marks debuffs
 | <img :src="$withBase('/images/icon_effect_false_life.png')" class="sprite" alt="icon_effect_false_life" width="20" height="20"> | **False Life** | No | shielded by False Life |
 | <img :src="$withBase('/images/icon_effect_terrify.png')" class="sprite" alt="icon_effect_terrify" width="20" height="20"> | **Terrify** | Yes | terrified |
 | <img :src="$withBase('/images/icon_effect_freeze.png')" class="sprite" alt="icon_effect_freeze" width="20" height="20"> | **Freeze** | Yes | frozen |
-| <img :src="$withBase('/images/icon_effect_radiant_blessing.png')" class="sprite" alt="icon_effect_radiant_blessing" width="20" height="20"> | **Radiant Blessing** | No | Blessed by the aura of light: bonus status immunity, bonus damage against Undead, flat damage reduction, and HP regeneration. |
-| <img :src="$withBase('/images/icon_effect_solar_rebirth.png')" class="sprite" alt="icon_effect_solar_rebirth" width="20" height="20"> | **Solar Rebirth** | No | Wrapped in Phoenix solar flames: survives one lethal hit at 1 HP. |
+| <img :src="$withBase('/images/icon_effect_radiant_blessing.png')" class="sprite" alt="icon_effect_radiant_blessing" width="20" height="20"> | **Radiant Blessing** | No | radiantly blessed |
+| <img :src="$withBase('/images/icon_effect_solar_rebirth.png')" class="sprite" alt="icon_effect_solar_rebirth" width="20" height="20"> | **Solar Rebirth** | No | protected by Solar Rebirth |
 | <img :src="$withBase('/images/icon_effect_sanguine_fervor.png')" class="sprite" alt="icon_effect_sanguine_fervor" width="20" height="20"> | **Sanguine Fervor** | No | empowered by Sanguine Fervor |
-| <img :src="$withBase('/images/icon_effect_sinister_curse.png')" class="sprite" alt="icon_effect_sinister_curse" width="20" height="20"> | **Sinister Curse** | Yes | A malign crimson curse. Increases damage taken by 50%. If the afflicted dies while cursed, their soul is reaped into an enemy Bone Nightmare. |
-| <img :src="$withBase('/images/icon_effect_entangle.png')" class="sprite" alt="icon_effect_entangle" width="20" height="20"> | **Entangle** | Yes | — |
-| — | **Soul Harvest** | No | Empowered by harvested souls: +15% Max HP, +10% Damage Dealt, -5% Damage Taken per stack. |
+| <img :src="$withBase('/images/icon_effect_sinister_curse.png')" class="sprite" alt="icon_effect_sinister_curse" width="20" height="20"> | **Sinister Curse** | Yes | afflicted by Sinister Curse |
+| <img :src="$withBase('/images/icon_effect_entangle.png')" class="sprite" alt="icon_effect_entangle" width="20" height="20"> | **Entangle** | Yes | entangled |
+| <img :src="$withBase('/images/icon_effect_soul_harvest.png')" class="sprite" alt="icon_effect_soul_harvest" width="20" height="20"> | **Soul Harvest** | No | empowered by Soul Harvest |
+| <img :src="$withBase('/images/icon_effect_brittle_toxin.png')" class="sprite" alt="icon_effect_brittle_toxin" width="20" height="20"> | **Brittle Toxin** | Yes | afflicted with Brittle Toxin |
+| <img :src="$withBase('/images/icon_effect_corrosion.png')" class="sprite" alt="icon_effect_corrosion" width="20" height="20"> | **Corrosion** | Yes | corroded |
+| <img :src="$withBase('/images/icon_effect_enfeeble.png')" class="sprite" alt="icon_effect_enfeeble" width="20" height="20"> | **Enfeeble** | Yes | enfeebled |
+| <img :src="$withBase('/images/icon_effect_terrify.png')" class="sprite" alt="icon_effect_terrify" width="20" height="20"> | **Menace** | Yes | menaced |
+| <img :src="$withBase('/images/icon_effect_defensive_stance.png')" class="sprite" alt="icon_effect_defensive_stance" width="20" height="20"> | **Guard** | No | fortified by Guard |
+| <img :src="$withBase('/images/icon_effect_rage.png')" class="sprite" alt="icon_effect_rage" width="20" height="20"> | **Rage** | No | Damage dealt increased by 30%, but takes 30% extra damage. |
+| <img :src="$withBase('/images/icon_effect_thorns.png')" class="sprite" alt="icon_effect_thorns" width="20" height="20"> | **Thorns** | Yes | thorns |
+| <img :src="$withBase('/images/icon_effect_evasion.png')" class="sprite" alt="icon_effect_evasion" width="20" height="20"> | **Evasion** | No | evasive |
+| <img :src="$withBase('/images/icon_effect_delirium.png')" class="sprite" alt="icon_effect_delirium" width="20" height="20"> | **Aether Overload** | Yes | afflicted with Aether Overload |
 <!-- END GENERATED DATA -->

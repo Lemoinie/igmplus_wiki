@@ -1,6 +1,6 @@
 {
   "counts": {
-    "strings": 4962,
+    "strings": 4969,
     "skills": 319,
     "traits": 40,
     "status_effects": 41,
@@ -13,7 +13,7 @@
     "item_base_classes": 19,
     "recipes": 351,
     "places": 27,
-    "changelog_versions": 156,
+    "changelog_versions": 158,
     "sprites": 1117
   },
   "untiered_units": []

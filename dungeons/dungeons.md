@@ -92,7 +92,7 @@ Acorn, Boots, CentaurHoof, ClothHat, ClothRobe, CopperArmor, CopperDagger, Coppe
 | <img :src="$withBase('/images/unit_abomination.png')" class="sprite" alt="unit_abomination" width="36" height="36"> | **Abomination** | 3.0% | Regular |
 | <img :src="$withBase('/images/unit_undead_warlord.png')" class="sprite" alt="unit_undead_warlord" width="36" height="36"> | **Undead Warlord** | 0.9% | Regular |
 | <img :src="$withBase('/images/unit_ghoul.png')" class="sprite" alt="unit_ghoul" width="36" height="36"> | **Ghoul** | 0.5% | Regular |
-| <img :src="$withBase('/images/unit_will_o_wisp.png')" class="sprite" alt="unit_will_o_wisp" width="36" height="36"> | **"Will o' Wisp"** | 0.4% | Regular |
+| <img :src="$withBase('/images/unit_will_o_wisp.png')" class="sprite" alt="unit_will_o_wisp" width="36" height="36"> | **Will o' Wisp** | 0.4% | Regular |
 
 <details><summary>Loot & item references</summary>
 
@@ -192,11 +192,11 @@ BatTooth, BatWing, CobwebBundle, EldritchTendril, NightwingJacket, ObsidianBow, 
 
 |  | Enemy | Share of Encounters | Role / Type |
 | --- | --- | --- | --- |
-| <img :src="$withBase('/images/unit_shahuri_warrior.png')" class="sprite" alt="unit_shahuri_warrior" width="36" height="36"> | **"Sha'huri Warrior"** | 12.5% | Regular |
-| <img :src="$withBase('/images/unit_shahuri_archer.png')" class="sprite" alt="unit_shahuri_archer" width="36" height="36"> | **"Sha'huri Archer"** | 11.0% | Regular |
+| <img :src="$withBase('/images/unit_shahuri_warrior.png')" class="sprite" alt="unit_shahuri_warrior" width="36" height="36"> | **Sha'huri Warrior** | 12.5% | Regular |
+| <img :src="$withBase('/images/unit_shahuri_archer.png')" class="sprite" alt="unit_shahuri_archer" width="36" height="36"> | **Sha'huri Archer** | 11.0% | Regular |
 | <img :src="$withBase('/images/unit_wurm.png')" class="sprite" alt="unit_wurm" width="36" height="36"> | **Wurm** | 7.6% | Regular |
 | <img :src="$withBase('/images/unit_sand_vulture.png')" class="sprite" alt="unit_sand_vulture" width="36" height="36"> | **Sand Vulture** | 6.9% | Regular |
-| <img :src="$withBase('/images/unit_shahuri_mage.png')" class="sprite" alt="unit_shahuri_mage" width="36" height="36"> | **"Sha'huri Mage"** | 5.5% | Regular |
+| <img :src="$withBase('/images/unit_shahuri_mage.png')" class="sprite" alt="unit_shahuri_mage" width="36" height="36"> | **Sha'huri Mage** | 5.5% | Regular |
 | <img :src="$withBase('/images/unit_djinn.png')" class="sprite" alt="unit_djinn" width="36" height="36"> | **Djinn** | 1.5% | Regular |
 | <img :src="$withBase('/images/unit_sand_statue.png')" class="sprite" alt="unit_sand_statue" width="36" height="36"> | **Sand Statue** | Event / Scripted | Special Spawn |
 

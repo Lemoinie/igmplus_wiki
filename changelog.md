@@ -3,6 +3,293 @@
 
 Every mod release, newest first (extracted from `ModChangelog*.kt`).
 
+## v1.3.20.20 — 19/10/2026
+
+**Relic System — Percent Scaling & Upgrade Success Overhaul:**
+
+- Percent-Based Stat Scaling: Relics now grant percent-based primary stats scaling at +2% per level (up to +80% at +40) tailored by archetype: Lance (+HP, +DEX), Mask (+HP, +INT), Orb (+DEX, +INT), Dual Sword (+CON, +DEX), Shield (+HP, +CON), Dagger (+CON, +INT);
+- Graduated Upgrade Success Rates: Upgrading relics now features a tier-based success curve (+1 to +5: 100%, +6 to +10: 90%, +11 to +15: 70%, +16 to +20: 60%, +21 to +25: 50%, +26 to +30: 40%, +31 to +35: 30%, +36 to +40: 20%). On failure, the relic level decreases by 1;
+- UI Streamlining & Protection: Enhanced the relic upgrade modal with visual success percentage displays, compact button design, and safety debouncing; updated Relic Select to clearly prioritize relic main stats while keeping full detail views available.
+
+**Shop & Storage — Guild Initiate Pack Save Migration Fix:**
+
+- Save Migration Key Isolation: Refined legacy shop migration in DataDeserializer to check for the absence of modular shop keys (!asJsonObject.has) rather than checking boolean state;
+- Storage Room Isolation: Purchasing the Guild Initiate Pack (+1 Quarters, +1 Tavern, +1 Workshop Queue, +1 Market Listing) now strictly respects storage limits and will no longer erroneously auto-grant +35 storage spaces or unlock the Minor Storage Expansion on save reload;
+- Modular Bundle Integrity: Preserved full backward compatibility for genuine legacy vanilla saves while ensuring modern modular storage packs (Minor, Standard, Grand) remain distinct and independent.
+
+## v1.3.20.19 — 17/10/2026
+
+**Combat Engine — Animal Affinity for Beast Tamer Summons:**
+
+- Living Companion Damage Scaling: Extended Animal Affinity (livingCompanionBonusDamage, granted by Archaic Amulet and companion gear) to directly amplify the outgoing damage of Beast Tamer animal summons (Rats, Cats, Weasels, Wolves, Tigers, Bears, Owlbears) by +1% per point;
+- Full Attack & Skill Support: Animal Affinity scaling applies to both basic attacks and active companion skills (Rabid Bite, Feline Pounce, Frenzied Flurry, Pack Howl, Predatory Ambush, Ursine Roar, Apex Rampage);
+- Undead Minion Exclusion: In accordance with the canonical item specification ('living creatures controlled'), Undead minions from the Necromancer line (Skeletons, Zombies, Bone Hydras) are excluded from Animal Affinity scaling.
+
+**Combat Engine — Lone Wolf Trait Summon Exclusion:**
+
+- Summon Filtering: Lone Wolf (Trait.LONE_WOLF) now counts only deployed hero party members when evaluating living allies, completely ignoring temporary combat summons;
+- Summoner Synergy: Active summons from both the Beast Tamer branch (living companions) and Necromancer branch (undead minions) no longer dilute or reduce the Lone Wolf damage bonus (+5% damage per missing/fallen party slot).
+
+## v1.3.20.18 — 16/10/2026
+
+**Combat Engine — Physical & Spell Critical Strike Split:**
+
+- Dedicated Critical Domains: Split critical strikes into Physical Crit (governing physical attacks, skills, and hemorrhages) and Spell Crit (governing magical spells, abilities, and healing);
+- Universal Crit Baseline: All existing equipment, traits (Deadeye, Ruthless), potions (Precision, Viciousness), and doctrines continue granting universal crit feeding equally into both Physical and Spell critical strike stats;
+- Specialized Scaling Support: Added physical and spell critical bonus hooks to equipment for fine-grained archetype itemization without altering legacy item parity.
+
+**Detailed Statistics Inspection Overhaul:**
+
+- Split Critical Strike Display: Replaced generic crit stats with Phys Crit Chance & Phys Crit Dmg, and Spell Crit Chance & Spell Crit Dmg in dedicated, horizontally aligned rows;
+- Paired Amplification Metrics: Aligned Basic Atk Amp and Skill Amp side-by-side in Offense Stat for cleaner comparison;
+- Utility Stat Migration: Relocated Lifesteal and Counterattack from Offense Stat to Utility Stat for improved thematic categorization and visual balance.
+
+**Item Rebalance — Scarlet Cape Accessory Line:**
+
+- Scarlet Cape: Replaced +15% crit chance with +15% skill amp; removed Constitution (+30 -> 0) and adjusted Dexterity from +30 to +5 (retains +30 INT);
+- Eldritch Scarlet Cape: Replaced +21% crit chance and +21% crit damage with +21% skill amp; removed Constitution (+40 -> 0) and adjusted Dexterity from +40 to +10 (retains +40 INT);
+- Abyssal Scarlet Mantle: Replaced +35% crit chance and +40% crit damage with +35% skill amp; removed Constitution (+50 -> 0) and adjusted Dexterity from +50 to +15 (retains +50 INT).
+
+**Combat Balance — Disintegrate Line Trade-Off (Aether Overload):**
+
+- Aether Overload Self-Debuff: Casting Disintegrate spells now triggers Aether Overload for 1 turn, progressively increasing damage taken as a tactical trade-off for devastating single-target burst power;
+- Tiered Scaling: Disintegrate I (T7 Disintegrator) adds +5% damage taken per stack; Disintegrate II (T8 Grand Magus) adds +10% damage taken per stack; Disintegrate III (T9 Singularity Magus) adds +15% damage taken per stack;
+- Recast Synergy & Stacking: Immediate recasts re-apply and stack Aether Overload up to 3 times (up to +15% / +30% / +45% max damage taken), refreshing the 1-turn duration and demanding calculated party protection.
+
+## v1.3.20.17 — 15/10/2026
+
+**Adventurers Tab — Roster Navigation, Search & Filtering:**
+
+- Modal Search & Filter Dialogs: Replaced persistent drawer inputs with dedicated SEARCH, FILTER, and SORT action modals, featuring live text search with match counts and tier filters (T1–T9);
+- 5-Archetype Classification: Introduced archetype filtering categorized by primary weapon — Footman (Sword), Outlander (Axe), Rogue (Dagger), Archer (Bow), and Apprentice (Staff);
+- Smart Sorting Presets: Added roster sorting by Level, Deployment Status, Archetype, Unspent Doctrine Points, and Name (Asc/Desc), with optional permanent save to roster order;
+- Interactive Reordering & Drag-and-Drop: Re-order mode now supports drag-to-swap, tap-to-swap, and long-press extreme jump (top/bottom) on position adjustment arrows.
+
+**Adventurers Tab — Compact Grid & Status Badges:**
+
+- Compact 2-Column Display: Added a toggleable compact 2-column roster view showing hero portrait, level, class name, traits, and status badge for high-density roster overview;
+- Deployment Status Badges: Color-coded deployment indicator showing Idle heroes in green and Dungeon exploring heroes in cyan (#4dd0e1), with visibility toggle in Settings.
+
+**Settings Menu — Visual Overhaul:**
+
+- Categorized Layout: Reorganized Settings into clean, structured sections (Display & Roster, Gameplay & Automation, Confirmations, and General) with left-aligned descriptions and uniform controls;
+- Header Cleanup: Removed redundant version title from settings dialog.
+
+## v1.3.20.16 — 14/10/2026
+
+**Combat Balance — Outlander Beast Tamer & El Salvador Scaling:**
+
+- Beast Tamer Apex Summon Capacity: Increased the maximum companion summon cap from 1 to 2 for Tier 7–9 Beast Tamers (Tiger Tamer, Bear Tamer, and Beast Tamer), allowing up to 2 Tigers, Bears, or Owlbears on the battlefield simultaneously;
+- El Salvador INT Weapon Scaling: Introduced progressive Intelligence weapon attack scaling across the Exile / El Salvador skirmisher line, starting at 1.1 (110%) on T3 Exile and increasing by +0.1 per tier up to 1.7 (170%) on T9 El Salvador (T3 Exile: 1.1, T4 Bandit: 1.2, T5 Vagabond: 1.3, T6 Brigand: 1.4, T7 Renegade: 1.5, T8 Desperado: 1.6, T9 El Salvador: 1.7);
+- Tooltips & Descriptions Synchronized: Updated Tiger Caller, Bear Caller, and Beast Caller passive descriptions in strings.xml to reflect the new (max 2) pet capacity.
+
+## v1.3.20.15 — 14/10/2026
+
+**Fix — Outlander Savage Rage Trigger & Buff Icon:**
+
+- Visual Buff Icon Integration: Hooked up StatusEffectType.RAGE (2 turns) in combat turn processing and damage resolution, ensuring the visual Rage icon appears above the unit and in the Battle Status Effects Inspector whenever attacking under the passive HP threshold;
+- Threshold Verification: Preserved the canonical 50% HP threshold for T4–T7 (Berserker, Savage Berserker, Scarlet Berserker, Blood Reaver) and 75% HP threshold for T8–T9 (Crimson Warlord, Avatar of Wrath);
+- Damage & Stats Deduplication: Guarded damage dealt (+30%) and damage taken (+30%) calculations against double-counting when the RAGE status effect is present, while ensuring raging units retain +100% Attack Speed and +25% Life Steal for the full 2 turns even if healed above the HP threshold.
+
+## v1.3.20.14 — 14/10/2026
+
+**Combat Balance — Soul Harvest Max Stacks Rebalance:**
+
+- Capped to Minion Capacity: Reduced the maximum Soul Harvest stacks for the Necromancer / Lich / Black Idol evolution tree to equal each class's active minion cap (maxMinions);
+- New Stack Limits: Lowered Demilich from 2 down to 1 stack (+15% HP / +10% DMG / -5% DMG taken), Lich & Ancient Lich from 4/6 down to 2 stacks (+30% HP / +20% DMG / -10% DMG taken), and Lord of Decay & Black Idol from 8/10 down to 3 stacks (+45% HP / +30% DMG / -15% DMG taken);
+- Tooltips Synchronized: Updated Withering Touch III and Withering Link I–IV passive descriptions to match the new stack caps.
+
+## v1.3.20.13 — 14/10/2026
+
+**Fix — Beast Tamer & Pet Summon Conflict:**
+
+- Guarded Undead Reanimation: Restricted reanimate Soul Harvest stacks and undead minion spawning to necromancer classes (minionSummonClass != null), preventing non-necromancers (such as Beast Tamers) from having their summon slot hijacked by decaying undead when cursed enemies die;
+- Pet Targeting Minion Exclusion: Excluded summoned minions from being selected as the target for the Pet Magic trait's TAUNT and CURSE status effect casts, preventing companion focus-fire loops and inadvertent summon replacement.
+
+## v1.3.20.12 — 14/10/2026
+
+**Fix — Loot Claim & Raid Persistence:**
+
+- Prevented loot dialog from opening empty when tapped rapidly or after loot was already claimed;
+- Replaced asynchronous background save on app exit with synchronous save, preventing force-close from discarding unsaved raid attempts;
+- Relic Slot UI: Hid the relic slot in the adventurer detail dialog for unascended adventurers, preventing it from overlapping with the level text.
+
+## v1.3.20.11 — 13/10/2026
+
+**Combat Balance — Stat Critical Strike Chance Removed:**
+
+- Removed Stat Scaling: Removed passive critical strike chance from Dexterity and Intelligence entirely (0% base stat crit), shifting Critical Strike into a dedicated build specialization (via traits, potions, gear, and doctrines) rather than an automatic baseline stat;
+- Applied Symmetrically: Applied identically to both adventurers and standard enemies to preserve combat parity;
+
+## v1.3.20.10 — 12/10/2026
+
+**Combat Balance — Celestial Rain Branch Accuracy Rebalance:**
+
+- Removed Guaranteed Hit ('Always Hits'): Removed innate 100% guaranteed hit from the Marksman, Sureshot, Fury, Hailstorm, Tempest, Hurricane, and Celestial Rain sniper line, restoring evasion counterplay against archers;
+- +30% Hit Chance Bonus: Granted a flat +30% Hit Chance bonus (hitChanceBonus = 0.30) across all 7 units in the branch;
+- Keen Vision Tooltip: Updated Keen Vision passive description across all languages to 'Hit chance is increased by 30%';
+- Focused Trait Synergy: Stacks additively with the Focused trait for up to +55% total hit chance bonus.
+
+**Combat Balance — Archer Branch Accuracy Tuning (+15% Hit Chance):**
+
+- Reduced Branch Hit Chance Bonus: Reduced the innate passive hit chance bonus of the Rider (T3–T9), Poison Bow / Corrosive Wraith (T4–T9), and Alchemist (T6–T9) branches from +25% down to +15% (hitChanceBonus = 0.15);
+- Preserved Celestial Rain Identity: The Celestial Rain sniper branch retains its superior +30% hit chance bonus, establishing it as the supreme high-accuracy archer specialization while balancing overall archer reliability against evasive targets;
+- Passive Tooltips Synchronized: Updated descriptions across all 16 affected passives (Rider I–VII, Poisonous Arrows I–III, Poisonous Blood, Corrosive Blood, and Thaumaturgy I–IV) to reflect the 15% miss chance reduction.
+
+**Quality of Life — XP Book Consumption Rework:**
+
+- Batch Consumption Controls: Added quick stepper buttons (-, +, MAX) and a smooth slider to batch-consume books in bulk;
+- Full Stack Support: Added instant consumption support for XP Books 1, 2, 3, 10, and C (Ancient XP Book) with live XP preview;
+- Instant Level Updates: Levels and progression bars update immediately in-place with zero lag or freezing;
+- Level-Cap Protection: Heroes at max level cannot consume books, and near-cap heroes consume only the exact amount needed.
+
+## v1.3.20.9 — 12/10/2026
+
+**Mythic Pets — Phoenix (Kiara) Solar Rebirth Rebalance:**
+
+- Solar Rebirth Trigger Scaling: Rebalanced Phoenix's 5th trait trigger chance from 0.15% per level (15% at Lv 100) down to 0.03% per level (1.5% at Lv 50, 3.0% at Lv 100); because Solar Rebirth checks every combat turn passively without consuming mana, 3.0% at max level ensures healthy combat danger while remaining potent without overshadowing active resurrection skills;
+- Trait Formatting & Precision: Updated the pet detail inspection view to format Solar Rebirth's proc chance using two decimals (e.g. 0.03% at Lv 1, 1.50% at Lv 50, 3.00% at Lv 100) instead of rounding down to whole integers.
+
+## v1.3.20.8 — 12/10/2026
+
+**Raids — Auto-Raid Boss Wipe Clean Reset Fix:**
+
+- Fixed Boss Encounter Ghost State on Auto-Raid Wipe: Addressed an issue where wiping at a boss encounter (such as Sanguine Crucible, The Tower, or other raids) with stop-on-wipe disabled caused the auto-raid re-dispatch cycle to leave previous boss enemies, corpses, fighting queues, and acting states un-cleared; the auto-raid cycle now executes a full, clean reset of all combat and area variables, restores party HP immediately, and resets room progress and events to room 1;
+- Sanguine Crucible & Raid Lifecycle Hooks: Added onAreaReset lifecycle hook to Area and ensured Sanguine Crucible reliably clears its bossDefeated flag on defeat, respawn, and area reset so subsequent runs never skip rooms or carry over boss state.
+
+## v1.3.20.7 — 12/10/2026
+
+**Guild Activities — The Siege Defeat & Single-Attempt Enforcement:**
+
+- Fixed The Siege Infinite Attempts Bug: Addressed an issue where wiping in combat during The Siege failed to trigger onSiegeDefeat, leaving the activity active and granting infinite retries until manually retreating; combat wipes now fire a dedicated defeat event that transitions the status to FAILED and locks the weekly attempt as originally designed;
+- Wave Cleared Tracking on Wipe: The Siege now accurately records the number of waves cleared upon defeat (progress - 1) in the guild activities state for progression and weekly mission tracking.
+
+## v1.3.20.6 — 11/10/2026
+
+**Adventurers — Outlander Branch 4: El Salvador (Exiles / Bandits / Frontier Skirmishers):**
+
+- El Salvador Progression (T3–T9): Fully implemented the Exile line across all tiers (T3 Exile, T4 Bandit, T5 Vagabond, T6 Brigand, T7 Renegade, T8 Desperado, and T9 El Salvador) equipped with Axes/Light Armor and scaling with Dexterity and Constitution (Thief drinker);
+- New Status Effect — EVASION: Grants a flat additive +25% dodge chance in combat hit calculations, decaying after 1 or 2 turns;
+- Guaranteed Hit Accuracy: Units with Perceptive Eye (T4–T7) and Omniscient Eye (T8–T9) always hit, completely ignoring target dodge;
+- Retaliatory Melee Counterattacks: High-dexterity frontier agility triggers immediate melee counterattacks when struck by close-quarters strikes (20% for Focused Eye; 30% for T4/T5 and 40% for T6/T7 Perceptive Eye; 50% for Omniscient Eye);
+- On-Kill Chains & Evasion Distribution: On slaying an enemy, T6 Brigand and T7 Renegade immediately trigger a bonus basic attack against the next target; T8 Desperado executes a bonus attack and gains EVASION (2 turns); T9 El Salvador executes a bonus attack and grants EVASION (2 turns) to a random living ally;
+- Frontier Flurries & Lowest-HP Execution: Wild Strikes III & IV unleash 200%/250% physical strikes with 50% follow-up chances; Rapid Exploitation automatically targets the lowest current-HP enemy, striking twice for 175% damage each with a 50% chance for a 3rd strike and a 3.0x critical damage multiplier.
+
+## v1.3.20.5 — 11/10/2026
+
+**Pets — Mythic Trait Rolling & Progressive Level Unlock:**
+
+- Universal Trait Rolling for Mythics: Mythic pets (Phoenix and Kitsune) now roll their 4 trait slots like normal pets instead of being restricted to 4 fixed traits; Slot 1 is drawn from the signature Mythic trait pool, while Slots 2, 3, and 4 roll dynamically without repeats from the full pet ability pool;
+- Progressive Level Unlocks for Kitsune: Standardized Kitsune's trait progression to match Phoenix and normal pets, unlocking Slot 1 at Lv 1, Slot 2 at Lv 21 (level - 20), Slot 3 at Lv 41 (level - 40), and Slot 4 at Lv 61 (level - 60) with standard UI lock indicators, while Kitsune Spirit Blessing continues scaling from Lv 1.
+
+## v1.3.20.4 — 11/10/2026
+
+**Adventurers — Outlander Branch 3: Datura Hierophant (Nature Magic & Sanguine Druids):**
+
+- Datura Hierophant Progression (T3–T9): Fully integrated the Druid line across all tiers (T3 Druid, T4 Forest Druid, T5 Gloom Druid, T6 Hemodruid, T7 Sanguine Druid, T8 Bloodthorn Archdruid, and T9 Datura Hierophant) equipped with Staves and Light Armor, scaling with high Intelligence and Constitution (Mage drinker);
+- New Status Effect — ENTANGLE: Afflicted units cannot dodge (0% dodge chance), deal 20% reduced outgoing damage, and take 2% max HP damage each turn;
+- New Status Effect — THORNS: Targets take recoil damage equal to (Thorn Stacks)% of damage dealt whenever they hit, decaying by 1 stack at the end of their turn;
+- Nature Debuff Synergies (Active Skills): Nature's Grasp I–III and Briar's Bramble strike two distinct enemies for 150%/200%/250% magic damage; if the target is already afflicted by any debuff, applies Poison (1 turn), with Briar's Bramble also covering the target with 5 stacks of Thorns;
+- Affliction Passives & Clarity Rewrite: Implemented Nature's Hand (75% Entangle), Nature's Lash (45% Entangle, 25 Bleed), and Nature's Wrath (independent 35% chance each for Entangle, 40 Bleed, 3 Thorns, and 1-turn Poison on basic attacks), clarifying skill tooltips so each affliction is explicitly stated as rolling independently.
+
+## v1.3.20.3 — 11/10/2026
+
+**Adventurers — Outlander Branch 2: Beast Tamer & Companion Summons:**
+
+- Beast Tamer Progression (T2–T9): Fully integrated the Heathen and Tamer line across all tiers (T2 Heathen, T3 Rat Tamer, T4 Cat Tamer, T5 Weasel Tamer, T6 Wolf Tamer, T7 Tiger Tamer, T8 Bear Tamer, and T9 Beast Tamer);
+- Dynamic % Damage-Dealt Pet Healing: Casting Wild Strikes II heals the Tamer's active bound companion for a percentage of total damage dealt (50% at T7 Tiger Tamer, 100% at T8 Bear Tamer, and 150% at T9 Beast Tamer), naturally scaling with weapon progression, crits, and offensive buffs;
+- Dedicated Companion Combat Passives: Rats gain 10% (Albino: 15%) Lifesteal; Cats gain +25% (+30%) Dodge & Attack Speed; Weasels gain +40% (+45%) Dodge & Attack Speed; Wolves gain +10% (+15%) damage per living wolf and 10 (15) turns Bleed on-hit; Tigers gain Alert initiative, 100 starting Mana, and 3x (3.5x) Crit Damage; Bears gain 5% (7%) HP regen/turn and 20% (25%) Stun on-hit; Owlbears gain 10% (12%) HP regen/turn and 30% (35%) Stun on-hit;
+- Dedicated Companion Active Skills: Implemented tactical abilities for all summons: Rabid Bite (Rats: bleed & sustain), Feline Pounce (Cats: guaranteed crit & dodge), Frenzied Flurry (Weasels: 3-hit rapid shred), Pack Howl (Wolves: team damage/crit buff & bite), Predatory Ambush (Tigers: 300% turn-1 burst), Ursine Roar (Bears: taunt, 40% HP shield, stun), and Apex Rampage (Owlbears: taunt, 50% HP shield, 250% AoE cleave);
+- Natural Companion Equipment: Added dedicated zero-cost minion weapons (Predator Fangs, Wolf Jaws, Tiger Jaws, Ursine Paw, Apex Claws) and armors (Wolf Pelt, Thick Fur, Bear Hide, Primeval Hide) dynamically equipped upon summon without minion decay.
+
+## v1.3.20.2 — 11/10/2026
+
+**Adventurers — Archer Accuracy Specialization & Focused Passives:**
+
+- Exclusive Sniper Identity: The Marksman / Celestial Rain branch retains exclusive ownership of PASSIVE_KEEN_VISION ('Attacks always hit the target') as their signature unerring sniper identity;
+- Focused Accuracy Passives (+25% Hit Chance): The Alchemist, Corrosive Wraith, and Wyrm Rider branches now grant 'Chances to miss reduced by 25%' (additive hit bonus matching the Focused trait) across all their respective passives (Poisonous Arrows I–III, Poisonous Blood, Corrosive Blood, Thaumaturgy I–IV, and Rider I–VII);
+- Trait Stacking Synergy: This class hit bonus stacks additively with the Focused trait (up to +50% miss reduction total), ensuring reliable status infliction against evasive targets while preserving evasion counterplay;
+- Updated Skill Tooltips: Synchronized in-game passive descriptions across all 16 affected skills in strings.xml to clearly display the 25% miss chance reduction.
+
+## v1.3.20.1 — 11/10/2026
+
+**Adventurers — Outlander Branch 1: Avatar of Wrath (Multi-Strike Aggression & Frenzy Mechanics):**
+
+- Outlander Branch 1 Progression (T2–T9): Fully integrated the Marauder line across all tiers (T2 Marauder, T3 Barbarian, T4 Berserker, T5 Savage Berserker, T6 Scarlet Berserker, T7 Blood Reaver, T8 Crimson Warlord, and T9 Avatar of Wrath) with complete active and passive skills;
+- Multi-Strike Attack Engine: Implemented diminishing-probability multi-strike active skills: Wild Strikes (125% damage, 50% follow-up), Brutal Strikes (175% damage, 75% -> 50% -> 25% follow-ups), and Brutal Strikes II (225% damage, 75% -> 50% -> 25% follow-ups);
+- Slaughter & On-Kill Recasts: T7+ active skills feature devastating combat scaling: Bloody Slaughter (225% damage, 85% -> 60% -> 35% follow-ups, 2.0x crit multiplier) and Blessing of Slaughter (250% damage, 85% -> 60% -> 35% follow-ups, 2.0x crit multiplier) instantly recast against another enemy if any strike scores a kill;
+- New Status Effect — Rage: Added the Rage status effect granting +30% Damage Dealt and +30% Damage Taken; granted party-wide to all living allies for 3 turns upon casting Blessing of Slaughter, and activated conditionally via passive frenzy;
+- Frenzy Passive Scaling (Attack Speed & Lifesteal): Rage (T2–T3, <=50% HP) grants +50% Attack Speed; Savage Rage (T4–T7, <=50% HP) grants +100% Attack Speed, Rage (+30% dmg dealt / +30% dmg taken), and 25% Lifesteal; Savage Rage II (T8–T9) expands the threshold to <=75% HP with +100% Attack Speed, Rage, and 25% Lifesteal.
+
+## v1.3.20.0 — 11/10/2026
+
+**Combat System & UI — Universal Combat Stats (Menace, Guard & Special Damage):**
+
+- New Universal Combat Stat — Menace (Physical & Magic DEF Shred): When landing a damaging hit with a primary attack or active skill, units with Menace shred both Physical Defense and Magic Defense of the enemy by flat DEF for 1 turn (MENACE_SHRED); non-stacking, refreshes duration, takes the highest value, and caster is immune to self-infliction;
+- New Universal Combat Stat — Guard (Ally Physical & Magic DEF Buff): Whenever a unit with Guard grants beneficial active/passive support (heals, shields, or buffs) to an ally, the receiving ally gains flat Physical Defense and Magic Defense for 1 turn (GUARD_FORTIFIED); non-stacking, refreshes duration, takes the highest value, and provider cannot buff themselves (excluding self-heals, passive regeneration ticks, lifesteal, traits, and equipment procs);
+- New Universal Combat Stat — Special Damage Multiplier: Introduced Special Damage (defaults to 100%), scaling true damage procs against adjacent secondary enemies from primary damage dealt; deals 0 damage against solo targets, requires successful primary hit, and never triggers status effects or on-hit loops;
+- Unit Detail Dialog Placement: Added Menace (below Status Immunity) and Guard (below Darkness Damage) to Page 2 Secondary Stats, and Special Damage (alongside Attack Speed) to Page 3 Tertiary Stats with complete help tooltips.
+
+## v1.3.19.3 — 10/10/2026
+
+**Combat UI & Battle Logs — Dedicated Reaction Combat Logs (Vaporize & Thermal Shock):**
+
+- Dedicated Battle Log Messages: Replaced generic damage dealt combat logs for Alchemist Chemical Reactions with custom themed battle log entries for Vaporize and Thermal Shock;
+- Vaporize Combat Feedback: Combat logs now explicitly announce Vaporize triggering AoE magic blasts across enemies (e.g. '[Unit] triggers Vaporize, dealing [Damage] magic damage to [Target].');
+- Thermal Shock Combat Feedback: Combat logs now clearly report Thermal Shock shattering frozen targets with hybrid damage (e.g. '[Unit] shatters the freeze with Thermal Shock, dealing [Damage] damage to [Target].');
+- Catalytic Barrage Integration: Grand Detonation during Catalytic Barrage now properly logs each individual reaction blast across all affected enemies.
+
+## v1.3.19.2 — 10/10/2026
+
+**Combat UI & Battle Logs — Status Effect Descriptions & Stack Tracking Cleanup:**
+
+- Concise Battle Log Descriptions: Replaced multi-sentence tooltip descriptions in combat logs with concise, grammatically natural descriptors for 10 status effects (Corrosion, Enfeeble, Entangle, Radiant Blessing, Solar Rebirth, Brittle Toxin, Sinister Curse, Soul Harvest, Sanguine Fervor, and Bloodflame);
+- Live Stack Tracking in Battle Logs: When stacking buffs and debuffs (Corrosion, Enfeeble, Sanguine Fervor, Soul Harvest) gain multiple stacks, the battle log now dynamically appends the stack counter (e.g. 'is corroded (x3) for 3 turns', 'is empowered by Sanguine Fervor (x4)');
+- Status Inspection Dialog Stacks: Fixed stack count display in the Live Battle Status Effects inspector (DialogBattleStatusEffects) for permanent stacking buffs (Sanguine Fervor and Soul Harvest).
+
+## v1.3.19.1 — 10/10/2026
+
+**Adventurers — Wraith & Corrosive Wraith Evolution Line Rebalance (Corrosion & Enfeeble Debuffers):**
+
+- Progressive Hybrid Weapon Scaling (T6–T9): Bow attacks scale with both DEX and INT starting at Plague Spreader (+10% INT per tier: T6 100% DEX + 30% INT, T7 100% DEX + 40% INT, T8 100% DEX + 50% INT, and T9 100% DEX + 60% INT), matching the parallel Alchemist branch progression;
+- Dedicated Stackable Debuff — Corrosion: Attacks have an on-hit chance (T8: 10%, T9: 20%) to inflict Corrosion for 3 turns, increasing all incoming damage by +4% per stack (T8 Wraith cap: 3 stacks / +12% damage taken; T9 Corrosive Wraith cap: 5 stacks / +20% damage taken);
+- Dedicated Stackable Debuff — Enfeeble: Attacks have an on-hit chance (T8: 20%, T9: 40%) to inflict Enfeeble for 2 turns, draining target's core attributes by -5% CON, DEX, and INT per stack (T8 Wraith cap: 1 stack / -5%; T9 Corrosive Wraith cap: 3 stacks / -15%);
+- Focused Barrage Multi-Hit Synergy: Firing two arrows at each enemy provides rapid multi-hit rolls to spread and refresh Corrosion and Enfeeble across all enemies;
+- Status Immunities: Wraith and Corrosive Wraith gain innate immunity to both Poison and Corrosion.
+
+## v1.3.19.0 — 10/10/2026
+
+**Pet System — Inspection & Preview in Team Dispatch & Pet Selection:**
+
+- Pet Preview on Long-Press: Holding (long-pressing) any pet in the pet selection dialog (DialogChoosePet) or holding the assigned pet slot in the team dispatch dialog (DialogSendTeam) now opens the pet detail dialog with haptic feedback, allowing players to inspect abilities, stats, level, and descriptions before dispatching;
+- Safe Read-Only Mode: When inspecting pets from team setup, destructive actions (Merge and Set Free) are hidden to prevent accidental changes while assembling dungeon or raid teams.
+
+## v1.3.18.11 — 10/10/2026
+
+**Adventurers — Alchemist Evolution Line Rebalance (Tiered Chemical Reactions & Catalytic Barrage):**
+
+- Tiered Chemical Reactions Engine (Thaumaturgy I–IV): Basic attacks and skill shots react dynamically with elemental statuses, unlocking and strengthening across tiers:
+- • Vaporize: Attacking an Ablaze target detonates an AoE magic blast to all enemies, scaling progressively (T6: 0.6x INT, T7: 0.8x INT, T8: 1.0x INT, T9: 1.2x INT);
+- • Thermal Shock (Unlocked at T7): Attacking a Frozen target shatters freeze for hybrid bonus damage (T7: +100% Phys / +100% Mag, T8: +125% Phys / +125% Mag, T9: +150% Phys / +150% Mag);
+- • Brittle Toxin (Unlocked at T9): Attacking a Poisoned target applies Brittle Toxin (+20% damage taken for 2 turns; strictly non-stacking, refreshes duration);
+- Active Skill — Catalytic Barrage: T9 Eldritch Alchemist fires a 3-shot volley triggering passive reactions on hit, followed by an unconditional Grand Detonation applying Vaporize, Brittle Toxin, and Thermal Shock across all living enemies;
+- Feeble Tether Synergy: When reanimated via Feeble Tether, Catalytic Barrage gains a 10.0x damage amplification across both barrage shots and Grand Detonation;
+- Progressive Hybrid Weapon Scaling: Added dual DEX + INT scaling across the branch: T6 (100% DEX + 30% INT), T7 (100% DEX + 40% INT), T8 (100% DEX + 50% INT), and T9 (100% DEX + 60% INT).
+
+**UI & Quality of Life — Scrollable Skill Descriptions:**
+
+- Scrollable Skill Detail Dialog: The skill detail description is now scrollable, ensuring long skill explanations (such as Thaumaturgy and chemical reactions) are fully readable across all devices.
+
+## v1.3.18.10 — 9/10/2026
+
+**Adventurers — Whisper Evolution Line Rebalance (Phantom Duelist & Precision Executioner):**
+
+- Branch Scope: Rebalance starts at Tier 5 (Spire Initiate) through Tier 9 (Whisper), leaving Tier 4 Assassin untouched to preserve vanilla branching into Red Stalker;
+- Innate Phantom Avoidance: Granted +15% innate dodge chance across T5–T9 (Spire Initiate through Whisper) while retaining trap sabotage capability (saboteur = true);
+- Tiered Offensive Passives: Replaced vanilla trap passives with Phantom Instinct I–III (T5–T7) and Phantom Lethality I–II (T8–T9) featuring systematic lowest % HP enemy targeting, 20% to 40% enemy DEF ignore, and up to +45% to +70% damage amplification scaled by the target's missing health;
+- Eclipse Scaling Progression: Active Eclipse skills (I–IV) now scale damage progressively (+10% per tier: 110%, 120%, 130%, 140%) with 3.0x critical strike amplification, instant recast on kill, and execution thresholds (10%, 15%, 20%, 25%);
+- Relative % HP Targeting: Both basic attacks and Eclipse skills reliably prioritize the lowest percentage HP enemy to systematically finish wounded targets.
+
 ## v1.3.18.9 — 8/10/2026
 
 **Adventurers — Wyrm Rider Evolution Line Rebalance (Beastmaster & Dragon Rider Overhaul):**

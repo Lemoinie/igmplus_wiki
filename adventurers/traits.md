@@ -7,43 +7,43 @@ Vial upgrades (Evo-24 style).
 
 |  | Trait | Effect |
 | --- | --- | --- |
-| — | Bookworm | — |
-| — | Brute | — |
-| — | Feral | — |
-| — | Bookworm+ **(+)** | — |
-| — | Brute+ **(+)** | — |
-| — | Feral+ **(+)** | — |
-| — | Versatile | — |
-| — | Versatile+ **(+)** | — |
-| — | Zealous | — |
-| — | Zealous+ **(+)** | — |
-| — | Cunning | — |
-| — | Cunning+ **(+)** | — |
-| — | Athletic | — |
-| — | Athletic+ **(+)** | — |
+| — | Bookworm | Intelligence increased by 10%, constitution decreased by 5%, dexterity decreased by 5%. |
+| — | Brute | Constitution increased by 10%, dexterity decreased by 5%, intelligence decreased by 5%. |
+| — | Feral | Dexterity increased by 10%, intelligence decreased by 5%, constitution decreased by 5%. |
+| — | Bookworm+ **(+)** | Intelligence increased by 20%. |
+| — | Brute+ **(+)** | Constitution increased by 20%. |
+| — | Feral+ **(+)** | Dexterity increased by 20%. |
+| — | Versatile | All stats increased by 4%. |
+| — | Versatile+ **(+)** | All stats increased by 7%. |
+| — | Zealous | Constitution increased by 5%, intelligence increased by 5%, dexterity decreased by 10%. |
+| — | Zealous+ **(+)** | Constitution increased by 10%, intelligence increased by 10%. |
+| — | Cunning | Dexterity increased by 5%, intelligence increased by 5%, constitution decreased by 10%. |
+| — | Cunning+ **(+)** | Dexterity increased by 10%, intelligence increased by 10%. |
+| — | Athletic | Constitution increased by 5%, dexterity increased by 5%, intelligence decreased by 10%. |
+| — | Athletic+ **(+)** | Constitution increased by 10%, dexterity increased by 10%. |
 | — | Empathetic | Heals are 20% more powerful (multiplicative). |
 | — | Gifted | Gains 2 more mana per turn. |
 | — | Intimidating | +2 threat |
-| — | Focused | — |
-| — | Dragon Blood | — |
-| — | Cursed | — |
+| — | Focused | Chances to miss reduced by 25% (additive). |
+| — | Dragon Blood | Damage reduction increased by 1% per unit rank (+9% if ascended). |
+| — | Cursed | Every turn, lose 2% max HP. Heal by 20% of damage dealt on hit. |
 | — | Reactive | 10% counterattack chance when hit by melee attacks. |
-| — | Nocturnal | — |
+| — | Nocturnal | Damage increased by [1 x Darkness]% |
 | — | Mindful | 10% status immunity. |
-| — | Troll Blood | — |
-| — | Nimble | — |
+| — | Troll Blood | Each turn, regenerates half of unit rank as % of max HP (+4.5% if ascended). |
+| — | Nimble | 15% increased dodge chance (additive) |
 | — | Ruthless | Critical damage +20% (multiplicative). |
 | — | Blessed | Reduces darkness by 15. |
 | — | Alert | Starts the fight first. |
-| — | Deadeye | — |
-| — | Sundering | — |
-| — | Fortified | — |
-| — | Reckless | — |
-| — | Lone Wolf | — |
-| — | Ruthless+ **(+)** | — |
-| — | Empathetic+ **(+)** | — |
-| — | Nocturnal+ **(+)** | — |
-| — | Gifted+ **(+)** | — |
+| — | Deadeye | Critical strike chance increased by 12%. |
+| — | Sundering | Ignores 20% of target Defense and Magic Defense. |
+| — | Fortified | Starts every battle with a shield equal to 25% of max HP. |
+| — | Reckless | Deals 15% more attack damage, but takes 15% more damage. |
+| — | Lone Wolf | Gains 5% damage for each unoccupied or fallen ally slot in the area. |
+| — | Ruthless+ **(+)** | Critical damage +30% (multiplicative). |
+| — | Empathetic+ **(+)** | Outgoing healing +40%. |
+| — | Nocturnal+ **(+)** | Damage increased by [2 x Darkness]%. |
+| — | Gifted+ **(+)** | MP regenerate +4. |
 | — | Intimidating+ **(+)** | +4 threat |
-| — | Cursed+ **(+)** | — |
-| — | Alert+ **(+)** | — |
+| — | Cursed+ **(+)** | -1% HP each turn. Lifesteal +30%. |
+| — | Alert+ **(+)** | Starts the fight first. +20% Basic Atk Amp on first hit. |

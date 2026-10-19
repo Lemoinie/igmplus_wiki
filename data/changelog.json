@@ -1,5 +1,42 @@
 [
   {
+    "version": "1.3.20.20",
+    "date": "19/10/2026",
+    "groups": [
+      [
+        "Relic System — Percent Scaling & Upgrade Success Overhaul:",
+        "Percent-Based Stat Scaling: Relics now grant percent-based primary stats scaling at +2% per level (up to +80% at +40) tailored by archetype: Lance (+HP, +DEX), Mask (+HP, +INT), Orb (+DEX, +INT), Dual Sword (+CON, +DEX), Shield (+HP, +CON), Dagger (+CON, +INT);",
+        "Graduated Upgrade Success Rates: Upgrading relics now features a tier-based success curve (+1 to +5: 100%, +6 to +10: 90%, +11 to +15: 70%, +16 to +20: 60%, +21 to +25: 50%, +26 to +30: 40%, +31 to +35: 30%, +36 to +40: 20%). On failure, the relic level decreases by 1;",
+        "UI Streamlining & Protection: Enhanced the relic upgrade modal with visual success percentage displays, compact button design, and safety debouncing; updated Relic Select to clearly prioritize relic main stats while keeping full detail views available."
+      ],
+      [
+        "Shop & Storage — Guild Initiate Pack Save Migration Fix:",
+        "Save Migration Key Isolation: Refined legacy shop migration in DataDeserializer to check for the absence of modular shop keys (!asJsonObject.has) rather than checking boolean state;",
+        "Storage Room Isolation: Purchasing the Guild Initiate Pack (+1 Quarters, +1 Tavern, +1 Workshop Queue, +1 Market Listing) now strictly respects storage limits and will no longer erroneously auto-grant +35 storage spaces or unlock the Minor Storage Expansion on save reload;",
+        "Modular Bundle Integrity: Preserved full backward compatibility for genuine legacy vanilla saves while ensuring modern modular storage packs (Minor, Standard, Grand) remain distinct and independent."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.19",
+    "date": "17/10/2026",
+    "groups": [
+      [
+        "Combat Engine — Animal Affinity for Beast Tamer Summons:",
+        "Living Companion Damage Scaling: Extended Animal Affinity (livingCompanionBonusDamage, granted by Archaic Amulet and companion gear) to directly amplify the outgoing damage of Beast Tamer animal summons (Rats, Cats, Weasels, Wolves, Tigers, Bears, Owlbears) by +1% per point;",
+        "Full Attack & Skill Support: Animal Affinity scaling applies to both basic attacks and active companion skills (Rabid Bite, Feline Pounce, Frenzied Flurry, Pack Howl, Predatory Ambush, Ursine Roar, Apex Rampage);",
+        "Undead Minion Exclusion: In accordance with the canonical item specification ('living creatures controlled'), Undead minions from the Necromancer line (Skeletons, Zombies, Bone Hydras) are excluded from Animal Affinity scaling."
+      ],
+      [
+        "Combat Engine — Lone Wolf Trait Summon Exclusion:",
+        "Summon Filtering: Lone Wolf (Trait.LONE_WOLF) now counts only deployed hero party members when evaluating living allies, completely ignoring temporary combat summons;",
+        "Summoner Synergy: Active summons from both the Beast Tamer branch (living companions) and Necromancer branch (undead minions) no longer dilute or reduce the Lone Wolf damage bonus (+5% damage per missing/fallen party slot)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.20.18",
     "date": "16/10/2026",
     "groups": [
