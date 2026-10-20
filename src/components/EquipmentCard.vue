@@ -15,6 +15,14 @@ const priceTooltip = computed(() => {
   if (props.item.price === null || props.item.price === undefined) return 'Price: Unknown';
   return `Price: ${props.item.price.toLocaleString('en-US')} copper`;
 });
+
+const ALLOWED_DESC_CATEGORIES = new Set(['potion', 'upgrade', 'rune']);
+const displayDescription = computed(() => {
+  if (!props.item.description) return '';
+  const cat = (props.item.category || '').toLowerCase().trim();
+  if (!ALLOWED_DESC_CATEGORIES.has(cat)) return '';
+  return props.item.description.replace(/^"|"$/g, '');
+});
 </script>
 
 <template>
@@ -61,7 +69,7 @@ const priceTooltip = computed(() => {
       </div>
     </div>
 
-    <p v-if="item.description" class="desc">{{ item.description }}</p>
+    <p v-if="displayDescription" class="desc">{{ displayDescription }}</p>
 
     <!-- Stats chips -->
     <div v-if="item.stats && Object.keys(item.stats).length" class="statsChips">
@@ -214,6 +222,7 @@ const priceTooltip = computed(() => {
   color: var(--text-muted);
   font-style: italic;
   margin: 0;
+  white-space: pre-line;
 }
 
 .statsChips {
