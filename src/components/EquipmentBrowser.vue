@@ -78,29 +78,6 @@ const itemRangeText = computed(() => {
   return `Showing ${start}–${end} of ${total} items`;
 });
 
-const visiblePages = computed(() => {
-  const total = totalPages.value;
-  const current = currentPage.value;
-  if (total <= 7) {
-    return Array.from({ length: total }, (_, i) => i + 1);
-  }
-  const pages: (number | string)[] = [];
-  pages.push(1);
-  if (current > 3) {
-    pages.push('...');
-  }
-  const start = Math.max(2, current - 1);
-  const end = Math.min(total - 1, current + 1);
-  for (let i = start; i <= end; i++) {
-    pages.push(i);
-  }
-  if (current < total - 2) {
-    pages.push('...');
-  }
-  pages.push(total);
-  return pages;
-});
-
 function goToPage(page: number) {
   if (page < 1 || page > totalPages.value) return;
   currentPage.value = page;
@@ -159,51 +136,64 @@ function goToPage(page: number) {
 
     <!-- Pagination Controls -->
     <div v-if="filtered.length > 0" class="paginationBar">
-      <div class="pageSummary">
-        <span>{{ itemRangeText }}</span>
-        <div class="pageSizeSelectWrap">
-          <label for="pageSizeSelect">Per page:</label>
-          <select id="pageSizeSelect" v-model.number="pageSize" class="pageSizeSelect">
-            <option :value="12">12</option>
-            <option :value="24">24</option>
-            <option :value="48">48</option>
-            <option :value="filtered.length">All</option>
-          </select>
-        </div>
+      <div class="pageSizeControl">
+        <label for="pageSizeSelect" class="pageSizeLabel">Show</label>
+        <select id="pageSizeSelect" v-model.number="pageSize" class="pageSizeSelect">
+          <option :value="12">12</option>
+          <option :value="24">24</option>
+          <option :value="48">48</option>
+        </select>
       </div>
 
-      <div v-if="totalPages > 1" class="pageNav">
+      <div class="pageNav">
         <button
           type="button"
-          class="pageBtn navArrow"
+          class="pageNavBtn"
           :disabled="currentPage === 1"
-          @click="goToPage(currentPage - 1)"
-          aria-label="Previous page"
+          @click="goToPage(1)"
+          title="First page"
+          aria-label="First page"
         >
-          ‹ Prev
+          «
         </button>
 
-        <template v-for="(p, idx) in visiblePages" :key="idx">
-          <span v-if="p === '...'" class="pageEllipsis">…</span>
-          <button
-            v-else
-            type="button"
-            class="pageBtn"
-            :class="{ active: p === currentPage }"
-            @click="goToPage(Number(p))"
-          >
-            {{ p }}
-          </button>
-        </template>
+        <button
+          type="button"
+          class="pageNavBtn"
+          :disabled="currentPage === 1"
+          @click="goToPage(currentPage - 1)"
+          title="Previous page"
+          aria-label="Previous page"
+        >
+          ‹
+        </button>
+
+        <div class="pageIndicator">
+          <span class="currentPageNum">{{ currentPage }}</span>
+          <span class="pageSlash">/</span>
+          <span class="totalPagesNum">{{ totalPages }}</span>
+        </div>
 
         <button
           type="button"
-          class="pageBtn navArrow"
+          class="pageNavBtn"
           :disabled="currentPage === totalPages"
           @click="goToPage(currentPage + 1)"
+          title="Next page"
           aria-label="Next page"
         >
-          Next ›
+          ›
+        </button>
+
+        <button
+          type="button"
+          class="pageNavBtn"
+          :disabled="currentPage === totalPages"
+          @click="goToPage(totalPages)"
+          title="Last page"
+          aria-label="Last page"
+        >
+          »
         </button>
       </div>
     </div>
@@ -285,43 +275,55 @@ select:focus {
 /* Pagination Styles */
 .paginationBar {
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
   margin-top: 2rem;
-  padding: 1rem 1.25rem;
+  padding: 0.85rem 1.25rem;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 8px;
 }
 
-.pageSummary {
+.pageSizeControl {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
-  font-size: 0.85rem;
-  color: var(--text-muted);
+  gap: 8px;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
 }
 
-.pageSizeSelectWrap {
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.pageSizeLabel {
+  font-weight: 600;
+  color: var(--text-secondary);
 }
 
 .pageSizeSelect {
-  padding: 4px 8px;
-  font-size: 0.82rem;
+  background: var(--bg-inset);
+  color: var(--text-primary);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.pageSizeSelect:hover,
+.pageSizeSelect:focus {
+  border-color: var(--brand-primary);
+  outline: none;
+  box-shadow: 0 0 8px rgba(110, 168, 254, 0.2);
 }
 
 .pageNav {
   display: flex;
   align-items: center;
-  gap: 5px;
+  gap: 6px;
 }
 
-.pageBtn {
+.pageNavBtn {
   min-width: 34px;
   height: 34px;
   padding: 0 8px;
@@ -329,42 +331,55 @@ select:focus {
   border: 1px solid var(--border-subtle);
   border-radius: 6px;
   color: var(--text-secondary);
-  font-size: 0.85rem;
-  font-weight: 500;
+  font-size: 1rem;
+  font-weight: 700;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
   transition: all 0.15s ease;
+  user-select: none;
 }
 
-.pageBtn:hover:not(:disabled) {
+.pageNavBtn:hover:not(:disabled) {
   background: var(--bg-card-hover);
-  color: var(--text-primary);
-  border-color: var(--brand-primary);
-}
-
-.pageBtn.active {
-  background: var(--brand-primary);
   color: #fff;
   border-color: var(--brand-primary);
-  font-weight: 700;
+  box-shadow: 0 0 8px rgba(110, 168, 254, 0.25);
 }
 
-.pageBtn:disabled {
-  opacity: 0.4;
+.pageNavBtn:disabled {
+  opacity: 0.35;
   cursor: not-allowed;
 }
 
-.navArrow {
+.pageIndicator {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0 12px;
+  height: 34px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
+  font-size: 0.88rem;
   font-weight: 600;
-  padding: 0 10px;
+  font-variant-numeric: tabular-nums;
+  user-select: none;
 }
 
-.pageEllipsis {
-  padding: 0 4px;
+.currentPageNum {
+  color: #93c5fd;
+  font-weight: 700;
+}
+
+.pageSlash {
   color: var(--text-muted);
-  font-size: 0.85rem;
+  font-size: 0.8rem;
+}
+
+.totalPagesNum {
+  color: var(--text-secondary);
 }
 
 @media (max-width: 640px) {
@@ -389,18 +404,9 @@ select:focus {
 
   .paginationBar {
     flex-direction: column;
-    align-items: stretch;
+    align-items: center;
     gap: 0.85rem;
     padding: 0.85rem;
-  }
-  .pageSummary {
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-  }
-  .pageNav {
-    justify-content: center;
-    flex-wrap: wrap;
   }
 }
 </style>
