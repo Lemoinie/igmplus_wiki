@@ -61,7 +61,7 @@ const searchEntries = [
     title: e.name,
     category: 'Item' as const,
     url: `${base}/items/${e.id}`,
-    description: `${e.rarity != null ? `★${e.rarity} ` : ''}${e.category} · Price: ${e.price}`
+    description: `${e.category} · Price: ${e.price}`
   })),
   ...petsList.map((p: any) => ({
     id: `pet-${p.id}`,

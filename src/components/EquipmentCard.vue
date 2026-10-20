@@ -10,9 +10,9 @@ defineProps<{
 </script>
 
 <template>
-  <div class="equipCard" :class="`border-rarity-${item.rarity}`">
+  <div class="equipCard">
     <div class="cardTop">
-      <div class="spriteBox" :class="`border-rarity-${item.rarity}`">
+      <div class="spriteBox">
         <img
           :src="`${basePath ?? base}/images/${item.sprite}.png`"
           :alt="item.name"
@@ -29,7 +29,6 @@ defineProps<{
 
         <div class="badgeRow">
           <span class="badge typeBadge">{{ item.category }}</span>
-          <span v-if="item.rarity != null" class="badge rarityBadge" :class="`rarity-${item.rarity}`">★ {{ item.rarity }}</span>
           <span class="price">
             <svg class="coin" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
               <circle cx="8" cy="8" r="7" fill="#f59e0b" stroke="#b45309" stroke-width="1.5" />
@@ -146,11 +145,6 @@ defineProps<{
   background: var(--bg-inset);
   color: var(--text-secondary);
   border: 1px solid var(--border-subtle);
-}
-
-.rarityBadge {
-  background: rgba(255, 255, 255, 0.05);
-  font-weight: 700;
 }
 
 .price {

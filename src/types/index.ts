@@ -35,7 +35,7 @@ export interface EquipmentDefinition {
   name: string;
   type: 'weapon' | 'armor' | 'accessory';
   category: string;
-  rarity: number; // 0 to 5
+  rarity?: number | null;
   price: number;
   sprite: string;
   description?: string;

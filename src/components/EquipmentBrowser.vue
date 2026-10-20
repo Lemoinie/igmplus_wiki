@@ -10,7 +10,6 @@ const props = defineProps<{
 
 const query = ref('');
 const selectedCategory = ref('all');
-const selectedRarity = ref('all');
 const sortBy = ref('price');
 const currentPage = ref(1);
 const pageSize = ref(12);
@@ -19,23 +18,10 @@ const categories = computed(() => {
   return [...new Set(props.items.map((i) => i.category))].filter(Boolean).sort();
 });
 
-const rarities = computed(() => {
-  return [...new Set(props.items.map((i) => i.rarity))]
-    .filter((r) => r != null)
-    .sort((a, b) => a - b);
-});
-
-const hasUnrated = computed(() => props.items.some((i) => i.rarity == null));
-
-function rarityKey(r: number | null | undefined): string {
-  return r == null ? 'none' : String(r);
-}
-
 const filtered = computed(() => {
   const q = query.value.trim().toLowerCase();
   let list = props.items.filter((i) => {
     if (selectedCategory.value !== 'all' && i.category !== selectedCategory.value) return false;
-    if (selectedRarity.value !== 'all' && rarityKey(i.rarity) !== selectedRarity.value) return false;
     if (q) {
       const match =
         i.name.toLowerCase().includes(q) ||
@@ -57,7 +43,7 @@ const filtered = computed(() => {
   });
 });
 
-watch([query, selectedCategory, selectedRarity, sortBy, pageSize], () => {
+watch([query, selectedCategory, sortBy, pageSize], () => {
   currentPage.value = 1;
 });
 
@@ -110,12 +96,6 @@ function goToPage(page: number) {
         <select v-model="selectedCategory">
           <option value="all">All Types</option>
           <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
-        </select>
-
-        <select v-model="selectedRarity">
-          <option value="all">All Rarities</option>
-          <option v-for="r in rarities" :key="r" :value="String(r)">Rarity ★{{ r }}</option>
-          <option v-if="hasUnrated" value="none">No rarity</option>
         </select>
 
         <select v-model="sortBy">

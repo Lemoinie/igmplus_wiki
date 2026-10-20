@@ -114,21 +114,6 @@ tr:hover td {
   background: rgba(255, 255, 255, 0.02);
 }
 
-/* Rarity Color System */
-.rarity-0 { color: #94a3b8; }
-.rarity-1 { color: #4ade80; }
-.rarity-2 { color: #60a5fa; }
-.rarity-3 { color: #c084fc; }
-.rarity-4 { color: #f59e0b; }
-.rarity-5 { color: #ef4444; }
-
-.border-rarity-0 { border-color: #334155 !important; }
-.border-rarity-1 { border-color: #16a34a !important; }
-.border-rarity-2 { border-color: #2563eb !important; }
-.border-rarity-3 { border-color: #9333ea !important; }
-.border-rarity-4 { border-color: #d97706 !important; }
-.border-rarity-5 { border-color: #dc2626 !important; }
-
 /* LaTeX / KaTeX Math Equation Row Styling */
 .katex-display {
   display: block !important;

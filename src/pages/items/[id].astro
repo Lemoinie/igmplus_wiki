@@ -17,7 +17,6 @@ const { item, usage } = Astro.props as { item: any; usage?: any };
 
 const tags = [
   item.category,
-  item.rarity != null ? `★ ${item.rarity}` : '',
   item.price ? `${item.price.toLocaleString('en-US')} gold` : '',
 ].filter(Boolean);
 
