@@ -35,6 +35,7 @@ import {
 
 import { base } from '../lib/base';
 import { getMaintenanceConfig } from '../lib/maintenance';
+import { formatCoinsText } from '../lib/currency';
 
 const maintenance = getMaintenanceConfig();
 const isFull = maintenance.mode === 'full';
@@ -61,7 +62,7 @@ const searchEntries = [
     title: e.name,
     category: 'Item' as const,
     url: `${base}/items/${e.id}`,
-    description: `${e.category} · Price: ${e.price}`
+    description: `${e.category} · Price: ${formatCoinsText(e.price)}`
   })),
   ...petsList.map((p: any) => ({
     id: `pet-${p.id}`,

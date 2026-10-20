@@ -1,12 +1,20 @@
 <script setup lang="ts">
+import { computed } from 'vue';
 import type { EquipmentDefinition } from '../types';
 import { base } from '../lib/base';
 import { formatStat } from '../lib/stats';
+import { parseCoins } from '../lib/currency';
 
-defineProps<{
+const props = defineProps<{
   item: EquipmentDefinition;
   basePath?: string;
 }>();
+
+const coins = computed(() => parseCoins(props.item.price));
+const priceTooltip = computed(() => {
+  if (props.item.price === null || props.item.price === undefined) return 'Price: Unknown';
+  return `Price: ${props.item.price.toLocaleString('en-US')} copper`;
+});
 </script>
 
 <template>
@@ -29,13 +37,26 @@ defineProps<{
 
         <div class="badgeRow">
           <span class="badge typeBadge">{{ item.category }}</span>
-          <span class="price">
-            <svg class="coin" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-              <circle cx="8" cy="8" r="7" fill="#f59e0b" stroke="#b45309" stroke-width="1.5" />
-              <circle cx="8" cy="8" r="3.5" fill="none" stroke="#b45309" stroke-width="1.2" />
-            </svg>
-            {{ item.price ?? '—' }}
-          </span>
+          <div class="priceGroup" :title="priceTooltip">
+            <template v-if="coins.length">
+              <span
+                v-for="coin in coins"
+                :key="coin.type"
+                class="coinChip"
+                :class="`coin-${coin.type}`"
+              >
+                <img
+                  :src="`${basePath ?? base}/images/${coin.sprite}`"
+                  :alt="coin.label"
+                  class="coinIcon"
+                  width="15"
+                  height="15"
+                />
+                <span class="coinVal">{{ coin.amount }}</span>
+              </span>
+            </template>
+            <span v-else class="coinEmpty">—</span>
+          </div>
         </div>
       </div>
     </div>
@@ -147,13 +168,45 @@ defineProps<{
   border: 1px solid var(--border-subtle);
 }
 
-.price {
+.priceGroup {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.coinChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
   font-size: 0.78rem;
   font-weight: 600;
-  color: var(--text-gold);
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.coinIcon {
+  width: 15px;
+  height: 15px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  display: block;
+}
+
+.coinVal {
+  color: var(--text-primary);
+}
+
+.coin-copper .coinVal { color: #f97316; }
+.coin-silver .coinVal { color: #cbd5e1; }
+.coin-gold .coinVal { color: #fbbf24; }
+.coin-platinum .coinVal { color: #67e8f9; }
+.coin-diamond .coinVal { color: #a78bfa; }
+
+.coinEmpty {
+  font-size: 0.78rem;
+  color: var(--text-muted);
 }
 
 .desc {

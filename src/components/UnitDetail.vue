@@ -19,6 +19,7 @@ export interface DetailLinkGroup {
 }
 export interface DetailDrop { name: string; qty: number; chance: number; sprite?: string; href?: string; }
 
+import type { CoinStack } from '../lib/currency';
 import { base } from '../lib/base';
 
 defineProps<{
@@ -29,6 +30,9 @@ defineProps<{
   basePath?: string;
   /** Small badges next to the name, e.g. "Tier 3", "Max Lv. 15", "Boss". */
   tags?: string[];
+  /** Tiered coin stacks for item prices */
+  priceCoins?: CoinStack[];
+  rawPrice?: number;
   description?: string;
   stats?: DetailStat[];
   skills?: DetailSkill[];
@@ -54,8 +58,29 @@ defineProps<{
       </div>
       <div class="heroText">
         <h1 class="unitName">{{ name }}</h1>
-        <div v-if="tags?.length" class="tags">
+        <div v-if="tags?.length || priceCoins?.length" class="tags">
           <span v-for="t in tags" :key="t" class="tag">{{ t }}</span>
+          <div
+            v-if="priceCoins?.length"
+            class="priceTag"
+            :title="rawPrice !== undefined ? `Price: ${rawPrice.toLocaleString('en-US')} copper` : undefined"
+          >
+            <span
+              v-for="coin in priceCoins"
+              :key="coin.type"
+              class="coinChip"
+              :class="`coin-${coin.type}`"
+            >
+              <img
+                :src="`${basePath ?? base}/images/${coin.sprite}`"
+                :alt="coin.label"
+                class="coinIcon"
+                width="16"
+                height="16"
+              />
+              <span class="coinVal">{{ coin.amount }}</span>
+            </span>
+          </div>
         </div>
         <p v-if="description" class="description">{{ description }}</p>
       </div>
@@ -204,6 +229,45 @@ defineProps<{
   border: 1px solid var(--border-subtle);
   color: var(--text-gold);
 }
+
+.priceTag {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 3px 10px;
+  border-radius: 6px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+}
+
+.coinChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 0.82rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  line-height: 1;
+}
+
+.coinIcon {
+  width: 16px;
+  height: 16px;
+  image-rendering: pixelated;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: crisp-edges;
+  display: block;
+}
+
+.coinVal {
+  color: var(--text-primary);
+}
+
+.coin-copper .coinVal { color: #f97316; }
+.coin-silver .coinVal { color: #cbd5e1; }
+.coin-gold .coinVal { color: #fbbf24; }
+.coin-platinum .coinVal { color: #67e8f9; }
+.coin-diamond .coinVal { color: #a78bfa; }
 
 .description { margin: 0; font-size: 0.9rem; font-style: italic; color: var(--text-muted); white-space: pre-line; }
 

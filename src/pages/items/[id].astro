@@ -3,6 +3,7 @@ import WikiLayout from '../../layouts/WikiLayout.astro';
 import UnitDetail from '../../components/UnitDetail.vue';
 import { getAllItems, getAllUnits, getItemUsageMap } from '../../lib/data';
 import { statLabel, statValue } from '../../lib/stats';
+import { parseCoins } from '../../lib/currency';
 import { base } from '../../lib/base';
 
 export function getStaticPaths() {
@@ -17,8 +18,9 @@ const { item, usage } = Astro.props as { item: any; usage?: any };
 
 const tags = [
   item.category,
-  item.price ? `${item.price.toLocaleString('en-US')} gold` : '',
 ].filter(Boolean);
+
+const priceCoins = item.price !== undefined && item.price !== null ? parseCoins(item.price) : [];
 
 const stats = Object.entries(item.stats ?? {}).map(([key, val]) => ({
   label: statLabel(key),
@@ -120,6 +122,8 @@ const description = String(item.description ?? '').replace(/^"|"$/g, '');
     name={item.name}
     sprite={item.sprite}
     tags={tags}
+    priceCoins={priceCoins}
+    rawPrice={item.price}
     description={description}
     stats={stats}
     links={links}
