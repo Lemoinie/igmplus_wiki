@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 0.3
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_OVERDRIVE",
+  "passiveSkill": "PASSIVE_REVERSE_ENTROPY"
 }

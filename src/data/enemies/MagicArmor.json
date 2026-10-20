@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 0.1
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_DISASSEMBLE",
+  "passiveSkill": "PASSIVE_ANIMATED_GUARDIAN"
 }

@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 0.4
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_NIGHT_HUNTER"
 }

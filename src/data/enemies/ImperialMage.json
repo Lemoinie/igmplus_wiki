@@ -37,5 +37,10 @@
       "qty": 1,
       "chance": 20
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_STATIC_SURGE",
+  "passiveSkill": "PASSIVE_NONE"
 }

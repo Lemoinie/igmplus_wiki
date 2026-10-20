@@ -42,5 +42,10 @@
       "qty": 1,
       "chance": 0.1
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_RAYS_OF_DESTRUCTION",
+  "passiveSkill": "PASSIVE_ELEMENTAL_MASTERY"
 }

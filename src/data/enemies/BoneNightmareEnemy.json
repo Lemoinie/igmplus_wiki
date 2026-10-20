@@ -16,5 +16,10 @@
     "max": "400"
   },
   "expGiven": 1000,
-  "drops": []
+  "drops": [],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_THREATENING_II"
 }

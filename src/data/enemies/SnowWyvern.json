@@ -42,5 +42,10 @@
       "qty": 1,
       "chance": 0.1
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": false,
+  "attackType": "Melee, Magic",
+  "activeSkill": "ACTIVE_FROZEN_BREATH",
+  "passiveSkill": "PASSIVE_FLYING"
 }

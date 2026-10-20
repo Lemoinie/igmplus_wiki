@@ -90,8 +90,10 @@ export interface SkillDefinition {
 
 export interface EnemyDrop {
   item: string;
+  name?: string;
   qty: number;
   chance: number; // percentage
+  sprite?: string;
   isIndependent?: boolean;
 }
 
@@ -100,6 +102,7 @@ export interface EnemyDefinition {
   name: string;
   isBoss: boolean;
   sprite: string;
+  type?: string;
   stats: {
     hp: number;
     constitution: number;
@@ -114,6 +117,14 @@ export interface EnemyDefinition {
   };
   expGiven?: number;
   drops: EnemyDrop[];
+  isMagic?: boolean;
+  isRanged?: boolean;
+  attackType?: string;
+  activeSkill?: string;
+  passiveSkill?: string;
+  activeSkillDetail?: SkillDefinition | null;
+  passiveSkillDetail?: SkillDefinition | null;
+  places?: Array<{ id?: string; name: string; type?: string }>;
 }
 
 export interface DungeonEnemyRef {
@@ -121,6 +132,30 @@ export interface DungeonEnemyRef {
   name: string;
   rate?: string;
   role: 'Regular' | 'Boss' | 'Special Spawn';
+  isBoss?: boolean;
+  sprite?: string;
+  type?: string;
+  stats?: {
+    hp: number;
+    constitution: number;
+    intelligence: number;
+    dexterity: number;
+    defense: number;
+    magicDefense: number;
+  };
+  damage?: {
+    min: number | string;
+    max: number | string;
+  };
+  expGiven?: number;
+  drops?: EnemyDrop[];
+  isMagic?: boolean;
+  isRanged?: boolean;
+  attackType?: string;
+  activeSkill?: string;
+  passiveSkill?: string;
+  activeSkillDetail?: SkillDefinition | null;
+  passiveSkillDetail?: SkillDefinition | null;
 }
 
 export interface DungeonDefinition {

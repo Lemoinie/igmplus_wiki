@@ -22,5 +22,10 @@
       "qty": 1,
       "chance": 100
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": false,
+  "attackType": "Melee, Magic",
+  "activeSkill": "ACTIVE_DREAM_FORGE",
+  "passiveSkill": "PASSIVE_NONE"
 }

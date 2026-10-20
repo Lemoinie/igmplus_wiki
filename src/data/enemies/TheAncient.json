@@ -22,5 +22,10 @@
       "qty": 1,
       "chance": 33.3
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_DEVOUR_SPIRIT",
+  "passiveSkill": "PASSIVE_INSCRUTABLE"
 }

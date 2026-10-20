@@ -22,5 +22,10 @@
       "qty": 50,
       "chance": 100
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": true,
+  "attackType": "Ranged, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_INORGANIC"
 }

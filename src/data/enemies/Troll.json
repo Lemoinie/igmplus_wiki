@@ -37,5 +37,10 @@
       "qty": 1,
       "chance": 2.5
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_REGENERATION_II"
 }

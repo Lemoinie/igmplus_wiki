@@ -22,5 +22,10 @@
       "qty": 1,
       "chance": 26
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": false,
+  "attackType": "Melee, Magic",
+  "activeSkill": "ACTIVE_TABULA_RASA",
+  "passiveSkill": "PASSIVE_ABSURD_GENEALOGY"
 }

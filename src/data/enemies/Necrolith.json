@@ -16,5 +16,10 @@
     "max": "2"
   },
   "expGiven": 10,
-  "drops": []
+  "drops": [],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_THREATENING_I"
 }

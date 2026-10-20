@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 20
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_RESTORE_ORDER",
+  "passiveSkill": "PASSIVE_THREATENING_I"
 }

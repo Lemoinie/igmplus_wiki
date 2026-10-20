@@ -42,5 +42,10 @@
       "qty": 1,
       "chance": 0.2
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_DAZE",
+  "passiveSkill": "PASSIVE_HEALER_I"
 }

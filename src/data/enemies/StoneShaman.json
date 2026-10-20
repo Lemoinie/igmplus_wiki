@@ -22,5 +22,10 @@
       "qty": 1,
       "chance": 0.4
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_FIRE_DANCE",
+  "passiveSkill": "PASSIVE_NATURAL_EMPATHY"
 }

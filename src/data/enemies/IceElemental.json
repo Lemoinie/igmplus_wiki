@@ -37,5 +37,10 @@
       "qty": 1,
       "chance": 0.1
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_ICE_TOMB",
+  "passiveSkill": "PASSIVE_SUB_ZERO"
 }

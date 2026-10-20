@@ -280,6 +280,14 @@ export function getAllEnemies(): any[] {
     if (item?.id) itemMap.set(item.id, item);
   });
 
+  // Map skills metadata for active/passive resolution
+  const skillModules = import.meta.glob('../data/adventurers/skills/*.json', { eager: true });
+  const skillMap = new Map<string, any>();
+  Object.values(skillModules).forEach((mod: any) => {
+    const s = (mod as any).default || mod;
+    if (s?.key) skillMap.set(s.key, s);
+  });
+
   return rawEnemies.map((enemy: any) => {
     const places = enemyPlacesMap.get(enemy.id) || enemyPlacesMap.get(enemy.name) || [];
     const drops = (enemy.drops || []).map((d: any) => {
@@ -290,24 +298,85 @@ export function getAllEnemies(): any[] {
         sprite: d.sprite || info.sprite,
       };
     });
+    const activeSkillDetail = enemy.activeSkill && enemy.activeSkill !== 'ACTIVE_NONE' ? (skillMap.get(enemy.activeSkill) || null) : null;
+    const passiveSkillDetail = enemy.passiveSkill && enemy.passiveSkill !== 'PASSIVE_NONE' ? (skillMap.get(enemy.passiveSkill) || null) : null;
+
     return {
       ...enemy,
       type: enemy.type || ENEMY_TYPE_MAP[enemy.id] || 'Humanoid',
       places,
       drops,
+      activeSkillDetail,
+      passiveSkillDetail,
     };
   });
 }
 
 // Places (dungeons, raids, guildactivities)
+const PLACE_TYPE_ORDER: Record<string, number> = {
+  dungeon: 1,
+  raid: 2,
+  epic_raid: 2,
+  guildactivity: 3,
+};
+
 export function getAllPlaces(): any[] {
   const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
-  const map = new Map<string, any>();
-  Object.values(placeModules).forEach((mod: any) => {
-    const item = mod.default || mod;
-    if (item?.id) map.set(item.id, item);
+  const enemies = getAllEnemies();
+  const enemyMap = new Map<string, any>();
+  enemies.forEach((e) => {
+    if (e.id) enemyMap.set(e.id, e);
+    if (e.name) enemyMap.set(e.name, e);
   });
-  return Array.from(map.values());
+
+  // Items for loot resolution
+  const itemModules = import.meta.glob('../data/items/**/*.json', { eager: true });
+  const itemMap = new Map<string, any>();
+  Object.values(itemModules).forEach((mod: any) => {
+    const item = (mod as any).default || mod;
+    if (item?.id) itemMap.set(item.id, item);
+  });
+
+  const list: any[] = [];
+  Object.values(placeModules).forEach((mod: any) => {
+    const item = (mod as any).default || mod;
+    if (!item?.id) return;
+
+    const enrichedEnemies = (item.enemies || []).map((ref: any) => {
+      const eid = typeof ref === 'string' ? ref : ref.id || ref.name;
+      const full = enemyMap.get(eid);
+      if (full) {
+        return {
+          ...full,
+          ...ref,
+          name: full.name || ref.name || eid,
+        };
+      }
+      return ref;
+    });
+
+    const lootDetails = (item.loot || []).map((itemId: string) => {
+      const info = resolveDropInfo(itemId, itemMap);
+      return {
+        id: itemId,
+        name: info.name,
+        sprite: info.sprite,
+      };
+    });
+
+    list.push({
+      ...item,
+      enemies: enrichedEnemies,
+      lootDetails,
+    });
+  });
+
+  return list.sort((a, b) => {
+    const orderA = PLACE_TYPE_ORDER[a.type] ?? 99;
+    const orderB = PLACE_TYPE_ORDER[b.type] ?? 99;
+    if (orderA !== orderB) return orderA - orderB;
+    return (a.name || '').localeCompare(b.name || '');
+  });
 }
 
 export function getAllDungeons(): any[] {

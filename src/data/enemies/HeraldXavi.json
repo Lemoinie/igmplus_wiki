@@ -22,5 +22,10 @@
       "qty": 1,
       "chance": 100
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_BOTCHED_SACRIFICE",
+  "passiveSkill": "PASSIVE_CLAIRVOYANCE"
 }

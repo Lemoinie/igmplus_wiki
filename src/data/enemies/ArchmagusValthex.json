@@ -42,5 +42,10 @@
       "qty": 1,
       "chance": 45
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_SCARLET_AEONIA",
+  "passiveSkill": "PASSIVE_BLOOD_CONVOCATION"
 }

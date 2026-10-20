@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 1.2
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_FLINTLOCK_SHOT",
+  "passiveSkill": "PASSIVE_RETALIATE"
 }

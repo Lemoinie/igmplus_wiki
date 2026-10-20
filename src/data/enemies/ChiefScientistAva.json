@@ -27,5 +27,10 @@
       "qty": 1,
       "chance": 5
     }
-  ]
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_LIVE_TEST",
+  "passiveSkill": "PASSIVE_UNETHICAL_CONDUCT"
 }

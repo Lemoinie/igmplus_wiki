@@ -1,198 +1,59 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
+import LocationBrowser from '../../components/LocationBrowser.vue';
 import { getAllPlaces } from '../../lib/data';
 import { base } from '../../lib/base';
 
 const dungeonsData = getAllPlaces();
 ---
 
-<WikiLayout title="Locations" description="Encounter pools, room probabilities, and loot tables across all dungeons and raids in Idle Guild Master Modded.">
+<WikiLayout
+  title="Locations"
+  description="Monster encounters, enemy stats, attack types, skills, and loot tables across all dungeons and raids in Idle Guild Master Modded."
+>
   <div class="pageHeader">
-    <h1>Locations</h1>
+    <div class="headerTop">
+      <h1>Locations</h1>
+      <span class="locationCountBadge">{dungeonsData.length} Locations</span>
+    </div>
     <p>
-      Room encounter chances and monster distributions across all regular dungeons and multi-room raids.
+      Encounter pools, enemy combat stats, attack types, skills, and item drops across all regular dungeons, multi-room raids, and guild activities.
     </p>
   </div>
 
-  <div class="dungeonsList">
-    {dungeonsData.map((d) => (
-      <div class="dungeonCard">
-        <div class="dungeonTop">
-          {d.sprite && (
-            <div class="dungeonSpriteBox">
-              <img
-                src={`${base}/images/${d.sprite}.png`}
-                alt={d.name}
-                class="sprite"
-                width="84"
-                height="84"
-              />
-            </div>
-          )}
-
-          <div class="dungeonInfo">
-            <h2>{d.name}</h2>
-            <div class="metaRow">
-              <span class="typeBadge">{d.type.toUpperCase()}</span>
-              {d.level && <span class="metaItem">Req. Level: {d.level}</span>}
-              <span class="metaItem">Encounter Chance: {d.encounterChance}% per room</span>
-            </div>
-          </div>
-        </div>
-
-        {d.enemies.length > 0 && (
-          <div class="encounterTableWrap">
-            <table>
-              <thead>
-                <tr>
-                  <th>Enemy</th>
-                  <th>Share of Encounters</th>
-                  <th>Role / Type</th>
-                </tr>
-              </thead>
-              <tbody>
-                {d.enemies.map((e) => (
-                  <tr>
-                    <td><strong>{e.name}</strong></td>
-                    <td>{e.rate || 'Event / Scripted'}</td>
-                    <td><span class={`roleTag ${e.role === 'Boss' ? 'bossRole' : ''}`}>{e.role}</span></td>
-                  </tr>
-                ))}
-              </tbody>
-            </table>
-          </div>
-        )}
-
-        {d.loot.length > 0 && (
-          <details class="lootDetails">
-            <summary>Loot & Item References ({d.loot.length} items)</summary>
-            <p class="lootList">{d.loot.join(', ')}</p>
-          </details>
-        )}
-      </div>
-    ))}
-  </div>
+  <LocationBrowser client:load locations={dungeonsData as any} basePath={base} />
 </WikiLayout>
 
 <style>
 .pageHeader {
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
 }
 
-.dungeonsList {
+.headerTop {
   display: flex;
-  flex-direction: column;
-  gap: 2rem;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 0.5rem;
 }
 
-.dungeonCard {
+.headerTop h1 {
+  margin: 0;
+}
+
+.locationCountBadge {
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 3px 10px;
+  border-radius: 12px;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
-  border-radius: 12px;
-  padding: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  color: var(--text-gold);
 }
 
-.dungeonTop {
-  display: flex;
-  align-items: center;
-  gap: 1.25rem;
-}
-
-.dungeonSpriteBox {
-  width: 96px;
-  height: 96px;
-  flex-shrink: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-radius: 10px;
-}
-
-.dungeonInfo h2 {
-  font-size: 1.4rem;
-  margin: 0 0 0.5rem 0;
-  border: none;
-  padding: 0;
-}
-
-.metaRow {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  align-items: center;
-}
-
-.typeBadge {
-  font-size: 0.75rem;
-  font-weight: 700;
-  padding: 2px 8px;
-  border-radius: 4px;
-  background: rgba(110, 168, 254, 0.15);
-  color: var(--brand-primary);
-}
-
-.metaItem {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-}
-
-.encounterTableWrap {
-  overflow-x: auto;
-}
-
-.roleTag {
-  font-size: 0.78rem;
-  padding: 2px 6px;
-  border-radius: 4px;
-  background: var(--bg-inset);
+.pageHeader p {
   color: var(--text-secondary);
-}
-
-.bossRole {
-  background: rgba(245, 158, 11, 0.2);
-  color: #f59e0b;
-  font-weight: 700;
-}
-
-.lootDetails {
-  font-size: 0.85rem;
-  color: var(--text-muted);
-  cursor: pointer;
-}
-
-.lootDetails summary {
-  font-weight: 600;
-  color: var(--brand-primary);
-}
-
-.lootList {
-  margin-top: 0.5rem;
-  line-height: 1.5;
-}
-
-@media (max-width: 640px) {
-  .dungeonCard {
-    padding: 1rem;
-    gap: 1rem;
-  }
-  .dungeonTop {
-    gap: 0.85rem;
-  }
-  .dungeonSpriteBox {
-    width: 68px;
-    height: 68px;
-  }
-  .dungeonSpriteBox img {
-    width: 58px;
-    height: 58px;
-  }
-  .dungeonInfo h2 {
-    font-size: 1.15rem;
-  }
+  max-width: 850px;
+  line-height: 1.55;
+  margin: 0;
 }
 </style>

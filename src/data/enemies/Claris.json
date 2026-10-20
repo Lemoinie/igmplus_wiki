@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 10
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_ARCANE_DIFFUSION",
+  "passiveSkill": "PASSIVE_STATIC_AFFINITY"
 }

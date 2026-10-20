@@ -37,5 +37,10 @@
       "qty": 1,
       "chance": 15
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_SANGUINE_PYRE",
+  "passiveSkill": "PASSIVE_MARTYRS_PACT"
 }

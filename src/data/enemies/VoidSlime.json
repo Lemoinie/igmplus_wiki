@@ -32,5 +32,10 @@
       "qty": 1,
       "chance": 16
     }
-  ]
+  ],
+  "isMagic": true,
+  "isRanged": false,
+  "attackType": "Melee, Magic",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_VOID_PULL"
 }
