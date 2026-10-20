@@ -4,7 +4,7 @@
   "category": "Outlander",
   "tier": 5,
   "maxLevel": 25,
-  "weaponType": "staff",
+  "weaponType": "axe",
   "armorType": "light",
   "sprite": "unit_gloom_druid",
   "description": "Communes with nocturnal fungi and shadowy thickets, weaving disorienting mists.",

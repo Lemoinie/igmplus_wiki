@@ -4,7 +4,7 @@
   "category": "Outlander",
   "tier": 6,
   "maxLevel": 30,
-  "weaponType": "staff",
+  "weaponType": "axe",
   "armorType": "light",
   "sprite": "unit_hemodruid",
   "description": "Blends primordial growth with sanguine sacrifices to fuel volatile regenerative rituals.",

@@ -4,7 +4,7 @@
   "category": "Outlander",
   "tier": 3,
   "maxLevel": 15,
-  "weaponType": "staff",
+  "weaponType": "axe",
   "armorType": "light",
   "sprite": "unit_druid",
   "description": "Channels primeval earthen magic to ensnare trespassers with grasping vines.",

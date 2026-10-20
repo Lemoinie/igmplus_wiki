@@ -4,7 +4,7 @@
   "category": "Outlander",
   "tier": 4,
   "maxLevel": 20,
-  "weaponType": "staff",
+  "weaponType": "axe",
   "armorType": "light",
   "sprite": "unit_forest_druid",
   "description": "Draws upon the deep canopy to mend woodland spirits and smother aggressors.",
