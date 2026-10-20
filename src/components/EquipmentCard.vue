@@ -1,48 +1,12 @@
 <script setup lang="ts">
 import type { EquipmentDefinition } from '../types';
 import { base } from '../lib/base';
+import { formatStat } from '../lib/stats';
 
 defineProps<{
   item: EquipmentDefinition;
   basePath?: string;
 }>();
-
-const STAT_LABELS: Record<string, string> = {
-  constitution: 'CON',
-  intelligence: 'INT',
-  dexterity: 'DEX',
-  defense: 'DEF',
-  magicDefense: 'MDEF',
-  maxHp: 'Max HP',
-  criticalChance: 'Crit Chance',
-  criticalDamage: 'Crit DMG',
-  flatDodgeChance: 'Dodge',
-  dodgeChance: 'Dodge',
-  attackSpeed: 'Atk Speed',
-  lifesteal: 'Lifesteal',
-  counterattack: 'Counter',
-  threat: 'Threat',
-  skillAmpModifier: 'Skill Amp',
-  damageDealtModifier: 'Damage Dealt',
-};
-
-function formatStat(key: string, val: number): string {
-  const label = STAT_LABELS[key] || key;
-  const isPercent = [
-    'criticalChance',
-    'criticalDamage',
-    'dodgeChance',
-    'flatDodgeChance',
-    'counterattack',
-    'skillAmpModifier',
-    'damageDealtModifier',
-  ].includes(key);
-  if (isPercent) {
-    const pct = Math.abs(val) <= 1.0 ? Math.round(val * 100) : val;
-    return `${label} ${pct > 0 ? '+' : ''}${pct}%`;
-  }
-  return `${label} ${val > 0 && key !== 'maxHp' ? '+' : ''}${val}`;
-}
 </script>
 
 <template>
@@ -60,13 +24,19 @@ function formatStat(key: string, val: number): string {
 
       <div class="header">
         <div class="nameRow">
-          <strong class="name" :class="`rarity-${item.rarity}`">{{ item.name }}</strong>
+          <a :href="`${basePath ?? base}/items/${item.id}`" class="name cardLink" :class="`rarity-${item.rarity}`">{{ item.name }}</a>
         </div>
 
         <div class="badgeRow">
           <span class="badge typeBadge">{{ item.category }}</span>
-          <span class="badge rarityBadge" :class="`rarity-${item.rarity}`">★ {{ item.rarity }}</span>
-          <span class="price">🪙 {{ item.price ?? '—' }}</span>
+          <span v-if="item.rarity != null" class="badge rarityBadge" :class="`rarity-${item.rarity}`">★ {{ item.rarity }}</span>
+          <span class="price">
+            <svg class="coin" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
+              <circle cx="8" cy="8" r="7" fill="#f59e0b" stroke="#b45309" stroke-width="1.5" />
+              <circle cx="8" cy="8" r="3.5" fill="none" stroke="#b45309" stroke-width="1.2" />
+            </svg>
+            {{ item.price ?? '—' }}
+          </span>
         </div>
       </div>
     </div>
@@ -92,6 +62,7 @@ function formatStat(key: string, val: number): string {
 
 <style scoped>
 .equipCard {
+  position: relative;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 10px;
@@ -104,6 +75,23 @@ function formatStat(key: string, val: number): string {
 
 .equipCard:hover {
   transform: translateY(-2px);
+  border-color: var(--brand-primary);
+}
+
+/* Stretch the name link over the whole card so the card is clickable */
+.cardLink {
+  text-decoration: none;
+}
+
+.cardLink::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 10px;
+}
+
+.cardLink:hover {
+  text-decoration: none;
 }
 
 .cardTop {
@@ -163,6 +151,9 @@ function formatStat(key: string, val: number): string {
 }
 
 .price {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
   font-size: 0.78rem;
   font-weight: 600;
   color: var(--text-gold);

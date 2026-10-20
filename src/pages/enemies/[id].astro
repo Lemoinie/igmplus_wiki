@@ -1,7 +1,7 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import UnitDetail from '../../components/UnitDetail.vue';
-import { getAllEnemies } from '../../lib/data';
+import { getAllEnemies, getAllItems } from '../../lib/data';
 import { base } from '../../lib/base';
 
 export function getStaticPaths() {
@@ -22,8 +22,10 @@ const stats = [
   { label: 'DMG', value: `${unit.damage?.min ?? '?'} – ${unit.damage?.max ?? '?'}` },
 ];
 const tags = [unit.type, unit.isBoss ? 'Boss' : '', unit.expGiven ? `EXP ${unit.expGiven}` : ''].filter(Boolean);
+const itemIds = new Set(getAllItems().map((i: any) => i.id));
 const drops = (unit.drops ?? []).map((d: any) => ({
   name: d.name || d.item,
+  href: itemIds.has(d.item) ? `${base}/items/${d.item}` : undefined,
   qty: d.qty,
   chance: d.chance,
   sprite: d.sprite,

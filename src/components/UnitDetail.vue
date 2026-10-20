@@ -1,9 +1,23 @@
 <script setup lang="ts">
 export interface DetailStat { label: string; value: string | number; }
 export interface DetailSkill { kind: string; name: string; description?: string; }
-export interface DetailLink { name: string; href: string; sprite: string; tier?: number; }
-export interface DetailLinkGroup { title: string; items: DetailLink[]; emptyText?: string; }
-export interface DetailDrop { name: string; qty: number; chance: number; }
+export interface DetailLink {
+  name: string;
+  /** Omit for entries without a page; they render as plain (non-clickable) cards. */
+  href?: string;
+  sprite: string;
+  tier?: number;
+  /** Extra info shown next to the name, e.g. "×2" or "12.5%". */
+  meta?: string;
+}
+export interface DetailLinkGroup {
+  title: string;
+  items: DetailLink[];
+  emptyText?: string;
+  /** Smaller cards, for long lists. */
+  compact?: boolean;
+}
+export interface DetailDrop { name: string; qty: number; chance: number; sprite?: string; href?: string; }
 
 import { base } from '../lib/base';
 
@@ -72,8 +86,15 @@ defineProps<{
 
     <section v-for="g in links" :key="g.title" class="panel">
       <h2>{{ g.title }}</h2>
-      <div v-if="g.items.length" class="linkGrid">
-        <a v-for="i in g.items" :key="i.href" :href="i.href" class="linkCard">
+      <div v-if="g.items.length" class="linkGrid" :class="{ compact: g.compact }">
+        <component
+          :is="i.href ? 'a' : 'div'"
+          v-for="i in g.items"
+          :key="i.href || i.name"
+          :href="i.href"
+          class="linkCard"
+          :class="{ static: !i.href }"
+        >
           <span class="linkSprite">
             <img
               :src="`${basePath ?? base}/images/${i.sprite}.png`"
@@ -81,11 +102,13 @@ defineProps<{
               class="sprite"
               width="48"
               height="48"
+              loading="lazy"
             />
           </span>
           <span class="linkName">{{ i.name }}</span>
           <span v-if="i.tier" class="linkTier">T{{ i.tier }}</span>
-        </a>
+          <span v-if="i.meta" class="linkMeta">{{ i.meta }}</span>
+        </component>
       </div>
       <p v-else class="empty">{{ g.emptyText || 'None' }}</p>
     </section>
@@ -106,7 +129,8 @@ defineProps<{
                 height="22"
                 loading="lazy"
               />
-              <span>{{ d.name }}</span>
+              <a v-if="d.href" :href="d.href">{{ d.name }}</a>
+              <span v-else>{{ d.name }}</span>
             </td>
             <td>{{ d.qty }}</td>
             <td>{{ d.chance }}%</td>
@@ -181,7 +205,7 @@ defineProps<{
   color: var(--text-gold);
 }
 
-.description { margin: 0; font-size: 0.9rem; font-style: italic; color: var(--text-muted); }
+.description { margin: 0; font-size: 0.9rem; font-style: italic; color: var(--text-muted); white-space: pre-line; }
 
 .panel {
   background: var(--bg-card);
@@ -202,7 +226,7 @@ defineProps<{
 
 .statsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+  grid-template-columns: repeat(auto-fill, 110px);
   gap: 8px;
 }
 
@@ -259,6 +283,7 @@ defineProps<{
 }
 
 .linkCard:hover { border-color: var(--brand-primary); text-decoration: none; }
+.linkCard.static:hover { border-color: var(--border-subtle); }
 
 .linkSprite {
   width: 52px;
@@ -272,6 +297,12 @@ defineProps<{
 
 .linkName { font-weight: 700; }
 .linkTier { font-size: 0.75rem; font-weight: 700; color: var(--text-gold); }
+.linkMeta { font-size: 0.78rem; font-weight: 700; color: var(--text-secondary); }
+
+.linkGrid.compact { gap: 6px; }
+.linkGrid.compact .linkCard { gap: 6px; padding: 3px 10px 3px 3px; font-size: 0.85rem; }
+.linkGrid.compact .linkSprite { width: 32px; height: 32px; }
+.linkGrid.compact .linkSprite img { width: 28px; height: 28px; }
 .empty { margin: 0; color: var(--text-muted); font-size: 0.88rem; }
 
 .dropTable { width: 100%; border-collapse: collapse; font-size: 0.88rem; }
@@ -314,7 +345,7 @@ defineProps<{
     height: 88px;
   }
   .statsGrid {
-    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    grid-template-columns: repeat(auto-fill, 96px);
     gap: 6px;
   }
   .statCell {

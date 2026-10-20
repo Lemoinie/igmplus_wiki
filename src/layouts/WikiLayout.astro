@@ -59,8 +59,8 @@ const searchEntries = [
     id: `equip-${e.id}`,
     title: e.name,
     category: 'Item' as const,
-    url: `${base}/items#${e.id}`,
-    description: `★${e.rarity} ${e.category} · Price: ${e.price}`
+    url: `${base}/items/${e.id}`,
+    description: `${e.rarity != null ? `★${e.rarity} ` : ''}${e.category} · Price: ${e.price}`
   })),
   ...petsList.map((p: any) => ({
     id: `pet-${p.id}`,

@@ -1,5 +1,6 @@
 import type { ClassDefinition } from '../types';
 import itemsCatalog from '../../data/items.json';
+import recipesList from '../../data/recipes.json';
 
 // Shared Item Map helper for drops and loot resolution
 function getItemCatalogMap(): Map<string, any> {
@@ -430,3 +431,87 @@ export function getAllStatusEffects(): any[] {
   return statusEffectsList;
 }
 
+
+// Item usage: where an item comes from and who can use it (for /items/[id])
+export interface ItemRef { id: string; name: string; sprite: string; qty: number; hasPage: boolean; }
+export interface ItemUsage {
+  droppedBy: Array<{ id: string; name: string; sprite: string; qty: number; chance: number }>;
+  foundIn: Array<{ id: string; name: string; sprite: string; type: string }>;
+  recipe: ItemRef[];
+  usedIn: ItemRef[];
+  usableBy: ClassDefinition[];
+}
+
+// Item category -> class weapon/armor type
+const WEAPON_CATEGORY: Record<string, string> = {
+  Sword: 'sword',
+  Axe: 'axe',
+  Bow: 'bow',
+  Dagger: 'dagger',
+  Staff: 'staff',
+};
+const ARMOR_CATEGORY: Record<string, string> = {
+  HeavyArmor: 'heavy',
+  MediumArmor: 'medium',
+  LightArmor: 'light',
+};
+
+export function getItemUsageMap(): Map<string, ItemUsage> {
+  const items = getAllItems();
+  const itemMap = getItemCatalogMap();
+  const pageIds = new Set(items.map((i) => i.id));
+  const toRef = (id: string, qty: number): ItemRef => {
+    const info = resolveDropInfo(id, itemMap);
+    return { id, name: info.name, sprite: info.sprite, qty, hasPage: pageIds.has(id) };
+  };
+
+  const usage = new Map<string, ItemUsage>();
+  const get = (id: string): ItemUsage => {
+    if (!usage.has(id)) usage.set(id, { droppedBy: [], foundIn: [], recipe: [], usedIn: [], usableBy: [] });
+    return usage.get(id)!;
+  };
+
+  for (const enemy of getAllEnemies()) {
+    for (const d of enemy.drops || []) {
+      if (!d.item) continue;
+      get(d.item).droppedBy.push({ id: enemy.id, name: enemy.name, sprite: enemy.sprite, qty: d.qty, chance: d.chance });
+    }
+  }
+
+  const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
+  Object.values(placeModules).forEach((mod: any) => {
+    const p = (mod as any).default || mod;
+    if (!p?.id) return;
+    for (const itemId of new Set<string>(p.loot || [])) {
+      get(itemId).foundIn.push({ id: p.id, name: p.name || p.id, sprite: p.sprite, type: p.type || 'dungeon' });
+    }
+  });
+
+  for (const r of recipesList as any[]) {
+    if (!r?.output_item) continue;
+    const out = get(r.output_item);
+    if (!out.recipe.length) out.recipe = (r.ingredients || []).map((ing: any) => toRef(ing.item, ing.qty));
+    for (const ing of r.ingredients || []) {
+      const used = get(ing.item).usedIn;
+      if (!used.some((u) => u.id === r.output_item)) used.push(toRef(r.output_item, ing.qty));
+    }
+  }
+
+  const units = getAllUnits();
+  for (const item of items) {
+    const weapon = WEAPON_CATEGORY[item.category];
+    const armor = ARMOR_CATEGORY[item.category];
+    if (!weapon && !armor) continue;
+    get(item.id).usableBy = units
+      .filter((u) => (weapon ? u.weaponType === weapon : u.armorType === armor))
+      .sort((a, b) => a.tier - b.tier || a.name.localeCompare(b.name));
+  }
+
+  for (const u of usage.values()) {
+    u.droppedBy.sort((a, b) => b.chance - a.chance);
+    u.foundIn.sort((a, b) => (PLACE_TYPE_ORDER[a.type] ?? 99) - (PLACE_TYPE_ORDER[b.type] ?? 99) || a.name.localeCompare(b.name));
+    u.usedIn.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  return usage;
+}
