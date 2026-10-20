@@ -346,7 +346,7 @@ function getAtkTypeClass(atkType?: string): string {
                     class="monsterSprite sprite"
                     width="44"
                     height="44"
-                    loading="lazy"
+                    loading="eager"
                   />
                 </div>
               </td>
@@ -476,7 +476,7 @@ function getAtkTypeClass(atkType?: string): string {
                 class="monsterSprite sprite"
                 width="48"
                 height="48"
-                loading="lazy"
+                loading="eager"
               />
             </div>
 

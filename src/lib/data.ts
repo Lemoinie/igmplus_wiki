@@ -1,4 +1,32 @@
 import type { ClassDefinition } from '../types';
+import itemsCatalog from '../../data/items.json';
+
+// Shared Item Map helper for drops and loot resolution
+function getItemCatalogMap(): Map<string, any> {
+  const itemModules = import.meta.glob('../data/items/**/*.json', { eager: true });
+  const itemMap = new Map<string, any>();
+
+  // 1. Seed base items/materials from data/items.json
+  if (itemsCatalog && Array.isArray((itemsCatalog as any).items)) {
+    for (const item of (itemsCatalog as any).items) {
+      if (item?.key) {
+        itemMap.set(item.key, {
+          id: item.key,
+          name: item.name || item.key,
+          sprite: item.sprite,
+        });
+      }
+    }
+  }
+
+  // 2. Overlay individual item JSONs from src/data/items/
+  Object.values(itemModules).forEach((mod: any) => {
+    const item = (mod as any).default || mod;
+    if (item?.id) itemMap.set(item.id, item);
+  });
+
+  return itemMap;
+}
 
 // Adventurer Classes (units + summons)
 export function getAllClasses(): ClassDefinition[] {
@@ -273,12 +301,7 @@ export function getAllEnemies(): any[] {
   });
 
   // Map item metadata for drop resolution
-  const itemModules = import.meta.glob('../data/items/**/*.json', { eager: true });
-  const itemMap = new Map<string, any>();
-  Object.values(itemModules).forEach((mod: any) => {
-    const item = (mod as any).default || mod;
-    if (item?.id) itemMap.set(item.id, item);
-  });
+  const itemMap = getItemCatalogMap();
 
   // Map skills metadata for active/passive resolution
   const skillModules = import.meta.glob('../data/adventurers/skills/*.json', { eager: true });
@@ -330,12 +353,7 @@ export function getAllPlaces(): any[] {
   });
 
   // Items for loot resolution
-  const itemModules = import.meta.glob('../data/items/**/*.json', { eager: true });
-  const itemMap = new Map<string, any>();
-  Object.values(itemModules).forEach((mod: any) => {
-    const item = (mod as any).default || mod;
-    if (item?.id) itemMap.set(item.id, item);
-  });
+  const itemMap = getItemCatalogMap();
 
   const list: any[] = [];
   Object.values(placeModules).forEach((mod: any) => {

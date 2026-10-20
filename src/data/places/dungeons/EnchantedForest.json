@@ -50,21 +50,30 @@
     }
   ],
   "loot": [
-    "Acorn",
-    "Boots",
-    "CentaurHoof",
-    "ClothHat",
+    "AlphaWolfFang",
+    "AncientSeed",
+    "Apple",
+    "BeastPelt",
+    "BoarTusk",
+    "Cheese",
     "ClothRobe",
     "CopperArmor",
-    "CopperDagger",
     "CopperOre",
     "CopperSword",
-    "LeatherArmor",
+    "CottontailFur",
+    "LeatherBoots",
     "LeatherGloves",
-    "WolfSkin",
+    "LeatherJacket",
+    "LivingSap",
+    "MeatChop",
+    "PlantFiber",
+    "PrimordialEssence",
+    "Tomato",
+    "WerewolfFang",
+    "WildEgg",
     "Wood",
     "WoodenBow",
     "WoodenBuckler",
-    "WoodenStaff"
+    "WoodenEgg"
   ]
 }

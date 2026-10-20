@@ -13,29 +13,32 @@ igmplus_wiki/
 ├── public/
 │   └── images/              # Pixel-art sprites (PNG files: unit_*.png, item_*.png)
 │
+├── scripts/
+│   └── validate.mjs         # Fast data integrity & reference checker (npm run validate)
+│
 ├── src/
-│   ├── data/                # Structured Game Data (JSON)
-│   │   ├── classes.json     # All adventurer classes & promotion paths
-│   │   ├── equipment.json   # All weapons, armors, and accessories
-│   │   ├── pets.json        # Tamer pets and undead summons
-│   │   ├── traits.json      # Adventurer recruitment traits
-│   │   ├── skills.json      # Skill reference data (no page; kept for future use)
-│   │   ├── enemies.json     # Monster bestiary stats and drops
-│   │   └── dungeons.json    # Dungeon encounter pools and loot
+│   ├── data/                # Modular Game Data (1 JSON file per entity)
+│   │   ├── adventurers/     # Adventurer classes, summons, skills, traits
+│   │   │   ├── units/       # Base & advanced classes (WyrmRider.json, etc.)
+│   │   │   ├── summons/     # Minions & summons (Skeleton.json, etc.)
+│   │   │   ├── skills/      # Active & passive skill definitions
+│   │   │   └── traits/      # Class traits
+│   │   ├── items/           # Weapons, armors, accessories, materials
+│   │   ├── pets/            # Guild pets & egg types
+│   │   ├── enemies/         # Monster bestiary stats, drops, and skills
+│   │   └── places/          # Locations (dungeons/, raids/, guildactivities/)
 │   │
 │   ├── content/             # Long-Form Written Content (Markdown)
 │   │   ├── mechanics/       # Combat formulas, defense scaling, attack speed
-│   │   ├── guides/          # Strategy guides and progression notes
-│   │   └── changelog/       # Mod patch notes and version logs
+│   │   └── notices/         # Patch notes and announcements
 │   │
 │   ├── components/          # Reusable Vue UI Presentation Components
-│   │   ├── ClassCard.vue
-│   │   ├── EquipmentCard.vue
-│   │   ├── PetCard.vue
-│   │   ├── TraitCard.vue
+│   │   ├── LocationBrowser.vue
+│   │   ├── ClassBrowser.vue
+│   │   ├── EquipmentBrowser.vue
+│   │   ├── PetTable.vue
 │   │   ├── EnemyCard.vue
-│   │   ├── FilterPanel.vue
-│   │   ├── SearchBar.vue
+│   │   ├── TraitBrowser.vue
 │   │   └── Sidebar.vue
 │   │
 │   ├── layouts/
@@ -48,8 +51,18 @@ igmplus_wiki/
 │       ├── pets/            # Pets & summons
 │       ├── traits/          # Adventurer traits
 │       ├── enemies/         # Enemies & Bestiary
-│       ├── dungeons/        # Dungeons & Raids
+│       ├── dungeons/        # Locations, Monster encounters & loot
 │       └── mechanics/       # Dynamic Markdown mechanics renderer
+```
+
+---
+
+## ⚡ Useful Commands for Contributors
+
+```bash
+npm run dev        # Launch local preview server with instant hot-reload
+npm run validate   # Check for broken item IDs, missing skills, or stat typos
+npm run build      # Build static site bundle to test compilation
 ```
 
 ---
