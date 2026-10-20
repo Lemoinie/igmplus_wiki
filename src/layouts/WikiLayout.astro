@@ -258,14 +258,6 @@ const ogImage = image
                     <strong>Maintenance Notice:</strong> {maintenance.softMessage}
                   </span>
                 </div>
-                <button
-                  type="button"
-                  id="dismissBannerBtn"
-                  class="dismissBtn"
-                  aria-label="Dismiss banner"
-                >
-                  ✕
-                </button>
               </div>
             )}
 
@@ -307,22 +299,6 @@ const ogImage = image
           </footer>
         </div>
       </div>
-    )}
-
-    {isSoft && (
-      <script>
-        const banner = document.getElementById('maintenanceBanner');
-        const dismissBtn = document.getElementById('dismissBannerBtn');
-        if (banner && dismissBtn) {
-          if (sessionStorage.getItem('igm_dismiss_maintenance') === 'true') {
-            banner.style.display = 'none';
-          }
-          dismissBtn.addEventListener('click', () => {
-            banner.style.display = 'none';
-            sessionStorage.setItem('igm_dismiss_maintenance', 'true');
-          });
-        }
-      </script>
     )}
 
     <Analytics />
@@ -500,29 +476,6 @@ const ogImage = image
 .bannerText strong {
   color: #fbbf24;
   margin-right: 4px;
-}
-
-.dismissBtn {
-  background: transparent;
-  border: 1px solid rgba(245, 158, 11, 0.25);
-  color: rgba(254, 243, 199, 0.75);
-  cursor: pointer;
-  width: 26px;
-  height: 26px;
-  border-radius: 6px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 0.85rem;
-  line-height: 1;
-  flex-shrink: 0;
-  transition: all 0.15s ease;
-}
-
-.dismissBtn:hover {
-  background: rgba(245, 158, 11, 0.25);
-  color: #ffffff;
-  border-color: rgba(245, 158, 11, 0.6);
 }
 
 /* Full Maintenance Page Screen */
