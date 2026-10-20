@@ -24,7 +24,7 @@ defineProps<{
 
       <div class="header">
         <div class="nameRow">
-          <a :href="`${basePath ?? base}/items/${item.id}`" class="name cardLink" :class="`rarity-${item.rarity}`">{{ item.name }}</a>
+          <a :href="`${basePath ?? base}/items/${item.id}`" class="name cardLink">{{ item.name }}</a>
         </div>
 
         <div class="badgeRow">
@@ -80,6 +80,7 @@ defineProps<{
 
 /* Stretch the name link over the whole card so the card is clickable */
 .cardLink {
+  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -91,6 +92,7 @@ defineProps<{
 }
 
 .cardLink:hover {
+  color: var(--text-primary);
   text-decoration: none;
 }
 
@@ -123,6 +125,7 @@ defineProps<{
 .name {
   font-size: 1.05rem;
   font-weight: 700;
+  color: var(--text-primary);
   line-height: 1.2;
 }
 
