@@ -228,16 +228,6 @@ function getAtkTypeClass(atkType?: string): string {
     <!-- Active Location Banner / Info -->
     <div v-if="selectedLocation" class="locationHeaderCard">
       <div class="locationHeaderMain">
-        <div v-if="selectedLocation.sprite" class="locationSpriteBox">
-          <img
-            :src="`${basePath ?? base}/images/${selectedLocation.sprite}.png`"
-            :alt="selectedLocation.name"
-            class="locationSprite sprite"
-            width="80"
-            height="80"
-          />
-        </div>
-
         <div class="locationMetaGroup">
           <div class="titleRow">
             <h2 class="locationTitle">{{ selectedLocation.name }}</h2>
@@ -250,11 +240,6 @@ function getAtkTypeClass(atkType?: string): string {
             <div v-if="selectedLocation.level" class="pill">
               <span class="pillLabel">Req. Level:</span>
               <strong class="pillVal">{{ selectedLocation.level }}</strong>
-            </div>
-
-            <div v-if="selectedLocation.encounterChance !== undefined" class="pill">
-              <span class="pillLabel">Encounter Chance:</span>
-              <strong class="pillVal">{{ selectedLocation.encounterChance }}% / room</strong>
             </div>
 
             <div class="pill">
@@ -360,10 +345,6 @@ function getAtkTypeClass(atkType?: string): string {
                     </strong>
                     <span v-if="m.isBoss || m.role === 'Boss'" class="badge bossBadge">Boss</span>
                   </div>
-                  <div class="roleMeta">
-                    <span v-if="m.role && m.role !== 'Boss'" class="badge roleBadge">{{ m.role }}</span>
-                    <span v-if="m.rate" class="rateText">Rate: <strong>{{ m.rate }}</strong></span>
-                  </div>
                 </div>
               </td>
 
@@ -398,7 +379,6 @@ function getAtkTypeClass(atkType?: string): string {
               <td class="tdAtk">
                 <span
                   class="atkTypeBadge"
-                  :class="getAtkTypeClass(m.attackType)"
                 >
                   {{ m.attackType || 'Melee, Physical' }}
                 </span>
@@ -411,20 +391,19 @@ function getAtkTypeClass(atkType?: string): string {
                     v-for="(drop, dIdx) in m.drops"
                     :key="`${drop.item}-${dIdx}`"
                     class="dropItemPill"
-                    :title="`${getDropName(drop)} ×${drop.qty} (${drop.chance}%)`"
+                    :title="`${getDropName(drop)}${drop.qty > 1 ? ` ×${drop.qty}` : ''} (${drop.chance}%)`"
                   >
                     <div class="dropSpriteWrapper">
                       <img
                         :src="`${basePath ?? base}/images/${getDropSprite(drop)}.png`"
                         :alt="getDropName(drop)"
                         class="dropSprite sprite"
-                        width="18"
-                        height="18"
-                        loading="lazy"
+                        width="24"
+                        height="24"
+                        loading="eager"
                       />
                     </div>
-                    <span class="dropNameText">{{ getDropName(drop) }}</span>
-                    <span class="dropQtyText">×{{ drop.qty }}</span>
+                    <span v-if="drop.qty > 1" class="dropQtyText">×{{ drop.qty }}</span>
                     <span class="dropRateBadge">{{ drop.chance }}%</span>
                   </div>
                 </div>
@@ -433,10 +412,9 @@ function getAtkTypeClass(atkType?: string): string {
 
               <!-- 10. ACTIVE SKILL -->
               <td class="tdSkill">
-                <div v-if="m.activeSkillDetail" class="skillBox activeSkillBox">
+                <div v-if="m.activeSkillDetail" class="skillBox">
                   <div class="skillHeader">
-                    <span class="skillTag activeTag">Active</span>
-                    <strong class="skillTitle">{{ m.activeSkillDetail.name }}</strong>
+                    <strong class="skillTitle" style="color:red">[{{ m.activeSkillDetail.name }}]</strong>
                   </div>
                   <p class="skillDesc">{{ m.activeSkillDetail.description }}</p>
                 </div>
@@ -445,10 +423,9 @@ function getAtkTypeClass(atkType?: string): string {
 
               <!-- 11. PASSIVE SKILL -->
               <td class="tdSkill">
-                <div v-if="m.passiveSkillDetail" class="skillBox passiveSkillBox">
+                <div v-if="m.passiveSkillDetail" class="skillBox">
                   <div class="skillHeader">
-                    <span class="skillTag passiveTag">Passive</span>
-                    <strong class="skillTitle">{{ m.passiveSkillDetail.name }}</strong>
+                    <strong class="skillTitle" style="color:green">[{{ m.passiveSkillDetail.name }}]</strong>
                   </div>
                   <p class="skillDesc">{{ m.passiveSkillDetail.description }}</p>
                 </div>
@@ -489,8 +466,7 @@ function getAtkTypeClass(atkType?: string): string {
               </div>
 
               <div class="cardMetaRow">
-                <span v-if="m.role && m.role !== 'Boss'" class="badge roleBadge">{{ m.role }}</span>
-                <span v-if="m.rate" class="rateText">Rate: <strong>{{ m.rate }}</strong></span>
+                <span v-if="m.rate && m.rate !== 'Event'" class="rateText">Rate: <strong>{{ m.rate }}</strong></span>
                 <span
                   class="atkTypeBadge"
                   :class="getAtkTypeClass(m.attackType)"
@@ -532,20 +508,21 @@ function getAtkTypeClass(atkType?: string): string {
               <div
                 v-for="(drop, dIdx) in m.drops"
                 :key="`card-drop-${drop.item}-${dIdx}`"
-                class="dropItemPill"
+                class="dropItemPill cardDropPill"
+                :title="`${getDropName(drop)}${drop.qty > 1 ? ` ×${drop.qty}` : ''} (${drop.chance}%)`"
               >
                 <div class="dropSpriteWrapper">
                   <img
                     :src="`${basePath ?? base}/images/${getDropSprite(drop)}.png`"
                     :alt="getDropName(drop)"
                     class="dropSprite sprite"
-                    width="18"
-                    height="18"
+                    width="22"
+                    height="22"
                     loading="lazy"
                   />
                 </div>
                 <span class="dropNameText">{{ getDropName(drop) }}</span>
-                <span class="dropQtyText">×{{ drop.qty }}</span>
+                <span v-if="drop.qty > 1" class="dropQtyText">×{{ drop.qty }}</span>
                 <span class="dropRateBadge">{{ drop.chance }}%</span>
               </div>
             </div>
@@ -942,22 +919,22 @@ function getAtkTypeClass(atkType?: string): string {
 }
 
 .monstersTable th {
-  padding: 0.75rem 0.85rem;
-  font-size: 0.72rem;
+  padding: 0.5rem 0.35rem;
+  font-size: 0.68rem;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.05em;
+  letter-spacing: 0.03em;
   color: var(--text-gold);
   white-space: nowrap;
 }
 
-.thImage { width: 56px; text-align: center; }
-.thName { min-width: 150px; }
-.thStat { width: 60px; text-align: center; }
-.thDmg { min-width: 80px; }
-.thAtk { width: 120px; text-align: center; }
-.thDrops { min-width: 220px; }
-.thSkill { min-width: 220px; }
+.thImage { width: 42px; text-align: center; }
+.thName { width: 90px; min-width: 85px; }
+.thStat { width: 40px; text-align: center; }
+.thDmg { width: 56px; text-align: center; }
+.thAtk { width: 78px; text-align: center; }
+.thDrops { width: 110px; min-width: 100px; }
+.thSkill { width: 135px; min-width: 120px; }
 
 .monstersTable tbody tr {
   border-bottom: 1px solid var(--border-subtle);
@@ -981,7 +958,7 @@ function getAtkTypeClass(atkType?: string): string {
 }
 
 .monstersTable td {
-  padding: 0.7rem 0.85rem;
+  padding: 0.45rem 0.35rem;
   vertical-align: middle;
 }
 
@@ -1081,24 +1058,24 @@ function getAtkTypeClass(atkType?: string): string {
 }
 
 .statHp {
-  color: #34d399;
+  color: #ffffff;
 }
 
 .statDef {
-  color: #cbd5e1;
+  color: #ffffff;
 }
 
 .statMdef {
-  color: #c084fc;
+  color: #ffffff;
 }
 
 .statDmg {
-  color: #f87171;
+  color: #ffffff;
   white-space: nowrap;
 }
 
 .statExp {
-  color: #38bdf8;
+  color: #ffffff;
 }
 
 /* Column 8: Atk Type */
@@ -1108,12 +1085,15 @@ function getAtkTypeClass(atkType?: string): string {
 
 .atkTypeBadge {
   display: inline-block;
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 600;
-  padding: 2px 7px;
+  padding: 2px 5px;
   border-radius: 4px;
-  border: 1px solid transparent;
-  white-space: nowrap;
+  border: 0px solid transparent;
+  line-height: 1.2;
+  white-space: normal;
+  max-width: 78px;
+  text-align: center;
 }
 
 .atk-magic {
@@ -1143,37 +1123,45 @@ function getAtkTypeClass(atkType?: string): string {
 /* Column 9: Drops */
 .dropsList {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   gap: 4px;
+  align-items: center;
 }
 
 .dropItemPill {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
+  gap: 3px;
   background: var(--bg-inset);
   border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 2px 6px 2px 3px;
-  font-size: 0.76rem;
-  width: fit-content;
+  border-radius: 5px;
+  padding: 2px 4px 2px 2px;
+  font-size: 0.73rem;
+  white-space: nowrap;
+  transition: border-color 0.15s ease, background 0.15s ease;
+}
+
+.dropItemPill:hover {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: var(--bg-card-hover);
 }
 
 .dropSpriteWrapper {
-  width: 20px;
-  height: 20px;
+  width: 26px;
+  height: 26px;
   display: flex;
   align-items: center;
   justify-content: center;
   background: rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  flex-shrink: 0;
 }
 
 .dropSprite {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  width: 16px;
-  height: 16px;
+  width: 22px;
+  height: 22px;
   object-fit: contain;
 }
 
@@ -1184,23 +1172,41 @@ function getAtkTypeClass(atkType?: string): string {
 
 .dropQtyText {
   color: var(--text-muted);
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 0.72rem;
+  margin-left: 1px;
 }
 
 .dropRateBadge {
   color: var(--text-gold);
   font-weight: 700;
-  margin-left: 2px;
+  font-size: 0.72rem;
+  margin-left: 1px;
+}
+
+.cardDropPill {
+  padding: 2px 6px 2px 2px;
+}
+
+.cardDropPill .dropSpriteWrapper {
+  width: 24px;
+  height: 24px;
+}
+
+.cardDropPill .dropSprite {
+  width: 20px;
+  height: 20px;
 }
 
 /* Columns 10 & 11: Skills */
 .skillBox {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 2px;
   border-radius: 6px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.25rem 0.4rem;
   border: 1px solid transparent;
+  max-width: 135px;
 }
 
 .activeSkillBox {
@@ -1238,15 +1244,16 @@ function getAtkTypeClass(atkType?: string): string {
 }
 
 .skillTitle {
-  font-size: 0.82rem;
+  font-size: 0.76rem;
+  font-weight: 700;
   color: var(--text-primary);
 }
 
 .skillDesc {
   margin: 0;
-  font-size: 0.74rem;
+  font-size: 0.68rem;
   color: var(--text-secondary);
-  line-height: 1.35;
+  line-height: 1.25;
 }
 
 .emptyVal {
@@ -1377,7 +1384,7 @@ function getAtkTypeClass(atkType?: string): string {
 }
 
 /* Responsive breakpoint: switch to card when width doesn't fit table anymore */
-@media (max-width: 1024px) {
+@media (max-width: 1080px) {
   .tableWrapper {
     display: none;
   }

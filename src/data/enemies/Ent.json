@@ -15,7 +15,7 @@
     "min": "11",
     "max": "14"
   },
-  "expGiven": "Logger.BARD_SHIELD",
+  "expGiven": 120,
   "drops": [
     {
       "item": "Wood",
