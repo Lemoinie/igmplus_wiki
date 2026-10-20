@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import type { ClassDefinition } from '../types';
 import ClassCard from './ClassCard.vue';
 import ClassTreeNode from './ClassTreeNode.vue';
@@ -13,6 +13,20 @@ const props = defineProps<{
 const categories = ['Footman', 'Apprentice', 'Archer', 'Rogue', 'Outlander', 'Summon'] as const;
 const activeCategory = ref<string>('Footman');
 const searchQuery = ref('');
+
+// Keep the selected tree in the URL (?tree=Rogue) so it can be linked to and survives Back.
+function selectCategory(cat: string) {
+  activeCategory.value = cat;
+  searchQuery.value = '';
+  const url = new URL(window.location.href);
+  url.searchParams.set('tree', cat);
+  window.history.replaceState({}, '', url.toString());
+}
+
+onMounted(() => {
+  const tree = new URLSearchParams(window.location.search).get('tree');
+  if (tree && (categories as readonly string[]).includes(tree)) activeCategory.value = tree;
+});
 
 const categoryIcons: Record<string, string> = {
   Footman: 'unit_footman',
@@ -114,7 +128,7 @@ function getCatCount(cat: string): number {
         type="button"
         class="catBtn"
         :class="{ active: activeCategory === cat }"
-        @click="activeCategory = cat; searchQuery = ''"
+        @click="selectCategory(cat)"
       >
         <div class="catIconBox">
           <img

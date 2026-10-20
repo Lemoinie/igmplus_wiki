@@ -1,0 +1,141 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import UnitDetail from '../../components/UnitDetail.vue';
+import { getAllItems, getAllUnits, getItemUsageMap } from '../../lib/data';
+import { statLabel, statValue } from '../../lib/stats';
+import { base } from '../../lib/base';
+
+export function getStaticPaths() {
+  const usageMap = getItemUsageMap();
+  return getAllItems().map((item) => ({
+    params: { id: item.id },
+    props: { item, usage: usageMap.get(item.id) },
+  }));
+}
+
+const { item, usage } = Astro.props as { item: any; usage?: any };
+
+const tags = [
+  item.category,
+  item.rarity != null ? `★ ${item.rarity}` : '',
+  item.price ? `${item.price.toLocaleString('en-US')} gold` : '',
+].filter(Boolean);
+
+const stats = Object.entries(item.stats ?? {}).map(([key, val]) => ({
+  label: statLabel(key),
+  value: statValue(key, Number(val)),
+}));
+
+const itemHref = (ref: any) => (ref.hasPage ? `${base}/items/${ref.id}` : undefined);
+const placeLabel: Record<string, string> = {
+  dungeon: 'Dungeon',
+  raid: 'Raid',
+  epic_raid: 'Epic Raid',
+  guildactivity: 'Guild Activity',
+};
+
+const droppedBy = usage?.droppedBy ?? [];
+const foundIn = usage?.foundIn ?? [];
+const recipe = usage?.recipe ?? [];
+const usedIn = usage?.usedIn ?? [];
+const usableBy = usage?.usableBy ?? [];
+
+// Collapse class lists: if every class of a line can use the item, show the line once instead of each class.
+function groupUsableBy(classes: any[]) {
+  const lineSize = new Map<string, number>();
+  const lineSprite = new Map<string, string>();
+  for (const u of getAllUnits()) {
+    lineSize.set(u.category, (lineSize.get(u.category) ?? 0) + 1);
+    if (u.tier === 1) lineSprite.set(u.category, u.sprite);
+  }
+  const byLine = new Map<string, any[]>();
+  for (const c of classes) byLine.set(c.category, [...(byLine.get(c.category) ?? []), c]);
+
+  const lines: any[] = [];
+  const singles: any[] = [];
+  for (const [line, list] of byLine) {
+    if (list.length === lineSize.get(line)) {
+      lines.push({
+        name: `All ${line} classes`,
+        href: `${base}/classes?tree=${line}`,
+        sprite: lineSprite.get(line) ?? list[0].sprite,
+        meta: `${list.length} classes`,
+      });
+    } else {
+      singles.push(...list.map((c) => ({ name: c.name, href: `${base}/classes/${c.id}`, sprite: c.sprite, tier: c.tier })));
+    }
+  }
+  return { lines, singles };
+}
+const usableGroups = groupUsableBy(usableBy);
+
+const links = [
+  {
+    title: `Dropped By (${droppedBy.length})`,
+    items: droppedBy.map((e: any) => ({
+      name: e.name,
+      href: `${base}/enemies/${e.id}`,
+      sprite: e.sprite,
+      meta: `${e.qty > 1 ? `×${e.qty} · ` : ''}${e.chance}%`,
+    })),
+    emptyText: 'Not dropped by any monster.',
+  },
+  {
+    title: `Location Loot (${foundIn.length})`,
+    items: foundIn.map((p: any) => ({
+      name: p.name,
+      href: `${base}/dungeons?location=${p.id}`,
+      sprite: p.sprite,
+      meta: placeLabel[p.type] ?? p.type,
+    })),
+    emptyText: 'Not found in any location loot table.',
+  },
+  ...(recipe.length
+    ? [{
+        title: 'Crafting Recipe',
+        items: recipe.map((r: any) => ({ name: r.name, href: itemHref(r), sprite: r.sprite, meta: `×${r.qty}` })),
+      }]
+    : []),
+  ...(usedIn.length
+    ? [{
+        title: `Used to Craft (${usedIn.length})`,
+        items: usedIn.map((r: any) => ({ name: r.name, href: itemHref(r), sprite: r.sprite, meta: `needs ×${r.qty}` })),
+        compact: usedIn.length > 8,
+      }]
+    : []),
+  ...(usableBy.length
+    ? [{
+        title: `Usable By (${usableBy.length} classes)`,
+        items: [...usableGroups.lines, ...usableGroups.singles],
+        compact: usableGroups.singles.length > 8,
+      }]
+    : []),
+];
+
+const description = String(item.description ?? '').replace(/^"|"$/g, '');
+---
+
+<WikiLayout title={item.name} description={`${item.name}: stats, drop sources and crafting in Idle Guild Master Modded.`}>
+  <UnitDetail
+    client:load
+    name={item.name}
+    sprite={item.sprite}
+    tags={tags}
+    description={description}
+    stats={stats}
+    links={links}
+    backHref={`${base}/items`}
+    backLabel="Back to Items"
+    basePath={base}
+  />
+  {item.notes && <p class="itemNotes">{item.notes}</p>}
+</WikiLayout>
+
+<style>
+.itemNotes {
+  max-width: 860px;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  color: var(--text-gold);
+}
+</style>

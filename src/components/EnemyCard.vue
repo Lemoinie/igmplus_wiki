@@ -118,6 +118,7 @@ function isValidExp(val: any): boolean {
               loading="lazy"
             />
           </div>
+          <span class="dropName">{{ getDropName(drop) }}</span>
           <span class="dropQty">×{{ drop.qty }}</span>
           <span class="dropChance">{{ drop.chance }}%</span>
         </div>
@@ -404,6 +405,14 @@ function isValidExp(val: any): boolean {
   width: 18px;
   height: 18px;
   object-fit: contain;
+}
+
+.dropName {
+  font-size: 0.72rem;
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.2;
+  overflow-wrap: anywhere;
 }
 
 .dropQty {

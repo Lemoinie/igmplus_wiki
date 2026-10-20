@@ -20,14 +20,22 @@ const categories = computed(() => {
 });
 
 const rarities = computed(() => {
-  return [...new Set(props.items.map((i) => i.rarity))].sort((a, b) => a - b);
+  return [...new Set(props.items.map((i) => i.rarity))]
+    .filter((r) => r != null)
+    .sort((a, b) => a - b);
 });
+
+const hasUnrated = computed(() => props.items.some((i) => i.rarity == null));
+
+function rarityKey(r: number | null | undefined): string {
+  return r == null ? 'none' : String(r);
+}
 
 const filtered = computed(() => {
   const q = query.value.trim().toLowerCase();
   let list = props.items.filter((i) => {
     if (selectedCategory.value !== 'all' && i.category !== selectedCategory.value) return false;
-    if (selectedRarity.value !== 'all' && String(i.rarity) !== selectedRarity.value) return false;
+    if (selectedRarity.value !== 'all' && rarityKey(i.rarity) !== selectedRarity.value) return false;
     if (q) {
       const match =
         i.name.toLowerCase().includes(q) ||
@@ -107,6 +115,7 @@ function goToPage(page: number) {
         <select v-model="selectedRarity">
           <option value="all">All Rarities</option>
           <option v-for="r in rarities" :key="r" :value="String(r)">Rarity ★{{ r }}</option>
+          <option v-if="hasUnrated" value="none">No rarity</option>
         </select>
 
         <select v-model="sortBy">
