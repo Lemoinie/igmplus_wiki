@@ -12,10 +12,10 @@
     "magicDefense": 150
   },
   "damage": {
-    "min": "Logger.120",
+    "min": "120",
     "max": "135"
   },
-  "expGiven": "Logger.ARCANE_SUPPRESSION",
+  "expGiven": 116,
   "drops": [
     {
       "item": "AnimatedScraps",

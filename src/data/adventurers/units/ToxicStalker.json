@@ -10,7 +10,7 @@
   "description": "The Toxic Stalker has perfected her art of creating deadly toxins, and can severely disrupt the activity of unaware hostile entities.",
   "stats": {
     "maxLevel": 25,
-    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseMaxHp": 120,
     "baseConstitution": 8,
     "baseIntelligence": 12,
     "baseDexterity": 24,

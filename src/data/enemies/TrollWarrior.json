@@ -15,7 +15,7 @@
     "min": "67",
     "max": "78"
   },
-  "expGiven": "Logger.SUMMON_SMOLDERING_TITAN",
+  "expGiven": 114,
   "drops": [
     {
       "item": "TrollHide",

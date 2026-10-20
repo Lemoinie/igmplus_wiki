@@ -15,7 +15,7 @@
     "min": "130",
     "max": "180"
   },
-  "expGiven": "Logger.ARCANE_SUPPRESSION",
+  "expGiven": 116,
   "drops": [
     {
       "item": "SpellwovenHide",

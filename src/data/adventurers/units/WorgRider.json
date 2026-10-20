@@ -10,7 +10,7 @@
   "description": "An extremely vicious beast, the worg will tear apart the flesh of its enemies while his rider shoots with deadly aim.",
   "stats": {
     "maxLevel": 25,
-    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseMaxHp": 120,
     "baseConstitution": 8,
     "baseIntelligence": 12,
     "baseDexterity": 24,

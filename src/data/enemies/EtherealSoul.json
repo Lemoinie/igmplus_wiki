@@ -12,7 +12,7 @@
     "magicDefense": 0
   },
   "damage": {
-    "min": "Logger.112",
+    "min": "112",
     "max": "138"
   },
   "expGiven": 300,

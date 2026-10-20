@@ -10,7 +10,7 @@
   "description": "A gifted performer whose melodies inspire allies and mislead foes, turning the tides of a battle with a song or a whispered word.",
   "stats": {
     "maxLevel": 25,
-    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseMaxHp": 120,
     "baseConstitution": 15,
     "baseIntelligence": 14,
     "baseDexterity": 15,

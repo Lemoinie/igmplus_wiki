@@ -10,7 +10,7 @@
   "description": "With a rare mastery of the bow, she makes death rain on the battlefield in the form of the deadliest of arrows.",
   "stats": {
     "maxLevel": 25,
-    "baseMaxHp": "Logger.BARD_SHIELD",
+    "baseMaxHp": 120,
     "baseConstitution": 8,
     "baseIntelligence": 12,
     "baseDexterity": 24,

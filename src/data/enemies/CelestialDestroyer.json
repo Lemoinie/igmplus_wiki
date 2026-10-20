@@ -13,7 +13,7 @@
   },
   "damage": {
     "min": "100",
-    "max": "Logger.120"
+    "max": "120"
   },
   "expGiven": 2400,
   "drops": [
