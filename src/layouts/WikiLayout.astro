@@ -1,6 +1,7 @@
 ---
 import Analytics from '@vercel/analytics/astro';
 import Sidebar from '../components/Sidebar.vue';
+import SidebarToggle from '../components/SidebarToggle.vue';
 import SearchBar from '../components/SearchBar.vue';
 import '../styles/global.css';
 import 'katex/dist/katex.min.css';
@@ -268,30 +269,21 @@ const ogImage = image
               </div>
             )}
 
-            <!-- Top Header with Global Search and Mobile Hamburger Toggle -->
+            <!-- Top Header with Global Search and Sidebar Hamburger Toggle -->
             <header class="topHeader">
               <div class="headerLeft">
-                <!-- Mobile Menu Toggle Button -->
-                <button
-                  type="button"
-                  id="mobileMenuBtn"
-                  class="mobileMenuBtn"
-                  aria-label="Open navigation menu"
-                  onclick="window.dispatchEvent(new CustomEvent('igm:toggle-sidebar'))"
-                >
-                  <span class="hamburgerIcon">☰</span>
-                </button>
+                <SidebarToggle client:load />
 
-                <!-- Mobile Brand Logo & Name -->
-                <a href={`${base}/`} class="mobileBrand">
+                <!-- Brand Logo & Name -->
+                <a href={`${base}/`} class="navBrand" title="IGM+ Wiki Home">
                   <img
                     src={`${base}/images/sha.png`}
                     alt="Sha"
-                    class="mobileShaLogo sprite"
+                    class="navShaLogo sprite"
                     width="28"
                     height="28"
                   />
-                  <span class="mobileBrandName">IGM+</span>
+                  <span class="navBrandName">IGM+ Wiki</span>
                 </a>
               </div>
 
@@ -299,7 +291,9 @@ const ogImage = image
                 <SearchBar client:load entries={searchEntries} />
               </div>
 
-              <div class="headerRight" />
+              <div class="headerRight">
+                <span class="modBadge">v1.3.20.10</span>
+              </div>
             </header>
           </div>
 
@@ -309,7 +303,7 @@ const ogImage = image
           </main>
 
           <footer class="siteFooter">
-            <p>Idle Guild Master Modded (IGM+) Community Wiki</p>
+            <p>Idle Guild Master Plus Community Wiki</p>
           </footer>
         </div>
       </div>
@@ -339,25 +333,22 @@ const ogImage = image
 .layoutRoot {
   display: flex;
   min-height: 100vh;
+  width: 100%;
 }
 
 .mainWrapper {
   flex: 1;
-  margin-left: 250px;
+  margin-left: 0;
   display: flex;
   flex-direction: column;
-  transition: margin-left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   min-width: 0;
-}
-
-:global(html.sidebar-collapsed) .mainWrapper {
-  margin-left: 0;
+  width: 100%;
 }
 
 .stickyTopGroup {
   position: sticky;
   top: 0;
-  z-index: 40;
+  z-index: 120;
 }
 
 .topHeader {
@@ -369,53 +360,40 @@ const ogImage = image
   background: var(--bg-sidebar);
   border-bottom: 1px solid var(--border-subtle);
   position: relative;
-  z-index: 30;
+  z-index: 120;
 }
 
 .headerLeft {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 12px;
 }
 
-.mobileMenuBtn {
-  display: none;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  color: var(--text-primary);
-  border-radius: 6px;
-  width: 38px;
-  height: 38px;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  font-size: 1.25rem;
-  line-height: 1;
-  transition: all 0.15s ease;
-}
-
-.mobileMenuBtn:hover {
-  border-color: var(--brand-primary);
-  color: var(--brand-primary);
-}
-
-.mobileBrand {
-  display: none;
+.navBrand {
+  display: flex;
   align-items: center;
   gap: 8px;
   text-decoration: none;
 }
 
-.mobileShaLogo {
+.navShaLogo {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.2s ease;
 }
 
-.mobileBrandName {
-  font-size: 1.1rem;
+.navBrand:hover .navShaLogo {
+  transform: scale(1.08);
+}
+
+.navBrandName {
+  font-size: 1.15rem;
   font-weight: 800;
   color: var(--text-primary);
   letter-spacing: -0.02em;
+  white-space: nowrap;
 }
 
 .headerCenter {
@@ -459,15 +437,6 @@ const ogImage = image
 }
 
 @media (max-width: 959px) {
-  .mainWrapper {
-    margin-left: 0;
-  }
-  .mobileMenuBtn {
-    display: flex;
-  }
-  .mobileBrand {
-    display: flex;
-  }
   .topHeader {
     padding: 0.6rem 0.85rem;
     gap: 8px;
@@ -488,7 +457,7 @@ const ogImage = image
 }
 
 @media (max-width: 480px) {
-  .mobileBrandName {
+  .navBrandName {
     display: none;
   }
 }

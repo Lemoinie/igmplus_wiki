@@ -229,28 +229,8 @@ function getAtkTypeClass(atkType?: string): string {
     <div v-if="selectedLocation" class="locationHeaderCard">
       <div class="locationHeaderMain">
         <div class="locationMetaGroup">
-          <div class="titleRow">
-            <h2 class="locationTitle">{{ selectedLocation.name }}</h2>
-            <span class="typeBadge" :class="getTypeClass(selectedLocation.type)">
-              {{ getTypeLabel(selectedLocation.type) }}
-            </span>
-          </div>
-
           <div class="statsPills">
-            <div v-if="selectedLocation.level" class="pill">
-              <span class="pillLabel">Req. Level:</span>
-              <strong class="pillVal">{{ selectedLocation.level }}</strong>
-            </div>
 
-            <div class="pill">
-              <span class="pillLabel">Monsters:</span>
-              <strong class="pillVal">{{ selectedLocation.enemies?.length || 0 }}</strong>
-            </div>
-
-            <div v-if="selectedLocation.loot?.length" class="pill">
-              <span class="pillLabel">Loot Pool:</span>
-              <strong class="pillVal">{{ selectedLocation.loot.length }} Items</strong>
-            </div>
           </div>
         </div>
       </div>
