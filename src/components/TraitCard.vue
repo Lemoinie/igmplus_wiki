@@ -29,7 +29,6 @@ defineProps<{
       </div>
       <div class="titleWrap">
         <strong class="title">{{ trait.name }}</strong>
-        <span v-if="trait.plus" class="plusIndicator" title="Upgraded Trait">★ PLUS</span>
       </div>
       <div class="badges">
         <span
@@ -46,14 +45,7 @@ defineProps<{
     <p class="desc">{{ trait.description }}</p>
 
     <!-- Upgrade Relationship Note -->
-    <div v-if="trait.upgrade_name" class="upgradeNote up">
-      <span class="noteIcon">▲</span>
-      <span class="noteText">Upgrades to: <strong>{{ trait.upgrade_name }}</strong></span>
-    </div>
-    <div v-else-if="trait.base_name" class="upgradeNote down">
-      <span class="noteIcon">★</span>
-      <span class="noteText">Upgraded from: <strong>{{ trait.base_name }}</strong></span>
-    </div>
+
 
     <div v-if="trait.effects?.length" class="effects">
       <div v-for="eff in trait.effects" :key="eff" class="effLine">

@@ -231,7 +231,7 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
 
             <div class="upgradeArrow">
               <span class="arrowIcon">➔</span>
-              <span class="upgradeTag">Upgraded (+)</span>
+              <span class="upgradeTag">Evo-22 Vial</span>
             </div>
 
             <div class="pairColumn">
@@ -268,7 +268,7 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
 
             <div class="upgradeArrow purpleArrow">
               <span class="arrowIcon">➔</span>
-              <span class="upgradeTag">Evo-24 Plus (+)</span>
+              <span class="upgradeTag">Evo-24 Vial</span>
             </div>
 
             <div class="pairColumn">
