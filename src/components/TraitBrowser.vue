@@ -123,12 +123,12 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
       <div class="summaryCard">
         <span class="summaryLabel">Basic Traits</span>
         <span class="summaryVal emerald">7 Base + 7 Upgrades</span>
-        <span class="summarySub">Evo-21 / Alchemy Upgrade</span>
+        <span class="summarySub">Evo-22</span>
       </div>
       <div class="summaryCard">
         <span class="summaryLabel">Upgradable Rare</span>
         <span class="summaryVal purple">7 Base + 7 Upgrades</span>
-        <span class="summarySub">Evo-24 Phylactery</span>
+        <span class="summarySub">Evo-24</span>
       </div>
       <div class="summaryCard">
         <span class="summaryLabel">Standard Rare</span>
@@ -138,7 +138,7 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
       <div class="summaryCard">
         <span class="summaryLabel">Total Traits</span>
         <span class="summaryVal gold">40 Total</span>
-        <span class="summarySub">In Modded Version</span>
+        <span class="summarySub">In Plus Version</span>
       </div>
     </div>
 
@@ -272,7 +272,7 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
             </div>
 
             <div class="pairColumn">
-              <span class="colLabel">Phylactery Enhanced</span>
+              <span class="colLabel">Upgraded Form</span>
               <TraitCard v-if="pair.upgrade" :trait="pair.upgrade" :base-path="basePath" />
               <div v-else class="noUpgradeNotice">No upgrade</div>
             </div>
