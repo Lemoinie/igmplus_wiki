@@ -10,7 +10,7 @@ description: "Introducing our new dedicated Notice Portal: comprehensive patch n
 tags: ["Community", "Notices", "Discord", "Wiki"]
 ---
 
-Welcome to the brand new **Notice & News Hub** for Idle Guild Master Modded!
+Welcome to the brand new **Notice & News Hub** for Idle Guild Master Plus!
 
 ### Why a Dedicated Notice Page?
 

@@ -1,13 +1,13 @@
 ---
 title: "Skill Amp"
-description: "Dedicated damage amplifier scaling active skill attacks, spells, and active healing in Idle Guild Master Modded."
+description: "Dedicated damage amplifier scaling active skill attacks, spells, and active healing in Idle Guild Master Plus."
 category: "Combat Mechanics"
 lastUpdated: "2026-10-06"
 ---
 
 # Skill Amp
 
-In **Idle Guild Master Modded (IGM+)**, **Skill Amp** is the specialized multiplier governing the power of active class skills and spells.
+In **Idle Guild Master Plus (IGM+)**, **Skill Amp** is the specialized multiplier governing the power of active class skills and spells.
 
 ## Core Rules
 

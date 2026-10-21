@@ -1,13 +1,13 @@
 ---
 title: "Basic Atk Amp"
-description: "Specific damage amplifier scaling standard weapon attacks and basic round heals in Idle Guild Master Modded."
+description: "Specific damage amplifier scaling standard weapon attacks and basic round heals in Idle Guild Master Plus."
 category: "Combat Mechanics"
 lastUpdated: "2026-10-06"
 ---
 
 # Basic Atk Amp
 
-In **Idle Guild Master Modded (IGM+)**, **Basic Atk Amp** (formerly *Normal Atk Amp*) is the dedicated scaling multiplier for standard attacks.
+In **Idle Guild Master Plus (IGM+)**, **Basic Atk Amp** (formerly *Normal Atk Amp*) is the dedicated scaling multiplier for standard attacks.
 
 ## Core Rules
 

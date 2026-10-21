@@ -1,13 +1,13 @@
 ---
 title: "Defense & Armor Mechanics"
-description: "How physical and magical damage reduction works in Idle Guild Master Modded."
+description: "How physical and magical damage reduction works in Idle Guild Master Plus."
 category: "Combat Mechanics"
 lastUpdated: "2026-10-06"
 ---
 
 # Defense & Armor Mechanics
 
-In **Idle Guild Master Modded (IGM+)**, damage calculation differentiates between **Physical** and **Magical** mitigation.
+In **Idle Guild Master Plus (IGM+)**, damage calculation differentiates between **Physical** and **Magical** mitigation.
 
 ## Damage Reduction Formula
 

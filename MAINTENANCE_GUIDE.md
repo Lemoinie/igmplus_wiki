@@ -160,7 +160,7 @@ Create a new file in `src/data/pets/units/<Id>.json` (e.g. `src/data/pets/units/
 ---
 
 ### 4. How to Create a Markdown Mechanics Page
-Create a new Markdown file inside [`src/content/mechanics/`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/content/mechanics/) (e.g. `status-effects.md`):
+Create a new Markdown file inside [`src/content/mechanics/`](file:///c:/Repositories/IGM-Plus/igmplus_wiki/src/content/mechanics/) (e.g. `status-effects.md`):
 
 ```markdown
 ---
@@ -172,7 +172,7 @@ lastUpdated: "2026-10-06"
 
 # Status Effects & Crowd Control
 
-In **Idle Guild Master Modded**, status effects deal damage over time or manipulate action turns.
+In **Idle Guild Master Plus**, status effects deal damage over time or manipulate action turns.
 
 ## DoT Effects
 * **Burn:** Deals Fire damage each tick based on the attacker's INT.
@@ -184,7 +184,7 @@ In **Idle Guild Master Modded**, status effects deal damage over time or manipul
 ---
 
 ### 5. How to Publish a Notice / Patch Notes (Discord Bypass)
-Create a new Markdown file inside [`src/content/notices/`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/content/notices/) (e.g. `v1-3-21-0-patch-notes.md`):
+Create a new Markdown file inside [`src/content/notices/`](file:///c:/Repositories/IGM-Plus/igmplus_wiki/src/content/notices/) (e.g. `v1-3-21-0-patch-notes.md`):
 
 ```markdown
 ---
@@ -231,7 +231,7 @@ The output will be generated into the `dist/` directory ready for GitHub Pages o
 
 ## 🚦 Maintenance Mode (Soft & Full Toggle)
 
-You can toggle maintenance mode anytime via [`src/data/maintenance.json`](file:///c:/Repositories/IGM-Modded/igmplus_wiki/src/data/maintenance.json) or with an environment variable (`PUBLIC_MAINTENANCE_MODE` or `MAINTENANCE_MODE`).
+You can toggle maintenance mode anytime via [`src/data/maintenance.json`](file:///c:/Repositories/IGM-Plus/igmplus_wiki/src/data/maintenance.json) or with an environment variable (`PUBLIC_MAINTENANCE_MODE` or `MAINTENANCE_MODE`).
 
 ```json
 {
@@ -242,7 +242,7 @@ You can toggle maintenance mode anytime via [`src/data/maintenance.json`](file:/
   "fullSubtext": "We are working to get everything back up as quickly as possible. Check back soon!",
   "estimatedTime": "",
   "discordUrl": "https://discord.gg/idleguildmaster",
-  "githubUrl": "https://github.com/Lemoinie/IGM-Modded"
+  "githubUrl": "https://github.com/Lemoinie/IGM-Plus"
 }
 ```
 

@@ -1,13 +1,13 @@
 ---
 title: "Damage Taken"
-description: "Universal incoming damage multiplier affecting how much damage an entity receives in Idle Guild Master Modded."
+description: "Universal incoming damage multiplier affecting how much damage an entity receives in Idle Guild Master Plus."
 category: "Combat Mechanics"
 lastUpdated: "2026-10-06"
 ---
 
 # Damage Taken
 
-In **Idle Guild Master Modded (IGM+)**, **Damage Taken** is the universal multiplier that scales all incoming damage suffered by an entity.
+In **Idle Guild Master Plus (IGM+)**, **Damage Taken** is the universal multiplier that scales all incoming damage suffered by an entity.
 
 ## Core Rules
 

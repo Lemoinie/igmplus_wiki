@@ -1,13 +1,13 @@
 ---
 title: "Damage Dealt"
-description: "Universal outgoing damage multiplier applied to all attacks and abilities in Idle Guild Master Modded."
+description: "Universal outgoing damage multiplier applied to all attacks and abilities in Idle Guild Master Plus."
 category: "Combat Mechanics"
 lastUpdated: "2026-10-06"
 ---
 
 # Damage Dealt
 
-In **Idle Guild Master Modded (IGM+)**, **Damage Dealt** is the universal multiplier that scales all outgoing damage produced by an entity.
+In **Idle Guild Master Plus (IGM+)**, **Damage Dealt** is the universal multiplier that scales all outgoing damage produced by an entity.
 
 ## Core Rules
 

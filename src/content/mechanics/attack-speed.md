@@ -1,13 +1,13 @@
 ---
 title: "Attack Speed"
-description: "How Attack Speed scales action frequency and multiple strikes per turn in Idle Guild Master Modded."
+description: "How Attack Speed scales action frequency and multiple strikes per turn in Idle Guild Master Plus."
 category: "Combat Mechanics"
 lastUpdated: "2026-10-06"
 ---
 
 # Attack Speed
 
-In **Idle Guild Master Modded (IGM+)**, Attack Speed determines how many strikes an adventurer or enemy performs each combat round.
+In **Idle Guild Master Plus (IGM+)**, Attack Speed determines how many strikes an adventurer or enemy performs each combat round.
 
 ## Core Rules
 
