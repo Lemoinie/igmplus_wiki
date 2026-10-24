@@ -501,7 +501,6 @@ onMounted(() => {
             </div>
             <div class="cardName">
               {{ ab.name }}
-              <span v-if="ab === row3Abilities[row3Abilities.length - 1]" class="vModTag">v1.3.17+</span>
             </div>
             <div class="cardLevelRow">
               <button
