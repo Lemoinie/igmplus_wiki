@@ -23,30 +23,6 @@ const abilitiesData = getAllDoctrineAbilities();
       </p>
     </header>
 
-    <!-- Quick Overview Stats Banner -->
-    <div class="overviewBanner">
-      <div class="statBox">
-        <span class="statNumber text-doctrines">8</span>
-        <span class="statLabel">Temple Doctrines</span>
-      </div>
-      <div class="statBox">
-        <span class="statNumber text-abilities">48</span>
-        <span class="statLabel">Unique Nodes</span>
-      </div>
-      <div class="statBox">
-        <span class="statNumber text-capstones">8</span>
-        <span class="statLabel">7th Expansion Nodes</span>
-      </div>
-      <div class="statBox">
-        <span class="statNumber text-cost">Free</span>
-        <span class="statLabel">LP Respecs</span>
-      </div>
-      <div class="statBox">
-        <span class="statNumber text-req">Ascension</span>
-        <span class="statLabel">Requirement</span>
-      </div>
-    </div>
-
     <!-- Interactive Doctrine Browser & Calculator -->
     <DoctrineBrowser client:load doctrines={doctrinesData as any} abilities={abilitiesData as any} basePath={base} />
   </div>
@@ -96,58 +72,5 @@ const abilitiesData = getAllDoctrineAbilities();
   line-height: 1.5;
   margin: 0;
   max-width: 860px;
-}
-
-/* Overview Banner */
-.overviewBanner {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 1rem;
-  margin-bottom: 1.5rem;
-}
-
-.statBox {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 8px;
-  padding: 0.85rem 1rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-}
-
-.statNumber {
-  font-size: 1.4rem;
-  font-weight: 800;
-  color: #f1f5f9;
-}
-
-.statLabel {
-  font-size: 0.75rem;
-  font-weight: 600;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  letter-spacing: 0.04em;
-}
-
-.text-doctrines {
-  color: #f59e0b;
-}
-
-.text-abilities {
-  color: #38bdf8;
-}
-
-.text-capstones {
-  color: #10b981;
-}
-
-.text-cost {
-  color: #a855f7;
-}
-
-.text-req {
-  color: #f43f5e;
 }
 </style>

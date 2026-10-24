@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, computed, watch, onMounted } from 'vue';
+import { ref, computed, onMounted } from 'vue';
 import type { DoctrineDefinition, DoctrineAbilityDefinition } from '../types';
 
 const props = withDefaults(
@@ -92,11 +92,6 @@ const DOCTRINE_META: Record<string, DoctrineMeta> = {
 
 // Active State
 const activeDoctrineKey = ref<string>('DoctrineOfFortitude');
-const selectedAbilityKey = ref<string | null>(null);
-
-// Search & Filter
-const searchQuery = ref('');
-const activeFilterCategory = ref<'all' | 'offense' | 'defense' | 'utility' | 'stat'>('all');
 
 // LP Simulation State
 const simLevel = ref<number>(45);
@@ -154,12 +149,6 @@ const row1Abilities = computed(() => currentAbilities.value.filter((a) => a.row 
 const row2Abilities = computed(() => currentAbilities.value.filter((a) => a.row === 2));
 const row3Abilities = computed(() => currentAbilities.value.filter((a) => a.row === 3));
 
-// Currently selected ability
-const selectedAbility = computed(() => {
-  if (!selectedAbilityKey.value) return currentAbilities.value[0] || null;
-  return abilityByKey.value.get(selectedAbilityKey.value) || currentAbilities.value[0] || null;
-});
-
 // Get allocated level for an ability in current doctrine
 function getAbilityLevel(doctrineKey: string, abilityKey: string): number {
   return allocations.value[doctrineKey]?.[abilityKey] ?? 0;
@@ -179,14 +168,12 @@ function incrementAbility(doctrineKey: string, abilityKey: string) {
   const ab = abilityByKey.value.get(abilityKey);
   if (!ab || current >= ab.max_level) return;
   setAbilityLevel(doctrineKey, abilityKey, current + 1);
-  selectedAbilityKey.value = abilityKey;
 }
 
 function decrementAbility(doctrineKey: string, abilityKey: string) {
   const current = getAbilityLevel(doctrineKey, abilityKey);
   if (current <= 0) return;
   setAbilityLevel(doctrineKey, abilityKey, current - 1);
-  selectedAbilityKey.value = abilityKey;
 }
 
 // Calculate total spent LP for active doctrine
@@ -234,7 +221,6 @@ function formatAbilityDesc(ab: DoctrineAbilityDefinition, level: number): string
   const isMax = level >= ab.max_level;
 
   if (ab.format_mode === 1) {
-    // Flat value
     const totalVal = ab.increase_per_level * level;
     const incArg = isMax ? '' : ` (+${ab.increase_per_level})`;
     const formatted = level === 0 
@@ -246,7 +232,6 @@ function formatAbilityDesc(ab: DoctrineAbilityDefinition, level: number): string
   }
 
   if (ab.format_mode === 2) {
-    // Percentage value
     const totalVal = ab.increase_per_level * level;
     const incArg = isMax ? '' : ` (+${ab.increase_per_level}%)`;
     const formatted = level === 0 
@@ -258,7 +243,6 @@ function formatAbilityDesc(ab: DoctrineAbilityDefinition, level: number): string
   }
 
   if (ab.format_mode === 3) {
-    // Decimal percentage value (increasePerLevel * 0.1)
     const totalVal = (ab.increase_per_level * level * 0.1).toFixed(1);
     const incVal = (ab.increase_per_level * 0.1).toFixed(1);
     const incArg = isMax ? '' : ` (+${incVal}%)`;
@@ -273,65 +257,9 @@ function formatAbilityDesc(ab: DoctrineAbilityDefinition, level: number): string
   return ab.description;
 }
 
-// Generate progression steps for ability progression table
-interface ProgressionStep {
-  level: number;
-  valueStr: string;
-  cumulativeCost: number;
-}
-
-function getProgressionSteps(ab: DoctrineAbilityDefinition): ProgressionStep[] {
-  const steps: ProgressionStep[] = [];
-  for (let lvl = 1; lvl <= ab.max_level; lvl++) {
-    let valStr = '';
-    if (ab.format_mode === 0) {
-      valStr = 'Active';
-    } else if (ab.format_mode === 1) {
-      valStr = `+${ab.increase_per_level * lvl}`;
-    } else if (ab.format_mode === 2) {
-      valStr = `+${ab.increase_per_level * lvl}%`;
-    } else if (ab.format_mode === 3) {
-      valStr = `+${(ab.increase_per_level * lvl * 0.1).toFixed(1)}%`;
-    }
-    steps.push({
-      level: lvl,
-      valueStr: valStr,
-      cumulativeCost: lvl * ab.cost,
-    });
-  }
-  return steps;
-}
-
-// Search across all doctrines and abilities
-const searchResults = computed(() => {
-  const q = searchQuery.value.trim().toLowerCase();
-  if (!q) return [];
-
-  const results: Array<{
-    doctrine: DoctrineDefinition;
-    ability: DoctrineAbilityDefinition;
-  }> = [];
-
-  for (const doc of props.doctrines) {
-    for (const abKey of doc.abilities || []) {
-      const ab = abilityByKey.value.get(abKey);
-      if (!ab) continue;
-      const matchDoc = doc.name.toLowerCase().includes(q);
-      const matchAbName = ab.name.toLowerCase().includes(q);
-      const matchAbDesc = ab.description.toLowerCase().includes(q);
-      if (matchDoc || matchAbName || matchAbDesc) {
-        results.push({ doctrine: doc, ability: ab });
-      }
-    }
-  }
-
-  return results;
-});
-
 // Select doctrine and update URL hash
 function selectDoctrine(key: string) {
   activeDoctrineKey.value = key;
-  selectedAbilityKey.value = null;
   if (typeof window !== 'undefined') {
     window.location.hash = key;
   }
@@ -353,57 +281,8 @@ onMounted(() => {
 
 <template>
   <div class="doctrineBrowser">
-    <!-- Top Search & Quick Jump -->
-    <div class="searchRow">
-      <div class="searchWrapper">
-        <span class="searchIcon">🔍</span>
-        <input
-          v-model="searchQuery"
-          type="search"
-          placeholder="Search doctrine abilities, stats, effects (e.g. dodge, crit, lifesteal, armor, entangle, mana refund)..."
-          class="searchInput"
-        />
-        <button v-if="searchQuery" class="clearBtn" @click="searchQuery = ''">✕</button>
-      </div>
-    </div>
-
-    <!-- Live Search Results Dropdown -->
-    <div v-if="searchQuery.trim()" class="searchResultsPanel">
-      <div class="searchHeader">
-        <span>Found {{ searchResults.length }} matching ability nodes</span>
-      </div>
-      <div v-if="searchResults.length === 0" class="noResults">
-        No doctrine abilities found matching "{{ searchQuery }}".
-      </div>
-      <div v-else class="searchResultsList">
-        <div
-          v-for="res in searchResults"
-          :key="`${res.doctrine.key}-${res.ability.key}`"
-          class="searchResultItem"
-          @click="selectDoctrine(res.doctrine.key); selectedAbilityKey = res.ability.key; searchQuery = ''"
-        >
-          <img
-            :src="`${basePath}/images/${res.ability.sprite}.png`"
-            :alt="res.ability.name"
-            class="resultSprite sprite"
-            width="28"
-            height="28"
-          />
-          <div class="resultText">
-            <div class="resultTitle">
-              <strong>{{ res.ability.name }}</strong>
-              <span class="doctrineBadge" :style="{ borderColor: DOCTRINE_META[res.doctrine.key]?.color, color: DOCTRINE_META[res.doctrine.key]?.color }">
-                {{ res.doctrine.name }}
-              </span>
-            </div>
-            <div class="resultDesc">{{ formatAbilityDesc(res.ability, res.ability.max_level) }}</div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Doctrine Tab Selector -->
-    <div class="doctrineTabsGrid">
+    <!-- Compact Doctrine Selector Tabs -->
+    <div class="doctrineSelectorWrapper">
       <button
         v-for="doc in doctrines"
         :key="doc.key"
@@ -419,12 +298,11 @@ onMounted(() => {
           :src="`${basePath}/images/${doc.sprite}.png`"
           :alt="doc.name"
           class="doctrineTabSprite sprite"
-          width="36"
-          height="36"
+          width="24"
+          height="24"
         />
         <div class="doctrineTabInfo">
           <span class="doctrineTabName">{{ doc.name.replace('Doctrine of ', '') }}</span>
-          <span class="doctrineTabSub">{{ DOCTRINE_META[doc.key]?.roleTag || 'Temple Doctrine' }}</span>
         </div>
       </button>
     </div>
@@ -464,18 +342,14 @@ onMounted(() => {
 
         <div class="controlItem">
           <label>Temple Quest Level: <strong>+{{ simTempleQuest }} LP</strong></label>
-          <input v-model.number="simTempleQuest" type="range" min="0" max="25" step="1" />
-          <span class="controlSub">+1 LP per quest level completed</span>
+          <input v-model.number="simTempleQuest" type="range" min="0" max="10" step="1" />
+          <span class="controlSub">Max 10 LP (+1 LP per quest level completed)</span>
         </div>
 
         <div class="lpSummaryBox">
           <div class="lpStat">
             <span class="lpLabel">Available LP:</span>
             <span class="lpVal text-available">{{ totalAvailableLP }}</span>
-          </div>
-          <div class="lpStat">
-            <span class="lpLabel">Spent LP:</span>
-            <span class="lpVal text-spent">{{ totalSpentLP }} / {{ totalLPToMaxTree }}</span>
           </div>
           <div class="lpStat">
             <span class="lpLabel">Remaining:</span>
@@ -487,371 +361,174 @@ onMounted(() => {
       </div>
     </div>
 
-    <!-- Active Doctrine Hero Banner -->
-    <div
-      class="doctrineHeroCard"
-      :style="{
-        '--active-color': currentMeta.color,
-        '--active-glow': currentMeta.accentGlow
-      }"
-    >
-      <div class="heroLeft">
-        <div class="doctrineArtBox">
-          <img
-            :src="`${basePath}/images/${currentDoctrine.sprite}.png`"
-            :alt="currentDoctrine.name"
-            class="heroSprite sprite"
-            width="72"
-            height="72"
-          />
-        </div>
-        <div class="heroMeta">
-          <div class="badgeGroup">
-            <span class="roleBadge">{{ currentMeta.roleTag }}</span>
-            <span class="totalNodesBadge">7 Ability Nodes</span>
-            <span class="costBadge">Requires Ascension</span>
-          </div>
-          <h2>{{ currentDoctrine.name }}</h2>
-          <p class="doctrineShort">{{ currentDoctrine.description_short }}</p>
-          <p class="doctrineLore">{{ currentDoctrine.description }}</p>
-
-          <div class="synergyRow">
-            <span class="synergyLabel">Top Synergies:</span>
-            <div class="synergyPills">
-              <span v-for="cls in currentMeta.recommendedClasses" :key="cls" class="synergyPill">
-                {{ cls }}
-              </span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Interactive Ability Tree (3 Rows matching in-game dialog) -->
+    <!-- Tree Section: 3 Tiers -->
     <div class="treeSection">
-      <div class="treeHeader">
-        <h3>Sacred Ability Tree & Node Progression</h3>
-        <p>
-          Allocate Loyalty Points into nodes across 3 tiers. Click on any ability card to inspect full progression scaling and combat details.
-        </p>
-      </div>
-
-      <div class="rowsContainer">
-        <!-- Row 1: Core Stat Attributes -->
-        <div class="tierRow">
-          <div class="rowHeader">
-            <span class="tierBadge">Tier 1</span>
-            <h4>Core Stat Attributes</h4>
-            <span class="tierDesc">Primary foundation nodes enhancing baseline statistics.</span>
-          </div>
-          <div class="abilityCardsGrid">
-            <div
-              v-for="ab in row1Abilities"
-              :key="ab.key"
-              class="abilityCard"
-              :class="{
-                selected: selectedAbility?.key === ab.key,
-                allocated: getAbilityLevel(currentDoctrine.key, ab.key) > 0,
-                maxed: getAbilityLevel(currentDoctrine.key, ab.key) === ab.max_level
-              }"
-              @click="selectedAbilityKey = ab.key"
-            >
-              <div class="cardTop">
-                <img
-                  :src="`${basePath}/images/${ab.sprite}.png`"
-                  :alt="ab.name"
-                  class="abilitySprite sprite"
-                  width="40"
-                  height="40"
-                />
-                <div class="cardCostBadge">{{ ab.cost }} LP/lvl</div>
-              </div>
-              <div class="cardName">{{ ab.name }}</div>
-              <div class="cardLevelRow">
-                <button
-                  class="levelBtn minusBtn"
-                  :disabled="getAbilityLevel(currentDoctrine.key, ab.key) <= 0"
-                  @click.stop="decrementAbility(currentDoctrine.key, ab.key)"
-                >
-                  −
-                </button>
-                <span class="levelText">
-                  Lvl <strong>{{ getAbilityLevel(currentDoctrine.key, ab.key) }}</strong> / {{ ab.max_level }}
-                </span>
-                <button
-                  class="levelBtn plusBtn"
-                  :disabled="getAbilityLevel(currentDoctrine.key, ab.key) >= ab.max_level"
-                  @click.stop="incrementAbility(currentDoctrine.key, ab.key)"
-                >
-                  +
-                </button>
-              </div>
-              <div class="cardDescPreview">
-                {{ formatAbilityDesc(ab, getAbilityLevel(currentDoctrine.key, ab.key)) }}
-              </div>
-            </div>
-          </div>
+      <!-- Row 1: Core Stat Attributes -->
+      <div class="tierRow">
+        <div class="rowHeader">
+          <span class="tierBadge">Tier 1</span>
+          <h4>Core Stat Attributes</h4>
+          <span class="tierDesc">Primary foundation nodes enhancing baseline statistics.</span>
         </div>
-
-        <!-- Row 2: Tactical Passives -->
-        <div class="tierRow">
-          <div class="rowHeader">
-            <span class="tierBadge">Tier 2</span>
-            <h4>Tactical Passives & Defenses</h4>
-            <span class="tierDesc">Combat utilities, resistances, and secondary scaling triggers.</span>
-          </div>
-          <div class="abilityCardsGrid">
-            <div
-              v-for="ab in row2Abilities"
-              :key="ab.key"
-              class="abilityCard"
-              :class="{
-                selected: selectedAbility?.key === ab.key,
-                allocated: getAbilityLevel(currentDoctrine.key, ab.key) > 0,
-                maxed: getAbilityLevel(currentDoctrine.key, ab.key) === ab.max_level
-              }"
-              @click="selectedAbilityKey = ab.key"
-            >
-              <div class="cardTop">
-                <img
-                  :src="`${basePath}/images/${ab.sprite}.png`"
-                  :alt="ab.name"
-                  class="abilitySprite sprite"
-                  width="40"
-                  height="40"
-                />
-                <div class="cardCostBadge">{{ ab.cost }} LP/lvl</div>
-              </div>
-              <div class="cardName">{{ ab.name }}</div>
-              <div class="cardLevelRow">
-                <button
-                  class="levelBtn minusBtn"
-                  :disabled="getAbilityLevel(currentDoctrine.key, ab.key) <= 0"
-                  @click.stop="decrementAbility(currentDoctrine.key, ab.key)"
-                >
-                  −
-                </button>
-                <span class="levelText">
-                  Lvl <strong>{{ getAbilityLevel(currentDoctrine.key, ab.key) }}</strong> / {{ ab.max_level }}
-                </span>
-                <button
-                  class="levelBtn plusBtn"
-                  :disabled="getAbilityLevel(currentDoctrine.key, ab.key) >= ab.max_level"
-                  @click.stop="incrementAbility(currentDoctrine.key, ab.key)"
-                >
-                  +
-                </button>
-              </div>
-              <div class="cardDescPreview">
-                {{ formatAbilityDesc(ab, getAbilityLevel(currentDoctrine.key, ab.key)) }}
-              </div>
+        <div class="abilityCardsGrid">
+          <div
+            v-for="ab in row1Abilities"
+            :key="ab.key"
+            class="abilityCard"
+            :class="{
+              allocated: getAbilityLevel(currentDoctrine.key, ab.key) > 0,
+              maxed: getAbilityLevel(currentDoctrine.key, ab.key) === ab.max_level
+            }"
+          >
+            <div class="cardTop">
+              <img
+                :src="`${basePath}/images/${ab.sprite}.png`"
+                :alt="ab.name"
+                class="abilitySprite sprite"
+                width="32"
+                height="32"
+              />
+              <div class="cardCostBadge">{{ ab.cost }} LP/lvl</div>
             </div>
-          </div>
-        </div>
-
-        <!-- Row 3: Keystones & 7th Expansion Ability -->
-        <div class="tierRow">
-          <div class="rowHeader">
-            <span class="tierBadge goldBadge">Tier 3</span>
-            <h4>Keystones & 7th Expansion Abilities</h4>
-            <span class="tierDesc">Build-defining capstones and the v1.3.17.3 Temple Doctrine expansion nodes.</span>
-          </div>
-          <div class="abilityCardsGrid">
-            <div
-              v-for="ab in row3Abilities"
-              :key="ab.key"
-              class="abilityCard"
-              :class="{
-                selected: selectedAbility?.key === ab.key,
-                allocated: getAbilityLevel(currentDoctrine.key, ab.key) > 0,
-                maxed: getAbilityLevel(currentDoctrine.key, ab.key) === ab.max_level,
-                expansionCard: ab === row3Abilities[row3Abilities.length - 1]
-              }"
-              @click="selectedAbilityKey = ab.key"
-            >
-              <div class="cardTop">
-                <img
-                  :src="`${basePath}/images/${ab.sprite}.png`"
-                  :alt="ab.name"
-                  class="abilitySprite sprite"
-                  width="40"
-                  height="40"
-                />
-                <div class="cardCostBadge">{{ ab.cost }} LP/lvl</div>
-              </div>
-              <div class="cardName">
-                {{ ab.name }}
-                <span v-if="ab === row3Abilities[row3Abilities.length - 1]" class="vModTag">v1.3.17+</span>
-              </div>
-              <div class="cardLevelRow">
-                <button
-                  class="levelBtn minusBtn"
-                  :disabled="getAbilityLevel(currentDoctrine.key, ab.key) <= 0"
-                  @click.stop="decrementAbility(currentDoctrine.key, ab.key)"
-                >
-                  −
-                </button>
-                <span class="levelText">
-                  Lvl <strong>{{ getAbilityLevel(currentDoctrine.key, ab.key) }}</strong> / {{ ab.max_level }}
-                </span>
-                <button
-                  class="levelBtn plusBtn"
-                  :disabled="getAbilityLevel(currentDoctrine.key, ab.key) >= ab.max_level"
-                  @click.stop="incrementAbility(currentDoctrine.key, ab.key)"
-                >
-                  +
-                </button>
-              </div>
-              <div class="cardDescPreview">
-                {{ formatAbilityDesc(ab, getAbilityLevel(currentDoctrine.key, ab.key)) }}
-              </div>
+            <div class="cardName">{{ ab.name }}</div>
+            <div class="cardLevelRow">
+              <button
+                class="levelBtn minusBtn"
+                :disabled="getAbilityLevel(currentDoctrine.key, ab.key) <= 0"
+                @click.stop="decrementAbility(currentDoctrine.key, ab.key)"
+              >
+                −
+              </button>
+              <span class="levelText">
+                Lvl <strong>{{ getAbilityLevel(currentDoctrine.key, ab.key) }}</strong> / {{ ab.max_level }}
+              </span>
+              <button
+                class="levelBtn plusBtn"
+                :disabled="getAbilityLevel(currentDoctrine.key, ab.key) >= ab.max_level"
+                @click.stop="incrementAbility(currentDoctrine.key, ab.key)"
+              >
+                +
+              </button>
+            </div>
+            <div class="cardDescPreview">
+              {{ formatAbilityDesc(ab, getAbilityLevel(currentDoctrine.key, ab.key)) }}
             </div>
           </div>
         </div>
       </div>
 
-      <!-- Selected Ability Inspector Card -->
-      <div v-if="selectedAbility" class="abilityInspectorCard">
-        <div class="inspectorHeader">
-          <img
-            :src="`${basePath}/images/${selectedAbility.sprite}.png`"
-            :alt="selectedAbility.name"
-            class="inspectorSprite sprite"
-            width="56"
-            height="56"
-          />
-          <div class="inspectorHeaderInfo">
-            <div class="inspectorRowBadge">Row {{ selectedAbility.row }} Ability</div>
-            <h4>{{ selectedAbility.name }}</h4>
-            <div class="inspectorMetaStats">
-              <span>Cost: <strong>{{ selectedAbility.cost }} LP / lvl</strong></span>
-              <span>Max Level: <strong>{{ selectedAbility.max_level }}</strong></span>
-              <span>Total to Max: <strong>{{ selectedAbility.cost * selectedAbility.max_level }} LP</strong></span>
-              <span>Allocated: <strong>Lvl {{ getAbilityLevel(currentDoctrine.key, selectedAbility.key) }}</strong></span>
+      <!-- Row 2: Tactical Passives -->
+      <div class="tierRow">
+        <div class="rowHeader">
+          <span class="tierBadge">Tier 2</span>
+          <h4>Tactical Passives & Defenses</h4>
+          <span class="tierDesc">Combat utilities, resistances, and secondary scaling triggers.</span>
+        </div>
+        <div class="abilityCardsGrid">
+          <div
+            v-for="ab in row2Abilities"
+            :key="ab.key"
+            class="abilityCard"
+            :class="{
+              allocated: getAbilityLevel(currentDoctrine.key, ab.key) > 0,
+              maxed: getAbilityLevel(currentDoctrine.key, ab.key) === ab.max_level
+            }"
+          >
+            <div class="cardTop">
+              <img
+                :src="`${basePath}/images/${ab.sprite}.png`"
+                :alt="ab.name"
+                class="abilitySprite sprite"
+                width="32"
+                height="32"
+              />
+              <div class="cardCostBadge">{{ ab.cost }} LP/lvl</div>
+            </div>
+            <div class="cardName">{{ ab.name }}</div>
+            <div class="cardLevelRow">
+              <button
+                class="levelBtn minusBtn"
+                :disabled="getAbilityLevel(currentDoctrine.key, ab.key) <= 0"
+                @click.stop="decrementAbility(currentDoctrine.key, ab.key)"
+              >
+                −
+              </button>
+              <span class="levelText">
+                Lvl <strong>{{ getAbilityLevel(currentDoctrine.key, ab.key) }}</strong> / {{ ab.max_level }}
+              </span>
+              <button
+                class="levelBtn plusBtn"
+                :disabled="getAbilityLevel(currentDoctrine.key, ab.key) >= ab.max_level"
+                @click.stop="incrementAbility(currentDoctrine.key, ab.key)"
+              >
+                +
+              </button>
+            </div>
+            <div class="cardDescPreview">
+              {{ formatAbilityDesc(ab, getAbilityLevel(currentDoctrine.key, ab.key)) }}
             </div>
           </div>
         </div>
+      </div>
 
-        <div class="inspectorBody">
-          <!-- Dynamic Description Box -->
-          <div class="descBox">
-            <div class="descBoxLabel">Current In-Game Effect:</div>
-            <div class="descBoxText">
-              {{ formatAbilityDesc(selectedAbility, getAbilityLevel(currentDoctrine.key, selectedAbility.key)) }}
+      <!-- Row 3: Keystones & 7th Expansion Ability -->
+      <div class="tierRow">
+        <div class="rowHeader">
+          <span class="tierBadge goldBadge">Tier 3</span>
+          <h4>Keystones & Expansion Abilities</h4>
+          <span class="tierDesc">Capstones and the v1.3.17.3 Temple Doctrine expansion nodes.</span>
+        </div>
+        <div class="abilityCardsGrid">
+          <div
+            v-for="ab in row3Abilities"
+            :key="ab.key"
+            class="abilityCard"
+            :class="{
+              allocated: getAbilityLevel(currentDoctrine.key, ab.key) > 0,
+              maxed: getAbilityLevel(currentDoctrine.key, ab.key) === ab.max_level,
+              expansionCard: ab === row3Abilities[row3Abilities.length - 1]
+            }"
+          >
+            <div class="cardTop">
+              <img
+                :src="`${basePath}/images/${ab.sprite}.png`"
+                :alt="ab.name"
+                class="abilitySprite sprite"
+                width="32"
+                height="32"
+              />
+              <div class="cardCostBadge">{{ ab.cost }} LP/lvl</div>
             </div>
-          </div>
-
-          <!-- Progression Table -->
-          <div class="progressionWrapper">
-            <div class="progressionTitle">Progression by Level</div>
-            <table class="progressionTable">
-              <thead>
-                <tr>
-                  <th>Level</th>
-                  <th>Bonus Effect</th>
-                  <th>LP Cost</th>
-                  <th>Cumulative Cost</th>
-                  <th>Status</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr
-                  v-for="step in getProgressionSteps(selectedAbility)"
-                  :key="step.level"
-                  :class="{ activeRow: getAbilityLevel(currentDoctrine.key, selectedAbility.key) === step.level }"
-                >
-                  <td><strong>Lvl {{ step.level }}</strong></td>
-                  <td><span class="effectVal">{{ step.valueStr }}</span></td>
-                  <td>{{ selectedAbility.cost }} LP</td>
-                  <td>{{ step.cumulativeCost }} LP</td>
-                  <td>
-                    <span v-if="getAbilityLevel(currentDoctrine.key, selectedAbility.key) >= step.level" class="statusActive">
-                      ✓ Active
-                    </span>
-                    <span v-else class="statusInactive">
-                      Inactive
-                    </span>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="cardName">
+              {{ ab.name }}
+              <span v-if="ab === row3Abilities[row3Abilities.length - 1]" class="vModTag">v1.3.17+</span>
+            </div>
+            <div class="cardLevelRow">
+              <button
+                class="levelBtn minusBtn"
+                :disabled="getAbilityLevel(currentDoctrine.key, ab.key) <= 0"
+                @click.stop="decrementAbility(currentDoctrine.key, ab.key)"
+              >
+                −
+              </button>
+              <span class="levelText">
+                Lvl <strong>{{ getAbilityLevel(currentDoctrine.key, ab.key) }}</strong> / {{ ab.max_level }}
+              </span>
+              <button
+                class="levelBtn plusBtn"
+                :disabled="getAbilityLevel(currentDoctrine.key, ab.key) >= ab.max_level"
+                @click.stop="incrementAbility(currentDoctrine.key, ab.key)"
+              >
+                +
+              </button>
+            </div>
+            <div class="cardDescPreview">
+              {{ formatAbilityDesc(ab, getAbilityLevel(currentDoctrine.key, ab.key)) }}
+            </div>
           </div>
         </div>
       </div>
     </div>
-
-    <!-- Doctrines Comparison Matrix Section -->
-    <section class="comparisonSection">
-      <div class="compHeader">
-        <h3>Temple Doctrines Comparison Matrix</h3>
-        <p>Side-by-side reference of all 8 Temple Doctrines, their core archetypes, capstones, and 7th expansion additions.</p>
-      </div>
-
-      <div class="tableOverflow">
-        <table class="compTable">
-          <thead>
-            <tr>
-              <th>Doctrine</th>
-              <th>Archetype & Focus</th>
-              <th>Key Strengths</th>
-              <th>7th Node (v1.3.17.3)</th>
-              <th>Max LP Cost</th>
-              <th>Recommended Synergies</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr
-              v-for="doc in doctrines"
-              :key="doc.key"
-              :class="{ highlightedRow: doc.key === activeDoctrineKey }"
-              @click="selectDoctrine(doc.key)"
-            >
-              <td class="doctrineCell">
-                <img
-                  :src="`${basePath}/images/${doc.sprite}.png`"
-                  :alt="doc.name"
-                  class="compSprite sprite"
-                  width="28"
-                  height="28"
-                />
-                <strong>{{ doc.name.replace('Doctrine of ', '') }}</strong>
-              </td>
-              <td>
-                <span class="rolePill" :style="{ borderColor: DOCTRINE_META[doc.key]?.color, color: DOCTRINE_META[doc.key]?.color }">
-                  {{ DOCTRINE_META[doc.key]?.roleTag }}
-                </span>
-                <div class="cellSub">{{ doc.description_short }}</div>
-              </td>
-              <td>{{ DOCTRINE_META[doc.key]?.primaryPlaystyle }}</td>
-              <td>
-                <span class="expansionNodeBadge">
-                  {{ doc.abilities[doc.abilities.length - 1]?.replace(/_/g, ' ') }}
-                </span>
-              </td>
-              <td class="numericCell">
-                {{
-                  (doc.abilities || [])
-                    .map((k) => abilityByKey.get(k))
-                    .filter(Boolean)
-                    .reduce((sum, a) => sum + (a ? a.cost * a.max_level : 0), 0)
-                }} LP
-              </td>
-              <td>
-                <div class="classPillsCompact">
-                  <span
-                    v-for="cls in (DOCTRINE_META[doc.key]?.recommendedClasses || []).slice(0, 3)"
-                    :key="cls"
-                    class="classPill"
-                  >
-                    {{ cls }}
-                  </span>
-                </div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-    </section>
 
     <!-- Mechanics Guide & Rules -->
     <section class="mechanicsExplainer">
@@ -909,147 +586,33 @@ onMounted(() => {
 .doctrineBrowser {
   display: flex;
   flex-direction: column;
-  gap: 1.75rem;
+  gap: 1rem;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Search */
-.searchRow {
-  display: flex;
-  gap: 1rem;
-}
-
-.searchWrapper {
-  position: relative;
-  flex: 1;
-}
-
-.searchIcon {
-  position: absolute;
-  left: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  font-size: 0.95rem;
-  color: var(--text-muted);
-}
-
-.searchInput {
-  width: 100%;
+/* Compact Doctrine Selector Tabs */
+.doctrineSelectorWrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+  gap: 0.4rem;
   background: var(--bg-card);
   border: 1px solid var(--border-card);
   border-radius: 8px;
-  padding: 0.75rem 2.2rem 0.75rem 2.3rem;
-  color: var(--text-primary);
-  font-size: 0.95rem;
-  outline: none;
-  transition: border-color 0.15s ease, box-shadow 0.15s ease;
-}
-
-.searchInput:focus {
-  border-color: var(--border-focus);
-  box-shadow: 0 0 0 3px var(--brand-glow);
-}
-
-.clearBtn {
-  position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
-  background: none;
-  border: none;
-  color: var(--text-muted);
-  cursor: pointer;
-  font-size: 0.9rem;
-}
-
-.searchResultsPanel {
-  background: var(--bg-card);
-  border: 1px solid var(--border-focus);
-  border-radius: 8px;
-  padding: 0.75rem;
-  max-height: 380px;
-  overflow-y: auto;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
-}
-
-.searchHeader {
-  font-size: 0.8rem;
-  color: var(--brand-primary);
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-bottom: 0.5rem;
-  padding-bottom: 0.25rem;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.noResults {
-  color: var(--text-muted);
-  padding: 0.75rem;
-  text-align: center;
-}
-
-.searchResultsList {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.searchResultItem {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  padding: 0.5rem 0.75rem;
-  border-radius: 6px;
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  cursor: pointer;
-  transition: all 0.15s ease;
-}
-
-.searchResultItem:hover {
-  background: var(--bg-card-hover);
-  border-color: var(--border-focus);
-}
-
-.resultTitle {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.9rem;
-}
-
-.doctrineBadge {
-  font-size: 0.7rem;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1px 6px;
-  font-weight: 600;
-}
-
-.resultDesc {
-  font-size: 0.8rem;
-  color: var(--text-secondary);
-}
-
-/* Tabs */
-.doctrineTabsGrid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0.65rem;
+  padding: 0.4rem;
 }
 
 .doctrineTabBtn {
   display: flex;
   align-items: center;
-  gap: 12px;
-  padding: 0.75rem 1rem;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 8px;
+  gap: 8px;
+  padding: 0.45rem 0.65rem;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 6px;
   cursor: pointer;
   text-align: left;
-  transition: all 0.18s ease;
+  transition: all 0.15s ease;
   position: relative;
   overflow: hidden;
 }
@@ -1057,13 +620,12 @@ onMounted(() => {
 .doctrineTabBtn:hover {
   background: var(--bg-card-hover);
   border-color: var(--doc-color);
-  transform: translateY(-1px);
 }
 
 .doctrineTabBtn.active {
   background: linear-gradient(135deg, var(--bg-card) 0%, rgba(20, 28, 42, 0.95) 100%);
   border-color: var(--doc-color);
-  box-shadow: 0 4px 14px var(--doc-glow);
+  box-shadow: 0 0 8px var(--doc-glow);
 }
 
 .doctrineTabBtn.active::before {
@@ -1072,36 +634,47 @@ onMounted(() => {
   top: 0;
   left: 0;
   right: 0;
-  height: 3px;
+  height: 2px;
   background: var(--doc-color);
+}
+
+.doctrineTabSprite {
+  flex-shrink: 0;
 }
 
 .doctrineTabInfo {
   display: flex;
   flex-direction: column;
+  min-width: 0;
 }
 
 .doctrineTabName {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.8rem;
   color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .doctrineTabSub {
-  font-size: 0.72rem;
+  font-size: 0.65rem;
   color: var(--text-muted);
   font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 /* Calculator Bar */
 .calculatorBar {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
-  border-radius: 10px;
-  padding: 1.15rem 1.35rem;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.65rem;
 }
 
 .calcHeader {
@@ -1109,34 +682,34 @@ onMounted(() => {
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 0.75rem;
+  gap: 0.5rem;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.65rem;
+  padding-bottom: 0.4rem;
 }
 
 .calcTitle {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
 }
 
 .calcTitle h3 {
   margin: 0;
-  font-size: 1.1rem;
+  font-size: 0.95rem;
   color: #f1f5f9;
 }
 
 .calcActions {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .actionBtn {
   background: var(--bg-inset);
   border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 0.35rem 0.85rem;
-  font-size: 0.78rem;
+  border-radius: 5px;
+  padding: 0.25rem 0.65rem;
+  font-size: 0.74rem;
   font-weight: 600;
   color: var(--text-secondary);
   cursor: pointer;
@@ -1160,19 +733,19 @@ onMounted(() => {
 
 .calcControlsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
-  gap: 1.25rem;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0.75rem;
   align-items: center;
 }
 
 .controlItem {
   display: flex;
   flex-direction: column;
-  gap: 5px;
+  gap: 3px;
 }
 
 .controlItem label {
-  font-size: 0.82rem;
+  font-size: 0.78rem;
   color: var(--text-secondary);
 }
 
@@ -1190,25 +763,25 @@ onMounted(() => {
   background: var(--bg-inset);
   border: 1px solid var(--border-subtle);
   border-radius: 6px;
-  padding: 0.4rem 0.6rem;
+  padding: 0.35rem 0.55rem;
   color: #f1f5f9;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   outline: none;
 }
 
 .controlSub {
-  font-size: 0.72rem;
+  font-size: 0.7rem;
   color: var(--text-muted);
 }
 
 .lpSummaryBox {
   background: var(--bg-inset);
   border: 1px solid var(--border-card);
-  border-radius: 8px;
-  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  padding: 0.5rem 0.75rem;
   display: flex;
   justify-content: space-around;
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 .lpStat {
@@ -1218,14 +791,14 @@ onMounted(() => {
 }
 
 .lpLabel {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 600;
   color: var(--text-muted);
   text-transform: uppercase;
 }
 
 .lpVal {
-  font-size: 1.15rem;
+  font-size: 1.05rem;
   font-weight: 800;
 }
 
@@ -1245,169 +818,40 @@ onMounted(() => {
   color: #ef4444;
 }
 
-/* Doctrine Hero Card */
-.doctrineHeroCard {
-  background: linear-gradient(135deg, var(--bg-card) 0%, rgba(15, 23, 42, 0.9) 100%);
-  border: 1px solid var(--border-card);
-  border-left: 4px solid var(--active-color);
-  border-radius: 10px;
-  padding: 1.5rem;
-  box-shadow: 0 4px 18px var(--active-glow);
-}
-
-.heroLeft {
-  display: flex;
-  gap: 1.5rem;
-  align-items: flex-start;
-  flex-wrap: wrap;
-}
-
-.doctrineArtBox {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-radius: 12px;
-  padding: 0.75rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-shrink: 0;
-}
-
-.heroMeta {
-  flex: 1;
-  min-width: 280px;
-}
-
-.badgeGroup {
-  display: flex;
-  gap: 8px;
-  flex-wrap: wrap;
-  margin-bottom: 0.5rem;
-}
-
-.roleBadge {
-  background: var(--active-glow);
-  color: var(--active-color);
-  border: 1px solid var(--active-color);
-  font-size: 0.72rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.totalNodesBadge,
-.costBadge {
-  background: var(--bg-inset);
-  color: var(--text-muted);
-  border: 1px solid var(--border-subtle);
-  font-size: 0.72rem;
-  font-weight: 600;
-  padding: 2px 8px;
-  border-radius: 4px;
-}
-
-.heroMeta h2 {
-  font-size: 1.7rem;
-  margin: 0 0 0.35rem 0;
-  border-bottom: none;
-  padding-bottom: 0;
-}
-
-.doctrineShort {
-  font-weight: 600;
-  color: #cbd5e1;
-  font-size: 0.95rem;
-  margin-bottom: 0.5rem;
-}
-
-.doctrineLore {
-  font-size: 0.88rem;
-  color: var(--text-secondary);
-  line-height: 1.55;
-  margin-bottom: 0.85rem;
-}
-
-.synergyRow {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  flex-wrap: wrap;
-}
-
-.synergyLabel {
-  font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--text-muted);
-}
-
-.synergyPills {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-}
-
-.synergyPill {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-radius: 4px;
-  padding: 2px 8px;
-  font-size: 0.75rem;
-  font-weight: 600;
-  color: var(--brand-primary);
-}
-
 /* Tree Section */
 .treeSection {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-}
-
-.treeHeader h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.35rem;
-}
-
-.treeHeader p {
-  color: var(--text-secondary);
-  font-size: 0.9rem;
-  margin: 0;
-}
-
-.rowsContainer {
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
+  gap: 0.75rem;
 }
 
 .tierRow {
   background: var(--bg-card);
   border: 1px solid var(--border-card);
-  border-radius: 10px;
-  padding: 1.25rem;
+  border-radius: 8px;
+  padding: 0.75rem 0.9rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 0.6rem;
 }
 
 .rowHeader {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px;
   flex-wrap: wrap;
   border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.5rem;
+  padding-bottom: 0.35rem;
 }
 
 .tierBadge {
   background: rgba(110, 168, 254, 0.15);
   border: 1px solid rgba(110, 168, 254, 0.35);
   color: var(--brand-primary);
-  font-size: 0.72rem;
+  font-size: 0.68rem;
   font-weight: 800;
   text-transform: uppercase;
-  padding: 2px 8px;
+  padding: 1px 6px;
   border-radius: 4px;
 }
 
@@ -1419,43 +863,36 @@ onMounted(() => {
 
 .rowHeader h4 {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 0.92rem;
   color: #f1f5f9;
 }
 
 .tierDesc {
-  font-size: 0.8rem;
+  font-size: 0.72rem;
   color: var(--text-muted);
 }
 
 .abilityCardsGrid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 0.85rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 0.6rem;
 }
 
 .abilityCard {
   background: var(--bg-inset);
   border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 1rem;
+  border-radius: 6px;
+  padding: 0.65rem 0.75rem;
   display: flex;
   flex-direction: column;
-  gap: 0.5rem;
-  cursor: pointer;
-  transition: all 0.18s ease;
+  gap: 0.35rem;
+  transition: all 0.15s ease;
   position: relative;
 }
 
 .abilityCard:hover {
   background: var(--bg-card-hover);
   border-color: var(--border-focus);
-  transform: translateY(-2px);
-}
-
-.abilityCard.selected {
-  border-color: var(--brand-primary);
-  box-shadow: 0 0 0 2px var(--brand-glow);
 }
 
 .abilityCard.allocated {
@@ -1465,7 +902,7 @@ onMounted(() => {
 
 .abilityCard.maxed {
   border-color: #10b981;
-  box-shadow: 0 0 10px rgba(16, 185, 129, 0.15);
+  box-shadow: 0 0 6px rgba(16, 185, 129, 0.15);
 }
 
 .cardTop {
@@ -1476,35 +913,35 @@ onMounted(() => {
 
 .abilitySprite {
   background: rgba(0, 0, 0, 0.35);
-  border-radius: 6px;
-  padding: 3px;
+  border-radius: 4px;
+  padding: 1px;
 }
 
 .cardCostBadge {
   background: rgba(245, 158, 11, 0.15);
   color: #f59e0b;
   border: 1px solid rgba(245, 158, 11, 0.3);
-  font-size: 0.7rem;
+  font-size: 0.65rem;
   font-weight: 700;
-  padding: 2px 6px;
-  border-radius: 4px;
+  padding: 1px 4px;
+  border-radius: 3px;
 }
 
 .cardName {
   font-weight: 700;
-  font-size: 0.92rem;
+  font-size: 0.82rem;
   color: #f1f5f9;
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
 }
 
 .vModTag {
-  font-size: 0.65rem;
+  font-size: 0.58rem;
   background: rgba(16, 185, 129, 0.2);
   color: #34d399;
   border: 1px solid rgba(16, 185, 129, 0.4);
-  padding: 1px 4px;
+  padding: 1px 3px;
   border-radius: 3px;
 }
 
@@ -1513,23 +950,23 @@ onMounted(() => {
   align-items: center;
   justify-content: space-between;
   background: rgba(0, 0, 0, 0.3);
-  border-radius: 6px;
-  padding: 3px 6px;
+  border-radius: 5px;
+  padding: 2px 5px;
 }
 
 .levelBtn {
   background: var(--bg-card);
   border: 1px solid var(--border-subtle);
   border-radius: 4px;
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #f1f5f9;
   cursor: pointer;
   font-weight: 700;
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   transition: all 0.12s ease;
 }
 
@@ -1544,7 +981,7 @@ onMounted(() => {
 }
 
 .levelText {
-  font-size: 0.78rem;
+  font-size: 0.72rem;
   color: var(--text-secondary);
 }
 
@@ -1553,262 +990,9 @@ onMounted(() => {
 }
 
 .cardDescPreview {
-  font-size: 0.78rem;
+  font-size: 0.74rem;
   color: var(--text-secondary);
-  line-height: 1.4;
-  min-height: 2.8em;
-}
-
-/* Ability Inspector Panel */
-.abilityInspectorCard {
-  background: var(--bg-card);
-  border: 1px solid var(--border-focus);
-  border-radius: 10px;
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
-}
-
-.inspectorHeader {
-  display: flex;
-  align-items: center;
-  gap: 1rem;
-  border-bottom: 1px solid var(--border-subtle);
-  padding-bottom: 0.85rem;
-}
-
-.inspectorSprite {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-card);
-  border-radius: 8px;
-  padding: 4px;
-}
-
-.inspectorHeaderInfo h4 {
-  margin: 0 0 0.35rem 0;
-  font-size: 1.3rem;
-  color: #f1f5f9;
-}
-
-.inspectorRowBadge {
-  font-size: 0.7rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--brand-primary);
-  margin-bottom: 2px;
-}
-
-.inspectorMetaStats {
-  display: flex;
-  gap: 1rem;
-  font-size: 0.82rem;
-  color: var(--text-muted);
-  flex-wrap: wrap;
-}
-
-.inspectorMetaStats strong {
-  color: #e2e8f0;
-}
-
-.inspectorBody {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.descBox {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-radius: 8px;
-  padding: 0.85rem 1rem;
-}
-
-.descBoxLabel {
-  font-size: 0.75rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--text-muted);
-  margin-bottom: 0.35rem;
-}
-
-.descBoxText {
-  color: #f1f5f9;
-  font-size: 0.95rem;
-  line-height: 1.5;
-  white-space: pre-line;
-}
-
-.progressionWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
-.progressionTitle {
-  font-size: 0.82rem;
-  font-weight: 700;
-  text-transform: uppercase;
-  color: var(--text-secondary);
-}
-
-.progressionTable {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
-}
-
-.progressionTable th {
-  background: var(--bg-inset);
-  color: var(--text-muted);
-  font-weight: 600;
-  text-align: left;
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.progressionTable td {
-  padding: 0.5rem 0.75rem;
-  border-bottom: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
-}
-
-.progressionTable tr.activeRow {
-  background: rgba(56, 189, 248, 0.08);
-}
-
-.progressionTable tr.activeRow td {
-  color: #f1f5f9;
-}
-
-.effectVal {
-  color: #38bdf8;
-  font-weight: 600;
-}
-
-.statusActive {
-  color: #10b981;
-  font-weight: 700;
-  font-size: 0.78rem;
-}
-
-.statusInactive {
-  color: var(--text-muted);
-  font-size: 0.78rem;
-}
-
-/* Comparison Section */
-.comparisonSection {
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  border-radius: 10px;
-  padding: 1.25rem 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-.compHeader h3 {
-  margin: 0 0 0.25rem 0;
-  font-size: 1.3rem;
-}
-
-.compHeader p {
-  margin: 0;
-  color: var(--text-secondary);
-  font-size: 0.88rem;
-}
-
-.tableOverflow {
-  overflow-x: auto;
-}
-
-.compTable {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.85rem;
-}
-
-.compTable th {
-  background: var(--bg-inset);
-  color: var(--text-muted);
-  text-align: left;
-  padding: 0.65rem 0.85rem;
-  font-weight: 600;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.compTable td {
-  padding: 0.65rem 0.85rem;
-  border-bottom: 1px solid var(--border-subtle);
-  color: var(--text-secondary);
-  vertical-align: middle;
-}
-
-.compTable tr {
-  cursor: pointer;
-  transition: background 0.15s ease;
-}
-
-.compTable tr:hover {
-  background: var(--bg-card-hover);
-}
-
-.compTable tr.highlightedRow {
-  background: rgba(110, 168, 254, 0.08);
-}
-
-.doctrineCell {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  color: #f1f5f9;
-}
-
-.rolePill {
-  display: inline-block;
-  font-size: 0.7rem;
-  font-weight: 700;
-  border: 1px solid;
-  border-radius: 4px;
-  padding: 1px 6px;
-  margin-bottom: 2px;
-}
-
-.cellSub {
-  font-size: 0.75rem;
-  color: var(--text-muted);
-}
-
-.expansionNodeBadge {
-  background: rgba(245, 158, 11, 0.15);
-  color: #f59e0b;
-  border: 1px solid rgba(245, 158, 11, 0.3);
-  font-size: 0.75rem;
-  font-weight: 600;
-  padding: 2px 7px;
-  border-radius: 4px;
-}
-
-.numericCell {
-  font-weight: 700;
-  color: #38bdf8;
-}
-
-.classPillsCompact {
-  display: flex;
-  gap: 4px;
-  flex-wrap: wrap;
-}
-
-.classPill {
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  font-size: 0.72rem;
-  padding: 1px 6px;
-  border-radius: 3px;
-  color: #cbd5e1;
+  line-height: 1.35;
 }
 
 /* Mechanics Section */
@@ -1820,7 +1004,7 @@ onMounted(() => {
 
 .mechanicsExplainer h3 {
   margin: 0;
-  font-size: 1.3rem;
+  font-size: 1.25rem;
 }
 
 .rulesGrid {
@@ -1851,12 +1035,12 @@ onMounted(() => {
 
 .ruleCardHeader h4 {
   margin: 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
   color: #f1f5f9;
 }
 
 .ruleCard p {
-  font-size: 0.85rem;
+  font-size: 0.82rem;
   color: var(--text-secondary);
   line-height: 1.5;
   margin: 0;
@@ -1865,7 +1049,7 @@ onMounted(() => {
 .ruleList {
   margin: 0;
   padding-left: 1.2rem;
-  font-size: 0.82rem;
+  font-size: 0.8rem;
   color: var(--text-secondary);
   display: flex;
   flex-direction: column;
@@ -1877,6 +1061,6 @@ onMounted(() => {
   padding: 1px 4px;
   border-radius: 3px;
   color: #38bdf8;
-  font-size: 0.78rem;
+  font-size: 0.75rem;
 }
 </style>
