@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_MASS_CONFUSION",
+  "name_key": "active_mass_confusion_name",
+  "desc_key": "active_mass_confusion_description",
+  "kind": "active",
+  "name": "Sirens' Discord",
+  "description": "Sings an eerie oceanic melody, confusing all enemies for 2 turns.\n\nCONFUSE: Attack allies and self."
+}

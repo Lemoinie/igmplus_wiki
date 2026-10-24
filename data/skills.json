@@ -2045,7 +2045,7 @@
     "desc_key": "passive_blood_convocation_description",
     "kind": "passive",
     "name": "Blood Convocation",
-    "description": "Whenever the Archmagus takes damage, there is a 36% chance to summon a minion (60% Bloodstone Colossus, 40% Crimson Acolyte) while the formation has room."
+    "description": "Whenever the Archmagus takes damage, there is a 36% chance to summon a minion (60% Bloodstone Colossus, 40% Crimson Acolyte) while the formation has room. Immune to ABLAZE and BLOODFLAME."
   },
   {
     "key": "PASSIVE_MARTYRS_PACT",
@@ -2053,7 +2053,7 @@
     "desc_key": "passive_martyrs_pact_description",
     "kind": "passive",
     "name": "Martyr's Pact",
-    "description": "When the Crimson Acolyte dies, every surviving enemy gains +1 stack of SANGUINE FERVOR.\n\nSANGUINE FERVOR: +5% dmg dealt per stack, permanently until unit dies."
+    "description": "Immune to ABLAZE and BLOODFLAME. When the Crimson Acolyte dies, every surviving enemy gains +1 stack of SANGUINE FERVOR.\n\nSANGUINE FERVOR: +5% dmg dealt per stack, permanently until unit dies."
   },
   {
     "key": "ACTIVE_ENERGY_BURST_III",
@@ -2550,5 +2550,101 @@
     "kind": "passive",
     "name": "Omniscient Eye",
     "description": "Attacks never miss. 40% chance to gain EVASION (2 turns) on attack, 50% chance to counterattack melee hits. On enemy kill, strikes a random enemy and gains EVASION.\n\nEVASION: +25% Dodge chance."
+  },
+  {
+    "key": "PASSIVE_PELAGIC_FRENZY",
+    "name_key": "passive_pelagic_frenzy_name",
+    "desc_key": "passive_pelagic_frenzy_description",
+    "kind": "passive",
+    "name": "Pelagic Frenzy",
+    "description": "Strikes apply 60 charges of BLEED. Increases Dodge by +25% and Attack Speed by +120%, but reduces basic attack damage by 90%.\n\nBLEED: the target receives 1 damage at the start of its turn for every charge, then removes one charge"
+  },
+  {
+    "key": "PASSIVE_CALCIFIED_RETALIATION",
+    "name_key": "passive_calcified_retaliation_name",
+    "desc_key": "passive_calcified_retaliation_description",
+    "kind": "passive",
+    "name": "Calcified Retaliation",
+    "description": "Reflects 15% of incoming physical damage back to the attacker."
+  },
+  {
+    "key": "PASSIVE_DROWNED_DISCORD",
+    "name_key": "passive_drowned_discord_name",
+    "desc_key": "passive_drowned_discord_description",
+    "kind": "passive",
+    "name": "Whispers of the Deep",
+    "description": "Basic attacks have a 35% chance to Silence and a 40% chance to Confuse for 2 turns.\n\nSILENCE: Can't use skills, can't acquire mana.\nCONFUSE: Attacks allies and self."
+  },
+  {
+    "key": "PASSIVE_ABYSSAL_BIOLUMINESCENCE",
+    "name_key": "passive_abyssal_bioluminescence_name",
+    "desc_key": "passive_abyssal_bioluminescence_description",
+    "kind": "passive",
+    "name": "Benthic Luminescence",
+    "description": "Increases Damage Dealt, Hit Rate, and Attack Speed by [2 × Darkness]%."
+  },
+  {
+    "key": "PASSIVE_UNRELENTING_MAUL",
+    "name_key": "passive_unrelenting_maul_name",
+    "desc_key": "passive_unrelenting_maul_description",
+    "kind": "passive",
+    "name": "Crushing Reflexes",
+    "description": "Guaranteed 100% counterattack against physical hits. Attacks have a 10% chance to STUN.\n\nSTUN: the unit skips its turn."
+  },
+  {
+    "key": "PASSIVE_UNTAMED_AERIAL",
+    "name_key": "passive_untamed_aerial_name",
+    "desc_key": "passive_untamed_aerial_description",
+    "kind": "passive",
+    "name": "Untamed Aerial Predator",
+    "description": "Immune to grounded melee attacks."
+  },
+  {
+    "key": "PASSIVE_SANGUINE_SENTINEL",
+    "name_key": "passive_sanguine_sentinel_name",
+    "desc_key": "passive_sanguine_sentinel_description",
+    "kind": "passive",
+    "name": "Sanguine Sentinel",
+    "description": "This unit has a 5× chance of being targeted by enemies. Immune to ABLAZE, BLOODFLAME, BLEED, and POISON."
+  },
+  {
+    "key": "ACTIVE_TIDAL_TREMOR",
+    "name_key": "active_tidal_tremor_name",
+    "desc_key": "active_tidal_tremor_description",
+    "kind": "active",
+    "name": "Crushing Tremor",
+    "description": "Strikes all enemies, stunning them for 1 turn.\n\nSTUN: the unit skips its turn."
+  },
+  {
+    "key": "ACTIVE_MASS_CONFUSION",
+    "name_key": "active_mass_confusion_name",
+    "desc_key": "active_mass_confusion_description",
+    "kind": "active",
+    "name": "Sirens' Discord",
+    "description": "Sings an eerie oceanic melody, confusing all enemies for 2 turns.\n\nCONFUSE: Attack allies and self."
+  },
+  {
+    "key": "ACTIVE_BLINDING_FLASH",
+    "name_key": "active_blinding_flash_name",
+    "desc_key": "active_blinding_flash_description",
+    "kind": "active",
+    "name": "Blinding Esca Flash",
+    "description": "Flashes a brilliant bioluminescent lure, blinding all enemies for 2 turns.\n\nBLIND: Reduce 20% Hit Chance and 10% Dodge Chance per stack."
+  },
+  {
+    "key": "ACTIVE_ARMOR_SHRED",
+    "name_key": "active_armor_shred_name",
+    "desc_key": "active_armor_shred_description",
+    "kind": "active",
+    "name": "Armor-Rending Maul",
+    "description": "Strikes for 120% damage and shreds 20% Defense and Magic Defense for 3 turns."
+  },
+  {
+    "key": "ACTIVE_ABYSSAL_TERRIFY",
+    "name_key": "active_abyssal_terrify_name",
+    "desc_key": "active_abyssal_terrify_description",
+    "kind": "active",
+    "name": "Roar of the Deep",
+    "description": "Unleashes a terrifying roar that terrifies all enemies for 3 turns."
   }
 ]

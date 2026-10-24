@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_CALCIFIED_RETALIATION",
+  "name_key": "passive_calcified_retaliation_name",
+  "desc_key": "passive_calcified_retaliation_description",
+  "kind": "passive",
+  "name": "Calcified Retaliation",
+  "description": "Reflects 15% of incoming physical damage back to the attacker."
+}

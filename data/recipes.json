@@ -4796,5 +4796,245 @@
         "qty": 10
       }
     ]
+  },
+  {
+    "key": "AbhorrentLongAxe",
+    "output_item": "AbhorrentLongAxe",
+    "ingredients": [
+      {
+        "item": "CursedLongAxe",
+        "qty": 1
+      },
+      {
+        "item": "AbioticCore",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "SharkDagger",
+    "output_item": "SharkDagger",
+    "ingredients": [
+      {
+        "item": "SharkTeeth",
+        "qty": 6
+      },
+      {
+        "item": "SharkFin",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "AbyssalChitinDagger",
+    "output_item": "AbyssalChitinDagger",
+    "ingredients": [
+      {
+        "item": "SharkDagger",
+        "qty": 1
+      },
+      {
+        "item": "AbyssalChitin",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "SharkSword",
+    "output_item": "SharkSword",
+    "ingredients": [
+      {
+        "item": "SharkTeeth",
+        "qty": 8
+      },
+      {
+        "item": "CoralChunk",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "TrenchStiletto",
+    "output_item": "TrenchStiletto",
+    "ingredients": [
+      {
+        "item": "TrenchWyvernFin",
+        "qty": 36
+      }
+    ]
+  },
+  {
+    "key": "CoralAxe",
+    "output_item": "CoralAxe",
+    "ingredients": [
+      {
+        "item": "CoralChunk",
+        "qty": 14
+      },
+      {
+        "item": "Coral",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "CoralBow",
+    "output_item": "CoralBow",
+    "ingredients": [
+      {
+        "item": "Coral",
+        "qty": 10
+      },
+      {
+        "item": "CoralChunk",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "CoralStaff",
+    "output_item": "CoralStaff",
+    "ingredients": [
+      {
+        "item": "CoralChunk",
+        "qty": 10
+      },
+      {
+        "item": "OracleGem",
+        "qty": 2
+      },
+      {
+        "item": "BioluminescentEsca",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "CoralArmor",
+    "output_item": "CoralArmor",
+    "ingredients": [
+      {
+        "item": "CoralChunk",
+        "qty": 16
+      },
+      {
+        "item": "Coral",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "AbyssalChitinJacket",
+    "output_item": "AbyssalChitinJacket",
+    "ingredients": [
+      {
+        "item": "AbyssalChitin",
+        "qty": 14
+      },
+      {
+        "item": "SharkFin",
+        "qty": 6
+      },
+      {
+        "item": "SirenSilk",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "SirenRobe",
+    "output_item": "SirenRobe",
+    "ingredients": [
+      {
+        "item": "SirenSilk",
+        "qty": 28
+      }
+    ]
+  },
+  {
+    "key": "SirenCoralCombatRobe",
+    "output_item": "SirenCoralCombatRobe",
+    "ingredients": [
+      {
+        "item": "SirenSilk",
+        "qty": 27
+      },
+      {
+        "item": "CoralChunk",
+        "qty": 8
+      },
+      {
+        "item": "OracleGem",
+        "qty": 3
+      },
+      {
+        "item": "AbyssalPearl",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CoralHelmet",
+    "output_item": "CoralHelmet",
+    "ingredients": [
+      {
+        "item": "CoralChunk",
+        "qty": 10
+      },
+      {
+        "item": "Coral",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "CoralBoots",
+    "output_item": "CoralBoots",
+    "ingredients": [
+      {
+        "item": "Coral",
+        "qty": 12
+      },
+      {
+        "item": "CoralChunk",
+        "qty": 6
+      },
+      {
+        "item": "TrenchWyvernFin",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "CoralGloves",
+    "output_item": "CoralGloves",
+    "ingredients": [
+      {
+        "item": "Coral",
+        "qty": 10
+      },
+      {
+        "item": "CoralChunk",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "SpiralHat",
+    "output_item": "SpiralHat",
+    "ingredients": [
+      {
+        "item": "SpiralSeashell",
+        "qty": 10
+      },
+      {
+        "item": "SirenSilk",
+        "qty": 8
+      },
+      {
+        "item": "OracleGem",
+        "qty": 2
+      }
+    ]
   }
 ]

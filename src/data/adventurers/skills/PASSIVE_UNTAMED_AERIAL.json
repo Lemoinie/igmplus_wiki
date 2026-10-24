@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_UNTAMED_AERIAL",
+  "name_key": "passive_untamed_aerial_name",
+  "desc_key": "passive_untamed_aerial_description",
+  "kind": "passive",
+  "name": "Untamed Aerial Predator",
+  "description": "Immune to grounded melee attacks."
+}

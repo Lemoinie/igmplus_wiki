@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ARMOR_SHRED",
+  "name_key": "active_armor_shred_name",
+  "desc_key": "active_armor_shred_description",
+  "kind": "active",
+  "name": "Armor-Rending Maul",
+  "description": "Strikes for 120% damage and shreds 20% Defense and Magic Defense for 3 turns."
+}

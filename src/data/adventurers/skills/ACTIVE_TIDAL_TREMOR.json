@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_TIDAL_TREMOR",
+  "name_key": "active_tidal_tremor_name",
+  "desc_key": "active_tidal_tremor_description",
+  "kind": "active",
+  "name": "Crushing Tremor",
+  "description": "Strikes all enemies, stunning them for 1 turn.\n\nSTUN: the unit skips its turn."
+}

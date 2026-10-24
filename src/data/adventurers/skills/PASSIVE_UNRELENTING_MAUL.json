@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_UNRELENTING_MAUL",
+  "name_key": "passive_unrelenting_maul_name",
+  "desc_key": "passive_unrelenting_maul_description",
+  "kind": "passive",
+  "name": "Crushing Reflexes",
+  "description": "Guaranteed 100% counterattack against physical hits. Attacks have a 10% chance to STUN.\n\nSTUN: the unit skips its turn."
+}

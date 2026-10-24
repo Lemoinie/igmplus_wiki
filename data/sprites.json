@@ -11,6 +11,18 @@
   "absolute_zero": [
     "item:AbsoluteZero"
   ],
+  "abyssal_chitin": [
+    "item:AbyssalChitin"
+  ],
+  "abyssal_chitin_buckler": [
+    "item:AbyssalChitinBuckler"
+  ],
+  "abyssal_chitin_dagger": [
+    "item:AbyssalChitinDagger"
+  ],
+  "abyssal_chitin_jacket": [
+    "item:AbyssalChitinJacket"
+  ],
   "abyssal_compendium": [
     "item:AbyssalCompendium"
   ],
@@ -25,6 +37,9 @@
   ],
   "abyssal_ingot": [
     "item:AbyssalIngot"
+  ],
+  "abyssal_pearl": [
+    "item:AbyssalPearl"
   ],
   "abyssal_scarlet_mantle": [
     "item:AbyssalScarletMantle"
@@ -153,6 +168,9 @@
   "area_celestial_mothership": [
     "place:CelestialMothership:detail"
   ],
+  "area_corrupted_forest": [
+    "place:CorruptedForest:detail"
+  ],
   "area_divine_archeology": [
     "place:DivineArcheology:detail"
   ],
@@ -191,6 +209,9 @@
   ],
   "area_sleeping_planet": [
     "place:SleepingPlanet:detail"
+  ],
+  "area_sunken_citadel": [
+    "place:TheSunkenCitadel:detail"
   ],
   "area_the_cultist_rebels": [
     "place:TheCultistRebels:detail"
@@ -287,6 +308,9 @@
   ],
   "berserkers_axe": [
     "item:BerserkersAxe"
+  ],
+  "bioluminescent_esca": [
+    "item:BioluminescentEsca"
   ],
   "black_hide": [
     "item:BlackHide"
@@ -494,6 +518,33 @@
   "copper_sword": [
     "item:CopperSword"
   ],
+  "coral": [
+    "item:Coral"
+  ],
+  "coral_armor": [
+    "item:CoralArmor"
+  ],
+  "coral_axe": [
+    "item:CoralAxe"
+  ],
+  "coral_boots": [
+    "item:CoralBoots"
+  ],
+  "coral_bow": [
+    "item:CoralBow"
+  ],
+  "coral_chunk": [
+    "item:CoralChunk"
+  ],
+  "coral_gloves": [
+    "item:CoralGloves"
+  ],
+  "coral_helmet": [
+    "item:CoralHelmet"
+  ],
+  "coral_staff": [
+    "item:CoralStaff"
+  ],
   "corrupted_axe": [
     "item:CorruptedAxe"
   ],
@@ -523,6 +574,9 @@
   ],
   "crimson_leech": [
     "item:CrimsonLeech"
+  ],
+  "crimson_reef_goliath": [
+    "enemy:CrimsonReefGoliath"
   ],
   "crusader_insigna": [
     "item:CrusaderInsigna"
@@ -571,6 +625,9 @@
   ],
   "deep_sea_jacket": [
     "item:DeepSeaJacket"
+  ],
+  "deep_sea_mauler": [
+    "enemy:DeepSeaMauler"
   ],
   "deep_sea_robe": [
     "item:DeepSeaRobe"
@@ -1104,6 +1161,9 @@
   "glazed_donut": [
     "item:GlazedDonut"
   ],
+  "gloom_angler_snapper": [
+    "enemy:GloomAnglerSnapper"
+  ],
   "gold_axe": [
     "item:GoldenAxe"
   ],
@@ -1176,14 +1236,21 @@
   "icon_effect_bleed": [
     "status_effect:BLEED"
   ],
+  "icon_effect_blind": [
+    "status_effect:BLIND"
+  ],
   "icon_effect_bloodflame": [
     "status_effect:BLOODFLAME"
   ],
   "icon_effect_brittle_toxin": [
     "status_effect:BRITTLE_TOXIN"
   ],
+  "icon_effect_confuse": [
+    "status_effect:CONFUSE"
+  ],
   "icon_effect_corrosion": [
-    "status_effect:CORROSION"
+    "status_effect:CORROSION",
+    "status_effect:ARMOR_SHRED"
   ],
   "icon_effect_curse": [
     "status_effect:LESSER_CURSE",
@@ -1382,6 +1449,9 @@
   "leek": [
     "item:Leek"
   ],
+  "leviathan_hatchling": [
+    "enemy:LeviathanHatchling"
+  ],
   "living_sap": [
     "item:LivingSap"
   ],
@@ -1541,6 +1611,9 @@
   ],
   "omni_sever": [
     "item:OmniSever"
+  ],
+  "oracle_gem": [
+    "item:OracleGem"
   ],
   "orb_of_ectoplasm": [
     "item:OrbOfEctoplasm"
@@ -1900,6 +1973,18 @@
   "shahuri_bow_frame": [
     "item:ShahuriBowFrame"
   ],
+  "shark_dagger": [
+    "item:SharkDagger"
+  ],
+  "shark_fin": [
+    "item:SharkFin"
+  ],
+  "shark_sword": [
+    "item:SharkSword"
+  ],
+  "shark_teeth": [
+    "item:SharkTeeth"
+  ],
   "sharp_rib": [
     "item:SharpRib"
   ],
@@ -1941,6 +2026,15 @@
   ],
   "sinister_stabilizer": [
     "item:SinisterStabilizer"
+  ],
+  "siren_coral_combat_robe": [
+    "item:SirenCoralCombatRobe"
+  ],
+  "siren_robe": [
+    "item:SirenRobe"
+  ],
+  "siren_silk": [
+    "item:SirenSilk"
   ],
   "skeleton_key": [
     "status_effect:SKELETON_KEY",
@@ -2018,6 +2112,12 @@
   "spiked_tortoise_shield": [
     "item:SpikedTortoiseShield"
   ],
+  "spiral_hat": [
+    "item:SpiralHat"
+  ],
+  "spiral_seashell": [
+    "item:SpiralSeashell"
+  ],
   "spirit_candle": [
     "item:SpiritCandle"
   ],
@@ -2081,6 +2181,9 @@
   "summary_celestial_mothership": [
     "place:CelestialMothership:summary"
   ],
+  "summary_corrupted_forest": [
+    "place:CorruptedForest:summary"
+  ],
   "summary_divine_archeology": [
     "place:DivineArcheology:summary"
   ],
@@ -2119,6 +2222,9 @@
   ],
   "summary_sleeping_planet": [
     "place:SleepingPlanet:summary"
+  ],
+  "summary_sunken_citadel": [
+    "place:TheSunkenCitadel:summary"
   ],
   "summary_the_cultist_rebels": [
     "place:TheCultistRebels:summary"
@@ -2159,6 +2265,9 @@
   "sunfire_essence": [
     "item:SunfireEssence"
   ],
+  "sunken_doubloon": [
+    "item:SunkenDoubloon"
+  ],
   "swarmkeeper_armor": [
     "item:SwarmkeeperArmor"
   ],
@@ -2195,8 +2304,17 @@
   "thick_fur": [
     "item:ThickFur"
   ],
+  "tidal_lantern": [
+    "item:TidalLantern"
+  ],
+  "tide_cursed_oracle": [
+    "enemy:TideCursedOracle"
+  ],
   "tiger_jaws": [
     "item:TigerJaws"
+  ],
+  "tiger_shark": [
+    "enemy:TigerShark"
   ],
   "tiramisu": [
     "item:Tiramisu"
@@ -2221,6 +2339,15 @@
   ],
   "training_bow": [
     "item:TrainingBow"
+  ],
+  "trench_stiletto": [
+    "item:TrenchStiletto"
+  ],
+  "trench_wyvern": [
+    "enemy:TrenchWyvern"
+  ],
+  "trench_wyvern_fin": [
+    "item:TrenchWyvernFin"
   ],
   "troll_hide": [
     "item:TrollHide"
@@ -2445,6 +2572,21 @@
   ],
   "unit_corrosive_wraith": [
     "unit:CorrosiveWraith"
+  ],
+  "unit_corrupted_boar": [
+    "enemy:CorruptedBoar"
+  ],
+  "unit_corrupted_centaur": [
+    "enemy:CorruptedCentaur"
+  ],
+  "unit_corrupted_ent": [
+    "enemy:CorruptedEnt"
+  ],
+  "unit_corrupted_treant": [
+    "enemy:CorruptedTreant"
+  ],
+  "unit_corrupted_wolf": [
+    "enemy:CorruptedWolf"
   ],
   "unit_crimson_warlord": [
     "unit:CrimsonWarlord"

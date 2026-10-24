@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ABYSSAL_BIOLUMINESCENCE",
+  "name_key": "passive_abyssal_bioluminescence_name",
+  "desc_key": "passive_abyssal_bioluminescence_description",
+  "kind": "passive",
+  "name": "Benthic Luminescence",
+  "description": "Increases Damage Dealt, Hit Rate, and Attack Speed by [2 × Darkness]%."
+}

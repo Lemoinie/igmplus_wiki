@@ -372,12 +372,12 @@
   {
     "key": "RAGE",
     "name_key": "status_effect_rage",
-    "desc_key": "status_effect_rage_description",
+    "desc_key": "status_effect_rage_log_description",
     "sprite": "icon_effect_rage",
     "negative": false,
     "serialized": false,
     "name": "Rage",
-    "description": "Damage dealt increased by 30%, but takes 30% extra damage."
+    "description": "enraged."
   },
   {
     "key": "THORNS",
@@ -408,5 +408,35 @@
     "serialized": false,
     "name": "Aether Overload",
     "description": "afflicted with Aether Overload"
+  },
+  {
+    "key": "CONFUSE",
+    "name_key": "status_effect_confuse",
+    "desc_key": "status_effect_confuse_log_description",
+    "sprite": "icon_effect_confuse",
+    "negative": true,
+    "serialized": true,
+    "name": "Confuse",
+    "description": "confused"
+  },
+  {
+    "key": "BLIND",
+    "name_key": "status_effect_blind",
+    "desc_key": "status_effect_blind_log_description",
+    "sprite": "icon_effect_blind",
+    "negative": true,
+    "serialized": true,
+    "name": "Blind",
+    "description": "blinded"
+  },
+  {
+    "key": "ARMOR_SHRED",
+    "name_key": "status_effect_armor_shred",
+    "desc_key": "status_effect_armor_shred_description",
+    "sprite": "icon_effect_corrosion",
+    "negative": true,
+    "serialized": true,
+    "name": "Armor Shred",
+    "description": "Physical and Magic Defense are reduced by 20%."
   }
 ]

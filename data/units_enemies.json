@@ -18,6 +18,11 @@
     "exp_given": 196,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_MASSIVE",
     "min_damage": "30",
     "max_damage": "35",
     "drops": [
@@ -58,6 +63,11 @@
     "exp_given": 188,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NEUROTOXICITY",
     "min_damage": "150",
     "max_damage": "190",
     "drops": [
@@ -88,6 +98,11 @@
     "exp_given": 240,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_FLEECE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "140",
     "max_damage": "195",
     "drops": [
@@ -133,6 +148,11 @@
     "exp_given": 15,
     "rarity": 0,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1",
     "max_damage": "2",
     "drops": [
@@ -163,6 +183,11 @@
     "exp_given": 92,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_ARCANE_STRIKE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "30",
     "max_damage": "60",
     "drops": [
@@ -203,6 +228,11 @@
     "exp_given": 330,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_RAYS_OF_DESTRUCTION",
+    "passive_skill": "PASSIVE_ELEMENTAL_MASTERY",
     "min_damage": "180",
     "max_damage": "195",
     "drops": [
@@ -256,6 +286,11 @@
     "exp_given": 50000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_SCARLET_AEONIA",
+    "passive_skill": "PASSIVE_BLOOD_CONVOCATION",
     "min_damage": "200",
     "max_damage": "250",
     "drops": [
@@ -334,6 +369,11 @@
     "exp_given": 10000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_COSMIC_PROJECTION",
     "min_damage": "610",
     "max_damage": "650",
     "drops": [
@@ -369,6 +409,11 @@
     "exp_given": 250,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_TERRITORIAL",
     "min_damage": "153",
     "max_damage": "205",
     "drops": [
@@ -414,6 +459,11 @@
     "exp_given": 125,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_ARCANE_BARRAGE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "38",
     "max_damage": "46",
     "drops": [
@@ -454,6 +504,11 @@
     "exp_given": 175,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_BERSERKER_RAGE",
     "min_damage": "390",
     "max_damage": "450",
     "drops": [
@@ -489,6 +544,11 @@
     "exp_given": 1000,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_MASS_HEAL_I",
+    "passive_skill": "PASSIVE_TERATOGEN",
     "min_damage": "200",
     "max_damage": "350",
     "drops": [
@@ -525,6 +585,11 @@
     "exp_given": 360,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_INSTILL_TERROR",
+    "passive_skill": "PASSIVE_NIGHT_HUNTER",
     "min_damage": "160",
     "max_damage": "380",
     "drops": [
@@ -560,6 +625,11 @@
     "exp_given": 3500,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SANGUINE_SENTINEL",
     "min_damage": "120",
     "max_damage": "180",
     "drops": [
@@ -596,6 +666,11 @@
     "exp_given": 35,
     "rarity": 0,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "2",
     "max_damage": "4",
     "drops": [
@@ -626,6 +701,11 @@
     "exp_given": 10,
     "rarity": 0,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1",
     "max_damage": "2",
     "drops": [
@@ -656,6 +736,11 @@
     "exp_given": 12,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1",
     "max_damage": "3",
     "drops": [
@@ -700,6 +785,11 @@
     "exp_given": 1000,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_THREATENING_II",
     "min_damage": "300",
     "max_damage": "400",
     "drops": [],
@@ -724,8 +814,13 @@
     "exp_given": 2400,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING_FORTRESS",
     "min_damage": "100",
-    "max_damage": "Logger.120",
+    "max_damage": "120",
     "drops": [
       {
         "item": "CelestialScraps",
@@ -759,6 +854,11 @@
     "exp_given": 200,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_THREATENING_II",
     "min_damage": "130",
     "max_damage": "170",
     "drops": [
@@ -794,6 +894,11 @@
     "exp_given": 24,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INITIATIVE",
     "min_damage": "8",
     "max_damage": "15",
     "drops": [
@@ -834,6 +939,11 @@
     "exp_given": 860,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_MIND_FLAY",
     "min_damage": "500",
     "max_damage": "800",
     "drops": [
@@ -865,6 +975,11 @@
     "exp_given": 4000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_LIVE_TEST",
+    "passive_skill": "PASSIVE_UNETHICAL_CONDUCT",
     "min_damage": "750",
     "max_damage": "2500",
     "drops": [
@@ -900,6 +1015,11 @@
     "exp_given": 1500,
     "rarity": 2,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "70",
     "max_damage": "100",
     "drops": [
@@ -907,6 +1027,11 @@
         "item": "CoinPurse",
         "qty": 1,
         "weight": 1000
+      },
+      {
+        "item": "TidalLantern",
+        "qty": 1,
+        "weight": 10
       }
     ],
     "independent_drops": []
@@ -930,6 +1055,11 @@
     "exp_given": 35,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_RESTORE_ORDER",
+    "passive_skill": "PASSIVE_THREATENING_I",
     "min_damage": "26",
     "max_damage": "31",
     "drops": [
@@ -970,6 +1100,11 @@
     "exp_given": 540,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_ARCANE_DIFFUSION",
+    "passive_skill": "PASSIVE_STATIC_AFFINITY",
     "min_damage": "182",
     "max_damage": "188",
     "drops": [
@@ -987,6 +1122,256 @@
         "item": "PotionOfMagicDefense",
         "qty": 1,
         "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedBoar",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_boar",
+    "name_key": "enemy_corrupted_boar_name",
+    "description_key": "enemy_corrupted_boar_description",
+    "name": "Corrupted Boar",
+    "description": "An enraged forest beast armored in hardened, jagged bone and dark fungal growths.",
+    "stats": {
+      "baseMaxHp": 200,
+      "baseConstitution": 20,
+      "baseIntelligence": 4,
+      "baseDexterity": 4,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 24,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
+    "min_damage": "2",
+    "max_damage": "6",
+    "drops": [
+      {
+        "item": "BoarTusk",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "BeastPelt",
+        "qty": 1,
+        "weight": 450
+      },
+      {
+        "item": "MeatChop",
+        "qty": 1,
+        "weight": 12
+      },
+      {
+        "item": "WildEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedCentaur",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_centaur",
+    "name_key": "enemy_corrupted_centaur_name",
+    "description_key": "enemy_corrupted_centaur_description",
+    "name": "Corrupted Centaur",
+    "description": "A swift woodland hunter infected by the corruption, firing piercing shadow arrows.",
+    "stats": {
+      "baseMaxHp": 160,
+      "baseConstitution": 24,
+      "baseIntelligence": 20,
+      "baseDexterity": 44,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 48,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INITIATIVE",
+    "min_damage": "16",
+    "max_damage": "30",
+    "drops": [
+      {
+        "item": "PlantFiber",
+        "qty": 1,
+        "weight": 450
+      },
+      {
+        "item": "CopperOre",
+        "qty": 1,
+        "weight": 450
+      },
+      {
+        "item": "Cheese",
+        "qty": 1,
+        "weight": 25
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedEnt",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_ent",
+    "name_key": "enemy_corrupted_ent_name",
+    "description_key": "enemy_corrupted_ent_description",
+    "name": "Corrupted Ent",
+    "description": "A towering colossus of petrified, blighted wood, shaking the earth with catastrophic stomps.",
+    "stats": {
+      "baseMaxHp": 600,
+      "baseConstitution": 40,
+      "baseIntelligence": 40,
+      "baseDexterity": 6,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 240,
+    "rarity": 3,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_STOMP",
+    "passive_skill": "PASSIVE_NONE",
+    "min_damage": "22",
+    "max_damage": "28",
+    "drops": [
+      {
+        "item": "Wood",
+        "qty": 1,
+        "weight": 499
+      },
+      {
+        "item": "AncientSeed",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "Apple",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "WoodenEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedTreant",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_treant",
+    "name_key": "enemy_corrupted_treant_name",
+    "description_key": "enemy_corrupted_treant_description",
+    "name": "Corrupted Treant",
+    "description": "Twisted by dark energies, this once-gentle forest guardian lashes out with necrotic vines.",
+    "stats": {
+      "baseMaxHp": 200,
+      "baseConstitution": 20,
+      "baseIntelligence": 10,
+      "baseDexterity": 12,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 48,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
+    "min_damage": "12",
+    "max_damage": "18",
+    "drops": [
+      {
+        "item": "Wood",
+        "qty": 1,
+        "weight": 599
+      },
+      {
+        "item": "PlantFiber",
+        "qty": 1,
+        "weight": 345
+      },
+      {
+        "item": "LivingSap",
+        "qty": 1,
+        "weight": 5
+      },
+      {
+        "item": "Tomato",
+        "qty": 1,
+        "weight": 12
+      },
+      {
+        "item": "WoodenEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedWolf",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_wolf",
+    "name_key": "enemy_corrupted_wolf_name",
+    "description_key": "enemy_corrupted_wolf_description",
+    "name": "Corrupted Wolf",
+    "description": "A rabid canine mutated by dark blight, driven by an unquenchable bloodthirst.",
+    "stats": {
+      "baseMaxHp": 120,
+      "baseConstitution": 16,
+      "baseIntelligence": 4,
+      "baseDexterity": 14,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 24,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
+    "min_damage": "4",
+    "max_damage": "12",
+    "drops": [
+      {
+        "item": "BeastPelt",
+        "qty": 1,
+        "weight": 700
+      },
+      {
+        "item": "AlphaWolfFang",
+        "qty": 1,
+        "weight": 80
+      },
+      {
+        "item": "WerewolfFang",
+        "qty": 1,
+        "weight": 2
+      },
+      {
+        "item": "WildEgg",
+        "qty": 1,
+        "weight": 1
       }
     ],
     "independent_drops": []
@@ -1013,6 +1398,11 @@
     "exp_given": 2500,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_SANGUINE_PYRE",
+    "passive_skill": "PASSIVE_MARTYRS_PACT",
     "min_damage": "100",
     "max_damage": "200",
     "drops": [
@@ -1061,6 +1451,47 @@
     ]
   },
   {
+    "key": "CrimsonReefGoliath",
+    "parent": "Enemy",
+    "sprite": "crimson_reef_goliath",
+    "name_key": "enemy_crimson_reef_goliath_name",
+    "description_key": "enemy_crimson_reef_goliath_description",
+    "name": "Crimson Reef Goliath",
+    "description": "A hulking construct formed from calcified living coral.",
+    "stats": {
+      "baseMaxHp": 3100,
+      "baseConstitution": 125,
+      "baseIntelligence": 6,
+      "baseDexterity": 22,
+      "baseDefense": 68,
+      "baseMagicDefense": 18,
+      "regeneration": 60
+    },
+    "exp_given": 260,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_TIDAL_TREMOR",
+    "passive_skill": "PASSIVE_CALCIFIED_RETALIATION",
+    "min_damage": "460",
+    "max_damage": "550",
+    "drops": [
+      {
+        "item": "CoralChunk",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "Coral",
+        "qty": 2,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "Crusader",
     "parent": "Enemy",
     "sprite": "unit_crusader",
@@ -1080,6 +1511,11 @@
     "exp_given": 72,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_LESSER_PSYONIC",
     "min_damage": "55",
     "max_damage": "80",
     "drops": [
@@ -1115,6 +1551,11 @@
     "exp_given": 36,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INITIATIVE",
     "min_damage": "17",
     "max_damage": "28",
     "drops": [
@@ -1150,6 +1591,11 @@
     "exp_given": 30,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "24",
     "max_damage": "28",
     "drops": [
@@ -1177,6 +1623,47 @@
     "independent_drops": []
   },
   {
+    "key": "DeepSeaMauler",
+    "parent": "Enemy",
+    "sprite": "deep_sea_mauler",
+    "name_key": "enemy_deep_sea_mauler_name",
+    "description_key": "enemy_deep_sea_mauler_description",
+    "name": "Deep Sea Mauler",
+    "description": "A winged aberration possessing crushing reflexes and armor-rending talons.",
+    "stats": {
+      "baseMaxHp": 2450,
+      "baseConstitution": 88,
+      "baseIntelligence": 16,
+      "baseDexterity": 62,
+      "baseDefense": 42,
+      "baseMagicDefense": 34,
+      "counterattack": 1.0
+    },
+    "exp_given": 265,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_ARMOR_SHRED",
+    "passive_skill": "PASSIVE_UNRELENTING_MAUL",
+    "min_damage": "470",
+    "max_damage": "570",
+    "drops": [
+      {
+        "item": "CoralChunk",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "AbyssalChitin",
+        "qty": 1,
+        "weight": 25
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "Djinn",
     "parent": "Enemy",
     "sprite": "unit_djinn",
@@ -1195,6 +1682,11 @@
     "exp_given": 142,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_SANDSTORM",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "27",
     "max_damage": "33",
     "drops": [
@@ -1235,6 +1727,11 @@
     "exp_given": 400,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "550",
     "max_damage": "800",
     "drops": [
@@ -1265,6 +1762,11 @@
     "exp_given": 550,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING",
     "min_damage": "900",
     "max_damage": "1150",
     "drops": [
@@ -1295,6 +1797,11 @@
     "exp_given": 625,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_DREAM_FORGE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1000",
     "max_damage": "1150",
     "drops": [
@@ -1325,6 +1832,11 @@
     "exp_given": 500,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SWARM",
     "min_damage": "275",
     "max_damage": "285",
     "drops": [
@@ -1365,6 +1877,11 @@
     "exp_given": 200,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_DAZE",
+    "passive_skill": "PASSIVE_HEALER_I",
     "min_damage": "150",
     "max_damage": "280",
     "drops": [
@@ -1416,6 +1933,11 @@
     "exp_given": 326,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_WICKED_APPETITE",
     "min_damage": "178",
     "max_damage": "252",
     "drops": [
@@ -1451,6 +1973,11 @@
     "exp_given": 30,
     "rarity": null,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_POSITIVE_CHARGE",
     "min_damage": "26",
     "max_damage": "35",
     "drops": [
@@ -1497,7 +2024,12 @@
     "exp_given": 9600,
     "rarity": 1,
     "is_boss": true,
-    "min_damage": "Logger.115",
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_PANDEMONIUM",
+    "passive_skill": "PASSIVE_ENHANCED_IMMUNITY",
+    "min_damage": "115",
     "max_damage": "140",
     "drops": [
       {
@@ -1527,6 +2059,11 @@
     "exp_given": 575,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_SMASH",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "825",
     "max_damage": "1100",
     "drops": [
@@ -1559,9 +2096,14 @@
       "baseDefense": 0,
       "baseMagicDefense": 0
     },
-    "exp_given": "Logger.BARD_SHIELD",
+    "exp_given": 120,
     "rarity": 3,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_STOMP",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "11",
     "max_damage": "14",
     "drops": [
@@ -1607,7 +2149,12 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.112",
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
+    "min_damage": "112",
     "max_damage": "138",
     "drops": [],
     "independent_drops": []
@@ -1631,6 +2178,11 @@
     "exp_given": 30,
     "rarity": null,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_RED_HOT",
     "min_damage": "26",
     "max_damage": "35",
     "drops": [
@@ -1676,6 +2228,11 @@
     "exp_given": 4000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_AT_THE_STAKE",
+    "passive_skill": "PASSIVE_ABLAZE",
     "min_damage": "1200",
     "max_damage": "1900",
     "drops": [
@@ -1711,6 +2268,11 @@
     "exp_given": 600,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_SOOTHING_WINDS",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "72",
     "max_damage": "92",
     "drops": [
@@ -1741,6 +2303,11 @@
     "exp_given": 30,
     "rarity": null,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SUB_ZERO",
     "min_damage": "26",
     "max_damage": "35",
     "drops": [
@@ -1786,6 +2353,11 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INORGANIC",
     "min_damage": "600",
     "max_damage": "900",
     "drops": [
@@ -1816,6 +2388,11 @@
     "exp_given": 90,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "18",
     "max_damage": "32",
     "drops": [
@@ -1846,6 +2423,11 @@
     "exp_given": 70,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_CHOKING_POWDER",
+    "passive_skill": "PASSIVE_FLYING",
     "min_damage": "70",
     "max_damage": "95",
     "drops": [
@@ -1881,6 +2463,11 @@
     "exp_given": 58,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_VENOMOUS_BITE",
     "min_damage": "30",
     "max_damage": "60",
     "drops": [
@@ -1921,6 +2508,11 @@
     "exp_given": 70,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SHARP_SPIKES",
     "min_damage": "40",
     "max_damage": "55",
     "drops": [
@@ -1948,6 +2540,46 @@
     "independent_drops": []
   },
   {
+    "key": "GloomAnglerSnapper",
+    "parent": "Enemy",
+    "sprite": "gloom_angler_snapper",
+    "name_key": "enemy_gloom_angler_snapper_name",
+    "description_key": "enemy_gloom_angler_snapper_description",
+    "name": "Gloom Angler Snapper",
+    "description": "An abyssal predator with a glowing cyan esca lure that pierces eternal dark.",
+    "stats": {
+      "baseMaxHp": 1620,
+      "baseConstitution": 50,
+      "baseIntelligence": 28,
+      "baseDexterity": 120,
+      "baseDefense": 22,
+      "baseMagicDefense": 28
+    },
+    "exp_given": 235,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_BLINDING_FLASH",
+    "passive_skill": "PASSIVE_ABYSSAL_BIOLUMINESCENCE",
+    "min_damage": "420",
+    "max_damage": "520",
+    "drops": [
+      {
+        "item": "BioluminescentEsca",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "AbyssalPearl",
+        "qty": 1,
+        "weight": 50
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "GoldenRabbit",
     "parent": "Enemy",
     "sprite": "unit_golden_rabbit",
@@ -1963,9 +2595,14 @@
       "baseDefense": 0,
       "baseMagicDefense": 0
     },
-    "exp_given": "Logger.BARD_SHIELD",
+    "exp_given": 120,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_ESCAPE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1",
     "max_damage": "2",
     "drops": [
@@ -2006,6 +2643,11 @@
     "exp_given": 92,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INITIATIVE",
     "min_damage": "105",
     "max_damage": "150",
     "drops": [
@@ -2046,6 +2688,11 @@
     "exp_given": 10000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_BLIND_RAGE",
     "min_damage": "1650",
     "max_damage": "1800",
     "drops": [
@@ -2077,6 +2724,11 @@
     "exp_given": 9600,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_SACRIFICE",
+    "passive_skill": "PASSIVE_CLAIRVOYANCE",
     "min_damage": "280",
     "max_damage": "305",
     "drops": [
@@ -2108,6 +2760,11 @@
     "exp_given": 9600,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_BOTCHED_SACRIFICE",
+    "passive_skill": "PASSIVE_CLAIRVOYANCE",
     "min_damage": "280",
     "max_damage": "305",
     "drops": [
@@ -2139,6 +2796,11 @@
     "exp_given": 9600,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_BOTCHED_SACRIFICE",
+    "passive_skill": "PASSIVE_CLAIRVOYANCE",
     "min_damage": "280",
     "max_damage": "305",
     "drops": [
@@ -2170,6 +2832,11 @@
     "exp_given": 9600,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_BOTCHED_SACRIFICE",
+    "passive_skill": "PASSIVE_CLAIRVOYANCE",
     "min_damage": "280",
     "max_damage": "305",
     "drops": [
@@ -2200,6 +2867,11 @@
     "exp_given": 280,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_ICE_TOMB",
+    "passive_skill": "PASSIVE_SUB_ZERO",
     "min_damage": "20",
     "max_damage": "55",
     "drops": [
@@ -2245,6 +2917,11 @@
     "exp_given": 80,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_PURIFIER",
     "min_damage": "80",
     "max_damage": "82",
     "drops": [
@@ -2277,9 +2954,14 @@
       "baseDefense": 0,
       "baseMagicDefense": 0
     },
-    "exp_given": "Logger.ARCANE_SUPPRESSION",
+    "exp_given": 116,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING_DISEASE",
     "min_damage": "130",
     "max_damage": "180",
     "drops": [
@@ -2311,6 +2993,11 @@
     "exp_given": 500,
     "rarity": 2,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_EXECUTION_ORDER",
+    "passive_skill": "PASSIVE_IMPERIAL_AUTHORITY",
     "min_damage": "100",
     "max_damage": "150",
     "drops": [],
@@ -2335,6 +3022,11 @@
     "exp_given": 92,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_PROTECT_THE_WEAK",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "30",
     "max_damage": "34",
     "drops": [
@@ -2375,6 +3067,11 @@
     "exp_given": 92,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_STATIC_SURGE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "26",
     "max_damage": "29",
     "drops": [
@@ -2420,6 +3117,11 @@
     "exp_given": 19,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "23",
     "max_damage": "27",
     "drops": [
@@ -2465,6 +3167,11 @@
     "exp_given": 19,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "23",
     "max_damage": "27",
     "drops": [
@@ -2515,6 +3222,11 @@
     "exp_given": 35,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_HEALER_I",
     "min_damage": "40",
     "max_damage": "42",
     "drops": [
@@ -2566,6 +3278,11 @@
     "exp_given": 360,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_LICH_CURSE",
     "min_damage": "130",
     "max_damage": "150",
     "drops": [
@@ -2607,6 +3324,11 @@
     "exp_given": 5000,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_CLAIRVOYANCE",
     "min_damage": "280",
     "max_damage": "305",
     "drops": [],
@@ -2631,6 +3353,11 @@
     "exp_given": 5500,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_GARGANTUAN",
     "min_damage": "2500",
     "max_damage": "3500",
     "drops": [
@@ -2666,6 +3393,11 @@
     "exp_given": 40,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_ARMORED",
     "min_damage": "50",
     "max_damage": "75",
     "drops": [],
@@ -2691,6 +3423,11 @@
     "exp_given": 5000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_TRUE_LIFESTEAL",
     "min_damage": "2800",
     "max_damage": "4000",
     "drops": [
@@ -2728,6 +3465,11 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_BIOENHANCED",
     "min_damage": "950",
     "max_damage": "950",
     "drops": [],
@@ -2752,6 +3494,11 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INORGANIC",
     "min_damage": "220",
     "max_damage": "300",
     "drops": [
@@ -2769,6 +3516,46 @@
         "item": "ConstructEgg",
         "qty": 1,
         "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "LeviathanHatchling",
+    "parent": "Enemy",
+    "sprite": "leviathan_hatchling",
+    "name_key": "enemy_leviathan_hatchling_name",
+    "description_key": "enemy_leviathan_hatchling_description",
+    "name": "Leviathan Hatchling",
+    "description": "An apex juvenile sea dragon lured by the hypnotic glow of the Tidal Lantern.",
+    "stats": {
+      "baseMaxHp": 8800,
+      "baseConstitution": 190,
+      "baseIntelligence": 160,
+      "baseDexterity": 65,
+      "baseDefense": 45,
+      "baseMagicDefense": 55
+    },
+    "exp_given": 4800,
+    "rarity": 2,
+    "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_ABYSSAL_TERRIFY",
+    "passive_skill": "PASSIVE_DEFLECT_MAGIC",
+    "min_damage": "590",
+    "max_damage": "700",
+    "drops": [
+      {
+        "item": "AbyssalPearl",
+        "qty": 2,
+        "weight": 500
+      },
+      {
+        "item": "AbyssalChitin",
+        "qty": 3,
+        "weight": 250
       }
     ],
     "independent_drops": []
@@ -2793,6 +3580,11 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NIGHT_HUNTER",
     "min_damage": "88",
     "max_damage": "162",
     "drops": [
@@ -2831,10 +3623,15 @@
       "baseMagicDefense": 150,
       "retaliationMagicalDamage": 105
     },
-    "exp_given": "Logger.ARCANE_SUPPRESSION",
+    "exp_given": 116,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.120",
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_DISASSEMBLE",
+    "passive_skill": "PASSIVE_ANIMATED_GUARDIAN",
+    "min_damage": "120",
     "max_damage": "135",
     "drops": [
       {
@@ -2874,6 +3671,11 @@
     "exp_given": 60,
     "rarity": 0,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "4",
     "max_damage": "7",
     "drops": [
@@ -2904,6 +3706,11 @@
     "exp_given": 132,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INITIATIVE",
     "min_damage": "42",
     "max_damage": "78",
     "drops": [
@@ -2945,6 +3752,11 @@
     "exp_given": 132,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_REGENERATION_III",
     "min_damage": "21",
     "max_damage": "24",
     "drops": [
@@ -2980,6 +3792,11 @@
     "exp_given": 480,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SHARP_BLADES",
     "min_damage": "600",
     "max_damage": "750",
     "drops": [
@@ -3010,6 +3827,11 @@
     "exp_given": 10,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_THREATENING_I",
     "min_damage": "1",
     "max_damage": "2",
     "drops": [],
@@ -3034,6 +3856,11 @@
     "exp_given": 140,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_OVERDRIVE",
+    "passive_skill": "PASSIVE_REVERSE_ENTROPY",
     "min_damage": "225",
     "max_damage": "240",
     "drops": [
@@ -3074,6 +3901,11 @@
     "exp_given": 84,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_DEFLECT_MAGIC",
     "min_damage": "20",
     "max_damage": "25",
     "drops": [
@@ -3109,7 +3941,12 @@
     "exp_given": 80,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.110",
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING",
+    "min_damage": "110",
     "max_damage": "135",
     "drops": [
       {
@@ -3150,7 +3987,12 @@
     "exp_given": 2500,
     "rarity": 1,
     "is_boss": false,
-    "min_damage": "Logger.112",
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NIGHT_HUNTER",
+    "min_damage": "112",
     "max_damage": "218",
     "drops": [
       {
@@ -3180,6 +4022,11 @@
     "exp_given": 5,
     "rarity": 0,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1",
     "max_damage": "2",
     "drops": [
@@ -3211,6 +4058,11 @@
     "exp_given": 450,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_LIGHTS_OUT",
+    "passive_skill": "PASSIVE_ELUSIVE",
     "min_damage": "999",
     "max_damage": "1000",
     "drops": [
@@ -3241,6 +4093,11 @@
     "exp_given": 7500,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_TABULA_RASA",
+    "passive_skill": "PASSIVE_ABSURD_GENEALOGY",
     "min_damage": "1250",
     "max_damage": "1350",
     "drops": [
@@ -3272,6 +4129,11 @@
     "exp_given": 30,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_FLINTLOCK_SHOT",
+    "passive_skill": "PASSIVE_RETALIATE",
     "min_damage": "28",
     "max_damage": "35",
     "drops": [
@@ -3313,6 +4175,11 @@
     "exp_given": 264,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_FLINTLOCK_SHOT",
+    "passive_skill": "PASSIVE_RETALIATE",
     "min_damage": "40",
     "max_damage": "54",
     "drops": [
@@ -3364,6 +4231,11 @@
     "exp_given": 132,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_FLINTLOCK_SHOT",
+    "passive_skill": "PASSIVE_RETALIATE",
     "min_damage": "30",
     "max_damage": "43",
     "drops": [
@@ -3414,6 +4286,11 @@
     "exp_given": 4000,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_BEHEMOTH",
     "min_damage": "540",
     "max_damage": "595",
     "drops": [
@@ -3449,6 +4326,11 @@
     "exp_given": 1200,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_FRAGMENTATION",
+    "passive_skill": "PASSIVE_INORGANIC",
     "min_damage": "280",
     "max_damage": "330",
     "drops": [
@@ -3494,6 +4376,11 @@
     "exp_given": 175,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_PREHISTORIC_AVIAN",
     "min_damage": "415",
     "max_damage": "495",
     "drops": [
@@ -3539,6 +4426,11 @@
     "exp_given": 300,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INORGANIC",
     "min_damage": "200",
     "max_damage": "300",
     "drops": [
@@ -3569,6 +4461,11 @@
     "exp_given": 36,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INORGANIC",
     "min_damage": "30",
     "max_damage": "46",
     "drops": [
@@ -3599,6 +4496,11 @@
     "exp_given": 29,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INORGANIC",
     "min_damage": "5",
     "max_damage": "8",
     "drops": [
@@ -3629,6 +4531,11 @@
     "exp_given": 14,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING",
     "min_damage": "6",
     "max_damage": "12",
     "drops": [
@@ -3672,6 +4579,11 @@
     "exp_given": 500,
     "rarity": 2,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "100",
     "max_damage": "1000",
     "drops": [
@@ -3712,6 +4624,11 @@
     "exp_given": 30,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_DESERT_ARCHER",
     "min_damage": "9",
     "max_damage": "13",
     "drops": [
@@ -3752,6 +4669,11 @@
     "exp_given": 30,
     "rarity": null,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_QUICKSAND_GRASP",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "8",
     "max_damage": "9",
     "drops": [
@@ -3792,6 +4714,11 @@
     "exp_given": 30,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_THREATENING_I",
     "min_damage": "6",
     "max_damage": "8",
     "drops": [
@@ -3833,6 +4760,11 @@
     "exp_given": 600,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_DESERT_JUDGEMENT",
+    "passive_skill": "PASSIVE_RETALIATE_II",
     "min_damage": "75",
     "max_damage": "104",
     "drops": [
@@ -3864,6 +4796,11 @@
     "exp_given": 9600,
     "rarity": null,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_DISEMBODY",
+    "passive_skill": "PASSIVE_PERFECT_IMMUNITY",
     "min_damage": "7",
     "max_damage": "7",
     "drops": [
@@ -3895,6 +4832,11 @@
     "exp_given": 12000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_GRAVITY_SHIFT",
+    "passive_skill": "PASSIVE_INFINITY",
     "min_damage": "1225",
     "max_damage": "1275",
     "drops": [
@@ -3930,6 +4872,11 @@
     "exp_given": 24,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "26",
     "max_damage": "35",
     "drops": [
@@ -3971,6 +4918,11 @@
     "exp_given": 240,
     "rarity": null,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_DISSOLVE_BY_DECREE",
     "min_damage": "40",
     "max_damage": "50",
     "drops": [
@@ -4021,6 +4973,11 @@
     "exp_given": 3750,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FIRE_GIANT",
     "min_damage": "500",
     "max_damage": "550",
     "drops": [
@@ -4051,6 +5008,11 @@
     "exp_given": 520,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_FROZEN_BREATH",
+    "passive_skill": "PASSIVE_FLYING",
     "min_damage": "65",
     "max_damage": "90",
     "drops": [
@@ -4101,6 +5063,11 @@
     "exp_given": 270,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_FIRE_DANCE",
+    "passive_skill": "PASSIVE_NATURAL_EMPATHY",
     "min_damage": "180",
     "max_damage": "350",
     "drops": [
@@ -4132,6 +5099,11 @@
     "exp_given": 16000,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_PRIMORDIAL_HUNGER",
     "min_damage": "460",
     "max_damage": "515",
     "drops": [
@@ -4172,6 +5144,11 @@
     "exp_given": 194,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_PREHISTORIC_COLOSSUS",
     "min_damage": "400",
     "max_damage": "480",
     "drops": [
@@ -4217,6 +5194,11 @@
     "exp_given": 17500,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_DEVOUR_SPIRIT",
+    "passive_skill": "PASSIVE_INSCRUTABLE",
     "min_damage": "3500",
     "max_damage": "4500",
     "drops": [
@@ -4254,6 +5236,11 @@
     "exp_given": 15000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_BIOENHANCED_II",
     "min_damage": "1075",
     "max_damage": "1425",
     "drops": [
@@ -4284,6 +5271,11 @@
     "exp_given": 20000,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_BEND_REALITY",
     "min_damage": "1",
     "max_damage": "9999",
     "drops": [
@@ -4314,6 +5306,11 @@
     "exp_given": 500,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_ARCANE_DIFFUSION",
+    "passive_skill": "PASSIVE_ELEMENTAL_DUALITY",
     "min_damage": "168",
     "max_damage": "176",
     "drops": [
@@ -4331,6 +5328,96 @@
         "item": "PotionOfMagicDefense",
         "qty": 1,
         "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TideCursedOracle",
+    "parent": "Enemy",
+    "sprite": "tide_cursed_oracle",
+    "name_key": "enemy_tide_cursed_oracle_name",
+    "description_key": "enemy_tide_cursed_oracle_description",
+    "name": "Tide-Cursed Oracle",
+    "description": "An ancient drowned mystic weaving hypnotic song and aquatic discord.",
+    "stats": {
+      "baseMaxHp": 1480,
+      "baseConstitution": 40,
+      "baseIntelligence": 185,
+      "baseDexterity": 38,
+      "baseDefense": 12,
+      "baseMagicDefense": 75
+    },
+    "exp_given": 245,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_MASS_CONFUSION",
+    "passive_skill": "PASSIVE_DROWNED_DISCORD",
+    "min_damage": "400",
+    "max_damage": "480",
+    "drops": [
+      {
+        "item": "SirenSilk",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "SpiralSeashell",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "OracleGem",
+        "qty": 1,
+        "weight": 100
+      },
+      {
+        "item": "SunkenDoubloon",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "TigerShark",
+    "parent": "Enemy",
+    "sprite": "tiger_shark",
+    "name_key": "enemy_tiger_shark_name",
+    "description_key": "enemy_tiger_shark_description",
+    "name": "Tiger Shark",
+    "description": "A ferocious striped pelagic predator with razor-sharp serrated jaws.",
+    "stats": {
+      "baseMaxHp": 1650,
+      "baseConstitution": 52,
+      "baseIntelligence": 10,
+      "baseDexterity": 155,
+      "baseDefense": 18,
+      "baseMagicDefense": 12
+    },
+    "exp_given": 230,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_PELAGIC_FRENZY",
+    "min_damage": "430",
+    "max_damage": "510",
+    "drops": [
+      {
+        "item": "SharkTeeth",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "SharkFin",
+        "qty": 1,
+        "weight": 250
       }
     ],
     "independent_drops": []
@@ -4354,6 +5441,11 @@
     "exp_given": 24,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "6",
     "max_damage": "9",
     "drops": [
@@ -4386,6 +5478,46 @@
     "independent_drops": []
   },
   {
+    "key": "TrenchWyvern",
+    "parent": "Enemy",
+    "sprite": "trench_wyvern",
+    "name_key": "enemy_trench_wyvern_name",
+    "description_key": "enemy_trench_wyvern_description",
+    "name": "Trench Wyvern",
+    "description": "An agile benthic drake that stays airborne out of reach of melee strikes.",
+    "stats": {
+      "baseMaxHp": 2050,
+      "baseConstitution": 70,
+      "baseIntelligence": 92,
+      "baseDexterity": 105,
+      "baseDefense": 34,
+      "baseMagicDefense": 48
+    },
+    "exp_given": 275,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_FROZEN_BREATH",
+    "passive_skill": "PASSIVE_UNTAMED_AERIAL",
+    "min_damage": "450",
+    "max_damage": "540",
+    "drops": [
+      {
+        "item": "TrenchWyvernFin",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "Coral",
+        "qty": 2,
+        "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "Troll",
     "parent": "Enemy",
     "sprite": "unit_troll",
@@ -4405,6 +5537,11 @@
     "exp_given": 68,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_REGENERATION_II",
     "min_damage": "48",
     "max_damage": "62",
     "drops": [
@@ -4448,9 +5585,14 @@
       "baseMagicDefense": 30,
       "regeneration": 20
     },
-    "exp_given": "Logger.SUMMON_SMOLDERING_TITAN",
+    "exp_given": 114,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_TROLL_MAGIC",
     "min_damage": "73",
     "max_damage": "77",
     "drops": [
@@ -4504,9 +5646,14 @@
       "baseMagicDefense": 0,
       "regeneration": 30
     },
-    "exp_given": "Logger.SUMMON_SMOLDERING_TITAN",
+    "exp_given": 114,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_REGENERATION_II",
     "min_damage": "67",
     "max_damage": "78",
     "drops": [
@@ -4548,6 +5695,11 @@
     "exp_given": 60,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_REGENERATION_I",
     "min_damage": "42",
     "max_damage": "48",
     "drops": [
@@ -4583,6 +5735,11 @@
     "exp_given": 12,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "2",
     "max_damage": "5",
     "drops": [
@@ -4614,6 +5771,11 @@
     "exp_given": 99999,
     "rarity": 1,
     "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_BOUNCE",
+    "passive_skill": "PASSIVE_PERFECT_IMMUNITY",
     "min_damage": "920",
     "max_damage": "1860",
     "drops": [
@@ -4644,6 +5806,11 @@
     "exp_given": 20,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "8",
     "max_damage": "11",
     "drops": [
@@ -4679,6 +5846,11 @@
     "exp_given": 20,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "11",
     "max_damage": "14",
     "drops": [
@@ -4714,6 +5886,11 @@
     "exp_given": 240,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "60",
     "max_damage": "90",
     "drops": [
@@ -4755,6 +5932,11 @@
     "exp_given": 84,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SPIKES",
     "min_damage": "12",
     "max_damage": "16",
     "drops": [
@@ -4791,6 +5973,11 @@
     "exp_given": 58,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING_LEECH",
     "min_damage": "28",
     "max_damage": "52",
     "drops": [
@@ -4832,6 +6019,11 @@
     "exp_given": 60,
     "rarity": null,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_VOID_PULL",
     "min_damage": "33",
     "max_damage": "33",
     "drops": [
@@ -4872,6 +6064,11 @@
     "exp_given": 850,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_THE_TEN_HELLS",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "1",
     "max_damage": "1",
     "drops": [
@@ -4907,6 +6104,11 @@
     "exp_given": 38,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": false,
+    "attack_type": "Melee, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INCORPOREAL",
     "min_damage": "10",
     "max_damage": "13",
     "drops": [
@@ -4924,6 +6126,11 @@
         "item": "SpectralCloth",
         "qty": 1,
         "weight": 700
+      },
+      {
+        "item": "OrbOfEctoplasm",
+        "qty": 1,
+        "weight": 30
       },
       {
         "item": "EsotericEgg",
@@ -4952,6 +6159,11 @@
     "exp_given": 20,
     "rarity": 0,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "2",
     "max_damage": "3",
     "drops": [
@@ -4982,6 +6194,11 @@
     "exp_given": 200,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_RAYS_OF_DESTRUCTION",
+    "passive_skill": "PASSIVE_ELEMENTAL_CONTROL",
     "min_damage": "165",
     "max_damage": "180",
     "drops": [
@@ -5022,6 +6239,11 @@
     "exp_given": 12,
     "rarity": 1,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_NONE",
     "min_damage": "2",
     "max_damage": "6",
     "drops": [
@@ -5068,6 +6290,11 @@
     "exp_given": 14,
     "rarity": null,
     "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_LEECH",
     "min_damage": "8",
     "max_damage": "16",
     "drops": [

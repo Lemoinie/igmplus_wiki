@@ -111,6 +111,44 @@
     ]
   },
   {
+    "key": "CorruptedForest",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/CorruptedForest.kt",
+    "name_key": "dungeon_name_corrupted_forest",
+    "name": "Corrupted Forest",
+    "summary_sprite": "summary_corrupted_forest",
+    "detail_sprite": "area_corrupted_forest",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "CorruptedWolf",
+        "chance_permille": 140.0
+      },
+      {
+        "key": "CorruptedBoar",
+        "chance_permille": 140.0
+      },
+      {
+        "key": "CorruptedTreant",
+        "chance_permille": 120.0
+      },
+      {
+        "key": "CorruptedCentaur",
+        "chance_permille": 70.0
+      },
+      {
+        "key": "CorruptedEnt",
+        "chance_permille": 30.0
+      }
+    ],
+    "encounter_chance_permille": 680,
+    "items_mentioned": [
+      "CopperOre",
+      "Wood"
+    ]
+  },
+  {
     "key": "EnchantedForest",
     "parent": "Area",
     "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/EnchantedForest.kt",
@@ -183,19 +221,23 @@
     "enemies": [
       {
         "key": "Undead",
-        "chance_permille": 287.0
+        "chance_permille": 271.0
       },
       {
         "key": "UndeadArcher",
-        "chance_permille": 182.0
+        "chance_permille": 170.0
       },
       {
         "key": "DeathHound",
-        "chance_permille": 63.0
+        "chance_permille": 55.0
+      },
+      {
+        "key": "WillOWisp",
+        "chance_permille": 45.0
       },
       {
         "key": "Abomination",
-        "chance_permille": 30.0
+        "chance_permille": 25.0
       },
       {
         "key": "UndeadWarlord",
@@ -204,10 +246,6 @@
       {
         "key": "Ghoul",
         "chance_permille": 5.0
-      },
-      {
-        "key": "WillOWisp",
-        "chance_permille": 4.0
       }
     ],
     "encounter_chance_permille": 580,
@@ -215,7 +253,6 @@
       "BoneFragment",
       "ElongatedBone",
       "InfectedBlood",
-      "OrbOfEctoplasm",
       "SharpRib",
       "SpectralCloth",
       "SpectralRobe",
@@ -632,6 +669,67 @@
       "VerdantBow",
       "VerdantGloves",
       "VerdantHelm"
+    ]
+  },
+  {
+    "key": "TheSunkenCitadel",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/TheSunkenCitadel.kt",
+    "name_key": "dungeon_name_the_sunken_citadel",
+    "name": "The Sunken Citadel",
+    "summary_sprite": "summary_sunken_citadel",
+    "detail_sprite": "area_sunken_citadel",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "CrimsonReefGoliath",
+        "chance_permille": null
+      },
+      {
+        "key": "DeepSeaMauler",
+        "chance_permille": null
+      },
+      {
+        "key": "GloomAnglerSnapper",
+        "chance_permille": null
+      },
+      {
+        "key": "LeviathanHatchling",
+        "chance_permille": null
+      },
+      {
+        "key": "TideCursedOracle",
+        "chance_permille": null
+      },
+      {
+        "key": "TigerShark",
+        "chance_permille": null
+      },
+      {
+        "key": "TrenchWyvern",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 715,
+    "items_mentioned": [
+      "AbyssalChitinJacket",
+      "AbyssalPearl",
+      "Coral",
+      "CoralArmor",
+      "CoralAxe",
+      "CoralBoots",
+      "CoralBow",
+      "CoralChunk",
+      "CoralGloves",
+      "CoralHelmet",
+      "SharkDagger",
+      "SharkFin",
+      "SharkSword",
+      "SharkTeeth",
+      "SirenRobe",
+      "SpiralSeashell",
+      "SunkenDoubloon"
     ]
   },
   {

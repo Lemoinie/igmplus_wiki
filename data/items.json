@@ -345,6 +345,112 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbsoluteZero.kt"
     },
     {
+      "key": "AbyssalChitin",
+      "parent": "Item",
+      "class_chain": [
+        "AbyssalChitin",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "abyssal_chitin",
+      "name_key": "item_abyssal_chitin_name",
+      "description_key": "item_abyssal_chitin_description",
+      "name": "Abyssal Chitin",
+      "description": "Heavy chitinous carapace plates stripped from abyssal aberrations.",
+      "price": 110,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbyssalChitin.kt"
+    },
+    {
+      "key": "AbyssalChitinBuckler",
+      "parent": "Accessory",
+      "class_chain": [
+        "AbyssalChitinBuckler",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "abyssal_chitin_buckler",
+      "name_key": "accessory_abyssal_chitin_buckler_name",
+      "description_key": "accessory_abyssal_chitin_buckler_description",
+      "name": "Abyssal Chitin Buckler",
+      "description": "An ultra-dense buckler carved from the carapace of an abyssal monstrosity.",
+      "price": 2150,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 150
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbyssalChitinBuckler.kt"
+    },
+    {
+      "key": "AbyssalChitinDagger",
+      "parent": "Dagger",
+      "class_chain": [
+        "AbyssalChitinDagger",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "abyssal_chitin_dagger",
+      "name_key": "weapon_dagger_abyssal_chitin_dagger_name",
+      "description_key": "weapon_dagger_abyssal_chitin_dagger_description",
+      "name": "Abyssal Chitin Dagger",
+      "description": "A serrated benthic dagger reinforced with hardened abyssal chitin.",
+      "price": 2900,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 60,
+        "dexterity": 45,
+        "physicalCriticalDamageBonus": 0.5
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbyssalChitinDagger.kt"
+    },
+    {
+      "key": "AbyssalChitinJacket",
+      "parent": "MediumArmor",
+      "class_chain": [
+        "AbyssalChitinJacket",
+        "MediumArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "MediumArmor",
+      "sprite": "abyssal_chitin_jacket",
+      "name_key": "armor_medium_abyssal_chitin_jacket_name",
+      "description_key": "armor_medium_abyssal_chitin_jacket_description",
+      "name": "Abyssal Chitin Jacket",
+      "description": "A reinforced coat lined with flexible abyssal chitin plates.",
+      "price": 2900,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 250,
+        "constitution": 15,
+        "dexterity": 15
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbyssalChitinJacket.kt"
+    },
+    {
       "key": "AbyssalCompendium",
       "parent": "Accessory",
       "class_chain": [
@@ -468,6 +574,28 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbyssalIngot.kt"
+    },
+    {
+      "key": "AbyssalPearl",
+      "parent": "Item",
+      "class_chain": [
+        "AbyssalPearl",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "abyssal_pearl",
+      "name_key": "item_abyssal_pearl_name",
+      "description_key": "item_abyssal_pearl_description",
+      "name": "Abyssal Pearl",
+      "description": "Rare flawless black pearl formed under immense mesopelagic pressure.",
+      "price": 450,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbyssalPearl.kt"
     },
     {
       "key": "AbyssalScarletMantle",
@@ -2057,6 +2185,28 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/BerserkersAxe.kt"
+    },
+    {
+      "key": "BioluminescentEsca",
+      "parent": "Item",
+      "class_chain": [
+        "BioluminescentEsca",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "bioluminescent_esca",
+      "name_key": "item_bioluminescent_esca_name",
+      "description_key": "item_bioluminescent_esca_description",
+      "name": "Bioluminescent Esca",
+      "description": "Luminous deep-sea organ that radiates brilliant darkness-piercing light.",
+      "price": 120,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/BioluminescentEsca.kt"
     },
     {
       "key": "BlackHide",
@@ -3803,6 +3953,240 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CopperSword.kt"
+    },
+    {
+      "key": "Coral",
+      "parent": "Item",
+      "class_chain": [
+        "Coral",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "coral",
+      "name_key": "item_coral_name",
+      "description_key": "item_coral_description",
+      "name": "Coral",
+      "description": "Vibrant living sea coral, naturally resilient against crushing pressure.",
+      "price": 40,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Coral.kt"
+    },
+    {
+      "key": "CoralArmor",
+      "parent": "HeavyArmor",
+      "class_chain": [
+        "CoralArmor",
+        "HeavyArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "HeavyArmor",
+      "sprite": "coral_armor",
+      "name_key": "armor_heavy_coral_armor_name",
+      "description_key": "armor_heavy_coral_armor_description",
+      "name": "Coral Armor",
+      "description": "Heavy calcified coral plate that insulates against benthic frost.",
+      "price": 3200,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 400,
+        "constitution": 15,
+        "retaliationPhysicalDamage": 15
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralArmor.kt"
+    },
+    {
+      "key": "CoralAxe",
+      "parent": "Axe",
+      "class_chain": [
+        "CoralAxe",
+        "Axe",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Axe",
+      "sprite": "coral_axe",
+      "name_key": "weapon_axe_coral_axe_name",
+      "description_key": "weapon_axe_coral_axe_description",
+      "name": "Coral Axe",
+      "description": "A massive cleaving axe weighted with calcified coral boulders.",
+      "price": 2650,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 40,
+        "intelligence": 30
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralAxe.kt"
+    },
+    {
+      "key": "CoralBoots",
+      "parent": "Accessory",
+      "class_chain": [
+        "CoralBoots",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "coral_boots",
+      "name_key": "accessory_coral_boots_name",
+      "description_key": "accessory_coral_boots_description",
+      "name": "Coral Boots",
+      "description": "Streamlined fins that glide effortlessly through dense oceanic water.",
+      "price": 1850,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 40
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralBoots.kt"
+    },
+    {
+      "key": "CoralBow",
+      "parent": "Bow",
+      "class_chain": [
+        "CoralBow",
+        "Bow",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Bow",
+      "sprite": "coral_bow",
+      "name_key": "weapon_bow_coral_bow_name",
+      "description_key": "weapon_bow_coral_bow_description",
+      "name": "Coral Bow",
+      "description": "A recurve bow crafted from flexible living coral and taut shark sinew.",
+      "price": 2400,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 70
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralBow.kt"
+    },
+    {
+      "key": "CoralChunk",
+      "parent": "Item",
+      "class_chain": [
+        "CoralChunk",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "coral_chunk",
+      "name_key": "item_coral_chunk_name",
+      "description_key": "item_coral_chunk_description",
+      "name": "Coral Chunk",
+      "description": "Dense calcified coral boulder harder than tempered steel.",
+      "price": 95,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralChunk.kt"
+    },
+    {
+      "key": "CoralGloves",
+      "parent": "Accessory",
+      "class_chain": [
+        "CoralGloves",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "coral_gloves",
+      "name_key": "accessory_coral_gloves_name",
+      "description_key": "accessory_coral_gloves_description",
+      "name": "Coral Gloves",
+      "description": "Textured aquatic gauntlets improving grip and fluid dynamics.",
+      "price": 1850,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 30,
+        "dexterity": 25
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralGloves.kt"
+    },
+    {
+      "key": "CoralHelmet",
+      "parent": "Accessory",
+      "class_chain": [
+        "CoralHelmet",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "coral_helmet",
+      "name_key": "accessory_coral_helmet_name",
+      "description_key": "accessory_coral_helmet_description",
+      "name": "Coral Helmet",
+      "description": "A dense headpiece sculpted from living coral reefs.",
+      "price": 1950,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 270
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralHelmet.kt"
+    },
+    {
+      "key": "CoralStaff",
+      "parent": "Staff",
+      "class_chain": [
+        "CoralStaff",
+        "Staff",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Staff",
+      "sprite": "coral_staff",
+      "name_key": "weapon_staff_coral_staff_name",
+      "description_key": "weapon_staff_coral_staff_description",
+      "name": "Coral Staff",
+      "description": "A glowing staff conduit topped with an oracle gem and glowing esca.",
+      "price": 2800,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 70
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralStaff.kt"
     },
     {
       "key": "CorruptedAxe",
@@ -10433,6 +10817,28 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/OmniSever.kt"
     },
     {
+      "key": "OracleGem",
+      "parent": "Item",
+      "class_chain": [
+        "OracleGem",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "oracle_gem",
+      "name_key": "item_oracle_gem_name",
+      "description_key": "item_oracle_gem_description",
+      "name": "Oracle Gem",
+      "description": "Shimmering oceanic jewel steeped in ancient Atlantean prophetic sorcery.",
+      "price": 260,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/OracleGem.kt"
+    },
+    {
       "key": "OrbOfEctoplasm",
       "parent": "Item",
       "class_chain": [
@@ -13520,6 +13926,108 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ShahuriBowFrame.kt"
     },
     {
+      "key": "SharkDagger",
+      "parent": "Dagger",
+      "class_chain": [
+        "SharkDagger",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "shark_dagger",
+      "name_key": "weapon_dagger_shark_dagger_name",
+      "description_key": "weapon_dagger_shark_dagger_description",
+      "name": "Shark Dagger",
+      "description": "A streamlined dagger fashioned from pelagic predator teeth and fins.",
+      "price": 1850,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 50,
+        "dexterity": 30,
+        "physicalCriticalDamageBonus": 0.4
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SharkDagger.kt"
+    },
+    {
+      "key": "SharkFin",
+      "parent": "Item",
+      "class_chain": [
+        "SharkFin",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "shark_fin",
+      "name_key": "item_shark_fin_name",
+      "description_key": "item_shark_fin_description",
+      "name": "Shark Fin",
+      "description": "Hydrodynamic shark fin reducing fluid drag during rapid maneuvers.",
+      "price": 75,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SharkFin.kt"
+    },
+    {
+      "key": "SharkSword",
+      "parent": "Sword",
+      "class_chain": [
+        "SharkSword",
+        "Sword",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Sword",
+      "sprite": "shark_sword",
+      "name_key": "weapon_sword_shark_sword_name",
+      "description_key": "weapon_sword_shark_sword_description",
+      "name": "Shark Sword",
+      "description": "A heavy broadsword edged with serrated shark teeth and calcified coral.",
+      "price": 2200,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 65,
+        "dexterity": 20,
+        "physicalCriticalDamageBonus": 0.4
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SharkSword.kt"
+    },
+    {
+      "key": "SharkTeeth",
+      "parent": "Item",
+      "class_chain": [
+        "SharkTeeth",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "shark_teeth",
+      "name_key": "item_shark_teeth_name",
+      "description_key": "item_shark_teeth_description",
+      "name": "Shark Teeth",
+      "description": "Cluster of razor-sharp serrated teeth that shred armor and flesh.",
+      "price": 80,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SharkTeeth.kt"
+    },
+    {
       "key": "SharpRib",
       "parent": "Item",
       "class_chain": [
@@ -13861,6 +14369,84 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SinisterStabilizer.kt"
+    },
+    {
+      "key": "SirenCoralCombatRobe",
+      "parent": "LightArmor",
+      "class_chain": [
+        "SirenCoralCombatRobe",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "siren_coral_combat_robe",
+      "name_key": "armor_light_siren_coral_combat_robe_name",
+      "description_key": "armor_light_siren_coral_combat_robe_description",
+      "name": "Siren Coral Combat Robe",
+      "description": "Combat robes interwoven with enchanted sea-silk, calcified coral, and prophetic gems.",
+      "price": 4600,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 60,
+        "intelligence": 60
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SirenCoralCombatRobe.kt"
+    },
+    {
+      "key": "SirenRobe",
+      "parent": "LightArmor",
+      "class_chain": [
+        "SirenRobe",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "siren_robe",
+      "name_key": "armor_light_siren_robe_name",
+      "description_key": "armor_light_siren_robe_description",
+      "name": "Siren Robe",
+      "description": "Vestments woven from gossamer siren silk resonant with oceanic mana.",
+      "price": 2750,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 150,
+        "intelligence": 45
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SirenRobe.kt"
+    },
+    {
+      "key": "SirenSilk",
+      "parent": "Item",
+      "class_chain": [
+        "SirenSilk",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "siren_silk",
+      "name_key": "item_siren_silk_name",
+      "description_key": "item_siren_silk_description",
+      "name": "Siren Silk",
+      "description": "Gossamer sea-silk woven from sunken robes; impervious to decay and water.",
+      "price": 85,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SirenSilk.kt"
     },
     {
       "key": "SkeletonKey",
@@ -14524,6 +15110,54 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SpikedTortoiseShield.kt"
     },
     {
+      "key": "SpiralHat",
+      "parent": "Accessory",
+      "class_chain": [
+        "SpiralHat",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "spiral_hat",
+      "name_key": "accessory_spiral_hat_name",
+      "description_key": "accessory_spiral_hat_description",
+      "name": "Spiral Hat",
+      "description": "A ceremonial nautilus conch hat channeling ancient drowned sorcery.",
+      "price": 2300,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 50
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SpiralHat.kt"
+    },
+    {
+      "key": "SpiralSeashell",
+      "parent": "Item",
+      "class_chain": [
+        "SpiralSeashell",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "spiral_seashell",
+      "name_key": "item_spiral_seashell_name",
+      "description_key": "item_spiral_seashell_description",
+      "name": "Spiral Seashell",
+      "description": "Resonant spiral shell echoing with the faint whispers of sunken tides.",
+      "price": 65,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SpiralSeashell.kt"
+    },
+    {
       "key": "SpiritCandle",
       "parent": "Item",
       "class_chain": [
@@ -15012,6 +15646,28 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SunfireEssence.kt"
     },
     {
+      "key": "SunkenDoubloon",
+      "parent": "Item",
+      "class_chain": [
+        "SunkenDoubloon",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "sunken_doubloon",
+      "name_key": "item_sunken_doubloon_name",
+      "description_key": "item_sunken_doubloon_description",
+      "name": "Sunken Doubloon",
+      "description": "Heavy minted imperial gold coin salvaged from the depths. Pure valuable treasure; sells to merchants for 2 Gold Coins.",
+      "price": 20000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SunkenDoubloon.kt"
+    },
+    {
       "key": "SunStaff",
       "parent": "Staff",
       "class_chain": [
@@ -15361,6 +16017,36 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ThickFur.kt"
     },
     {
+      "key": "TidalLantern",
+      "parent": "Accessory",
+      "class_chain": [
+        "TidalLantern",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "tidal_lantern",
+      "name_key": "accessory_tidal_lantern_name",
+      "description_key": "accessory_tidal_lantern_description",
+      "name": "Tidal Lantern",
+      "description": "A mysterious drowned lantern salvaged from Chorus the Drowned. Its eerie cyan flame burns unquenched beneath the waves, piercing the gloom and luring ancient leviathan hatchlings from the abyss.",
+      "price": 50,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 25,
+        "constitution": 20
+      },
+      "flags": {
+        "notSellable": true,
+        "isRareDrop": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TidalLantern.kt"
+    },
+    {
       "key": "TigerJaws",
       "parent": "Sword",
       "class_chain": [
@@ -15599,6 +16285,56 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TrainingBow.kt"
+    },
+    {
+      "key": "TrenchStiletto",
+      "parent": "Dagger",
+      "class_chain": [
+        "TrenchStiletto",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "trench_stiletto",
+      "name_key": "weapon_dagger_trench_stiletto_name",
+      "description_key": "weapon_dagger_trench_stiletto_description",
+      "name": "Trench Stiletto",
+      "description": "An ultra-thin hydrodynamic stiletto forged from trench wyvern fin spines.",
+      "price": 2750,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 30,
+        "dexterity": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TrenchStiletto.kt"
+    },
+    {
+      "key": "TrenchWyvernFin",
+      "parent": "Item",
+      "class_chain": [
+        "TrenchWyvernFin",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "trench_wyvern_fin",
+      "name_key": "item_trench_wyvern_fin_name",
+      "description_key": "item_trench_wyvern_fin_description",
+      "name": "Trench Wyvern Fin",
+      "description": "Spiny membranous wing-fin harvested from trench-dwelling drakes.",
+      "price": 110,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TrenchWyvernFin.kt"
     },
     {
       "key": "TrollHide",

@@ -569,7 +569,7 @@
     "max_level": 3,
     "row": 3,
     "name": "Verdant Briars",
-    "description": "Attacks have a %s chance to ENTANGLE the target for 2 turns.\nENTANGLE: This unit cannot dodge, deals 20%% reduced damage, and takes 2%% HP damage each turn."
+    "description": "Attacks have a %s chance to ENTANGLE the target for 2 turns.\n\nENTANGLE: This unit cannot dodge, deals 20%% reduced damage, and takes 2%% HP damage each turn."
   },
   {
     "key": "SYMPATHETIC_WARD",

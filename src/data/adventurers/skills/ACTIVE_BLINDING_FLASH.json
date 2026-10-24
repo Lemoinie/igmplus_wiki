@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_BLINDING_FLASH",
+  "name_key": "active_blinding_flash_name",
+  "desc_key": "active_blinding_flash_description",
+  "kind": "active",
+  "name": "Blinding Esca Flash",
+  "description": "Flashes a brilliant bioluminescent lure, blinding all enemies for 2 turns.\n\nBLIND: Reduce 20% Hit Chance and 10% Dodge Chance per stack."
+}

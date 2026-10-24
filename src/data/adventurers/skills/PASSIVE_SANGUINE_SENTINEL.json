@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SANGUINE_SENTINEL",
+  "name_key": "passive_sanguine_sentinel_name",
+  "desc_key": "passive_sanguine_sentinel_description",
+  "kind": "passive",
+  "name": "Sanguine Sentinel",
+  "description": "This unit has a 5× chance of being targeted by enemies. Immune to ABLAZE, BLOODFLAME, BLEED, and POISON."
+}

@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ABYSSAL_TERRIFY",
+  "name_key": "active_abyssal_terrify_name",
+  "desc_key": "active_abyssal_terrify_description",
+  "kind": "active",
+  "name": "Roar of the Deep",
+  "description": "Unleashes a terrifying roar that terrifies all enemies for 3 turns."
+}

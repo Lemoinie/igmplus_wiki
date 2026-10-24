@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_DROWNED_DISCORD",
+  "name_key": "passive_drowned_discord_name",
+  "desc_key": "passive_drowned_discord_description",
+  "kind": "passive",
+  "name": "Whispers of the Deep",
+  "description": "Basic attacks have a 35% chance to Silence and a 40% chance to Confuse for 2 turns.\n\nSILENCE: Can't use skills, can't acquire mana.\nCONFUSE: Attacks allies and self."
+}

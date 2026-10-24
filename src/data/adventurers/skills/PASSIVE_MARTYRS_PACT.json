@@ -4,5 +4,5 @@
   "desc_key": "passive_martyrs_pact_description",
   "kind": "passive",
   "name": "Martyr's Pact",
-  "description": "When the Crimson Acolyte dies, every surviving enemy gains +1 stack of SANGUINE FERVOR.\n\nSANGUINE FERVOR: +5% dmg dealt per stack, permanently until unit dies."
+  "description": "Immune to ABLAZE and BLOODFLAME. When the Crimson Acolyte dies, every surviving enemy gains +1 stack of SANGUINE FERVOR.\n\nSANGUINE FERVOR: +5% dmg dealt per stack, permanently until unit dies."
 }
