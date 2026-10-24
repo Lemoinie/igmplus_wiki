@@ -1,6 +1,9 @@
-import type { ClassDefinition } from '../types';
+import type { ClassDefinition, DoctrineDefinition, DoctrineAbilityDefinition } from '../types';
 import itemsCatalog from '../../data/items.json';
 import recipesList from '../../data/recipes.json';
+import doctrinesList from '../../data/doctrines.json';
+import doctrineAbilitiesList from '../../data/doctrine_abilities.json';
+
 
 // Shared Item Map helper for drops and loot resolution
 function getItemCatalogMap(): Map<string, any> {
@@ -430,6 +433,26 @@ import statusEffectsList from '../data/status_effects.json';
 export function getAllStatusEffects(): any[] {
   return statusEffectsList;
 }
+
+// Doctrines & Abilities
+export function getAllDoctrineAbilities(): DoctrineAbilityDefinition[] {
+  return doctrineAbilitiesList as DoctrineAbilityDefinition[];
+}
+
+export function getAllDoctrines(): DoctrineDefinition[] {
+  const abilityMap = new Map<string, DoctrineAbilityDefinition>();
+  for (const ab of doctrineAbilitiesList as DoctrineAbilityDefinition[]) {
+    abilityMap.set(ab.key, ab);
+  }
+
+  return (doctrinesList as any[])
+    .filter((d) => d.key !== 'EmptyDoctrine')
+    .map((d) => ({
+      ...d,
+      resolvedAbilities: (d.abilities || []).map((key: string) => abilityMap.get(key)).filter(Boolean) as DoctrineAbilityDefinition[],
+    }));
+}
+
 
 
 // Item usage: where an item comes from and who can use it (for /items/[id])

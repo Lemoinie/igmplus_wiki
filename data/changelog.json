@@ -29,6 +29,11 @@
         "Combat Engine & Battle Logs — Status Effect Log Descriptions:",
         "Rage Log Description: Fixed StatusEffectType.RAGE to use its dedicated status_effect_rage_log_description ('enraged.') rather than displaying the verbose mechanic description in combat battle logs;",
         "Confuse & Blind Log Descriptions: Added dedicated status_effect_confuse_log_description ('confused') and status_effect_blind_log_description ('blinded') so StatusEffectType.CONFUSE and StatusEffectType.BLIND report natural combat log messages rather than full mechanic descriptions."
+      ],
+      [
+        "Lore & Storyline — The Sunken Citadel Royal Proclamation:",
+        "King's Message 18 (The Sunken Citadel): Added KingMessage.MESSAGE_18 containing an official royal missive from King Roderic XXXI when unlocking The Sunken Citadel, warning of crushing hydrostatic water pressure, hypothermia, and ancient leviathan fauna;",
+        "Save Migration & Retroactive Grant: Added retroactive grant in DataDeserializer so existing save files with The Sunken Citadel already unlocked automatically receive the new parchment missive."
       ]
     ],
     "source": "ModChangelogActive.kt"

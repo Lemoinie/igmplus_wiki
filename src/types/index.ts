@@ -177,3 +177,30 @@ export interface SearchEntry {
   description?: string;
   sprite?: string;
 }
+
+export interface DoctrineAbilityDefinition {
+  key: string;
+  name: string;
+  description: string;
+  sprite: string;
+  cost: number;
+  increase_per_level: number;
+  format_mode: number;
+  max_level: number;
+  row: number;
+}
+
+export interface DoctrineDefinition {
+  key: string;
+  name_key?: string;
+  description_key?: string;
+  description_short_key?: string;
+  sprite: string;
+  name: string;
+  description: string | null;
+  description_short: string | null;
+  abilities: string[];
+  effects?: Record<string, string>;
+  resolvedAbilities?: DoctrineAbilityDefinition[];
+}
+

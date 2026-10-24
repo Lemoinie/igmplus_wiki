@@ -66,7 +66,7 @@
     "description_short_key": "doctrine_fortitude_description_short",
     "sprite": "doctrine_of_fortitude",
     "name": "Doctrine of Fortitude",
-    "description": null,
+    "description": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
     "description_short": "Damage resistance, protecting allies, retaliation.",
     "abilities": [
       "IMPROVED_HEALTH",
@@ -247,8 +247,8 @@
     "description_short_key": "doctrine_empty_description",
     "sprite": "sign_plus_white",
     "name": "EmptyDoctrine",
-    "description": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
-    "description_short": "Adherents of the Doctrine of Fortitude regard resilience as the ultimate virtue. They subject their bodies to relentless physical trials, pushing themselves to the brink of destruction and beyond. Through sheer determination and unyielding discipline, they transform pain and exhaustion into unshakable strength, forging a will as unbreakable as steel.",
+    "description": "",
+    "description_short": "",
     "abilities": [],
     "effects": {
       "bonusQuestPoints": "0",

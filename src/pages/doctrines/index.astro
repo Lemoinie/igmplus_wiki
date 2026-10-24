@@ -1,0 +1,153 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import DoctrineBrowser from '../../components/DoctrineBrowser.vue';
+import { getAllDoctrines, getAllDoctrineAbilities } from '../../lib/data';
+import { base } from '../../lib/base';
+
+const doctrinesData = getAllDoctrines();
+const abilitiesData = getAllDoctrineAbilities();
+---
+
+<WikiLayout
+  title="Temple Doctrines & Loyalty Trees"
+  description="Complete guide to Temple Doctrines, Loyalty Points (LP) allocation, ability trees, and 7th expansion capstones in Idle Guild Master Plus."
+>
+  <div class="doctrinesPage">
+    <header class="pageHeader">
+      <div class="headerTop">
+        <h1>Temple Doctrines & Loyalty Trees</h1>
+        <span class="countBadge">8 Doctrines · 48 Abilities</span>
+      </div>
+      <p class="pageIntro">
+        Sacred progression paths available to Ascended adventurers. Allocate Loyalty Points (LP) earned from leveling and Temple Quests into build-defining abilities across 3 tiers, including the 7th-tier Temple Doctrine expansion capstones.
+      </p>
+    </header>
+
+    <!-- Quick Overview Stats Banner -->
+    <div class="overviewBanner">
+      <div class="statBox">
+        <span class="statNumber text-doctrines">8</span>
+        <span class="statLabel">Temple Doctrines</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-abilities">48</span>
+        <span class="statLabel">Unique Nodes</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-capstones">8</span>
+        <span class="statLabel">7th Expansion Nodes</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-cost">Free</span>
+        <span class="statLabel">LP Respecs</span>
+      </div>
+      <div class="statBox">
+        <span class="statNumber text-req">Ascension</span>
+        <span class="statLabel">Requirement</span>
+      </div>
+    </div>
+
+    <!-- Interactive Doctrine Browser & Calculator -->
+    <DoctrineBrowser client:load doctrines={doctrinesData as any} abilities={abilitiesData as any} basePath={base} />
+  </div>
+</WikiLayout>
+
+<style>
+.doctrinesPage {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.pageHeader {
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 1.25rem;
+}
+
+.headerTop {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 0.4rem;
+}
+
+.headerTop h1 {
+  margin: 0;
+  font-size: 2.2rem;
+  color: #f1f5f9;
+}
+
+.countBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  background: rgba(110, 168, 254, 0.15);
+  color: var(--brand-primary);
+  border: 1px solid rgba(110, 168, 254, 0.35);
+  padding: 3px 9px;
+  border-radius: 4px;
+}
+
+.pageIntro {
+  color: var(--text-secondary);
+  font-size: 1.02rem;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 860px;
+}
+
+/* Overview Banner */
+.overviewBanner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.statBox {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 8px;
+  padding: 0.85rem 1rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.statNumber {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #f1f5f9;
+}
+
+.statLabel {
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  letter-spacing: 0.04em;
+}
+
+.text-doctrines {
+  color: #f59e0b;
+}
+
+.text-abilities {
+  color: #38bdf8;
+}
+
+.text-capstones {
+  color: #10b981;
+}
+
+.text-cost {
+  color: #a855f7;
+}
+
+.text-req {
+  color: #f43f5e;
+}
+</style>

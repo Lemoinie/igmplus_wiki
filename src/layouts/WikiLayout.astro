@@ -31,6 +31,7 @@ import {
   getAllEnemies,
   getAllPlaces,
   getAllStatusEffects,
+  getAllDoctrines,
 } from '../lib/data';
 
 import { base } from '../lib/base';
@@ -48,6 +49,8 @@ const petsList = getAllPets();
 const enemiesList = getAllEnemies();
 const dungeonsList = getAllPlaces();
 const effectsList = getAllStatusEffects();
+const doctrinesList = getAllDoctrines();
+
 
 const searchEntries = [
   ...classesList.map((c: any) => ({
@@ -99,6 +102,14 @@ const searchEntries = [
     url: `${base}/effects#${ef.id}`,
     description: `${ef.category.toUpperCase()} · ${ef.description.slice(0, 60)}...`
   })),
+  ...doctrinesList.map((doc: any) => ({
+    id: `doctrine-${doc.key}`,
+    title: doc.name,
+    category: 'Mechanics' as const,
+    url: `${base}/doctrines#${doc.key}`,
+    description: `Temple Doctrine · ${doc.description_short || doc.description?.slice(0, 70)}`
+  })),
+
   {
     id: 'mech-defense',
     title: 'Defense Mechanic',
