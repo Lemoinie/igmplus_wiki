@@ -251,14 +251,14 @@ function getCategoryLabel(category: string) {
             <span class="metaVal">{{ effect.duration }}</span>
           </div>
 
-          <div v-if="effect.sources && effect.sources.length" class="sourcesRow">
+          <!-- <div v-if="effect.sources && effect.sources.length" class="sourcesRow">
             <span class="metaKey">Applied by:</span>
             <div class="sourcesPills">
               <span v-for="src in effect.sources" :key="src" class="sourcePill">
                 {{ src }}
               </span>
             </div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
