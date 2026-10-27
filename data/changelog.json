@@ -1,5 +1,44 @@
 [
   {
+    "version": "1.3.20.30",
+    "date": "26/10/2026",
+    "groups": [
+      [
+        "Combat Engine Fix — Dynamic Darkness Scaling for Benthic Luminescence:",
+        "Dynamic Darkness Scaling: Resolved a bug where Gloom Angler Snapper and Benthic Luminescence (PASSIVE_ABYSSAL_BIOLUMINESCENCE) had hardcoded +100% Attack Speed and Damage Dealt rather than scaling with local room darkness;",
+        "Illumination Interaction: Damage Dealt, Attack Speed, and Hit Rate now scale dynamically with [2 × localDarkness]% (reaching +100% in unlit Sunken Citadel at 50 Darkness, and properly reducing to 0% bonus when Darkness is illuminated to 0 by Angel of War, Lanterns, or Holy Knights);",
+        "UI & Area Context Binding: Bound active dungeon/raid area context across Entity, Enemy, EliteEnemy, and DialogEntityStatsDetail so monster stat inspect dialogs and combat engine calculations accurately reflect effective room darkness."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.29",
+    "date": "26/10/2026",
+    "groups": [
+      [
+        "Combat Engine Fix — Multi-Strike Critical Amplification Scaling:",
+        "Avatar of Wrath & Blood Reaver Critical Scaling: Refactored executeMultiStrike() to apply criticalAmplification (2.0x for Bloody Slaughter and Blessing of Slaughter; 3.0x for Rapid Exploitation) multiplicatively on base critical damage rather than replacing it with a flat multiplier;",
+        "Gear & Trait Crit Scaling: Adventurers with critical damage bonuses from weapons, armor, accessories, potions, and the Ruthless trait now properly scale their critical damage output during multi-strike active skills."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.20.28",
+    "date": "26/10/2026",
+    "groups": [
+      [
+        "Fix — Summoned Companion Lifecycle & Tombstone Prevention:",
+        "Dungeon Trap Lethal Cleanup: Invoked checkDeath() upon applying lethal environmental room trap damage in The Golden City and The Lost Expedition, properly removing deceased summons from exploration and fighting rosters;",
+        "Defensive Summon Despawn: Purged any dead or orphaned summons from adventurersExploring and fightingGroup in spawnMinionForBeastTamer(), preventing dead companions from lingering or exceeding summon caps;",
+        "Tombstone Rendering Guard: Guarded DialogDungeonDetail to ensure summoned minions never render as tombstones (R.drawable.tombstone) or occupy active formation slots upon death;",
+        "Defensive Death Threshold: Updated Area.checkDeath() condition to currentHp <= 0 for resilient lifecycle cleanup across all combat and status damage resolutions."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.20.27",
     "date": "25/10/2026",
     "groups": [
