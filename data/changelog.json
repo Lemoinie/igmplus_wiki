@@ -1,5 +1,20 @@
 [
   {
+    "version": "1.3.21.0",
+    "date": "28/10/2026",
+    "groups": [
+      [
+        "Save Loss Prevention & Dedicated Session Checkpoint System:",
+        "Dedicated Checkpoint (dbackup.txt): Introduced an isolated session checkpoint that only records verified game states after successful deserialization and idle simulation, keeping it 100% immune from the 3-second auto-save loop;",
+        "3-Tier Load Fallback: Implemented automatic fallback to dbackup.txt if active saves (data.txt and databackup.txt) fail to load, protecting players from catastrophic save wipes on crash or corruption;",
+        "Lockdown Protocol: Added total save failure protection (inhibitSave = true) to prevent blank saves from overwriting damaged disk files, while allowing valid save imports to cleanly lift the lockdown;",
+        "Atomic File Writes & Thread Safety: Converted all save write operations to AtomicFile with thread synchronization, eliminating 0-byte file truncations during unexpected app swipe-close (SIGKILL);",
+        "DataDeserializer Hardening: Added safe parsing guards for KingMessage, StatusEffectType, and AltarEffectType enums to ignore unrecognized entries rather than crashing save loading."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.20.30",
     "date": "26/10/2026",
     "groups": [
@@ -656,7 +671,7 @@
         "7 Evolution Tiers: Added Arcanist (T3), Spellweaver (T4), Aether Mage (T5), Aether Archmage (T6), Disintegrator (T7), Grand Magus (T8), and Singularity Magus (T9);",
         "Active Burst Spells: Features focused single-target arcane damage scaling progressively across all tiers — Energy Burst III (500%), Arcane Blast I–III (600%–800%), and Disintegrate I–III (1000%–3000%);",
         "Recast Probability: Disintegrate (T7–T9) introduces pinnacle recast chance (20% / 25% / 30%) to immediately cast a second blast upon execution;",
-        "Aether Resonance Passive: Unified passive family (I–VII) granting +10% up to +70% Skill Amplification and +10% up to +70% enemy Armor & Magic Defense penetration (+10% per tier);",
+        "Aether Resonance Passive: Unified passive family (I–VII) granting +10% up to +70% enemy Armor & Magic Defense penetration (+10% per tier);",
         "Boss Priority & Threat Bypass: Units with Aether Resonance completely bypass enemy taunts and the threat weighting system, locking onto Boss-type enemies when present."
       ],
       [

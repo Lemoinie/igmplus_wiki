@@ -4817,11 +4817,11 @@
     "ingredients": [
       {
         "item": "SharkTeeth",
-        "qty": 6
+        "qty": 16
       },
       {
         "item": "SharkFin",
-        "qty": 2
+        "qty": 20
       }
     ]
   },
@@ -4835,7 +4835,7 @@
       },
       {
         "item": "AbyssalChitin",
-        "qty": 20
+        "qty": 40
       }
     ]
   },
@@ -4845,11 +4845,11 @@
     "ingredients": [
       {
         "item": "SharkTeeth",
-        "qty": 8
+        "qty": 18
       },
       {
         "item": "CoralChunk",
-        "qty": 8
+        "qty": 18
       }
     ]
   },
@@ -4859,7 +4859,7 @@
     "ingredients": [
       {
         "item": "TrenchWyvernFin",
-        "qty": 36
+        "qty": 46
       }
     ]
   },
@@ -4869,11 +4869,11 @@
     "ingredients": [
       {
         "item": "CoralChunk",
-        "qty": 14
+        "qty": 24
       },
       {
         "item": "Coral",
-        "qty": 12
+        "qty": 22
       }
     ]
   },
@@ -4947,7 +4947,7 @@
     "ingredients": [
       {
         "item": "SirenSilk",
-        "qty": 28
+        "qty": 38
       }
     ]
   },
@@ -4961,7 +4961,7 @@
       },
       {
         "item": "CoralChunk",
-        "qty": 8
+        "qty": 18
       },
       {
         "item": "OracleGem",
@@ -4993,15 +4993,15 @@
     "ingredients": [
       {
         "item": "Coral",
-        "qty": 12
+        "qty": 22
       },
       {
         "item": "CoralChunk",
-        "qty": 6
+        "qty": 16
       },
       {
         "item": "TrenchWyvernFin",
-        "qty": 2
+        "qty": 12
       }
     ]
   },
@@ -5011,11 +5011,11 @@
     "ingredients": [
       {
         "item": "Coral",
-        "qty": 10
+        "qty": 20
       },
       {
         "item": "CoralChunk",
-        "qty": 4
+        "qty": 14
       }
     ]
   },

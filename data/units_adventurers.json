@@ -45,7 +45,7 @@
         "baseIntelligence": 45,
         "baseDexterity": 12,
         "baseDefense": 0,
-        "baseMagicDefense": 30
+        "baseMagicDefense": 15
       },
       "max_level": 30,
       "weapon_type": "type_staff",
@@ -73,7 +73,7 @@
         "baseIntelligence": 36,
         "baseDexterity": 10,
         "baseDefense": 0,
-        "baseMagicDefense": 30
+        "baseMagicDefense": 20
       },
       "max_level": 25,
       "weapon_type": "type_staff",
@@ -1306,7 +1306,7 @@
         "baseIntelligence": 54,
         "baseDexterity": 14,
         "baseDefense": 0,
-        "baseMagicDefense": 30
+        "baseMagicDefense": 10
       },
       "max_level": 35,
       "weapon_type": "type_staff",
@@ -1802,7 +1802,7 @@
         "baseIntelligence": 64,
         "baseDexterity": 16,
         "baseDefense": 0,
-        "baseMagicDefense": 30
+        "baseMagicDefense": 5
       },
       "max_level": 40,
       "weapon_type": "type_staff",
@@ -3555,7 +3555,7 @@
         "baseIntelligence": 75,
         "baseDexterity": 18,
         "baseDefense": 0,
-        "baseMagicDefense": 30
+        "baseMagicDefense": 0
       },
       "max_level": 45,
       "weapon_type": "type_staff",
@@ -3633,7 +3633,7 @@
         "baseIntelligence": 28,
         "baseDexterity": 8,
         "baseDefense": 0,
-        "baseMagicDefense": 30
+        "baseMagicDefense": 25
       },
       "max_level": 20,
       "weapon_type": "type_staff",

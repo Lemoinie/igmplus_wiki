@@ -119,7 +119,21 @@
         "getDarknessDamageAmplification": "darknessDamageAmplification",
         "getMenace": "menace",
         "getGuard": "guard",
-        "getSpecialDamageModifier": "specialDamageModifier"
+        "getSpecialDamageModifier": "specialDamageModifier",
+        "getBlockChance": "blockChance",
+        "getPhysicalBlockChance": "physicalBlockChance + blockChance",
+        "getMagicBlockChance": "magicBlockChance + blockChance",
+        "getRawPhysicalBlockChance": "physicalBlockChance",
+        "getRawMagicBlockChance": "magicBlockChance",
+        "getAttackSpeedDragReduction": "attackSpeedDragReduction",
+        "getRangedDragReduction": "rangedDragReduction",
+        "isIgnoresFireExtinguish": "ignoresFireExtinguish",
+        "hasStatusImmunity": "statusImmunities.contains(type)",
+        "getStatusImmunities": "statusImmunities",
+        "getAttackSpeedBonus": "0",
+        "getDamageMultiplier": "1.0",
+        "getHitChanceBonus": "0.0",
+        "onFatalDamage": "false"
       }
     },
     {
@@ -381,12 +395,13 @@
       "description_key": "accessory_abyssal_chitin_buckler_description",
       "name": "Abyssal Chitin Buckler",
       "description": "An ultra-dense buckler carved from the carapace of an abyssal monstrosity.",
-      "price": 1050,
+      "price": 1785,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "maxHp": 150
+        "maxHp": 150,
+        "magicBlockChance": 0.2
       },
       "flags": {},
       "overrides": {},
@@ -408,14 +423,15 @@
       "description_key": "weapon_dagger_abyssal_chitin_dagger_description",
       "name": "Abyssal Chitin Dagger",
       "description": "A serrated benthic dagger reinforced with hardened abyssal chitin.",
-      "price": 1650,
+      "price": 2805,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "constitution": 60,
         "dexterity": 45,
-        "physicalCriticalDamageBonus": 0.5
+        "physicalCriticalDamageBonus": 0.5,
+        "attackSpeedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -437,7 +453,7 @@
       "description_key": "armor_medium_abyssal_chitin_jacket_description",
       "name": "Abyssal Chitin Jacket",
       "description": "A reinforced coat lined with flexible abyssal chitin plates.",
-      "price": 1350,
+      "price": 1005,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -589,7 +605,7 @@
       "description_key": "item_abyssal_pearl_description",
       "name": "Abyssal Pearl",
       "description": "Rare flawless black pearl formed under immense mesopelagic pressure.",
-      "price": 200,
+      "price": 75,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -2200,7 +2216,7 @@
       "description_key": "item_bioluminescent_esca_description",
       "name": "Bioluminescent Esca",
       "description": "Luminous deep-sea organ that radiates brilliant darkness-piercing light.",
-      "price": 60,
+      "price": 30,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -3968,7 +3984,7 @@
       "description_key": "item_coral_description",
       "name": "Coral",
       "description": "Vibrant living sea coral, naturally resilient against crushing pressure.",
-      "price": 10,
+      "price": 5,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -3993,7 +4009,7 @@
       "description_key": "armor_heavy_coral_armor_description",
       "name": "Coral Armor",
       "description": "Heavy calcified coral plate that insulates against benthic frost.",
-      "price": 1450,
+      "price": 510,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4022,13 +4038,14 @@
       "description_key": "weapon_axe_coral_axe_description",
       "name": "Coral Axe",
       "description": "A massive cleaving axe weighted with calcified coral boulders.",
-      "price": 1400,
+      "price": 705,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "constitution": 40,
-        "intelligence": 30
+        "intelligence": 30,
+        "attackSpeedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -4049,12 +4066,13 @@
       "description_key": "accessory_coral_boots_description",
       "name": "Coral Boots",
       "description": "Streamlined fins that glide effortlessly through dense oceanic water.",
-      "price": 650,
+      "price": 975,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "dexterity": 40
+        "dexterity": 40,
+        "attackSpeedDragReduction": 0.3
       },
       "flags": {},
       "overrides": {},
@@ -4076,12 +4094,13 @@
       "description_key": "weapon_bow_coral_bow_description",
       "name": "Coral Bow",
       "description": "A recurve bow crafted from flexible living coral and taut shark sinew.",
-      "price": 1250,
+      "price": 165,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "dexterity": 70
+        "dexterity": 70,
+        "attackSpeedDragReduction": 0.5
       },
       "flags": {},
       "overrides": {},
@@ -4100,7 +4119,7 @@
       "description_key": "item_coral_chunk_description",
       "name": "Coral Chunk",
       "description": "Dense calcified coral boulder harder than tempered steel.",
-      "price": 35,
+      "price": 15,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4124,13 +4143,15 @@
       "description_key": "accessory_coral_gloves_description",
       "name": "Coral Gloves",
       "description": "Textured aquatic gauntlets improving grip and fluid dynamics.",
-      "price": 650,
+      "price": 465,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "constitution": 30,
-        "dexterity": 25
+        "dexterity": 25,
+        "attackSpeedDragReduction": 0.2,
+        "rangedDragReduction": 0.3
       },
       "flags": {},
       "overrides": {},
@@ -4151,7 +4172,7 @@
       "description_key": "accessory_coral_helmet_description",
       "name": "Coral Helmet",
       "description": "A dense headpiece sculpted from living coral reefs.",
-      "price": 950,
+      "price": 315,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4178,14 +4199,16 @@
       "description_key": "weapon_staff_coral_staff_description",
       "name": "Coral Staff",
       "description": "A glowing staff conduit topped with an oracle gem and glowing esca.",
-      "price": 1450,
+      "price": 720,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "intelligence": 70
       },
-      "flags": {},
+      "flags": {
+        "ignoresFireExtinguish": true
+      },
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CoralStaff.kt"
     },
@@ -10835,7 +10858,9 @@
       "stack": null,
       "gem_value": null,
       "stats": {},
-      "flags": {},
+      "flags": {
+        "isRareDrop": true
+      },
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/OracleGem.kt"
     },
@@ -13942,14 +13967,15 @@
       "description_key": "weapon_dagger_shark_dagger_description",
       "name": "Shark Dagger",
       "description": "A streamlined dagger fashioned from pelagic predator teeth and fins.",
-      "price": 1050,
+      "price": 270,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "constitution": 50,
         "dexterity": 30,
-        "physicalCriticalDamageBonus": 0.4
+        "physicalCriticalDamageBonus": 0.4,
+        "attackSpeedDragReduction": 0.5
       },
       "flags": {},
       "overrides": {},
@@ -13968,7 +13994,7 @@
       "description_key": "item_shark_fin_description",
       "name": "Shark Fin",
       "description": "Hydrodynamic shark fin reducing fluid drag during rapid maneuvers.",
-      "price": 25,
+      "price": 5,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -13993,14 +14019,15 @@
       "description_key": "weapon_sword_shark_sword_description",
       "name": "Shark Sword",
       "description": "A heavy broadsword edged with serrated shark teeth and calcified coral.",
-      "price": 1250,
+      "price": 540,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "constitution": 65,
         "dexterity": 20,
-        "physicalCriticalDamageBonus": 0.4
+        "physicalCriticalDamageBonus": 0.4,
+        "attackSpeedDragReduction": 0.5
       },
       "flags": {},
       "overrides": {},
@@ -14019,7 +14046,7 @@
       "description_key": "item_shark_teeth_description",
       "name": "Shark Teeth",
       "description": "Cluster of razor-sharp serrated teeth that shred armor and flesh.",
-      "price": 25,
+      "price": 5,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14387,7 +14414,7 @@
       "description_key": "armor_light_siren_coral_combat_robe_description",
       "name": "Siren Coral Combat Robe",
       "description": "Combat robes interwoven with enchanted sea-silk, calcified coral, and prophetic gems.",
-      "price": 2400,
+      "price": 1463,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14415,7 +14442,7 @@
       "description_key": "armor_light_siren_robe_description",
       "name": "Siren Robe",
       "description": "Vestments woven from gossamer siren silk resonant with oceanic mana.",
-      "price": 1250,
+      "price": 570,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14440,7 +14467,7 @@
       "description_key": "item_siren_silk_description",
       "name": "Siren Silk",
       "description": "Gossamer sea-silk woven from sunken robes; impervious to decay and water.",
-      "price": 30,
+      "price": 10,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -15125,7 +15152,7 @@
       "description_key": "accessory_spiral_hat_description",
       "name": "Spiral Hat",
       "description": "A ceremonial nautilus conch hat channeling ancient drowned sorcery.",
-      "price": 1150,
+      "price": 750,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -16040,7 +16067,6 @@
         "intelligence": 25
       },
       "flags": {
-        "notSellable": true,
         "isRareDrop": true
       },
       "overrides": {},
@@ -16302,16 +16328,19 @@
       "description_key": "weapon_dagger_trench_stiletto_description",
       "name": "Trench Stiletto",
       "description": "An ultra-thin hydrodynamic stiletto forged from trench wyvern fin spines.",
-      "price": 1500,
+      "price": 1725,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "constitution": 30,
-        "dexterity": 20
+        "dexterity": 20,
+        "attackSpeedDragReduction": 1.0
       },
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "getAttackSpeedBonus": "Math.min(200, area?.getPressure() ?: 0)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TrenchStiletto.kt"
     },
     {
@@ -16327,7 +16356,7 @@
       "description_key": "item_trench_wyvern_fin_description",
       "name": "Trench Wyvern Fin",
       "description": "Spiny membranous wing-fin harvested from trench-dwelling drakes.",
-      "price": 45,
+      "price": 25,
       "rarity": null,
       "stack": null,
       "gem_value": null,

@@ -1981,7 +1981,7 @@
     "desc_key": "passive_aura_of_light_i_description",
     "kind": "passive",
     "name": "Aura of Light I",
-    "description": "Reduces darkness by 15. At the start of battle, grants all allies Radiant Blessing (+10% status immunity, +5% damage against Undead). Intercepts 10% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 15. At the start of battle, grants all allies Radiant Blessing (+5% status immunity, +5% damage against Undead). Intercepts 10% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_LIGHT_II",
@@ -1989,7 +1989,7 @@
     "desc_key": "passive_aura_of_light_ii_description",
     "kind": "passive",
     "name": "Aura of Light II",
-    "description": "Reduces darkness by 25. At the start of battle, grants all allies Radiant Blessing (+15% status immunity, +10% damage against Undead). Basic attacks heal the ally with the lowest HP for 25% of the damage dealt. Intercepts 15% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 25. At the start of battle, grants all allies Radiant Blessing (+10% status immunity, +10% damage against Undead). Basic attacks heal the ally with the lowest HP for 25% of the damage dealt. Intercepts 15% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_DEVOTION_I",
@@ -1997,7 +1997,7 @@
     "desc_key": "passive_aura_of_devotion_i_description",
     "kind": "passive",
     "name": "Aura of Devotion I",
-    "description": "Reduces darkness by 35. At the start of battle, grants all allies Radiant Blessing (+20% status immunity, +15% damage against Undead, +5 flat damage reduction). Basic attacks heal the ally with the lowest HP for 30% of the damage dealt. Intercepts 20% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 35. At the start of battle, grants all allies Radiant Blessing (+15% status immunity, +15% damage against Undead, +5 flat damage reduction). Basic attacks heal the ally with the lowest HP for 30% of the damage dealt. Intercepts 20% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_DEVOTION_II",
@@ -2005,7 +2005,7 @@
     "desc_key": "passive_aura_of_devotion_ii_description",
     "kind": "passive",
     "name": "Aura of Devotion II",
-    "description": "Reduces darkness by 45. At the start of battle, grants all allies Radiant Blessing (+30% status immunity, +20% damage against Undead, +8 flat damage reduction). Basic attacks heal the ally with the lowest HP for 35% of the damage dealt. Intercepts 25% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 45. At the start of battle, grants all allies Radiant Blessing (+20% status immunity, +20% damage against Undead, +8 flat damage reduction). Basic attacks heal the ally with the lowest HP for 35% of the damage dealt. Intercepts 25% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_SANCTITY",
@@ -2013,7 +2013,7 @@
     "desc_key": "passive_aura_of_sanctity_description",
     "kind": "passive",
     "name": "Aura of Sanctity",
-    "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+40% status immunity, +25% damage against Undead, +10 flat damage reduction, +3% HP regeneration per turn). Each turn, cleanses 1 negative effect from the most debuffed ally. Basic attacks heal the ally with the lowest HP for 40% of the damage dealt. Intercepts 30% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+25% status immunity, +25% damage against Undead, +10 flat damage reduction, +3% HP regeneration per turn). Each turn, cleanses 1 negative effect from the most debuffed ally. Basic attacks heal the ally with the lowest HP for 40% of the damage dealt. Intercepts 30% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_THE_SERAPHIM",
@@ -2021,7 +2021,7 @@
     "desc_key": "passive_aura_of_the_seraphim_description",
     "kind": "passive",
     "name": "Aura of the Seraphim",
-    "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+50% status immunity, +30% damage against Undead, +15 flat damage reduction, +5% HP regeneration per turn). Each turn, cleanses 1 negative effect from every ally. Basic attacks heal the ally with the lowest HP for 50% of the damage dealt (overhealing becomes a holy shield). Intercepts 35% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+30% status immunity, +30% damage against Undead, +15 flat damage reduction, +5% HP regeneration per turn). Each turn, cleanses 1 negative effect from every ally. Basic attacks heal the ally with the lowest HP for 50% of the damage dealt (overhealing becomes a holy shield). Intercepts 35% of enemy AoE damage for same-row allies."
   },
   {
     "key": "ACTIVE_SCARLET_AEONIA",
@@ -2117,7 +2117,7 @@
     "desc_key": "passive_aether_resonance_i_description",
     "kind": "passive",
     "name": "Aether Resonance I",
-    "description": "Increases Skill Amplification by 10% and ignores 10% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 10% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_II",
@@ -2125,7 +2125,7 @@
     "desc_key": "passive_aether_resonance_ii_description",
     "kind": "passive",
     "name": "Aether Resonance II",
-    "description": "Increases Skill Amplification by 20% and ignores 20% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 20% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_III",
@@ -2133,7 +2133,7 @@
     "desc_key": "passive_aether_resonance_iii_description",
     "kind": "passive",
     "name": "Aether Resonance III",
-    "description": "Increases Skill Amplification by 30% and ignores 30% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 30% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_IV",
@@ -2141,7 +2141,7 @@
     "desc_key": "passive_aether_resonance_iv_description",
     "kind": "passive",
     "name": "Aether Resonance IV",
-    "description": "Increases Skill Amplification by 40% and ignores 40% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 40% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_V",
@@ -2149,7 +2149,7 @@
     "desc_key": "passive_aether_resonance_v_description",
     "kind": "passive",
     "name": "Aether Resonance V",
-    "description": "Increases Skill Amplification by 50% and ignores 50% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 50% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_VI",
@@ -2157,7 +2157,7 @@
     "desc_key": "passive_aether_resonance_vi_description",
     "kind": "passive",
     "name": "Aether Resonance VI",
-    "description": "Increases Skill Amplification by 60% and ignores 60% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 60% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_AETHER_RESONANCE_VII",
@@ -2165,7 +2165,7 @@
     "desc_key": "passive_aether_resonance_vii_description",
     "kind": "passive",
     "name": "Aether Resonance VII",
-    "description": "Increases Skill Amplification by 70% and ignores 70% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
+    "description": "Ignores 70% of enemy Magic Defense. Ignores Threat and prioritizes Boss-type enemies."
   },
   {
     "key": "PASSIVE_PHANTOM_INSTINCT_I",

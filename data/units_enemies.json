@@ -1026,12 +1026,12 @@
       {
         "item": "CoinPurse",
         "qty": 1,
-        "weight": 1000
+        "weight": 690
       },
       {
         "item": "TidalLantern",
         "qty": 1,
-        "weight": 10
+        "weight": 1
       }
     ],
     "independent_drops": []
@@ -5372,7 +5372,7 @@
       {
         "item": "OracleGem",
         "qty": 1,
-        "weight": 100
+        "weight": 10
       },
       {
         "item": "SunkenDoubloon",
@@ -5507,7 +5507,7 @@
       {
         "item": "TrenchWyvernFin",
         "qty": 1,
-        "weight": 250
+        "weight": 200
       },
       {
         "item": "Coral",
@@ -6130,7 +6130,7 @@
       {
         "item": "OrbOfEctoplasm",
         "qty": 1,
-        "weight": 30
+        "weight": 10
       },
       {
         "item": "EsotericEgg",
