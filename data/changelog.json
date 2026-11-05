@@ -1,5 +1,80 @@
 [
   {
+    "version": "1.3.21.4",
+    "date": "04/11/2026",
+    "groups": [
+      [
+        "Raids & Automation — Pinnacle Raid Auto-Raid Restriction:",
+        "Pinnacle Raid Restrictions: Restricted Auto-Raid automation on Celestial Mothership and The Sanguine Crucible (isAutoRaidAllowed = false) to ensure endgame boss encounters retain active tactical engagement;",
+        "UI Visual Feedback & Toast: In DialogSendTeam, the AUTO-RAID button appears visually dimmed (40% opacity) on restricted raids, displaying an explanatory toast ('Auto-Raid is unavailable for this raid.') upon tap;",
+        "Engine Lifecycle Enforcement: Area.handleAutoRaidCycle() strictly enforces raid eligibility, immediately halting execution and clearing active automation state if a restricted raid cycle is invoked."
+      ],
+      [
+        "Bug Fixes & Encounters — The Hadal Abyss Obelisk Crash:",
+        "Resonance Strike Log Fix: Resolved a ClassCastException crash when striking an Abyssal Obelisk with an Abyssal Amulet equipped, passing the localized string resource (log_obelisk_resonance_strike) and hero class ID to Logger.EVENT_SIGNIFICANT;",
+        "Shatter & Reinforcement Safety: Hardened Logger.EVENT_SIGNIFICANT, Area.checkDeath() and DialogDungeonDetail to safely handle multi-type formatting, idempotent enemy corpse registration, and concurrent unit roster lookups when the obelisk breaks and benthic reinforcements spawn."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.3",
+    "date": "04/11/2026",
+    "groups": [
+      [
+        "Raids & Encounters — The Hunt, Refresh Costs & Boss Loot:",
+        "The Hunt Encounter Streamlining: Simplified The Hunt raid encounter to a focused single-target duel against the Shadow, removing Void Slime wave spawning and clutter;",
+        "Raid Refresh Cost Standardization: Standardized raid refresh costs to 50 Gems across Celestial Mothership, Kaunis, Sanguine Crucible, Sleeping Planet, and The Tower (aligning endgame progression costs);",
+        "Scarlet Strand Drop Rate Buff: Increased Scarlet Strand drop chance from 1% to 5% for Archmagus Valthex, smoothing the crafting curve for endgame scarlet gear;",
+        "Scarlet Debris Drop Rate Buff: Increased Scarlet Debris drop chance from 1% to 5% for Bloodstone Colossus, easing material acquisition for Colossal Sword of the Scarlet King;",
+        "Chorus the Drowned Tidal Lantern: Restored Tidal Lantern drop weight from 1 to 10 for Chorus the Drowned in The Slumbering Shallows, ensuring intended rare drop availability;",
+        "Flavor Text Update: Updated encounter entrance dialogue in The Hunt to reflect the single-enemy Shadow confrontation."
+      ],
+      [
+        "Economy & Activity Balancing — The Slumbering Shallows:",
+        "Chorus the Drowned Coin Purse Nerf: Reduced Coin Purse drop weight from 990 to 690 on Chorus the Drowned to improve drop distribution and prevent excessive currency pooling;",
+        "Ambient Gathering Coin Purse Nerf: Decreased ambient Coin Purse find chance from 2% down to 0.02% per search in The Slumbering Shallows, rebalancing fishing pond gold generation."
+      ],
+      [
+        "Combat & Pets — Area Regeneration & Ability State Management:",
+        "Area-Aware Pet Regeneration: Integrated pet regeneration bonuses directly into Adventurer.calculateTotalRegeneration(currentArea), ensuring Soothing pet regeneration applies during dungeon exploration and displays accurately in hero stat inspect dialogs;",
+        "Pet Ability State Isolation: Added complete ability state reset (zeroing all pet ability attributes) in Pet.configureAbilities() prior to reconfiguring, preventing stale bonuses or lingering attributes when changing pet loadouts;",
+        "Pet Ability UI Formatting: Enhanced DialogChangePetAbility with clean HTML formatting to clearly display dynamic ability numbers and scaling."
+      ],
+      [
+        "Hero Balance — Eldritch Alchemist Poison Tuning:",
+        "Poison On-Hit Proc Rate: Reduced Eldritch Alchemist onTargetHit poison proc chance from 100% to 40% (0.4), balancing sustained combat poison application while preserving 100% on-death retaliatory effects (Poison, Stun, Ablaze)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.2",
+    "date": "01/11/2026",
+    "groups": [
+      [
+        "Combat Engine Fix — Equipment Scaling for Status Effects:",
+        "Ablaze Damage Scaling: Fixed a bug where ABLAZE status effect damage did not scale with gear (Stellar Staff, Cloak of Redemption, Tunica Ignis, Ignition Orb, Sun Staff, Tunica Infernalis) due to direct field access bypassing Adventurer.getOnFireBonusDamage();",
+        "Frozen Damage Scaling: Fixed an identical issue where Frozen status damage bypassed Adventurer.getFreezeBonusDamage(), preventing Frozen Egg Pendant (+40 Freeze damage) from taking effect;",
+        "Regeneration Scaling: Fixed an identical issue where Regeneration turn ticks bypassed Adventurer.getRegenerationBonus(), preventing Armor of the Undying and Phylactery (+5% Regeneration bonus) from taking effect."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.1",
+    "date": "31/10/2026",
+    "groups": [
+      [
+        "Workshop Recipes Dialog — Order by Price:",
+        "Price Sorting: Added an 'Order by: Price' option in the Workshop Recipes dialog, sorting unlocked recipes descending by the sell price of the resulting crafted item (matching Storage dialog conventions);",
+        "Optimized Pre-Mapped Sort: Implemented a single-pass price map prior to sorting to avoid repeated reflection lookups during sort comparisons, guaranteeing instantaneous, stutter-free ordering;",
+        "Dynamic UI Layout Barrier: Added an adaptive ConstraintLayout barrier in dialog_recipes.xml to ensure the filter options and recipe list dynamically adjust on all screen sizes and font scales without clipping or overlap."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.21.0",
     "date": "28/10/2026",
     "groups": [
