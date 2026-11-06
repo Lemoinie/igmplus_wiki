@@ -1,0 +1,15 @@
+{
+    "sprite":  "trench_stiletto",
+    "id":  "TrenchStiletto",
+    "type":  "weapon",
+    "price":  1725,
+    "category":  "Dagger",
+    "description":  "An ultra-thin hydrodynamic stiletto forged from trench wyvern fin spines.",
+    "name":  "Trench Stiletto",
+    "stats":  {
+                  "constitution":  30,
+                  "dexterity":  20
+              },
+    "rarity":  null,
+    "notes":  "Negates water drag. Attack Speed increase by [Pressure]% (max +200%)."
+}

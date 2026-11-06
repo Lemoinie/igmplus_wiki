@@ -1,0 +1,16 @@
+{
+    "sprite":  "shark_dagger",
+    "id":  "SharkDagger",
+    "type":  "weapon",
+    "price":  270,
+    "category":  "Dagger",
+    "description":  "A streamlined dagger fashioned from pelagic predator teeth and fins.",
+    "name":  "Shark Dagger",
+    "stats":  {
+                  "criticalDamage":  0.4,
+                  "dexterity":  30,
+                  "constitution":  50
+              },
+    "rarity":  null,
+    "notes":  "Reduces water drag penalty by 50%."
+}

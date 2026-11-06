@@ -1,0 +1,16 @@
+{
+    "sprite":  "shark_sword",
+    "id":  "SharkSword",
+    "type":  "weapon",
+    "price":  540,
+    "category":  "Sword",
+    "description":  "A heavy broadsword edged with serrated shark teeth and calcified coral.",
+    "name":  "Shark Sword",
+    "stats":  {
+                  "criticalDamage":  0.4,
+                  "dexterity":  20,
+                  "constitution":  65
+              },
+    "rarity":  null,
+    "notes":  "Reduces water drag penalty by 50%."
+}

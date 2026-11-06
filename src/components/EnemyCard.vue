@@ -349,6 +349,13 @@ function isValidExp(val: any): boolean {
   background: rgba(56, 189, 248, 0.07);
 }
 
+.placeChip.place-guildactivity,
+.placeChip.place-guild_activity {
+  border-color: rgba(168, 85, 247, 0.35);
+  color: #d8b4fe;
+  background: rgba(168, 85, 247, 0.08);
+}
+
 .emptyPlace {
   font-size: 0.74rem;
   color: var(--text-muted);

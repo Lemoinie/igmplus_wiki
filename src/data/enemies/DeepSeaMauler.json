@@ -1,0 +1,38 @@
+{
+  "id": "DeepSeaMauler",
+  "name": "Deep Sea Mauler",
+  "type": "Aberration",
+  "isBoss": false,
+  "sprite": "deep_sea_mauler",
+  "stats": {
+    "hp": 2450,
+    "constitution": 88,
+    "intelligence": 16,
+    "dexterity": 62,
+    "defense": 42,
+    "magicDefense": 34
+  },
+  "damage": {
+    "min": "470",
+    "max": "570"
+  },
+  "expGiven": 265,
+  "drops": [
+    {
+      "item": "CoralChunk",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "AbyssalChitin",
+      "qty": 1,
+      "chance": 2.5
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_ARMOR_SHRED",
+  "passiveSkill": "PASSIVE_UNRELENTING_MAUL"
+}
+

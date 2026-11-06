@@ -1,7 +1,7 @@
 {
   "id": "GuildRequestArea",
   "name": "The Hunt",
-  "type": "raid",
+  "type": "guildactivity",
   "level": null,
   "encounterChance": 0,
   "sprite": "summary_request",

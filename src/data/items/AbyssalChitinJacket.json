@@ -1,0 +1,17 @@
+{
+    "sprite":  "abyssal_chitin_jacket",
+    "id":  "AbyssalChitinJacket",
+    "type":  "armor",
+    "price":  1005,
+    "category":  "MediumArmor",
+    "description":  "A reinforced coat lined with flexible abyssal chitin plates.",
+    "name":  "Abyssal Chitin Jacket",
+    "stats":  {
+                  "maxHp":  250,
+                  "dexterity":  15,
+                  "magicDefense":  10,
+                  "constitution":  15
+              },
+    "rarity":  null,
+    "notes":  "Immune to Frozen."
+}

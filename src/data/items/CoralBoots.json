@@ -1,0 +1,14 @@
+{
+    "sprite":  "coral_boots",
+    "id":  "CoralBoots",
+    "type":  "accessory",
+    "price":  975,
+    "category":  "Accessory",
+    "description":  "Streamlined fins that glide effortlessly through dense oceanic water.",
+    "name":  "Coral Boots",
+    "stats":  {
+                  "dexterity":  40
+              },
+    "rarity":  null,
+    "notes":  "Reduces attack speed water drag penalty by 30%."
+}

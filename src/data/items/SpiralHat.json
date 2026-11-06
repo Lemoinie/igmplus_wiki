@@ -1,0 +1,14 @@
+{
+    "sprite":  "spiral_hat",
+    "id":  "SpiralHat",
+    "type":  "accessory",
+    "price":  750,
+    "category":  "Accessory",
+    "description":  "A ceremonial nautilus conch hat channeling ancient drowned sorcery.",
+    "name":  "Spiral Hat",
+    "stats":  {
+                  "intelligence":  50
+              },
+    "rarity":  null,
+    "notes":  ""
+}

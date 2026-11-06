@@ -1,0 +1,38 @@
+{
+  "id": "GloomAnglerSnapper",
+  "name": "Gloom Angler Snapper",
+  "type": "Beast",
+  "isBoss": false,
+  "sprite": "gloom_angler_snapper",
+  "stats": {
+    "hp": 1620,
+    "constitution": 50,
+    "intelligence": 28,
+    "dexterity": 120,
+    "defense": 22,
+    "magicDefense": 28
+  },
+  "damage": {
+    "min": "420",
+    "max": "520"
+  },
+  "expGiven": 235,
+  "drops": [
+    {
+      "item": "BioluminescentEsca",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "AbyssalPearl",
+      "qty": 1,
+      "chance": 5
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_BLINDING_FLASH",
+  "passiveSkill": "PASSIVE_ABYSSAL_BIOLUMINESCENCE"
+}
+

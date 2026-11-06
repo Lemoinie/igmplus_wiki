@@ -1,7 +1,7 @@
 {
   "id": "TheSlumberingShallowsArea",
   "name": "The Slumbering Shallows",
-  "type": "epic_raid",
+  "type": "guildactivity",
   "level": null,
   "encounterChance": 17,
   "sprite": "summary_fishing_pond",
@@ -54,3 +54,4 @@
     "Perch"
   ]
 }
+

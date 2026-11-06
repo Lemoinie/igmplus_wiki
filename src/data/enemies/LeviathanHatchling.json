@@ -1,0 +1,38 @@
+{
+  "id": "LeviathanHatchling",
+  "name": "Leviathan Hatchling",
+  "type": "Dragon",
+  "isBoss": true,
+  "sprite": "leviathan_hatchling",
+  "stats": {
+    "hp": 8800,
+    "constitution": 190,
+    "intelligence": 160,
+    "dexterity": 65,
+    "defense": 45,
+    "magicDefense": 55
+  },
+  "damage": {
+    "min": "590",
+    "max": "700"
+  },
+  "expGiven": 4800,
+  "drops": [
+    {
+      "item": "AbyssalPearl",
+      "qty": 2,
+      "chance": 50
+    },
+    {
+      "item": "AbyssalChitin",
+      "qty": 3,
+      "chance": 25
+    }
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_ABYSSAL_TERRIFY",
+  "passiveSkill": "PASSIVE_DEFLECT_MAGIC"
+}
+

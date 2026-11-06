@@ -136,7 +136,9 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
 
   // Dragon
   DreamwroughtDragon: 'Dragon',
+  LeviathanHatchling: 'Dragon',
   SnowWyvern: 'Dragon',
+  TrenchWyvern: 'Dragon',
 
   // Plant
   AmanitaObscura: 'Plant',
@@ -168,6 +170,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
 
   // Construct
   BloodstoneColossus: 'Construct',
+  CrimsonReefGoliath: 'Construct',
   DreamwroughtForge: 'Construct',
   Gcss: 'Construct',
   MagicArmor: 'Construct',
@@ -187,6 +190,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
 
   // Beast
   Angelfish: 'Beast',
+  GloomAnglerSnapper: 'Beast',
   BlueShark: 'Beast',
   BlueTrout: 'Beast',
   Boar: 'Beast',
@@ -208,11 +212,13 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   TutorialWolf: 'Beast',
   VampireBat: 'Beast',
   WingedRay: 'Beast',
+  TigerShark: 'Beast',
   Wolf: 'Beast',
   Wurm: 'Beast',
 
   // Aberration
   Abomination: 'Aberration',
+  DeepSeaMauler: 'Aberration',
   AvatarOfTheAncient: 'Aberration',
   Beholder: 'Aberration',
   CelestialDestroyer: 'Aberration',
@@ -234,6 +240,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
 
   // Humanoid
   ArcaneAssassin: 'Humanoid',
+  TideCursedOracle: 'Humanoid',
   ArchmageOfLarox: 'Humanoid',
   ArchmagusValthex: 'Humanoid',
   Berserker: 'Humanoid',
@@ -347,6 +354,45 @@ const PLACE_TYPE_ORDER: Record<string, number> = {
   guildactivity: 3,
 };
 
+// Canonical Location Ordering based on layout fragments (fragment_dungeons.xml, fragment_raids.xml, fragment_guild_activities.xml)
+const LOCATION_FRAGMENT_ORDER: Record<string, number> = {
+  // fragment_dungeons.xml (Normal Dungeons)
+  EnchantedForest: 1,
+  TheDesert: 2,
+  EternalBattlefield: 3,
+  TheGoldenCity: 4,
+  BlackwaterPort: 5,
+  FrostbitePeaks: 6,
+  ObsidianMines: 7,
+  TheSouthernGrove: 8,
+  BarrenWastelands: 9,
+  HiddenCityOfLarox: 10,
+  LostLands: 11,
+  TheSunkenCitadel: 12,
+  CorruptedForest: 13,
+
+  // fragment_raids.xml (Raids & Epic Raids)
+  TheSlimePond: 101,
+  DivineArcheology: 102,
+  AncientGraveDigging: 103,
+  ImperialRescue: 104,
+  TheCultistRebels: 105,
+  TheDreadfulAscent: 106,
+  TheLostExpedition: 107,
+  CelestialMothership: 108,
+  TheDireDescent: 109,
+  SleepingPlanet: 110,
+  Kaunis: 111,
+  TheTower: 112,
+  SanguineCrucible: 113,
+  TheHadalAbyss: 114,
+
+  // fragment_guild_activities.xml (Guild Activities)
+  TheSlumberingShallowsArea: 201,
+  GuildRequestArea: 202,
+  GuildSiegeArea: 203,
+};
+
 export function getAllPlaces(): any[] {
   const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
   const enemies = getAllEnemies();
@@ -397,23 +443,32 @@ export function getAllPlaces(): any[] {
     const orderA = PLACE_TYPE_ORDER[a.type] ?? 99;
     const orderB = PLACE_TYPE_ORDER[b.type] ?? 99;
     if (orderA !== orderB) return orderA - orderB;
+    const posA = LOCATION_FRAGMENT_ORDER[a.id] ?? 999;
+    const posB = LOCATION_FRAGMENT_ORDER[b.id] ?? 999;
+    if (posA !== posB) return posA - posB;
     return (a.name || '').localeCompare(b.name || '');
   });
 }
 
 export function getAllDungeons(): any[] {
   const m = import.meta.glob('../data/places/dungeons/*.json', { eager: true });
-  return Object.values(m).map((mod: any) => mod.default || mod);
+  return Object.values(m)
+    .map((mod: any) => mod.default || mod)
+    .sort((a, b) => (LOCATION_FRAGMENT_ORDER[a.id] ?? 999) - (LOCATION_FRAGMENT_ORDER[b.id] ?? 999));
 }
 
 export function getAllRaids(): any[] {
   const m = import.meta.glob('../data/places/raids/*.json', { eager: true });
-  return Object.values(m).map((mod: any) => mod.default || mod);
+  return Object.values(m)
+    .map((mod: any) => mod.default || mod)
+    .sort((a, b) => (LOCATION_FRAGMENT_ORDER[a.id] ?? 999) - (LOCATION_FRAGMENT_ORDER[b.id] ?? 999));
 }
 
 export function getAllGuildActivities(): any[] {
   const m = import.meta.glob('../data/places/guildactivities/*.json', { eager: true });
-  return Object.values(m).map((mod: any) => mod.default || mod);
+  return Object.values(m)
+    .map((mod: any) => mod.default || mod)
+    .sort((a, b) => (LOCATION_FRAGMENT_ORDER[a.id] ?? 999) - (LOCATION_FRAGMENT_ORDER[b.id] ?? 999));
 }
 
 // Skills
@@ -501,9 +556,8 @@ export function getItemUsageMap(): Map<string, ItemUsage> {
     }
   }
 
-  const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
-  Object.values(placeModules).forEach((mod: any) => {
-    const p = (mod as any).default || mod;
+  const places = getAllPlaces();
+  places.forEach((p: any) => {
     if (!p?.id) return;
     for (const itemId of new Set<string>(p.loot || [])) {
       get(itemId).foundIn.push({ id: p.id, name: p.name || p.id, sprite: p.sprite, type: p.type || 'dungeon' });

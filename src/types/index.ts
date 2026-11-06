@@ -161,7 +161,7 @@ export interface DungeonEnemyRef {
 export interface DungeonDefinition {
   id: string;
   name: string;
-  type: 'dungeon' | 'raid' | 'epic_raid';
+  type: 'dungeon' | 'raid' | 'epic_raid' | 'guildactivity';
   level?: number;
   encounterChance: number; // percentage per room
   sprite: string;

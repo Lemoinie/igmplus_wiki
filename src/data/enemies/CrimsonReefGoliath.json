@@ -1,0 +1,38 @@
+{
+  "id": "CrimsonReefGoliath",
+  "name": "Crimson Reef Goliath",
+  "type": "Construct",
+  "isBoss": false,
+  "sprite": "crimson_reef_goliath",
+  "stats": {
+    "hp": 3100,
+    "constitution": 125,
+    "intelligence": 6,
+    "dexterity": 22,
+    "defense": 68,
+    "magicDefense": 18
+  },
+  "damage": {
+    "min": "460",
+    "max": "550"
+  },
+  "expGiven": 260,
+  "drops": [
+    {
+      "item": "CoralChunk",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "Coral",
+      "qty": 2,
+      "chance": 20
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_TIDAL_TREMOR",
+  "passiveSkill": "PASSIVE_CALCIFIED_RETALIATION"
+}
+

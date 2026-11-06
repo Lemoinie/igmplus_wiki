@@ -1,0 +1,14 @@
+{
+    "sprite":  "tidal_lantern",
+    "id":  "TidalLantern",
+    "type":  "accessory",
+    "price":  50,
+    "category":  "Accessory",
+    "description":  "A mysterious drowned lantern salvaged from Chorus the Drowned. Its eerie cyan flame burns unquenched beneath the waves, piercing the gloom and luring ancient leviathan hatchlings from the abyss.",
+    "name":  "Tidal Lantern",
+    "stats":  {
+                  "intelligence":  25
+              },
+    "rarity":  null,
+    "notes":  "When exploring The Sunken Citadel, grants a 2.5% chance to encounter a Leviathan Hatchling."
+}

@@ -1,0 +1,15 @@
+{
+    "sprite":  "coral_gloves",
+    "id":  "CoralGloves",
+    "type":  "accessory",
+    "price":  465,
+    "category":  "Accessory",
+    "description":  "Textured aquatic gauntlets improving grip and fluid dynamics.",
+    "name":  "Coral Gloves",
+    "stats":  {
+                  "constitution":  30,
+                  "dexterity":  25
+              },
+    "rarity":  null,
+    "notes":  "Reduces attack speed drag by 20% and ranged damage drag penalty by 30%."
+}

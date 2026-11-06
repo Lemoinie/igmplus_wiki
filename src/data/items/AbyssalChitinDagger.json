@@ -1,0 +1,16 @@
+{
+    "sprite":  "abyssal_chitin_dagger",
+    "id":  "AbyssalChitinDagger",
+    "type":  "weapon",
+    "price":  2805,
+    "category":  "Dagger",
+    "description":  "A serrated benthic dagger reinforced with hardened abyssal chitin.",
+    "name":  "Abyssal Chitin Dagger",
+    "stats":  {
+                  "criticalDamage":  0.5,
+                  "dexterity":  45,
+                  "constitution":  60
+              },
+    "rarity":  null,
+    "notes":  "Negates water drag penalty."
+}

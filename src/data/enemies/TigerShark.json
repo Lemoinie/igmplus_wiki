@@ -1,0 +1,38 @@
+{
+  "id": "TigerShark",
+  "name": "Tiger Shark",
+  "type": "Beast",
+  "isBoss": false,
+  "sprite": "tiger_shark",
+  "stats": {
+    "hp": 1650,
+    "constitution": 52,
+    "intelligence": 10,
+    "dexterity": 155,
+    "defense": 18,
+    "magicDefense": 12
+  },
+  "damage": {
+    "min": "430",
+    "max": "510"
+  },
+  "expGiven": 230,
+  "drops": [
+    {
+      "item": "SharkTeeth",
+      "qty": 1,
+      "chance": 35
+    },
+    {
+      "item": "SharkFin",
+      "qty": 1,
+      "chance": 25
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_PELAGIC_FRENZY"
+}
+

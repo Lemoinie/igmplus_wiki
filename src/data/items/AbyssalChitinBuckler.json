@@ -1,0 +1,14 @@
+{
+    "sprite":  "abyssal_chitin_buckler",
+    "id":  "AbyssalChitinBuckler",
+    "type":  "accessory",
+    "price":  1785,
+    "category":  "Accessory",
+    "description":  "An ultra-dense buckler carved from the carapace of an abyssal monstrosity.",
+    "name":  "Abyssal Chitin Buckler",
+    "stats":  {
+                  "maxHp":  150
+              },
+    "rarity":  null,
+    "notes":  "+20% Magic Block Chance (takes 0 damage on block)."
+}

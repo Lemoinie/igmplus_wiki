@@ -1,0 +1,16 @@
+{
+    "sprite":  "coral_armor",
+    "id":  "CoralArmor",
+    "type":  "armor",
+    "price":  510,
+    "category":  "HeavyArmor",
+    "description":  "Heavy calcified coral plate that insulates against benthic frost.",
+    "name":  "Coral Armor",
+    "stats":  {
+                  "maxHp":  400,
+                  "retaliationPhysicalDamage":  15,
+                  "constitution":  15
+              },
+    "rarity":  null,
+    "notes":  "Immune to Frozen. +15 Physical Retaliation."
+}

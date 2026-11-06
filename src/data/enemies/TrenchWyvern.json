@@ -1,0 +1,38 @@
+{
+  "id": "TrenchWyvern",
+  "name": "Trench Wyvern",
+  "type": "Dragon",
+  "isBoss": false,
+  "sprite": "trench_wyvern",
+  "stats": {
+    "hp": 2050,
+    "constitution": 70,
+    "intelligence": 92,
+    "dexterity": 105,
+    "defense": 34,
+    "magicDefense": 48
+  },
+  "damage": {
+    "min": "450",
+    "max": "540"
+  },
+  "expGiven": 275,
+  "drops": [
+    {
+      "item": "TrenchWyvernFin",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "Coral",
+      "qty": 1,
+      "chance": 10
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_FROZEN_BREATH",
+  "passiveSkill": "PASSIVE_UNTAMED_AERIAL"
+}
+

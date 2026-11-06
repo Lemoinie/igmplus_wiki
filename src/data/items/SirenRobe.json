@@ -1,0 +1,15 @@
+{
+    "sprite":  "siren_robe",
+    "id":  "SirenRobe",
+    "type":  "armor",
+    "price":  570,
+    "category":  "LightArmor",
+    "description":  "Vestments woven from gossamer siren silk resonant with oceanic mana.",
+    "name":  "Siren Robe",
+    "stats":  {
+                  "intelligence":  45,
+                  "maxHp":  150
+              },
+    "rarity":  null,
+    "notes":  ""
+}

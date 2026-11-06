@@ -1,0 +1,14 @@
+{
+    "sprite":  "coral_bow",
+    "id":  "CoralBow",
+    "type":  "weapon",
+    "price":  165,
+    "category":  "Bow",
+    "description":  "A recurve bow crafted from flexible living coral and taut shark sinew.",
+    "name":  "Coral Bow",
+    "stats":  {
+                  "dexterity":  70
+              },
+    "rarity":  null,
+    "notes":  "Reduces water drag penalty by 50%."
+}

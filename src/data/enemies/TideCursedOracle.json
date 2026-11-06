@@ -1,0 +1,48 @@
+{
+  "id": "TideCursedOracle",
+  "name": "Tide-Cursed Oracle",
+  "type": "Humanoid",
+  "isBoss": false,
+  "sprite": "tide_cursed_oracle",
+  "stats": {
+    "hp": 1480,
+    "constitution": 40,
+    "intelligence": 185,
+    "dexterity": 38,
+    "defense": 12,
+    "magicDefense": 75
+  },
+  "damage": {
+    "min": "400",
+    "max": "480"
+  },
+  "expGiven": 245,
+  "drops": [
+    {
+      "item": "SirenSilk",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "SpiralSeashell",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "OracleGem",
+      "qty": 1,
+      "chance": 1
+    },
+    {
+      "item": "SunkenDoubloon",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_MASS_CONFUSION",
+  "passiveSkill": "PASSIVE_DROWNED_DISCORD"
+}
+

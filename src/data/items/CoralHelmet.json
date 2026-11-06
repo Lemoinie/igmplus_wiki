@@ -1,0 +1,14 @@
+{
+    "sprite":  "coral_helmet",
+    "id":  "CoralHelmet",
+    "type":  "accessory",
+    "price":  315,
+    "category":  "Accessory",
+    "description":  "A dense headpiece sculpted from living coral reefs.",
+    "name":  "Coral Helmet",
+    "stats":  {
+                  "maxHp":  270
+              },
+    "rarity":  null,
+    "notes":  ""
+}

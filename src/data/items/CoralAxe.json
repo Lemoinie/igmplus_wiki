@@ -1,0 +1,15 @@
+{
+    "sprite":  "coral_axe",
+    "id":  "CoralAxe",
+    "type":  "weapon",
+    "price":  705,
+    "category":  "Axe",
+    "description":  "A massive cleaving axe weighted with calcified coral boulders.",
+    "name":  "Coral Axe",
+    "stats":  {
+                  "constitution":  40,
+                  "intelligence":  30
+              },
+    "rarity":  null,
+    "notes":  "Completely negates attack speed water drag penalty."
+}

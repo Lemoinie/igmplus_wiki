@@ -1,0 +1,67 @@
+{
+  "id": "TheSunkenCitadel",
+  "name": "The Sunken Citadel",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 65,
+  "sprite": "summary_sunken_citadel",
+  "enemies": [
+    {
+      "id": "TigerShark",
+      "name": "Tiger Shark",
+      "rate": "16.25%",
+      "role": "Regular"
+    },
+    {
+      "id": "CrimsonReefGoliath",
+      "name": "Crimson Reef Goliath",
+      "rate": "16.25%",
+      "role": "Regular"
+    },
+    {
+      "id": "TideCursedOracle",
+      "name": "Tide-Cursed Oracle",
+      "rate": "16.25%",
+      "role": "Regular"
+    },
+    {
+      "id": "GloomAnglerSnapper",
+      "name": "Gloom Angler Snapper",
+      "rate": "16.25%",
+      "role": "Regular"
+    },
+    {
+      "id": "DeepSeaMauler",
+      "name": "Deep Sea Mauler",
+      "rate": "16.25%",
+      "role": "Regular"
+    },
+    {
+      "id": "TrenchWyvern",
+      "name": "Trench Wyvern",
+      "rate": "16.25%",
+      "role": "Regular"
+    },
+    {
+      "id": "LeviathanHatchling",
+      "name": "Leviathan Hatchling",
+      "rate": "2.5%",
+      "role": "Boss"
+    }
+  ],
+  "loot": [
+    "AbyssalChitin",
+    "AbyssalPearl",
+    "BioluminescentEsca",
+    "Coral",
+    "CoralChunk",
+    "OracleGem",
+    "SharkFin",
+    "SharkTeeth",
+    "SirenSilk",
+    "SpiralSeashell",
+    "SunkenDoubloon",
+    "TrenchWyvernFin"
+  ]
+}
+

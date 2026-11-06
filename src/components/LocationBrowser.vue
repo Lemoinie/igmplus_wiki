@@ -184,13 +184,13 @@ function getAtkTypeClass(atkType?: string): string {
               @change="onSelectLocation(($event.target as HTMLSelectElement).value)"
             >
               <optgroup v-if="dungeons.length" label="Regular Dungeons">
-                <option v-for="d in dungeons" :key="d.id" :value="d.id">
-                  {{ d.name }}
+                <option v-for="(d, idx) in dungeons" :key="d.id" :value="d.id">
+                  D{{ idx + 1 }}. {{ d.name }}
                 </option>
               </optgroup>
               <optgroup v-if="raids.length" label="Raids & Epic Raids">
-                <option v-for="r in raids" :key="r.id" :value="r.id">
-                  {{ r.name }} ({{ r.type === 'epic_raid' ? 'Epic Raid' : 'Raid' }})
+                <option v-for="(r, idx) in raids" :key="r.id" :value="r.id">
+                  R{{ idx + 1 }}. {{ r.name }}{{ r.type === 'epic_raid' ? ' [E]' : '' }}
                 </option>
               </optgroup>
               <optgroup v-if="guildActivities.length" label="Guild Activities">

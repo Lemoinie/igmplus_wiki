@@ -1,0 +1,14 @@
+{
+    "sprite":  "coral_staff",
+    "id":  "CoralStaff",
+    "type":  "weapon",
+    "price":  720,
+    "category":  "Staff",
+    "description":  "A glowing staff conduit topped with an oracle gem and glowing esca.",
+    "name":  "Coral Staff",
+    "stats":  {
+                  "intelligence":  70
+              },
+    "rarity":  null,
+    "notes":  "Negates fire penalty."
+}
