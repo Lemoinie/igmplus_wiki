@@ -8,23 +8,5 @@ const traitsData = getAllTraits();
 ---
 
 <WikiLayout title="Adventurer Traits & Upgrades" description="Catalog of basic traits, rare traits, and their upgraded Plus (+) variants in Idle Guild Master Plus.">
-  <div class="pageHeader">
-    <h1>Adventurer Traits & Upgrades</h1>
-    <p>
-      Inherent traits rolled upon recruitment or modified through evolution mechanics.
-      Explore basic traits and their upgraded Plus variants, as well as rare traits and their Evo-24 Phylactery enhancements.
-    </p>
-  </div>
-
   <TraitBrowser client:load traits={traitsData as any} basePath={base} />
 </WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-.pageHeader p {
-  max-width: 800px;
-  color: var(--text-secondary);
-}
-</style>

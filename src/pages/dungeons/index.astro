@@ -11,49 +11,5 @@ const dungeonsData = getAllPlaces();
   title="Locations"
   description="Monster encounters, enemy stats, attack types, skills, and loot tables across all dungeons and raids in Idle Guild Master Plus."
 >
-  <div class="pageHeader">
-    <div class="headerTop">
-      <h1>Locations</h1>
-      <span class="locationCountBadge">{dungeonsData.length} Locations</span>
-    </div>
-    <p>
-      Encounter pools, enemy combat stats, attack types, skills, and item drops across all regular dungeons, multi-room raids, and guild activities.
-    </p>
-  </div>
-
   <LocationBrowser client:load locations={dungeonsData as any} basePath={base} />
 </WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-
-.headerTop {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 0.5rem;
-}
-
-.headerTop h1 {
-  margin: 0;
-}
-
-.locationCountBadge {
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  color: var(--text-gold);
-}
-
-.pageHeader p {
-  color: var(--text-secondary);
-  max-width: 850px;
-  line-height: 1.55;
-  margin: 0;
-}
-</style>

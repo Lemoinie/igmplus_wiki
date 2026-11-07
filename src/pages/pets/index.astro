@@ -11,50 +11,5 @@ const petsData = getAllPets();
   title="Pets"
   description="All 23 guild pets in Idle Guild Master Plus. Check trait slot capacities, egg types, guaranteed first traits, and unique traits."
 >
-  <div class="pageHeader">
-    <div class="headerTop">
-      <h1>Pets</h1>
-      <span class="petCountBadge">{petsData.length} Pets</span>
-    </div>
-    <p>
-      Companions hatched and nurtured by your guild. Pets provide powerful passive buffs, healing, barriers,
-      and combat effects. Below is the complete roster showing egg types, trait capacities, guaranteed first traits, and unique traits.
-    </p>
-  </div>
-
   <PetTable client:load pets={petsData as any} basePath={base} />
 </WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-
-.headerTop {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  margin-bottom: 0.5rem;
-}
-
-.headerTop h1 {
-  margin: 0;
-}
-
-.petCountBadge {
-  font-size: 0.82rem;
-  font-weight: 700;
-  padding: 3px 10px;
-  border-radius: 12px;
-  background: var(--bg-card);
-  border: 1px solid var(--border-card);
-  color: var(--text-gold);
-}
-
-.pageHeader p {
-  color: var(--text-secondary);
-  max-width: 850px;
-  line-height: 1.55;
-  margin: 0;
-}
-</style>

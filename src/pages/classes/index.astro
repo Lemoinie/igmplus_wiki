@@ -8,22 +8,5 @@ const combinedClasses = getAllClasses();
 ---
 
 <WikiLayout title="Classes & Promotion Trees" description="Browse all 6 adventurer promotion trees in Idle Guild Master Plus.">
-  <div class="pageHeader">
-    <h1>Classes & Promotion Trees</h1>
-    <p>
-      Adventurers begin at a Tier 1 base class and advance through specialized branches up to Tier 9 pinnacle masteries.
-      Select a category below to explore its promotion paths.
-    </p>
-  </div>
-
   <ClassBrowser client:load classes={combinedClasses as any} basePath={base} />
 </WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-.pageHeader p {
-  max-width: 800px;
-}
-</style>

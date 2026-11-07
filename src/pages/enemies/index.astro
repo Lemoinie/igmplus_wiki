@@ -8,22 +8,5 @@ const enemiesData = getAllEnemies();
 ---
 
 <WikiLayout title="Bestiary" description="Complete enemy drops and encounter locations in Idle Guild Master Plus.">
-  <div class="pageHeader">
-    <h1>Bestiary</h1>
-    <p>
-      Comprehensive bestiary of wild beasts, dungeon monsters, corrupted horrors, and raid bosses.
-      Filter by name, item drops, or encounter locations.
-    </p>
-  </div>
-
   <EnemyBrowser client:load enemies={enemiesData as any} basePath={base} />
 </WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-.pageHeader p {
-  max-width: 800px;
-}
-</style>

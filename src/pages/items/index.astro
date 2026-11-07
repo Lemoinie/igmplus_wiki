@@ -8,22 +8,5 @@ const combinedEquipment = getAllItems();
 ---
 
 <WikiLayout title="Items" description="Browse all weapons, armors, accessories, and crafting items in Idle Guild Master Plus.">
-  <div class="pageHeader">
-    <h1>Items</h1>
-    <p>
-      Complete catalog of craftable and dropped swords, axes, bows, staves, daggers, robes, heavy armors, and accessories.
-      Filter by item type or search specific bonuses.
-    </p>
-  </div>
-
   <EquipmentBrowser client:load items={combinedEquipment as any} basePath={base} />
 </WikiLayout>
-
-<style>
-.pageHeader {
-  margin-bottom: 1.5rem;
-}
-.pageHeader p {
-  max-width: 800px;
-}
-</style>
