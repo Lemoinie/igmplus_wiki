@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_TIDAL_CATACLYSM",
+  "name_key": "active_tidal_cataclysm_name",
+  "desc_key": "active_tidal_cataclysm_description",
+  "kind": "active",
+  "name": "Tidal Cataclysm",
+  "description": "Above 65% HP, strikes all enemies for 120% magic damage and reduces their attack speed by 25%.\n\nBelow 65% HP, strikes all enemies for 200% magic damage and inflicts TERRIFY for 4 turns.\n\nTERRIFY: The unit skips its turn and takes 20% max hp as magic damage."
+}

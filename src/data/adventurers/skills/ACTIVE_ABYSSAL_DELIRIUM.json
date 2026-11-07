@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ABYSSAL_DELIRIUM",
+  "name_key": "active_abyssal_delirium_name",
+  "desc_key": "active_abyssal_delirium_description",
+  "kind": "active",
+  "name": "Abyssal Delirium",
+  "description": "Sings a maddening abyssal dirge that deals heavy Cold Magic damage to all enemies and inflicts Confuse for 2 turns."
+}

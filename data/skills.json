@@ -2646,5 +2646,53 @@
     "kind": "active",
     "name": "Roar of the Deep",
     "description": "Unleashes a terrifying roar that terrifies all enemies for 3 turns."
+  },
+  {
+    "key": "ACTIVE_ABYSSAL_CLEAVE",
+    "name_key": "active_abyssal_cleave_name",
+    "desc_key": "active_abyssal_cleave_description",
+    "kind": "active",
+    "name": "Abyssal Cleave",
+    "description": "Frontline crushing sweep dealing heavy physical damage and inflicting Armor Shred (-25% Physical & Magic Defense for 3 turns)."
+  },
+  {
+    "key": "PASSIVE_HADAL_GROUNDING",
+    "name_key": "passive_hadal_grounding_name",
+    "desc_key": "passive_hadal_grounding_description",
+    "kind": "passive",
+    "name": "Hadal Grounding",
+    "description": "Subterranean vibrations cause basic attacks to shockwave, stunning up to 2 targets for 1 turn (70% proc chance)."
+  },
+  {
+    "key": "ACTIVE_ABYSSAL_DELIRIUM",
+    "name_key": "active_abyssal_delirium_name",
+    "desc_key": "active_abyssal_delirium_description",
+    "kind": "active",
+    "name": "Abyssal Delirium",
+    "description": "Sings a maddening abyssal dirge that deals heavy Cold Magic damage to all enemies and inflicts Confuse for 2 turns."
+  },
+  {
+    "key": "PASSIVE_SIREN_DISCORD",
+    "name_key": "passive_siren_discord_name",
+    "desc_key": "passive_siren_discord_description",
+    "kind": "passive",
+    "name": "Siren Discord",
+    "description": "Basic attacks carry a 60% chance to inflict Confuse (2 turns) and a 50% chance to inflict Silence (2 turns)."
+  },
+  {
+    "key": "ACTIVE_TIDAL_CATACLYSM",
+    "name_key": "active_tidal_cataclysm_name",
+    "desc_key": "active_tidal_cataclysm_description",
+    "kind": "active",
+    "name": "Tidal Cataclysm",
+    "description": "Above 65% HP, strikes all enemies for 120% magic damage and reduces their attack speed by 25%.\n\nBelow 65% HP, strikes all enemies for 200% magic damage and inflicts TERRIFY for 4 turns.\n\nTERRIFY: The unit skips its turn and takes 20% max hp as magic damage."
+  },
+  {
+    "key": "PASSIVE_ABYSSAL_SOVEREIGN",
+    "name_key": "passive_abyssal_sovereign_name",
+    "desc_key": "passive_abyssal_sovereign_description",
+    "kind": "passive",
+    "name": "Abyssal Sovereign",
+    "description": "Immune to Freeze, Ablaze, and Bleed, and reduces ranged damage taken by 60%. Below 25% HP (or 15% if both Ancient Obelisks are shattered), gains +30% Damage, +125% Attack Speed, and increases trench freeze risk to 75%."
   }
 ]

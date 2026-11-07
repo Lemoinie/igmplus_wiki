@@ -6,6 +6,7 @@
     "sprite": "icon_effect_taunt",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Taunt",
     "description": "taunted"
   },
@@ -16,6 +17,7 @@
     "sprite": "icon_effect_defensive_stance",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Defensive Stance",
     "description": "in a defensive stance"
   },
@@ -26,6 +28,7 @@
     "sprite": "icon_effect_stun",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Stun",
     "description": "stunned"
   },
@@ -34,8 +37,9 @@
     "name_key": "status_effect_stun",
     "desc_key": "status_effect_stun_description",
     "sprite": "icon_effect_stun",
-    "negative": false,
+    "negative": true,
     "serialized": true,
+    "cleansable": false,
     "name": "Stun",
     "description": "stunned"
   },
@@ -46,6 +50,7 @@
     "sprite": "icon_effect_silence",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Silence",
     "description": "silenced"
   },
@@ -56,6 +61,7 @@
     "sprite": "icon_effect_ablaze",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Ablaze",
     "description": "ablaze"
   },
@@ -66,6 +72,7 @@
     "sprite": "icon_effect_bloodflame",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Bloodflame",
     "description": "burning with bloodflame"
   },
@@ -76,6 +83,7 @@
     "sprite": "icon_effect_poison",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Poison",
     "description": "poisoned"
   },
@@ -86,6 +94,7 @@
     "sprite": "icon_effect_regeneration",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Regeneration",
     "description": "regenerating"
   },
@@ -96,6 +105,7 @@
     "sprite": "icon_effect_curse",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Lesser Curse",
     "description": "cursed"
   },
@@ -106,6 +116,7 @@
     "sprite": "icon_effect_curse",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Curse",
     "description": "cursed"
   },
@@ -116,6 +127,7 @@
     "sprite": "icon_effect_curse",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Greater Curse",
     "description": "cursed"
   },
@@ -126,6 +138,7 @@
     "sprite": "icon_effect_curse",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Ominous Curse",
     "description": "cursed"
   },
@@ -136,6 +149,7 @@
     "sprite": "icon_effect_curse",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Abhorrent Curse",
     "description": "cursed"
   },
@@ -146,6 +160,7 @@
     "sprite": "icon_effect_bleed",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Bleed",
     "description": "bleeding"
   },
@@ -156,6 +171,7 @@
     "sprite": "icon_effect_delirium",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Delirium",
     "description": "delirious"
   },
@@ -166,6 +182,7 @@
     "sprite": "icon_effect_frenzy",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Frenzy",
     "description": "frenzied"
   },
@@ -176,6 +193,7 @@
     "sprite": "icon_effect_anointed",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Anointed",
     "description": "anointed"
   },
@@ -186,6 +204,7 @@
     "sprite": "skeleton_key",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Skeleton Key",
     "description": "enhanced by Skeleton Key"
   },
@@ -196,6 +215,7 @@
     "sprite": "feeble_tether",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Feeble Tether",
     "description": "tethered to an ancient power"
   },
@@ -206,6 +226,7 @@
     "sprite": "icon_effect_inspire",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Inspire",
     "description": "inspired"
   },
@@ -216,6 +237,7 @@
     "sprite": "icon_effect_exalt",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Exalt",
     "description": "exalted"
   },
@@ -226,6 +248,7 @@
     "sprite": "icon_effect_petrify",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Petrify",
     "description": "petrified"
   },
@@ -236,6 +259,7 @@
     "sprite": "icon_effect_false_life",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "False Life",
     "description": "shielded by False Life"
   },
@@ -246,6 +270,7 @@
     "sprite": "icon_effect_terrify",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Terrify",
     "description": "terrified"
   },
@@ -256,6 +281,7 @@
     "sprite": "icon_effect_freeze",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Freeze",
     "description": "frozen"
   },
@@ -266,6 +292,7 @@
     "sprite": "icon_effect_radiant_blessing",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Radiant Blessing",
     "description": "radiantly blessed"
   },
@@ -276,6 +303,7 @@
     "sprite": "icon_effect_solar_rebirth",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Solar Rebirth",
     "description": "protected by Solar Rebirth"
   },
@@ -286,6 +314,7 @@
     "sprite": "icon_effect_sanguine_fervor",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Sanguine Fervor",
     "description": "empowered by Sanguine Fervor"
   },
@@ -296,6 +325,7 @@
     "sprite": "icon_effect_sinister_curse",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Sinister Curse",
     "description": "afflicted by Sinister Curse"
   },
@@ -306,6 +336,7 @@
     "sprite": "icon_effect_entangle",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Entangle",
     "description": "entangled"
   },
@@ -316,6 +347,7 @@
     "sprite": "icon_effect_soul_harvest",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Soul Harvest",
     "description": "empowered by Soul Harvest"
   },
@@ -326,6 +358,7 @@
     "sprite": "icon_effect_brittle_toxin",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Brittle Toxin",
     "description": "afflicted with Brittle Toxin"
   },
@@ -336,6 +369,7 @@
     "sprite": "icon_effect_corrosion",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Corrosion",
     "description": "corroded"
   },
@@ -346,6 +380,7 @@
     "sprite": "icon_effect_enfeeble",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Enfeeble",
     "description": "enfeebled"
   },
@@ -356,6 +391,7 @@
     "sprite": "icon_effect_terrify",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Menace",
     "description": "menaced"
   },
@@ -366,6 +402,7 @@
     "sprite": "icon_effect_defensive_stance",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Guard",
     "description": "fortified by Guard"
   },
@@ -376,6 +413,7 @@
     "sprite": "icon_effect_rage",
     "negative": false,
     "serialized": false,
+    "cleansable": true,
     "name": "Rage",
     "description": "enraged."
   },
@@ -386,6 +424,7 @@
     "sprite": "icon_effect_thorns",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Thorns",
     "description": "thorns"
   },
@@ -396,6 +435,7 @@
     "sprite": "icon_effect_evasion",
     "negative": false,
     "serialized": true,
+    "cleansable": true,
     "name": "Evasion",
     "description": "evasive"
   },
@@ -406,6 +446,7 @@
     "sprite": "icon_effect_delirium",
     "negative": true,
     "serialized": false,
+    "cleansable": true,
     "name": "Aether Overload",
     "description": "afflicted with Aether Overload"
   },
@@ -416,6 +457,7 @@
     "sprite": "icon_effect_confuse",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Confuse",
     "description": "confused"
   },
@@ -426,6 +468,7 @@
     "sprite": "icon_effect_blind",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Blind",
     "description": "blinded"
   },
@@ -436,7 +479,19 @@
     "sprite": "icon_effect_corrosion",
     "negative": true,
     "serialized": true,
+    "cleansable": true,
     "name": "Armor Shred",
     "description": "Physical and Magic Defense are reduced by 20%."
+  },
+  {
+    "key": "PACK_HOWL",
+    "name_key": "status_effect_pack_howl_name",
+    "desc_key": "status_effect_pack_howl_log_description",
+    "sprite": "icon_effect_frenzy",
+    "negative": false,
+    "serialized": true,
+    "cleansable": true,
+    "name": "Pack Howl",
+    "description": "howling with the pack"
   }
 ]

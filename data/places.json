@@ -733,6 +733,85 @@
     ]
   },
   {
+    "key": "GuildRequestArea",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/guildactivities/GuildRequestArea.kt",
+    "name_key": "guild_request_name",
+    "name": "The Hunt",
+    "summary_sprite": "summary_request",
+    "detail_sprite": "area_request",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Shadow",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "GuildSiegeArea",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/guildactivities/GuildSiegeArea.kt",
+    "name_key": "guild_siege_name",
+    "name": "The Siege",
+    "summary_sprite": "summary_the_siege",
+    "detail_sprite": "area_the_siege",
+    "area_type": 1,
+    "level": null,
+    "enemies": [],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
+    "key": "TheSlumberingShallowsArea",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/guildactivities/TheSlumberingShallowsArea.kt",
+    "name_key": "guild_slumbering_shallows_name",
+    "name": "The Slumbering Shallows",
+    "summary_sprite": "summary_fishing_pond",
+    "detail_sprite": "area_fishing_pond",
+    "area_type": null,
+    "level": null,
+    "enemies": [
+      {
+        "key": "Angelfish",
+        "chance_permille": null
+      },
+      {
+        "key": "BlueShark",
+        "chance_permille": null
+      },
+      {
+        "key": "BlueTrout",
+        "chance_permille": null
+      },
+      {
+        "key": "ChorusTheDrowned",
+        "chance_permille": null
+      },
+      {
+        "key": "MagmaShark",
+        "chance_permille": null
+      },
+      {
+        "key": "Perch",
+        "chance_permille": null
+      },
+      {
+        "key": "WingedRay",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 1502,
+    "items_mentioned": [
+      "CoinPurse",
+      "Perch"
+    ]
+  },
+  {
     "key": "AncientGraveDigging",
     "parent": "Area",
     "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/AncientGraveDigging.kt",
@@ -854,43 +933,6 @@
         "chance_permille": null
       }
     ],
-    "encounter_chance_permille": 0,
-    "items_mentioned": []
-  },
-  {
-    "key": "GuildRequestArea",
-    "parent": "Area",
-    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/GuildRequestArea.kt",
-    "name_key": "guild_request_name",
-    "name": "The Hunt",
-    "summary_sprite": "summary_request",
-    "detail_sprite": "area_request",
-    "area_type": 1,
-    "level": null,
-    "enemies": [
-      {
-        "key": "Shadow",
-        "chance_permille": null
-      },
-      {
-        "key": "VoidSlime",
-        "chance_permille": null
-      }
-    ],
-    "encounter_chance_permille": 0,
-    "items_mentioned": []
-  },
-  {
-    "key": "GuildSiegeArea",
-    "parent": "Area",
-    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/GuildSiegeArea.kt",
-    "name_key": "guild_siege_name",
-    "name": "The Siege",
-    "summary_sprite": "summary_the_siege",
-    "detail_sprite": "area_the_siege",
-    "area_type": 1,
-    "level": null,
-    "enemies": [],
     "encounter_chance_permille": 0,
     "items_mentioned": []
   },
@@ -1128,6 +1170,61 @@
     "items_mentioned": []
   },
   {
+    "key": "TheHadalAbyss",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheHadalAbyss.kt",
+    "name_key": "raid_name_the_hadal_abyss",
+    "name": "The Hadal Abyss",
+    "summary_sprite": "summary_hadal_abyss",
+    "detail_sprite": "area_hadal_abyss",
+    "area_type": 1,
+    "level": null,
+    "enemies": [
+      {
+        "key": "AbyssalObelisk",
+        "chance_permille": null
+      },
+      {
+        "key": "ArchOracleOfTheDeep",
+        "chance_permille": null
+      },
+      {
+        "key": "CrimsonReefGoliath",
+        "chance_permille": null
+      },
+      {
+        "key": "DeepSeaMauler",
+        "chance_permille": null
+      },
+      {
+        "key": "GloomAnglerSnapper",
+        "chance_permille": null
+      },
+      {
+        "key": "LeviathanHatchling",
+        "chance_permille": null
+      },
+      {
+        "key": "MatureLeviathan",
+        "chance_permille": null
+      },
+      {
+        "key": "TideCursedOracle",
+        "chance_permille": null
+      },
+      {
+        "key": "TrenchBehemothPrime",
+        "chance_permille": null
+      },
+      {
+        "key": "TrenchWyvern",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 0,
+    "items_mentioned": []
+  },
+  {
     "key": "TheLostExpedition",
     "parent": "Area",
     "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheLostExpedition.kt",
@@ -1208,52 +1305,6 @@
     ],
     "encounter_chance_permille": 1,
     "items_mentioned": []
-  },
-  {
-    "key": "TheSlumberingShallowsArea",
-    "parent": "Area",
-    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/raids/TheSlumberingShallowsArea.kt",
-    "name_key": "guild_slumbering_shallows_name",
-    "name": "The Slumbering Shallows",
-    "summary_sprite": "summary_fishing_pond",
-    "detail_sprite": "area_fishing_pond",
-    "area_type": null,
-    "level": null,
-    "enemies": [
-      {
-        "key": "Angelfish",
-        "chance_permille": null
-      },
-      {
-        "key": "BlueShark",
-        "chance_permille": null
-      },
-      {
-        "key": "BlueTrout",
-        "chance_permille": null
-      },
-      {
-        "key": "ChorusTheDrowned",
-        "chance_permille": null
-      },
-      {
-        "key": "MagmaShark",
-        "chance_permille": null
-      },
-      {
-        "key": "Perch",
-        "chance_permille": null
-      },
-      {
-        "key": "WingedRay",
-        "chance_permille": null
-      }
-    ],
-    "encounter_chance_permille": 152,
-    "items_mentioned": [
-      "CoinPurse",
-      "Perch"
-    ]
   },
   {
     "key": "TheTower",

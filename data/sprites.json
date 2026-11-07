@@ -11,6 +11,9 @@
   "absolute_zero": [
     "item:AbsoluteZero"
   ],
+  "abyssal_amulet": [
+    "item:AbyssalAmulet"
+  ],
   "abyssal_chitin": [
     "item:AbyssalChitin"
   ],
@@ -38,6 +41,9 @@
   "abyssal_ingot": [
     "item:AbyssalIngot"
   ],
+  "abyssal_obelisk": [
+    "enemy:AbyssalObelisk"
+  ],
   "abyssal_pearl": [
     "item:AbyssalPearl"
   ],
@@ -52,6 +58,9 @@
   ],
   "aegis_mechanica": [
     "item:AegisMechanica"
+  ],
+  "aegis_of_the_challenger_deep": [
+    "item:AegisOfTheChallengerDeep"
   ],
   "aether_ignis": [
     "item:AetherIgnis"
@@ -97,6 +106,9 @@
   ],
   "ancient_membrane": [
     "item:AncientMembrane"
+  ],
+  "ancient_nautilus_seashell_shard": [
+    "item:AncientNautilusSeashellShard"
   ],
   "ancient_robe": [
     "item:AncientRobe"
@@ -150,6 +162,9 @@
   "arcane_dagger": [
     "item:ArcaneDagger"
   ],
+  "arch_oracle_of_the_deep": [
+    "enemy:ArchOracleOfTheDeep"
+  ],
   "archaic_amulet": [
     "item:ArchaicAmulet"
   ],
@@ -185,6 +200,9 @@
   ],
   "area_frostbite_peaks": [
     "place:FrostbitePeaks:detail"
+  ],
+  "area_hadal_abyss": [
+    "place:TheHadalAbyss:detail"
   ],
   "area_hidden_city_of_larox": [
     "place:HiddenCityOfLarox:detail"
@@ -545,6 +563,9 @@
   "coral_staff": [
     "item:CoralStaff"
   ],
+  "coralith_ore": [
+    "item:CoralithOre"
+  ],
   "corrupted_axe": [
     "item:CorruptedAxe"
   ],
@@ -577,6 +598,9 @@
   ],
   "crimson_reef_goliath": [
     "enemy:CrimsonReefGoliath"
+  ],
+  "crown_of_the_benthic_sovereign": [
+    "item:CrownOfTheBenthicSovereign"
   ],
   "crusader_insigna": [
     "item:CrusaderInsigna"
@@ -1206,6 +1230,9 @@
   "heart_of_darkness": [
     "item:HeartOfDarkness"
   ],
+  "heart_of_leviathan": [
+    "item:HeartOfTheLeviathan"
+  ],
   "heaven_and_hell": [
     "item:HeavenAndHell"
   ],
@@ -1286,7 +1313,8 @@
     "status_effect:FROZEN"
   ],
   "icon_effect_frenzy": [
-    "status_effect:FRENZY"
+    "status_effect:FRENZY",
+    "status_effect:PACK_HOWL"
   ],
   "icon_effect_inspire": [
     "status_effect:INSPIRE"
@@ -1449,8 +1477,14 @@
   "leek": [
     "item:Leek"
   ],
+  "leviathan": [
+    "enemy:MatureLeviathan"
+  ],
   "leviathan_hatchling": [
     "enemy:LeviathanHatchling"
+  ],
+  "leviathan_scale": [
+    "item:LeviathanScale"
   ],
   "living_sap": [
     "item:LivingSap"
@@ -2199,6 +2233,9 @@
   "summary_frostbite_peaks": [
     "place:FrostbitePeaks:summary"
   ],
+  "summary_hadal_abyss": [
+    "place:TheHadalAbyss:summary"
+  ],
   "summary_hidden_city_of_larox": [
     "place:HiddenCityOfLarox:summary"
   ],
@@ -2339,6 +2376,12 @@
   ],
   "training_bow": [
     "item:TrainingBow"
+  ],
+  "trench_behemoth_prime": [
+    "enemy:TrenchBehemothPrime"
+  ],
+  "trench_gods_pearl": [
+    "item:TrenchGodsPearl"
   ],
   "trench_stiletto": [
     "item:TrenchStiletto"

@@ -45,6 +45,35 @@
     "independent_drops": []
   },
   {
+    "key": "AbyssalObelisk",
+    "parent": "Enemy",
+    "sprite": "abyssal_obelisk",
+    "name_key": "enemy_abyssal_obelisk_name",
+    "description_key": "enemy_abyssal_obelisk_description",
+    "name": "Abyssal Obelisk",
+    "description": "An ancient Atlantean obelisk pulsating with protective benthic wards. Impervious to standard attacks; requires resonance strikes from an Abyssal Amulet to shatter.",
+    "stats": {
+      "baseMaxHp": 1000000,
+      "baseConstitution": 500,
+      "baseIntelligence": 1,
+      "baseDexterity": 1,
+      "baseDefense": 450,
+      "baseMagicDefense": 450
+    },
+    "exp_given": 0,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_INORGANIC",
+    "min_damage": "0",
+    "max_damage": "0",
+    "drops": [],
+    "independent_drops": []
+  },
+  {
     "key": "AmanitaObscura",
     "parent": "Enemy",
     "sprite": "unit_amanita_obscura",
@@ -324,7 +353,7 @@
       {
         "item": "ScarletStrand",
         "qty": 1,
-        "chance": 0.01
+        "chance": 0.05
       },
       {
         "item": "EsotericEgg",
@@ -347,6 +376,46 @@
         "chance": 0.45
       }
     ]
+  },
+  {
+    "key": "ArchOracleOfTheDeep",
+    "parent": "Enemy",
+    "sprite": "arch_oracle_of_the_deep",
+    "name_key": "enemy_arch_oracle_of_the_deep_name",
+    "description_key": "enemy_arch_oracle_of_the_deep_description",
+    "name": "Arch-Oracle of the Deep",
+    "description": "Ancient Atlantean high-sorceress presiding over sunken altars, weaving madness and benthic discord.",
+    "stats": {
+      "baseMaxHp": 14000,
+      "baseConstitution": 80,
+      "baseIntelligence": 220,
+      "baseDexterity": 50,
+      "baseDefense": 60,
+      "baseMagicDefense": 210
+    },
+    "exp_given": 5000,
+    "rarity": 2,
+    "is_boss": true,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_ABYSSAL_DELIRIUM",
+    "passive_skill": "PASSIVE_SIREN_DISCORD",
+    "min_damage": "520",
+    "max_damage": "640",
+    "drops": [
+      {
+        "item": "SirenSilk",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "AncientNautilusSeashellShard",
+        "qty": 1,
+        "weight": 150
+      }
+    ],
+    "independent_drops": []
   },
   {
     "key": "AvatarOfTheAncient",
@@ -643,7 +712,7 @@
       {
         "item": "ScarletDebris",
         "qty": 1,
-        "chance": 0.01
+        "chance": 0.05
       }
     ]
   },
@@ -1031,7 +1100,7 @@
       {
         "item": "TidalLantern",
         "qty": 1,
-        "weight": 1
+        "weight": 10
       }
     ],
     "independent_drops": []
@@ -3472,7 +3541,18 @@
     "passive_skill": "PASSIVE_BIOENHANCED",
     "min_damage": "950",
     "max_damage": "950",
-    "drops": [],
+    "drops": [
+      {
+        "item": "Evo23Vial",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "Evo21Vial",
+        "qty": 1,
+        "weight": 50
+      }
+    ],
     "independent_drops": []
   },
   {
@@ -3683,6 +3763,51 @@
         "item": "MagmaShark",
         "qty": 1,
         "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "MatureLeviathan",
+    "parent": "Enemy",
+    "sprite": "leviathan",
+    "name_key": "enemy_mature_leviathan_name",
+    "description_key": "enemy_mature_leviathan_description",
+    "name": "Mature Leviathan",
+    "description": "Colossal primordial serpent residing in the crushing depths of the Hadal Trench.\n\nSheltered behind an Oceanic Barrier (80,000 HP shield). Shattering both Ancient Atlantean Obelisks in Rooms 6 and 10 completely dispels this barrier and delays its Hadal Rage from 25% down to 15% HP.\n\nAt 50% HP, calls screeching Leviathan Hatchlings from the depths.",
+    "stats": {
+      "baseMaxHp": 160000,
+      "baseConstitution": 300,
+      "baseIntelligence": 150,
+      "baseDexterity": 50,
+      "baseDefense": 130,
+      "baseMagicDefense": 160
+    },
+    "exp_given": 25000,
+    "rarity": 2,
+    "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_TIDAL_CATACLYSM",
+    "passive_skill": "PASSIVE_ABYSSAL_SOVEREIGN",
+    "min_damage": "1300",
+    "max_damage": "1650",
+    "drops": [
+      {
+        "item": "HeartOfTheLeviathan",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "LeviathanScale",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "TrenchGodsPearl",
+        "qty": 1,
+        "weight": 150
       }
     ],
     "independent_drops": []
@@ -5478,6 +5603,46 @@
     "independent_drops": []
   },
   {
+    "key": "TrenchBehemothPrime",
+    "parent": "Enemy",
+    "sprite": "trench_behemoth_prime",
+    "name_key": "enemy_trench_behemoth_prime_name",
+    "description_key": "enemy_trench_behemoth_prime_description",
+    "name": "Trench Behemoth Prime",
+    "description": "Massive armored crustacean ancient defending the upper trench shelf with crushing claw sweeps and seismic vibrations.",
+    "stats": {
+      "baseMaxHp": 18000,
+      "baseConstitution": 220,
+      "baseIntelligence": 15,
+      "baseDexterity": 30,
+      "baseDefense": 180,
+      "baseMagicDefense": 90
+    },
+    "exp_given": 5500,
+    "rarity": 2,
+    "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_ABYSSAL_CLEAVE",
+    "passive_skill": "PASSIVE_HADAL_GROUNDING",
+    "min_damage": "600",
+    "max_damage": "720",
+    "drops": [
+      {
+        "item": "AbyssalChitin",
+        "qty": 3,
+        "weight": 750
+      },
+      {
+        "item": "CoralithOre",
+        "qty": 1,
+        "weight": 250
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "TrenchWyvern",
     "parent": "Enemy",
     "sprite": "trench_wyvern",
@@ -5511,7 +5676,7 @@
       },
       {
         "item": "Coral",
-        "qty": 2,
+        "qty": 1,
         "weight": 100
       }
     ],

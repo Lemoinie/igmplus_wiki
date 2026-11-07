@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_HADAL_GROUNDING",
+  "name_key": "passive_hadal_grounding_name",
+  "desc_key": "passive_hadal_grounding_description",
+  "kind": "passive",
+  "name": "Hadal Grounding",
+  "description": "Subterranean vibrations cause basic attacks to shockwave, stunning up to 2 targets for 1 turn (70% proc chance)."
+}

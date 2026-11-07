@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SIREN_DISCORD",
+  "name_key": "passive_siren_discord_name",
+  "desc_key": "passive_siren_discord_description",
+  "kind": "passive",
+  "name": "Siren Discord",
+  "description": "Basic attacks carry a 60% chance to inflict Confuse (2 turns) and a 50% chance to inflict Silence (2 turns)."
+}

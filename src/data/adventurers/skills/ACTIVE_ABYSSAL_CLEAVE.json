@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_ABYSSAL_CLEAVE",
+  "name_key": "active_abyssal_cleave_name",
+  "desc_key": "active_abyssal_cleave_description",
+  "kind": "active",
+  "name": "Abyssal Cleave",
+  "description": "Frontline crushing sweep dealing heavy physical damage and inflicting Armor Shred (-25% Physical & Magic Defense for 3 turns)."
+}

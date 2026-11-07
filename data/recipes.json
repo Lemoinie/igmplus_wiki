@@ -4583,11 +4583,11 @@
     "ingredients": [
       {
         "item": "GhostwoodBoard",
-        "qty": 3
+        "qty": 5
       },
       {
         "item": "BlackIronIngot",
-        "qty": 3
+        "qty": 15
       }
     ]
   },
@@ -4611,11 +4611,11 @@
     "ingredients": [
       {
         "item": "Winterwood",
-        "qty": 3
+        "qty": 6
       },
       {
         "item": "FrostmetalIngot",
-        "qty": 1
+        "qty": 18
       }
     ]
   },
@@ -4629,11 +4629,11 @@
       },
       {
         "item": "FrostNucleus",
-        "qty": 1
+        "qty": 2
       },
       {
         "item": "FrostCrystal",
-        "qty": 5
+        "qty": 10
       }
     ]
   },
@@ -4681,11 +4681,11 @@
     "ingredients": [
       {
         "item": "ElysianWood",
-        "qty": 100
+        "qty": 160
       },
       {
         "item": "PrimevalScale",
-        "qty": 3
+        "qty": 12
       }
     ]
   },
@@ -5034,6 +5034,60 @@
       {
         "item": "OracleGem",
         "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "AbyssalChitinBuckler",
+    "output_item": "AbyssalChitinBuckler",
+    "ingredients": [
+      {
+        "item": "AbyssalChitin",
+        "qty": 22
+      },
+      {
+        "item": "CoralChunk",
+        "qty": 16
+      },
+      {
+        "item": "SharkFin",
+        "qty": 14
+      }
+    ]
+  },
+  {
+    "key": "AbyssalAmulet",
+    "output_item": "AbyssalAmulet",
+    "ingredients": [
+      {
+        "item": "TrenchGodsPearl",
+        "qty": 1
+      },
+      {
+        "item": "AncientNautilusSeashellShard",
+        "qty": 3
+      },
+      {
+        "item": "SirenSilk",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "AegisOfTheChallengerDeep",
+    "output_item": "AegisOfTheChallengerDeep",
+    "ingredients": [
+      {
+        "item": "HeartOfTheLeviathan",
+        "qty": 1
+      },
+      {
+        "item": "LeviathanScale",
+        "qty": 5
+      },
+      {
+        "item": "CoralithOre",
+        "qty": 4
       }
     ]
   }
