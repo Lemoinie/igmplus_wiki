@@ -4,5 +4,5 @@
   "desc_key": "passive_keen_vision_description",
   "kind": "passive",
   "name": "Keen Vision",
-  "description": "Hit chance is increased by 30%"
+  "description": "Active skills always hit. +10% armor penetration, +30% hit chance, +10% critical strike chance, and +25% critical strike damage."
 }
