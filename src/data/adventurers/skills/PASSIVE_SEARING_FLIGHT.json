@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SEARING_FLIGHT",
+  "name_key": "passive_searing_flight_name",
+  "desc_key": "passive_searing_flight_description",
+  "kind": "passive",
+  "name": "Searing Flight",
+  "description": "Can't be hit by melee attacks or abilities. This unit has a 2× chance of being targeted by enemies. Immune to ABLAZE and HELLFIRE."
+}

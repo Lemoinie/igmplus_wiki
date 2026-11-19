@@ -80,6 +80,9 @@
   "amulet_of_resurrection": [
     "item:AmuletOfResurrection"
   ],
+  "amulet_of_shakire": [
+    "item:AmuletOfShaKire"
+  ],
   "amulet_of_the_swordsman": [
     "item:AmuletOfTheSwordsman"
   ],
@@ -174,6 +177,9 @@
   "area_ancient_grave_digging": [
     "place:AncientGraveDigging:detail"
   ],
+  "area_avernus": [
+    "place:Avernus:detail"
+  ],
   "area_barren_wastelands": [
     "place:BarrenWastelands:detail"
   ],
@@ -182,6 +188,9 @@
   ],
   "area_celestial_mothership": [
     "place:CelestialMothership:detail"
+  ],
+  "area_corrupted_desert": [
+    "place:CorruptedDesert:detail"
   ],
   "area_corrupted_forest": [
     "place:CorruptedForest:detail"
@@ -269,6 +278,12 @@
   ],
   "ascended_bow": [
     "item:AscendedBow"
+  ],
+  "ashen_scale": [
+    "item:AshenScale"
+  ],
+  "ashen_shield": [
+    "item:AshenShield"
   ],
   "astral_goo": [
     "item:AstralGoo"
@@ -484,6 +499,9 @@
   ],
   "chorus_the_drowned": [
     "enemy:ChorusTheDrowned"
+  ],
+  "chrono_echo_elixir": [
+    "item:ChronoEchoElixir"
   ],
   "cleansing_potion": [
     "item:CleansingPotion"
@@ -851,6 +869,9 @@
   "doctrine_of_war": [
     "doctrine:DoctrineOfWar"
   ],
+  "doljonijiarnimorinar": [
+    "item:Doljonijiarnimorinar"
+  ],
   "dreadful_morningstar": [
     "item:DreadfulMorningstar"
   ],
@@ -956,6 +977,9 @@
   "electric_catalyst": [
     "item:ElectricCatalyst"
   ],
+  "electric_violin": [
+    "item:ElectricViolin"
+  ],
   "elixir_of_affinity": [
     "item:ElixirOfAffinity"
   ],
@@ -967,6 +991,36 @@
   ],
   "elysian_wood": [
     "item:ElysianWood"
+  ],
+  "emberite_boots": [
+    "item:EmberiteBoots"
+  ],
+  "emberite_bow": [
+    "item:EmberiteBow"
+  ],
+  "emberite_cleaver": [
+    "item:EmberiteCleaver"
+  ],
+  "emberite_dagger": [
+    "item:EmberiteDagger"
+  ],
+  "emberite_helmet": [
+    "item:EmberiteHelmet"
+  ],
+  "emberite_ingot": [
+    "item:EmberiteIngot"
+  ],
+  "emberite_plate": [
+    "item:EmberitePlate"
+  ],
+  "emberite_scraps": [
+    "item:EmberiteScraps"
+  ],
+  "emberite_staff": [
+    "item:EmberiteStaff"
+  ],
+  "emberite_sword": [
+    "item:EmberiteSword"
   ],
   "emerald": [
     "item:Emerald"
@@ -991,6 +1045,9 @@
   ],
   "eternal_hunger": [
     "item:EternalHunger"
+  ],
+  "eternal_soulbloom": [
+    "item:EternalSoulbloom"
   ],
   "evo20_vial": [
     "item:Evo20Vial"
@@ -1022,6 +1079,9 @@
   ],
   "exotic_velvet": [
     "item:ExoticVelvet"
+  ],
+  "eye_of_shakire": [
+    "item:EyeOfShaKire"
   ],
   "eye_of_the_abyss": [
     "item:EyeOfTheAbyss"
@@ -1221,6 +1281,9 @@
   "grains": [
     "item:Grains"
   ],
+  "greater_magma_core": [
+    "item:GreaterMagmaCore"
+  ],
   "green_slime": [
     "item:GreenSlime"
   ],
@@ -1316,6 +1379,9 @@
     "status_effect:FRENZY",
     "status_effect:PACK_HOWL"
   ],
+  "icon_effect_hellfire": [
+    "status_effect:HELLFIRE"
+  ],
   "icon_effect_inspire": [
     "status_effect:INSPIRE"
   ],
@@ -1363,6 +1429,12 @@
   "icon_effect_thorns": [
     "status_effect:THORNS"
   ],
+  "icon_effect_venom": [
+    "status_effect:VENOM"
+  ],
+  "icon_of_torment": [
+    "item:IconOfTorment"
+  ],
   "ignition_orb": [
     "item:IgnitionOrb"
   ],
@@ -1383,6 +1455,21 @@
   ],
   "infernal_chakram": [
     "item:InfernalChakram"
+  ],
+  "infernal_fabric": [
+    "item:InfernalFabric"
+  ],
+  "infernal_gloves": [
+    "item:InfernalGloves"
+  ],
+  "infernal_hide": [
+    "item:InfernalHide"
+  ],
+  "infernal_jacket": [
+    "item:InfernalJacket"
+  ],
+  "infernal_leather": [
+    "item:InfernalLeather"
   ],
   "infernal_long_axe": [
     "item:InfernalLongAxe"
@@ -1478,7 +1565,7 @@
     "item:Leek"
   ],
   "leviathan": [
-    "enemy:MatureLeviathan"
+    "enemy:Leviathan"
   ],
   "leviathan_hatchling": [
     "enemy:LeviathanHatchling"
@@ -1633,6 +1720,9 @@
   ],
   "obsidian_helm": [
     "item:ObsidianHelm"
+  ],
+  "obsidian_ingot": [
+    "item:ObsidianIngot"
   ],
   "obsidian_scepter": [
     "item:ObsidianScepter"
@@ -1809,11 +1899,23 @@
   "prismatic_pendant": [
     "item:PrismaticPendant"
   ],
+  "prototype_bow": [
+    "item:PrototypeBow"
+  ],
+  "prototype_dagger": [
+    "item:PrototypeDagger"
+  ],
+  "prototype_sword": [
+    "item:PrototypeSword"
+  ],
   "pterodactyl_claw": [
     "item:PterodactylClaw"
   ],
   "pumpkin": [
     "item:Pumpkin"
+  ],
+  "pyromancer_vestments": [
+    "item:PyromancerVestments"
   ],
   "quartz": [
     "item:Quartz"
@@ -2092,6 +2194,9 @@
   "slime_robe": [
     "item:SlimeRobe"
   ],
+  "solteris": [
+    "item:SolterisSwordOfTheSun"
+  ],
   "soul_shard": [
     "item:SoulShard"
   ],
@@ -2194,6 +2299,9 @@
   "stick": [
     "item:Stick"
   ],
+  "stonefire_minotaur_horn": [
+    "item:StonefireMinotaurHorn"
+  ],
   "strawberry": [
     "item:Strawberry"
   ],
@@ -2206,6 +2314,9 @@
   "summary_ancient_grave_digging": [
     "place:AncientGraveDigging:summary"
   ],
+  "summary_avernus": [
+    "place:Avernus:summary"
+  ],
   "summary_barren_wastelands": [
     "place:BarrenWastelands:summary"
   ],
@@ -2214,6 +2325,9 @@
   ],
   "summary_celestial_mothership": [
     "place:CelestialMothership:summary"
+  ],
+  "summary_corrupted_desert": [
+    "place:CorruptedDesert:summary"
   ],
   "summary_corrupted_forest": [
     "place:CorruptedForest:summary"
@@ -2337,6 +2451,9 @@
   ],
   "thaumaturgic_blood": [
     "item:ThaumaturgicBlood"
+  ],
+  "the_black_widow": [
+    "item:TheBlackWidow"
   ],
   "thick_fur": [
     "item:ThickFur"
@@ -2507,6 +2624,9 @@
   "unit_archmage_of_larox": [
     "enemy:ArchmageOfLarox"
   ],
+  "unit_ash_drake": [
+    "enemy:AshDrake"
+  ],
   "unit_assassin": [
     "unit:Assassin"
   ],
@@ -2530,6 +2650,9 @@
   ],
   "unit_bard": [
     "unit:Bard"
+  ],
+  "unit_basalt_colossus": [
+    "enemy:BasaltColossus"
   ],
   "unit_bear_tamer": [
     "unit:BearTamer"
@@ -2583,6 +2706,9 @@
   "unit_brigand": [
     "unit:Brigand"
   ],
+  "unit_brimstone_imp": [
+    "enemy:BrimstoneImp"
+  ],
   "unit_cat_tamer": [
     "unit:CatTamer"
   ],
@@ -2625,8 +2751,26 @@
   "unit_corrupted_ent": [
     "enemy:CorruptedEnt"
   ],
+  "unit_corrupted_sha": [
+    "enemy:CorruptedSha"
+  ],
+  "unit_corrupted_shahuri_archer": [
+    "enemy:CorruptedShahuriArcher"
+  ],
+  "unit_corrupted_shahuri_mage": [
+    "enemy:CorruptedShahuriMage"
+  ],
+  "unit_corrupted_shahuri_warrior": [
+    "enemy:CorruptedShahuriWarrior"
+  ],
+  "unit_corrupted_shakire": [
+    "enemy:CorruptedShaKire"
+  ],
   "unit_corrupted_treant": [
     "enemy:CorruptedTreant"
+  ],
+  "unit_corrupted_vulture": [
+    "enemy:CorruptedVulture"
   ],
   "unit_corrupted_wolf": [
     "enemy:CorruptedWolf"
@@ -2807,6 +2951,9 @@
   ],
   "unit_heavenly_cantor": [
     "unit:HeavenlyCantor"
+  ],
+  "unit_hellfire_cultist": [
+    "enemy:HellfireCultist"
   ],
   "unit_hellish_sculptor": [
     "unit:HellishSculptor"
@@ -3156,6 +3303,12 @@
   "unit_stone_shaman": [
     "enemy:StoneShaman"
   ],
+  "unit_stonefire_goblin": [
+    "enemy:StonefireGoblin"
+  ],
+  "unit_stonefire_minotaur": [
+    "enemy:StonefireMinotaur"
+  ],
   "unit_summon_albino_rat": [
     "unit:AlbinoRat"
   ],
@@ -3431,6 +3584,12 @@
   "void_pendant": [
     "item:VoidPendant"
   ],
+  "void_seal": [
+    "item:VoidSeal"
+  ],
+  "voidpiercer_jacket": [
+    "item:VoidpiercerJacket"
+  ],
   "voltaic_shock": [
     "item:VoltaicShock"
   ],
@@ -3545,6 +3704,24 @@
   ],
   "xp_book_3": [
     "item:XPBook3"
+  ],
+  "xp_book_4": [
+    "item:XPBook4"
+  ],
+  "xp_book_5": [
+    "item:XPBook5"
+  ],
+  "xp_book_6": [
+    "item:XPBook6"
+  ],
+  "xp_book_7": [
+    "item:XPBook7"
+  ],
+  "xp_book_8": [
+    "item:XPBook8"
+  ],
+  "xp_book_9": [
+    "item:XPBook9"
   ],
   "xp_book_c": [
     "item:XPBookC"

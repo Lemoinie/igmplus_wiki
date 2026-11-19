@@ -1045,7 +1045,7 @@
     "desc_key": "passive_keen_vision_description",
     "kind": "passive",
     "name": "Keen Vision",
-    "description": "Hit chance is increased by 30%"
+    "description": "Active skills always hit. Grants 10% armor penetration, +30% hit chance, +10% critical strike chance, and +25% critical strike damage."
   },
   {
     "key": "PASSIVE_POISONOUS_ARROWS_I",
@@ -1077,7 +1077,7 @@
     "desc_key": "passive_thaumaturgy_i_description",
     "kind": "passive",
     "name": "Thaumaturgy I",
-    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking an ABLAZE target triggers VAPORIZE (deals 60% INT magic burst to all enemies).\n\nOn death, POISONS every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nSTUN: the unit skips its turn"
+    "description": "Attacks have a 40% chance to POISON the target for 1 turn. Striking an ABLAZE target triggers VAPORIZE (deals 60% INT magic burst to all enemies).\n\nOn death, POISONS every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nSTUN: the unit skips its turn"
   },
   {
     "key": "PASSIVE_THAUMATURGY_II",
@@ -1085,7 +1085,7 @@
     "desc_key": "passive_thaumaturgy_ii_description",
     "kind": "passive",
     "name": "Thaumaturgy II",
-    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 80% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +100% physical + 100% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn"
+    "description": "Attacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 80% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +100% physical + 100% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns and STUNS them for 1 turn.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn"
   },
   {
     "key": "PASSIVE_THAUMATURGY_III",
@@ -1093,7 +1093,7 @@
     "desc_key": "passive_thaumaturgy_iii_description",
     "kind": "passive",
     "name": "Thaumaturgy III",
-    "description": "Chances to miss reduced by 15%.\nAttacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 100% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +125% physical + 125% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
+    "description": "Attacks have a 40% chance to POISON the target for 1 turn. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 100% INT magic burst to all enemies.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +125% physical + 125% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
   },
   {
     "key": "PASSIVE_THAUMATURGY_IV",
@@ -1101,7 +1101,7 @@
     "desc_key": "passive_thaumaturgy_iv_description",
     "kind": "passive",
     "name": "Thaumaturgy IV",
-    "description": "Chances to miss reduced by 15%.\nAttacks POISON the target for 2 turns. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 120% INT magic burst to all enemies.\n• POISON -> BRITTLE TOXIN: +20% damage taken for 2 turns.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +150% physical + 150% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns. Then, she is allowed by an ancient power to cast Catalytic Barrage one last time for 10× damage.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
+    "description": "Attacks have a 40% to POISON the target for 2 turns. Striking enemies triggers Chemical Reactions:\n• ABLAZE -> VAPORIZE: 120% INT magic burst to all enemies.\n• POISON -> BRITTLE TOXIN: +20% damage taken for 2 turns.\n• FROZEN -> THERMAL SHOCK: Shatters freeze for +150% physical + 150% magical hybrid damage.\n\nOn death, POISONS, FREEZES, sets ABLAZE every enemy for 5 turns, STUNS them for 1 turn and confers ANOINTED to allies for 10 turns. Then, she is allowed by an ancient power to cast Catalytic Barrage one last time for 10× damage.\n\nPOISON: damage reduced by 20%\nFREEZE: This unit can't dodge and takes 10 physical damage each turn.\nABLAZE: takes 5% max hp as magic damage at the start of its turn\nSTUN: the unit skips its turn\nANOINTED: This unit deals 25% increased damage."
   },
   {
     "key": "PASSIVE_POISONOUS_BLOOD",
@@ -1109,7 +1109,7 @@
     "desc_key": "passive_poisonous_blood_description",
     "kind": "passive",
     "name": "Poisonous Blood",
-    "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 10% chance to inflict CORROSION for 3 turns (up to 3 stacks).\nAttacks have a 20% chance to inflict ENFEEBLE for 2 turns (up to 1 stack).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
+    "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 40% chance to POISON the target for 2 turns.\nAttacks have a 10% chance to inflict CORROSION for 3 turns (up to 3 stacks).\nAttacks have a 20% chance to inflict ENFEEBLE for 2 turns (up to 1 stack).\n\nPOISON: damage reduced by 20%\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
   },
   {
     "key": "PASSIVE_CORROSIVE_BLOOD",
@@ -1117,7 +1117,7 @@
     "desc_key": "passive_corrosive_blood_description",
     "kind": "passive",
     "name": "Corrosive Blood",
-    "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 20% chance to inflict CORROSION for 3 turns (up to 5 stacks).\nAttacks have a 40% chance to inflict ENFEEBLE for 2 turns (up to 3 stacks).\n\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
+    "description": "Chances to miss reduced by 15%.\nImmunity to POISON and CORROSION.\nAttacks have a 40% chance to POISON the target for 2 turns.\nAttacks have a 20% chance to inflict CORROSION for 3 turns (up to 5 stacks).\nAttacks have a 40% chance to inflict ENFEEBLE for 2 turns (up to 3 stacks).\n\nPOISON: Reduces damage dealt by 25%.\nCORROSION: Increases damage taken by 4% per stack.\nENFEEBLE: Reduces Constitution, Dexterity, and Intelligence by 5% per stack."
   },
   {
     "key": "PASSIVE_SABOTEUR",
@@ -1629,7 +1629,7 @@
     "desc_key": "passive_flying_fortress_description",
     "kind": "passive",
     "name": "Flying Fortress",
-    "description": "Can't be hit by melee attacks or abilities. After its basic attack, it fires a barrage of 5 cannonballs at random enemies, each dealing 90 physical damage."
+    "description": "Can't be hit by melee attacks or abilities. After its basic attack, it fires a barrage of 5 cannonballs at random enemies."
   },
   {
     "key": "PASSIVE_TERRITORIAL",
@@ -1981,7 +1981,7 @@
     "desc_key": "passive_aura_of_light_i_description",
     "kind": "passive",
     "name": "Aura of Light I",
-    "description": "Reduces darkness by 15. At the start of battle, grants all allies Radiant Blessing (+5% status immunity, +5% damage against Undead). Intercepts 10% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 15. At the start of battle, grants same-row allies Radiant Blessing (+5% status immunity, +5% damage against Undead). Intercepts 10% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_LIGHT_II",
@@ -1989,7 +1989,7 @@
     "desc_key": "passive_aura_of_light_ii_description",
     "kind": "passive",
     "name": "Aura of Light II",
-    "description": "Reduces darkness by 25. At the start of battle, grants all allies Radiant Blessing (+10% status immunity, +10% damage against Undead). Basic attacks heal the ally with the lowest HP for 25% of the damage dealt. Intercepts 15% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 25. At the start of battle, grants same-row allies Radiant Blessing (+10% status immunity, +10% damage against Undead). Basic attacks heal the ally with the lowest HP for 25% of the damage dealt. Intercepts 15% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_DEVOTION_I",
@@ -1997,7 +1997,7 @@
     "desc_key": "passive_aura_of_devotion_i_description",
     "kind": "passive",
     "name": "Aura of Devotion I",
-    "description": "Reduces darkness by 35. At the start of battle, grants all allies Radiant Blessing (+15% status immunity, +15% damage against Undead, +5 flat damage reduction). Basic attacks heal the ally with the lowest HP for 30% of the damage dealt. Intercepts 20% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 35. At the start of battle, grants same-row allies Radiant Blessing (+15% status immunity, +15% damage against Undead, +5 flat damage reduction). Basic attacks heal the ally with the lowest HP for 30% of the damage dealt. Intercepts 20% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_DEVOTION_II",
@@ -2005,7 +2005,7 @@
     "desc_key": "passive_aura_of_devotion_ii_description",
     "kind": "passive",
     "name": "Aura of Devotion II",
-    "description": "Reduces darkness by 45. At the start of battle, grants all allies Radiant Blessing (+20% status immunity, +20% damage against Undead, +8 flat damage reduction). Basic attacks heal the ally with the lowest HP for 35% of the damage dealt. Intercepts 25% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 45. At the start of battle, grants same-row allies Radiant Blessing (+20% status immunity, +20% damage against Undead, +8 flat damage reduction). Basic attacks heal the ally with the lowest HP for 35% of the damage dealt. Intercepts 25% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_SANCTITY",
@@ -2013,7 +2013,7 @@
     "desc_key": "passive_aura_of_sanctity_description",
     "kind": "passive",
     "name": "Aura of Sanctity",
-    "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+25% status immunity, +25% damage against Undead, +10 flat damage reduction, +3% HP regeneration per turn). Each turn, cleanses 1 negative effect from the most debuffed ally. Basic attacks heal the ally with the lowest HP for 40% of the damage dealt. Intercepts 30% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 50. At the start of battle, grants same-row allies Radiant Blessing (+25% status immunity, +25% damage against Undead, +10 flat damage reduction, +3% HP regeneration per turn). Each turn, cleanses 1 negative effect from the most debuffed ally. Basic attacks heal the ally with the lowest HP for 40% of the damage dealt. Intercepts 30% of enemy AoE damage for same-row allies."
   },
   {
     "key": "PASSIVE_AURA_OF_THE_SERAPHIM",
@@ -2021,7 +2021,7 @@
     "desc_key": "passive_aura_of_the_seraphim_description",
     "kind": "passive",
     "name": "Aura of the Seraphim",
-    "description": "Reduces darkness by 50. At the start of battle, grants all allies Radiant Blessing (+30% status immunity, +30% damage against Undead, +15 flat damage reduction, +5% HP regeneration per turn). Each turn, cleanses 1 negative effect from every ally. Basic attacks heal the ally with the lowest HP for 50% of the damage dealt (overhealing becomes a holy shield). Intercepts 35% of enemy AoE damage for same-row allies."
+    "description": "Reduces darkness by 50. At the start of battle, grants same-row allies Radiant Blessing (+30% status immunity, +30% damage against Undead, +15 flat damage reduction, +5% HP regeneration per turn). Each turn, cleanses 1 negative effect from the most debuffed ally. Basic attacks heal the ally with the lowest HP for 50% of the damage dealt. Intercepts 35% of enemy AoE damage for same-row allies."
   },
   {
     "key": "ACTIVE_SCARLET_AEONIA",
@@ -2693,6 +2693,78 @@
     "desc_key": "passive_abyssal_sovereign_description",
     "kind": "passive",
     "name": "Abyssal Sovereign",
-    "description": "Immune to Freeze, Ablaze, and Bleed, and reduces ranged damage taken by 60%. Below 25% HP (or 15% if both Ancient Obelisks are shattered), gains +30% Damage, +125% Attack Speed, and increases trench freeze risk to 75%."
+    "description": "Immune to Freeze, Ablaze, and Bleed, reduces ranged damage taken by 60%, and deflects 40% of magical damage back to the attacker. Below 25% HP (or 15% if both Ancient Obelisks are shattered), gains +30% Damage, +125% Attack Speed, and increases trench freeze risk to 75%."
+  },
+  {
+    "key": "PASSIVE_BENTHIC_DEFLECTION",
+    "name_key": "passive_benthic_deflection_name",
+    "desc_key": "passive_benthic_deflection_description",
+    "kind": "passive",
+    "name": "Benthic Deflection",
+    "description": "Deflects 20% of magical damage back to the attacker."
+  },
+  {
+    "key": "PASSIVE_SEARING_FLIGHT",
+    "name_key": "passive_searing_flight_name",
+    "desc_key": "passive_searing_flight_description",
+    "kind": "passive",
+    "name": "Searing Flight",
+    "description": "Can't be hit by melee attacks or abilities. This unit has a 2× chance of being targeted by enemies. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "PASSIVE_STONEFIRE_FRENZY",
+    "name_key": "passive_stonefire_frenzy_name",
+    "desc_key": "passive_stonefire_frenzy_description",
+    "kind": "passive",
+    "name": "Stonefire Frenzy",
+    "description": "Attacks twice. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "PASSIVE_HELLFIRE_INCANTATION",
+    "name_key": "passive_hellfire_incantation_name",
+    "desc_key": "passive_hellfire_incantation_description",
+    "kind": "passive",
+    "name": "Hellfire Incantation",
+    "description": "Attacks and abilities inflict 1 stack of HELLFIRE for 2 turns. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "ACTIVE_STONEFIRE_ROAR",
+    "name_key": "active_stonefire_roar_name",
+    "desc_key": "active_stonefire_roar_description",
+    "kind": "active",
+    "name": "Stonefire Roar",
+    "description": "100% TAUNTS all enemies for 5 turns, gains a 50% Max HP Shield."
+  },
+  {
+    "key": "PASSIVE_STONEFIRE_BULWARK",
+    "name_key": "passive_stonefire_bulwark_name",
+    "desc_key": "passive_stonefire_bulwark_description",
+    "kind": "passive",
+    "name": "Stonefire Bulwark",
+    "description": "Acts first at the start of combat and starts combat with 100 Mana. This unit has a 5× chance of being targeted by enemies. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "PASSIVE_VOLCANIC_CONSTRUCT",
+    "name_key": "passive_volcanic_construct_name",
+    "desc_key": "passive_volcanic_construct_description",
+    "kind": "passive",
+    "name": "Volcanic Construct",
+    "description": "Immune to BLEED, POISON, ABLAZE, and HELLFIRE."
+  },
+  {
+    "key": "ACTIVE_HELLFIRE_METEOR",
+    "name_key": "active_hellfire_meteor_name",
+    "desc_key": "active_hellfire_meteor_description",
+    "kind": "active",
+    "name": "Hellfire Meteor",
+    "description": "Deals 230% magic damage to all enemies and inflicts 2 stacks of HELLFIRE for 2 turns."
+  },
+  {
+    "key": "PASSIVE_ASHEN_AMBUSH",
+    "name_key": "passive_ashen_ambush_name",
+    "desc_key": "passive_ashen_ambush_description",
+    "kind": "passive",
+    "name": "Ashen Ambush",
+    "description": "Acts first at the start of combat and starts combat with 100 Mana. Attacks inflict 1 stack of HELLFIRE for 2 turns. Immune to ABLAZE, HELLFIRE, and BLEED."
   }
 ]

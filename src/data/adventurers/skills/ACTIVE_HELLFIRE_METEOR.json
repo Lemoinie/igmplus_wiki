@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_HELLFIRE_METEOR",
+  "name_key": "active_hellfire_meteor_name",
+  "desc_key": "active_hellfire_meteor_description",
+  "kind": "active",
+  "name": "Hellfire Meteor",
+  "description": "Deals 230% magic damage to all enemies and inflicts 2 stacks of HELLFIRE for 2 turns."
+}

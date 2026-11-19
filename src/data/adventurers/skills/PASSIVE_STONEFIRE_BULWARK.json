@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_STONEFIRE_BULWARK",
+  "name_key": "passive_stonefire_bulwark_name",
+  "desc_key": "passive_stonefire_bulwark_description",
+  "kind": "passive",
+  "name": "Stonefire Bulwark",
+  "description": "Acts first at the start of combat and starts combat with 100 Mana. This unit has a 5× chance of being targeted by enemies. Immune to ABLAZE and HELLFIRE."
+}

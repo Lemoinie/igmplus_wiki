@@ -28,6 +28,9 @@
         "DarkSorcerer",
         "Arcanist"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -56,6 +59,9 @@
       "next_classes": [
         "Disintegrator"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.4,
       "tier": 6
     },
     {
@@ -84,6 +90,9 @@
       "next_classes": [
         "AetherArchmage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.3,
       "tier": 5
     },
     {
@@ -111,6 +120,9 @@
       "active_skill": "ACTIVE_RABID_BITE",
       "passive_skill": "PASSIVE_SWARM_FEROCITY",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -139,6 +151,9 @@
       "next_classes": [
         "ElementalAlchemist"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.3,
       "tier": 6
     },
     {
@@ -165,6 +180,9 @@
       "active_skill": "ACTIVE_APEX_RAMPAGE",
       "passive_skill": "PASSIVE_APEX_RESILIENCE",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -194,6 +212,9 @@
       "next_classes": [
         "LorfOfDecay"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -222,6 +243,9 @@
       "next_classes": [
         "Archangel"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -249,6 +273,9 @@
       "active_skill": "ACTIVE_WRATH_OF_HEAVEN_II",
       "passive_skill": "PASSIVE_AURA_OF_THE_SERAPHIM",
       "next_classes": [],
+      "attack_constitution_scaling": 1.0,
+      "attack_dexterity_scaling": 0.0,
+      "attack_intelligence_scaling": 0.7,
       "tier": 9
     },
     {
@@ -278,6 +305,9 @@
         "LightDisciple",
         "Adept"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -306,6 +336,9 @@
       "next_classes": [
         "Spellweaver"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.1,
       "tier": 3
     },
     {
@@ -332,6 +365,9 @@
       "active_skill": "ACTIVE_RESTORATION_II",
       "passive_skill": "PASSIVE_HEALER_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -360,6 +396,9 @@
       "next_classes": [
         "Huntress"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -386,6 +425,9 @@
       "active_skill": "ACTIVE_FRENZIED_FLURRY",
       "passive_skill": "PASSIVE_WEASEL_REFLEXES",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -416,6 +458,9 @@
         "SpireInitiate",
         "RedStalker"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -442,6 +487,9 @@
       "active_skill": "ACTIVE_BLESSING_OF_SLAUGHTER",
       "passive_skill": "PASSIVE_SAVAGE_RAGE_II",
       "next_classes": [],
+      "attack_constitution_scaling": 1.3,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -468,6 +516,9 @@
       "active_skill": "ACTIVE_WHIP_AND_TEAR",
       "passive_skill": "PASSIVE_CHAOTIC",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -496,6 +547,9 @@
       "next_classes": [
         "Vagabond"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.2,
       "tier": 4
     },
     {
@@ -524,6 +578,9 @@
       "next_classes": [
         "Berserker"
       ],
+      "attack_constitution_scaling": 1.05,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -552,6 +609,9 @@
       "next_classes": [
         "Lorekeeper"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -580,6 +640,9 @@
       "next_classes": [
         "BeastTamer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -606,6 +669,9 @@
       "active_skill": "ACTIVE_WILD_STRIKES_II",
       "passive_skill": "PASSIVE_BEAST_CALLER",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -634,6 +700,9 @@
       "next_classes": [
         "SavageBerserker"
       ],
+      "attack_constitution_scaling": 1.05,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -661,6 +730,9 @@
       "active_skill": "ACTIVE_CURSE_V",
       "passive_skill": "PASSIVE_WITHERING_LINK_IV",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -687,6 +759,9 @@
       "active_skill": "ACTIVE_DECIMATE_III",
       "passive_skill": "PASSIVE_SUBJUGATE_II",
       "next_classes": [],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -715,6 +790,9 @@
       "next_classes": [
         "Wraith"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.4,
       "tier": 7
     },
     {
@@ -743,6 +821,9 @@
       "next_classes": [
         "CrimsonWarlord"
       ],
+      "attack_constitution_scaling": 1.15,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -771,6 +852,9 @@
       "next_classes": [
         "DaturaHierophant"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -797,6 +881,9 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_THREATENING_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -823,6 +910,9 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_THREATENING_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -849,6 +939,9 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_THREATENING_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -875,6 +968,9 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_THREATENING_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -903,6 +999,9 @@
       "next_classes": [
         "Renegade"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.4,
       "tier": 6
     },
     {
@@ -931,6 +1030,9 @@
       "next_classes": [
         "WeaselTamer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -957,6 +1059,9 @@
       "active_skill": "ACTIVE_BARRAGE_VIII",
       "passive_skill": "PASSIVE_KEEN_VISION",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -985,6 +1090,9 @@
       "next_classes": [
         "WhiteMage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -1011,6 +1119,9 @@
       "active_skill": "ACTIVE_FOCUSED_BARRAGE",
       "passive_skill": "PASSIVE_CORROSIVE_BLOOD",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.6,
       "tier": 9
     },
     {
@@ -1039,6 +1150,9 @@
       "next_classes": [
         "AvatarOfWrath"
       ],
+      "attack_constitution_scaling": 1.2,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -1067,6 +1181,9 @@
       "next_classes": [
         "Assassin"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -1095,6 +1212,9 @@
       "next_classes": [
         "DeathKnight"
       ],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -1124,6 +1244,9 @@
       "next_classes": [
         "Necromancer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -1150,6 +1273,9 @@
       "active_skill": "ACTIVE_BRIARS_BRAMBLE",
       "passive_skill": "PASSIVE_NATURES_WRATH",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -1178,6 +1304,9 @@
       "next_classes": [
         "Scourge"
       ],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -1207,6 +1336,9 @@
       "next_classes": [
         "Lich"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -1235,6 +1367,9 @@
       "next_classes": [
         "InfernalLord"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -1263,6 +1398,9 @@
       "next_classes": [
         "ElSalvador"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.6,
       "tier": 8
     },
     {
@@ -1289,6 +1427,9 @@
       "active_skill": "ACTIVE_PACK_HOWL",
       "passive_skill": "PASSIVE_PACK_HUNTING",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -1317,6 +1458,9 @@
       "next_classes": [
         "GrandMagus"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.5,
       "tier": 7
     },
     {
@@ -1344,6 +1488,9 @@
       "active_skill": "ACTIVE_EN_GARDE",
       "passive_skill": "PASSIVE_SWORD_EXPERTISE_II",
       "next_classes": [],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -1373,6 +1520,9 @@
       "next_classes": [
         "DivineChampion"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -1401,6 +1551,9 @@
       "next_classes": [
         "GoldenRider"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.45,
       "tier": 7
     },
     {
@@ -1429,6 +1582,9 @@
       "next_classes": [
         "ForestDruid"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -1455,6 +1611,9 @@
       "active_skill": "ACTIVE_PETRIFYING_MELODY",
       "passive_skill": "PASSIVE_EXALTING_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -1481,6 +1640,9 @@
       "active_skill": "ACTIVE_CATALYTIC_BARRAGE",
       "passive_skill": "PASSIVE_THAUMATURGY_IV",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.6,
       "tier": 9
     },
     {
@@ -1509,6 +1671,9 @@
       "next_classes": [
         "EsotericAlchemist"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.4,
       "tier": 7
     },
     {
@@ -1535,6 +1700,9 @@
       "active_skill": "ACTIVE_RAPID_EXPLOITATION",
       "passive_skill": "PASSIVE_OMNISCIENT_EYE",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.7,
       "tier": 9
     },
     {
@@ -1563,6 +1731,9 @@
       "next_classes": [
         "EldritchAlchemist"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.5,
       "tier": 8
     },
     {
@@ -1589,6 +1760,9 @@
       "active_skill": "ACTIVE_TAUNT_IV",
       "passive_skill": "PASSIVE_THREATENING_IV",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -1617,6 +1791,9 @@
       "next_classes": [
         "Bandit"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.1,
       "tier": 3
     },
     {
@@ -1645,6 +1822,9 @@
       "next_classes": [
         "RedMage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -1673,6 +1853,9 @@
       "next_classes": [
         "Warrior"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -1701,6 +1884,9 @@
       "next_classes": [
         "GloomDruid"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -1729,6 +1915,9 @@
       "next_classes": [
         "Hailstorm"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -1757,6 +1946,9 @@
       "next_classes": [
         "Hemodruid"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -1785,6 +1977,9 @@
       "next_classes": [
         "WyrmRider"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.5,
       "tier": 8
     },
     {
@@ -1813,6 +2008,9 @@
       "next_classes": [
         "SingularityMagus"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.6,
       "tier": 8
     },
     {
@@ -1842,6 +2040,9 @@
         "IronWarden",
         "RoyalGuard"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -1870,6 +2071,9 @@
       "next_classes": [
         "Tempest"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -1900,6 +2104,9 @@
         "Druid",
         "Exile"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -1928,6 +2135,9 @@
       "next_classes": [
         "Eidolon"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -1957,6 +2167,9 @@
       "next_classes": [
         "SpiritEngraver"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -1985,6 +2198,9 @@
       "next_classes": [
         "SanguineDruid"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -2013,6 +2229,9 @@
       "next_classes": [
         "Paladin"
       ],
+      "attack_constitution_scaling": 1.0,
+      "attack_dexterity_scaling": 0.0,
+      "attack_intelligence_scaling": 0.7,
       "tier": 4
     },
     {
@@ -2041,6 +2260,9 @@
       "next_classes": [
         "WolfRider"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -2070,6 +2292,9 @@
         "HorseRider",
         "Marksman"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -2098,6 +2323,9 @@
       "next_classes": [
         "CelestialRain"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -2126,6 +2354,9 @@
       "next_classes": [
         "InfernalPrince"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -2154,6 +2385,9 @@
       "next_classes": [
         "Balrog"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -2180,6 +2414,9 @@
       "active_skill": "ACTIVE_METEOR_II",
       "passive_skill": "PASSIVE_PYROMANCY_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -2208,6 +2445,9 @@
       "next_classes": [
         "Justiciar"
       ],
+      "attack_constitution_scaling": 1.0,
+      "attack_dexterity_scaling": 0.0,
+      "attack_intelligence_scaling": 0.7,
       "tier": 7
     },
     {
@@ -2236,6 +2476,9 @@
       "next_classes": [
         "Juggernaut"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -2264,6 +2507,9 @@
       "next_classes": [
         "IronDefender"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -2292,6 +2538,9 @@
       "next_classes": [
         "Titan"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -2320,6 +2569,9 @@
       "next_classes": [
         "AngelOfWar"
       ],
+      "attack_constitution_scaling": 1.0,
+      "attack_dexterity_scaling": 0.0,
+      "attack_intelligence_scaling": 0.7,
       "tier": 8
     },
     {
@@ -2349,6 +2601,9 @@
       "next_classes": [
         "DivineDuelist"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -2378,6 +2633,9 @@
         "DarkKnight",
         "HolyKnight"
       ],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -2407,6 +2665,9 @@
       "next_classes": [
         "AncientLich"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -2435,6 +2696,9 @@
       "next_classes": [
         "Cleric"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -2463,6 +2727,9 @@
       "next_classes": [
         "HeavenlyCantor"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -2492,6 +2759,9 @@
       "next_classes": [
         "BlackIdol"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -2520,6 +2790,9 @@
       "next_classes": [
         "Barbarian"
       ],
+      "attack_constitution_scaling": 1.05,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -2549,6 +2822,9 @@
         "Sureshot",
         "PoisonBow"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -2578,6 +2854,9 @@
       "next_classes": [
         "WoundsWeaver"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -2606,6 +2885,9 @@
       "next_classes": [
         "Inferno"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -2634,6 +2916,9 @@
       "next_classes": [
         "Bard"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -2664,6 +2949,9 @@
         "Demilich",
         "Unchained"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -2693,6 +2981,9 @@
       "next_classes": [
         "NightSpecter"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -2720,6 +3011,9 @@
       "active_skill": "ACTIVE_UMBRAL_STRIKE_III",
       "passive_skill": "PASSIVE_NIGHT_VISION_IV",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -2749,6 +3043,9 @@
       "next_classes": [
         "NightTerror"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -2778,6 +3075,9 @@
       "next_classes": [
         "NightVeil"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -2807,6 +3107,9 @@
       "next_classes": [
         "NightLament"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -2836,6 +3139,9 @@
         "Marauder",
         "Heathen"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -2864,6 +3170,9 @@
       "next_classes": [
         "BlackRegent"
       ],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -2892,6 +3201,9 @@
       "next_classes": [
         "Templar"
       ],
+      "attack_constitution_scaling": 1.0,
+      "attack_dexterity_scaling": 0.0,
+      "attack_intelligence_scaling": 0.7,
       "tier": 5
     },
     {
@@ -2920,6 +3232,9 @@
       "next_classes": [
         "Blight"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.3,
       "tier": 6
     },
     {
@@ -2948,6 +3263,9 @@
       "next_classes": [
         "ToxicStalker"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -2974,6 +3292,9 @@
       "active_skill": "ACTIVE_URSINE_ROAR",
       "passive_skill": "PASSIVE_URSINE_ENDURANCE",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3002,6 +3323,9 @@
       "next_classes": [
         "Angel"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -3029,6 +3353,9 @@
       "active_skill": "ACTIVE_RABID_BITE",
       "passive_skill": "PASSIVE_SWARM_FEROCITY",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3057,6 +3384,9 @@
       "next_classes": [
         "CatTamer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -3085,6 +3415,9 @@
       "next_classes": [
         "RedElder"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -3113,6 +3446,9 @@
       "next_classes": [
         "ScorchingElder"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -3141,6 +3477,9 @@
       "next_classes": [
         "RedArchmage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -3170,6 +3509,9 @@
       "next_classes": [
         "MeatCarver"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -3198,6 +3540,9 @@
       "next_classes": [
         "Desperado"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.5,
       "tier": 7
     },
     {
@@ -3226,6 +3571,9 @@
       "next_classes": [
         "Thief"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3255,6 +3603,9 @@
       "next_classes": [
         "KingsHand"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -3284,6 +3635,9 @@
       "next_classes": [
         "RoyalSwordsman"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -3313,6 +3667,9 @@
       "next_classes": [
         "RoyalCaptain"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -3341,6 +3698,9 @@
       "next_classes": [
         "BloodthornArchdruid"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -3369,6 +3729,9 @@
       "next_classes": [
         "ScarletBerserker"
       ],
+      "attack_constitution_scaling": 1.05,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -3397,6 +3760,9 @@
       "next_classes": [
         "BloodReaver"
       ],
+      "attack_constitution_scaling": 1.1,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -3425,6 +3791,9 @@
       "next_classes": [
         "MeltingElder"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -3453,6 +3822,9 @@
       "next_classes": [
         "Tyrant"
       ],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -3481,6 +3853,9 @@
       "next_classes": [
         "ShadowDancer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -3510,6 +3885,9 @@
       "next_classes": [
         "NightBlade"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -3538,6 +3916,9 @@
       "next_classes": [
         "Minstrel"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -3564,6 +3945,9 @@
       "active_skill": "ACTIVE_DISINTEGRATE_III",
       "passive_skill": "PASSIVE_AETHER_RESONANCE_VII",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.7,
       "tier": 9
     },
     {
@@ -3590,6 +3974,9 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_THREATENING_I",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3616,6 +4003,9 @@
       "active_skill": "ACTIVE_FELINE_POUNCE",
       "passive_skill": "PASSIVE_FELINE_AGILITY",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3644,6 +4034,9 @@
       "next_classes": [
         "AetherMage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.2,
       "tier": 4
     },
     {
@@ -3673,6 +4066,9 @@
       "next_classes": [
         "SpireLeader"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -3702,6 +4098,9 @@
       "next_classes": [
         "SpireAcolyte"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -3731,6 +4130,9 @@
       "next_classes": [
         "SpireSage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -3760,6 +4162,9 @@
       "next_classes": [
         "Whisper"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -3787,6 +4192,9 @@
       "active_skill": "ACTIVE_THOUSAND_CUTS_II",
       "passive_skill": "PASSIVE_DEADLY_FINESSE_III",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -3815,6 +4223,9 @@
       "next_classes": [
         "DrakeRider"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.4,
       "tier": 6
     },
     {
@@ -3841,6 +4252,9 @@
       "active_skill": "ACTIVE_URSINE_ROAR",
       "passive_skill": "PASSIVE_URSINE_ENDURANCE",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3867,6 +4281,9 @@
       "active_skill": "ACTIVE_FELINE_POUNCE",
       "passive_skill": "PASSIVE_FELINE_AGILITY",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3893,6 +4310,9 @@
       "active_skill": "ACTIVE_APEX_RAMPAGE",
       "passive_skill": "PASSIVE_APEX_RESILIENCE",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3919,6 +4339,9 @@
       "active_skill": "ACTIVE_PREDATORY_AMBUSH",
       "passive_skill": "PASSIVE_AMBUSH_PREDATOR",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3945,6 +4368,9 @@
       "active_skill": "ACTIVE_FRENZIED_FLURRY",
       "passive_skill": "PASSIVE_WEASEL_REFLEXES",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3971,6 +4397,9 @@
       "active_skill": "ACTIVE_PACK_HOWL",
       "passive_skill": "PASSIVE_PACK_HUNTING",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -3999,6 +4428,9 @@
       "next_classes": [
         "Fury"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -4027,6 +4459,9 @@
       "next_classes": [
         "Hurricane"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -4055,6 +4490,9 @@
       "next_classes": [
         "Inquisitor"
       ],
+      "attack_constitution_scaling": 1.0,
+      "attack_dexterity_scaling": 0.0,
+      "attack_intelligence_scaling": 0.7,
       "tier": 6
     },
     {
@@ -4085,6 +4523,9 @@
         "Cutthroat",
         "Trickster"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -4113,6 +4554,9 @@
       "next_classes": [
         "BearTamer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -4141,6 +4585,9 @@
       "next_classes": [
         "UndyingBastion"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -4170,6 +4617,9 @@
         "PlagueSpreader",
         "Alchemist"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -4198,6 +4648,9 @@
       "next_classes": [
         "SilverTongue"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 3
     },
     {
@@ -4226,6 +4679,9 @@
       "next_classes": [
         "Overlord"
       ],
+      "attack_constitution_scaling": 1.5,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -4254,6 +4710,9 @@
       "next_classes": [
         "Demon"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -4282,6 +4741,9 @@
       "next_classes": [
         "EternalFortress"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 8
     },
     {
@@ -4310,6 +4772,9 @@
       "next_classes": [
         "Brigand"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": 1.3,
       "tier": 5
     },
     {
@@ -4339,6 +4804,9 @@
         "Guard",
         "Knight"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 2
     },
     {
@@ -4367,6 +4835,9 @@
       "next_classes": [
         "WolfTamer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -4394,6 +4865,9 @@
       "active_skill": "ACTIVE_ECLIPSE_IV",
       "passive_skill": "PASSIVE_PHANTOM_LETHALITY_II",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 9
     },
     {
@@ -4422,6 +4896,9 @@
       "next_classes": [
         "WhiteElder"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 5
     },
     {
@@ -4450,6 +4927,9 @@
       "next_classes": [
         "RadiantElder"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -4478,6 +4958,9 @@
       "next_classes": [
         "WhiteArchmage"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 4
     },
     {
@@ -4504,6 +4987,9 @@
       "active_skill": "ACTIVE_PREDATORY_AMBUSH",
       "passive_skill": "PASSIVE_AMBUSH_PREDATOR",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     },
     {
@@ -4532,6 +5018,9 @@
       "next_classes": [
         "WorgRider"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.3,
       "tier": 4
     },
     {
@@ -4560,6 +5049,9 @@
       "next_classes": [
         "TigerTamer"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 6
     },
     {
@@ -4588,6 +5080,9 @@
       "next_classes": [
         "SpitfangRider"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.35,
       "tier": 5
     },
     {
@@ -4617,6 +5112,9 @@
       "next_classes": [
         "HellishSculptor"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 7
     },
     {
@@ -4645,6 +5143,9 @@
       "next_classes": [
         "CorrosiveWraith"
       ],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.5,
       "tier": 8
     },
     {
@@ -4671,6 +5172,9 @@
       "active_skill": "ACTIVE_SUBLIMATE",
       "passive_skill": "PASSIVE_RIDER_VII",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": 1.0,
+      "attack_intelligence_scaling": 0.5,
       "tier": 9
     },
     {
@@ -4697,6 +5201,9 @@
       "active_skill": "ACTIVE_NONE",
       "passive_skill": "PASSIVE_NONE",
       "next_classes": [],
+      "attack_constitution_scaling": null,
+      "attack_dexterity_scaling": null,
+      "attack_intelligence_scaling": null,
       "tier": 1
     }
   ],

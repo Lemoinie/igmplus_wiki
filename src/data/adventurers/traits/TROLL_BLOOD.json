@@ -4,7 +4,7 @@
   "desc_key": "trait_troll_blood_description",
   "plus": false,
   "name": "Troll Blood",
-  "description": "Each turn, regenerates half of unit rank as % of max HP (+4.5% if ascended).",
+  "description": "Each turn, regenerates 0.25% of max HP per unit rank (+2.25% if ascended).",
   "category": "rare",
   "upgrades_to": null,
   "upgraded_from": null,

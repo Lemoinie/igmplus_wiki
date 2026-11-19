@@ -67,6 +67,7 @@
       "key": "Equipment",
       "parent": "Item",
       "defaults": {
+        "getWeaponSkill": "weaponSkill",
         "getDamageDealtModifier": "damageDealtModifier",
         "getDamageTakenModifier": "damageTakenModifier",
         "getNormalAttackAmpModifier": "normalAttackAmpModifier",
@@ -91,6 +92,8 @@
         "getRetaliationMagicalDamage": "retaliationMagicalDamage",
         "getHealingModifier": "healingModifier",
         "getImmunityToStatus": "immunityToStatus",
+        "getResistanceToStatus": "resistanceToStatus",
+        "getIgnoreImmunityToStatus": "ignoreImmunityToStatus",
         "getRegeneration": "regeneration",
         "getCriticalDamage": "criticalDamage",
         "getCriticalChance": "criticalChance",
@@ -116,6 +119,7 @@
         "getBonusExperience": "bonusExperience",
         "getDarknessReduction": "darknessReduction",
         "getCounterattack": "counterattack",
+        "getCounterattackDamageBonus": "counterattackDamageBonus",
         "getDarknessDamageAmplification": "darknessDamageAmplification",
         "getMenace": "menace",
         "getGuard": "guard",
@@ -129,8 +133,10 @@
         "getRangedDragReduction": "rangedDragReduction",
         "getPressureReduction": "pressureReduction",
         "isIgnoresFireExtinguish": "ignoresFireExtinguish",
-        "hasStatusImmunity": "statusImmunities.contains(type)",
-        "getStatusImmunities": "statusImmunities",
+        "hasStatusImmunity": "(statusImmunities[type] ?: 0.0) >= 1.0",
+        "getStatusImmunity": "(statusImmunities[type] ?: 0.0).coerceIn(0.0, 1.0)",
+        "getStatusImmunities": "statusImmunities.keys",
+        "getStatusResistance": "(statusResistances[type] ?: 0.0).coerceIn(0.0, 1.0)",
         "getAttackSpeedBonus": "0",
         "getDamageMultiplier": "1.0",
         "getHitChanceBonus": "0.0",
@@ -374,14 +380,16 @@
       "description_key": "accessory_abyssal_amulet_description",
       "name": "Abyssal Amulet",
       "description": "Ancient Atlantean amulet radiating resonant benthic frequencies. The old woman said it could even break what cannot be broken.",
-      "price": 4500,
+      "price": 5220,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "intelligence": 30,
         "magicDefense": 30,
-        "criticalChance": 0.1
+        "criticalChance": 0.1,
+        "attackSpeedDragReduction": 1.0,
+        "rangedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -400,7 +408,7 @@
       "description_key": "item_abyssal_chitin_description",
       "name": "Abyssal Chitin",
       "description": "Heavy chitinous carapace plates stripped from abyssal aberrations.",
-      "price": 40,
+      "price": 38,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -424,7 +432,7 @@
       "description_key": "accessory_abyssal_chitin_buckler_description",
       "name": "Abyssal Chitin Buckler",
       "description": "An ultra-dense buckler carved from the carapace of an abyssal monstrosity.",
-      "price": 1785,
+      "price": 1458,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -452,12 +460,12 @@
       "description_key": "weapon_dagger_abyssal_chitin_dagger_description",
       "name": "Abyssal Chitin Dagger",
       "description": "A serrated benthic dagger reinforced with hardened abyssal chitin.",
-      "price": 2805,
+      "price": 2568,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 60,
+        "constitution": 45,
         "dexterity": 45,
         "physicalCriticalDamageBonus": 0.5,
         "attackSpeedDragReduction": 1.0
@@ -482,7 +490,7 @@
       "description_key": "armor_medium_abyssal_chitin_jacket_description",
       "name": "Abyssal Chitin Jacket",
       "description": "A reinforced coat lined with flexible abyssal chitin plates.",
-      "price": 1005,
+      "price": 870,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -634,7 +642,7 @@
       "description_key": "item_abyssal_pearl_description",
       "name": "Abyssal Pearl",
       "description": "Rare flawless black pearl formed under immense mesopelagic pressure.",
-      "price": 75,
+      "price": 35,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -658,7 +666,7 @@
       "description_key": "accessory_abyssal_scarlet_mantle_description",
       "name": "Abyssal Scarlet Mantle",
       "description": "An awe-inspiring mantle saturated with Ancestral Blood from the deepest abyss. Its suffocating crimson aura elevates all mortal faculties to mythical heights, delivering cataclysmic critical strikes.",
-      "price": 214465,
+      "price": 699900,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -768,14 +776,15 @@
       "name_key": "armor_heavy_aegis_of_the_challenger_deep_name",
       "description_key": "armor_heavy_aegis_of_the_challenger_deep_description",
       "name": "Aegis of the Challenger Deep",
-      "description": "Colossal fortress plating forged from the core and scales of the Mature Leviathan reinforced with coralith ore.",
-      "price": 18000,
+      "description": "Colossal fortress plating forged from the core and scales of the Leviathan reinforced with coralith ore.",
+      "price": 11250,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "maxHp": 850,
-        "constitution": 95,
+        "maxHp": 350,
+        "constitution": 35,
+        "magicDefense": 25,
         "attackSpeedDragReduction": 1.0,
         "rangedDragReduction": 1.0
       },
@@ -924,6 +933,37 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AmuletOfResurrection.kt"
+    },
+    {
+      "key": "AmuletOfShaKire",
+      "parent": "Accessory",
+      "class_chain": [
+        "AmuletOfShaKire",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "amulet_of_shakire",
+      "name_key": "accessory_amulet_of_shakire_name",
+      "description_key": "accessory_amulet_of_shakire_description",
+      "name": "Amulet of Sha'Kire",
+      "description": "The perfected talisman of the First Swordsman, forged with five void-infused eyes. It grants absolute precision and merciless retaliation.",
+      "price": 12100,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 50,
+        "counterattack": 0.3,
+        "counterattackDamageBonus": 0.3
+      },
+      "flags": {
+        "notSellable": true,
+        "alwaysHits": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AmuletOfShaKire.kt"
     },
     {
       "key": "AmuletOfTheSwordsman",
@@ -1250,7 +1290,7 @@
       "description_key": "food_angelfish_description",
       "name": "Angelfish",
       "description": "A delicate angelfish, perfect for pampered pets.",
-      "price": 50,
+      "price": 3,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -1773,6 +1813,56 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AscendedBow.kt"
     },
     {
+      "key": "AshenScale",
+      "parent": "Item",
+      "class_chain": [
+        "AshenScale",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "ashen_scale",
+      "name_key": "item_ashen_scale_name",
+      "description_key": "item_ashen_scale_description",
+      "name": "Ashen Scale",
+      "description": "A grey scale shed by an Ash Drake, still warm to the touch.",
+      "price": 8,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AshenScale.kt"
+    },
+    {
+      "key": "AshenShield",
+      "parent": "Accessory",
+      "class_chain": [
+        "AshenShield",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "ashen_shield",
+      "name_key": "accessory_ashen_shield_name",
+      "description_key": "accessory_ashen_shield_description",
+      "name": "Ashen Shield",
+      "description": "A broad shield faced with overlapping Ash Drake scales.",
+      "price": 984,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 150,
+        "constitution": 40,
+        "damageTakenModifier": -0.08
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AshenShield.kt"
+    },
+    {
       "key": "AstralGoo",
       "parent": "Item",
       "class_chain": [
@@ -2272,7 +2362,7 @@
       "description_key": "weapon_axe_berserkers_axe_description",
       "name": "Berserker's Axe",
       "description": "A brutal axe wielded by the fierce warriors of the Lost Lands, driving relentless onslaughts.",
-      "price": 2600,
+      "price": 260,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -2297,7 +2387,7 @@
       "description_key": "item_bioluminescent_esca_description",
       "name": "Bioluminescent Esca",
       "description": "Luminous deep-sea organ that radiates brilliant darkness-piercing light.",
-      "price": 30,
+      "price": 8,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -2762,7 +2852,7 @@
       "description_key": "food_blue_shark_description",
       "name": "Blue Shark",
       "description": "A hefty blue shark — a true feast for any pet.",
-      "price": 120,
+      "price": 6,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -2788,7 +2878,7 @@
       "description_key": "food_blue_trout_description",
       "name": "Blue Trout",
       "description": "A blue trout pulled from the Slumbering Shallows.",
-      "price": 36,
+      "price": 2,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -3138,7 +3228,7 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "dexterity": 40,
+        "dexterity": 50,
         "intelligence": 15,
         "criticalChance": 0.1,
         "criticalDamage": 0.1,
@@ -3592,6 +3682,33 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Chocolate.kt"
     },
     {
+      "key": "ChronoEchoElixir",
+      "parent": "Consumable",
+      "class_chain": [
+        "ChronoEchoElixir",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "chrono_echo_elixir",
+      "name_key": "consumable_chrono_echo_elixir_name",
+      "description_key": "consumable_chrono_echo_elixir_description",
+      "name": "Chrono Echo Elixir",
+      "description": "An unstable brew that unravels the memory of every potion an adventurer has ever consumed, resetting their body to a state before any stat potion was drunk. All potion slots are restored — but all bonuses granted by those potions are lost.",
+      "price": 800,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {
+        "isRareDrop": true
+      },
+      "overrides": {
+        "printConsumeImage": "R.drawable.consume_potion"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ChronoEchoElixir.kt"
+    },
+    {
       "key": "CleansingPotion",
       "parent": "Item",
       "class_chain": [
@@ -3810,7 +3927,7 @@
       "description_key": "weapon_sword_colossal_sword_of_scarlet_king_description",
       "name": "Colossal Sword of Scarlet King",
       "description": "A colossal blade steeped in the flesh of the Formless Mother. Bloodflame yet clings to its edge, burning within wounds that refuse to close.",
-      "price": 50000,
+      "price": 33700,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4065,7 +4182,7 @@
       "description_key": "item_coral_description",
       "name": "Coral",
       "description": "Vibrant living sea coral, naturally resilient against crushing pressure.",
-      "price": 5,
+      "price": 3,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4090,14 +4207,14 @@
       "description_key": "armor_heavy_coral_armor_description",
       "name": "Coral Armor",
       "description": "Heavy calcified coral plate that insulates against benthic frost.",
-      "price": 510,
+      "price": 210,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "maxHp": 400,
+        "maxHp": 350,
         "constitution": 15,
-        "retaliationPhysicalDamage": 15
+        "retaliationPhysicalDamage": 45
       },
       "flags": {},
       "overrides": {},
@@ -4119,13 +4236,13 @@
       "description_key": "weapon_axe_coral_axe_description",
       "name": "Coral Axe",
       "description": "A massive cleaving axe weighted with calcified coral boulders.",
-      "price": 705,
+      "price": 279,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 40,
-        "intelligence": 30,
+        "constitution": 35,
+        "intelligence": 35,
         "attackSpeedDragReduction": 1.0
       },
       "flags": {},
@@ -4147,13 +4264,13 @@
       "description_key": "accessory_coral_boots_description",
       "name": "Coral Boots",
       "description": "Streamlined fins that glide effortlessly through dense oceanic water.",
-      "price": 975,
+      "price": 327,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "dexterity": 40,
-        "attackSpeedDragReduction": 0.3
+        "dexterity": 35,
+        "attackSpeedDragReduction": 0.5
       },
       "flags": {},
       "overrides": {},
@@ -4175,13 +4292,14 @@
       "description_key": "weapon_bow_coral_bow_description",
       "name": "Coral Bow",
       "description": "A recurve bow crafted from flexible living coral and taut shark sinew.",
-      "price": 165,
+      "price": 75,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "dexterity": 70,
-        "attackSpeedDragReduction": 0.5
+        "dexterity": 35,
+        "intelligence": 13,
+        "attackSpeedDragReduction": 0.6
       },
       "flags": {},
       "overrides": {},
@@ -4200,7 +4318,7 @@
       "description_key": "item_coral_chunk_description",
       "name": "Coral Chunk",
       "description": "Dense calcified coral boulder harder than tempered steel.",
-      "price": 15,
+      "price": 5,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4224,7 +4342,7 @@
       "description_key": "accessory_coral_gloves_description",
       "name": "Coral Gloves",
       "description": "Textured aquatic gauntlets improving grip and fluid dynamics.",
-      "price": 465,
+      "price": 195,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4253,12 +4371,12 @@
       "description_key": "accessory_coral_helmet_description",
       "name": "Coral Helmet",
       "description": "A dense headpiece sculpted from living coral reefs.",
-      "price": 315,
+      "price": 129,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "maxHp": 270
+        "maxHp": 250
       },
       "flags": {},
       "overrides": {},
@@ -4302,12 +4420,12 @@
       "description_key": "weapon_staff_coral_staff_description",
       "name": "Coral Staff",
       "description": "A glowing staff conduit topped with an oracle gem and glowing esca.",
-      "price": 720,
+      "price": 261,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "intelligence": 70
+        "intelligence": 45
       },
       "flags": {
         "ignoresFireExtinguish": true
@@ -4603,12 +4721,12 @@
       "description_key": "accessory_crown_of_the_benthic_sovereign_description",
       "name": "Crown of the Benthic Sovereign",
       "description": "An imperial benthic diadem crowned with the Trench God's Pearl and reinforced titan nautilus shards.",
-      "price": 15000,
+      "price": 9225,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "intelligence": 90,
+        "intelligence": 50,
         "magicDefense": 35,
         "skillAmpModifier": 0.2
       },
@@ -5333,6 +5451,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/DjinnTonic.kt"
     },
     {
+      "key": "Doljonijiarnimorinar",
+      "parent": "Axe",
+      "class_chain": [
+        "Doljonijiarnimorinar",
+        "Axe",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Axe",
+      "sprite": "doljonijiarnimorinar",
+      "name_key": "weapon_axe_doljonijiarnimorinar_name",
+      "description_key": "weapon_axe_doljonijiarnimorinar_description",
+      "name": "Doljonijiarnimorinar",
+      "description": "A twin-bladed war axe forged in dread iron, radiating Xelo's overwhelming terror upon every strike.",
+      "price": 120000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 83,
+        "intelligence": 48
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Doljonijiarnimorinar.kt"
+    },
+    {
       "key": "DreadfulMorningstar",
       "parent": "Sword",
       "class_chain": [
@@ -5929,7 +6075,7 @@
       "description_key": "accessory_eldritch_scarlet_cape_description",
       "name": "Eldritch Scarlet Cape",
       "description": "The Scarlet Cape steeped in esoteric rites and sealed by outer horrors. Deep crimson threads twist with cosmic energy, multiplying critical destruction.",
-      "price": 204465,
+      "price": 456600,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -6031,6 +6177,35 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ElectricCatalyst.kt"
     },
     {
+      "key": "ElectricViolin",
+      "parent": "Accessory",
+      "class_chain": [
+        "ElectricViolin",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "electric_violin",
+      "name_key": "accessory_electric_violin_name",
+      "description_key": "accessory_electric_violin_description",
+      "name": "Electric Violin",
+      "description": "An ancient cosmic instrument retrofitted with high-voltage voltaic coils. Its resonant frequencies unleash electrifying arcs that shock and paralyze foes at the end of the turn.\nSTUN: the unit skips its turn.",
+      "price": 22737,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "exaltInspireBonusTurns": 4,
+        "constitution": 30,
+        "dexterity": 35,
+        "intelligence": 35
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ElectricViolin.kt"
+    },
+    {
       "key": "ElixirOfAffinity",
       "parent": "Item",
       "class_chain": [
@@ -6119,6 +6294,271 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ElysianWood.kt"
+    },
+    {
+      "key": "EmberiteBoots",
+      "parent": "Accessory",
+      "class_chain": [
+        "EmberiteBoots",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "emberite_boots",
+      "name_key": "accessory_emberite_boots_name",
+      "description_key": "accessory_emberite_boots_description",
+      "name": "Emberite Boots",
+      "description": "Heat-proof boots shod with emberite and minotaur horn.",
+      "price": 684,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 45,
+        "attackSpeed": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteBoots.kt"
+    },
+    {
+      "key": "EmberiteBow",
+      "parent": "Bow",
+      "class_chain": [
+        "EmberiteBow",
+        "Bow",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Bow",
+      "sprite": "emberite_bow",
+      "name_key": "weapon_bow_emberite_bow_name",
+      "description_key": "weapon_bow_emberite_bow_description",
+      "name": "Emberite Bow",
+      "description": "A recurve bow strung with infernal fabric that ignites arrows in flight.",
+      "price": 948,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 65,
+        "intelligence": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteBow.kt"
+    },
+    {
+      "key": "EmberiteCleaver",
+      "parent": "Axe",
+      "class_chain": [
+        "EmberiteCleaver",
+        "Axe",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Axe",
+      "sprite": "emberite_cleaver",
+      "name_key": "weapon_axe_emberite_cleaver_name",
+      "description_key": "weapon_axe_emberite_cleaver_description",
+      "name": "Emberite Cleaver",
+      "description": "A heavy cleaver with a minotaur-horn haft and a molten-bright edge.",
+      "price": 864,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 50,
+        "intelligence": 30
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteCleaver.kt"
+    },
+    {
+      "key": "EmberiteDagger",
+      "parent": "Dagger",
+      "class_chain": [
+        "EmberiteDagger",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "emberite_dagger",
+      "name_key": "weapon_dagger_emberite_dagger_name",
+      "description_key": "weapon_dagger_emberite_dagger_description",
+      "name": "Emberite Dagger",
+      "description": "A slim emberite stiletto that leaves scorched wounds.",
+      "price": 828,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 45,
+        "dexterity": 45
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteDagger.kt"
+    },
+    {
+      "key": "EmberiteHelmet",
+      "parent": "Accessory",
+      "class_chain": [
+        "EmberiteHelmet",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "emberite_helmet",
+      "name_key": "accessory_emberite_helmet_name",
+      "description_key": "accessory_emberite_helmet_description",
+      "name": "Emberite Helmet",
+      "description": "A horned emberite helm that filters sulfur fumes.",
+      "price": 756,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 300,
+        "retaliationPhysicalDamage": 30
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteHelmet.kt"
+    },
+    {
+      "key": "EmberiteIngot",
+      "parent": "Item",
+      "class_chain": [
+        "EmberiteIngot",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "emberite_ingot",
+      "name_key": "item_emberite_ingot_name",
+      "description_key": "item_emberite_ingot_description",
+      "name": "Emberite Ingot",
+      "description": "A bar of smelted emberite, hot enough to scorch bare hands.",
+      "price": 18,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteIngot.kt"
+    },
+    {
+      "key": "EmberitePlate",
+      "parent": "HeavyArmor",
+      "class_chain": [
+        "EmberitePlate",
+        "HeavyArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "HeavyArmor",
+      "sprite": "emberite_plate",
+      "name_key": "armor_heavy_emberite_plate_name",
+      "description_key": "armor_heavy_emberite_plate_description",
+      "name": "Emberite Plate",
+      "description": "Plate armor riveted from emberite ingots and Ash Drake scales.",
+      "price": 1296,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 400,
+        "constitution": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberitePlate.kt"
+    },
+    {
+      "key": "EmberiteScraps",
+      "parent": "Item",
+      "class_chain": [
+        "EmberiteScraps",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "emberite_scraps",
+      "name_key": "item_emberite_scraps_name",
+      "description_key": "item_emberite_scraps_description",
+      "name": "Emberite Scraps",
+      "description": "Glowing shards of volcanic metal chipped from the basalt forges of Avernus.",
+      "price": 4,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteScraps.kt"
+    },
+    {
+      "key": "EmberiteStaff",
+      "parent": "Staff",
+      "class_chain": [
+        "EmberiteStaff",
+        "Staff",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Staff",
+      "sprite": "emberite_staff",
+      "name_key": "weapon_staff_emberite_staff_name",
+      "description_key": "weapon_staff_emberite_staff_description",
+      "name": "Emberite Staff",
+      "description": "A staff capped with emberite that feeds on the flames it sets.",
+      "price": 936,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 70
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteStaff.kt"
+    },
+    {
+      "key": "EmberiteSword",
+      "parent": "Sword",
+      "class_chain": [
+        "EmberiteSword",
+        "Sword",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Sword",
+      "sprite": "emberite_sword",
+      "name_key": "weapon_sword_emberite_sword_name",
+      "description_key": "weapon_sword_emberite_sword_description",
+      "name": "Emberite Sword",
+      "description": "A basalt-forged blade whose edge glows like a cooling ember.",
+      "price": 972,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 55,
+        "dexterity": 30
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EmberiteSword.kt"
     },
     {
       "key": "Emerald",
@@ -6358,6 +6798,34 @@
       },
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EternalHunger.kt"
+    },
+    {
+      "key": "EternalSoulbloom",
+      "parent": "Staff",
+      "class_chain": [
+        "EternalSoulbloom",
+        "Staff",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Staff",
+      "sprite": "eternal_soulbloom",
+      "name_key": "weapon_staff_eternal_soulbloom_name",
+      "description_key": "weapon_staff_eternal_soulbloom_description",
+      "name": "Eternal Soulbloom",
+      "description": "A luminous staff crowned with an ever-blooming spirit blossom, channeling boundless arcane currents into its wielder.",
+      "price": 120000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 93,
+        "skillAmpModifier": 0.2
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EternalSoulbloom.kt"
     },
     {
       "key": "Evo20Vial",
@@ -6649,6 +7117,28 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ExoticVelvet.kt"
+    },
+    {
+      "key": "EyeOfShaKire",
+      "parent": "Item",
+      "class_chain": [
+        "EyeOfShaKire",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "eye_of_shakire",
+      "name_key": "item_eye_of_shakire_name",
+      "description_key": "item_eye_of_shakire_description",
+      "name": "Eye of Sha'Kire",
+      "description": "A preserved, void-infused eye of the legendary First Swordsman, radiating lethal combat instincts.",
+      "price": 100,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EyeOfShaKire.kt"
     },
     {
       "key": "EyeOfTheAbyss",
@@ -8308,6 +8798,30 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Grains.kt"
     },
     {
+      "key": "GreaterMagmaCore",
+      "parent": "Item",
+      "class_chain": [
+        "GreaterMagmaCore",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "greater_magma_core",
+      "name_key": "item_greater_magma_core_name",
+      "description_key": "item_greater_magma_core_description",
+      "name": "Greater Magma Core",
+      "description": "A dense core of molten rock that never fully cools.",
+      "price": 10,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {
+        "isRareDrop": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GreaterMagmaCore.kt"
+    },
+    {
       "key": "GreenSlime",
       "parent": "Item",
       "class_chain": [
@@ -8391,8 +8905,8 @@
       "name_key": "item_heart_of_the_leviathan_name",
       "description_key": "item_heart_of_the_leviathan_description",
       "name": "Heart of the Leviathan",
-      "description": "Mythic pulsating core harvested from the Mature Leviathan. Radiates immense benthic vitality and pressure resistance.",
-      "price": 12000,
+      "description": "Mythic pulsating core harvested from the Leviathan. Radiates immense benthic vitality and pressure resistance.",
+      "price": 1200,
       "rarity": 2,
       "stack": null,
       "gem_value": null,
@@ -8579,6 +9093,37 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Icicle.kt"
     },
     {
+      "key": "IconOfTorment",
+      "parent": "Accessory",
+      "class_chain": [
+        "IconOfTorment",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "icon_of_torment",
+      "name_key": "accessory_icon_of_torment_name",
+      "description_key": "accessory_icon_of_torment_description",
+      "name": "Icon of Torment",
+      "description": "A greater effigy that draws every gaze to its bearer and sears those who strike them.",
+      "price": 65500,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 100,
+        "constitution": 45,
+        "defense": 12,
+        "magicDefense": 12,
+        "threat": 4,
+        "damageTakenModifier": -0.05
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/IconOfTorment.kt"
+    },
+    {
       "key": "IgnitionOrb",
       "parent": "Accessory",
       "class_chain": [
@@ -8741,6 +9286,130 @@
         "isRanged": "true"
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InfernalChakram.kt"
+    },
+    {
+      "key": "InfernalFabric",
+      "parent": "Item",
+      "class_chain": [
+        "InfernalFabric",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "infernal_fabric",
+      "name_key": "item_infernal_fabric_name",
+      "description_key": "item_infernal_fabric_description",
+      "name": "Infernal Fabric",
+      "description": "Soot-dark cloth woven by the ritualists of Avernus.",
+      "price": 4,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InfernalFabric.kt"
+    },
+    {
+      "key": "InfernalGloves",
+      "parent": "Accessory",
+      "class_chain": [
+        "InfernalGloves",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "infernal_gloves",
+      "name_key": "accessory_infernal_gloves_name",
+      "description_key": "accessory_infernal_gloves_description",
+      "name": "Infernal Gloves",
+      "description": "Supple gloves of infernal leather lined with soot-dark fabric.",
+      "price": 696,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 40,
+        "dexterity": 20,
+        "attackSpeed": 20,
+        "criticalChance": 0.06
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InfernalGloves.kt"
+    },
+    {
+      "key": "InfernalHide",
+      "parent": "Item",
+      "class_chain": [
+        "InfernalHide",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "infernal_hide",
+      "name_key": "item_infernal_hide_name",
+      "description_key": "item_infernal_hide_description",
+      "name": "Infernal Hide",
+      "description": "Heat-scorched hide that shrugs off sparks and cinders.",
+      "price": 4,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InfernalHide.kt"
+    },
+    {
+      "key": "InfernalJacket",
+      "parent": "MediumArmor",
+      "class_chain": [
+        "InfernalJacket",
+        "MediumArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "MediumArmor",
+      "sprite": "infernal_jacket",
+      "name_key": "armor_medium_infernal_jacket_name",
+      "description_key": "armor_medium_infernal_jacket_description",
+      "name": "Infernal Jacket",
+      "description": "A flexible jacket of infernal leather reinforced with emberite studs.",
+      "price": 972,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 280,
+        "constitution": 20,
+        "dexterity": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InfernalJacket.kt"
+    },
+    {
+      "key": "InfernalLeather",
+      "parent": "Item",
+      "class_chain": [
+        "InfernalLeather",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "infernal_leather",
+      "name_key": "item_infernal_leather_name",
+      "description_key": "item_infernal_leather_description",
+      "name": "Infernal Leather",
+      "description": "Tanned infernal hide, supple and resistant to flame.",
+      "price": 12,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InfernalLeather.kt"
     },
     {
       "key": "InfernalLongAxe",
@@ -9590,7 +10259,7 @@
       "description_key": "item_leviathan_scale_description",
       "name": "Leviathan Scale",
       "description": "Massive, iridescent dragon scale hardened by millennia under thousands of atmospheres of pressure. Impervious to hydrodynamic drag.",
-      "price": 1800,
+      "price": 900,
       "rarity": 1,
       "stack": null,
       "gem_value": null,
@@ -9739,7 +10408,7 @@
       "description_key": "food_magma_shark_description",
       "name": "Magma Shark",
       "description": "A steaming magma shark — an incredibly rich feed.",
-      "price": 300,
+      "price": 10,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -10236,7 +10905,7 @@
       "description_key": "weapon_axe_molten_slayer_description",
       "name": "Molten Slayer",
       "description": "A berserker's axe drenched in infernite, searing every wound it opens.",
-      "price": 5775,
+      "price": 2265,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -10907,6 +11576,28 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ObsidianHelm.kt"
     },
     {
+      "key": "ObsidianIngot",
+      "parent": "Item",
+      "class_chain": [
+        "ObsidianIngot",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "obsidian_ingot",
+      "name_key": "item_obsidian_ingot_name",
+      "description_key": "item_obsidian_ingot_description",
+      "name": "Obsidian Ingot",
+      "description": "Refined volcanic glass forged with astral resin into an unyielding dark bar.",
+      "price": 960,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ObsidianIngot.kt"
+    },
+    {
       "key": "ObsidianScepter",
       "parent": "Staff",
       "class_chain": [
@@ -11028,7 +11719,7 @@
       "description_key": "item_oracle_gem_description",
       "name": "Oracle Gem",
       "description": "Shimmering oceanic jewel steeped in ancient Atlantean prophetic sorcery.",
-      "price": 120,
+      "price": 50,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -11464,7 +12155,7 @@
       "description_key": "food_perch_description",
       "name": "Perch",
       "description": "A freshly caught perch. Pets love the taste.",
-      "price": 20,
+      "price": 1,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -12396,6 +13087,98 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PrismaticPendant.kt"
     },
     {
+      "key": "PrototypeBow",
+      "parent": "Bow",
+      "class_chain": [
+        "PrototypeBow",
+        "Bow",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Bow",
+      "sprite": "prototype_bow",
+      "name_key": "weapon_bow_prototype_bow_name",
+      "description_key": "weapon_bow_prototype_bow_description",
+      "name": "Prototype Bow",
+      "description": "An experimental prototype bow engineered for hyper-accelerated volley fire.",
+      "price": 1000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 900,
+        "attackSpeed": 900,
+        "damageDealtModifier": 9.0
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PrototypeBow.kt"
+    },
+    {
+      "key": "PrototypeDagger",
+      "parent": "Dagger",
+      "class_chain": [
+        "PrototypeDagger",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "prototype_dagger",
+      "name_key": "weapon_dagger_prototype_dagger_name",
+      "description_key": "weapon_dagger_prototype_dagger_description",
+      "name": "Prototype Dagger",
+      "description": "An experimental prototype stiletto honed for devastating shadow strikes.",
+      "price": 1000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 900,
+        "dexterity": 900,
+        "criticalChance": 0.9,
+        "criticalDamage": 9.0,
+        "manaRegen": 99,
+        "skillAmpModifier": 9.0,
+        "damageDealtModifier": 9.0,
+        "darknessDamageAmplification": 0.09
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PrototypeDagger.kt"
+    },
+    {
+      "key": "PrototypeSword",
+      "parent": "Sword",
+      "class_chain": [
+        "PrototypeSword",
+        "Sword",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Sword",
+      "sprite": "prototype_sword",
+      "name_key": "weapon_sword_prototype_sword_name",
+      "description_key": "weapon_sword_prototype_sword_description",
+      "name": "Prototype Sword",
+      "description": "An experimental prototype blade forged with unmatched resilience.",
+      "price": 1000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 900,
+        "lifesteal": 20,
+        "damageDealtModifier": 9.0
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PrototypeSword.kt"
+    },
+    {
       "key": "PterodactylClaw",
       "parent": "Item",
       "class_chain": [
@@ -12444,6 +13227,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Pumpkin.kt"
+    },
+    {
+      "key": "PyromancerVestments",
+      "parent": "LightArmor",
+      "class_chain": [
+        "PyromancerVestments",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "pyromancer_vestments",
+      "name_key": "armor_light_pyromancer_vestments_name",
+      "description_key": "armor_light_pyromancer_vestments_description",
+      "name": "Pyromancer Vestments",
+      "description": "Ritual vestments stitched with horn-bone clasps that hum with flame.",
+      "price": 912,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 80,
+        "intelligence": 55,
+        "onFireBonusDamage": 1
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/PyromancerVestments.kt"
     },
     {
       "key": "Quartz",
@@ -13428,7 +14240,7 @@
       "description_key": "accessory_scarlet_cape_description",
       "name": "Scarlet Cape",
       "description": "A regal cape woven from tenfold Scarlet strands. Flowing with occult grace, it bolsters the wearer's physical and arcane agility while sharpening lethal precision.",
-      "price": 200000,
+      "price": 300000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -13479,7 +14291,7 @@
       "description_key": "armor_heavy_scarlet_oni_description",
       "name": "Scarlet Oni",
       "description": "A demonic visage forged from condensed Scarlet strands. Discarding conventional heavy plating, it surges with raw bloodlust that drives its wearer to strike down foes with brutal, crushing criticals.",
-      "price": 100000,
+      "price": 150000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -13508,7 +14320,7 @@
       "description_key": "armor_heavy_scarlet_oni_juggernaut_description",
       "name": "Scarlet Oni Juggernaut",
       "description": "The apex manifestation of demonic Scarlet armor. Imbued with titanic resilience and boundless fury, it pulverizes enemy lines with devastating critical brutality.",
-      "price": 125893,
+      "price": 260000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -13537,7 +14349,7 @@
       "description_key": "armor_medium_scarlet_shroud_description",
       "name": "Scarlet Shroud",
       "description": "The legendary Veil, mechanically enhanced using the parts of the mysterious Machine. It autonomously helps the wearer in its movements in a deadly synergy.",
-      "price": 135000,
+      "price": 195000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -13568,7 +14380,7 @@
       "description_key": "armor_light_scarlet_sigil_description",
       "name": "Scarlet Sigil",
       "description": "An arcane focus intertwining otherworldly eldritch power with the lethal weave of the Scarlet strands. It channels intense occult resonance to fuel endless spellcasting and lethal critical surges.",
-      "price": 60893,
+      "price": 91300,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -13620,7 +14432,7 @@
       "description_key": "armor_medium_scarlet_veil_description",
       "name": "Scarlet Veil",
       "description": "Legends talk about unseen assassins wearing this Veil who were able to take over entire armies. Gifted from an ancient God to allow their worshippers to pursue its goals, only a few shreds of these artifacts exist by now, displaced all around the Realms.",
-      "price": 80000,
+      "price": 120000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14142,14 +14954,13 @@
       "description_key": "weapon_dagger_shark_dagger_description",
       "name": "Shark Dagger",
       "description": "A streamlined dagger fashioned from pelagic predator teeth and fins.",
-      "price": 270,
+      "price": 192,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 50,
-        "dexterity": 30,
-        "physicalCriticalDamageBonus": 0.4,
+        "constitution": 35,
+        "dexterity": 35,
         "attackSpeedDragReduction": 0.5
       },
       "flags": {},
@@ -14169,7 +14980,7 @@
       "description_key": "item_shark_fin_description",
       "name": "Shark Fin",
       "description": "Hydrodynamic shark fin reducing fluid drag during rapid maneuvers.",
-      "price": 5,
+      "price": 4,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14194,14 +15005,13 @@
       "description_key": "weapon_sword_shark_sword_description",
       "name": "Shark Sword",
       "description": "A heavy broadsword edged with serrated shark teeth and calcified coral.",
-      "price": 540,
+      "price": 216,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 65,
-        "dexterity": 20,
-        "physicalCriticalDamageBonus": 0.4,
+        "constitution": 35,
+        "dexterity": 13,
         "attackSpeedDragReduction": 0.5
       },
       "flags": {},
@@ -14221,7 +15031,7 @@
       "description_key": "item_shark_teeth_description",
       "name": "Shark Teeth",
       "description": "Cluster of razor-sharp serrated teeth that shred armor and flesh.",
-      "price": 5,
+      "price": 3,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14589,13 +15399,13 @@
       "description_key": "armor_light_siren_coral_combat_robe_description",
       "name": "Siren Coral Combat Robe",
       "description": "Combat robes interwoven with enchanted sea-silk, calcified coral, and prophetic gems.",
-      "price": 1463,
+      "price": 534,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
-        "constitution": 60,
-        "intelligence": 60
+        "constitution": 55,
+        "intelligence": 35
       },
       "flags": {},
       "overrides": {},
@@ -14617,7 +15427,7 @@
       "description_key": "armor_light_siren_robe_description",
       "name": "Siren Robe",
       "description": "Vestments woven from gossamer siren silk resonant with oceanic mana.",
-      "price": 570,
+      "price": 171,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14642,7 +15452,7 @@
       "description_key": "item_siren_silk_description",
       "name": "Siren Silk",
       "description": "Gossamer sea-silk woven from sunken robes; impervious to decay and water.",
-      "price": 10,
+      "price": 3,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -14847,6 +15657,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SlimeRobe.kt"
+    },
+    {
+      "key": "SolterisSwordOfTheSun",
+      "parent": "Sword",
+      "class_chain": [
+        "SolterisSwordOfTheSun",
+        "Sword",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Sword",
+      "sprite": "solteris",
+      "name_key": "weapon_solteris_name",
+      "description_key": "weapon_solteris_description",
+      "name": "Solteris, Sword of the Sun",
+      "description": "A radiant blade blessed by the ancient solar dragon Veeshan. Its golden edge flares with searing celestial fire upon striking.",
+      "price": 120000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 100,
+        "dexterity": 35,
+        "criticalChance": 0.25
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SolterisSwordOfTheSun.kt"
     },
     {
       "key": "SoulShard",
@@ -15327,7 +16166,7 @@
       "description_key": "accessory_spiral_hat_description",
       "name": "Spiral Hat",
       "description": "A ceremonial nautilus conch hat channeling ancient drowned sorcery.",
-      "price": 750,
+      "price": 231,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -15351,7 +16190,7 @@
       "description_key": "item_spiral_seashell_description",
       "name": "Spiral Seashell",
       "description": "Resonant spiral shell echoing with the faint whispers of sunken tides.",
-      "price": 18,
+      "price": 3,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -15723,6 +16562,28 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Stick.kt"
+    },
+    {
+      "key": "StonefireMinotaurHorn",
+      "parent": "Item",
+      "class_chain": [
+        "StonefireMinotaurHorn",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "stonefire_minotaur_horn",
+      "name_key": "item_stonefire_minotaur_horn_name",
+      "description_key": "item_stonefire_minotaur_horn_description",
+      "name": "Stonefire Minotaur Horn",
+      "description": "A heavy horn that still glows faintly with banked stonefire.",
+      "price": 6,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/StonefireMinotaurHorn.kt"
     },
     {
       "key": "Strawberry",
@@ -16192,6 +17053,37 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ThaumaturgicBlood.kt"
     },
     {
+      "key": "TheBlackWidow",
+      "parent": "Dagger",
+      "class_chain": [
+        "TheBlackWidow",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "the_black_widow",
+      "name_key": "weapon_dagger_the_black_widow_name",
+      "description_key": "weapon_dagger_the_black_widow_description",
+      "name": "The Black Widow",
+      "description": "An obsidian fang etched with a crimson hourglass. Its serrated edge delivers lethal strikes laced with Xelo's deadly venom.",
+      "price": 120000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 29,
+        "dexterity": 48,
+        "attackSpeed": 215,
+        "criticalDamage": 0.5,
+        "criticalChance": 0.15
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TheBlackWidow.kt"
+    },
+    {
       "key": "ThickFur",
       "parent": "MediumArmor",
       "class_chain": [
@@ -16500,7 +17392,7 @@
       "description_key": "item_trench_gods_pearl_description",
       "name": "Trench God's Pearl",
       "description": "Flawless abyssal black pearl infused with primordial void currents and eldritch sorcery.",
-      "price": 8500,
+      "price": 1500,
       "rarity": 2,
       "stack": null,
       "gem_value": null,
@@ -16525,7 +17417,7 @@
       "description_key": "weapon_dagger_trench_stiletto_description",
       "name": "Trench Stiletto",
       "description": "An ultra-thin hydrodynamic stiletto forged from trench wyvern fin spines.",
-      "price": 1725,
+      "price": 414,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -16553,7 +17445,7 @@
       "description_key": "item_trench_wyvern_fin_description",
       "name": "Trench Wyvern Fin",
       "description": "Spiny membranous wing-fin harvested from trench-dwelling drakes.",
-      "price": 25,
+      "price": 6,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -17976,6 +18868,58 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VoidPendant.kt"
     },
     {
+      "key": "VoidpiercerJacket",
+      "parent": "MediumArmor",
+      "class_chain": [
+        "VoidpiercerJacket",
+        "MediumArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "MediumArmor",
+      "sprite": "voidpiercer_jacket",
+      "name_key": "armor_medium_voidpiercer_jacket_name",
+      "description_key": "armor_medium_voidpiercer_jacket_description",
+      "name": "Voidpiercer Jacket",
+      "description": "Obsidian-plated leather tailored with void-sealed threads that pierce through supernatural wards.",
+      "price": 18990,
+      "rarity": 2,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 225,
+        "dexterity": 25,
+        "magicDefense": 10,
+        "ignoreImmunityToStatus": 10.0
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VoidpiercerJacket.kt"
+    },
+    {
+      "key": "VoidSeal",
+      "parent": "Item",
+      "class_chain": [
+        "VoidSeal",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "void_seal",
+      "name_key": "item_void_seal_name",
+      "description_key": "item_void_seal_description",
+      "name": "Void Seal",
+      "description": "An eldritch sigil bound with abyssal slime cores and a primordial pearl of the trench.",
+      "price": 4190,
+      "rarity": 2,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VoidSeal.kt"
+    },
+    {
       "key": "VoltaicShock",
       "parent": "Accessory",
       "class_chain": [
@@ -18260,7 +19204,7 @@
       "description_key": "food_winged_ray_description",
       "name": "Winged Ray",
       "description": "A gliding ray catch with firm, meaty flesh.",
-      "price": 70,
+      "price": 4,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -18905,14 +19849,12 @@
       "description_key": "consumable_xp_book_1_description",
       "name": "XP Book (Tier 1)",
       "description": "Grants 10 experience to an adventurer.",
-      "price": 100,
+      "price": 1,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {},
-      "flags": {
-        "notSellable": false
-      },
+      "flags": {},
       "overrides": {
         "printConsumeImage": "R.drawable.xp_book_1"
       },
@@ -18931,15 +19873,13 @@
       "name_key": "consumable_xp_book_10_name",
       "description_key": "consumable_xp_book_10_description",
       "name": "XP Book (Tier 10)",
-      "description": "Grants 100,000 experience to an adventurer.",
-      "price": 1000000,
+      "description": "Grants 500,000 experience to an adventurer.",
+      "price": 1000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {},
-      "flags": {
-        "notSellable": false
-      },
+      "flags": {},
       "overrides": {
         "printConsumeImage": "R.drawable.xp_book_10"
       },
@@ -18958,15 +19898,13 @@
       "name_key": "consumable_xp_book_2_name",
       "description_key": "consumable_xp_book_2_description",
       "name": "XP Book (Tier 2)",
-      "description": "Grants 100 experience to an adventurer.",
-      "price": 1000,
+      "description": "Grants 50 experience to an adventurer.",
+      "price": 5,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {},
-      "flags": {
-        "notSellable": false
-      },
+      "flags": {},
       "overrides": {
         "printConsumeImage": "R.drawable.xp_book_2"
       },
@@ -18985,19 +19923,167 @@
       "name_key": "consumable_xp_book_3_name",
       "description_key": "consumable_xp_book_3_description",
       "name": "XP Book (Tier 3)",
-      "description": "Grants 1,000 experience to an adventurer.",
-      "price": 10000,
+      "description": "Grants 200 experience to an adventurer.",
+      "price": 10,
       "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {},
-      "flags": {
-        "notSellable": false
-      },
+      "flags": {},
       "overrides": {
         "printConsumeImage": "R.drawable.xp_book_3"
       },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook3.kt"
+    },
+    {
+      "key": "XPBook4",
+      "parent": "Consumable",
+      "class_chain": [
+        "XPBook4",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "xp_book_4",
+      "name_key": "consumable_xp_book_4_name",
+      "description_key": "consumable_xp_book_4_description",
+      "name": "XP Book (Tier 4)",
+      "description": "Grants 500 experience to an adventurer.",
+      "price": 20,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "printConsumeImage": "R.drawable.xp_book_4"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook4.kt"
+    },
+    {
+      "key": "XPBook5",
+      "parent": "Consumable",
+      "class_chain": [
+        "XPBook5",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "xp_book_5",
+      "name_key": "consumable_xp_book_5_name",
+      "description_key": "consumable_xp_book_5_description",
+      "name": "XP Book (Tier 5)",
+      "description": "Grants 1,000 experience to an adventurer.",
+      "price": 50,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "printConsumeImage": "R.drawable.xp_book_5"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook5.kt"
+    },
+    {
+      "key": "XPBook6",
+      "parent": "Consumable",
+      "class_chain": [
+        "XPBook6",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "xp_book_6",
+      "name_key": "consumable_xp_book_6_name",
+      "description_key": "consumable_xp_book_6_description",
+      "name": "XP Book (Tier 6)",
+      "description": "Grants 5,000 experience to an adventurer.",
+      "price": 100,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "printConsumeImage": "R.drawable.xp_book_6"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook6.kt"
+    },
+    {
+      "key": "XPBook7",
+      "parent": "Consumable",
+      "class_chain": [
+        "XPBook7",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "xp_book_7",
+      "name_key": "consumable_xp_book_7_name",
+      "description_key": "consumable_xp_book_7_description",
+      "name": "XP Book (Tier 7)",
+      "description": "Grants 20,000 experience to an adventurer.",
+      "price": 200,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "printConsumeImage": "R.drawable.xp_book_7"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook7.kt"
+    },
+    {
+      "key": "XPBook8",
+      "parent": "Consumable",
+      "class_chain": [
+        "XPBook8",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "xp_book_8",
+      "name_key": "consumable_xp_book_8_name",
+      "description_key": "consumable_xp_book_8_description",
+      "name": "XP Book (Tier 8)",
+      "description": "Grants 50,000 experience to an adventurer.",
+      "price": 500,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "printConsumeImage": "R.drawable.xp_book_8"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook8.kt"
+    },
+    {
+      "key": "XPBook9",
+      "parent": "Consumable",
+      "class_chain": [
+        "XPBook9",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "xp_book_9",
+      "name_key": "consumable_xp_book_9_name",
+      "description_key": "consumable_xp_book_9_description",
+      "name": "XP Book (Tier 9)",
+      "description": "Grants 100,000 experience to an adventurer.",
+      "price": 750,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "printConsumeImage": "R.drawable.xp_book_9"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/XPBook9.kt"
     },
     {
       "key": "XPBookC",

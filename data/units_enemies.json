@@ -418,6 +418,46 @@
     "independent_drops": []
   },
   {
+    "key": "AshDrake",
+    "parent": "Enemy",
+    "sprite": "unit_ash_drake",
+    "name_key": "enemy_ash_drake_name",
+    "description_key": "enemy_ash_drake_description",
+    "name": "Ash Drake",
+    "description": "A flightless quadrupedal volcanic drake and apex predator of the chasm crags.",
+    "stats": {
+      "baseMaxHp": 12800,
+      "baseConstitution": 115,
+      "baseIntelligence": 150,
+      "baseDexterity": 140,
+      "baseDefense": 55,
+      "baseMagicDefense": 72
+    },
+    "exp_given": 5500,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_HELLFIRE_METEOR",
+    "passive_skill": "PASSIVE_ASHEN_AMBUSH",
+    "min_damage": "620",
+    "max_damage": "740",
+    "drops": [
+      {
+        "item": "AshenScale",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "GreaterMagmaCore",
+        "qty": 1,
+        "weight": 60
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "AvatarOfTheAncient",
     "parent": "Enemy",
     "sprite": "unit_avatar_of_the_ancient",
@@ -505,6 +545,41 @@
         "item": "ReptileEgg",
         "qty": 1,
         "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BasaltColossus",
+    "parent": "Enemy",
+    "sprite": "unit_basalt_colossus",
+    "name_key": "enemy_basalt_colossus_name",
+    "description_key": "enemy_basalt_colossus_description",
+    "name": "Basalt Colossus",
+    "description": "A massive animated stone construct engineered to defend the chasm fortresses.",
+    "stats": {
+      "baseMaxHp": 5200,
+      "baseConstitution": 185,
+      "baseIntelligence": 15,
+      "baseDexterity": 35,
+      "baseDefense": 105,
+      "baseMagicDefense": 42
+    },
+    "exp_given": 440,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_STOMP",
+    "passive_skill": "PASSIVE_VOLCANIC_CONSTRUCT",
+    "min_damage": "640",
+    "max_damage": "760",
+    "drops": [
+      {
+        "item": "EmberiteScraps",
+        "qty": 1,
+        "weight": 400
       }
     ],
     "independent_drops": []
@@ -865,6 +940,41 @@
     "independent_drops": []
   },
   {
+    "key": "BrimstoneImp",
+    "parent": "Enemy",
+    "sprite": "unit_brimstone_imp",
+    "name_key": "enemy_brimstone_imp_name",
+    "description_key": "enemy_brimstone_imp_description",
+    "name": "Brimstone Imp",
+    "description": "An agile flying demon scout that harasses rear-line casters from the thermal vents.",
+    "stats": {
+      "baseMaxHp": 2600,
+      "baseConstitution": 72,
+      "baseIntelligence": 55,
+      "baseDexterity": 200,
+      "baseDefense": 32,
+      "baseMagicDefense": 30
+    },
+    "exp_given": 320,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SEARING_FLIGHT",
+    "min_damage": "550",
+    "max_damage": "640",
+    "drops": [
+      {
+        "item": "InfernalHide",
+        "qty": 1,
+        "weight": 350
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "CelestialDestroyer",
     "parent": "Enemy",
     "sprite": "unit_celestial_destroyer",
@@ -1095,7 +1205,7 @@
       {
         "item": "CoinPurse",
         "qty": 1,
-        "weight": 690
+        "weight": 200
       },
       {
         "item": "TidalLantern",
@@ -1341,6 +1451,253 @@
     "independent_drops": []
   },
   {
+    "key": "CorruptedSha",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_sha",
+    "name_key": "enemy_corrupted_sha_name",
+    "description_key": "enemy_corrupted_sha_description",
+    "name": "Corrupted Sha",
+    "description": "The eldritch god of the endless dunes, awakened by void corruption with incomprehensible vitality and catastrophic power.",
+    "stats": {
+      "baseMaxHp": 77777,
+      "baseConstitution": 77,
+      "baseIntelligence": 77,
+      "baseDexterity": 77,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "immunityToStatus": 1.0
+    },
+    "exp_given": 77777,
+    "rarity": null,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_DISEMBODY",
+    "passive_skill": "PASSIVE_PERFECT_IMMUNITY",
+    "min_damage": "77",
+    "max_damage": "77",
+    "drops": [
+      {
+        "item": "MetamorphicSand",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Quartz",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "BottledSandSpirit",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "PotionOfPrecision",
+        "qty": 1,
+        "weight": 50
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 5
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedShahuriArcher",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_shahuri_archer",
+    "name_key": "enemy_corrupted_shahuri_archer_name",
+    "description_key": "enemy_corrupted_shahuri_archer_description",
+    "name": "Corrupted Sha'huri Archer",
+    "description": "A sharpshooter wielding a blighted recurve bow, loosing barbed obsidian arrows designed to paralyze.",
+    "stats": {
+      "baseMaxHp": 140,
+      "baseConstitution": 16,
+      "baseIntelligence": 20,
+      "baseDexterity": 50,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 60,
+    "rarity": null,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": true,
+    "attack_type": "Ranged, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_DESERT_ARCHER",
+    "min_damage": "18",
+    "max_damage": "26",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Pineapple",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "ShahuriBowFrame",
+        "qty": 1,
+        "weight": 15
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedShahuriMage",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_shahuri_mage",
+    "name_key": "enemy_corrupted_shahuri_mage_name",
+    "description_key": "enemy_corrupted_shahuri_mage_description",
+    "name": "Corrupted Sha'huri Mage",
+    "description": "Channeling dark entropy through desert sands, these sorcerers summon swirling vortexes to smother their victims.",
+    "stats": {
+      "baseMaxHp": 130,
+      "baseConstitution": 8,
+      "baseIntelligence": 30,
+      "baseDexterity": 10,
+      "baseDefense": 0,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 60,
+    "rarity": null,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_QUICKSAND_GRASP",
+    "passive_skill": "PASSIVE_NONE",
+    "min_damage": "16",
+    "max_damage": "18",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Quartz",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "Pineapple",
+        "qty": 1,
+        "weight": 10
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedShahuriWarrior",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_shahuri_warrior",
+    "name_key": "enemy_corrupted_shahuri_warrior_name",
+    "description_key": "enemy_corrupted_shahuri_warrior_description",
+    "name": "Corrupted Sha'huri Warrior",
+    "description": "A vanguard zealot bound to the corrupted sands, marching relentlessly under the influence of the fallen god.",
+    "stats": {
+      "baseMaxHp": 290,
+      "baseConstitution": 24,
+      "baseIntelligence": 16,
+      "baseDexterity": 10,
+      "baseDefense": 20,
+      "baseMagicDefense": 50
+    },
+    "exp_given": 60,
+    "rarity": null,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_THREATENING_I",
+    "min_damage": "12",
+    "max_damage": "16",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Pineapple",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "RecurveBlade",
+        "qty": 1,
+        "weight": 30
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedShaKire",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_shakire",
+    "name_key": "enemy_corrupted_shakire_name",
+    "description_key": "enemy_corrupted_shakire_description",
+    "name": "Corrupted Sha'Kire",
+    "description": "The shade of the tribe's First Swordsman, reanimated by void energy to punish any who dare disturb the blighted dunes.",
+    "stats": {
+      "baseMaxHp": 7000,
+      "baseConstitution": 48,
+      "baseIntelligence": 72,
+      "baseDexterity": 84,
+      "baseDefense": 0,
+      "baseMagicDefense": 0,
+      "counterattack": 1.0
+    },
+    "exp_given": 1200,
+    "rarity": null,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_DESERT_JUDGEMENT",
+    "passive_skill": "PASSIVE_RETALIATE_II",
+    "min_damage": "150",
+    "max_damage": "208",
+    "drops": [
+      {
+        "item": "ScrapMetal",
+        "qty": 1,
+        "weight": 600
+      },
+      {
+        "item": "RecurveBlade",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "Quartz",
+        "qty": 1,
+        "weight": 200
+      },
+      {
+        "item": "EyeOfShaKire",
+        "qty": 1,
+        "weight": 10
+      },
+      {
+        "item": "EsotericEgg",
+        "qty": 1,
+        "weight": 2
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "CorruptedTreant",
     "parent": "Enemy",
     "sprite": "unit_corrupted_treant",
@@ -1389,6 +1746,51 @@
       },
       {
         "item": "WoodenEgg",
+        "qty": 1,
+        "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "CorruptedVulture",
+    "parent": "Enemy",
+    "sprite": "unit_corrupted_vulture",
+    "name_key": "enemy_corrupted_vulture_name",
+    "description_key": "enemy_corrupted_vulture_description",
+    "name": "Corrupted Vulture",
+    "description": "A scavenging desert raptor consumed by necrotic sands, striking from the sky with venomous talons.",
+    "stats": {
+      "baseMaxHp": 180,
+      "baseConstitution": 20,
+      "baseIntelligence": 4,
+      "baseDexterity": 54,
+      "baseDefense": 0,
+      "baseMagicDefense": 0
+    },
+    "exp_given": 28,
+    "rarity": null,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_FLYING",
+    "min_damage": "12",
+    "max_damage": "24",
+    "drops": [
+      {
+        "item": "Feather",
+        "qty": 1,
+        "weight": 500
+      },
+      {
+        "item": "Egg",
+        "qty": 1,
+        "weight": 30
+      },
+      {
+        "item": "AvianEgg",
         "qty": 1,
         "weight": 1
       }
@@ -1550,12 +1952,12 @@
       {
         "item": "CoralChunk",
         "qty": 1,
-        "weight": 300
+        "weight": 200
       },
       {
         "item": "Coral",
-        "qty": 2,
-        "weight": 200
+        "qty": 1,
+        "weight": 100
       }
     ],
     "independent_drops": []
@@ -1720,14 +2122,19 @@
     "max_damage": "570",
     "drops": [
       {
-        "item": "CoralChunk",
+        "item": "WingedRay",
         "qty": 1,
-        "weight": 150
+        "weight": 50
       },
       {
-        "item": "AbyssalChitin",
+        "item": "BlueTrout",
         "qty": 1,
-        "weight": 25
+        "weight": 50
+      },
+      {
+        "item": "Perch",
+        "qty": 1,
+        "weight": 50
       }
     ],
     "independent_drops": []
@@ -2774,6 +3181,46 @@
     "independent_drops": []
   },
   {
+    "key": "HellfireCultist",
+    "parent": "Enemy",
+    "sprite": "unit_hellfire_cultist",
+    "name_key": "enemy_hellfire_cultist_name",
+    "description_key": "enemy_hellfire_cultist_description",
+    "name": "Hellfire Cultist",
+    "description": "A robed ritualist who channels brimstone incantations to engulf foes in hellfire.",
+    "stats": {
+      "baseMaxHp": 2500,
+      "baseConstitution": 64,
+      "baseIntelligence": 240,
+      "baseDexterity": 60,
+      "baseDefense": 26,
+      "baseMagicDefense": 100
+    },
+    "exp_given": 350,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_FIREBALL",
+    "passive_skill": "PASSIVE_HELLFIRE_INCANTATION",
+    "min_damage": "550",
+    "max_damage": "660",
+    "drops": [
+      {
+        "item": "InfernalFabric",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "EmberiteScraps",
+        "qty": 1,
+        "weight": 180
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "HeraldKali",
     "parent": "Enemy",
     "sprite": "unit_herald_kali",
@@ -3601,6 +4048,51 @@
     "independent_drops": []
   },
   {
+    "key": "Leviathan",
+    "parent": "Enemy",
+    "sprite": "leviathan",
+    "name_key": "enemy_leviathan_name",
+    "description_key": "enemy_leviathan_description",
+    "name": "Leviathan",
+    "description": "Colossal primordial serpent residing in the crushing depths of the Hadal Trench.\n\nSheltered behind an Oceanic Barrier (80,000 HP shield). Shattering both Ancient Atlantean Obelisks in Rooms 6 and 10 completely dispels this barrier and delays its Hadal Rage from 25% down to 15% HP.\n\nAt 50% HP, calls screeching Leviathan Hatchlings from the depths.",
+    "stats": {
+      "baseMaxHp": 80000,
+      "baseConstitution": 300,
+      "baseIntelligence": 150,
+      "baseDexterity": 50,
+      "baseDefense": 80,
+      "baseMagicDefense": 360
+    },
+    "exp_given": 25000,
+    "rarity": 2,
+    "is_boss": true,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_TIDAL_CATACLYSM",
+    "passive_skill": "PASSIVE_ABYSSAL_SOVEREIGN",
+    "min_damage": "1300",
+    "max_damage": "1650",
+    "drops": [
+      {
+        "item": "HeartOfTheLeviathan",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "LeviathanScale",
+        "qty": 1,
+        "weight": 150
+      },
+      {
+        "item": "TrenchGodsPearl",
+        "qty": 1,
+        "weight": 150
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "LeviathanHatchling",
     "parent": "Enemy",
     "sprite": "leviathan_hatchling",
@@ -3623,7 +4115,7 @@
     "is_ranged": true,
     "attack_type": "Ranged, Magic",
     "active_skill": "ACTIVE_ABYSSAL_TERRIFY",
-    "passive_skill": "PASSIVE_DEFLECT_MAGIC",
+    "passive_skill": "PASSIVE_BENTHIC_DEFLECTION",
     "min_damage": "590",
     "max_damage": "700",
     "drops": [
@@ -3763,51 +4255,6 @@
         "item": "MagmaShark",
         "qty": 1,
         "weight": 200
-      }
-    ],
-    "independent_drops": []
-  },
-  {
-    "key": "MatureLeviathan",
-    "parent": "Enemy",
-    "sprite": "leviathan",
-    "name_key": "enemy_mature_leviathan_name",
-    "description_key": "enemy_mature_leviathan_description",
-    "name": "Mature Leviathan",
-    "description": "Colossal primordial serpent residing in the crushing depths of the Hadal Trench.\n\nSheltered behind an Oceanic Barrier (80,000 HP shield). Shattering both Ancient Atlantean Obelisks in Rooms 6 and 10 completely dispels this barrier and delays its Hadal Rage from 25% down to 15% HP.\n\nAt 50% HP, calls screeching Leviathan Hatchlings from the depths.",
-    "stats": {
-      "baseMaxHp": 160000,
-      "baseConstitution": 300,
-      "baseIntelligence": 150,
-      "baseDexterity": 50,
-      "baseDefense": 130,
-      "baseMagicDefense": 160
-    },
-    "exp_given": 25000,
-    "rarity": 2,
-    "is_boss": true,
-    "is_magic": false,
-    "is_ranged": false,
-    "attack_type": "Melee, Physical",
-    "active_skill": "ACTIVE_TIDAL_CATACLYSM",
-    "passive_skill": "PASSIVE_ABYSSAL_SOVEREIGN",
-    "min_damage": "1300",
-    "max_damage": "1650",
-    "drops": [
-      {
-        "item": "HeartOfTheLeviathan",
-        "qty": 1,
-        "weight": 250
-      },
-      {
-        "item": "LeviathanScale",
-        "qty": 1,
-        "weight": 150
-      },
-      {
-        "item": "TrenchGodsPearl",
-        "qty": 1,
-        "weight": 150
       }
     ],
     "independent_drops": []
@@ -5170,6 +5617,81 @@
     "independent_drops": []
   },
   {
+    "key": "StonefireGoblin",
+    "parent": "Enemy",
+    "sprite": "unit_stonefire_goblin",
+    "name_key": "enemy_stonefire_goblin_name",
+    "description_key": "enemy_stonefire_goblin_description",
+    "name": "Stonefire Goblin",
+    "description": "A cunning cavern skirmisher armed with a jagged obsidian pickaxe.",
+    "stats": {
+      "baseMaxHp": 3600,
+      "baseConstitution": 65,
+      "baseIntelligence": 40,
+      "baseDexterity": 175,
+      "baseDefense": 30,
+      "baseMagicDefense": 26
+    },
+    "exp_given": 340,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_ARMOR_SHRED",
+    "passive_skill": "PASSIVE_STONEFIRE_FRENZY",
+    "min_damage": "510",
+    "max_damage": "590",
+    "drops": [
+      {
+        "item": "EmberiteScraps",
+        "qty": 1,
+        "weight": 380
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "StonefireMinotaur",
+    "parent": "Enemy",
+    "sprite": "unit_stonefire_minotaur",
+    "name_key": "enemy_stonefire_minotaur_name",
+    "description_key": "enemy_stonefire_minotaur_description",
+    "name": "Stonefire Minotaur",
+    "description": "A heavy horned brute commander who leads frontline patrols across the canyon bridges.",
+    "stats": {
+      "baseMaxHp": 5400,
+      "baseConstitution": 180,
+      "baseIntelligence": 20,
+      "baseDexterity": 75,
+      "baseDefense": 90,
+      "baseMagicDefense": 38
+    },
+    "exp_given": 430,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_STONEFIRE_ROAR",
+    "passive_skill": "PASSIVE_STONEFIRE_BULWARK",
+    "min_damage": "660",
+    "max_damage": "790",
+    "drops": [
+      {
+        "item": "StonefireMinotaurHorn",
+        "qty": 1,
+        "weight": 350
+      },
+      {
+        "item": "InfernalHide",
+        "qty": 1,
+        "weight": 250
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "StoneShaman",
     "parent": "Enemy",
     "sprite": "unit_stone_shaman",
@@ -5537,12 +6059,12 @@
       {
         "item": "SharkTeeth",
         "qty": 1,
-        "weight": 350
+        "weight": 250
       },
       {
         "item": "SharkFin",
         "qty": 1,
-        "weight": 250
+        "weight": 150
       }
     ],
     "independent_drops": []
@@ -5672,7 +6194,7 @@
       {
         "item": "TrenchWyvernFin",
         "qty": 1,
-        "weight": 200
+        "weight": 100
       },
       {
         "item": "Coral",
@@ -6237,6 +6759,11 @@
     "min_damage": "1",
     "max_damage": "1",
     "drops": [
+      {
+        "item": "HellishRations",
+        "qty": 1,
+        "weight": 107
+      },
       {
         "item": "WickedSeal",
         "qty": 1,

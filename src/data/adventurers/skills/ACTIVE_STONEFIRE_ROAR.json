@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_STONEFIRE_ROAR",
+  "name_key": "active_stonefire_roar_name",
+  "desc_key": "active_stonefire_roar_description",
+  "kind": "active",
+  "name": "Stonefire Roar",
+  "description": "100% TAUNTS all enemies for 5 turns, gains a 50% Max HP Shield."
+}

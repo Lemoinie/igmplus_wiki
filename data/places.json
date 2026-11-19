@@ -1,5 +1,62 @@
 [
   {
+    "key": "Avernus",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/Avernus.kt",
+    "name_key": "dungeon_name_avernus",
+    "name": "Avernus",
+    "summary_sprite": "summary_avernus",
+    "detail_sprite": "area_avernus",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "AshDrake",
+        "chance_permille": null
+      },
+      {
+        "key": "BasaltColossus",
+        "chance_permille": null
+      },
+      {
+        "key": "BrimstoneImp",
+        "chance_permille": null
+      },
+      {
+        "key": "HellfireCultist",
+        "chance_permille": null
+      },
+      {
+        "key": "StonefireGoblin",
+        "chance_permille": null
+      },
+      {
+        "key": "StonefireMinotaur",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 90,
+    "items_mentioned": [
+      "AshenScale",
+      "EmberiteBoots",
+      "EmberiteBow",
+      "EmberiteCleaver",
+      "EmberiteDagger",
+      "EmberiteHelmet",
+      "EmberitePlate",
+      "EmberiteScraps",
+      "EmberiteStaff",
+      "EmberiteSword",
+      "GreaterMagmaCore",
+      "InfernalFabric",
+      "InfernalGloves",
+      "InfernalHide",
+      "InfernalJacket",
+      "PyromancerVestments",
+      "StonefireMinotaurHorn"
+    ]
+  },
+  {
     "key": "BarrenWastelands",
     "parent": "Area",
     "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/BarrenWastelands.kt",
@@ -108,6 +165,55 @@
       "MonkeyHideJacket",
       "MysteriousAppendage",
       "Pearl"
+    ]
+  },
+  {
+    "key": "CorruptedDesert",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/CorruptedDesert.kt",
+    "name_key": "dungeon_name_corrupted_desert",
+    "name": "Corrupted Desert",
+    "summary_sprite": "summary_corrupted_desert",
+    "detail_sprite": "area_corrupted_desert",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "CorruptedShahuriArcher",
+        "chance_permille": 163.33
+      },
+      {
+        "key": "CorruptedShahuriWarrior",
+        "chance_permille": 160.42
+      },
+      {
+        "key": "CorruptedVulture",
+        "chance_permille": 60.0
+      },
+      {
+        "key": "CorruptedShahuriMage",
+        "chance_permille": 56.25
+      },
+      {
+        "key": "CorruptedShaKire",
+        "chance_permille": 10.0
+      },
+      {
+        "key": "CorruptedSha",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 630,
+    "items_mentioned": [
+      "BottledSandSpirit",
+      "Feather",
+      "MetamorphicSand",
+      "PotionOfPrecision",
+      "Quartz",
+      "RecurveBlade",
+      "Sandstone",
+      "ScrapMetal",
+      "ShahuriBow"
     ]
   },
   {
@@ -711,7 +817,7 @@
         "chance_permille": null
       }
     ],
-    "encounter_chance_permille": 705,
+    "encounter_chance_permille": 300,
     "items_mentioned": [
       "AbyssalChitinJacket",
       "AbyssalPearl",
@@ -728,8 +834,7 @@
       "SharkSword",
       "SharkTeeth",
       "SirenRobe",
-      "SpiralSeashell",
-      "SunkenDoubloon"
+      "SpiralSeashell"
     ]
   },
   {
@@ -805,9 +910,8 @@
         "chance_permille": null
       }
     ],
-    "encounter_chance_permille": 1502,
+    "encounter_chance_permille": 150,
     "items_mentioned": [
-      "CoinPurse",
       "Perch"
     ]
   },
@@ -1201,11 +1305,11 @@
         "chance_permille": null
       },
       {
-        "key": "LeviathanHatchling",
+        "key": "Leviathan",
         "chance_permille": null
       },
       {
-        "key": "MatureLeviathan",
+        "key": "LeviathanHatchling",
         "chance_permille": null
       },
       {

@@ -77,6 +77,17 @@
     "description": "burning with bloodflame"
   },
   {
+    "key": "HELLFIRE",
+    "name_key": "status_effect_hellfire",
+    "desc_key": "status_effect_hellfire_description",
+    "sprite": "icon_effect_hellfire",
+    "negative": true,
+    "serialized": true,
+    "cleansable": true,
+    "name": "Hellfire",
+    "description": "burning with hellfire"
+  },
+  {
     "key": "POISON",
     "name_key": "status_effect_poison",
     "desc_key": "status_effect_poison_description",
@@ -493,5 +504,16 @@
     "cleansable": true,
     "name": "Pack Howl",
     "description": "howling with the pack"
+  },
+  {
+    "key": "VENOM",
+    "name_key": "status_effect_venom",
+    "desc_key": "status_effect_venom_description",
+    "sprite": "icon_effect_venom",
+    "negative": true,
+    "serialized": true,
+    "cleansable": true,
+    "name": "Venom",
+    "description": "envenomed"
   }
 ]

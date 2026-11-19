@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_STONEFIRE_FRENZY",
+  "name_key": "passive_stonefire_frenzy_name",
+  "desc_key": "passive_stonefire_frenzy_description",
+  "kind": "passive",
+  "name": "Stonefire Frenzy",
+  "description": "Attacks twice. Immune to ABLAZE and HELLFIRE."
+}

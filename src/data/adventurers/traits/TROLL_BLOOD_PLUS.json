@@ -1,0 +1,13 @@
+{
+  "key": "TROLL_BLOOD_PLUS",
+  "name_key": "trait_troll_blood_plus_name",
+  "desc_key": "trait_troll_blood_plus_description",
+  "plus": true,
+  "name": "Troll Blood+",
+  "description": "Each turn, regenerates 0.5% of max HP per unit rank (+4.5% if ascended).",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
+}

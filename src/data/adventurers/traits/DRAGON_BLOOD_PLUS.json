@@ -1,0 +1,13 @@
+{
+  "key": "DRAGON_BLOOD_PLUS",
+  "name_key": "trait_dragon_blood_plus_name",
+  "desc_key": "trait_dragon_blood_plus_description",
+  "plus": true,
+  "name": "Dragon Blood+",
+  "description": "Damage reduction increased by 1% per unit rank (+9% if ascended).",
+  "category": "rare",
+  "upgrades_to": null,
+  "upgraded_from": null,
+  "upgrade_name": null,
+  "base_name": null
+}

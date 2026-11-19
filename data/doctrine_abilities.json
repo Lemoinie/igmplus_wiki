@@ -265,7 +265,7 @@
     "desc_key": "doctrine_ability_tactical_knowledge_description",
     "sprite": "doctrine_ability_tactical_knowledge",
     "cost": 3,
-    "increase_per_level": 20,
+    "increase_per_level": 15,
     "format_mode": 2,
     "max_level": 2,
     "row": 2,

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_HELLFIRE_INCANTATION",
+  "name_key": "passive_hellfire_incantation_name",
+  "desc_key": "passive_hellfire_incantation_description",
+  "kind": "passive",
+  "name": "Hellfire Incantation",
+  "description": "Attacks and abilities inflict 1 stack of HELLFIRE for 2 turns. Immune to ABLAZE and HELLFIRE."
+}

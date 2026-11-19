@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ASHEN_AMBUSH",
+  "name_key": "passive_ashen_ambush_name",
+  "desc_key": "passive_ashen_ambush_description",
+  "kind": "passive",
+  "name": "Ashen Ambush",
+  "description": "Acts first at the start of combat and starts combat with 100 Mana. Attacks inflict 1 stack of HELLFIRE for 2 turns. Immune to ABLAZE, HELLFIRE, and BLEED."
+}

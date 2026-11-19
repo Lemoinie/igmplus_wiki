@@ -1,5 +1,368 @@
 [
   {
+    "version": "1.3.22.4",
+    "date": "19/11/2026",
+    "groups": [
+      [
+        "UI / Quality of Life — Adventurer Weapon Attack Stat Scaling Display:",
+        "In-Game Scaling Multipliers: Adventurer stat scaling multipliers (attackConstitutionScaling, attackDexterityScaling, attackIntelligenceScaling) are now clearly displayed beside basic stats (e.g. 'Constitution 115 (1.5)' or 'Intelligence 150 (0.4)') in both the Main Adventurer profile sheet (DialogEntityDetail) and the All Stats sheet (DialogEntityStatsDetail);",
+        "Non-Scaling Stat Suppression: Only stats with an active attack scaling multiplier (> 0.0) show parentheses, keeping zero-scaling stats clean and uncluttered;",
+        "Interactive Help Tooltip: Tapping any basic stat with an active attack multiplier displays the exact scaling ratio and weapon damage contribution percentage in the help panel."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.3",
+    "date": "19/11/2026",
+    "groups": [
+      [
+        "Combat Balance — Armor Penetration Cap & War Doctrine Tuning:",
+        "Armor Penetration Cap (90%): Capped total armor penetration (Defense and Magic Defense ignore) at 90% across all entities and combat damage calculations;",
+        "War Doctrine — Tactical Knowledge: Nerfed armor penetration from 20% to 15% per level (30% max at Lv 2);",
+        "Sundering Trait: Nerfed armor penetration from 20% to 15%."
+      ],
+      [
+        "Adventurer Trait Rebalance & New Evo-24 PLUS Traits:",
+        "Nimble & Nimble+: Nerfed Nimble from 15% to 10% additive dodge chance, and added Nimble+ (Evo-24 upgrade) granting 15% additive dodge chance;",
+        "Troll Blood & Troll Blood+: Nerfed Troll Blood regeneration to 0.25% max HP per unit rank (+2.25% if ascended), and added Troll Blood+ (Evo-24 upgrade) regenerating 0.5% max HP per unit rank (+4.5% if ascended);",
+        "Dragon Blood & Dragon Blood+: Nerfed Dragon Blood damage reduction from 1% to 0.5% per unit rank (+4.5% if ascended), and added Dragon Blood+ (Evo-24 upgrade) reducing damage taken by 1% per unit rank (+9% if ascended);",
+        "Fortified: Nerfed battle-start shield from 25% to 15% of max HP;",
+        "Blessed: Nerfed darkness reduction from 15 to 10;",
+        "Nocturnal+: Nerfed darkness damage amplification from 2% to 1.5% per darkness;",
+        "Cursed+: Nerfed HP decay from 1% to 2% max HP each turn (retaining +30% lifesteal)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.2",
+    "date": "19/11/2026",
+    "groups": [
+      [
+        ""
+      ],
+      [
+        "Pet Balance — Flat Combat Ability Scaling Buffs:",
+        "Fighter (×2): Doubled pet attack scaling from 0.5×level + 1 to 1.0×level + 2;",
+        "Healer (×2): Doubled pet heal scaling from 0.2×level + 1 to 0.4×level + 2;",
+        "Soothing / Regeneration (×2): Doubled party HP regeneration scaling from 0.3×level + 1 to 0.6×level + 2;",
+        "Protective / Barrier (×3): Tripled flat damage reduction scaling from 0.1×level + 1 to 0.3×level + 3."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.1",
+    "date": "18/11/2026",
+    "groups": [
+      [
+        "New Crafted Medium Armor & Materials — Voidpiercer Jacket:",
+        "Voidpiercer Jacket: Added new Medium Armor crafted from 5 Obsidian Ingots, 1 Void Seal, and 2 Deep Sea Velvets, granting +225 Max HP, +25 Dexterity, +10 Magic Defense, and +10% Ignore Status Immunity;",
+        "Void Seal: Added new intermediate crafting material forged from 1 Eldritch Seal, 2 Void Cores, and 1 Trench God's Pearl;",
+        "Obsidian Ingot: Added refined intermediate material smelted from 200 Obsidian Chunks and 10 Astral Goo;",
+        "Equipment Immunity Penetration: Added ignoreImmunityToStatus support to Equipment and Adventurer aggregation so equipment bonuses stack cleanly with Doctrine abilities."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.0",
+    "date": "17/11/2026",
+    "groups": [
+      [
+        "Combat Systems & UI — Flexible Status Immunity & Status Resistance:",
+        "Flexible Specific Status Immunity (0%–100%): Upgraded specific status immunities on Entities and Equipment from binary 100% flags to percentage-based values (addStatusImmunity(type, chance)), rolling separately from General Status Immunity on status application;",
+        "General & Specific Status Resistance (0%–100%): Added general and per-status resistance on Entities and Equipment. Reduces incoming damage from DoT statuses (Ablaze, Hellfire, Bloodflame, Bleed, Frozen, Entangle, Terrify) and Thorns recoil after attacker gear bonuses, dealing 0 damage at 100% resistance;",
+        "Crowd-Control Self-Cleanse on Turn: Units afflicted by cleansable CC (Stun, Petrify, Silence, Terrify, Confuse) roll General and Specific Status Resistance separately at the start of their turn to break free and act normally (Terrify ticks its reduced DoT before rolling to break free; uncleansable stuns and soft CCs Entangle/Frozen do not self-cleanse);",
+        "Entity Stats Detail — Status Defense Stat Section: Added a dedicated 2-column Status Defense Stat section between Defense Stat and Utility Stat, displaying General and Specific Status Immunities (left column) alongside General and Specific Status Resistances (right column)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.25",
+    "date": "16/11/2026",
+    "groups": [
+      [
+        "Balance & Progression — Sunken Citadel (D12) Equipment Stat Rebalance:",
+        "Coral Armor & Helmet Tuning: Coral Armor Max HP tuned from 400 to 350; Coral Helmet Max HP adjusted from 270 to 250;",
+        "Coral Weapons & Boots Rebalance: Coral Axe buffed to +35 CON / +35 INT (from 30/20). Coral Bow rebalanced to +35 DEX / +13 INT (from 50 DEX). Coral Staff adjusted to +45 INT (from 60). Coral Boots tuned to +35 DEX while significantly buffing underwater attack speed drag reduction to 50% (from 30%);",
+        "Shark Weapons Tuning: Shark Dagger adjusted to +35 CON / +35 DEX with +20% Physical Crit Damage (from +40%). Shark Sword adjusted to +35 CON / +13 DEX with +20% Physical Crit Damage (from +40%);",
+        "Siren Coral Combat Robe: Rebalanced defensive and offensive stats to +55 Constitution and +35 Intelligence (from 60/50)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.24",
+    "date": "16/11/2026",
+    "groups": [
+      [
+        "New Dungeon & Progression — Avernus (D13 - Intellectual Volcanic Domain):",
+        "Subterranean Volcanic Domain: Added Avernus (D13), unlocked upon completing 120 turns in The Sunken Citadel (D12). Features 30 Darkness, deep volcanic canyons, and fortified basalt bastions;",
+        "Environmental Hazards: Native Choking Ash has a 15% chance to inflict BLIND and ENFEEBLE on acting adventurers. Unavoidable Magma Crust Eruptions have an 8% chance to deal 10% Max HP direct damage (min 50) and inflict ABLAZE;",
+        "6 Civilized & Demonic Foes: Battle disciplined Stonefire Goblins, flying Brimstone Imps, ritualistic Hellfire Cultists (inflicting stackable Hellfire), frontline Stonefire Minotaurs (taunt roar + 50% shield), Basalt Colossuses, and the apex Ash Drake [Elite] (Hellfire Meteor + Ashen Ambush);",
+        "New Crafting & Equipment Progression: Introduced 8 volcanic materials (Emberite Scraps/Ingot, Infernal Hide/Leather, Infernal Fabric, Stonefire Minotaur Horn, Ashen Scale, Greater Magma Core) and 13 new equipment items across weapons, the full armor trinity, and accessories including the Tier 4 Icon of Torment."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.23",
+    "date": "16/11/2026",
+    "groups": [
+      [
+        "New Endgame Accessory & Crafting — Electric Violin:",
+        "Electric Violin Crafted Accessory: Added Electric Violin, a high-tier bard accessory crafted by combining Cosmic Violin + Voltaic Shock in the Workshop;",
+        "Stats & Bonuses: Provides +30 Constitution, +35 Dexterity, +35 Intelligence, and extends Inspire/Exalt durations by +4 turns;",
+        "Voltaic Resonance Bonus Action: Deals 150 flat damage with a 14% chance to STUN the target at the end of each turn;",
+        "Retroactive Discovery: Automatically discovered in the Workshop recipe list if either Cosmic Violin or Voltaic Shock has been encountered."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.22",
+    "date": "14/11/2026",
+    "groups": [
+      [
+        "Quality of Life & Settings — Load Team Equipment Loadout Toggle:",
+        "Team Gear Loadout Setting: Added a user setting in Settings (under Gameplay & Automation): 'Equip saved gear on Load Team' (YES / NO, defaulting to YES);",
+        "Non-Destructive Loadout Preservation: Saving a team continues to silently snapshot heroes' equipped gear into Area.savedAdventurersGear regardless of the toggle, ensuring no presets are lost or overwritten;",
+        "Flexible Early-Game Gearing: When toggled to NO, pressing Load Team loads the team composition and pet while leaving heroes' current equipment 100% untouched, preventing early-game equipment downgrades from older presets;",
+        "Auto-Raid Integration: Auto-Raid respects this setting, preserving adventurers' equipped gear across automated runs when the toggle is disabled."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.21",
+    "date": "14/11/2026",
+    "groups": [
+      [
+        "Combat Engine & Enemy Balancing — Attack Speed & End-of-Turn Actions Architectural Overhaul:",
+        "Enemy Polymorphic Dispatch Fix: Re-architected Enemy.endOfTurnActions(currentArea) to cache boundArea and delegate directly to endOfTurnActions(), ensuring enemy subclass overrides (Imperial Captain, Leviathan Hatchling, Dreamwrought Swarm) are executed properly during combat turns;",
+        "Unified Enemy Attack Speed Pipeline: Introduced getBaseAttackSpeed(): Int in Enemy.kt to allow enemy units to define intrinsic attack speeds that propagate cleanly through combat formulas, area environmental modifiers, debuffs, and UI dialogs;",
+        "Celestial Destroyer Tuning: Buffed Celestial Destroyer to 600% Attack Speed (1 basic attack + 5 extra attacks = 6 hits per turn), modernizing its Flying Fortress barrage onto the unified attack speed system with full dynamic target selection per strike;",
+        "Headless Knight Parity: Aligned Headless Knight with 300% Attack Speed (1 basic attack + 2 extra attacks = 3 hits per turn) and removed legacy customEndOfTurnActions to eliminate multi-layer action duplication;",
+        "Leviathan Hatchling Transparency: Replaced generic Deflect Magic with dedicated passive Benthic Deflection (20% magic deflection) and retired the obsolete Benthic Geyser;",
+        "Abyssal Sovereign Deflection: Granted Leviathan 40% magic deflection under Abyssal Sovereign, aligning with Leviathan Hatchling's 20% deflection mechanism."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.20",
+    "date": "13/11/2026",
+    "groups": [
+      [
+        "Combat Engine & Itemization — Specialized Critical Damage Scaling Fix:",
+        "Ruthless & Ruthless+ Scaling Parity: Fixed an issue where equipment with specialized physical or spell critical damage bonuses (e.g. Abyssal Chitin Dagger, Shark Dagger, Shark Sword) bypassed the multiplicative scaling of Ruthless (+20%) and Ruthless+ (+30%);",
+        "Unified Critical Strike Architecture: Decomposed critical strike calculations into clean, domain-specific base, equipment, and modifier pipelines across Adventurer, ensuring consistent scaling and eliminating fragile delta arithmetic."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.19",
+    "date": "13/11/2026",
+    "groups": [
+      [
+        "Combat Engine — Pet Status Effect Pipeline Consolidation:",
+        "Unified Pipeline Routing: Refactored petCast() in Area to route both positive and negative pet status effects directly through the centralized applyStatus() method;",
+        "Immunity Compliance: Ensured pet debuffs strictly respect target status immunities and trigger standardized combat logging and effect handling."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.18",
+    "date": "12/11/2026",
+    "groups": [
+      [
+        "Adventurer Balancing & Mechanics — Angel of War Branch Tuning:",
+        "Same-Row Radiant Blessing: Restructured the Holy Knight -> Angel of War evolution line (T4 Holy Knight through T9 Angel of War) so that the Radiant Blessing aura is granted exclusively to allies in the same row rather than party-wide. Each row evaluates its aura independently using the highest alive tier present in that row;",
+        "Overheal Shield Removal: Removed the overheal-to-shield conversion from Angel of War's basic attack heal (radiantHealLowest), cleanly discarding healing that overflows past max HP;",
+        "Aura of the Seraphim Turn-Start Cleanse Tuning: Nerfed the turn-start debuff cleansing on PASSIVE_AURA_OF_THE_SERAPHIM to cleanse 1 negative effect from the single most debuffed ally (matching Justiciar's Aura of Sanctity) rather than cleansing every ally in the party;",
+        "Skill Description Consistency: Updated strings.xml across all 6 branch aura tiers to specify same-row targeting, and updated Aura of the Seraphim to document the single-target cleanse and the removal of the overheal shield."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.17",
+    "date": "12/11/2026",
+    "groups": [
+      [
+        "Adventurer Progression & Utility — Chrono Echo Elixir:",
+        "Chrono Echo Elixir: Added the Chrono Echo Elixir consumable, allowing adventurers to unweave and reset all 11 consumed stat potions back to zero, refunding full potion drinking capacity for build re-specialization;",
+        "Safe Reset Dialog: Implemented DialogConsumeChronoEchoElixir with confirmation prompts, filtering the list to display only adventurers who have consumed at least one potion;",
+        "Prototype Weapons Suite: Introduced experimental Prototype Sword, Prototype Bow, and Prototype Dagger testing armaments with extreme scaling values and standardized uppercase status effect formatting (STUN, ABLAZE, FREEZE, POISON, SILENCE)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.16",
+    "date": "11/11/2026",
+    "groups": [
+      [
+        "Raid Progression & Save Integrity — Hadal Abyss Re-Locking:",
+        "Retroactive Requirement Validation: Enforced strict validation during save deserialization so that The Hadal Abyss is re-locked if the save has not met the canonical requirement of defeating 10 Leviathan Hatchlings (leviathanHatchlingKills < 10);",
+        "Exploration Party Safety Evacuation: When re-locking The Hadal Abyss on an existing save, any party actively exploring or configured for the raid is cleanly recalled to the guild, ensuring adventurers are never stranded in an inaccessible raid."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.15",
+    "date": "11/11/2026",
+    "groups": [
+      [
+        "Sunken Citadel Equipment Rebalance & Progression Fix:",
+        "Coral Armor Retaliation: Increased Coral Armor physical retaliation damage from 15 to 45 for improved defensive scaling;",
+        "Deep-Sea Weapons Rebalance: Adjusted Coral Axe stats (Con 40 -> 30, Int 30 -> 20), Coral Bow stats (Dex 70 -> 50, attack speed drag reduction improved from 50% to 60%), Coral Staff (Int 70 -> 60), and Shark Sword (Con 65 -> 45);",
+        "Siren Coral Combat Robe: Adjusted intelligence from 60 to 50 for balanced caster itemization;",
+        "Hadal Abyss Unlock Milestone Removal: Removed the 100-room milestone unlock from The Sunken Citadel, strictly adhering to the intended unlock requirement of defeating 10 Leviathan Hatchlings."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.14",
+    "date": "09/11/2026",
+    "groups": [
+      [
+        "Pinnacle Raid Lifecycle & Post-Boss Progression Fix:",
+        "Authoritative Raid Termination: Rebuilt raid conclusion logic in The Hadal Abyss and Sanguine Crucible to rely on authoritative, persisted room progress (progress > maxRooms) rather than a fragile in-memory transient boolean (bossDefeated);",
+        "Infinite Mob Farming Prevention: Fixed a bug in The Hadal Abyss where rollEnemies() fell through to an unconstrained else branch on room 13+, causing parties to endlessly clear rooms (74+ areas) farming normal corridor mobs after defeating the Leviathan;",
+        "Sanguine Crucible Boss Re-Fight Prevention: Fixed a bug in Sanguine Crucible where progress >= ev.progress could re-roll and respawn Archmagus Valthex and his acolytes if the app was closed, backgrounded, or processed offline progress between the boss kill and next room entry;",
+        "State Persistence Resilience: Both pinnacle raids now cleanly and synchronously set terminationRequested upon entering post-boss rooms (progress >= 13 in Hadal Abyss; progress > event.progress in Sanguine Crucible), guaranteeing proper completion, drops, and return to guild even across app restarts and offline simulation."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.13",
+    "date": "09/11/2026",
+    "groups": [
+      [
+        "Combat & Summoning — Allied Field Capacity & Log Notifications:",
+        "Allied Field Cap Enforcement: Enforced a strict 15-unit maximum limit on allied combatants in Area.kt (Area.MAX_ALLIED_UNITS = 15), matching the UI's 15 unit frames in DialogDungeonDetail and eliminating ghost units that acted in combat without visual representation;",
+        "Necromancer & Lich Summon Cap: Blocked spawnMinionForLich() from exceeding 15 units; in handleCurseSkillSummonOrHeal(), casting Curse when the battlefield is full now cleanly heals active bound minions rather than failing without benefit;",
+        "Beast Tamer Turn Spam Protection: Added transient deduplication to spawnMinionForBeastTamer() so the Beast Tamer does not flood the battle log with capacity warnings every combat turn;",
+        "Dynamic Slot Reclamation: When an active minion or ally dies in combat, the 15th slot is immediately freed, resetting notification flags and allowing new summons to take their place;",
+        "Battlefield Capacity Combat Log: Added Logger.SUMMON_FAILED_CAPACITY (code 140) and log_summon_failed_capacity to inform the player when a summon fails due to full party capacity."
+      ],
+      [
+        "Item & Environmental Balancing — Tidal Lantern Illumination:",
+        "Tidal Lantern Darkness Reduction: Configured TidalLantern with 10 darkness reduction (TidalLantern.DARKNESS_REDUCTION_AMOUNT = 10);",
+        "Non-Stacking Illumination Aura: In Area.kt, multiple Tidal Lanterns equipped across different adventurers in the same expedition party are deduplicated so the item provides exactly 10 darkness reduction total rather than compounding;",
+        "Item Effect Description: Updated accessory_tidal_lantern_effect to clearly display '-10 darkness (does not stack)'."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.12",
+    "date": "09/11/2026",
+    "groups": [
+      [
+        "Archer & Celestial Rain Combat Rebalance — Keen Vision Overhaul:",
+        "Active Skill Guaranteed Hit: All units in the Marksman / Celestial Rain branch (Marksman, Sureshot, Fury, Hailstorm, Tempest, Hurricane, Celestial Rain) now have guaranteed hit accuracy on active skills via Keen Vision, ensuring all 11 arrows of Barrage VIII land unerringly without being dodged or lost to darkness;",
+        "Armor Penetration: Keen Vision now grants +10% enemy armor penetration across all attacks, reducing enemy effective defense and boosting physical multi-hit barrage scaling against armored targets;",
+        "Unified Critical Scaling: Keen Vision now increases both Physical and Spell Critical Strike Chance (+10%) and Damage (+25%), bolstering hybrid and magic-equipped archer builds;",
+        "Preserved Basic Attack Evasion Counterplay: Basic attacks retain the standard +30% hit chance bonus, maintaining interactive evasion, darkness, and dodge mechanics during normal turns."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.11",
+    "date": "08/11/2026",
+    "groups": [
+      [
+        "New Corrupted Dungeon — Corrupted Desert:",
+        "Corrupted Desert Added: The second corrupted dungeon area is now available in the Corrupted Dungeons tab, featuring maximum darkness 10, independent expedition management, and a 10-wave Corrupted Shahuri Army assault event on reaching 100 kills;",
+        "Corrupted Desert Denizens: Introduces 6 new corrupted enemy variants with doubled baseline statistics and EXP rewards — Corrupted Vulture, Corrupted Sha'huri Warrior, Corrupted Sha'huri Archer, Corrupted Sha'huri Mage, Corrupted Sha'Kire, and the awakened avatar Corrupted Sha;",
+        "Corrupted Sha Encounter: Slaying Corrupted Sha'Kire builds a summon counter; every 10 kills rolls a 1% chance to awaken Corrupted Sha (77,777 HP, 77 all attributes, casting Disembody for catastrophic magic damage)."
+      ],
+      [
+        "New Endgame Accessory & Combat Mechanics:",
+        "Amulet of Sha'Kire: New craftable accessory forged from Amulet of the Swordsman and 5 Eyes of Sha'Kire (+50 CON, +30% Counterattack Chance, +30% Counterattack Damage, and Attacks Always Hit; unsellable);",
+        "Counterattack Damage Mechanic: Added combat engine support for counterattack damage bonus scaling across equipment, adventurers, and retaliation strikes;",
+        "Eye of Sha'Kire: Added rare crafting material dropping from Corrupted Sha'Kire at a 1% rate."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.10",
+    "date": "08/11/2026",
+    "groups": [
+      [
+        "Economy & Anti-Inflation Overhaul — Ruleset & Guidelines:",
+        "Economy Rules Documentation: Added docs/economy-rules.md defining empirical vanilla tier benchmarks, drop value ceilings, and mathematical modeling against a 200 rooms/hour baseline, preventing the low-drop-rate illusion from causing idle inflation;",
+        "Mandatory Anti-Inflation Gate: Added Gate 11 to .agents/AGENTS.md, requiring explicit Economy Audit Tables in future plans and banning repeatable multi-thousand currency drops."
+      ],
+      [
+        "Economy Balancing — The Slumbering Shallows:",
+        "Fish Price Normalization: Realigned raw fish selling prices to standard vanilla food tiers — Perch (20L -> 1L), Blue Trout (36L -> 2L), Angelfish (50L -> 3L), Winged Ray (70L -> 4L), Blue Shark (120L -> 6L), and Magma Shark (300L -> 10L), curbing vendor dumping by 93%;",
+        "CoinPurse Removal & Hazard Tuning: Removed CoinPurse from ambient room gathering (keeping 15% ambient Perch) and nerfed Chorus the Drowned's CoinPurse drop weight from 690 (69%) to 200 (20%), reigning in gold velocity to a balanced ~770 gold/hour."
+      ],
+      [
+        "Economy Balancing — The Sunken Citadel:",
+        "Search Room Overhaul: Completely removed Sunken Doubloons from searchRoom() and raised the empty search rate to 70% (20% hazard event, 10% total material drop chance), aligning with Vanilla D7/D9 empty search conventions;",
+        "Enemy Drop Rate Tuning: Reduced drop weights across Sunken Citadel monsters to curb inventory overflow and wealth accumulation — Tiger Shark (Shark Teeth 35% -> 25%, Shark Fin 25% -> 15%), Crimson Reef Goliath (Coral Chunk 30% -> 20%, Coral 20% x2 -> 10% x1), and Trench Wyvern (Trench Wyvern Fin 20% -> 10%);",
+        "Deep Sea Mauler Drop Redesign: Removed Abyssal Chitin and Coral Chunk from Deep Sea Mauler, refocussing its loot table into consumable benthic rations (15% Winged Ray, 15% Blue Trout, 15% Perch);",
+        "Deep-Sea Material Rebalance: Realigned raw materials to Tier 10 standards — Coral (5L -> 3L), Shark Teeth (5L -> 3L), Shark Fin (5L -> 4L), Spiral Seashell (18L -> 3L), Coral Chunk (15L -> 5L), Siren Silk (10L -> 3L), Trench Wyvern Fin (25L -> 6L), Abyssal Chitin (40L -> 38L), Bioluminescent Esca (30L -> 8L), Abyssal Pearl (75L -> 35L), while maintaining Oracle Gem at 50L to preserve 1% rare drop parity with vanilla materials like Poisonous Flesh and Unstable Gem;",
+        "Crafted Equipment Recalculation (1.5x Rule): Recalculated sell prices across all 16 Sunken Citadel crafted equipment items strictly following the standard 1.5x ingredient cost rule (Shark Dagger 192L, Shark Sword 216L, Trench Stiletto 414L, Coral Axe 279L, Coral Bow 75L, Coral Staff 261L, Coral Armor 210L, Abyssal Chitin Jacket 870L, Siren Robe 171L, Siren Coral Combat Robe 534L, Coral Helmet 129L, Coral Boots 327L, Coral Gloves 195L, Spiral Hat 231L, Abyssal Chitin Buckler 1458L, Abyssal Chitin Dagger 2568L), capping raw dungeon velocity at ~804 gold/hour."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.9",
+    "date": "08/11/2026",
+    "groups": [
+      [
+        "Combat & Raid Boss Mechanics — The Hadal Abyss & Leviathan:",
+        "Leviathan Boss Redesign: Renamed the apex boss from Mature Leviathan to Leviathan, reduced base HP from 160,000 to 80,000, adjusted Defense to 80, and reinforced Magic Defense to 360, sharpening the encounter's magic-check identity;",
+        "Tidal Cataclysm Rebalance: Above 65% HP, strikes all enemies for 120% magic damage and reduces their attack speed by 25%. Below 65% HP, unleashes 200% magic damage across all enemies and inflicts TERRIFY for 4 turns (skips turns and takes 20% max HP as magic damage);",
+        "Abyssal Sovereign Hadal Rage: Redesigned the below 25% HP (or 15% if both Ancient Obelisks are shattered) enrage buff to grant an additive +125% Attack Speed bonus instead of setting flat speed to 125, elevating enrage speed to a devastating 225% total attack rate;",
+        "Abyssal Obelisk Repulsion Timer: In Rooms 6 and 10, the Abyssal Obelisk tracks 5 combat rounds. If an expedition without the Abyssal Amulet cannot shatter the obelisk within 5 turns, a colossal benthic shockwave repels the party into the next room (taking 0 damage), bypassing the 400-turn combat stall while leaving Leviathan's barrier intact."
+      ],
+      [
+        "Economy & Crafting Balancing — Hadal Deep-Sea Equipment:",
+        "Material Value Rebalance: Realigned raw mythic material prices with campaign progression — Heart of the Leviathan (12,000L → 1,200L), Leviathan Scale (1,800L → 900L), and Trench God's Pearl (8,500L → 1,500L);",
+        "Crafted Equipment Pricing (1.5× Rule): Recalculated workshop finished goods prices strictly following the standard 1.5× ingredient margin formula — Abyssal Amulet (4,500L → 5,325L), Aegis of the Challenger Deep (18,000L → 11,250L), and Crown of the Benthic Sovereign (15,000L → 9,225L);",
+        "Hadal Gear Stat Adjustments: Retuned Aegis of the Challenger Deep to 450 HP, 35 Constitution, and +25 Magic Defense; tuned Crown of the Benthic Sovereign to 50 Intelligence;",
+        "Drop Rate Refinements: Standardized Legate Hadrian vial drops (Evo-21 and Evo-23 Vials) to a clean 5% single drop rate, and adjusted Trench Wyvern Coral drops to 1x."
+      ],
+      [
+        "Bug Fixes & Loot Tables — Wicked Tribute:",
+        "Hellish Rations Drop Rate: Fixed an issue with Wicked Tribute's loot table in the Hidden City of Larox, ensuring Hellish Rations reliably drops at its intended 10.7% rate."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.21.8",
+    "date": "07/11/2026",
+    "groups": [
+      [
+        "Combat Balance & Mechanics — Uncleansable Status Effects:",
+        "Uncleansable Debuffs: Certain combat penalties and recoil stuns (such as Serpent Sting) can no longer be cleansed by healers or resisted by high Wisdom, ensuring intended recoil drawbacks cannot be bypassed;",
+        "Healer AI Optimization: Cleanse skills and healer targeting now strictly target cleansable debuffs, preventing allies from wasting healing turns trying to cleanse permanent effects;",
+        "Keen Vision Physical Critical Buff: Keen Vision now grants +10% Physical Critical Strike Chance and +25% Physical Critical Strike Damage across all 7 units in the Marksman / Celestial Rain branch, rewarding sniper builds with lethal critical volleys;",
+        "Alchemist Branch Accuracy Tuning: Removed the innate +15% hit chance bonus from the Alchemist branch (Alchemist, Elemental Alchemist, Esoteric Alchemist, Eldritch Alchemist) to encourage proper accuracy itemization for explosive builds;",
+        "Skill Tooltips Updated: Updated Keen Vision and Thaumaturgy descriptions to accurately reflect current hit, critical, and status mechanics."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.21.7",
     "date": "07/11/2026",
     "groups": [
@@ -32,22 +395,20 @@
     "groups": [
       [
         "Economy & Crafting Balancing — Axe Weapon Progression:",
-        "Material Quantity Realignment: Increased raw ingot and component requirements for BlackIronAxe (3 -> 15 Black Iron Ingots, 3 -> 5 Ghostwood Boards), FrostmetalAxe (1 -> 18 Frostmetal Ingots, 3 -> 6 Winterwood), FrozenLongAxe (1 -> 2 Frost Nuclei, 5 -> 10 Frost Crystals), and PrimevalAxe (100 -> 160 Elysian Wood, 3 -> 12 Primeval Scales) to match standard weapon tier metallurgy and crafting costs;",
-        "Vanilla 1.5x Economy Formula Alignment: Normalized base sell prices across all 24 craftable axes to strictly obey the engine pricing formula (ceil(total ingredient cost * 1.5)), eliminating arbitrage exploits while ensuring high-tier craftables (Abyssal Greataxe, Omni-Sever, Cursed axes) retain their proper endgame economic value;",
-        "Test Suite Verification: Added testAxeCraftingEconomyFormula to AxeWeaponsTest, mathematically verifying 100% price-to-recipe consistency across the axe weapon family."
+        "Material Quantity Realignment: Balanced raw metal and wood crafting requirements for Black Iron, Frostmetal, Frozen Long, and Primeval axes to match standard weapon tier costs;",
+        "Economy Formula Alignment: Normalized base sell prices across all 24 craftable axes strictly following the 1.5x ingredient cost formula, ensuring endgame axes retain their intended economic value."
       ],
       [
         "Combat & Status Effects — Pack Howl & Inspire Rebalance:",
-        "New Status Effect (Pack Howl): Introduced StatusEffectType.PACK_HOWL granting +20% damage multiplier and +15% critical strike chance bonus;",
-        "Wolf Minion Skill Integration: Replaced Inspire on wolf pack ability with Pack Howl, properly distributing localized pack buffs to all surviving allies for 2 turns;",
-        "Inspire & Exalt Rebalance: Decoupled critical chance bonus from Inspire to preserve clean vanilla behavior (+25% damage multiplier without crit scaling), ensuring clear separation between combat buffs."
+        "New Status Effect (Pack Howl): Introduced Pack Howl granting +20% damage and +15% critical strike chance bonus;",
+        "Wolf Minion Skill Integration: Replaced Inspire on wolf pack ability with Pack Howl, distributing localized pack buffs to all surviving allies for 2 turns;",
+        "Inspire & Exalt Rebalance: Decoupled critical chance bonus from Inspire to preserve clean vanilla behavior (+25% damage multiplier without crit scaling)."
       ],
       [
-        "Bug Fixes & Exploits — Pet Ability Slot Enforcement (Evo-20):",
-        "Species Slot Capacity Gate: In DialogChangePetAbility, strictly restricted visible and modifiable ability slots to the pet's species capacity (minOf(4, abilityNumber)), ensuring 2-trait pets (Dove, Rat, Lizard) only display slots 1-2 and 3-trait pets only display slots 1-3;",
-        "Unlock Condition Validation: Corrected logical OR check in isSlotUnlocked() to enforce both species slot ownership and the requisite unlock level (lvl 1 for slot 1, lvl 21 for slot 2, lvl 41 for slot 3, lvl 61 for slot 4), preventing tier 1/2 pets from selecting higher slots upon reaching level milestones;",
-        "Combat Calculation Hardening: In Pet.configureAbilities(), guarded slots 2, 3, and 4 against pet.abilityNumber to ensure out-of-capacity traits never grant phantom stats or combat perks (e.g. Lifesteal);",
-        "Save Sanitization (Exploit Cleanup): In DataDeserializer and Pet.getInstance(), automatically hard-stripped any abilities exceeding a pet's natural species capacity back to EMPTY on save load without refund."
+        "Bug Fixes & Pets — Pet Ability Slot Enforcement (Evo-20):",
+        "Species Slot Capacity: Ability slots in the pet shelter now strictly respect species limits (2 slots for Dove, Rat, Lizard; 3 slots for tier-2 pets; 4 slots for pinnacle pets), preventing lower-tier pets from accessing higher slots upon leveling;",
+        "Slot Unlock Milestones: Enforced required unlock levels (Lv 1 for slot 1, Lv 21 for slot 2, Lv 41 for slot 3, Lv 61 for slot 4) alongside species slot ownership;",
+        "Exploit Cleanup: Automatically removed any excess or out-of-capacity traits from pets on save load to prevent unintended stat bonuses."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -58,14 +419,13 @@
     "groups": [
       [
         "Raids & Automation — Pinnacle Raid Auto-Raid Restriction:",
-        "Pinnacle Raid Restrictions: Restricted Auto-Raid automation on Celestial Mothership and The Sanguine Crucible (isAutoRaidAllowed = false) to ensure endgame boss encounters retain active tactical engagement;",
-        "UI Visual Feedback & Toast: In DialogSendTeam, the AUTO-RAID button appears visually dimmed (40% opacity) on restricted raids, displaying an explanatory toast ('Auto-Raid is unavailable for this raid.') upon tap;",
-        "Engine Lifecycle Enforcement: Area.handleAutoRaidCycle() strictly enforces raid eligibility, immediately halting execution and clearing active automation state if a restricted raid cycle is invoked."
+        "Pinnacle Raid Restrictions: Disabled Auto-Raid on Celestial Mothership and The Sanguine Crucible to ensure endgame pinnacle bosses retain active tactical engagement;",
+        "UI Visual Feedback: The AUTO-RAID button appears dimmed (40% opacity) on restricted raids, displaying an explanatory toast message when tapped."
       ],
       [
         "Bug Fixes & Encounters — The Hadal Abyss Obelisk Crash:",
-        "Resonance Strike Log Fix: Resolved a ClassCastException crash when striking an Abyssal Obelisk with an Abyssal Amulet equipped, passing the localized string resource (log_obelisk_resonance_strike) and hero class ID to Logger.EVENT_SIGNIFICANT;",
-        "Shatter & Reinforcement Safety: Hardened Logger.EVENT_SIGNIFICANT, Area.checkDeath() and DialogDungeonDetail to safely handle multi-type formatting, idempotent enemy corpse registration, and concurrent unit roster lookups when the obelisk breaks and benthic reinforcements spawn."
+        "Crash Fix: Resolved a game crash when striking the Abyssal Obelisk while wearing the Abyssal Amulet;",
+        "Obelisk Shatter Stability: Improved stability when the obelisk breaks and deep-sea reinforcements spawn into the battle."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -90,9 +450,9 @@
       ],
       [
         "Combat & Pets — Area Regeneration & Ability State Management:",
-        "Area-Aware Pet Regeneration: Integrated pet regeneration bonuses directly into Adventurer.calculateTotalRegeneration(currentArea), ensuring Soothing pet regeneration applies during dungeon exploration and displays accurately in hero stat inspect dialogs;",
-        "Pet Ability State Isolation: Added complete ability state reset (zeroing all pet ability attributes) in Pet.configureAbilities() prior to reconfiguring, preventing stale bonuses or lingering attributes when changing pet loadouts;",
-        "Pet Ability UI Formatting: Enhanced DialogChangePetAbility with clean HTML formatting to clearly display dynamic ability numbers and scaling."
+        "Area-Aware Pet Regeneration: Soothing pet regeneration now applies during dungeon exploration and displays accurately in hero stat inspect dialogs;",
+        "Pet Ability State Isolation: Fixed an issue where switching pet loadouts could leave lingering bonus attributes on pets;",
+        "Pet Ability UI Formatting: Enhanced the pet ability selection dialog to clearly display dynamic numbers and ability scaling."
       ],
       [
         "Hero Balance — Eldritch Alchemist Poison Tuning:",
@@ -106,10 +466,10 @@
     "date": "01/11/2026",
     "groups": [
       [
-        "Combat Engine Fix — Equipment Scaling for Status Effects:",
-        "Ablaze Damage Scaling: Fixed a bug where ABLAZE status effect damage did not scale with gear (Stellar Staff, Cloak of Redemption, Tunica Ignis, Ignition Orb, Sun Staff, Tunica Infernalis) due to direct field access bypassing Adventurer.getOnFireBonusDamage();",
-        "Frozen Damage Scaling: Fixed an identical issue where Frozen status damage bypassed Adventurer.getFreezeBonusDamage(), preventing Frozen Egg Pendant (+40 Freeze damage) from taking effect;",
-        "Regeneration Scaling: Fixed an identical issue where Regeneration turn ticks bypassed Adventurer.getRegenerationBonus(), preventing Armor of the Undying and Phylactery (+5% Regeneration bonus) from taking effect."
+        "Combat Balance — Equipment Scaling for Status Effects:",
+        "Ablaze Damage Scaling: Fixed an issue where fire damage bonuses from gear (Stellar Staff, Cloak of Redemption, Tunica Ignis, Ignition Orb, Sun Staff, Tunica Infernalis) did not scale Ablaze burn ticks;",
+        "Frozen Damage Scaling: Fixed an issue where freeze damage bonuses from gear (Frozen Egg Pendant) did not apply to Frozen status ticks;",
+        "Regeneration Scaling: Fixed an issue where regeneration gear bonuses (Armor of the Undying, Phylactery) did not apply during turn-by-turn health recovery."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -122,7 +482,7 @@
         "Workshop Recipes Dialog — Order by Price:",
         "Price Sorting: Added an 'Order by: Price' option in the Workshop Recipes dialog, sorting unlocked recipes descending by the sell price of the resulting crafted item (matching Storage dialog conventions);",
         "Optimized Pre-Mapped Sort: Implemented a single-pass price map prior to sorting to avoid repeated reflection lookups during sort comparisons, guaranteeing instantaneous, stutter-free ordering;",
-        "Dynamic UI Layout Barrier: Added an adaptive ConstraintLayout barrier in dialog_recipes.xml to ensure the filter options and recipe list dynamically adjust on all screen sizes and font scales without clipping or overlap."
+        "Dynamic UI Layout Barrier: Added an adaptive layout barrier in the recipe dialog to ensure filter options and recipe lists dynamically adjust on all screen sizes without clipping or overlap."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -132,12 +492,11 @@
     "date": "28/10/2026",
     "groups": [
       [
-        "Save Loss Prevention & Dedicated Session Checkpoint System:",
-        "Dedicated Checkpoint (dbackup.txt): Introduced an isolated session checkpoint that only records verified game states after successful deserialization and idle simulation, keeping it 100% immune from the 3-second auto-save loop;",
-        "3-Tier Load Fallback: Implemented automatic fallback to dbackup.txt if active saves (data.txt and databackup.txt) fail to load, protecting players from catastrophic save wipes on crash or corruption;",
-        "Lockdown Protocol: Added total save failure protection (inhibitSave = true) to prevent blank saves from overwriting damaged disk files, while allowing valid save imports to cleanly lift the lockdown;",
-        "Atomic File Writes & Thread Safety: Converted all save write operations to AtomicFile with thread synchronization, eliminating 0-byte file truncations during unexpected app swipe-close (SIGKILL);",
-        "DataDeserializer Hardening: Added safe parsing guards for KingMessage, StatusEffectType, and AltarEffectType enums to ignore unrecognized entries rather than crashing save loading."
+        "Save Loss Prevention & Session Checkpoints:",
+        "Dedicated Session Checkpoint: Introduced an isolated checkpoint that records verified game states after successful startup, immune from accidental overwrite loops;",
+        "Automatic Save Fallback: Implemented automatic fallback to session backups if active save files encounter errors, protecting players from lost progress on crashes;",
+        "Save Corruption Protection: Added safety locks to prevent empty saves from overwriting damaged data, ensuring corrupted saves can be safely restored or imported;",
+        "Safe File Saving: Upgraded file writing to prevent empty or truncated files when closing the app unexpectedly."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -147,10 +506,10 @@
     "date": "26/10/2026",
     "groups": [
       [
-        "Combat Engine Fix — Dynamic Darkness Scaling for Benthic Luminescence:",
-        "Dynamic Darkness Scaling: Resolved a bug where Gloom Angler Snapper and Benthic Luminescence (PASSIVE_ABYSSAL_BIOLUMINESCENCE) had hardcoded +100% Attack Speed and Damage Dealt rather than scaling with local room darkness;",
-        "Illumination Interaction: Damage Dealt, Attack Speed, and Hit Rate now scale dynamically with [2 × localDarkness]% (reaching +100% in unlit Sunken Citadel at 50 Darkness, and properly reducing to 0% bonus when Darkness is illuminated to 0 by Angel of War, Lanterns, or Holy Knights);",
-        "UI & Area Context Binding: Bound active dungeon/raid area context across Entity, Enemy, EliteEnemy, and DialogEntityStatsDetail so monster stat inspect dialogs and combat engine calculations accurately reflect effective room darkness."
+        "Combat Balance — Darkness Scaling for Benthic Luminescence:",
+        "Dynamic Darkness Scaling: Fixed an issue where Gloom Angler Snapper had fixed +100% stats; damage dealt, attack speed, and hit rate now scale dynamically with room darkness (up to +100% at 50 Darkness, reduced to 0% when fully illuminated);",
+        "Illumination Counterplay: Illuminating rooms using Angel of War, Lanterns, or Holy Knights now effectively neutralizes abyssal predator speed and damage bonuses;",
+        "Live Stats Inspection: Enemy inspection dialogs now accurately reflect effective room darkness in real time."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -161,7 +520,7 @@
     "groups": [
       [
         "Combat Engine Fix — Multi-Strike Critical Amplification Scaling:",
-        "Avatar of Wrath & Blood Reaver Critical Scaling: Refactored executeMultiStrike() to apply criticalAmplification (2.0x for Bloody Slaughter and Blessing of Slaughter; 3.0x for Rapid Exploitation) multiplicatively on base critical damage rather than replacing it with a flat multiplier;",
+        "Avatar of Wrath & Blood Reaver Critical Scaling: Multi-strike abilities (Bloody Slaughter, Blessing of Slaughter, Rapid Exploitation) now multiply their critical damage bonuses with equipment, potions, and traits rather than replacing them with a flat multiplier;",
         "Gear & Trait Crit Scaling: Adventurers with critical damage bonuses from weapons, armor, accessories, potions, and the Ruthless trait now properly scale their critical damage output during multi-strike active skills."
       ]
     ],
@@ -172,11 +531,10 @@
     "date": "26/10/2026",
     "groups": [
       [
-        "Fix — Summoned Companion Lifecycle & Tombstone Prevention:",
-        "Dungeon Trap Lethal Cleanup: Invoked checkDeath() upon applying lethal environmental room trap damage in The Golden City and The Lost Expedition, properly removing deceased summons from exploration and fighting rosters;",
-        "Defensive Summon Despawn: Purged any dead or orphaned summons from adventurersExploring and fightingGroup in spawnMinionForBeastTamer(), preventing dead companions from lingering or exceeding summon caps;",
-        "Tombstone Rendering Guard: Guarded DialogDungeonDetail to ensure summoned minions never render as tombstones (R.drawable.tombstone) or occupy active formation slots upon death;",
-        "Defensive Death Threshold: Updated Area.checkDeath() condition to currentHp <= 0 for resilient lifecycle cleanup across all combat and status damage resolutions."
+        "Bug Fixes — Summoned Companion Lifecycle & Visuals:",
+        "Dungeon Trap Cleanup: Fixed an issue where lethal environmental room traps in The Golden City and The Lost Expedition failed to clean up deceased animal summons;",
+        "Summon Cap Safety: Cleared fallen companions promptly so dead summons do not linger or prevent new summons;",
+        "Tombstone Visual Fix: Summoned minions no longer display as tombstones in the dungeon formation view when defeated."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -252,18 +610,16 @@
       [
         "Enemy Skills & Tooltips — Status Effects & Immunities:",
         "Sunken Citadel Skill Clarity & Formatting: Added explicit uppercase status effect definitions (BLEED, SILENCE, CONFUSE, STUN, BLIND, ENTANGLE) with structured line breaks across enemy active and passive abilities (Pelagic Frenzy, Whispers of the Deep, Crushing Reflexes, Crushing Tremor, Sirens' Discord, Blinding Esca Flash, Verdant Briars);",
-        "Sanguine Sentinel Passive: Implemented dedicated PASSIVE_SANGUINE_SENTINEL for Bloodstone Colossus (replacing Threatening IV), granting 5× targeting priority and detailing complete immunity to ABLAZE, BLOODFLAME, BLEED, and POISON in its description;",
-        "Sanguine Crucible Status Immunities: Updated Blood Convocation and Martyr's Pact passive descriptions to explicitly document complete immunity to ABLAZE and BLOODFLAME."
+        "Sanguine Sentinel Passive: Implemented dedicated Sanguine Sentinel passive for Bloodstone Colossus (replacing Threatening IV), granting 5× targeting priority and complete immunity to Ablaze, Bloodflame, Bleed, and Poison;",
+        "Sanguine Crucible Status Immunities: Updated Blood Convocation and Martyr's Pact passive descriptions to explicitly document complete immunity to Ablaze and Bloodflame."
       ],
       [
-        "Combat Engine & Battle Logs — Status Effect Log Descriptions:",
-        "Rage Log Description: Fixed StatusEffectType.RAGE to use its dedicated status_effect_rage_log_description ('enraged.') rather than displaying the verbose mechanic description in combat battle logs;",
-        "Confuse & Blind Log Descriptions: Added dedicated status_effect_confuse_log_description ('confused') and status_effect_blind_log_description ('blinded') so StatusEffectType.CONFUSE and StatusEffectType.BLIND report natural combat log messages rather than full mechanic descriptions."
+        "Combat Battle Logs — Status Effect Descriptions:",
+        "Combat Log Clarity: Simplified combat log descriptions for Rage, Confuse, and Blind so battle logs report natural status messages instead of full mechanic tooltips."
       ],
       [
         "Lore & Storyline — The Sunken Citadel Royal Proclamation:",
-        "King's Message 18 (The Sunken Citadel): Added KingMessage.MESSAGE_18 containing an official royal missive from King Roderic XXXI when unlocking The Sunken Citadel, warning of crushing hydrostatic water pressure, hypothermia, and ancient leviathan fauna;",
-        "Save Migration & Retroactive Grant: Added retroactive grant in DataDeserializer so existing save files with The Sunken Citadel already unlocked automatically receive the new parchment missive."
+        "King's Message 18 (The Sunken Citadel): Added a royal proclamation from King Roderic XXXI when unlocking The Sunken Citadel, warning of crushing water pressure, hypothermia, and ancient leviathan fauna (retroactively granted to unlocked saves)."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -276,7 +632,7 @@
         "UI & Layout Fixes — Equipment Selection & Bestiary:",
         "Select Equipment Dialog Layout Alignment: Removed unintended container bottom padding to restore perfect alignment between the equipment icon border and outer card border;",
         "Select Equipment Description Overlap: Added a constraint barrier beneath item stat rows so that equipment effects/descriptions never collapse over positive stat gains when negative stat differences are absent;",
-        "Tiger Shark Entity Detail Crash: Initialized Tiger Shark activeSkill to ACTIVE_NONE and added defensive resource handling in DialogEntityDetail to prevent crashes when opening details for units without active abilities."
+        "Tiger Shark Detail Crash: Fixed a crash when inspecting Tiger Shark in the Bestiary."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -339,10 +695,9 @@
         "UI Streamlining & Protection: Enhanced the relic upgrade modal with visual success percentage displays, compact button design, and safety debouncing; updated Relic Select to clearly prioritize relic main stats while keeping full detail views available."
       ],
       [
-        "Shop & Storage — Guild Initiate Pack Save Migration Fix:",
-        "Save Migration Key Isolation: Refined legacy shop migration in DataDeserializer to check for the absence of modular shop keys (!asJsonObject.has) rather than checking boolean state;",
-        "Storage Room Isolation: Purchasing the Guild Initiate Pack (+1 Quarters, +1 Tavern, +1 Workshop Queue, +1 Market Listing) now strictly respects storage limits and will no longer erroneously auto-grant +35 storage spaces or unlock the Minor Storage Expansion on save reload;",
-        "Modular Bundle Integrity: Preserved full backward compatibility for genuine legacy vanilla saves while ensuring modern modular storage packs (Minor, Standard, Grand) remain distinct and independent."
+        "Shop & Storage — Guild Initiate Pack Storage Fix:",
+        "Storage Limit Protection: Purchasing the Guild Initiate Pack (+1 Quarters, +1 Tavern, +1 Workshop Queue, +1 Market Listing) strictly respects storage limits and will no longer erroneously auto-grant +35 extra storage spaces on save reload;",
+        "Modular Pack Independence: Preserved full compatibility for legacy saves while ensuring modern modular storage packs remain distinct and independent."
       ],
       [
         "Dungeon Mechanics — Eternal Battlefield Will-o'-Wisp & Orb of Ectoplasm Rework:",
@@ -358,15 +713,10 @@
     "date": "17/10/2026",
     "groups": [
       [
-        "Combat Engine — Animal Affinity for Beast Tamer Summons:",
-        "Living Companion Damage Scaling: Extended Animal Affinity (livingCompanionBonusDamage, granted by Archaic Amulet and companion gear) to directly amplify the outgoing damage of Beast Tamer animal summons (Rats, Cats, Weasels, Wolves, Tigers, Bears, Owlbears) by +1% per point;",
-        "Full Attack & Skill Support: Animal Affinity scaling applies to both basic attacks and active companion skills (Rabid Bite, Feline Pounce, Frenzied Flurry, Pack Howl, Predatory Ambush, Ursine Roar, Apex Rampage);",
-        "Undead Minion Exclusion: In accordance with the canonical item specification ('living creatures controlled'), Undead minions from the Necromancer line (Skeletons, Zombies, Bone Hydras) are excluded from Animal Affinity scaling."
-      ],
-      [
-        "Combat Engine — Lone Wolf Trait Summon Exclusion:",
-        "Summon Filtering: Lone Wolf (Trait.LONE_WOLF) now counts only deployed hero party members when evaluating living allies, completely ignoring temporary combat summons;",
-        "Summoner Synergy: Active summons from both the Beast Tamer branch (living companions) and Necromancer branch (undead minions) no longer dilute or reduce the Lone Wolf damage bonus (+5% damage per missing/fallen party slot)."
+        "Combat Balance — Animal Affinity & Lone Wolf for Summons:",
+        "Living Companion Damage Scaling: Extended Animal Affinity (granted by Archaic Amulet and companion gear) to directly amplify the outgoing damage of Beast Tamer animal summons (Rats, Cats, Weasels, Wolves, Tigers, Bears, Owlbears) by +1% per point across both basic attacks and active skills;",
+        "Undead Minion Exclusion: Undead minions from the Necromancer line are excluded from Animal Affinity scaling to honor living creature equipment conditions;",
+        "Lone Wolf Summon Filtering: Lone Wolf now counts only fallen hero party members, ensuring active summons from Beast Tamers and Necromancers do not dilute or reduce the Lone Wolf damage bonus (+5% damage per missing/fallen party slot)."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -434,7 +784,7 @@
         "Combat Balance — Outlander Beast Tamer & El Salvador Scaling:",
         "Beast Tamer Apex Summon Capacity: Increased the maximum companion summon cap from 1 to 2 for Tier 7–9 Beast Tamers (Tiger Tamer, Bear Tamer, and Beast Tamer), allowing up to 2 Tigers, Bears, or Owlbears on the battlefield simultaneously;",
         "El Salvador INT Weapon Scaling: Introduced progressive Intelligence weapon attack scaling across the Exile / El Salvador skirmisher line, starting at 1.1 (110%) on T3 Exile and increasing by +0.1 per tier up to 1.7 (170%) on T9 El Salvador (T3 Exile: 1.1, T4 Bandit: 1.2, T5 Vagabond: 1.3, T6 Brigand: 1.4, T7 Renegade: 1.5, T8 Desperado: 1.6, T9 El Salvador: 1.7);",
-        "Tooltips & Descriptions Synchronized: Updated Tiger Caller, Bear Caller, and Beast Caller passive descriptions in strings.xml to reflect the new (max 2) pet capacity."
+        "Tooltips & Descriptions Synchronized: Updated Tiger Caller, Bear Caller, and Beast Caller passive descriptions to reflect the new (max 2) pet capacity."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -445,7 +795,7 @@
     "groups": [
       [
         "Fix — Outlander Savage Rage Trigger & Buff Icon:",
-        "Visual Buff Icon Integration: Hooked up StatusEffectType.RAGE (2 turns) in combat turn processing and damage resolution, ensuring the visual Rage icon appears above the unit and in the Battle Status Effects Inspector whenever attacking under the passive HP threshold;",
+        "Visual Buff Icon Integration: Hooked up the Rage visual buff icon (2 turns) in combat and damage resolution, ensuring the visual Rage icon appears above the unit and in status inspectors whenever attacking under the passive HP threshold;",
         "Threshold Verification: Preserved the canonical 50% HP threshold for T4–T7 (Berserker, Savage Berserker, Scarlet Berserker, Blood Reaver) and 75% HP threshold for T8–T9 (Crimson Warlord, Avatar of Wrath);",
         "Damage & Stats Deduplication: Guarded damage dealt (+30%) and damage taken (+30%) calculations against double-counting when the RAGE status effect is present, while ensuring raging units retain +100% Attack Speed and +25% Life Steal for the full 2 turns even if healed above the HP threshold."
       ]
@@ -471,7 +821,7 @@
     "groups": [
       [
         "Fix — Beast Tamer & Pet Summon Conflict:",
-        "Guarded Undead Reanimation: Restricted reanimate Soul Harvest stacks and undead minion spawning to necromancer classes (minionSummonClass != null), preventing non-necromancers (such as Beast Tamers) from having their summon slot hijacked by decaying undead when cursed enemies die;",
+        "Guarded Undead Reanimation: Restricted undead reanimation and Soul Harvest stacks to necromancer classes, preventing non-necromancers (such as Beast Tamers) from having their summon slot hijacked by decaying undead when cursed enemies die;",
         "Pet Targeting Minion Exclusion: Excluded summoned minions from being selected as the target for the Pet Magic trait's TAUNT and CURSE status effect casts, preventing companion focus-fire loops and inadvertent summon replacement."
       ]
     ],
@@ -509,13 +859,13 @@
       [
         "Combat Balance — Celestial Rain Branch Accuracy Rebalance:",
         "Removed Guaranteed Hit ('Always Hits'): Removed innate 100% guaranteed hit from the Marksman, Sureshot, Fury, Hailstorm, Tempest, Hurricane, and Celestial Rain sniper line, restoring evasion counterplay against archers;",
-        "+30% Hit Chance Bonus: Granted a flat +30% Hit Chance bonus (hitChanceBonus = 0.30) across all 7 units in the branch;",
+        "+30% Hit Chance Bonus: Granted a flat +30% Hit Chance bonus across all 7 units in the branch;",
         "Keen Vision Tooltip: Updated Keen Vision passive description across all languages to 'Hit chance is increased by 30%';",
         "Focused Trait Synergy: Stacks additively with the Focused trait for up to +55% total hit chance bonus."
       ],
       [
         "Combat Balance — Archer Branch Accuracy Tuning (+15% Hit Chance):",
-        "Reduced Branch Hit Chance Bonus: Reduced the innate passive hit chance bonus of the Rider (T3–T9), Poison Bow / Corrosive Wraith (T4–T9), and Alchemist (T6–T9) branches from +25% down to +15% (hitChanceBonus = 0.15);",
+        "Reduced Branch Hit Chance Bonus: Reduced the innate passive hit chance bonus of the Rider (T3–T9), Poison Bow / Corrosive Wraith (T4–T9), and Alchemist (T6–T9) branches from +25% down to +15%;",
         "Preserved Celestial Rain Identity: The Celestial Rain sniper branch retains its superior +30% hit chance bonus, establishing it as the supreme high-accuracy archer specialization while balancing overall archer reliability against evasive targets;",
         "Passive Tooltips Synchronized: Updated descriptions across all 16 affected passives (Rider I–VII, Poisonous Arrows I–III, Poisonous Blood, Corrosive Blood, and Thaumaturgy I–IV) to reflect the 15% miss chance reduction."
       ],
@@ -629,10 +979,10 @@
     "groups": [
       [
         "Adventurers — Archer Accuracy Specialization & Focused Passives:",
-        "Exclusive Sniper Identity: The Marksman / Celestial Rain branch retains exclusive ownership of PASSIVE_KEEN_VISION ('Attacks always hit the target') as their signature unerring sniper identity;",
+        "Exclusive Sniper Identity: The Marksman / Celestial Rain branch retains exclusive ownership of Keen Vision ('Attacks always hit the target') as their signature unerring sniper identity;",
         "Focused Accuracy Passives (+25% Hit Chance): The Alchemist, Corrosive Wraith, and Wyrm Rider branches now grant 'Chances to miss reduced by 25%' (additive hit bonus matching the Focused trait) across all their respective passives (Poisonous Arrows I–III, Poisonous Blood, Corrosive Blood, Thaumaturgy I–IV, and Rider I–VII);",
         "Trait Stacking Synergy: This class hit bonus stacks additively with the Focused trait (up to +50% miss reduction total), ensuring reliable status infliction against evasive targets while preserving evasion counterplay;",
-        "Updated Skill Tooltips: Synchronized in-game passive descriptions across all 16 affected skills in strings.xml to clearly display the 25% miss chance reduction."
+        "Updated Skill Tooltips: Synchronized in-game passive descriptions across all 16 affected skills to clearly display the 25% miss chance reduction."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -688,7 +1038,7 @@
         "Combat UI & Battle Logs — Status Effect Descriptions & Stack Tracking Cleanup:",
         "Concise Battle Log Descriptions: Replaced multi-sentence tooltip descriptions in combat logs with concise, grammatically natural descriptors for 10 status effects (Corrosion, Enfeeble, Entangle, Radiant Blessing, Solar Rebirth, Brittle Toxin, Sinister Curse, Soul Harvest, Sanguine Fervor, and Bloodflame);",
         "Live Stack Tracking in Battle Logs: When stacking buffs and debuffs (Corrosion, Enfeeble, Sanguine Fervor, Soul Harvest) gain multiple stacks, the battle log now dynamically appends the stack counter (e.g. 'is corroded (x3) for 3 turns', 'is empowered by Sanguine Fervor (x4)');",
-        "Status Inspection Dialog Stacks: Fixed stack count display in the Live Battle Status Effects inspector (DialogBattleStatusEffects) for permanent stacking buffs (Sanguine Fervor and Soul Harvest)."
+        "Status Inspection Dialog Stacks: Fixed stack count display in the Live Battle Status Effects inspector for permanent stacking buffs (Sanguine Fervor and Soul Harvest)."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -714,7 +1064,7 @@
     "groups": [
       [
         "Pet System — Inspection & Preview in Team Dispatch & Pet Selection:",
-        "Pet Preview on Long-Press: Holding (long-pressing) any pet in the pet selection dialog (DialogChoosePet) or holding the assigned pet slot in the team dispatch dialog (DialogSendTeam) now opens the pet detail dialog with haptic feedback, allowing players to inspect abilities, stats, level, and descriptions before dispatching;",
+        "Pet Preview on Long-Press: Holding (long-pressing) any pet in the pet selection dialog or holding the assigned pet slot in team setup opens the pet detail dialog with haptic feedback, allowing players to inspect abilities, stats, level, and descriptions before dispatching;",
         "Safe Read-Only Mode: When inspecting pets from team setup, destructive actions (Merge and Set Free) are hidden to prevent accidental changes while assembling dungeon or raid teams."
       ]
     ],
@@ -804,7 +1154,7 @@
       ],
       [
         "Combat Engine — Boss Classification System:",
-        "Boss Property Integration: Introduced isBoss() classification on Entity and Enemy architectures for specialized targeting and encounter dynamics;",
+        "Boss Property Integration: Introduced boss classification for specialized targeting and encounter dynamics;",
         "Boss Flagging: Slime King and Archmagus Valthex are officially flagged as Boss-type enemies for priority targeting."
       ]
     ],
@@ -843,7 +1193,7 @@
     "groups": [
       [
         "Traveling Merchant — Unique Item Recovery & Duplication Fix:",
-        "Fixed Phantom Evolved Item Re-offers: corrected listUniqueDropsMissing() to recursively purge all ancestor items (e.g. owning or seeing Sha now reliably purges Divine Larvae, Divine Embryo, and Divine Zygote even if intermediate recipe records were missing);",
+        "Fixed Phantom Evolved Item Re-offers: Purged all ancestor items when evaluating unique drops (e.g. owning or seeing Sha reliably clears Divine Larvae, Divine Embryo, and Divine Zygote even if intermediate recipe records were missing);",
         "Hierarchical Ownership Check: possessing an evolved boss accessory (like Sha or Amulet of the Swordsman) now automatically satisfies possession of all predecessor stages, preventing intermediate items from falsely appearing in the Traveling Merchant for 1 gem;",
         "Expanded Storage Scans: added active market listings, unclaimed sold market items, and dismissed adventurers to the possession scanner to eliminate duplicate generation when unique gear is temporarily listed or stored on retired heroes."
       ]
@@ -858,7 +1208,7 @@
         "Guild Activities — Weekly Siege Reset Fix:",
         "Fixed Locale-Dependent Siege Rollover: corrected the week boundary calculation to lock to the game engine's Sunday 00:00:00 boundary regardless of device locale; players in Monday-first locales (Europe, Asia, UK, etc.) now correctly reset their weekly Siege attempt on Sunday midnight matching the in-game countdown timer;",
         "Fixed Unattached Fragment State Loss: decoupled triesAvailable updates from Android view binding availability in both The Siege and The Hunt so weekly/daily attempts reliably reset in memory even during background ticks or before navigating to the Guild Activities tab;",
-        "Instant Startup Catch-Up: added immediate ensureActivities() check on game boot so overdue daily/weekly resets are applied the millisecond the save file loads."
+        "Instant Startup Catch-Up: Added immediate activity checks on game startup so overdue daily and weekly resets apply the moment the save file loads."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -871,7 +1221,7 @@
         "Combat Engine — Hemorrhage & Thousand Cuts Fixes:",
         "Fixed Silent Hemorrhage Logs: Hemorrhage damage logs are no longer suppressed behind verbose logging; burst procs now always display in standard battle logs ('[Target] hemorrhaged. It lost [Dmg] damage!');",
         "Fixed Critical Hemorrhage Rate: corrected the critical roll calculation (which compared random against [0..100] instead of [0..1], reducing crit chance by 100x); Hemorrhage now properly rolls the inflicter's full critical chance and pet Savage super-crit tier;",
-        "Floating Damage & Death Animation: Hemorrhage damage now triggers visual floating combat text (animateDamage) and properly runs instant death handling (checkDeath) when lethal;",
+        "Floating Damage & Death Animation: Hemorrhage damage now triggers visual floating combat text and properly triggers instant death when lethal;",
         "Updated Skill Tooltips: Thousand Cuts and Thousand Cuts II descriptions now clearly explain both the Bleed stack application and the instant Hemorrhage burst mechanic."
       ],
       [
@@ -914,13 +1264,13 @@
     "groups": [
       [
         "Raid & Dungeon Corrections:",
-        "Fixed The Lost Expedition Avatar of the Ancient Multi-Spawn: fixed a decompilation flaw in rollEnemies() where empty narrative rooms (rooms 1, 3, 5, 6, 7, 11, 12, 13) fell through to the boss encounter return, causing the Avatar of the Ancient to be fought up to 9 times in a single raid run; empty rooms now cleanly return no enemies;",
+        "Fixed The Lost Expedition Avatar of the Ancient Multi-Spawn: fixed an issue where empty narrative rooms fell through to the boss encounter return, causing the Avatar of the Ancient to be fought up to 9 times in a single raid run; empty rooms now cleanly return no enemies;",
         "Eternal Battlefield Darkness Restored: restored dungeon darkness to 20, recovering the vanilla value lost during the initial Java-to-Kotlin migration;",
         "Celestial Mothership Encounters Aligned: added missing combat encounters for room 11 (5-unit Destroyer/Lancer fleet) and room 13 (5 Celestial Destroyers), and adjusted room 12/15 door encounters to match the intended encounter table."
       ],
       [
         "UI & Layout Refinements:",
-        "Dialog Entity Detail Page 3 Layout: reorganized tertiary stats into clean, balanced 5-row pairs matching Page 1 — Row 3: Attack Speed (alone), Row 4: Damage Dealt & Basic Atk Amp, Row 5: Damage Taken & Skill Amp;",
+        "Entity Detail Page 3 Layout: reorganized tertiary stats into clean, balanced 5-row pairs matching Page 1 — Row 3: Attack Speed (alone), Row 4: Damage Dealt & Basic Atk Amp, Row 5: Damage Taken & Skill Amp;",
         "Renamed 'Normal Atk Amp' to 'Basic Atk Amp' for clearer in-game terminology."
       ]
     ],
@@ -950,8 +1300,8 @@
         "Damage Systems — universal damage scaling & amplification (Baseline: 100%):",
         "Damage Dealt: unifies outgoing damage scaling into a single dynamic stat incorporating traits (Reckless +15%, Lone Wolf +5% per empty/fallen ally), doctrines (Ragebound +35%, Eye for an Eye +50% below 50% HP), buffs (Frenzy +30%, Anointed +25%, Sanguine Fervor +5%/stack, Delirium +100%), debuffs (Entangle -20%), and equipment;",
         "Damage Taken: unifies incoming damage vulnerability and damage reduction into a single additive stat incorporating traits (Dragon Blood -9% to -18%, Reckless +15%), doctrines (Ragebound +35%), debuffs (Sinister Curse +50%, Petrify +10%), and equipment (e.g. Dragon Blood Ascended Lv45 with Ragebound and Sinister Curse = 167% Damage Taken);",
-        "Normal Attack Amplification: scales basic weapon attacks (including extra strikes from Attack Speed) in dealDamage() and basic single-target round heals in heal();",
-        "Skill Amplification: scales active skill attacks in dealDamage() and active skill heals in heal();",
+        "Normal Attack Amplification: Scales basic weapon attacks (including extra strikes from Attack Speed) and basic single-target round heals;",
+        "Skill Amplification: Scales active skill attacks and active skill heals;",
         "UI & Modding Architecture: added Damage Dealt, Damage Taken, Normal Attack Amp, and Skill Amp to Page 3 of the hero and enemy inspection dialogs with interactive tooltips, pre-wired into Entity, Adventurer, Equipment, and Doctrine layers."
       ]
     ],
@@ -1055,7 +1405,7 @@
     "date": "29/9/2026",
     "groups": [
       [
-        "Fixed Blackwater Port never spawning Mysterious Tentacles during idle: the vanilla Kraken event was seeded inside rollEnemies() on empty rooms (dRandom ≥ 385), but the reconstruction incorrectly restructured the entire enemy table into a key-based branch that could never trigger the event seed. The rollEnemies() logic has been restored to match the original: empty rooms seed/advance the Kraken buildup (with a warning at 10 empty rooms), the next non-empty roll with progress ≥ 10 spawns 5 Mysterious Tentacles, and normal combat rooms reset the event so the buildup only counts empty rooms. Also restored: solo Tentacle encounters (dRandom < 11) and corrected enemy compositions and thresholds throughout."
+        "Fixed Blackwater Port never spawning Mysterious Tentacles during idle: restored the kraken encounter sequence on empty rooms so idle exploration correctly advances and triggers the kraken event, alongside solo Tentacle encounters and corrected room thresholds."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -1114,7 +1464,7 @@
     "date": "28/9/2026",
     "groups": [
       [
-        "Fixed the Doctrine of Affliction's Genus Vampyri not granting a shield when lifesteal overheals: the combat lifesteal block was reading the raw maxLifestealOverheal field (always 0) instead of the computed getMaxLifestealOverheal(), so the shield check never triggered. Lifesteal now converts overheal into a shield of up to 20% of max HP (at level 1 of Genus Vampyri) as intended."
+        "Fixed the Doctrine of Affliction's Genus Vampyri not granting a shield when lifesteal overheals: lifesteal now properly converts overheal into a shield of up to 20% of max HP (at level 1 of Genus Vampyri) as intended."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -1341,7 +1691,7 @@
     "date": "25/9/2026",
     "groups": [
       [
-        "Combat Engine: Added probabilistic end-of-turn actions (endOfTurnActionProbability on Entity, defaulting to 1.0) allowing units and enemies to configure chance-based end-of-turn actions (such as extra attacks) cleanly and declaratively."
+        "Combat Engine: Added support for chance-based end-of-turn actions, allowing units and enemies to trigger probabilistic extra attacks and abilities cleanly."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -1380,13 +1730,13 @@
     "date": "24/9/2026",
     "groups": [
       [
-        "Mod Info UI overhaul: the programmatic title/version/developer block is replaced by a dedicated dark-theme layout (dialog_mod_info.xml) with an app/version header and a Contributors & Credits section."
+        "Mod Info UI Overhaul: Replaced basic text with a dedicated dark-theme layout featuring version info, developer details, and contributor credits."
       ],
       [
-        "Added the ModContributors registry (ModContributor + ContributorRole with colored role badges) and the item_mod_contributor.xml card: new contributors are a one-line addition to ModContributors.ALL."
+        "Contributor Credits: Added a dedicated contributors registry with colored role badges celebrating community modders, translators, and contributors."
       ],
       [
-        "The changelog is now split into an active era file (v1.3.x, changelog/ModChangelogActive.kt) and a static archive (v1.0.x - v1.2.x, changelog/ModChangelogArchive.kt) behind the unchanged ModChangelog facade (allEntries()/VersionEntry), so future mod releases only touch the active file."
+        "Changelog Splitting: Split the changelog into active (v1.3.x) and archive (v1.0.x–v1.2.x) files for faster loading and streamlined updates."
       ],
       [
         "Mod Info now offers the header/version info and contributor credits with a Close button; the full changelog stays available through the sidebar's Changelog entry. The planned Support / Community button is deferred to a future release."
@@ -1419,7 +1769,7 @@
     "date": "24/9/2026",
     "groups": [
       [
-        "Fixed raids becoming free after the daily free try is used: the streamlined refill flow (introduced with Auto-Raid) opens the team-select dialog instead of the gem-refill dialog, but dispatch never charged. Sending a team — or starting an Auto-Raid — now deducts costToRefresh() gems (30) when no free try is available and refuses the dispatch with a \"Not enough gems\" warning when it can't be afforded, matching the vanilla refill price."
+        "Fixed raids becoming free after the daily free try is used: dispatching extra raid runs now correctly charges the 30-gem refill cost when no free daily attempt remains."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -1429,7 +1779,7 @@
     "date": "24/9/2026",
     "groups": [
       [
-        "Fixed a crash when pressing AUTO-RAID in the team-select dialog: the \"Stop on party wipe\" toggle was rendered with SwitchCompat, but the vanilla game does not ship its Material switch-thumb drawable (InflateException: abc_switch_thumb_material), so opening the Auto-Raid config dialog crashed the app. It is now a plain CheckBox (the game's own toggle widget) and the dialog opens reliably."
+        "Fixed a crash when pressing AUTO-RAID in the team-select dialog: replaced an incompatible switch widget with standard checkboxes, allowing the configuration dialog to open reliably."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -1464,7 +1814,7 @@
     "date": "24/9/2026",
     "groups": [
       [
-        "Fixed a crash after letting Auto-Raid idle for a long time (it appeared on \"Load Idle Progress\"): finishing a run refreshed the UI straight from the reporting/offline thread — the gem counter (`refreshGems`) and the Headquarters summary (`HeadquartersFragment.refresh`) both write to views from a background thread. Both refreshes now run on the main UI thread."
+        "Fixed a crash after letting Auto-Raid idle for a long time (it appeared on \"Load Idle Progress\"): fixed UI refresh thread conflicts on gem counters and headquarters summaries during background processing."
       ],
       [
         "Fixed The Sanguine Crucible ending the moment the boss died: the run was terminated on Archmagus Valthex's death before the Victory — Experience — Loot actions ran, so winning runs dropped no loot and granted no XP. The run now completes the loot/XP sequence and only then closes or re-dispatches."
@@ -1588,7 +1938,7 @@
         "Fixed the Sanguine Crucible crashing on open: the raid party size is now 14 (the engine's maximum adventurer slots, same as The Tower), so the team-selection dialog no longer throws."
       ],
       [
-        "The Sanguine Crucible raid card now uses its dedicated summary banner art (summary_scarlet.png)."
+        "The Sanguine Crucible raid card now uses its dedicated summary banner art."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -1933,7 +2283,7 @@
     "date": "19/9/2026",
     "groups": [
       [
-        "Fixed the Shop entry being hidden from the sidebar drawer: it is now visible (still controlled by the DebugToggles.DISABLE_SHOP flag, which defaults to false = shown)."
+        "Fixed the Shop entry being hidden from the sidebar drawer: the Shop is now visible in the drawer menu."
       ]
     ],
     "source": "ModChangelogActive.kt"
@@ -2353,7 +2703,7 @@
     "date": "16/9/2026",
     "groups": [
       [
-        "Added Guild Activities: the Daily Request and Weekly Siege as real raid areas (DialogSendTeam -> DialogDungeonDetail) that tick offline and persist mid-fight state."
+        "Added Guild Activities: the Daily Request and Weekly Siege as real raid areas that tick offline and persist mid-fight state."
       ],
       [
         "Added the Shadow boss (100/100/100 stats, 100-1000 damage, 50% crit, 100% status immunity, 1000 HP) and its Geode drop: 10% -> 100 gems, 20% -> 50 gems, 70% -> 20 gems."
@@ -2381,7 +2731,7 @@
         "Renamed the app to IGM+."
       ],
       [
-        "Fixed corrupted status text (\"Fighting…\", \"Looting items…\", \"Searching…\", \"New guest…\") that displayed mojibake due to an encoding regression in the localized strings.xml files."
+        "Fixed corrupted status text (\"Fighting…\", \"Looting items…\", \"Searching…\", \"New guest…\") that displayed incorrect characters due to an encoding issue in localized text files."
       ],
       [
         "Upgraded the Mod About/Changelog dialog: version rows now show their change count, and long changelogs open in a scrollable per-change list."
@@ -2450,7 +2800,7 @@
     "date": "13/9/2026",
     "groups": [
       [
-        "Guild Activities rebuilt as real Raids: Request/Siege now use the vanilla combat engine (DialogSendTeam -> DialogDungeonDetail), tick offline via compileDungeonRaidList and persist mid-fight state through save/load."
+        "Guild Activities rebuilt as real Raids: Request and Siege now use the full combat engine, simulate offline progress, and persist mid-fight state across save and load."
       ],
       [
         "Raid-style cards in the Guild tab with orange/blank try dots per the game's raid look, plus countdown timers to the next refresh."
@@ -2459,7 +2809,7 @@
         "Reputation now lives in its own top-bar box with an icon (was inlined into the gems box); Guild tab title now updates like the other tabs."
       ],
       [
-        "Elite Request targets are persisted via the Elite_ marker trueClass and rebuilt by the patched Enemy.getInstance()."
+        "Elite Request targets are preserved across game saves and load back into battle seamlessly."
       ],
       [
         "Unchanged rules: Request reward = Reputation, -5 on failed Request, Siege = 10 waves (5-10 monsters, no bosses), -10 on failure."

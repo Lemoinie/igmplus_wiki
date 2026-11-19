@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_BENTHIC_DEFLECTION",
+  "name_key": "passive_benthic_deflection_name",
+  "desc_key": "passive_benthic_deflection_description",
+  "kind": "passive",
+  "name": "Benthic Deflection",
+  "description": "Deflects 20% of magical damage back to the attacker."
+}

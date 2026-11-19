@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_VOLCANIC_CONSTRUCT",
+  "name_key": "passive_volcanic_construct_name",
+  "desc_key": "passive_volcanic_construct_description",
+  "kind": "passive",
+  "name": "Volcanic Construct",
+  "description": "Immune to BLEED, POISON, ABLAZE, and HELLFIRE."
+}

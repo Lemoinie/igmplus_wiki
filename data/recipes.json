@@ -3552,6 +3552,20 @@
     ]
   },
   {
+    "key": "AmuletOfShaKire",
+    "output_item": "AmuletOfShaKire",
+    "ingredients": [
+      {
+        "item": "AmuletOfTheSwordsman",
+        "qty": 1
+      },
+      {
+        "item": "EyeOfShaKire",
+        "qty": 5
+      }
+    ]
+  },
+  {
     "key": "DivineEmbryo",
     "output_item": "DivineEmbryo",
     "ingredients": [
@@ -4494,6 +4508,20 @@
     ]
   },
   {
+    "key": "ElectricViolin",
+    "output_item": "ElectricViolin",
+    "ingredients": [
+      {
+        "item": "CosmicViolin",
+        "qty": 1
+      },
+      {
+        "item": "VoltaicShock",
+        "qty": 1
+      }
+    ]
+  },
+  {
     "key": "CopperAxe",
     "output_item": "CopperAxe",
     "ingredients": [
@@ -5088,6 +5116,286 @@
       {
         "item": "CoralithOre",
         "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "CrownOfTheBenthicSovereign",
+    "output_item": "CrownOfTheBenthicSovereign",
+    "ingredients": [
+      {
+        "item": "TrenchGodsPearl",
+        "qty": 1
+      },
+      {
+        "item": "LeviathanScale",
+        "qty": 3
+      },
+      {
+        "item": "AncientNautilusSeashellShard",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "EmberiteIngot",
+    "output_item": "EmberiteIngot",
+    "ingredients": [
+      {
+        "item": "EmberiteScraps",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "InfernalLeather",
+    "output_item": "InfernalLeather",
+    "ingredients": [
+      {
+        "item": "InfernalHide",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "EmberiteSword",
+    "output_item": "EmberiteSword",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 28
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "EmberiteDagger",
+    "output_item": "EmberiteDagger",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 20
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "EmberiteCleaver",
+    "output_item": "EmberiteCleaver",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 24
+      },
+      {
+        "item": "StonefireMinotaurHorn",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "EmberiteBow",
+    "output_item": "EmberiteBow",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 20
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 16
+      },
+      {
+        "item": "InfernalFabric",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "EmberiteStaff",
+    "output_item": "EmberiteStaff",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 24
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 16
+      }
+    ]
+  },
+  {
+    "key": "EmberitePlate",
+    "output_item": "EmberitePlate",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 32
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 16
+      },
+      {
+        "item": "AshenScale",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "InfernalJacket",
+    "output_item": "InfernalJacket",
+    "ingredients": [
+      {
+        "item": "InfernalLeather",
+        "qty": 28
+      },
+      {
+        "item": "InfernalFabric",
+        "qty": 24
+      },
+      {
+        "item": "EmberiteIngot",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "PyromancerVestments",
+    "output_item": "PyromancerVestments",
+    "ingredients": [
+      {
+        "item": "InfernalFabric",
+        "qty": 32
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 28
+      },
+      {
+        "item": "StonefireMinotaurHorn",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "EmberiteHelmet",
+    "output_item": "EmberiteHelmet",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 20
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 8
+      },
+      {
+        "item": "StonefireMinotaurHorn",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "EmberiteBoots",
+    "output_item": "EmberiteBoots",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 16
+      },
+      {
+        "item": "StonefireMinotaurHorn",
+        "qty": 28
+      }
+    ]
+  },
+  {
+    "key": "InfernalGloves",
+    "output_item": "InfernalGloves",
+    "ingredients": [
+      {
+        "item": "InfernalLeather",
+        "qty": 28
+      },
+      {
+        "item": "InfernalFabric",
+        "qty": 32
+      }
+    ]
+  },
+  {
+    "key": "AshenShield",
+    "output_item": "AshenShield",
+    "ingredients": [
+      {
+        "item": "EmberiteIngot",
+        "qty": 24
+      },
+      {
+        "item": "AshenScale",
+        "qty": 16
+      },
+      {
+        "item": "InfernalLeather",
+        "qty": 8
+      }
+    ]
+  },
+  {
+    "key": "IconOfTorment",
+    "output_item": "IconOfTorment",
+    "ingredients": [
+      {
+        "item": "BurningEffigy",
+        "qty": 1
+      },
+      {
+        "item": "GreaterMagmaCore",
+        "qty": 2
+      },
+      {
+        "item": "AshenScale",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "ObsidianIngot",
+    "output_item": "ObsidianIngot",
+    "ingredients": [
+      {
+        "item": "ObsidianChunk",
+        "qty": 200
+      },
+      {
+        "item": "AstralGoo",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "VoidSeal",
+    "output_item": "VoidSeal",
+    "ingredients": [
+      {
+        "item": "EldritchSeal",
+        "qty": 1
+      },
+      {
+        "item": "VoidCore",
+        "qty": 2
+      },
+      {
+        "item": "TrenchGodsPearl",
+        "qty": 1
       }
     ]
   }
