@@ -76,6 +76,20 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
       </div>
     </section>
 
+    <!-- Where Your Support Goes -->
+    <section class="usageCard" aria-label="Where your support goes">
+      <h2 class="usageHeading">Where Your Support Goes</h2>
+      <ul class="usageList">
+        <li>
+          <strong>Custom Domain &amp; Wiki:</strong> Getting a proper custom domain and keeping the
+          community wiki online and fast.
+        </li>
+        <li>
+          <strong>Coffee:</strong> Fueling late-night coding, balancing, and new updates for IGM+.
+        </li>
+      </ul>
+    </section>
+
     <!-- Respectful Credits Footer -->
     <p class="originalDevNote">
       IGM+ is an unofficial community mod. Please also consider supporting the original
@@ -234,6 +248,36 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
   .btnKofi:hover {
     background: #e54c49;
     text-decoration: none;
+  }
+
+  .usageCard {
+    padding: 1.35rem 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-subtle);
+    border-radius: 12px;
+    margin-bottom: 2rem;
+  }
+
+  .usageHeading {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.75rem;
+  }
+
+  .usageList {
+    margin: 0;
+    padding-left: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.55;
+  }
+
+  .usageList strong {
+    color: var(--text-primary);
   }
 
   .originalDevNote {
