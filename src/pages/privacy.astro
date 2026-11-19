@@ -1,0 +1,85 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+---
+
+<WikiLayout
+  title="Privacy Policy"
+  description="Privacy policy and advertising disclosure for the Idle Guild Master Plus Community Wiki."
+>
+  <article class="privacyPage">
+    <h1>Privacy Policy</h1>
+    <p class="updated">Last updated: November 2026</p>
+
+    <section>
+      <h2>1. Overview</h2>
+      <p>
+        IGM+ Wiki is an independent, fan-maintained community wiki for the Idle Guild Master Plus mod.
+        We do not require user accounts and do not directly collect personal information such as your
+        name, email address, or payment details.
+      </p>
+    </section>
+
+    <section>
+      <h2>2. Analytics</h2>
+      <p>
+        This site uses <strong>Vercel Web Analytics</strong> to measure anonymous pageviews and
+        general traffic patterns so we can improve wiki content and performance.
+      </p>
+    </section>
+
+    <section>
+      <h2>3. Third-Party Advertising</h2>
+      <p>
+        To help cover domain and maintenance costs, this wiki displays non-intrusive banner
+        advertisements provided by third-party ad networks (such as Adsterra and, in the future,
+        Google AdSense). These third-party providers may use cookies, web beacons, or similar
+        technologies to serve and measure ads.
+      </p>
+      <p>
+        You can manage or disable cookies through your browser settings at any time.
+      </p>
+    </section>
+
+    <section>
+      <h2>4. Unofficial Fan Wiki Disclaimer</h2>
+      <p>
+        This website is an unofficial community resource and is not affiliated with, endorsed by, or
+        sponsored by the original developers of <em>Idle Guild Master</em>. All original game assets
+        and trademarks belong to their respective owners.
+      </p>
+    </section>
+  </article>
+</WikiLayout>
+
+<style>
+  .privacyPage {
+    max-width: 780px;
+    margin: 0 auto;
+    line-height: 1.7;
+  }
+
+  .privacyPage h1 {
+    margin-bottom: 0.25rem;
+  }
+
+  .updated {
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    margin-bottom: 2rem;
+  }
+
+  .privacyPage section {
+    margin-bottom: 1.75rem;
+  }
+
+  .privacyPage h2 {
+    font-size: 1.15rem;
+    margin-bottom: 0.5rem;
+    color: var(--text-gold);
+  }
+
+  .privacyPage p {
+    color: var(--text-secondary);
+    margin-bottom: 0.75rem;
+  }
+</style>

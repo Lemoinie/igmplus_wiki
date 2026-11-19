@@ -3,6 +3,7 @@ import Analytics from '@vercel/analytics/astro';
 import Sidebar from '../components/Sidebar.vue';
 import SidebarToggle from '../components/SidebarToggle.vue';
 import SearchBar from '../components/SearchBar.vue';
+import AdBanner from '../components/AdBanner.astro';
 import '../styles/global.css';
 import 'katex/dist/katex.min.css';
 
@@ -306,8 +307,14 @@ const ogImage = image
             <slot />
           </main>
 
+          <AdBanner />
+
           <footer class="siteFooter">
-            <p>Idle Guild Master Plus Community Wiki</p>
+            <p>
+              Idle Guild Master Plus Community Wiki
+              <span class="footerSep">·</span>
+              <a href={`${base}/privacy`} class="footerLink">Privacy Policy</a>
+            </p>
           </footer>
         </div>
       </div>
@@ -422,6 +429,21 @@ const ogImage = image
   text-align: center;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+.footerSep {
+  margin: 0 0.45rem;
+  opacity: 0.6;
+}
+
+.footerLink {
+  color: var(--text-muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footerLink:hover {
+  color: var(--text-primary);
 }
 
 @media (max-width: 959px) {
