@@ -424,11 +424,17 @@ const ogImage = image
 }
 
 .siteFooter {
-  padding: 1.5rem 2rem;
+  padding: 1.5rem 2rem 5.5rem;
   border-top: 1px solid var(--border-subtle);
   text-align: center;
   font-size: 0.8rem;
   color: var(--text-muted);
+}
+
+@media (min-width: 768px) {
+  .siteFooter {
+    padding-bottom: 8rem;
+  }
 }
 
 .footerSep {
