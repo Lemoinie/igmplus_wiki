@@ -1,0 +1,259 @@
+---
+import WikiLayout from '../layouts/WikiLayout.astro';
+import { base } from '../lib/base';
+
+const SMARTLINK_URL = 'https://asiafilm.org/4/02f1d202c4c248ae5e18d70f19e2bfb0';
+const KOFI_URL = 'https://ko-fi.com/lemoinie';
+---
+
+<WikiLayout
+  title="Support"
+  description="Optional ways to support the Idle Guild Master Plus mod and community wiki."
+>
+  <div class="supportContainer">
+    <!-- Thank You Hero -->
+    <section class="supportHero">
+      <img
+        src={`${base}/images/sha.png`}
+        alt="Sha"
+        class="heroSprite"
+        width="56"
+        height="56"
+      />
+      <h1 class="supportTitle">Thank You for Playing IGM+!</h1>
+      <p class="supportSubtitle">
+        Idle Guild Master Plus and this community wiki are 100% free and maintained in our spare
+        time. Supporting is completely optional—just playing, sharing feedback, and hanging out in
+        Discord already means a lot.
+      </p>
+      <p class="supportNote">
+        If you'd still like to help cover domain costs and future updates, here are two simple ways:
+      </p>
+    </section>
+
+    <!-- Support Options -->
+    <section class="optionsGrid" aria-label="Support options">
+      <!-- Option 1: Free Support via Sponsored Link -->
+      <div class="optionCard optionCardFree">
+        <div class="optionBadge badgeFree">Free · No Cost</div>
+        <h2 class="optionHeading">Visit a Sponsored Link</h2>
+        <p class="optionDesc">
+          Support the wiki for free by opening a third-party sponsor link in a new tab. It doesn't
+          cost you anything and helps fund a custom domain for the wiki.
+        </p>
+        <p class="optionHint">
+          Heads up: opens an external third-party ad page in a new tab.
+        </p>
+        <a
+          href={SMARTLINK_URL}
+          target="_blank"
+          rel="noopener noreferrer sponsored"
+          class="optionBtn btnFree"
+        >
+          Open Sponsored Link ↗
+        </a>
+      </div>
+
+      <!-- Option 2: Direct Tip via Ko-fi -->
+      <div class="optionCard optionCardKofi">
+        <div class="optionBadge badgeKofi">Direct Tip</div>
+        <h2 class="optionHeading">Buy Me a Coffee on Ko-fi</h2>
+        <p class="optionDesc">
+          Want to support development directly? Any tip helps keep the mod and wiki running,
+          with zero pressure and no paywalled features—everything stays free for everyone.
+        </p>
+        <p class="optionHint">
+          Opens Ko-fi in a new tab. Every little bit is appreciated!
+        </p>
+        <a
+          href={KOFI_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="optionBtn btnKofi"
+        >
+          Support on Ko-fi ↗
+        </a>
+      </div>
+    </section>
+
+    <!-- Respectful Credits Footer -->
+    <p class="originalDevNote">
+      IGM+ is an unofficial community mod. Please also consider supporting the original
+      <em>Idle Guild Master</em> developers on Google Play!
+    </p>
+  </div>
+</WikiLayout>
+
+<style>
+  .supportContainer {
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .supportHero {
+    text-align: center;
+    padding: 2.5rem 1.5rem;
+    background: radial-gradient(circle at 50% 0%, rgba(250, 204, 21, 0.12), transparent 70%);
+    border: 1px solid var(--border-subtle);
+    border-radius: 14px;
+    margin-bottom: 2rem;
+  }
+
+  .heroSprite {
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    margin: 0 auto 1rem;
+    display: block;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.45));
+  }
+
+  .supportTitle {
+    font-size: 2rem;
+    font-weight: 800;
+    color: #fff;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.02em;
+  }
+
+  .supportSubtitle {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    line-height: 1.65;
+    max-width: 620px;
+    margin: 0 auto 0.75rem;
+  }
+
+  .supportNote {
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    margin: 0;
+  }
+
+  .optionsGrid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.25rem;
+    margin-bottom: 2rem;
+  }
+
+  .optionCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border: 1px solid var(--border-card);
+    border-radius: 12px;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+  }
+
+  .optionCard:hover {
+    transform: translateY(-2px);
+  }
+
+  .optionCardFree:hover {
+    border-color: rgba(250, 204, 21, 0.45);
+  }
+
+  .optionCardKofi:hover {
+    border-color: rgba(255, 94, 91, 0.55);
+  }
+
+  .optionBadge {
+    align-self: flex-start;
+    font-size: 0.72rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    padding: 3px 9px;
+    border-radius: 999px;
+    margin-bottom: 0.85rem;
+  }
+
+  .badgeFree {
+    background: rgba(250, 204, 21, 0.14);
+    color: var(--text-gold);
+    border: 1px solid rgba(250, 204, 21, 0.35);
+  }
+
+  .badgeKofi {
+    background: rgba(255, 94, 91, 0.15);
+    color: #ff7b78;
+    border: 1px solid rgba(255, 94, 91, 0.35);
+  }
+
+  .optionHeading {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: #fff;
+    margin: 0 0 0.6rem;
+  }
+
+  .optionDesc {
+    color: var(--text-secondary);
+    font-size: 0.92rem;
+    line-height: 1.6;
+    margin: 0 0 0.75rem;
+    flex: 1;
+  }
+
+  .optionHint {
+    color: var(--text-muted);
+    font-size: 0.8rem;
+    margin: 0 0 1.25rem;
+  }
+
+  .optionBtn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem 1.25rem;
+    border-radius: 8px;
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+
+  .btnFree {
+    background: rgba(250, 204, 21, 0.16);
+    color: var(--text-gold);
+    border: 1px solid rgba(250, 204, 21, 0.45);
+  }
+
+  .btnFree:hover {
+    background: rgba(250, 204, 21, 0.26);
+    text-decoration: none;
+  }
+
+  .btnKofi {
+    background: #ff5e5b;
+    color: #fff;
+    border: 1px solid #ff5e5b;
+  }
+
+  .btnKofi:hover {
+    background: #e54c49;
+    text-decoration: none;
+  }
+
+  .originalDevNote {
+    text-align: center;
+    font-size: 0.84rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+  }
+
+  @media (max-width: 680px) {
+    .supportHero {
+      padding: 1.75rem 1.15rem;
+    }
+
+    .supportTitle {
+      font-size: 1.55rem;
+    }
+
+    .optionsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>

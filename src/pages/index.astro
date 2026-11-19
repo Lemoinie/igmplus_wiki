@@ -115,6 +115,12 @@ import { base } from '../lib/base';
             <span class="infoLabel">Sponsor:</span>
             <span class="infoValue">zhauz_</span>
           </div>
+          <div class="infoRow infoRowDivider">
+            <span class="infoLabel">Support:</span>
+            <span class="infoValue">
+              <a href={`${base}/support`} class="infoSupportLink">Support IGM+ &amp; Wiki →</a>
+            </span>
+          </div>
         </div>
       </div>
     </div>
@@ -382,6 +388,25 @@ import { base } from '../lib/base';
 .infoValue {
   color: var(--text-primary);
   font-weight: 600;
+}
+
+.infoRowDivider {
+  padding-top: 0.65rem;
+  margin-top: 0.2rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.infoSupportLink {
+  color: var(--text-gold);
+  font-weight: 700;
+  text-decoration: none;
+  transition: opacity 0.15s ease;
+}
+
+.infoSupportLink:hover {
+  opacity: 0.85;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 @media (max-width: 640px) {
