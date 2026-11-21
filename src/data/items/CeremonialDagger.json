@@ -9,8 +9,7 @@
   "description": "A blade crafted for the ancient rituals of the mountain Trolls. While its combat effectiveness is far inferior to that of a simple dagger, a lingering spell imbued in the weapon grants it power in other, more mystical ways.",
   "stats": {
     "dexterity": 8,
-    "intelligence": 8,
-    "healingModifier": 0.4
+    "intelligence": 8
   },
-  "notes": ""
+  "notes": "Ranged, +40% healing"
 }

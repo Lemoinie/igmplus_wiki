@@ -8,10 +8,9 @@
   "sprite": "fleetfoot_robe",
   "description": "Light robe made with a textile material that can magically reduce the wearer weight, enhancing its agility.",
   "stats": {
-    "flatDodgeChance": 0.24,
     "maxHp": 80,
     "intelligence": 12,
     "dexterity": 4
   },
-  "notes": ""
+  "notes": "+24% dodge (additive)"
 }

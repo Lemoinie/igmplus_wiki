@@ -8,8 +8,7 @@
   "sprite": "shadow_ring",
   "description": "A silver ring with an inset Shadow Gem. Grants superior reflexes.",
   "stats": {
-    "dexterity": 24,
-    "criticalChance": 0.12
+    "dexterity": 24
   },
-  "notes": ""
+  "notes": "Initiative, +12% crit chance"
 }

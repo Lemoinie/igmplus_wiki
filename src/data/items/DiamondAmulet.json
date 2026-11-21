@@ -8,8 +8,7 @@
   "sprite": "diamond_amulet",
   "description": "An elegant amulet adorned with a polished diamond, radiating timeless beauty.",
   "stats": {
-    "bonusExperience": 55,
     "maxHp": 175
   },
-  "notes": ""
+  "notes": "+55% experience"
 }

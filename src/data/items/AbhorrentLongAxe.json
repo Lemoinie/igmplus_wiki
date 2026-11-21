@@ -4,12 +4,12 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 9500,
+  "price": 10200,
   "sprite": "abhorrent_long_axe",
   "description": "A long axe anchored with an abiotic core, spreading ruin, fear and silence.",
   "stats": {
     "constitution": 15,
     "intelligence": 35
   },
-  "notes": ""
+  "notes": "POISON and ABLAZE (2 turns), 10% STUN, 10% SILENCE on hit"
 }

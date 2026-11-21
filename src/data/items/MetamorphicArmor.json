@@ -9,8 +9,7 @@
   "description": "Shapeshifting spikes poke out from this armor when needed, orienting themselves towards attackers.",
   "stats": {
     "maxHp": 140,
-    "constitution": 5,
-    "retaliationPhysicalDamage": 10
+    "constitution": 5
   },
-  "notes": ""
+  "notes": "Retaliate 10 (physical)"
 }

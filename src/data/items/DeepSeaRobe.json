@@ -9,8 +9,7 @@
   "description": "The velvet infused with deep sea reagents used in the weaving of this robe confers it enhanced protection against external elements.",
   "stats": {
     "maxHp": 50,
-    "intelligence": 15,
-    "immunityToStatus": 0.4
+    "intelligence": 15
   },
-  "notes": ""
+  "notes": "40% status immunity"
 }

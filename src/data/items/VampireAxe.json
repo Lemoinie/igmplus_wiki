@@ -4,13 +4,12 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 1050,
+  "price": 1026,
   "sprite": "vampire_axe",
   "description": "An obsidian axe steeped in a crimson brew that saps the vitality of those it wounds.",
   "stats": {
     "constitution": 20,
-    "intelligence": 10,
-    "lifesteal": 20
+    "intelligence": 10
   },
-  "notes": ""
+  "notes": "Lifesteal 20%"
 }

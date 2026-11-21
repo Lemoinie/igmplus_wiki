@@ -10,8 +10,7 @@
   "stats": {
     "constitution": 34,
     "defense": 9,
-    "magicDefense": 9,
-    "threat": 3
+    "magicDefense": 9
   },
-  "notes": ""
+  "notes": "Threat level +3"
 }

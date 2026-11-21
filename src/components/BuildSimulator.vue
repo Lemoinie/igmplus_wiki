@@ -2,7 +2,7 @@
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
 import type { DoctrineDefinition, DoctrineAbilityDefinition } from '../types';
 import { base } from '../lib/base';
-import { formatStat } from '../lib/stats';
+import { filterDisplayStats, formatStat } from '../lib/stats';
 import { parseCoins } from '../lib/currency';
 
 interface SkillDetail {
@@ -1163,8 +1163,8 @@ function formatPct(val: number, decimals = 0): string {
                 <div class="slotMeta">
                   <template v-if="equippedWeapon">
                     <div class="slotItemName">{{ equippedWeapon.name }}</div>
-                    <div class="slotChips">
-                      <span v-for="(val, key) in equippedWeapon.stats" :key="key" class="miniChip">
+                    <div v-if="Object.keys(filterDisplayStats(equippedWeapon.stats)).length" class="slotChips">
+                      <span v-for="(val, key) in filterDisplayStats(equippedWeapon.stats)" :key="key" class="miniChip">
                         {{ formatStat(String(key), Number(val)) }}
                       </span>
                     </div>
@@ -1223,8 +1223,8 @@ function formatPct(val: number, decimals = 0): string {
                 <div class="slotMeta">
                   <template v-if="equippedArmor">
                     <div class="slotItemName">{{ equippedArmor.name }}</div>
-                    <div class="slotChips">
-                      <span v-for="(val, key) in equippedArmor.stats" :key="key" class="miniChip">
+                    <div v-if="Object.keys(filterDisplayStats(equippedArmor.stats)).length" class="slotChips">
+                      <span v-for="(val, key) in filterDisplayStats(equippedArmor.stats)" :key="key" class="miniChip">
                         {{ formatStat(String(key), Number(val)) }}
                       </span>
                     </div>
@@ -1281,8 +1281,8 @@ function formatPct(val: number, decimals = 0): string {
                 <div class="slotMeta">
                   <template v-if="equippedAccessory">
                     <div class="slotItemName">{{ equippedAccessory.name }}</div>
-                    <div class="slotChips">
-                      <span v-for="(val, key) in equippedAccessory.stats" :key="key" class="miniChip">
+                    <div v-if="Object.keys(filterDisplayStats(equippedAccessory.stats)).length" class="slotChips">
+                      <span v-for="(val, key) in filterDisplayStats(equippedAccessory.stats)" :key="key" class="miniChip">
                         {{ formatStat(String(key), Number(val)) }}
                       </span>
                     </div>
@@ -1859,8 +1859,8 @@ function formatPct(val: number, decimals = 0): string {
                   </span>
                 </div>
               </div>
-              <div v-if="item.stats && Object.keys(item.stats).length" class="slotChips">
-                <span v-for="(val, key) in item.stats" :key="key" class="miniChip">
+              <div v-if="Object.keys(filterDisplayStats(item.stats)).length" class="slotChips">
+                <span v-for="(val, key) in filterDisplayStats(item.stats)" :key="key" class="miniChip">
                   {{ formatStat(String(key), Number(val)) }}
                 </span>
               </div>
@@ -2423,7 +2423,8 @@ function formatPct(val: number, decimals = 0): string {
 
 .slotNotes {
   font-size: 0.74rem;
-  color: var(--text-gold);
+  color: var(--text-primary);
+  white-space: pre-line;
 }
 
 /* Results Column */
@@ -2639,7 +2640,8 @@ function formatPct(val: number, decimals = 0): string {
   margin-left: 6px;
   font-size: 0.73rem;
   font-weight: 600;
-  color: var(--text-gold);
+  color: var(--text-primary);
+  white-space: pre-line;
 }
 
 .gearDescText {

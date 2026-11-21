@@ -9,8 +9,7 @@
   "description": "A blade drawn by darkness, turns its owner into a dangerous night hunter.",
   "stats": {
     "dexterity": 20,
-    "constitution": 20,
-    "darknessDamageAmplification": 0.005
+    "constitution": 20
   },
-  "notes": ""
+  "notes": "Damage increased by [0.5 × Darkness]%"
 }

@@ -10,8 +10,7 @@
   "stats": {
     "constitution": 3,
     "dexterity": 3,
-    "intelligence": 3,
-    "bonusExperience": 50
+    "intelligence": 3
   },
-  "notes": ""
+  "notes": "+50% experience"
 }

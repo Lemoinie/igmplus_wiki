@@ -9,8 +9,7 @@
   "description": "\"This mysterious headgear came out of a crack in the fabric of space and time. It's both stylish and powerful.\"",
   "stats": {
     "maxHp": 60,
-    "intelligence": 35,
-    "criticalDamage": 0.25
+    "intelligence": 35
   },
-  "notes": "Rare Drop"
+  "notes": "+25% crit damage"
 }

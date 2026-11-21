@@ -8,10 +8,9 @@
   "sprite": "fleetfoot_jacket",
   "description": "Jacket padded with a textile material that can magically reduce the wearer weight, enhancing its agility.",
   "stats": {
-    "flatDodgeChance": 0.2,
     "maxHp": 160,
     "constitution": 4,
     "dexterity": 8
   },
-  "notes": ""
+  "notes": "+20% dodge (additive)"
 }

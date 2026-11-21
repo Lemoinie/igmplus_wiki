@@ -8,10 +8,9 @@
   "sprite": "sylvan_flute",
   "description": "An intricate flute, fashioned with a mysterious technique by the reclusive dryads of the Southern Grove.",
   "stats": {
-    "exaltInspireBonusTurns": 2,
     "constitution": 10,
     "dexterity": 10,
     "intelligence": 10
   },
-  "notes": "Rare Drop"
+  "notes": "INSPIRE/EXALT: +2 turn"
 }

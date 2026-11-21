@@ -9,8 +9,7 @@
   "description": "This unholy relic amplifies one’s understanding of the universe to extraordinary levels, channeling ancient and forbidden powers.",
   "stats": {
     "maxHp": 50,
-    "intelligence": 45,
-    "healingModifier": -0.99
+    "intelligence": 45
   },
-  "notes": ""
+  "notes": "-99% healing"
 }

@@ -4,7 +4,7 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 2100,
+  "price": 2832,
   "sprite": "zapper",
   "description": "An experimental axe crackling with trapped static, built to dizzy its victims.",
   "stats": {
@@ -12,5 +12,5 @@
     "dexterity": 10,
     "intelligence": 19
   },
-  "notes": ""
+  "notes": "10% STUN on hit (1 turn)"
 }

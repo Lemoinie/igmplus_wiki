@@ -9,9 +9,7 @@
   "description": "Grants a premature end to both the wielder and their enemies.",
   "stats": {
     "constitution": 60,
-    "dexterity": 60,
-    "decay": 60,
-    "criticalDamage": 1
+    "dexterity": 60
   },
-  "notes": ""
+  "notes": "Decay 60, +100% crit dmg"
 }

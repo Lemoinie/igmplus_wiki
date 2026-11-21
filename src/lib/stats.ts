@@ -81,3 +81,25 @@ export function statValue(key: string, val: number): string {
 export function formatStat(key: string, val: number): string {
   return `${statLabel(key)} ${statValue(key, val)}`;
 }
+
+export const MAIN_ITEM_STAT_KEYS = new Set([
+  'maxHp',
+  'constitution',
+  'intelligence',
+  'dexterity',
+  'defense',
+  'magicDefense',
+  'feedPower',
+  'gemPrice',
+]);
+
+export function filterDisplayStats(stats?: Record<string, number> | null): Record<string, number> {
+  if (!stats) return {};
+  const out: Record<string, number> = {};
+  for (const [k, v] of Object.entries(stats)) {
+    if (MAIN_ITEM_STAT_KEYS.has(k) && Number(v) !== 0) {
+      out[k] = Number(v);
+    }
+  }
+  return out;
+}

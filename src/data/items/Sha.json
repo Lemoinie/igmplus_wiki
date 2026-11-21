@@ -10,8 +10,7 @@
   "stats": {
     "constitution": 40,
     "dexterity": 40,
-    "intelligence": 40,
-    "immunityToStatus": 1
+    "intelligence": 40
   },
-  "notes": ""
+  "notes": "100% status immunity"
 }

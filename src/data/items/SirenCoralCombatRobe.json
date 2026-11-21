@@ -1,15 +1,15 @@
 {
-    "sprite":  "siren_coral_combat_robe",
-    "id":  "SirenCoralCombatRobe",
-    "type":  "armor",
-    "price":  1463,
-    "category":  "LightArmor",
-    "description":  "Combat robes interwoven with enchanted sea-silk, calcified coral, and prophetic gems.",
-    "name":  "Siren Coral Combat Robe",
-    "stats":  {
-                  "constitution":  60,
-                  "intelligence":  60
-              },
-    "rarity":  null,
-    "notes":  "Immune to Frozen."
+  "sprite": "siren_coral_combat_robe",
+  "id": "SirenCoralCombatRobe",
+  "type": "armor",
+  "price": 534,
+  "category": "LightArmor",
+  "description": "Combat robes interwoven with enchanted sea-silk, calcified coral, and prophetic gems.",
+  "name": "Siren Coral Combat Robe",
+  "stats": {
+    "constitution": 55,
+    "intelligence": 35
+  },
+  "rarity": null,
+  "notes": "Immune to Frozen."
 }

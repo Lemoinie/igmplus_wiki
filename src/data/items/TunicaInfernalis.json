@@ -8,10 +8,9 @@
   "sprite": "tunica_infernalis",
   "description": "\"Adding a fireproof coating to this unique robe allows to apply different enchantments during its crafting, since protection from it's own fiery power is no longer needed.\"",
   "stats": {
-    "onFireBonusDamage": 2,
     "maxHp": 150,
     "defense": 20,
     "magicDefense": 12
   },
-  "notes": ""
+  "notes": "ABLAZE damage +40%"
 }

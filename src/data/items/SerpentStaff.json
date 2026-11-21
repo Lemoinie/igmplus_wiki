@@ -8,8 +8,7 @@
   "sprite": "serpent_staff",
   "description": "\"An eldritch artifact from another world. Significantly impairs the holder's control over white magic, but confers a the buff \"FRENZY\" for 3 turns to every target hit.\nFRENZY: This unit deals 30% increased damage.\"",
   "stats": {
-    "intelligence": 40,
-    "healingModifier": -0.5
+    "intelligence": 40
   },
-  "notes": "Rare Drop"
+  "notes": "-50% healing, FRENZY on hit"
 }

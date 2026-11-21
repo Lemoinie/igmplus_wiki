@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 25,
     "constitution": 9,
-    "magicDefense": 8,
-    "retaliationMagicalDamage": 10
+    "magicDefense": 8
   },
-  "notes": ""
+  "notes": "Retaliate 10 (magical)"
 }

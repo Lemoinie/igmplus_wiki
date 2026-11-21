@@ -9,8 +9,7 @@
   "description": "With an extremely sharp blade, has been enhanced to draw energy from wounded enemies.",
   "stats": {
     "dexterity": 20,
-    "constitution": 20,
-    "lifesteal": 20
+    "constitution": 20
   },
-  "notes": ""
+  "notes": "Lifesteal 20%"
 }

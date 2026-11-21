@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 120,
     "constitution": 5,
-    "dexterity": 5,
-    "regeneration": 6
+    "dexterity": 5
   },
-  "notes": ""
+  "notes": "Regeneration 6"
 }

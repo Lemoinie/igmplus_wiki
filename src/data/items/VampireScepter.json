@@ -8,8 +8,7 @@
   "sprite": "vampire_scepter",
   "description": "\"Enhanced with a peculiar brew, empowers the holder's magic with the ability to return from the target as a healing force.\"",
   "stats": {
-    "intelligence": 28,
-    "lifesteal": 20
+    "intelligence": 28
   },
-  "notes": ""
+  "notes": "Lifesteal 20%"
 }

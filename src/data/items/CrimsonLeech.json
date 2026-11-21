@@ -9,8 +9,7 @@
   "description": "Corrupted with an otherworldly force bound by an alchemist through forbidden rituals, grants the holder a fragment of the power of the Unholy Serpent.",
   "stats": {
     "intelligence": 16,
-    "constitution": 4,
-    "lifesteal": 20
+    "constitution": 4
   },
-  "notes": ""
+  "notes": "Lifesteal 20%"
 }

@@ -9,8 +9,7 @@
   "description": "A head covering traditionally worn by the Golden City priests. This hat, blessed with an ancient ritual exclusive to their creed, amplifies all healing spells cast by the wearer.",
   "stats": {
     "maxHp": 60,
-    "intelligence": 9,
-    "healingModifier": 0.2
+    "intelligence": 9
   },
-  "notes": "Rare Drop"
+  "notes": "+20% healing"
 }

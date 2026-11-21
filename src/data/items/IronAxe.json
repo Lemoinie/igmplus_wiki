@@ -4,7 +4,7 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 50,
+  "price": 60,
   "sprite": "iron_axe",
   "description": "A dependable iron axe, widely used by woodsmen and recruits across the Realms.",
   "stats": {

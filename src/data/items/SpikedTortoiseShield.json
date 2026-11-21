@@ -8,8 +8,7 @@
   "sprite": "spiked_tortoise_shield",
   "description": "A shield made with a Giant Tortoise shell with spikes attached, offers great defensive capabilities while hurting melee attackers with its razor sharp spikes.",
   "stats": {
-    "retaliationPhysicalDamage": 25,
     "constitution": 24
   },
-  "notes": ""
+  "notes": "Retaliate 25 (physical)"
 }

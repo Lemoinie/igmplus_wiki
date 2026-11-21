@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 100,
     "constitution": 5,
-    "dexterity": 5,
-    "immunityToStatus": 0.4
+    "dexterity": 5
   },
-  "notes": ""
+  "notes": "40% status immunity"
 }

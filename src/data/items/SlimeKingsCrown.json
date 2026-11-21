@@ -7,8 +7,6 @@
   "price": 5000,
   "sprite": "slime_kings_crown",
   "description": "The crown of the legendary Slime King. Provides a large amount of extra experience to the wearer.",
-  "stats": {
-    "bonusExperience": 35
-  },
-  "notes": "Rare Drop"
+  "stats": {},
+  "notes": "+35% experience"
 }

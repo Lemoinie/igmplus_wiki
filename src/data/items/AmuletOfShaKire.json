@@ -8,9 +8,7 @@
   "sprite": "amulet_of_shakire",
   "description": "The perfected talisman of the First Swordsman, forged with five void-infused eyes. It grants absolute precision and merciless retaliation.",
   "stats": {
-    "constitution": 50,
-    "counterattack": 0.3,
-    "counterattackDamageBonus": 0.3
+    "constitution": 50
   },
-  "notes": "+30% Counterattack, +30% Counterattack Damage, Attack Always Hits."
+  "notes": "+30% Counterattack, +30% Counterattack Damage, Attack Always Hits"
 }

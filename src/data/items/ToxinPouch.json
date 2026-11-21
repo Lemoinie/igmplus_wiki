@@ -8,9 +8,8 @@
   "sprite": "toxin_pouch",
   "description": "A small bag holding an extract from the flesh of a poisonous mushroom. While too weak to act on its own, it enhances existing poisons by introducing an additional mechanism of action.",
   "stats": {
-    "poisonBonus": 4,
     "maxHp": 90,
     "intelligence": 15
   },
-  "notes": ""
+  "notes": "POISONED dmg -4%"
 }

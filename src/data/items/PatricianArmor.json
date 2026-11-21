@@ -9,8 +9,7 @@
   "description": "A golden armor adorned with the elusive Golden Rabbit fur, worn in social occasions by high ranking generals and diplomats.",
   "stats": {
     "maxHp": 120,
-    "constitution": 4,
-    "bonusExperience": 35
+    "constitution": 4
   },
-  "notes": ""
+  "notes": "+35% experience"
 }

@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 15,
     "constitution": 4,
-    "intelligence": 4,
-    "immunityToStatus": 0.2
+    "intelligence": 4
   },
-  "notes": ""
+  "notes": "20% status immunity"
 }

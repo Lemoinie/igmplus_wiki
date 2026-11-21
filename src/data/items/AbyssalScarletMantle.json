@@ -4,13 +4,12 @@
   "type": "accessory",
   "category": "Accessory",
   "rarity": null,
-  "price": 214465,
+  "price": 699900,
   "sprite": "abyssal_scarlet_mantle",
   "description": "The ultimate mantle of the Scarlet domain, woven from condensed void threads and abyssal blood. Surges with unimaginable power, profoundly amplifying the user's active ability output.",
   "stats": {
     "dexterity": 15,
-    "intelligence": 50,
-    "skillAmpModifier": 0.35
+    "intelligence": 50
   },
-  "notes": ""
+  "notes": "+35% skill amplification"
 }

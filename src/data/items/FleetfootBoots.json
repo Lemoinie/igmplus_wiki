@@ -8,8 +8,7 @@
   "sprite": "fleetfoot_boots",
   "description": "Boots made with a textile material that can magically reduce the wearer weight, enhancing its agility.",
   "stats": {
-    "flatDodgeChance": 0.16,
     "dexterity": 16
   },
-  "notes": ""
+  "notes": "+16% dodge (additive)"
 }

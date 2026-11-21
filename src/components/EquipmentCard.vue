@@ -2,13 +2,15 @@
 import { computed } from 'vue';
 import type { EquipmentDefinition } from '../types';
 import { base } from '../lib/base';
-import { formatStat } from '../lib/stats';
+import { filterDisplayStats, formatStat } from '../lib/stats';
 import { parseCoins } from '../lib/currency';
 
 const props = defineProps<{
   item: EquipmentDefinition;
   basePath?: string;
 }>();
+
+const displayStats = computed(() => filterDisplayStats(props.item.stats));
 
 const coins = computed(() => parseCoins(props.item.price));
 const priceTooltip = computed(() => {
@@ -72,9 +74,9 @@ const displayDescription = computed(() => {
     <p v-if="displayDescription" class="desc">{{ displayDescription }}</p>
 
     <!-- Stats chips -->
-    <div v-if="item.stats && Object.keys(item.stats).length" class="statsChips">
+    <div v-if="Object.keys(displayStats).length" class="statsChips">
       <span
-        v-for="(val, key) in item.stats"
+        v-for="(val, key) in displayStats"
         :key="key"
         class="statChip"
       >
@@ -243,8 +245,9 @@ const displayDescription = computed(() => {
 
 .notes {
   font-size: 0.75rem;
-  color: var(--text-gold);
+  color: var(--text-primary);
   border-top: 1px dashed var(--border-subtle);
   padding-top: 4px;
+  white-space: pre-line;
 }
 </style>

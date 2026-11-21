@@ -9,8 +9,7 @@
   "description": "An imperial benthic diadem crowned with the Trench God's Pearl and reinforced titan nautilus shards.",
   "stats": {
     "intelligence": 50,
-    "magicDefense": 35,
-    "skillAmpModifier": 0.2
+    "magicDefense": 35
   },
   "notes": "+20% Skill Amp. +15% environmental damage resistance."
 }

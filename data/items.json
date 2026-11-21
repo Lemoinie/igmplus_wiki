@@ -388,8 +388,8 @@
         "intelligence": 30,
         "magicDefense": 30,
         "criticalChance": 0.1,
-        "attackSpeedDragReduction": 1.0,
-        "rangedDragReduction": 1.0
+        "attackSpeedDragReduction": 1,
+        "rangedDragReduction": 1
       },
       "flags": {},
       "overrides": {},
@@ -468,7 +468,7 @@
         "constitution": 45,
         "dexterity": 45,
         "physicalCriticalDamageBonus": 0.5,
-        "attackSpeedDragReduction": 1.0
+        "attackSpeedDragReduction": 1
       },
       "flags": {},
       "overrides": {},
@@ -785,8 +785,8 @@
         "maxHp": 350,
         "constitution": 35,
         "magicDefense": 25,
-        "attackSpeedDragReduction": 1.0,
-        "rangedDragReduction": 1.0
+        "attackSpeedDragReduction": 1,
+        "rangedDragReduction": 1
       },
       "flags": {},
       "overrides": {},
@@ -1093,7 +1093,7 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "immunityToStatus": 1.0,
+        "immunityToStatus": 1,
         "constitution": 35,
         "dexterity": 35
       },
@@ -3695,7 +3695,7 @@
       "description_key": "consumable_chrono_echo_elixir_description",
       "name": "Chrono Echo Elixir",
       "description": "An unstable brew that unravels the memory of every potion an adventurer has ever consumed, resetting their body to a state before any stat potion was drunk. All potion slots are restored — but all bonuses granted by those potions are lost.",
-      "price": 800,
+      "price": 8000,
       "rarity": null,
       "stack": null,
       "gem_value": null,
@@ -4243,7 +4243,7 @@
       "stats": {
         "constitution": 35,
         "intelligence": 35,
-        "attackSpeedDragReduction": 1.0
+        "attackSpeedDragReduction": 1
       },
       "flags": {},
       "overrides": {},
@@ -5350,7 +5350,7 @@
         "constitution": 20,
         "dexterity": 20,
         "intelligence": 20,
-        "immunityToStatus": 1.0
+        "immunityToStatus": 1
       },
       "flags": {
         "notSellable": true
@@ -5381,7 +5381,7 @@
         "constitution": 25,
         "dexterity": 25,
         "intelligence": 25,
-        "immunityToStatus": 1.0
+        "immunityToStatus": 1
       },
       "flags": {
         "notSellable": true
@@ -5412,7 +5412,7 @@
         "constitution": 7,
         "dexterity": 7,
         "intelligence": 7,
-        "immunityToStatus": 1.0
+        "immunityToStatus": 1
       },
       "flags": {
         "notSellable": true,
@@ -7182,7 +7182,7 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "immunityToStatus": 1.0,
+        "immunityToStatus": 1,
         "constitution": 15,
         "dexterity": 15
       },
@@ -9487,7 +9487,7 @@
         "constitution": 60,
         "dexterity": 60,
         "decay": 60,
-        "criticalDamage": 1.0
+        "criticalDamage": 1
       },
       "flags": {},
       "overrides": {},
@@ -13109,7 +13109,7 @@
       "stats": {
         "dexterity": 900,
         "attackSpeed": 900,
-        "damageDealtModifier": 9.0
+        "damageDealtModifier": 9
       },
       "flags": {},
       "overrides": {},
@@ -13139,10 +13139,10 @@
         "constitution": 900,
         "dexterity": 900,
         "criticalChance": 0.9,
-        "criticalDamage": 9.0,
+        "criticalDamage": 9,
         "manaRegen": 99,
-        "skillAmpModifier": 9.0,
-        "damageDealtModifier": 9.0,
+        "skillAmpModifier": 9,
+        "damageDealtModifier": 9,
         "darknessDamageAmplification": 0.09
       },
       "flags": {},
@@ -13172,7 +13172,7 @@
       "stats": {
         "constitution": 900,
         "lifesteal": 20,
-        "damageDealtModifier": 9.0
+        "damageDealtModifier": 9
       },
       "flags": {},
       "overrides": {},
@@ -14749,7 +14749,7 @@
         "constitution": 40,
         "dexterity": 40,
         "intelligence": 40,
-        "immunityToStatus": 1.0
+        "immunityToStatus": 1
       },
       "flags": {
         "notSellable": true
@@ -17424,7 +17424,7 @@
       "stats": {
         "constitution": 30,
         "dexterity": 20,
-        "attackSpeedDragReduction": 1.0
+        "attackSpeedDragReduction": 1
       },
       "flags": {},
       "overrides": {
@@ -18891,7 +18891,7 @@
         "maxHp": 225,
         "dexterity": 25,
         "magicDefense": 10,
-        "ignoreImmunityToStatus": 10.0
+        "ignoreImmunityToStatus": 10
       },
       "flags": {},
       "overrides": {},

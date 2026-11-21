@@ -8,11 +8,8 @@
   "sprite": "celestial_bow",
   "description": "A divine celestial bow humming with astral velocity. Allows its wielder to loose a devastating volley of arrows in rapid succession.",
   "stats": {
-    "dexterity": 40,
-    "intelligence": 15,
-    "criticalChance": 0.1,
-    "criticalDamage": 0.1,
-    "attackSpeed": 200
+    "dexterity": 50,
+    "intelligence": 15
   },
-  "notes": ""
+  "notes": "+200% Attack Speed, +10% crit chance and dmg"
 }

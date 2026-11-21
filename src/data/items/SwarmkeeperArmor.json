@@ -8,9 +8,8 @@
   "sprite": "swarmkeeper_armor",
   "description": "An ethereal swarm inhabits this armor, and will chew at the flesh of any enemy getting close enough.",
   "stats": {
-    "retaliationMagicalDamage": 100,
     "maxHp": 390,
     "constitution": 13
   },
-  "notes": ""
+  "notes": "Retaliate 100 (magical)"
 }

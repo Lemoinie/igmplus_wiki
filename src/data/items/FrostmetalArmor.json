@@ -9,8 +9,7 @@
   "description": "The hardest frostmetal coupled with trollskin paddings give this armor an extreme durability, while gifting the wearer with an increased regeneration.",
   "stats": {
     "maxHp": 180,
-    "constitution": 5,
-    "regeneration": 6
+    "constitution": 5
   },
-  "notes": ""
+  "notes": "Regeneration 6"
 }

@@ -4,13 +4,12 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 3850,
+  "price": 2030,
   "sprite": "wicked_cleaver",
   "description": "A cleaver so wicked it slips between worlds, its strikes veering wildly.",
   "stats": {
     "constitution": 25,
-    "intelligence": 25,
-    "flatDodgeChance": 0.1
+    "intelligence": 25
   },
-  "notes": ""
+  "notes": "Damage spread ±50%, dodge +10%"
 }

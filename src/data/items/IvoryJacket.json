@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 90,
     "constitution": 8,
-    "dexterity": 4,
-    "criticalChance": 0.12
+    "dexterity": 4
   },
-  "notes": ""
+  "notes": "+12% crit chance"
 }

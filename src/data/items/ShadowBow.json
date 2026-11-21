@@ -9,8 +9,7 @@
   "description": "Infused with a Shadow Potion, this bow grants its owner the feats of a nocturnal predator.",
   "stats": {
     "intelligence": 6,
-    "dexterity": 22,
-    "darknessDamageAmplification": 0.005
+    "dexterity": 22
   },
-  "notes": ""
+  "notes": "Damage increased by [0.5 × Darkness]%"
 }

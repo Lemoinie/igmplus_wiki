@@ -9,8 +9,7 @@
   "description": "\"Antithesis to all that is holy, will inflict damage to any enemy entering it's malevolent aura.\"",
   "stats": {
     "constitution": 27,
-    "dexterity": 5,
-    "retaliationMagicalDamage": 15
+    "dexterity": 5
   },
-  "notes": ""
+  "notes": "Retaliate 15 (magical)"
 }

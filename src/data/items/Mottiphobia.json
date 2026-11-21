@@ -11,5 +11,5 @@
     "maxHp": 25,
     "dexterity": 10
   },
-  "notes": ""
+  "notes": "Extra attack (dmg = HP)"
 }

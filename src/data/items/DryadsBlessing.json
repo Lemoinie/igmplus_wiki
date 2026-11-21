@@ -8,8 +8,7 @@
   "sprite": "dryads_blessing",
   "description": "An average staff when considering its offensive potential, this intricate weapon really shines in the hands of an experienced healer.",
   "stats": {
-    "healingModifier": 0.23,
     "intelligence": 22
   },
-  "notes": ""
+  "notes": "+23% healing"
 }

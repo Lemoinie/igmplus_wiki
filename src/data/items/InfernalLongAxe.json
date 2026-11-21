@@ -4,12 +4,12 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 5400,
+  "price": 9098,
   "sprite": "infernal_long_axe",
   "description": "A cursed long axe fused with infernite, poisoning and burning its victims.",
   "stats": {
     "constitution": 10,
     "intelligence": 25
   },
-  "notes": ""
+  "notes": "Poisons and burns enemies for 2 turns"
 }

@@ -10,5 +10,5 @@
   "stats": {
     "constitution": 50
   },
-  "notes": "Rare Drop"
+  "notes": "Half dmg if CON &lt; 120"
 }

@@ -8,8 +8,7 @@
   "sprite": "spiked_skeleton",
   "description": "The skeleton of an undead monster, studded with very sharp spikes.",
   "stats": {
-    "retaliationPhysicalDamage": 50,
     "constitution": 8
   },
-  "notes": ""
+  "notes": "Retaliate 50 (physical)"
 }

@@ -9,8 +9,7 @@
   "description": "With a consciousness enhanced by undead spirits, this living sword reacts with heightened speed.",
   "stats": {
     "constitution": 16,
-    "magicDefense": 10,
-    "counterattack": 0.2
+    "magicDefense": 10
   },
-  "notes": ""
+  "notes": "20% counterattack"
 }

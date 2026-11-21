@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 100,
     "dexterity": 15,
-    "intelligence": 10,
-    "criticalDamage": 0.5
+    "intelligence": 10
   },
-  "notes": ""
+  "notes": "+50% crit damage"
 }

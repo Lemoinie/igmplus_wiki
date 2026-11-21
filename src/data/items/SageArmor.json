@@ -9,8 +9,7 @@
   "description": "Armor enhanced with a powerful infusion, able to boost the learning ability of the wearer.",
   "stats": {
     "maxHp": 210,
-    "constitution": 7,
-    "bonusExperience": 60
+    "constitution": 7
   },
-  "notes": ""
+  "notes": "+60% experience"
 }

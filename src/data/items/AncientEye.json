@@ -8,9 +8,8 @@
   "sprite": "ancient_eye",
   "description": "A gift from a nameless horror.",
   "stats": {
-    "immunityToStatus": 1,
     "constitution": 35,
     "dexterity": 35
   },
-  "notes": ""
+  "notes": "100% status immunity"
 }

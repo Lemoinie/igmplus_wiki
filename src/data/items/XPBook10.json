@@ -4,7 +4,7 @@
   "type": "accessory",
   "category": "Consumable",
   "rarity": null,
-  "price": 1000000,
+  "price": 1000,
   "sprite": "xp_book_10",
   "description": "Grants 100,000 experience to an adventurer.",
   "stats": {},

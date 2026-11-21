@@ -8,8 +8,7 @@
   "sprite": "cursed_bow",
   "description": "Made from a metal displaying unique properties, this bow can be used with a speed unmatched by any other.",
   "stats": {
-    "attackSpeed": 100,
     "dexterity": 26
   },
-  "notes": ""
+  "notes": "+100% Attack Speed"
 }

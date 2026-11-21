@@ -8,8 +8,7 @@
   "sprite": "eternal_hunger",
   "description": "A powerful, ancient artifact. The wearer will never be sated in their hunger, but will gain the innate ability to consume the physical suffering of their enemies.",
   "stats": {
-    "intelligence": 5,
-    "lifesteal": 50
+    "intelligence": 5
   },
-  "notes": "Rare Drop"
+  "notes": "Lifesteal +50%"
 }

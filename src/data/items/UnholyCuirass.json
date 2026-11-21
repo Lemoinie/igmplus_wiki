@@ -9,8 +9,7 @@
   "description": "The malignant aura surrounding this armor will harm any enemies daring to enter its range.",
   "stats": {
     "maxHp": 230,
-    "constitution": 8,
-    "retaliationMagicalDamage": 15
+    "constitution": 8
   },
-  "notes": ""
+  "notes": "Retaliate 15 (magical)"
 }

@@ -9,8 +9,7 @@
   "description": "Armor donned by the leaders of the Crusade from the Eastern Kingdom, radiating light into the darkest corners of the Realms.",
   "stats": {
     "maxHp": 105,
-    "constitution": 20,
-    "darknessReduction": 20
+    "constitution": 20
   },
-  "notes": ""
+  "notes": "-20 darkness"
 }

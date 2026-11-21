@@ -9,8 +9,7 @@
   "description": "An Obsidian Sword that gained the ability to draw energy from enemies, restoring the holder HP.",
   "stats": {
     "constitution": 21,
-    "dexterity": 7,
-    "lifesteal": 20
+    "dexterity": 7
   },
-  "notes": ""
+  "notes": "Lifesteal 20%"
 }

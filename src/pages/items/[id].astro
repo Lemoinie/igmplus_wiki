@@ -2,7 +2,7 @@
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import UnitDetail from '../../components/UnitDetail.vue';
 import { getAllItems, getAllUnits, getItemUsageMap } from '../../lib/data';
-import { statLabel, statValue } from '../../lib/stats';
+import { filterDisplayStats, statLabel, statValue } from '../../lib/stats';
 import { parseCoins } from '../../lib/currency';
 import { base } from '../../lib/base';
 
@@ -22,7 +22,7 @@ const tags = [
 
 const priceCoins = item.price !== undefined && item.price !== null ? parseCoins(item.price) : [];
 
-const stats = Object.entries(item.stats ?? {}).map(([key, val]) => ({
+const stats = Object.entries(filterDisplayStats(item.stats)).map(([key, val]) => ({
   label: statLabel(key),
   value: statValue(key, Number(val)),
 }));
@@ -126,19 +126,10 @@ const description = String(item.description ?? '').replace(/^"|"$/g, '');
     rawPrice={item.price}
     description={description}
     stats={stats}
+    notes={item.notes}
     links={links}
     backHref={`${base}/items`}
     backLabel="Back to Items"
     basePath={base}
   />
-  {item.notes && <p class="itemNotes">{item.notes}</p>}
 </WikiLayout>
-
-<style>
-.itemNotes {
-  max-width: 860px;
-  margin-top: 1rem;
-  font-size: 0.85rem;
-  color: var(--text-gold);
-}
-</style>

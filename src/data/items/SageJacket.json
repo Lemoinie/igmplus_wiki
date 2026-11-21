@@ -10,8 +10,7 @@
   "stats": {
     "maxHp": 140,
     "constitution": 7,
-    "dexterity": 7,
-    "bonusExperience": 60
+    "dexterity": 7
   },
-  "notes": ""
+  "notes": "+60% experience"
 }

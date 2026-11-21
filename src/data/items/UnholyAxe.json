@@ -4,13 +4,12 @@
   "type": "weapon",
   "category": "Axe",
   "rarity": null,
-  "price": 1520,
+  "price": 1485,
   "sprite": "unholy_axe",
   "description": "An obsidian axe desecrated by an unholy potion, turning enemy strikes against them.",
   "stats": {
     "constitution": 24,
-    "intelligence": 12,
-    "counterattack": 0.25
+    "intelligence": 12
   },
-  "notes": ""
+  "notes": "Counterattack 25%"
 }

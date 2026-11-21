@@ -9,9 +9,7 @@
   "description": "Grants a swift demise in skilled hands, demanding a painful toll from its wielder in return.",
   "stats": {
     "constitution": 30,
-    "dexterity": 30,
-    "decay": 20,
-    "criticalDamage": 0.65
+    "dexterity": 30
   },
-  "notes": ""
+  "notes": "Decay 20, +65% crit dmg"
 }

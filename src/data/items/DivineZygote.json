@@ -10,8 +10,7 @@
   "stats": {
     "constitution": 7,
     "dexterity": 7,
-    "intelligence": 7,
-    "immunityToStatus": 1
+    "intelligence": 7
   },
-  "notes": "Rare Drop"
+  "notes": "100% status immunity"
 }

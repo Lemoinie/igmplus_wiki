@@ -10,5 +10,5 @@
   "stats": {
     "constitution": 100
   },
-  "notes": ""
+  "notes": "Half dmg if CON &lt; 275"
 }

@@ -7,8 +7,6 @@
   "price": 19500,
   "sprite": "prismatic_pendant",
   "description": "Powerful trinket containing the essence of all elements. While not very useful in battle, it provides a very large boost to experience gains.",
-  "stats": {
-    "bonusExperience": 65
-  },
-  "notes": ""
+  "stats": {},
+  "notes": "+65% experience"
 }

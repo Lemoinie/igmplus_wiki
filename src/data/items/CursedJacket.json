@@ -9,8 +9,7 @@
   "description": "Made with an ancient metal with unique properties, makes deep wounds inflicted by the wearer hurt even more.",
   "stats": {
     "maxHp": 100,
-    "constitution": 10,
-    "criticalDamage": 0.5
+    "constitution": 10
   },
-  "notes": ""
+  "notes": "+50% crit damage"
 }

@@ -8,8 +8,7 @@
   "sprite": "sylvan_blessing",
   "description": "The gift of light was bestowed upon this staff, granting it an exponentially higher power and ability to protect allies.",
   "stats": {
-    "healingModifier": 0.4,
     "intelligence": 45
   },
-  "notes": ""
+  "notes": "+40% healing"
 }

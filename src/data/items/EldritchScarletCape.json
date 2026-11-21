@@ -4,13 +4,12 @@
   "type": "accessory",
   "category": "Accessory",
   "rarity": null,
-  "price": 204465,
+  "price": 456600,
   "sprite": "eldritch_scarlet_cape",
   "description": "The Scarlet Cape steeped in esoteric rites and sealed by outer horrors. Deep crimson threads twist with cosmic energy, channeling forbidden power to amplify damaging abilities.",
   "stats": {
     "dexterity": 10,
-    "intelligence": 40,
-    "skillAmpModifier": 0.21
+    "intelligence": 40
   },
-  "notes": ""
+  "notes": "+21% skill amplification"
 }

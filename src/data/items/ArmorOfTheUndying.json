@@ -8,8 +8,7 @@
   "sprite": "armor_of_the_undying",
   "description": "A forbidden artifact used to defy death merged with ancient, cursed metal. Serves as a decoy for the life of the wearer, restoring it with an enhanced version of the regular status every time they are hurt.",
   "stats": {
-    "maxHp": 350,
-    "regenerationBonus": 5
+    "maxHp": 350
   },
-  "notes": ""
+  "notes": "REGENERATION [+5%] on self when hit"
 }

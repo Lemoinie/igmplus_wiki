@@ -37,6 +37,7 @@ defineProps<{
   rawPrice?: number;
   description?: string;
   stats?: DetailStat[];
+  notes?: string;
   skills?: DetailSkill[];
   /** Related units, e.g. Demotion / Promotions. */
   links?: DetailLinkGroup[];
@@ -91,14 +92,15 @@ defineProps<{
       </div>
     </header>
 
-    <section v-if="stats?.length" class="panel">
+    <section v-if="stats?.length || notes" class="panel">
       <h2>Stats</h2>
-      <div class="statsGrid">
+      <div v-if="stats?.length" class="statsGrid">
         <div v-for="s in stats" :key="s.label" class="statCell">
           <span class="statLabel">{{ s.label }}</span>
           <span class="statVal">{{ s.value }}</span>
         </div>
       </div>
+      <p v-if="notes" class="detailNotes" :class="{ withTopGap: Boolean(stats?.length) }">{{ notes }}</p>
     </section>
 
     <section v-if="skills?.length" class="panel">
@@ -327,6 +329,20 @@ defineProps<{
 
 .statLabel { font-size: 0.7rem; font-weight: 700; color: var(--text-muted); }
 .statVal { font-size: 1.1rem; font-weight: 700; color: var(--text-primary); }
+
+.detailNotes {
+  color: var(--text-primary);
+  font-size: 0.9rem;
+  line-height: 1.45;
+  margin: 0;
+  white-space: pre-line;
+}
+
+.detailNotes.withTopGap {
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
+  border-top: 1px dashed var(--border-subtle);
+}
 
 .skillList { display: flex; flex-direction: column; gap: 0.75rem; }
 

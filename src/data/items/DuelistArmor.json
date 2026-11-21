@@ -9,8 +9,7 @@
   "description": "\"Living armor in a synchronic communication with the wearer's mind, greatly enhancing their reaction times.\"",
   "stats": {
     "maxHp": 75,
-    "constitution": 20,
-    "counterattack": 0.25
+    "constitution": 20
   },
-  "notes": ""
+  "notes": "25% counterattack"
 }

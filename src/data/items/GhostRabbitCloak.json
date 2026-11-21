@@ -9,8 +9,7 @@
   "description": "Light cloak made from ghastly fabric mixed with the elusive Golden Rabbit fur.",
   "stats": {
     "maxHp": 30,
-    "intelligence": 9,
-    "bonusExperience": 35
+    "intelligence": 9
   },
-  "notes": ""
+  "notes": "+35% experience"
 }
