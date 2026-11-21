@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watch, onMounted, onUnmounted } from 'vue';
+import type { DoctrineDefinition, DoctrineAbilityDefinition } from '../types';
 import { base } from '../lib/base';
 import { formatStat } from '../lib/stats';
 import { parseCoins } from '../lib/currency';
@@ -28,6 +29,7 @@ interface SimClass {
   passiveSkillKey: string;
   activeSkillDetail?: SkillDetail | null;
   passiveSkillDetail?: SkillDetail | null;
+  potionDrinkerType?: string;
   promotesTo?: string[];
   promotesFrom?: string[];
   innate?: {
@@ -66,6 +68,8 @@ const props = defineProps<{
   armors: SimEquip[];
   accessories: SimEquip[];
   traits: SimTrait[];
+  doctrines: DoctrineDefinition[];
+  doctrineAbilities: DoctrineAbilityDefinition[];
   basePath?: string;
 }>();
 
@@ -116,6 +120,56 @@ const DEFAULT_DELTA_BY_CAT: Record<string, number> = {
   Staff: 0.05,
 };
 
+const POTION_DRINKER_WEIGHTS: Record<string, number[]> = {
+  // indices: 0=CON, 1=DEX, 2=INT, 3=HP, 4=DEF, 5=MDEF, 6=Precision, 7=Viciousness, 8=Darkness, 9=Immunity, 10=Agility
+  WARRIOR: [9, 3, 1, 10, 5, 5, 2, 2, 3, 15, 3],
+  ARCHER: [4, 10, 4, 5, 3, 3, 6, 6, 4, 3, 6],
+  THIEF: [7, 7, 4, 5, 3, 3, 8, 4, 6, 1, 6],
+  MAGE: [3, 3, 14, 3, 1, 5, 2, 6, 4, 10, 3],
+};
+const POTION_STANDARD_STEP = 1.0 / 35.0;
+
+const POTION_TYPES = [
+  { index: 3, key: 'health', name: 'Health', sprite: 'potion_of_health', effectLabel: '+5 Base HP' },
+  { index: 0, key: 'constitution', name: 'Constitution', sprite: 'potion_of_constitution', effectLabel: '+1 Base CON' },
+  { index: 1, key: 'dexterity', name: 'Dexterity', sprite: 'potion_of_dexterity', effectLabel: '+1 Base DEX' },
+  { index: 2, key: 'intelligence', name: 'Intelligence', sprite: 'potion_of_intelligence', effectLabel: '+1 Base INT' },
+  { index: 4, key: 'defense', name: 'Defense', sprite: 'potion_of_defense', effectLabel: '+1 DEF' },
+  { index: 5, key: 'magicDefense', name: 'Magic Defense', sprite: 'potion_of_magic_defense', effectLabel: '+1 MDEF' },
+  { index: 6, key: 'precision', name: 'Precision', sprite: 'potion_of_precision', effectLabel: '+1% Crit Chance' },
+  { index: 7, key: 'viciousness', name: 'Viciousness', sprite: 'potion_of_viciousness', effectLabel: '+2% Crit DMG' },
+  { index: 10, key: 'agility', name: 'Agility', sprite: 'potion_of_agility', effectLabel: '+1% Dodge' },
+  { index: 9, key: 'immunity', name: 'Immunity', sprite: 'potion_of_immunity', effectLabel: '+1% Status Immunity' },
+  { index: 8, key: 'darkness', name: 'Darkness', sprite: 'potion_of_darkness', effectLabel: '+0.1% Darkness Amp' },
+] as const;
+
+const SPECIAL_DOCTRINE_KEYS = new Set([
+  'NECROSIS_PORPHYRICA', 'GENUS_VAMPYRI', 'BLOODLETTING',
+  'MIND_BENDER', 'CHILLING_FLOW', 'STAR_GAZE', 'ARCANE_SUPPRESSION', 'VERDANT_BRIARS',
+  'MIRROR_OF_ANGUISH', 'ARMOR_MASTER',
+  'DIVINE_INTERVENTION', 'OVERHEAL', 'HEALING_NOVA', 'SYMPATHETIC_WARD',
+  'BEAT_THE_ODDS', 'FALSE_LIFE', 'TRUE_AGONY', 'EVASIVE_RIPOSTE',
+  'LORE_MASTER', 'ACCELERATED_MASTERY',
+  'EYE_FOR_AN_EYE', 'RAGEBOUND', 'ANNIHILATION',
+  'RELENTLESS_ASSAULT', 'WEAPON_MASTER', 'TITANS_MIGHT',
+]);
+
+function getMaxPotionAmount(potionIdx: number, maxLv: number, isAsc: boolean, drinkerType: string): number {
+  const weights = POTION_DRINKER_WEIGHTS[drinkerType] ?? POTION_DRINKER_WEIGHTS.WARRIOR;
+  const w = weights[potionIdx] ?? 0;
+  const pre = (lv: number) => w * (lv * POTION_STANDARD_STEP);
+  if (!isAsc) return Math.floor(pre(maxLv));
+  let post = 0;
+  if (potionIdx >= 0 && potionIdx <= 3) {
+    post = w * (maxLv * POTION_STANDARD_STEP);
+  } else if (potionIdx === 4 || potionIdx === 5) {
+    post = 1.0;
+  } else if (potionIdx >= 6 && potionIdx <= 10) {
+    post = w * (maxLv * POTION_STANDARD_STEP * 0.5);
+  }
+  return Math.floor(pre(45) + post);
+}
+
 const selectedCategory = ref<string>('All');
 const selectedClassId = ref<string>(props.classes[0]?.id || '');
 const level = ref<number>(props.classes[0]?.maxLevel || 5);
@@ -127,6 +181,13 @@ const selectedWeaponId = ref<string>('');
 const selectedArmorId = ref<string>('');
 const selectedAccessoryId = ref<string>('');
 
+const potionsDrank = ref<number[]>([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]);
+const fullPotionsMode = ref<boolean>(false);
+
+const selectedDoctrineKey = ref<string>('');
+const doctrineAllocations = ref<Record<string, number>>({});
+const templeQuestLevel = ref<number>(5);
+
 const activeSlotModal = ref<'weapon' | 'armor' | 'accessory' | null>(null);
 const equipSearchQuery = ref<string>('');
 const equipSortBy = ref<'price-desc' | 'price-asc' | 'name'>('price-desc');
@@ -135,6 +196,7 @@ const classById = computed(() => new Map(props.classes.map((c) => [c.id, c])));
 const weaponById = computed(() => new Map(props.weapons.map((w) => [w.id, w])));
 const armorById = computed(() => new Map(props.armors.map((a) => [a.id, a])));
 const accessoryById = computed(() => new Map(props.accessories.map((a) => [a.id, a])));
+const abilityByKey = computed(() => new Map(props.doctrineAbilities.map((a) => [a.key, a])));
 
 const selectedClass = computed<SimClass | undefined>(() => {
   return classById.value.get(selectedClassId.value) ?? props.classes[0];
@@ -154,6 +216,165 @@ const selectedRareTrait = computed(() => rareTraits.value.find((t) => t.key === 
 const equippedWeapon = computed(() => (selectedWeaponId.value ? weaponById.value.get(selectedWeaponId.value) ?? null : null));
 const equippedArmor = computed(() => (selectedArmorId.value ? armorById.value.get(selectedArmorId.value) ?? null : null));
 const equippedAccessory = computed(() => (selectedAccessoryId.value ? accessoryById.value.get(selectedAccessoryId.value) ?? null : null));
+
+// Doctrine helpers
+const selectedDoctrine = computed<DoctrineDefinition | null>(() => {
+  if (!selectedDoctrineKey.value) return null;
+  return props.doctrines.find((d) => d.key === selectedDoctrineKey.value) ?? null;
+});
+
+const currentDoctrineAbilities = computed<DoctrineAbilityDefinition[]>(() => {
+  if (!selectedDoctrine.value) return [];
+  return (selectedDoctrine.value.abilities || [])
+    .map((k) => abilityByKey.value.get(k))
+    .filter(Boolean) as DoctrineAbilityDefinition[];
+});
+
+function getDocLevel(abilityKey: string): number {
+  if (!ascended.value || !selectedDoctrine.value) return 0;
+  if (!selectedDoctrine.value.abilities.includes(abilityKey)) return 0;
+  return doctrineAllocations.value[abilityKey] ?? 0;
+}
+
+function getDocVal(abilityKey: string): number {
+  const lvl = getDocLevel(abilityKey);
+  if (lvl <= 0) return 0;
+  const ab = abilityByKey.value.get(abilityKey);
+  return lvl * (ab?.increase_per_level ?? 0);
+}
+
+const availableLP = computed(() => {
+  const cls = selectedClass.value;
+  const maxLv = cls?.maxLevel || 45;
+  const lv = Math.max(1, Math.min(maxLv, level.value));
+  const questBonus = Math.max(0, Math.min(10, Number(templeQuestLevel.value) || 0));
+  return Math.floor((Math.floor((maxLv - 5) * 0.5 * Math.floor(maxLv / 5)) + lv) / 15) + 3 + questBonus;
+});
+
+const spentLP = computed(() => {
+  return currentDoctrineAbilities.value.reduce((acc, ab) => {
+    const lvl = doctrineAllocations.value[ab.key] ?? 0;
+    return acc + lvl * ab.cost;
+  }, 0);
+});
+
+const remainingLP = computed(() => availableLP.value - spentLP.value);
+
+function setDoctrineNodeLevel(abilityKey: string, nextVal: number) {
+  const ab = abilityByKey.value.get(abilityKey);
+  if (!ab) return;
+  doctrineAllocations.value = {
+    ...doctrineAllocations.value,
+    [abilityKey]: Math.max(0, Math.min(ab.max_level, nextVal)),
+  };
+}
+
+function maxAllDoctrineNodes() {
+  const next = { ...doctrineAllocations.value };
+  for (const ab of currentDoctrineAbilities.value) {
+    next[ab.key] = ab.max_level;
+  }
+  doctrineAllocations.value = next;
+}
+
+function resetDoctrineNodes() {
+  const next = { ...doctrineAllocations.value };
+  for (const ab of currentDoctrineAbilities.value) {
+    next[ab.key] = 0;
+  }
+  doctrineAllocations.value = next;
+}
+
+function formatDoctrineAbilityDesc(ab: DoctrineAbilityDefinition, lvl: number): string {
+  if (ab.format_mode === 0) return ab.description;
+  const isMax = lvl >= ab.max_level;
+  if (ab.format_mode === 1) {
+    const total = ab.increase_per_level * lvl;
+    const inc = isMax ? '' : ` (+${ab.increase_per_level})`;
+    const fmt = lvl === 0 ? `0 (+${ab.increase_per_level})` : isMax ? `${total}` : `${total}${inc}`;
+    return ab.description.replace('%s', fmt);
+  }
+  if (ab.format_mode === 2) {
+    const total = ab.increase_per_level * lvl;
+    const inc = isMax ? '' : ` (+${ab.increase_per_level}%)`;
+    const fmt = lvl === 0 ? `0% (+${ab.increase_per_level}%)` : isMax ? `${total}%` : `${total}%${inc}`;
+    return ab.description.replace('%s', fmt).replace('%%', '%');
+  }
+  if (ab.format_mode === 3) {
+    const total = (ab.increase_per_level * lvl * 0.1).toFixed(1);
+    const incVal = (ab.increase_per_level * 0.1).toFixed(1);
+    const inc = isMax ? '' : ` (+${incVal}%)`;
+    const fmt = lvl === 0 ? `0% (+${incVal}%)` : isMax ? `${total}%` : `${total}%${inc}`;
+    return ab.description.replace('%s', fmt);
+  }
+  return ab.description;
+}
+
+const activeDoctrineEffects = computed(() => {
+  if (!ascended.value || !selectedDoctrine.value) return [];
+  return currentDoctrineAbilities.value
+    .filter((ab) => SPECIAL_DOCTRINE_KEYS.has(ab.key) && (doctrineAllocations.value[ab.key] ?? 0) > 0)
+    .map((ab) => {
+      const lvl = doctrineAllocations.value[ab.key] ?? 0;
+      return {
+        key: ab.key,
+        name: ab.name,
+        sprite: ab.sprite,
+        level: lvl,
+        maxLevel: ab.max_level,
+        description: formatDoctrineAbilityDesc(ab, lvl),
+      };
+    });
+});
+
+const effectiveAllowAllWeapons = computed(() => allowAllWeapons.value || getDocVal('WEAPON_MASTER') > 0);
+
+// Potions helpers
+const potionMaxCaps = computed<number[]>(() => {
+  const cls = selectedClass.value;
+  const maxLv = cls?.maxLevel || 45;
+  const drinker = cls?.potionDrinkerType || 'WARRIOR';
+  return Array.from({ length: 11 }, (_, idx) => getMaxPotionAmount(idx, maxLv, ascended.value, drinker));
+});
+
+const totalPotionsDrank = computed(() => potionsDrank.value.reduce((a, b) => a + b, 0));
+const totalPotionMaxCap = computed(() => potionMaxCaps.value.reduce((a, b) => a + b, 0));
+
+function syncPotionsWithCaps() {
+  const caps = potionMaxCaps.value;
+  if (fullPotionsMode.value) {
+    potionsDrank.value = [...caps];
+  } else {
+    potionsDrank.value = potionsDrank.value.map((val, idx) => Math.max(0, Math.min(val, caps[idx] ?? 0)));
+  }
+}
+
+function maxAllPotions() {
+  fullPotionsMode.value = true;
+  potionsDrank.value = [...potionMaxCaps.value];
+}
+
+function clearPotions() {
+  fullPotionsMode.value = false;
+  potionsDrank.value = [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0];
+}
+
+function adjustPotion(idx: number, delta: number) {
+  fullPotionsMode.value = false;
+  const cap = potionMaxCaps.value[idx] ?? 0;
+  const next = [...potionsDrank.value];
+  next[idx] = Math.max(0, Math.min(cap, (next[idx] ?? 0) + delta));
+  potionsDrank.value = next;
+}
+
+function setPotionCount(idx: number, val: number) {
+  fullPotionsMode.value = false;
+  const cap = potionMaxCaps.value[idx] ?? 0;
+  const clean = Number.isFinite(val) ? Math.floor(val) : 0;
+  const next = [...potionsDrank.value];
+  next[idx] = Math.max(0, Math.min(cap, clean));
+  potionsDrank.value = next;
+}
 
 // Promotion & Demotion relations for quick lineage switching
 const lineage = computed(() => {
@@ -190,7 +411,7 @@ function syncUrlClass(id: string) {
 }
 
 function unequipIncompatible(cls: SimClass) {
-  if (equippedWeapon.value && !allowAllWeapons.value) {
+  if (equippedWeapon.value && !effectiveAllowAllWeapons.value) {
     const expectedCat = WEAPON_CATEGORY_BY_TYPE[cls.weaponType];
     if (expectedCat && equippedWeapon.value.category !== expectedCat) {
       selectedWeaponId.value = '';
@@ -224,11 +445,15 @@ function selectCategory(cat: string) {
   }
 }
 
-watch(allowAllWeapons, (allowed) => {
+watch(effectiveAllowAllWeapons, (allowed) => {
   if (!allowed && selectedClass.value) {
     unequipIncompatible(selectedClass.value);
   }
 });
+
+watch([selectedClassId, ascended, fullPotionsMode], () => {
+  syncPotionsWithCaps();
+}, { immediate: true });
 
 watch(level, (val) => {
   const maxLv = selectedClass.value?.maxLevel || 45;
@@ -248,6 +473,10 @@ function resetBuild() {
   selectedWeaponId.value = '';
   selectedArmorId.value = '';
   selectedAccessoryId.value = '';
+  selectedDoctrineKey.value = '';
+  doctrineAllocations.value = {};
+  templeQuestLevel.value = 5;
+  clearPotions();
 }
 
 // Equipment modal helpers
@@ -256,7 +485,7 @@ const modalCompatibleItems = computed<SimEquip[]>(() => {
   if (!slot || !selectedClass.value) return [];
   let list: SimEquip[] = [];
   if (slot === 'weapon') {
-    if (allowAllWeapons.value) {
+    if (effectiveAllowAllWeapons.value) {
       list = props.weapons;
     } else {
       const expectedCat = WEAPON_CATEGORY_BY_TYPE[selectedClass.value.weaponType];
@@ -373,8 +602,11 @@ const equippedGear = computed(() => {
   return [equippedWeapon.value, equippedArmor.value, equippedAccessory.value].filter(Boolean) as SimEquip[];
 });
 
-function sumGearStat(key: string): number {
-  return equippedGear.value.reduce((acc, g) => acc + Number(g.stats?.[key] ?? 0), 0);
+function sumGearStat(key: string, accessoryMult = 1): number {
+  return equippedGear.value.reduce((acc, g) => {
+    const mult = accessoryMult > 1 && g.category === 'Accessory' ? accessoryMult : 1;
+    return acc + Number(g.stats?.[key] ?? 0) * mult;
+  }, 0);
 }
 
 function hasGearFlag(flag: string): boolean {
@@ -392,6 +624,11 @@ const computedStats = computed(() => {
   const tc = traitCommonKey.value;
   const tr = traitRareKey.value;
   const passive = cls.passiveSkillKey || 'PASSIVE_NONE';
+  const p = (idx: number) => potionsDrank.value[idx] ?? 0;
+  const loreMasterMult = getDocVal('LORE_MASTER') > 0 ? 2 : 1;
+  const armorMasterPct = getDocVal('ARMOR_MASTER');
+  const armorDefBonus = armorMasterPct > 0 && equippedArmor.value ? Math.floor(((equippedArmor.value.stats?.defense ?? 0) * armorMasterPct) / 100) : 0;
+  const armorMdefBonus = armorMasterPct > 0 && equippedArmor.value ? Math.floor(((equippedArmor.value.stats?.magicDefense ?? 0) * armorMasterPct) / 100) : 0;
 
   const baseCon = s.baseConstitution ?? 0;
   const baseInt = s.baseIntelligence ?? 0;
@@ -400,12 +637,12 @@ const computedStats = computed(() => {
   const baseDef = s.baseDefense ?? 0;
   const baseMdef = s.baseMagicDefense ?? 0;
 
-  const rawCon = Math.floor(baseCon * ascMult) + sumGearStat('constitution');
-  const rawInt = Math.floor(baseInt * ascMult) + sumGearStat('intelligence');
-  const rawDex = Math.floor(baseDex * ascMult) + sumGearStat('dexterity');
-  const rawHp = Math.floor((baseMaxHp + lv - 1) * ascMult) + sumGearStat('maxHp');
-  const rawDef = baseDef + sumGearStat('defense');
-  const rawMdef = baseMdef + sumGearStat('magicDefense');
+  const rawCon = Math.floor(baseCon * ascMult) + p(0) + getDocVal('IMPROVED_CONSTITUTION') + getDocVal('EXALTED_CONSTITUTION') + sumGearStat('constitution', loreMasterMult);
+  const rawInt = Math.floor(baseInt * ascMult) + p(2) + getDocVal('IMPROVED_INTELLIGENCE') + getDocVal('EXALTED_INTELLIGENCE') + sumGearStat('intelligence', loreMasterMult);
+  const rawDex = Math.floor(baseDex * ascMult) + p(1) + getDocVal('IMPROVED_DEXTERITY') + getDocVal('EXALTED_DEXTERITY') + sumGearStat('dexterity', loreMasterMult);
+  const rawHp = Math.floor((baseMaxHp + lv - 1) * ascMult) + p(3) * 5 + getDocVal('IMPROVED_HEALTH') + getDocVal('EXALTED_HEALTH') + sumGearStat('maxHp', loreMasterMult);
+  const rawDef = baseDef + p(4) + getDocVal('TROLL_RESISTANCE') + sumGearStat('defense') + armorDefBonus;
+  const rawMdef = baseMdef + p(5) + getDocVal('WARLOCK_RESILIENCE') + sumGearStat('magicDefense') + armorMdefBonus;
 
   const totalCon = Math.round(rawCon * getCommonTraitMultiplier(tc, 0));
   const totalInt = Math.round(rawInt * getCommonTraitMultiplier(tc, 1));
@@ -416,7 +653,7 @@ const computedStats = computed(() => {
 
   const threat = Math.max(
     1,
-    (cls.innate?.threat ?? 1) + sumGearStat('threat') + (tr === 'INTIMIDATING' ? 2 : tr === 'INTIMIDATING_PLUS' ? 4 : 0)
+    (cls.innate?.threat ?? 1) + sumGearStat('threat') + getDocVal('MANIFEST_DANGER') + (tr === 'INTIMIDATING' ? 2 : tr === 'INTIMIDATING_PLUS' ? 4 : 0)
   );
 
   // Weapon scaling & Attack Damage
@@ -468,18 +705,20 @@ const computedStats = computed(() => {
   if (passive === 'PASSIVE_DEADLY_FINESSE_I') passiveSpeed = 50;
   else if (passive === 'PASSIVE_DEADLY_FINESSE_II') passiveSpeed = 75;
   else if (passive === 'PASSIVE_DEADLY_FINESSE_III') passiveSpeed = 100;
-  const attackSpeed = 100 + (s.attackSpeed ?? 0) + sumGearStat('attackSpeed') + passiveSpeed;
+  const attackSpeed = 100 + (s.attackSpeed ?? 0) + sumGearStat('attackSpeed') + getDocVal('LIGHTNING_SPEED') + passiveSpeed;
 
   // Crit Chance & Damage
   const baseCritChance =
     (s.criticalChance ?? 0) +
+    p(6) * 0.01 +
+    getDocVal('EXPOSE_WEAKNESS') * 0.01 +
     (tr === 'DEADEYE' ? 0.12 : 0) +
     (passive === 'PASSIVE_KEEN_VISION' ? 0.10 : 0);
   const gearCritChance = sumGearStat('criticalChance');
   const physCritChance = baseCritChance + gearCritChance + sumGearStat('physicalCriticalChanceBonus');
   const spellCritChance = baseCritChance + gearCritChance + sumGearStat('spellCriticalChanceBonus');
 
-  const baseCritDmg = 1.5 + (s.criticalDamage ?? 0) + (passive === 'PASSIVE_KEEN_VISION' ? 0.25 : 0);
+  const baseCritDmg = 1.5 + (s.criticalDamage ?? 0) + p(7) * 0.02 + getDocVal('EXPLOIT_WEAKNESS') * 0.01 + (passive === 'PASSIVE_KEEN_VISION' ? 0.25 : 0);
   const gearCritDmg = sumGearStat('criticalDamage');
   const ruthlessMult = tr === 'RUTHLESS' ? 1.2 : tr === 'RUTHLESS_PLUS' ? 1.3 : 1.0;
   const physCritDmg = (baseCritDmg + gearCritDmg + sumGearStat('physicalCriticalDamageBonus')) * ruthlessMult;
@@ -492,17 +731,22 @@ const computedStats = computed(() => {
 
   const dodgeChance =
     (s.flatDodgeChance ?? 0) +
+    p(10) * 0.01 +
+    getDocVal('EPHEMERAL_PRESENCE') * 0.01 +
     sumGearStat('flatDodgeChance') +
     (tr === 'NIMBLE' ? 0.10 : tr === 'NIMBLE_PLUS' ? 0.15 : 0);
 
   // Mana & Lifesteal
-  const manaRegen = 10 + Math.floor(totalInt / 10) + sumGearStat('manaRegen') + (tr === 'GIFTED' ? 2 : tr === 'GIFTED_PLUS' ? 4 : 0);
+  const manaRegen = 10 + Math.floor(totalInt / 10) + sumGearStat('manaRegen') + getDocVal('EXALTED_MANA') + (tr === 'GIFTED' ? 2 : tr === 'GIFTED_PLUS' ? 4 : 0);
   const turnsToCast = Math.ceil(100 / Math.max(1, manaRegen));
 
-  const lifesteal =
-    (s.baseLifesteal ?? 0) +
-    sumGearStat('lifesteal') +
-    (tr === 'CURSED' ? 20 : tr === 'CURSED_PLUS' ? 30 : 0);
+  const hasAnnihilation = getDocVal('ANNIHILATION') > 0;
+  const lifesteal = hasAnnihilation
+    ? 0
+    : (s.baseLifesteal ?? 0) +
+      sumGearStat('lifesteal') +
+      getDocVal('SERVUS_SANGUINIS') +
+      (tr === 'CURSED' ? 20 : tr === 'CURSED_PLUS' ? 30 : 0);
 
   // Troll Blood & Regeneration
   const tierRank = Math.floor((cls.maxLevel || 5) / 5);
@@ -516,7 +760,7 @@ const computedStats = computed(() => {
   const regeneration = (s.regeneration ?? 0) + sumGearStat('regeneration') + trollBloodBonus;
 
   // Damage Dealt & Taken
-  const damageDealt = Math.max(0, 1.0 + sumGearStat('damageDealtModifier') + (tr === 'RECKLESS' ? 0.15 : 0));
+  const damageDealt = Math.max(0, 1.0 + sumGearStat('damageDealtModifier') + (getDocVal('RAGEBOUND') > 0 ? 0.35 : 0) + (tr === 'RECKLESS' ? 0.15 : 0));
 
   let dragonBloodReduction = 0;
   if (tr === 'DRAGON_BLOOD_PLUS') {
@@ -524,7 +768,7 @@ const computedStats = computed(() => {
   } else if (tr === 'DRAGON_BLOOD') {
     dragonBloodReduction = effectiveRank * 0.005;
   }
-  const damageTaken = Math.max(0, 1.0 + sumGearStat('damageTakenModifier') + (tr === 'RECKLESS' ? 0.15 : 0) - dragonBloodReduction);
+  const damageTaken = Math.max(0, 1.0 + sumGearStat('damageTakenModifier') + (getDocVal('RAGEBOUND') > 0 ? 0.35 : 0) + (tr === 'RECKLESS' ? 0.15 : 0) - dragonBloodReduction);
 
   let deadlyFinessePenalty = 0;
   if (passive === 'PASSIVE_DEADLY_FINESSE_I') deadlyFinessePenalty = 0.25;
@@ -542,23 +786,25 @@ const computedStats = computed(() => {
   else if (passive === 'PASSIVE_AETHER_RESONANCE_V') passiveArmorPen = 0.50;
   else if (passive === 'PASSIVE_AETHER_RESONANCE_VI') passiveArmorPen = 0.60;
   else if (passive === 'PASSIVE_AETHER_RESONANCE_VII') passiveArmorPen = 0.70;
-  const armorPenetration = Math.min(0.90, passiveArmorPen + (tr === 'SUNDERING' ? 0.15 : 0));
+  const armorPenetration = Math.min(0.90, passiveArmorPen + getDocVal('TACTICAL_KNOWLEDGE') * 0.01 + (tr === 'SUNDERING' ? 0.15 : 0));
 
   let passiveCounter = 0;
   if (passive === 'PASSIVE_FOCUSED_EYE') passiveCounter = 0.20;
   else if (passive === 'PASSIVE_PERCEPTIVE_EYE') passiveCounter = tierRank >= 6 ? 0.40 : 0.30;
   else if (passive === 'PASSIVE_OMNISCIENT_EYE') passiveCounter = 0.50;
-  const counterattack = (s.counterattack ?? 0) + sumGearStat('counterattack') + (tr === 'REACTIVE' ? 0.10 : 0) + passiveCounter;
+  const counterattack = (s.counterattack ?? 0) + sumGearStat('counterattack') + getDocVal('CONDITIONED_REFLEXES') * 0.01 + (tr === 'REACTIVE' ? 0.10 : 0) + passiveCounter;
 
-  const statusImmunity = (s.immunityToStatus ?? 0) + sumGearStat('immunityToStatus') + (tr === 'MINDFUL' ? 0.10 : 0);
+  const statusImmunity = (s.immunityToStatus ?? 0) + p(9) * 0.01 + getDocVal('IMPENETRABLE_WILLPOWER') * 0.01 + sumGearStat('immunityToStatus') + (tr === 'MINDFUL' ? 0.10 : 0);
   const zeroHealing = hasGearFlag('zeroHealing');
   const healingModifier = zeroHealing
     ? 0
-    : (1.0 + sumGearStat('healingModifier')) * (tr === 'EMPATHETIC' ? 1.2 : tr === 'EMPATHETIC_PLUS' ? 1.4 : 1.0);
+    : (1.0 + sumGearStat('healingModifier') + getDocVal('SELFLESS_SPIRIT') * 0.01) * (tr === 'EMPATHETIC' ? 1.2 : tr === 'EMPATHETIC_PLUS' ? 1.4 : 1.0);
 
   const darknessReduction = (cls.innate?.darknessReduction ?? 0) + sumGearStat('darknessReduction') + (tr === 'BLESSED' ? 10 : 0);
   const darknessDamageAmp =
     (s.darknessDamageAmplification ?? 0) +
+    p(8) * 0.001 +
+    getDocVal('SERVUS_UMBRAE') * 0.001 +
     sumGearStat('darknessDamageAmplification') +
     (tr === 'NOCTURNAL' ? 0.01 : tr === 'NOCTURNAL_PLUS' ? 0.015 : 0);
 
@@ -577,8 +823,9 @@ const computedStats = computed(() => {
     passive === 'PASSIVE_OMNISCIENT_EYE' ||
     hasGearFlag('alwaysHits');
 
-  const physRetaliation = (s.retaliationPhysicalDamage ?? 0) + sumGearStat('retaliationPhysicalDamage');
-  const magRetaliation = (s.retaliationMagicalDamage ?? 0) + sumGearStat('retaliationMagicalDamage');
+  const mirrorOfAnguish = getDocVal('MIRROR_OF_ANGUISH') > 0;
+  const physRetaliation = (s.retaliationPhysicalDamage ?? 0) + sumGearStat('retaliationPhysicalDamage') + (mirrorOfAnguish ? totalDef : 0);
+  const magRetaliation = (s.retaliationMagicalDamage ?? 0) + sumGearStat('retaliationMagicalDamage') + (mirrorOfAnguish ? totalMdef : 0);
   const blockChance = sumGearStat('blockChance');
   const physBlockChance = blockChance + sumGearStat('physicalBlockChance');
   const magicBlockChance = blockChance + sumGearStat('magicBlockChance');
@@ -589,6 +836,8 @@ const computedStats = computed(() => {
   const rangedDragReduction = Math.min(1, sumGearStat('rangedDragReduction'));
   const pressureReduction = sumGearStat('pressureReduction');
   const statusResistance = Math.min(1, sumGearStat('resistanceToStatus'));
+  const critDamageReduction = getDocVal('NECROSIS_PORPHYRICA') * 0.01;
+  const ignoreStatusImmunity = sumGearStat('ignoreImmunityToStatus') + getDocVal('MIND_BENDER') * 0.01;
   const fortifiedShield = tr === 'FORTIFIED' ? Math.round(totalHp * 0.15) : 0;
 
   return {
@@ -648,6 +897,8 @@ const computedStats = computed(() => {
     rangedDragReduction,
     pressureReduction,
     statusResistance,
+    critDamageReduction,
+    ignoreStatusImmunity,
     fortifiedShield,
   };
 });
@@ -871,7 +1122,7 @@ function formatPct(val: number, decimals = 0): string {
             <div class="slotCard" :class="{ filled: equippedWeapon }">
               <div class="slotHeader">
                 <span class="slotType">
-                  Weapon · {{ allowAllWeapons ? 'Any Weapon' : (WEAPON_TYPE_LABEL[selectedClass.weaponType] || selectedClass.weaponType) }}
+                  Weapon · {{ effectiveAllowAllWeapons ? 'Any Weapon' : (WEAPON_TYPE_LABEL[selectedClass.weaponType] || selectedClass.weaponType) }}
                 </span>
                 <div class="slotActions">
                   <a
@@ -1046,6 +1297,204 @@ function formatPct(val: number, decimals = 0): string {
             </div>
           </div>
         </section>
+
+        <!-- Temple Doctrine Card (Ascended only) -->
+        <section class="panel">
+          <div class="panelTitleRow">
+            <h2>Temple Doctrine</h2>
+            <span v-if="!ascended" class="tierBadge mutedBadge">Ascended Only</span>
+            <span
+              v-else-if="selectedDoctrine"
+              class="tierBadge"
+              :class="{ overBudgetBadge: remainingLP < 0 }"
+            >
+              LP: {{ remainingLP }} / {{ availableLP }}
+            </span>
+          </div>
+
+          <div v-if="!ascended" class="lockedBox">
+            <p class="lockedText">
+              Temple Doctrines are only available to Ascended adventurers.
+            </p>
+            <button type="button" class="actionBtn ascendPromptBtn" @click="ascended = true">
+              Ascend Unit to Equip Doctrine
+            </button>
+          </div>
+
+          <div v-else class="doctrineBody">
+            <div class="doctrineControlsRow">
+              <div class="fieldBlock docSelectBlock">
+                <label for="simDoctrineSelect" class="fieldLabel">Doctrine</label>
+                <select id="simDoctrineSelect" v-model="selectedDoctrineKey" class="simSelect">
+                  <option value="">None</option>
+                  <option v-for="doc in doctrines" :key="doc.key" :value="doc.key">
+                    {{ doc.name }}
+                  </option>
+                </select>
+              </div>
+
+              <div class="fieldBlock questLpBlock">
+                <label for="simQuestLpInput" class="fieldLabel">Quest LP (0–10)</label>
+                <input
+                  id="simQuestLpInput"
+                  v-model.number="templeQuestLevel"
+                  type="number"
+                  min="0"
+                  max="10"
+                  class="levelNum"
+                />
+              </div>
+            </div>
+
+            <template v-if="selectedDoctrine">
+              <div class="docSummaryRow">
+                <img
+                  :src="`${resolvedBase}/images/${selectedDoctrine.sprite}.png`"
+                  :alt="selectedDoctrine.name"
+                  class="sprite"
+                  width="32"
+                  height="32"
+                />
+                <div class="docSummaryMeta">
+                  <div class="docSummaryDesc">{{ selectedDoctrine.description_short }}</div>
+                  <div class="docLpLine">
+                    <span>Available: <strong>{{ availableLP }}</strong></span>
+                    <span>Spent: <strong>{{ spentLP }}</strong></span>
+                    <span :class="{ overBudgetText: remainingLP < 0 }">
+                      Remaining: <strong>{{ remainingLP }}</strong>
+                    </span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="docActionBtns">
+                <button type="button" class="slotBtn pickBtn" @click="maxAllDoctrineNodes">
+                  Max All Nodes
+                </button>
+                <button type="button" class="slotBtn clearBtn" @click="resetDoctrineNodes">
+                  Reset Nodes
+                </button>
+              </div>
+
+              <div class="docNodesList">
+                <div
+                  v-for="ab in currentDoctrineAbilities"
+                  :key="ab.key"
+                  class="docNodeCard"
+                  :class="{
+                    allocated: (doctrineAllocations[ab.key] ?? 0) > 0,
+                    maxed: (doctrineAllocations[ab.key] ?? 0) >= ab.max_level,
+                  }"
+                >
+                  <div class="docNodeTop">
+                    <img
+                      :src="`${resolvedBase}/images/${ab.sprite}.png`"
+                      :alt="ab.name"
+                      class="sprite"
+                      width="24"
+                      height="24"
+                    />
+                    <div class="docNodeInfo">
+                      <span class="docNodeName">{{ ab.name }}</span>
+                      <span class="docNodeCost">{{ ab.cost }} LP/lvl</span>
+                    </div>
+                    <div class="stepperGroup">
+                      <button
+                        type="button"
+                        class="stepBtn"
+                        :disabled="(doctrineAllocations[ab.key] ?? 0) <= 0"
+                        @click="setDoctrineNodeLevel(ab.key, (doctrineAllocations[ab.key] ?? 0) - 1)"
+                      >
+                        -
+                      </button>
+                      <span class="stepVal">{{ doctrineAllocations[ab.key] ?? 0 }} / {{ ab.max_level }}</span>
+                      <button
+                        type="button"
+                        class="stepBtn"
+                        :disabled="(doctrineAllocations[ab.key] ?? 0) >= ab.max_level"
+                        @click="setDoctrineNodeLevel(ab.key, (doctrineAllocations[ab.key] ?? 0) + 1)"
+                      >
+                        +
+                      </button>
+                    </div>
+                  </div>
+                  <div class="docNodeDesc">
+                    {{ formatDoctrineAbilityDesc(ab, doctrineAllocations[ab.key] ?? 0) }}
+                  </div>
+                </div>
+              </div>
+            </template>
+          </div>
+        </section>
+
+        <!-- Potions (Alchemy) Card -->
+        <section class="panel">
+          <div class="panelTitleRow">
+            <h2>Potions (Alchemy)</h2>
+            <span class="tierBadge">{{ totalPotionsDrank }} / {{ totalPotionMaxCap }}</span>
+          </div>
+
+          <div class="potionToolbar">
+            <label class="inlineToggle">
+              <input v-model="fullPotionsMode" type="checkbox" />
+              <span>Drink Full Potions</span>
+            </label>
+            <div class="potionToolbarBtns">
+              <button type="button" class="slotBtn pickBtn" @click="maxAllPotions">
+                Max All Potions
+              </button>
+              <button type="button" class="slotBtn clearBtn" @click="clearPotions">
+                Clear Potions
+              </button>
+            </div>
+          </div>
+
+          <div class="potionsList">
+            <div v-for="pot in POTION_TYPES" :key="pot.key" class="potionRow">
+              <div class="potionInfo">
+                <img
+                  :src="`${resolvedBase}/images/${pot.sprite}.png`"
+                  :alt="pot.name"
+                  class="sprite"
+                  width="24"
+                  height="24"
+                />
+                <div class="potionText">
+                  <span class="potionName">{{ pot.name }}</span>
+                  <span class="potionEffect">{{ pot.effectLabel }}</span>
+                </div>
+              </div>
+              <div class="stepperGroup">
+                <button
+                  type="button"
+                  class="stepBtn"
+                  :disabled="(potionsDrank[pot.index] ?? 0) <= 0"
+                  @click="adjustPotion(pot.index, -1)"
+                >
+                  -
+                </button>
+                <input
+                  type="number"
+                  min="0"
+                  :max="potionMaxCaps[pot.index] ?? 0"
+                  :value="potionsDrank[pot.index] ?? 0"
+                  class="potionNumInput"
+                  :aria-label="`${pot.name} potions drank`"
+                  @input="setPotionCount(pot.index, Number(($event.target as HTMLInputElement).value))"
+                />
+                <span class="potionCap">/ {{ potionMaxCaps[pot.index] ?? 0 }}</span>
+                <button
+                  type="button"
+                  class="stepBtn"
+                  :disabled="(potionsDrank[pot.index] ?? 0) >= (potionMaxCaps[pot.index] ?? 0)"
+                  @click="adjustPotion(pot.index, 1)"
+                >
+                  +
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
       </div>
 
       <!-- RIGHT COLUMN: Computed Stats & Skills -->
@@ -1152,6 +1601,10 @@ function formatPct(val: number, decimals = 0): string {
                 <dt>Special Damage</dt>
                 <dd>{{ formatPct(computedStats.specialDamage) }}</dd>
               </div>
+              <div v-if="computedStats.ignoreStatusImmunity > 0" class="statRow">
+                <dt>Ignore Status Imm.</dt>
+                <dd>{{ formatPct(computedStats.ignoreStatusImmunity) }}</dd>
+              </div>
             </dl>
           </section>
 
@@ -1252,6 +1705,10 @@ function formatPct(val: number, decimals = 0): string {
                 <dt>Status Resistance</dt>
                 <dd>{{ formatPct(computedStats.statusResistance) }}</dd>
               </div>
+              <div v-if="computedStats.critDamageReduction > 0" class="statRow">
+                <dt>Crit DMG Reduction</dt>
+                <dd>{{ formatPct(computedStats.critDamageReduction) }}</dd>
+              </div>
             </dl>
           </section>
         </div>
@@ -1294,6 +1751,18 @@ function formatPct(val: number, decimals = 0): string {
             </div>
           </div>
 
+          <div v-if="activeDoctrineEffects.length" class="gearEffectsBlock">
+            <h3>Active Doctrine Abilities ({{ selectedDoctrine?.name }})</h3>
+            <div v-for="eff in activeDoctrineEffects" :key="eff.key" class="gearEffectRow">
+              <img :src="`${resolvedBase}/images/${eff.sprite}.png`" :alt="eff.name" class="sprite" width="22" height="22" />
+              <div>
+                <strong>{{ eff.name }}</strong>
+                <span class="gearNoteBadge">Lv {{ eff.level }}/{{ eff.maxLevel }}</span>
+                <p class="gearDescText">{{ eff.description }}</p>
+              </div>
+            </div>
+          </div>
+
           <div v-if="equippedGear.some((g) => g.notes || g.description)" class="gearEffectsBlock">
             <h3>Equipped Item Effects</h3>
             <div v-for="gear in equippedGear" :key="gear.id" class="gearEffectRow">
@@ -1327,7 +1796,7 @@ function formatPct(val: number, decimals = 0): string {
             </h3>
             <p v-if="selectedClass" class="modalSub">
               <template v-if="activeSlotModal === 'weapon'">
-                Showing {{ allowAllWeapons ? 'all weapons' : `${WEAPON_TYPE_LABEL[selectedClass.weaponType] || selectedClass.weaponType}s` }}
+                Showing {{ effectiveAllowAllWeapons ? 'all weapons' : `${WEAPON_TYPE_LABEL[selectedClass.weaponType] || selectedClass.weaponType}s` }}
               </template>
               <template v-else-if="activeSlotModal === 'armor'">
                 Showing {{ ARMOR_TYPE_LABEL[selectedClass.armorType] || selectedClass.armorType }}
@@ -2371,6 +2840,280 @@ function formatPct(val: number, decimals = 0): string {
   padding: 2rem;
   text-align: center;
   color: var(--text-muted);
+}
+
+/* Temple Doctrine & Potions Panels */
+.mutedBadge {
+  color: var(--text-muted);
+}
+
+.overBudgetBadge {
+  border-color: #ef4444;
+  color: #fca5a5;
+}
+
+.overBudgetText {
+  color: #fca5a5;
+}
+
+.lockedBox {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  padding: 0.75rem;
+  background: var(--bg-inset);
+  border: 1px dashed var(--border-subtle);
+  border-radius: 8px;
+}
+
+.lockedText {
+  margin: 0;
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.ascendPromptBtn {
+  background: rgba(245, 158, 11, 0.14);
+  border-color: rgba(245, 158, 11, 0.45);
+  color: #fbbf24;
+  padding: 5px 12px;
+  font-size: 0.8rem;
+}
+
+.ascendPromptBtn:hover {
+  border-color: #f59e0b;
+}
+
+.doctrineBody {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.doctrineControlsRow {
+  display: flex;
+  gap: 8px;
+  align-items: flex-end;
+}
+
+.docSelectBlock {
+  flex: 1;
+  min-width: 0;
+}
+
+.questLpBlock {
+  width: 96px;
+  flex-shrink: 0;
+}
+
+.questLpBlock .levelNum {
+  width: 100%;
+}
+
+.docSummaryRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.55rem 0.7rem;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
+.docSummaryMeta {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.docSummaryDesc {
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.docLpLine {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+}
+
+.docActionBtns {
+  display: flex;
+  gap: 6px;
+}
+
+.docNodesList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.docNodeCard {
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 7px;
+  padding: 0.5rem 0.65rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.docNodeCard.allocated {
+  border-color: var(--brand-primary);
+}
+
+.docNodeCard.maxed {
+  border-color: rgba(245, 158, 11, 0.55);
+}
+
+.docNodeTop {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.docNodeInfo {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.docNodeName {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.docNodeCost {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.docNodeDesc {
+  font-size: 0.75rem;
+  color: var(--text-secondary);
+  line-height: 1.35;
+  white-space: pre-line;
+}
+
+.stepperGroup {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  flex-shrink: 0;
+}
+
+.stepBtn {
+  width: 24px;
+  height: 24px;
+  border-radius: 5px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-weight: 700;
+  font-size: 0.85rem;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.stepBtn:hover:not(:disabled) {
+  border-color: var(--brand-primary);
+}
+
+.stepBtn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+
+.stepVal {
+  min-width: 34px;
+  text-align: center;
+  font-size: 0.78rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  color: var(--text-primary);
+}
+
+.potionToolbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 0.65rem;
+}
+
+.potionToolbarBtns {
+  display: flex;
+  gap: 6px;
+}
+
+.potionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.potionRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 5px 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 7px;
+}
+
+.potionInfo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+}
+
+.potionText {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.potionName {
+  font-size: 0.81rem;
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.2;
+}
+
+.potionEffect {
+  font-size: 0.7rem;
+  color: var(--text-muted);
+}
+
+.potionNumInput {
+  width: 44px;
+  padding: 2px 4px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 5px;
+  color: var(--text-primary);
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: center;
+  font-variant-numeric: tabular-nums;
+}
+
+.potionCap {
+  min-width: 28px;
+  font-size: 0.75rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
 }
 
 @media (max-width: 960px) {

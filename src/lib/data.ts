@@ -642,6 +642,25 @@ const EXTRA_ATTACK_SPEED_ITEMS: Record<string, number> = {
   MoltenSlayer: 10,
 };
 
+const OUTLANDER_THIEF_POTION = new Set([
+  'Bandit', 'Exile', 'Vagabond', 'Brigand', 'Renegade', 'Desperado', 'ElSalvador',
+]);
+const OUTLANDER_MAGE_POTION = new Set([
+  'Druid', 'ForestDruid', 'GloomDruid', 'Hemodruid', 'SanguineDruid', 'BloodthornArchdruid', 'DaturaHierophant',
+]);
+
+function resolvePotionDrinkerType(unitId: string, category: string): 'WARRIOR' | 'MAGE' | 'ARCHER' | 'THIEF' {
+  if (category === 'Outlander') {
+    if (OUTLANDER_THIEF_POTION.has(unitId)) return 'THIEF';
+    if (OUTLANDER_MAGE_POTION.has(unitId)) return 'MAGE';
+    return 'WARRIOR';
+  }
+  if (category === 'Apprentice') return 'MAGE';
+  if (category === 'Archer') return 'ARCHER';
+  if (category === 'Rogue') return 'THIEF';
+  return 'WARRIOR';
+}
+
 export function getSimulatorCatalog() {
   const skills = getAllSkills();
   const skillByKey = new Map<string, any>();
@@ -697,6 +716,7 @@ export function getSimulatorCatalog() {
         passiveSkillKey: passiveDetail?.key ?? raw?.passive_skill ?? 'PASSIVE_NONE',
         activeSkillDetail: activeDetail,
         passiveSkillDetail: passiveDetail,
+        potionDrinkerType: resolvePotionDrinkerType(u.id, u.category),
         innate: {
           threat: UNIT_THREAT_MAP[u.id] ?? 1,
           darknessReduction: UNIT_DARKNESS_REDUCTION_MAP[u.id] ?? 0,
@@ -749,5 +769,8 @@ export function getSimulatorCatalog() {
     return (a.name || '').localeCompare(b.name || '');
   });
 
-  return { classes, weapons, armors, accessories, traits };
+  const doctrines = getAllDoctrines();
+  const doctrineAbilities = getAllDoctrineAbilities();
+
+  return { classes, weapons, armors, accessories, traits, doctrines, doctrineAbilities };
 }

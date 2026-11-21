@@ -4,12 +4,12 @@ import BuildSimulator from '../../components/BuildSimulator.vue';
 import { getSimulatorCatalog } from '../../lib/data';
 import { base } from '../../lib/base';
 
-const { classes, weapons, armors, accessories, traits } = getSimulatorCatalog();
+const { classes, weapons, armors, accessories, traits, doctrines, doctrineAbilities } = getSimulatorCatalog();
 ---
 
 <WikiLayout
   title="Build Simulator"
-  description="Simulate adventurer classes, equipment loadouts, traits, stats, and skills in Idle Guild Master Plus."
+  description="Simulate adventurer classes, equipment loadouts, traits, potions, doctrines, stats, and skills in Idle Guild Master Plus."
 >
   <BuildSimulator
     client:load
@@ -18,6 +18,8 @@ const { classes, weapons, armors, accessories, traits } = getSimulatorCatalog();
     armors={armors as any}
     accessories={accessories as any}
     traits={traits as any}
+    doctrines={doctrines as any}
+    doctrineAbilities={doctrineAbilities as any}
     basePath={base}
   />
 </WikiLayout>
