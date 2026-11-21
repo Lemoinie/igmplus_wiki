@@ -1,0 +1,14 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import GameCalculators from '../../components/GameCalculators.vue';
+import { getAllTraits } from '../../lib/data';
+
+const traits = getAllTraits();
+---
+
+<WikiLayout
+  title="Calculator"
+  description="Class XP & leveling time calculator, Pet XP & Merge simulator, Tavern Trait combination probability calculator, and Damage Reduction calculator for Idle Guild Master Plus."
+>
+  <GameCalculators client:load traits={traits as any} />
+</WikiLayout>

@@ -167,6 +167,16 @@ const navIcons: Record<string, NavIconDef> = {
       { cx: 12, cy: 18, r: 2 },
     ],
   },
+  calculator: {
+    paths: [
+      'M6 2h12a2 2 0 0 1 2 2v16a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2z',
+      'M8 6h8v3H8z',
+      'M8 13h2',
+      'M14 13h2',
+      'M8 17h2',
+      'M14 17h2',
+    ],
+  },
   mechanics: {
     paths: [
       'M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z',
@@ -205,6 +215,7 @@ const navSections = [
     title: 'OTHER',
     items: [
       { label: 'Simulator', href: `${base}/simulator`, icon: 'simulator' },
+      { label: 'Calculator', href: `${base}/calculator`, icon: 'calculator' },
       { label: "Game's Mechanics", href: `${base}/mechanics/defense-and-armor`, icon: 'mechanics' },
       { label: 'Whats News?', href: `${base}/changelog`, icon: 'news' },
     ],
