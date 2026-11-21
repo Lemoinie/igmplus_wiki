@@ -1,0 +1,12 @@
+{
+  "id": "BoarTusk",
+  "name": "Boar Tusk",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "boar_tusk",
+  "description": "A well preserved tusk from a wild boar.",
+  "stats": {},
+  "notes": ""
+}

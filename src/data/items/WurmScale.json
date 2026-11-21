@@ -1,0 +1,12 @@
+{
+  "id": "WurmScale",
+  "name": "Wurm Scale",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "wurm_scale",
+  "description": "Very hard keratin scales covering the body of the desert Wurms. Can be used as plates to reinforce equipment.",
+  "stats": {},
+  "notes": ""
+}

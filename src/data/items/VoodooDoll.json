@@ -1,0 +1,12 @@
+{
+  "id": "VoodooDoll",
+  "name": "Voodoo Doll",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 84,
+  "sprite": "voodoo_doll",
+  "description": "Permeated with an ancient, despicable magic, in the right hands this simple cloth doll could inflict unimaginable suffering to an unaware victim.",
+  "stats": {},
+  "notes": ""
+}

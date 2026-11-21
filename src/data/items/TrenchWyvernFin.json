@@ -1,0 +1,12 @@
+{
+  "id": "TrenchWyvernFin",
+  "name": "Trench Wyvern Fin",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 6,
+  "sprite": "trench_wyvern_fin",
+  "description": "Spiny membranous wing-fin harvested from trench-dwelling drakes.",
+  "stats": {},
+  "notes": ""
+}

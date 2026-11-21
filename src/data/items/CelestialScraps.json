@@ -1,0 +1,12 @@
+{
+  "id": "CelestialScraps",
+  "name": "Celestial Scraps",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "celestial_scraps",
+  "description": "Hard metal with an impossibly high fusion point. Must be some kind of alloy made with unknown ingredients.",
+  "stats": {},
+  "notes": ""
+}

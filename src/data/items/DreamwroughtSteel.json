@@ -1,0 +1,12 @@
+{
+  "id": "DreamwroughtSteel",
+  "name": "Dreamwrought Steel",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 85,
+  "sprite": "dreamwrought_steel",
+  "description": "Very malleable metal materialized from a dream by an expert blacksmith. Due to its origin it is very versatile, but less resistant.",
+  "stats": {},
+  "notes": ""
+}

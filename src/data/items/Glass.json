@@ -1,0 +1,12 @@
+{
+  "id": "Glass",
+  "name": "Glass",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 8,
+  "sprite": "glass",
+  "description": "Sand heated to form transparent, smooth surface.",
+  "stats": {},
+  "notes": ""
+}

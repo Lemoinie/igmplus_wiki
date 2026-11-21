@@ -1,0 +1,12 @@
+{
+  "id": "SirenSilk",
+  "name": "Siren Silk",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "siren_silk",
+  "description": "Gossamer sea-silk woven from sunken robes; impervious to decay and water.",
+  "stats": {},
+  "notes": ""
+}

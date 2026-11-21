@@ -1,0 +1,12 @@
+{
+  "id": "LivingVine",
+  "name": "Living Vine",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 18,
+  "sprite": "living_vine",
+  "description": "A long, resistant vine ripped from an ancient tree that moves on its own volition.",
+  "stats": {},
+  "notes": ""
+}

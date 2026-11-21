@@ -1,0 +1,12 @@
+{
+  "id": "AlphaWolfFang",
+  "name": "Alpha Wolf Fang",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "alpha_wolf_fang",
+  "description": "A partitularly long tooth, once belonging to the leader of a pack of wolves.",
+  "stats": {},
+  "notes": ""
+}

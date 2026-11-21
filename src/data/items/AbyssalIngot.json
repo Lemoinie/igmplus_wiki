@@ -1,0 +1,12 @@
+{
+  "id": "AbyssalIngot",
+  "name": "Abyssal Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1811,
+  "sprite": "abyssal_ingot",
+  "description": "A black Iron ingot blessed with eldritch properties from the depth of the abyss.",
+  "stats": {},
+  "notes": ""
+}

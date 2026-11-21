@@ -1,0 +1,12 @@
+{
+  "id": "BlackIronIngot",
+  "name": "Black Iron Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 14,
+  "sprite": "black_iron_ingot",
+  "description": "Extremely resistant metal alloy. It's formula is jealously guarded by the pirate blacksmiths.",
+  "stats": {},
+  "notes": ""
+}

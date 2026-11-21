@@ -1,0 +1,12 @@
+{
+  "id": "FireproofOil",
+  "name": "Fireproof Oil",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 100,
+  "sprite": "fireproof_oil",
+  "description": "An oil obtained through unknown means that allow anything covered in it to be immune to fire.",
+  "stats": {},
+  "notes": ""
+}

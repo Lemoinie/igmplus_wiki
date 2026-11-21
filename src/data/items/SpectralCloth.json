@@ -1,0 +1,12 @@
+{
+  "id": "SpectralCloth",
+  "name": "Spectral Cloth",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 6,
+  "sprite": "spectral_cloth",
+  "description": "Otherworldly textile made with a glowing thread. Clearly not crafted by human hands.",
+  "stats": {},
+  "notes": ""
+}

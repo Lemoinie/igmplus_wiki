@@ -1,0 +1,12 @@
+{
+  "id": "TrollHide",
+  "name": "Troll Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "troll_hide",
+  "description": "Hard as a stone but light as regular leather. Used to craft superior quality equipment.",
+  "stats": {},
+  "notes": ""
+}

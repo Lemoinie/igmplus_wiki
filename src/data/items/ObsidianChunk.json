@@ -1,0 +1,12 @@
+{
+  "id": "ObsidianChunk",
+  "name": "Obsidian Chunk",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "obsidian_chunk",
+  "description": "Dark, reflective stone famous for its durability, and sharpness when broken into pieces.",
+  "stats": {},
+  "notes": ""
+}

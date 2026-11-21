@@ -1,0 +1,12 @@
+{
+  "id": "ElectricCatalyst",
+  "name": "Electric Catalyst",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 173,
+  "sprite": "electric_catalyst",
+  "description": "Arcane catalyst used to balance the properties of powerful, unstable elements.",
+  "stats": {},
+  "notes": ""
+}

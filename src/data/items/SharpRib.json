@@ -1,0 +1,12 @@
+{
+  "id": "SharpRib",
+  "name": "Sharp Rib",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 6,
+  "sprite": "sharp_rib",
+  "description": "A rib ripped from an undead soldier. It's well conserved and very sharp.",
+  "stats": {},
+  "notes": ""
+}

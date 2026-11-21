@@ -1,0 +1,12 @@
+{
+  "id": "BatWing",
+  "name": "Bat Wing",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "bat_wing",
+  "description": "The resilient wing of a Vampire Bat.",
+  "stats": {},
+  "notes": ""
+}

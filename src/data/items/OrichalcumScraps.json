@@ -1,0 +1,12 @@
+{
+  "id": "OrichalcumScraps",
+  "name": "Orichalcum Scraps",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "orichalcum_scraps",
+  "description": "Pieces of an unbreakable metal that can be melted into ingots.",
+  "stats": {},
+  "notes": ""
+}

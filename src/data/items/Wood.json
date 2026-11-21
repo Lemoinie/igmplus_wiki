@@ -1,0 +1,12 @@
+{
+  "id": "Wood",
+  "name": "Wood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "wood",
+  "description": "Just a simple piece of wood.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Infernite",
+  "name": "Infernite",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 125,
+  "sprite": "infernite",
+  "description": "Mysterious mineral forged by the hottest fire, remarkably resistant yet light as a feather. Oddly cold at touch, allows to forge items with impossible aerodynamics, not reproducible with any other means.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

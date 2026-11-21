@@ -1,0 +1,12 @@
+{
+  "id": "PoisonousFlesh",
+  "name": "Poisonous Flesh",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 42,
+  "sprite": "poisonous_flesh",
+  "description": "The flesh of a mushroom that lives deep underground. It contains a strange poison with a paralyzing effect, and requires careful handling.",
+  "stats": {},
+  "notes": ""
+}

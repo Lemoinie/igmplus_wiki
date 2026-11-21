@@ -10,10 +10,12 @@
     id="stickyAdToggle"
     type="button"
     class="adToggleTab"
+    disabled
+    aria-disabled="true"
     aria-expanded="true"
     aria-controls="stickyAdBody"
-    aria-label="Collapse advertisement"
-    title="Hide ad"
+    aria-label="Advertisement loading"
+    title="Ad loading…"
   >
     <svg
       class="adToggleChevron"
@@ -70,9 +72,96 @@
   (function () {
     var anchor = document.getElementById('stickyAdAnchor');
     var toggle = document.getElementById('stickyAdToggle');
+    var adSlot = document.querySelector('#stickyAdBody .adSlot');
     if (!anchor || !toggle) return;
 
+    var adLoaded = false;
+
+    function enableCollapse() {
+      if (adLoaded) return;
+      adLoaded = true;
+      toggle.disabled = false;
+      toggle.removeAttribute('disabled');
+      toggle.removeAttribute('aria-disabled');
+      toggle.setAttribute('title', 'Hide ad');
+      toggle.setAttribute('aria-label', 'Collapse advertisement');
+      anchor.classList.add('adReady');
+    }
+
+    function isVisibleBox(el) {
+      return Boolean(el && el.isConnected && el.offsetWidth > 0 && el.offsetHeight > 0);
+    }
+
+    function bindFrame(iframe) {
+      if (!iframe || iframe.dataset.adBound) return;
+      iframe.dataset.adBound = '1';
+
+      function verifyLoaded() {
+        if (adLoaded) return;
+        window.setTimeout(function () {
+          if (isVisibleBox(iframe)) {
+            enableCollapse();
+          }
+        }, 250);
+      }
+
+      iframe.addEventListener('load', verifyLoaded, { once: true });
+
+      // Fallback in case the iframe load event fired before this listener attached
+      window.setTimeout(function () {
+        if (adLoaded || !isVisibleBox(iframe)) return;
+        var hasSrc = Boolean(iframe.getAttribute('src'));
+        var populatedSameOrigin = false;
+        try {
+          var doc = iframe.contentDocument;
+          populatedSameOrigin = Boolean(doc && doc.readyState === 'complete' && doc.body && doc.body.childElementCount > 0);
+        } catch (e) {
+          // Cross-origin iframe means external ad document loaded
+          populatedSameOrigin = true;
+        }
+        if (hasSrc || populatedSameOrigin) {
+          enableCollapse();
+        }
+      }, 1200);
+    }
+
+    function bindCreativeImg(img) {
+      if (!img || img.dataset.adBound) return;
+      img.dataset.adBound = '1';
+      if (img.complete && img.naturalWidth > 0 && isVisibleBox(img)) {
+        enableCollapse();
+      } else {
+        img.addEventListener('load', function () {
+          if (img.naturalWidth > 0 && isVisibleBox(img)) {
+            enableCollapse();
+          }
+        }, { once: true });
+      }
+    }
+
+    function scanSlot() {
+      if (!adSlot || adLoaded) return;
+      var frames = adSlot.querySelectorAll('iframe');
+      for (var i = 0; i < frames.length; i++) {
+        bindFrame(frames[i]);
+      }
+      var imgs = adSlot.querySelectorAll('img');
+      for (var j = 0; j < imgs.length; j++) {
+        bindCreativeImg(imgs[j]);
+      }
+    }
+
+    if (adSlot) {
+      scanSlot();
+      var observer = new MutationObserver(function () {
+        scanSlot();
+        if (adLoaded) observer.disconnect();
+      });
+      observer.observe(adSlot, { childList: true, subtree: true });
+    }
+
     toggle.addEventListener('click', function () {
+      if (!adLoaded || toggle.disabled) return;
       var collapsed = anchor.classList.toggle('collapsed');
       toggle.setAttribute('aria-expanded', collapsed ? 'false' : 'true');
       toggle.setAttribute(
@@ -125,6 +214,17 @@
   .adToggleTab:hover {
     color: var(--text-primary);
     background: var(--bg-card);
+  }
+
+  .adToggleTab:disabled {
+    opacity: 0.38;
+    cursor: not-allowed;
+    color: var(--text-muted);
+  }
+
+  .adToggleTab:disabled:hover {
+    color: var(--text-muted);
+    background: var(--bg-sidebar);
   }
 
   .adToggleChevron {

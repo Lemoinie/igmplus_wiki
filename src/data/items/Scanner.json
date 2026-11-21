@@ -1,0 +1,12 @@
+{
+  "id": "Scanner",
+  "name": "Scanner",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 90,
+  "sprite": "scanner",
+  "description": "An unknown device made of flesh, metal and stone. Seems capable to detect movement without relying on light.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "EssenceOfCorruption",
+  "name": "Essence of Corruption",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 180,
+  "sprite": "essence_of_corruption",
+  "description": "Pitch black potion distilled from the Black Ooze. When purified through additional steps, it can manifest unique properties.",
+  "stats": {},
+  "notes": ""
+}

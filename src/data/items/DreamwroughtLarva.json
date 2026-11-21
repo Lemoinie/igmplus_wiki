@@ -1,0 +1,12 @@
+{
+  "id": "DreamwroughtLarva",
+  "name": "Dreamwrought Larva",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 50,
+  "sprite": "dreamwrought_larva",
+  "description": "The first stage of development of an insect materialized from a dream.",
+  "stats": {},
+  "notes": ""
+}

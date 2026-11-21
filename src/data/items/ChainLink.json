@@ -1,0 +1,12 @@
+{
+  "id": "ChainLink",
+  "name": "Chain Link",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "chain_link",
+  "description": "Surprisingly light ring of unknown metal, seems to possess some magical properties.",
+  "stats": {},
+  "notes": ""
+}

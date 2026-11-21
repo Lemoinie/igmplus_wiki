@@ -1,0 +1,12 @@
+{
+  "id": "Diamond",
+  "name": "Diamond",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5000,
+  "sprite": "diamond",
+  "description": "A very hard gem that appears to be impossible to scratch. Only a handful of these have ever been found on the surface, making it an ideal gift for powerful kings or emperors.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

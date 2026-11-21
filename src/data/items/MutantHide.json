@@ -1,0 +1,12 @@
+{
+  "id": "MutantHide",
+  "name": "Mutant Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 55,
+  "sprite": "mutant_hide",
+  "description": "Extremely thick skin from a creature mutated through horrifying experiments. Hard to adapt to the human body, but impenetrable with conventional weapons.",
+  "stats": {},
+  "notes": ""
+}

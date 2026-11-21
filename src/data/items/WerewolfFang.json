@@ -1,0 +1,12 @@
+{
+  "id": "WerewolfFang",
+  "name": "Werewolf Fang",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 24,
+  "sprite": "werewolf_fang",
+  "description": "Something is really wrong with this tooth…",
+  "stats": {},
+  "notes": ""
+}

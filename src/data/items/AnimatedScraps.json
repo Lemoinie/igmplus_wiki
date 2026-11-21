@@ -1,0 +1,12 @@
+{
+  "id": "AnimatedScraps",
+  "name": "Animated Scraps",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "animated_scraps",
+  "description": "Pieces of an unknown metal. They move erratically when left alone, and pulsate with an eerie light.",
+  "stats": {},
+  "notes": ""
+}

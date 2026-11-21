@@ -1,0 +1,12 @@
+{
+  "id": "HeartOfDarkness",
+  "name": "Heart of Darkness",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1500,
+  "sprite": "heart_of_darkness",
+  "description": "The heart of a being predating existence itself. An expression of hatred unmatched by anything else.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

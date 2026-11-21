@@ -1,0 +1,12 @@
+{
+  "id": "FrozenScale",
+  "name": "Frozen Scale",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 16,
+  "sprite": "frozen_scale",
+  "description": "A scale of the fearsome Snow Wyvern. Always a few degrees lower than room temperature.",
+  "stats": {},
+  "notes": ""
+}

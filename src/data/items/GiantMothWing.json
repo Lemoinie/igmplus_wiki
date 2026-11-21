@@ -1,0 +1,12 @@
+{
+  "id": "GiantMothWing",
+  "name": "Giant Moth Wing",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "giant_moth_wing",
+  "description": "A moth wing of unusual dimensions, possesses greater elasticity than its smaller counterparts.",
+  "stats": {},
+  "notes": ""
+}

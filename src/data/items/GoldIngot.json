@@ -1,0 +1,12 @@
+{
+  "id": "GoldIngot",
+  "name": "Gold Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 23,
+  "sprite": "gold_ingot",
+  "description": "A precious metal widely employed in the production of high-grade military equipment for the Imperial Army.",
+  "stats": {},
+  "notes": ""
+}

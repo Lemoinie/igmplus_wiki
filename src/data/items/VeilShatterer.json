@@ -1,0 +1,12 @@
+{
+  "id": "VeilShatterer",
+  "name": "Veil Shatterer",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 90,
+  "sprite": "veil_shatterer",
+  "description": "An extraordinarily powerful magical artifact, capable of overcoming any opposing magical force. It is the only known way to directly interact with the Nexus Core.",
+  "stats": {},
+  "notes": ""
+}

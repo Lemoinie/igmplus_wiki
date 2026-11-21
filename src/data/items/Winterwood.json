@@ -1,0 +1,12 @@
+{
+  "id": "Winterwood",
+  "name": "Winterwood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "winterwood",
+  "description": "Very sturdy wood from the only tree that can grow in sub-zero temperatures, the Winter Tree.",
+  "stats": {},
+  "notes": ""
+}

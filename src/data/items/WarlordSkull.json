@@ -1,0 +1,12 @@
+{
+  "id": "WarlordSkull",
+  "name": "Warlord Skull",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 26,
+  "sprite": "warlord_skull",
+  "description": "An intact skull of a renowned soldier, once leading it's ranks against the enemy.",
+  "stats": {},
+  "notes": ""
+}

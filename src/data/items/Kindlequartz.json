@@ -1,0 +1,12 @@
+{
+  "id": "Kindlequartz",
+  "name": "Kindlequartz",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 220,
+  "sprite": "kindlequartz",
+  "description": "Cold at touch, this peculiar gem reflects light with a flame-like shimmer. Seems to draw the curiosity of the nearby wildlife.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

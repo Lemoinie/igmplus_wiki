@@ -1,0 +1,12 @@
+{
+  "id": "DreamwroughtSilk",
+  "name": "Dreamwrought Silk",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 23,
+  "sprite": "dreamwrought_silk",
+  "description": "Extremely flexible cloth woven from a dream like thread. Due to its origin it is very versatile, but less resistant.",
+  "stats": {},
+  "notes": ""
+}

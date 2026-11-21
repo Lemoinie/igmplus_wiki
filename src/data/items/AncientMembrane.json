@@ -1,0 +1,12 @@
+{
+  "id": "AncientMembrane",
+  "name": "Ancient Membrane",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "ancient_membrane",
+  "description": "An incredibly durable yet lightweight membrane, taken from the wing of a creature believed to have gone extinct millions of years ago.",
+  "stats": {},
+  "notes": ""
+}

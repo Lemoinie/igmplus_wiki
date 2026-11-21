@@ -1,0 +1,12 @@
+{
+  "id": "BlackHide",
+  "name": "Black Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 16,
+  "sprite": "black_hide",
+  "description": "The skin of a horrible monster preying in the dark.",
+  "stats": {},
+  "notes": ""
+}

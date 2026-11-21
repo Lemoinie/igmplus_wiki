@@ -1,0 +1,12 @@
+{
+  "id": "AbyssalPearl",
+  "name": "Abyssal Pearl",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 35,
+  "sprite": "abyssal_pearl",
+  "description": "Rare flawless black pearl formed under immense mesopelagic pressure.",
+  "stats": {},
+  "notes": ""
+}

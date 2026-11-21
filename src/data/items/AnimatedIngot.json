@@ -1,0 +1,12 @@
+{
+  "id": "AnimatedIngot",
+  "name": "Animated Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "animated_ingot",
+  "description": "Metal ingot smelted from pieces of Living Metal.",
+  "stats": {},
+  "notes": ""
+}

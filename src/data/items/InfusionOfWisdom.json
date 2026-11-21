@@ -1,0 +1,12 @@
+{
+  "id": "InfusionOfWisdom",
+  "name": "Infusion of Wisdom",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1965,
+  "sprite": "infusion_of_wisdom",
+  "description": "An oil that can be applied to certain armors or garments, able to boost the learning speed of those who wear it.",
+  "stats": {},
+  "notes": ""
+}

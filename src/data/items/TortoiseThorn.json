@@ -1,0 +1,12 @@
+{
+  "id": "TortoiseThorn",
+  "name": "Tortoise Thorn",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 18,
+  "sprite": "tortoise_thorn",
+  "description": "A very sharp thorn broken off a Giant Tortoise shell.",
+  "stats": {},
+  "notes": ""
+}

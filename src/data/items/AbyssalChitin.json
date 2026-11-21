@@ -1,0 +1,12 @@
+{
+  "id": "AbyssalChitin",
+  "name": "Abyssal Chitin",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 38,
+  "sprite": "abyssal_chitin",
+  "description": "Heavy chitinous carapace plates stripped from abyssal aberrations.",
+  "stats": {},
+  "notes": ""
+}

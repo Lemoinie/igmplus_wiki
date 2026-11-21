@@ -89,7 +89,7 @@ function goToPage(page: number) {
     <!-- Filters -->
     <div class="filterBar">
       <div class="searchWrap">
-        <input v-model="query" type="search" placeholder="Search equipment by name or text…" />
+        <input v-model="query" type="search" placeholder="Search items by name, type, or text…" />
       </div>
 
       <div class="selectGroup">
@@ -120,7 +120,7 @@ function goToPage(page: number) {
     </div>
 
     <div v-else class="emptyNotice">
-      No equipment found matching criteria.
+      No items found matching criteria.
     </div>
 
     <!-- Pagination Controls -->

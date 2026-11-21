@@ -1,0 +1,12 @@
+{
+  "id": "AbyssalGoo",
+  "name": "Abyssal Goo",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1193,
+  "sprite": "abyssal_goo",
+  "description": "Viscous potion that can enhance some base materials with additional, terrifying properties.",
+  "stats": {},
+  "notes": ""
+}

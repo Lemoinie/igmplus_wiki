@@ -1,0 +1,12 @@
+{
+  "id": "ChainOfRedemption",
+  "name": "Chain of Redemption",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 108,
+  "sprite": "chain_of_redemption",
+  "description": "Light but very resistant chain that seems to reflect part of the incoming force, magical or not.",
+  "stats": {},
+  "notes": ""
+}

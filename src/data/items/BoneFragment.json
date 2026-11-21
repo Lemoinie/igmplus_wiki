@@ -1,0 +1,12 @@
+{
+  "id": "BoneFragment",
+  "name": "Bone Fragment",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "bone_fragment",
+  "description": "Fragments of a bone once belonging to a valiant soldier.",
+  "stats": {},
+  "notes": ""
+}

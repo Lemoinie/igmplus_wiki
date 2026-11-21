@@ -1,0 +1,12 @@
+{
+  "id": "ContainmentOrb",
+  "name": "Containment Orb",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 210,
+  "sprite": "containment_orb",
+  "description": "Glass orb reinforced by magic, needed to contain powerful but dangerous artifacts.",
+  "stats": {},
+  "notes": ""
+}

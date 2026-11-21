@@ -1,0 +1,12 @@
+{
+  "id": "CursedSilver",
+  "name": "Cursed Silver",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 160,
+  "sprite": "cursed_silver",
+  "description": "An extremely light chunk of silver that glows with an eerie light.",
+  "stats": {},
+  "notes": ""
+}

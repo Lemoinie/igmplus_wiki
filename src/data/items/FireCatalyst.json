@@ -1,0 +1,12 @@
+{
+  "id": "FireCatalyst",
+  "name": "Fire Catalyst",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 173,
+  "sprite": "fire_catalyst",
+  "description": "Arcane catalyst used to balance the properties of powerful, unstable elements.",
+  "stats": {},
+  "notes": ""
+}

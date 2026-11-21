@@ -1,0 +1,12 @@
+{
+  "id": "ShadowPotion",
+  "name": "Shadow Potion",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 591,
+  "sprite": "shadow_potion",
+  "description": "With a bright purple color, items can be infused to provide bonuses in dark areas.",
+  "stats": {},
+  "notes": ""
+}

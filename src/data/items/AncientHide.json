@@ -1,0 +1,12 @@
+{
+  "id": "AncientHide",
+  "name": "Ancient Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "ancient_hide",
+  "description": "Scale covered hide of a giant, archaic beast living at the center of the world.",
+  "stats": {},
+  "notes": ""
+}

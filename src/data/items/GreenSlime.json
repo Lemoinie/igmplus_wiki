@@ -1,0 +1,12 @@
+{
+  "id": "GreenSlime",
+  "name": "Green Slime",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "green_slime",
+  "description": "Green, transparent jelly that makes up the body of Slimes.",
+  "stats": {},
+  "notes": ""
+}

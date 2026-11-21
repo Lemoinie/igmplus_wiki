@@ -1,0 +1,12 @@
+{
+  "id": "OrichalcumIngot",
+  "name": "Orichalcum Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 30,
+  "sprite": "orichalcum_ingot",
+  "description": "Unbreakable metal from another world. Sacrifices malleability to increase its resistance.",
+  "stats": {},
+  "notes": ""
+}

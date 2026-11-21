@@ -1,0 +1,12 @@
+{
+  "id": "CrusaderInsigna",
+  "name": "Crusader Insigna",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 52,
+  "sprite": "crusader_insigna",
+  "description": "The woven seal of the Crusaders of the Eastern Kingdom. A symbol of hope for their people, heralding light in their darkest moments.",
+  "stats": {},
+  "notes": ""
+}

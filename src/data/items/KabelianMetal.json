@@ -1,0 +1,12 @@
+{
+  "id": "KabelianMetal",
+  "name": "Kabelian Metal",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 80,
+  "sprite": "kabelian_metal",
+  "description": "Rare metal from the eastern lands. Displays some unique properties, likely coming from the psyonic ability of the people who smelted it.",
+  "stats": {},
+  "notes": ""
+}

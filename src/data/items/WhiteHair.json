@@ -1,0 +1,12 @@
+{
+  "id": "WhiteHair",
+  "name": "White Hair",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 90,
+  "sprite": "white_hair",
+  "description": "A single, immaculate white hair.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

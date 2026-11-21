@@ -1,0 +1,12 @@
+{
+  "id": "RadiatingNucleus",
+  "name": "Radiating Nucleus",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 10,
+  "sprite": "radiating_nucleus",
+  "description": "A powerful, magical device that can store an immense amount of energy. Serves as an engine for Laroxian constructs.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

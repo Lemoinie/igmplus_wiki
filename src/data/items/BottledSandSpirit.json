@@ -1,0 +1,12 @@
+{
+  "id": "BottledSandSpirit",
+  "name": "Bottled Sand Spirit",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 110,
+  "sprite": "bottled_sand_spirit",
+  "description": "A powerful Djinn spirit trapped in a bottle.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

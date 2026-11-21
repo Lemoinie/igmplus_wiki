@@ -1,0 +1,12 @@
+{
+  "id": "WardenBelt",
+  "name": "Warden Belt",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 7,
+  "sprite": "warden_belt",
+  "description": "Hard leather belt characterizing the outfit of the wardens of the Golden City.",
+  "stats": {},
+  "notes": ""
+}

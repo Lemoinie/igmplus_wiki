@@ -1,0 +1,12 @@
+{
+  "id": "FlakeOfInfinity",
+  "name": "Flake of Infinity",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 250,
+  "sprite": "flake_of_infinity",
+  "description": "A piece of an incredibly powerful being, that somehow crossed the threshold between the mortal world and something else.",
+  "stats": {},
+  "notes": ""
+}

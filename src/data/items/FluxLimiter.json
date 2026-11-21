@@ -1,0 +1,12 @@
+{
+  "id": "FluxLimiter",
+  "name": "Flux Limiter",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 38,
+  "sprite": "flux_limiter",
+  "description": "An organic mass of nerves and tendrils, shaped to have specific optic properties.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

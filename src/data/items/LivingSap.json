@@ -1,0 +1,12 @@
+{
+  "id": "LivingSap",
+  "name": "Living Sap",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 10,
+  "sprite": "living_sap",
+  "description": "The sap from a living tree.",
+  "stats": {},
+  "notes": ""
+}

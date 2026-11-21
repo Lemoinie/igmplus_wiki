@@ -1,0 +1,12 @@
+{
+  "id": "EyeOfTheAbyss",
+  "name": "Eye of the Abyss",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 75,
+  "sprite": "eye_of_the_abyss",
+  "description": "Seeing its dimensions makes you wonder what kind of monsters lurk in the ocean's depth. Powerful and very rare alchemic ingredient.",
+  "stats": {},
+  "notes": ""
+}

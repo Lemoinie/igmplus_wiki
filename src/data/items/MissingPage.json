@@ -1,0 +1,12 @@
+{
+  "id": "MissingPage",
+  "name": "Missing Page",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "missing_page",
+  "description": "A single page of some old book.",
+  "stats": {},
+  "notes": ""
+}

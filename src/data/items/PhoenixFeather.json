@@ -1,0 +1,12 @@
+{
+  "id": "PhoenixFeather",
+  "name": "Phoenix Feather",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 825,
+  "sprite": "phoenix_feather",
+  "description": "A feather plucked from the mythical Phoenix.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

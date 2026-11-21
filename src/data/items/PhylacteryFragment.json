@@ -1,0 +1,12 @@
+{
+  "id": "PhylacteryFragment",
+  "name": "Phylactery Fragment",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 450,
+  "sprite": "phylactery_fragment",
+  "description": "Fragment of a powerful artifact. Has something to do with death-altering magic.",
+  "stats": {},
+  "notes": ""
+}

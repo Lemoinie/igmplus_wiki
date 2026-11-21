@@ -1,0 +1,12 @@
+{
+  "id": "BatTooth",
+  "name": "Bat Tooth",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "bat_tooth",
+  "description": "Frontal tooth of a Vampire Bat. Sometimes used as alchemic ingredient.",
+  "stats": {},
+  "notes": ""
+}

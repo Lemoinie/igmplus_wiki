@@ -1,0 +1,12 @@
+{
+  "id": "SealOfClaris",
+  "name": "Seal of Claris",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 6500,
+  "sprite": "seal_of_claris",
+  "description": "Magic seal of Claris, the rebel Cultist.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

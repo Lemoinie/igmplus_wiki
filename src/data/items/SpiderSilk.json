@@ -1,0 +1,12 @@
+{
+  "id": "SpiderSilk",
+  "name": "Spider Silk",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 18,
+  "sprite": "spider_silk",
+  "description": "Made from an almost indestructible thread, this light material offers protection with minimal hindrance to one's movements.",
+  "stats": {},
+  "notes": ""
+}

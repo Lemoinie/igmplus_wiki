@@ -1,0 +1,12 @@
+{
+  "id": "EldritchShred",
+  "name": "Eldritch Shred",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 85,
+  "sprite": "eldritch_shred",
+  "description": "A fragment of a larger tapestry, it can be combined with other pieces to reveal the complete picture.",
+  "stats": {},
+  "notes": ""
+}

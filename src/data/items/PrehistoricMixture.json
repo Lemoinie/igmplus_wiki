@@ -1,0 +1,12 @@
+{
+  "id": "PrehistoricMixture",
+  "name": "Prehistoric Mixture",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 315,
+  "sprite": "prehistoric_mixture",
+  "description": "A strange amalgam of ingredients from the depths of the Forgotten Lands, seamlessly fused together and exhibiting unique catalytic properties.",
+  "stats": {},
+  "notes": ""
+}

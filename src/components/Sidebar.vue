@@ -81,6 +81,7 @@ const navItems = [
   { label: 'Home', href: `${base}/` || '/' },
   { label: 'Classes', href: `${base}/classes` },
   { label: 'Items', href: `${base}/items` },
+  { label: 'Simulator', href: `${base}/simulator` },
   { label: 'Pets', href: `${base}/pets` },
   { label: 'Traits', href: `${base}/traits` },
   { label: 'Doctrines', href: `${base}/doctrines` },

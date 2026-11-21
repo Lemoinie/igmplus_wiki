@@ -1,0 +1,12 @@
+{
+  "id": "ExaltedPowder",
+  "name": "Exalted Powder",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5000,
+  "sprite": "exalted_powder",
+  "description": "Alchemic powder enriched to display new magical properties. Only this powder is pure enough to be merged with the Primordial, increasing its strength.",
+  "stats": {},
+  "notes": ""
+}

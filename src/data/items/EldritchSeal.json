@@ -1,0 +1,12 @@
+{
+  "id": "EldritchSeal",
+  "name": "Eldritch Seal",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 893,
+  "sprite": "eldritch_seal",
+  "description": "The Seal of the Outer God, worn by his priests to show their unwavering faith.",
+  "stats": {},
+  "notes": ""
+}

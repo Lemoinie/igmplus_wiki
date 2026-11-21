@@ -1,0 +1,12 @@
+{
+  "id": "StaticEssence",
+  "name": "Static Essence",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 950,
+  "sprite": "static_essence",
+  "description": "Stabilized Static Core, can be used to craft powerful items.",
+  "stats": {},
+  "notes": ""
+}

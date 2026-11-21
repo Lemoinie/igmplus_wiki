@@ -1,0 +1,12 @@
+{
+  "id": "TatteredHide",
+  "name": "Tattered Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "tattered_hide",
+  "description": "The decomposed hide of an undead war beast.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SpellwovenHide",
+  "name": "Spellwoven Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "spellwoven_hide",
+  "description": "Skin of a creature conjured through a spell, persisting in this world after its defeat.",
+  "stats": {},
+  "notes": ""
+}

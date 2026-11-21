@@ -1,0 +1,12 @@
+{
+  "id": "CopperOre",
+  "name": "Copper Ore",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "copper_ore",
+  "description": "A malleable metal with a distinctive reddish-brown hue.",
+  "stats": {},
+  "notes": ""
+}

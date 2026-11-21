@@ -1,0 +1,12 @@
+{
+  "id": "CorsairLeather",
+  "name": "Corsair Leather",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "corsair_leather",
+  "description": "Exotic kind of leather that comes from processed Monkey Hide.",
+  "stats": {},
+  "notes": ""
+}

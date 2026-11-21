@@ -1,0 +1,12 @@
+{
+  "id": "DreamwroughtMane",
+  "name": "Dreamwrought Mane",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "dreamwrought_mane",
+  "description": "The thick mane of a Dreamwrought Beast.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "ThaumaturgicBlood",
+  "name": "Thaumaturgic Blood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 89,
+  "sprite": "thaumaturgic_blood",
+  "description": "Once infected blood drawn from a fearsome ghoul, it has been purified by a powerful reagent. Unlike the base ingredient, it displays powerful healing properties.",
+  "stats": {},
+  "notes": ""
+}

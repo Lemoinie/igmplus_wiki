@@ -1,0 +1,12 @@
+{
+  "id": "IceCatalyst",
+  "name": "Ice Catalyst",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 212,
+  "sprite": "ice_catalyst",
+  "description": "Arcane catalyst used to balance the properties of powerful, unstable elements.",
+  "stats": {},
+  "notes": ""
+}

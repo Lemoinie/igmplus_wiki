@@ -1,0 +1,12 @@
+{
+  "id": "IceFiber",
+  "name": "Ice Fiber",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "ice_fiber",
+  "description": "A thin thread of ice-like textile, likely made with a technique only known to the Trolls.",
+  "stats": {},
+  "notes": ""
+}

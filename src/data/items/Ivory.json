@@ -1,0 +1,12 @@
+{
+  "id": "Ivory",
+  "name": "Ivory",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 28,
+  "sprite": "ivory",
+  "description": "Smooth, pale white material derived from tusks of animals.",
+  "stats": {},
+  "notes": ""
+}

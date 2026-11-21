@@ -1,0 +1,12 @@
+{
+  "id": "EldritchTendril",
+  "name": "Eldritch Tendril",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 8,
+  "sprite": "eldritch_tendril",
+  "description": "One of the tendrils of a Beholder. You can feel its powerful magic still flowing into the appendage.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "PermafrostEssence",
+  "name": "Permafrost Essence",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1008,
+  "sprite": "permafrost_essence",
+  "description": "Stabilized Permafrost Core, can be used to craft powerful items.",
+  "stats": {},
+  "notes": ""
+}

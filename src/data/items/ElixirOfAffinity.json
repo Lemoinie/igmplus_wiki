@@ -1,0 +1,12 @@
+{
+  "id": "ElixirOfAffinity",
+  "name": "Elixir of Affinity",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1233,
+  "sprite": "elixir_of_affinity",
+  "description": "Very difficult to brew even for the most skilled alchemists, made from ingredients of legendary rarity, this elixir acts as a neutral glue for substances that would otherwise reject each other.",
+  "stats": {},
+  "notes": ""
+}

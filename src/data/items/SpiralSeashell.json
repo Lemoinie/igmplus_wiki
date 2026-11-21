@@ -1,0 +1,12 @@
+{
+  "id": "SpiralSeashell",
+  "name": "Spiral Seashell",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "spiral_seashell",
+  "description": "Resonant spiral shell echoing with the faint whispers of sunken tides.",
+  "stats": {},
+  "notes": ""
+}

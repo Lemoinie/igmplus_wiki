@@ -1,0 +1,12 @@
+{
+  "id": "Sandstone",
+  "name": "Sandstone",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "sandstone",
+  "description": "A stone made of sand solidified into a stone-like block.",
+  "stats": {},
+  "notes": ""
+}

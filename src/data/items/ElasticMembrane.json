@@ -1,0 +1,12 @@
+{
+  "id": "ElasticMembrane",
+  "name": "Elastic Membrane",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "elastic_membrane",
+  "description": "A sheath of a weird material that could be either natural or artificial.",
+  "stats": {},
+  "notes": ""
+}

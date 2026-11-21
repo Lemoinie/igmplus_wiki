@@ -1,0 +1,12 @@
+{
+  "id": "ScarletStrand",
+  "name": "Scarlet Strand",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 20000,
+  "sprite": "scarlet_strand",
+  "description": "Gift from an ancient divine force to its worshippers. Only a few exemplars are known to exist, and their strength and quality is legendary.",
+  "stats": {},
+  "notes": ""
+}

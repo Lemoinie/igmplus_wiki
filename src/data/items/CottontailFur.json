@@ -1,0 +1,12 @@
+{
+  "id": "CottontailFur",
+  "name": "Cottontail Fur",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 50,
+  "sprite": "cottontail_fur",
+  "description": "The fur of the elusive Golden Rabbit.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "WingFabric",
+  "name": "Wing Fabric",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 18,
+  "sprite": "wing_fabric",
+  "description": "Very light and elastic textile made from the wings of moths.",
+  "stats": {},
+  "notes": ""
+}

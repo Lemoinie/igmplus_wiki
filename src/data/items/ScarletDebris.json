@@ -1,0 +1,12 @@
+{
+  "id": "ScarletDebris",
+  "name": "Scarlet Debris",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2500,
+  "sprite": "scarlet_debris",
+  "description": "Crystalline shards sheared from a Bloodstone Colossus. Pulsing with violent, coagulated energy.",
+  "stats": {},
+  "notes": ""
+}

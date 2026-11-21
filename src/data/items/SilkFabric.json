@@ -1,0 +1,12 @@
+{
+  "id": "SilkFabric",
+  "name": "Silk Fabric",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 12,
+  "sprite": "silk_fabric",
+  "description": "Luxurious, smooth fabric prized for its softness and sheen. Used to craft superior light clothing.",
+  "stats": {},
+  "notes": ""
+}

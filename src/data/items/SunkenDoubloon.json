@@ -1,0 +1,12 @@
+{
+  "id": "SunkenDoubloon",
+  "name": "Sunken Doubloon",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5000,
+  "sprite": "sunken_doubloon",
+  "description": "Heavy minted imperial gold coin salvaged from the depths. Pure valuable treasure; Merchants would love to buy this.",
+  "stats": {},
+  "notes": ""
+}

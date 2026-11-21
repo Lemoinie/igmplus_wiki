@@ -1,0 +1,12 @@
+{
+  "id": "KaunianFabric",
+  "name": "Kaunian Fabric",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 25,
+  "sprite": "kaunian_fabric",
+  "description": "Thick and hard fabric displaying properties more close to those found in metal. Doesn't display any magical property, but will do an excellent job in protecting its owner.",
+  "stats": {},
+  "notes": ""
+}

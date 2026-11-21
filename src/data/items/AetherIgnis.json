@@ -1,0 +1,12 @@
+{
+  "id": "AetherIgnis",
+  "name": "Aether Ignis",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 19,
+  "sprite": "aether_ignis",
+  "description": "Flammable liquid used to make flight possible for the heavy flying ships of the Celestial Army.",
+  "stats": {},
+  "notes": ""
+}

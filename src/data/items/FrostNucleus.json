@@ -1,0 +1,12 @@
+{
+  "id": "FrostNucleus",
+  "name": "Frost Nucleus",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 80,
+  "sprite": "frost_nucleus",
+  "description": "The magic pebble around which an Ice Elemental can form.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BlackOoze",
+  "name": "Black Ooze",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "black_ooze",
+  "description": "A dense, sticky black substance. It is believed to be a byproduct of the soul-stealing process from the eldritch gods.",
+  "stats": {},
+  "notes": ""
+}

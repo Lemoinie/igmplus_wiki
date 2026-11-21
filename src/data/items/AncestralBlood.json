@@ -1,0 +1,12 @@
+{
+  "id": "AncestralBlood",
+  "name": "Ancestral Blood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1000,
+  "sprite": "ancestral_blood",
+  "description": "Blood drawn from Lazarus, the first vampire.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

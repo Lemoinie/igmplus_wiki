@@ -1,0 +1,12 @@
+{
+  "id": "LongSerpentFang",
+  "name": "Long Serpent Fang",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 36,
+  "sprite": "long_serpent_fang",
+  "description": "A very long and sharp fang taken from a wild Spitfang.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SpitfangScale",
+  "name": "Spitfang Scale",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "spitfang_scale",
+  "description": "Light and resilient scale making up the skin of a Spitfang.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "UnholyPotion",
+  "name": "Unholy Potion",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 666,
+  "sprite": "unholy_potion",
+  "description": "All living beings are naturally repelled by its smell. The antithesis of all that is good, conveniently condensed in liquid form.",
+  "stats": {},
+  "notes": ""
+}

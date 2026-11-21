@@ -1,0 +1,12 @@
+{
+  "id": "OrbOfEctoplasm",
+  "name": "Orb of Ectoplasm",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 50,
+  "sprite": "orb_of_ectoplasm",
+  "description": "An orb of otherworldly matter, stirring upon itself in an endless dance.",
+  "stats": {},
+  "notes": ""
+}

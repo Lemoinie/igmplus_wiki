@@ -1,0 +1,12 @@
+{
+  "id": "SpiritCandle",
+  "name": "Spirit Candle",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 20,
+  "sprite": "spirit_candle",
+  "description": "A magic candle of mysterious origin. It never burns out, and cannot be extinguished with any known mean.",
+  "stats": {},
+  "notes": ""
+}

@@ -3,6 +3,7 @@ import itemsCatalog from '../../data/items.json';
 import recipesList from '../../data/recipes.json';
 import doctrinesList from '../../data/doctrines.json';
 import doctrineAbilitiesList from '../../data/doctrine_abilities.json';
+import unitsAdventurersRaw from '../../data/units_adventurers.json';
 
 
 // Shared Item Map helper for drops and loot resolution
@@ -565,7 +566,7 @@ export function getItemUsageMap(): Map<string, ItemUsage> {
   });
 
   for (const r of recipesList as any[]) {
-    if (!r?.output_item) continue;
+    if (!r?.output_item || !pageIds.has(r.output_item)) continue;
     const out = get(r.output_item);
     if (!out.recipe.length) out.recipe = (r.ingredients || []).map((ing: any) => toRef(ing.item, ing.qty));
     for (const ing of r.ingredients || []) {
@@ -591,4 +592,162 @@ export function getItemUsageMap(): Map<string, ItemUsage> {
   }
 
   return usage;
+}
+
+const SIM_CATEGORY_ORDER: Record<string, number> = {
+  Footman: 1,
+  Apprentice: 2,
+  Archer: 3,
+  Rogue: 4,
+  Outlander: 5,
+};
+
+const DEFAULT_WEAPON_SCALING: Record<string, { con: number; int: number; dex: number }> = {
+  sword: { con: 1.0, int: 0.0, dex: 0.0 },
+  axe: { con: 1.0, int: 1.0, dex: 0.0 },
+  dagger: { con: 1.0, int: 0.0, dex: 1.0 },
+  bow: { con: 0.0, int: 0.0, dex: 1.0 },
+  staff: { con: 0.0, int: 1.0, dex: 0.0 },
+};
+
+const UNIT_THREAT_MAP: Record<string, number> = {
+  Warrior: 2, Knight: 2, DarkKnight: 2, DeathKnight: 2, Overlord: 2, Tyrant: 2, BlackRegent: 2, Scourge: 2,
+  HolyKnight: 2, Paladin: 2, Templar: 2, Inquisitor: 2, Justiciar: 2, AngelOfWar: 2,
+  Guard: 3, IronDefender: 3, IronWarden: 3, RoyalGuard: 3, RoyalSwordsman: 3, RoyalCaptain: 3,
+  KingsHand: 3, DivineDuelist: 3, DivineChampion: 3,
+  Titan: 4, Juggernaut: 4, UndyingBastion: 4,
+  EternalFortress: 5,
+};
+
+const UNIT_DARKNESS_REDUCTION_MAP: Record<string, number> = {
+  HolyKnight: 15,
+  Paladin: 25,
+  Templar: 35,
+  Inquisitor: 45,
+  Justiciar: 50,
+  AngelOfWar: 50,
+};
+
+const UNIT_HIT_CHANCE_MAP: Record<string, number> = {
+  PoisonBow: 0.15, PlagueSpreader: 0.15, Blight: 0.15, ToxicStalker: 0.15,
+  Wraith: 0.15, CorrosiveWraith: 0.15,
+  HorseRider: 0.15, WolfRider: 0.15, WorgRider: 0.15, SpitfangRider: 0.15,
+  DrakeRider: 0.15, GoldenRider: 0.15, WyrmRider: 0.15,
+  Marksman: 0.30, Sureshot: 0.30, Fury: 0.30, Hurricane: 0.30,
+  Tempest: 0.30, Hailstorm: 0.30, CelestialRain: 0.30,
+};
+
+const EXTRA_ATTACK_SPEED_ITEMS: Record<string, number> = {
+  BerserkersAxe: 10,
+  MoltenSlayer: 10,
+};
+
+export function getSimulatorCatalog() {
+  const skills = getAllSkills();
+  const skillByKey = new Map<string, any>();
+  for (const s of skills) {
+    if (s?.key) skillByKey.set(s.key, s);
+  }
+  const normSkill = (s: string) => s.toLowerCase().replace(/\s+/g, ' ').replace(/ i$/, '').replace(/s$/, '').trim();
+  const resolveUnitSkill = (rawKey?: string | null, displayName?: string | null) => {
+    if (rawKey && rawKey !== 'ACTIVE_NONE' && rawKey !== 'PASSIVE_NONE') {
+      const hit = skillByKey.get(rawKey);
+      if (hit) {
+        return {
+          key: hit.key as string,
+          name: hit.name as string,
+          description: String(hit.description ?? '').replace(/^"|"$/g, '').trim(),
+        };
+      }
+    }
+    if (!displayName || displayName === 'None') return null;
+    const trimmed = displayName.trim();
+    const lower = trimmed.toLowerCase();
+    const norm = normSkill(trimmed);
+    const hit =
+      skills.find((s: any) => s.name?.toLowerCase() === lower || s.key?.toLowerCase() === lower) ||
+      skills.find((s: any) => normSkill(s.name ?? '') === norm || normSkill(s.key ?? '') === norm);
+    if (!hit || hit.key === 'ACTIVE_NONE' || hit.key === 'PASSIVE_NONE') return null;
+    return {
+      key: hit.key as string,
+      name: (hit.name as string) || trimmed,
+      description: String(hit.description ?? '').replace(/^"|"$/g, '').trim(),
+    };
+  };
+
+  const rawUnitsMap = new Map<string, any>();
+  for (const u of ((unitsAdventurersRaw as any)?.units || [])) {
+    if (u?.key) rawUnitsMap.set(u.key, u);
+  }
+
+  const classes = getAllUnits()
+    .filter((u) => u.category !== 'Summon')
+    .map((u) => {
+      const raw = rawUnitsMap.get(u.id);
+      const defaults = DEFAULT_WEAPON_SCALING[u.weaponType] ?? { con: 1.0, int: 0.0, dex: 0.0 };
+      const activeDetail = resolveUnitSkill(raw?.active_skill, u.activeSkill);
+      const passiveDetail = resolveUnitSkill(raw?.passive_skill, u.passiveSkill);
+      return {
+        ...u,
+        stats: { ...(u.stats ?? {}), ...(raw?.stats ?? {}) },
+        attackConstitutionScaling: raw?.attack_constitution_scaling ?? defaults.con,
+        attackDexterityScaling: raw?.attack_dexterity_scaling ?? defaults.dex,
+        attackIntelligenceScaling: raw?.attack_intelligence_scaling ?? defaults.int,
+        activeSkillKey: activeDetail?.key ?? raw?.active_skill ?? 'ACTIVE_NONE',
+        passiveSkillKey: passiveDetail?.key ?? raw?.passive_skill ?? 'PASSIVE_NONE',
+        activeSkillDetail: activeDetail,
+        passiveSkillDetail: passiveDetail,
+        innate: {
+          threat: UNIT_THREAT_MAP[u.id] ?? 1,
+          darknessReduction: UNIT_DARKNESS_REDUCTION_MAP[u.id] ?? 0,
+          hitChanceBonus: UNIT_HIT_CHANCE_MAP[u.id] ?? 0,
+          poisonBonus: u.id === 'CorrosiveWraith' ? 5 : 0,
+        },
+      };
+    })
+    .sort((a, b) => {
+      const catDiff = (SIM_CATEGORY_ORDER[a.category] ?? 99) - (SIM_CATEGORY_ORDER[b.category] ?? 99);
+      if (catDiff !== 0) return catDiff;
+      if (a.tier !== b.tier) return a.tier - b.tier;
+      return a.name.localeCompare(b.name);
+    });
+
+  const rawItemsMap = new Map<string, any>();
+  for (const item of ((itemsCatalog as any)?.items || [])) {
+    if (item?.key) rawItemsMap.set(item.key, item);
+  }
+
+  const enrichEquip = (item: any) => {
+    const raw = rawItemsMap.get(item.id);
+    const rawStats = raw?.stats && Object.keys(raw.stats).length > 0 ? raw.stats : item.stats ?? {};
+    const stats = { ...rawStats };
+    if (EXTRA_ATTACK_SPEED_ITEMS[item.id]) {
+      stats.attackSpeed = (stats.attackSpeed ?? 0) + EXTRA_ATTACK_SPEED_ITEMS[item.id];
+    }
+    return {
+      ...item,
+      price: raw?.price ?? item.price ?? 0,
+      description: String(raw?.description ?? item.description ?? '').replace(/^"|"$/g, ''),
+      stats,
+      flags: raw?.flags ?? {},
+      overrides: raw?.overrides ?? {},
+    };
+  };
+
+  const allItems = getAllItems();
+  const weaponCats = new Set(['Sword', 'Axe', 'Bow', 'Dagger', 'Staff']);
+  const armorCats = new Set(['HeavyArmor', 'MediumArmor', 'LightArmor']);
+
+  const sortEquip = (a: any, b: any) => (a.price ?? 0) - (b.price ?? 0) || a.name.localeCompare(b.name);
+  const weapons = allItems.filter((i) => weaponCats.has(i.category)).map(enrichEquip).sort(sortEquip);
+  const armors = allItems.filter((i) => armorCats.has(i.category)).map(enrichEquip).sort(sortEquip);
+  const accessories = allItems.filter((i) => i.category === 'Accessory').map(enrichEquip).sort(sortEquip);
+
+  const traits = getAllTraits().sort((a: any, b: any) => {
+    if (a.category !== b.category) return a.category === 'basic' ? -1 : 1;
+    if (Boolean(a.plus) !== Boolean(b.plus)) return a.plus ? 1 : -1;
+    return (a.name || '').localeCompare(b.name || '');
+  });
+
+  return { classes, weapons, armors, accessories, traits };
 }

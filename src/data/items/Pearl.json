@@ -1,0 +1,12 @@
+{
+  "id": "Pearl",
+  "name": "Pearl",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 100,
+  "sprite": "pearl",
+  "description": "Perfectly round and with a smooth surface. Very prized material for jewelers.",
+  "stats": {},
+  "notes": ""
+}

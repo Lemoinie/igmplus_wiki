@@ -1,0 +1,12 @@
+{
+  "id": "PrimevalScale",
+  "name": "Primeval Scale",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 90,
+  "sprite": "primeval_scale",
+  "description": "The enormous scale making up the armor of a colossal Wurm roaming below the Southern Grove.",
+  "stats": {},
+  "notes": ""
+}

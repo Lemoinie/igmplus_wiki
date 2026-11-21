@@ -1,0 +1,12 @@
+{
+  "id": "AstralGoo",
+  "name": "Astral Goo",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 4,
+  "sprite": "astral_goo",
+  "description": "A chunk of a giant, nightmarish monster that surpasses a mortal's wildest fantasy. You are not sure of its utility.",
+  "stats": {},
+  "notes": ""
+}

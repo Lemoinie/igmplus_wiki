@@ -1,0 +1,12 @@
+{
+  "id": "PrismaticEssence",
+  "name": "Prismatic Essence",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 13000,
+  "sprite": "prismatic_essence",
+  "description": "Stabilized essence displaying a variety of colors, elementally neutral but radiating pure arcane energy.",
+  "stats": {},
+  "notes": ""
+}

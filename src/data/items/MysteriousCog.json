@@ -1,0 +1,12 @@
+{
+  "id": "MysteriousCog",
+  "name": "Mysterious Cog",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2000,
+  "sprite": "mysterious_cog",
+  "description": "A simple brass cog. No one knoes its exact function, or can explain the immense power it contains.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

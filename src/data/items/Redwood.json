@@ -1,0 +1,12 @@
+{
+  "id": "Redwood",
+  "name": "Redwood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "redwood",
+  "description": "Peculiar wood from the far east, rarely found in trading points thanks to traveling merchants. Displays a characteristic red shade.",
+  "stats": {},
+  "notes": ""
+}

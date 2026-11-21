@@ -1,0 +1,12 @@
+{
+  "id": "ElysianWood",
+  "name": "Elysian Wood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "elysian_wood",
+  "description": "An extremely rare wood found in a minority of trees in the Southern Lands. Seems to keep sprouting new branches even when chopped off the original tree.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "FleetfootFabric",
+  "name": "Fleetfoot Fabric",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "fleetfoot_fabric",
+  "description": "A magic textile enchanted by unknown rituals. Grants the wearer a reduction in its weight.",
+  "stats": {},
+  "notes": ""
+}

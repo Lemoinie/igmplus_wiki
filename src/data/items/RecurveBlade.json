@@ -1,0 +1,12 @@
+{
+  "id": "RecurveBlade",
+  "name": "Recurve Blade",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "recurve_blade",
+  "description": "A peculiar recurve blade. Unusable in the current state as it's handle is missing.",
+  "stats": {},
+  "notes": ""
+}

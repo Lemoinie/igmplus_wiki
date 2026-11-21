@@ -1,0 +1,12 @@
+{
+  "id": "ScrapMetal",
+  "name": "Scrap Metal",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "scrap_metal",
+  "description": "Pieces of metal that usually comes from broken battle gear. Can be smelted into ingots and recycled.",
+  "stats": {},
+  "notes": ""
+}

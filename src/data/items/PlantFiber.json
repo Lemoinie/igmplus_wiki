@@ -1,0 +1,12 @@
+{
+  "id": "PlantFiber",
+  "name": "Plant Fiber",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "plant_fiber",
+  "description": "A base ingredient used in the production of textiles.",
+  "stats": {},
+  "notes": ""
+}

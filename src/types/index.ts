@@ -33,7 +33,7 @@ export interface ClassDefinition {
 export interface EquipmentDefinition {
   id: string;
   name: string;
-  type: 'weapon' | 'armor' | 'accessory';
+  type: 'weapon' | 'armor' | 'accessory' | 'material';
   category: string;
   rarity?: number | null;
   price: number;

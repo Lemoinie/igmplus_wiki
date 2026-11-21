@@ -1,0 +1,12 @@
+{
+  "id": "DreamwroughtHide",
+  "name": "Dreamwrought Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 25,
+  "sprite": "dreamwrought_hide",
+  "description": "Hide fetched from a dangerous, colossal dream creature. Due to its origin it is very versatile, but less resistant.",
+  "stats": {},
+  "notes": ""
+}

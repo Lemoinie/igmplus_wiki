@@ -1,0 +1,12 @@
+{
+  "id": "FrostmetalIngot",
+  "name": "Frostmetal Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 18,
+  "sprite": "frostmetal_ingot",
+  "description": "An ingot of a peculiar type of metal that mixes the properties of iron and ice.",
+  "stats": {},
+  "notes": ""
+}

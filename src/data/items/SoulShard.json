@@ -1,0 +1,12 @@
+{
+  "id": "SoulShard",
+  "name": "Soul Shard",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 100,
+  "sprite": "soul_shard",
+  "description": "Condensed fragment of the multitude of souls, crystallized inside the creature they inhabited.",
+  "stats": {},
+  "notes": ""
+}

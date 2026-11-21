@@ -1,0 +1,12 @@
+{
+  "id": "AlchemicPowder",
+  "name": "Alchemic Powder",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 100,
+  "sprite": "alchemic_powder",
+  "description": "The mysterious substance responsible of infusing life into the titans roaming the cultists lair. The origin seems organic.",
+  "stats": {},
+  "notes": ""
+}

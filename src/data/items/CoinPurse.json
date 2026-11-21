@@ -1,0 +1,12 @@
+{
+  "id": "CoinPurse",
+  "name": "Coin Purse",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2250,
+  "sprite": "coin_purse",
+  "description": "A purse full of coins of various denominations. Worth it's weight in silver.",
+  "stats": {},
+  "notes": ""
+}

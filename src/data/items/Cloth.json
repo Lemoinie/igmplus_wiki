@@ -1,0 +1,12 @@
+{
+  "id": "Cloth",
+  "name": "Cloth",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 12,
+  "sprite": "cloth",
+  "description": "A versatile textile usually employed in the production of robes or cloaks.",
+  "stats": {},
+  "notes": ""
+}

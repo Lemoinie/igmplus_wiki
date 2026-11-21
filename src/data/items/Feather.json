@@ -1,0 +1,12 @@
+{
+  "id": "Feather",
+  "name": "Feather",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "feather",
+  "description": "A very light feather with a variety of uses.",
+  "stats": {},
+  "notes": ""
+}

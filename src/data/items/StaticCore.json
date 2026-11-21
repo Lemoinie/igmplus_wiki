@@ -1,0 +1,12 @@
+{
+  "id": "StaticCore",
+  "name": "Static Core",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 50,
+  "sprite": "static_core",
+  "description": "Unstable core displaying an extremely strong electric field.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

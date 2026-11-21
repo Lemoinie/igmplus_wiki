@@ -1,0 +1,12 @@
+{
+  "id": "WhiteSlime",
+  "name": "White Slime",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 650,
+  "sprite": "white_slime",
+  "description": "A white blob taken from the body of a one of a kind slime deity.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

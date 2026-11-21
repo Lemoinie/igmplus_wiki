@@ -1,0 +1,12 @@
+{
+  "id": "IronIngot",
+  "name": "Iron Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "iron_ingot",
+  "description": "A durable and resistant metal, usually employed to craft battle armaments.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "CobwebBundle",
+  "name": "Cobweb Bundle",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "cobweb_bundle",
+  "description": "Unrefined mass of Giant Spider's cobwebs. Can be refined into an unbreakable textile.",
+  "stats": {},
+  "notes": ""
+}

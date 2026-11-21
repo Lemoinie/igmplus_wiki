@@ -1,0 +1,12 @@
+{
+  "id": "BansheeScale",
+  "name": "Banshee Scale",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "banshee_scale",
+  "description": "Hard scale making up the skin of a Banshee",
+  "stats": {},
+  "notes": ""
+}

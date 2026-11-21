@@ -1,0 +1,12 @@
+{
+  "id": "PermafrostCore",
+  "name": "Permafrost Core",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 50,
+  "sprite": "permafrost_core",
+  "description": "Unstable core that instantly freezes everything around it.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

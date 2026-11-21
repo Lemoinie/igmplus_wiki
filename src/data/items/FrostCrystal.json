@@ -1,0 +1,12 @@
+{
+  "id": "FrostCrystal",
+  "name": "Frost Crystal",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 16,
+  "sprite": "frost_crystal",
+  "description": "An extremely sharp crystal displaying minor magical properties. Despite its nature, it never melts.",
+  "stats": {},
+  "notes": ""
+}

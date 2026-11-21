@@ -1,0 +1,12 @@
+{
+  "id": "PrimordialEssence",
+  "name": "Primordial Essence",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 30,
+  "sprite": "primordial_essence",
+  "description": "The essence of a primordial being, commonly used as alchemic ingredient.",
+  "stats": {},
+  "notes": ""
+}

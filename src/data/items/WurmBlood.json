@@ -1,0 +1,12 @@
+{
+  "id": "WurmBlood",
+  "name": "Wurm Blood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "wurm_blood",
+  "description": "Blood drawn from a Wurm. Can be used as alchemic ingredient.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,23 @@
+---
+import WikiLayout from '../../layouts/WikiLayout.astro';
+import BuildSimulator from '../../components/BuildSimulator.vue';
+import { getSimulatorCatalog } from '../../lib/data';
+import { base } from '../../lib/base';
+
+const { classes, weapons, armors, accessories, traits } = getSimulatorCatalog();
+---
+
+<WikiLayout
+  title="Build Simulator"
+  description="Simulate adventurer classes, equipment loadouts, traits, stats, and skills in Idle Guild Master Plus."
+>
+  <BuildSimulator
+    client:load
+    classes={classes as any}
+    weapons={weapons as any}
+    armors={armors as any}
+    accessories={accessories as any}
+    traits={traits as any}
+    basePath={base}
+  />
+</WikiLayout>

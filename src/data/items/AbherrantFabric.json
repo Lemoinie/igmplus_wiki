@@ -1,0 +1,12 @@
+{
+  "id": "AbherrantFabric",
+  "name": "Aberrant Fabric",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 20,
+  "sprite": "abherrant_fabric",
+  "description": "A piece of fabric of unknown origin, worn by the members of a cult that wishes for the return of the Ancient.",
+  "stats": {},
+  "notes": ""
+}

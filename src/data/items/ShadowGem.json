@@ -1,0 +1,12 @@
+{
+  "id": "ShadowGem",
+  "name": "Shadow Gem",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 34,
+  "sprite": "shadow_gem",
+  "description": "When a living being touches this gem, whatever their nature is, they are instantly drawn to darkness.",
+  "stats": {},
+  "notes": ""
+}

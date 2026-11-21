@@ -1,0 +1,12 @@
+{
+  "id": "LaroxianFabric",
+  "name": "Laroxian Fabric",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "laroxian_fabric",
+  "description": "An incredibly resistant but light fabric, enchanted with a variety of spells to enhance its properties.",
+  "stats": {},
+  "notes": ""
+}

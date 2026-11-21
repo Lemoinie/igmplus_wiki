@@ -1,0 +1,12 @@
+{
+  "id": "SilkThread",
+  "name": "Silk Thread",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "silk_thread",
+  "description": "Delicate fiber used to weave the fabric of the same name.",
+  "stats": {},
+  "notes": ""
+}

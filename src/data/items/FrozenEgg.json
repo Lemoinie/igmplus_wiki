@@ -1,0 +1,12 @@
+{
+  "id": "FrozenEgg",
+  "name": "Frozen Egg",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 160,
+  "sprite": "frozen_egg",
+  "description": "The egg of a Snow Wyvern. It's unique properties seem to increase the danger cold weather poses to those around it.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

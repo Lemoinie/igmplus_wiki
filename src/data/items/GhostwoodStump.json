@@ -1,0 +1,12 @@
+{
+  "id": "GhostwoodStump",
+  "name": "Ghostwood Stump",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "ghostwood_stump",
+  "description": "Ghostwood replacement for a lost leg, a common occurrence in the pirate's world.",
+  "stats": {},
+  "notes": ""
+}

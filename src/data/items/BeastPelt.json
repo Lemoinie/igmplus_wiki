@@ -1,0 +1,12 @@
+{
+  "id": "BeastPelt",
+  "name": "Beast Pelt",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1,
+  "sprite": "beast_pelt",
+  "description": "The pelt of a wild animals, usually refined to make Leather.",
+  "stats": {},
+  "notes": ""
+}

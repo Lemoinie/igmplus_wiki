@@ -1,0 +1,12 @@
+{
+  "id": "SunfireEssence",
+  "name": "Sunfire Essence",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 950,
+  "sprite": "sunfire_essence",
+  "description": "Stabilized Sunfire Core, can be used to craft powerful items.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BansheeHorn",
+  "name": "Banshee Horn",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 95,
+  "sprite": "banshee_horn",
+  "description": "Twisted, black horn of a Banshee",
+  "stats": {},
+  "notes": "Rare Drop"
+}

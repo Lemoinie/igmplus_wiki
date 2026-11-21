@@ -27,6 +27,8 @@ defineProps<{
   sprite: string;
   backHref: string;
   backLabel?: string;
+  actionHref?: string;
+  actionLabel?: string;
   basePath?: string;
   /** Small badges next to the name, e.g. "Tier 3", "Max Lv. 15", "Boss". */
   tags?: string[];
@@ -44,7 +46,10 @@ defineProps<{
 
 <template>
   <article class="unitDetail">
-    <a :href="backHref" class="backBtn">← {{ backLabel || 'Back' }}</a>
+    <div class="topNavRow">
+      <a :href="backHref" class="backBtn">← {{ backLabel || 'Back' }}</a>
+      <a v-if="actionHref" :href="actionHref" class="actionLinkBtn">{{ actionLabel || 'Open' }}</a>
+    </div>
 
     <header class="hero">
       <div class="spriteFrame">
@@ -174,7 +179,16 @@ defineProps<{
   max-width: 860px;
 }
 
-.backBtn {
+.topNavRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.backBtn,
+.actionLinkBtn {
   align-self: flex-start;
   padding: 6px 14px;
   background: var(--bg-card);
@@ -186,7 +200,13 @@ defineProps<{
   text-decoration: none;
 }
 
-.backBtn:hover {
+.actionLinkBtn {
+  color: var(--text-gold);
+  border-color: rgba(245, 158, 11, 0.45);
+}
+
+.backBtn:hover,
+.actionLinkBtn:hover {
   border-color: var(--brand-primary);
   color: var(--brand-primary);
   text-decoration: none;

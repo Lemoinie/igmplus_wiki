@@ -1,0 +1,12 @@
+{
+  "id": "FrostmetalOre",
+  "name": "Frostmetal Ore",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 4,
+  "sprite": "frostmetal_ore",
+  "description": "A raw piece of very strong and cold metal. Can be smelted into ingots.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SharkTeeth",
+  "name": "Shark Teeth",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "shark_teeth",
+  "description": "Cluster of razor-sharp serrated teeth that shred armor and flesh.",
+  "stats": {},
+  "notes": ""
+}

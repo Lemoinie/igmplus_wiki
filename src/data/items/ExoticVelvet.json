@@ -1,0 +1,12 @@
+{
+  "id": "ExoticVelvet",
+  "name": "Exotic Velvet",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 30,
+  "sprite": "exotic_velvet",
+  "description": "Very smooth and prestigious textile imported by pirates from distant lands.",
+  "stats": {},
+  "notes": ""
+}

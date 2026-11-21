@@ -1,0 +1,12 @@
+{
+  "id": "Emerald",
+  "name": "Emerald",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 70,
+  "sprite": "emerald",
+  "description": "Precious green gemstone, widely employed in the field of jewelry.",
+  "stats": {},
+  "notes": ""
+}

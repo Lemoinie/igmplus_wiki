@@ -1,0 +1,12 @@
+{
+  "id": "GiantShellFragment",
+  "name": "Giant Shell Fragment",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "giant_shell_fragment",
+  "description": "A piece of an extremely hard shell.",
+  "stats": {},
+  "notes": ""
+}

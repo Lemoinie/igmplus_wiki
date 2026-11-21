@@ -1,0 +1,12 @@
+{
+  "id": "GemOfProtection",
+  "name": "Gem of Protection",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 60,
+  "sprite": "gem_of_protection",
+  "description": "Stabilized gem that projects a force field, adding a layer of protection on the owner.",
+  "stats": {},
+  "notes": ""
+}

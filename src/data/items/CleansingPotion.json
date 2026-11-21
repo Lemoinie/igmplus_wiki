@@ -1,0 +1,12 @@
+{
+  "id": "CleansingPotion",
+  "name": "Cleansing Potion",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 375,
+  "sprite": "cleansing_potion",
+  "description": "A clear blue concoction able to restore the original properties of items degraded due to the corruption.",
+  "stats": {},
+  "notes": ""
+}

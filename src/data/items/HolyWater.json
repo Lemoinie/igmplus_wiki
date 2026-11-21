@@ -1,0 +1,12 @@
+{
+  "id": "HolyWater",
+  "name": "Holy Water",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 70,
+  "sprite": "holy_water",
+  "description": "Water blessed with a secret ritual by a bishop of the capital. Can be used to remove curses from items or living creatures, but due to the length of the rituals involved in its production only the most wealthy individuals can afford it.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

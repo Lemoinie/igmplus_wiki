@@ -1,0 +1,12 @@
+{
+  "id": "CrimsonBrew",
+  "name": "Crimson Brew",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 360,
+  "sprite": "crimson_brew",
+  "description": "A thick potion displaying a vivid red color.",
+  "stats": {},
+  "notes": ""
+}

@@ -61,6 +61,13 @@ const searchEntries = [
     url: `${base}/classes/${c.id}`,
     description: `Tier ${c.tier} ${c.category} · ${c.weaponType} / ${c.armorType}`
   })),
+  {
+    id: 'tool-simulator',
+    title: 'Build Simulator',
+    category: 'Class' as const,
+    url: `${base}/simulator`,
+    description: 'Interactive class & equipment loadout stat calculator'
+  },
   ...equipmentList.map((e: any) => ({
     id: `equip-${e.id}`,
     title: e.name,

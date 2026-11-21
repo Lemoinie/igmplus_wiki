@@ -1,0 +1,12 @@
+{
+  "id": "Quartz",
+  "name": "Quartz",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "quartz",
+  "description": "Hard, crystalline mineral found rarely in the deserts and prized for its beauty.",
+  "stats": {},
+  "notes": ""
+}

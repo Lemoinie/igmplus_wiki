@@ -1,0 +1,12 @@
+{
+  "id": "MetamorphicSand",
+  "name": "Metamorphic Sand",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 2,
+  "sprite": "metamorphic_sand",
+  "description": "Looks like regular sand at first glance, but displays peculiar shapeshifting properties.",
+  "stats": {},
+  "notes": ""
+}

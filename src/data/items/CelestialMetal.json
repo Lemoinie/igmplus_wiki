@@ -1,0 +1,12 @@
+{
+  "id": "CelestialMetal",
+  "name": "Celestial Metal",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "celestial_metal",
+  "description": "An ingot made from recovered scraps.",
+  "stats": {},
+  "notes": ""
+}

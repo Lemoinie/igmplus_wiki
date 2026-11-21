@@ -1,0 +1,12 @@
+{
+  "id": "Ruby",
+  "name": "Ruby",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 70,
+  "sprite": "ruby",
+  "description": "Deep red gemstone with a rich allure, and used to craft a wide range of jewels",
+  "stats": {},
+  "notes": ""
+}

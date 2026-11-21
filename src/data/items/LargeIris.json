@@ -1,0 +1,12 @@
+{
+  "id": "LargeIris",
+  "name": "Large Iris",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 17,
+  "sprite": "large_iris",
+  "description": "An intact eye of a slain Beholder. Can be used as a perfectly focused magic lens.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "DeepSeaVelvet",
+  "name": "Deep Sea Velvet",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 1835,
+  "sprite": "deep_sea_velvet",
+  "description": "A piece of Exotic Velvet blessed with eldritch properties from the depth of the abyss.",
+  "stats": {},
+  "notes": ""
+}

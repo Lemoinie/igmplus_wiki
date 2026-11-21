@@ -1,0 +1,12 @@
+{
+  "id": "ShahuriBowFrame",
+  "name": "Sha'huri Bow Frame",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 55,
+  "sprite": "shahuri_bow_frame",
+  "description": "The bow frame used to make the renowned Sha'huri bows.",
+  "stats": {},
+  "notes": ""
+}

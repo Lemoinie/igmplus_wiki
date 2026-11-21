@@ -1,0 +1,12 @@
+{
+  "id": "InfectedBlood",
+  "name": "Infected Blood",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 13,
+  "sprite": "infected_blood",
+  "description": "Blood carrying the mysterious infection that can turn regular undead into ghouls. Can be used as alchemic ingredient.",
+  "stats": {},
+  "notes": ""
+}

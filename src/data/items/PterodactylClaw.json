@@ -1,0 +1,12 @@
+{
+  "id": "PterodactylClaw",
+  "name": "Pterodactyl Claw",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 42,
+  "sprite": "pterodactyl_claw",
+  "description": "Giant claw of a flying monster previously thought to be extinct.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

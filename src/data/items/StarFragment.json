@@ -1,0 +1,12 @@
+{
+  "id": "StarFragment",
+  "name": "Star Fragment",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 500,
+  "sprite": "star_fragment",
+  "description": "A fragment of a distant star, containing an immense amount of power.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

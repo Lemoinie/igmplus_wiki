@@ -1,0 +1,12 @@
+{
+  "id": "SharkFin",
+  "name": "Shark Fin",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 4,
+  "sprite": "shark_fin",
+  "description": "Hydrodynamic shark fin reducing fluid drag during rapid maneuvers.",
+  "stats": {},
+  "notes": ""
+}

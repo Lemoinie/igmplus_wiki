@@ -1,0 +1,12 @@
+{
+  "id": "CopperIngot",
+  "name": "Copper Ingot",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "copper_ingot",
+  "description": "An ingot made of copper. Can be smelted in any shape to produce all kinds of equipment.",
+  "stats": {},
+  "notes": ""
+}

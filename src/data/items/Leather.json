@@ -1,0 +1,12 @@
+{
+  "id": "Leather",
+  "name": "Leather",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "leather",
+  "description": "A resistant but light material, usually employed in the making of armors or armor paddings.",
+  "stats": {},
+  "notes": ""
+}

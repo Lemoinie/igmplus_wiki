@@ -1,0 +1,12 @@
+{
+  "id": "GhostwoodBoard",
+  "name": "Ghostwood Board",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "ghostwood_board",
+  "description": "Board of Ghostwood ready to be employed for the creation of various equipments.",
+  "stats": {},
+  "notes": ""
+}

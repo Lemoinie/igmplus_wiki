@@ -1,0 +1,12 @@
+{
+  "id": "Wintercloth",
+  "name": "Wintercloth",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 18,
+  "sprite": "wintercloth",
+  "description": "Despite being a very thin cloth, it isolates almost perfectly from the external cold.",
+  "stats": {},
+  "notes": ""
+}

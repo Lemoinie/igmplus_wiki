@@ -1,0 +1,12 @@
+{
+  "id": "TerrorsaurusFang",
+  "name": "Terrorsaurus Fang",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 42,
+  "sprite": "terrorsaurus_fang",
+  "description": "Giant tooth of a voracious creature found in the depth of the world.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "Mithril",
+  "name": "Mithril",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 4,
+  "sprite": "mithril",
+  "description": "A legendary alloy, unbreakable by traditional means. Its creation remains a guarded secret of the dwellers of the Forgotten Lands.",
+  "stats": {},
+  "notes": ""
+}

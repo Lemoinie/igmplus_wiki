@@ -1,0 +1,12 @@
+{
+  "id": "GoldScraps",
+  "name": "Gold Scraps",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "gold_scraps",
+  "description": "Scraps of gold retrieved from broken equipment. Can be smelted into ingot.",
+  "stats": {},
+  "notes": ""
+}

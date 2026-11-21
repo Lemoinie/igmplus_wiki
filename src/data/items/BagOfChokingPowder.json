@@ -1,0 +1,12 @@
+{
+  "id": "BagOfChokingPowder",
+  "name": "Bag of Choking Powder",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 38,
+  "sprite": "bag_of_choking_powder",
+  "description": "A bag of irritant powder that Giant Moth wings are covered in. It allows for a more aerodynamic flight, but irritates the airways of most other living beings.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "MonkeyHide",
+  "name": "Monkey Hide",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "monkey_hide",
+  "description": "The hide of a Capuchin Monkey, a small primate usually kept as pet and assistant by some Skull Island pirates.",
+  "stats": {},
+  "notes": ""
+}

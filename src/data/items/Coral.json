@@ -1,0 +1,12 @@
+{
+  "id": "Coral",
+  "name": "Coral",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "coral",
+  "description": "Vibrant living sea coral, naturally resilient against crushing pressure.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "AbyssalSeashell",
+  "name": "Abyssal Seashell",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 12,
+  "sprite": "abyssal_seashell",
+  "description": "Large seashell found in the north-western seas. Mostly used as decoration, possesses some interesting properties.",
+  "stats": {},
+  "notes": ""
+}

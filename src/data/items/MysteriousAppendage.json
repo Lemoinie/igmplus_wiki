@@ -1,0 +1,12 @@
+{
+  "id": "MysteriousAppendage",
+  "name": "Mysterious Appendage",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 15,
+  "sprite": "mysterious_appendage",
+  "description": "The viscid limb taken from a deep sea monster.",
+  "stats": {},
+  "notes": ""
+}

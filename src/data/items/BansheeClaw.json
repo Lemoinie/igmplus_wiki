@@ -1,0 +1,12 @@
+{
+  "id": "BansheeClaw",
+  "name": "Banshee Claw",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 38,
+  "sprite": "banshee_claw",
+  "description": "The sharp and resilient claw of a Banshee",
+  "stats": {},
+  "notes": ""
+}

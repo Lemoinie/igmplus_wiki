@@ -1,0 +1,12 @@
+{
+  "id": "ElixirOfLearning",
+  "name": "Elixir of Learning",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 65,
+  "sprite": "elixir_of_learning",
+  "description": "Magic concoction that briefly boosts the ability of a student to learn new concepts.",
+  "stats": {},
+  "notes": "Rare Drop"
+}

@@ -1,0 +1,12 @@
+{
+  "id": "BlackIronScraps",
+  "name": "Black Iron Scraps",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 3,
+  "sprite": "black_iron_scraps",
+  "description": "Scraps of the famed metal, ready to be fused into an ingot.",
+  "stats": {},
+  "notes": ""
+}

@@ -1,0 +1,12 @@
+{
+  "id": "SpellwovenLeather",
+  "name": "Spellwoven Leather",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 6,
+  "sprite": "spellwoven_leather",
+  "description": "Leather made from the skin of a creature summoned through magical means.",
+  "stats": {},
+  "notes": ""
+}

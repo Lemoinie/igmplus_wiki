@@ -1,0 +1,12 @@
+{
+  "id": "ElongatedBone",
+  "name": "Elongated Bone",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 6,
+  "sprite": "elongated_bone",
+  "description": "An unusually long bone, probably coming from a hind leg of a war hound.",
+  "stats": {},
+  "notes": ""
+}

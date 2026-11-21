@@ -1,0 +1,12 @@
+{
+  "id": "NightwingLeather",
+  "name": "Nightwing Leather",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 9,
+  "sprite": "nightwing_leather",
+  "description": "High end leather sought after in all the Realms. Retrieving this material is so dangerous that only few people have ever owned it.",
+  "stats": {},
+  "notes": ""
+}

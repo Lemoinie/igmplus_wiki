@@ -1,0 +1,12 @@
+{
+  "id": "CoralChunk",
+  "name": "Coral Chunk",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 5,
+  "sprite": "coral_chunk",
+  "description": "Dense calcified coral boulder harder than tempered steel.",
+  "stats": {},
+  "notes": ""
+}

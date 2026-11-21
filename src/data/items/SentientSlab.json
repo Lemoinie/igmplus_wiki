@@ -1,0 +1,12 @@
+{
+  "id": "SentientSlab",
+  "name": "Sentient Slab",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 150,
+  "sprite": "sentient_slab",
+  "description": "A stone slab from one of the titans created in secret with a cursed ritual.",
+  "stats": {},
+  "notes": ""
+}

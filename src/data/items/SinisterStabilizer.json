@@ -1,0 +1,12 @@
+{
+  "id": "SinisterStabilizer",
+  "name": "Sinister Stabilizer",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 885,
+  "sprite": "sinister_stabilizer",
+  "description": "A powerful catalyst used to clear the arcane properties of powerful artifacts that may be cursed, or magically bound to another entity.",
+  "stats": {},
+  "notes": ""
+}

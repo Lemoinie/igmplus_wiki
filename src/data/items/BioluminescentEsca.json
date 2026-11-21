@@ -1,0 +1,12 @@
+{
+  "id": "BioluminescentEsca",
+  "name": "Bioluminescent Esca",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 8,
+  "sprite": "bioluminescent_esca",
+  "description": "Luminous deep-sea organ that radiates brilliant darkness-piercing light.",
+  "stats": {},
+  "notes": ""
+}
