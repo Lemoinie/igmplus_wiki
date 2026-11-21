@@ -80,7 +80,8 @@ const selectedLocation = computed<LocationData | undefined>(() => {
 });
 
 // Categorized locations for dropdown
-const dungeons = computed(() => props.locations.filter((l) => l.type === 'dungeon'));
+const dungeons = computed(() => props.locations.filter((l) => l.type === 'dungeon' && !l.id.startsWith('Corrupted')));
+const corruptedDungeons = computed(() => props.locations.filter((l) => l.type === 'dungeon' && l.id.startsWith('Corrupted')));
 const raids = computed(() => props.locations.filter((l) => l.type === 'raid' || l.type === 'epic_raid'));
 const guildActivities = computed(() => props.locations.filter((l) => l.type === 'guildactivity' || l.type === 'guild_activity'));
 
@@ -186,6 +187,11 @@ function getAtkTypeClass(atkType?: string): string {
               <optgroup v-if="dungeons.length" label="Regular Dungeons">
                 <option v-for="(d, idx) in dungeons" :key="d.id" :value="d.id">
                   D{{ idx + 1 }}. {{ d.name }}
+                </option>
+              </optgroup>
+              <optgroup v-if="corruptedDungeons.length" label="Corrupted Dungeons">
+                <option v-for="(cd, idx) in corruptedDungeons" :key="cd.id" :value="cd.id">
+                  CD{{ idx + 1 }}. {{ cd.name }}
                 </option>
               </optgroup>
               <optgroup v-if="raids.length" label="Raids & Epic Raids">

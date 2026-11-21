@@ -1,0 +1,12 @@
+{
+  "id": "HeartOfTheLeviathan",
+  "name": "Heart of the Leviathan",
+  "type": "material",
+  "category": "Material",
+  "rarity": 2,
+  "price": 1200,
+  "sprite": "heart_of_leviathan",
+  "description": "Mythic pulsating core harvested from the Leviathan. Radiates immense benthic vitality and pressure resistance.",
+  "stats": {},
+  "notes": ""
+}

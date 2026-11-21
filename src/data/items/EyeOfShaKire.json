@@ -1,0 +1,12 @@
+{
+  "id": "EyeOfShaKire",
+  "name": "Eye of Sha'Kire",
+  "type": "material",
+  "category": "Material",
+  "rarity": null,
+  "price": 100,
+  "sprite": "eye_of_shakire",
+  "description": "A preserved, void-infused eye of the legendary First Swordsman, radiating lethal combat instincts.",
+  "stats": {},
+  "notes": ""
+}

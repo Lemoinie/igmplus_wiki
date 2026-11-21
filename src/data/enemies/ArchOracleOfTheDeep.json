@@ -1,0 +1,37 @@
+{
+  "id": "ArchOracleOfTheDeep",
+  "name": "Arch-Oracle of the Deep",
+  "type": "Humanoid",
+  "isBoss": true,
+  "sprite": "arch_oracle_of_the_deep",
+  "stats": {
+    "hp": 14000,
+    "constitution": 80,
+    "intelligence": 220,
+    "dexterity": 50,
+    "defense": 60,
+    "magicDefense": 210
+  },
+  "damage": {
+    "min": "520",
+    "max": "640"
+  },
+  "expGiven": 5000,
+  "drops": [
+    {
+      "item": "SirenSilk",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "AncientNautilusSeashellShard",
+      "qty": 1,
+      "chance": 15
+    }
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_ABYSSAL_DELIRIUM",
+  "passiveSkill": "PASSIVE_SIREN_DISCORD"
+}

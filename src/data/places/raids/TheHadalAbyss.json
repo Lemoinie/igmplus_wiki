@@ -1,0 +1,93 @@
+{
+  "id": "TheHadalAbyss",
+  "name": "The Hadal Abyss",
+  "type": "raid",
+  "level": null,
+  "encounterChance": 0,
+  "sprite": "summary_hadal_abyss",
+  "enemies": [
+    {
+      "id": "CrimsonReefGoliath",
+      "name": "Crimson Reef Goliath",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "DeepSeaMauler",
+      "name": "Deep Sea Mauler",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "GloomAnglerSnapper",
+      "name": "Gloom Angler Snapper",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "TideCursedOracle",
+      "name": "Tide-Cursed Oracle",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "TrenchWyvern",
+      "name": "Trench Wyvern",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "LeviathanHatchling",
+      "name": "Leviathan Hatchling",
+      "rate": "Event",
+      "role": "Boss"
+    },
+    {
+      "id": "AbyssalObelisk",
+      "name": "Abyssal Obelisk",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "TrenchBehemothPrime",
+      "name": "Trench Behemoth Prime",
+      "rate": "Event",
+      "role": "Boss"
+    },
+    {
+      "id": "ArchOracleOfTheDeep",
+      "name": "Arch-Oracle of the Deep",
+      "rate": "Event",
+      "role": "Boss"
+    },
+    {
+      "id": "Leviathan",
+      "name": "Leviathan",
+      "rate": "Event",
+      "role": "Boss"
+    }
+  ],
+  "loot": [
+    "AbyssalAmulet",
+    "AbyssalChitin",
+    "AbyssalPearl",
+    "AegisOfTheChallengerDeep",
+    "AncientNautilusSeashellShard",
+    "BioluminescentEsca",
+    "BlueTrout",
+    "Coral",
+    "CoralChunk",
+    "CoralithOre",
+    "CrownOfTheBenthicSovereign",
+    "HeartOfTheLeviathan",
+    "LeviathanScale",
+    "OracleGem",
+    "Perch",
+    "SirenSilk",
+    "SpiralSeashell",
+    "SunkenDoubloon",
+    "TrenchGodsPearl",
+    "TrenchWyvernFin",
+    "WingedRay"
+  ]
+}

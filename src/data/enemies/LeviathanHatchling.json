@@ -33,6 +33,6 @@
   "isRanged": true,
   "attackType": "Ranged, Magic",
   "activeSkill": "ACTIVE_ABYSSAL_TERRIFY",
-  "passiveSkill": "PASSIVE_DEFLECT_MAGIC"
+  "passiveSkill": "PASSIVE_BENTHIC_DEFLECTION"
 }
 

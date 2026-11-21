@@ -1,0 +1,52 @@
+{
+  "id": "CorruptedSha",
+  "name": "Corrupted Sha",
+  "type": "Aberration",
+  "isBoss": false,
+  "sprite": "unit_corrupted_sha",
+  "stats": {
+    "hp": 77777,
+    "constitution": 77,
+    "intelligence": 77,
+    "dexterity": 77,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "77",
+    "max": "77"
+  },
+  "expGiven": 77777,
+  "drops": [
+    {
+      "item": "MetamorphicSand",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "Quartz",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "BottledSandSpirit",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "PotionOfPrecision",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.5
+    }
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_DISEMBODY",
+  "passiveSkill": "PASSIVE_PERFECT_IMMUNITY"
+}

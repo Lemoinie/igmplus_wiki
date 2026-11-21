@@ -1,0 +1,37 @@
+{
+  "id": "TrenchBehemothPrime",
+  "name": "Trench Behemoth Prime",
+  "type": "Construct",
+  "isBoss": true,
+  "sprite": "trench_behemoth_prime",
+  "stats": {
+    "hp": 18000,
+    "constitution": 220,
+    "intelligence": 15,
+    "dexterity": 30,
+    "defense": 180,
+    "magicDefense": 90
+  },
+  "damage": {
+    "min": "600",
+    "max": "720"
+  },
+  "expGiven": 5500,
+  "drops": [
+    {
+      "item": "AbyssalChitin",
+      "qty": 3,
+      "chance": 75
+    },
+    {
+      "item": "CoralithOre",
+      "qty": 1,
+      "chance": 25
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_ABYSSAL_CLEAVE",
+  "passiveSkill": "PASSIVE_HADAL_GROUNDING"
+}

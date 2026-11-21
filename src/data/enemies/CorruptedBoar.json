@@ -1,0 +1,47 @@
+{
+  "id": "CorruptedBoar",
+  "name": "Corrupted Boar",
+  "type": "Beast",
+  "isBoss": false,
+  "sprite": "unit_corrupted_boar",
+  "stats": {
+    "hp": 200,
+    "constitution": 20,
+    "intelligence": 4,
+    "dexterity": 4,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "2",
+    "max": "6"
+  },
+  "expGiven": 24,
+  "drops": [
+    {
+      "item": "BeastPelt",
+      "qty": 1,
+      "chance": 45
+    },
+    {
+      "item": "BoarTusk",
+      "qty": 1,
+      "chance": 30
+    },
+    {
+      "item": "MeatChop",
+      "qty": 1,
+      "chance": 1.2
+    },
+    {
+      "item": "WildEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_NONE"
+}

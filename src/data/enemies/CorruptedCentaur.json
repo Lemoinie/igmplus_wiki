@@ -1,0 +1,42 @@
+{
+  "id": "CorruptedCentaur",
+  "name": "Corrupted Centaur",
+  "type": "Humanoid",
+  "isBoss": false,
+  "sprite": "unit_corrupted_centaur",
+  "stats": {
+    "hp": 160,
+    "constitution": 24,
+    "intelligence": 20,
+    "dexterity": 44,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "16",
+    "max": "30"
+  },
+  "expGiven": 48,
+  "drops": [
+    {
+      "item": "PlantFiber",
+      "qty": 1,
+      "chance": 45
+    },
+    {
+      "item": "CopperOre",
+      "qty": 1,
+      "chance": 45
+    },
+    {
+      "item": "Cheese",
+      "qty": 1,
+      "chance": 2.5
+    }
+  ],
+  "isMagic": false,
+  "isRanged": true,
+  "attackType": "Ranged, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_INITIATIVE"
+}

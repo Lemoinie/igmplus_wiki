@@ -1,0 +1,16 @@
+{
+  "id": "AbyssalAmulet",
+  "name": "Abyssal Amulet",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 5220,
+  "sprite": "abyssal_amulet",
+  "description": "Ancient Atlantean amulet radiating resonant benthic frequencies. The old woman said it could even break what cannot be broken.",
+  "stats": {
+    "intelligence": 30,
+    "magicDefense": 30,
+    "criticalChance": 0.1
+  },
+  "notes": "Immune to Confuse, Freeze and Abyssal Pressure. Shatters Abyssal Obelisks in 4 hits."
+}

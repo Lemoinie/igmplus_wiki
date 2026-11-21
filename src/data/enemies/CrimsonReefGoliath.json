@@ -21,12 +21,12 @@
     {
       "item": "CoralChunk",
       "qty": 1,
-      "chance": 30
+      "chance": 20
     },
     {
       "item": "Coral",
-      "qty": 2,
-      "chance": 20
+      "qty": 1,
+      "chance": 10
     }
   ],
   "isMagic": false,

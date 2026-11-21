@@ -1,0 +1,12 @@
+{
+  "id": "LeviathanScale",
+  "name": "Leviathan Scale",
+  "type": "material",
+  "category": "Material",
+  "rarity": 1,
+  "price": 900,
+  "sprite": "leviathan_scale",
+  "description": "Massive, iridescent dragon scale hardened by millennia under thousands of atmospheres of pressure. Impervious to hydrodynamic drag.",
+  "stats": {},
+  "notes": ""
+}

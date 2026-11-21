@@ -1,0 +1,52 @@
+{
+  "id": "CorruptedTreant",
+  "name": "Corrupted Treant",
+  "type": "Plant",
+  "isBoss": false,
+  "sprite": "unit_corrupted_treant",
+  "stats": {
+    "hp": 200,
+    "constitution": 20,
+    "intelligence": 10,
+    "dexterity": 12,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "12",
+    "max": "18"
+  },
+  "expGiven": 48,
+  "drops": [
+    {
+      "item": "Wood",
+      "qty": 1,
+      "chance": 59.9
+    },
+    {
+      "item": "PlantFiber",
+      "qty": 1,
+      "chance": 34.5
+    },
+    {
+      "item": "Tomato",
+      "qty": 1,
+      "chance": 1.2
+    },
+    {
+      "item": "LivingSap",
+      "qty": 1,
+      "chance": 0.5
+    },
+    {
+      "item": "WoodenEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_NONE"
+}

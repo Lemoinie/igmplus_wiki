@@ -14,6 +14,7 @@ export const STAT_LABELS: Record<string, string> = {
   lifesteal: 'Lifesteal',
   lifestealWithMinion: 'Lifesteal (with Minion)',
   counterattack: 'Counter',
+  counterattackDamageBonus: 'Counter DMG',
   threat: 'Threat',
   skillAmpModifier: 'Skill Amp',
   damageDealtModifier: 'Damage Dealt',
@@ -29,6 +30,8 @@ export const STAT_LABELS: Record<string, string> = {
   bonusExperience: 'Bonus EXP',
   darknessReduction: 'Darkness Reduction',
   darknessDamageAmplification: 'Darkness DMG Amp',
+  attackSpeedDragReduction: 'Atk Speed Drag Reduction',
+  rangedDragReduction: 'Ranged Drag Reduction',
   bloodflameDamageBonus: 'Bloodflame DMG Bonus',
   freezeBonusDamage: 'Freeze Bonus DMG',
   onFireBonusDamage: 'On-Fire Bonus DMG',
@@ -46,12 +49,15 @@ const PERCENT_STATS = new Set([
   'dodgeChance',
   'flatDodgeChance',
   'counterattack',
+  'counterattackDamageBonus',
   'skillAmpModifier',
   'damageDealtModifier',
   'healingModifier',
   'immunityToStatus',
   'endOfTurnActionProbability',
   'darknessDamageAmplification',
+  'attackSpeedDragReduction',
+  'rangedDragReduction',
 ]);
 
 /** Fallback for unknown keys: "someNewStat" -> "Some New Stat". */

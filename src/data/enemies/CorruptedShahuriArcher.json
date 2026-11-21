@@ -1,0 +1,42 @@
+{
+  "id": "CorruptedShahuriArcher",
+  "name": "Corrupted Sha'huri Archer",
+  "type": "Humanoid",
+  "isBoss": false,
+  "sprite": "unit_corrupted_shahuri_archer",
+  "stats": {
+    "hp": 140,
+    "constitution": 16,
+    "intelligence": 20,
+    "dexterity": 50,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "18",
+    "max": "26"
+  },
+  "expGiven": 60,
+  "drops": [
+    {
+      "item": "ScrapMetal",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "ShahuriBowFrame",
+      "qty": 1,
+      "chance": 1.5
+    },
+    {
+      "item": "Pineapple",
+      "qty": 1,
+      "chance": 1
+    }
+  ],
+  "isMagic": false,
+  "isRanged": true,
+  "attackType": "Ranged, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_DESERT_ARCHER"
+}

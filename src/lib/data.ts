@@ -137,6 +137,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
 
   // Dragon
   DreamwroughtDragon: 'Dragon',
+  Leviathan: 'Dragon',
   LeviathanHatchling: 'Dragon',
   SnowWyvern: 'Dragon',
   TrenchWyvern: 'Dragon',
@@ -144,6 +145,8 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   // Plant
   AmanitaObscura: 'Plant',
   AncientEnt: 'Plant',
+  CorruptedEnt: 'Plant',
+  CorruptedTreant: 'Plant',
   Dryad: 'Plant',
   Ent: 'Plant',
   Treant: 'Plant',
@@ -170,6 +173,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   SandDemon: 'Demon',
 
   // Construct
+  AbyssalObelisk: 'Construct',
   BloodstoneColossus: 'Construct',
   CrimsonReefGoliath: 'Construct',
   DreamwroughtForge: 'Construct',
@@ -181,6 +185,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   ReinforcedDoor: 'Construct',
   SandStatue: 'Construct',
   TheMachine: 'Construct',
+  TrenchBehemothPrime: 'Construct',
 
   // Elemental
   Djinn: 'Elemental',
@@ -195,6 +200,9 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   BlueShark: 'Beast',
   BlueTrout: 'Beast',
   Boar: 'Beast',
+  CorruptedBoar: 'Beast',
+  CorruptedVulture: 'Beast',
+  CorruptedWolf: 'Beast',
   DeathHound: 'Beast',
   DreamwroughtBeast: 'Beast',
   DreamwroughtSwarm: 'Beast',
@@ -225,6 +233,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   CelestialDestroyer: 'Aberration',
   CelestialLancer: 'Aberration',
   Cerebrum: 'Aberration',
+  CorruptedSha: 'Aberration',
   Iconoclast: 'Aberration',
   LesserTitan: 'Aberration',
   MysteriousTentacle: 'Aberration',
@@ -241,6 +250,7 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
 
   // Humanoid
   ArcaneAssassin: 'Humanoid',
+  ArchOracleOfTheDeep: 'Humanoid',
   TideCursedOracle: 'Humanoid',
   ArchmageOfLarox: 'Humanoid',
   ArchmagusValthex: 'Humanoid',
@@ -251,6 +261,11 @@ const ENEMY_TYPE_MAP: Record<string, string> = {
   ChiefScientistAva: 'Humanoid',
   CityWarden: 'Humanoid',
   Claris: 'Humanoid',
+  CorruptedCentaur: 'Humanoid',
+  CorruptedShaKire: 'Humanoid',
+  CorruptedShahuriArcher: 'Humanoid',
+  CorruptedShahuriMage: 'Humanoid',
+  CorruptedShahuriWarrior: 'Humanoid',
   CrimsonAcolyte: 'Humanoid',
   Crusader: 'Humanoid',
   Deckhand: 'Humanoid',
@@ -371,6 +386,7 @@ const LOCATION_FRAGMENT_ORDER: Record<string, number> = {
   LostLands: 11,
   TheSunkenCitadel: 12,
   CorruptedForest: 13,
+  CorruptedDesert: 14,
 
   // fragment_raids.xml (Raids & Epic Raids)
   TheSlimePond: 101,

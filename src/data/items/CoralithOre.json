@@ -1,0 +1,12 @@
+{
+  "id": "CoralithOre",
+  "name": "Coralith Ore",
+  "type": "material",
+  "category": "Material",
+  "rarity": 1,
+  "price": 450,
+  "sprite": "coralith_ore",
+  "description": "Dense benthic mineral ore formed under immense hadal hydrostatic pressure. Possesses extreme structural integrity.",
+  "stats": {},
+  "notes": ""
+}

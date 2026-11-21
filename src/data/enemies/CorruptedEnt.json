@@ -1,0 +1,47 @@
+{
+  "id": "CorruptedEnt",
+  "name": "Corrupted Ent",
+  "type": "Plant",
+  "isBoss": false,
+  "sprite": "unit_corrupted_ent",
+  "stats": {
+    "hp": 600,
+    "constitution": 40,
+    "intelligence": 40,
+    "dexterity": 6,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "22",
+    "max": "28"
+  },
+  "expGiven": 240,
+  "drops": [
+    {
+      "item": "Wood",
+      "qty": 1,
+      "chance": 49.9
+    },
+    {
+      "item": "Apple",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "AncientSeed",
+      "qty": 1,
+      "chance": 5
+    },
+    {
+      "item": "WoodenEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_STOMP",
+  "passiveSkill": "PASSIVE_NONE"
+}

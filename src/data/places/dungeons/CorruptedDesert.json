@@ -1,0 +1,64 @@
+{
+  "id": "CorruptedDesert",
+  "name": "Corrupted Desert",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 45,
+  "sprite": "summary_corrupted_desert",
+  "enemies": [
+    {
+      "id": "CorruptedShahuriArcher",
+      "name": "Corrupted Sha'huri Archer",
+      "rate": "16.3%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedShahuriWarrior",
+      "name": "Corrupted Sha'huri Warrior",
+      "rate": "16.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedVulture",
+      "name": "Corrupted Vulture",
+      "rate": "6.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedShahuriMage",
+      "name": "Corrupted Sha'huri Mage",
+      "rate": "5.6%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedShaKire",
+      "name": "Corrupted Sha'Kire",
+      "rate": "1.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedSha",
+      "name": "Corrupted Sha",
+      "rate": "Event",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "AmuletOfShaKire",
+    "AvianEgg",
+    "BottledSandSpirit",
+    "Egg",
+    "EsotericEgg",
+    "EyeOfShaKire",
+    "Feather",
+    "MetamorphicSand",
+    "Pineapple",
+    "PotionOfPrecision",
+    "Quartz",
+    "RecurveBlade",
+    "Sandstone",
+    "ScrapMetal",
+    "ShahuriBow",
+    "ShahuriBowFrame"
+  ]
+}

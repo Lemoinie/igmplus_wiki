@@ -1,0 +1,12 @@
+{
+  "id": "AncientNautilusSeashellShard",
+  "name": "Ancient Nautilus Seashell Shard",
+  "type": "material",
+  "category": "Material",
+  "rarity": 1,
+  "price": 650,
+  "sprite": "ancient_nautilus_seashell_shard",
+  "description": "Luminous, calcified fragment of an ancient titan nautilus shell inscribed with forgotten benthic runes. Amplifies spell focus and environmental wards.",
+  "stats": {},
+  "notes": ""
+}

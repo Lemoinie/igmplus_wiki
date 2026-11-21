@@ -1,0 +1,16 @@
+{
+  "id": "AegisOfTheChallengerDeep",
+  "name": "Aegis of the Challenger Deep",
+  "type": "armor",
+  "category": "HeavyArmor",
+  "rarity": null,
+  "price": 11250,
+  "sprite": "aegis_of_the_challenger_deep",
+  "description": "Colossal fortress plating forged from the core and scales of the Leviathan reinforced with coralith ore.",
+  "stats": {
+    "maxHp": 350,
+    "constitution": 35,
+    "magicDefense": 25
+  },
+  "notes": "Immune to Freeze and Abyssal Pressure."
+}

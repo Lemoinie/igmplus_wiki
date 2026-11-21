@@ -1,0 +1,12 @@
+{
+  "id": "TrenchGodsPearl",
+  "name": "Trench God's Pearl",
+  "type": "material",
+  "category": "Material",
+  "rarity": 2,
+  "price": 1500,
+  "sprite": "trench_gods_pearl",
+  "description": "Flawless abyssal black pearl infused with primordial void currents and eldritch sorcery.",
+  "stats": {},
+  "notes": ""
+}

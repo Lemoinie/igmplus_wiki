@@ -1,0 +1,16 @@
+{
+  "id": "CrownOfTheBenthicSovereign",
+  "name": "Crown of the Benthic Sovereign",
+  "type": "accessory",
+  "category": "Accessory",
+  "rarity": null,
+  "price": 9225,
+  "sprite": "crown_of_the_benthic_sovereign",
+  "description": "An imperial benthic diadem crowned with the Trench God's Pearl and reinforced titan nautilus shards.",
+  "stats": {
+    "intelligence": 50,
+    "magicDefense": 35,
+    "skillAmpModifier": 0.2
+  },
+  "notes": "+20% Skill Amp. +15% environmental damage resistance."
+}

@@ -1,0 +1,42 @@
+{
+  "id": "CorruptedShahuriMage",
+  "name": "Corrupted Sha'huri Mage",
+  "type": "Humanoid",
+  "isBoss": false,
+  "sprite": "unit_corrupted_shahuri_mage",
+  "stats": {
+    "hp": 130,
+    "constitution": 8,
+    "intelligence": 30,
+    "dexterity": 10,
+    "defense": 0,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "16",
+    "max": "18"
+  },
+  "expGiven": 60,
+  "drops": [
+    {
+      "item": "ScrapMetal",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "Quartz",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "Pineapple",
+      "qty": 1,
+      "chance": 1
+    }
+  ],
+  "isMagic": true,
+  "isRanged": true,
+  "attackType": "Ranged, Magic",
+  "activeSkill": "ACTIVE_QUICKSAND_GRASP",
+  "passiveSkill": "PASSIVE_NONE"
+}

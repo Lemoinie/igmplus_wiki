@@ -1,0 +1,52 @@
+{
+  "id": "CorruptedShaKire",
+  "name": "Corrupted Sha'Kire",
+  "type": "Humanoid",
+  "isBoss": false,
+  "sprite": "unit_corrupted_shakire",
+  "stats": {
+    "hp": 7000,
+    "constitution": 48,
+    "intelligence": 72,
+    "dexterity": 84,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "150",
+    "max": "208"
+  },
+  "expGiven": 1200,
+  "drops": [
+    {
+      "item": "ScrapMetal",
+      "qty": 1,
+      "chance": 60
+    },
+    {
+      "item": "Quartz",
+      "qty": 1,
+      "chance": 20
+    },
+    {
+      "item": "RecurveBlade",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "EyeOfShaKire",
+      "qty": 1,
+      "chance": 1
+    },
+    {
+      "item": "EsotericEgg",
+      "qty": 1,
+      "chance": 0.2
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_DESERT_JUDGEMENT",
+  "passiveSkill": "PASSIVE_RETALIATE_II"
+}

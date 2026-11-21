@@ -1,0 +1,47 @@
+{
+  "id": "CorruptedWolf",
+  "name": "Corrupted Wolf",
+  "type": "Beast",
+  "isBoss": false,
+  "sprite": "unit_corrupted_wolf",
+  "stats": {
+    "hp": 120,
+    "constitution": 16,
+    "intelligence": 4,
+    "dexterity": 14,
+    "defense": 0,
+    "magicDefense": 0
+  },
+  "damage": {
+    "min": "4",
+    "max": "12"
+  },
+  "expGiven": 24,
+  "drops": [
+    {
+      "item": "BeastPelt",
+      "qty": 1,
+      "chance": 70
+    },
+    {
+      "item": "AlphaWolfFang",
+      "qty": 1,
+      "chance": 8
+    },
+    {
+      "item": "WerewolfFang",
+      "qty": 1,
+      "chance": 0.2
+    },
+    {
+      "item": "WildEgg",
+      "qty": 1,
+      "chance": 0.1
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_NONE"
+}

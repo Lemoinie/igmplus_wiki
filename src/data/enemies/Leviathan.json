@@ -1,0 +1,42 @@
+{
+  "id": "Leviathan",
+  "name": "Leviathan",
+  "type": "Dragon",
+  "isBoss": true,
+  "sprite": "leviathan",
+  "stats": {
+    "hp": 80000,
+    "constitution": 300,
+    "intelligence": 150,
+    "dexterity": 50,
+    "defense": 80,
+    "magicDefense": 360
+  },
+  "damage": {
+    "min": "1300",
+    "max": "1650"
+  },
+  "expGiven": 25000,
+  "drops": [
+    {
+      "item": "HeartOfTheLeviathan",
+      "qty": 1,
+      "chance": 25
+    },
+    {
+      "item": "LeviathanScale",
+      "qty": 1,
+      "chance": 15
+    },
+    {
+      "item": "TrenchGodsPearl",
+      "qty": 1,
+      "chance": 15
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_TIDAL_CATACLYSM",
+  "passiveSkill": "PASSIVE_ABYSSAL_SOVEREIGN"
+}

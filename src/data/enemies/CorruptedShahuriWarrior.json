@@ -1,0 +1,42 @@
+{
+  "id": "CorruptedShahuriWarrior",
+  "name": "Corrupted Sha'huri Warrior",
+  "type": "Humanoid",
+  "isBoss": false,
+  "sprite": "unit_corrupted_shahuri_warrior",
+  "stats": {
+    "hp": 290,
+    "constitution": 24,
+    "intelligence": 16,
+    "dexterity": 10,
+    "defense": 20,
+    "magicDefense": 50
+  },
+  "damage": {
+    "min": "12",
+    "max": "16"
+  },
+  "expGiven": 60,
+  "drops": [
+    {
+      "item": "ScrapMetal",
+      "qty": 1,
+      "chance": 50
+    },
+    {
+      "item": "RecurveBlade",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "Pineapple",
+      "qty": 1,
+      "chance": 1
+    }
+  ],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_THREATENING_I"
+}

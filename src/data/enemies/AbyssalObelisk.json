@@ -1,0 +1,26 @@
+{
+  "id": "AbyssalObelisk",
+  "name": "Abyssal Obelisk",
+  "type": "Construct",
+  "isBoss": false,
+  "sprite": "abyssal_obelisk",
+  "stats": {
+    "hp": 1000000,
+    "constitution": 500,
+    "intelligence": 1,
+    "dexterity": 1,
+    "defense": 450,
+    "magicDefense": 450
+  },
+  "damage": {
+    "min": "0",
+    "max": "0"
+  },
+  "expGiven": 0,
+  "drops": [],
+  "isMagic": false,
+  "isRanged": false,
+  "attackType": "Melee, Physical",
+  "activeSkill": "ACTIVE_NONE",
+  "passiveSkill": "PASSIVE_INORGANIC"
+}

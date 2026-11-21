@@ -19,14 +19,19 @@
   "expGiven": 265,
   "drops": [
     {
-      "item": "CoralChunk",
+      "item": "WingedRay",
       "qty": 1,
-      "chance": 15
+      "chance": 5
     },
     {
-      "item": "AbyssalChitin",
+      "item": "BlueTrout",
       "qty": 1,
-      "chance": 2.5
+      "chance": 5
+    },
+    {
+      "item": "Perch",
+      "qty": 1,
+      "chance": 5
     }
   ],
   "isMagic": false,

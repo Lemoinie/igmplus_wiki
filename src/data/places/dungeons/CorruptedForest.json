@@ -1,0 +1,57 @@
+{
+  "id": "CorruptedForest",
+  "name": "Corrupted Forest",
+  "type": "dungeon",
+  "level": null,
+  "encounterChance": 50,
+  "sprite": "summary_corrupted_forest",
+  "enemies": [
+    {
+      "id": "CorruptedWolf",
+      "name": "Corrupted Wolf",
+      "rate": "14.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedBoar",
+      "name": "Corrupted Boar",
+      "rate": "14.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedTreant",
+      "name": "Corrupted Treant",
+      "rate": "12.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedCentaur",
+      "name": "Corrupted Centaur",
+      "rate": "7.0%",
+      "role": "Regular"
+    },
+    {
+      "id": "CorruptedEnt",
+      "name": "Corrupted Ent",
+      "rate": "3.0%",
+      "role": "Regular"
+    }
+  ],
+  "loot": [
+    "AlphaWolfFang",
+    "AncientSeed",
+    "Apple",
+    "BeastPelt",
+    "BoarTusk",
+    "Cheese",
+    "CopperOre",
+    "LivingSap",
+    "MeatChop",
+    "PlantFiber",
+    "Tomato",
+    "WerewolfFang",
+    "WildEgg",
+    "Wood",
+    "WoodenEgg"
+  ]
+}
