@@ -6,8 +6,8 @@
   "name": "Dragon Blood",
   "description": "Damage reduction increased by 0.5% per unit rank (+4.5% if ascended).",
   "category": "rare",
-  "upgrades_to": null,
+  "upgrades_to": "DRAGON_BLOOD_PLUS",
   "upgraded_from": null,
-  "upgrade_name": null,
+  "upgrade_name": "Dragon Blood+",
   "base_name": null
 }

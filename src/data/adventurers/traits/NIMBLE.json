@@ -6,8 +6,8 @@
   "name": "Nimble",
   "description": "10% increased dodge chance (additive)",
   "category": "rare",
-  "upgrades_to": null,
+  "upgrades_to": "NIMBLE_PLUS",
   "upgraded_from": null,
-  "upgrade_name": null,
+  "upgrade_name": "Nimble+",
   "base_name": null
 }

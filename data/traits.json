@@ -241,9 +241,9 @@
     "name": "Dragon Blood",
     "description": "Damage reduction increased by 0.5% per unit rank (+4.5% if ascended).",
     "category": "rare",
-    "upgrades_to": null,
+    "upgrades_to": "DRAGON_BLOOD_PLUS",
     "upgraded_from": null,
-    "upgrade_name": null,
+    "upgrade_name": "Dragon Blood+",
     "base_name": null
   },
   {
@@ -306,9 +306,9 @@
     "name": "Troll Blood",
     "description": "Each turn, regenerates 0.25% of max HP per unit rank (+2.25% if ascended).",
     "category": "rare",
-    "upgrades_to": null,
+    "upgrades_to": "TROLL_BLOOD_PLUS",
     "upgraded_from": null,
-    "upgrade_name": null,
+    "upgrade_name": "Troll Blood+",
     "base_name": null
   },
   {
@@ -319,9 +319,9 @@
     "name": "Nimble",
     "description": "10% increased dodge chance (additive)",
     "category": "rare",
-    "upgrades_to": null,
+    "upgrades_to": "NIMBLE_PLUS",
     "upgraded_from": null,
-    "upgrade_name": null,
+    "upgrade_name": "Nimble+",
     "base_name": null
   },
   {
@@ -528,9 +528,9 @@
     "description": "15% increased dodge chance (additive)",
     "category": "rare",
     "upgrades_to": null,
-    "upgraded_from": null,
+    "upgraded_from": "NIMBLE",
     "upgrade_name": null,
-    "base_name": null
+    "base_name": "Nimble"
   },
   {
     "key": "TROLL_BLOOD_PLUS",
@@ -541,9 +541,9 @@
     "description": "Each turn, regenerates 0.5% of max HP per unit rank (+4.5% if ascended).",
     "category": "rare",
     "upgrades_to": null,
-    "upgraded_from": null,
+    "upgraded_from": "TROLL_BLOOD",
     "upgrade_name": null,
-    "base_name": null
+    "base_name": "Troll Blood"
   },
   {
     "key": "DRAGON_BLOOD_PLUS",
@@ -554,8 +554,8 @@
     "description": "Damage reduction increased by 1% per unit rank (+9% if ascended).",
     "category": "rare",
     "upgrades_to": null,
-    "upgraded_from": null,
+    "upgraded_from": "DRAGON_BLOOD",
     "upgrade_name": null,
-    "base_name": null
+    "base_name": "Dragon Blood"
   }
 ]

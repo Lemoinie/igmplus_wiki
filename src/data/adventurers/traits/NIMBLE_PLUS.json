@@ -7,7 +7,7 @@
   "description": "15% increased dodge chance (additive)",
   "category": "rare",
   "upgrades_to": null,
-  "upgraded_from": null,
+  "upgraded_from": "NIMBLE",
   "upgrade_name": null,
-  "base_name": null
+  "base_name": "Nimble"
 }

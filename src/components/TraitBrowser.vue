@@ -122,22 +122,22 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
     <div class="summaryRow">
       <div class="summaryCard">
         <span class="summaryLabel">Basic Traits</span>
-        <span class="summaryVal emerald">7 Base + 7 Upgrades</span>
+        <span class="summaryVal emerald">{{ basicPairs.length }} Base + {{ basicPairs.length }} Upgrades</span>
         <span class="summarySub">Evo-22</span>
       </div>
       <div class="summaryCard">
         <span class="summaryLabel">Upgradable Rare</span>
-        <span class="summaryVal purple">7 Base + 7 Upgrades</span>
+        <span class="summaryVal purple">{{ rareUpgradablePairs.length }} Base + {{ rareUpgradablePairs.length }} Upgrades</span>
         <span class="summarySub">Evo-24</span>
       </div>
       <div class="summaryCard">
         <span class="summaryLabel">Standard Rare</span>
-        <span class="summaryVal blue">12 Traits</span>
+        <span class="summaryVal blue">{{ rareStandard.length }} Traits</span>
         <span class="summarySub">Unique Standalone Effects</span>
       </div>
       <div class="summaryCard">
         <span class="summaryLabel">Total Traits</span>
-        <span class="summaryVal gold">40 Total</span>
+        <span class="summaryVal gold">{{ traits.length }} Total</span>
         <span class="summarySub">In Plus Version</span>
       </div>
     </div>
@@ -253,7 +253,7 @@ const countRare = computed(() => props.traits.filter((t) => t.category === 'rare
           <div class="sectionTitleWrap">
             <h2>Rare Traits with Upgrades</h2>
             <p class="sectionDesc">
-              Rare personality & magical affinities. These 7 base rare traits can be permanently upgraded to their Plus (+) variants via Evo-24 Phylactery.
+              Rare personality & magical affinities. These {{ rareUpgradablePairs.length }} base rare traits can be permanently upgraded to their Plus (+) variants via Evo-24 Vial.
             </p>
           </div>
           <span class="sectionCount">{{ filteredRarePairs.length }} Pairs</span>
