@@ -33,6 +33,11 @@
       "chance": 70
     },
     {
+      "item": "OrbOfEctoplasm",
+      "qty": 1,
+      "chance": 1
+    },
+    {
       "item": "EsotericEgg",
       "qty": 1,
       "chance": 0.1

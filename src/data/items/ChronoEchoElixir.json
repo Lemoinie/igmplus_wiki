@@ -1,0 +1,12 @@
+{
+  "id": "ChronoEchoElixir",
+  "name": "Chrono Echo Elixir",
+  "type": "accessory",
+  "category": "Consumable",
+  "rarity": null,
+  "price": 8000,
+  "sprite": "chrono_echo_elixir",
+  "description": "An unstable brew that unravels the memory of every potion an adventurer has ever consumed, resetting their body to a state before any stat potion was drunk. All potion slots are restored — but all bonuses granted by those potions are lost.",
+  "stats": {},
+  "notes": ""
+}

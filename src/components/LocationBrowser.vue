@@ -75,8 +75,74 @@ const selectedLocationId = ref(props.locations[0]?.id || '');
 const searchQuery = ref('');
 const isLootOpen = ref(false);
 
+interface LocationExtraInfo {
+  unlockReq: string;
+  darkness?: number;
+  notes?: string[];
+}
+
+const LOCATION_INFO: Record<string, LocationExtraInfo> = {
+  EnchantedForest: { unlockReq: 'Unlocked by default' },
+  TheDesert: { unlockReq: 'Reach area 80 in D1. Enchanted Forest' },
+  EternalBattlefield: { unlockReq: 'Reach area 100 in D2. The Desert', darkness: 20 },
+  TheGoldenCity: { unlockReq: 'Reach area 100 in D3. Eternal Battlefield' },
+  BlackwaterPort: { unlockReq: 'Reach area 100 in D4. The Golden City' },
+  FrostbitePeaks: { unlockReq: 'Reach area 100 in D5. Blackwater Port' },
+  ObsidianMines: { unlockReq: 'Reach area 100 in D6. Frostbite Peaks' },
+  TheSouthernGrove: { unlockReq: 'Complete R6. The Dreadful Ascent', darkness: 15 },
+  BarrenWastelands: { unlockReq: 'Reach area 60 in D8. The Southern Grove' },
+  HiddenCityOfLarox: { unlockReq: 'Reach area 100 in D9. Barren Wastelands', darkness: 8 },
+  LostLands: { unlockReq: 'Reach area 100 in D10. Hidden City of Larox', darkness: 12 },
+  TheSunkenCitadel: {
+    unlockReq: 'Reach area 150 in D11. Lost Lands',
+    darkness: 50,
+    notes: ['Elite Room Entry Requirement: Have an adventurer wearing [Accessory: Tidal Lantern]'],
+  },
+  CorruptedForest: { unlockReq: 'Unlocked by default' },
+  CorruptedDesert: {
+    unlockReq: 'Reach area 100 in C1. Corrupted Forest (or D2. The Desert)',
+    darkness: 10,
+    notes: ["Elite Room Entry Requirement: Everytime defeating Corrupted Sha'Kire 10 times, has 10% to summon Corrupted Sha"],
+  },
+  TheSlimePond: { unlockReq: 'Reach area 150 in D1. Enchanted Forest' },
+  DivineArcheology: {
+    unlockReq: 'Reach area 150 in D2. The Desert',
+    notes: ['Boss Room Entry Requirement: Total Adventurer Con Score 200 or Higher'],
+  },
+  AncientGraveDigging: { unlockReq: 'Reach area 150 in D3. Eternal Battlefield' },
+  ImperialRescue: { unlockReq: 'Reach area 150 in D4. The Golden City' },
+  TheCultistRebels: {
+    unlockReq: 'Reach area 150 in D6. Frostbite Peaks',
+    notes: [
+      'Boss Appearance Conditions:',
+      '- If there is an adventurer wearing [Accessory: Skeleton Key] among the adventurers, you can meet the Primordial Titan.',
+      '- If not, you will meet Claris & Torvus.',
+    ],
+  },
+  TheDreadfulAscent: { unlockReq: 'Reach area 100 in D7. Obsidian Mines' },
+  TheLostExpedition: { unlockReq: 'Reach area 220 in D7. Obsidian Mines', darkness: 100 },
+  CelestialMothership: { unlockReq: 'Reach area 180 in D9. Barren Wastelands' },
+  TheDireDescent: { unlockReq: 'Reach area 100 in D11. Lost Lands' },
+  SleepingPlanet: { unlockReq: 'Complete R9. The Dire Descent' },
+  Kaunis: { unlockReq: 'Complete R9. The Dire Descent', darkness: 18 },
+  TheTower: {
+    unlockReq: 'Complete R9. The Dire Descent',
+    notes: ['Special: Revives 1 adventurer each time they encounter a monster.'],
+  },
+  SanguineCrucible: { unlockReq: 'Complete R12. The Tower' },
+  TheHadalAbyss: { unlockReq: 'Defeat 10 Leviathan Hatchlings in D12. The Sunken Citadel', darkness: 90 },
+  TheSlumberingShallowsArea: { unlockReq: 'Unlocked by default' },
+  GuildRequestArea: { unlockReq: 'Unlocked by default', darkness: 50 },
+  GuildSiegeArea: { unlockReq: 'Unlocked by default', darkness: 15 },
+};
+
 const selectedLocation = computed<LocationData | undefined>(() => {
   return props.locations.find((loc) => loc.id === selectedLocationId.value) || props.locations[0];
+});
+
+const currentLocationInfo = computed<LocationExtraInfo | undefined>(() => {
+  if (!selectedLocation.value) return undefined;
+  return LOCATION_INFO[selectedLocation.value.id];
 });
 
 // Categorized locations for dropdown
@@ -191,7 +257,7 @@ function getAtkTypeClass(atkType?: string): string {
               </optgroup>
               <optgroup v-if="corruptedDungeons.length" label="Corrupted Dungeons">
                 <option v-for="(cd, idx) in corruptedDungeons" :key="cd.id" :value="cd.id">
-                  CD{{ idx + 1 }}. {{ cd.name }}
+                  C{{ idx + 1 }}. {{ cd.name }}
                 </option>
               </optgroup>
               <optgroup v-if="raids.length" label="Raids & Epic Raids">
@@ -236,7 +302,24 @@ function getAtkTypeClass(atkType?: string): string {
       <div class="locationHeaderMain">
         <div class="locationMetaGroup">
           <div class="statsPills">
+            <div v-if="currentLocationInfo" class="pill">
+              <span class="pillLabel">Unlock Requirements:</span>
+              <strong class="pillVal">{{ currentLocationInfo.unlockReq }}</strong>
+            </div>
+            <div v-if="(currentLocationInfo?.darkness ?? 0) > 0" class="pill pillDarkness">
+              <span class="pillLabel">Darkness:</span>
+              <strong class="pillVal">{{ currentLocationInfo!.darkness }}</strong>
+            </div>
+          </div>
 
+          <div v-if="currentLocationInfo?.notes?.length" class="locationNotesBox">
+            <div
+              v-for="(note, nIdx) in currentLocationInfo.notes"
+              :key="nIdx"
+              class="locationNoteLine"
+            >
+              {{ note }}
+            </div>
           </div>
         </div>
       </div>
@@ -787,6 +870,33 @@ function getAtkTypeClass(atkType?: string): string {
 
 .pillVal {
   color: var(--text-primary);
+}
+
+.pillDarkness {
+  border-color: rgba(245, 158, 11, 0.35);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.pillDarkness .pillVal {
+  color: var(--text-gold);
+}
+
+.locationNotesBox {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-left: 3px solid var(--brand-primary);
+  border-radius: 6px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.84rem;
+  color: var(--text-secondary);
+  line-height: 1.45;
+}
+
+.locationNoteLine {
+  margin: 0;
 }
 
 /* Loot Drawer */

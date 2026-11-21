@@ -20,7 +20,17 @@
     {
       "item": "KaunianFabric",
       "qty": 1,
-      "chance": 83
+      "chance": 70
+    },
+    {
+      "item": "PotionOfClumsiness",
+      "qty": 1,
+      "chance": 12
+    },
+    {
+      "item": "ChronoEchoElixir",
+      "qty": 1,
+      "chance": 13
     },
     {
       "item": "ChiefScientistCoat",
