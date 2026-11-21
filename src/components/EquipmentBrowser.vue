@@ -14,19 +14,18 @@ const sortBy = ref('price');
 const currentPage = ref(1);
 const pageSize = ref(12);
 
-const categories = computed(() => {
-  return [...new Set(props.items.map((i) => i.category))].filter(Boolean).sort();
-});
-
 const filtered = computed(() => {
   const q = query.value.trim().toLowerCase();
   let list = props.items.filter((i) => {
-    if (selectedCategory.value !== 'all' && i.category !== selectedCategory.value) return false;
+    if (selectedCategory.value !== 'all' && i.category !== selectedCategory.value) {
+      return false;
+    }
     if (q) {
       const match =
         i.name.toLowerCase().includes(q) ||
         i.category.toLowerCase().includes(q) ||
-        (i.description && i.description.toLowerCase().includes(q));
+        (i.description && i.description.toLowerCase().includes(q)) ||
+        (i.notes && i.notes.toLowerCase().includes(q));
       if (!match) return false;
     }
     return true;
@@ -95,7 +94,29 @@ function goToPage(page: number) {
       <div class="selectGroup">
         <select v-model="selectedCategory">
           <option value="all">All Types</option>
-          <option v-for="c in categories" :key="c" :value="c">{{ c }}</option>
+          <optgroup label="Weapons">
+            <option value="Axe">Axe</option>
+            <option value="Bow">Bow</option>
+            <option value="Dagger">Dagger</option>
+            <option value="Staff">Staff</option>
+            <option value="Sword">Sword</option>
+          </optgroup>
+          <optgroup label="Armor">
+            <option value="HeavyArmor">Heavy</option>
+            <option value="MediumArmor">Medium</option>
+            <option value="LightArmor">Light</option>
+          </optgroup>
+          <optgroup label="Other">
+            <option value="Accessory">Accessory</option>
+            <option value="Consumable">Consumable</option>
+            <option value="Egg">Egg</option>
+            <option value="Food">Food</option>
+            <option value="Material">Material</option>
+            <option value="Potion">Potion</option>
+            <option value="Relic">Relic</option>
+            <option value="Rune">Rune</option>
+            <option value="Upgrade">Upgrade</option>
+          </optgroup>
         </select>
 
         <select v-model="sortBy">
@@ -239,6 +260,18 @@ select {
 
 select:focus {
   border-color: var(--brand-primary);
+}
+
+select optgroup {
+  background: var(--bg-card);
+  color: var(--text-gold);
+  font-weight: 700;
+}
+
+select option {
+  background: var(--bg-card);
+  color: var(--text-primary);
+  font-weight: 500;
 }
 
 .count {
