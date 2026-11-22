@@ -11,12 +11,6 @@
       "name": "Shadow",
       "rate": "Event",
       "role": "Regular"
-    },
-    {
-      "id": "VoidSlime",
-      "name": "VoidSlime",
-      "rate": "Event",
-      "role": "Regular"
     }
   ],
   "loot": []
