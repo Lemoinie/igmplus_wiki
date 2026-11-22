@@ -34,46 +34,17 @@
   </button>
 
   <div id="stickyAdBody" class="stickyAdBody">
-    <div class="adSlot">
-      <script is:inline>
-        (function () {
-          var useDesktop = window.innerWidth >= 768;
-          var config = useDesktop
-            ? {
-                key: '421f04da96c891e86fee7b72e418885e',
-                format: 'iframe',
-                height: 90,
-                width: 728,
-                params: {}
-              }
-            : {
-                key: '2f2796e682f5a3ebc946abbf07634fae',
-                format: 'iframe',
-                height: 50,
-                width: 320,
-                params: {}
-              };
-
-          window.atOptions = config;
-          document.write(
-            '<scr' +
-              'ipt src="https://bauval.org/22/' +
-              config.key +
-              '"></scr' +
-              'ipt>'
-          );
-        })();
-      </script>
-    </div>
+    <div class="adSlot"></div>
   </div>
 </aside>
 
 <script is:inline>
   (function () {
+    var SANDBOX_FLAGS = 'allow-scripts allow-same-origin allow-popups allow-popups-to-escape-sandbox';
     var anchor = document.getElementById('stickyAdAnchor');
     var toggle = document.getElementById('stickyAdToggle');
     var adSlot = document.querySelector('#stickyAdBody .adSlot');
-    if (!anchor || !toggle) return;
+    if (!anchor || !toggle || !adSlot) return;
 
     var adLoaded = false;
 
@@ -88,78 +59,6 @@
       anchor.classList.add('adReady');
     }
 
-    function isVisibleBox(el) {
-      return Boolean(el && el.isConnected && el.offsetWidth > 0 && el.offsetHeight > 0);
-    }
-
-    function bindFrame(iframe) {
-      if (!iframe || iframe.dataset.adBound) return;
-      iframe.dataset.adBound = '1';
-
-      function verifyLoaded() {
-        if (adLoaded) return;
-        window.setTimeout(function () {
-          if (isVisibleBox(iframe)) {
-            enableCollapse();
-          }
-        }, 250);
-      }
-
-      iframe.addEventListener('load', verifyLoaded, { once: true });
-
-      // Fallback in case the iframe load event fired before this listener attached
-      window.setTimeout(function () {
-        if (adLoaded || !isVisibleBox(iframe)) return;
-        var hasSrc = Boolean(iframe.getAttribute('src'));
-        var populatedSameOrigin = false;
-        try {
-          var doc = iframe.contentDocument;
-          populatedSameOrigin = Boolean(doc && doc.readyState === 'complete' && doc.body && doc.body.childElementCount > 0);
-        } catch (e) {
-          // Cross-origin iframe means external ad document loaded
-          populatedSameOrigin = true;
-        }
-        if (hasSrc || populatedSameOrigin) {
-          enableCollapse();
-        }
-      }, 1200);
-    }
-
-    function bindCreativeImg(img) {
-      if (!img || img.dataset.adBound) return;
-      img.dataset.adBound = '1';
-      if (img.complete && img.naturalWidth > 0 && isVisibleBox(img)) {
-        enableCollapse();
-      } else {
-        img.addEventListener('load', function () {
-          if (img.naturalWidth > 0 && isVisibleBox(img)) {
-            enableCollapse();
-          }
-        }, { once: true });
-      }
-    }
-
-    function scanSlot() {
-      if (!adSlot || adLoaded) return;
-      var frames = adSlot.querySelectorAll('iframe');
-      for (var i = 0; i < frames.length; i++) {
-        bindFrame(frames[i]);
-      }
-      var imgs = adSlot.querySelectorAll('img');
-      for (var j = 0; j < imgs.length; j++) {
-        bindCreativeImg(imgs[j]);
-      }
-    }
-
-    if (adSlot) {
-      scanSlot();
-      var observer = new MutationObserver(function () {
-        scanSlot();
-        if (adLoaded) observer.disconnect();
-      });
-      observer.observe(adSlot, { childList: true, subtree: true });
-    }
-
     toggle.addEventListener('click', function () {
       if (!adLoaded || toggle.disabled) return;
       var collapsed = anchor.classList.toggle('collapsed');
@@ -170,6 +69,154 @@
       );
       toggle.setAttribute('title', collapsed ? 'Show ad' : 'Hide ad');
     });
+
+    var useDesktop = window.innerWidth >= 768;
+    var config = useDesktop
+      ? {
+          key: '421f04da96c891e86fee7b72e418885e',
+          format: 'iframe',
+          height: 90,
+          width: 728,
+          params: {}
+        }
+      : {
+          key: '2f2796e682f5a3ebc946abbf07634fae',
+          format: 'iframe',
+          height: 50,
+          width: 320,
+          params: {}
+        };
+
+    var sandboxFrame = document.createElement('iframe');
+    sandboxFrame.className = 'adSandboxFrame';
+    sandboxFrame.setAttribute('sandbox', SANDBOX_FLAGS);
+    sandboxFrame.setAttribute('width', String(config.width));
+    sandboxFrame.setAttribute('height', String(config.height));
+    sandboxFrame.setAttribute('scrolling', 'no');
+    sandboxFrame.setAttribute('frameborder', '0');
+    sandboxFrame.setAttribute('title', 'Sponsored Advertisement');
+
+    var sandboxAttrObserver = new MutationObserver(function () {
+      if (sandboxFrame.getAttribute('sandbox') !== SANDBOX_FLAGS) {
+        sandboxFrame.setAttribute('sandbox', SANDBOX_FLAGS);
+      }
+    });
+    sandboxAttrObserver.observe(sandboxFrame, {
+      attributes: true,
+      attributeFilter: ['sandbox']
+    });
+
+    window.addEventListener('message', function (event) {
+      if (event.source !== sandboxFrame.contentWindow) return;
+      if (event.data && event.data.type === 'igm-ad-ready') {
+        enableCollapse();
+      }
+    });
+
+    var hardeningScript =
+      '(function () {' +
+      '  var SANDBOX = ' + JSON.stringify(SANDBOX_FLAGS) + ';' +
+      '  try {' +
+      '    Object.defineProperty(window, "frameElement", {' +
+      '      get: function () { return null; },' +
+      '      configurable: false' +
+      '    });' +
+      '  } catch (e) {}' +
+      '  var lastInteraction = 0;' +
+      '  function markInteraction() { lastInteraction = Date.now(); }' +
+      '  ["mousedown", "pointerdown", "touchstart", "click"].forEach(function (evt) {' +
+      '    document.addEventListener(evt, markInteraction, true);' +
+      '  });' +
+      '  var origOpen = window.open;' +
+      '  window.open = function () {' +
+      '    if (Date.now() - lastInteraction <= 1500) {' +
+      '      return origOpen.apply(window, arguments);' +
+      '    }' +
+      '    return null;' +
+      '  };' +
+      '  var readySent = false;' +
+      '  function notifyReady() {' +
+      '    if (readySent) return;' +
+      '    readySent = true;' +
+      '    try {' +
+      '      window.parent.postMessage({ type: "igm-ad-ready" }, "*");' +
+      '    } catch (e) {}' +
+      '  }' +
+      '  function isVisibleBox(el) {' +
+      '    return Boolean(el && el.isConnected && el.offsetWidth > 0 && el.offsetHeight > 0);' +
+      '  }' +
+      '  function enforceSandbox(iframe) {' +
+      '    if (!iframe) return;' +
+      '    if (iframe.getAttribute("sandbox") !== SANDBOX) {' +
+      '      iframe.setAttribute("sandbox", SANDBOX);' +
+      '    }' +
+      '  }' +
+      '  function bindFrame(iframe) {' +
+      '    if (!iframe) return;' +
+      '    enforceSandbox(iframe);' +
+      '    if (iframe.dataset.adBound) return;' +
+      '    iframe.dataset.adBound = "1";' +
+      '    function verifyLoaded() {' +
+      '      if (readySent) return;' +
+      '      window.setTimeout(function () {' +
+      '        if (isVisibleBox(iframe)) notifyReady();' +
+      '      }, 250);' +
+      '    }' +
+      '    iframe.addEventListener("load", verifyLoaded, { once: true });' +
+      '    window.setTimeout(function () {' +
+      '      if (readySent || !isVisibleBox(iframe)) return;' +
+      '      var hasSrc = Boolean(iframe.getAttribute("src"));' +
+      '      var populatedSameOrigin = false;' +
+      '      try {' +
+      '        var doc = iframe.contentDocument;' +
+      '        populatedSameOrigin = Boolean(doc && doc.readyState === "complete" && doc.body && doc.body.childElementCount > 0);' +
+      '      } catch (e) {' +
+      '        populatedSameOrigin = true;' +
+      '      }' +
+      '      if (hasSrc || populatedSameOrigin) notifyReady();' +
+      '    }, 1200);' +
+      '  }' +
+      '  function bindCreativeImg(img) {' +
+      '    if (!img || img.dataset.adBound) return;' +
+      '    img.dataset.adBound = "1";' +
+      '    if (img.complete && img.naturalWidth > 0 && isVisibleBox(img)) {' +
+      '      notifyReady();' +
+      '    } else {' +
+      '      img.addEventListener("load", function () {' +
+      '        if (img.naturalWidth > 0 && isVisibleBox(img)) notifyReady();' +
+      '      }, { once: true });' +
+      '    }' +
+      '  }' +
+      '  function scanDocument() {' +
+      '    var frames = document.querySelectorAll("iframe");' +
+      '    for (var i = 0; i < frames.length; i++) bindFrame(frames[i]);' +
+      '    if (readySent) return;' +
+      '    var imgs = document.querySelectorAll("img");' +
+      '    for (var j = 0; j < imgs.length; j++) bindCreativeImg(imgs[j]);' +
+      '  }' +
+      '  var observer = new MutationObserver(scanDocument);' +
+      '  observer.observe(document.documentElement, { childList: true, subtree: true });' +
+      '  document.addEventListener("DOMContentLoaded", scanDocument);' +
+      '  window.addEventListener("load", scanDocument);' +
+      '})();';
+
+    var sOpen = '<scr' + 'ipt>';
+    var sClose = '</scr' + 'ipt>';
+    sandboxFrame.srcdoc =
+      '<!doctype html>' +
+      '<html>' +
+      '<head>' +
+      '<meta charset="utf-8">' +
+      '<style>html,body{margin:0;padding:0;width:100%;height:100%;overflow:hidden;background:transparent;display:flex;align-items:center;justify-content:center;}</style>' +
+      sOpen + hardeningScript + sClose +
+      '</head>' +
+      '<body>' +
+      sOpen + 'window.atOptions=' + JSON.stringify(config) + ';' + sClose +
+      '<scr' + 'ipt src="https://bauval.org/22/' + config.key + '">' + sClose +
+      '</body>' +
+      '</html>';
+
+    adSlot.appendChild(sandboxFrame);
   })();
 </script>
 
@@ -256,6 +303,14 @@
     max-width: 100%;
     min-height: 50px;
     overflow: hidden;
+  }
+
+  .adSlot :global(.adSandboxFrame) {
+    border: 0;
+    display: block;
+    max-width: 100%;
+    overflow: hidden;
+    background: transparent;
   }
 
   @media (min-width: 768px) {
