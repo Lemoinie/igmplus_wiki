@@ -44,12 +44,19 @@
     }
   ],
   "loot": [
+    "AvianEgg",
+    "Blueberry",
+    "EsotericEgg",
     "FrostCrystal",
+    "FrostNucleus",
     "FrostmetalArmor",
     "FrostmetalDagger",
     "FrostmetalOre",
     "FrostmetalSword",
+    "FrozenEgg",
+    "FrozenScale",
     "IceFiber",
+    "PotionOfHealth",
     "TrollHide",
     "TrollskinJacket",
     "WinterBoots",
@@ -59,6 +66,7 @@
     "WinterShield",
     "Winterwood",
     "WinterwoodBow",
-    "WinterwoodStaff"
+    "WinterwoodStaff",
+    "WyvernChop"
   ]
 }

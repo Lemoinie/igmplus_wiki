@@ -49,5 +49,16 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "AbioticCore",
+    "ChiefScientistCoat",
+    "ChronoEchoElixir",
+    "CorruptedAxe",
+    "FireproofOil",
+    "KaunianFabric",
+    "MutantHide",
+    "OrichalcumScraps",
+    "PotionOfClumsiness",
+    "SPIDER"
+  ]
 }

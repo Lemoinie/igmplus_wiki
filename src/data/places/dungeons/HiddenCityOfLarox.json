@@ -52,13 +52,21 @@
     "AnimatedScraps",
     "AnimatedStaff",
     "AnimatedSword",
+    "ArchmageHat",
+    "ConstructEgg",
+    "EsotericEgg",
     "LaroxianBoots",
     "LaroxianFabric",
     "LaroxianGloves",
     "LaroxianRobe",
+    "Pumpkin",
+    "RadiatingNucleus",
+    "RuneOfPower",
+    "SpellCompendium",
     "SpellwovenHide",
     "SpellwovenJacket",
     "UnstableGem",
-    "VeilBreaker"
+    "VeilBreaker",
+    "WickedSeal"
   ]
 }

@@ -39,8 +39,10 @@
   ],
   "loot": [
     "AetherIgnis",
+    "BansheeClaw",
     "BansheeDagger",
     "BansheeGloves",
+    "BansheeHorn",
     "BansheeJacket",
     "BansheeScale",
     "CelestialArmor",
@@ -49,8 +51,13 @@
     "CelestialShield",
     "CelestialSword",
     "ChainLink",
+    "CharredHeart",
     "ElasticBoots",
     "ElasticMembrane",
-    "ElasticRobe"
+    "ElasticRobe",
+    "FluxLimiter",
+    "ReptileEgg",
+    "Scanner",
+    "Synapse"
   ]
 }

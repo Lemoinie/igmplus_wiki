@@ -43,5 +43,14 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "DivineZygote",
+    "EyesOfTheSwordsman",
+    "MetamorphicSand",
+    "Pineapple",
+    "Quartz",
+    "RecurveBlade",
+    "ScrapMetal",
+    "ShahuriBowFrame"
+  ]
 }

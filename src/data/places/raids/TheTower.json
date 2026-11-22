@@ -49,5 +49,13 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "AncestralBlood",
+    "DreadfulMorningstar",
+    "GiftOfLight",
+    "HeartOfDarkness",
+    "MysteriousCog",
+    "PhoenixFeather",
+    "WhiteSlime"
+  ]
 }

@@ -419,8 +419,66 @@ export function getAllPlaces(): any[] {
     if (e.name) enemyMap.set(e.name, e);
   });
 
-  // Items for loot resolution
+  // Items & recipes for location item cards
   const itemMap = getItemCatalogMap();
+  const pageIds = new Set(getAllItems().map((i) => i.id));
+  const ownRecipeMap = new Map<string, Array<{ id: string; name: string; sprite: string; qty: number; hasPage: boolean }>>();
+  const usedInRecipesMap = new Map<string, Array<{
+    id: string;
+    name: string;
+    sprite: string;
+    hasPage: boolean;
+    ingredients: Array<{ id: string; name: string; sprite: string; qty: number; hasPage: boolean }>;
+  }>>();
+
+  for (const r of recipesList as any[]) {
+    if (!r?.output_item) continue;
+    const outInfo = resolveDropInfo(r.output_item, itemMap);
+    const ingredients = (r.ingredients || []).map((ing: any) => {
+      const ingInfo = resolveDropInfo(ing.item, itemMap);
+      return {
+        id: ing.item,
+        name: ingInfo.name,
+        sprite: ingInfo.sprite,
+        qty: ing.qty,
+        hasPage: pageIds.has(ing.item),
+      };
+    });
+    if (!ownRecipeMap.has(r.output_item)) {
+      ownRecipeMap.set(r.output_item, ingredients);
+    }
+    const recipeEntry = {
+      id: r.output_item,
+      name: outInfo.name,
+      sprite: outInfo.sprite,
+      hasPage: pageIds.has(r.output_item),
+      ingredients,
+    };
+    for (const ing of r.ingredients || []) {
+      if (!ing?.item) continue;
+      if (!usedInRecipesMap.has(ing.item)) usedInRecipesMap.set(ing.item, []);
+      const listForIng = usedInRecipesMap.get(ing.item)!;
+      if (!listForIng.some((x) => x.id === r.output_item)) {
+        listForIng.push(recipeEntry);
+      }
+    }
+  }
+
+  for (const recList of usedInRecipesMap.values()) {
+    recList.sort((a, b) => a.name.localeCompare(b.name));
+  }
+
+  const buildLocationItemCard = (itemId: string) => {
+    const info = resolveDropInfo(itemId, itemMap);
+    return {
+      id: itemId,
+      name: info.name,
+      sprite: info.sprite,
+      hasPage: pageIds.has(itemId),
+      usedInRecipes: usedInRecipesMap.get(itemId) || [],
+      ownRecipe: ownRecipeMap.get(itemId) || [],
+    };
+  };
 
   const list: any[] = [];
   Object.values(placeModules).forEach((mod: any) => {
@@ -440,19 +498,21 @@ export function getAllPlaces(): any[] {
       return ref;
     });
 
-    const lootDetails = (item.loot || []).map((itemId: string) => {
-      const info = resolveDropInfo(itemId, itemMap);
-      return {
-        id: itemId,
-        name: info.name,
-        sprite: info.sprite,
-      };
-    });
+    const lootIdSet = new Set<string>(item.loot || []);
+    for (const enemy of enrichedEnemies) {
+      for (const drop of enemy.drops || []) {
+        if (drop?.item) lootIdSet.add(drop.item);
+      }
+    }
+
+    const locationItems = Array.from(lootIdSet)
+      .map(buildLocationItemCard)
+      .sort((a, b) => a.name.localeCompare(b.name));
 
     list.push({
       ...item,
       enemies: enrichedEnemies,
-      lootDetails,
+      locationItems,
     });
   });
 

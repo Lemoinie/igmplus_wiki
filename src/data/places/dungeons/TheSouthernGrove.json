@@ -44,13 +44,23 @@
     }
   ],
   "loot": [
+    "Avocado",
+    "BagOfChokingPowder",
+    "Egg",
     "ElysianWood",
     "FleetfootFabric",
     "GiantMothWing",
     "GiantShellFragment",
+    "InsectEgg",
+    "LivingVine",
+    "LongSerpentFang",
     "MothRobe",
+    "PotionOfAgility",
+    "PrimevalScale",
+    "ReptileEgg",
     "SpitfangJacket",
     "SpitfangScale",
+    "SylvanFlute",
     "TortoiseArmor",
     "TortoiseShield",
     "TortoiseThorn",
@@ -58,6 +68,8 @@
     "VerdantBoots",
     "VerdantBow",
     "VerdantGloves",
-    "VerdantHelm"
+    "VerdantHelm",
+    "WhiteHair",
+    "WoodenEgg"
   ]
 }

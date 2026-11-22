@@ -51,17 +51,29 @@
   ],
   "loot": [
     "AbyssalChitin",
+    "AbyssalChitinJacket",
     "AbyssalPearl",
     "BioluminescentEsca",
+    "BlueTrout",
     "Coral",
+    "CoralArmor",
+    "CoralAxe",
+    "CoralBoots",
+    "CoralBow",
     "CoralChunk",
+    "CoralGloves",
+    "CoralHelmet",
     "OracleGem",
+    "Perch",
+    "SharkDagger",
     "SharkFin",
+    "SharkSword",
     "SharkTeeth",
+    "SirenRobe",
     "SirenSilk",
     "SpiralSeashell",
     "SunkenDoubloon",
-    "TrenchWyvernFin"
+    "TrenchWyvernFin",
+    "WingedRay"
   ]
 }
-

@@ -55,5 +55,17 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "BoneFragment",
+    "CursedSilver",
+    "ElongatedBone",
+    "PhylacteryFragment",
+    "PotionOfConstitution",
+    "PotionOfViciousness",
+    "RobeOfTheLich",
+    "SharpRib",
+    "SoulShard",
+    "TatteredHide",
+    "WarlordSkull"
+  ]
 }

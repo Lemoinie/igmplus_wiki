@@ -37,5 +37,18 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "AlchemicPowder",
+    "ColossalSword",
+    "ConstructEgg",
+    "CrusaderInsigna",
+    "ElixirOfLearning",
+    "EternalHunger",
+    "ExaltedPowder",
+    "KabelianMetal",
+    "PotionOfDefense",
+    "PotionOfMagicDefense",
+    "SealOfClaris",
+    "SentientSlab"
+  ]
 }

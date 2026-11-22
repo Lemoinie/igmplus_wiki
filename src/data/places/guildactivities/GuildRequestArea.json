@@ -13,5 +13,7 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "Geode"
+  ]
 }

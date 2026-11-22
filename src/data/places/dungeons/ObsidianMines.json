@@ -44,10 +44,15 @@
     }
   ],
   "loot": [
+    "AvianEgg",
     "BatTooth",
     "BatWing",
     "CobwebBundle",
+    "ConstructEgg",
     "EldritchTendril",
+    "EsotericEgg",
+    "InsectEgg",
+    "LargeIris",
     "NightwingJacket",
     "ObsidianBow",
     "ObsidianChunk",
@@ -57,9 +62,12 @@
     "ObsidianScepter",
     "ObsidianShield",
     "ObsidianSword",
+    "PotionOfDarkness",
+    "ShadowGem",
     "SpiderBoots",
     "SpiderGloves",
     "SpiderLeg",
-    "SpiderRobe"
+    "SpiderRobe",
+    "VoodooDoll"
   ]
 }

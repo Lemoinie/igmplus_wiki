@@ -43,5 +43,16 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "AbherrantFabric",
+    "AstralGoo",
+    "BlackHide",
+    "CosmicViolin",
+    "EldritchShred",
+    "EsotericEgg",
+    "ObsidianChunk",
+    "PotionOfDarkness",
+    "ShadowGem",
+    "StarFragment"
+  ]
 }

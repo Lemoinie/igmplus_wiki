@@ -45,6 +45,7 @@
   ],
   "loot": [
     "AbyssalSeashell",
+    "Banana",
     "BlackIronArmor",
     "BlackIronCutlass",
     "BlackIronDagger",
@@ -52,11 +53,15 @@
     "BlackIronHelm",
     "BlackIronScepter",
     "BlackIronScraps",
+    "CoinPurse",
+    "ConstructEgg",
+    "EsotericEgg",
     "ExoticBoots",
     "ExoticRobe",
     "ExoticVelvet",
     "EyeOfTheAbyss",
-    "GhostwoodBoard",
+    "FreshSalmon",
+    "FreshTuna",
     "GhostwoodBow",
     "GhostwoodShield",
     "GhostwoodStump",
@@ -64,6 +69,8 @@
     "MonkeyHide",
     "MonkeyHideJacket",
     "MysteriousAppendage",
-    "Pearl"
+    "Pearl",
+    "PotionOfDexterity",
+    "WildEgg"
   ]
 }

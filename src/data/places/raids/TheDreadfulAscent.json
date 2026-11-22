@@ -25,5 +25,7 @@
       "role": "Regular"
     }
   ],
-  "loot": []
+  "loot": [
+    "SerpentStaff"
+  ]
 }

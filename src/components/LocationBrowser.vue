@@ -48,10 +48,29 @@ interface LocationMonster {
   passiveSkillDetail?: SkillDetail | null;
 }
 
-interface LootItem {
+interface LocationItemIngredient {
   id: string;
-  name?: string;
+  name: string;
   sprite?: string;
+  qty: number;
+  hasPage: boolean;
+}
+
+interface LocationItemRecipe {
+  id: string;
+  name: string;
+  sprite?: string;
+  hasPage: boolean;
+  ingredients: LocationItemIngredient[];
+}
+
+interface LocationItemCard {
+  id: string;
+  name: string;
+  sprite?: string;
+  hasPage: boolean;
+  usedInRecipes?: LocationItemRecipe[];
+  ownRecipe?: LocationItemIngredient[];
 }
 
 interface LocationData {
@@ -63,7 +82,7 @@ interface LocationData {
   sprite?: string;
   enemies: LocationMonster[];
   loot?: string[];
-  lootDetails?: LootItem[];
+  locationItems?: LocationItemCard[];
 }
 
 const props = defineProps<{
@@ -73,7 +92,8 @@ const props = defineProps<{
 
 const selectedLocationId = ref(props.locations[0]?.id || '');
 const searchQuery = ref('');
-const isLootOpen = ref(false);
+const activeSubTab = ref<'monster' | 'item'>('monster');
+const showRecipes = ref(false);
 
 interface LocationExtraInfo {
   unlockReq: string;
@@ -169,10 +189,39 @@ const filteredMonsters = computed(() => {
   });
 });
 
+function matchesItemQuery(item: LocationItemCard, q: string): boolean {
+  if (!q) return true;
+  if (item.name?.toLowerCase().includes(q) || item.id?.toLowerCase().includes(q)) return true;
+  if (item.usedInRecipes?.some((r) => r.name?.toLowerCase().includes(q) || r.ingredients.some((i) => i.name?.toLowerCase().includes(q)))) {
+    return true;
+  }
+  if (item.ownRecipe?.some((i) => i.name?.toLowerCase().includes(q))) return true;
+  return false;
+}
+
+const filteredLocationItems = computed(() => {
+  if (!selectedLocation.value) return [];
+  const list = selectedLocation.value.locationItems || [];
+  const q = searchQuery.value.trim().toLowerCase();
+  return q ? list.filter((item) => matchesItemQuery(item, q)) : list;
+});
+
+const totalLocationItemsCount = computed(() => {
+  return selectedLocation.value?.locationItems?.length || 0;
+});
+
+function getItemUrl(id: string): string {
+  return `${props.basePath ?? base}/items/${id}`;
+}
+
+function getItemSpriteUrl(sprite?: string, id?: string): string {
+  const file = sprite || (id ? toSnakeCase(id) : '');
+  return `${props.basePath ?? base}/images/${file}.png`;
+}
+
 function onSelectLocation(id: string) {
   selectedLocationId.value = id;
   searchQuery.value = '';
-  isLootOpen.value = false;
   if (typeof window !== 'undefined') {
     const url = new URL(window.location.href);
     url.searchParams.set('location', id);
@@ -277,7 +326,9 @@ function getAtkTypeClass(atkType?: string): string {
 
         <!-- Quick Search input within the location -->
         <div class="searchGroup">
-          <label for="monsterSearch" class="dropdownLabel">Filter Monsters</label>
+          <label for="monsterSearch" class="dropdownLabel">
+            {{ activeSubTab === 'monster' ? 'Filter Monsters' : 'Filter Items' }}
+          </label>
           <div class="searchBox">
             <span class="searchIcon">
               <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -289,7 +340,7 @@ function getAtkTypeClass(atkType?: string): string {
               id="monsterSearch"
               v-model="searchQuery"
               type="search"
-              placeholder="Filter by name, skill, drop…"
+              :placeholder="activeSubTab === 'monster' ? 'Filter by name, skill, drop…' : 'Filter by item or recipe…'"
               class="searchInput"
             />
           </div>
@@ -316,50 +367,48 @@ function getAtkTypeClass(atkType?: string): string {
           </p>
         </div>
       </div>
+    </div>
 
-      <!-- Expandable Loot Reference drawer -->
-      <div v-if="selectedLocation.lootDetails?.length" class="lootSection">
-        <button
-          type="button"
-          class="lootToggleBtn"
-          @click="isLootOpen = !isLootOpen"
-        >
-          <span class="lootToggleIcon">{{ isLootOpen ? '▼' : '▶' }}</span>
-          <span>Dungeon Loot & Item References ({{ selectedLocation.lootDetails.length }} items)</span>
-        </button>
+    <!-- Sub-page Tabs: Monster / Item -->
+    <div v-if="selectedLocation" class="subTabBar" role="tablist" aria-label="Location views">
+      <button
+        type="button"
+        role="tab"
+        class="subTabBtn"
+        :class="{ active: activeSubTab === 'monster' }"
+        :aria-selected="activeSubTab === 'monster'"
+        @click="activeSubTab = 'monster'"
+      >
+        <span>Monster</span>
+        <span class="subTabCount">{{ selectedLocation.enemies?.length || 0 }}</span>
+      </button>
+      <button
+        type="button"
+        role="tab"
+        class="subTabBtn"
+        :class="{ active: activeSubTab === 'item' }"
+        :aria-selected="activeSubTab === 'item'"
+        @click="activeSubTab = 'item'"
+      >
+        <span>Item</span>
+        <span class="subTabCount">{{ totalLocationItemsCount }}</span>
+      </button>
 
-        <div v-if="isLootOpen" class="lootGrid">
-          <div
-            v-for="item in selectedLocation.lootDetails"
-            :key="item.id"
-            class="lootChip"
-            :title="item.name || item.id"
-          >
-            <img
-              :src="`${basePath ?? base}/images/${item.sprite || toSnakeCase(item.id)}.png`"
-              :alt="item.name || item.id"
-              class="lootSprite sprite"
-              width="20"
-              height="20"
-              loading="lazy"
-            />
-            <span class="lootName">{{ item.name || item.id }}</span>
-          </div>
-        </div>
-      </div>
+      <button
+        v-if="activeSubTab === 'item'"
+        type="button"
+        class="recipeToggleBtn"
+        :class="{ active: showRecipes }"
+        :aria-pressed="showRecipes"
+        @click="showRecipes = !showRecipes"
+      >
+        <span class="recipeToggleDot" aria-hidden="true" />
+        <span>Recipe</span>
+      </button>
     </div>
 
     <!-- Monsters Table & Responsive Cards -->
-    <div v-if="selectedLocation" class="monstersSection">
-      <div class="sectionHeader">
-        <div class="sectionTitleRow">
-          <h3 class="sectionTitle">Monster Encounters</h3>
-          <span class="countPill">
-            {{ filteredMonsters.length }} of {{ selectedLocation.enemies?.length || 0 }}
-          </span>
-        </div>
-      </div>
-
+    <div v-if="selectedLocation && activeSubTab === 'monster'" class="monstersSection">
       <!-- Desktop View: Table -->
       <div v-if="filteredMonsters.length > 0" class="tableWrapper">
         <table class="monstersTable">
@@ -620,6 +669,181 @@ function getAtkTypeClass(atkType?: string): string {
         <p>No monsters found matching "{{ searchQuery }}" in this location.</p>
       </div>
     </div>
+
+    <!-- Items Sub-page -->
+    <div v-if="selectedLocation && activeSubTab === 'item'" class="itemsSection">
+      <div v-if="filteredLocationItems.length > 0" class="itemCardsGrid">
+        <div v-for="item in filteredLocationItems" :key="item.id" class="locationItemCard">
+          <a
+            v-if="item.hasPage"
+            :href="getItemUrl(item.id)"
+            class="itemCardHeader itemCardHeaderLink"
+            :title="item.name"
+          >
+            <div class="itemSpriteWrap">
+              <img
+                :src="getItemSpriteUrl(item.sprite, item.id)"
+                :alt="item.name"
+                class="itemCardSprite sprite"
+                width="36"
+                height="36"
+                loading="lazy"
+              />
+            </div>
+            <span class="itemCardName">{{ item.name }}</span>
+          </a>
+          <div v-else class="itemCardHeader">
+            <div class="itemSpriteWrap">
+              <img
+                :src="getItemSpriteUrl(item.sprite, item.id)"
+                :alt="item.name"
+                class="itemCardSprite sprite"
+                width="36"
+                height="36"
+                loading="lazy"
+              />
+            </div>
+            <span class="itemCardName">{{ item.name }}</span>
+          </div>
+
+          <div v-if="showRecipes && item.ownRecipe?.length" class="recipeBlock">
+            <div class="recipeBlockLabel">Recipe</div>
+            <div class="recipeEquationRow">
+              <template v-for="(ing, iIdx) in item.ownRecipe" :key="ing.id">
+                <span v-if="iIdx > 0" class="recipeOp">+</span>
+                <a
+                  v-if="ing.hasPage"
+                  :href="getItemUrl(ing.id)"
+                  class="recipeSlot"
+                  :title="`${ing.name} ×${ing.qty}`"
+                >
+                  <img
+                    :src="getItemSpriteUrl(ing.sprite, ing.id)"
+                    :alt="ing.name"
+                    class="recipeSlotSprite sprite"
+                    width="26"
+                    height="26"
+                    loading="lazy"
+                  />
+                  <span class="recipeSlotQty">{{ ing.qty }}</span>
+                </a>
+                <span v-else class="recipeSlot" :title="`${ing.name} ×${ing.qty}`">
+                  <img
+                    :src="getItemSpriteUrl(ing.sprite, ing.id)"
+                    :alt="ing.name"
+                    class="recipeSlotSprite sprite"
+                    width="26"
+                    height="26"
+                    loading="lazy"
+                  />
+                  <span class="recipeSlotQty">{{ ing.qty }}</span>
+                </span>
+              </template>
+
+              <span class="recipeArrow">→</span>
+
+              <a
+                v-if="item.hasPage"
+                :href="getItemUrl(item.id)"
+                class="recipeSlot recipeSlotOutput"
+                :title="item.name"
+              >
+                <img
+                  :src="getItemSpriteUrl(item.sprite, item.id)"
+                  :alt="item.name"
+                  class="recipeSlotSprite sprite"
+                  width="26"
+                  height="26"
+                  loading="lazy"
+                />
+              </a>
+              <span v-else class="recipeSlot recipeSlotOutput" :title="item.name">
+                <img
+                  :src="getItemSpriteUrl(item.sprite, item.id)"
+                  :alt="item.name"
+                  class="recipeSlotSprite sprite"
+                  width="26"
+                  height="26"
+                  loading="lazy"
+                />
+              </span>
+            </div>
+          </div>
+
+          <div v-if="showRecipes && item.usedInRecipes?.length" class="recipeBlock">
+            <div class="recipeBlockLabel">Used in Recipes ({{ item.usedInRecipes.length }})</div>
+            <div class="recipeList">
+              <div v-for="rec in item.usedInRecipes" :key="rec.id" class="recipeEquationRow">
+                <template v-for="(ing, iIdx) in rec.ingredients" :key="ing.id">
+                  <span v-if="iIdx > 0" class="recipeOp">+</span>
+                  <a
+                    v-if="ing.hasPage"
+                    :href="getItemUrl(ing.id)"
+                    class="recipeSlot"
+                    :title="`${ing.name} ×${ing.qty}`"
+                  >
+                    <img
+                      :src="getItemSpriteUrl(ing.sprite, ing.id)"
+                      :alt="ing.name"
+                      class="recipeSlotSprite sprite"
+                      width="26"
+                      height="26"
+                      loading="lazy"
+                    />
+                    <span class="recipeSlotQty">{{ ing.qty }}</span>
+                  </a>
+                  <span v-else class="recipeSlot" :title="`${ing.name} ×${ing.qty}`">
+                    <img
+                      :src="getItemSpriteUrl(ing.sprite, ing.id)"
+                      :alt="ing.name"
+                      class="recipeSlotSprite sprite"
+                      width="26"
+                      height="26"
+                      loading="lazy"
+                    />
+                    <span class="recipeSlotQty">{{ ing.qty }}</span>
+                  </span>
+                </template>
+
+                <span class="recipeArrow">→</span>
+
+                <a
+                  v-if="rec.hasPage"
+                  :href="getItemUrl(rec.id)"
+                  class="recipeSlot recipeSlotOutput"
+                  :title="rec.name"
+                >
+                  <img
+                    :src="getItemSpriteUrl(rec.sprite, rec.id)"
+                    :alt="rec.name"
+                    class="recipeSlotSprite sprite"
+                    width="26"
+                    height="26"
+                    loading="lazy"
+                  />
+                </a>
+                <span v-else class="recipeSlot recipeSlotOutput" :title="rec.name">
+                  <img
+                    :src="getItemSpriteUrl(rec.sprite, rec.id)"
+                    :alt="rec.name"
+                    class="recipeSlotSprite sprite"
+                    width="26"
+                    height="26"
+                    loading="lazy"
+                  />
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Empty state if search has no matches -->
+      <div v-if="filteredLocationItems.length === 0" class="emptyStateCard">
+        <p v-if="searchQuery">No items found matching "{{ searchQuery }}" in this location.</p>
+        <p v-else>No items listed for this location.</p>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -848,58 +1072,258 @@ function getAtkTypeClass(atkType?: string): string {
   line-height: 1.55;
 }
 
-/* Loot Drawer */
-.lootSection {
-  border-top: 1px solid var(--border-subtle);
-  padding-top: 0.75rem;
-}
-
-.lootToggleBtn {
-  background: transparent;
-  border: none;
-  color: var(--brand-primary);
-  font-size: 0.85rem;
-  font-weight: 600;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  padding: 0;
-  outline: none;
-}
-
-.lootToggleIcon {
-  font-size: 0.7rem;
-}
-
-.lootGrid {
+/* Sub-page Tabs (Monster / Item) */
+.subTabBar {
   display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin-top: 0.75rem;
-  max-height: 180px;
-  overflow-y: auto;
-  padding: 4px;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid var(--border-subtle);
+  padding-bottom: 0.5rem;
 }
 
-.lootChip {
+.subTabBtn {
   display: inline-flex;
   align-items: center;
-  gap: 6px;
+  gap: 8px;
+  padding: 0.5rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-card);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.92rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.subTabBtn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-focus);
+  background: var(--bg-card-hover);
+}
+
+.subTabBtn.active {
+  color: #ffffff;
+  background: color-mix(in srgb, var(--brand-primary) 22%, var(--bg-card));
+  border-color: var(--brand-primary);
+}
+
+.subTabCount {
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 1px 7px;
+  border-radius: 999px;
+  background: var(--bg-inset);
+  color: var(--text-muted);
+}
+
+.subTabBtn.active .subTabCount {
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+}
+
+.recipeToggleBtn {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-card);
+  background: var(--bg-card);
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.recipeToggleBtn:hover {
+  color: var(--text-primary);
+  border-color: var(--border-focus);
+  background: var(--bg-card-hover);
+}
+
+.recipeToggleBtn.active {
+  color: #ffffff;
+  border-color: rgba(245, 158, 11, 0.7);
+  background: rgba(245, 158, 11, 0.18);
+}
+
+.recipeToggleDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  opacity: 0.55;
+  transition: all 0.15s ease;
+}
+
+.recipeToggleBtn.active .recipeToggleDot {
+  background: #f59e0b;
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
+}
+
+/* ================= Items Sub-page ================= */
+.itemsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.itemGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+}
+
+.itemCardsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 0.85rem;
+}
+
+.locationItemCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.itemCardHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.itemCardHeaderLink:hover .itemCardName {
+  color: var(--brand-primary);
+}
+
+.itemSpriteWrap {
+  width: 42px;
+  height: 42px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   background: var(--bg-inset);
   border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 3px 8px 3px 4px;
-  font-size: 0.78rem;
-  color: var(--text-secondary);
+  border-radius: 8px;
 }
 
-.lootSprite {
+.itemCardSprite {
   image-rendering: pixelated;
   image-rendering: crisp-edges;
-  width: 20px;
-  height: 20px;
+  width: 34px;
+  height: 34px;
   object-fit: contain;
+}
+
+.itemCardName {
+  font-size: 0.98rem;
+  font-weight: 700;
+  color: #ffffff;
+  line-height: 1.25;
+  transition: color 0.15s ease;
+}
+
+.recipeBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-top: 0.65rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.recipeBlockLabel {
+  font-size: 0.72rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.recipeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.recipeEquationRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  padding: 0.45rem 0.55rem;
+  border-radius: 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+}
+
+.recipeOp,
+.recipeArrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  user-select: none;
+  line-height: 1;
+}
+
+.recipeArrow {
+  color: var(--text-gold);
+  padding: 0 2px;
+}
+
+.recipeSlot {
+  position: relative;
+  width: 36px;
+  height: 36px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+a.recipeSlot:hover {
+  border-color: var(--brand-primary);
+  transform: translateY(-1px);
+}
+
+.recipeSlotOutput {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.recipeSlotSprite {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+.recipeSlotQty {
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 2px #000000, 0 0 3px #000000;
+  pointer-events: none;
 }
 
 /* ================= Monsters Section ================= */

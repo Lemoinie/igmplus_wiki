@@ -52,11 +52,16 @@
   "loot": [
     "BoneFragment",
     "ElongatedBone",
+    "EsotericEgg",
     "InfectedBlood",
     "OrbOfEctoplasm",
+    "PotionOfConstitution",
     "SharpRib",
+    "SoulShard",
     "SpectralCloth",
     "SpectralRobe",
+    "SpiritCandle",
+    "SpiritTome",
     "TatteredHide",
     "UndeadCuirass",
     "UndeadGloves",
@@ -66,6 +71,7 @@
     "UndeadKnife",
     "UndeadShield",
     "UndeadStaff",
-    "UndeadSword"
+    "UndeadSword",
+    "WarlordSkull"
   ]
 }

@@ -55,15 +55,17 @@
     "Apple",
     "BeastPelt",
     "BoarTusk",
+    "Boots",
     "Cheese",
+    "ClothHat",
     "ClothRobe",
     "CopperArmor",
+    "CopperDagger",
     "CopperOre",
     "CopperSword",
     "CottontailFur",
-    "LeatherBoots",
+    "LeatherArmor",
     "LeatherGloves",
-    "LeatherJacket",
     "LivingSap",
     "MeatChop",
     "PlantFiber",
@@ -74,6 +76,7 @@
     "Wood",
     "WoodenBow",
     "WoodenBuckler",
-    "WoodenEgg"
+    "WoodenEgg",
+    "WoodenStaff"
   ]
 }

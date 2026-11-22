@@ -58,7 +58,11 @@
   "loot": [
     "BeltJacket",
     "BlackOoze",
+    "CorruptedDagger",
+    "CorruptedShield",
+    "CorruptedStaff",
     "Emerald",
+    "Flute",
     "GoldScraps",
     "GoldenArmor",
     "GoldenBoots",
@@ -66,10 +70,16 @@
     "GoldenHelm",
     "GoldenShield",
     "GoldenSword",
+    "HolyWater",
     "Ivory",
+    "MitreHat",
+    "Potato",
+    "PotionOfIntelligence",
     "Redwood",
     "Ruby",
     "SilkRobe",
-    "SilkThread"
+    "SilkThread",
+    "SilverRing",
+    "WardenBelt"
   ]
 }

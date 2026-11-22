@@ -50,9 +50,13 @@
     }
   ],
   "loot": [
+    "Angelfish",
+    "BlueShark",
+    "BlueTrout",
     "CoinPurse",
+    "MagmaShark",
     "Perch",
-    "TidalLantern"
+    "TidalLantern",
+    "WingedRay"
   ]
 }
-
