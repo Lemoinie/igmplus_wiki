@@ -50,10 +50,9 @@
     }
   ],
   "loot": [
-    "GreenSlime",
-    "PotionOfImmunity",
-    "SeekingGlass",
-    "SlimeKingsCrown",
-    "VoidCore"
+    "PotionOfRejuvenation",
+    "SlimeArmor",
+    "SlimeJacket",
+    "SlimeRobe"
   ]
 }

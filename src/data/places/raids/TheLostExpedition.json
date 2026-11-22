@@ -44,15 +44,13 @@
     }
   ],
   "loot": [
-    "AbherrantFabric",
-    "AstralGoo",
-    "BlackHide",
-    "CosmicViolin",
-    "EldritchShred",
-    "EsotericEgg",
-    "ObsidianChunk",
-    "PotionOfDarkness",
-    "ShadowGem",
-    "StarFragment"
+    "BleakBoots",
+    "BleakGloves",
+    "DivineLarvae",
+    "EldritchMitre",
+    "ElectricViolin",
+    "EnlightedServant",
+    "InvisibleServant",
+    "Sha"
   ]
 }

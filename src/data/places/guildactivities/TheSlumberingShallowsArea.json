@@ -49,14 +49,5 @@
       "role": "Regular"
     }
   ],
-  "loot": [
-    "Angelfish",
-    "BlueShark",
-    "BlueTrout",
-    "CoinPurse",
-    "MagmaShark",
-    "Perch",
-    "TidalLantern",
-    "WingedRay"
-  ]
+  "loot": []
 }

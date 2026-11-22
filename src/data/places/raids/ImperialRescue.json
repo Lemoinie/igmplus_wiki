@@ -43,20 +43,5 @@
       "role": "Regular"
     }
   ],
-  "loot": [
-    "BlackOoze",
-    "CorruptedShield",
-    "CorruptedStaff",
-    "Emerald",
-    "Flute",
-    "GoldScraps",
-    "Potato",
-    "PotionOfIntelligence",
-    "Redwood",
-    "Ruby",
-    "SilkThread",
-    "SilverRing",
-    "SkeletonKey",
-    "WardenBelt"
-  ]
+  "loot": []
 }

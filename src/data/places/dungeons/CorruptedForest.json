@@ -38,20 +38,20 @@
     }
   ],
   "loot": [
-    "AlphaWolfFang",
-    "AncientSeed",
-    "Apple",
-    "BeastPelt",
-    "BoarTusk",
-    "Cheese",
-    "CopperOre",
-    "LivingSap",
-    "MeatChop",
-    "PlantFiber",
-    "Tomato",
-    "WerewolfFang",
-    "WildEgg",
-    "Wood",
-    "WoodenEgg"
+    "ClothRobe",
+    "CopperArmor",
+    "CopperAxe",
+    "CopperHelmet",
+    "CopperSword",
+    "EnchantedStaff",
+    "FangDagger",
+    "FullmoonDagger",
+    "InfusedNecklace",
+    "LeatherBoots",
+    "LeatherGloves",
+    "LeatherJacket",
+    "TuskNecklace",
+    "WoodenBow",
+    "WoodenBuckler"
   ]
 }

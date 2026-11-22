@@ -1019,7 +1019,7 @@
       },
       {
         "item": "MetamorphicSand",
-        "qty": "Logger.BARD_SHIELD"
+        "qty": 120
       }
     ]
   },
@@ -1955,7 +1955,7 @@
     "ingredients": [
       {
         "item": "ObsidianChunk",
-        "qty": "Logger.BARD_SHIELD"
+        "qty": 120
       },
       {
         "item": "LargeIris",
@@ -2115,7 +2115,7 @@
       },
       {
         "item": "ElysianWood",
-        "qty": "Logger.SUMMON_SMOLDERING_TITAN"
+        "qty": 114
       }
     ]
   },
@@ -2613,7 +2613,7 @@
     "ingredients": [
       {
         "item": "BansheeScale",
-        "qty": "Logger.STATUS_FEEBLE_TETHER"
+        "qty": 110
       },
       {
         "item": "BansheeClaw",
@@ -3009,7 +3009,7 @@
     "ingredients": [
       {
         "item": "AncientHide",
-        "qty": "Logger.STATUS_FEEBLE_TETHER"
+        "qty": 110
       },
       {
         "item": "AncientMembrane",
@@ -3037,7 +3037,7 @@
     "ingredients": [
       {
         "item": "Mithril",
-        "qty": "Logger.STATUS_FEEBLE_TETHER"
+        "qty": 110
       },
       {
         "item": "AncientHide",

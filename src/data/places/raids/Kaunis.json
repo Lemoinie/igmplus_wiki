@@ -50,15 +50,17 @@
     }
   ],
   "loot": [
-    "AbioticCore",
-    "ChiefScientistCoat",
-    "ChronoEchoElixir",
-    "CorruptedAxe",
-    "FireproofOil",
-    "KaunianFabric",
-    "MutantHide",
-    "OrichalcumScraps",
-    "PotionOfClumsiness",
-    "SPIDER"
+    "AbhorrentLongAxe",
+    "DeathRayScepter",
+    "ElectricViolin",
+    "EnforcersAxe",
+    "KaunianRobe",
+    "MutantJacket",
+    "OrichalcumArmor",
+    "OrichalcumDagger",
+    "OrichalcumHelm",
+    "OrichalcumShield",
+    "OrichalcumSword",
+    "VoltaicShock"
   ]
 }

@@ -50,30 +50,21 @@
     }
   ],
   "loot": [
-    "AbyssalChitin",
+    "AbyssalChitinBuckler",
+    "AbyssalChitinDagger",
     "AbyssalChitinJacket",
-    "AbyssalPearl",
-    "BioluminescentEsca",
-    "BlueTrout",
-    "Coral",
     "CoralArmor",
     "CoralAxe",
     "CoralBoots",
     "CoralBow",
-    "CoralChunk",
     "CoralGloves",
     "CoralHelmet",
-    "OracleGem",
-    "Perch",
+    "CoralStaff",
     "SharkDagger",
-    "SharkFin",
     "SharkSword",
-    "SharkTeeth",
+    "SirenCoralCombatRobe",
     "SirenRobe",
-    "SirenSilk",
-    "SpiralSeashell",
-    "SunkenDoubloon",
-    "TrenchWyvernFin",
-    "WingedRay"
+    "SpiralHat",
+    "TrenchStiletto"
   ]
 }

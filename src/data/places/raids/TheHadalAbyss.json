@@ -69,25 +69,7 @@
   ],
   "loot": [
     "AbyssalAmulet",
-    "AbyssalChitin",
-    "AbyssalPearl",
     "AegisOfTheChallengerDeep",
-    "AncientNautilusSeashellShard",
-    "BioluminescentEsca",
-    "BlueTrout",
-    "Coral",
-    "CoralChunk",
-    "CoralithOre",
-    "CrownOfTheBenthicSovereign",
-    "HeartOfTheLeviathan",
-    "LeviathanScale",
-    "OracleGem",
-    "Perch",
-    "SirenSilk",
-    "SpiralSeashell",
-    "SunkenDoubloon",
-    "TrenchGodsPearl",
-    "TrenchWyvernFin",
-    "WingedRay"
+    "CrownOfTheBenthicSovereign"
   ]
 }

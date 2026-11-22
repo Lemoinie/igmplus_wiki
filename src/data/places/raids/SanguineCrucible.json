@@ -26,11 +26,17 @@
     }
   ],
   "loot": [
-    "AbherrantFabric",
-    "BlackHide",
-    "EldritchSeal",
-    "EsotericEgg",
-    "ScarletDebris",
-    "ScarletStrand"
+    "AbyssalScarletMantle",
+    "BleakBoots",
+    "BleakGloves",
+    "BloodstoneClaws",
+    "EldritchMitre",
+    "EldritchScarletCape",
+    "ScarletCape",
+    "ScarletOni",
+    "ScarletOniJuggernaut",
+    "ScarletShroud",
+    "ScarletSigil",
+    "ScarletVeil"
   ]
 }

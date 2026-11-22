@@ -50,12 +50,17 @@
     }
   ],
   "loot": [
-    "AncestralBlood",
-    "DreadfulMorningstar",
-    "GiftOfLight",
-    "HeartOfDarkness",
-    "MysteriousCog",
-    "PhoenixFeather",
-    "WhiteSlime"
+    "AbyssalScarletMantle",
+    "AmuletOfResurrection",
+    "ColossalSwordOfScarletKing",
+    "CursedScepter",
+    "EnlightedServant",
+    "ScarletOniJuggernaut",
+    "ScarletShroud",
+    "Sha",
+    "Starvation",
+    "SylvanBlessing",
+    "SylvanMandate",
+    "VoidCrusher"
   ]
 }

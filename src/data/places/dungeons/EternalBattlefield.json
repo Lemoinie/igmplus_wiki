@@ -50,19 +50,14 @@
     }
   ],
   "loot": [
-    "BoneFragment",
-    "ElongatedBone",
-    "EsotericEgg",
-    "InfectedBlood",
-    "OrbOfEctoplasm",
-    "PotionOfConstitution",
-    "SharpRib",
-    "SoulShard",
-    "SpectralCloth",
+    "BurningCenser",
+    "GhastlyCuirass",
+    "GhastlyScimitar",
+    "GhastlyShield",
+    "GhostRabbitCloak",
+    "SkullCandle",
     "SpectralRobe",
-    "SpiritCandle",
-    "SpiritTome",
-    "TatteredHide",
+    "UndeadAxe",
     "UndeadCuirass",
     "UndeadGloves",
     "UndeadGreaves",
@@ -71,7 +66,6 @@
     "UndeadKnife",
     "UndeadShield",
     "UndeadStaff",
-    "UndeadSword",
-    "WarlordSkull"
+    "UndeadSword"
   ]
 }

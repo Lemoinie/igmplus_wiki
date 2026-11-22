@@ -56,16 +56,17 @@
     }
   ],
   "loot": [
-    "BoneFragment",
-    "CursedSilver",
-    "ElongatedBone",
-    "PhylacteryFragment",
-    "PotionOfConstitution",
-    "PotionOfViciousness",
-    "RobeOfTheLich",
-    "SharpRib",
-    "SoulShard",
-    "TatteredHide",
-    "WarlordSkull"
+    "AbhorrentLongAxe",
+    "ArmorOfTheUndying",
+    "BloodstoneClaws",
+    "CursedBow",
+    "CursedClaws",
+    "CursedHelm",
+    "CursedJacket",
+    "CursedLongAxe",
+    "InfernalBow",
+    "InfernalLongAxe",
+    "KabelianClaws",
+    "Phylactery"
   ]
 }

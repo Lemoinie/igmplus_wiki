@@ -44,20 +44,14 @@
     }
   ],
   "loot": [
-    "AvianEgg",
-    "BottledSandSpirit",
-    "Egg",
-    "EsotericEgg",
-    "EyeOfShaKire",
-    "Feather",
-    "MetamorphicSand",
-    "Pineapple",
-    "PotionOfPrecision",
-    "Quartz",
-    "RecurveBlade",
-    "Sandstone",
-    "ScrapMetal",
-    "ShahuriBow",
-    "ShahuriBowFrame"
+    "AmuletOfShaKire",
+    "DjinnTonic",
+    "FeatherRobe",
+    "GlassKnife",
+    "IronAxe",
+    "IronHelm",
+    "LivingScimitar",
+    "Scimitar",
+    "ShahuriBow"
   ]
 }

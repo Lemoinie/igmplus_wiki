@@ -38,26 +38,23 @@
     }
   ],
   "loot": [
-    "AetherIgnis",
-    "BansheeClaw",
+    "BansheeBow",
     "BansheeDagger",
     "BansheeGloves",
-    "BansheeHorn",
     "BansheeJacket",
-    "BansheeScale",
+    "BansheeScream",
     "CelestialArmor",
+    "CelestialAxe",
     "CelestialHelmet",
-    "CelestialScraps",
+    "CelestialMercy",
     "CelestialShield",
     "CelestialSword",
-    "ChainLink",
-    "CharredHeart",
     "ElasticBoots",
-    "ElasticMembrane",
     "ElasticRobe",
-    "FluxLimiter",
-    "ReptileEgg",
-    "Scanner",
-    "Synapse"
+    "FocusedScepter",
+    "IgnitionOrb",
+    "ShortCircuit",
+    "SkinBlender",
+    "TacticalHelmet"
   ]
 }

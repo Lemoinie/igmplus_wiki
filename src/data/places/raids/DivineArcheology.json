@@ -44,13 +44,10 @@
     }
   ],
   "loot": [
-    "DivineZygote",
-    "EyesOfTheSwordsman",
-    "MetamorphicSand",
-    "Pineapple",
-    "Quartz",
-    "RecurveBlade",
-    "ScrapMetal",
-    "ShahuriBowFrame"
+    "AmuletOfShaKire",
+    "AmuletOfTheSwordsman",
+    "DivineEmbryo",
+    "DivineLarvae",
+    "Sha"
   ]
 }

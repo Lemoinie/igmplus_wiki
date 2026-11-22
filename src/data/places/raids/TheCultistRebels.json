@@ -38,17 +38,24 @@
     }
   ],
   "loot": [
-    "AlchemicPowder",
-    "ColossalSword",
-    "ConstructEgg",
-    "CrusaderInsigna",
-    "ElixirOfLearning",
-    "EternalHunger",
-    "ExaltedPowder",
-    "KabelianMetal",
-    "PotionOfDefense",
-    "PotionOfMagicDefense",
-    "SealOfClaris",
-    "SentientSlab"
+    "BloodstoneClaws",
+    "BurningEffigy",
+    "ChampionArmor",
+    "ColossalSwordOfScarletKing",
+    "CunningDemise",
+    "CunningDownfall",
+    "DuelistArmor",
+    "FlyingReaper",
+    "InfiniteDespair",
+    "KabelianArmor",
+    "KabelianClaws",
+    "MutualDespair",
+    "SageArmor",
+    "SageCloak",
+    "SageJacket",
+    "ShieldOfTheMartyr",
+    "ShieldOfTheTitan",
+    "Starvation",
+    "VoidCrusher"
   ]
 }

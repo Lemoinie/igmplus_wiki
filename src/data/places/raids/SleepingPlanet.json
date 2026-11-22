@@ -38,11 +38,15 @@
     }
   ],
   "loot": [
-    "DreamwroughtHide",
-    "DreamwroughtLarva",
-    "DreamwroughtMane",
-    "DreamwroughtSteel",
-    "FlakeOfInfinity",
-    "InfinityHat"
+    "DreamwroughtArmor",
+    "DreamwroughtBoots",
+    "DreamwroughtBow",
+    "DreamwroughtGloves",
+    "DreamwroughtJacket",
+    "DreamwroughtRobe",
+    "DreamwroughtStaff",
+    "InfiniteDespair",
+    "Mottiphobia",
+    "SwarmkeeperArmor"
   ]
 }

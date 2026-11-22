@@ -498,14 +498,7 @@ export function getAllPlaces(): any[] {
       return ref;
     });
 
-    const lootIdSet = new Set<string>(item.loot || []);
-    for (const enemy of enrichedEnemies) {
-      for (const drop of enemy.drops || []) {
-        if (drop?.item) lootIdSet.add(drop.item);
-      }
-    }
-
-    const locationItems = Array.from(lootIdSet)
+    const locationItems = Array.from(new Set<string>(item.loot || []))
       .map(buildLocationItemCard)
       .sort((a, b) => a.name.localeCompare(b.name));
 

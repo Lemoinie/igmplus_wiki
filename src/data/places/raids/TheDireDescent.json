@@ -25,9 +25,5 @@
       "role": "Regular"
     }
   ],
-  "loot": [
-    "SerpentBite",
-    "SerpentLunge",
-    "SerpentSting"
-  ]
+  "loot": []
 }

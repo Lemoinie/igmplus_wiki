@@ -44,29 +44,23 @@
     }
   ],
   "loot": [
-    "AvianEgg",
-    "Blueberry",
-    "EsotericEgg",
-    "FrostCrystal",
-    "FrostNucleus",
+    "CeremonialDagger",
+    "CrystalDagger",
+    "CrystalStaff",
     "FrostmetalArmor",
+    "FrostmetalAxe",
     "FrostmetalDagger",
-    "FrostmetalOre",
     "FrostmetalSword",
-    "FrozenEgg",
-    "FrozenScale",
-    "IceFiber",
-    "PotionOfHealth",
-    "TrollHide",
+    "FrozenEggPendant",
+    "FrozenLongAxe",
     "TrollskinJacket",
     "WinterBoots",
     "WinterCape",
     "WinterGloves",
     "WinterHelm",
     "WinterShield",
-    "Winterwood",
     "WinterwoodBow",
     "WinterwoodStaff",
-    "WyvernChop"
+    "WyvernCape"
   ]
 }
