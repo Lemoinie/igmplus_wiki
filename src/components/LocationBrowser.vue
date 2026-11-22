@@ -301,26 +301,19 @@ function getAtkTypeClass(atkType?: string): string {
     <div v-if="selectedLocation" class="locationHeaderCard">
       <div class="locationHeaderMain">
         <div class="locationMetaGroup">
-          <div class="statsPills">
-            <div v-if="currentLocationInfo" class="pill">
-              <span class="pillLabel">Unlock Requirements:</span>
-              <strong class="pillVal">{{ currentLocationInfo.unlockReq }}</strong>
-            </div>
-            <div v-if="(currentLocationInfo?.darkness ?? 0) > 0" class="pill pillDarkness">
-              <span class="pillLabel">Darkness:</span>
-              <strong class="pillVal">{{ currentLocationInfo!.darkness }}</strong>
-            </div>
-          </div>
-
-          <div v-if="currentLocationInfo?.notes?.length" class="locationNotesBox">
-            <div
-              v-for="(note, nIdx) in currentLocationInfo.notes"
-              :key="nIdx"
-              class="locationNoteLine"
-            >
-              {{ note }}
-            </div>
-          </div>
+          <p v-if="currentLocationInfo" class="locationInfoLine">
+            Unlock Requirements: {{ currentLocationInfo.unlockReq }}
+          </p>
+          <p v-if="(currentLocationInfo?.darkness ?? 0) > 0" class="locationInfoLine">
+            Darkness: {{ currentLocationInfo!.darkness }}
+          </p>
+          <p
+            v-for="(note, nIdx) in currentLocationInfo?.notes ?? []"
+            :key="nIdx"
+            class="locationInfoLine"
+          >
+            {{ note }}
+          </p>
         </div>
       </div>
 
@@ -847,56 +840,12 @@ function getAtkTypeClass(atkType?: string): string {
   border: 1px solid rgba(168, 85, 247, 0.35);
 }
 
-.statsPills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-
-.pill {
-  display: inline-flex;
-  align-items: center;
-  gap: 5px;
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 3px 9px;
-  font-size: 0.8rem;
-}
-
-.pillLabel {
-  color: var(--text-muted);
-}
-
-.pillVal {
-  color: var(--text-primary);
-}
-
-.pillDarkness {
-  border-color: rgba(245, 158, 11, 0.35);
-  background: rgba(245, 158, 11, 0.08);
-}
-
-.pillDarkness .pillVal {
-  color: var(--text-gold);
-}
-
-.locationNotesBox {
-  display: flex;
-  flex-direction: column;
-  gap: 3px;
-  background: var(--bg-inset);
-  border: 1px solid var(--border-subtle);
-  border-left: 3px solid var(--brand-primary);
-  border-radius: 6px;
-  padding: 0.55rem 0.85rem;
-  font-size: 0.84rem;
-  color: var(--text-secondary);
-  line-height: 1.45;
-}
-
-.locationNoteLine {
+.locationInfoLine {
   margin: 0;
+  color: #ffffff;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.55;
 }
 
 /* Loot Drawer */
