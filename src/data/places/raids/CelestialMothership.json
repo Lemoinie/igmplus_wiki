@@ -19,26 +19,26 @@
       "role": "Regular"
     },
     {
-      "id": "Gcss",
-      "name": "Gcss",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
-      "id": "LegateHadrian",
-      "name": "LegateHadrian",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "Oculus",
       "name": "Oculus",
       "rate": "Event",
       "role": "Regular"
     },
     {
+      "id": "Gcss",
+      "name": "Gcss",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
       "id": "ReinforcedDoor",
       "name": "ReinforcedDoor",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "LegateHadrian",
+      "name": "LegateHadrian",
       "rate": "Event",
       "role": "Regular"
     }

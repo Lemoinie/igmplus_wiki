@@ -13,14 +13,14 @@
       "role": "Regular"
     },
     {
-      "id": "HeraldKali",
-      "name": "HeraldKali",
+      "id": "KasimirTheSeer",
+      "name": "KasimirTheSeer",
       "rate": "Event",
       "role": "Regular"
     },
     {
-      "id": "KasimirTheSeer",
-      "name": "KasimirTheSeer",
+      "id": "HeraldKali",
+      "name": "HeraldKali",
       "rate": "Event",
       "role": "Regular"
     }

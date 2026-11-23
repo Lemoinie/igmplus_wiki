@@ -13,26 +13,8 @@
       "role": "Regular"
     },
     {
-      "id": "ChiefScientistAva",
-      "name": "ChiefScientistAva",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "Enforcer",
       "name": "Enforcer",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
-      "id": "FirstMinisterAtos",
-      "name": "FirstMinisterAtos",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
-      "id": "KingAino",
-      "name": "KingAino",
       "rate": "Event",
       "role": "Regular"
     },
@@ -45,6 +27,24 @@
     {
       "id": "Phantasm",
       "name": "Phantasm",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "ChiefScientistAva",
+      "name": "ChiefScientistAva",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "KingAino",
+      "name": "KingAino",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "FirstMinisterAtos",
+      "name": "FirstMinisterAtos",
       "rate": "Event",
       "role": "Regular"
     }

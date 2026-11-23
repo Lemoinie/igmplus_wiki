@@ -7,12 +7,6 @@
   "sprite": "summary_the_lost_expedition",
   "enemies": [
     {
-      "id": "AvatarOfTheAncient",
-      "name": "AvatarOfTheAncient",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "BleakDeacon",
       "name": "BleakDeacon",
       "rate": "Event",
@@ -39,6 +33,12 @@
     {
       "id": "TekeliLiFirstApostle",
       "name": "TekeliLiFirstApostle",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "AvatarOfTheAncient",
+      "name": "AvatarOfTheAncient",
       "rate": "Event",
       "role": "Regular"
     }

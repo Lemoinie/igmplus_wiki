@@ -7,26 +7,8 @@
   "sprite": "summary_ancient_grave_digging",
   "enemies": [
     {
-      "id": "Abomination",
-      "name": "Abomination",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "DeathHound",
       "name": "DeathHound",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
-      "id": "KabarTheRotten",
-      "name": "KabarTheRotten",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
-      "id": "Necrolith",
-      "name": "Necrolith",
       "rate": "Event",
       "role": "Regular"
     },
@@ -51,6 +33,24 @@
     {
       "id": "UndeadWarlord",
       "name": "UndeadWarlord",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Abomination",
+      "name": "Abomination",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Necrolith",
+      "name": "Necrolith",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "KabarTheRotten",
+      "name": "KabarTheRotten",
       "rate": "Event",
       "role": "Regular"
     }

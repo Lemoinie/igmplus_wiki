@@ -7,12 +7,6 @@
   "sprite": "summary_the_tower",
   "enemies": [
     {
-      "id": "HeadlessKnight",
-      "name": "HeadlessKnight",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "Lazarus",
       "name": "Lazarus",
       "rate": "Event",
@@ -25,8 +19,14 @@
       "role": "Regular"
     },
     {
-      "id": "TheAncient",
-      "name": "TheAncient",
+      "id": "HeadlessKnight",
+      "name": "HeadlessKnight",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "Ultraslime",
+      "name": "Ultraslime",
       "rate": "Event",
       "role": "Regular"
     },
@@ -37,14 +37,14 @@
       "role": "Regular"
     },
     {
-      "id": "TheMachine",
-      "name": "TheMachine",
+      "id": "TheAncient",
+      "name": "TheAncient",
       "rate": "Event",
       "role": "Regular"
     },
     {
-      "id": "Ultraslime",
-      "name": "Ultraslime",
+      "id": "TheMachine",
+      "name": "TheMachine",
       "rate": "Event",
       "role": "Regular"
     }

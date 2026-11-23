@@ -13,12 +13,6 @@
       "role": "Regular"
     },
     {
-      "id": "EmperorClovisXXVIII",
-      "name": "EmperorClovisXXVIII",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "ImperialGuard",
       "name": "ImperialGuard",
       "rate": "Event",
@@ -39,6 +33,12 @@
     {
       "id": "InsaneMerchant",
       "name": "InsaneMerchant",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "EmperorClovisXXVIII",
+      "name": "EmperorClovisXXVIII",
       "rate": "Event",
       "role": "Regular"
     }

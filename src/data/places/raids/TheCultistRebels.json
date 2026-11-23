@@ -13,26 +13,26 @@
       "role": "Regular"
     },
     {
-      "id": "Claris",
-      "name": "Claris",
-      "rate": "Event",
-      "role": "Regular"
-    },
-    {
       "id": "Crusader",
       "name": "Crusader",
       "rate": "Event",
       "role": "Regular"
     },
     {
-      "id": "PrimordialTitan",
-      "name": "PrimordialTitan",
+      "id": "Claris",
+      "name": "Claris",
       "rate": "Event",
       "role": "Regular"
     },
     {
       "id": "Thorvus",
       "name": "Thorvus",
+      "rate": "Event",
+      "role": "Regular"
+    },
+    {
+      "id": "PrimordialTitan",
+      "name": "PrimordialTitan",
       "rate": "Event",
       "role": "Regular"
     }
