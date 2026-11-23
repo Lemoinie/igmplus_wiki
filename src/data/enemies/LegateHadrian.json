@@ -16,7 +16,15 @@
     "max": "950"
   },
   "expGiven": 300,
-  "drops": [],
+  "drops": [{
+      "item": "Evo21Vial",
+      "qty": 1,
+      "chance": 5
+    },{
+      "item": "Evo23Vial",
+      "qty": 1,
+      "chance": 5
+    }],
   "isMagic": false,
   "isRanged": false,
   "attackType": "Melee, Physical",
