@@ -36,6 +36,11 @@
       "item": "PotionOfImmunity",
       "qty": 1,
       "chance": 10
+    },
+    {
+      "item": "SunfireCore",
+      "qty": 1,
+      "chance": 12
     }
   ],
   "isMagic": true,

@@ -37,14 +37,14 @@
       "role": "Regular"
     },
     {
-      "id": "SlimeKing",
-      "name": "SlimeKing",
+      "id": "VoidSlime",
+      "name": "VoidSlime",
       "rate": "Event",
       "role": "Regular"
     },
     {
-      "id": "VoidSlime",
-      "name": "VoidSlime",
+      "id": "SlimeKing",
+      "name": "SlimeKing",
       "rate": "Event",
       "role": "Regular"
     }

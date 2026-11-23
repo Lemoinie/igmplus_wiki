@@ -16,7 +16,17 @@
     "max": "75"
   },
   "expGiven": 40,
-  "drops": [],
+  "drops": [
+    {
+      "item": "IronHelm",
+      "qty": 1,
+      "chance": 3
+    },
+    {
+      "item": "GreenSlime",
+      "qty": 2,
+      "chance": 10
+    }],
   "isMagic": false,
   "isRanged": false,
   "attackType": "Melee, Physical",

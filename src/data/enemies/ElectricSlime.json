@@ -33,6 +33,11 @@
       "chance": 5
     },
     {
+      "item": "StaticCore",
+      "qty": 1,
+      "chance": 12
+    },
+    {
       "item": "PotionOfImmunity",
       "qty": 1,
       "chance": 10
