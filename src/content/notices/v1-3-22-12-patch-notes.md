@@ -6,6 +6,7 @@ version: "v1.3.22.12"
 author: "IGM+ Dev Team"
 pinned: false
 coverImage: "/images/area_avernus.png"
+description: "Adding new dungeon and balancing ecomony"
 ---
 
 <!-- rb:block {"type":"heading","level":1,"text":"I. New Dungeons"} -->
@@ -21,14 +22,18 @@ coverImage: "/images/area_avernus.png"
   * Falling Rocks (5%): 40% Max HP AoE physical damage (cannot intercepted by Angel of War path), 2-turn stun on 2 living allies
 * Enemies:
 
-<!-- rb:block {"type":"callout","sprite":"unit_volatile_slime.png","title":"Volatile Slime","tag":"p","style":"plain","color":"#ffffff","bold":false,"italic":false,"underline":false,"uppercase":false} -->
-<div style="text-align: center; margin: 1.5rem 0;">
-<img src="/images/unit_volatile_slime.png" alt="Volatile Slime" class="sprite" width="48" height="48" style="display: block; margin: 0 auto;" />
-<p style="margin-top: 0.5rem; margin-bottom: 0; color: #ffffff; font-weight: 400;">Volatile Slime</p>
-</div>
+<!-- rb:block {"type":"table","preset":"generic","columns":[{"name":"Image","kind":"sprite","width":"10%"},{"name":"Name","kind":"text","width":"20%"},{"name":"Drop","kind":"sprite","width":"","imgSize":28}],"rows":[["unit_volatile_slime.png","Volatile Slime","lesser_magma_core.png"]],"rowHeights":[""]} -->
+<table>
+<colgroup>
+<col style="width: 10%;" />
+<col style="width: 20%;" />
+<col />
+</colgroup>
+<thead><tr><th>Image</th><th>Name</th><th>Drop</th></tr></thead>
+<tbody>
+<tr><td><img src="/images/unit_volatile_slime.png" alt="" class="sprite" width="28" height="28" /></td><td>Volatile Slime</td><td><img src="/images/lesser_magma_core.png" alt="" class="sprite" width="28" height="28" /></td></tr>
+</tbody>
+</table>
 
-<!-- rb:block {"type":"callout","sprite":"unit_volatile_slime.png","title":"Volatile Slime","tag":"p","style":"plain","color":"#ffffff","bold":false,"italic":false,"underline":false,"uppercase":false} -->
-<div style="text-align: center; margin: 1.5rem 0;">
-<img src="/images/unit_volatile_slime.png" alt="Volatile Slime" class="sprite" width="48" height="48" style="display: block; margin: 0 auto;" />
-<p style="margin-top: 0.5rem; margin-bottom: 0; color: #ffffff; font-weight: 400;">Volatile Slime</p>
-</div>
+<!-- rb:block {"type":"heading","level":3,"text":"2. (D14) Avernus"} -->
+### 2. (D14) Avernus

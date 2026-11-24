@@ -347,6 +347,17 @@ const ogImage = image
         })();
       </script>
     )}
+    <script is:inline>
+      (function () {
+        if (window.__igmImgGuard) return;
+        window.__igmImgGuard = true;
+        function blockImg(e) {
+          if (e.target && e.target.tagName === 'IMG') e.preventDefault();
+        }
+        document.addEventListener('contextmenu', blockImg);
+        document.addEventListener('dragstart', blockImg);
+      })();
+    </script>
   </body>
 </html>
 

@@ -202,9 +202,23 @@ const readTime = Math.max(1, Math.ceil(words / 220));
     }
   }
 
+  function wrapTables() {
+    document.querySelectorAll('.proseContent table').forEach((table) => {
+      if (table.parentElement?.classList.contains('tableScrollWrap')) return;
+      const wrap = document.createElement('div');
+      wrap.className = 'tableScrollWrap';
+      table.parentNode?.insertBefore(wrap, table);
+      wrap.appendChild(table);
+    });
+  }
+
   if (typeof document !== 'undefined') {
     setupCopyLink();
-    document.addEventListener('astro:page-load', setupCopyLink);
+    wrapTables();
+    document.addEventListener('astro:page-load', () => {
+      setupCopyLink();
+      wrapTables();
+    });
   }
 </script>
 
@@ -573,7 +587,18 @@ const readTime = Math.max(1, Math.ceil(words / 220));
 }
 
 /* ================= Tables with Responsive Scrolling ================= */
+.proseContent :global(.tableScrollWrap) {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 1.75rem 0;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+  border-radius: 8px;
+}
+
 .proseContent :global(table) {
+  display: table;
   width: 100%;
   border-collapse: separate;
   border-spacing: 0;
@@ -583,9 +608,13 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   border: 1px solid var(--border-subtle);
   border-radius: 8px;
   overflow: hidden;
-  display: block;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+}
+
+.proseContent :global(.tableScrollWrap table) {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  background: transparent;
 }
 
 .proseContent :global(thead) {
@@ -605,6 +634,12 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   padding: 10px 14px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   color: #cbd5e1;
+  vertical-align: middle;
+}
+
+.proseContent :global(td img) {
+  margin: 0;
+  display: inline-block;
   vertical-align: middle;
 }
 
