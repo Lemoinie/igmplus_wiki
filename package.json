@@ -9,6 +9,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "validate": "node scripts/validate.mjs",
+    "release-builder": "node ../scripts/igmplus_wiki/release_builder/server.mjs",
     "astro": "astro"
   },
   "dependencies": {
