@@ -1,5 +1,6 @@
 ---
 import Analytics from '@vercel/analytics/astro';
+import SpeedInsights from '@vercel/speed-insights/astro';
 import Sidebar from '../components/Sidebar.vue';
 import SidebarToggle from '../components/SidebarToggle.vue';
 import SearchBar from '../components/SearchBar.vue';
@@ -328,6 +329,7 @@ const ogImage = image
     )}
 
     <Analytics />
+    <SpeedInsights />
     {!isFull && (
       <!-- Adsterra Social Bar (at most once every 2 minutes) -->
       <script is:inline>

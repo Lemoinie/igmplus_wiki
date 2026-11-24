@@ -15,6 +15,7 @@
   "dependencies": {
     "@astrojs/vue": "^5.0.6",
     "@vercel/analytics": "^2.0.1",
+    "@vercel/speed-insights": "^2.1.0",
     "astro": "^5.4.2",
     "katex": "^0.19.0",
     "rehype-katex": "^7.0.1",
