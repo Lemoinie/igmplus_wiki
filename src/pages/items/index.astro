@@ -1,10 +1,15 @@
 ---
 import WikiLayout from '../../layouts/WikiLayout.astro';
 import EquipmentBrowser from '../../components/EquipmentBrowser.vue';
-import { getAllItems } from '../../lib/data';
+import { getAllItems, getItemRecipeMaps } from '../../lib/data';
 import { base } from '../../lib/base';
 
-const combinedEquipment = getAllItems();
+const { ownRecipeMap, usedInRecipesMap } = getItemRecipeMaps();
+const combinedEquipment = getAllItems().map((item) => ({
+  ...item,
+  ownRecipe: ownRecipeMap.get(item.id) || [],
+  usedInRecipes: usedInRecipesMap.get(item.id) || [],
+}));
 ---
 
 <WikiLayout title="Items" description="Browse all weapons, armors, accessories, and crafting items in Idle Guild Master Plus.">

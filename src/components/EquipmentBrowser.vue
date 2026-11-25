@@ -11,6 +11,7 @@ const props = defineProps<{
 const query = ref('');
 const selectedCategory = ref('all');
 const sortBy = ref('price');
+const showRecipes = ref(false);
 const currentPage = ref(1);
 const pageSize = ref(12);
 
@@ -125,6 +126,17 @@ function goToPage(page: number) {
           <option value="name">Name A–Z</option>
           <option value="name-desc">Name Z–A</option>
         </select>
+
+        <button
+          type="button"
+          class="recipeToggleBtn"
+          :class="{ active: showRecipes }"
+          :aria-pressed="showRecipes"
+          @click="showRecipes = !showRecipes"
+        >
+          <span class="recipeToggleDot" aria-hidden="true" />
+          <span>Recipe</span>
+        </button>
       </div>
 
       <span class="count">{{ itemRangeText }}</span>
@@ -137,6 +149,7 @@ function goToPage(page: number) {
         :key="item.id"
         :item="item"
         :base-path="basePath"
+        :show-recipes="showRecipes"
       />
     </div>
 
@@ -272,6 +285,48 @@ select option {
   background: var(--bg-card);
   color: var(--text-primary);
   font-weight: 500;
+}
+
+.recipeToggleBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border-subtle);
+  background: var(--bg-inset);
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.recipeToggleBtn:hover {
+  color: var(--text-primary);
+  border-color: var(--brand-primary);
+  background: var(--bg-card-hover);
+}
+
+.recipeToggleBtn.active {
+  color: #ffffff;
+  border-color: rgba(245, 158, 11, 0.7);
+  background: rgba(245, 158, 11, 0.18);
+}
+
+.recipeToggleDot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--text-muted);
+  opacity: 0.55;
+  transition: all 0.15s ease;
+}
+
+.recipeToggleBtn.active .recipeToggleDot {
+  background: #f59e0b;
+  opacity: 1;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.8);
 }
 
 .count {

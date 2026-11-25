@@ -5,10 +5,43 @@ import { base } from '../lib/base';
 import { filterDisplayStats, formatStat } from '../lib/stats';
 import { parseCoins } from '../lib/currency';
 
+interface ItemRecipeIngredient {
+  id: string;
+  name: string;
+  sprite?: string;
+  qty: number;
+  hasPage: boolean;
+}
+
+interface ItemUsedInRecipe {
+  id: string;
+  name: string;
+  sprite?: string;
+  hasPage: boolean;
+  ingredients: ItemRecipeIngredient[];
+}
+
+type EquipmentCardItem = EquipmentDefinition & {
+  ownRecipe?: ItemRecipeIngredient[];
+  usedInRecipes?: ItemUsedInRecipe[];
+};
+
 const props = defineProps<{
-  item: EquipmentDefinition;
+  item: EquipmentCardItem;
   basePath?: string;
+  showRecipes?: boolean;
 }>();
+
+const resolvedBase = computed(() => props.basePath ?? base);
+
+function getItemSpriteUrl(sprite?: string, id?: string): string {
+  const s = sprite || (id || '').replace(/([a-z0-9])([A-Z])/g, '$1_$2').toLowerCase();
+  return `${resolvedBase.value}/images/${s}.png`;
+}
+
+function getItemUrl(id: string): string {
+  return `${resolvedBase.value}/items/${id}`;
+}
 
 const displayStats = computed(() => filterDisplayStats(props.item.stats));
 
@@ -86,6 +119,123 @@ const displayDescription = computed(() => {
 
     <div v-if="item.notes" class="notes">
       {{ item.notes }}
+    </div>
+
+    <!-- Own Crafting Recipe -->
+    <div v-if="showRecipes && item.ownRecipe?.length" class="recipeBlock">
+      <div class="recipeBlockLabel">Recipe</div>
+      <div class="recipeEquationRow">
+        <template v-for="(ing, iIdx) in item.ownRecipe" :key="ing.id">
+          <span v-if="iIdx > 0" class="recipeOp">+</span>
+          <a
+            v-if="ing.hasPage"
+            :href="getItemUrl(ing.id)"
+            class="recipeSlot"
+            :title="`${ing.name} ×${ing.qty}`"
+          >
+            <img
+              :src="getItemSpriteUrl(ing.sprite, ing.id)"
+              :alt="ing.name"
+              class="recipeSlotSprite sprite"
+              width="26"
+              height="26"
+              loading="lazy"
+            />
+            <span class="recipeSlotQty">{{ ing.qty }}</span>
+          </a>
+          <span v-else class="recipeSlot" :title="`${ing.name} ×${ing.qty}`">
+            <img
+              :src="getItemSpriteUrl(ing.sprite, ing.id)"
+              :alt="ing.name"
+              class="recipeSlotSprite sprite"
+              width="26"
+              height="26"
+              loading="lazy"
+            />
+            <span class="recipeSlotQty">{{ ing.qty }}</span>
+          </span>
+        </template>
+
+        <span class="recipeArrow">→</span>
+
+        <a :href="getItemUrl(item.id)" class="recipeSlot recipeSlotOutput" :title="item.name">
+          <img
+            :src="getItemSpriteUrl(item.sprite, item.id)"
+            :alt="item.name"
+            class="recipeSlotSprite sprite"
+            width="26"
+            height="26"
+            loading="lazy"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- Used in Recipes -->
+    <div v-if="showRecipes && item.usedInRecipes?.length" class="recipeBlock">
+      <div class="recipeBlockLabel">Used in Recipes ({{ item.usedInRecipes.length }})</div>
+      <div class="recipeList">
+        <div v-for="rec in item.usedInRecipes" :key="rec.id" class="recipeEquationRow">
+          <template v-for="(ing, iIdx) in rec.ingredients" :key="ing.id">
+            <span v-if="iIdx > 0" class="recipeOp">+</span>
+            <a
+              v-if="ing.hasPage"
+              :href="getItemUrl(ing.id)"
+              class="recipeSlot"
+              :title="`${ing.name} ×${ing.qty}`"
+            >
+              <img
+                :src="getItemSpriteUrl(ing.sprite, ing.id)"
+                :alt="ing.name"
+                class="recipeSlotSprite sprite"
+                width="26"
+                height="26"
+                loading="lazy"
+              />
+              <span class="recipeSlotQty">{{ ing.qty }}</span>
+            </a>
+            <span v-else class="recipeSlot" :title="`${ing.name} ×${ing.qty}`">
+              <img
+                :src="getItemSpriteUrl(ing.sprite, ing.id)"
+                :alt="ing.name"
+                class="recipeSlotSprite sprite"
+                width="26"
+                height="26"
+                loading="lazy"
+              />
+              <span class="recipeSlotQty">{{ ing.qty }}</span>
+            </span>
+          </template>
+
+          <span class="recipeArrow">→</span>
+
+          <a
+            v-if="rec.hasPage"
+            :href="getItemUrl(rec.id)"
+            class="recipeSlot recipeSlotOutput"
+            :title="rec.name"
+          >
+            <img
+              :src="getItemSpriteUrl(rec.sprite, rec.id)"
+              :alt="rec.name"
+              class="recipeSlotSprite sprite"
+              width="26"
+              height="26"
+              loading="lazy"
+            />
+          </a>
+          <span v-else class="recipeSlot recipeSlotOutput" :title="rec.name">
+            <img
+              :src="getItemSpriteUrl(rec.sprite, rec.id)"
+              :alt="rec.name"
+              class="recipeSlotSprite sprite"
+              width="26"
+              height="26"
+              loading="lazy"
+            />
+          </span>
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -249,5 +399,99 @@ const displayDescription = computed(() => {
   border-top: 1px dashed var(--border-subtle);
   padding-top: 4px;
   white-space: pre-line;
+}
+
+.recipeBlock {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+  padding-top: 0.6rem;
+  border-top: 1px solid var(--border-subtle);
+}
+
+.recipeBlockLabel {
+  font-size: 0.7rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text-muted);
+}
+
+.recipeList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.45rem;
+}
+
+.recipeEquationRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+  padding: 0.4rem 0.5rem;
+  border-radius: 8px;
+  background: var(--bg-inset);
+  border: 1px solid var(--border-subtle);
+}
+
+.recipeOp,
+.recipeArrow {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--text-muted);
+  user-select: none;
+  line-height: 1;
+}
+
+.recipeArrow {
+  color: var(--text-gold);
+  padding: 0 2px;
+}
+
+.recipeSlot {
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  background: var(--bg-card);
+  border: 1px solid var(--border-card);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: border-color 0.15s ease, transform 0.15s ease;
+}
+
+a.recipeSlot:hover {
+  border-color: var(--brand-primary);
+  transform: translateY(-1px);
+}
+
+.recipeSlotOutput {
+  border-color: rgba(245, 158, 11, 0.45);
+  background: rgba(245, 158, 11, 0.08);
+}
+
+.recipeSlotSprite {
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.recipeSlotQty {
+  position: absolute;
+  right: 2px;
+  bottom: 1px;
+  font-size: 0.65rem;
+  font-weight: 800;
+  line-height: 1;
+  color: #ffffff;
+  text-shadow: 0 1px 2px #000000, 0 0 3px #000000;
+  pointer-events: none;
 }
 </style>

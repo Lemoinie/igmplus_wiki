@@ -410,31 +410,32 @@ const LOCATION_FRAGMENT_ORDER: Record<string, number> = {
   GuildSiegeArea: 203,
 };
 
-export function getAllPlaces(): any[] {
-  const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
-  const enemies = getAllEnemies();
-  const enemyMap = new Map<string, any>();
-  enemies.forEach((e) => {
-    if (e.id) enemyMap.set(e.id, e);
-    if (e.name) enemyMap.set(e.name, e);
-  });
+export interface RecipeIngredientRef {
+  id: string;
+  name: string;
+  sprite: string;
+  qty: number;
+  hasPage: boolean;
+}
 
-  // Items & recipes for location item cards
+export interface RecipeEntryRef {
+  id: string;
+  name: string;
+  sprite: string;
+  hasPage: boolean;
+  ingredients: RecipeIngredientRef[];
+}
+
+export function getItemRecipeMaps() {
   const itemMap = getItemCatalogMap();
   const pageIds = new Set(getAllItems().map((i) => i.id));
-  const ownRecipeMap = new Map<string, Array<{ id: string; name: string; sprite: string; qty: number; hasPage: boolean }>>();
-  const usedInRecipesMap = new Map<string, Array<{
-    id: string;
-    name: string;
-    sprite: string;
-    hasPage: boolean;
-    ingredients: Array<{ id: string; name: string; sprite: string; qty: number; hasPage: boolean }>;
-  }>>();
+  const ownRecipeMap = new Map<string, RecipeIngredientRef[]>();
+  const usedInRecipesMap = new Map<string, RecipeEntryRef[]>();
 
   for (const r of recipesList as any[]) {
     if (!r?.output_item) continue;
     const outInfo = resolveDropInfo(r.output_item, itemMap);
-    const ingredients = (r.ingredients || []).map((ing: any) => {
+    const ingredients: RecipeIngredientRef[] = (r.ingredients || []).map((ing: any) => {
       const ingInfo = resolveDropInfo(ing.item, itemMap);
       return {
         id: ing.item,
@@ -447,7 +448,7 @@ export function getAllPlaces(): any[] {
     if (!ownRecipeMap.has(r.output_item)) {
       ownRecipeMap.set(r.output_item, ingredients);
     }
-    const recipeEntry = {
+    const recipeEntry: RecipeEntryRef = {
       id: r.output_item,
       name: outInfo.name,
       sprite: outInfo.sprite,
@@ -467,6 +468,21 @@ export function getAllPlaces(): any[] {
   for (const recList of usedInRecipesMap.values()) {
     recList.sort((a, b) => a.name.localeCompare(b.name));
   }
+
+  return { itemMap, pageIds, ownRecipeMap, usedInRecipesMap };
+}
+
+export function getAllPlaces(): any[] {
+  const placeModules = import.meta.glob('../data/places/**/*.json', { eager: true });
+  const enemies = getAllEnemies();
+  const enemyMap = new Map<string, any>();
+  enemies.forEach((e) => {
+    if (e.id) enemyMap.set(e.id, e);
+    if (e.name) enemyMap.set(e.name, e);
+  });
+
+  // Items & recipes for location item cards
+  const { itemMap, pageIds, ownRecipeMap, usedInRecipesMap } = getItemRecipeMaps();
 
   const buildLocationItemCard = (itemId: string) => {
     const info = resolveDropInfo(itemId, itemMap);
