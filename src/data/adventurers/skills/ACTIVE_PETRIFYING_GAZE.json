@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_PETRIFYING_GAZE",
+  "name_key": "active_petrifying_gaze_name",
+  "desc_key": "active_petrifying_gaze_description",
+  "kind": "active",
+  "name": "Petrifying Gaze",
+  "description": "Deals 200% magic damage to all enemies, inflicts ABLAZE and 2 stacks of HELLFIRE for 3 turns, inflicts POISON for 5 turns, and has a 20% chance to PETRIFY for 1 turn."
+}

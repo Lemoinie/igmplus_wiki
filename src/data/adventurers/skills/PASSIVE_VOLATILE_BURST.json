@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_VOLATILE_BURST",
+  "name_key": "passive_volatile_burst_name",
+  "desc_key": "passive_volatile_burst_description",
+  "kind": "passive",
+  "name": "Volatile Burst",
+  "description": "This unit has a 3× chance of being targeted by enemies. Explodes upon death, dealing 40% of maximum HP as magic damage and inflicting ABLAZE and 2 stacks of HELLFIRE for 3 turns to all enemies. Immune to ABLAZE and HELLFIRE."
+}

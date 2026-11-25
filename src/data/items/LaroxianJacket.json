@@ -1,0 +1,15 @@
+{
+  "id": "LaroxianJacket",
+  "name": "Laroxian Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 504,
+  "sprite": "laroxian_jacket",
+  "description": "Arcane-threaded Laroxian war-jacket tailored for raw martial output.",
+  "stats": {
+    "constitution": 52,
+    "intelligence": 25
+  },
+  "notes": ""
+}

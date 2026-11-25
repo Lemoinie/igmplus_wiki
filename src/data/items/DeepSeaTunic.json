@@ -1,0 +1,15 @@
+{
+  "id": "DeepSeaTunic",
+  "name": "Deep Sea Tunic",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 5505,
+  "sprite": "deep_sea_tunic",
+  "description": "Abyssal velvet woven into a combat tunic that wards off debilitating afflictions.",
+  "stats": {
+    "constitution": 28,
+    "intelligence": 14
+  },
+  "notes": "40% status immunity"
+}

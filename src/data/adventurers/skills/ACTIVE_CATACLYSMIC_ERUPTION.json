@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_CATACLYSMIC_ERUPTION",
+  "name_key": "active_cataclysmic_eruption_name",
+  "desc_key": "active_cataclysmic_eruption_description",
+  "kind": "active",
+  "name": "Cataclysmic Eruption",
+  "description": "Deals 180% magic damage to all enemies, inflicts 1 stack of HELLFIRE for 2 turns, and summons 2 Infernal Magma."
+}

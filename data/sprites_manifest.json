@@ -24,12 +24,60 @@
         "item:AbioticCore"
       ]
     },
+    "absolute_despair": {
+      "file": "absolute_despair.png",
+      "bytes": 1662,
+      "source": "app/src/main/res/drawable/absolute_despair.png",
+      "usages": [
+        "item:AbsoluteDespair"
+      ]
+    },
     "absolute_zero": {
       "file": "absolute_zero.png",
       "bytes": 681,
       "source": "app/src/main/res/drawable/absolute_zero.png",
       "usages": [
         "item:AbsoluteZero"
+      ]
+    },
+    "abyssal_amulet": {
+      "file": "abyssal_amulet.png",
+      "bytes": 1680,
+      "source": "app/src/main/res/drawable/abyssal_amulet.png",
+      "usages": [
+        "item:AbyssalAmulet"
+      ]
+    },
+    "abyssal_chitin": {
+      "file": "abyssal_chitin.png",
+      "bytes": 1287,
+      "source": "app/src/main/res/drawable/abyssal_chitin.png",
+      "usages": [
+        "item:AbyssalChitin"
+      ]
+    },
+    "abyssal_chitin_buckler": {
+      "file": "abyssal_chitin_buckler.png",
+      "bytes": 2427,
+      "source": "app/src/main/res/drawable/abyssal_chitin_buckler.png",
+      "usages": [
+        "item:AbyssalChitinBuckler"
+      ]
+    },
+    "abyssal_chitin_dagger": {
+      "file": "abyssal_chitin_dagger.png",
+      "bytes": 1368,
+      "source": "app/src/main/res/drawable/abyssal_chitin_dagger.png",
+      "usages": [
+        "item:AbyssalChitinDagger"
+      ]
+    },
+    "abyssal_chitin_jacket": {
+      "file": "abyssal_chitin_jacket.png",
+      "bytes": 2169,
+      "source": "app/src/main/res/drawable/abyssal_chitin_jacket.png",
+      "usages": [
+        "item:AbyssalChitinJacket"
       ]
     },
     "abyssal_compendium": {
@@ -72,6 +120,22 @@
         "item:AbyssalIngot"
       ]
     },
+    "abyssal_obelisk": {
+      "file": "abyssal_obelisk.png",
+      "bytes": 2451,
+      "source": "app/src/main/res/drawable/abyssal_obelisk.png",
+      "usages": [
+        "enemy:AbyssalObelisk"
+      ]
+    },
+    "abyssal_pearl": {
+      "file": "abyssal_pearl.png",
+      "bytes": 1767,
+      "source": "app/src/main/res/drawable/abyssal_pearl.png",
+      "usages": [
+        "item:AbyssalPearl"
+      ]
+    },
     "abyssal_scarlet_mantle": {
       "file": "abyssal_scarlet_mantle.png",
       "bytes": 825,
@@ -102,6 +166,14 @@
       "source": "app/src/main/res/drawable/aegis_mechanica.png",
       "usages": [
         "item:AegisMechanica"
+      ]
+    },
+    "aegis_of_the_challenger_deep": {
+      "file": "aegis_of_the_challenger_deep.png",
+      "bytes": 2375,
+      "source": "app/src/main/res/drawable/aegis_of_the_challenger_deep.png",
+      "usages": [
+        "item:AegisOfTheChallengerDeep"
       ]
     },
     "aether_ignis": {
@@ -150,6 +222,14 @@
       "source": "app/src/main/res/drawable/amulet_of_resurrection.png",
       "usages": [
         "item:AmuletOfResurrection"
+      ]
+    },
+    "amulet_of_shakire": {
+      "file": "amulet_of_shakire.png",
+      "bytes": 1446,
+      "source": "app/src/main/res/drawable/amulet_of_shakire.png",
+      "usages": [
+        "item:AmuletOfShaKire"
       ]
     },
     "amulet_of_the_swordsman": {
@@ -222,6 +302,14 @@
       "source": "app/src/main/res/drawable/ancient_membrane.png",
       "usages": [
         "item:AncientMembrane"
+      ]
+    },
+    "ancient_nautilus_seashell_shard": {
+      "file": "ancient_nautilus_seashell_shard.png",
+      "bytes": 1905,
+      "source": "app/src/main/res/drawable/ancient_nautilus_seashell_shard.png",
+      "usages": [
+        "item:AncientNautilusSeashellShard"
       ]
     },
     "ancient_robe": {
@@ -361,6 +449,14 @@
         "item:ArcaneDagger"
       ]
     },
+    "arch_oracle_of_the_deep": {
+      "file": "arch_oracle_of_the_deep.png",
+      "bytes": 3017,
+      "source": "app/src/main/res/drawable/arch_oracle_of_the_deep.png",
+      "usages": [
+        "enemy:ArchOracleOfTheDeep"
+      ]
+    },
     "archaic_amulet": {
       "file": "archaic_amulet.png",
       "bytes": 1034,
@@ -385,6 +481,14 @@
         "place:AncientGraveDigging:detail"
       ]
     },
+    "area_avernus": {
+      "file": "area_avernus.png",
+      "bytes": 133572,
+      "source": "app/src/main/res/drawable/area_avernus.png",
+      "usages": [
+        "place:Avernus:detail"
+      ]
+    },
     "area_barren_wastelands": {
       "file": "area_barren_wastelands.png",
       "bytes": 109331,
@@ -407,6 +511,22 @@
       "source": "app/src/main/res/drawable/area_celestial_mothership.png",
       "usages": [
         "place:CelestialMothership:detail"
+      ]
+    },
+    "area_corrupted_desert": {
+      "file": "area_corrupted_desert.png",
+      "bytes": 258606,
+      "source": "app/src/main/res/drawable/area_corrupted_desert.png",
+      "usages": [
+        "place:CorruptedDesert:detail"
+      ]
+    },
+    "area_corrupted_forest": {
+      "file": "area_corrupted_forest.png",
+      "bytes": 394407,
+      "source": "app/src/main/res/drawable/area_corrupted_forest.png",
+      "usages": [
+        "place:CorruptedForest:detail"
       ]
     },
     "area_divine_archeology": {
@@ -449,6 +569,14 @@
         "place:FrostbitePeaks:detail"
       ]
     },
+    "area_hadal_abyss": {
+      "file": "area_hadal_abyss.png",
+      "bytes": 261204,
+      "source": "app/src/main/res/drawable/area_hadal_abyss.png",
+      "usages": [
+        "place:TheHadalAbyss:detail"
+      ]
+    },
     "area_hidden_city_of_larox": {
       "file": "area_hidden_city_of_larox.png",
       "bytes": 104043,
@@ -481,6 +609,14 @@
         "place:LostLands:detail"
       ]
     },
+    "area_malebolge": {
+      "file": "area_malebolge.png",
+      "bytes": 88284,
+      "source": "app/src/main/res/drawable/area_malebolge.png",
+      "usages": [
+        "place:Malebolge:detail"
+      ]
+    },
     "area_obsidian_mines": {
       "file": "area_obsidian_mines.png",
       "bytes": 122675,
@@ -511,6 +647,14 @@
       "source": "app/src/main/res/drawable/area_sleeping_planet.png",
       "usages": [
         "place:SleepingPlanet:detail"
+      ]
+    },
+    "area_sunken_citadel": {
+      "file": "area_sunken_citadel.png",
+      "bytes": 142425,
+      "source": "app/src/main/res/drawable/area_sunken_citadel.png",
+      "usages": [
+        "place:TheSunkenCitadel:detail"
       ]
     },
     "area_the_cultist_rebels": {
@@ -615,6 +759,30 @@
       "source": "app/src/main/res/drawable/ascended_bow.png",
       "usages": [
         "item:AscendedBow"
+      ]
+    },
+    "ashen_scale": {
+      "file": "ashen_scale.png",
+      "bytes": 2073,
+      "source": "app/src/main/res/drawable/ashen_scale.png",
+      "usages": [
+        "item:AshenScale"
+      ]
+    },
+    "ashen_shield": {
+      "file": "ashen_shield.png",
+      "bytes": 1892,
+      "source": "app/src/main/res/drawable/ashen_shield.png",
+      "usages": [
+        "item:AshenShield"
+      ]
+    },
+    "ashen_visage": {
+      "file": "ashen_visage.png",
+      "bytes": 2019,
+      "source": "app/src/main/res/drawable/ashen_visage.png",
+      "usages": [
+        "item:AshenVisage"
       ]
     },
     "astral_goo": {
@@ -767,6 +935,14 @@
       "source": "app/src/main/res/drawable/berserkers_axe.png",
       "usages": [
         "item:BerserkersAxe"
+      ]
+    },
+    "bioluminescent_esca": {
+      "file": "bioluminescent_esca.png",
+      "bytes": 1182,
+      "source": "app/src/main/res/drawable/bioluminescent_esca.png",
+      "usages": [
+        "item:BioluminescentEsca"
       ]
     },
     "black_hide": {
@@ -963,12 +1139,28 @@
         "item:Bread"
       ]
     },
+    "breathtaking_jacket": {
+      "file": "breathtaking_jacket.png",
+      "bytes": 2007,
+      "source": "app/src/main/res/drawable/breathtaking_jacket.png",
+      "usages": [
+        "item:BreathtakingJacket"
+      ]
+    },
     "breathtaking_robe": {
       "file": "breathtaking_robe.png",
       "bytes": 756,
       "source": "app/src/main/res/drawable/breathtaking_robe.png",
       "usages": [
         "item:BreathtakingRobe"
+      ]
+    },
+    "brimstone_pendant": {
+      "file": "brimstone_pendant.png",
+      "bytes": 1362,
+      "source": "app/src/main/res/drawable/brimstone_pendant.png",
+      "usages": [
+        "item:BrimstonePendant"
       ]
     },
     "burning_censer": {
@@ -993,6 +1185,14 @@
       "source": "app/src/main/res/drawable/butter.png",
       "usages": [
         "item:Butter"
+      ]
+    },
+    "caldera_heart": {
+      "file": "caldera_heart.png",
+      "bytes": 2012,
+      "source": "app/src/main/res/drawable/caldera_heart.png",
+      "usages": [
+        "item:CalderaHeart"
       ]
     },
     "cane": {
@@ -1029,7 +1229,7 @@
     },
     "celestial_bow": {
       "file": "celestial_bow.png",
-      "bytes": 1476,
+      "bytes": 1377,
       "source": "app/src/main/res/drawable/celestial_bow.png",
       "usages": [
         "item:CelestialBow"
@@ -1173,10 +1373,18 @@
     },
     "chorus_the_drowned": {
       "file": "chorus_the_drowned.png",
-      "bytes": 8466,
+      "bytes": 3132,
       "source": "app/src/main/res/drawable/chorus_the_drowned.png",
       "usages": [
         "enemy:ChorusTheDrowned"
+      ]
+    },
+    "chrono_echo_elixir": {
+      "file": "chrono_echo_elixir.png",
+      "bytes": 1443,
+      "source": "app/src/main/res/drawable/chrono_echo_elixir.png",
+      "usages": [
+        "item:ChronoEchoElixir"
       ]
     },
     "cleansing_potion": {
@@ -1315,6 +1523,86 @@
         "item:CopperSword"
       ]
     },
+    "coral": {
+      "file": "coral.png",
+      "bytes": 1767,
+      "source": "app/src/main/res/drawable/coral.png",
+      "usages": [
+        "item:Coral"
+      ]
+    },
+    "coral_armor": {
+      "file": "coral_armor.png",
+      "bytes": 2439,
+      "source": "app/src/main/res/drawable/coral_armor.png",
+      "usages": [
+        "item:CoralArmor"
+      ]
+    },
+    "coral_axe": {
+      "file": "coral_axe.png",
+      "bytes": 1509,
+      "source": "app/src/main/res/drawable/coral_axe.png",
+      "usages": [
+        "item:CoralAxe"
+      ]
+    },
+    "coral_boots": {
+      "file": "coral_boots.png",
+      "bytes": 2148,
+      "source": "app/src/main/res/drawable/coral_boots.png",
+      "usages": [
+        "item:CoralBoots"
+      ]
+    },
+    "coral_bow": {
+      "file": "coral_bow.png",
+      "bytes": 1155,
+      "source": "app/src/main/res/drawable/coral_bow.png",
+      "usages": [
+        "item:CoralBow"
+      ]
+    },
+    "coral_chunk": {
+      "file": "coral_chunk.png",
+      "bytes": 2247,
+      "source": "app/src/main/res/drawable/coral_chunk.png",
+      "usages": [
+        "item:CoralChunk"
+      ]
+    },
+    "coral_gloves": {
+      "file": "coral_gloves.png",
+      "bytes": 2136,
+      "source": "app/src/main/res/drawable/coral_gloves.png",
+      "usages": [
+        "item:CoralGloves"
+      ]
+    },
+    "coral_helmet": {
+      "file": "coral_helmet.png",
+      "bytes": 2367,
+      "source": "app/src/main/res/drawable/coral_helmet.png",
+      "usages": [
+        "item:CoralHelmet"
+      ]
+    },
+    "coral_staff": {
+      "file": "coral_staff.png",
+      "bytes": 2919,
+      "source": "app/src/main/res/drawable/coral_staff.png",
+      "usages": [
+        "item:CoralStaff"
+      ]
+    },
+    "coralith_ore": {
+      "file": "coralith_ore.png",
+      "bytes": 2412,
+      "source": "app/src/main/res/drawable/coralith_ore.png",
+      "usages": [
+        "item:CoralithOre"
+      ]
+    },
     "corrupted_axe": {
       "file": "corrupted_axe.png",
       "bytes": 1189,
@@ -1395,6 +1683,22 @@
         "item:CrimsonLeech"
       ]
     },
+    "crimson_reef_goliath": {
+      "file": "crimson_reef_goliath.png",
+      "bytes": 3828,
+      "source": "app/src/main/res/drawable/crimson_reef_goliath.png",
+      "usages": [
+        "enemy:CrimsonReefGoliath"
+      ]
+    },
+    "crown_of_the_benthic_sovereign": {
+      "file": "crown_of_the_benthic_sovereign.png",
+      "bytes": 1590,
+      "source": "app/src/main/res/drawable/crown_of_the_benthic_sovereign.png",
+      "usages": [
+        "item:CrownOfTheBenthicSovereign"
+      ]
+    },
     "crusader_insigna": {
       "file": "crusader_insigna.png",
       "bytes": 430,
@@ -1441,6 +1745,14 @@
       "source": "app/src/main/res/drawable/cunning_downfall.png",
       "usages": [
         "item:CunningDownfall"
+      ]
+    },
+    "cursed_ancient_eye": {
+      "file": "cursed_ancient_eye.png",
+      "bytes": 1725,
+      "source": "app/src/main/res/drawable/cursed_ancient_eye.png",
+      "usages": [
+        "item:CursedAncientEye"
       ]
     },
     "cursed_bow": {
@@ -1523,12 +1835,28 @@
         "item:DeepSeaJacket"
       ]
     },
+    "deep_sea_mauler": {
+      "file": "deep_sea_mauler.png",
+      "bytes": 3324,
+      "source": "app/src/main/res/drawable/deep_sea_mauler.png",
+      "usages": [
+        "enemy:DeepSeaMauler"
+      ]
+    },
     "deep_sea_robe": {
       "file": "deep_sea_robe.png",
       "bytes": 813,
       "source": "app/src/main/res/drawable/deep_sea_robe.png",
       "usages": [
         "item:DeepSeaRobe"
+      ]
+    },
+    "deep_sea_tunic": {
+      "file": "deep_sea_tunic.png",
+      "bytes": 1890,
+      "source": "app/src/main/res/drawable/deep_sea_tunic.png",
+      "usages": [
+        "item:DeepSeaTunic"
       ]
     },
     "deep_sea_velvet": {
@@ -2051,6 +2379,22 @@
         "doctrine:DoctrineOfWar"
       ]
     },
+    "doljonijiarnimorinar": {
+      "file": "doljonijiarnimorinar.png",
+      "bytes": 1002,
+      "source": "app/src/main/res/drawable/doljonijiarnimorinar.png",
+      "usages": [
+        "item:Doljonijiarnimorinar"
+      ]
+    },
+    "dragonwing_shield": {
+      "file": "dragonwing_shield.png",
+      "bytes": 1044,
+      "source": "app/src/main/res/drawable/dragonwing_shield.png",
+      "usages": [
+        "item:DragonwingShield"
+      ]
+    },
     "dreadful_morningstar": {
       "file": "dreadful_morningstar.png",
       "bytes": 641,
@@ -2331,6 +2675,14 @@
         "item:ElectricCatalyst"
       ]
     },
+    "electric_violin": {
+      "file": "electric_violin.png",
+      "bytes": 1131,
+      "source": "app/src/main/res/drawable/electric_violin.png",
+      "usages": [
+        "item:ElectricViolin"
+      ]
+    },
     "elixir_of_affinity": {
       "file": "elixir_of_affinity.png",
       "bytes": 920,
@@ -2361,6 +2713,86 @@
       "source": "app/src/main/res/drawable/elysian_wood.png",
       "usages": [
         "item:ElysianWood"
+      ]
+    },
+    "emberite_boots": {
+      "file": "emberite_boots.png",
+      "bytes": 2012,
+      "source": "app/src/main/res/drawable/emberite_boots.png",
+      "usages": [
+        "item:EmberiteBoots"
+      ]
+    },
+    "emberite_bow": {
+      "file": "emberite_bow.png",
+      "bytes": 1326,
+      "source": "app/src/main/res/drawable/emberite_bow.png",
+      "usages": [
+        "item:EmberiteBow"
+      ]
+    },
+    "emberite_cleaver": {
+      "file": "emberite_cleaver.png",
+      "bytes": 1372,
+      "source": "app/src/main/res/drawable/emberite_cleaver.png",
+      "usages": [
+        "item:EmberiteCleaver"
+      ]
+    },
+    "emberite_dagger": {
+      "file": "emberite_dagger.png",
+      "bytes": 1428,
+      "source": "app/src/main/res/drawable/emberite_dagger.png",
+      "usages": [
+        "item:EmberiteDagger"
+      ]
+    },
+    "emberite_helmet": {
+      "file": "emberite_helmet.png",
+      "bytes": 1952,
+      "source": "app/src/main/res/drawable/emberite_helmet.png",
+      "usages": [
+        "item:EmberiteHelmet"
+      ]
+    },
+    "emberite_ingot": {
+      "file": "emberite_ingot.png",
+      "bytes": 1566,
+      "source": "app/src/main/res/drawable/emberite_ingot.png",
+      "usages": [
+        "item:EmberiteIngot"
+      ]
+    },
+    "emberite_plate": {
+      "file": "emberite_plate.png",
+      "bytes": 2180,
+      "source": "app/src/main/res/drawable/emberite_plate.png",
+      "usages": [
+        "item:EmberitePlate"
+      ]
+    },
+    "emberite_scraps": {
+      "file": "emberite_scraps.png",
+      "bytes": 1761,
+      "source": "app/src/main/res/drawable/emberite_scraps.png",
+      "usages": [
+        "item:EmberiteScraps"
+      ]
+    },
+    "emberite_staff": {
+      "file": "emberite_staff.png",
+      "bytes": 1035,
+      "source": "app/src/main/res/drawable/emberite_staff.png",
+      "usages": [
+        "item:EmberiteStaff"
+      ]
+    },
+    "emberite_sword": {
+      "file": "emberite_sword.png",
+      "bytes": 1284,
+      "source": "app/src/main/res/drawable/emberite_sword.png",
+      "usages": [
+        "item:EmberiteSword"
       ]
     },
     "emerald": {
@@ -2425,6 +2857,14 @@
       "source": "app/src/main/res/drawable/eternal_hunger.png",
       "usages": [
         "item:EternalHunger"
+      ]
+    },
+    "eternal_soulbloom": {
+      "file": "eternal_soulbloom.png",
+      "bytes": 1815,
+      "source": "app/src/main/res/drawable/eternal_soulbloom.png",
+      "usages": [
+        "item:EternalSoulbloom"
       ]
     },
     "evo20_vial": {
@@ -2508,6 +2948,22 @@
         "item:ExoticVelvet"
       ]
     },
+    "exotic_war_garb": {
+      "file": "exotic_war_garb.png",
+      "bytes": 1827,
+      "source": "app/src/main/res/drawable/exotic_war_garb.png",
+      "usages": [
+        "item:ExoticWarGarb"
+      ]
+    },
+    "eye_of_shakire": {
+      "file": "eye_of_shakire.png",
+      "bytes": 1020,
+      "source": "app/src/main/res/drawable/eye_of_shakire.png",
+      "usages": [
+        "item:EyeOfShaKire"
+      ]
+    },
     "eye_of_the_abyss": {
       "file": "eye_of_the_abyss.png",
       "bytes": 628,
@@ -2548,6 +3004,14 @@
         "item:Feather"
       ]
     },
+    "feather_harness": {
+      "file": "feather_harness.png",
+      "bytes": 1593,
+      "source": "app/src/main/res/drawable/feather_harness.png",
+      "usages": [
+        "item:FeatherHarness"
+      ]
+    },
     "feather_robe": {
       "file": "feather_robe.png",
       "bytes": 512,
@@ -2564,12 +3028,28 @@
         "status_effect:FEEBLE_TETHER"
       ]
     },
+    "feral_war_pelt": {
+      "file": "feral_war_pelt.png",
+      "bytes": 1899,
+      "source": "app/src/main/res/drawable/feral_war_pelt.png",
+      "usages": [
+        "item:FeralWarPelt"
+      ]
+    },
     "fire_catalyst": {
       "file": "fire_catalyst.png",
       "bytes": 819,
       "source": "app/src/main/res/drawable/fire_catalyst.png",
       "usages": [
         "item:FireCatalyst"
+      ]
+    },
+    "fire_hound_fang": {
+      "file": "fire_hound_fang.png",
+      "bytes": 1584,
+      "source": "app/src/main/res/drawable/fire_hound_fang.png",
+      "usages": [
+        "item:FireHoundFang"
       ]
     },
     "fireproof_oil": {
@@ -2634,6 +3114,14 @@
       "source": "app/src/main/res/drawable/fleetfoot_robe.png",
       "usages": [
         "item:FleetfootRobe"
+      ]
+    },
+    "fleetfoot_tunic": {
+      "file": "fleetfoot_tunic.png",
+      "bytes": 1866,
+      "source": "app/src/main/res/drawable/fleetfoot_tunic.png",
+      "usages": [
+        "item:FleetfootTunic"
       ]
     },
     "flute": {
@@ -2812,6 +3300,54 @@
         "item:FullmoonDagger"
       ]
     },
+    "gem_1": {
+      "file": "gem_1.png",
+      "bytes": 1120,
+      "source": "app/src/main/res/drawable/gem_1.png",
+      "usages": [
+        "item:GemCluster"
+      ]
+    },
+    "gem_2": {
+      "file": "gem_2.png",
+      "bytes": 1773,
+      "source": "app/src/main/res/drawable/gem_2.png",
+      "usages": [
+        "item:GemPile"
+      ]
+    },
+    "gem_3": {
+      "file": "gem_3.png",
+      "bytes": 2342,
+      "source": "app/src/main/res/drawable/gem_3.png",
+      "usages": [
+        "item:SmallGemPouch"
+      ]
+    },
+    "gem_4": {
+      "file": "gem_4.png",
+      "bytes": 2725,
+      "source": "app/src/main/res/drawable/gem_4.png",
+      "usages": [
+        "item:GemBag"
+      ]
+    },
+    "gem_5": {
+      "file": "gem_5.png",
+      "bytes": 2520,
+      "source": "app/src/main/res/drawable/gem_5.png",
+      "usages": [
+        "item:GemChest"
+      ]
+    },
+    "gem_6": {
+      "file": "gem_6.png",
+      "bytes": 3769,
+      "source": "app/src/main/res/drawable/gem_6.png",
+      "usages": [
+        "item:RoyalGemVault"
+      ]
+    },
     "gem_of_protection": {
       "file": "gem_of_protection.png",
       "bytes": 937,
@@ -2858,6 +3394,14 @@
       "source": "app/src/main/res/drawable/ghost_rabbit_cloak.png",
       "usages": [
         "item:GhostRabbitCloak"
+      ]
+    },
+    "ghost_rabbit_tunic": {
+      "file": "ghost_rabbit_tunic.png",
+      "bytes": 2019,
+      "source": "app/src/main/res/drawable/ghost_rabbit_tunic.png",
+      "usages": [
+        "item:GhostRabbitTunic"
       ]
     },
     "ghostwood_board": {
@@ -2938,6 +3482,14 @@
       "source": "app/src/main/res/drawable/glazed_donut.png",
       "usages": [
         "item:GlazedDonut"
+      ]
+    },
+    "gloom_angler_snapper": {
+      "file": "gloom_angler_snapper.png",
+      "bytes": 2778,
+      "source": "app/src/main/res/drawable/gloom_angler_snapper.png",
+      "usages": [
+        "enemy:GloomAnglerSnapper"
       ]
     },
     "gold_axe": {
@@ -3028,6 +3580,22 @@
         "item:Grains"
       ]
     },
+    "greater_geode": {
+      "file": "greater_geode.png",
+      "bytes": 2370,
+      "source": "app/src/main/res/drawable/greater_geode.png",
+      "usages": [
+        "item:GreaterGeode"
+      ]
+    },
+    "greater_magma_core": {
+      "file": "greater_magma_core.png",
+      "bytes": 2220,
+      "source": "app/src/main/res/drawable/greater_magma_core.png",
+      "usages": [
+        "item:GreaterMagmaCore"
+      ]
+    },
     "green_slime": {
       "file": "green_slime.png",
       "bytes": 357,
@@ -3050,6 +3618,14 @@
       "source": "app/src/main/res/drawable/heart_of_darkness.png",
       "usages": [
         "item:HeartOfDarkness"
+      ]
+    },
+    "heart_of_leviathan": {
+      "file": "heart_of_leviathan.png",
+      "bytes": 1914,
+      "source": "app/src/main/res/drawable/heart_of_leviathan.png",
+      "usages": [
+        "item:HeartOfTheLeviathan"
       ]
     },
     "heaven_and_hell": {
@@ -3132,6 +3708,14 @@
         "status_effect:BLEED"
       ]
     },
+    "icon_effect_blind": {
+      "file": "icon_effect_blind.png",
+      "bytes": 2187,
+      "source": "app/src/main/res/drawable/icon_effect_blind.png",
+      "usages": [
+        "status_effect:BLIND"
+      ]
+    },
     "icon_effect_bloodflame": {
       "file": "icon_effect_bloodflame.png",
       "bytes": 656,
@@ -3148,12 +3732,21 @@
         "status_effect:BRITTLE_TOXIN"
       ]
     },
+    "icon_effect_confuse": {
+      "file": "icon_effect_confuse.png",
+      "bytes": 1521,
+      "source": "app/src/main/res/drawable/icon_effect_confuse.png",
+      "usages": [
+        "status_effect:CONFUSE"
+      ]
+    },
     "icon_effect_corrosion": {
       "file": "icon_effect_corrosion.png",
       "bytes": 1533,
       "source": "app/src/main/res/drawable/icon_effect_corrosion.png",
       "usages": [
-        "status_effect:CORROSION"
+        "status_effect:CORROSION",
+        "status_effect:ARMOR_SHRED"
       ]
     },
     "icon_effect_curse": {
@@ -3239,7 +3832,17 @@
       "bytes": 371,
       "source": "app/src/main/res/drawable/icon_effect_frenzy.png",
       "usages": [
-        "status_effect:FRENZY"
+        "status_effect:FRENZY",
+        "status_effect:PACK_HOWL",
+        "status_effect:ATKSPD_BUFF"
+      ]
+    },
+    "icon_effect_hellfire": {
+      "file": "icon_effect_hellfire.png",
+      "bytes": 1990,
+      "source": "app/src/main/res/drawable/icon_effect_hellfire.png",
+      "usages": [
+        "status_effect:HELLFIRE"
       ]
     },
     "icon_effect_inspire": {
@@ -3344,7 +3947,8 @@
       "bytes": 352,
       "source": "app/src/main/res/drawable/icon_effect_taunt.png",
       "usages": [
-        "status_effect:TAUNT"
+        "status_effect:TAUNT",
+        "status_effect:THREAT_BUFF"
       ]
     },
     "icon_effect_terrify": {
@@ -3362,6 +3966,30 @@
       "source": "app/src/main/res/drawable/icon_effect_thorns.png",
       "usages": [
         "status_effect:THORNS"
+      ]
+    },
+    "icon_effect_venom": {
+      "file": "icon_effect_venom.png",
+      "bytes": 984,
+      "source": "app/src/main/res/drawable/icon_effect_venom.png",
+      "usages": [
+        "status_effect:VENOM"
+      ]
+    },
+    "icon_of_torment": {
+      "file": "icon_of_torment.png",
+      "bytes": 2283,
+      "source": "app/src/main/res/drawable/icon_of_torment.png",
+      "usages": [
+        "item:IconOfTorment"
+      ]
+    },
+    "ignis_jacket": {
+      "file": "ignis_jacket.png",
+      "bytes": 1818,
+      "source": "app/src/main/res/drawable/ignis_jacket.png",
+      "usages": [
+        "item:IgnisJacket"
       ]
     },
     "ignition_orb": {
@@ -3418,6 +4046,46 @@
       "source": "app/src/main/res/drawable/infernal_chakram.png",
       "usages": [
         "item:InfernalChakram"
+      ]
+    },
+    "infernal_fabric": {
+      "file": "infernal_fabric.png",
+      "bytes": 1626,
+      "source": "app/src/main/res/drawable/infernal_fabric.png",
+      "usages": [
+        "item:InfernalFabric"
+      ]
+    },
+    "infernal_gloves": {
+      "file": "infernal_gloves.png",
+      "bytes": 1853,
+      "source": "app/src/main/res/drawable/infernal_gloves.png",
+      "usages": [
+        "item:InfernalGloves"
+      ]
+    },
+    "infernal_hide": {
+      "file": "infernal_hide.png",
+      "bytes": 1128,
+      "source": "app/src/main/res/drawable/infernal_hide.png",
+      "usages": [
+        "item:InfernalHide"
+      ]
+    },
+    "infernal_jacket": {
+      "file": "infernal_jacket.png",
+      "bytes": 2073,
+      "source": "app/src/main/res/drawable/infernal_jacket.png",
+      "usages": [
+        "item:InfernalJacket"
+      ]
+    },
+    "infernal_leather": {
+      "file": "infernal_leather.png",
+      "bytes": 1455,
+      "source": "app/src/main/res/drawable/infernal_leather.png",
+      "usages": [
+        "item:InfernalLeather"
       ]
     },
     "infernal_long_axe": {
@@ -3532,6 +4200,14 @@
         "item:IvoryJacket"
       ]
     },
+    "jacket_of_the_archmage": {
+      "file": "jacket_of_the_archmage.png",
+      "bytes": 1950,
+      "source": "app/src/main/res/drawable/jacket_of_the_archmage.png",
+      "usages": [
+        "item:JacketOfTheArchmage"
+      ]
+    },
     "jeweled_crown": {
       "file": "jeweled_crown.png",
       "bytes": 1093,
@@ -3570,6 +4246,14 @@
       "source": "app/src/main/res/drawable/kaunian_fabric.png",
       "usages": [
         "item:KaunianFabric"
+      ]
+    },
+    "kaunian_jacket": {
+      "file": "kaunian_jacket.png",
+      "bytes": 1926,
+      "source": "app/src/main/res/drawable/kaunian_jacket.png",
+      "usages": [
+        "item:KaunianJacket"
       ]
     },
     "kaunian_robe": {
@@ -3620,6 +4304,14 @@
         "item:LaroxianGloves"
       ]
     },
+    "laroxian_jacket": {
+      "file": "laroxian_jacket.png",
+      "bytes": 2145,
+      "source": "app/src/main/res/drawable/laroxian_jacket.png",
+      "usages": [
+        "item:LaroxianJacket"
+      ]
+    },
     "laroxian_robe": {
       "file": "laroxian_robe.png",
       "bytes": 701,
@@ -3668,6 +4360,46 @@
         "item:Leek"
       ]
     },
+    "lesser_geode": {
+      "file": "lesser_geode.png",
+      "bytes": 936,
+      "source": "app/src/main/res/drawable/lesser_geode.png",
+      "usages": [
+        "item:LesserGeode"
+      ]
+    },
+    "lesser_magma_core": {
+      "file": "lesser_magma_core.png",
+      "bytes": 1897,
+      "source": "app/src/main/res/drawable/lesser_magma_core.png",
+      "usages": [
+        "item:LesserMagmaCore"
+      ]
+    },
+    "leviathan": {
+      "file": "leviathan.png",
+      "bytes": 3504,
+      "source": "app/src/main/res/drawable/leviathan.png",
+      "usages": [
+        "enemy:Leviathan"
+      ]
+    },
+    "leviathan_hatchling": {
+      "file": "leviathan_hatchling.png",
+      "bytes": 3108,
+      "source": "app/src/main/res/drawable/leviathan_hatchling.png",
+      "usages": [
+        "enemy:LeviathanHatchling"
+      ]
+    },
+    "leviathan_scale": {
+      "file": "leviathan_scale.png",
+      "bytes": 2115,
+      "source": "app/src/main/res/drawable/leviathan_scale.png",
+      "usages": [
+        "item:LeviathanScale"
+      ]
+    },
     "living_sap": {
       "file": "living_sap.png",
       "bytes": 962,
@@ -3706,6 +4438,22 @@
       "source": "app/src/main/res/drawable/long_serpent_fang.png",
       "usages": [
         "item:LongSerpentFang"
+      ]
+    },
+    "magma_bloom": {
+      "file": "magma_bloom.png",
+      "bytes": 2123,
+      "source": "app/src/main/res/drawable/magma_bloom.png",
+      "usages": [
+        "item:MagmaBloom"
+      ]
+    },
+    "magma_bloom_essence": {
+      "file": "magma_bloom_essence.png",
+      "bytes": 1353,
+      "source": "app/src/main/res/drawable/magma_bloom_essence.png",
+      "usages": [
+        "item:MagmaBloomEssence"
       ]
     },
     "magma_shark": {
@@ -3893,6 +4641,14 @@
         "item:MonkeyHideJacket"
       ]
     },
+    "moth_jacket": {
+      "file": "moth_jacket.png",
+      "bytes": 1929,
+      "source": "app/src/main/res/drawable/moth_jacket.png",
+      "usages": [
+        "item:MothJacket"
+      ]
+    },
     "moth_robe": {
       "file": "moth_robe.png",
       "bytes": 722,
@@ -4061,6 +4817,14 @@
         "item:ObsidianHelm"
       ]
     },
+    "obsidian_ingot": {
+      "file": "obsidian_ingot.png",
+      "bytes": 1287,
+      "source": "app/src/main/res/drawable/obsidian_ingot.png",
+      "usages": [
+        "item:ObsidianIngot"
+      ]
+    },
     "obsidian_scepter": {
       "file": "obsidian_scepter.png",
       "bytes": 258,
@@ -4091,6 +4855,14 @@
       "source": "app/src/main/res/drawable/omni_sever.png",
       "usages": [
         "item:OmniSever"
+      ]
+    },
+    "oracle_gem": {
+      "file": "oracle_gem.png",
+      "bytes": 1638,
+      "source": "app/src/main/res/drawable/oracle_gem.png",
+      "usages": [
+        "item:OracleGem"
       ]
     },
     "orb_of_ectoplasm": {
@@ -4518,6 +5290,30 @@
         "item:PrismaticPendant"
       ]
     },
+    "prototype_bow": {
+      "file": "prototype_bow.png",
+      "bytes": 414,
+      "source": "app/src/main/res/drawable/prototype_bow.png",
+      "usages": [
+        "item:PrototypeBow"
+      ]
+    },
+    "prototype_dagger": {
+      "file": "prototype_dagger.png",
+      "bytes": 420,
+      "source": "app/src/main/res/drawable/prototype_dagger.png",
+      "usages": [
+        "item:PrototypeDagger"
+      ]
+    },
+    "prototype_sword": {
+      "file": "prototype_sword.png",
+      "bytes": 372,
+      "source": "app/src/main/res/drawable/prototype_sword.png",
+      "usages": [
+        "item:PrototypeSword"
+      ]
+    },
     "pterodactyl_claw": {
       "file": "pterodactyl_claw.png",
       "bytes": 873,
@@ -4532,6 +5328,14 @@
       "source": "app/src/main/res/drawable/pumpkin.png",
       "usages": [
         "item:Pumpkin"
+      ]
+    },
+    "pyromancer_vestments": {
+      "file": "pyromancer_vestments.png",
+      "bytes": 2038,
+      "source": "app/src/main/res/drawable/pyromancer_vestments.png",
+      "usages": [
+        "item:PyromancerVestments"
       ]
     },
     "quartz": {
@@ -4686,6 +5490,14 @@
         "item:RobeOfTheLich"
       ]
     },
+    "rough_brawler_wraps": {
+      "file": "rough_brawler_wraps.png",
+      "bytes": 2181,
+      "source": "app/src/main/res/drawable/rough_brawler_wraps.png",
+      "usages": [
+        "item:RoughBrawlerWraps"
+      ]
+    },
     "ruby": {
       "file": "ruby.png",
       "bytes": 389,
@@ -4756,6 +5568,14 @@
       "source": "app/src/main/res/drawable/sage_jacket.png",
       "usages": [
         "item:SageJacket"
+      ]
+    },
+    "sage_tunic": {
+      "file": "sage_tunic.png",
+      "bytes": 1995,
+      "source": "app/src/main/res/drawable/sage_tunic.png",
+      "usages": [
+        "item:SageTunic"
       ]
     },
     "salad": {
@@ -4838,6 +5658,14 @@
         "enemy:ArchmagusValthex"
       ]
     },
+    "scarlet_jacket": {
+      "file": "scarlet_jacket.png",
+      "bytes": 2133,
+      "source": "app/src/main/res/drawable/scarlet_jacket.png",
+      "usages": [
+        "item:ScarletJacket"
+      ]
+    },
     "scarlet_mage": {
       "file": "scarlet_mage.png",
       "bytes": 1940,
@@ -4872,7 +5700,7 @@
     },
     "scarlet_sigil": {
       "file": "scarlet_sigil.png",
-      "bytes": 774,
+      "bytes": 1791,
       "source": "app/src/main/res/drawable/scarlet_sigil.png",
       "usages": [
         "item:ScarletSigil"
@@ -4892,6 +5720,14 @@
       "source": "app/src/main/res/drawable/scarlet_veil.png",
       "usages": [
         "item:ScarletVeil"
+      ]
+    },
+    "scepter_of_cursed_souls": {
+      "file": "scepter_of_cursed_souls.png",
+      "bytes": 1896,
+      "source": "app/src/main/res/drawable/scepter_of_cursed_souls.png",
+      "usages": [
+        "item:ScepterOfCursedSouls"
       ]
     },
     "scimitar": {
@@ -5046,6 +5882,38 @@
         "item:ShahuriBowFrame"
       ]
     },
+    "shark_dagger": {
+      "file": "shark_dagger.png",
+      "bytes": 1284,
+      "source": "app/src/main/res/drawable/shark_dagger.png",
+      "usages": [
+        "item:SharkDagger"
+      ]
+    },
+    "shark_fin": {
+      "file": "shark_fin.png",
+      "bytes": 1503,
+      "source": "app/src/main/res/drawable/shark_fin.png",
+      "usages": [
+        "item:SharkFin"
+      ]
+    },
+    "shark_sword": {
+      "file": "shark_sword.png",
+      "bytes": 1008,
+      "source": "app/src/main/res/drawable/shark_sword.png",
+      "usages": [
+        "item:SharkSword"
+      ]
+    },
+    "shark_teeth": {
+      "file": "shark_teeth.png",
+      "bytes": 1617,
+      "source": "app/src/main/res/drawable/shark_teeth.png",
+      "usages": [
+        "item:SharkTeeth"
+      ]
+    },
     "sharp_rib": {
       "file": "sharp_rib.png",
       "bytes": 550,
@@ -5134,6 +6002,14 @@
         "item:SilkThread"
       ]
     },
+    "silk_war_tunic": {
+      "file": "silk_war_tunic.png",
+      "bytes": 1758,
+      "source": "app/src/main/res/drawable/silk_war_tunic.png",
+      "usages": [
+        "item:SilkWarTunic"
+      ]
+    },
     "silver_ring": {
       "file": "silver_ring.png",
       "bytes": 410,
@@ -5148,6 +6024,30 @@
       "source": "app/src/main/res/drawable/sinister_stabilizer.png",
       "usages": [
         "item:SinisterStabilizer"
+      ]
+    },
+    "siren_coral_combat_robe": {
+      "file": "siren_coral_combat_robe.png",
+      "bytes": 1791,
+      "source": "app/src/main/res/drawable/siren_coral_combat_robe.png",
+      "usages": [
+        "item:SirenCoralCombatRobe"
+      ]
+    },
+    "siren_robe": {
+      "file": "siren_robe.png",
+      "bytes": 1800,
+      "source": "app/src/main/res/drawable/siren_robe.png",
+      "usages": [
+        "item:SirenRobe"
+      ]
+    },
+    "siren_silk": {
+      "file": "siren_silk.png",
+      "bytes": 1779,
+      "source": "app/src/main/res/drawable/siren_silk.png",
+      "usages": [
+        "item:SirenSilk"
       ]
     },
     "skeleton_key": {
@@ -5183,6 +6083,14 @@
         "item:SlimeArmor"
       ]
     },
+    "slime_combat_jacket": {
+      "file": "slime_combat_jacket.png",
+      "bytes": 1779,
+      "source": "app/src/main/res/drawable/slime_combat_jacket.png",
+      "usages": [
+        "item:SlimeCombatJacket"
+      ]
+    },
     "slime_jacket": {
       "file": "slime_jacket.png",
       "bytes": 670,
@@ -5205,6 +6113,14 @@
       "source": "app/src/main/res/drawable/slime_robe.png",
       "usages": [
         "item:SlimeRobe"
+      ]
+    },
+    "solteris": {
+      "file": "solteris.png",
+      "bytes": 596,
+      "source": "app/src/main/res/drawable/solteris.png",
+      "usages": [
+        "item:SolterisSwordOfTheSun"
       ]
     },
     "soul_shard": {
@@ -5237,6 +6153,14 @@
       "source": "app/src/main/res/drawable/spectral_robe.png",
       "usages": [
         "item:SpectralRobe"
+      ]
+    },
+    "spectral_war_shroud": {
+      "file": "spectral_war_shroud.png",
+      "bytes": 1992,
+      "source": "app/src/main/res/drawable/spectral_war_shroud.png",
+      "usages": [
+        "item:SpectralWarShroud"
       ]
     },
     "spell_compendium": {
@@ -5351,6 +6275,22 @@
         "item:SpikedTortoiseShield"
       ]
     },
+    "spiral_hat": {
+      "file": "spiral_hat.png",
+      "bytes": 1890,
+      "source": "app/src/main/res/drawable/spiral_hat.png",
+      "usages": [
+        "item:SpiralHat"
+      ]
+    },
+    "spiral_seashell": {
+      "file": "spiral_seashell.png",
+      "bytes": 2013,
+      "source": "app/src/main/res/drawable/spiral_seashell.png",
+      "usages": [
+        "item:SpiralSeashell"
+      ]
+    },
     "spirit_candle": {
       "file": "spirit_candle.png",
       "bytes": 751,
@@ -5389,6 +6329,14 @@
       "source": "app/src/main/res/drawable/staff_of_the_archmage.png",
       "usages": [
         "item:StaffOfTheArchmage"
+      ]
+    },
+    "staff_of_tormented_souls": {
+      "file": "staff_of_tormented_souls.png",
+      "bytes": 1411,
+      "source": "app/src/main/res/drawable/staff_of_tormented_souls.png",
+      "usages": [
+        "item:StaffOfTormentedSouls"
       ]
     },
     "star_fragment": {
@@ -5463,6 +6411,14 @@
         "item:Stick"
       ]
     },
+    "stonefire_minotaur_horn": {
+      "file": "stonefire_minotaur_horn.png",
+      "bytes": 1281,
+      "source": "app/src/main/res/drawable/stonefire_minotaur_horn.png",
+      "usages": [
+        "item:StonefireMinotaurHorn"
+      ]
+    },
     "strawberry": {
       "file": "strawberry.png",
       "bytes": 426,
@@ -5487,12 +6443,36 @@
         "item:StrawberrySmoothie"
       ]
     },
+    "sulfur": {
+      "file": "sulfur.png",
+      "bytes": 2286,
+      "source": "app/src/main/res/drawable/sulfur.png",
+      "usages": [
+        "item:Sulfur"
+      ]
+    },
+    "sulfur_powder": {
+      "file": "sulfur_powder.png",
+      "bytes": 1470,
+      "source": "app/src/main/res/drawable/sulfur_powder.png",
+      "usages": [
+        "item:SulfurPowder"
+      ]
+    },
     "summary_ancient_grave_digging": {
       "file": "summary_ancient_grave_digging.png",
       "bytes": 36247,
       "source": "app/src/main/res/drawable/summary_ancient_grave_digging.png",
       "usages": [
         "place:AncientGraveDigging:summary"
+      ]
+    },
+    "summary_avernus": {
+      "file": "summary_avernus.png",
+      "bytes": 26973,
+      "source": "app/src/main/res/drawable/summary_avernus.png",
+      "usages": [
+        "place:Avernus:summary"
       ]
     },
     "summary_barren_wastelands": {
@@ -5517,6 +6497,22 @@
       "source": "app/src/main/res/drawable/summary_celestial_mothership.png",
       "usages": [
         "place:CelestialMothership:summary"
+      ]
+    },
+    "summary_corrupted_desert": {
+      "file": "summary_corrupted_desert.png",
+      "bytes": 61032,
+      "source": "app/src/main/res/drawable/summary_corrupted_desert.png",
+      "usages": [
+        "place:CorruptedDesert:summary"
+      ]
+    },
+    "summary_corrupted_forest": {
+      "file": "summary_corrupted_forest.png",
+      "bytes": 86787,
+      "source": "app/src/main/res/drawable/summary_corrupted_forest.png",
+      "usages": [
+        "place:CorruptedForest:summary"
       ]
     },
     "summary_divine_archeology": {
@@ -5559,6 +6555,14 @@
         "place:FrostbitePeaks:summary"
       ]
     },
+    "summary_hadal_abyss": {
+      "file": "summary_hadal_abyss.png",
+      "bytes": 70539,
+      "source": "app/src/main/res/drawable/summary_hadal_abyss.png",
+      "usages": [
+        "place:TheHadalAbyss:summary"
+      ]
+    },
     "summary_hidden_city_of_larox": {
       "file": "summary_hidden_city_of_larox.png",
       "bytes": 25624,
@@ -5591,6 +6595,14 @@
         "place:LostLands:summary"
       ]
     },
+    "summary_malebolge": {
+      "file": "summary_malebolge.png",
+      "bytes": 26526,
+      "source": "app/src/main/res/drawable/summary_malebolge.png",
+      "usages": [
+        "place:Malebolge:summary"
+      ]
+    },
     "summary_obsidian_mines": {
       "file": "summary_obsidian_mines.png",
       "bytes": 39197,
@@ -5621,6 +6633,14 @@
       "source": "app/src/main/res/drawable/summary_sleeping_planet.png",
       "usages": [
         "place:SleepingPlanet:summary"
+      ]
+    },
+    "summary_sunken_citadel": {
+      "file": "summary_sunken_citadel.png",
+      "bytes": 27969,
+      "source": "app/src/main/res/drawable/summary_sunken_citadel.png",
+      "usages": [
+        "place:TheSunkenCitadel:summary"
       ]
     },
     "summary_the_cultist_rebels": {
@@ -5727,6 +6747,14 @@
         "item:SunfireEssence"
       ]
     },
+    "sunken_doubloon": {
+      "file": "sunken_doubloon.png",
+      "bytes": 1800,
+      "source": "app/src/main/res/drawable/sunken_doubloon.png",
+      "usages": [
+        "item:SunkenDoubloon"
+      ]
+    },
     "swarmkeeper_armor": {
       "file": "swarmkeeper_armor.png",
       "bytes": 1933,
@@ -5815,6 +6843,14 @@
         "item:ThaumaturgicBlood"
       ]
     },
+    "the_black_widow": {
+      "file": "the_black_widow.png",
+      "bytes": 729,
+      "source": "app/src/main/res/drawable/the_black_widow.png",
+      "usages": [
+        "item:TheBlackWidow"
+      ]
+    },
     "thick_fur": {
       "file": "thick_fur.png",
       "bytes": 4389,
@@ -5823,12 +6859,36 @@
         "item:ThickFur"
       ]
     },
+    "tidal_lantern": {
+      "file": "tidal_lantern.png",
+      "bytes": 1971,
+      "source": "app/src/main/res/drawable/tidal_lantern.png",
+      "usages": [
+        "item:TidalLantern"
+      ]
+    },
+    "tide_cursed_oracle": {
+      "file": "tide_cursed_oracle.png",
+      "bytes": 3495,
+      "source": "app/src/main/res/drawable/tide_cursed_oracle.png",
+      "usages": [
+        "enemy:TideCursedOracle"
+      ]
+    },
     "tiger_jaws": {
       "file": "tiger_jaws.png",
       "bytes": 3885,
       "source": "app/src/main/res/drawable/tiger_jaws.png",
       "usages": [
         "item:TigerJaws"
+      ]
+    },
+    "tiger_shark": {
+      "file": "tiger_shark.png",
+      "bytes": 2751,
+      "source": "app/src/main/res/drawable/tiger_shark.png",
+      "usages": [
+        "enemy:TigerShark"
       ]
     },
     "tiramisu": {
@@ -5853,6 +6913,14 @@
       "source": "app/src/main/res/drawable/tomato.png",
       "usages": [
         "item:Tomato"
+      ]
+    },
+    "tormented_essence": {
+      "file": "tormented_essence.png",
+      "bytes": 2247,
+      "source": "app/src/main/res/drawable/tormented_essence.png",
+      "usages": [
+        "item:TormentedEssence"
       ]
     },
     "tortoise_armor": {
@@ -5893,6 +6961,46 @@
       "source": "app/src/main/res/drawable/training_bow.png",
       "usages": [
         "item:TrainingBow"
+      ]
+    },
+    "trench_behemoth_prime": {
+      "file": "trench_behemoth_prime.png",
+      "bytes": 3336,
+      "source": "app/src/main/res/drawable/trench_behemoth_prime.png",
+      "usages": [
+        "enemy:TrenchBehemothPrime"
+      ]
+    },
+    "trench_gods_pearl": {
+      "file": "trench_gods_pearl.png",
+      "bytes": 1758,
+      "source": "app/src/main/res/drawable/trench_gods_pearl.png",
+      "usages": [
+        "item:TrenchGodsPearl"
+      ]
+    },
+    "trench_stiletto": {
+      "file": "trench_stiletto.png",
+      "bytes": 1134,
+      "source": "app/src/main/res/drawable/trench_stiletto.png",
+      "usages": [
+        "item:TrenchStiletto"
+      ]
+    },
+    "trench_wyvern": {
+      "file": "trench_wyvern.png",
+      "bytes": 3444,
+      "source": "app/src/main/res/drawable/trench_wyvern.png",
+      "usages": [
+        "enemy:TrenchWyvern"
+      ]
+    },
+    "trench_wyvern_fin": {
+      "file": "trench_wyvern_fin.png",
+      "bytes": 2301,
+      "source": "app/src/main/res/drawable/trench_wyvern_fin.png",
+      "usages": [
+        "item:TrenchWyvernFin"
       ]
     },
     "troll_hide": {
@@ -6200,6 +7308,14 @@
         "enemy:ArchmageOfLarox"
       ]
     },
+    "unit_ash_drake": {
+      "file": "unit_ash_drake.png",
+      "bytes": 2622,
+      "source": "app/src/main/res/drawable/unit_ash_drake.png",
+      "usages": [
+        "enemy:AshDrake"
+      ]
+    },
     "unit_assassin": {
       "file": "unit_assassin.png",
       "bytes": 754,
@@ -6240,6 +7356,14 @@
         "unit:Bandit"
       ]
     },
+    "unit_banished_soul": {
+      "file": "unit_banished_soul.png",
+      "bytes": 3201,
+      "source": "app/src/main/res/drawable/unit_banished_soul.png",
+      "usages": [
+        "enemy:BanishedSoul"
+      ]
+    },
     "unit_banshee": {
       "file": "unit_banshee.png",
       "bytes": 826,
@@ -6262,6 +7386,14 @@
       "source": "app/src/main/res/drawable/unit_bard.png",
       "usages": [
         "unit:Bard"
+      ]
+    },
+    "unit_basalt_colossus": {
+      "file": "unit_basalt_colossus.png",
+      "bytes": 3579,
+      "source": "app/src/main/res/drawable/unit_basalt_colossus.png",
+      "usages": [
+        "enemy:BasaltColossus"
       ]
     },
     "unit_bear_tamer": {
@@ -6401,6 +7533,14 @@
         "unit:Brigand"
       ]
     },
+    "unit_brimstone_imp": {
+      "file": "unit_brimstone_imp.png",
+      "bytes": 2929,
+      "source": "app/src/main/res/drawable/unit_brimstone_imp.png",
+      "usages": [
+        "enemy:BrimstoneImp"
+      ]
+    },
     "unit_cat_tamer": {
       "file": "unit_cat_tamer.png",
       "bytes": 2860,
@@ -6487,6 +7627,94 @@
       "source": "app/src/main/res/drawable/unit_corrosive_wraith.png",
       "usages": [
         "unit:CorrosiveWraith"
+      ]
+    },
+    "unit_corrupted_boar": {
+      "file": "unit_corrupted_boar.png",
+      "bytes": 2781,
+      "source": "app/src/main/res/drawable/unit_corrupted_boar.png",
+      "usages": [
+        "enemy:CorruptedBoar"
+      ]
+    },
+    "unit_corrupted_centaur": {
+      "file": "unit_corrupted_centaur.png",
+      "bytes": 2649,
+      "source": "app/src/main/res/drawable/unit_corrupted_centaur.png",
+      "usages": [
+        "enemy:CorruptedCentaur"
+      ]
+    },
+    "unit_corrupted_ent": {
+      "file": "unit_corrupted_ent.png",
+      "bytes": 3333,
+      "source": "app/src/main/res/drawable/unit_corrupted_ent.png",
+      "usages": [
+        "enemy:CorruptedEnt"
+      ]
+    },
+    "unit_corrupted_sha": {
+      "file": "unit_corrupted_sha.png",
+      "bytes": 1086,
+      "source": "app/src/main/res/drawable/unit_corrupted_sha.png",
+      "usages": [
+        "enemy:CorruptedSha"
+      ]
+    },
+    "unit_corrupted_shahuri_archer": {
+      "file": "unit_corrupted_shahuri_archer.png",
+      "bytes": 2487,
+      "source": "app/src/main/res/drawable/unit_corrupted_shahuri_archer.png",
+      "usages": [
+        "enemy:CorruptedShahuriArcher"
+      ]
+    },
+    "unit_corrupted_shahuri_mage": {
+      "file": "unit_corrupted_shahuri_mage.png",
+      "bytes": 2706,
+      "source": "app/src/main/res/drawable/unit_corrupted_shahuri_mage.png",
+      "usages": [
+        "enemy:CorruptedShahuriMage"
+      ]
+    },
+    "unit_corrupted_shahuri_warrior": {
+      "file": "unit_corrupted_shahuri_warrior.png",
+      "bytes": 2697,
+      "source": "app/src/main/res/drawable/unit_corrupted_shahuri_warrior.png",
+      "usages": [
+        "enemy:CorruptedShahuriWarrior"
+      ]
+    },
+    "unit_corrupted_shakire": {
+      "file": "unit_corrupted_shakire.png",
+      "bytes": 2982,
+      "source": "app/src/main/res/drawable/unit_corrupted_shakire.png",
+      "usages": [
+        "enemy:CorruptedShaKire"
+      ]
+    },
+    "unit_corrupted_treant": {
+      "file": "unit_corrupted_treant.png",
+      "bytes": 2355,
+      "source": "app/src/main/res/drawable/unit_corrupted_treant.png",
+      "usages": [
+        "enemy:CorruptedTreant"
+      ]
+    },
+    "unit_corrupted_vulture": {
+      "file": "unit_corrupted_vulture.png",
+      "bytes": 2172,
+      "source": "app/src/main/res/drawable/unit_corrupted_vulture.png",
+      "usages": [
+        "enemy:CorruptedVulture"
+      ]
+    },
+    "unit_corrupted_wolf": {
+      "file": "unit_corrupted_wolf.png",
+      "bytes": 2457,
+      "source": "app/src/main/res/drawable/unit_corrupted_wolf.png",
+      "usages": [
+        "enemy:CorruptedWolf"
       ]
     },
     "unit_crimson_warlord": {
@@ -6721,6 +7949,14 @@
         "unit:ElementalAlchemist"
       ]
     },
+    "unit_ember_basalisk": {
+      "file": "unit_ember_basalisk.png",
+      "bytes": 1609,
+      "source": "app/src/main/res/drawable/unit_ember_basalisk.png",
+      "usages": [
+        "enemy:EmberBasilisk"
+      ]
+    },
     "unit_emperor_clovis_xxviii": {
       "file": "unit_emperor_clovis_xxviii.png",
       "bytes": 791,
@@ -6775,6 +8011,14 @@
       "source": "app/src/main/res/drawable/unit_exile.png",
       "usages": [
         "unit:Exile"
+      ]
+    },
+    "unit_fire_hound": {
+      "file": "unit_fire_hound.png",
+      "bytes": 2967,
+      "source": "app/src/main/res/drawable/unit_fire_hound.png",
+      "usages": [
+        "enemy:FireHound"
       ]
     },
     "unit_fire_slime": {
@@ -6961,6 +8205,14 @@
         "unit:HeavenlyCantor"
       ]
     },
+    "unit_hellfire_cultist": {
+      "file": "unit_hellfire_cultist.png",
+      "bytes": 3033,
+      "source": "app/src/main/res/drawable/unit_hellfire_cultist.png",
+      "usages": [
+        "enemy:HellfireCultist"
+      ]
+    },
     "unit_hellish_sculptor": {
       "file": "unit_hellish_sculptor.png",
       "bytes": 902,
@@ -7087,6 +8339,14 @@
       "source": "app/src/main/res/drawable/unit_infernal_lord.png",
       "usages": [
         "unit:InfernalLord"
+      ]
+    },
+    "unit_infernal_magma": {
+      "file": "unit_infernal_magma.png",
+      "bytes": 3318,
+      "source": "app/src/main/res/drawable/unit_infernal_magma.png",
+      "usages": [
+        "enemy:InfernalMagma"
       ]
     },
     "unit_infernal_prince": {
@@ -7217,6 +8477,14 @@
         "enemy:KnightSlime"
       ]
     },
+    "unit_lava_drake": {
+      "file": "unit_lava_drake.png",
+      "bytes": 2553,
+      "source": "app/src/main/res/drawable/unit_lava_drake.png",
+      "usages": [
+        "enemy:LavaDrake"
+      ]
+    },
     "unit_lazarus": {
       "file": "unit_lazarus.png",
       "bytes": 653,
@@ -7335,6 +8603,14 @@
       "source": "app/src/main/res/drawable/unit_minstrel.png",
       "usages": [
         "unit:Minstrel"
+      ]
+    },
+    "unit_molten_calamity": {
+      "file": "unit_molten_calamity.png",
+      "bytes": 2712,
+      "source": "app/src/main/res/drawable/unit_molten_calamity.png",
+      "usages": [
+        "enemy:MoltenCalamity"
       ]
     },
     "unit_mysterious_tentacle": {
@@ -7889,6 +9165,22 @@
         "enemy:StoneShaman"
       ]
     },
+    "unit_stonefire_goblin": {
+      "file": "unit_stonefire_goblin.png",
+      "bytes": 3183,
+      "source": "app/src/main/res/drawable/unit_stonefire_goblin.png",
+      "usages": [
+        "enemy:StonefireGoblin"
+      ]
+    },
+    "unit_stonefire_minotaur": {
+      "file": "unit_stonefire_minotaur.png",
+      "bytes": 3318,
+      "source": "app/src/main/res/drawable/unit_stonefire_minotaur.png",
+      "usages": [
+        "enemy:StonefireMinotaur"
+      ]
+    },
     "unit_summon_albino_rat": {
       "file": "unit_summon_albino_rat.png",
       "bytes": 898,
@@ -8241,6 +9533,14 @@
         "enemy:VoidSlime"
       ]
     },
+    "unit_volatile_slime": {
+      "file": "unit_volatile_slime.png",
+      "bytes": 2484,
+      "source": "app/src/main/res/drawable/unit_volatile_slime.png",
+      "usages": [
+        "enemy:VolatileSlime"
+      ]
+    },
     "unit_warrior": {
       "file": "unit_warrior.png",
       "bytes": 706,
@@ -8539,6 +9839,14 @@
         "item:VeilShatterer"
       ]
     },
+    "venomfang_war_harness": {
+      "file": "venomfang_war_harness.png",
+      "bytes": 1818,
+      "source": "app/src/main/res/drawable/venomfang_war_harness.png",
+      "usages": [
+        "item:VenomfangWarHarness"
+      ]
+    },
     "verdant_blade": {
       "file": "verdant_blade.png",
       "bytes": 538,
@@ -8611,12 +9919,36 @@
         "item:VoidCrusher"
       ]
     },
+    "void_mitre": {
+      "file": "void_mitre.png",
+      "bytes": 1953,
+      "source": "app/src/main/res/drawable/void_mitre.png",
+      "usages": [
+        "item:VoidMitre"
+      ]
+    },
     "void_pendant": {
       "file": "void_pendant.png",
       "bytes": 653,
       "source": "app/src/main/res/drawable/void_pendant.png",
       "usages": [
         "item:VoidPendant"
+      ]
+    },
+    "void_seal": {
+      "file": "void_seal.png",
+      "bytes": 2025,
+      "source": "app/src/main/res/drawable/void_seal.png",
+      "usages": [
+        "item:VoidSeal"
+      ]
+    },
+    "voidpiercer_jacket": {
+      "file": "voidpiercer_jacket.png",
+      "bytes": 2285,
+      "source": "app/src/main/res/drawable/voidpiercer_jacket.png",
+      "usages": [
+        "item:VoidpiercerJacket"
       ]
     },
     "voltaic_shock": {
@@ -8746,6 +10078,14 @@
       "source": "app/src/main/res/drawable/winter_helm.png",
       "usages": [
         "item:WinterHelm"
+      ]
+    },
+    "winter_jacket": {
+      "file": "winter_jacket.png",
+      "bytes": 1851,
+      "source": "app/src/main/res/drawable/winter_jacket.png",
+      "usages": [
+        "item:WinterJacket"
       ]
     },
     "winter_shield": {
@@ -8894,7 +10234,7 @@
     },
     "xp_book_1": {
       "file": "xp_book_1.png",
-      "bytes": 1628,
+      "bytes": 1578,
       "source": "app/src/main/res/drawable/xp_book_1.png",
       "usages": [
         "item:XPBook1"
@@ -8902,7 +10242,7 @@
     },
     "xp_book_10": {
       "file": "xp_book_10.png",
-      "bytes": 1767,
+      "bytes": 1770,
       "source": "app/src/main/res/drawable/xp_book_10.png",
       "usages": [
         "item:XPBook10"
@@ -8910,7 +10250,7 @@
     },
     "xp_book_2": {
       "file": "xp_book_2.png",
-      "bytes": 1679,
+      "bytes": 1608,
       "source": "app/src/main/res/drawable/xp_book_2.png",
       "usages": [
         "item:XPBook2"
@@ -8918,10 +10258,58 @@
     },
     "xp_book_3": {
       "file": "xp_book_3.png",
-      "bytes": 1770,
+      "bytes": 1653,
       "source": "app/src/main/res/drawable/xp_book_3.png",
       "usages": [
         "item:XPBook3"
+      ]
+    },
+    "xp_book_4": {
+      "file": "xp_book_4.png",
+      "bytes": 1968,
+      "source": "app/src/main/res/drawable/xp_book_4.png",
+      "usages": [
+        "item:XPBook4"
+      ]
+    },
+    "xp_book_5": {
+      "file": "xp_book_5.png",
+      "bytes": 2001,
+      "source": "app/src/main/res/drawable/xp_book_5.png",
+      "usages": [
+        "item:XPBook5"
+      ]
+    },
+    "xp_book_6": {
+      "file": "xp_book_6.png",
+      "bytes": 1728,
+      "source": "app/src/main/res/drawable/xp_book_6.png",
+      "usages": [
+        "item:XPBook6"
+      ]
+    },
+    "xp_book_7": {
+      "file": "xp_book_7.png",
+      "bytes": 1989,
+      "source": "app/src/main/res/drawable/xp_book_7.png",
+      "usages": [
+        "item:XPBook7"
+      ]
+    },
+    "xp_book_8": {
+      "file": "xp_book_8.png",
+      "bytes": 1998,
+      "source": "app/src/main/res/drawable/xp_book_8.png",
+      "usages": [
+        "item:XPBook8"
+      ]
+    },
+    "xp_book_9": {
+      "file": "xp_book_9.png",
+      "bytes": 1731,
+      "source": "app/src/main/res/drawable/xp_book_9.png",
+      "usages": [
+        "item:XPBook9"
       ]
     },
     "xp_book_c": {
@@ -8946,6 +10334,14 @@
       "source": "app/src/main/res/drawable/zapper.png",
       "usages": [
         "item:Zapper"
+      ]
+    },
+    "zephyr_bow_of_the_wind": {
+      "file": "zephyr_bow_of_the_wind.png",
+      "bytes": 2268,
+      "source": "app/src/main/res/drawable/zephyr_bow_of_the_wind.png",
+      "usages": [
+        "item:ZephyrBowOfTheWind"
       ]
     }
   },

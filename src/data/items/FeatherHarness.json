@@ -1,0 +1,15 @@
+{
+  "id": "FeatherHarness",
+  "name": "Feather Harness",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 72,
+  "sprite": "feather_harness",
+  "description": "A weightless combat harness trimmed with desert feathers for swift strikes.",
+  "stats": {
+    "constitution": 10,
+    "intelligence": 5
+  },
+  "notes": ""
+}

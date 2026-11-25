@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_LAVA_DRAKE",
+  "name_key": "passive_lava_drake_name",
+  "desc_key": "passive_lava_drake_description",
+  "kind": "passive",
+  "name": "Lava Drake",
+  "description": "Basic attacks deal 100% magic damage to all enemies, never miss, and inflict ABLAZE and 3 stacks of HELLFIRE for 3 turns. Immune to ABLAZE and HELLFIRE."
+}

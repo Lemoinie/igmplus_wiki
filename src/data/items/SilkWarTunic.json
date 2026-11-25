@@ -1,0 +1,15 @@
+{
+  "id": "SilkWarTunic",
+  "name": "Silk War Tunic",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 216,
+  "sprite": "silk_war_tunic",
+  "description": "Fine gilded silk stitched into a sleeveless brawler tunic.",
+  "stats": {
+    "constitution": 20,
+    "intelligence": 10
+  },
+  "notes": ""
+}

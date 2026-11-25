@@ -1,0 +1,15 @@
+{
+  "id": "ExoticWarGarb",
+  "name": "Exotic War Garb",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 1350,
+  "sprite": "exotic_war_garb",
+  "description": "Plush corsair velvet tailored for pit fighters and deck raiders.",
+  "stats": {
+    "constitution": 25,
+    "intelligence": 13
+  },
+  "notes": ""
+}

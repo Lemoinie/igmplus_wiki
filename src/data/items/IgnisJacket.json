@@ -1,0 +1,15 @@
+{
+  "id": "IgnisJacket",
+  "name": "Ignis Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 2370,
+  "sprite": "ignis_jacket",
+  "description": "A Slime Combat Jacket infused with Sunfire Essence, radiating blistering heat.",
+  "stats": {
+    "constitution": 45,
+    "defense": 10
+  },
+  "notes": "ABLAZE damage +40%"
+}

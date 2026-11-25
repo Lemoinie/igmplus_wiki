@@ -4424,6 +4424,20 @@
     ]
   },
   {
+    "key": "ScarletJacket",
+    "output_item": "ScarletJacket",
+    "ingredients": [
+      {
+        "item": "ScarletStrand",
+        "qty": 4
+      },
+      {
+        "item": "EldritchSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
     "key": "ScarletOniJuggernaut",
     "output_item": "ScarletOniJuggernaut",
     "ingredients": [
@@ -5395,6 +5409,384 @@
       },
       {
         "item": "TrenchGodsPearl",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VoidpiercerJacket",
+    "output_item": "VoidpiercerJacket",
+    "ingredients": [
+      {
+        "item": "ObsidianIngot",
+        "qty": 5
+      },
+      {
+        "item": "VoidSeal",
+        "qty": 1
+      },
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "SulfurPowder",
+    "output_item": "SulfurPowder",
+    "ingredients": [
+      {
+        "item": "Sulfur",
+        "qty": 5
+      }
+    ]
+  },
+  {
+    "key": "MagmaBloomEssence",
+    "output_item": "MagmaBloomEssence",
+    "ingredients": [
+      {
+        "item": "MagmaBloom",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "StaffOfTormentedSouls",
+    "output_item": "StaffOfTormentedSouls",
+    "ingredients": [
+      {
+        "item": "ObsidianIngot",
+        "qty": 2
+      },
+      {
+        "item": "TormentedEssence",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "AshenVisage",
+    "output_item": "AshenVisage",
+    "ingredients": [
+      {
+        "item": "AshenScale",
+        "qty": 7
+      },
+      {
+        "item": "FireHoundFang",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "BrimstonePendant",
+    "output_item": "BrimstonePendant",
+    "ingredients": [
+      {
+        "item": "ObsidianIngot",
+        "qty": 2
+      },
+      {
+        "item": "AshenScale",
+        "qty": 5
+      },
+      {
+        "item": "GreaterMagmaCore",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "CalderaHeart",
+    "output_item": "CalderaHeart",
+    "ingredients": [
+      {
+        "item": "MagmaBloomEssence",
+        "qty": 5
+      },
+      {
+        "item": "SulfurPowder",
+        "qty": 10
+      },
+      {
+        "item": "GreaterMagmaCore",
+        "qty": 1
+      },
+      {
+        "item": "AshenScale",
+        "qty": 4
+      }
+    ]
+  },
+  {
+    "key": "ScepterOfCursedSouls",
+    "output_item": "ScepterOfCursedSouls",
+    "ingredients": [
+      {
+        "item": "CursedScepter",
+        "qty": 1
+      },
+      {
+        "item": "TormentedEssence",
+        "qty": 10
+      },
+      {
+        "item": "ObsidianIngot",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "AbsoluteDespair",
+    "output_item": "AbsoluteDespair",
+    "ingredients": [
+      {
+        "item": "InfiniteDespair",
+        "qty": 1
+      },
+      {
+        "item": "ObsidianIngot",
+        "qty": 2
+      },
+      {
+        "item": "VoidSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "VoidMitre",
+    "output_item": "VoidMitre",
+    "ingredients": [
+      {
+        "item": "EldritchMitre",
+        "qty": 1
+      },
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 2
+      },
+      {
+        "item": "VoidSeal",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "RoughBrawlerWraps",
+    "output_item": "RoughBrawlerWraps",
+    "ingredients": [
+      {
+        "item": "Cloth",
+        "qty": 3
+      }
+    ]
+  },
+  {
+    "key": "SlimeCombatJacket",
+    "output_item": "SlimeCombatJacket",
+    "ingredients": [
+      {
+        "item": "GreenSlime",
+        "qty": 140
+      }
+    ]
+  },
+  {
+    "key": "FeatherHarness",
+    "output_item": "FeatherHarness",
+    "ingredients": [
+      {
+        "item": "Feather",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "SpectralWarShroud",
+    "output_item": "SpectralWarShroud",
+    "ingredients": [
+      {
+        "item": "SpectralCloth",
+        "qty": 15
+      }
+    ]
+  },
+  {
+    "key": "GhostRabbitTunic",
+    "output_item": "GhostRabbitTunic",
+    "ingredients": [
+      {
+        "item": "CottontailFur",
+        "qty": 4
+      },
+      {
+        "item": "SpectralCloth",
+        "qty": 10
+      }
+    ]
+  },
+  {
+    "key": "SilkWarTunic",
+    "output_item": "SilkWarTunic",
+    "ingredients": [
+      {
+        "item": "SilkFabric",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "IgnisJacket",
+    "output_item": "IgnisJacket",
+    "ingredients": [
+      {
+        "item": "SlimeCombatJacket",
+        "qty": 1
+      },
+      {
+        "item": "SunfireEssence",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "ExoticWarGarb",
+    "output_item": "ExoticWarGarb",
+    "ingredients": [
+      {
+        "item": "ExoticVelvet",
+        "qty": 30
+      }
+    ]
+  },
+  {
+    "key": "DeepSeaTunic",
+    "output_item": "DeepSeaTunic",
+    "ingredients": [
+      {
+        "item": "DeepSeaVelvet",
+        "qty": 2
+      }
+    ]
+  },
+  {
+    "key": "WinterJacket",
+    "output_item": "WinterJacket",
+    "ingredients": [
+      {
+        "item": "Wintercloth",
+        "qty": 18
+      }
+    ]
+  },
+  {
+    "key": "VenomfangWarHarness",
+    "output_item": "VenomfangWarHarness",
+    "ingredients": [
+      {
+        "item": "SpiderSilk",
+        "qty": 20
+      }
+    ]
+  },
+  {
+    "key": "SageTunic",
+    "output_item": "SageTunic",
+    "ingredients": [
+      {
+        "item": "GhostRabbitTunic",
+        "qty": 1
+      },
+      {
+        "item": "InfusionOfWisdom",
+        "qty": 1
+      }
+    ]
+  },
+  {
+    "key": "MothJacket",
+    "output_item": "MothJacket",
+    "ingredients": [
+      {
+        "item": "WingFabric",
+        "qty": 29
+      }
+    ]
+  },
+  {
+    "key": "BreathtakingJacket",
+    "output_item": "BreathtakingJacket",
+    "ingredients": [
+      {
+        "item": "MothJacket",
+        "qty": 1
+      },
+      {
+        "item": "BagOfChokingPowder",
+        "qty": 12
+      }
+    ]
+  },
+  {
+    "key": "FleetfootTunic",
+    "output_item": "FleetfootTunic",
+    "ingredients": [
+      {
+        "item": "MothJacket",
+        "qty": 1
+      },
+      {
+        "item": "FleetfootFabric",
+        "qty": 38
+      }
+    ]
+  },
+  {
+    "key": "KaunianJacket",
+    "output_item": "KaunianJacket",
+    "ingredients": [
+      {
+        "item": "KaunianFabric",
+        "qty": 24
+      }
+    ]
+  },
+  {
+    "key": "LaroxianJacket",
+    "output_item": "LaroxianJacket",
+    "ingredients": [
+      {
+        "item": "LaroxianFabric",
+        "qty": 168
+      }
+    ]
+  },
+  {
+    "key": "FeralWarPelt",
+    "output_item": "FeralWarPelt",
+    "ingredients": [
+      {
+        "item": "AncientMembrane",
+        "qty": 200
+      }
+    ]
+  },
+  {
+    "key": "JacketOfTheArchmage",
+    "output_item": "JacketOfTheArchmage",
+    "ingredients": [
+      {
+        "item": "LaroxianJacket",
+        "qty": 1
+      },
+      {
+        "item": "SpellCompendium",
+        "qty": 1
+      },
+      {
+        "item": "RuneOfPower",
         "qty": 1
       }
     ]

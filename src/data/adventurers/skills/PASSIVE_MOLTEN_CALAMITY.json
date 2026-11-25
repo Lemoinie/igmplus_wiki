@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_MOLTEN_CALAMITY",
+  "name_key": "passive_molten_calamity_name",
+  "desc_key": "passive_molten_calamity_description",
+  "kind": "passive",
+  "name": "Molten Calamity",
+  "description": "Starts combat with 100 Mana. Attacks inflict 1 stack of HELLFIRE for 2 turns. Immune to BLEED, POISON, ABLAZE, HELLFIRE, and SILENCE."
+}

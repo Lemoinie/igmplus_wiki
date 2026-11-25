@@ -1,5 +1,175 @@
 [
   {
+    "version": "1.3.22.14",
+    "date": "25/11/2026",
+    "groups": [
+      [
+        "Equipment Balance — Scarlet Cape Line Intelligence Buff:",
+        "Scarlet Cape: Increased Intelligence from 30 to 45;",
+        "Eldritch Scarlet Cape: Increased Intelligence from 40 to 60;",
+        "Abyssal Scarlet Mantle: Increased Intelligence from 50 to 75."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.13",
+    "date": "25/11/2026",
+    "groups": [
+      [
+        "Bug Fix — Duplicate Tavern Visitors on Cold Start (Android RNG Seed Cloning):",
+        "Replaced ThreadLocalRandom and Kotlin's Random.Default (.random() / .shuffled()) with a lazily-seeded thread-local java.util.Random in Utils.random() and Utils.randomInt(), fixing an Android Zygote seed-inheritance bug where affected devices repeatedly rolled the exact same Tavern visitor (class and trait) on every app cold start."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.12",
+    "date": "22/11/2026",
+    "groups": [
+      [
+        "Dungeon Balance — Malebolge (D13) v2.0 Rebalance:",
+        "Falling Rocks Hazard: Doubled AoE physical damage (20% -> 40% Max HP), reduced trigger chance in empty rooms (10% -> 5%), and increased stun targets from 1 to 2 distinct surviving allies (2 turns);",
+        "Volatile Slime: Removed turn-end self-detonation, increased on-death explosion damage to 40% Max HP magic damage, and extended ABLAZE & HELLFIRE durations to 3 turns;",
+        "Fire Hound: Increased melee counterattack chance from 50% to 100% and extended ABLAZE & HELLFIRE durations to 3 turns;",
+        "Ember Basilisk: Increased HP to 7,500, Threat from 1 to 3, and MP regen to 50; Petrifying Gaze now deals 200% magic damage (was 100% physical) with 3-turn ABLAZE/HELLFIRE and 20% PETRIFY chance, and basic attack debuffs last 3 turns;",
+        "Infernal Magma: Increased Threat from 2 to 3, reduced basic attack damage to 250–350, increased Magma Detonation active scaling to 80% target Max HP, and increased Molten Carapace death-explosion scaling to 40% target Max HP;",
+        "Banished Soul: Reworked into a rare solo-only encounter (3% of fights) with 4,000 HP and 20% Magic Crit Rate; removed Condemn, Ethereal Exile (flying, 1-dmg physical cap, and immunities), and added Screaming Wail passive (basic attacks deal 100% magic damage to all enemies with 100% 1-turn SILENCE and 20% 1-turn TERRIFY);",
+        "Lava Drake: Removed Hellfire Breath active skill and reduced DEX to 0; reworked Lava Drake passive so basic attacks deal 100% magic damage to all enemies with guaranteed hit and inflict ABLAZE + 3 stacks of HELLFIRE for 3 turns;",
+        "Molten Calamity: Increased HP to 10,000, MP regen from 25 to 34, and added immunity to SILENCE."
+      ],
+      [
+        "Combat Bug Fix — Stunned Healer & Angel Cleanse:",
+        "Fixed a bug where stunned or incapacitated healers (Angel, Archangel, etc.) could still heal and cleanse between rooms in enterRoom(), and where stunned Angel of War / Justiciar units could still cleanse at turn start."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.11",
+    "date": "21/11/2026",
+    "groups": [
+      [
+        "UI / Quality of Life — Mass Egg Hatching & Auto-Set-Free Filter:",
+        "Mass Hatch Eggs Setting Toggle: Added 'Mass hatch eggs' (YES / NO, defaulting to NO) under Gameplay & Automation in Settings; when disabled, egg hatching retains its standard 1-by-1 behavior;",
+        "Mass Hatch & Filter Dialog (DialogConsumeEgg): When enabled, tapping Hatch on any egg opens a batch hatching dialog with quantity slider, 'Stop after keeping 1 pet' option, Minimum Trait Slots selector (2+ / 3+ / 4), and desired trait pickers for Traits 1–4;",
+        "Smart Egg Defaults & Ephemeral Reset: Filter settings reset cleanly each time the dialog opens, with Trait 1 defaulting to the egg's guaranteed first trait when unique (Decoy for Avian Egg) or 'Any' when the egg type has multiple possible first traits, and Traits 2–4 defaulting to 'Any';",
+        "Auto-Set-Free & Kept Pets Summary: Hatched pets that fail the filter requirements are automatically set free, while matching pets are added to the Shelter and listed in a clickable summary where tapping any kept pet opens its detail sheet."
+      ],
+      [
+        "UI / Quality of Life — Full-Screen Storage Overhaul, Live Search & Category Chips:",
+        "Full-Width & Full-Height Storage Viewport: Expanded DialogStorage to a full-screen layout where the item grid dynamically fills all available space between the filter header and the bottom Close button;",
+        "Live Text Search Bar: Added an instant search bar with a clear button that filters storage items by name, class, description, equipment effects/stats, and drop sources;",
+        "Horizontal Category & Sub-Category Chips: Replaced the collapsible vertical radio filter list with an always-visible horizontal category chip bar (All, Materials, Consumables, Weapons, Armors, Accessories, Relics, Runes) plus contextual sub-category chips (Eggs, Food, Potions & Vials, XP Tomes; Swords, Daggers, Axes, Bows, Staves; Heavy, Medium, Light armors);",
+        "Compact Sort Mode & Direction Toggle: Added compact header controls to cycle sort order (Type, Quantity, Alphabetical, Unit Price, Total Price) and toggle descending/ascending order."
+      ],
+      [
+        "Dungeon Balance — Malebolge (D13) Rebalance & Falling Rocks Hazard:",
+        "Volatile Slime: Both the 20% on-death explosion and 40% self-destruct now also inflict ABLAZE and 2 stacks of HELLFIRE for 2 turns;",
+        "Fire Hound: Basic attacks and counterattacks now reliably inflict ABLAZE and 1 stack of HELLFIRE for 2 turns;",
+        "Ember Basilisk: Reworked skills into Petrifying Gaze (Active: 100% AoE physical damage + ABLAZE & 2 stacks HELLFIRE for 2 turns + POISON for 5 turns + 10% PETRIFY for 1 turn) and Ember Ambush (Passive: acts first and starts combat with 100 Mana, basic attacks inflict ABLAZE & 1 stack HELLFIRE for 2 turns);",
+        "Infernal Magma: Reduced HP to 2000 and attack damage to 300–400, increased MP regen to 25, reworked Molten Carapace death explosion to deal 25% of each target's Max HP as magic damage + ABLAZE & 2 stacks HELLFIRE for 2 turns, and reworked Magma Detonation active self-destruct to deal 50% of each target's Max HP as magic damage + ABLAZE & 2 stacks HELLFIRE for 2 turns;",
+        "Banished Soul: Condemn now hits all enemies for 100% damage and inflicts SILENCE for 1 turn, while Ethereal Exile grants basic attacks a 15% chance to inflict TERRIFY for 1 turn;",
+        "Lava Drake: Reduced Hellfire Breath active magic damage from 200% to 150% and increased MP regen to 34;",
+        "Molten Calamity: Increased HP to 7500, reduced attack damage to 400–500, starts combat with 100 Mana, and increased MP regen to 25;",
+        "Falling Rocks Environmental Event: Added a 10% non-combat hazard in searchRoom() dealing 20% Max HP AoE physical damage (not intercepted by Angel of War) and stunning 1 random ally for 2 turns."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.10",
+    "date": "20/11/2026",
+    "groups": [
+      [
+        "New Crafted Void Equipment — Absolute Despair & Void Mitre:",
+        "Absolute Despair (Dagger): Added new Workshop recipe crafted from 1x Infinite Despair, 2x Obsidian Ingot, and 1x Void Seal (retroactively unlocked for existing saves), granting +90 Constitution, +90 Dexterity, +200% Critical Damage, and 5% Max HP decay per turn;",
+        "Void Mitre (Accessory): Added new Workshop recipe crafted from 1x Eldritch Mitre, 2x Deep Sea Velvet, and 1x Void Seal (retroactively unlocked for existing saves), granting +90 Intelligence, +100 Max HP, +10% Skill Amplification, and locking Healing to 0% (cannot be increased by other equipment, doctrines, or traits)."
+      ],
+      [
+        "New Crafted Weapon & Minion Relic — Scepter of Cursed Souls:",
+        "Scepter of Cursed Souls (Staff): Added new Workshop recipe crafted from 1x Cursed Scepter, 10x Tormented Essence, and 2x Obsidian Ingot (retroactively unlocked for existing saves that have seen any ingredient), granting +60 Intelligence and equipping summoned minions with Cursed Ancient Eye;",
+        "Cursed Ancient Eye (Minion Accessory): Grants +55 Constitution, +55 Dexterity, 100% Status Immunity, +20% Hit Chance, and 5% Lifesteal."
+      ],
+      [
+        "Combat Fix & Dungeon Balance — Malebolge, Avernus & Drops:",
+        "AoE Explosion Defense Interception & Soul Tether: Routed Volatile Slime (Volatile Burst) and Infernal Magma (Molten Carapace) explosions through centralized enemy AoE damage handling so Angel of War branch same-row AoE interception (Shared Burden) and Lich Soul Tether redirection properly apply;",
+        "Hellfire Meteor Rebalance: Reduced Ash Drake's Hellfire Meteor AoE magic damage from 230% to 110%;",
+        "Stonefire Roar Buff: Stonefire Minotaur's Stonefire Roar now also grants all living allies a 5% Max HP Shield alongside its 50% self-shield and 5-turn Taunt;",
+        "Avernus Encounters: Added a new 4x Stonefire Minotaur quad encounter pack (21 total encounter packs);",
+        "Chief Scientist Ava Drop Table: Added Chrono Echo Elixir at a 13% drop chance (adjusting Kaunian Fabric from 83% to 70%; Potion of Clumsiness remains 12% and Chief Scientist Coat remains 5%)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.9",
+    "date": "20/11/2026",
+    "groups": [
+      [
+        "New Dungeon — Malebolge (D13 - Entry to Hell):",
+        "Volcanic Threshold Progression: Added Malebolge (D13), unlocked after 120 turns in The Sunken Citadel (D12), featuring 100 Darkness and unlocking Avernus (now D14) upon reaching 100 turns;",
+        "7 New Abyssal Enemies: Volatile Slime (Volatile Burst: 20% Max HP magic death blast & 30%/turn 40% Max HP magic self-explosion), Fire Hound (Magma Retaliation: 50% melee counterattack + 40% 1-turn HELLFIRE on hit & counterattack), Ember Basilisk (Petrifying Gaze + Crushing Strike), Infernal Magma (Magma Detonation 50% magic AoE + 1-turn HELLFIRE then self-explode into Molten Carapace), Banished Soul (Ethereal Exile: flying, physical dmg reduced to 1), Lava Drake (Hellfire Breath), and Molten Calamity (Cataclysmic Eruption summoning Infernal Magma);",
+        "New Drops & Refined Materials: Added Sulfur, Lesser Magma Core, Fire Hound Fang, Magma Bloom, Tormented Essence, plus Workshop-refined Sulfur Powder (5x Sulfur) and Magma Bloom Essence (10x Magma Bloom) alongside shared Infernal Hide and Emberite Scraps;",
+        "New Crafted Equipment: Added Staff of Tormented Souls (INT +50, Lifesteal 20%, ABLAZE damage +40%), Ashen Visage (CON +45, INT +25, 40% immunity to BLIND and ENFEEBLE), Brimstone Pendant (Darkness -20, 50% status resistance to ABLAZE and HELLFIRE), and Caldera Heart (HP +220, once-per-fight 100% lost HP AoE magic eruption below 40% HP, and 150% Max HP AoE magic detonation on death)."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.8",
+    "date": "20/11/2026",
+    "groups": [
+      [
+        "Combat / Bug Fix — Vagabond On-Kill Strike & Pet Fighter Assist:",
+        "Vagabond On-Kill Trigger Restored: Fixed a tier check requirement (tier >= 5 instead of tier >= 6) so Vagabond (Tier 5) now correctly triggers an immediate bonus strike against a random enemy on kill, aligning with its Perceptive Eye passive description;",
+        "Architecture & Performance — Weapon Skill & Combat Refactor:",
+        "AreaCombat Refactor: Extracted weapon skill resolution and execution (resolveWeaponSkillTargets, triggerWeaponSkill) as well as centralized on-kill handling (handleOnEnemyKill) into AreaCombat.kt, decoupling modular combat sub-routines from Area.kt."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.7",
+    "date": "20/11/2026",
+    "groups": [
+      [
+        "Combat / Bug Fix — Bleak Disciple Instill Terror Darkness Scaling:",
+        "Vanilla v2.152 Parity Fix: Fixed a legacy bug where Bleak Disciple's active skill 'Instill Terror' had a hardcoded 100% stun probability, ignoring dungeon darkness;",
+        "Darkness-Scaled Stun: Stun application probability now correctly scales with local darkness (localDarkness * 0.01), matching its skill description and vanilla v2.152 behavior (0% stun chance at 0 darkness, 100% at 100 darkness);",
+        "Darkness Reduction Counterplay Restored: Bringing light sources, torches, and darkness reduction auras (e.g. Aura of Light) to The Lost Expedition now properly mitigates Bleak Disciple's turn 1 AoE stun."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.6",
+    "date": "19/11/2026",
+    "groups": [
+      [
+        "UI / Quality of Life — Workshop & Market Queue Prioritization:",
+        "Press-and-Hold Prioritization: Long-pressing any queued item in the Workshop or Market dialog triggers haptic feedback and immediately prioritizes it to Slot 0 (Active Front);",
+        "Full Progress Preservation: Paused crafting and selling projects retain 100% of their accumulated elapsed seconds (secondsPassed), resuming seamlessly when returned to Slot 0 without losing work;",
+        "Smooth Animation Handoff: Active progress bar animators are cleanly transferred to newly prioritized projects while paused rows display their current static progress."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
+    "version": "1.3.22.5",
+    "date": "19/11/2026",
+    "groups": [
+      [
+        "UI / Quality of Life — Team Select Equipment Swapping:",
+        "Direct Equipment Selection: Tapping an equipped weapon, armor, accessory, or relic slot on any slotted hero in the Team Select view (DialogSendTeam) now directly opens the Equipment Selection dialog (DialogSelectEquipment) or Relic dialog without needing to back out to the Adventurers roster;",
+        "Instant Team Display Refresh: Swapping or unequipping gear immediately updates the slotted adventurer's icons, traits, and ascended relic styling across the team view;",
+        "Safe Hero Roster Swapping: Tapping anywhere else on the hero card (portrait, name, level, or card background) continues to open the Adventurer Picker (DialogChooseAdventurer) as usual;",
+        "Anti-Duplication & Loadout Safety: Reuses the atomic equipment swap pipeline, preserving full storage safeguards, protecting active explorers, and syncing seamlessly with team loadout snapshots."
+      ]
+    ],
+    "source": "ModChangelogActive.kt"
+  },
+  {
     "version": "1.3.22.4",
     "date": "19/11/2026",
     "groups": [
@@ -39,9 +209,6 @@
     "version": "1.3.22.2",
     "date": "19/11/2026",
     "groups": [
-      [
-        ""
-      ],
       [
         "Pet Balance — Flat Combat Ability Scaling Buffs:",
         "Fighter (×2): Doubled pet attack scaling from 0.5×level + 1 to 1.0×level + 2;",

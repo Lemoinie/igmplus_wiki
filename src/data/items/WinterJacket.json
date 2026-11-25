@@ -1,0 +1,15 @@
+{
+  "id": "WinterJacket",
+  "name": "Winter Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 486,
+  "sprite": "winter_jacket",
+  "description": "A frost-lined combat jacket stitched from dense wintercloth for northern brawlers.",
+  "stats": {
+    "constitution": 32,
+    "intelligence": 16
+  },
+  "notes": ""
+}

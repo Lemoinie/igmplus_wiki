@@ -1,0 +1,15 @@
+{
+  "id": "FleetfootTunic",
+  "name": "Fleetfoot Tunic",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 1688,
+  "sprite": "fleetfoot_tunic",
+  "description": "A Moth Jacket reinforced with weightless fleetfoot fabric for agile evasive brawling.",
+  "stats": {
+    "constitution": 42,
+    "intelligence": 16
+  },
+  "notes": "+24% dodge (additive)"
+}

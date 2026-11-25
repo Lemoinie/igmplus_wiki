@@ -54,6 +54,25 @@
       "InfernalJacket",
       "PyromancerVestments",
       "StonefireMinotaurHorn"
+    ],
+    "merchant_special_offers": [
+      "EmberiteScraps",
+      "InfernalHide",
+      "InfernalFabric",
+      "StonefireMinotaurHorn",
+      "AshenScale",
+      "GreaterMagmaCore",
+      "EmberiteSword",
+      "EmberiteDagger",
+      "EmberiteCleaver",
+      "EmberiteBow",
+      "EmberiteStaff",
+      "EmberitePlate",
+      "InfernalJacket",
+      "PyromancerVestments",
+      "EmberiteHelmet",
+      "EmberiteBoots",
+      "InfernalGloves"
     ]
   },
   {
@@ -104,6 +123,22 @@
       "ElasticBoots",
       "ElasticMembrane",
       "ElasticRobe"
+    ],
+    "merchant_special_offers": [
+      "ElasticMembrane",
+      "CelestialScraps",
+      "BansheeScale",
+      "AetherIgnis",
+      "ChainLink",
+      "CelestialArmor",
+      "BansheeJacket",
+      "ElasticRobe",
+      "CelestialHelmet",
+      "CelestialShield",
+      "BansheeGloves",
+      "ElasticBoots",
+      "CelestialSword",
+      "BansheeDagger"
     ]
   },
   {
@@ -165,6 +200,29 @@
       "MonkeyHideJacket",
       "MysteriousAppendage",
       "Pearl"
+    ],
+    "merchant_special_offers": [
+      "EyeOfTheAbyss",
+      "Pearl",
+      "GhostwoodStump",
+      "MissingPage",
+      "GhostwoodBoard",
+      "BlackIronScraps",
+      "ExoticVelvet",
+      "MysteriousAppendage",
+      "AbyssalSeashell",
+      "MonkeyHide",
+      "BlackIronArmor",
+      "ExoticRobe",
+      "BlackIronHelm",
+      "ExoticBoots",
+      "BlackIronGauntlets",
+      "GhostwoodShield",
+      "BlackIronCutlass",
+      "BlackIronScepter",
+      "BlackIronDagger",
+      "GhostwoodBow",
+      "MonkeyHideJacket"
     ]
   },
   {
@@ -214,6 +272,17 @@
       "Sandstone",
       "ScrapMetal",
       "ShahuriBow"
+    ],
+    "merchant_special_offers": [
+      "Quartz",
+      "Sandstone",
+      "ScrapMetal",
+      "Feather",
+      "MetamorphicSand",
+      "ShahuriBow",
+      "RecurveBlade",
+      "BottledSandSpirit",
+      "PotionOfPrecision"
     ]
   },
   {
@@ -252,7 +321,8 @@
     "items_mentioned": [
       "CopperOre",
       "Wood"
-    ]
+    ],
+    "merchant_special_offers": []
   },
   {
     "key": "EnchantedForest",
@@ -312,6 +382,24 @@
       "WoodenBow",
       "WoodenBuckler",
       "WoodenStaff"
+    ],
+    "merchant_special_offers": [
+      "CopperOre",
+      "Wood",
+      "WolfSkin",
+      "Acorn",
+      "CentaurHoof",
+      "CopperSword",
+      "WoodenBow",
+      "WoodenStaff",
+      "CopperDagger",
+      "LeatherArmor",
+      "ClothRobe",
+      "CopperArmor",
+      "WoodenBuckler",
+      "ClothHat",
+      "Boots",
+      "LeatherGloves"
     ]
   },
   {
@@ -372,6 +460,24 @@
       "UndeadShield",
       "UndeadStaff",
       "UndeadSword"
+    ],
+    "merchant_special_offers": [
+      "BoneFragment",
+      "TatteredHide",
+      "ElongatedBone",
+      "SharpRib",
+      "SpectralCloth",
+      "InfectedBlood",
+      "UndeadGreaves",
+      "UndeadHelm",
+      "UndeadGloves",
+      "UndeadStaff",
+      "UndeadShield",
+      "UndeadSword",
+      "UndeadJacket",
+      "UndeadCuirass",
+      "UndeadKnife",
+      "SpectralRobe"
     ]
   },
   {
@@ -428,6 +534,24 @@
       "Winterwood",
       "WinterwoodBow",
       "WinterwoodStaff"
+    ],
+    "merchant_special_offers": [
+      "Winterwood",
+      "IceFiber",
+      "FrostmetalOre",
+      "FrostCrystal",
+      "TrollHide",
+      "FrostmetalSword",
+      "WinterwoodBow",
+      "WinterwoodStaff",
+      "FrostmetalDagger",
+      "WinterCape",
+      "TrollskinJacket",
+      "FrostmetalArmor",
+      "WinterBoots",
+      "WinterGloves",
+      "WinterHelm",
+      "WinterShield"
     ]
   },
   {
@@ -484,6 +608,24 @@
       "SpellwovenJacket",
       "UnstableGem",
       "VeilBreaker"
+    ],
+    "merchant_special_offers": [
+      "SpellwovenHide",
+      "AnimatedScraps",
+      "LaroxianFabric",
+      "VeilBreaker",
+      "UnstableGem",
+      "SpellwovenJacket",
+      "AnimatedCuirass",
+      "LaroxianRobe",
+      "AnimatedSword",
+      "AnimatedStaff",
+      "AnimatedDagger",
+      "AnimatedBow",
+      "AnimatedHelm",
+      "AnimatedBuckler",
+      "LaroxianGloves",
+      "LaroxianBoots"
     ]
   },
   {
@@ -540,6 +682,100 @@
       "MithrilShield",
       "MithrilSword",
       "PoisonousFlesh"
+    ],
+    "merchant_special_offers": [
+      "Diamond",
+      "Mithril",
+      "AncientHide",
+      "AncientMembrane",
+      "PoisonousFlesh",
+      "Kindlequartz",
+      "AncientBoots",
+      "AncientGloves",
+      "MithrilHelm",
+      "MithrilShield",
+      "AncientArmor",
+      "AncientJacket",
+      "AncientRobe",
+      "MithrilSword",
+      "MithrilBow",
+      "MithrilDagger"
+    ]
+  },
+  {
+    "key": "Malebolge",
+    "parent": "Area",
+    "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/places/dungeons/Malebolge.kt",
+    "name_key": "dungeon_name_malebolge",
+    "name": "Malebolge",
+    "summary_sprite": "summary_malebolge",
+    "detail_sprite": "area_malebolge",
+    "area_type": 0,
+    "level": null,
+    "enemies": [
+      {
+        "key": "BanishedSoul",
+        "chance_permille": null
+      },
+      {
+        "key": "EmberBasilisk",
+        "chance_permille": null
+      },
+      {
+        "key": "FireHound",
+        "chance_permille": null
+      },
+      {
+        "key": "InfernalMagma",
+        "chance_permille": null
+      },
+      {
+        "key": "LavaDrake",
+        "chance_permille": null
+      },
+      {
+        "key": "MoltenCalamity",
+        "chance_permille": null
+      },
+      {
+        "key": "VolatileSlime",
+        "chance_permille": null
+      }
+    ],
+    "encounter_chance_permille": 170,
+    "items_mentioned": [
+      "AshenVisage",
+      "BrimstonePendant",
+      "CalderaHeart",
+      "EmberiteScraps",
+      "FireHoundFang",
+      "InfernalHide",
+      "InfernalLeather",
+      "LesserMagmaCore",
+      "MagmaBloom",
+      "MagmaBloomEssence",
+      "ObsidianIngot",
+      "StaffOfTormentedSouls",
+      "Sulfur",
+      "SulfurPowder",
+      "TormentedEssence"
+    ],
+    "merchant_special_offers": [
+      "Sulfur",
+      "MagmaBloom",
+      "LesserMagmaCore",
+      "InfernalHide",
+      "FireHoundFang",
+      "EmberiteScraps",
+      "TormentedEssence",
+      "InfernalLeather",
+      "SulfurPowder",
+      "MagmaBloomEssence",
+      "ObsidianIngot",
+      "AshenVisage",
+      "CalderaHeart",
+      "BrimstonePendant",
+      "StaffOfTormentedSouls"
     ]
   },
   {
@@ -597,6 +833,25 @@
       "SpiderGloves",
       "SpiderLeg",
       "SpiderRobe"
+    ],
+    "merchant_special_offers": [
+      "ObsidianChunk",
+      "BatWing",
+      "CobwebBundle",
+      "BatTooth",
+      "SpiderLeg",
+      "EldritchTendril",
+      "SpiderGloves",
+      "SpiderBoots",
+      "ObsidianHelm",
+      "ObsidianShield",
+      "SpiderRobe",
+      "NightwingJacket",
+      "ObsidianCuirass",
+      "ObsidianSword",
+      "ObsidianDagger",
+      "ObsidianBow",
+      "ObsidianScepter"
     ]
   },
   {
@@ -657,6 +912,24 @@
       "WurmscalesGloves",
       "WurmscalesJacket",
       "WurmscalesShield"
+    ],
+    "merchant_special_offers": [
+      "Quartz",
+      "Sandstone",
+      "ScrapMetal",
+      "WurmScale",
+      "Feather",
+      "MetamorphicSand",
+      "GlassKnife",
+      "WurmscalesShield",
+      "FeatherRobe",
+      "WurmscalesGloves",
+      "Scimitar",
+      "ShahuriBow",
+      "IronChainmail",
+      "WurmscalesJacket",
+      "WurmscalesBoots",
+      "IronHelm"
     ]
   },
   {
@@ -720,6 +993,23 @@
       "Ruby",
       "SilkRobe",
       "SilkThread"
+    ],
+    "merchant_special_offers": [
+      "SilkThread",
+      "Redwood",
+      "Ivory",
+      "GoldScraps",
+      "Emerald",
+      "Ruby",
+      "BlackOoze",
+      "SilkRobe",
+      "BeltJacket",
+      "GoldenArmor",
+      "GoldenSword",
+      "GoldenBoots",
+      "GoldenGauntlets",
+      "GoldenHelm",
+      "GoldenShield"
     ]
   },
   {
@@ -775,6 +1065,23 @@
       "VerdantBow",
       "VerdantGloves",
       "VerdantHelm"
+    ],
+    "merchant_special_offers": [
+      "ElysianWood",
+      "SpitfangScale",
+      "GiantShellFragment",
+      "GiantMothWing",
+      "FleetfootFabric",
+      "TortoiseThorn",
+      "TortoiseArmor",
+      "SpitfangJacket",
+      "MothRobe",
+      "VerdantHelm",
+      "TortoiseShield",
+      "VerdantBoots",
+      "VerdantGloves",
+      "VerdantBow",
+      "VerdantBlade"
     ]
   },
   {
@@ -835,6 +1142,24 @@
       "SharkTeeth",
       "SirenRobe",
       "SpiralSeashell"
+    ],
+    "merchant_special_offers": [
+      "Coral",
+      "SpiralSeashell",
+      "AbyssalPearl",
+      "CoralChunk",
+      "SharkFin",
+      "SharkTeeth",
+      "CoralHelmet",
+      "CoralBoots",
+      "CoralGloves",
+      "SharkDagger",
+      "SharkSword",
+      "CoralAxe",
+      "CoralBow",
+      "CoralArmor",
+      "AbyssalChitinJacket",
+      "SirenRobe"
     ]
   },
   {
@@ -854,7 +1179,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "GuildSiegeArea",
@@ -868,7 +1194,8 @@
     "level": null,
     "enemies": [],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheSlumberingShallowsArea",
@@ -913,7 +1240,8 @@
     "encounter_chance_permille": 150,
     "items_mentioned": [
       "Perch"
-    ]
+    ],
+    "merchant_special_offers": []
   },
   {
     "key": "AncientGraveDigging",
@@ -960,7 +1288,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "CelestialMothership",
@@ -999,7 +1328,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "DivineArcheology",
@@ -1038,7 +1368,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "ImperialRescue",
@@ -1077,7 +1408,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "Kaunis",
@@ -1120,7 +1452,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "SanguineCrucible",
@@ -1147,7 +1480,8 @@
       }
     ],
     "encounter_chance_permille": 1,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "SleepingPlanet",
@@ -1182,7 +1516,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheCultistRebels",
@@ -1217,7 +1552,8 @@
       }
     ],
     "encounter_chance_permille": 1,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheDireDescent",
@@ -1244,7 +1580,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheDreadfulAscent",
@@ -1271,7 +1608,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheHadalAbyss",
@@ -1326,7 +1664,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheLostExpedition",
@@ -1365,7 +1704,8 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheSlimePond",
@@ -1408,7 +1748,8 @@
       }
     ],
     "encounter_chance_permille": 1,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   },
   {
     "key": "TheTower",
@@ -1451,6 +1792,7 @@
       }
     ],
     "encounter_chance_permille": 0,
-    "items_mentioned": []
+    "items_mentioned": [],
+    "merchant_special_offers": []
   }
 ]

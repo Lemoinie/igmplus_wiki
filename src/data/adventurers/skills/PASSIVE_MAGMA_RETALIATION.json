@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_MAGMA_RETALIATION",
+  "name_key": "passive_magma_retaliation_name",
+  "desc_key": "passive_magma_retaliation_description",
+  "kind": "passive",
+  "name": "Magma Retaliation",
+  "description": "Has a 100% chance of striking back with a basic attack when hit by a melee attack. Basic attacks (including counterattacks) inflict ABLAZE and 1 stack of HELLFIRE for 3 turns. Immune to ABLAZE and HELLFIRE."
+}

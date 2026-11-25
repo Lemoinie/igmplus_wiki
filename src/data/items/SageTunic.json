@@ -1,0 +1,15 @@
+{
+  "id": "SageTunic",
+  "name": "Sage Tunic",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 3533,
+  "sprite": "sage_tunic",
+  "description": "A Ghost Rabbit Tunic steeped in an Infusion of Wisdom, sharpening both battle instincts and experience gain.",
+  "stats": {
+    "constitution": 36,
+    "intelligence": 18
+  },
+  "notes": "+60% experience"
+}

@@ -515,5 +515,27 @@
     "cleansable": true,
     "name": "Venom",
     "description": "envenomed"
+  },
+  {
+    "key": "ATKSPD_BUFF",
+    "name_key": "status_effect_atkspd_buff",
+    "desc_key": "status_effect_atkspd_buff_description",
+    "sprite": "icon_effect_frenzy",
+    "negative": false,
+    "serialized": true,
+    "cleansable": true,
+    "name": "Attack Speed Up",
+    "description": "hastened"
+  },
+  {
+    "key": "THREAT_BUFF",
+    "name_key": "status_effect_threat_buff",
+    "desc_key": "status_effect_threat_buff_description",
+    "sprite": "icon_effect_taunt",
+    "negative": false,
+    "serialized": true,
+    "cleansable": true,
+    "name": "Threat Up",
+    "description": "provocative"
   }
 ]

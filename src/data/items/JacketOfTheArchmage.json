@@ -1,0 +1,16 @@
+{
+  "id": "JacketOfTheArchmage",
+  "name": "Jacket of the Archmage",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 966,
+  "sprite": "jacket_of_the_archmage",
+  "description": "A Laroxian Jacket inscribed with forbidden runes of martial power and arcane warding.",
+  "stats": {
+    "constitution": 60,
+    "intelligence": 30,
+    "magicDefense": 6
+  },
+  "notes": ""
+}

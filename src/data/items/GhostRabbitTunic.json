@@ -1,0 +1,15 @@
+{
+  "id": "GhostRabbitTunic",
+  "name": "Ghost Rabbit Tunic",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 390,
+  "sprite": "ghost_rabbit_tunic",
+  "description": "A nimble combat tunic stitched from spectral cloth and elusive Golden Rabbit fur.",
+  "stats": {
+    "constitution": 15,
+    "intelligence": 8
+  },
+  "notes": "+35% experience"
+}

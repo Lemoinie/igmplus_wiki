@@ -1,0 +1,15 @@
+{
+  "id": "RoughBrawlerWraps",
+  "name": "Rough Brawler Wraps",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 54,
+  "sprite": "rough_brawler_wraps",
+  "description": "Coarse plant-fiber wraps bound tightly across the torso for unrestricted swings.",
+  "stats": {
+    "constitution": 5,
+    "intelligence": 3
+  },
+  "notes": ""
+}

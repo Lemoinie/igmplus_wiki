@@ -307,7 +307,7 @@
       "baseDexterity": 60,
       "baseIntelligence": 600,
       "baseDefense": 10,
-      "baseMagicDefense": 450,
+      "baseMagicDefense": 150,
       "baseLifesteal": 150,
       "immunityToStatus": 0.0,
       "criticalDamage": 1.5
@@ -495,6 +495,41 @@
         "item": "EsotericEgg",
         "qty": 1,
         "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "BanishedSoul",
+    "parent": "Enemy",
+    "sprite": "unit_banished_soul",
+    "name_key": "enemy_banished_soul_name",
+    "description_key": "enemy_banished_soul_description",
+    "name": "Banished Soul",
+    "description": "A tormented spectral spirit discarded into the abyss, unleashing piercing wails that silence and terrify all foes.",
+    "stats": {
+      "baseMaxHp": 4000,
+      "baseConstitution": 52,
+      "baseIntelligence": 175,
+      "baseDexterity": 90,
+      "baseDefense": 0,
+      "baseMagicDefense": 32
+    },
+    "exp_given": 270,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_SCREAMING_WAIL",
+    "min_damage": "460",
+    "max_damage": "540",
+    "drops": [
+      {
+        "item": "TormentedEssence",
+        "qty": 1,
+        "weight": 300
       }
     ],
     "independent_drops": []
@@ -1165,7 +1200,17 @@
       {
         "item": "KaunianFabric",
         "qty": 1,
-        "weight": 830
+        "weight": 700
+      },
+      {
+        "item": "PotionOfClumsiness",
+        "qty": 1,
+        "weight": 120
+      },
+      {
+        "item": "ChronoEchoElixir",
+        "qty": 1,
+        "weight": 130
       },
       {
         "item": "ChiefScientistCoat",
@@ -2382,6 +2427,11 @@
         "weight": 10
       },
       {
+        "item": "MeatyMushroom",
+        "qty": 1,
+        "weight": 120
+      },
+      {
         "item": "PotionOfAgility",
         "qty": 1,
         "weight": 2
@@ -2473,9 +2523,54 @@
         "weight": 50
       },
       {
+        "item": "StaticCore",
+        "qty": 1,
+        "weight": 120
+      },
+      {
         "item": "PotionOfImmunity",
         "qty": 1,
         "weight": 100
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "EmberBasilisk",
+    "parent": "Enemy",
+    "sprite": "unit_ember_basalisk",
+    "name_key": "enemy_ember_basilisk_name",
+    "description_key": "enemy_ember_basilisk_description",
+    "name": "Ember Basilisk",
+    "description": "A heavy armored subterranean reptile with petrifying venom and a piercing amber gaze.",
+    "stats": {
+      "baseMaxHp": 7500,
+      "baseConstitution": 80,
+      "baseIntelligence": 25,
+      "baseDexterity": 125,
+      "baseDefense": 42,
+      "baseMagicDefense": 34
+    },
+    "exp_given": 260,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_PETRIFYING_GAZE",
+    "passive_skill": "PASSIVE_EMBER_AMBUSH",
+    "min_damage": "440",
+    "max_damage": "530",
+    "drops": [
+      {
+        "item": "InfernalHide",
+        "qty": 1,
+        "weight": 250
+      },
+      {
+        "item": "EmberiteScraps",
+        "qty": 1,
+        "weight": 180
       }
     ],
     "independent_drops": []
@@ -2636,6 +2731,47 @@
     "independent_drops": []
   },
   {
+    "key": "FireHound",
+    "parent": "Enemy",
+    "sprite": "unit_fire_hound",
+    "name_key": "enemy_fire_hound_name",
+    "description_key": "enemy_fire_hound_description",
+    "name": "Fire Hound",
+    "description": "A savage quadrupedal pack predator cast down into the abyss, snapping with retaliatory fire jaws.",
+    "stats": {
+      "baseMaxHp": 2250,
+      "baseConstitution": 72,
+      "baseIntelligence": 15,
+      "baseDexterity": 110,
+      "baseDefense": 30,
+      "baseMagicDefense": 22,
+      "counterattack": 1.0
+    },
+    "exp_given": 245,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_MAGMA_RETALIATION",
+    "min_damage": "470",
+    "max_damage": "560",
+    "drops": [
+      {
+        "item": "InfernalHide",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "FireHoundFang",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "FireSlime",
     "parent": "Enemy",
     "sprite": "unit_fire_slime",
@@ -2676,6 +2812,11 @@
         "item": "GreenSlime",
         "qty": 3,
         "weight": 50
+      },
+      {
+        "item": "SunfireCore",
+        "qty": 1,
+        "weight": 120
       },
       {
         "item": "PotionOfImmunity",
@@ -2801,6 +2942,11 @@
         "item": "GreenSlime",
         "qty": 3,
         "weight": 50
+      },
+      {
+        "item": "PermafrostCore",
+        "qty": 1,
+        "weight": 120
       },
       {
         "item": "PotionOfImmunity",
@@ -3615,6 +3761,51 @@
     "independent_drops": []
   },
   {
+    "key": "InfernalMagma",
+    "parent": "Enemy",
+    "sprite": "unit_infernal_magma",
+    "name_key": "enemy_infernal_magma_name",
+    "description_key": "enemy_infernal_magma_description",
+    "name": "Infernal Magma",
+    "description": "A semi-sentient geological construct forged from subterranean lava flows that detonates violently.",
+    "stats": {
+      "baseMaxHp": 2000,
+      "baseConstitution": 92,
+      "baseIntelligence": 35,
+      "baseDexterity": 40,
+      "baseDefense": 62,
+      "baseMagicDefense": 22
+    },
+    "exp_given": 275,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_MAGMA_DETONATION",
+    "passive_skill": "PASSIVE_MOLTEN_CARAPACE",
+    "min_damage": "250",
+    "max_damage": "350",
+    "drops": [
+      {
+        "item": "LesserMagmaCore",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "Sulfur",
+        "qty": 2,
+        "weight": 150
+      },
+      {
+        "item": "MagmaBloom",
+        "qty": 1,
+        "weight": 150
+      }
+    ],
+    "independent_drops": []
+  },
+  {
     "key": "InsaneCitizen",
     "parent": "Enemy",
     "sprite": "unit_insane_citizen",
@@ -3917,6 +4108,41 @@
     "min_damage": "50",
     "max_damage": "75",
     "drops": [],
+    "independent_drops": []
+  },
+  {
+    "key": "LavaDrake",
+    "parent": "Enemy",
+    "sprite": "unit_lava_drake",
+    "name_key": "enemy_lava_drake_name",
+    "description_key": "enemy_lava_drake_description",
+    "name": "Lava Drake",
+    "description": "A flightless quadrupedal volcanic elemental drake nesting along the rift walls, scorching all foes with unavoidable waves of hellfire.",
+    "stats": {
+      "baseMaxHp": 3100,
+      "baseConstitution": 98,
+      "baseIntelligence": 35,
+      "baseDexterity": 0,
+      "baseDefense": 55,
+      "baseMagicDefense": 40
+    },
+    "exp_given": 300,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_LAVA_DRAKE",
+    "min_damage": "520",
+    "max_damage": "610",
+    "drops": [
+      {
+        "item": "LesserMagmaCore",
+        "qty": 1,
+        "weight": 200
+      }
+    ],
     "independent_drops": []
   },
   {
@@ -4300,6 +4526,46 @@
         "item": "ConstructEgg",
         "qty": 1,
         "weight": 1
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "MoltenCalamity",
+    "parent": "Enemy",
+    "sprite": "unit_molten_calamity",
+    "name_key": "enemy_molten_calamity_name",
+    "description_key": "enemy_molten_calamity_description",
+    "name": "Molten Calamity",
+    "description": "A surging animated construct of living fire and molten rock that tears fresh Infernal Magma from the rift.",
+    "stats": {
+      "baseMaxHp": 10000,
+      "baseConstitution": 102,
+      "baseIntelligence": 135,
+      "baseDexterity": 55,
+      "baseDefense": 48,
+      "baseMagicDefense": 60
+    },
+    "exp_given": 320,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": true,
+    "is_ranged": true,
+    "attack_type": "Ranged, Magic",
+    "active_skill": "ACTIVE_CATACLYSMIC_ERUPTION",
+    "passive_skill": "PASSIVE_MOLTEN_CALAMITY",
+    "min_damage": "400",
+    "max_damage": "500",
+    "drops": [
+      {
+        "item": "LesserMagmaCore",
+        "qty": 2,
+        "weight": 250
+      },
+      {
+        "item": "EmberiteScraps",
+        "qty": 1,
+        "weight": 200
       }
     ],
     "independent_drops": []
@@ -5160,8 +5426,8 @@
     "max_damage": "1000",
     "drops": [
       {
-        "item": "Geode",
-        "qty": 50,
+        "item": "LesserGeode",
+        "qty": 100,
         "weight": 900
       },
       {
@@ -5170,8 +5436,8 @@
         "weight": 90
       },
       {
-        "item": "Geode",
-        "qty": 200,
+        "item": "GreaterGeode",
+        "qty": 50,
         "weight": 10
       }
     ],
@@ -5640,8 +5906,8 @@
     "attack_type": "Melee, Physical",
     "active_skill": "ACTIVE_ARMOR_SHRED",
     "passive_skill": "PASSIVE_STONEFIRE_FRENZY",
-    "min_damage": "510",
-    "max_damage": "590",
+    "min_damage": "310",
+    "max_damage": "490",
     "drops": [
       {
         "item": "EmberiteScraps",
@@ -5675,8 +5941,8 @@
     "attack_type": "Melee, Physical",
     "active_skill": "ACTIVE_STONEFIRE_ROAR",
     "passive_skill": "PASSIVE_STONEFIRE_BULWARK",
-    "min_damage": "660",
-    "max_damage": "790",
+    "min_damage": "260",
+    "max_damage": "490",
     "drops": [
       {
         "item": "StonefireMinotaurHorn",
@@ -6728,6 +6994,46 @@
         "item": "VoidCore",
         "qty": 1,
         "weight": 160
+      }
+    ],
+    "independent_drops": []
+  },
+  {
+    "key": "VolatileSlime",
+    "parent": "Enemy",
+    "sprite": "unit_volatile_slime",
+    "name_key": "enemy_volatile_slime_name",
+    "description_key": "enemy_volatile_slime_description",
+    "name": "Volatile Slime",
+    "description": "An unstable amorphous ooze bubbling with superheated magma that threatens to explode at any moment.",
+    "stats": {
+      "baseMaxHp": 1950,
+      "baseConstitution": 65,
+      "baseIntelligence": 15,
+      "baseDexterity": 45,
+      "baseDefense": 18,
+      "baseMagicDefense": 28
+    },
+    "exp_given": 230,
+    "rarity": 1,
+    "is_boss": false,
+    "is_magic": false,
+    "is_ranged": false,
+    "attack_type": "Melee, Physical",
+    "active_skill": "ACTIVE_NONE",
+    "passive_skill": "PASSIVE_VOLATILE_BURST",
+    "min_damage": "400",
+    "max_damage": "480",
+    "drops": [
+      {
+        "item": "Sulfur",
+        "qty": 1,
+        "weight": 300
+      },
+      {
+        "item": "LesserMagmaCore",
+        "qty": 1,
+        "weight": 200
       }
     ],
     "independent_drops": []

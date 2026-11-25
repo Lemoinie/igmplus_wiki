@@ -8,6 +8,9 @@
   "abiotic_core": [
     "item:AbioticCore"
   ],
+  "absolute_despair": [
+    "item:AbsoluteDespair"
+  ],
   "absolute_zero": [
     "item:AbsoluteZero"
   ],
@@ -225,6 +228,9 @@
   "area_lost_lands": [
     "place:LostLands:detail"
   ],
+  "area_malebolge": [
+    "place:Malebolge:detail"
+  ],
   "area_obsidian_mines": [
     "place:ObsidianMines:detail"
   ],
@@ -284,6 +290,9 @@
   ],
   "ashen_shield": [
     "item:AshenShield"
+  ],
+  "ashen_visage": [
+    "item:AshenVisage"
   ],
   "astral_goo": [
     "item:AstralGoo"
@@ -419,8 +428,14 @@
   "bread": [
     "item:Bread"
   ],
+  "breathtaking_jacket": [
+    "item:BreathtakingJacket"
+  ],
   "breathtaking_robe": [
     "item:BreathtakingRobe"
+  ],
+  "brimstone_pendant": [
+    "item:BrimstonePendant"
   ],
   "burning_censer": [
     "item:BurningCenser"
@@ -430,6 +445,9 @@
   ],
   "butter": [
     "item:Butter"
+  ],
+  "caldera_heart": [
+    "item:CalderaHeart"
   ],
   "cane": [
     "item:Cane"
@@ -638,6 +656,9 @@
   "cunning_downfall": [
     "item:CunningDownfall"
   ],
+  "cursed_ancient_eye": [
+    "item:CursedAncientEye"
+  ],
   "cursed_bow": [
     "item:CursedBow"
   ],
@@ -673,6 +694,9 @@
   ],
   "deep_sea_robe": [
     "item:DeepSeaRobe"
+  ],
+  "deep_sea_tunic": [
+    "item:DeepSeaTunic"
   ],
   "deep_sea_velvet": [
     "item:DeepSeaVelvet"
@@ -871,6 +895,9 @@
   ],
   "doljonijiarnimorinar": [
     "item:Doljonijiarnimorinar"
+  ],
+  "dragonwing_shield": [
+    "item:DragonwingShield"
   ],
   "dreadful_morningstar": [
     "item:DreadfulMorningstar"
@@ -1080,6 +1107,9 @@
   "exotic_velvet": [
     "item:ExoticVelvet"
   ],
+  "exotic_war_garb": [
+    "item:ExoticWarGarb"
+  ],
   "eye_of_shakire": [
     "item:EyeOfShaKire"
   ],
@@ -1098,14 +1128,23 @@
   "feather": [
     "item:Feather"
   ],
+  "feather_harness": [
+    "item:FeatherHarness"
+  ],
   "feather_robe": [
     "item:FeatherRobe"
   ],
   "feeble_tether": [
     "status_effect:FEEBLE_TETHER"
   ],
+  "feral_war_pelt": [
+    "item:FeralWarPelt"
+  ],
   "fire_catalyst": [
     "item:FireCatalyst"
+  ],
+  "fire_hound_fang": [
+    "item:FireHoundFang"
   ],
   "fireproof_oil": [
     "item:FireproofOil"
@@ -1130,6 +1169,9 @@
   ],
   "fleetfoot_robe": [
     "item:FleetfootRobe"
+  ],
+  "fleetfoot_tunic": [
+    "item:FleetfootTunic"
   ],
   "flute": [
     "item:Flute"
@@ -1197,6 +1239,24 @@
   "fullmoon_dagger": [
     "item:FullmoonDagger"
   ],
+  "gem_1": [
+    "item:GemCluster"
+  ],
+  "gem_2": [
+    "item:GemPile"
+  ],
+  "gem_3": [
+    "item:SmallGemPouch"
+  ],
+  "gem_4": [
+    "item:GemBag"
+  ],
+  "gem_5": [
+    "item:GemChest"
+  ],
+  "gem_6": [
+    "item:RoyalGemVault"
+  ],
   "gem_of_protection": [
     "item:GemOfProtection"
   ],
@@ -1214,6 +1274,9 @@
   ],
   "ghost_rabbit_cloak": [
     "item:GhostRabbitCloak"
+  ],
+  "ghost_rabbit_tunic": [
+    "item:GhostRabbitTunic"
   ],
   "ghostwood_board": [
     "item:GhostwoodBoard"
@@ -1280,6 +1343,9 @@
   ],
   "grains": [
     "item:Grains"
+  ],
+  "greater_geode": [
+    "item:GreaterGeode"
   ],
   "greater_magma_core": [
     "item:GreaterMagmaCore"
@@ -1377,7 +1443,8 @@
   ],
   "icon_effect_frenzy": [
     "status_effect:FRENZY",
-    "status_effect:PACK_HOWL"
+    "status_effect:PACK_HOWL",
+    "status_effect:ATKSPD_BUFF"
   ],
   "icon_effect_hellfire": [
     "status_effect:HELLFIRE"
@@ -1420,7 +1487,8 @@
     "status_effect:STUN_NOT_CLEANSABLE"
   ],
   "icon_effect_taunt": [
-    "status_effect:TAUNT"
+    "status_effect:TAUNT",
+    "status_effect:THREAT_BUFF"
   ],
   "icon_effect_terrify": [
     "status_effect:TERRIFY",
@@ -1434,6 +1502,9 @@
   ],
   "icon_of_torment": [
     "item:IconOfTorment"
+  ],
+  "ignis_jacket": [
+    "item:IgnisJacket"
   ],
   "ignition_orb": [
     "item:IgnitionOrb"
@@ -1513,6 +1584,9 @@
   "ivory_jacket": [
     "item:IvoryJacket"
   ],
+  "jacket_of_the_archmage": [
+    "item:JacketOfTheArchmage"
+  ],
   "jeweled_crown": [
     "item:JeweledCrown"
   ],
@@ -1527,6 +1601,9 @@
   ],
   "kaunian_fabric": [
     "item:KaunianFabric"
+  ],
+  "kaunian_jacket": [
+    "item:KaunianJacket"
   ],
   "kaunian_robe": [
     "item:KaunianRobe"
@@ -1546,6 +1623,9 @@
   "laroxian_gloves": [
     "item:LaroxianGloves"
   ],
+  "laroxian_jacket": [
+    "item:LaroxianJacket"
+  ],
   "laroxian_robe": [
     "item:LaroxianRobe"
   ],
@@ -1563,6 +1643,12 @@
   ],
   "leek": [
     "item:Leek"
+  ],
+  "lesser_geode": [
+    "item:LesserGeode"
+  ],
+  "lesser_magma_core": [
+    "item:LesserMagmaCore"
   ],
   "leviathan": [
     "enemy:Leviathan"
@@ -1587,6 +1673,12 @@
   ],
   "long_serpent_fang": [
     "item:LongSerpentFang"
+  ],
+  "magma_bloom": [
+    "item:MagmaBloom"
+  ],
+  "magma_bloom_essence": [
+    "item:MagmaBloomEssence"
   ],
   "magma_shark": [
     "enemy:MagmaShark",
@@ -1657,6 +1749,9 @@
   ],
   "monkey_hide_jacket": [
     "item:MonkeyHideJacket"
+  ],
+  "moth_jacket": [
+    "item:MothJacket"
   ],
   "moth_robe": [
     "item:MothRobe"
@@ -1974,6 +2069,9 @@
   "robe_of_the_lich": [
     "item:RobeOfTheLich"
   ],
+  "rough_brawler_wraps": [
+    "item:RoughBrawlerWraps"
+  ],
   "ruby": [
     "item:Ruby"
   ],
@@ -2000,6 +2098,9 @@
   ],
   "sage_jacket": [
     "item:SageJacket"
+  ],
+  "sage_tunic": [
+    "item:SageTunic"
   ],
   "salad": [
     "item:Salad"
@@ -2031,6 +2132,9 @@
   "scarlet_grand_mage": [
     "enemy:ArchmagusValthex"
   ],
+  "scarlet_jacket": [
+    "item:ScarletJacket"
+  ],
   "scarlet_mage": [
     "enemy:CrimsonAcolyte"
   ],
@@ -2051,6 +2155,9 @@
   ],
   "scarlet_veil": [
     "item:ScarletVeil"
+  ],
+  "scepter_of_cursed_souls": [
+    "item:ScepterOfCursedSouls"
   ],
   "scimitar": [
     "item:Scimitar"
@@ -2157,6 +2264,9 @@
   "silk_thread": [
     "item:SilkThread"
   ],
+  "silk_war_tunic": [
+    "item:SilkWarTunic"
+  ],
   "silver_ring": [
     "item:SilverRing"
   ],
@@ -2185,6 +2295,9 @@
   "slime_armor": [
     "item:SlimeArmor"
   ],
+  "slime_combat_jacket": [
+    "item:SlimeCombatJacket"
+  ],
   "slime_jacket": [
     "item:SlimeJacket"
   ],
@@ -2208,6 +2321,9 @@
   ],
   "spectral_robe": [
     "item:SpectralRobe"
+  ],
+  "spectral_war_shroud": [
+    "item:SpectralWarShroud"
   ],
   "spell_compendium": [
     "item:SpellCompendium"
@@ -2272,6 +2388,9 @@
   "staff_of_the_archmage": [
     "item:StaffOfTheArchmage"
   ],
+  "staff_of_tormented_souls": [
+    "item:StaffOfTormentedSouls"
+  ],
   "star_fragment": [
     "item:StarFragment"
   ],
@@ -2310,6 +2429,12 @@
   ],
   "strawberry_smoothie": [
     "item:StrawberrySmoothie"
+  ],
+  "sulfur": [
+    "item:Sulfur"
+  ],
+  "sulfur_powder": [
+    "item:SulfurPowder"
   ],
   "summary_ancient_grave_digging": [
     "place:AncientGraveDigging:summary"
@@ -2361,6 +2486,9 @@
   ],
   "summary_lost_lands": [
     "place:LostLands:summary"
+  ],
+  "summary_malebolge": [
+    "place:Malebolge:summary"
   ],
   "summary_obsidian_mines": [
     "place:ObsidianMines:summary"
@@ -2478,6 +2606,9 @@
   ],
   "tomato": [
     "item:Tomato"
+  ],
+  "tormented_essence": [
+    "item:TormentedEssence"
   ],
   "tortoise_armor": [
     "item:TortoiseArmor"
@@ -2641,6 +2772,9 @@
   ],
   "unit_bandit": [
     "unit:Bandit"
+  ],
+  "unit_banished_soul": [
+    "enemy:BanishedSoul"
   ],
   "unit_banshee": [
     "enemy:Banshee"
@@ -2862,6 +2996,9 @@
   "unit_elemental_alchemist": [
     "unit:ElementalAlchemist"
   ],
+  "unit_ember_basalisk": [
+    "enemy:EmberBasilisk"
+  ],
   "unit_emperor_clovis_xxviii": [
     "enemy:EmperorClovisXXVIII"
   ],
@@ -2882,6 +3019,9 @@
   ],
   "unit_exile": [
     "unit:Exile"
+  ],
+  "unit_fire_hound": [
+    "enemy:FireHound"
   ],
   "unit_fire_slime": [
     "enemy:FireSlime"
@@ -3003,6 +3143,9 @@
   "unit_infernal_lord": [
     "unit:InfernalLord"
   ],
+  "unit_infernal_magma": [
+    "enemy:InfernalMagma"
+  ],
   "unit_infernal_prince": [
     "unit:InfernalPrince"
   ],
@@ -3051,6 +3194,9 @@
   "unit_knight_slime": [
     "enemy:KnightSlime"
   ],
+  "unit_lava_drake": [
+    "enemy:LavaDrake"
+  ],
   "unit_lazarus": [
     "enemy:Lazarus"
   ],
@@ -3095,6 +3241,9 @@
   ],
   "unit_minstrel": [
     "unit:Minstrel"
+  ],
+  "unit_molten_calamity": [
+    "enemy:MoltenCalamity"
   ],
   "unit_mysterious_tentacle": [
     "enemy:MysteriousTentacle"
@@ -3441,6 +3590,9 @@
   "unit_void_slime": [
     "enemy:VoidSlime"
   ],
+  "unit_volatile_slime": [
+    "enemy:VolatileSlime"
+  ],
   "unit_warrior": [
     "unit:Warrior"
   ],
@@ -3554,6 +3706,9 @@
   "veil_shatterer": [
     "item:VeilShatterer"
   ],
+  "venomfang_war_harness": [
+    "item:VenomfangWarHarness"
+  ],
   "verdant_blade": [
     "item:VerdantBlade"
   ],
@@ -3580,6 +3735,9 @@
   ],
   "void_crusher": [
     "item:VoidCrusher"
+  ],
+  "void_mitre": [
+    "item:VoidMitre"
   ],
   "void_pendant": [
     "item:VoidPendant"
@@ -3638,6 +3796,9 @@
   ],
   "winter_helm": [
     "item:WinterHelm"
+  ],
+  "winter_jacket": [
+    "item:WinterJacket"
   ],
   "winter_shield": [
     "item:WinterShield"
@@ -3731,5 +3892,8 @@
   ],
   "zapper": [
     "item:Zapper"
+  ],
+  "zephyr_bow_of_the_wind": [
+    "item:ZephyrBowOfTheWind"
   ]
 }

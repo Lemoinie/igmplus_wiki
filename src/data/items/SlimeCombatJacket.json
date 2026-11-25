@@ -1,0 +1,16 @@
+{
+  "id": "SlimeCombatJacket",
+  "name": "Slime Combat Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 630,
+  "sprite": "slime_combat_jacket",
+  "description": "A supple jacket hardened from condensed green slime, cut open for brawling.",
+  "stats": {
+    "constitution": 40,
+    "intelligence": 4,
+    "defense": 5
+  },
+  "notes": ""
+}

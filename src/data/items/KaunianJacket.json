@@ -1,0 +1,16 @@
+{
+  "id": "KaunianJacket",
+  "name": "Kaunian Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 900,
+  "sprite": "kaunian_jacket",
+  "description": "A reinforced battle jacket woven from Kaunian fabric for frontline endurance.",
+  "stats": {
+    "maxHp": 100,
+    "constitution": 46,
+    "intelligence": 22
+  },
+  "notes": ""
+}

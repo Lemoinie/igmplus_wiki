@@ -1,0 +1,15 @@
+{
+  "id": "FeralWarPelt",
+  "name": "Feral War Pelt",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 600,
+  "sprite": "feral_war_pelt",
+  "description": "A primal war-pelt stitched from prehistoric membranes for relentless savagery.",
+  "stats": {
+    "constitution": 56,
+    "intelligence": 28
+  },
+  "notes": ""
+}

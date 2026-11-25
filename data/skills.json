@@ -101,7 +101,7 @@
     "desc_key": "active_condemn_description",
     "kind": "active",
     "name": "Condemn",
-    "description": "SILENCE an enemy for 1 turn, then strikes it for 250% damage.\n\nSILENCE: the unit can't gain any mana"
+    "description": "SILENCE all enemies for 1 turn, then strikes them for 100% damage.\n\nSILENCE: The unit can't use active skills"
   },
   {
     "key": "ACTIVE_CONDEMN_ALL_I",
@@ -2733,7 +2733,7 @@
     "desc_key": "active_stonefire_roar_description",
     "kind": "active",
     "name": "Stonefire Roar",
-    "description": "100% TAUNTS all enemies for 5 turns, gains a 50% Max HP Shield."
+    "description": "100% TAUNTS all enemies for 5 turns, gains a 50% Max HP Shield, and grants allies a 5% Max HP Shield."
   },
   {
     "key": "PASSIVE_STONEFIRE_BULWARK",
@@ -2757,7 +2757,7 @@
     "desc_key": "active_hellfire_meteor_description",
     "kind": "active",
     "name": "Hellfire Meteor",
-    "description": "Deals 230% magic damage to all enemies and inflicts 2 stacks of HELLFIRE for 2 turns."
+    "description": "Deals 110% magic damage to all enemies and inflicts 2 stacks of HELLFIRE for 2 turns."
   },
   {
     "key": "PASSIVE_ASHEN_AMBUSH",
@@ -2766,5 +2766,101 @@
     "kind": "passive",
     "name": "Ashen Ambush",
     "description": "Acts first at the start of combat and starts combat with 100 Mana. Attacks inflict 1 stack of HELLFIRE for 2 turns. Immune to ABLAZE, HELLFIRE, and BLEED."
+  },
+  {
+    "key": "PASSIVE_VOLATILE_BURST",
+    "name_key": "passive_volatile_burst_name",
+    "desc_key": "passive_volatile_burst_description",
+    "kind": "passive",
+    "name": "Volatile Burst",
+    "description": "This unit has a 3× chance of being targeted by enemies. Explodes upon death, dealing 40% of maximum HP as magic damage and inflicting ABLAZE and 2 stacks of HELLFIRE for 3 turns to all enemies. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "PASSIVE_MAGMA_RETALIATION",
+    "name_key": "passive_magma_retaliation_name",
+    "desc_key": "passive_magma_retaliation_description",
+    "kind": "passive",
+    "name": "Magma Retaliation",
+    "description": "Has a 100% chance of striking back with a basic attack when hit by a melee attack. Basic attacks (including counterattacks) inflict ABLAZE and 1 stack of HELLFIRE for 3 turns. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "ACTIVE_PETRIFYING_GAZE",
+    "name_key": "active_petrifying_gaze_name",
+    "desc_key": "active_petrifying_gaze_description",
+    "kind": "active",
+    "name": "Petrifying Gaze",
+    "description": "Deals 200% magic damage to all enemies, inflicts ABLAZE and 2 stacks of HELLFIRE for 3 turns, inflicts POISON for 5 turns, and has a 20% chance to PETRIFY for 1 turn."
+  },
+  {
+    "key": "PASSIVE_EMBER_AMBUSH",
+    "name_key": "passive_ember_ambush_name",
+    "desc_key": "passive_ember_ambush_description",
+    "kind": "passive",
+    "name": "Ember Ambush",
+    "description": "This unit has a 3× chance of being targeted by enemies. Acts first at the start of combat and starts combat with 100 Mana. Basic attacks inflict ABLAZE and 1 stack of HELLFIRE for 3 turns. Immune to PETRIFY, ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "ACTIVE_MAGMA_DETONATION",
+    "name_key": "active_magma_detonation_name",
+    "desc_key": "active_magma_detonation_description",
+    "kind": "active",
+    "name": "Magma Detonation",
+    "description": "Self-explodes, dealing 80% of each target's maximum HP as magic damage and inflicting ABLAZE and 2 stacks of HELLFIRE for 2 turns on all enemies."
+  },
+  {
+    "key": "PASSIVE_MOLTEN_CARAPACE",
+    "name_key": "passive_molten_carapace_name",
+    "desc_key": "passive_molten_carapace_description",
+    "kind": "passive",
+    "name": "Molten Carapace",
+    "description": "This unit has a 3× chance of being targeted by enemies. Sets melee attackers ABLAZE for 2 turns. Detonates upon death, dealing 40% of each target's maximum HP as magic damage and inflicting ABLAZE and 2 stacks of HELLFIRE for 2 turns to all enemies. Immune to BLEED, POISON, ABLAZE, and HELLFIRE."
+  },
+  {
+    "key": "PASSIVE_ETHEREAL_EXILE",
+    "name_key": "passive_ethereal_exile_name",
+    "desc_key": "passive_ethereal_exile_description",
+    "kind": "passive",
+    "name": "Ethereal Exile",
+    "description": "Can't be hit by melee attacks or abilities. All physical damage taken is reduced to 1. Basic attacks have a 15% chance to inflict TERRIFY for 1 turn. Immune to BLEED, POISON, ABLAZE, and HELLFIRE."
+  },
+  {
+    "key": "PASSIVE_SCREAMING_WAIL",
+    "name_key": "passive_screaming_wail_name",
+    "desc_key": "passive_screaming_wail_description",
+    "kind": "passive",
+    "name": "Screaming Wail",
+    "description": "Can't be hit by melee attacks or abilities. All physical damage taken is reduced to 1. Basic attacks deal 100% magic damage to all enemies, with a 100% chance to inflict SILENCE for 1 turn and a 20% chance to inflict TERRIFY for 1 turn. Has 20% Magic Critical Chance."
+  },
+  {
+    "key": "ACTIVE_HELLFIRE_BREATH",
+    "name_key": "active_hellfire_breath_name",
+    "desc_key": "active_hellfire_breath_description",
+    "kind": "active",
+    "name": "Hellfire Breath",
+    "description": "Deals 150% magic damage to an enemy and inflicts 1 stack of HELLFIRE for 2 turns."
+  },
+  {
+    "key": "PASSIVE_LAVA_DRAKE",
+    "name_key": "passive_lava_drake_name",
+    "desc_key": "passive_lava_drake_description",
+    "kind": "passive",
+    "name": "Lava Drake",
+    "description": "Basic attacks deal 100% magic damage to all enemies, never miss, and inflict ABLAZE and 3 stacks of HELLFIRE for 3 turns. Immune to ABLAZE and HELLFIRE."
+  },
+  {
+    "key": "ACTIVE_CATACLYSMIC_ERUPTION",
+    "name_key": "active_cataclysmic_eruption_name",
+    "desc_key": "active_cataclysmic_eruption_description",
+    "kind": "active",
+    "name": "Cataclysmic Eruption",
+    "description": "Deals 180% magic damage to all enemies, inflicts 1 stack of HELLFIRE for 2 turns, and summons 2 Infernal Magma."
+  },
+  {
+    "key": "PASSIVE_MOLTEN_CALAMITY",
+    "name_key": "passive_molten_calamity_name",
+    "desc_key": "passive_molten_calamity_description",
+    "kind": "passive",
+    "name": "Molten Calamity",
+    "description": "Starts combat with 100 Mana. Attacks inflict 1 stack of HELLFIRE for 2 turns. Immune to BLEED, POISON, ABLAZE, HELLFIRE, and SILENCE."
   }
 ]

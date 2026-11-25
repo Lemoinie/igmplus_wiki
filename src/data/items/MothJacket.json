@@ -1,0 +1,15 @@
+{
+  "id": "MothJacket",
+  "name": "Moth Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 783,
+  "sprite": "moth_jacket",
+  "description": "A lightweight battle jacket cut from shimmering Giant Moth wing fabric.",
+  "stats": {
+    "constitution": 40,
+    "intelligence": 20
+  },
+  "notes": ""
+}

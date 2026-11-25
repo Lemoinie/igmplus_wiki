@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_MOLTEN_CARAPACE",
+  "name_key": "passive_molten_carapace_name",
+  "desc_key": "passive_molten_carapace_description",
+  "kind": "passive",
+  "name": "Molten Carapace",
+  "description": "This unit has a 3× chance of being targeted by enemies. Sets melee attackers ABLAZE for 2 turns. Detonates upon death, dealing 40% of each target's maximum HP as magic damage and inflicting ABLAZE and 2 stacks of HELLFIRE for 2 turns to all enemies. Immune to BLEED, POISON, ABLAZE, and HELLFIRE."
+}

@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_EMBER_AMBUSH",
+  "name_key": "passive_ember_ambush_name",
+  "desc_key": "passive_ember_ambush_description",
+  "kind": "passive",
+  "name": "Ember Ambush",
+  "description": "This unit has a 3× chance of being targeted by enemies. Acts first at the start of combat and starts combat with 100 Mana. Basic attacks inflict ABLAZE and 1 stack of HELLFIRE for 3 turns. Immune to PETRIFY, ABLAZE and HELLFIRE."
+}

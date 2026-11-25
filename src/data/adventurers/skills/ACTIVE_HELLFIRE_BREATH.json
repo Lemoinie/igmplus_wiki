@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_HELLFIRE_BREATH",
+  "name_key": "active_hellfire_breath_name",
+  "desc_key": "active_hellfire_breath_description",
+  "kind": "active",
+  "name": "Hellfire Breath",
+  "description": "Deals 150% magic damage to an enemy and inflicts 1 stack of HELLFIRE for 2 turns."
+}

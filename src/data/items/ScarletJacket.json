@@ -1,0 +1,15 @@
+{
+  "id": "ScarletJacket",
+  "name": "Scarlet Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 121300,
+  "sprite": "scarlet_jacket",
+  "description": "A tailored scarlet coat woven from Scarlet strands and bound with an eldritch seal. Lightweight yet resilient, it channels arcane tempo to accelerate the wearer's strikes.",
+  "stats": {
+    "constitution": 60,
+    "intelligence": 60
+  },
+  "notes": "+50% Attack Speed"
+}

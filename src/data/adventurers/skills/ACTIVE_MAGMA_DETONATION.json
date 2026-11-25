@@ -1,0 +1,8 @@
+{
+  "key": "ACTIVE_MAGMA_DETONATION",
+  "name_key": "active_magma_detonation_name",
+  "desc_key": "active_magma_detonation_description",
+  "kind": "active",
+  "name": "Magma Detonation",
+  "description": "Self-explodes, dealing 80% of each target's maximum HP as magic damage and inflicting ABLAZE and 2 stacks of HELLFIRE for 2 turns on all enemies."
+}

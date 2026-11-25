@@ -1,0 +1,15 @@
+{
+  "id": "BreathtakingJacket",
+  "name": "Breathtaking Jacket",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 1859,
+  "sprite": "breathtaking_jacket",
+  "description": "A Moth Jacket dusted with choking powder that silences melee attackers on contact.",
+  "stats": {
+    "constitution": 50,
+    "intelligence": 21
+  },
+  "notes": "SILENCES melee attackers"
+}

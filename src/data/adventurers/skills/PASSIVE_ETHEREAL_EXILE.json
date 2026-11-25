@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_ETHEREAL_EXILE",
+  "name_key": "passive_ethereal_exile_name",
+  "desc_key": "passive_ethereal_exile_description",
+  "kind": "passive",
+  "name": "Ethereal Exile",
+  "description": "Can't be hit by melee attacks or abilities. All physical damage taken is reduced to 1. Basic attacks have a 15% chance to inflict TERRIFY for 1 turn. Immune to BLEED, POISON, ABLAZE, and HELLFIRE."
+}

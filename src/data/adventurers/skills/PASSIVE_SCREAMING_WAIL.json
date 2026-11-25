@@ -1,0 +1,8 @@
+{
+  "key": "PASSIVE_SCREAMING_WAIL",
+  "name_key": "passive_screaming_wail_name",
+  "desc_key": "passive_screaming_wail_description",
+  "kind": "passive",
+  "name": "Screaming Wail",
+  "description": "Can't be hit by melee attacks or abilities. All physical damage taken is reduced to 1. Basic attacks deal 100% magic damage to all enemies, with a 100% chance to inflict SILENCE for 1 turn and a 20% chance to inflict TERRIFY for 1 turn. Has 20% Magic Critical Chance."
+}

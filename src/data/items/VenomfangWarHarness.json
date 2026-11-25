@@ -1,0 +1,15 @@
+{
+  "id": "VenomfangWarHarness",
+  "name": "Venomfang War Harness",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 540,
+  "sprite": "venomfang_war_harness",
+  "description": "Tight spider-silk webbing bound into a lightweight, high-mobility combat harness.",
+  "stats": {
+    "constitution": 36,
+    "intelligence": 18
+  },
+  "notes": ""
+}

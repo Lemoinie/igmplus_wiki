@@ -71,6 +71,7 @@
         "getDamageDealtModifier": "damageDealtModifier",
         "getDamageTakenModifier": "damageTakenModifier",
         "getNormalAttackAmpModifier": "normalAttackAmpModifier",
+        "getFinalBasicDamageModifier": "finalBasicDamageModifier",
         "getSkillAmpModifier": "skillAmpModifier",
         "getAttackSpeed": "attackSpeed",
         "getConstitution": "constitution",
@@ -91,6 +92,7 @@
         "getRetaliationPhysicalDamage": "retaliationPhysicalDamage",
         "getRetaliationMagicalDamage": "retaliationMagicalDamage",
         "getHealingModifier": "healingModifier",
+        "isZeroHealing": "zeroHealing",
         "getImmunityToStatus": "immunityToStatus",
         "getResistanceToStatus": "resistanceToStatus",
         "getIgnoreImmunityToStatus": "ignoreImmunityToStatus",
@@ -115,6 +117,7 @@
         "getRegenerationBonus": "regenerationBonus",
         "getFlatDodgeChance": "flatDodgeChance",
         "getDecay": "decay",
+        "getDecayPercent": "decayPercent",
         "getExaltInspireBonusTurns": "exaltInspireBonusTurns",
         "getBonusExperience": "bonusExperience",
         "getDarknessReduction": "darknessReduction",
@@ -137,10 +140,7 @@
         "getStatusImmunity": "(statusImmunities[type] ?: 0.0).coerceIn(0.0, 1.0)",
         "getStatusImmunities": "statusImmunities.keys",
         "getStatusResistance": "(statusResistances[type] ?: 0.0).coerceIn(0.0, 1.0)",
-        "getAttackSpeedBonus": "0",
-        "getDamageMultiplier": "1.0",
-        "getHitChanceBonus": "0.0",
-        "onFatalDamage": "false"
+        "getAttackSpeedBonus": "0"
       }
     },
     {
@@ -150,6 +150,13 @@
         "printType": "R.string.type_food",
         "printConsumeImage": "R.drawable.consume_food",
         "getFeedPower": "feedPower"
+      }
+    },
+    {
+      "key": "GemBundle",
+      "parent": "Consumable",
+      "defaults": {
+        "printConsumeImage": "R.drawable.gem"
       }
     },
     {
@@ -338,6 +345,37 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbioticCore.kt"
     },
     {
+      "key": "AbsoluteDespair",
+      "parent": "Dagger",
+      "class_chain": [
+        "AbsoluteDespair",
+        "Dagger",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Dagger",
+      "sprite": "absolute_despair",
+      "name_key": "weapon_dagger_absolute_despair_name",
+      "description_key": "weapon_dagger_absolute_despair_description",
+      "name": "Absolute Despair",
+      "description": "A void-forged evolution of Infinite Despair that devours the wielder's vitality to unleash cataclysmic strikes.",
+      "price": 40600,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 90,
+        "dexterity": 90,
+        "decayPercent": 0.06,
+        "criticalDamage": 1.25,
+        "criticalChance": 0.05
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AbsoluteDespair.kt"
+    },
+    {
       "key": "AbsoluteZero",
       "parent": "HeavyArmor",
       "class_chain": [
@@ -388,8 +426,8 @@
         "intelligence": 30,
         "magicDefense": 30,
         "criticalChance": 0.1,
-        "attackSpeedDragReduction": 1,
-        "rangedDragReduction": 1
+        "attackSpeedDragReduction": 1.0,
+        "rangedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -468,7 +506,7 @@
         "constitution": 45,
         "dexterity": 45,
         "physicalCriticalDamageBonus": 0.5,
-        "attackSpeedDragReduction": 1
+        "attackSpeedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -672,7 +710,7 @@
       "gem_value": null,
       "stats": {
         "dexterity": 15,
-        "intelligence": 50,
+        "intelligence": 75,
         "skillAmpModifier": 0.35
       },
       "flags": {},
@@ -785,8 +823,8 @@
         "maxHp": 350,
         "constitution": 35,
         "magicDefense": 25,
-        "attackSpeedDragReduction": 1,
-        "rangedDragReduction": 1
+        "attackSpeedDragReduction": 1.0,
+        "rangedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -1093,7 +1131,7 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "immunityToStatus": 1,
+        "immunityToStatus": 1.0,
         "constitution": 35,
         "dexterity": 35
       },
@@ -1863,6 +1901,33 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AshenShield.kt"
     },
     {
+      "key": "AshenVisage",
+      "parent": "Accessory",
+      "class_chain": [
+        "AshenVisage",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "ashen_visage",
+      "name_key": "accessory_ashen_visage_name",
+      "description_key": "accessory_ashen_visage_description",
+      "name": "Ashen Visage",
+      "description": "A warded volcanic skull-visage fashioned from Ashen Scales and Fire Hound Fangs to shield the wearer from blinding soot and enfeebling fumes.",
+      "price": 159,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 45,
+        "intelligence": 25
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AshenVisage.kt"
+    },
+    {
       "key": "AstralGoo",
       "parent": "Item",
       "class_chain": [
@@ -1906,7 +1971,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.DECOY)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/AvianEgg.kt"
     },
     {
@@ -2984,6 +3051,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Bread.kt"
     },
     {
+      "key": "BreathtakingJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "BreathtakingJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "breathtaking_jacket",
+      "name_key": "armor_light_breathtaking_jacket_name",
+      "description_key": "armor_light_breathtaking_jacket_description",
+      "name": "Breathtaking Jacket",
+      "description": "A Moth Jacket dusted with choking powder that silences melee attackers on contact.",
+      "price": 1859,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 50,
+        "intelligence": 21
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/BreathtakingJacket.kt"
+    },
+    {
       "key": "BreathtakingRobe",
       "parent": "LightArmor",
       "class_chain": [
@@ -3010,6 +3105,32 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/BreathtakingRobe.kt"
+    },
+    {
+      "key": "BrimstonePendant",
+      "parent": "Accessory",
+      "class_chain": [
+        "BrimstonePendant",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "brimstone_pendant",
+      "name_key": "accessory_brimstone_pendant_name",
+      "description_key": "accessory_brimstone_pendant_description",
+      "name": "Brimstone Pendant",
+      "description": "A radiant volcanic talisman forged in obsidian and ashen scale, piercing abyssal darkness and tempering hellfire.",
+      "price": 2955,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "darknessReduction": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/BrimstonePendant.kt"
     },
     {
       "key": "BurningCenser",
@@ -3093,6 +3214,34 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Butter.kt"
+    },
+    {
+      "key": "CalderaHeart",
+      "parent": "Accessory",
+      "class_chain": [
+        "CalderaHeart",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "caldera_heart",
+      "name_key": "accessory_caldera_heart_name",
+      "description_key": "accessory_caldera_heart_description",
+      "name": "Caldera Heart",
+      "description": "A volatile volcanic core distilled from magma bloom essence and sealed in ashen scales, erupting violently under pressure and shattering in a cataclysmic blast upon death.",
+      "price": 971,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 220
+      },
+      "flags": {
+        "eruptionTriggered": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CalderaHeart.kt"
     },
     {
       "key": "Cane",
@@ -3700,9 +3849,7 @@
       "stack": null,
       "gem_value": null,
       "stats": {},
-      "flags": {
-        "isRareDrop": true
-      },
+      "flags": {},
       "overrides": {
         "printConsumeImage": "R.drawable.consume_potion"
       },
@@ -3964,7 +4111,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.MAGIC, PetAbility.BRIGHT)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ConstructEgg.kt"
     },
     {
@@ -4243,7 +4392,7 @@
       "stats": {
         "constitution": 35,
         "intelligence": 35,
-        "attackSpeedDragReduction": 1
+        "attackSpeedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -4900,6 +5049,37 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CunningDownfall.kt"
     },
     {
+      "key": "CursedAncientEye",
+      "parent": "Accessory",
+      "class_chain": [
+        "CursedAncientEye",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "cursed_ancient_eye",
+      "name_key": "accessory_cursed_ancient_eye_name",
+      "description_key": "accessory_cursed_ancient_eye_description",
+      "name": "Cursed Ancient Eye",
+      "description": "A cursed gift from a nameless horror, pulsing with tormented souls.",
+      "price": 1,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "immunityToStatus": 1.0,
+        "constitution": 55,
+        "dexterity": 55,
+        "lifesteal": 5
+      },
+      "flags": {},
+      "overrides": {
+        "getHitChanceBonus": "0.20"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/CursedAncientEye.kt"
+    },
+    {
       "key": "CursedBow",
       "parent": "Bow",
       "class_chain": [
@@ -5203,6 +5383,35 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/DeepSeaRobe.kt"
     },
     {
+      "key": "DeepSeaTunic",
+      "parent": "LightArmor",
+      "class_chain": [
+        "DeepSeaTunic",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "deep_sea_tunic",
+      "name_key": "armor_light_deep_sea_tunic_name",
+      "description_key": "armor_light_deep_sea_tunic_description",
+      "name": "Deep Sea Tunic",
+      "description": "Abyssal velvet woven into a combat tunic that wards off debilitating afflictions.",
+      "price": 5505,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 28,
+        "intelligence": 14,
+        "immunityToStatus": 0.4
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/DeepSeaTunic.kt"
+    },
+    {
       "key": "DeepSeaVelvet",
       "parent": "Item",
       "class_chain": [
@@ -5350,7 +5559,7 @@
         "constitution": 20,
         "dexterity": 20,
         "intelligence": 20,
-        "immunityToStatus": 1
+        "immunityToStatus": 1.0
       },
       "flags": {
         "notSellable": true
@@ -5381,7 +5590,7 @@
         "constitution": 25,
         "dexterity": 25,
         "intelligence": 25,
-        "immunityToStatus": 1
+        "immunityToStatus": 1.0
       },
       "flags": {
         "notSellable": true
@@ -5412,7 +5621,7 @@
         "constitution": 7,
         "dexterity": 7,
         "intelligence": 7,
-        "immunityToStatus": 1
+        "immunityToStatus": 1.0
       },
       "flags": {
         "notSellable": true,
@@ -5477,6 +5686,38 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Doljonijiarnimorinar.kt"
+    },
+    {
+      "key": "DragonwingShield",
+      "parent": "Accessory",
+      "class_chain": [
+        "DragonwingShield",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "dragonwing_shield",
+      "name_key": "accessory_dragonwing_shield_name",
+      "description_key": "accessory_dragonwing_shield_description",
+      "name": "Dragonwing Shield",
+      "description": "A colossal tower shield forged from the impenetrable wing plates of an ancient dragon, commanding the battlefield with overwhelming presence.",
+      "price": 120000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 200,
+        "constitution": 150,
+        "defense": 15,
+        "magicDefense": 15,
+        "blockChance": 0.2,
+        "threat": 20,
+        "damageTakenModifier": -0.2
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/DragonwingShield.kt"
     },
     {
       "key": "DreadfulMorningstar",
@@ -6081,7 +6322,7 @@
       "gem_value": null,
       "stats": {
         "dexterity": 10,
-        "intelligence": 40,
+        "intelligence": 60,
         "skillAmpModifier": 0.21
       },
       "flags": {},
@@ -6745,7 +6986,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.EXPERIENCE, PetAbility.DROPS)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/EsotericEgg.kt"
     },
     {
@@ -7119,6 +7362,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ExoticVelvet.kt"
     },
     {
+      "key": "ExoticWarGarb",
+      "parent": "LightArmor",
+      "class_chain": [
+        "ExoticWarGarb",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "exotic_war_garb",
+      "name_key": "armor_light_exotic_war_garb_name",
+      "description_key": "armor_light_exotic_war_garb_description",
+      "name": "Exotic War Garb",
+      "description": "Plush corsair velvet tailored for pit fighters and deck raiders.",
+      "price": 1350,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 25,
+        "intelligence": 13
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ExoticWarGarb.kt"
+    },
+    {
       "key": "EyeOfShaKire",
       "parent": "Item",
       "class_chain": [
@@ -7182,7 +7453,7 @@
       "stack": null,
       "gem_value": null,
       "stats": {
-        "immunityToStatus": 1,
+        "immunityToStatus": 1.0,
         "constitution": 15,
         "dexterity": 15
       },
@@ -7266,6 +7537,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Feather.kt"
     },
     {
+      "key": "FeatherHarness",
+      "parent": "LightArmor",
+      "class_chain": [
+        "FeatherHarness",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "feather_harness",
+      "name_key": "armor_light_feather_harness_name",
+      "description_key": "armor_light_feather_harness_description",
+      "name": "Feather Harness",
+      "description": "A weightless combat harness trimmed with desert feathers for swift strikes.",
+      "price": 72,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 10,
+        "intelligence": 5
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FeatherHarness.kt"
+    },
+    {
       "key": "FeatherRobe",
       "parent": "LightArmor",
       "class_chain": [
@@ -7294,6 +7593,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FeatherRobe.kt"
     },
     {
+      "key": "FeralWarPelt",
+      "parent": "LightArmor",
+      "class_chain": [
+        "FeralWarPelt",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "feral_war_pelt",
+      "name_key": "armor_light_feral_war_pelt_name",
+      "description_key": "armor_light_feral_war_pelt_description",
+      "name": "Feral War Pelt",
+      "description": "A primal war-pelt stitched from prehistoric membranes for relentless savagery.",
+      "price": 600,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 56,
+        "intelligence": 28
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FeralWarPelt.kt"
+    },
+    {
       "key": "FireCatalyst",
       "parent": "Item",
       "class_chain": [
@@ -7314,6 +7641,28 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FireCatalyst.kt"
+    },
+    {
+      "key": "FireHoundFang",
+      "parent": "Item",
+      "class_chain": [
+        "FireHoundFang",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "fire_hound_fang",
+      "name_key": "item_fire_hound_fang_name",
+      "description_key": "item_fire_hound_fang_description",
+      "name": "Fire Hound Fang",
+      "description": "A serrated, scorch-blackened fang torn from a feral Fire Hound.",
+      "price": 5,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FireHoundFang.kt"
     },
     {
       "key": "FireproofOil",
@@ -7525,6 +7874,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FleetfootRobe.kt"
+    },
+    {
+      "key": "FleetfootTunic",
+      "parent": "LightArmor",
+      "class_chain": [
+        "FleetfootTunic",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "fleetfoot_tunic",
+      "name_key": "armor_light_fleetfoot_tunic_name",
+      "description_key": "armor_light_fleetfoot_tunic_description",
+      "name": "Fleetfoot Tunic",
+      "description": "A Moth Jacket reinforced with weightless fleetfoot fabric for agile evasive brawling.",
+      "price": 1688,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "flatDodgeChance": 0.24,
+        "constitution": 42,
+        "intelligence": 16
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FleetfootTunic.kt"
     },
     {
       "key": "Flute",
@@ -8105,6 +8483,84 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/FullmoonDagger.kt"
     },
     {
+      "key": "GemBag",
+      "parent": "GemBundle",
+      "class_chain": [
+        "GemBag",
+        "GemBundle",
+        "Consumable",
+        "Item"
+      ],
+      "category": "GemBundle",
+      "sprite": "gem_4",
+      "name_key": "consumable_gem_bag_name",
+      "description_key": "consumable_gem_bag_description",
+      "name": "Gem Bag",
+      "description": "A heavy drawstring bag brimming with gems. Consume to receive 200 gems.",
+      "price": null,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "getFixedGems": "200"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GemBag.kt"
+    },
+    {
+      "key": "GemChest",
+      "parent": "GemBundle",
+      "class_chain": [
+        "GemChest",
+        "GemBundle",
+        "Consumable",
+        "Item"
+      ],
+      "category": "GemBundle",
+      "sprite": "gem_5",
+      "name_key": "consumable_gem_chest_name",
+      "description_key": "consumable_gem_chest_description",
+      "name": "Gem Chest",
+      "description": "An ornate chest overflowing with rare gems. Consume to receive 500 gems.",
+      "price": null,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "getFixedGems": "500"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GemChest.kt"
+    },
+    {
+      "key": "GemCluster",
+      "parent": "GemBundle",
+      "class_chain": [
+        "GemCluster",
+        "GemBundle",
+        "Consumable",
+        "Item"
+      ],
+      "category": "GemBundle",
+      "sprite": "gem_1",
+      "name_key": "consumable_gem_cluster_name",
+      "description_key": "consumable_gem_cluster_description",
+      "name": "Gem Cluster",
+      "description": "A small cluster of shimmering crystals. Consume to receive 5 gems.",
+      "price": null,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "getFixedGems": "5"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GemCluster.kt"
+    },
+    {
       "key": "GemOfProtection",
       "parent": "Item",
       "class_chain": [
@@ -8127,6 +8583,32 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GemOfProtection.kt"
     },
     {
+      "key": "GemPile",
+      "parent": "GemBundle",
+      "class_chain": [
+        "GemPile",
+        "GemBundle",
+        "Consumable",
+        "Item"
+      ],
+      "category": "GemBundle",
+      "sprite": "gem_2",
+      "name_key": "consumable_gem_pile_name",
+      "description_key": "consumable_gem_pile_description",
+      "name": "Gem Pile",
+      "description": "A tidy pile of cut gemstones. Consume to receive 20 gems.",
+      "price": null,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "getFixedGems": "20"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GemPile.kt"
+    },
+    {
       "key": "Geode",
       "parent": "Consumable",
       "class_chain": [
@@ -8146,6 +8628,7 @@
       "gem_value": null,
       "stats": {},
       "flags": {
+        "noPetDoubleDrop": true,
         "isRareDrop": true
       },
       "overrides": {
@@ -8269,6 +8752,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GhostRabbitCloak.kt"
+    },
+    {
+      "key": "GhostRabbitTunic",
+      "parent": "LightArmor",
+      "class_chain": [
+        "GhostRabbitTunic",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "ghost_rabbit_tunic",
+      "name_key": "armor_light_ghost_rabbit_tunic_name",
+      "description_key": "armor_light_ghost_rabbit_tunic_description",
+      "name": "Ghost Rabbit Tunic",
+      "description": "A nimble combat tunic stitched from spectral cloth and elusive Golden Rabbit fur.",
+      "price": 390,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 15,
+        "intelligence": 8,
+        "bonusExperience": 35
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GhostRabbitTunic.kt"
     },
     {
       "key": "GhostwoodBoard",
@@ -8798,6 +9310,32 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Grains.kt"
     },
     {
+      "key": "GreaterGeode",
+      "parent": "Geode",
+      "class_chain": [
+        "GreaterGeode",
+        "Geode",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "greater_geode",
+      "name_key": "consumable_greater_geode_name",
+      "description_key": "consumable_greater_geode_description",
+      "name": "Greater Geode",
+      "description": "A dense, crystal-lined geode rich with precious gems. Rarely, it contains an enormous hoard of gems.",
+      "price": 25,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {
+        "isRareDrop": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/GreaterGeode.kt"
+    },
+    {
       "key": "GreaterMagmaCore",
       "parent": "Item",
       "class_chain": [
@@ -9122,6 +9660,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/IconOfTorment.kt"
+    },
+    {
+      "key": "IgnisJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "IgnisJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "ignis_jacket",
+      "name_key": "armor_light_ignis_jacket_name",
+      "description_key": "armor_light_ignis_jacket_description",
+      "name": "Ignis Jacket",
+      "description": "A Slime Combat Jacket infused with Sunfire Essence, radiating blistering heat.",
+      "price": 2370,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 45,
+        "defense": 10,
+        "onFireBonusDamage": 2
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/IgnisJacket.kt"
     },
     {
       "key": "IgnitionOrb",
@@ -9487,7 +10054,7 @@
         "constitution": 60,
         "dexterity": 60,
         "decay": 60,
-        "criticalDamage": 1
+        "criticalDamage": 1.0
       },
       "flags": {},
       "overrides": {},
@@ -9596,7 +10163,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.FIGHTER, PetAbility.BARRIER)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/InsectEgg.kt"
     },
     {
@@ -9810,6 +10379,35 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/IvoryJacket.kt"
     },
     {
+      "key": "JacketOfTheArchmage",
+      "parent": "LightArmor",
+      "class_chain": [
+        "JacketOfTheArchmage",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "jacket_of_the_archmage",
+      "name_key": "armor_light_jacket_of_the_archmage_name",
+      "description_key": "armor_light_jacket_of_the_archmage_description",
+      "name": "Jacket of the Archmage",
+      "description": "A Laroxian Jacket inscribed with forbidden runes of martial power and arcane warding.",
+      "price": 966,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 60,
+        "intelligence": 30,
+        "magicDefense": 6
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/JacketOfTheArchmage.kt"
+    },
+    {
       "key": "JeweledCrown",
       "parent": "Accessory",
       "class_chain": [
@@ -9938,6 +10536,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/KaunianFabric.kt"
+    },
+    {
+      "key": "KaunianJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "KaunianJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "kaunian_jacket",
+      "name_key": "armor_light_kaunian_jacket_name",
+      "description_key": "armor_light_kaunian_jacket_description",
+      "name": "Kaunian Jacket",
+      "description": "A reinforced battle jacket woven from Kaunian fabric for frontline endurance.",
+      "price": 900,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 100,
+        "constitution": 46,
+        "intelligence": 22
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/KaunianJacket.kt"
     },
     {
       "key": "KaunianRobe",
@@ -10087,6 +10714,34 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/LaroxianGloves.kt"
+    },
+    {
+      "key": "LaroxianJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "LaroxianJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "laroxian_jacket",
+      "name_key": "armor_light_laroxian_jacket_name",
+      "description_key": "armor_light_laroxian_jacket_description",
+      "name": "Laroxian Jacket",
+      "description": "Arcane-threaded Laroxian war-jacket tailored for raw martial output.",
+      "price": 504,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 52,
+        "intelligence": 25
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/LaroxianJacket.kt"
     },
     {
       "key": "LaroxianRobe",
@@ -10247,6 +10902,54 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Leek.kt"
     },
     {
+      "key": "LesserGeode",
+      "parent": "Geode",
+      "class_chain": [
+        "LesserGeode",
+        "Geode",
+        "Consumable",
+        "Item"
+      ],
+      "category": "Consumable",
+      "sprite": "lesser_geode",
+      "name_key": "consumable_lesser_geode_name",
+      "description_key": "consumable_lesser_geode_description",
+      "name": "Lesser Geode",
+      "description": "A fractured hollow rock that usually contains a single gem, though it is sometimes empty. Rarely, it holds a cluster of gems.",
+      "price": 5,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {
+        "isRareDrop": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/LesserGeode.kt"
+    },
+    {
+      "key": "LesserMagmaCore",
+      "parent": "Item",
+      "class_chain": [
+        "LesserMagmaCore",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "lesser_magma_core",
+      "name_key": "item_lesser_magma_core_name",
+      "description_key": "item_lesser_magma_core_description",
+      "name": "Lesser Magma Core",
+      "description": "A warm ember-filled core salvaged from the lesser magma constructs of Malebolge.",
+      "price": 4,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/LesserMagmaCore.kt"
+    },
+    {
       "key": "LeviathanScale",
       "parent": "Item",
       "class_chain": [
@@ -10392,6 +11095,50 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/LongSerpentFang.kt"
+    },
+    {
+      "key": "MagmaBloom",
+      "parent": "Item",
+      "class_chain": [
+        "MagmaBloom",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "magma_bloom",
+      "name_key": "item_magma_bloom_name",
+      "description_key": "item_magma_bloom_description",
+      "name": "Magma Bloom",
+      "description": "A hardy incandescent blossom that thrives in the superheated vents of Malebolge.",
+      "price": 5,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/MagmaBloom.kt"
+    },
+    {
+      "key": "MagmaBloomEssence",
+      "parent": "Item",
+      "class_chain": [
+        "MagmaBloomEssence",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "magma_bloom_essence",
+      "name_key": "item_magma_bloom_essence_name",
+      "description_key": "item_magma_bloom_essence_description",
+      "name": "Magma Bloom Essence",
+      "description": "Concentrated incandescent nectar distilled from ten volcanic magma blooms.",
+      "price": 75,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/MagmaBloomEssence.kt"
     },
     {
       "key": "MagmaShark",
@@ -10996,6 +11743,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/MonkeyHideJacket.kt"
     },
     {
+      "key": "MothJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "MothJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "moth_jacket",
+      "name_key": "armor_light_moth_jacket_name",
+      "description_key": "armor_light_moth_jacket_description",
+      "name": "Moth Jacket",
+      "description": "A lightweight battle jacket cut from shimmering Giant Moth wing fabric.",
+      "price": 783,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 40,
+        "intelligence": 20
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/MothJacket.kt"
+    },
+    {
       "key": "MothRobe",
       "parent": "LightArmor",
       "class_chain": [
@@ -11278,7 +12053,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf("
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/MythicEgg.kt"
     },
     {
@@ -13109,7 +13886,7 @@
       "stats": {
         "dexterity": 900,
         "attackSpeed": 900,
-        "damageDealtModifier": 9
+        "damageDealtModifier": 9.0
       },
       "flags": {},
       "overrides": {},
@@ -13139,10 +13916,10 @@
         "constitution": 900,
         "dexterity": 900,
         "criticalChance": 0.9,
-        "criticalDamage": 9,
+        "criticalDamage": 9.0,
         "manaRegen": 99,
-        "skillAmpModifier": 9,
-        "damageDealtModifier": 9,
+        "skillAmpModifier": 9.0,
+        "damageDealtModifier": 9.0,
         "darknessDamageAmplification": 0.09
       },
       "flags": {},
@@ -13172,7 +13949,7 @@
       "stats": {
         "constitution": 900,
         "lifesteal": 20,
-        "damageDealtModifier": 9
+        "damageDealtModifier": 9.0
       },
       "flags": {},
       "overrides": {},
@@ -13689,7 +14466,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.SAVAGE, PetAbility.OPPORTUNIST)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ReptileEgg.kt"
     },
     {
@@ -13808,6 +14587,60 @@
       },
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RobeOfTheLich.kt"
+    },
+    {
+      "key": "RoughBrawlerWraps",
+      "parent": "LightArmor",
+      "class_chain": [
+        "RoughBrawlerWraps",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "rough_brawler_wraps",
+      "name_key": "armor_light_rough_brawler_wraps_name",
+      "description_key": "armor_light_rough_brawler_wraps_description",
+      "name": "Rough Brawler Wraps",
+      "description": "Coarse plant-fiber wraps bound tightly across the torso for unrestricted swings.",
+      "price": 54,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 5,
+        "intelligence": 3
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RoughBrawlerWraps.kt"
+    },
+    {
+      "key": "RoyalGemVault",
+      "parent": "GemBundle",
+      "class_chain": [
+        "RoyalGemVault",
+        "GemBundle",
+        "Consumable",
+        "Item"
+      ],
+      "category": "GemBundle",
+      "sprite": "gem_6",
+      "name_key": "consumable_royal_gem_vault_name",
+      "description_key": "consumable_royal_gem_vault_description",
+      "name": "Royal Gem Vault",
+      "description": "A regal vault brimming with an immense fortune of gems. Consume to receive 1,000 gems.",
+      "price": null,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "getFixedGems": "1000"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/RoyalGemVault.kt"
     },
     {
       "key": "Ruby",
@@ -14050,6 +14883,35 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SageJacket.kt"
     },
     {
+      "key": "SageTunic",
+      "parent": "LightArmor",
+      "class_chain": [
+        "SageTunic",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "sage_tunic",
+      "name_key": "armor_light_sage_tunic_name",
+      "description_key": "armor_light_sage_tunic_description",
+      "name": "Sage Tunic",
+      "description": "A Ghost Rabbit Tunic steeped in an Infusion of Wisdom, sharpening both battle instincts and experience gain.",
+      "price": 3533,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 36,
+        "intelligence": 18,
+        "bonusExperience": 60
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SageTunic.kt"
+    },
+    {
       "key": "Salad",
       "parent": "Food",
       "class_chain": [
@@ -14246,7 +15108,7 @@
       "gem_value": null,
       "stats": {
         "dexterity": 5,
-        "intelligence": 30,
+        "intelligence": 45,
         "skillAmpModifier": 0.15
       },
       "flags": {},
@@ -14274,6 +15136,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ScarletDebris.kt"
+    },
+    {
+      "key": "ScarletJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "ScarletJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "scarlet_jacket",
+      "name_key": "armor_light_scarlet_jacket_name",
+      "description_key": "armor_light_scarlet_jacket_description",
+      "name": "Scarlet Jacket",
+      "description": "A tailored scarlet coat woven from Scarlet strands and bound with an eldritch seal. Lightweight yet resilient, it channels arcane tempo to accelerate the wearer's strikes.",
+      "price": 121300,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 60,
+        "intelligence": 60,
+        "attackSpeed": 50
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ScarletJacket.kt"
     },
     {
       "key": "ScarletOni",
@@ -14445,6 +15336,33 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ScarletVeil.kt"
+    },
+    {
+      "key": "ScepterOfCursedSouls",
+      "parent": "Staff",
+      "class_chain": [
+        "ScepterOfCursedSouls",
+        "Staff",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Staff",
+      "sprite": "scepter_of_cursed_souls",
+      "name_key": "weapon_staff_scepter_of_cursed_souls_name",
+      "description_key": "weapon_staff_scepter_of_cursed_souls_description",
+      "name": "Scepter of Cursed Souls",
+      "description": "An abyss-forged evolution of the Cursed Scepter bound with tormented souls, granting an even darker relic to every minion raised by its wielder.",
+      "price": 15600,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 60
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ScepterOfCursedSouls.kt"
     },
     {
       "key": "Scimitar",
@@ -14749,7 +15667,7 @@
         "constitution": 40,
         "dexterity": 40,
         "intelligence": 40,
-        "immunityToStatus": 1
+        "immunityToStatus": 1.0
       },
       "flags": {
         "notSellable": true
@@ -15334,6 +16252,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SilkThread.kt"
     },
     {
+      "key": "SilkWarTunic",
+      "parent": "LightArmor",
+      "class_chain": [
+        "SilkWarTunic",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "silk_war_tunic",
+      "name_key": "armor_light_silk_war_tunic_name",
+      "description_key": "armor_light_silk_war_tunic_description",
+      "name": "Silk War Tunic",
+      "description": "Fine gilded silk stitched into a sleeveless brawler tunic.",
+      "price": 216,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 20,
+        "intelligence": 10
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SilkWarTunic.kt"
+    },
+    {
       "key": "SilverRing",
       "parent": "Accessory",
       "class_chain": [
@@ -15575,6 +16521,35 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SlimeArmor.kt"
     },
     {
+      "key": "SlimeCombatJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "SlimeCombatJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "slime_combat_jacket",
+      "name_key": "armor_light_slime_combat_jacket_name",
+      "description_key": "armor_light_slime_combat_jacket_description",
+      "name": "Slime Combat Jacket",
+      "description": "A supple jacket hardened from condensed green slime, cut open for brawling.",
+      "price": 630,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 40,
+        "intelligence": 4,
+        "defense": 5
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SlimeCombatJacket.kt"
+    },
+    {
       "key": "SlimeJacket",
       "parent": "MediumArmor",
       "class_chain": [
@@ -15657,6 +16632,32 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SlimeRobe.kt"
+    },
+    {
+      "key": "SmallGemPouch",
+      "parent": "GemBundle",
+      "class_chain": [
+        "SmallGemPouch",
+        "GemBundle",
+        "Consumable",
+        "Item"
+      ],
+      "category": "GemBundle",
+      "sprite": "gem_3",
+      "name_key": "consumable_small_gem_pouch_name",
+      "description_key": "consumable_small_gem_pouch_description",
+      "name": "Small Gem Pouch",
+      "description": "A leather pouch packed with precious gems. Consume to receive 100 gems.",
+      "price": null,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {
+        "getFixedGems": "100"
+      },
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SmallGemPouch.kt"
     },
     {
       "key": "SolterisSwordOfTheSun",
@@ -15785,6 +16786,34 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SpectralRobe.kt"
+    },
+    {
+      "key": "SpectralWarShroud",
+      "parent": "LightArmor",
+      "class_chain": [
+        "SpectralWarShroud",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "spectral_war_shroud",
+      "name_key": "armor_light_spectral_war_shroud_name",
+      "description_key": "armor_light_spectral_war_shroud_description",
+      "name": "Spectral War Shroud",
+      "description": "Ghostly battlefield cloth draped over the shoulders to channel relentless ferocity.",
+      "price": 135,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 15,
+        "intelligence": 8
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SpectralWarShroud.kt"
     },
     {
       "key": "SpellCompendium",
@@ -16329,6 +17358,35 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/StaffOfTheArchmage.kt"
     },
     {
+      "key": "StaffOfTormentedSouls",
+      "parent": "Staff",
+      "class_chain": [
+        "StaffOfTormentedSouls",
+        "Staff",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Staff",
+      "sprite": "staff_of_tormented_souls",
+      "name_key": "weapon_staff_staff_of_tormented_souls_name",
+      "description_key": "weapon_staff_staff_of_tormented_souls_description",
+      "name": "Staff of Tormented Souls",
+      "description": "An obsidian-forged staff channeling the wailing essence of banished abyssal spirits.",
+      "price": 2955,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "intelligence": 50,
+        "lifesteal": 20,
+        "onFireBonusDamage": 2
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/StaffOfTormentedSouls.kt"
+    },
+    {
       "key": "StarFragment",
       "parent": "Item",
       "class_chain": [
@@ -16662,6 +17720,50 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/StrawberrySmoothie.kt"
+    },
+    {
+      "key": "Sulfur",
+      "parent": "Item",
+      "class_chain": [
+        "Sulfur",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "sulfur",
+      "name_key": "item_sulfur_name",
+      "description_key": "item_sulfur_description",
+      "name": "Sulfur",
+      "description": "Pungent yellow volcanic crystal harvested from the fissures of Malebolge.",
+      "price": 3,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Sulfur.kt"
+    },
+    {
+      "key": "SulfurPowder",
+      "parent": "Item",
+      "class_chain": [
+        "SulfurPowder",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "sulfur_powder",
+      "name_key": "item_sulfur_powder_name",
+      "description_key": "item_sulfur_powder_description",
+      "name": "Sulfur Powder",
+      "description": "Finely ground volcanic sulfur refined from raw Malebolge deposits.",
+      "price": 23,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/SulfurPowder.kt"
     },
     {
       "key": "SunfireCore",
@@ -17249,6 +18351,28 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Tomato.kt"
     },
     {
+      "key": "TormentedEssence",
+      "parent": "Item",
+      "class_chain": [
+        "TormentedEssence",
+        "Item"
+      ],
+      "category": null,
+      "sprite": "tormented_essence",
+      "name_key": "item_tormented_essence_name",
+      "description_key": "item_tormented_essence_description",
+      "name": "Tormented Essence",
+      "description": "Condensed spectral residue left behind by a wailing Banished Soul.",
+      "price": 5,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {},
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/TormentedEssence.kt"
+    },
+    {
       "key": "TortoiseArmor",
       "parent": "HeavyArmor",
       "class_chain": [
@@ -17424,7 +18548,7 @@
       "stats": {
         "constitution": 30,
         "dexterity": 20,
-        "attackSpeedDragReduction": 1
+        "attackSpeedDragReduction": 1.0
       },
       "flags": {},
       "overrides": {
@@ -18599,6 +19723,34 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VeilShatterer.kt"
     },
     {
+      "key": "VenomfangWarHarness",
+      "parent": "LightArmor",
+      "class_chain": [
+        "VenomfangWarHarness",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "venomfang_war_harness",
+      "name_key": "armor_light_venomfang_war_harness_name",
+      "description_key": "armor_light_venomfang_war_harness_description",
+      "name": "Venomfang War Harness",
+      "description": "Tight spider-silk webbing bound into a lightweight, high-mobility combat harness.",
+      "price": 540,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 36,
+        "intelligence": 18
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VenomfangWarHarness.kt"
+    },
+    {
       "key": "VerdantBlade",
       "parent": "Dagger",
       "class_chain": [
@@ -18842,6 +19994,36 @@
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VoidCrusher.kt"
     },
     {
+      "key": "VoidMitre",
+      "parent": "Accessory",
+      "class_chain": [
+        "VoidMitre",
+        "Accessory",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Accessory",
+      "sprite": "void_mitre",
+      "name_key": "accessory_void_mitre_name",
+      "description_key": "accessory_void_mitre_description",
+      "name": "Void Mitre",
+      "description": "A void-sealed evolution of the Eldritch Mitre that severs all healing power in exchange for overwhelming arcane intellect and spell amplification.",
+      "price": 15100,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "maxHp": 100,
+        "intelligence": 90,
+        "skillAmpModifier": 0.1
+      },
+      "flags": {
+        "zeroHealing": true
+      },
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/VoidMitre.kt"
+    },
+    {
       "key": "VoidPendant",
       "parent": "Accessory",
       "class_chain": [
@@ -18884,14 +20066,14 @@
       "name": "Voidpiercer Jacket",
       "description": "Obsidian-plated leather tailored with void-sealed threads that pierce through supernatural wards.",
       "price": 18990,
-      "rarity": 2,
+      "rarity": null,
       "stack": null,
       "gem_value": null,
       "stats": {
         "maxHp": 225,
         "dexterity": 25,
         "magicDefense": 10,
-        "ignoreImmunityToStatus": 10
+        "ignoreImmunityToStatus": 10.0
       },
       "flags": {},
       "overrides": {},
@@ -19186,7 +20368,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.LIFESTEAL, PetAbility.BLOODCRAVE)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/WildEgg.kt"
     },
     {
@@ -19367,6 +20551,34 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/WinterHelm.kt"
+    },
+    {
+      "key": "WinterJacket",
+      "parent": "LightArmor",
+      "class_chain": [
+        "WinterJacket",
+        "LightArmor",
+        "Armor",
+        "Equipment",
+        "Item"
+      ],
+      "category": "LightArmor",
+      "sprite": "winter_jacket",
+      "name_key": "armor_light_winter_jacket_name",
+      "description_key": "armor_light_winter_jacket_description",
+      "name": "Winter Jacket",
+      "description": "A frost-lined combat jacket stitched from dense wintercloth for northern brawlers.",
+      "price": 486,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "constitution": 32,
+        "intelligence": 16
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/WinterJacket.kt"
     },
     {
       "key": "WinterShield",
@@ -19625,7 +20837,9 @@
       "gem_value": null,
       "stats": {},
       "flags": {},
-      "overrides": {},
+      "overrides": {
+        "guaranteedFirstAbilities": "listOf(PetAbility.REGENERATION, PetAbility.HEALER)"
+      },
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/WoodenEgg.kt"
     },
     {
@@ -20166,6 +21380,35 @@
       "flags": {},
       "overrides": {},
       "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/Zapper.kt"
+    },
+    {
+      "key": "ZephyrBowOfTheWind",
+      "parent": "Bow",
+      "class_chain": [
+        "ZephyrBowOfTheWind",
+        "Bow",
+        "Weapon",
+        "Equipment",
+        "Item"
+      ],
+      "category": "Bow",
+      "sprite": "zephyr_bow_of_the_wind",
+      "name_key": "weapon_bow_zephyr_bow_of_the_wind_name",
+      "description_key": "weapon_bow_zephyr_bow_of_the_wind_description",
+      "name": "Zephyr, Bow of the Wind",
+      "description": "A weightless gale-forged longbow woven from tempest currents. Its arrows fly in an unbroken hurricane, trading raw impact for blinding speed.",
+      "price": 120000,
+      "rarity": null,
+      "stack": null,
+      "gem_value": null,
+      "stats": {
+        "dexterity": 58,
+        "attackSpeed": 400,
+        "finalBasicDamageModifier": -0.8
+      },
+      "flags": {},
+      "overrides": {},
+      "file": "app/src/main/kotlin/it/paranoidsquirrels/idleguildmaster/storage/data/items/instances/ZephyrBowOfTheWind.kt"
     }
   ]
 }

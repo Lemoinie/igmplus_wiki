@@ -667,6 +667,27 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.3);
 }
 
+.proseContent :global(.screenshotFigure) {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.proseContent :global(.screenshotFigure img) {
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  border: 1px solid var(--border-card);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+}
+
+.proseContent :global(.screenshotFigure figcaption) {
+  margin-top: 0.55rem;
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
 .proseContent :global(img.sprite),
 .proseContent :global(.sprite) {
   image-rendering: pixelated;
@@ -677,6 +698,40 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   display: inline-block;
   vertical-align: middle;
   margin: 0 4px;
+}
+
+.proseContent :global(.recipeItem) {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  vertical-align: middle;
+  margin: 2px 4px;
+  line-height: 1;
+}
+
+.proseContent :global(.recipeItem img.sprite) {
+  margin: 0;
+  display: block;
+}
+
+.proseContent :global(.recipeQty) {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 1px 4px;
+  min-width: 16px;
+  text-align: center;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 800;
+  line-height: 1.15;
+  color: #ffffff;
+  background: rgba(10, 13, 18, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.22);
+  border-radius: 4px;
+  text-shadow: 0 1px 2px #000000;
+  pointer-events: none;
 }
 
 /* ================= Quotes & Alerts ================= */

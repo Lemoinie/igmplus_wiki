@@ -1,0 +1,15 @@
+{
+  "id": "SpectralWarShroud",
+  "name": "Spectral War Shroud",
+  "type": "armor",
+  "category": "LightArmor",
+  "rarity": null,
+  "price": 135,
+  "sprite": "spectral_war_shroud",
+  "description": "Ghostly battlefield cloth draped over the shoulders to channel relentless ferocity.",
+  "stats": {
+    "constitution": 15,
+    "intelligence": 8
+  },
+  "notes": ""
+}
