@@ -532,6 +532,11 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   color: #94a3b8;
 }
 
+.proseContent :global(span[style*="color"] strong),
+.proseContent :global(span[style*="color"] em) {
+  color: inherit;
+}
+
 .proseContent :global(ul),
 .proseContent :global(ol) {
   margin-bottom: 1.5rem;
@@ -690,6 +695,13 @@ const readTime = Math.max(1, Math.ceil(words / 220));
 
 .proseContent :global(blockquote p:last-child) {
   margin-bottom: 0;
+}
+
+.proseContent :global(hr) {
+  width: 60%;
+  margin: 1.75rem auto;
+  border: 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.15);
 }
 
 .proseContent :global(code) {

@@ -4,6 +4,7 @@ import type { DoctrineDefinition, DoctrineAbilityDefinition } from '../types';
 import { base } from '../lib/base';
 import { filterDisplayStats, formatStat } from '../lib/stats';
 import { parseCoins } from '../lib/currency';
+import { exportBuildPng } from '../lib/exportBuildPng';
 
 interface SkillDetail {
   key: string;
@@ -912,6 +913,141 @@ function formatPct(val: number, decimals = 0): string {
   const num = val * 100;
   return `${decimals > 0 ? Number(num.toFixed(decimals)) : Math.round(num)}%`;
 }
+
+const exportingPng = ref(false);
+const exportPngLabel = ref('Export PNG');
+
+function summarizeEquip(item: SimEquip | null): string {
+  if (!item) return '';
+  const statParts = Object.entries(filterDisplayStats(item.stats)).map(([k, v]) => formatStat(k, Number(v)));
+  if (item.notes) statParts.push(item.notes);
+  return statParts.join(' · ');
+}
+
+async function handleExportPng() {
+  const cls = selectedClass.value;
+  const st = computedStats.value;
+  if (!cls || !st || exportingPng.value) return;
+  exportingPng.value = true;
+  exportPngLabel.value = 'Exporting...';
+  try {
+    const traits: { name: string; rare: boolean }[] = [];
+    if (selectedCommonTrait.value) traits.push({ name: selectedCommonTrait.value.name, rare: false });
+    if (selectedRareTrait.value) traits.push({ name: selectedRareTrait.value.name, rare: true });
+
+    const equipList = [
+      {
+        slot: 'Weapon',
+        name: equippedWeapon.value?.name || 'Empty',
+        sprite: equippedWeapon.value?.sprite,
+        summary: summarizeEquip(equippedWeapon.value),
+      },
+      {
+        slot: 'Armor',
+        name: equippedArmor.value?.name || 'Empty',
+        sprite: equippedArmor.value?.sprite,
+        summary: summarizeEquip(equippedArmor.value),
+      },
+      {
+        slot: 'Accessory',
+        name: equippedAccessory.value?.name || 'Empty',
+        sprite: equippedAccessory.value?.sprite,
+        summary: summarizeEquip(equippedAccessory.value),
+      },
+    ];
+
+    const doc =
+      ascended.value && selectedDoctrine.value
+        ? {
+            name: selectedDoctrine.value.name,
+            spentLP: spentLP.value,
+            availableLP: availableLP.value,
+            nodes: currentDoctrineAbilities.value
+              .map((ab) => ({
+                name: ab.name,
+                level: doctrineAllocations.value[ab.key] ?? 0,
+                maxLevel: ab.max_level,
+              }))
+              .filter((n) => n.level > 0),
+          }
+        : null;
+
+    const coreStats = [
+      { label: 'Max HP', value: st.totalHp.toLocaleString(), accent: '#34d399' },
+      { label: 'Damage', value: `${st.minDmg}–${st.maxDmg}`, sub: st.isMagic ? 'Magic' : 'Physical', accent: '#f87171' },
+      {
+        label: 'DEF / MDEF',
+        value: `${st.totalDef} / ${st.totalMdef}`,
+        sub: `${st.defMitigationPct.toFixed(0)}% / ${st.mdefMitigationPct.toFixed(0)}% DR`,
+        accent: '#60a5fa',
+      },
+      { label: 'CON', value: String(st.totalCon), sub: st.conScaling ? `${Math.round(st.conScaling * 100)}% ATK` : undefined },
+      { label: 'DEX', value: String(st.totalDex), sub: st.dexScaling ? `${Math.round(st.dexScaling * 100)}% ATK` : undefined },
+      { label: 'INT', value: String(st.totalInt), sub: st.intScaling ? `${Math.round(st.intScaling * 100)}% ATK` : undefined },
+    ];
+
+    const combatStats: { label: string; value: string; accent?: string }[] = [
+      { label: 'Attack Speed', value: `${st.attackSpeed}%` },
+      { label: 'Mana Regen', value: `+${st.manaRegen}/t (${st.turnsToCast}t)` },
+      { label: 'Phys / Spell Crit', value: `${formatPct(st.physCritChance)} / ${formatPct(st.spellCritChance)}` },
+      { label: 'Crit Damage', value: `${formatPct(st.physCritDmg)} / ${formatPct(st.spellCritDmg)}` },
+      { label: 'Dodge Chance', value: formatPct(st.dodgeChance) },
+      { label: 'Damage Dealt', value: formatPct(st.damageDealt), accent: st.damageDealt > 1 ? '#34d399' : undefined },
+      { label: 'Basic Atk Amp', value: formatPct(st.normalAttackAmp), accent: st.normalAttackAmp > 1 ? '#34d399' : undefined },
+      { label: 'Skill Amp', value: formatPct(st.skillAmp), accent: st.skillAmp > 1 ? '#34d399' : undefined },
+      { label: 'Damage Taken', value: formatPct(st.damageTaken), accent: st.damageTaken < 1 ? '#34d399' : st.damageTaken > 1 ? '#f87171' : undefined },
+      { label: 'Threat', value: `${st.threat}` },
+    ];
+    if (st.armorPenetration > 0) combatStats.push({ label: 'Armor Pen', value: formatPct(st.armorPenetration), accent: '#fbbf24' });
+    if (st.lifesteal > 0) combatStats.push({ label: 'Lifesteal', value: `${st.lifesteal}%`, accent: '#f87171' });
+    if (st.regeneration > 0) combatStats.push({ label: 'Regeneration', value: `+${st.regeneration}/t`, accent: '#34d399' });
+    if (st.counterattack > 0) combatStats.push({ label: 'Counterattack', value: formatPct(Math.min(1, st.counterattack)) });
+    if (st.statusImmunity > 0) combatStats.push({ label: 'Status Immunity', value: formatPct(Math.min(1, st.statusImmunity)) });
+    if (st.darknessReduction > 0) combatStats.push({ label: 'Darkness Red.', value: `-${st.darknessReduction}` });
+    if (st.initiative) combatStats.push({ label: 'Initiative', value: 'Yes', accent: '#fbbf24' });
+    if (st.alwaysHits) combatStats.push({ label: 'Accuracy', value: 'Never Miss', accent: '#fbbf24' });
+
+    const skills: { kind: 'Active' | 'Passive'; name: string; description: string }[] = [];
+    if (cls.activeSkillDetail && cls.activeSkillDetail.name !== 'None') {
+      skills.push({ kind: 'Active', name: cls.activeSkillDetail.name, description: cls.activeSkillDetail.description });
+    }
+    if (cls.passiveSkillDetail && cls.passiveSkillDetail.name !== 'None') {
+      skills.push({ kind: 'Passive', name: cls.passiveSkillDetail.name, description: cls.passiveSkillDetail.description });
+    }
+
+    await exportBuildPng({
+      basePath: resolvedBase.value,
+      className: cls.name,
+      classId: cls.id,
+      classSprite: cls.sprite,
+      category: cls.category,
+      tier: cls.tier,
+      level: st.lv,
+      maxLevel: cls.maxLevel,
+      ascended: ascended.value,
+      attackTypeLabel: st.attackTypeLabel,
+      traits,
+      potionsLabel: totalPotionsDrank.value > 0 ? `Potions: ${totalPotionsDrank.value}/${totalPotionMaxCap.value}` : undefined,
+      equipment: equipList,
+      doctrine: doc,
+      coreStats,
+      combatStats,
+      skills,
+    });
+    exportPngLabel.value = 'Exported!';
+    setTimeout(() => {
+      exportPngLabel.value = 'Export PNG';
+    }, 1800);
+  } catch (err) {
+    console.error('Export PNG failed:', err);
+    exportPngLabel.value = 'Export Failed';
+    setTimeout(() => {
+      exportPngLabel.value = 'Export PNG';
+    }, 2000);
+  } finally {
+    exportingPng.value = false;
+  }
+}
 </script>
 
 <template>
@@ -925,6 +1061,15 @@ function formatPct(val: number, decimals = 0): string {
         </p>
       </div>
       <div class="simHeaderActions">
+        <button
+          v-if="selectedClass && computedStats"
+          type="button"
+          class="actionBtn primaryBtn"
+          :disabled="exportingPng"
+          @click="handleExportPng"
+        >
+          {{ exportPngLabel }}
+        </button>
         <a
           v-if="selectedClass"
           :href="`${resolvedBase}/classes/${selectedClass.id}`"
@@ -1916,6 +2061,23 @@ function formatPct(val: number, decimals = 0): string {
   border: 1px solid var(--border-card);
   text-decoration: none;
   transition: all 0.15s ease;
+}
+
+.primaryBtn {
+  background: var(--brand-primary);
+  border-color: var(--brand-primary);
+  color: #0b0f16;
+  font-weight: 700;
+}
+
+.primaryBtn:hover:not(:disabled) {
+  background: #93c5fd;
+  border-color: #93c5fd;
+}
+
+.primaryBtn:disabled {
+  opacity: 0.6;
+  cursor: wait;
 }
 
 .secondaryBtn {
