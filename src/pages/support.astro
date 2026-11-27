@@ -4,6 +4,10 @@ import { base } from '../lib/base';
 
 const SMARTLINK_URL = 'https://asiafilm.org/4/02f1d202c4c248ae5e18d70f19e2bfb0';
 const KOFI_URL = 'https://ko-fi.com/lemoinie';
+const PATREON_URL = 'https://www.patreon.com/lemoinie';
+
+const SMARTLINK_ENABLED = false;
+const PATREON_ENABLED = false;
 ---
 
 <WikiLayout
@@ -27,34 +31,13 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
         Discord already means a lot.
       </p>
       <p class="supportNote">
-        If you'd still like to help cover domain costs and future updates, here are two simple ways:
+        If you'd still like to help cover domain costs and future updates, here are a few ways:
       </p>
     </section>
 
     <!-- Support Options -->
     <section class="optionsGrid" aria-label="Support options">
-      <!-- Option 1: Free Support via Sponsored Link -->
-      <div class="optionCard optionCardFree">
-        <div class="optionBadge badgeFree">Free · No Cost</div>
-        <h2 class="optionHeading">Visit a Sponsored Link</h2>
-        <p class="optionDesc">
-          Support the wiki for free by opening a third-party sponsor link in a new tab. It doesn't
-          cost you anything and helps fund a custom domain for the wiki.
-        </p>
-        <p class="optionHint">
-          Heads up: opens an external third-party ad page in a new tab.
-        </p>
-        <a
-          href={SMARTLINK_URL}
-          target="_blank"
-          rel="noopener noreferrer sponsored"
-          class="optionBtn btnFree"
-        >
-          Open Sponsored Link ↗
-        </a>
-      </div>
-
-      <!-- Option 2: Direct Tip via Ko-fi -->
+      <!-- Option 1: Direct Tip via Ko-fi -->
       <div class="optionCard optionCardKofi">
         <div class="optionBadge badgeKofi">Direct Tip</div>
         <h2 class="optionHeading">Buy Me a Coffee on Ko-fi</h2>
@@ -73,6 +56,70 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
         >
           Support on Ko-fi ↗
         </a>
+      </div>
+
+      <!-- Option 2: Monthly Support via Patreon -->
+      <div class:list={['optionCard', 'optionCardPatreon', { optionCardDisabled: !PATREON_ENABLED }]}>
+        <div class="badgeRow">
+          <div class="optionBadge badgePatreon">Membership</div>
+          {!PATREON_ENABLED && <div class="optionBadge badgeDisabled">Disabled</div>}
+        </div>
+        <h2 class="optionHeading">Support on Patreon</h2>
+        <p class="optionDesc">
+          Support ongoing development of Idle Guild Master Plus and the community wiki through
+          Patreon. Completely optional—everything stays free for everyone.
+        </p>
+        <p class="optionHint">
+          {PATREON_ENABLED
+            ? 'Opens Patreon in a new tab. Thank you for your support!'
+            : 'This option is currently disabled.'}
+        </p>
+        {PATREON_ENABLED ? (
+          <a
+            href={PATREON_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="optionBtn btnPatreon"
+          >
+            Support on Patreon ↗
+          </a>
+        ) : (
+          <button type="button" class="optionBtn btnDisabled" disabled aria-disabled="true">
+            Currently Disabled
+          </button>
+        )}
+      </div>
+
+      <!-- Option 3: Free Support via Sponsored Link -->
+      <div class:list={['optionCard', 'optionCardFree', { optionCardDisabled: !SMARTLINK_ENABLED }]}>
+        <div class="badgeRow">
+          <div class="optionBadge badgeFree">Free · No Cost</div>
+          {!SMARTLINK_ENABLED && <div class="optionBadge badgeDisabled">Disabled</div>}
+        </div>
+        <h2 class="optionHeading">Visit a Sponsored Link</h2>
+        <p class="optionDesc">
+          Support the wiki for free by opening a third-party sponsor link in a new tab. It doesn't
+          cost you anything and helps fund a custom domain for the wiki.
+        </p>
+        <p class="optionHint">
+          {SMARTLINK_ENABLED
+            ? 'Heads up: opens an external third-party ad page in a new tab.'
+            : 'This third-party ad link is currently disabled.'}
+        </p>
+        {SMARTLINK_ENABLED ? (
+          <a
+            href={SMARTLINK_URL}
+            target="_blank"
+            rel="noopener noreferrer sponsored"
+            class="optionBtn btnFree"
+          >
+            Open Sponsored Link ↗
+          </a>
+        ) : (
+          <button type="button" class="optionBtn btnDisabled" disabled aria-disabled="true">
+            Currently Disabled
+          </button>
+        )}
       </div>
     </section>
 
@@ -100,7 +147,7 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
 
 <style>
   .supportContainer {
-    max-width: 860px;
+    max-width: 980px;
     margin: 0 auto;
   }
 
@@ -145,7 +192,7 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
 
   .optionsGrid {
     display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 1.25rem;
     margin-bottom: 2rem;
   }
@@ -172,6 +219,31 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
     border-color: rgba(255, 94, 91, 0.55);
   }
 
+  .optionCardPatreon:hover {
+    border-color: rgba(249, 104, 84, 0.55);
+  }
+
+  .optionCardDisabled {
+    opacity: 0.62;
+  }
+
+  .optionCardDisabled:hover {
+    transform: none;
+    border-color: var(--border-card);
+  }
+
+  .badgeRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.45rem;
+    margin-bottom: 0.85rem;
+  }
+
+  .badgeRow .optionBadge {
+    margin-bottom: 0;
+  }
+
   .optionBadge {
     align-self: flex-start;
     font-size: 0.72rem;
@@ -193,6 +265,18 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
     background: rgba(255, 94, 91, 0.15);
     color: #ff7b78;
     border: 1px solid rgba(255, 94, 91, 0.35);
+  }
+
+  .badgePatreon {
+    background: rgba(249, 104, 84, 0.15);
+    color: #ff8a7a;
+    border: 1px solid rgba(249, 104, 84, 0.35);
+  }
+
+  .badgeDisabled {
+    background: rgba(148, 163, 184, 0.12);
+    color: var(--text-muted);
+    border: 1px solid rgba(148, 163, 184, 0.28);
   }
 
   .optionHeading {
@@ -250,6 +334,26 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
     text-decoration: none;
   }
 
+  .btnPatreon {
+    background: #f96854;
+    color: #fff;
+    border: 1px solid #f96854;
+  }
+
+  .btnPatreon:hover {
+    background: #e35744;
+    text-decoration: none;
+  }
+
+  .btnDisabled {
+    width: 100%;
+    background: rgba(148, 163, 184, 0.12);
+    color: var(--text-muted);
+    border: 1px solid rgba(148, 163, 184, 0.25);
+    cursor: not-allowed;
+    font-family: inherit;
+  }
+
   .usageCard {
     padding: 1.35rem 1.5rem;
     background: var(--bg-card);
@@ -287,6 +391,12 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
     line-height: 1.5;
   }
 
+  @media (max-width: 820px) {
+    .optionsGrid {
+      grid-template-columns: 1fr;
+    }
+  }
+
   @media (max-width: 680px) {
     .supportHero {
       padding: 1.75rem 1.15rem;
@@ -294,10 +404,6 @@ const KOFI_URL = 'https://ko-fi.com/lemoinie';
 
     .supportTitle {
       font-size: 1.55rem;
-    }
-
-    .optionsGrid {
-      grid-template-columns: 1fr;
     }
   }
 </style>
