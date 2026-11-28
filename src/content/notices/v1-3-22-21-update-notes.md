@@ -5,6 +5,7 @@ category: "Updates"
 version: "v1.3.22.21"
 author: "IGM+ Dev Team"
 pinned: false
+unlisted: true
 coverImage: "/images/area_avernus.png"
 description: "Adding new dungeon and balancing ecomony"
 ---

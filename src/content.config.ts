@@ -22,6 +22,7 @@ const notices = defineCollection({
     version: z.string().optional(),
     author: z.string().optional().default('Dev Team'),
     pinned: z.boolean().optional().default(false),
+    unlisted: z.boolean().optional().default(false),
     tags: z.array(z.string()).optional(),
   }),
 });

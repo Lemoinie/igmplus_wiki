@@ -16,10 +16,13 @@ export async function getStaticPaths() {
 
   // Sort chronologically (oldest to newest for prev/next chaining)
   entries.sort((a, b) => new Date(a.date).getTime() - new Date(b.date).getTime());
+  const publicEntries = entries.filter((e) => !e.frontmatter?.unlisted);
 
-  return entries.map((entry, index) => {
-    const prevEntry = index > 0 ? entries[index - 1] : null;
-    const nextEntry = index < entries.length - 1 ? entries[index + 1] : null;
+  return entries.map((entry) => {
+    const isUnlisted = Boolean(entry.frontmatter?.unlisted);
+    const pubIdx = isUnlisted ? -1 : publicEntries.findIndex((e) => e.slug === entry.slug);
+    const prevEntry = pubIdx > 0 ? publicEntries[pubIdx - 1] : null;
+    const nextEntry = pubIdx >= 0 && pubIdx < publicEntries.length - 1 ? publicEntries[pubIdx + 1] : null;
 
     return {
       params: { slug: entry.slug },
@@ -48,6 +51,7 @@ const version = frontmatter.version;
 const date = frontmatter.date || '2026-10-18';
 const author = frontmatter.author || 'IGM+ Team';
 const coverImage = frontmatter.coverImage;
+const unlisted = Boolean(frontmatter.unlisted);
 const tags: string[] = frontmatter.tags || [];
 
 // Calculate rough reading time based on raw content
@@ -61,6 +65,7 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   image={coverImage}
   type="article"
   publishDate={date}
+  noindex={unlisted}
 >
   <div class="noticeDetailContainer">
     <!-- Top Navigation Bar -->
@@ -100,6 +105,9 @@ const readTime = Math.max(1, Math.ceil(words / 220));
           </span>
           {version && (
             <span class="versionBadge">{version}</span>
+          )}
+          {unlisted && (
+            <span class="unlistedBadge">Unlisted</span>
           )}
           <time class="metaDate" datetime={date}>Published: {date.replace(/-/g, '/')}</time>
           <span class="readTimeBadge">{readTime} min read</span>
@@ -151,6 +159,7 @@ const readTime = Math.max(1, Math.ceil(words / 220));
         </div>
 
         <!-- Previous / Next Notice Navigation -->
+        {!unlisted && (
         <div class="prevNextGrid">
           {prevNotice ? (
             <a href={`${base}/notices/${prevNotice.slug}`} class="prevNextCard prevCard">
@@ -174,6 +183,7 @@ const readTime = Math.max(1, Math.ceil(words / 220));
             </div>
           )}
         </div>
+        )}
       </footer>
     </article>
   </div>
@@ -383,6 +393,18 @@ const readTime = Math.max(1, Math.ceil(words / 220));
   padding: 3px 8px;
   border-radius: 4px;
   font-family: var(--font-mono);
+}
+
+.unlistedBadge {
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: #fbbf24;
+  background: rgba(251, 191, 36, 0.12);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+  padding: 3px 8px;
+  border-radius: 4px;
 }
 
 .metaDate {

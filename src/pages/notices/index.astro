@@ -13,17 +13,19 @@ interface NoticeItem {
   pinned?: boolean;
 }
 
-const notices: NoticeItem[] = Object.entries(noticeFiles).map(([filePath, post]: [string, any]) => {
-  const slug = filePath.split('/').pop()?.replace('.md', '') || '';
-  const fm = post.frontmatter || {};
-  return {
-    slug,
-    title: fm.title || 'Untitled Notice',
-    date: fm.date || '2026-10-18',
-    category: fm.category || 'Notice',
-    pinned: Boolean(fm.pinned),
-  };
-});
+const notices: NoticeItem[] = Object.entries(noticeFiles)
+  .filter(([, post]: [string, any]) => !Boolean(post.frontmatter?.unlisted))
+  .map(([filePath, post]: [string, any]) => {
+    const slug = filePath.split('/').pop()?.replace('.md', '') || '';
+    const fm = post.frontmatter || {};
+    return {
+      slug,
+      title: fm.title || 'Untitled Notice',
+      date: fm.date || '2026-10-18',
+      category: fm.category || 'Notice',
+      pinned: Boolean(fm.pinned),
+    };
+  });
 
 // Sort by date descending (newest first), pinned prioritized
 notices.sort((a, b) => {

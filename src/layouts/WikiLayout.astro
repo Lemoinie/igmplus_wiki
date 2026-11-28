@@ -14,6 +14,7 @@ interface Props {
   image?: string;
   type?: string;
   publishDate?: string;
+  noindex?: boolean;
 }
 
 const {
@@ -22,6 +23,7 @@ const {
   image,
   type = 'website',
   publishDate,
+  noindex = false,
 } = Astro.props;
 
 // Global search index built statically from modular JSON data
@@ -190,7 +192,7 @@ const ogImage = image
     <link rel="apple-touch-icon" href={`${base}/favicon.png`} />
     <title>{siteTitle}</title>
     <meta name="description" content={metaDesc} />
-    {isFull && <meta name="robots" content="noindex, nofollow" />}
+    {(isFull || noindex) && <meta name="robots" content="noindex, nofollow" />}
 
     <!-- Open Graph / Discord Link Previews -->
     <meta property="og:title" content={title} />
